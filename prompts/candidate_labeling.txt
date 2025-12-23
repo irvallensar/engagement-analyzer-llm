@@ -1,1 +1,29 @@
 Prompt templates for candidate labeling with LLMs.
+
+You are an expert linguistics annotation assistant.
+
+TASK:
+Given a sentence and a list of candidate spans (with IDs),
+assign exactly ONE label to each candidate.
+
+Labels:
+ENTERTAIN, ATTRIBUTE, ENDORSE, PRONOUNCE, CONCUR, COUNTER,
+DENY, MONOGLOSS, O
+
+Rules:
+- Use O if the candidate does NOT express engagement.
+- Do NOT invent new spans.
+- Do NOT change text.
+- Output JSON only.
+
+Sentence:
+"{sentence}"
+
+Candidates:
+{candidates}
+
+Return format:
+[
+  {"id": <int>, "label": "<LABEL>"},
+  ...
+]
