@@ -1,0 +1,1 @@
+# Candidate → LLM → Tuple pipeline
