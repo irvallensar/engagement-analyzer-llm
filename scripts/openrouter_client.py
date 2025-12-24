@@ -3,30 +3,30 @@
 import os
 import requests
 
-OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-def call_openrouter(prompt: str, model: str = "openai/gpt-3.5-turbo") -> str:
-    """
-    Sends a prompt to OpenRouter and returns the model's text response.
-    """
-    api_key = os.getenv("OPENROUTER_API_KEY")
-    if not api_key:
-        raise RuntimeError("OPENROUTER_API_KEY not found in environment")
+if not OPENROUTER_API_KEY:
+    raise RuntimeError("OPENROUTER_API_KEY not set")
 
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json",
-    }
+API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
+HEADERS = {
+    "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+    "Content-Type": "application/json",
+    # REQUIRED by OpenRouter
+    "HTTP-Referer": "https://github.com/irvallensar/engagement-analyzer-llm",
+    "X-Title": "engagement-analyzer-llm",
+}
+
+def call_openrouter(prompt: str, model="openai/gpt-3.5-turbo"):
     payload = {
         "model": model,
         "messages": [
             {"role": "user", "content": prompt}
-        ]
+        ],
+        "temperature": 0.0,
     }
 
-    response = requests.post(OPENROUTER_URL, headers=headers, json=payload)
+    response = requests.post(API_URL, headers=HEADERS, json=payload)
     response.raise_for_status()
-
-    data = response.json()
-    return data["choices"][0]["message"]["content"]
+    return response.json()
