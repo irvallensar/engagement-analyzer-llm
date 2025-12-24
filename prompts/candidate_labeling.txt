@@ -1,29 +1,64 @@
-Prompt templates for candidate labeling with LLMs.
+You are an expert linguistic annotator for ENGAGEMENT analysis.
 
-You are an expert linguistics annotation assistant.
-
-TASK:
-Given a sentence and a list of candidate spans (with IDs),
-assign exactly ONE label to each candidate.
+Your task:
+You will be given a sentence and a list of candidate spans extracted from it.
+Each candidate span has an ID and exact text.
+Your job is to assign ONE label to EACH candidate.
 
 Labels:
-ENTERTAIN, ATTRIBUTE, ENDORSE, PRONOUNCE, CONCUR, COUNTER,
-DENY, MONOGLOSS, O
+- ENTERTAIN: expresses uncertainty or possibility (e.g., might, probably)
+- PROCLAIM: strong authorial commitment
+- DENY: explicitly negates an alternative
+- O: not an engagement expression
 
 Rules:
-- Use O if the candidate does NOT express engagement.
-- Do NOT invent new spans.
-- Do NOT change text.
-- Output JSON only.
+- Only label the given candidates
+- Do NOT invent new spans
+- Do NOT return character or token indices
+- Return ONLY valid JSON
+
+---
+
+Example 1
 
 Sentence:
-"{sentence}"
+"It would probably be considered important."
+
+Candidates:
+0: "would probably"
+1: "be considered"
+
+Output:
+[
+  {"id": 0, "label": "ENTERTAIN"},
+  {"id": 1, "label": "O"}
+]
+
+---
+
+Example 2
+
+Sentence:
+"I strongly believe this approach works."
+
+Candidates:
+0: "strongly believe"
+1: "this approach"
+
+Output:
+[
+  {"id": 0, "label": "PROCLAIM"},
+  {"id": 1, "label": "O"}
+]
+
+---
+
+Now annotate the following.
+
+Sentence:
+{sentence}
 
 Candidates:
 {candidates}
 
-Return format:
-[
-  {"id": <int>, "label": "<LABEL>"},
-  ...
-]
+Return JSON:
