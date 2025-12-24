@@ -11,14 +11,13 @@ if not OPENROUTER_API_KEY:
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 HEADERS = {
-    "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+    "Authorization": f"Bearer {OPENROUTER_API_KEY}", 
     "Content-Type": "application/json",
-    # REQUIRED by OpenRouter
     "HTTP-Referer": "https://github.com/irvallensar/engagement-analyzer-llm",
     "X-Title": "engagement-analyzer-llm",
 }
 
-def call_openrouter(prompt: str, model="openai/gpt-3.5-turbo"):
+def call_openrouter(prompt: str, model="meta-llama/llama-3.2-3b-instruct:free"):
     payload = {
         "model": model,
         "messages": [
