@@ -1,4 +1,4 @@
-from script.openrouter_client import call_openrouter
+from scripts.openrouter_client import call_openrouter
 
 def main():
     prompt = "Say hello in one sentence."
