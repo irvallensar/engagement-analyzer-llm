@@ -28,4 +28,7 @@ def call_openrouter(prompt: str, model="meta-llama/llama-3.2-3b-instruct:free"):
 
     response = requests.post(API_URL, headers=HEADERS, json=payload)
     response.raise_for_status()
+    print("STATUS:", response.status_code)
+    print("RESPONSE:", response.text)
+    response.raise_for_status()
     return response.json()
