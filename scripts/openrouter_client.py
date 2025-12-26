@@ -15,7 +15,7 @@ HEADERS = {
     "X-Title": "engagement-analyzer-llm",
 }
 
-def call_openrouter(prompt: str, model="meta-llama/llama-3.2-3b-instruct:free"):
+def call_openrouter(prompt: str, model="mistralai/mistral-7b-instruct:free"):
     payload = {
         "model": model,
         "messages": [
