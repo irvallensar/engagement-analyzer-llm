@@ -14,8 +14,8 @@ def load_prompt():
 
 def build_candidates_block(candidates):
     lines = []
-    for c in candidates:
-        lines.append(f"{c['id']}: \"{c['text']}\"")
+    for i, c in enumerate(candidates):
+        lines.append(f"{i}: \"{c['text']}\"")
     return "\n".join(lines)
 
 def run_sentence(text, gold_spans):
