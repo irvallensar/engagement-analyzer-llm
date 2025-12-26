@@ -2,7 +2,7 @@ import spacy
 from suggester.custom_suggester import CandidateSuggester
 from scripts.openrouter_client import call_openrouter
 from scripts.llm_utils import parse_llm_json
-from scripts.custom_eval import score_set
+
 
 from pathlib import Path
 
