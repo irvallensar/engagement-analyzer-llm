@@ -42,7 +42,3 @@ def run_sentence(text, gold_spans):
             ))
 
     return score_set(pred_spans, gold_spans)
-
-if __name__ == "__main__":
-    sentence = "It would probably be considered important."
-    print(run(sentence))
