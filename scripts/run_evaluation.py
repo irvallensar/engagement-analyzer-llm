@@ -28,7 +28,7 @@ def run_sentence(text, gold_spans):
         candidates=build_candidates_block(candidates)
     )
 
-    llm_raw = call_openrouter(prompt)
+    llm_raw = call_local_llm(prompt)
     llm_items = parse_llm_json(llm_raw)
 
     pred_spans = set()
@@ -42,3 +42,7 @@ def run_sentence(text, gold_spans):
             ))
 
     return score_set(pred_spans, gold_spans)
+
+if __name__ == "__main__":
+    sentence = "It would probably be considered important."
+    print(run(sentence))
