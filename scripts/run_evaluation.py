@@ -18,6 +18,8 @@ def build_candidates_block(candidates):
         lines.append(f"{i}: \"{c['text']}\"")
     return "\n".join(lines)
 
+nlp = spacy.load("en_core_web_sm")
+
 def run_sentence(text, gold_spans):
     nlp = spacy.load("en_core_web_sm")
     suggester = CandidateSuggester(nlp)
