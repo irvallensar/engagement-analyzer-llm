@@ -1,7 +1,8 @@
 import spacy
 from suggester.custom_suggester import CandidateSuggester
-from scripts.openrouter_client import call_openrouter
+from scripts.local_llm_client import call_local_llm
 from scripts.llm_utils import parse_llm_json
+from pathlib import Path
 
 
 from pathlib import Path
@@ -31,14 +32,24 @@ def run_sentence(text, gold_spans):
     llm_raw = call_local_llm(prompt)
     llm_items = parse_llm_json(llm_raw)
 
-    pred_spans = set()
+    pred_spans = []
     for item in llm_items:
         if item["label"] != "O":
             c = candidates[item["id"]]
-            pred_spans.add((
+            pred_spans.append((
                 item["label"],
                 c["start_token"],
                 c["end_token"]
             ))
 
-    return score_set(pred_spans, gold_spans)
+    return pred_spans
+
+if __name__ == "__main__":
+    sentence = "It would probably be considered important."
+    preds = run_sentence(sentence, gold_spans=None)
+
+    print("Sentence:")
+    print(sentence)
+    print("\nPredicted spans:")
+    for p in preds:
+        print(p)
