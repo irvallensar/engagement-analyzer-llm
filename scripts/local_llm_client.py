@@ -1,8 +1,8 @@
 import subprocess
 
-def call_local_llm(prompt: str) -> str:
+def call_local_llm(prompt):
     result = subprocess.run(
-        ["ollama", "run", "mistral"],
+        ["ollama", "run", "phi3"],  # 👈 CHANGE HERE
         input=prompt,
         text=True,
         capture_output=True
