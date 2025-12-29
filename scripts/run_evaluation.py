@@ -20,20 +20,6 @@ def build_candidates_block(candidates):
 
 nlp = spacy.load("en_core_web_sm")
 
-def run_sentence(text, gold_spans):
-    nlp = spacy.load("en_core_web_sm")
-    suggester = CandidateSuggester(nlp)
-    candidates = suggester.get_candidates(text)
-
-    prompt_template = load_prompt()
-    prompt = prompt_template.format(
-        sentence=text,
-        candidates=build_candidates_block(candidates)
-    )
-
-    llm_raw = call_local_llm(prompt)
-    llm_items = parse_llm_json(llm_raw)
-
 def suppress_spurious_entertain(span_text):
     uncertainty_markers = {"might", "may", "could", "probably", "possibly"}
     return any(w in span_text.lower() for w in uncertainty_markers)
@@ -50,6 +36,21 @@ def suppress_spurious_entertain(span_text):
         if item["label"] == "ENTERTAIN":
             if not suppress_spurious_entertain(c["text"]):
                 continue
+
+def run_sentence(text, gold_spans):
+    nlp = spacy.load("en_core_web_sm")
+    suggester = CandidateSuggester(nlp)
+    candidates = suggester.get_candidates(text)
+
+    prompt_template = load_prompt()
+    prompt = prompt_template.format(
+        sentence=text,
+        candidates=build_candidates_block(candidates)
+    )
+
+    llm_raw = call_local_llm(prompt)
+    llm_items = parse_llm_json(llm_raw)
+
 
     return pred_spans
 
