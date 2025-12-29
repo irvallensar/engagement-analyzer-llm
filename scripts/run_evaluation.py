@@ -47,7 +47,7 @@ def run_sentence(text, gold_spans):
     return pred_spans
 
 if __name__ == "__main__":
-    sentence = "As we have already begun to see, the writing classroom of the new millennium is characterized by digitally mediated communication and is populated by students from around the world."
+    sentence = "The language you speak determines your thoughts"
     preds = run_sentence(sentence, gold_spans=None)
 
     print("Sentence:")
