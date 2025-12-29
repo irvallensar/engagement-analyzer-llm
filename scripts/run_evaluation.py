@@ -47,7 +47,7 @@ def run_sentence(text, gold_spans):
     return pred_spans
 
 if __name__ == "__main__":
-    sentence = "The language you speak determines your thoughts"
+    sentence = "The language you speak determines your thoughts."
     preds = run_sentence(sentence, gold_spans=None)
 
     print("Sentence:")
