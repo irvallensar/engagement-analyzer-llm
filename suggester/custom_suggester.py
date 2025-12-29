@@ -29,7 +29,7 @@ class CandidateSuggester:
                 span = doc[start:end]
 
                 # -------- FILTERS --------
-                if not has_min_length(span, min_tokens=2):
+                if len(span) == 1 and span[0].pos_ != "VERB":
                     continue
 
                 if is_punctuation_only(span):
