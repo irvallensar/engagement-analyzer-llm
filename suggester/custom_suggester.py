@@ -37,6 +37,10 @@ class CandidateSuggester:
 
                 if is_all_stopwords(span):
                     continue
+
+                # Allow single-token spans ONLY if they are verbs
+                if len(span) == 1 and span[0].pos_ != "VERB":
+                    continue
                 # -------------------------
 
                 candidates.append({
