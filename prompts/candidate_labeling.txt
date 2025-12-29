@@ -66,19 +66,13 @@ Sentence:
 "Though we do not advocate that researchers develop projects about issues in which they have little grounding, we do believe that researchers should view this disciplinary division as an opportunity rather than an obstacle."
 
 Candidates:
-0: "Though"
+0: "Though we do not advocate that researchers develop projects about issues in which they have little grounding,"
 1: "do not advocate"
-2: "do believe"
-3: "should"
-4: "rather than an obstacle"
 
 Output:
 [
   {{"id": 0, "label": "COUNTER"}},
   {{"id": 1, "label": "DENY"}},
-  {{"id": 2, "label": "PROCLAIM"}},
-  {{"id": 3, "label": "ENTERTAIN"}},
-  {{"id": 4, "label": "COUNTER"}}
 ]
 
 ---
