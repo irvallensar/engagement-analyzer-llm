@@ -34,6 +34,10 @@ def run_sentence(text, gold_spans):
     llm_raw = call_local_llm(prompt)
     llm_items = parse_llm_json(llm_raw)
 
+def suppress_spurious_entertain(span_text):
+    uncertainty_markers = {"might", "may", "could", "probably", "possibly"}
+    return any(w in span_text.lower() for w in uncertainty_markers)
+    
     pred_spans = []
     for item in llm_items:
         if item["label"] != "O":
@@ -43,6 +47,9 @@ def run_sentence(text, gold_spans):
                 c["start_token"],
                 c["end_token"]
             ))
+        if item["label"] == "ENTERTAIN":
+            if not suppress_spurious_entertain(c["text"]):
+                continue
 
     return pred_spans
 
