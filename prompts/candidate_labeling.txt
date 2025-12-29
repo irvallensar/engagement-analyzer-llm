@@ -23,6 +23,9 @@ Rules:
 - Return ONLY valid JSON
 - If a candidate span contains multiple engagement resources,
 assign the label corresponding to its primary discourse function.
+- If a candidate is a bare declarative statement with no modal verbs
+(e.g., determines, shows, is characterized by),
+it MUST be labeled MONOGLOSS, not ENTERTAIN.
 
 ---
 Example 1 (adapted from Eguchi & Kyle, 2024)
