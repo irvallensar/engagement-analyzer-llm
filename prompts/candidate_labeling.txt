@@ -6,53 +6,116 @@ Each candidate span has an ID and exact text.
 Your job is to assign ONE label to EACH candidate.
 
 Labels:
-- ENTERTAIN: expresses uncertainty or possibility (e.g., might, probably)
-- PROCLAIM: strong authorial commitment
-- DENY: explicitly negates an alternative
-- O: not an engagement expression
+- ENTERTAIN
+- PROCLAIM
+- DENY
+- COUNTER
+- MONOGLOSS
+- ATTRIBUTION
+- SOURCES
+- ENDOPHORIC
+- O
 
 Rules:
 - Only label the given candidates
 - Do NOT invent new spans
 - Do NOT return character or token indices
 - Return ONLY valid JSON
+- If a candidate span contains multiple engagement resources,
+assign the label corresponding to its primary discourse function.
 
 ---
-
-Example 1
+Example 1 (adapted from Eguchi & Kyle, 2024)
+---
 
 Sentence:
-"It would probably be considered important."
+"As with the teaching of L2 writers and the teaching of digital writing separately, a cross-disciplinary research project would probably be considered the province of the specialists."
 
 Candidates:
 0: "would probably"
-1: "be considered"
 
 Output:
 [
-  {{"id": 0, "label": "ENTERTAIN"}},
-  {{"id": 1, "label": "O"}}
+  {"id": 0, "label": "ENTERTAIN"}
 ]
 
 ---
-
-Example 2
+Example 2 (adapted from Eguchi & Kyle, 2024)
+---
 
 Sentence:
-"I strongly believe this approach works."
+"In other words, scholars in digital writing may say this type of cross-disciplinary research is outside of their expertise, an argument echoed by L2 writing specialists."
 
 Candidates:
-0: "strongly believe"
-1: "this approach"
+0: "may"
+1: "an argument"
+2: "L2 writing specialists"
 
 Output:
 [
-  {{"id": 0, "label": "PROCLAIM"}},
-  {{"id": 1, "label": "O"}}
+  {"id": 0, "label": "ENTERTAIN"},
+  {"id": 1, "label": "ATTRIBUTION"},
+  {"id": 2, "label": "SOURCES"}
 ]
 
 ---
+Example 3 (adapted from Eguchi & Kyle, 2024)
+---
 
+Sentence:
+"Though we do not advocate that researchers develop projects about issues in which they have little grounding, we do believe that researchers should view this disciplinary division as an opportunity rather than an obstacle."
+
+Candidates:
+0: "Though"
+1: "do not advocate"
+2: "do believe"
+3: "should"
+4: "rather than an obstacle"
+
+Output:
+[
+  {"id": 0, "label": "COUNTER"},
+  {"id": 1, "label": "DENY"},
+  {"id": 2, "label": "PROCLAIM"},
+  {"id": 3, "label": "ENTERTAIN"},
+  {"id": 4, "label": "COUNTER"}
+]
+
+---
+Example 4 (adapted from Eguchi & Kyle, 2024)
+---
+
+Sentence:
+"Both writing instructors and writing researchers face situations that specializations have not prepared them for."
+
+Candidates:
+0: "face"
+1: "have not prepared"
+
+Output:
+[
+  {"id": 0, "label": "MONOGLOSS"},
+  {"id": 1, "label": "DENY"}
+]
+
+---
+Example 5 (adapted from Eguchi & Kyle, 2024)
+---
+
+Sentence:
+"Yet, to engage in these types of inquiry (such as answering the questions above), teacher-scholars have little theoretical and methodological precedent for studying issues of these disciplines."
+
+Candidates:
+0: "Yet"
+1: "above"
+
+Output:
+[
+  {"id": 0, "label": "COUNTER"},
+  {"id": 1, "label": "ENDOPHORIC"}
+]
+
+---
 Now annotate the following.
 
 Sentence:
