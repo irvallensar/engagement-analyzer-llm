@@ -36,7 +36,7 @@ Candidates:
 
 Output:
 [
-  {"id": 0, "label": "ENTERTAIN"}
+  {{"id": 0, "label": "ENTERTAIN"}}
 ]
 
 ---
@@ -53,9 +53,9 @@ Candidates:
 
 Output:
 [
-  {"id": 0, "label": "ENTERTAIN"},
-  {"id": 1, "label": "ATTRIBUTION"},
-  {"id": 2, "label": "SOURCES"}
+  {{"id": 0, "label": "ENTERTAIN"}},
+  {{"id": 1, "label": "ATTRIBUTION"}},
+  {{"id": 2, "label": "SOURCES"}}
 ]
 
 ---
@@ -74,11 +74,11 @@ Candidates:
 
 Output:
 [
-  {"id": 0, "label": "COUNTER"},
-  {"id": 1, "label": "DENY"},
-  {"id": 2, "label": "PROCLAIM"},
-  {"id": 3, "label": "ENTERTAIN"},
-  {"id": 4, "label": "COUNTER"}
+  {{"id": 0, "label": "COUNTER"}},
+  {{"id": 1, "label": "DENY"}},
+  {{"id": 2, "label": "PROCLAIM"}},
+  {{"id": 3, "label": "ENTERTAIN"}},
+  {{"id": 4, "label": "COUNTER"}}
 ]
 
 ---
@@ -94,8 +94,8 @@ Candidates:
 
 Output:
 [
-  {"id": 0, "label": "MONOGLOSS"},
-  {"id": 1, "label": "DENY"}
+  {{"id": 0, "label": "MONOGLOSS"}},
+  {{"id": 1, "label": "DENY"}}
 ]
 
 ---
@@ -111,8 +111,8 @@ Candidates:
 
 Output:
 [
-  {"id": 0, "label": "COUNTER"},
-  {"id": 1, "label": "ENDOPHORIC"}
+  {{"id": 0, "label": "COUNTER"}},
+  {{"id": 1, "label": "ENDOPHORIC"}}
 ]
 
 ---
