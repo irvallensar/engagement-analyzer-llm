@@ -3,6 +3,17 @@
 import spacy
 import string
 
+# ---------- helper functions ----------
+def is_punctuation_only(span):
+    return all(token.is_punct for token in span)
+
+def is_all_stopwords(span):
+    return all(token.is_stop for token in span)
+
+def has_min_length(span, min_tokens=2):
+    return len(span) >= min_tokens
+# -------------------------------------
+
 class CandidateSuggester:
     def __init__(self, nlp, max_width=6):
         self.nlp = nlp
