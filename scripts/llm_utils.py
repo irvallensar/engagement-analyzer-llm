@@ -1,20 +1,23 @@
 import json
+import re
 
 def parse_llm_json(response_text):
     """
     Safely parse LLM output into Python objects.
     """
     try:
-        data = json.loads(response_text)
-        assert isinstance(data, list)
-        for item in data:
-            assert "id" in item
-            assert "label" in item
-        return data
+        # Extract first JSON array from the response
+        match = re.search(r"\[\s*{.*?}\s*\]", response_text, re.DOTALL)
+        if not match:
+            raise ValueError("No JSON array found in LLM output")
+
+        json_text = match.group(0)
+        return json.loads(json_text)
+
     except Exception as e:
         raise ValueError(
-            f"Invalid LLM JSON output:\n{response_text}\nError: {e}"
-        )
+            f"Invalid LLM JSON output:\n{response_text}"
+        ) from e
 
 def build_labeling_prompt(sentence, candidates):
     prompt = f"""
