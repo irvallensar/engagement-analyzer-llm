@@ -22,6 +22,15 @@ class CandidateSuggester:
     def get_candidates(self, text):
         doc = self.nlp(text)
         candidates = []
+
+        for token in doc:
+            # 1️⃣ single-token finite verbs
+            if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
+                candidates.append({
+                    "text": token.text,
+                    "start_token": token.i,
+                    "end_token": token.i + 1
+                })
         cid = 0
 
         for start in range(len(doc)):
