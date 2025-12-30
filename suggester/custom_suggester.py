@@ -10,8 +10,11 @@ def is_punctuation_only(span):
 def is_all_stopwords(span):
     return all(token.is_stop for token in span)
 
-def has_min_length(span, min_tokens=2):
-    return len(span) >= min_tokens
+def contains_finite_verb(span):
+    return any(
+        tok.pos_ == "VERB" and tok.morph.get("VerbForm") == ["Fin"]
+        for tok in span
+    )
 # -------------------------------------
 
 class CandidateSuggester:
@@ -22,41 +25,49 @@ class CandidateSuggester:
     def get_candidates(self, text):
         doc = self.nlp(text)
         candidates = []
-
-        for token in doc:
-            # 1️⃣ single-token finite verbs
-            if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
-                candidates.append({
-                    "text": token.text,
-                    "start_token": token.i,
-                    "end_token": token.i + 1
-                })
         cid = 0
 
+        # ==================================================
+        # STEP 1: High-priority atomic candidates (VERBS)
+        # ==================================================
+        for token in doc:
+            if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
+                candidates.append({
+                    "id": cid,
+                    "text": token.text,
+                    "start_token": token.i,
+                    "end_token": token.i + 1,
+                })
+                cid += 1
+
+        # ==================================================
+        # STEP 2: Demoted phrase candidates (STRICT)
+        # ==================================================
         for start in range(len(doc)):
             for end in range(start + 1, min(start + self.max_width + 1, len(doc) + 1)):
                 span = doc[start:end]
 
-                # -------- FILTERS --------
-                if len(span) == 1 and span[0].pos_ != "VERB":
-                    continue
-
+                # ---- HARD FILTERS ----
                 if is_punctuation_only(span):
                     continue
 
                 if is_all_stopwords(span):
                     continue
 
-                # Allow single-token spans ONLY if they are verbs
-                if len(span) == 1 and span[0].pos_ != "VERB":
+                # ❌ Do not allow long spans with verbs
+                if len(span) > 1 and contains_finite_verb(span):
                     continue
-                # -------------------------
 
+                # ❌ Drop long clause-like spans
+                if len(span) > 3:
+                    continue
+
+                # Allow only meaningful short spans
                 candidates.append({
                     "id": cid,
                     "text": span.text,
                     "start_token": span.start,
-                    "end_token": span.end - 1,
+                    "end_token": span.end,
                 })
                 cid += 1
 
