@@ -37,7 +37,7 @@ def suppress_spurious_entertain(span_text):
             if not suppress_spurious_entertain(c["text"]):
                 continue
 
-def run_sentence(text, gold_spans):
+def run_sentence(text, gold_spans=None):
     nlp = spacy.load("en_core_web_sm")
     suggester = CandidateSuggester(nlp)
     candidates = suggester.get_candidates(text)
@@ -51,6 +51,24 @@ def run_sentence(text, gold_spans):
     llm_raw = call_local_llm(prompt)
     llm_items = parse_llm_json(llm_raw)
 
+    pred_spans = []
+
+    for item in llm_items:
+        label = item["label"]
+        if label == "O":
+            continue
+
+        c = candidates[item["id"]]
+
+        # 🔒 suppress spurious ENTERTAIN
+        if label == "ENTERTAIN" and not is_valid_entertain(c["text"]):
+            continue
+
+        pred_spans.append((
+            label,
+            c["start_token"],
+            c["end_token"]
+        ))
 
     return pred_spans
 
