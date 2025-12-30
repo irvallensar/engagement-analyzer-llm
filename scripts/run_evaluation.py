@@ -58,17 +58,21 @@ def run_sentence(text, gold_spans=None):
         if label == "O":
             continue
 
-        c = candidates[item["id"]]
+    c = candidates[item["id"]]
+    span_text = c["text"]
 
-        # 🔒 suppress spurious ENTERTAIN
-        if label == "ENTERTAIN" and not is_valid_entertain(c["text"]):
-            continue
+    # 🔒 lexical constraints
+    if label == "ENTERTAIN" and not is_valid_entertain(span_text):
+        continue
 
-        pred_spans.append((
-            label,
-            c["start_token"],
-            c["end_token"]
-        ))
+    if label == "DENY" and not is_valid_deny(span_text):
+        continue
+
+    pred_spans.append((
+        label,
+        c["start_token"],
+        c["end_token"]
+    ))
 
     return pred_spans
 
