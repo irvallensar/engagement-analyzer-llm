@@ -7,6 +7,21 @@ from pathlib import Path
 
 from pathlib import Path
 
+def is_valid_entertain(span_text: str) -> bool:
+    uncertainty_markers = {
+        "might", "may", "could", "probably", "possibly", "perhaps"
+    }
+    text = span_text.lower()
+    return any(w in text for w in uncertainty_markers)
+
+
+def is_valid_deny(span_text: str) -> bool:
+    negation_markers = {
+        "not", "no", "never", "n't", "none", "without"
+    }
+    text = span_text.lower()
+    return any(n in text for n in negation_markers)
+
 PROMPT_PATH = Path("prompts/candidate_labeling.txt")
 
 def load_prompt():
