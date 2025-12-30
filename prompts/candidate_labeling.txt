@@ -2,10 +2,10 @@ You are an expert linguistic annotator for ENGAGEMENT analysis.
 
 Your task:
 You will be given a sentence and a list of candidate spans extracted from it.
-Each candidate span has an ID and exact text.
-Your job is to assign ONE label to EACH candidate.
+Each candidate span has an integer ID and exact text.
+Your job is to assign EXACTLY ONE label to EACH candidate.
 
-Labels:
+Allowed labels (choose one):
 - ENTERTAIN
 - PROCLAIM
 - DENY
@@ -17,19 +17,24 @@ Labels:
 - O
 
 Rules:
-- Only label the given candidates
-- Do NOT invent new spans
-- Do NOT return character or token indices
+- You MUST return exactly one object per candidate ID
+- If no engagement meaning applies, use label "O"
+- Do NOT invent new IDs
+- Do NOT omit any IDs
+- Do NOT return explanations
+- Do NOT return null
 - Return ONLY valid JSON
-- If a candidate span contains multiple engagement resources,
-assign the label corresponding to its primary discourse function.
-- If a candidate is a bare declarative statement with no modal verbs
+- The output MUST be a JSON array
+- Each item MUST have keys "id" (int) and "label" (string)
+
+Additional rule:
+If a candidate is a bare declarative statement with no modal verbs
 (e.g., determines, shows, is characterized by),
-it MUST be labeled MONOGLOSS, not ENTERTAIN.
+it MUST be labeled MONOGLOSS.
 
 ---
-Example 1 (adapted from Eguchi & Kyle, 2024)
----
+
+Example 1 (Eguchi & Kyle, 2024)
 
 Sentence:
 "As with the teaching of L2 writers and the teaching of digital writing separately, a cross-disciplinary research project would probably be considered the province of the specialists."
@@ -39,12 +44,12 @@ Candidates:
 
 Output:
 [
-  {{"id": 0, "label": "ENTERTAIN"}}
+  {"id": 0, "label": "ENTERTAIN"}
 ]
 
 ---
-Example 2 (adapted from Eguchi & Kyle, 2024)
----
+
+Example 2 (Eguchi & Kyle, 2024)
 
 Sentence:
 "In other words, scholars in digital writing may say this type of cross-disciplinary research is outside of their expertise, an argument echoed by L2 writing specialists."
@@ -56,14 +61,14 @@ Candidates:
 
 Output:
 [
-  {{"id": 0, "label": "ENTERTAIN"}},
-  {{"id": 1, "label": "ATTRIBUTION"}},
-  {{"id": 2, "label": "SOURCES"}}
+  {"id": 0, "label": "ENTERTAIN"},
+  {"id": 1, "label": "ATTRIBUTION"},
+  {"id": 2, "label": "SOURCES"}
 ]
 
 ---
-Example 3 (adapted from Eguchi & Kyle, 2024)
----
+
+Example 3 (Eguchi & Kyle, 2024)
 
 Sentence:
 "Though we do not advocate that researchers develop projects about issues in which they have little grounding, we do believe that researchers should view this disciplinary division as an opportunity rather than an obstacle."
@@ -74,13 +79,13 @@ Candidates:
 
 Output:
 [
-  {{"id": 0, "label": "COUNTER"}},
-  {{"id": 1, "label": "DENY"}},
+  {"id": 0, "label": "COUNTER"},
+  {"id": 1, "label": "DENY"}
 ]
 
 ---
-Example 4 (adapted from Eguchi & Kyle, 2024)
----
+
+Example 4 (Eguchi & Kyle, 2024)
 
 Sentence:
 "Both writing instructors and writing researchers face situations that specializations have not prepared them for."
@@ -91,13 +96,13 @@ Candidates:
 
 Output:
 [
-  {{"id": 0, "label": "MONOGLOSS"}},
-  {{"id": 1, "label": "DENY"}}
+  {"id": 0, "label": "MONOGLOSS"},
+  {"id": 1, "label": "DENY"}
 ]
 
 ---
-Example 5 (adapted from Eguchi & Kyle, 2024)
----
+
+Example 5 (Eguchi & Kyle, 2024)
 
 Sentence:
 "Yet, to engage in these types of inquiry (such as answering the questions above), teacher-scholars have little theoretical and methodological precedent for studying issues of these disciplines."
@@ -108,11 +113,12 @@ Candidates:
 
 Output:
 [
-  {{"id": 0, "label": "COUNTER"}},
-  {{"id": 1, "label": "ENDOPHORIC"}}
+  {"id": 0, "label": "COUNTER"},
+  {"id": 1, "label": "ENDOPHORIC"}
 ]
 
 ---
+
 Now annotate the following.
 
 Sentence:
