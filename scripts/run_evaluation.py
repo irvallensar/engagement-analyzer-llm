@@ -31,6 +31,9 @@ def run_sentence(text):
     )
 
     llm_raw = call_local_llm(prompt)
+    print("RAW LLM OUTPUT:")
+    print(llm_raw)
+    print("------")
     llm_items = parse_llm_json(llm_raw)
 
     pred_spans = []
@@ -39,18 +42,15 @@ def run_sentence(text):
         if item["label"] == "O":
             continue
 
-        # ID is token-span string: "start-end"
         c = next(c for c in candidates if c["id"] == item["id"])
 
-        pred_spans.append(
-            (
-                item["label"],
-                c["start_token"],
-                c["end_token"],
-            )
-        )
+        pred_spans.append((
+            item["label"],
+            c["start_token"],
+            c["end_token"]
+        ))
 
-    return pred_spans
+        return pred_spans
 
 
 if __name__ == "__main__":
@@ -64,6 +64,3 @@ if __name__ == "__main__":
     for p in preds:
         print(p)
 
-print("RAW LLM OUTPUT:")
-print(llm_raw)
-print("------")
