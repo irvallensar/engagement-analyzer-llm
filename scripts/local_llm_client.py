@@ -1,14 +1,18 @@
 import subprocess
 
 def call_local_llm(prompt: str) -> str:
-    result = subprocess.run(
-        [
-            "ollama", "run", "mistral",
-            "--temperature", "0",
-            "--top-p", "1"
-        ],
-        input=prompt,
-        text=True,
-        capture_output=True
+    process = subprocess.Popen(
+        ["ollama", "run", "mistral"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
     )
-    return result.stdout.strip()
+
+    stdout, stderr = process.communicate(prompt)
+
+    if stderr:
+        print("OLLAMA STDERR:")
+        print(stderr)
+
+    return stdout.strip()
