@@ -40,11 +40,11 @@ Sentence:
 "As with the teaching of L2 writers and the teaching of digital writing separately, a cross-disciplinary research project would probably be considered the province of the specialists."
 
 Candidates:
-0: "would probably"
+21-23: "would probably"
 
 Output:
 [
-  {{"id": 0, "label": "ENTERTAIN"}}
+  {{"id": "21-23", "label": "ENTERTAIN"}}
 ]
 
 ---
@@ -55,15 +55,15 @@ Sentence:
 "In other words, scholars in digital writing may say this type of cross-disciplinary research is outside of their expertise, an argument echoed by L2 writing specialists."
 
 Candidates:
-0: "may"
-1: "an argument"
-2: "L2 writing specialists"
+8-9: "may"
+23-25: "an argument"
+27-30: "L2 writing specialists"
 
 Output:
 [
-  {{"id": 0, "label": "ENTERTAIN"}},
-  {{"id": 1, "label": "ATTRIBUTION"}},
-  {{"id": 2, "label": "SOURCES"}}
+  {{"id": "8-9", "label": "ENTERTAIN"}},
+  {{"id": "23-25", "label": "ATTRIBUTION"}},
+  {{"id": "27-30", "label": "SOURCES"}}
 ]
 
 ---
@@ -74,13 +74,13 @@ Sentence:
 "Though we do not advocate that researchers develop projects about issues in which they have little grounding, we do believe that researchers should view this disciplinary division as an opportunity rather than an obstacle."
 
 Candidates:
-0: "Though we do not advocate that researchers develop projects about issues in which they have little grounding,"
-1: "do not advocate"
+0-17: "Though we do not advocate that researchers develop projects about issues in which they have little grounding,"
+2-5: "do not advocate"
 
 Output:
 [
-  {{"id": 0, "label": "COUNTER"}},
-  {{"id": 1, "label": "DENY"}}
+  {{"id": "0-17", "label": "COUNTER"}},
+  {{"id": "2-5", "label": "DENY"}}
 ]
 
 ---
@@ -91,13 +91,13 @@ Sentence:
 "Both writing instructors and writing researchers face situations that specializations have not prepared them for."
 
 Candidates:
-0: "face"
-1: "have not prepared"
+6-7: "face"
+10-13: "have not prepared"
 
 Output:
 [
-  {{"id": 0, "label": "MONOGLOSS"}},
-  {{"id": 1, "label": "DENY"}}
+  {{"id": "6-7", "label": "MONOGLOSS"}},
+  {{"id": "10-13", "label": "DENY"}}
 ]
 
 ---
@@ -108,13 +108,13 @@ Sentence:
 "Yet, to engage in these types of inquiry (such as answering the questions above), teacher-scholars have little theoretical and methodological precedent for studying issues of these disciplines."
 
 Candidates:
-0: "Yet"
-1: "above"
+0-1: "Yet"
+15-16: "above"
 
 Output:
 [
-  {{"id": 0, "label": "COUNTER"}},
-  {{"id": 1, "label": "ENDOPHORIC"}}
+  {{"id": "0-1", "label": "COUNTER"}},
+  {{"id": "15-16", "label": "ENDOPHORIC"}}
 ]
 
 ---
