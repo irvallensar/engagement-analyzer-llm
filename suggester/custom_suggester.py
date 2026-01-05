@@ -33,7 +33,7 @@ class CandidateSuggester:
         for token in doc:
             if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
                 candidates.append({
-                    "id": cid,
+                    "id": f"{token.i}-{token.i+1}",
                     "text": token.text,
                     "start_token": token.i,
                     "end_token": token.i + 1,
@@ -63,6 +63,7 @@ class CandidateSuggester:
                     continue
 
                 # Allow only meaningful short spans
+    
                 candidates.append({
                     "id": f"{span.start}-{span.end}",
                     "text": span.text,
