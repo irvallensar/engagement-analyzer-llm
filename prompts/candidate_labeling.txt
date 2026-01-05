@@ -2,7 +2,7 @@ You are an expert linguistic annotator for ENGAGEMENT analysis.
 
 Your task:
 You will be given a sentence and a list of candidate spans extracted from it.
-Each candidate span has an integer ID and exact text.
+Each candidate span has an ID and exact text.
 Your job is to assign EXACTLY ONE label to EACH candidate.
 
 Allowed labels (choose one):
@@ -25,7 +25,7 @@ Rules:
 - Do NOT return null
 - Return ONLY valid JSON
 - The output MUST be a JSON array
-- Each item MUST have keys "id" (int) and "label" (string)
+- Each item MUST have keys "id" (string) and "label" (string)
 
 Additional rule:
 If a candidate is a bare declarative statement with no modal verbs
@@ -44,7 +44,7 @@ Candidates:
 
 Output:
 [
-  {{"id": "21-23", "label": "ENTERTAIN"}}
+  {"id": "21-23", "label": "ENTERTAIN"}
 ]
 
 ---
@@ -61,9 +61,9 @@ Candidates:
 
 Output:
 [
-  {{"id": "8-9", "label": "ENTERTAIN"}},
-  {{"id": "23-25", "label": "ATTRIBUTION"}},
-  {{"id": "27-30", "label": "SOURCES"}}
+  {"id": "8-9", "label": "ENTERTAIN"},
+  {"id": "23-25", "label": "ATTRIBUTION"},
+  {"id": "27-30", "label": "SOURCES"}
 ]
 
 ---
@@ -79,8 +79,8 @@ Candidates:
 
 Output:
 [
-  {{"id": "0-17", "label": "COUNTER"}},
-  {{"id": "2-5", "label": "DENY"}}
+  {"id": "0-17", "label": "COUNTER"},
+  {"id": "2-5", "label": "DENY"}
 ]
 
 ---
@@ -96,8 +96,8 @@ Candidates:
 
 Output:
 [
-  {{"id": "6-7", "label": "MONOGLOSS"}},
-  {{"id": "10-13", "label": "DENY"}}
+  {"id": "6-7", "label": "MONOGLOSS"},
+  {"id": "10-13", "label": "DENY"}
 ]
 
 ---
@@ -113,8 +113,8 @@ Candidates:
 
 Output:
 [
-  {{"id": "0-1", "label": "COUNTER"}},
-  {{"id": "15-16", "label": "ENDOPHORIC"}}
+  {"id": "0-1", "label": "COUNTER"},
+  {"id": "15-16", "label": "ENDOPHORIC"}
 ]
 
 ---
