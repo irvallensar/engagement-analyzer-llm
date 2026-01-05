@@ -64,7 +64,7 @@ class CandidateSuggester:
 
                 # Allow only meaningful short spans
                 candidates.append({
-                    "id": cid,
+                    "id": f"{span.start}-{span.end}",
                     "text": span.text,
                     "start_token": span.start,
                     "end_token": span.end,
