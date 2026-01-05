@@ -1,43 +1,33 @@
 import json
 import re
 
-def parse_llm_json(response_text):
+def parse_llm_json(text: str):
     """
-    Safely parse LLM output into Python objects.
+    Extract and parse the first JSON array from LLM output.
+    Enforces schema: each item must have 'id' and 'label'.
     """
+    # Extract JSON array
+    match = re.search(r"\[[\s\S]*\]", text)
+    if not match:
+        raise ValueError("No JSON array found in LLM output")
+
+    json_text = match.group(0)
+
     try:
-        # Extract first JSON array from the response
-        match = re.search(r"\[\s*{.*?}\s*\]", response_text, re.DOTALL)
-        if not match:
-            raise ValueError("No JSON array found in LLM output")
+        data = json.loads(json_text)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Invalid JSON:\n{json_text}") from e
 
-        json_text = match.group(0)
-        return json.loads(json_text)
+    # Schema validation
+    if not isinstance(data, list):
+        raise ValueError("LLM output is not a JSON array")
 
-    except Exception as e:
-        raise ValueError(
-            f"Invalid LLM JSON output:\n{response_text}"
-        ) from e
+    for i, item in enumerate(data):
+        if not isinstance(item, dict):
+            raise ValueError(f"Item {i} is not an object: {item}")
+        if "id" not in item:
+            raise ValueError(f'Missing "id" in item {i}: {item}')
+        if "label" not in item:
+            raise ValueError(f'Missing "label" in item {i}: {item}')
 
-def build_labeling_prompt(sentence, candidates):
-    prompt = f"""
-Sentence:
-\"{sentence}\"
-
-Candidates:
-"""
-    for i, c in enumerate(candidates):
-        prompt += f'{i}: "{c["text"]}"\n'
-
-    prompt += """
-Label each candidate using one of:
-[ENTERTAIN, PROCLAIM, DENY, O]
-
-Return JSON exactly in this format:
-[
-"""
-    for i in range(len(candidates)):
-        prompt += f'  {{"id": {i}, "label": "O"}},\n'
-    prompt += "]"
-
-    return prompt
+    return data
