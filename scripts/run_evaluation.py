@@ -25,9 +25,10 @@ def run_sentence(text):
     candidates = suggester.get_candidates(text)
 
     prompt_template = load_prompt()
-    prompt = prompt_template.format(
-        sentence=text,
-        candidates=build_candidates_block(candidates),
+    prompt = (
+    prompt_template
+        .replace("{sentence}", text)
+        .replace("{candidates}", build_candidates_block(candidates))
     )
 
     llm_raw = call_local_llm(prompt)
