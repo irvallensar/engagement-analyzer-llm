@@ -33,8 +33,11 @@ def run_sentence(text):
 
     llm_raw = call_local_llm(prompt)
     print("RAW LLM OUTPUT:")
-    print(llm_raw)
+    print(repr(llm_raw))
     print("------")
+
+    if not llm_raw.strip():
+        raise RuntimeError("LLM returned empty output")
     llm_items = parse_llm_json(llm_raw)
 
     pred_spans = []
