@@ -63,3 +63,7 @@ if __name__ == "__main__":
     print("\nPredicted spans:")
     for p in preds:
         print(p)
+
+print("RAW LLM OUTPUT:")
+print(llm_raw)
+print("------")
