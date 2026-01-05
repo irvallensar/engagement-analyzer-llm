@@ -29,8 +29,8 @@ def load_prompt():
 
 def build_candidates_block(candidates):
     lines = []
-    for i, c in enumerate(candidates):
-        lines.append(f"{i}: \"{c['text']}\"")
+    for c in candidates:
+        lines.append(f"{c['id']}: \"{c['text']}\"")
     return "\n".join(lines)
 
 nlp = spacy.load("en_core_web_sm")
@@ -66,30 +66,22 @@ def run_sentence(text, gold_spans=None):
     llm_raw = call_local_llm(prompt)
     llm_items = parse_llm_json(llm_raw)
 
-    pred_spans = []
+   pred_spans = []
 
     for item in llm_items:
-        label = item["label"]
-        if label == "O":
+        if item["label"] == "O":
             continue
 
-        c = candidates[item["id"]]
-        span_text = c["text"]
-
-        # 🔒 theory constraints
-        if label == "ENTERTAIN" and not is_valid_entertain(span_text):
-            continue
-
-        if label == "DENY" and not is_valid_deny(span_text):
-            continue
+        c = next(
+            c for c in candidates
+            if c["id"] == item["id"]
+        )
 
         pred_spans.append((
-            label,
+            item["label"],
             c["start_token"],
             c["end_token"]
         ))
-
-    return pred_spans
 
 if __name__ == "__main__":
     sentence = "The language you speak determines your thoughts."
