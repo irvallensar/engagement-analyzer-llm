@@ -31,6 +31,7 @@ def run_sentence(text):
         .replace("{candidates}", build_candidates_block(candidates))
     )
 
+    
     llm_raw = call_local_llm(prompt)
     print("RAW LLM OUTPUT:")
     print(repr(llm_raw))
@@ -39,7 +40,8 @@ def run_sentence(text):
     if not llm_raw.strip():
         raise RuntimeError("LLM returned empty output")
     llm_items = parse_llm_json(llm_raw)
-
+    llm_items = force_monogloss(candidates, llm_items)
+    
     pred_spans = []
 
     for item in llm_items:
@@ -54,7 +56,7 @@ def run_sentence(text):
             c["end_token"]
         ))
 
-        return pred_spans
+    return pred_spans
 
 
 if __name__ == "__main__":
