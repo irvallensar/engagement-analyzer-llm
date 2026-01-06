@@ -18,7 +18,19 @@ def build_candidates_block(candidates):
         lines.append(f'{c["id"]}: "{c["text"]}"')
     return "\n".join(lines)
 
+def force_monogloss(candidates, llm_items):
+    fixed = []
+    for item in llm_items:
+        c = next(c for c in candidates if c["id"] == item["id"])
+        text = c["text"].lower()
 
+        if item["label"] == "ENTERTAIN":
+            if not any(w in text for w in ["may", "might", "could", "probably"]):
+                item["label"] = "MONOGLOSS"
+
+        fixed.append(item)    
+    return fixed
+    
 def run_sentence(text):
     nlp = spacy.load("en_core_web_sm")
     suggester = CandidateSuggester(nlp)
