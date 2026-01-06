@@ -13,53 +13,13 @@ def load_prompt():
 
 
 def build_candidates_block(candidates):
-    lines = []
-    for c in candidates:
-        lines.append(f'{c["id"]}: "{c["text"]}"')
-    return "\n".join(lines)
+    return "\n".join(f'{c["id"]}: "{c["text"]}"' for c in candidates)
 
-def force_monogloss(candidates, llm_items):
-    fixed = []
-    for item in llm_items:
-        c = next(c for c in candidates if c["id"] == item["id"])
-        text = c["text"].lower()
 
-        if item["label"] == "ENTERTAIN":
-            if not any(w in text for w in ["may", "might", "could", "probably"]):
-                item["label"] = "MONOGLOSS"
+# ---------- POST-PROCESSING RULES ----------
 
-        fixed.append(item)    
-    return fixed
-    
-def run_sentence(text):
-    nlp = spacy.load("en_core_web_sm")
-    suggester = CandidateSuggester(nlp)
-    candidates = suggester.get_candidates(text)
-
-    prompt_template = load_prompt()
-    prompt = (
-    prompt_template
-        .replace("{sentence}", text)
-        .replace("{candidates}", build_candidates_block(candidates))
-    )
-
-    
-    llm_raw = call_local_llm(prompt)
-    print("RAW LLM OUTPUT:")
-    print(repr(llm_raw))
-    print("------")
-
-    if not llm_raw.strip():
-        raise RuntimeError("LLM returned empty output")
-    llm_items = parse_llm_json(llm_raw)
-    llm_items = suppress_complement_proclaim(llm_items, candidates)
-    llm_items = force_monogloss(candidates, llm_items)
-
-    def suppress_complement_proclaim(llm_items, candidates):
-    """
-    If a MONOGLOSS span exists, suppress PROCLAIM labels
-    that fall inside or immediately follow it.
-    """
+def suppress_complement_proclaim(llm_items, candidates):
+    """Suppress PROCLAIM inside / after MONOGLOSS spans"""
     monogloss_spans = []
 
     for item in llm_items:
@@ -77,15 +37,54 @@ def run_sentence(text):
         cleaned.append(item)
 
     return cleaned
-    
-    pred_spans = []
 
+
+def force_monogloss(candidates, llm_items):
+    """Demote spurious ENTERTAIN"""
+    uncertainty_markers = {"may", "might", "could", "probably"}
+
+    fixed = []
+    for item in llm_items:
+        c = next(c for c in candidates if c["id"] == item["id"])
+        text = c["text"].lower()
+
+        if item["label"] == "ENTERTAIN":
+            if not any(w in text for w in uncertainty_markers):
+                item = {**item, "label": "MONOGLOSS"}
+
+        fixed.append(item)
+
+    return fixed
+
+
+# ---------- MAIN PIPELINE ----------
+
+def run_sentence(text):
+    nlp = spacy.load("en_core_web_sm")
+    suggester = CandidateSuggester(nlp)
+    candidates = suggester.get_candidates(text)
+
+    prompt = (
+        load_prompt()
+        .replace("{sentence}", text)
+        .replace("{candidates}", build_candidates_block(candidates))
+    )
+
+    llm_raw = call_local_llm(prompt)
+    print("RAW LLM OUTPUT:")
+    print(repr(llm_raw))
+    print("------")
+
+    llm_items = parse_llm_json(llm_raw)
+    llm_items = suppress_complement_proclaim(llm_items, candidates)
+    llm_items = force_monogloss(candidates, llm_items)
+
+    pred_spans = []
     for item in llm_items:
         if item["label"] == "O":
             continue
 
         c = next(c for c in candidates if c["id"] == item["id"])
-
         pred_spans.append((
             item["label"],
             c["start_token"],
@@ -105,4 +104,3 @@ if __name__ == "__main__":
     print("\nPredicted spans:")
     for p in preds:
         print(p)
-
