@@ -53,6 +53,29 @@ def run_sentence(text):
         raise RuntimeError("LLM returned empty output")
     llm_items = parse_llm_json(llm_raw)
     llm_items = force_monogloss(candidates, llm_items)
+
+def suppress_complement_proclaim(llm_items, candidates):
+    """
+    If a MONOGLOSS span exists, suppress PROCLAIM labels
+    that fall inside or immediately follow it.
+    """
+    monogloss_spans = []
+
+    for item in llm_items:
+        if item["label"] == "MONOGLOSS":
+            c = next(c for c in candidates if c["id"] == item["id"])
+            monogloss_spans.append((c["start_token"], c["end_token"]))
+
+    cleaned = []
+    for item in llm_items:
+        if item["label"] == "PROCLAIM":
+            c = next(c for c in candidates if c["id"] == item["id"])
+            for m_start, m_end in monogloss_spans:
+                if c["start_token"] >= m_start and c["end_token"] <= m_end + 2:
+                    item = {**item, "label": "O"}
+        cleaned.append(item)
+
+    return cleaned
     
     pred_spans = []
 
