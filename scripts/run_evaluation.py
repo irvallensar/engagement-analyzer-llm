@@ -55,7 +55,7 @@ def run_sentence(text):
     llm_items = suppress_complement_proclaim(llm_items, candidates)
     llm_items = force_monogloss(candidates, llm_items)
 
-def suppress_complement_proclaim(llm_items, candidates):
+    def suppress_complement_proclaim(llm_items, candidates):
     """
     If a MONOGLOSS span exists, suppress PROCLAIM labels
     that fall inside or immediately follow it.
