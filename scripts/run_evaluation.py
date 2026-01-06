@@ -52,6 +52,7 @@ def run_sentence(text):
     if not llm_raw.strip():
         raise RuntimeError("LLM returned empty output")
     llm_items = parse_llm_json(llm_raw)
+    llm_items = suppress_complement_proclaim(llm_items, candidates)
     llm_items = force_monogloss(candidates, llm_items)
 
 def suppress_complement_proclaim(llm_items, candidates):
