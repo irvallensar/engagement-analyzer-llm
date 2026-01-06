@@ -15,6 +15,12 @@ def contains_finite_verb(span):
         tok.pos_ == "VERB" and tok.morph.get("VerbForm") == ["Fin"]
         for tok in span
     )
+    
+def is_contentless_np(span):
+    return (
+        span.root.pos_ in {"NOUN", "PRON"} and
+        not any(tok.pos_ == "VERB" for tok in span)
+    )
 # -------------------------------------
 
 class CandidateSuggester:
@@ -62,6 +68,10 @@ class CandidateSuggester:
                 if len(span) > 3:
                     continue
 
+                # ❌ Remove bare noun phrases
+                if is_contentless_np(span):
+                    continue
+                    
                 # Allow only meaningful short spans
     
                 candidates.append({
