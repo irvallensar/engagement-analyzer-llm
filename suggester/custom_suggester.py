@@ -23,6 +23,13 @@ def is_contentless_np(span):
     )
 # -------------------------------------
 
+seen = set()
+
+def add_candidate(c, candidates):
+    if c["id"] not in seen:
+        candidates.append(c)
+        seen.add(c["id"])
+        
 class CandidateSuggester:
     def __init__(self, nlp, max_width=6):
         self.nlp = nlp
