@@ -95,7 +95,7 @@ def run_sentence(text):
 
 
 if __name__ == "__main__":
-    sentence = "The language you speak determines your thoughts."
+    sentence = "It is often believed that the language you speak determines your thoughts."
 
     preds = run_sentence(sentence)
 
