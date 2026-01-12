@@ -73,7 +73,7 @@ class CandidateSuggester:
                 #    continue
 
                 # ❌ Drop long clause-like spans (Keep this to prevent entire sentences)
-                if len(span) > 5: # Increased slightly to allow "It is often believed that"
+                if len(span) > 6: # Increased slightly to allow "It is often believed that"
                     continue
 
                 # ❌ Remove bare noun phrases (Keep this)
