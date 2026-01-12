@@ -28,14 +28,11 @@ Rules:
 - Each item MUST have keys "id" (string) and "label" (string)
 
 Additional rule:
-If a candidate is a bare declarative statement with no modal verbs
-(e.g., determines, shows, is characterized by),
+If a candidate is a bare declarative statement representing the AUTHOR'S own assertion
+(e.g., "this study shows", "we conclude", "is characterized by"),
 it MUST be labeled MONOGLOSS.
 
-Specific Rule for ATTRIBUTION:
-If a candidate is a passive reporting structure implying a general opinion or external source 
-(e.g., "It is believed", "It is often suggested", "It is said"), 
-it MUST be labeled ATTRIBUTION.
+However, do NOT label a candidate as MONOGLOSS if it is part of a clause attributed to an external source or general opinion (e.g., inside a "that..." clause following "believed", "argued", "said").
 
 ---
 
