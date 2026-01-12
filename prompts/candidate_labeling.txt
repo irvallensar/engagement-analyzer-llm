@@ -26,6 +26,7 @@ Rules:
 - Return ONLY valid JSON
 - The output MUST be a JSON array
 - Each item MUST have keys "id" (string) and "label" (string)
+- Use ONLY the IDs provided in the "Candidates" list.
 
 Additional rule:
 If a candidate is a bare declarative statement representing the AUTHOR'S own assertion
