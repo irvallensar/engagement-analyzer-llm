@@ -44,6 +44,7 @@ class CandidateSuggester:
         # STEP 1: High-priority atomic candidates (VERBS)
         # ==================================================
         for token in doc:
+            # Keep this as is
             if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
                 candidates.append({
                     "id": f"{token.i}-{token.i+1}",
@@ -54,7 +55,7 @@ class CandidateSuggester:
                 cid += 1
 
         # ==================================================
-        # STEP 2: Demoted phrase candidates (STRICT)
+        # STEP 2: Phrase candidates
         # ==================================================
         for start in range(len(doc)):
             for end in range(start + 1, min(start + self.max_width + 1, len(doc) + 1)):
@@ -67,26 +68,24 @@ class CandidateSuggester:
                 if is_all_stopwords(span):
                     continue
 
-                # ❌ Do not allow long spans with verbs
-                if len(span) > 1 and contains_finite_verb(span):
+                # REMOVED: The check that blocks finite verbs in phrases
+                # if len(span) > 1 and contains_finite_verb(span):
+                #    continue
+
+                # ❌ Drop long clause-like spans (Keep this to prevent entire sentences)
+                if len(span) > 5: # Increased slightly to allow "It is often believed that"
                     continue
 
-                # ❌ Drop long clause-like spans
-                if len(span) > 3:
-                    continue
-
-                # ❌ Remove bare noun phrases
+                # ❌ Remove bare noun phrases (Keep this)
                 if is_contentless_np(span):
                     continue
                     
-                # Allow only meaningful short spans
-    
-                candidates.append({
+                add_candidate({
                     "id": f"{span.start}-{span.end}",
                     "text": span.text,
                     "start_token": span.start,
                     "end_token": span.end,
-                })
+                }, candidates)
                 cid += 1
 
         return candidates
