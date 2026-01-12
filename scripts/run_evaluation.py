@@ -39,9 +39,16 @@ def suppress_complement_proclaim(llm_items, candidates):
     return cleaned
 
 
+# In scripts/run_evaluation.py
+
 def force_monogloss(candidates, llm_items):
-    """Demote spurious ENTERTAIN"""
-    uncertainty_markers = {"may", "might", "could", "probably"}
+    """Demote spurious ENTERTAIN only if no stance markers are present"""
+    # Expanded list to include mental verbs, adverbs, and attribution signals
+    uncertainty_markers = {
+        "may", "might", "could", "probably", "possibly", "likely", "unlikely",
+        "seem", "appear", "suggest", "believe", "think", "guess", "assume",
+        "claim", "argue", "contend", "often", "usually", "generally", "opinion"
+    }
 
     fixed = []
     for item in llm_items:
@@ -49,9 +56,10 @@ def force_monogloss(candidates, llm_items):
         text = c["text"].lower()
 
         if item["label"] == "ENTERTAIN":
+            # Check if any marker exists in the text
             if not any(w in text for w in uncertainty_markers):
                 item = {**item, "label": "MONOGLOSS"}
-
+        
         fixed.append(item)
 
     return fixed
