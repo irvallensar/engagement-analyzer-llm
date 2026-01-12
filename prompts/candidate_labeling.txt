@@ -121,17 +121,19 @@ Output:
 
 ---
 
-Example 6 (Passive Attribution)
+Example 6
 
 Sentence:
 "It is often believed that the language you speak determines your thoughts."
 
 Candidates:
 0-4: "It is often believed"
+9-10: "determines"
 
 Output:
 [
-  {"id": "0-4", "label": "ATTRIBUTION"}
+  {"id": "0-4", "label": "ATTRIBUTION"},
+  {"id": "9-10", "label": "O"}
 ]
 
 ---
