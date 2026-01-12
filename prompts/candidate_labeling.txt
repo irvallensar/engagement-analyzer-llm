@@ -32,6 +32,11 @@ If a candidate is a bare declarative statement with no modal verbs
 (e.g., determines, shows, is characterized by),
 it MUST be labeled MONOGLOSS.
 
+Specific Rule for ATTRIBUTION:
+If a candidate is a passive reporting structure implying a general opinion or external source 
+(e.g., "It is believed", "It is often suggested", "It is said"), 
+it MUST be labeled ATTRIBUTION.
+
 ---
 
 Example 1 (Eguchi & Kyle, 2024)
@@ -115,6 +120,21 @@ Output:
 [
   {"id": "0-1", "label": "COUNTER"},
   {"id": "15-16", "label": "ENDOPHORIC"}
+]
+
+---
+
+Example 6 (Passive Attribution)
+
+Sentence:
+"It is often believed that the language you speak determines your thoughts."
+
+Candidates:
+0-4: "It is often believed"
+
+Output:
+[
+  {"id": "0-4", "label": "ATTRIBUTION"}
 ]
 
 ---
