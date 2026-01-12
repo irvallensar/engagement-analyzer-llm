@@ -18,16 +18,24 @@ def parse_llm_json(text: str):
     except json.JSONDecodeError as e:
         raise ValueError(f"Invalid JSON:\n{json_text}") from e
 
-    # Schema validation
     if not isinstance(data, list):
         raise ValueError("LLM output is not a JSON array")
 
+    valid_items = []
     for i, item in enumerate(data):
+        # CHANGE: Check for validity and skip instead of raising error
         if not isinstance(item, dict):
-            raise ValueError(f"Item {i} is not an object: {item}")
+            print(f"Warning: Skipping item {i} (not a dictionary): {item}")
+            continue
+        
+        # Check for malformed keys (like id0) or missing keys
         if "id" not in item:
-            raise ValueError(f'Missing "id" in item {i}: {item}')
+            print(f"Warning: Skipping item {i} (missing 'id'): {item}")
+            continue
         if "label" not in item:
-            raise ValueError(f'Missing "label" in item {i}: {item}')
+            print(f"Warning: Skipping item {i} (missing 'label'): {item}")
+            continue
+            
+        valid_items.append(item)
 
-    return data
+    return valid_items
