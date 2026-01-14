@@ -72,6 +72,13 @@ def run_sentence(text):
     suggester = CandidateSuggester(nlp)
     candidates = suggester.get_candidates(text)
 
+    # --- ADD THIS PRINT BLOCK ---
+    print("\nDEBUG: GENERATED CANDIDATES:")
+    for c in candidates:
+        print(f"ID: {c['id']} | Text: {c['text']}")
+    print("-" * 30)
+    # ----------------------------
+    
     prompt = (
         load_prompt()
         .replace("{sentence}", text)
