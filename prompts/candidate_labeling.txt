@@ -28,6 +28,11 @@ Rules:
 - Each item MUST have keys "id" (string) and "label" (string)
 - Use ONLY the IDs provided in the "Candidates" list.
 
+Conflict Resolution:
+- If multiple candidates overlap (e.g., "is" vs "It is often believed"), you must prioritize the LONGEST meaningful span.
+- Assign the stance label (e.g., ATTRIBUTION) to the LONGEST span.
+- Assign label "O" to the shorter, contained spans.
+
 Additional rule:
 If a candidate is a bare declarative statement representing the AUTHOR'S own assertion
 (e.g., "this study shows", "we conclude", "is characterized by"),
@@ -122,18 +127,19 @@ Output:
 
 ---
 
-
-Example 6 (Passive ATTRIBUTION)
+Example 6 (Overlap Priority)
 
 Sentence:
 "It is widely accepted that the earth revolves around the sun."
 
 Candidates:
+1-2: "is"
 0-4: "It is widely accepted"
 9-10: "revolves"
 
 Output:
 [
+  {"id": "1-2", "label": "O"},
   {"id": "0-4", "label": "ATTRIBUTION"},
   {"id": "9-10", "label": "O"}
 ]
