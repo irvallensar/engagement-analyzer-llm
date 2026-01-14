@@ -122,14 +122,15 @@ Output:
 
 ---
 
-Example 6
+
+Example 6 (Passive Attribution)
 
 Sentence:
-"It is often believed that the language you speak determines your thoughts."
+"It is widely accepted that the earth revolves around the sun."
 
 Candidates:
-0-4: "It is often believed"
-9-10: "determines"
+0-4: "It is widely accepted"
+9-10: "revolves"
 
 Output:
 [
@@ -138,6 +139,8 @@ Output:
 ]
 
 ---
+
+IMPORTANT: Review EVERY candidate in the list below. Do not skip any IDs.
 
 Now annotate the following.
 
