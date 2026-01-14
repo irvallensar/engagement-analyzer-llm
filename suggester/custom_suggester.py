@@ -68,15 +68,16 @@ class CandidateSuggester:
                 if is_all_stopwords(span):
                     continue
 
-                # REMOVED: The check that blocks finite verbs in phrases
+                # ❌ DELETE OR COMMENT OUT THESE TWO LINES BELOW ❌
                 # if len(span) > 1 and contains_finite_verb(span):
-                #    continue
-
-                # ❌ Drop long clause-like spans (Keep this to prevent entire sentences)
-                if len(span) > 6: # Increased slightly to allow "It is often believed that"
+                #     continue
+                
+                # ❌ ADJUST THIS LENGTH FILTER ❌
+                # Change > 3 to > 6 so "It is often believed" (4 tokens) fits
+                if len(span) > 6: 
                     continue
 
-                # ❌ Remove bare noun phrases (Keep this)
+                # ❌ Remove bare noun phrases
                 if is_contentless_np(span):
                     continue
                     
