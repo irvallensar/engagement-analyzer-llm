@@ -23,15 +23,20 @@ def parse_llm_json(text: str):
 
     valid_items = []
     for i, item in enumerate(data):
-        # CHANGE: Check for validity and skip instead of raising error
         if not isinstance(item, dict):
             print(f"Warning: Skipping item {i} (not a dictionary): {item}")
             continue
         
-        # Check for malformed keys (like id0) or missing keys
+        # --- FIX START ---
+        # Handle cases where LLM uses "id_and_text" instead of "id"
         if "id" not in item:
-            print(f"Warning: Skipping item {i} (missing 'id'): {item}")
-            continue
+            if "id_and_text" in item:
+                item["id"] = item["id_and_text"] # Map it back to "id"
+            else:
+                print(f"Warning: Skipping item {i} (missing 'id'): {item}")
+                continue
+        # --- FIX END ---
+
         if "label" not in item:
             print(f"Warning: Skipping item {i} (missing 'label'): {item}")
             continue
