@@ -67,18 +67,12 @@ class CandidateSuggester:
 
                 if is_all_stopwords(span):
                     continue
-
-                # ❌ DELETE OR COMMENT OUT THESE TWO LINES BELOW ❌
-                # if len(span) > 1 and contains_finite_verb(span):
-                #     continue
                 
-                # ❌ ADJUST THIS LENGTH FILTER ❌
-                # Change > 3 to > 6 so "It is often believed" (4 tokens) fits
+                # [KEEP THE PREVIOUS LENGTH FIX]
                 if len(span) > 6: 
                     continue
 
-                # ❌ Remove bare noun phrases
-                if is_contentless_np(span):
+                if span[-1].pos_ in {"DET", "SCONJ", "CCONJ", "PRON"}:
                     continue
                     
                 add_candidate({
