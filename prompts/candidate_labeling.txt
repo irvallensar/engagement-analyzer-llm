@@ -27,6 +27,7 @@ Rules:
 - The output MUST be a JSON array
 - Each item MUST have keys "id" (string) and "label" (string)
 - Use ONLY the IDs provided in the "Candidates" list.
+- Return raw JSON only. Do NOT use markdown code blocks (no ```json).
 
 Conflict Resolution:
 - If multiple candidates overlap (e.g., "is" vs "It is often believed"), you must prioritize the LONGEST meaningful span.
