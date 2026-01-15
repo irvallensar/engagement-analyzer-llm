@@ -1,3 +1,98 @@
 old custom_suggester.py
 
+# Custom candidate span suggester
 
+import spacy
+import string
+
+# ---------- helper functions ----------
+def is_punctuation_only(span):
+    return all(token.is_punct for token in span)
+
+def is_all_stopwords(span):
+    return all(token.is_stop for token in span)
+
+def is_contentless_np(span):
+    return (
+        span.root.pos_ in {"NOUN", "PRON"} and
+        not any(tok.pos_ == "VERB" for tok in span)
+    )
+# -------------------------------------
+
+class CandidateSuggester:
+    def __init__(self, nlp, max_width=6):
+        self.nlp = nlp
+        self.max_width = max_width
+
+    def get_candidates(self, text):
+        doc = self.nlp(text)
+        candidates = []
+        
+        # MOVED 'seen' HERE so it resets for every new sentence
+        seen = set()
+
+        # INTERNAL HELPER: Defined inside to access 'seen' and 'candidates'
+        def add_candidate(c):
+            if c["id"] not in seen:
+                candidates.append(c)
+                seen.add(c["id"])
+
+        cid = 0
+
+        # ==================================================
+        # STEP 1: High-priority atomic candidates (VERBS)
+        # ==================================================
+        for token in doc:
+            if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
+                # CHANGED: Use add_candidate here too!
+                add_candidate({
+                    "id": f"{token.i}-{token.i+1}",
+                    "text": token.text,
+                    "start_token": token.i,
+                    "end_token": token.i + 1,
+                })
+                cid += 1
+
+        # ==================================================
+        # STEP 2: Phrase candidates
+        # ==================================================
+        for start in range(len(doc)):
+            for end in range(start + 1, min(start + self.max_width + 1, len(doc) + 1)):
+                span = doc[start:end]
+
+                # ---- HARD FILTERS ----
+                if is_punctuation_only(span):
+                    continue
+                if is_all_stopwords(span):
+                    continue
+                if len(span) > 6: 
+                    continue
+
+                # Bad Ending Filter (Keep this!)
+                if span[-1].pos_ in {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT"}:
+                    continue
+                
+                # --- NEW: Bad Start Filter ---
+                # Reject spans starting with "that" (SCONJ), "the" (DET), "and" (CCONJ)
+                # Note: We allow PRON because "It is..." starts with a PRON.
+                if span[0].pos_ in {"DET", "SCONJ", "CCONJ", "PUNCT"}:
+                    continue
+                # -----------------------------
+
+                # Remove bare noun phrases
+                if is_contentless_np(span):
+                    continue
+                    
+                add_candidate({
+                    "id": f"{span.start}-{span.end}",
+                    "text": span.text,
+                    "start_token": span.start,
+                    "end_token": span.end,
+                })
+                cid += 1
+
+        return candidates
+
+----------------------------------------------------------------------
+
+Old candidate_labeling.txt
