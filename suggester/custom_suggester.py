@@ -66,10 +66,17 @@ class CandidateSuggester:
                 if len(span) > 6: 
                     continue
 
-                # Bad Ending Filter
+                # Bad Ending Filter (Keep this!)
                 if span[-1].pos_ in {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT"}:
                     continue
-                    
+                
+                # --- NEW: Bad Start Filter ---
+                # Reject spans starting with "that" (SCONJ), "the" (DET), "and" (CCONJ)
+                # Note: We allow PRON because "It is..." starts with a PRON.
+                if span[0].pos_ in {"DET", "SCONJ", "CCONJ", "PUNCT"}:
+                    continue
+                # -----------------------------
+
                 # Remove bare noun phrases
                 if is_contentless_np(span):
                     continue
