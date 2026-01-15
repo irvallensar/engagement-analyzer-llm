@@ -1,156 +1,62 @@
 You are an expert linguistic annotator for ENGAGEMENT analysis.
 
 Your task:
-You will be given a sentence and a list of candidate spans extracted from it.
-Each candidate span has an ID and exact text.
-Your job is to assign EXACTLY ONE label to EACH candidate.
+You will be given a sentence and a list of candidate spans.
+Your job is to assign EXACTLY ONE label to EACH candidate ID provided.
 
-Allowed labels (choose one):
-- ENTERTAIN
-- PROCLAIM
-- DENY
-- COUNTER
-- MONOGLOSS
-- ATTRIBUTION
-- SOURCES
-- ENDOPHORIC
-- O
+Allowed labels:
+- ENTERTAIN (possibility, probability, questioning)
+- PROCLAIM (endorsement, pronouncement, concurrence)
+- DENY (negation)
+- COUNTER (adversative, counter-expectancy)
+- MONOGLOSS (bare assertions by the author)
+- ATTRIBUTION (reported speech, beliefs of others)
+- SOURCES (the human/entity source of the attribution)
+- ENDOPHORIC (references to other parts of the paper/figures)
+- O (Outside / Not an engagement marker)
 
 Rules:
-- You MUST return exactly one object per candidate ID
-- If no engagement meaning applies, use label "O"
-- Do NOT invent new IDs
-- Do NOT omit any IDs
-- Do NOT return explanations
-- Do NOT return null
-- Return ONLY valid JSON
-- The output MUST be a JSON array
-- Each item MUST have keys "id" (string) and "label" (string)
-- Use ONLY the IDs provided in the "Candidates" list.
-- Return raw JSON only. Do NOT use markdown code blocks (no ```json).
-
-Conflict Resolution:
-- If multiple candidates overlap (e.g., "is" vs "It is often believed"), you must prioritize the LONGEST meaningful span.
-- Assign the stance label (e.g., ATTRIBUTION) to the LONGEST span.
-- Assign label "O" to the shorter, contained spans.
-
-Additional rule:
-If a candidate is a bare declarative statement representing the AUTHOR'S own assertion
-(e.g., "this study shows", "we conclude", "is characterized by"),
-it MUST be labeled MONOGLOSS.
-
-However, do NOT label a candidate as MONOGLOSS if it is part of a clause attributed to an external source or general opinion (e.g., inside a "that..." clause following "believed", "argued", "said").
+1. Return ONLY valid JSON.
+2. The output must be a list of objects with keys "id" and "label".
+3. If a candidate is NOT an engagement marker (or is just part of the content inside a marker), label it "O".
+4. Do NOT invent new IDs. Use only the ones provided.
 
 ---
 
-Example 1 (Eguchi & Kyle, 2024)
-
-Sentence:
-"As with the teaching of L2 writers and the teaching of digital writing separately, a cross-disciplinary research project would probably be considered the province of the specialists."
-
+Example 1 (Attribution)
+Sentence: "It is often believed that the language you speak determines your thoughts."
 Candidates:
-21-23: "would probably"
-
+0-4: "It is often believed"
+9-10: "determines"
 Output:
 [
-  {"id": "21-23", "label": "ENTERTAIN"}
+  {"id": "0-4", "label": "ATTRIBUTION"},
+  {"id": "9-10", "label": "O"}
 ]
 
----
-
-Example 2 (Eguchi & Kyle, 2024)
-
-Sentence:
-"In other words, scholars in digital writing may say this type of cross-disciplinary research is outside of their expertise, an argument echoed by L2 writing specialists."
-
+Example 2 (Entertain)
+Sentence: "This result suggests that the treatment might be effective."
 Candidates:
-8-9: "may"
-23-25: "an argument"
-27-30: "L2 writing specialists"
-
+2-3: "suggests"
+6-8: "might be"
 Output:
 [
-  {"id": "8-9", "label": "ENTERTAIN"},
-  {"id": "23-25", "label": "ATTRIBUTION"},
-  {"id": "27-30", "label": "SOURCES"}
+  {"id": "2-3", "label": "ENTERTAIN"},
+  {"id": "6-8", "label": "ENTERTAIN"}
 ]
 
----
-
-Example 3 (Eguchi & Kyle, 2024)
-
-Sentence:
-"Though we do not advocate that researchers develop projects about issues in which they have little grounding, we do believe that researchers should view this disciplinary division as an opportunity rather than an obstacle."
-
+Example 3 (Counter/Deny)
+Sentence: "However, we did not find any evidence."
 Candidates:
-0-17: "Though we do not advocate that researchers develop projects about issues in which they have little grounding,"
-2-5: "do not advocate"
-
-Output:
-[
-  {"id": "0-17", "label": "COUNTER"},
-  {"id": "2-5", "label": "DENY"}
-]
-
----
-
-Example 4 (Eguchi & Kyle, 2024)
-
-Sentence:
-"Both writing instructors and writing researchers face situations that specializations have not prepared them for."
-
-Candidates:
-6-7: "face"
-10-13: "have not prepared"
-
-Output:
-[
-  {"id": "6-7", "label": "MONOGLOSS"},
-  {"id": "10-13", "label": "DENY"}
-]
-
----
-
-Example 5 (Eguchi & Kyle, 2024)
-
-Sentence:
-"Yet, to engage in these types of inquiry (such as answering the questions above), teacher-scholars have little theoretical and methodological precedent for studying issues of these disciplines."
-
-Candidates:
-0-1: "Yet"
-15-16: "above"
-
+0-1: "However"
+3-5: "did not"
 Output:
 [
   {"id": "0-1", "label": "COUNTER"},
-  {"id": "15-16", "label": "ENDOPHORIC"}
+  {"id": "3-5", "label": "DENY"}
 ]
 
 ---
-
-
-Example 6 (Attribution Scope)
-
-Sentence:
-"It is widely accepted that the earth revolves around the sun."
-
-Candidates:
-1-2: "is"
-0-4: "It is widely accepted"
-9-10: "revolves"
-6-11: "earth revolves around the sun"
-
-Output:
-[
-  {"id": "1-2", "label": "O"},
-  {"id": "0-4", "label": "ATTRIBUTION"},
-  {"id": "9-10", "label": "O"},
-  {"id": "6-11", "label": "O"}
-]
-
----
-
-IMPORTANT: Review EVERY candidate in the list below. Do not skip any IDs.
 
 Now annotate the following.
 
