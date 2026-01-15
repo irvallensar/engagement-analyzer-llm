@@ -1,14 +1,15 @@
 import spacy
 
 class CandidateSuggester:
-    def __init__(self, nlp, max_width=5):  # CHANGED: Reduced max_width from 6 to 5
+    def __init__(self, nlp, max_width=5):
         self.nlp = nlp
         self.max_width = max_width
 
     def filter_contained_candidates(self, candidates):
         """
         Deduplication Rule:
-        If we have "It is often believed" (0-4), we remove "believed" (3-4).
+        Removes smaller candidates that are strictly contained inside larger ones.
+        e.g., removes "believed" if "It is often believed" exists.
         """
         # Sort by length (longest first)
         candidates.sort(key=lambda x: (x["end_token"] - x["start_token"]), reverse=True)
@@ -18,6 +19,7 @@ class CandidateSuggester:
             is_inside = False
             for existing in final_list:
                 # Check if 'c' is strictly inside 'existing'
+                # (and not the exact same span)
                 if (c["start_token"] >= existing["start_token"] and 
                     c["end_token"] <= existing["end_token"] and
                     c["id"] != existing["id"]):
@@ -27,7 +29,7 @@ class CandidateSuggester:
             if not is_inside:
                 final_list.append(c)
         
-        # Sort back by position
+        # Sort back by position for the LLM
         final_list.sort(key=lambda x: x["start_token"])
         return final_list
 
@@ -41,7 +43,7 @@ class CandidateSuggester:
                 raw_candidates.append(c)
                 seen_ids.add(c["id"])
 
-        # --- STEP 1: Single Verbs ---
+        # --- STEP 1: Atomic Verbs ---
         for token in doc:
             if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
                 add({
@@ -52,34 +54,47 @@ class CandidateSuggester:
                 })
 
         # --- STEP 2: Phrases ---
-        # Strictly Forbidden Start/End POS tags
-        BAD_START = {"DET", "SCONJ", "CCONJ", "PUNCT", "PART", "ADV", "ADP"} 
-        BAD_END =   {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT", "ADP"}
+        # 1. Absolute Garbage Starts (Function words)
+        BAD_START_ALWAYS = {"DET", "SCONJ", "CCONJ", "PUNCT", "PART", "ADP"}
+        
+        # 2. Garbage Ends
+        BAD_END = {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT", "ADP"}
 
         for start in range(len(doc)):
-            # Loop up to max_width (default 5)
             for end in range(start + 1, min(start + self.max_width + 1, len(doc) + 1)):
                 span = doc[start:end]
                 
-                # 1. Skip if span contains 'that', 'if', 'whether' (SCONJ)
-                # Stance markers usually precede 'that', they don't include it.
+                # --- FILTER 1: Strict Inner Content ---
+                # Stance markers rarely contain sub-conjunctions like 'that'
                 if any(t.pos_ == "SCONJ" for t in span):
                     continue
 
-                # 2. Basic content filters
-                if all(t.is_punct for t in span): continue
-                if all(t.is_stop for t in span): continue
-
-                # 3. Strict Boundary Checks
-                # Exception: Allow "It" (PRON) to start a span (e.g. "It is...")
-                if span[0].pos_ in BAD_START and span[0].text.lower() != "it":
+                # --- FILTER 2: Start Tokens ---
+                first_pos = span[0].pos_
+                
+                # Reject if starts with function word (e.g. "The", "That")
+                # Exception: "It" is allowed (PRON)
+                if first_pos in BAD_START_ALWAYS:
                     continue
+                
+                # NEW: Reject Multi-word spans starting with NOUN/PROPN
+                # This kills "language you speak..." (Starts with NOUN, len > 1)
+                # But keeps "possibility" (Starts with NOUN, len == 1)
+                if len(span) > 1 and first_pos in {"NOUN", "PROPN"}:
+                    continue
+
+                # --- FILTER 3: End Tokens ---
                 if span[-1].pos_ in BAD_END:
                     continue
 
-                # 4. Remove contentless Noun Phrases (e.g. "the language")
-                if span.root.pos_ in {"NOUN", "PRON"} and not any(t.pos_ in {"VERB", "AUX"} for t in span):
+                # --- FILTER 4: Contentless NPs ---
+                # e.g. "the language" -> Root is NOUN, no verb.
+                if span.root.pos_ in {"NOUN", "PRON"} and not any(t.pos_ in {"VERB", "AUX", "ADJ", "ADV"} for t in span):
                     continue
+
+                # --- FILTER 5: Basic Noise ---
+                if all(t.is_punct for t in span): continue
+                if all(t.is_stop for t in span): continue
 
                 add({
                     "id": f"{span.start}-{span.end}",
