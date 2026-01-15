@@ -127,7 +127,8 @@ Output:
 
 ---
 
-Example 6 (Overlap Priority)
+
+Example 6 (Attribution Scope)
 
 Sentence:
 "It is widely accepted that the earth revolves around the sun."
@@ -136,12 +137,14 @@ Candidates:
 1-2: "is"
 0-4: "It is widely accepted"
 9-10: "revolves"
+6-11: "earth revolves around the sun"
 
 Output:
 [
   {"id": "1-2", "label": "O"},
   {"id": "0-4", "label": "ATTRIBUTION"},
-  {"id": "9-10", "label": "O"}
+  {"id": "9-10", "label": "O"},
+  {"id": "6-11", "label": "O"}
 ]
 
 ---
