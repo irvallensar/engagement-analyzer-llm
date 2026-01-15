@@ -67,7 +67,7 @@ class CandidateSuggester:
                     continue
 
                 # Bad Ending Filter
-                if span[-1].pos_ in {"DET", "SCONJ", "CCONJ", "PRON"}:
+                if span[-1].pos_ in {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT"}:
                     continue
                     
                 # Remove bare noun phrases
