@@ -64,12 +64,12 @@ class CandidateSuggester:
             for end in range(start + 1, min(start + self.max_width + 1, len(doc) + 1)):
                 span = doc[start:end]
                 
-                # --- FILTER 1: Strict Inner Content ---
+                # FILTER 1: Strict Inner Content
                 # Stance markers rarely contain sub-conjunctions like 'that'
                 if any(t.pos_ == "SCONJ" for t in span):
                     continue
 
-                # --- FILTER 2: Start Tokens ---
+                # FILTER 2: Start Tokens
                 first_pos = span[0].pos_
                 
                 # Reject if starts with function word (e.g. "The", "That")
@@ -83,16 +83,16 @@ class CandidateSuggester:
                 if len(span) > 1 and first_pos in {"NOUN", "PROPN"}:
                     continue
 
-                # --- FILTER 3: End Tokens ---
+                # FILTER 3: End Tokens 
                 if span[-1].pos_ in BAD_END:
                     continue
 
-                # --- FILTER 4: Contentless NPs ---
+                # FILTER 4: Contentless NPs 
                 # e.g. "the language" -> Root is NOUN, no verb.
                 if span.root.pos_ in {"NOUN", "PRON"} and not any(t.pos_ in {"VERB", "AUX", "ADJ", "ADV"} for t in span):
                     continue
 
-                # --- FILTER 5: Basic Noise ---
+                # FILTER 5: Basic Noise 
                 if all(t.is_punct for t in span): continue
                 if all(t.is_stop for t in span): continue
 
@@ -103,7 +103,7 @@ class CandidateSuggester:
                     "end_token": span.end,
                 })
 
-        # --- STEP 3: Deduplicate ---
+        # STEP 3: Deduplicate
         clean_candidates = self.filter_contained_candidates(raw_candidates)
         
         return clean_candidates
