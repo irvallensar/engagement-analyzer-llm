@@ -16,7 +16,7 @@ def build_candidates_block(candidates):
     return "\n".join(f'{c["id"]}: "{c["text"]}"' for c in candidates)
 
 
-# ---------- POST-PROCESSING RULES ----------
+# POST-PROCESSING RULES
 
 def suppress_complement_proclaim(llm_items, candidates):
     """Suppress PROCLAIM inside / after MONOGLOSS spans"""
@@ -39,10 +39,9 @@ def suppress_complement_proclaim(llm_items, candidates):
     return cleaned
 
 
-# In scripts/run_evaluation.py
 
 def force_monogloss(candidates, llm_items):
-    """Demote spurious ENTERTAIN only if no stance markers are present"""
+    """Demote false ENTERTAIN only if no stance markers are present"""
     # Expanded list to include mental verbs, adverbs, and attribution signals
     uncertainty_markers = {
         "may", "might", "could", "probably", "possibly", "likely", "unlikely",
@@ -65,7 +64,7 @@ def force_monogloss(candidates, llm_items):
     return fixed
 
 
-# ---------- MAIN PIPELINE ----------
+# MAIN PIPELINE 
 
 def run_sentence(text):
     nlp = spacy.load("en_core_web_sm")
