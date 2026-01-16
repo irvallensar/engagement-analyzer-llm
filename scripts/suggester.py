@@ -1,5 +1,3 @@
-# scripts/suggester.py
-
 import spacy
 from typing import List, Dict
 
