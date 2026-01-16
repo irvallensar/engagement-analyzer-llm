@@ -43,7 +43,7 @@ class CandidateSuggester:
                 raw_candidates.append(c)
                 seen_ids.add(c["id"])
 
-        # --- STEP 1: Atomic Verbs ---
+        # STEP 1: Atomic Verbs
         for token in doc:
             if token.pos_ == "VERB" and token.morph.get("VerbForm") == ["Fin"]:
                 add({
@@ -53,11 +53,11 @@ class CandidateSuggester:
                     "end_token": token.i + 1,
                 })
 
-        # --- STEP 2: Phrases ---
-        # 1. Absolute Garbage Starts (Function words)
+        # STEP 2: Phrases
+        # 1. Useless Starts (Function words)
         BAD_START_ALWAYS = {"DET", "SCONJ", "CCONJ", "PUNCT", "PART", "ADP"}
         
-        # 2. Garbage Ends
+        # 2. Useless Ends
         BAD_END = {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT", "ADP"}
 
         for start in range(len(doc)):
@@ -77,8 +77,8 @@ class CandidateSuggester:
                 if first_pos in BAD_START_ALWAYS:
                     continue
                 
-                # NEW: Reject Multi-word spans starting with NOUN/PROPN
-                # This kills "language you speak..." (Starts with NOUN, len > 1)
+                # Reject Multi-word spans starting with NOUN/PROPN
+                # This removes "language you speak..." (Starts with NOUN, len > 1)
                 # But keeps "possibility" (Starts with NOUN, len == 1)
                 if len(span) > 1 and first_pos in {"NOUN", "PROPN"}:
                     continue
