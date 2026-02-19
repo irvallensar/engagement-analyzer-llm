@@ -30,17 +30,12 @@ def parse_llm_json(text: str):
             continue
         
         # FIX: Accept either 'id' or 'text'
-        #if "id" not in item and "text" not in item: #requires at least one item or one text
-             #print(f"Warning: Skipping item {i} (missing 'id' and 'text'): {item}")
-             #continue
-
-        #if "label" not in item: #requires label
-            #continue
-
-        # Accept if it has text
-        if "text" not in item:
-             print(f"Warning: Skipping item {i} (missing 'text'): {item}")
+        if "id" not in item and "text" not in item: #requires at least one item or one text
+             print(f"Warning: Skipping item {i} (missing 'id' and 'text'): {item}")
              continue
+
+        if "label" not in item: #requires label
+            #continue
             
         valid_items.append(item) 
 
