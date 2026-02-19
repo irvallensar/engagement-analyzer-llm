@@ -15,7 +15,7 @@ class CandidateSuggester:
         """
         # Sort candidates by LENGTH (Longest first).
         # lambda x: (end - start) calculates the length.
-        # reverse=True means big numbers come first.
+        # reverse=True means prioritize big spans first, then reject the small ones later.
         candidates.sort(key=lambda x: (x["end_token"] - x["start_token"]), reverse=True)
         
         final_list = []
