@@ -13,14 +13,21 @@ Allowed labels:
 
 Rules:
 1. Return ONLY valid JSON.
-2. The output must be a list of objects with keys "text" (the exact span of words) and "label".
-3. Do not invent words. The text must be copied exactly from the sentence.
+2. The output must be a list of objects with keys: 
+   - "text" (the exact engagement marker)
+   - "label" (the engagement type)
+   - "context_before" (the 2 or 3 words immediately preceding the marker. If the marker is at the very beginning of the sentence, leave this empty "").
+3. Do not invent words. All text must be copied exactly from the sentence.
 
-Example 1 (Attribution)
-Sentence: "It is often believed that the language you speak determines your thoughts."
+Example 1 (Duplicate Word Example)
+Sentence: "The television shows are based on what the data shows."
 Output:
 [
-  {"text": "It is often believed", "label": "ATTRIBUTION"}
+  {
+    "text": "shows", 
+    "label": "MONOGLOSS", 
+    "context_before": "the data"
+  }
 ]
 
 Now annotate the following.
