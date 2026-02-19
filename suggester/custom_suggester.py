@@ -24,11 +24,13 @@ class CandidateSuggester:
             for existing in final_list:
                 # Check if current candidate 'c' fits strictly inside 'existing'.
                 # c.start >= existing.start AND c.end <= existing.end
-                if (c["start_token"] >= existing["start_token"] and 
-                    c["end_token"] <= existing["end_token"] and
-                    c["id"] != existing["id"]): # Ensure we don't compare a span to itself
+                if (c["start_token"] >= existing["start_token"] and # Does c start at or after the bigger span starts?
+                    c["end_token"] <= existing["end_token"] and # Does c end at or before the bigger span ends?
+                    c["id"] != existing["id"]): # Ensure the span don't compare to itself
                     is_inside = True
-                    break # Found a parent! Stop looking.
+                    break # A parent is found (bigger than c). Reject c. 
+                    # e.g. "It is believed" = parent ; "believed" = child ; meaning the "believed" inside the "it is believed" is ignored.
+
             
             # If no parent found, keep this candidate.
             if not is_inside:
@@ -42,7 +44,7 @@ class CandidateSuggester:
     def get_candidates(self, text):
         doc = self.nlp(text) # Run spaCy pipeline (POS tagging, etc.)
         raw_candidates = []
-        seen_ids = set()     # A set to prevent duplicate IDs.
+        seen_ids = set()     # A set to prevent duplicate IDs. A memory of which the candidates are already added.
 
         # Helper function to append candidates safely
         def add(c):
@@ -64,8 +66,8 @@ class CandidateSuggester:
 
         # STEP 2: Phrases (Multi-words)
         # Definitions of "Bad" starting/ending POS tags
-        BAD_START_ALWAYS = {"DET", "SCONJ", "CCONJ", "PUNCT", "PART", "ADP"}
-        BAD_END = {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT", "ADP"}
+        BAD_START_ALWAYS = {"DET", "SCONJ", "CCONJ", "PUNCT", "PART", "ADP"} # POS tags that are not allowed at the start of a phrase.
+        BAD_END = {"DET", "SCONJ", "CCONJ", "PRON", "PUNCT", "ADP"} #unwanted POS tags that produce incomplete information
 
         # Sliding Window Loop
         for start in range(len(doc)):
@@ -74,8 +76,8 @@ class CandidateSuggester:
                 span = doc[start:end] # The actual phrase being tested
                 
                 # FILTER 1: No sub-conjunctions inside (e.g., rejects "believed that the")
-                if any(t.pos_ == "SCONJ" for t in span):
-                    continue
+                if any(t.pos_ == "SCONJ" for t in span): #t.pos_ is the part-of-speech tag of a token, used to...                              
+                    continue                             #...identify its grammatical role such as noun, verb, or conjunction.
 
                 # FILTER 2: Start Token Rules
                 first_pos = span[0].pos_
