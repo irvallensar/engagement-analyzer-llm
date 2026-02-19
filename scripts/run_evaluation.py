@@ -77,46 +77,51 @@ def force_monogloss(candidates, llm_items):
 # --- MAIN PIPELINE ---
 
 def run_sentence(text):
-    # 1. Setup spaCy and Suggester
     nlp = spacy.load("en_core_web_sm")
-    suggester = CandidateSuggester(nlp)
+    doc = nlp(text)
     
-    # 2. Get the filtered candidates
-    candidates = suggester.get_candidates(text)
-    
-    # 3. Build the prompt
-    # Replaces placeholders {sentence} and {candidates} in the text file
-    prompt = (
-        load_prompt()
-        .replace("{sentence}", text)
-        .replace("{candidates}", build_candidates_block(candidates))
-    )
+    # 1. Load prompt and ONLY replace {sentence}
+    prompt = load_prompt().replace("{sentence}", text)
 
-    # 4. Call Ollama (The AI)
+    # 2. Call the LLM
     llm_raw = call_local_llm(prompt)
-    print("RAW LLM OUTPUT:") # Debug print to see what AI said
+    print("RAW LLM OUTPUT:")
     print(repr(llm_raw))
     print("------")
 
-    # 5. Parse JSON from the AI's messy string
+    # 3. Parse JSON
     llm_items = parse_llm_json(llm_raw)
-    
-    # 6. Apply the Python Fixes (Post-processing)
-    llm_items = suppress_complement_proclaim(llm_items, candidates)
-    llm_items = force_monogloss(candidates, llm_items)
 
-    # 7. Convert results to the final Tuple format: (Label, Start, End)
     pred_spans = []
+    
+    # 4. Map the LLM's text back to spaCy token indices
     for item in llm_items:
         if item["label"] == "O":
-            continue # Skip "Outside" labels
+            continue
+            
+        span_text = item.get("text", "")
+        if not span_text: 
+            continue
 
-        c = next(c for c in candidates if c["id"] == item["id"])
-        pred_spans.append((
-            item["label"],
-            c["start_token"],
-            c["end_token"]
-        ))
+        # Find where the string starts in the original sentence
+        start_char = text.find(span_text)
+        
+        if start_char != -1:
+            end_char = start_char + len(span_text)
+            
+            # Use spaCy to convert character positions back to Token IDs (0, 1, 2)
+            span = doc.char_span(start_char, end_char, alignment_mode="expand")
+            
+            if span:
+                pred_spans.append((
+                    item["label"],
+                    span.start,
+                    span.end
+                ))
+            else:
+                print(f"Warning: Could not align tokens for text: '{span_text}'")
+        else:
+            print(f"Warning: LLM hallucinated text not in sentence: '{span_text}'")
 
     return pred_spans
 
