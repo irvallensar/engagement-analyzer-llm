@@ -36,6 +36,11 @@ def parse_llm_json(text: str):
 
         if "label" not in item: #requires label
             continue
+
+        # Accept if it has text
+        if "text" not in item:
+             print(f"Warning: Skipping item {i} (missing 'text'): {item}")
+             continue
             
         valid_items.append(item) 
 
