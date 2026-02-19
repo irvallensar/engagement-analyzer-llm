@@ -1,12 +1,12 @@
 import spacy
 from pathlib import Path
 
-# Imports your custom tools from other files
+# Imports custom tools from other files
 from suggester.custom_suggester import CandidateSuggester
 from scripts.local_llm_client import call_local_llm
 from scripts.llm_utils import parse_llm_json
 
-# Defines where your prompt template lives
+# Defines where prompt template lives
 PROMPT_PATH = Path("prompts/candidate_labeling.txt")
 
 # Helper: Reads the text from the prompt file
@@ -94,22 +94,37 @@ def run_sentence(text):
 
     pred_spans = []
     
-    # 4. Map the LLM's text back to spaCy token indices
+# 4. Map the LLM's text back to spaCy token indices using Context Anchoring
     for item in llm_items:
         if item["label"] == "O":
             continue
             
         span_text = item.get("text", "")
+        context_before = item.get("context_before", "").strip()
+        
         if not span_text: 
             continue
 
-        # Find where the string starts in the original sentence
-        start_char = text.find(span_text)
+        start_char = -1
         
+        # Scenario A: Usecontext words to help us find the exact duplicate
+        if context_before:
+            # Search for the context AND the marker together (e.g., "the data shows")
+            search_string = f"{context_before} {span_text}"
+            combo_start = text.find(search_string)
+            
+            if combo_start != -1:
+                # The actual marker starts right after the context and the space
+                start_char = combo_start + len(context_before) + 1
+        
+        # Scenario B: No context provided (e.g., marker is the first word)
+        if start_char == -1:
+            start_char = text.find(span_text)
+            
+        # Map back to tokens
         if start_char != -1:
             end_char = start_char + len(span_text)
             
-            # Use spaCy to convert character positions back to Token IDs (0, 1, 2)
             span = doc.char_span(start_char, end_char, alignment_mode="expand")
             
             if span:
@@ -125,8 +140,8 @@ def run_sentence(text):
 
     return pred_spans
 
-# Ensures this runs only if you type "python run_evaluation.py"
+# Ensures this runs only with "python run_evaluation.py"
 if __name__ == "__main__":
-    sentence = "It is often believed that the language you speak determines your thoughts."
+    sentence = "The television shows are based on what the data shows."
     preds = run_sentence(sentence)
     # Print results
