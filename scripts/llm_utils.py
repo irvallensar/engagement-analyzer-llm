@@ -26,7 +26,6 @@ def parse_llm_json(text: str):
     valid_items = []
     for i, item in enumerate(data): # enumerate gives index + value
         if not isinstance(item, dict): #rejects strings, numbers, lists
-
             continue
         
         # FIX: Accept either 'id' or 'text'
