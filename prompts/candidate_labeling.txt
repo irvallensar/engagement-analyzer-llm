@@ -1,8 +1,7 @@
 You are an expert linguistic annotator for ENGAGEMENT analysis.
 
 Your task:
-You will be given a sentence and a list of candidate spans.
-Your job is to assign EXACTLY ONE label to EACH candidate ID provided.
+You will be given a sentence. Identify all engagement markers and assign EXACTLY ONE label to each.
 
 Allowed labels:
 - ENTERTAIN (possibility, probability, questioning)
@@ -11,52 +10,18 @@ Allowed labels:
 - COUNTER (adversative, counter-expectancy)
 - MONOGLOSS (bare assertions by the author)
 - ATTRIBUTION (reported speech, beliefs of others)
-- SOURCES (the human/entity source of the attribution)
-- ENDOPHORIC (references to other parts of the paper/figures)
-- O (Outside / Not an engagement marker)
 
 Rules:
 1. Return ONLY valid JSON.
-2. The output must be a list of objects with keys "id" and "label".
-3. If a candidate is NOT an engagement marker (or is just part of the content inside a marker), label it "O".
-4. Do NOT invent new IDs. Use only the ones provided.
-
----
+2. The output must be a list of objects with keys "text" (the exact span of words) and "label".
+3. Do not invent words. The text must be copied exactly from the sentence.
 
 Example 1 (Attribution)
 Sentence: "It is often believed that the language you speak determines your thoughts."
-Candidates:
-0-4: "It is often believed"
-9-10: "determines"
 Output:
 [
-  {"id": "0-4", "label": "ATTRIBUTION"},
-  {"id": "9-10", "label": "O"}
+  {"text": "It is often believed", "label": "ATTRIBUTION"}
 ]
-
-Example 2 (Entertain)
-Sentence: "This result suggests that the treatment might be effective."
-Candidates:
-2-3: "suggests"
-6-8: "might be"
-Output:
-[
-  {"id": "2-3", "label": "ENTERTAIN"},
-  {"id": "6-8", "label": "ENTERTAIN"}
-]
-
-Example 3 (Counter/Deny)
-Sentence: "However, we did not find any evidence."
-Candidates:
-0-1: "However"
-3-5: "did not"
-Output:
-[
-  {"id": "0-1", "label": "COUNTER"},
-  {"id": "3-5", "label": "DENY"}
-]
-
----
 
 Now annotate the following.
 
