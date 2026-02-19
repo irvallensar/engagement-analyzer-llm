@@ -35,7 +35,7 @@ def parse_llm_json(text: str):
              continue
 
         if "label" not in item: #requires label
-            #continue
+            continue
             
         valid_items.append(item) 
 
