@@ -114,6 +114,6 @@ class CandidateSuggester:
                 })
 
         # STEP 3: Deduplicate
-        clean_candidates = self.filter_contained_candidates(raw_candidates)
+        clean_candidates = self.filter_contained_candidates(raw_candidates) #clean the candidate list (now a filtered version), without the unnecessary spans
         
         return clean_candidates
