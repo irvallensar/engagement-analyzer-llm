@@ -107,7 +107,7 @@ def run_sentence(text):
 
         start_char = -1
         
-        # Scenario A: Usecontext words to help us find the exact duplicate
+        # Scenario A: We have context words to help us find the exact duplicate
         if context_before:
             # Search for the context AND the marker together (e.g., "the data shows")
             search_string = f"{context_before} {span_text}"
