@@ -24,18 +24,18 @@ def parse_llm_json(text: str):
 
     # 3. Validation Loop
     valid_items = []
-    for i, item in enumerate(data): # enumerate gives index + value
-        if not isinstance(item, dict): #rejects strings, numbers, lists
+    for i, item in enumerate(data):
+        if not isinstance(item, dict):
             continue
         
-        # FIX: Accept either 'id' or 'text'
-        if "id" not in item and "text" not in item: #requires at least one item or one text
-             print(f"Warning: Skipping item {i} (missing 'id' and 'text'): {item}")
+        # FIX: Accept if it has text (Ignore the 'id' requirement)
+        if "text" not in item:
+             print(f"Warning: Skipping item {i} (missing 'text'): {item}")
              continue
 
-        if "label" not in item: #requires label
+        if "label" not in item:
             continue
             
-        valid_items.append(item) 
+        valid_items.append(item) #requirees a label
 
-    return valid_items #Returns only clean data.
+    return valid_items # returns only clean data
