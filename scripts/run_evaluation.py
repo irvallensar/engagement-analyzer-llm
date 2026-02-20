@@ -104,7 +104,7 @@ def run_sentence(text):
             continue
 
         # Find where the string (text) starts in the original sentence
-        start_char = text.find(span_text)
+        start_char = text.find(span_text) #scans the text from left-to-right, and gets the first match
         
         if start_char != -1:
             end_char = start_char + len(span_text)
