@@ -2,9 +2,9 @@ import spacy
 from pathlib import Path
 
 # Imports your custom tools from other files
-from suggester.custom_suggester import CandidateSuggester
-from scripts.local_llm_client import call_local_llm
-from scripts.llm_utils import parse_llm_json
+from suggester.custom_suggester import CandidateSuggester # generates candidate phrases
+from scripts.local_llm_client import call_local_llm # sends prompt to LLM
+from scripts.llm_utils import parse_llm_json # cleans LLM output
 
 # Defines where your prompt template lives
 PROMPT_PATH = Path("prompts/candidate_labeling.txt")
@@ -17,7 +17,7 @@ def load_prompt():
 # Input: [{"id": "0-1", "text": "word"}, ...]
 # Output: "0-1: "word"\n..."
 def build_candidates_block(candidates):
-    return "\n".join(f'{c["id"]}: "{c["text"]}"' for c in candidates)
+    return "\n".join(f'{c["id"]}: "{c["text"]}"' for c in candidates) #LLM must expect text not python object
 
 
 # --- POST-PROCESSING RULES (The Python Logic fixes) ---
@@ -81,43 +81,43 @@ def run_sentence(text):
     doc = nlp(text)
     
     # 1. Load prompt and ONLY replace {sentence}
-    prompt = load_prompt().replace("{sentence}", text)
+    prompt = load_prompt().replace("{sentence}", text) #"Template: "Classify: {sentence}"
 
     # 2. Call the LLM
-    llm_raw = call_local_llm(prompt)
+    llm_raw = call_local_llm(prompt) #sends prompt to local model.
     print("RAW LLM OUTPUT:")
     print(repr(llm_raw))
     print("------")
 
     # 3. Parse JSON
-    llm_items = parse_llm_json(llm_raw)
+    llm_items = parse_llm_json(llm_raw) #Converts messy text into clean Python list.
 
-    pred_spans = []
+    pred_spans = [] #create empty list of prediction spans
     
     # 4. Map the LLM's text back to spaCy token indices
-    for item in llm_items:
+    for item in llm_items: #loop through each LLM prediction
         if item["label"] == "O":
             continue
             
-        span_text = item.get("text", "")
+        span_text = item.get("text", "") #get predicted text
         if not span_text: 
             continue
 
-        # Find where the string starts in the original sentence
+        # Find where the string (text) starts in the original sentence
         start_char = text.find(span_text)
         
         if start_char != -1:
             end_char = start_char + len(span_text)
             
             # Use spaCy to convert character positions back to Token IDs (0, 1, 2)
-            span = doc.char_span(start_char, end_char, alignment_mode="expand")
+            span = doc.char_span(start_char, end_char, alignment_mode="expand") #character positions → token indices
             
             if span:
                 pred_spans.append((
                     item["label"],
                     span.start,
                     span.end
-                ))
+                )) #making it the final output, (label, start_token, end_token)
             else:
                 print(f"Warning: Could not align tokens for text: '{span_text}'")
         else:
