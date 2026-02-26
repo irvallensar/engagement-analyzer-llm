@@ -127,6 +127,6 @@ def run_sentence(text):
 
 # Ensures this runs only with "python run_evaluation.py"
 if __name__ == "__main__":
-    sentence = "The language you speak might influence your thoughts."
+    sentence = "It is often believed that the language you speak determines your thoughts."
     preds = run_sentence(sentence)
     # Print results
