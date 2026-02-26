@@ -2,7 +2,7 @@ import subprocess
 
 def call_local_llm(prompt: str) -> str:
     process = subprocess.Popen(
-        ["ollama", "run", "phi3"],
+        ["ollama", "run", "mistral"],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
