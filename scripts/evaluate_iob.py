@@ -127,7 +127,11 @@ def parse_iob_file(filepath):
 def evaluate(filepath):
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
-        
+
+    if max_samples is not None:
+        dataset = dataset[:max_samples]
+        print(f"*** QUICK TEST MODE: Limiting to first {max_samples} sentences ***")
+    
     print(f"Found {len(dataset)} sentences to evaluate.\n")
 
     true_positives = 0
