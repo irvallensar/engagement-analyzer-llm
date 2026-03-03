@@ -1,34 +1,144 @@
-You are an expert linguistic annotator for ENGAGEMENT analysis.
+You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse.
 
 Your task:
-You will be given a sentence. Identify all engagement markers and assign EXACTLY ONE label to each.
+Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
 
-Allowed labels:
-- ENTERTAIN (possibility, probability, questioning)
-- PROCLAIM (endorsement, pronouncement, concurrence)
-- DENY (negation)
-- COUNTER (adversative, counter-expectancy)
-- MONOGLOSS (bare assertions by the author)
-- ATTRIBUTION (reported speech, beliefs of others)
+Allowed labels & Definitions:
+1. MONOGLOSS: Bare assertions ignoring alternative viewpoints.
+2. DENY: Rejects an alternative position directly.
+3. COUNTER: Replaces an expected alternative position.
+4. PROCLAIM: Shows strong commitment, concurrence, or endorsement.
+5. ENTERTAIN: Presents the position as only one possibility.
+6. ATTRIBUTION: Delegates responsibility to an external source.
+7. CITATION: In-text or narrative citations.
+8. SOURCES: Nominal expressions mentioning external sources.
+9. ENDOPHORIC: Refers to information in other parts of its own text.
+10. JUSTIFYING: Locutions that signal persuasion or substantiation.
 
 Rules:
 1. Return ONLY valid JSON.
-2. The output must be a list of objects with keys: 
-   - "text" (the exact engagement marker)
+2. The exact function of a marker MUST be determined with its co-text in mind.
+3. The output must be a list of objects with keys: 
+   - "text" (the exact engagement marker span)
    - "label" (the engagement type)
    - "context_before" (the 2 or 3 words immediately preceding the marker. If the marker is the first word, leave this empty "").
-3. Do not invent words. All text must be copied exactly from the sentence.
+4. Do not invent words. All text must be copied exactly from the sentence.
+5. If there are NO markers in the sentence, return an empty array [].
 
-Example 1 (Attribution)
+Example 1 (Monogloss)
+Sentence: "The language you speak determines your thoughts."
+Output:
+[
+  {
+    "text": "determines", 
+    "label": "MONOGLOSS",
+    "context_before": "you speak"
+  }
+]
+
+Example 2 (Deny)
+Sentence: "The language you speak does not determine your thoughts."
+Output:
+[
+  {
+    "text": "does not determine", 
+    "label": "DENY",
+    "context_before": "you speak"
+  }
+]
+
+Example 3 (Counter)
+Sentence: "Despite the lack of evidence, the language you speak determines your thoughts."
+Output:
+[
+  {
+    "text": "Despite the lack of evidence", 
+    "label": "COUNTER",
+    "context_before": ""
+  }
+]
+
+Example 4 (Proclaim)
+Sentence: "As we all know, the language you speak determines your thoughts."
+Output:
+[
+  {
+    "text": "As we all know", 
+    "label": "PROCLAIM",
+    "context_before": ""
+  }
+]
+
+Example 5 (Entertain)
+Sentence: "The language you speak might influence your thoughts."
+Output:
+[
+  {
+    "text": "might influence", 
+    "label": "ENTERTAIN",
+    "context_before": "you speak"
+  }
+]
+
+Example 6 (Attribution)
 Sentence: "It is often believed that the language you speak determines your thoughts."
 Output:
 [
   {
-    "text": "It is often believed", 
+    "text": "It is often believed that", 
     "label": "ATTRIBUTION",
     "context_before": ""
   }
 ]
+
+Example 7 (Citation)
+Sentence: "The theory of linguistic relativity, as described by Smith (2000), is widely debated."
+Output:
+[
+  {
+    "text": "Smith (2000)", 
+    "label": "CITATION",
+    "context_before": "described by"
+  }
+]
+
+Example 8 (Sources)
+Sentence: "A recent paper reports that the language you speak determines your thoughts."
+Output:
+[
+  {
+    "text": "A recent paper reports", 
+    "label": "SOURCES",
+    "context_before": ""
+  }
+]
+
+Example 9 (Endophoric)
+Sentence: "This concept is discussed in Section 9 of the document."
+Output:
+[
+  {
+    "text": "in Section 9", 
+    "label": "ENDOPHORIC",
+    "context_before": "is discussed"
+  }
+]
+
+Example 10 (Justifying)
+Sentence: "The current discussion is important because it highlights the key factors of climate change."
+Output:
+[
+  {
+    "text": "because it highlights the key factors", 
+    "label": "JUSTIFYING",
+    "context_before": "is important"
+  }
+]
+
+Example 11 (No Markers - Empty Array)
+Sentence: "The quick brown fox jumps over the lazy dog."
+Output:
+[]
 
 Now annotate the following.
 
