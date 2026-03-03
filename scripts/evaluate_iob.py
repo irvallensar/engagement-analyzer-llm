@@ -177,4 +177,4 @@ def evaluate(filepath):
     print("========================================")
 
 if __name__ == "__main__":
-    evaluate("data/dev.iob")
+    evaluate("data/dev.iob", max_samples=10)
