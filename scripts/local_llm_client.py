@@ -1,18 +1,24 @@
-import subprocess
+import urllib.request
+import json
 
 def call_local_llm(prompt: str) -> str:
-    process = subprocess.Popen(
-        ["ollama", "run", "phi3"],
-        stdin=subprocess.PIPE,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True
-    )
-
-    stdout, stderr = process.communicate(prompt)
-
-    if stderr:
-        print("OLLAMA STDERR:")
-        print(stderr)
-
-    return stdout.strip()
+    url = "http://localhost:11434/api/generate"
+    
+    # Payload configuring Mistral and the critical Temperature setting
+    payload = {
+        "model": "mistral",
+        "prompt": prompt,
+        "temperature": 0.0,
+        "stream": False
+    }
+    
+    data = json.dumps(payload).encode('utf-8')
+    req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
+    
+    try:
+        with urllib.request.urlopen(req) as response:
+            result = json.loads(response.read().decode('utf-8'))
+            return result.get("response", "").strip()
+    except Exception as e:
+        print(f"OLLAMA API ERROR: {e}")
+        return ""
