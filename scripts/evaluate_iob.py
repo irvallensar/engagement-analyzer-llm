@@ -177,7 +177,8 @@ def evaluate(filepath):
     print("========================================")
 
 if __name__ == "__main__":
-    evaluate("data/dev.iob")            continue
+    evaluate("data/dev.iob")            
+        continue
 
         start_char = -1
         
