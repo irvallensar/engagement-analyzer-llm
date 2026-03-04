@@ -4,7 +4,7 @@ Your task:
 Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
 
 Allowed labels & Definitions:
-1. MONOGLOSS: Words or clauses that rejects alternative viewpoints.
+1. MONOGLOSS: Bare assertions that state a fact without acknowledging other viewpoints. Rule: Do not tag MONOGLOSS if the clause contains heteroglossic markers like ENTERTAIN or ATTRIBUTION."
 2. DENY: Rejects an alternative position directly.
 3. COUNTER: Replaces an expected alternative position.
 4. PROCLAIM: Shows strong commitment, concurrence, or endorsement.
@@ -53,7 +53,7 @@ Output:
 ]
 
 Example 3 (Counter)
-Sentence: "Despite the lack of evidence, the language you speak determines your thoughts."
+Sentence: "Despite the lack of evidence , the language you speak determines your thoughts."
 Output:
 [
   {
@@ -64,7 +64,7 @@ Output:
 ]
 
 Example 4 (Proclaim)
-Sentence: "As we all know, the language you speak determines your thoughts."
+Sentence: "As we all know , the language you speak determines your thoughts."
 Output:
 [
   {
@@ -97,7 +97,7 @@ Output:
 ]
 
 Example 7 (Citation)
-Sentence: "The theory of linguistic relativity, as described by Smith (2000), is widely debated."
+Sentence: "The theory of linguistic relativity , as described by Smith (2000), is widely debated."
 Output:
 [
   {
