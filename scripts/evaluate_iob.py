@@ -202,4 +202,4 @@ def evaluate(filepath, max_samples=None):
 if __name__ == "__main__":
     # Change max_samples to whatever number you want to test (e.g., 5). 
     # When you are ready for the full run, change it to max_samples=None
-    evaluate("data/dev.iob", max_samples=20)
+    evaluate("data/dev.iob", max_samples=50)
