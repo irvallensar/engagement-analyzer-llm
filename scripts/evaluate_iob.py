@@ -1,3 +1,4 @@
+from spacy.tokens import Doc
 import spacy
 from pathlib import Path
 
@@ -64,7 +65,8 @@ def run_sentence_option2(text, doc):
     return pred_spans
 
 
-# --- IOB PARSER ---
+# ------ IOB PARSER ------
+
 def parse_iob_file(filepath):
     """Reads the IOB file and extracts sentences and Gold Spans."""
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -72,52 +74,68 @@ def parse_iob_file(filepath):
 
     sentences = []
     current_tokens = []
-    current_tags = []
+    current_tags_matrix = []
 
     for line in lines:
         line = line.strip()
         if not line:
             if current_tokens:
-                sentences.append({"tokens": current_tokens, "tags": current_tags})
+                sentences.append({"tokens": current_tokens, "tags_matrix": current_tags_matrix})
                 current_tokens = []
-                current_tags = []
+                current_tags_matrix = []
             continue
         
+        # Skip metadata lines
+        if "-DOCSTART-" in line or line == "-X-" or line == "O":
+            continue
+
         parts = line.split()
         if len(parts) >= 2:
             current_tokens.append(parts[0])
-            current_tags.append(parts[-1]) # The last column is usually the IOB tag
+            # Grab all tag columns to support overlapping spans
+            current_tags_matrix.append(parts[1:]) 
 
     # Convert IOB tags to strict span tuples: (Label, Start, End)
     dataset = []
     for entry in sentences:
-        text = " ".join(entry["tokens"])
-        doc = nlp(text)
+        # Force spaCy to use the exact tokens from the IOB file
+        doc = Doc(nlp.vocab, words=entry["tokens"])
+        text = doc.text
         
-        gold_spans = []
-        current_label = None
-        start_idx = -1
+        gold_spans = set()
         
-        for i, tag in enumerate(entry["tags"]):
-            if tag.startswith("B-"):
+        if entry["tags_matrix"]:
+            num_cols = len(entry["tags_matrix"][0])
+            # Iterate through each tag column independently
+            for col_idx in range(num_cols):
+                current_label = None
+                start_idx = -1
+                
+                for i, row in enumerate(entry["tags_matrix"]):
+                    # Safely get the tag for this column
+                    tag = row[col_idx] if col_idx < len(row) else "O"
+                    
+                    if tag.startswith("B-"):
+                        if current_label:
+                            gold_spans.add((current_label, start_idx, i))
+                        current_label = tag[2:]
+                        start_idx = i
+                    elif tag.startswith("I-") and current_label == tag[2:]:
+                        continue
+                    else:
+                        if current_label:
+                            gold_spans.add((current_label, start_idx, i))
+                            current_label = None
+                            start_idx = -1
+                            
+                # Catch any span that runs to the end of the sentence
                 if current_label:
-                    gold_spans.append((current_label, start_idx, i))
-                current_label = tag[2:]
-                start_idx = i
-            elif tag.startswith("I-") and current_label == tag[2:]:
-                continue
-            else:
-                if current_label:
-                    gold_spans.append((current_label, start_idx, i))
-                    current_label = None
-                    start_idx = -1
-        if current_label:
-            gold_spans.append((current_label, start_idx, len(entry["tags"])))
+                    gold_spans.add((current_label, start_idx, len(entry["tags_matrix"])))
             
         dataset.append({
             "text": text,
             "doc": doc,
-            "gold_spans": gold_spans
+            "gold_spans": list(gold_spans)
         })
         
     return dataset
