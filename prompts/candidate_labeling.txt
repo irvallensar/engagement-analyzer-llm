@@ -4,7 +4,7 @@ Your task:
 Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
 
 Allowed labels & Definitions:
-1. MONOGLOSS: Bare assertions ignoring alternative viewpoints.
+1. MONOGLOSS: Words or clauses that rejects alternative viewpoints.
 2. DENY: Rejects an alternative position directly.
 3. COUNTER: Replaces an expected alternative position.
 4. PROCLAIM: Shows strong commitment, concurrence, or endorsement.
@@ -24,6 +24,11 @@ Rules:
    - "context_before": the 2 or 3 words immediately preceding the marker. If the marker is at the very beginning of the sentence, set this to an empty string "".
 4. Do not invent words. All text must be copied exactly from the sentence.
 5. If there are NO markers in the sentence, return an empty array [].
+
+Additional rules:
+1. Do not tag standard, neutral verbs (e.g., 'is', 'has', 'was') as ENGAGEMENT markers unless they explicitly serve a rhetorical function.
+2. Do not tag standard transitions or conjunctions (e.g., 'and', 'so') unless they explicitly counter or justify.
+3. If you are unsure if a word is an engagement marker, DO NOT tag it. It is better to miss a marker than to hallucinate one.
 
 Example 1 (Monogloss)
 Sentence: "The language you speak determines your thoughts."
