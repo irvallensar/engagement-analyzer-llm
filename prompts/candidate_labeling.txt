@@ -24,11 +24,14 @@ Rules:
    - "context_before": the 2 or 3 words immediately preceding the marker. If the marker is at the very beginning of the sentence, set this to an empty string "".
 4. Do not invent words. All text must be copied exactly from the sentence.
 5. If there are NO markers in the sentence, return an empty array [].
+6. The "label" MUST be exactly one of the 10 uppercase category names listed above. Never leave the label blank. If there is no valid category, do not extract the span.
+7. Do not invent words or fix grammar/punctuation. All text in the "text" and "context_before" fields MUST be copied EXACTLY as it appears in the input sentence, preserving all strange spacing around punctuation marks (e.g., "word , word" or " ' word").
 
-Additional rules:
-1. Do not tag standard, neutral verbs (e.g., 'is', 'has', 'was') as ENGAGEMENT markers unless they explicitly serve a rhetorical function.
-2. Do not tag standard transitions or conjunctions (e.g., 'and', 'so') unless they explicitly counter or justify.
-3. If you are unsure if a word is an engagement marker, DO NOT tag it. It is better to miss a marker than to hallucinate one.
+
+Negative constraints:
+- Do NOT tag standard, neutral verbs (e.g., 'is', 'has', 'was') as MONOGLOSS or JUSTIFYING unless they serve a highly explicit rhetorical function. 
+- Do NOT tag standard transition words like "and" or "but" unless they explicitly counter a specific expected alternative.
+- Be highly conservative. If you are unsure if a span acts as an engagement marker, do NOT extract it.
 
 Example 1 (Monogloss)
 Sentence: "The language you speak determines your thoughts."
@@ -144,6 +147,17 @@ Example 11 (No Markers - Empty Array)
 Sentence: "The quick brown fox jumps over the lazy dog."
 Output:
 []
+
+Example 12 (Long Clause Marker)
+Sentence: "Thus , the results are inconclusive if the third account is unable to deal with the problems ."
+Output:
+[
+  {
+    "text": "if the third account is unable to deal with the problems .", 
+    "label": "ENTERTAIN",
+    "context_before": "are inconclusive"
+  }
+]
 
 Now annotate the following.
 
