@@ -19,9 +19,9 @@ Rules:
 1. Return ONLY valid JSON.
 2. The exact function of a marker MUST be determined with its co-text in mind.
 3. The output must be a list of objects with keys: 
-   - "text" (the exact engagement marker span)
-   - "label" (the engagement type)
-   - "context_before" (the 2 or 3 words immediately preceding the marker. If the marker is the first word, leave this empty "").
+   - "text": the exact engagement marker span.
+   - "label": the engagement type.
+   - "context_before": the 2 or 3 words immediately preceding the marker. If the marker is at the very beginning of the sentence, set this to an empty string "".
 4. Do not invent words. All text must be copied exactly from the sentence.
 5. If there are NO markers in the sentence, return an empty array [].
 
@@ -41,7 +41,7 @@ Sentence: "The language you speak does not determine your thoughts."
 Output:
 [
   {
-    "text": "does not determine", 
+    "text": "does not", 
     "label": "DENY",
     "context_before": "you speak"
   }
@@ -74,7 +74,7 @@ Sentence: "The language you speak might influence your thoughts."
 Output:
 [
   {
-    "text": "might influence", 
+    "text": "might", 
     "label": "ENTERTAIN",
     "context_before": "you speak"
   }
@@ -85,7 +85,7 @@ Sentence: "It is often believed that the language you speak determines your thou
 Output:
 [
   {
-    "text": "It is often believed that", 
+    "text": "It is often believed", 
     "label": "ATTRIBUTION",
     "context_before": ""
   }
@@ -107,7 +107,7 @@ Sentence: "A recent paper reports that the language you speak determines your th
 Output:
 [
   {
-    "text": "A recent paper reports", 
+    "text": "A recent paper", 
     "label": "SOURCES",
     "context_before": ""
   }
@@ -129,7 +129,7 @@ Sentence: "The current discussion is important because it highlights the key fac
 Output:
 [
   {
-    "text": "because it highlights the key factors", 
+    "text": "because it highlights the key factors of climate change", 
     "label": "JUSTIFYING",
     "context_before": "is important"
   }
