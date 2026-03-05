@@ -23,7 +23,7 @@ Allowed labels & Strict Definitions:
 
 NEGATIVE CONSTRAINTS:
 - Be highly conservative. If a word is just a standard grammatical transition (like 'and') or a neutral descriptive verb, do NOT tag it.
-- Never invent a label. You MUST use exactly one of the 10 uppercase labels above. Do NOT output a label like "NEUTRAL". If the text is neutral, return an empty array [].
+- NEVER invent a label. You MUST use exactly one of the 10 uppercase labels above. Do NOT use labels like "NEUTRAL", "QUOTE", or "PUNCTUATION". If there are no valid markers, return an empty array [].
 
 OUTPUT FORMAT:
 First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
