@@ -24,6 +24,8 @@ JSON FORMATTING RULES:
 2. Do NOT use inline comments (//) anywhere inside the JSON array.
 3. OMISSION RULE: You must ONLY create a JSON object for a valid marker. If a word or phrase is neutral, DO NOT include it in the JSON array at all. Do NOT output objects with {"label": "NEUTRAL"} or {"label": ""}. If the entire sentence is neutral, output an empty array: []
 
+OUTPUT FORMAT: 
+First, write a brief <thought_process> analyzing the sentence. Then, output a JSON array of objects.
 
 OUTPUT FORMAT:
 First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
