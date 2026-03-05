@@ -4,28 +4,27 @@ Your task:
 Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
 
 Allowed labels & Strict Definitions:
-1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. ONLY use for the main verb of a highly definitive, factual claim. Do NOT tag standard linking verbs ('is', 'was').
-2. DENY: Rejects an alternative position directly. ONLY tag syntactic negators (e.g., 'not', 'never', 'fail to'). Do NOT tag negative-sounding verbs like 'undermine', and ignore foreign-language text.
+1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. -> RULE: Tag the main verb of a definitive factual statement. This INCLUDES standard linking verbs ('is', 'are', 'was', 'has') if they state a cold fact without any hedging or sourcing.
+2. DENY: Rejects an alternative position directly. -> RULE: Extract the negator AND the immediate concept being negated (e.g., 'not effective', 'no such thing', 'does not').
 3. COUNTER: Replaces an expected alternative position (e.g., 'however', 'although', 'despite', 'only').
 4. PROCLAIM: Shows strong commitment or endorsement (e.g., 'undoubtedly', 'in fact'). Do NOT tag neutral verbs like 'shows' or 'demonstrates' when referring to figures or data.
 5. ENTERTAIN: Presents the position as only one possibility. Extract the modal word or modal phrase (e.g., 'would', 'could', 'might', 'must', 'would need to') or hedge ('seem', 'if').
-6. ATTRIBUTION: Delegates responsibility to an external source. -> RULE: Extract ONLY the reporting verb phrase (e.g., 'added', 'were referred', 'strongly asserts', 'warns', 'managed to undermine'). Do NOT include the source's name, and do NOT include the word "that".
+6. ATTRIBUTION: Delegates responsibility to an external source. -> RULE: Extract the reporting verb phrase (e.g., 'strongly asserts', 'warns') OR the full prepositional phrase attributing the idea (e.g., 'In Descartes ' version of the ontological argument', 'According to'). Do NOT include the word "that".
 7. CITATION: Explicit in-text citations (e.g., 'Smith ( 2000 )').
-8. SOURCES: The specific human source or author being referenced. -> RULE: Extract ONLY the specific name or core noun phrase (e.g., 'de Bourgueil', 'Eysenck', 'one small article'). Do NOT tag inanimate objects or concepts (e.g., 'HCI').
-9. ENDOPHORIC: Refers to structural elements within the text. -> RULE: Strictly limit to explicit cross-references (e.g., 'in Figure 1', 'Table 8', 'Section 9'). Do NOT tag general phrases like 'her methodology' or 'the system'.
+8. SOURCES: The specific human source or author being referenced. -> RULE: Extract ONLY the specific name or core noun phrase (e.g., 'Descartes', 'Eysenck', 'one small article'). Do NOT tag inanimate objects.
+9. ENDOPHORIC: Refers to structural elements within the text. -> RULE: Strictly limit to explicit cross-references (e.g., 'in Figure 1', 'Table 8', 'Section 9').
 10. JUSTIFYING: Locutions that signal persuasion or substantiation. -> RULE: This includes single transition words (e.g., 'Thus', 'Therefore', 'Hence') AND full causal clauses (e.g., 'because primates tend to call less').
 
-NEGATIVE CONSTRAINTS:
-- Do NOT fix punctuation or spacing! If the text says "Davies ( 2002 , p107 )", you must output exactly "Davies ( 2002 , p107 )".
-- NEVER invent a label. You MUST use exactly one of the 10 uppercase labels above. 
+BANNED LABELS:
+You are strictly FORBIDDEN from using the label "NEUTRAL", "O", or "". If a word is neutral, you must simply ignore it and leave it out of the JSON entirely.
 
 JSON FORMATTING RULES:
 1. You must output perfectly valid JSON. 
 2. Do NOT use inline comments (//) anywhere inside the JSON array.
-3. OMISSION RULE: You must ONLY create a JSON object for a valid marker. If a word or phrase is neutral, DO NOT include it in the JSON array at all. Do NOT output objects with {"label": "NEUTRAL"} or {"label": ""}. If the entire sentence is neutral, output an empty array: []
+3. OMISSION RULE: If the entire sentence is purely descriptive and contains no valid markers, you MUST output an empty array: []
 
-OUTPUT FORMAT: 
-First, write a brief <thought_process> analyzing the sentence. Then, output a JSON array of objects.
+OUTPUT FORMAT:
+First, write a brief <thought_process> analyzing the sentence. Then, output the JSON array.
 
 OUTPUT FORMAT:
 First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
