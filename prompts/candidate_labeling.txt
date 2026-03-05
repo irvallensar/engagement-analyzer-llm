@@ -4,26 +4,23 @@ Your task:
 Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
 
 Allowed labels & Strict Definitions:
-1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. 
-   -> ONLY use for the main verb of a highly definitive, factual claim (e.g., 'determines', 'proves'). Do NOT tag standard linking verbs ('is', 'was', 'are', 'have') or basic descriptive verbs as MONOGLOSS unless they forcibly assert a point.
-2. DENY: Rejects an alternative position directly (e.g., 'not', 'never', 'fail to').
-3. COUNTER: Replaces an expected alternative position (e.g., 'however', 'although', 'despite', 'but').
-4. PROCLAIM: Shows strong commitment, concurrence, or endorsement (e.g., 'undoubtedly', 'in fact', 'clearly demonstrates').
--> RULE: Do NOT tag neutral verbs like 'shows', 'indicates', or 'demonstrates' when they simply refer to a figure, table, or neutral data (e.g., "Figure 1 shows...").
-5. ENTERTAIN: Presents the position as only one possibility, opening dialogic space. 
-   -> Look for modals ('may', 'might', 'could', 'would', 'should'), hedges ('seem', 'appear', 'suggest', 'likely'), and conditionals ('if'). 
-   -> RULE FOR MODALS: Extract ONLY the single modal word (e.g., extract 'would', not 'would help').
-6. ATTRIBUTION: Delegates responsibility to an external source (e.g., 'states', 'argues', 'according to', 'the claim that').
-7. CITATION: In-text or narrative citations (e.g., 'Smith (2000)').
-8. SOURCES: Nominal expressions mentioning external human sources, authors, or research publications (e.g., 'A recent paper', 'Previous studies', 'Researchers'). 
-   -> RULE FOR SOURCES: Do NOT tag inanimate objects, concepts, components, or systems (e.g., "HCI", "data", "inputs") as SOURCES.
-9. ENDOPHORIC: Refers to information in other parts of its own text (e.g., 'in Table 1', 'as discussed below').
-10. JUSTIFYING: Locutions that signal persuasion or substantiation. 
-    -> RULE: In this dataset, JUSTIFYING spans often include the conjunction AND the noun phrase it introduces (e.g., extract "because the data" or "since many safety - critical systems", not just "because" or "since").
+1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. ONLY use for the main verb of a highly definitive, factual claim. Do NOT tag standard linking verbs ('is', 'was').
+2. DENY: Rejects an alternative position directly (e.g., 'not', 'never').
+3. COUNTER: Replaces an expected alternative position (e.g., 'however', 'although', 'despite').
+4. PROCLAIM: Shows strong commitment or endorsement (e.g., 'undoubtedly', 'in fact'). Do NOT tag neutral verbs like 'shows' or 'demonstrates' when referring to figures or data.
+5. ENTERTAIN: Presents the position as only one possibility. Extract ONLY the single modal word (e.g., 'would', 'could', 'might', 'shall') or hedge ('seem', 'if').
+6. ATTRIBUTION: Delegates responsibility to an external source. -> RULE: Extract ONLY the reporting verb phrase (e.g., 'added', 'were referred', 'strongly asserts', 'warns'). Do NOT include the source's name, and do NOT include the word "that".
+7. CITATION: Explicit in-text citations (e.g., 'Smith ( 2000 )').
+8. SOURCES: The specific human source or author being referenced. -> RULE: Extract ONLY the specific name or core noun phrase (e.g., 'de Bourgueil', 'Eysenck', 'the claim').
+9. ENDOPHORIC: Refers to information in other parts of its own text.
+10. JUSTIFYING: Locutions that signal persuasion or substantiation. -> RULE: This includes single transition words (e.g., 'Thus', 'Therefore', 'Hence') AND full causal clauses (e.g., 'because primates tend to call less').
 
 NEGATIVE CONSTRAINTS:
-- Be highly conservative. If a word is just a standard grammatical transition (like 'and') or a neutral descriptive verb, do NOT tag it.
-- NEVER invent a label. You MUST use exactly one of the 10 uppercase labels above. Do NOT use labels like "NEUTRAL", "QUOTE", or "PUNCTUATION". If there are no valid markers, return an empty array [].
+- Do NOT fix punctuation or spacing! If the text says "Davies ( 2002 , p107 )", you must output exactly "Davies ( 2002 , p107 )" with all the strange spaces. 
+- NEVER invent a label. You MUST use exactly one of the 10 uppercase labels above. Do NOT output "QUOTE" or "NEUTRAL".
+
+OUTPUT FORMAT:
+First, write a brief <thought_process> analyzing the sentence. Then, output a JSON array of objects.
 
 OUTPUT FORMAT:
 First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
@@ -55,26 +52,31 @@ Sentence: "Although the results are promising , they might not apply to all case
   }
 ]
 
-Example 2 (Sources, Attribution, Citation)
-Sentence: "A recent paper reports that the theory of relativity , as described by Smith ( 2000 ) , is widely debated ."
+Example 2 (Spacing, Citation, Sources, Attribution)
+Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , and Davies ( 2002 , p107 ) warns against this ."
 <thought_process>
-"A recent paper" is a nominal expression of an external source (SOURCES). "reports that" delegates the proposition to that source (ATTRIBUTION). "Smith ( 2000 )" is an explicit in-text citation (CITATION). Because the claims are delegated, there is no MONOGLOSS.
+"Christen ( 1999 )" and "Davies ( 2002 , p107 )" are formal in-text citations, and the spaces must be preserved exactly (CITATION). The verbs attributing the claims are "strongly asserts" and "warns", excluding the word "that" (ATTRIBUTION). 
 </thought_process>
 [
   {
-    "text": "A recent paper", 
-    "label": "SOURCES",
+    "text": "Christen ( 1999 )", 
+    "label": "CITATION",
     "context_before": ""
   },
   {
-    "text": "reports that", 
+    "text": "strongly asserts", 
     "label": "ATTRIBUTION",
-    "context_before": "paper"
+    "context_before": ") "
   },
   {
-    "text": "Smith ( 2000 )", 
+    "text": "Davies ( 2002 , p107 )", 
     "label": "CITATION",
-    "context_before": "described by"
+    "context_before": "and"
+  },
+  {
+    "text": "warns", 
+    "label": "ATTRIBUTION",
+    "context_before": ") "
   }
 ]
 
