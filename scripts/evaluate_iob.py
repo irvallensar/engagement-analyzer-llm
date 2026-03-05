@@ -1,6 +1,7 @@
 from spacy.tokens import Doc
 import spacy
 from pathlib import Path
+from collections import defaultdict
 
 # Import your existing tools
 from scripts.local_llm_client import call_local_llm
@@ -28,7 +29,9 @@ def run_sentence_option2(text, doc):
     pred_spans = []
     
     for item in llm_items:
-        if item.get("label", "O") == "O":
+        label = item.get("label", "O")
+        # FIX: Ignore "O" and empty string labels ("")
+        if label == "O" or not label.strip():
             continue
             
         span_text = item.get("text", "")
@@ -56,7 +59,7 @@ def run_sentence_option2(text, doc):
             span = doc.char_span(start_char, end_char, alignment_mode="expand")
             
             if span:
-                pred_spans.append((item["label"], span.start, span.end))
+                pred_spans.append((label, span.start, span.end))
             else:
                 print(f"  [!] Warning: Could not align tokens for text: '{span_text}'")
         else:
@@ -146,16 +149,21 @@ def evaluate(filepath, max_samples=None):
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
     
-    # --- NEW: Slicing the dataset for quick tests ---
     if max_samples is not None:
         dataset = dataset[:max_samples]
         print(f"*** QUICK TEST MODE: Limiting to first {max_samples} sentences ***")
         
     print(f"Found {len(dataset)} sentences to evaluate.\n")
 
+    # Overall counters
     true_positives = 0
     false_positives = 0
     false_negatives = 0
+
+    # Category-specific counters
+    cat_tp = defaultdict(int)
+    cat_fp = defaultdict(int)
+    cat_fn = defaultdict(int)
 
     for i, data in enumerate(dataset):
         print(f"Evaluating Sentence {i+1}/{len(dataset)}...")
@@ -167,27 +175,52 @@ def evaluate(filepath, max_samples=None):
         pred_spans = set(pred_list)
 
         # Calculate Strict Matches
-        tp = len(gold_spans.intersection(pred_spans))
-        fp = len(pred_spans - gold_spans)
-        fn = len(gold_spans - pred_spans)
+        tp_set = gold_spans.intersection(pred_spans)
+        fp_set = pred_spans - gold_spans
+        fn_set = gold_spans - pred_spans
 
-        true_positives += tp
-        false_positives += fp
-        false_negatives += fn
+        # Update overall counters
+        true_positives += len(tp_set)
+        false_positives += len(fp_set)
+        false_negatives += len(fn_set)
         
-        # Print a mini-report for this sentence so you can see where it failed
-        if fp > 0 or fn > 0:
+        # Update category-specific counters
+        for span in tp_set: cat_tp[span[0]] += 1
+        for span in fp_set: cat_fp[span[0]] += 1
+        for span in fn_set: cat_fn[span[0]] += 1
+
+        if len(fp_set) > 0 or len(fn_set) > 0:
             print(f"  Sentence: {data['text']}")
             print(f"  Gold Spans: {gold_spans}")
             print(f"  Pred Spans: {pred_spans}")
-            print(f"  -> Errors: {fp} False Positives, {fn} False Negatives\n")
+            print(f"  -> Errors: {len(fp_set)} False Positives, {len(fn_set)} False Negatives\n")
 
     # --- FINAL MATH ---
+    print("\n========================================")
+    print("CATEGORY BREAKDOWN")
+    print("========================================")
+    
+    # Get all unique labels encountered in the test
+    all_labels = set(list(cat_tp.keys()) + list(cat_fp.keys()) + list(cat_fn.keys()))
+    
+    for label in sorted(all_labels):
+        c_tp = cat_tp[label]
+        c_fp = cat_fp[label]
+        c_fn = cat_fn[label]
+        
+        c_p = c_tp / (c_tp + c_fp) if (c_tp + c_fp) > 0 else 0
+        c_r = c_tp / (c_tp + c_fn) if (c_tp + c_fn) > 0 else 0
+        c_f1 = 2 * (c_p * c_r) / (c_p + c_r) if (c_p + c_r) > 0 else 0
+        
+        print(f"--- {label} ---")
+        print(f"  TP: {c_tp} | FP: {c_fp} | FN: {c_fn}")
+        print(f"  P: {c_p:.4f} | R: {c_r:.4f} | F1: {c_f1:.4f}")
+
     precision = true_positives / (true_positives + false_positives) if (true_positives + false_positives) > 0 else 0
     recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0
     f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
 
-    print("========================================")
+    print("\n========================================")
     print("FINAL STRICT SPAN EVALUATION RESULTS")
     print("========================================")
     print(f"True Positives (Exact Matches) : {true_positives}")
@@ -200,6 +233,4 @@ def evaluate(filepath, max_samples=None):
     print("========================================")
 
 if __name__ == "__main__":
-    # Change max_samples to whatever number you want to test (e.g., 5). 
-    # When you are ready for the full run, change it to max_samples=None
     evaluate("data/dev.iob", max_samples=25)
