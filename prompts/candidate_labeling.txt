@@ -1,162 +1,113 @@
-You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse.
+You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse based on the Appraisal framework.
 
 Your task:
 Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
 
-Allowed labels & Definitions:
-1. MONOGLOSS: Bare assertions that state a fact without acknowledging other viewpoints. Rule: Do not tag MONOGLOSS if the clause contains heteroglossic markers like ENTERTAIN or ATTRIBUTION."
-2. DENY: Rejects an alternative position directly.
-3. COUNTER: Replaces an expected alternative position.
-4. PROCLAIM: Shows strong commitment, concurrence, or endorsement.
-5. ENTERTAIN: Presents the position as only one possibility.
-6. ATTRIBUTION: Delegates responsibility to an external source.
-7. CITATION: In-text or narrative citations.
-8. SOURCES: Nominal expressions mentioning external sources.
-9. ENDOPHORIC: Refers to information in other parts of its own text.
-10. JUSTIFYING: Locutions that signal persuasion or substantiation.
+Allowed labels & Strict Definitions:
+1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. 
+   -> ONLY use for the main verb of a highly definitive, factual claim (e.g., 'determines', 'proves'). Do NOT tag standard linking verbs ('is', 'was', 'are') or basic descriptive verbs as MONOGLOSS unless they forcibly assert a point.
+2. DENY: Rejects an alternative position directly (e.g., 'not', 'never', 'fail to').
+3. COUNTER: Replaces an expected alternative position (e.g., 'however', 'although', 'despite', 'but').
+4. PROCLAIM: Shows strong commitment, concurrence, or endorsement (e.g., 'undoubtedly', 'in fact', 'shows', 'demonstrates').
+5. ENTERTAIN: Presents the position as only one possibility, opening dialogic space. 
+   -> Look for modals ('may', 'might', 'could', 'would'), hedges ('seem', 'appear', 'suggest', 'likely'), and conditionals ('if').
+6. ATTRIBUTION: Delegates responsibility to an external source (e.g., 'states', 'argues', 'according to', 'the claim that').
+7. CITATION: In-text or narrative citations (e.g., 'Smith (2000)').
+8. SOURCES: Nominal expressions mentioning external sources (e.g., 'A recent paper', 'Previous studies').
+9. ENDOPHORIC: Refers to information in other parts of its own text (e.g., 'in Table 1', 'as discussed below').
+10. JUSTIFYING: Locutions that signal persuasion or substantiation (e.g., 'because', 'since', 'therefore', 'thus').
 
-Rules:
-1. Return ONLY valid JSON.
-2. The exact function of a marker MUST be determined with its co-text in mind.
-3. The output must be a list of objects with keys: 
-   - "text": the exact engagement marker span.
-   - "label": the engagement type.
-   - "context_before": the 2 or 3 words immediately preceding the marker. If the marker is at the very beginning of the sentence, set this to an empty string "".
-4. Do not invent words. All text must be copied exactly from the sentence.
-5. If there are NO markers in the sentence, return an empty array [].
-6. The "label" MUST be exactly one of the 10 uppercase category names listed above. Never leave the label blank. If there is no valid category, do not extract the span.
-7. Do not invent words or fix grammar/punctuation. All text in the "text" and "context_before" fields MUST be copied EXACTLY as it appears in the input sentence, preserving all strange spacing around punctuation marks (e.g., "word , word" or " ' word").
+NEGATIVE CONSTRAINTS:
+- Be highly conservative. If a word is just a standard grammatical transition (like 'and') or a neutral descriptive verb, do NOT tag it.
+- For MONOGLOSS, do not include objects or prepositional phrases. Select ONLY the main verb.
+- If there are NO markers in the sentence, return an empty array [].
 
+OUTPUT FORMAT:
+First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
+Then, output a JSON array of objects. Each object MUST have:
+- "text": the exact engagement marker span. Do not alter punctuation or spacing.
+- "label": MUST be exactly one of the 10 uppercase labels above. Do not leave blank.
+- "context_before": the 2 or 3 words immediately preceding the marker (or "" if at the start).
 
-Negative constraints:
-- Do NOT tag standard, neutral verbs (e.g., 'is', 'has', 'was') as MONOGLOSS or JUSTIFYING unless they serve a highly explicit rhetorical function. 
-- Do NOT tag standard transition words like "and" or "but" unless they explicitly counter a specific expected alternative.
-- Be highly conservative. If you are unsure if a span acts as an engagement marker, do NOT extract it.
-- For MONOGLOSS, select ONLY the main verb (e.g., 'have', 'is', 'demonstrates'). Do not include the object or the rest of the verb phrase.
-
-Example 1 (Monogloss)
-Sentence: "The language you speak determines your thoughts."
-Output:
+Example 1 (Counter & Entertain)
+Sentence: "Although the results are promising , they might not apply to all cases ."
+<thought_process>
+"Although" replaces an expected alternative (COUNTER). "might" presents the statement as a possibility rather than a fact (ENTERTAIN). "not" directly rejects an alternative (DENY). The verbs "are" and "apply" are standard and modified by the engagement markers, so they are not MONOGLOSS.
+</thought_process>
 [
   {
-    "text": "determines", 
-    "label": "MONOGLOSS",
-    "context_before": "you speak"
-  }
-]
-
-Example 2 (Deny)
-Sentence: "The language you speak does not determine your thoughts."
-Output:
-[
-  {
-    "text": "does not", 
-    "label": "DENY",
-    "context_before": "you speak"
-  }
-]
-
-Example 3 (Counter)
-Sentence: "Despite the lack of evidence , the language you speak determines your thoughts."
-Output:
-[
-  {
-    "text": "Despite the lack of evidence", 
+    "text": "Although", 
     "label": "COUNTER",
     "context_before": ""
-  }
-]
-
-Example 4 (Proclaim)
-Sentence: "As we all know , the language you speak determines your thoughts."
-Output:
-[
-  {
-    "text": "As we all know", 
-    "label": "PROCLAIM",
-    "context_before": ""
-  }
-]
-
-Example 5 (Entertain)
-Sentence: "The language you speak might influence your thoughts."
-Output:
-[
+  },
   {
     "text": "might", 
     "label": "ENTERTAIN",
-    "context_before": "you speak"
-  }
-]
-
-Example 6 (Attribution)
-Sentence: "It is often believed that the language you speak determines your thoughts."
-Output:
-[
+    "context_before": "they"
+  },
   {
-    "text": "It is often believed", 
-    "label": "ATTRIBUTION",
-    "context_before": ""
+    "text": "not", 
+    "label": "DENY",
+    "context_before": "might"
   }
 ]
 
-Example 7 (Citation)
-Sentence: "The theory of linguistic relativity , as described by Smith (2000), is widely debated."
-Output:
-[
-  {
-    "text": "Smith (2000)", 
-    "label": "CITATION",
-    "context_before": "described by"
-  }
-]
-
-Example 8 (Sources)
-Sentence: "A recent paper reports that the language you speak determines your thoughts."
-Output:
+Example 2 (Sources, Attribution, Citation)
+Sentence: "A recent paper reports that the theory of relativity , as described by Smith ( 2000 ) , is widely debated ."
+<thought_process>
+"A recent paper" is a nominal expression of an external source (SOURCES). "reports that" delegates the proposition to that source (ATTRIBUTION). "Smith ( 2000 )" is an explicit in-text citation (CITATION). Because the claims are delegated, there is no MONOGLOSS.
+</thought_process>
 [
   {
     "text": "A recent paper", 
     "label": "SOURCES",
     "context_before": ""
+  },
+  {
+    "text": "reports that", 
+    "label": "ATTRIBUTION",
+    "context_before": "paper"
+  },
+  {
+    "text": "Smith ( 2000 )", 
+    "label": "CITATION",
+    "context_before": "described by"
   }
 ]
 
-Example 9 (Endophoric)
-Sentence: "This concept is discussed in Section 9 of the document."
-Output:
+Example 3 (Endophoric, Proclaim, Justifying)
+Sentence: "As shown in Section 9 , the current discussion is important because it highlights the key factors of climate change ."
+<thought_process>
+"in Section 9" refers to another part of the text (ENDOPHORIC). "As shown" acts to endorse or show strong commitment to the finding (PROCLAIM). "because" explicitly signals substantiation or reasoning (JUSTIFYING). 
+</thought_process>
 [
   {
     "text": "in Section 9", 
     "label": "ENDOPHORIC",
-    "context_before": "is discussed"
-  }
-]
-
-Example 10 (Justifying)
-Sentence: "The current discussion is important because it highlights the key factors of climate change."
-Output:
-[
+    "context_before": "shown"
+  },
   {
-    "text": "because it highlights the key factors of climate change", 
+    "text": "As shown", 
+    "label": "PROCLAIM",
+    "context_before": ""
+  },
+  {
+    "text": "because", 
     "label": "JUSTIFYING",
-    "context_before": "is important"
+    "context_before": "important"
   }
 ]
 
-Example 11 (No Markers - Empty Array)
-Sentence: "The quick brown fox jumps over the lazy dog."
-Output:
-[]
-
-Example 12 (Long Clause Marker)
-Sentence: "Thus , the results are inconclusive if the third account is unable to deal with the problems ."
-Output:
+Example 4 (Hard Negative & Monogloss)
+Sentence: "The survey was conducted over three days in the main lobby , and the data determines the outcome ."
+<thought_process>
+The first clause is purely descriptive methodology. "was conducted" is a standard passive verb describing an action, not a controversial bare assertion. The transition "and" is neutral here. However, "determines" in the second clause is a strong bare assertion of fact ignoring alternatives (MONOGLOSS).
+</thought_process>
 [
   {
-    "text": "if the third account is unable to deal with the problems .", 
-    "label": "ENTERTAIN",
-    "context_before": "are inconclusive"
+    "text": "determines", 
+    "label": "MONOGLOSS",
+    "context_before": "data"
   }
 ]
 
@@ -164,5 +115,3 @@ Now annotate the following.
 
 Sentence:
 {sentence}
-
-Return JSON:
