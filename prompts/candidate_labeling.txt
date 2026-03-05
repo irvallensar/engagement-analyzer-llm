@@ -18,10 +18,12 @@ Allowed labels & Strict Definitions:
 NEGATIVE CONSTRAINTS:
 - Do NOT fix punctuation or spacing! If the text says "Davies ( 2002 , p107 )", you must output exactly "Davies ( 2002 , p107 )".
 - NEVER invent a label. You MUST use exactly one of the 10 uppercase labels above. 
-- NEVER output a JSON object with the label "NEUTRAL". If a word or phrase is neutral, simply do NOT include it in the JSON output at all. If the entire sentence is neutral, output an empty array [].
 
-OUTPUT FORMAT:
-First, write a brief <thought_process> analyzing the sentence. Then, output a JSON array of objects.
+JSON FORMATTING RULES:
+1. You must output perfectly valid JSON. 
+2. Do NOT use inline comments (//) anywhere inside the JSON array.
+3. OMISSION RULE: You must ONLY create a JSON object for a valid marker. If a word or phrase is neutral, DO NOT include it in the JSON array at all. Do NOT output objects with {"label": "NEUTRAL"} or {"label": ""}. If the entire sentence is neutral, output an empty array: []
+
 
 OUTPUT FORMAT:
 First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
