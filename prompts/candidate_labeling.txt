@@ -15,23 +15,6 @@ Allowed labels & Strict Definitions:
 9. ENDOPHORIC: Refers to structural elements within the text. -> RULE: Strictly limit to explicit cross-references (e.g., 'in Figure 1', 'Table 8', 'Section 9').
 10. JUSTIFYING: Locutions that signal persuasion or substantiation. -> RULE: This includes single transition words (e.g., 'Thus', 'Therefore', 'Hence') AND massive causal clauses (e.g., 'as a result of higher gross profit margin...').
 
-BANNED LABELS & STRICT RULES:
-1. You are strictly FORBIDDEN from using labels like "NEUTRAL", "QUOTATION", "CONTEXT_BEFORE", "O", or "". 
-2. The "label" value MUST be EXACTLY one of the 10 uppercase names listed in the Definitions.
-3. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL strange spaces, commas, and parentheses exactly as they appear (e.g., if the text has "( WTO , 2005d )", do NOT fix it to "(WTO, 2005d)").
-
-JSON FORMATTING RULES:
-1. You must output perfectly valid JSON. 
-2. Do NOT use inline comments (//) anywhere inside the JSON array.
-3. OMISSION RULE: If a word is neutral, simply ignore it. If the entire sentence is purely descriptive and contains no valid markers, you MUST output an empty array: []
-
-OUTPUT FORMAT:
-First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
-Then, output a JSON array of objects. Each object MUST have:
-- "text": the exact engagement marker span. Do not alter punctuation or spacing.
-- "label": MUST be exactly one of the 10 uppercase labels above. Do not leave blank.
-- "context_before": the 2 or 3 words immediately preceding the marker (or "" if at the start).
-
 Example 1 (Counter, Entertain, Deny)
 Sentence: "Although the results are promising , they might not apply to all cases ."
 <thought_process>
@@ -118,6 +101,23 @@ The first clause is purely descriptive methodology. "was conducted" is a standar
     "context_before": "data"
   }
 ]
+
+--- CRITICAL RULES FOR GENERATION ---
+BANNED LABELS:
+1. You are strictly FORBIDDEN from using labels like "NEUTRAL", "QUOTATION", "REPEAT", "CONTEXT_BEFORE", "O", or "". 
+2. The "label" value MUST be EXACTLY one of the 10 uppercase names listed in the Definitions.
+3. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL strange spaces, commas, and parentheses exactly as they appear.
+
+JSON FORMATTING RULES:
+1. You must output perfectly valid JSON. Do NOT use inline comments (//) anywhere inside the JSON array.
+2. OMISSION RULE: If a word is neutral, simply ignore it. If the entire sentence is purely descriptive and contains no valid markers, you MUST output an empty array: []
+
+OUTPUT FORMAT:
+First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
+Then, output a JSON array of objects. Each object MUST have:
+- "text": the exact engagement marker span.
+- "label": MUST be exactly one of the 10 uppercase labels above.
+- "context_before": the 2 or 3 words immediately preceding the marker (or "" if at the start).
 
 Now annotate the following.
 
