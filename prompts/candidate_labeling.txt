@@ -1,24 +1,33 @@
 You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse based on the Appraisal framework.
 
-Your task:
-Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
+TASK & JSON SCHEMA:
+Analyze the sentence and output a JSON array of objects. 
+You must strictly adhere to this schema. Do NOT invent labels. Do NOT output "NEUTRAL" or "QUOTATION". 
+If the sentence contains no markers, output: []
 
-Allowed labels & Strict Definitions:
-1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. -> RULE: Tag the main verb of a definitive factual statement (including 'is', 'are', 'was', 'have'). CRITICAL EXCEPTION: Do NOT tag verbs if they are inside the scope of a modal, conditional, or attribution (e.g., verbs following 'would', 'if', or 'conclude that' are NOT Monogloss).
-2. DENY: Rejects an alternative position directly. -> RULE: Extract explicit syntactic negators and the immediate concept ('not effective', 'no explanation'). STRICT RULE: Do NOT tag negative-sounding adjectives or verbs (e.g., 'biased', 'fails', 'stereotyped', 'disproportionate').
-3. COUNTER: Replaces an expected alternative position. -> RULE: Can be a single word ('however') OR a massive clause (e.g., 'Regardless the decrease of turnover ... revenue ,').
-4. PROCLAIM: Shows strong commitment or endorsement (e.g., 'undoubtedly', 'in fact'). Do NOT tag neutral verbs like 'shows' when referring to figures.
-5. ENTERTAIN: Presents the position as only one possibility. Extract the modal word or phrase (e.g., 'would', 'could', 'might', 'must', 'would need to') or hedge ('seem', 'if').
-6. ATTRIBUTION: Delegates responsibility to an external source. -> RULE: Extract the reporting verb phrase (e.g., 'strongly asserts', 'warns') OR the full prepositional phrase attributing the idea (e.g., 'In Descartes ' version', 'According to'). Do NOT include the word "that".
-7. CITATION: Explicit in-text citations (e.g., 'Smith ( 2000 )'). If it refers to a Figure or Table (e.g., 'Fig . 4'), tag it as CITATION, not ENDOPHORIC.
-8. SOURCES: The specific human source or author being referenced. -> RULE: Extract ONLY the specific name or core noun phrase (e.g., 'Descartes', 'Eysenck', 'one small article'). Do NOT tag inanimate objects.
-9. ENDOPHORIC: Refers to structural elements within the text. -> RULE: Strictly limit to explicit document cross-references (e.g., 'in Figure 1', 'Table 8', 'Section 9', '( references )'). Do NOT tag physical locations or relative clauses.
-10. JUSTIFYING: Locutions that signal persuasion or substantiation. -> RULE: This includes single transition words (e.g., 'Thus', 'Therefore', 'Hence') AND massive causal clauses (e.g., 'as a result of higher gross profit margin...').
+Schema per object:
+{
+  "text": "Exact string from sentence (do not alter spacing)",
+  "label": "MUST BE ONE OF: MONOGLOSS, DENY, COUNTER, PROCLAIM, ENTERTAIN, ATTRIBUTION, CITATION, SOURCES, ENDOPHORIC, JUSTIFYING",
+  "context_before": "2-3 words preceding the marker"
+}
+
+STRICT DEFINITIONS & RULES:
+1. MONOGLOSS: Bare assertions. -> RULE: Tag the main verb of a highly definitive factual claim (e.g., 'determines', 'proves'). DO NOT tag standard linking verbs ('is', 'are', 'was', 'have') unless they are overwhelmingly forceful.
+2. DENY: Rejects an alternative directly. -> RULE: Extract the syntactic negator and immediate concept ('not effective', 'no explanation'). Do NOT tag negative-sounding words like 'fails' or 'biased'.
+3. COUNTER: Replaces an expected alternative. -> RULE: Can be single words ('however', 'although') or full clauses ('Regardless of the decrease...').
+4. PROCLAIM: Shows strong commitment (e.g., 'undoubtedly', 'in fact'). Do NOT tag neutral verbs like 'shows'.
+5. ENTERTAIN: Presents possibility. -> RULE: Extract ONLY the modal word/phrase (e.g., 'would', 'could', 'might', 'must') or hedge ('seem', 'if', 'perhaps').
+6. ATTRIBUTION: Delegates responsibility. -> RULE: Extract the reporting verb phrase (e.g., 'strongly asserts', 'warns') OR the prepositional phrase ('According to'). Do NOT include "that".
+7. CITATION: Explicit in-text citations (e.g., 'Smith ( 2000 )'). 
+8. SOURCES: The specific human source/author. -> RULE: Extract ONLY the specific name/noun phrase ('Descartes'). Do NOT tag inanimate objects.
+9. ENDOPHORIC: Structural text references. -> RULE: Limit to explicit cross-references ('in Figure 1', 'Table 8', 'Section 9').
+10. JUSTIFYING: Signals persuasion/substantiation. -> RULE: Includes transition words ('Thus', 'Therefore') AND causal clauses ('because primates tend to call less').
 
 Example 1 (Counter, Entertain, Deny)
 Sentence: "Although the results are promising , they might not apply to all cases ."
 <thought_process>
-"Although" replaces an expected alternative (COUNTER). "might" presents the statement as a possibility rather than a fact (ENTERTAIN). "not apply" directly rejects an alternative and its concept (DENY). The verbs "are" and "apply" are standard and modified by the engagement markers, so they are not MONOGLOSS.
+"Although" replaces an expected alternative (COUNTER). "might" presents the statement as a possibility (ENTERTAIN). "not apply" directly rejects an alternative (DENY).
 </thought_process>
 [
   {
@@ -41,7 +50,7 @@ Sentence: "Although the results are promising , they might not apply to all case
 Example 2 (Spacing, Citation, Sources, Attribution)
 Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , and Davies ( 2002 , p107 ) warns against this ."
 <thought_process>
-"Christen ( 1999 )" and "Davies ( 2002 , p107 )" are formal in-text citations, and the spaces must be preserved exactly (CITATION). The verbs attributing the claims are "strongly asserts" and "warns", excluding the word "that" (ATTRIBUTION). 
+"Christen ( 1999 )" and "Davies ( 2002 , p107 )" are formal in-text citations (CITATION). The verbs attributing the claims are "strongly asserts" and "warns", excluding the word "that" (ATTRIBUTION). 
 </thought_process>
 [
   {
@@ -66,33 +75,10 @@ Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , 
   }
 ]
 
-Example 3 (Endophoric, Proclaim, Justifying)
-Sentence: "As shown in Section 9 , the current discussion is important because it highlights the key factors of climate change ."
-<thought_process>
-"in Section 9" refers to another part of the text (ENDOPHORIC). "As shown" acts to endorse or show strong commitment to the finding (PROCLAIM). "because" explicitly signals substantiation or reasoning (JUSTIFYING). "is" is not MONOGLOSS here because the entire clause is framed by the PROCLAIM and JUSTIFYING markers.
-</thought_process>
-[
-  {
-    "text": "in Section 9", 
-    "label": "ENDOPHORIC",
-    "context_before": "shown"
-  },
-  {
-    "text": "As shown", 
-    "label": "PROCLAIM",
-    "context_before": ""
-  },
-  {
-    "text": "because", 
-    "label": "JUSTIFYING",
-    "context_before": "important"
-  }
-]
-
-Example 4 (Hard Negative & Monogloss)
+Example 3 (Hard Negative & Monogloss)
 Sentence: "The survey was conducted over three days in the main lobby , and the data determines the outcome ."
 <thought_process>
-The first clause is purely descriptive methodology. "was conducted" is a standard passive verb describing an action, not a controversial bare assertion. The transition "and" is neutral here. However, "determines" in the second clause is a strong bare assertion of fact ignoring alternatives (MONOGLOSS).
+"was conducted" is a standard passive verb describing methodology, not a bare assertion. "determines" is a strong bare assertion of fact ignoring alternatives (MONOGLOSS).
 </thought_process>
 [
   {
@@ -102,24 +88,11 @@ The first clause is purely descriptive methodology. "was conducted" is a standar
   }
 ]
 
---- CRITICAL RULES FOR GENERATION ---
-BANNED LABELS:
-1. You are strictly FORBIDDEN from using labels like "NEUTRAL", "QUOTATION", "REPEAT", "CONTEXT_BEFORE", "O", or "". 
-2. The "label" value MUST be EXACTLY one of the 10 uppercase names listed in the Definitions. Do NOT invent new ones.
-
-JSON FORMATTING RULES:
-1. You must output perfectly valid JSON. Do NOT use inline comments (//) anywhere inside the JSON array.
-2. OMISSION RULE: If a word is neutral, simply ignore it. If the entire sentence is purely descriptive and contains no valid markers, you MUST output an empty array: []
-3. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL strange spaces, commas, hyphens, and parentheses exactly as they appear (e.g., "under - represented", "Pederson , 2002 : 305"). Do not delete spaces around hyphens or colons!
-
-OUTPUT FORMAT:
-First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
-Then, output a JSON array of objects. Each object MUST have:
-- "text": the exact engagement marker span.
-- "label": MUST be exactly one of the 10 uppercase labels above.
-- "context_before": the 2 or 3 words immediately preceding the marker (or "" if at the start).
-
-Now annotate the following.
+---
+REMINDER: 
+1. Write your <thought_process> first.
+2. ONLY use the 10 labels from the schema. If a word is neutral, omit it completely. If the whole sentence is neutral, output [].
+3. Preserve all original spacing (e.g., "( 1999 )").
 
 Sentence:
 {sentence}
