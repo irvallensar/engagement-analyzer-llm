@@ -4,15 +4,15 @@ Your task:
 Identify all engagement markers and supplementary discourse categories in the sentence. Assign EXACTLY ONE label to each marker. 
 
 Allowed labels & Strict Definitions:
-1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. -> RULE: Tag the main verb of a definitive factual statement. This INCLUDES standard linking verbs ('is', 'are', 'was', 'has') if they state a cold fact without any hedging.
-2. DENY: Rejects an alternative position directly. -> RULE: Extract the negator AND the immediate concept being negated (e.g., 'not effective', 'no such thing', 'does not').
+1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. -> RULE: Tag the main verb of a definitive factual statement (including 'is', 'are', 'was', 'have'). CRITICAL EXCEPTION: Do NOT tag verbs if they are inside the scope of a modal, conditional, or attribution (e.g., verbs following 'would', 'if', or 'conclude that' are NOT Monogloss).
+2. DENY: Rejects an alternative position directly. -> RULE: Extract explicit syntactic negators and the immediate concept ('not effective', 'no explanation'). STRICT RULE: Do NOT tag negative-sounding adjectives or verbs (e.g., 'biased', 'fails', 'stereotyped', 'disproportionate').
 3. COUNTER: Replaces an expected alternative position. -> RULE: Can be a single word ('however') OR a massive clause (e.g., 'Regardless the decrease of turnover ... revenue ,').
 4. PROCLAIM: Shows strong commitment or endorsement (e.g., 'undoubtedly', 'in fact'). Do NOT tag neutral verbs like 'shows' when referring to figures.
 5. ENTERTAIN: Presents the position as only one possibility. Extract the modal word or phrase (e.g., 'would', 'could', 'might', 'must', 'would need to') or hedge ('seem', 'if').
 6. ATTRIBUTION: Delegates responsibility to an external source. -> RULE: Extract the reporting verb phrase (e.g., 'strongly asserts', 'warns') OR the full prepositional phrase attributing the idea (e.g., 'In Descartes ' version', 'According to'). Do NOT include the word "that".
 7. CITATION: Explicit in-text citations (e.g., 'Smith ( 2000 )'). If it refers to a Figure or Table (e.g., 'Fig . 4'), tag it as CITATION, not ENDOPHORIC.
 8. SOURCES: The specific human source or author being referenced. -> RULE: Extract ONLY the specific name or core noun phrase (e.g., 'Descartes', 'Eysenck', 'one small article'). Do NOT tag inanimate objects.
-9. ENDOPHORIC: Refers to structural elements within the text. -> RULE: Strictly limit to explicit cross-references (e.g., 'in Figure 1', 'Table 8', 'Section 9').
+9. ENDOPHORIC: Refers to structural elements within the text. -> RULE: Strictly limit to explicit document cross-references (e.g., 'in Figure 1', 'Table 8', 'Section 9', '( references )'). Do NOT tag physical locations or relative clauses.
 10. JUSTIFYING: Locutions that signal persuasion or substantiation. -> RULE: This includes single transition words (e.g., 'Thus', 'Therefore', 'Hence') AND massive causal clauses (e.g., 'as a result of higher gross profit margin...').
 
 Example 1 (Counter, Entertain, Deny)
@@ -105,12 +105,12 @@ The first clause is purely descriptive methodology. "was conducted" is a standar
 --- CRITICAL RULES FOR GENERATION ---
 BANNED LABELS:
 1. You are strictly FORBIDDEN from using labels like "NEUTRAL", "QUOTATION", "REPEAT", "CONTEXT_BEFORE", "O", or "". 
-2. The "label" value MUST be EXACTLY one of the 10 uppercase names listed in the Definitions.
-3. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL strange spaces, commas, and parentheses exactly as they appear.
+2. The "label" value MUST be EXACTLY one of the 10 uppercase names listed in the Definitions. Do NOT invent new ones.
 
 JSON FORMATTING RULES:
 1. You must output perfectly valid JSON. Do NOT use inline comments (//) anywhere inside the JSON array.
 2. OMISSION RULE: If a word is neutral, simply ignore it. If the entire sentence is purely descriptive and contains no valid markers, you MUST output an empty array: []
+3. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL strange spaces, commas, hyphens, and parentheses exactly as they appear (e.g., "under - represented", "Pederson , 2002 : 305"). Do not delete spaces around hyphens or colons!
 
 OUTPUT FORMAT:
 First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
