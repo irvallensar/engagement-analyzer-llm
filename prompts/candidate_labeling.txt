@@ -5,22 +5,24 @@ Identify all engagement markers and supplementary discourse categories in the se
 
 Allowed labels & Strict Definitions:
 1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. 
-   -> ONLY use for the main verb of a highly definitive, factual claim (e.g., 'determines', 'proves'). Do NOT tag standard linking verbs ('is', 'was', 'are') or basic descriptive verbs as MONOGLOSS unless they forcibly assert a point.
+   -> ONLY use for the main verb of a highly definitive, factual claim (e.g., 'determines', 'proves'). Do NOT tag standard linking verbs ('is', 'was', 'are', 'have') or basic descriptive verbs as MONOGLOSS unless they forcibly assert a point.
 2. DENY: Rejects an alternative position directly (e.g., 'not', 'never', 'fail to').
 3. COUNTER: Replaces an expected alternative position (e.g., 'however', 'although', 'despite', 'but').
-4. PROCLAIM: Shows strong commitment, concurrence, or endorsement (e.g., 'undoubtedly', 'in fact', 'shows', 'demonstrates').
+4. PROCLAIM: Shows strong commitment, concurrence, or endorsement (e.g., 'undoubtedly', 'in fact', 'shows', 'demonstrates'). Do NOT tag standard adverbs like 'directly' or verbs like 'reduce'.
 5. ENTERTAIN: Presents the position as only one possibility, opening dialogic space. 
-   -> Look for modals ('may', 'might', 'could', 'would'), hedges ('seem', 'appear', 'suggest', 'likely'), and conditionals ('if').
+   -> Look for modals ('may', 'might', 'could', 'would', 'should'), hedges ('seem', 'appear', 'suggest', 'likely'), and conditionals ('if'). 
+   -> RULE FOR MODALS: Extract ONLY the single modal word (e.g., extract 'would', not 'would help').
 6. ATTRIBUTION: Delegates responsibility to an external source (e.g., 'states', 'argues', 'according to', 'the claim that').
 7. CITATION: In-text or narrative citations (e.g., 'Smith (2000)').
-8. SOURCES: Nominal expressions mentioning external sources (e.g., 'A recent paper', 'Previous studies').
+8. SOURCES: Nominal expressions mentioning external human sources, authors, or research publications (e.g., 'A recent paper', 'Previous studies', 'Researchers'). 
+   -> RULE FOR SOURCES: Do NOT tag inanimate objects, concepts, components, or systems (e.g., "HCI", "data", "inputs") as SOURCES.
 9. ENDOPHORIC: Refers to information in other parts of its own text (e.g., 'in Table 1', 'as discussed below').
-10. JUSTIFYING: Locutions that signal persuasion or substantiation (e.g., 'because', 'since', 'therefore', 'thus').
+10. JUSTIFYING: Locutions that signal persuasion or substantiation. 
+    -> RULE: In this dataset, JUSTIFYING spans often include the conjunction AND the noun phrase it introduces (e.g., extract "because the data" or "since many safety - critical systems", not just "because" or "since").
 
 NEGATIVE CONSTRAINTS:
 - Be highly conservative. If a word is just a standard grammatical transition (like 'and') or a neutral descriptive verb, do NOT tag it.
-- For MONOGLOSS, do not include objects or prepositional phrases. Select ONLY the main verb.
-- If there are NO markers in the sentence, return an empty array [].
+- Never invent a label. You MUST use exactly one of the 10 uppercase labels above. Do NOT output a label like "NEUTRAL". If the text is neutral, return an empty array [].
 
 OUTPUT FORMAT:
 First, write a brief <thought_process> analyzing the sentence and deciding which words fit the strict definitions above. 
