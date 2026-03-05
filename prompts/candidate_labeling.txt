@@ -32,6 +32,7 @@ Negative constraints:
 - Do NOT tag standard, neutral verbs (e.g., 'is', 'has', 'was') as MONOGLOSS or JUSTIFYING unless they serve a highly explicit rhetorical function. 
 - Do NOT tag standard transition words like "and" or "but" unless they explicitly counter a specific expected alternative.
 - Be highly conservative. If you are unsure if a span acts as an engagement marker, do NOT extract it.
+- For MONOGLOSS, select ONLY the main verb (e.g., 'have', 'is', 'demonstrates'). Do not include the object or the rest of the verb phrase.
 
 Example 1 (Monogloss)
 Sentence: "The language you speak determines your thoughts."
