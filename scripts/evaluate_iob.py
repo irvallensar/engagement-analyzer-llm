@@ -233,4 +233,4 @@ def evaluate(filepath, max_samples=None):
     print("========================================")
 
 if __name__ == "__main__":
-    evaluate("data/dev.iob", max_samples=50)
+    evaluate("data/dev.iob", max_samples=20)
