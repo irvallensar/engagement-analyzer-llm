@@ -25,7 +25,7 @@ DEFINITIONS & CONSTRAINTS:
 7. CITATION: Explicit in-text citations. Extract the ENTIRE parenthetical block.
 8. SOURCES: The specific entity making a claim. Extract the exact noun or pronoun (e.g., 'Descartes', 'researchers', 'Some studies', 'Their', 'literature'). Tag this independently even if it is right next to an ATTRIBUTION.
 9. ENDOPHORIC: Structural references. Extract explicit document cross-references, including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( references )').
-10. JUSTIFYING: Signals persuasion/substantiation. Extract transition words (e.g., 'Thus', 'Therefore') and causal clauses.
+10. JUSTIFYING: Signals persuasion/substantiation. Extract transition words (e.g., 'Thus', 'Therefore', 'so') and causal phrases/clauses (e.g., 'because', 'as a result of').
 
 Example 1 (Counter, Entertain, Deny)
 Sentence: "Although the results are promising , they might not apply to all cases ."
@@ -97,6 +97,24 @@ Sentence: "Researchers emphasize that the data proves the outcome ."
   {
     "text": "proves", 
     "label": "MONOGLOSS",
+    "context_before": "data"
+  }
+]
+
+Example 4 (Justifying, Endophoric)
+Sentence: "Therefore , the data in Table 1 is excluded ."
+<thought_process>
+"Therefore" is a transition word signaling substantiation (JUSTIFYING). "in Table 1" is an explicit document cross-reference (ENDOPHORIC).
+</thought_process>
+[
+  {
+    "text": "Therefore", 
+    "label": "JUSTIFYING",
+    "context_before": ""
+  },
+  {
+    "text": "in Table 1", 
+    "label": "ENDOPHORIC",
     "context_before": "data"
   }
 ]
