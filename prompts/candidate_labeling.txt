@@ -101,24 +101,6 @@ Sentence: "Researchers emphasize that the data proves the outcome ."
   }
 ]
 
-Example 4 (Justifying, Endophoric)
-Sentence: "Therefore , the data in Table 1 is excluded ."
-<thought_process>
-"Therefore" is a transition word signaling substantiation (JUSTIFYING). "in Table 1" is an explicit document cross-reference (ENDOPHORIC).
-</thought_process>
-[
-  {
-    "text": "Therefore", 
-    "label": "JUSTIFYING",
-    "context_before": ""
-  },
-  {
-    "text": "in Table 1", 
-    "label": "ENDOPHORIC",
-    "context_before": "data"
-  }
-]
-
 Now annotate the following.
 
 Sentence:
