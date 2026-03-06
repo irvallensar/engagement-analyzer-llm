@@ -6,7 +6,7 @@ def call_local_llm(prompt: str) -> str:
     
     # Payload configuring Mistral and the critical Temperature setting
     payload = {
-        "model": "mistral",
+        "model": "qwen2.5",
         "prompt": prompt,
         "temperature": 0.0,
         "stream": False
