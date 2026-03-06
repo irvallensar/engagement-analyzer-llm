@@ -13,18 +13,18 @@ First, write a brief <thought_process> analyzing the sentence. Then, output a JS
 
 CRITICAL RULES:
 1. ONLY use the 10 uppercase labels above. Do not include neutral words.
-2. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL strange spaces, colons, and punctuation. Do NOT add parentheses if they do not exist in the original text (e.g., if the text is 'Chima 2001', do not output 'Chima ( 2001 )').
+2. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL strange spaces, colons, semicolons, and punctuation exactly as they appear in the original text. Do NOT add parentheses if they do not exist.
 
 Allowed labels & Definitions:
-1. MONOGLOSS: Bare assertions. Tag the main verb of a highly definitive, factual claim. Do NOT tag standard linking verbs ('is', 'are', 'was') unless they forcefully assert a controversial point. Do NOT tag verbs of discovery.
-2. DENY: Rejects an alternative directly. Extract the syntactic negator and the immediate concept (e.g., 'not effective', 'no explanation'). Do not tag negative-sounding verbs.
+1. MONOGLOSS: Bare assertions. Tag the main verb of a highly definitive, factual claim. STRICT RULE: Be highly conservative. Do NOT tag standard linking verbs ('is', 'are', 'was', 'have') unless they forcefully assert a controversial point. 
+2. DENY: Rejects an alternative directly. Extract the syntactic negator and the immediate concept (e.g., 'not effective', 'no explanation'). Do not tag negative-sounding adjectives or verbs.
 3. COUNTER: Replaces an expected alternative. Can be a single word (e.g., 'however', 'although', 'only') or a full contrastive clause.
-4. PROCLAIM: Shows rhetorical commitment or endorsement (e.g., 'undoubtedly', 'in fact', 'demonstrates'). Do NOT tag standard action verbs like 'create', 'perpetuate', or 'stipulate'.
-5. ENTERTAIN: Presents possibility or hedges. Extract the modal word/phrase (e.g., 'would', 'could', 'merely have to', 'will') or hedge (e.g., 'appear', 'seem', 'On average', 'largely').
-6. ATTRIBUTION: Delegates responsibility. Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'stipulate', 'place') or attributing phrase ('According to', 'Their justification'). Do not include "that".
-7. CITATION: Explicit in-text citations. Extract the ENTIRE block, including multiple authors.
-8. SOURCES: The specific source being referenced. Extract the noun phrase or pronoun. CRITICAL: You MUST tag pronouns ('Their', 'he') and general groups ('Some studies', 'researchers') if they are the source of an ATTRIBUTION. Must be tagged independently.
-9. ENDOPHORIC: Structural references. Limit to explicit cross-references (e.g., 'in Figure 1', 'Table 8', '( references )'). 
+4. PROCLAIM: Shows rhetorical commitment or endorsement (e.g., 'undoubtedly', 'in fact', 'demonstrates'). Do NOT tag standard action verbs like 'create' or 'strengthen'.
+5. ENTERTAIN: Presents possibility or hedges. Extract the modal word/phrase (e.g., 'would', 'could', 'might', 'must') or hedge ('seem', 'appear', 'if'). Do NOT tag standard future tense 'will' unless it is a clear hedge.
+6. ATTRIBUTION: Delegates responsibility. Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'found', 'stipulate') or attributing phrase ('According to', 'Their justification'). Do not include "that".
+7. CITATION: Explicit in-text citations. Extract the ENTIRE block.
+8. SOURCES: The specific source being referenced. Extract the noun phrase. CRITICAL: You MUST tag pronouns ('Their', 'he'), research objects ('studies', 'literature'), and general groups ('researchers') ONLY IF they are the source of an ATTRIBUTION. Must be tagged independently.
+9. ENDOPHORIC: Structural references. Limit strictly to explicit cross-references (e.g., 'in Figure 1', 'Table 8', '( references )'). 
 10. JUSTIFYING: Signals persuasion/substantiation. Includes transition words (e.g., 'Thus', 'Therefore') and causal clauses.
 
 Example 1 (Counter, Entertain, Deny)
