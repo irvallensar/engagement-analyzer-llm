@@ -5,13 +5,13 @@ Identify all engagement markers and supplementary discourse categories in the se
 
 Allowed labels & Definitions:
 1. MONOGLOSS: Bare assertions ignoring alternative viewpoints. Tag the main verb of a highly definitive, factual claim (e.g., 'determines', 'proves'). Do NOT tag standard linking verbs ('is', 'are', 'was') unless they forcibly assert a controversial point.
-2. DENY: Rejects an alternative position directly. Extract the syntactic negator and the immediate concept (e.g., 'not effective', 'no explanation'). Do not tag negative-sounding adjectives like 'biased'.
+2. DENY: Rejects an alternative position directly. MUST contain a literal syntactic negator ('not', 'no', 'never', 'fail', 'without') plus the immediate concept (e.g., 'not effective', 'no explanation'). NEVER tag negative-sounding concepts (e.g., 'unnecessary', 'biased') if they lack a literal negator.
 3. COUNTER: Replaces an expected alternative position. Can be a single word (e.g., 'however', 'although') or a full contrastive clause.
 4. PROCLAIM: Shows strong commitment or endorsement (e.g., 'undoubtedly', 'in fact'). Do not tag neutral verbs like 'shows'.
 5. ENTERTAIN: Presents the position as only one possibility. Extract the modal word or phrase (e.g., 'would', 'could', 'might', 'must', 'would need to') or hedge ('seem', 'if').
-6. ATTRIBUTION: Delegates responsibility to an external source. Extract the reporting verb phrase (e.g., 'strongly asserts', 'warns') or the attributing prepositional phrase (e.g., 'According to'). Do not include "that".
+6. ATTRIBUTION: Delegates responsibility to an external source. Extract the reporting verb phrase (e.g., 'strongly asserts', 'warns') or the attributing phrase (e.g., 'According to'). Do not include "that".
 7. CITATION: Explicit in-text citations (e.g., 'Smith ( 2000 )'). 
-8. SOURCES: The specific human source or author being referenced. Extract ONLY the specific name or noun phrase (e.g., 'Descartes', 'Eysenck'). Do not tag inanimate objects.
+8. SOURCES: The specific human source or author being referenced. Extract ONLY the specific name or noun phrase (e.g., 'Descartes', 'Eysenck', 'researchers'). CRITICAL: You must tag the source independently, even if it is right next to an ATTRIBUTION marker.
 9. ENDOPHORIC: Refers to structural elements within the text. Limit to explicit cross-references (e.g., 'in Figure 1', 'Table 8', 'Section 9').
 10. JUSTIFYING: Locutions that signal persuasion or substantiation. Includes transition words (e.g., 'Thus', 'Therefore') and causal clauses (e.g., 'because primates tend to call less').
 
