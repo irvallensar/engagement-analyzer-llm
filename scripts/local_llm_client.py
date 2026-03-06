@@ -2,8 +2,8 @@ import urllib.request
 import json
 
 def call_local_llm(prompt: str) -> str:
-    # --- UPDATE THIS URL TO THE ONE COLAB GIVES YOU ---
-    url = "https://YOUR-RANDOM-WORDS.trycloudflare.com/api/generate"
+    # --- UPDATE THIS URL TO THE NEW LOCALTUNNEL ONE ---
+    url = "https://YOUR-RANDOM-WORDS.loca.lt/api/generate"
     
     payload = {
         "model": "qwen2.5:14b",
@@ -14,9 +14,10 @@ def call_local_llm(prompt: str) -> str:
     
     data = json.dumps(payload).encode('utf-8')
     
-    # Cloudflare sometimes blocks standard python headers, so we spoof a browser
+    # Localtunnel requires this exact header to bypass the warning screen!
     headers = {
         'Content-Type': 'application/json',
+        'Bypass-Tunnel-Reminder': 'true',  # <--- THE MAGIC KEY
         'User-Agent': 'Mozilla/5.0'
     }
     
