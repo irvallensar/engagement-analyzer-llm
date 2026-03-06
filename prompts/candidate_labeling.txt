@@ -12,11 +12,11 @@ Analyze the sentence and output a JSON array of objects strictly matching this s
 ]
 
 FORMATTING RULES:
-1. ABSOLUTE COPY RULE: You must copy the exact text from the sentence, preserving ALL spaces, commas, and parentheses exactly as they appear (e.g., if the text is "( WTO , 2005d )", do NOT output "WTO ( 2005d )"). 
+1. You must copy the exact text from the sentence, preserving ALL strange spaces and punctuation (e.g., "( 1999 )"). Do not fix typos or spacing.
 2. ONLY use the 10 uppercase labels from the schema. 
 
 DEFINITIONS & CONSTRAINTS:
-1. MONOGLOSS: Bare assertions by the author. Extract the main verb or verb phrase (including 'is', 'are', 'are illustrated') of a definitive factual statement. CRITICAL: Do NOT tag verbs inside direct quotes, actions belonging to a specific Source, or statements backed by a CITATION in the same sentence.
+1. MONOGLOSS: Bare assertions. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'are illustrated') of a definitive, undeniable factual statement. 
 2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts. STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
 3. COUNTER: Replaces an expected alternative. Extract single transition words (e.g., 'however', 'although', 'only', 'but') or full contrastive clauses.
 4. PROCLAIM: Shows rhetorical commitment. Extract words showing authorial backing (e.g., 'undoubtedly', 'in fact', 'conclude').
@@ -81,7 +81,7 @@ Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , 
 Example 3 (Sources, Attribution, Monogloss)
 Sentence: "Researchers emphasize that the data proves the outcome ."
 <thought_process>
-"Researchers" is the specific entity making the claim (SOURCES). "emphasize" is the reporting verb (ATTRIBUTION). "proves" is a forceful action verb establishing an undeniable fact by the author (MONOGLOSS).
+"Researchers" is the specific entity making the claim (SOURCES). "emphasize" is the reporting verb (ATTRIBUTION). "proves" is a forceful action verb establishing an undeniable fact (MONOGLOSS).
 </thought_process>
 [
   {
