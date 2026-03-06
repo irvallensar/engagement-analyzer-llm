@@ -3,7 +3,7 @@ import json
 
 def call_local_llm(prompt: str) -> str:
     # --- UPDATE THIS URL TO THE NEW LOCALTUNNEL ONE ---
-    url = "https://YOUR-RANDOM-WORDS.loca.lt/api/generate"
+    url = "https://great-stars-build.loca.lt/api/generate"
     
     payload = {
         "model": "qwen2.5:14b",
