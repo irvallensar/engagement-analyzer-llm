@@ -5,7 +5,7 @@ def call_local_llm(prompt: str) -> str:
     url = "http://localhost:11434/api/generate"
     
     payload = {
-        "model": "qwen2.5:14b-instruct-q6_K",
+        "model": "qwen3.5:9b-q8_0",
         "prompt": prompt,
         "temperature": 0.0,
         "stream": False
