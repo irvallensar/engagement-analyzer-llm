@@ -1,40 +1,42 @@
+import sys
 from llama_cpp import Llama
-import os
 
-# Global variable to hold the model in memory
-# This ensures we don't reload the 10GB model for every single sentence!
-MODEL_PATH = "./models/qwen2.5-9b-instruct-q8_0.gguf" 
-# ^^^ MAKE SURE THIS MATCHES THE FILENAME YOU DOWNLOADED ^^^
+# 1. GLOBAL MODEL LOADER
+# We load this ONCE at the top level so it stays in GPU memory.
+# If we put this inside the function, it would reload the 10GB file for every sentence (super slow).
 
-print(f"Loading LLM from {MODEL_PATH}...")
+MODEL_PATH = "./models/Qwen3.5-9B-Q8_0.gguf" 
+
+print(f"Loading Qwen 3.5 from {MODEL_PATH}...")
 
 try:
+    # Initialize the model with GPU offloading
     llm = Llama(
         model_path=MODEL_PATH,
-        n_gpu_layers=-1,      # -1 means "Offload EVERYTHING to GPU"
-        n_ctx=4096,           # Context window (fits in 15GB VRAM with Q8 model)
-        verbose=False         # Set to True if you want to see the speed stats
+        n_gpu_layers=-1,      # -1 = Offload ALL layers to GPU
+        n_ctx=4096,           # 4k Context Window (Fits easily in 15GB VRAM)
+        verbose=False         # Set True if you want to see layer-by-layer load stats
     )
-    print("LLM Loaded successfully on GPU!")
+    print("SUCCESS: Model loaded on Tesla T4 GPU.")
 except Exception as e:
-    print(f"Error loading model: {e}")
-    raise e
+    print(f"CRITICAL ERROR LOADING MODEL: {e}")
+    sys.exit(1)
 
 def get_completion(prompt):
     """
     Direct Python call to the GGUF model via llama-cpp-python
     """
-    # Formatting the prompt for Qwen Instruct (ChatML format is safest)
-    # Most GGUF models handle raw text fine, but this helps stability
+    # Qwen 3.5 uses ChatML format. We must wrap the prompt correctly.
     formatted_prompt = f"<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
 
+    # Generate response
     output = llm(
         formatted_prompt,
-        max_tokens=1024,  # Give it room to write the JSON
-        stop=["<|im_end|>", "User:", "Observation:"], # Stop tokens
-        echo=False,
-        temperature=0.0   # Deterministic output
+        max_tokens=1024,   # Space for the JSON response
+        stop=["<|im_end|>"], # Stop generating when finished
+        echo=False,        # Do not repeat the prompt
+        temperature=0.0    # Deterministic (Scientific)
     )
     
-    # Extract just the text response
+    # Extract just the text
     return output['choices'][0]['text']
