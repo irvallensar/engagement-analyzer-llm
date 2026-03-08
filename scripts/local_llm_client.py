@@ -5,7 +5,7 @@ import sys
 # Configuration for Ollama HTTP API
 OLLAMA_API_URL = "http://localhost:11434/api/generate"
 
-def get_completion(prompt):
+def call_local_llm(prompt):
     """
     Sends the prompt to the local Ollama server and returns the text response.
     """
