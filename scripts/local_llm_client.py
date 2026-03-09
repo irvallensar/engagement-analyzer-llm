@@ -10,7 +10,7 @@ def call_local_llm(prompt):
     Sends the prompt to the local Ollama server and returns the text response.
     """
     payload = {
-        # CRITICAL: This must match the model we pull in Colab
+        # TARGET THE CHAMPION: Standard 14B Q4
         "model": "qwen2.5:14b", 
         "prompt": prompt,
         "temperature": 0.0,
@@ -21,9 +21,8 @@ def call_local_llm(prompt):
         response = requests.post(OLLAMA_API_URL, json=payload)
         response.raise_for_status()
         
-        # Parse response
         result = response.json()
-        return result['response']
+        return result.get('response', '[]')
         
     except requests.exceptions.RequestException as e:
         print(f"\n[!] API ERROR: {e}")
