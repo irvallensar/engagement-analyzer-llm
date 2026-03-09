@@ -6,7 +6,7 @@ from scripts.local_llm_client import call_local_llm
 from collections import defaultdict
 
 # ==========================================
-# 1. DATA LOADING HELPER FUNCTIONS (Included Locally)
+# 1. DATA LOADING HELPER FUNCTIONS
 # ==========================================
 def load_iob_dataset(file_path):
     """
@@ -26,10 +26,8 @@ def load_iob_dataset(file_path):
             else:
                 parts = line.split()
                 if len(parts) >= 2:
-                    # Usually "Word Label"
                     current_sentence.append((parts[0], parts[-1]))
                 else:
-                    # Fallback for weird lines
                     current_sentence.append((parts[0], 'O'))
                     
     if current_sentence:
@@ -46,27 +44,21 @@ def extract_spans_from_iob(sentence):
     start_index = -1
     
     for i, (word, label) in enumerate(sentence):
-        # Clean label (remove B- or I-)
         base_label = label[2:] if label != 'O' else 'O'
         tag_prefix = label[0] if label != 'O' else 'O'
         
         if tag_prefix == 'B':
-            # If we were tracking a span, close it
             if current_label:
                 spans.add((current_label, start_index, i))
-            # Start new span
             current_label = base_label
             start_index = i
             
         elif tag_prefix == 'I':
-            # Check for validity: must match current label
             if current_label and base_label == current_label:
-                continue # Just extending
+                continue
             else:
-                # Invalid I-tag (or new span implicit), close old one
                 if current_label:
                     spans.add((current_label, start_index, i))
-                # Treat distinct I-tag as B-tag (robustness)
                 if base_label != 'O':
                     current_label = base_label
                     start_index = i
@@ -78,15 +70,16 @@ def extract_spans_from_iob(sentence):
                 spans.add((current_label, start_index, i))
                 current_label = None
                 
-    # Close any final span
     if current_label:
         spans.add((current_label, start_index, len(sentence)))
         
     return spans
 
 # ==========================================
-# 2. PROMPTS: DIVIDE & CONQUER
+# 2. PROMPTS: DIVIDE & CONQUER (FIXED FORMATTING)
 # ==========================================
+# Note: Double curly braces {{ }} escape them so Python doesn't crash.
+
 PROMPT_PASS_1 = """You are an expert linguistic annotator. 
 TASK: Extract specific structural engagement markers from the sentence.
 OUTPUT: JSON array of objects. If none, return [].
@@ -97,7 +90,7 @@ DEFINITIONS:
 3. SOURCES: The specific entity making a claim. Extract the exact noun or pronoun (e.g., 'Descartes', 'researchers', 'Some studies', 'Their', 'literature'). Tag this independently even if it is right next to an ATTRIBUTION.
 4. ENDOPHORIC: Structural references. Extract explicit document cross-references, including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( references )').
 
-FORMAT: [{"text": "...", "label": "LABEL", "context_before": "..."}]
+FORMAT: [{{"text": "...", "label": "LABEL", "context_before": "..."}}]
 
 Sentence:
 {sentence}
@@ -115,7 +108,7 @@ DEFINITIONS:
 5. ENTERTAIN: Presents possibility or conditionality. Extract modal verbs ('would', 'could', 'might', 'must'), conditional words ('if'), and hedges ('appear', 'seem', 'largely', 'often').
 6. JUSTIFYING: Signals persuasion/substantiation. Extract transition words (e.g., 'Thus', 'Therefore') and causal clauses.
 
-FORMAT: [{"text": "...", "label": "LABEL", "context_before": "..."}]
+FORMAT: [{{"text": "...", "label": "LABEL", "context_before": "..."}}]
 
 Sentence:
 {sentence}
