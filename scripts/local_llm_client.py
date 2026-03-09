@@ -11,7 +11,7 @@ def call_local_llm(prompt):
     """
     payload = {
         # CRITICAL: This must match the model we pull in Colab
-        "model": "qwen2.5:14b-instruct-q6_K", 
+        "model": "qwen3.5:9b", 
         "prompt": prompt,
         "temperature": 0.0,
         "stream": False
