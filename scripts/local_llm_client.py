@@ -5,7 +5,7 @@ import re
 
 # 1. GLOBAL LOAD (Runs once when script starts)
 # This keeps the model in VRAM so we don't reload it for every sentence.
-MODEL_NAME = "unsloth/Qwen3.5-9B-Instruct-bnb-4bit"
+MODEL_NAME = "unsloth/Qwen3.5-9B-Instruct"
 MAX_SEQ_LENGTH = 4096 # Supports up to 128k, but 4k is safe for T4 VRAM
 dtype = None # Auto detection
 load_in_4bit = True # Force 4-bit (The Qiita method)
