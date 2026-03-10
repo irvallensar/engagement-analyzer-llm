@@ -1,107 +1,66 @@
-You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse based on the Appraisal framework.
+You are an expert computational linguist specializing in Engagement/Appraisal theory. 
+Your task is strict span extraction. You must extract EXACT substrings from the sentence that match the definitions below.
 
-TASK & JSON SCHEMA:
-Analyze the sentence and output a JSON array of objects strictly matching this schema. If the sentence contains no engagement markers, output an empty array: []
+STRICT BOUNDARY RULES (CRITICAL):
+1. MINIMALISM: Extract the absolute minimum number of words required. Do NOT extract full clauses.
+2. NO PUNCTUATION: Strip all trailing commas, periods, or quotation marks from your extraction.
+3. EXACT MATCH: The extracted "text" MUST be a case-sensitive, exact substring of the original sentence.
+4. MUTUAL EXCLUSIVITY: A word cannot be two labels. Pick the most dominant one.
 
+DEFINITIONS:
+1. ATTRIBUTION: The specific reporting verb phrase (e.g., 'asserts', 'suggests', 'According to').
+2. CITATION: Explicit in-text citations. Extract the ENTIRE parenthetical block (e.g., '(Smith, 2019)').
+3. SOURCES: The specific entity making a claim (e.g., 'Descartes', 'researchers', 'They'). 
+4. ENDOPHORIC: Document cross-references (e.g., 'in Figure 1', 'Table 8').
+5. MONOGLOSS: Bare assertions. The main verb of a definitive factual statement.
+6. DENY: Literal syntactic negators (e.g., 'no', 'not', 'fail to', 'never').
+7. COUNTER: Single transition words of contrast (e.g., 'however', 'although', 'but').
+8. PROCLAIM: Words showing authorial backing (e.g., 'undoubtedly', 'in fact', 'conclude').
+9. ENTERTAIN: Modal verbs or hedges (e.g., 'would', 'could', 'might', 'appear', 'often').
+10. JUSTIFYING: Causal transition words (e.g., 'Thus', 'Therefore', 'Because').
+
+OUTPUT FORMAT:
+Return ONLY a valid JSON array of objects. Do not include markdown formatting or explanations.
+Format: [{"text": "extracted_word", "label": "LABEL"}]
+
+--- EXAMPLES ---
+
+Sentence:
+However, some researchers argue that this approach might fail to capture the nuance in Table 1 (Johnson, 2022).
+Output:
 [
-  {
-    "text": "exact marker string from the sentence",
-    "label": "MONOGLOSS | DENY | COUNTER | PROCLAIM | ENTERTAIN | ATTRIBUTION | CITATION | SOURCES | ENDOPHORIC | JUSTIFYING",
-    "context_before": "2-3 words immediately preceding the marker (or empty string)"
-  }
+  {"text": "However", "label": "COUNTER"},
+  {"text": "some researchers", "label": "SOURCES"},
+  {"text": "argue", "label": "ATTRIBUTION"},
+  {"text": "might", "label": "ENTERTAIN"},
+  {"text": "fail to", "label": "DENY"},
+  {"text": "in Table 1", "label": "ENDOPHORIC"},
+  {"text": "(Johnson, 2022)", "label": "CITATION"}
 ]
 
-FORMATTING RULES:
-1. You must copy the exact text from the sentence, preserving ALL strange spaces and punctuation (e.g., "( 1999 )"). Do not fix typos or spacing.
-2. ONLY use the 10 uppercase labels from the schema. 
-
-DEFINITIONS & CONSTRAINTS:
-1. MONOGLOSS: Bare assertions. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'are illustrated') of a definitive, undeniable factual statement. 
-2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts. STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
-3. COUNTER: Replaces an expected alternative. Extract single transition words (e.g., 'however', 'although', 'only', 'but') or full contrastive clauses.
-4. PROCLAIM: Shows rhetorical commitment. Extract words showing authorial backing (e.g., 'undoubtedly', 'in fact', 'conclude').
-5. ENTERTAIN: Presents possibility or conditionality. Extract modal verbs ('would', 'could', 'might', 'must', 'shall', 'would need to'), conditional words ('if'), and hedges ('appear', 'seem', 'largely', 'often', 'On average').
-6. ATTRIBUTION: Delegates responsibility. Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'stipulate') or attributing phrase ('According to', 'Their justification').
-7. CITATION: Explicit in-text citations. Extract the ENTIRE parenthetical block.
-8. SOURCES: The specific entity making a claim. Extract the exact noun or pronoun (e.g., 'Descartes', 'researchers', 'Some studies', 'Their', 'literature'). Tag this independently even if it is right next to an ATTRIBUTION.
-9. ENDOPHORIC: Structural references. Extract explicit document cross-references, including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( references )').
-10. JUSTIFYING: Signals persuasion/substantiation. Extract transition words (e.g., 'Thus', 'Therefore') and causal clauses.
-
-Example 1 (Counter, Entertain, Deny)
-Sentence: "Although the results are promising , they might not apply to all cases ."
-<thought_process>
-"Although" is COUNTER. "might" is ENTERTAIN. "not apply" is DENY.
-</thought_process>
+Sentence:
+Therefore, we conclude that the Earth is undeniably round.
+Output:
 [
-  {
-    "text": "Although", 
-    "label": "COUNTER",
-    "context_before": ""
-  },
-  {
-    "text": "might", 
-    "label": "ENTERTAIN",
-    "context_before": "they"
-  },
-  {
-    "text": "not apply", 
-    "label": "DENY",
-    "context_before": "might"
-  }
+  {"text": "Therefore", "label": "JUSTIFYING"},
+  {"text": "we", "label": "SOURCES"},
+  {"text": "conclude", "label": "PROCLAIM"},
+  {"text": "is", "label": "MONOGLOSS"},
+  {"text": "undeniably", "label": "PROCLAIM"}
 ]
 
-Example 2 (Spacing, Citation, Attribution)
-Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , and Davies ( 2002 , p107 ) warns against this ."
-<thought_process>
-"Christen ( 1999 )" and "Davies ( 2002 , p107 )" are CITATION. Note the preserved spaces. The reporting verbs "strongly asserts" and "warns" are ATTRIBUTION.
-</thought_process>
+Sentence:
+According to recent literature, these findings often contradict the established baseline.
+Output:
 [
-  {
-    "text": "Christen ( 1999 )", 
-    "label": "CITATION",
-    "context_before": ""
-  },
-  {
-    "text": "strongly asserts", 
-    "label": "ATTRIBUTION",
-    "context_before": ") "
-  },
-  {
-    "text": "Davies ( 2002 , p107 )", 
-    "label": "CITATION",
-    "context_before": "and"
-  },
-  {
-    "text": "warns", 
-    "label": "ATTRIBUTION",
-    "context_before": ") "
-  }
+  {"text": "According to", "label": "ATTRIBUTION"},
+  {"text": "recent literature", "label": "SOURCES"},
+  {"text": "often", "label": "ENTERTAIN"},
+  {"text": "contradict", "label": "COUNTER"}
 ]
 
-Example 3 (Sources, Attribution, Monogloss)
-Sentence: "Researchers emphasize that the data proves the outcome ."
-<thought_process>
-"Researchers" is the specific entity making the claim (SOURCES). "emphasize" is the reporting verb (ATTRIBUTION). "proves" is a forceful action verb establishing an undeniable fact (MONOGLOSS).
-</thought_process>
-[
-  {
-    "text": "Researchers", 
-    "label": "SOURCES",
-    "context_before": ""
-  },
-  {
-    "text": "emphasize", 
-    "label": "ATTRIBUTION",
-    "context_before": "Researchers"
-  },
-  {
-    "text": "proves", 
-    "label": "MONOGLOSS",
-    "context_before": "data"
-  }
-]
-
-Now annotate the following.
+--- REAL TASK ---
 
 Sentence:
 {sentence}
+Output:
