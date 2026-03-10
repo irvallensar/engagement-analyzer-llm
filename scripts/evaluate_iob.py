@@ -63,16 +63,11 @@ def extract_spans_from_iob(sentence):
     return spans
 
 def parse_llm_json(text):
-    """
-    Extracts the JSON array, ignoring any <thought_process> blocks the LLM might generate.
-    """
+    """Robustly extracts JSON even if the LLM wraps it in markdown blocks."""
     try:
-        # Find the first '[' and the last ']' to capture the array safely
-        start_idx = text.find('[')
-        end_idx = text.rfind(']')
-        if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
-            json_str = text[start_idx:end_idx+1]
-            return json.loads(json_str)
+        match = re.search(r'\[.*\]', text, re.DOTALL)
+        if match:
+            return json.loads(match.group())
         return []
     except:
         return []
@@ -119,17 +114,15 @@ def evaluate_dataset(file_path, prompt_file="prompts/candidate_labeling.txt", ma
                 
             label = str(raw_label).upper().strip()
             
-            # --- STRICT LIST-BASED SLIDING WINDOW MATCHING ---
             text_words = text.split()
             if not text_words:
                 continue
                 
-            # Find all exact sequences in the sentence
+            # EXACT WORD-LIST MATCHING (Original Logic)
             for start_idx in range(len(words) - len(text_words) + 1):
                 if words[start_idx : start_idx + len(text_words)] == text_words:
                     pred_spans.add((label, start_idx, start_idx + len(text_words)))
 
-        # Calculate Stats for the sentence
         tp = len(gold_spans & pred_spans)
         fp = len(pred_spans - gold_spans)
         fn = len(gold_spans - pred_spans)
@@ -138,7 +131,6 @@ def evaluate_dataset(file_path, prompt_file="prompts/candidate_labeling.txt", ma
         total_fp += fp
         total_fn += fn
 
-        # Per-Category Stats
         all_labels = set([s[0] for s in gold_spans] + [s[0] for s in pred_spans])
         for label in all_labels:
             gold_subset = {s for s in gold_spans if s[0] == label}
@@ -148,7 +140,6 @@ def evaluate_dataset(file_path, prompt_file="prompts/candidate_labeling.txt", ma
             category_metrics[label]['fp'] += len(pred_subset - gold_subset)
             category_metrics[label]['fn'] += len(gold_subset - pred_subset)
 
-    # Print Report
     print("\n" + "="*40)
     print("CATEGORY BREAKDOWN (STRICT MATCHING)")
     print("="*40)
