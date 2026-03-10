@@ -72,17 +72,15 @@ def parse_llm_json(text):
         return []
 
 # ---------------------------------------------------------
-# 2. NEW: DENSE CHARACTER ALIGNMENT
+# 2. DENSE CHARACTER ALIGNMENT (FIXED)
 # ---------------------------------------------------------
 def align_llm_text_to_words(llm_text, words):
     """
-    Finds the exact start and end token indices that match the LLM's text,
-    ignoring spaces. This fixes tokenization mismatch penalties!
+    Finds exact start/end token indices matching the LLM's text, ignoring spaces. 
     """
-    if not llm_text or not words:
+    if not llm_text or not isinstance(llm_text, str) or not words:
         return None
         
-    # Create a space-less string mapped to original token indices
     dense_char_to_word_idx = []
     dense_string = ""
     for i, w in enumerate(words):
@@ -90,16 +88,14 @@ def align_llm_text_to_words(llm_text, words):
             dense_string += char.lower()
             dense_char_to_word_idx.append(i)
             
-    # Clean the LLM output the same way
     dense_llm_text = "".join(llm_text.split()).lower()
     
-    # Find the substring
     start_dense = dense_string.find(dense_llm_text)
     if start_dense != -1:
         end_dense = start_dense + len(dense_llm_text) - 1
         start_word_idx = dense_char_to_word_idx[start_dense]
         end_word_idx = dense_char_to_word_idx[end_dense]
-        return start_word_idx, end_word_idx + 1 # +1 for exclusive slice end
+        return start_word_idx, end_word_idx + 1
     
     return None
 
@@ -134,8 +130,17 @@ def evaluate_dataset(file_path, prompt_file="prompts/candidate_labeling.txt", ma
         words = [w for w, l in sentence]
         
         for p in pred_list:
-            label = p.get('label')
+            if not isinstance(p, dict):
+                continue
+            
+            # CRITICAL FIX: Robust Label Extraction & Forced Uppercase
+            raw_label = p.get('label') or p.get('type') or p.get('category')
             text = p.get('text')
+            
+            if not raw_label or not text:
+                continue
+                
+            label = str(raw_label).upper().strip() # Force match with IOB formatting
             
             # --- USE SMART MATCHING ---
             match_indices = align_llm_text_to_words(text, words)
@@ -191,4 +196,4 @@ def evaluate_dataset(file_path, prompt_file="prompts/candidate_labeling.txt", ma
     print("="*40)
 
 if __name__ == "__main__":
-    evaluate_dataset("data/dev.iob", max_samples=100)
+    evaluate_dataset("data/dev.iob", max_samples=None)
