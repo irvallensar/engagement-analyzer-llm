@@ -13,8 +13,7 @@ def call_local_llm(prompt):
         "model": "qwen2.5:14b", 
         "prompt": prompt,
         "temperature": 0.0,
-        "stream": False,
-        "think": False  #Disables the hidden reasoning essay
+        "stream": False
     }
 
     try:
