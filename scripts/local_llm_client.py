@@ -1,44 +1,32 @@
-import os
-# 1. CRITICAL: Fix PyTorch Memory Fragmentation before importing torch
-os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True"
-
 import torch
 import json
 import re
 import sys
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # ==========================================
-# 2. LOAD MODEL GLOBALLY (Runs Once)
+# 1. LOAD PRE-COMPRESSED MODEL (Runs Once)
 # ==========================================
-MODEL_ID = "Qwen/Qwen3.5-9B"
+# We add '-AWQ' to grab the 4-bit pre-compressed version of your model.
+MODEL_ID = "Qwen/Qwen3.5-9B-AWQ"
 
-print(f"Downloading and Loading {MODEL_ID} into VRAM (4-bit)...")
+print(f"Downloading Pre-Compressed Model: {MODEL_ID}...")
 try:
-    quantization_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_compute_dtype=torch.float16,
-        bnb_4bit_use_double_quant=True,
-    )
-    
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
     
-    # 3. CRITICAL: Memory Offloading Setup
-    # We cap the GPU at 12GB to leave room for the attention fallback overhead.
-    # The rest of the model layers will spill into the CPU RAM.
+    # Because it is already 4-bit, we just load it straight into the GPU.
+    # No BitsAndBytes config needed!
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_ID,
-        device_map="auto",
-        max_memory={0: "12GB", "cpu": "10GB"}, 
-        quantization_config=quantization_config,
+        device_map="cuda", # Force it strictly onto the GPU
     )
-    print("SUCCESS: Qwen 3.5 9B loaded (GPU + CPU Spillover)!")
+    print("SUCCESS: Qwen 3.5 9B (AWQ) loaded smoothly into VRAM!")
 except Exception as e:
     print(f"CRITICAL ERROR LOADING MODEL: {e}")
     sys.exit(1)
 
 # ==========================================
-# 4. INFERENCE FUNCTION
+# 2. INFERENCE FUNCTION
 # ==========================================
 def call_local_llm(prompt):
     """
