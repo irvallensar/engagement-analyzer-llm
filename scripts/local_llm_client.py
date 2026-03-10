@@ -60,33 +60,4 @@ def call_local_llm(prompt):
     generated_ids = [output_ids[len(input_ids):] for input_ids, output_ids in zip(inputs.input_ids, outputs)]
     response_text = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
     
-    return response_text    
-    # Apply chat template
-    inputs = tokenizer.apply_chat_template(
-        messages,
-        tokenize = True,
-        add_generation_prompt = True,
-        return_tensors = "pt",
-    ).to("cuda")
-
-    # 3. Generate
-    # Qwen 3.5 has "Thinking" enabled by default. We allow it to think,
-    # then we extract the JSON from the result.
-    outputs = model.generate(
-        input_ids = inputs,
-        max_new_tokens = 2048, # Give it room to think + answer
-        use_cache = True,
-        temperature = 0.0,      # Deterministic
-    )
-    
-    # Decode
-    response_text = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
-    
-    # 4. Cleaning: Remove the prompt and the "Thinking" block if present
-    # Qwen 3.5 output often looks like: "user prompt... system... <think>...</think> JSON"
-    # We just want the last part.
-    
-    # Simple strategy: The tokenizer usually returns the full conversation + answer.
-    # We split by "assistant" header if present, or just grab the JSON.
-    
     return response_text
