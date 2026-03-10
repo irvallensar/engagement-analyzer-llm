@@ -29,9 +29,6 @@ DEFINITIONS & CONSTRAINTS:
 
 Example 1 (Counter, Entertain, Deny)
 Sentence: "Although the results are promising , they might not apply to all cases ."
-<thought_process>
-"Although" is COUNTER. "might" is ENTERTAIN. "not apply" is DENY.
-</thought_process>
 [
   {
     "text": "Although", 
@@ -52,9 +49,6 @@ Sentence: "Although the results are promising , they might not apply to all case
 
 Example 2 (Spacing, Citation, Attribution)
 Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , and Davies ( 2002 , p107 ) warns against this ."
-<thought_process>
-"Christen ( 1999 )" and "Davies ( 2002 , p107 )" are CITATION. Note the preserved spaces. The reporting verbs "strongly asserts" and "warns" are ATTRIBUTION.
-</thought_process>
 [
   {
     "text": "Christen ( 1999 )", 
@@ -80,9 +74,6 @@ Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , 
 
 Example 3 (Sources, Attribution, Monogloss)
 Sentence: "Researchers emphasize that the data proves the outcome ."
-<thought_process>
-"Researchers" is the specific entity making the claim (SOURCES). "emphasize" is the reporting verb (ATTRIBUTION). "proves" is a forceful action verb establishing an undeniable fact (MONOGLOSS).
-</thought_process>
 [
   {
     "text": "Researchers", 
