@@ -10,7 +10,7 @@ def call_local_llm(prompt):
     Sends the prompt to the local Ollama server and returns the text response.
     """
     payload = {
-        "model": "deepseek-r1:14b", 
+        "model": "phi4", 
         "prompt": prompt,
         "temperature": 0.0,
         "stream": False
