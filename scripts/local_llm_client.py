@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 # 1. LOAD PRE-COMPRESSED MODEL (Runs Once)
 # ==========================================
 # We add '-AWQ' to grab the 4-bit pre-compressed version of your model.
-MODEL_ID = "Qwen/Qwen3.5-9B-AWQ"
+MODEL_ID = "QuantTrio/Qwen3.5-9B-AWQ"
 
 print(f"Downloading Pre-Compressed Model: {MODEL_ID}...")
 try:
