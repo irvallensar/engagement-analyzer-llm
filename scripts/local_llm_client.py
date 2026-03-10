@@ -10,12 +10,11 @@ def call_local_llm(prompt):
     Sends the prompt to the local Ollama server and returns the text response.
     """
     payload = {
-        # TARGETING QWEN 3 14B
         "model": "qwen3:14b", 
         "prompt": prompt,
         "temperature": 0.0,
         "stream": False,
-        "think": False
+        "think": False  #Disables the hidden reasoning essay
     }
 
     try:
