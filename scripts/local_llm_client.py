@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 # 1. LOAD MODEL GLOBALLY (Runs Once)
 # ==========================================
 # Target the Qwen 3.5 9B model directly from Hugging Face
-MODEL_ID = "Qwen/Qwen3.5-9B-Instruct"
+MODEL_ID = "Qwen/Qwen3.5-9B"
 
 print(f"Downloading and Loading {MODEL_ID} into VRAM (4-bit)...")
 try:
