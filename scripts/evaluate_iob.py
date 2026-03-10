@@ -178,4 +178,4 @@ def evaluate_dataset(file_path, prompt_file="prompts/candidate_labeling.txt", ma
     print("="*40)
 
 if __name__ == "__main__":
-    evaluate_dataset("data/dev.iob", max_samples=None)
+    evaluate_dataset("data/dev.iob", max_samples=100)
