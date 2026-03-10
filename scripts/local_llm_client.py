@@ -14,7 +14,8 @@ def call_local_llm(prompt):
         "model": "qwen3:14b", 
         "prompt": prompt,
         "temperature": 0.0,
-        "stream": False
+        "stream": False,
+        "think": False
     }
 
     try:
