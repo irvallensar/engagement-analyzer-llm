@@ -10,7 +10,7 @@ def call_local_llm(prompt):
     Sends the prompt to the local Ollama server and returns the text response.
     """
     payload = {
-        "model": "phi4", 
+        "model": "qwen2.5:14b", 
         "prompt": prompt,
         "temperature": 0.0,
         "stream": False
