@@ -11,9 +11,11 @@ Analyze the sentence and output a JSON array of objects strictly matching this s
   }
 ]
 
-FORMATTING RULES:
-1. You must copy the exact text from the sentence, preserving ALL strange spaces and punctuation (e.g., "( 1999 )"). Do not fix typos or spacing.
-2. ONLY use the 10 uppercase labels from the schema. 
+CRITICAL BOUNDARY RULES (PREVENTING FALSE POSITIVES):
+1. MINIMALISM: Extract the absolute minimum number of words possible. Do not extract full clauses unless strictly necessary.
+2. NO DETERMINERS: Do not include words like "The", "A", or "An" in your extraction unless they are inseparable from the marker. (e.g., extract "researchers", not "The researchers").
+3. PUNCTUATION: You must copy the exact text, preserving strange spaces (e.g., "( 1999 )"). Do NOT include trailing commas or periods that are not part of the marker itself.
+4. ONLY use the 10 uppercase labels from the schema. 
 
 DEFINITIONS & CONSTRAINTS:
 1. MONOGLOSS: Bare assertions. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'are illustrated') of a definitive, undeniable factual statement. 
@@ -29,6 +31,9 @@ DEFINITIONS & CONSTRAINTS:
 
 Example 1 (Counter, Entertain, Deny)
 Sentence: "Although the results are promising , they might not apply to all cases ."
+<thought_process>
+"Although" replaces an expected alternative (COUNTER). "might" presents conditionality (ENTERTAIN). "not apply" is a literal syntactic negator (DENY). I will extract these minimally.
+</thought_process>
 [
   {
     "text": "Although", 
@@ -49,6 +54,9 @@ Sentence: "Although the results are promising , they might not apply to all case
 
 Example 2 (Spacing, Citation, Attribution)
 Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , and Davies ( 2002 , p107 ) warns against this ."
+<thought_process>
+"Christen ( 1999 )" and "Davies ( 2002 , p107 )" are explicit in-text citations. I must preserve the exact strange spacing (CITATION). "strongly asserts" and "warns" are reporting verb phrases (ATTRIBUTION).
+</thought_process>
 [
   {
     "text": "Christen ( 1999 )", 
@@ -73,17 +81,20 @@ Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , 
 ]
 
 Example 3 (Sources, Attribution, Monogloss)
-Sentence: "Researchers emphasize that the data proves the outcome ."
+Sentence: "The researchers emphasize that the data proves the outcome ."
+<thought_process>
+"The researchers" contains a determiner, so I will minimally extract just "researchers" (SOURCES). "emphasize" is the reporting verb (ATTRIBUTION). "proves" is a definitive factual action verb (MONOGLOSS).
+</thought_process>
 [
   {
-    "text": "Researchers", 
+    "text": "researchers", 
     "label": "SOURCES",
-    "context_before": ""
+    "context_before": "The"
   },
   {
     "text": "emphasize", 
     "label": "ATTRIBUTION",
-    "context_before": "Researchers"
+    "context_before": "researchers"
   },
   {
     "text": "proves", 
