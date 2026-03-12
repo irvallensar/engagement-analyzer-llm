@@ -149,7 +149,7 @@ def parse_iob_file(filepath):
     return dataset
 
 
-# --- EVALUATION ENGINE ---
+# --- EVALUATION  ---
 
 # Loads the full dataset
 def evaluate(filepath, max_samples=None):
@@ -226,7 +226,7 @@ def evaluate(filepath, max_samples=None):
         token_fp += len(tok_fp)
         token_fn += len(tok_fn)
 
-    # ----- Calculation of P,R and F scores ------
+  # ----- CALCULATION OF PERFORMANCE METRIC SCORES ------
     
     print("\n")
     print("CATEGORY BREAKDOWN (STRICT)")
