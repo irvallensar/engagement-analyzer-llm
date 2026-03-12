@@ -1,65 +1,65 @@
 from spacy.tokens import Doc
-import spacy
+import spacy    # tokenize sentences (split into words) and align character positions to token positions
 from pathlib import Path
-from collections import defaultdict
+from collections import defaultdict    # dictionary that automatically starts at 0 for new keys, 
+                                       # used for counting TP/FP/FN per category
 
 # Import your existing tools
-from scripts.local_llm_client import call_local_llm
-from scripts.llm_utils import parse_llm_json
+from scripts.local_llm_client import call_local_llm    # function that sends prompts to Ollama
+from scripts.llm_utils import parse_llm_json    # function that converts the LLM's raw text response into a python list   
 
-nlp = spacy.load("en_core_web_sm")
-PROMPT_PATH = Path("prompts/candidate_labeling.txt")
+nlp = spacy.load("en_core_web_sm")    #load spaCy model
+PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
 
-def load_prompt():
-    return PROMPT_PATH.read_text(encoding='utf-8')
+def load_prompt():    # load prompt
+    return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
 
-# --- OPTION 2: TEXT-BASED EXTRACTION WITH CONTEXT ANCHORING ---
-def run_sentence_option2(text, doc):
-    prompt = load_prompt().replace("{sentence}", text)
-    
-    # Call the LLM
-    llm_raw = call_local_llm(prompt)
+def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
+    prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
+    llm_raw = call_local_llm(prompt) # sends it to the llm (ollama) and gets the raw response
     
     try:
-        llm_items = parse_llm_json(llm_raw)
+        llm_items = parse_llm_json(llm_raw)    # tries to parse LLM's answer as JSON format
     except Exception as e:
-        print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")
+        print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    # If the LLM hallucinated invalid JSON syntax, 
+                                                                               # catches the error and returns empty, 
+                                                                               # to prevent ruining perf scores.     
         return []
-
     pred_spans = []
     
-    for item in llm_items:
+    for item in llm_items:    # Loops through each span the LLM predicted
         label = item.get("label", "O")
-        # FIX: Ignore "O" and empty string labels ("")
+        # Ignore "O" and empty string labels (""), as we only want the engagement markers (labels)
         if label == "O" or not label.strip():
             continue
             
-        span_text = item.get("text", "")
-        context_before = item.get("context_before", "").strip()
+        span_text = item.get("text", "")    # gets the actual text of the predicted span
+        context_before = item.get("context_before", "").strip()    # gets the words before the span (target), used 
+                                                                   # to find the exact location if the same words appear multiple times
         
-        if not span_text: 
+        if not span_text: # if there is none, then continue
             continue
 
         start_char = -1
-        
-        # 1. Try Context Anchoring first (solves duplicate words)
-        if context_before:
+        # Anchoring first (solves duplicate words)
+        if context_before:                               # Instead of just searching for "suggests" (which might appear 3 times), 
+                                                         # it searches for "arguably suggests" to find the exact occurrence
             search_string = f"{context_before} {span_text}"
             combo_start = text.find(search_string)
             if combo_start != -1:
-                start_char = combo_start + len(context_before) + 1 # +1 for the space
+                start_char = combo_start + len(context_before) + 1 # +1 skips the space between context_before and span_text
         
         # 2. Fallback if context anchoring fails or wasn't provided
         if start_char == -1:
             start_char = text.find(span_text)
             
-        # 3. Map back to spaCy tokens
+        # 3. Converts from character positions back to spaCy tokens (e.g. token 3-6)
         if start_char != -1:
             end_char = start_char + len(span_text)
             span = doc.char_span(start_char, end_char, alignment_mode="expand")
             
             if span:
-                pred_spans.append((label, span.start, span.end))
+                pred_spans.append((label, span.start, span.end))    # Appends the final prediction as a tuple (e.g. "ENTERTAIN", 3, 6)
             else:
                 pass # Suppressed warning for cleaner output
         else:
@@ -68,18 +68,19 @@ def run_sentence_option2(text, doc):
     return pred_spans
 
 
-# ------ IOB PARSER ------
+# ----- IOB PARSER ------
+
 def parse_iob_file(filepath):
     """Reads the IOB file and extracts sentences and Gold Spans."""
     with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    sentences = []
+    sentences = []                 # Prepares empty containers to build sentences from the IOB file     
     current_tokens = []
     current_tags_matrix = []
 
-    for line in lines:
-        line = line.strip()
+    for line in lines:                       # IOB files use blank lines to separate sentences
+        line = line.strip()                  # When a blank line is hit, saves the current sentence and resets for the next one.
         if not line:
             if current_tokens:
                 sentences.append({"tokens": current_tokens, "tags_matrix": current_tags_matrix})
@@ -87,10 +88,13 @@ def parse_iob_file(filepath):
                 current_tags_matrix = []
             continue
         
-        # Skip metadata lines
+        # Skip metadata/header lines (not part of annotation word)
         if "-DOCSTART-" in line or line == "-X-" or line == "O":
             continue
 
+        # Each IOB line looks like: word TAG1 TAG2 TAG3
+        # parts[0] = the word itself
+        # parts[1:] = all the tag columns (supports multiple overlapping annotation layers)
         parts = line.split()
         if len(parts) >= 2:
             current_tokens.append(parts[0])
@@ -98,12 +102,20 @@ def parse_iob_file(filepath):
 
     dataset = []
     for entry in sentences:
-        doc = Doc(nlp.vocab, words=entry["tokens"])
+        # forces spaCy to use EXACTLY the tokens from your IOB file instead of re-tokenizing
+        # Without this, spaCy might split "don't" differently than the annotation file did, causing misalignment
+        doc = Doc(nlp.vocab, words=entry["tokens"])        
         text = doc.text
         
         gold_spans = set()
-        
-        if entry["tags_matrix"]:
+
+        # IOB Decoder
+        # B-ENTERTAIN = Beginning of an ENTERTAIN span → start tracking a new span
+        # I-ENTERTAIN = Inside the same span → continue, don't save yet
+        # O or different label = span has ended → save it as ("ENTERTAIN", start_token, end_token)  
+        # It rocesses each column independently to support overlapping spans
+        # — e.g. a word can be both ENTERTAIN and ATTRIBUTE simultaneously.
+        if entry["tags_matrix"]:                
             num_cols = len(entry["tags_matrix"][0])
             for col_idx in range(num_cols):
                 current_label = None
@@ -138,13 +150,16 @@ def parse_iob_file(filepath):
 
 
 # --- EVALUATION ENGINE ---
+
+# Loads the full dataset
 def evaluate(filepath, max_samples=None):
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
     
-    if max_samples is not None:
-        dataset = dataset[:max_samples]
-        print(f"*** QUICK TEST MODE: Limiting to first {max_samples} sentences ***")
+    if max_samples is not None:     # If max_samples=100, only evaluates the first 100 sentences, running
+                                    # a portion of the dataset.
+        dataset = dataset[:max_samples]    
+        print(f"Limiting to first {max_samples} sentences")
         
     print(f"Found {len(dataset)} sentences to evaluate.\n")
 
@@ -153,7 +168,7 @@ def evaluate(filepath, max_samples=None):
     false_positives = 0
     false_negatives = 0
     
-    # NEW: Overall token-level counters
+    # Overall token-level counters
     token_tp = 0
     token_fp = 0
     token_fn = 0
@@ -164,12 +179,11 @@ def evaluate(filepath, max_samples=None):
     cat_fn = defaultdict(int)
 
     for i, data in enumerate(dataset):
-        # YOUR ORIGINAL PRINT STATEMENT
         print(f"Evaluating Sentence {i+1}/{len(dataset)}...")
-        
+
+        # For each sentence, gets the gold standard annotations and the LLM's predictions
+        # Converts both to sets so we can use set math for comparison
         gold_spans = set(data["gold_spans"])
-        
-        # Get predictions from LLM
         pred_list = run_sentence_option2(data["text"], data["doc"])
         pred_spans = set(pred_list)
 
@@ -182,16 +196,16 @@ def evaluate(filepath, max_samples=None):
         false_positives += len(fp_set)
         false_negatives += len(fn_set)
         
-        for span in tp_set: cat_tp[span[0]] += 1
+        for span in tp_set: cat_tp[span[0]] += 1    # span[0] is the label (e.g. "ENTERTAIN")
         for span in fp_set: cat_fp[span[0]] += 1
         for span in fn_set: cat_fn[span[0]] += 1
 
-        # YOUR ORIGINAL ERROR LOGGING
+        # Error logging
         if len(fp_set) > 0 or len(fn_set) > 0:
             print(f"  Sentence: {data['text']}")
             print(f"  Gold Spans: {gold_spans}")
             print(f"  Pred Spans: {pred_spans}")
-            print(f"  -> Errors: {len(fp_set)} False Positives, {len(fn_set)} False Negatives\n")
+            print(f"  Errors: {len(fp_set)} False Positives, {len(fn_set)} False Negatives\n")
 
         # 2. Calculate Token-Level Matches
         gold_tokens = set()
@@ -212,10 +226,10 @@ def evaluate(filepath, max_samples=None):
         token_fp += len(tok_fp)
         token_fn += len(tok_fn)
 
-    # --- FINAL MATH ---
-    print("\n========================================")
+    # ----- Calculation of P,R and F scores ------
+    
+    print("\n")
     print("CATEGORY BREAKDOWN (STRICT)")
-    print("========================================")
     all_labels = set(list(cat_tp.keys()) + list(cat_fp.keys()) + list(cat_fn.keys()))
     for label in sorted(all_labels):
         c_tp = cat_tp[label]
@@ -232,9 +246,8 @@ def evaluate(filepath, max_samples=None):
     recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0
     f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
 
-    print("\n========================================")
+    print("\n")
     print("1. FINAL STRICT SPAN EVALUATION RESULTS")
-    print("========================================")
     print(f"True Positives (Exact Matches) : {true_positives}")
     print(f"False Positives (Hallucinations) : {false_positives}")
     print(f"False Negatives (Missed Markers) : {false_negatives}")
@@ -243,15 +256,14 @@ def evaluate(filepath, max_samples=None):
     print(f"Recall    : {recall:.4f}")
     print(f"F1-Score  : {f1:.4f}")
 
-    # NEW TOKEN MATH PRINTOUT
+    # Token math printout and its formula
     t_precision = token_tp / (token_tp + token_fp) if (token_tp + token_fp) > 0 else 0
     t_recall = token_tp / (token_tp + token_fn) if (token_tp + token_fn) > 0 else 0
     t_f1 = 2 * (t_precision * t_recall) / (t_precision + t_recall) if (t_precision + t_recall) > 0 else 0
 
-    print("\n========================================")
+    print("\n")
     print("2. TOKEN-LEVEL / PARTIAL EVALUATION")
     print("   (Grades the model word-by-word)")
-    print("========================================")
     print(f"True Positive Words  : {token_tp}")
     print(f"False Positive Words : {token_fp}")
     print(f"False Negative Words : {token_fn}")
@@ -259,7 +271,6 @@ def evaluate(filepath, max_samples=None):
     print(f"Token Precision      : {t_precision:.4f}")
     print(f"Token Recall         : {t_recall:.4f}")
     print(f"Token F1-Score       : {t_f1:.4f}")
-    print("========================================")
 
 if __name__ == "__main__":
     evaluate("data/dev.iob", max_samples=None)
