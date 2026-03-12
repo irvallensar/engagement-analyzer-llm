@@ -273,4 +273,4 @@ def evaluate(filepath, max_samples=None):
     print(f"Token F1-Score       : {t_f1:.4f}")
 
 if __name__ == "__main__":
-    evaluate("data/dev.iob", max_samples=None)
+    evaluate("data/dev.iob", max_samples=100)
