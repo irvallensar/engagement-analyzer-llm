@@ -196,6 +196,7 @@ def evaluate(filepath, max_samples=None):
 
     for i, data in enumerate(dataset):
         cache_key = str(i)
+        evaluated_live=False
         
         # 1. Fetch LLM Prediction (from cache or live)
         if cache_key in cache:
@@ -207,6 +208,7 @@ def evaluate(filepath, max_samples=None):
             pred_spans = set(pred_list)
             cache[cache_key] = pred_list
             save_cache(cache)
+            evaluated_live=True
         
         gold_spans = set(data["gold_spans"])
 
