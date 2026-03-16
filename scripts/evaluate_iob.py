@@ -196,7 +196,7 @@ def evaluate(filepath, max_samples=None):
 
     for i, data in enumerate(dataset):
         cache_key = str(i)
-        evaluated_live=False
+        evaluated_live = False 
         
         # 1. Fetch LLM Prediction (from cache or live)
         if cache_key in cache:
@@ -208,7 +208,7 @@ def evaluate(filepath, max_samples=None):
             pred_spans = set(pred_list)
             cache[cache_key] = pred_list
             save_cache(cache)
-            evaluated_live=True
+            evaluated_live = True  # <--- NEW: We flip the flag to True!
         
         gold_spans = set(data["gold_spans"])
 
@@ -225,11 +225,13 @@ def evaluate(filepath, max_samples=None):
         for span in fp_set: cat_fp[span[0]] += 1
         for span in fn_set: cat_fn[span[0]] += 1
 
-        if cache_key not in cache and (len(fp_set) > 0 or len(fn_set) > 0):
+        # --- THE CORRECTED PRINT BLOCK ---
+        if evaluated_live and (len(fp_set) > 0 or len(fn_set) > 0):
             print(f"  Sentence: {data['text']}")
             print(f"  Gold Spans: {gold_spans}")
             print(f"  Pred Spans: {pred_spans}")
             print(f"  -> Errors: {len(fp_set)} False Positives, {len(fn_set)} False Negatives\n")
+        # -------------------------------
 
         # 3. Token-Level Matches
         gold_tokens = set()
