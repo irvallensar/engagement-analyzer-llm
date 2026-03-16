@@ -223,6 +223,12 @@ def evaluate(filepath, max_samples=None):
         for span in fp_set: cat_fp[span[0]] += 1
         for span in fn_set: cat_fn[span[0]] += 1
 
+        if cache_key not in cache and (len(fp_set) > 0 or len(fn_set) > 0):
+            print(f"  Sentence: {data['text']}")
+            print(f"  Gold Spans: {gold_spans}")
+            print(f"  Pred Spans: {pred_spans}")
+            print(f"  -> Errors: {len(fp_set)} False Positives, {len(fn_set)} False Negatives\n")
+
         # 3. Token-Level Matches
         gold_tokens = set()
         for label, start, end in gold_spans:
