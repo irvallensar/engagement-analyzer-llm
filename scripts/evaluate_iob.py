@@ -1,3 +1,5 @@
+import os
+import json
 from spacy.tokens import Doc
 import spacy    # tokenize sentences (split into words) and align character positions to token positions
 from pathlib import Path
@@ -10,9 +12,29 @@ from scripts.llm_utils import parse_llm_json    # function that converts the LLM
 
 nlp = spacy.load("en_core_web_sm")    #load spaCy model
 PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
+CACHE_FILE = Path("predictions_cache.json") # the cache of the run (containing the logs such as predicted spans from the LLM, data saved)
+EVAL_LOG_FILE = Path("comprehensive_eval_log.json") # The master (final) record of the whole run
 
 def load_prompt():    # load prompt
     return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
+
+def load_cache():
+    if CACHE_FILE.exists():
+        try:
+            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+def save_cache(cache_data):
+    with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(cache_data, f, indent=2)
+
+def save_eval_log(log_data):
+    # Saves the comprehensive evaluation record safely
+    with open(EVAL_LOG_FILE, 'w', encoding='utf-8') as f:
+        json.dump(log_data, f, indent=4)
 
 def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
     prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
@@ -156,38 +178,39 @@ def evaluate(filepath, max_samples=None):
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
     
-    if max_samples is not None:     # If max_samples=100, only evaluates the first 100 sentences, running
-                                    # a portion of the dataset.
-        dataset = dataset[:max_samples]    
-        print(f"Limiting to first {max_samples} sentences")
+    if max_samples is not None:
+        dataset = dataset[:max_samples]
         
     print(f"Found {len(dataset)} sentences to evaluate.\n")
 
-    # Overall strict counters
-    true_positives = 0
-    false_positives = 0
-    false_negatives = 0
-    
-    # Overall token-level counters
-    token_tp = 0
-    token_fp = 0
-    token_fn = 0
+    cache = load_cache()
+    if cache:
+        print(f"*** CHECKPOINT FILE: Resuming with {len(cache)} previously saved sentences. ***\n")
 
-    # Category-specific counters
-    cat_tp = defaultdict(int)
-    cat_fp = defaultdict(int)
-    cat_fn = defaultdict(int)
+    # NEW: Initialize the master log list
+    master_eval_log = []
+
+    true_positives, false_positives, false_negatives = 0, 0, 0
+    token_tp, token_fp, token_fn = 0, 0, 0
+    cat_tp, cat_fp, cat_fn = defaultdict(int), defaultdict(int), defaultdict(int)
 
     for i, data in enumerate(dataset):
-        print(f"Evaluating Sentence {i+1}/{len(dataset)}...")
-
-        # For each sentence, gets the gold standard annotations and the LLM's predictions
-        # Converts both to sets so we can use set math for comparison
+        cache_key = str(i)
+        
+        # 1. Fetch LLM Prediction (from cache or live)
+        if cache_key in cache:
+            pred_list = [tuple(x) for x in cache[cache_key]] 
+            pred_spans = set(pred_list)
+        else:
+            print(f"Evaluating Sentence {i+1}/{len(dataset)}...")
+            pred_list = run_sentence_option2(data["text"], data["doc"])
+            pred_spans = set(pred_list)
+            cache[cache_key] = pred_list
+            save_cache(cache)
+        
         gold_spans = set(data["gold_spans"])
-        pred_list = run_sentence_option2(data["text"], data["doc"])
-        pred_spans = set(pred_list)
 
-        # 1. Calculate Strict Matches
+        # 2. Strict Matches
         tp_set = gold_spans.intersection(pred_spans)
         fp_set = pred_spans - gold_spans
         fn_set = gold_spans - pred_spans
@@ -196,18 +219,11 @@ def evaluate(filepath, max_samples=None):
         false_positives += len(fp_set)
         false_negatives += len(fn_set)
         
-        for span in tp_set: cat_tp[span[0]] += 1    # span[0] is the label (e.g. "ENTERTAIN")
+        for span in tp_set: cat_tp[span[0]] += 1
         for span in fp_set: cat_fp[span[0]] += 1
         for span in fn_set: cat_fn[span[0]] += 1
 
-        # Error logging
-        if len(fp_set) > 0 or len(fn_set) > 0:
-            print(f"  Sentence: {data['text']}")
-            print(f"  Gold Spans: {gold_spans}")
-            print(f"  Pred Spans: {pred_spans}")
-            print(f"  Errors: {len(fp_set)} False Positives, {len(fn_set)} False Negatives\n")
-
-        # 2. Calculate Token-Level Matches
+        # 3. Token-Level Matches
         gold_tokens = set()
         for label, start, end in gold_spans:
             for idx in range(start, end):
@@ -225,6 +241,22 @@ def evaluate(filepath, max_samples=None):
         token_tp += len(tok_tp)
         token_fp += len(tok_fp)
         token_fn += len(tok_fn)
+
+        # 4. NEW: Append everything to the Master Log
+        # We convert sets to lists so they can be saved as JSON
+        log_entry = {
+            "sentence_id": i + 1,
+            "text": data["text"],
+            "gold_spans": [list(span) for span in gold_spans],
+            "pred_spans": [list(span) for span in pred_spans],
+            "strict_false_positives": [list(span) for span in fp_set],
+            "strict_false_negatives": [list(span) for span in fn_set]
+        }
+        master_eval_log.append(log_entry)
+
+    # Save the complete log to disk after the loop finishes
+    save_eval_log(master_eval_log)
+    print(f"\n[SUCCESS] Master evaluation log saved to {EVAL_LOG_FILE}")
 
   # ----- CALCULATION OF PERFORMANCE METRIC SCORES ------
     
