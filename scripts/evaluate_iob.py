@@ -15,7 +15,7 @@ PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (
 CACHE_FILE = Path("/content/drive/MyDrive/predictions_cache.json") 
 EVAL_LOG_FILE = Path("/content/drive/MyDrive/comprehensive_eval_log.json") 
 
-DRIVE_DIR = Path("/content/drive/MyDrive/engagement-analyzer-llm/data") 
+DRIVE_DIR = Path("/content/drive/MyDrive/engagement-analyzer-llm") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
