@@ -12,8 +12,8 @@ from scripts.llm_utils import parse_llm_json    # function that converts the LLM
 
 nlp = spacy.load("en_core_web_sm")    #load spaCy model
 PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
-CACHE_FILE = Path("predictions_cache.json") # the cache of the run (containing the logs such as predicted spans from the LLM, data saved)
-EVAL_LOG_FILE = Path("comprehensive_eval_log.json") # The master (final) record of the whole run
+CACHE_FILE = Path("/content/drive/MyDrive/predictions_cache.json") # the cache of the run (containing the logs such as predicted spans from the LLM, data saved)
+EVAL_LOG_FILE = Path("/content/drive/MyDrive/comprehensive_eval_log.json") # The master (final) record of the whole run
 
 def load_prompt():    # load prompt
     return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
