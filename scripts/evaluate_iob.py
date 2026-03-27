@@ -10,6 +10,16 @@ from collections import defaultdict    # dictionary that automatically starts at
 from scripts.local_llm_client import call_local_llm    # function that sends prompts to Ollama
 from scripts.llm_utils import parse_llm_json    # function that converts the LLM's raw text response into a python list   
 
+nlp = spacy.load("en_core_web_sm")    #load spaCy model
+PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
+DRIVE_DIR = Path("/content/drive/MyDrive/engagement-analyzer-llm") 
+DRIVE_DIR.mkdir(parents=True, exist_ok=True)
+
+# Point the cache and the final log directly into Google Drive
+CACHE_FILE = DRIVE_DIR / "predictions_cache_md.json" # the cache of the run (containing the logs such as predicted spans 
+                                                  # from the LLM, data saved)
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_md.json" # The master (final) record of the whole run
+
 GUIDELINES_PATH = Path("prompts/master_guidelines.txt")
 ENGINE_PATH = Path("prompts/candidate_labeling.txt")
 
@@ -24,9 +34,6 @@ def build_final_prompt(sentence):
     # Glue them together
     full_prompt = guidelines + "\n\n" + engine_with_sentence
     return full_prompt
-
-def load_prompt():    # load prompt
-    return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
 
 def load_cache():
     if CACHE_FILE.exists():
