@@ -23,17 +23,8 @@ EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_md.json" # The master (final
 GUIDELINES_PATH = Path("prompts/master_guidelines.txt")
 ENGINE_PATH = Path("prompts/candidate_labeling.txt")
 
-def build_final_prompt(sentence):
-    # Read both files
-    guidelines = GUIDELINES_PATH.read_text(encoding='utf-8')
-    engine = ENGINE_PATH.read_text(encoding='utf-8')
-    
-    # Insert the current sentence into the engine prompt
-    engine_with_sentence = engine.replace("{sentence}", sentence)
-    
-    # Glue them together
-    full_prompt = guidelines + "\n\n" + engine_with_sentence
-    return full_prompt
+def load_prompt():    # load prompt
+    return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
 
 def load_cache():
     if CACHE_FILE.exists():
