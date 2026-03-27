@@ -1,6 +1,5 @@
 import os
 import json
-import re
 from spacy.tokens import Doc
 import spacy    # tokenize sentences (split into words) and align character positions to token positions
 from pathlib import Path
@@ -12,30 +11,17 @@ from scripts.local_llm_client import call_local_llm    # function that sends pro
 from scripts.llm_utils import parse_llm_json    # function that converts the LLM's raw text response into a python list   
 
 nlp = spacy.load("en_core_web_sm")    #load spaCy model
-
+PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
 DRIVE_DIR = Path("/content/drive/MyDrive/engagement-analyzer-llm") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_md.json" # the cache of the run (containing the logs such as predicted spans 
+CACHE_FILE = DRIVE_DIR / "predictions_cache.json" # the cache of the run (containing the logs such as predicted spans 
                                                   # from the LLM, data saved)
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_md.json" # The master (final) record of the whole run
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log.json" # The master (final) record of the whole run
 
-# The two parts of your new prompt architecture
-GUIDELINES_PATH = Path("prompts/master_guidelines.txt")
-ENGINE_PATH = Path("prompts/candidate_labeling.txt")
-
-def build_final_prompt(sentence):
-    """Reads the theoretical guidelines and the task instructions, and fuses them together."""
-    guidelines = GUIDELINES_PATH.read_text(encoding='utf-8')
-    engine = ENGINE_PATH.read_text(encoding='utf-8')
-    
-    # Replace the {sentence} placeholder in the engine text
-    engine_with_sentence = engine.replace("{sentence}", sentence)
-    
-    # Glue them together: Guidelines first, then the Task Instructions
-    full_prompt = guidelines + "\n\n" + engine_with_sentence
-    return full_prompt
+def load_prompt():    # load prompt
+    return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
 
 def load_cache():
     if CACHE_FILE.exists():
@@ -56,24 +42,16 @@ def save_eval_log(log_data):
         json.dump(log_data, f, indent=4)
 
 def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
-    # --- CHANGED: Now uses build_final_prompt ---
-    prompt = build_final_prompt(text)    # fuses the guidelines and inserts the sentence
+    prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
     llm_raw = call_local_llm(prompt) # sends it to the llm (ollama) and gets the raw response
     
     try:
-        # Use Regex to aggressively search for the JSON array and ignore the chatty text
-        match = re.search(r'\[.*\]', llm_raw, re.DOTALL)
-        if match:
-            clean_json = match.group(0)
-            llm_items = json.loads(clean_json)
-        else:
-            # Fallback to your original parser just in case
-            llm_items = parse_llm_json(llm_raw)
-            
+        llm_items = parse_llm_json(llm_raw)    # tries to parse LLM's answer as JSON format
     except Exception as e:
-        print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    
+        print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    # If the LLM hallucinated invalid JSON syntax, 
+                                                                               # catches the error and returns empty, 
+                                                                               # to prevent ruining perf scores.     
         return []
-      
     pred_spans = []
     
     for item in llm_items:    # Loops through each span the LLM predicted
@@ -91,8 +69,8 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
 
         start_char = -1
         # Anchoring first (solves duplicate words)
-        if context_before:                                           # Instead of just searching for "suggests" (which might appear 3 times), 
-                                                                     # it searches for "arguably suggests" to find the exact occurrence
+        if context_before:                               # Instead of just searching for "suggests" (which might appear 3 times), 
+                                                         # it searches for "arguably suggests" to find the exact occurrence
             search_string = f"{context_before} {span_text}"
             combo_start = text.find(search_string)
             if combo_start != -1:
@@ -124,7 +102,7 @@ def parse_iob_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    sentences = []                 # Prepares empty containers to build sentences from the IOB file    
+    sentences = []                 # Prepares empty containers to build sentences from the IOB file     
     current_tokens = []
     current_tags_matrix = []
 
@@ -342,4 +320,4 @@ def evaluate(filepath, max_samples=None):
     print(f"Token F1-Score       : {t_f1:.4f}")
 
 if __name__ == "__main__":
-    evaluate("data/dev.iob", max_samples=20)
+    evaluate("data/dev.iob", max_samples=None)
