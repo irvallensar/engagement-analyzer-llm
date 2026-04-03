@@ -1,5 +1,6 @@
 import os
 import json
+import re
 from spacy.tokens import Doc
 import spacy    # tokenize sentences (split into words) and align character positions to token positions
 from pathlib import Path
@@ -46,12 +47,19 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
     llm_raw = call_local_llm(prompt) # sends it to the llm (ollama) and gets the raw response
     
     try:
-        llm_items = parse_llm_json(llm_raw)    # tries to parse LLM's answer as JSON format
+        # Use Regex to aggressively search for the JSON array and ignore chatty text
+        match = re.search(r'\[.*\]', llm_raw, re.DOTALL)
+        if match:
+            clean_json = match.group(0)
+            llm_items = json.loads(clean_json)
+        else:
+            # Fallback to your original parser just in case
+            llm_items = parse_llm_json(llm_raw)
+            
     except Exception as e:
-        print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    # If the LLM hallucinated invalid JSON syntax, 
-                                                                               # catches the error and returns empty, 
-                                                                               # to prevent ruining perf scores.     
+        print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    
         return []
+      
     pred_spans = []
     
     for item in llm_items:    # Loops through each span the LLM predicted
