@@ -17,9 +17,9 @@ DRIVE_DIR = Path("/content/drive/MyDrive/engagement-analyzer-llm")
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache.json" # the cache of the run (containing the logs such as predicted spans 
+CACHE_FILE = DRIVE_DIR / "predictions_cache_32b.json" # the cache of the run (containing the logs such as predicted spans 
                                                   # from the LLM, data saved)
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log.json" # The master (final) record of the whole run
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b.json" # The master (final) record of the whole run
 
 def load_prompt():    # load prompt
     return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
