@@ -1,28 +1,42 @@
-import requests
-import json
-import sys
+from mlx_lm import load, generate
 
-# Configuration for Ollama HTTP API
-OLLAMA_API_URL = "http://localhost:11434/api/generate"
+# We initialize these as None globally. 
+# This ensures the massive model only loads into the Mac's RAM once, 
+# rather than reloading for every single sentence.
+model = None
+tokenizer = None
 
-def call_local_llm(prompt):
-    """
-    Sends the prompt to the local Ollama server and returns the text response.
-    """
-    payload = {
-        "model": "qwen2.5:14b", 
-        "prompt": prompt,
-        "temperature": 0.0,
-        "stream": False
-    }
-
-    try:
-        response = requests.post(OLLAMA_API_URL, json=payload)
-        response.raise_for_status()
+def call_local_llm(prompt_text):
+    global model, tokenizer
+    
+    # 1. Load the model (Only happens on the first sentence)
+    if model is None or tokenizer is None:
+        print("\n[SYSTEM] Loading MLX model into Mac Studio memory... (This takes a moment)")
         
-        result = response.json()
-        return result.get('response', '[]')
-        
-    except requests.exceptions.RequestException as e:
-        print(f"\n[!] API ERROR: {e}")
-        return "[]"
+        # This will automatically download the 4-bit MLX model from HuggingFace
+        # If you upgrade to 32B later, you just change this string!
+        model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
+        model, tokenizer = load(model_id)
+
+    # 2. Format the prompt for Qwen 2.5 Instruct
+    # Qwen models expect a specific ChatML format (System message -> User message)
+    messages = [
+        {"role": "system", "content": "You are an expert computational linguist."},
+        {"role": "user", "content": prompt_text}
+    ]
+    
+    # The tokenizer automatically wraps your prompt in Qwen's required syntax
+    formatted_prompt = tokenizer.apply_chat_template(
+        messages, tokenize=False, add_generation_prompt=True
+    )
+    
+    # 3. Generate the response
+    response = generate(
+        model, 
+        tokenizer, 
+        prompt=formatted_prompt, 
+        max_tokens=1000,   # High enough to allow for the <thought_process> block
+        verbose=False      # Keeps your terminal output clean
+    )
+    
+    return response
