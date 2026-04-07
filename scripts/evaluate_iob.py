@@ -13,7 +13,7 @@ from scripts.llm_utils import parse_llm_json    # function that converts the LLM
 
 nlp = spacy.load("en_core_web_sm")    #load spaCy model
 PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
-DRIVE_DIR = Path("/content/drive/MyDrive/engagement-analyzer-llm") 
+DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
