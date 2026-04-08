@@ -13,9 +13,7 @@ def call_local_llm(prompt_text):
     if model is None or tokenizer is None:
         print("\n[SYSTEM] Loading MLX model into Mac Studio memory... (This takes a moment)")
         
-        # This will automatically download the 4-bit MLX model from HuggingFace
-        # If you upgrade to 32B later, you just change this string!
-        model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
+        model_id = "mlx-community/Qwen2.5-72B-Instruct-4bit"
         model, tokenizer = load(model_id)
 
     # 2. Format the prompt for Qwen 2.5 Instruct
