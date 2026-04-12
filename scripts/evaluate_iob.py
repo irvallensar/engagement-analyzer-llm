@@ -26,6 +26,32 @@ CACHE_FILE = DRIVE_DIR / "predictions_cache_72b.json" # the cache of the run (co
                                                   # from the LLM, data saved)
 EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_72b.json" # The master (final) record of the whole run
 
+# Hardware tracking setup
+HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_72b.csv"
+
+# Global flag to stop the thread when evaluation is done
+stop_monitoring = False 
+
+def monitor_hardware(interval=60):
+    """Runs in the background and logs CPU/RAM every 'interval' seconds."""
+    with open(HARDWARE_LOG_FILE, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Timestamp", "CPU_Percent", "RAM_Used_GB", "RAM_Percent"])
+        
+        while not stop_monitoring:
+            current_time = time.strftime('%Y-%m-%d %H:%M:%S')
+            cpu_usage = psutil.cpu_percent(interval=None)
+            
+            # Get RAM in GB
+            virtual_mem = psutil.virtual_memory()
+            ram_used_gb = virtual_mem.used / (1024 ** 3)
+            ram_percent = virtual_mem.percent
+            
+            writer.writerow([current_time, cpu_usage, round(ram_used_gb, 2), ram_percent])
+            file.flush() # Force write to disk immediately
+            
+            time.sleep(interval)
+
 def load_prompt():    # load prompt
     return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
 
@@ -195,6 +221,10 @@ def evaluate(filepath, max_samples=None):
     # Start the stopwatch
     start_time = time.time()
     print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Started Evaluation Run...")
+
+    # Launch the tracker in the background
+    monitor_thread = threading.Thread(target=monitor_hardware, args=(60,))
+    monitor_thread.start()
   
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
@@ -289,11 +319,17 @@ def evaluate(filepath, max_samples=None):
     save_eval_log(master_eval_log)
     print(f"\n[SUCCESS] Master evaluation log saved to {EVAL_LOG_FILE}")
 
-    # Stop the stopwatch and calculate duration
+    # Stop the stopwatch and kill the monitor
     end_time = time.time()
     elapsed_time = end_time - start_time
+
+    global stop_monitoring
+    stop_monitoring = True
+    monitor_thread.join() # Wait for the thread to safely close
+
     print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Evaluation Complete!")
     print(f"Total Run Time: {timedelta(seconds=int(elapsed_time))}")
+    print(f"Hardware usage saved to {HARDWARE_LOG_FILE}")
 
   # ----- CALCULATION OF PERFORMANCE METRIC SCORES ------
     
