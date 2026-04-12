@@ -1,3 +1,5 @@
+import time
+from datetime import timedelta
 import os
 import json
 import re
@@ -183,11 +185,14 @@ def parse_iob_file(filepath):
         
     return dataset
 
-
 # --- EVALUATION  ---
 
 # Loads the full dataset
 def evaluate(filepath, max_samples=None):
+    # Start the stopwatch
+    start_time = time.time()
+    print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Started Evaluation Run...")
+  
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
     
@@ -280,6 +285,12 @@ def evaluate(filepath, max_samples=None):
     # Save the complete log to disk after the loop finishes
     save_eval_log(master_eval_log)
     print(f"\n[SUCCESS] Master evaluation log saved to {EVAL_LOG_FILE}")
+
+    # Stop the stopwatch and calculate duration
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Evaluation Complete!")
+    print(f"Total Run Time: {timedelta(seconds=int(elapsed_time))}")
 
   # ----- CALCULATION OF PERFORMANCE METRIC SCORES ------
     
