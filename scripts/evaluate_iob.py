@@ -27,7 +27,7 @@ CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_bf16.json" # the cache of the ru
 EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_bf16.json" # The master (final) record of the whole run
 
 # Hardware tracking setup
-HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_72b.csv"
+HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_3_32b.csv"
 
 # Global flag to stop the thread when evaluation is done
 stop_monitoring = False 
