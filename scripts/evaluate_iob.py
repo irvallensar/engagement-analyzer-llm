@@ -94,6 +94,9 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
     pred_spans = []
     
     for item in llm_items:    # Loops through each span the LLM predicted
+        if not isinstance(item, dict):
+            continue  # Skip this item if the LLM hallucinated a string instead of a dictionary
+          
         label = item.get("label", "O")
         # Ignore "O" and empty string labels (""), as we only want the engagement markers (labels)
         if label == "O" or not label.strip():
