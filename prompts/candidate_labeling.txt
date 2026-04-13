@@ -14,6 +14,7 @@ Analyze the sentence and output a JSON array of objects strictly matching this s
 FORMATTING RULES:
 1. You must copy the exact text from the sentence, preserving ALL strange spaces and punctuation (e.g., "( 1999 )"). Do not fix typos or spacing.
 2. ONLY use the 10 uppercase labels from the schema. 
+3. NO EXPLANATIONS OR THINKING: You are strictly forbidden from using <think> or <thought_process> tags. Do NOT provide any internal reasoning or conversational text. You must IMMEDIATELY output the final JSON array.
 
 DEFINITIONS & CONSTRAINTS:
 1. MONOGLOSS: Bare assertions. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'are illustrated') of a definitive, undeniable factual statement. 
@@ -115,3 +116,5 @@ Now annotate the following.
 
 Sentence:
 {sentence}
+
+CRITICAL INSTRUCTION: Generate the JSON array immediately. Do NOT use <think> tags.
