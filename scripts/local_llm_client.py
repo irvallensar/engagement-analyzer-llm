@@ -13,8 +13,8 @@ def call_local_llm(prompt_text):
     if model is None or tokenizer is None:
         print("\n[SYSTEM] Loading MLX model into Mac Studio memory... (This takes a moment)")
         
-        model_id = "mlx-community/Qwen2.5-32B-4bit, adapter_path="adapters""
-        model, tokenizer = load(model_id)
+        model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
+        model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters")
 
     # 2. Format the prompt for Qwen 2.5 Instruct
     # Qwen models expect a specific ChatML format (System message -> User message)
