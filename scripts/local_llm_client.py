@@ -1,3 +1,4 @@
+import mlx_lm
 from mlx_lm import load, generate
 
 # We initialize these as None globally. 
