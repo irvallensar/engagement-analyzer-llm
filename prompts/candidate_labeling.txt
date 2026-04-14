@@ -1,4 +1,3 @@
-/no_think
 You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse based on the Appraisal framework.
 
 TASK & JSON SCHEMA:
@@ -15,7 +14,7 @@ Analyze the sentence and output a JSON array of objects strictly matching this s
 FORMATTING RULES:
 1. You must copy the exact text from the sentence, preserving ALL strange spaces and punctuation (e.g., "( 1999 )"). Do not fix typos or spacing.
 2. ONLY use the 10 uppercase labels from the schema. 
-3. NO EXPLANATIONS OR THINKING: You are strictly forbidden from using <think> or <thought_process> tags. Do NOT provide any internal reasoning or conversational text. You must IMMEDIATELY output the final JSON array.
+3. CHAIN OF THOUGHT: You MUST first think step-by-step using <think> tags. Analyze the sentence against the definitions to determine exact boundaries. After closing the </think> tag, immediately output the strictly formatted JSON array and nothing else.
 
 DEFINITIONS & CONSTRAINTS:
 1. MONOGLOSS: Bare assertions. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'are illustrated') of a definitive, undeniable factual statement. 
@@ -31,9 +30,9 @@ DEFINITIONS & CONSTRAINTS:
 
 Example 1 (Counter, Entertain, Deny)
 Sentence: "Although the results are promising , they might not apply to all cases ."
-<thought_process>
+<think>
 "Although" is COUNTER. "might" is ENTERTAIN. "not apply" is DENY.
-</thought_process>
+</think>
 [
   {
     "text": "Although", 
@@ -54,9 +53,9 @@ Sentence: "Although the results are promising , they might not apply to all case
 
 Example 2 (Spacing, Citation, Attribution, Sources)
 Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , and Davies ( 2002 , p107 ) warns against this ."
-<thought_process>
+<think>
 "Christen" and "Davies" are the specific entities making the claims (SOURCES). "Christen ( 1999 )" and "Davies ( 2002 , p107 )" are explicit in-text citations. I must preserve the exact strange spacing (CITATION). "strongly asserts" and "warns" are reporting verb phrases (ATTRIBUTION).
-</thought_process>
+</think>
 [
   {
     "text": "Christen", 
@@ -92,9 +91,9 @@ Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , 
 
 Example 3 (Sources, Attribution, Monogloss)
 Sentence: "Researchers emphasize that the data proves the outcome ."
-<thought_process>
+<think>
 "Researchers" is the specific entity making the claim (SOURCES). "emphasize" is the reporting verb (ATTRIBUTION). "proves" is a forceful action verb establishing an undeniable fact (MONOGLOSS).
-</thought_process>
+</think>
 [
   {
     "text": "Researchers", 
@@ -118,4 +117,4 @@ Now annotate the following.
 Sentence:
 {sentence}
 
-CRITICAL INSTRUCTION: Generate the JSON array immediately. Do NOT use <think> tags.
+CRITICAL INSTRUCTION: First, write your reasoning inside <think> tags. After closing the tag, IMMEDIATELY output the strictly formatted JSON array.
