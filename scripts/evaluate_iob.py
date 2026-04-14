@@ -75,23 +75,27 @@ def save_eval_log(log_data):
 
 def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
     prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
-    llm_raw = call_local_llm(prompt) # sends it to the llm (ollama) and gets the raw response
-    
+    llm_raw = call_local_llm(prompt)
+
+    # --- ADD THIS DEBUG PRINT ---
+    print(f"\n[DEBUG] RAW LLM OUTPUT: {llm_raw}")
+    # ----------------------------
+
+    # Clean markdown wrappers SAFELY using replace, NOT strip
+    if isinstance(llm_raw, str):
+        llm_raw = llm_raw.replace('```json', '').replace('```', '').strip()
+
     try:
-        # Use Regex to aggressively search for the JSON array and ignore chatty text
         match = re.search(r'\[.*\]', llm_raw, re.DOTALL)
         if match:
             clean_json = match.group(0)
             llm_items = json.loads(clean_json)
         else:
-            # Fallback to your original parser just in case
             llm_items = parse_llm_json(llm_raw)
-            
+
     except Exception as e:
         print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    
         return []
-      
-    pred_spans = []
     
     for item in llm_items:    # Loops through each span the LLM predicted
         if not isinstance(item, dict):
