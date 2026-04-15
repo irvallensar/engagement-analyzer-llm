@@ -1,41 +1,40 @@
 import mlx_lm
-from mlx_lm import load, generate
 
-# We initialize these as None globally. 
-# This ensures the massive model only loads into the Mac's RAM once, 
-# rather than reloading for every single sentence.
-model = None
-tokenizer = None
+# ==========================================
+# 1. GLOBAL SPACE (Runs ONLY ONCE at startup)
+# ==========================================
+print("Loading model and adapters into Unified Memory...")
+model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
 
-def call_local_llm(prompt_text):
-    global model, tokenizer
-    
-    # 1. Load the model (Only happens on the first sentence)
-    if model is None or tokenizer is None:
-        print("\n[SYSTEM] Loading MLX model into Mac Studio memory... (This takes a moment)")
-        
-        model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
-        model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters")
+# This loads the 32B base and your fine-tuned weights simultaneously
+model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters")
+print("Model loaded successfully! Ready for inference.")
 
-    # 2. Format the prompt for Qwen 2.5 Instruct
-    # Qwen models expect a specific ChatML format (System message -> User message)
+
+# ==========================================
+# 2. FUNCTION SPACE (Runs 1,700 times)
+# ==========================================
+def call_local_llm(sentence_text):
+    # Build the exact Chat dictionary
     messages = [
-        {"role": "system", "content": "You are an expert computational linguist."},
-        {"role": "user", "content": prompt_text}
+        {"role": "system", "content": "You are an expert annotator. Extract Engagement markers as a JSON array."},
+        {"role": "user", "content": sentence_text}
     ]
     
-    # The tokenizer automatically wraps your prompt in Qwen's required syntax
+    # Inject the special <|im_start|> tokens
     formatted_prompt = tokenizer.apply_chat_template(
-        messages, tokenize=False, add_generation_prompt=True
+        messages, 
+        tokenize=False, 
+        add_generation_prompt=True
     )
     
-    # 3. Generate the response
-    response = generate(
+    # Generate the response using the ALREADY LOADED model
+    response = mlx_lm.generate(
         model, 
         tokenizer, 
         prompt=formatted_prompt, 
-        max_tokens=1000,   # High enough to allow for the <thought_process> block
-        verbose=False      # Keeps your terminal output clean
+        max_tokens=500, 
+        verbose=False
     )
     
     return response
