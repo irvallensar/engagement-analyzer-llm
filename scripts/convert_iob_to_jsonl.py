@@ -1,100 +1,116 @@
 import json
+import spacy
+from spacy.tokens import Doc
 from pathlib import Path
 
-# --- Configuration ---
-INPUT_IOB = "data/train.iob"
-OUTPUT_JSONL = "data/valid.jsonl"
+# Load spaCy
+nlp = spacy.load("en_core_web_sm")
 
-# The hyper-concise system prompt for fine-tuning
+INPUT_IOB = "data/train.iob"
+OUTPUT_JSONL = "data/train.jsonl"
 SYSTEM_PROMPT = "You are an expert annotator. Extract Engagement markers as a JSON array."
 
-def process_iob_to_jsonl():
+def process():
     print(f"Reading from {INPUT_IOB}...")
-    
     with open(INPUT_IOB, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    sentences_processed = 0
-    current_words = []
-    current_labels = []
-    
+    sentences = []
+    current_tokens = []
+    current_tags_matrix = []
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            if current_tokens:
+                sentences.append({"tokens": current_tokens, "tags_matrix": current_tags_matrix})
+                current_tokens = []
+                current_tags_matrix = []
+            continue
+        
+        # Skip metadata
+        if "-DOCSTART-" in line or line == "-X-" or line == "O":
+            continue
+
+        parts = line.split()
+        if len(parts) >= 2:
+            current_tokens.append(parts[0])
+            current_tags_matrix.append(parts[1:])
+
+    # Catch the last sentence
+    if current_tokens:
+        sentences.append({"tokens": current_tokens, "tags_matrix": current_tags_matrix})
+
+    print(f"Found {len(sentences)} sentences. Extracting markers using Matrix Decoder...")
+
     with open(OUTPUT_JSONL, 'w', encoding='utf-8') as out_f:
+        total_markers_found = 0
+        sentences_with_markers = 0
         
-        for line in lines:
-            line = line.strip()
-            
-            # If the line is empty, we have reached the end of a sentence
-            if not line:
-                if current_words:
-                    process_sentence(current_words, current_labels, out_f)
-                    sentences_processed += 1
-                    current_words = []
-                    current_labels = []
-                continue
-            
-            # Split the line into word and label (handles both spaces and tabs)
-            parts = line.split()
-            if len(parts) >= 2:
-                word = parts[0]
-                label = parts[-1] # Label is usually the last item
-                current_words.append(word)
-                current_labels.append(label)
+        for entry in sentences:
+            doc = Doc(nlp.vocab, words=entry["tokens"])
+            text = doc.text
+            gold_spans = set()
 
-        # Catch the last sentence if the file doesn't end with an empty line
-        if current_words:
-            process_sentence(current_words, current_labels, out_f)
-            sentences_processed += 1
+            # THE MATRIX DECODER
+            if entry["tags_matrix"]:
+                num_cols = len(entry["tags_matrix"][0])
+                for col_idx in range(num_cols):
+                    current_label = None
+                    start_idx = -1
+                    
+                    for i, row in enumerate(entry["tags_matrix"]):
+                        tag = row[col_idx] if col_idx < len(row) else "O"
+                        
+                        if tag.startswith("B-"):
+                            if current_label:
+                                gold_spans.add((current_label, start_idx, i))
+                            current_label = tag[2:]
+                            start_idx = i
+                        elif tag.startswith("I-") and current_label == tag[2:]:
+                            continue
+                        else:
+                            if current_label:
+                                gold_spans.add((current_label, start_idx, i))
+                                current_label = None
+                                start_idx = -1
+                                
+                    if current_label:
+                        gold_spans.add((current_label, start_idx, len(entry["tags_matrix"])))
+            
+            markers = []
+            for label, start_idx, end_idx in gold_spans:
+                span = doc[start_idx:end_idx]
+                
+                # Context before (up to 3 tokens)
+                context_start = max(0, start_idx - 3)
+                context_words = doc[context_start:start_idx].text.strip()
+                
+                markers.append({
+                    "text": span.text,
+                    "label": label.upper(),
+                    "context_before": context_words
+                })
+                total_markers_found += 1
 
-    print(f"\n[SUCCESS] Conversion complete! {sentences_processed} sentences saved to {OUTPUT_JSONL}")
+            if markers:
+                sentences_with_markers += 1
 
-def process_sentence(words, labels, out_f):
-    sentence_text = " ".join(words)
-    markers = []
-    
-    i = 0
-    while i < len(words):
-        label = labels[i]
-        
-        # Clean up B- and I- tags if they exist in your IOB file
-        clean_label = label.replace("B-", "").replace("I-", "")
-        
-        if clean_label != "O":
-            start_idx = i
-            # Look ahead to find the full multi-word span
-            while i + 1 < len(words) and labels[i+1].replace("B-", "").replace("I-", "") == clean_label:
-                # Standard IOB rules: A 'B-' tag means a new marker starts, even if it's the same label
-                if labels[i+1].startswith("B-"):
-                    break
-                i += 1
-            
-            span_words = words[start_idx : i+1]
-            span_text = " ".join(span_words)
-            
-            # Grab context before (up to 3 words)
-            context_start = max(0, start_idx - 3)
-            context_words = words[context_start:start_idx]
-            context_text = " ".join(context_words)
-            
-            markers.append({
-                "text": span_text,
-                "label": clean_label.upper(),
-                "context_before": context_text
-            })
-            
-        i += 1
+            # Format into Chat ML
+            chat_dict = {
+                "messages": [
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": text},
+                    {"role": "assistant", "content": json.dumps(markers)}
+                ]
+            }
+            out_f.write(json.dumps(chat_dict) + "\n")
 
-    # Format into the exact Chat ML dictionary MLX requires
-    chat_dict = {
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": sentence_text},
-            # We convert the markers list into a strict JSON string for the assistant's response
-            {"role": "assistant", "content": json.dumps(markers)}
-        ]
-    }
-    
-    # Write as a single line in the JSONL file
-    out_f.write(json.dumps(chat_dict) + "\n")
+    print(f"\n[SUCCESS] Conversion complete!")
+    print(f"  Total Sentences: {len(sentences)}")
+    print(f"  Sentences WITH Markers: {sentences_with_markers}")
+    print(f"  Total Markers Extracted: {total_markers_found}")
+    print(f"Saved to {OUTPUT_JSONL}")
 
 if __name__ == "__main__":
-    process_iob_to_jsonl()
+    process()
