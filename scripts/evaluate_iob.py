@@ -17,13 +17,11 @@ from scripts.local_llm_client import call_local_llm    # function that sends pro
 from scripts.llm_utils import parse_llm_json    # function that converts the LLM's raw text response into a python list   
 
 nlp = spacy.load("en_core_web_sm")    #load spaCy model
-PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune.json" # the cache of the run (containing the logs such as predicted spans 
-                                                  # from the LLM, data saved)
+CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune.json" # the cache of the run 
 EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune.json" # The master (final) record of the whole run
 
 # Hardware tracking setup
@@ -52,8 +50,6 @@ def monitor_hardware(interval=60):
             
             time.sleep(interval)
 
-def load_prompt():    # load prompt
-    return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
 
 def load_cache():
     if CACHE_FILE.exists():
@@ -74,7 +70,6 @@ def save_eval_log(log_data):
         json.dump(log_data, f, indent=4)
 
 def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
-    prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
     llm_raw = call_local_llm(text)
 
     # --- ADD THIS DEBUG PRINT ---
@@ -96,9 +91,9 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
     except Exception as e:
         print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    
         return []
-      
-    pred_spans = set()
   
+    pred_spans = [] # <--- THIS IS THE FIX: Initialize the list so it always exists!
+
     for item in llm_items:    # Loops through each span the LLM predicted
         if not isinstance(item, dict):
             continue  # Skip this item if the LLM hallucinated a string instead of a dictionary
