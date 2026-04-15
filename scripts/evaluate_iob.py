@@ -75,7 +75,7 @@ def save_eval_log(log_data):
 
 def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
     prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
-    llm_raw = call_local_llm(data["text"])
+    llm_raw = call_local_llm(prompt)
 
     # --- ADD THIS DEBUG PRINT ---
     print(f"\n[DEBUG] RAW LLM OUTPUT: {llm_raw}")
