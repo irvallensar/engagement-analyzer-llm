@@ -96,7 +96,9 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
     except Exception as e:
         print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    
         return []
-    
+      
+    pred_spans = set()
+  
     for item in llm_items:    # Loops through each span the LLM predicted
         if not isinstance(item, dict):
             continue  # Skip this item if the LLM hallucinated a string instead of a dictionary
