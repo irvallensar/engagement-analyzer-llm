@@ -6,8 +6,8 @@ from pathlib import Path
 # Load spaCy
 nlp = spacy.load("en_core_web_sm")
 
-INPUT_IOB = "data/train.iob"
-OUTPUT_JSONL = "data/train.jsonl"
+INPUT_IOB = "data/dev.iob"
+OUTPUT_JSONL = "data/valid.jsonl"
 SYSTEM_PROMPT = "You are an expert annotator. Extract Engagement markers as a JSON array."
 
 def process():
