@@ -15,9 +15,9 @@ print("Model loaded successfully! Ready for inference.")
 # 2. FUNCTION SPACE (Runs 1,700 times)
 # ==========================================
 def call_local_llm(sentence_text):
-    # Build the exact Chat dictionary
     messages = [
-        {"role": "system", "content": "You are an expert annotator. Extract Engagement markers as a JSON array."},
+        # NEW SYSTEM PROMPT
+        {"role": "system", "content": "You are an expert annotator. First, analyze the sentence and explicitly identify any Engagement markers. Then, output the final result as a strict JSON array."},
         {"role": "user", "content": sentence_text}
     ]
     
