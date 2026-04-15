@@ -7,8 +7,8 @@ from pathlib import Path
 nlp = spacy.load("en_core_web_sm")
 
 # We will change these manually for train vs dev
-INPUT_IOB = "data/train.iob"
-OUTPUT_JSONL = "data/train.jsonl"
+INPUT_IOB = "data/dev.iob"
+OUTPUT_JSONL = "data/valid.jsonl"
 
 # NEW: Updated System Prompt to demand reasoning first
 SYSTEM_PROMPT = "You are an expert annotator. First, analyze the sentence and explicitly identify any Engagement markers. Then, output the final result as a strict JSON array."
