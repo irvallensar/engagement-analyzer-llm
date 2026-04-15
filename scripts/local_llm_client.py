@@ -34,6 +34,7 @@ def call_local_llm(sentence_text):
         tokenizer, 
         prompt=formatted_prompt, 
         max_tokens=500, 
+        temp=0.0,
         verbose=False
     )
     
