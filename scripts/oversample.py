@@ -5,7 +5,7 @@ import random
 INPUT_FILE = "data/train.jsonl"
 OUTPUT_FILE = "data/train_balanced.jsonl"
 # This is the minimum number of times the model needs to see a label to not "forget" it
-TARGET_MINIMUM = 1500 
+TARGET_MINIMUM = 8220
 
 def process():
     with open(INPUT_FILE, 'r', encoding='utf-8') as f:
