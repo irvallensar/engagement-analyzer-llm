@@ -16,8 +16,7 @@ print("Model loaded successfully! Ready for inference.")
 # ==========================================
 def call_local_llm(sentence_text):
     messages = [
-        # NEW SYSTEM PROMPT
-        {"role": "system", "content": "You are an expert annotator. First, analyze the sentence and explicitly identify any Engagement markers. Then, output the final result as a strict JSON array."},
+        {"role": "system", "content": "You are an expert annotator. Extract Engagement markers as a JSON array."},
         {"role": "user", "content": sentence_text}
     ]
     
