@@ -1,9 +1,11 @@
-model: "mlx-community/Qwen2.5-14B-Instruct-4bit"
+# lora_config.yaml
+
+model: "mlx-community/Qwen2.5-32B-Instruct-4bit"
 data: "data"
 train: true
 iters: 4000
 batch_size: 4
-learning_rate: 5e-6
+learning_rate: 1.0e-5
 steps_per_eval: 100
 save_every: 100
 
