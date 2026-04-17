@@ -1,13 +1,11 @@
 import json
 import spacy
 from spacy.tokens import Doc
-from pathlib import Path
 
 nlp = spacy.load("en_core_web_sm")
 
-# Change these manually for train vs dev
-INPUT_IOB = "data/dev.iob"
-OUTPUT_JSONL = "data/valid.jsonl"
+INPUT_IOB = "data/train.iob"
+OUTPUT_JSONL = "data/train.jsonl"
 SYSTEM_PROMPT = "You are an expert annotator. Extract Engagement markers as a JSON array."
 
 def process():
@@ -33,8 +31,6 @@ def process():
 
     if current_tokens:
         sentences.append({"tokens": current_tokens, "tags_matrix": current_tags_matrix})
-
-    print(f"Found {len(sentences)} sentences. Extracting markers using Matrix Decoder...")
 
     with open(OUTPUT_JSONL, 'w', encoding='utf-8') as out_f:
         for entry in sentences:
