@@ -2,12 +2,13 @@ import json
 from collections import Counter
 import random
 
-INPUT_IOB = "data/train.iob"
-OUTPUT_JSONL = "data/train.jsonl"
-# SOFT CAP: We only boost severely underrepresented classes up to ~3500
+# THE VARIABLES (No hallucinations)
+INPUT_FILE = "data/train.jsonl"
+OUTPUT_FILE = "data/train_balanced.jsonl"
 TARGET_MINIMUM = 3500 
 
 def process():
+    print(f"Reading from {INPUT_FILE}...")
     with open(INPUT_FILE, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
