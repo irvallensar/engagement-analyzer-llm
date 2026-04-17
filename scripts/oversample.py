@@ -2,13 +2,11 @@ import json
 from collections import Counter
 import random
 
-# THE VARIABLES (No hallucinations)
 INPUT_FILE = "data/train.jsonl"
 OUTPUT_FILE = "data/train_balanced.jsonl"
 TARGET_MINIMUM = 3500 
 
 def process():
-    print(f"Reading from {INPUT_FILE}...")
     with open(INPUT_FILE, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
@@ -27,10 +25,6 @@ def process():
             
         parsed_data.append({"original_line": line, "labels": labels_in_sentence})
 
-    print("--- ORIGINAL DISTRIBUTION ---")
-    for label, count in label_counts.most_common():
-        print(f"{label}: {count}")
-
     balanced_dataset = []
     for item in parsed_data:
         balanced_dataset.append(item["original_line"])
@@ -39,10 +33,8 @@ def process():
             rarest_label = min(item["labels"], key=lambda l: label_counts[l])
             rarest_count = label_counts[rarest_label]
             
-            # Only multiply if it's below our soft cap of 3500
             if rarest_count < TARGET_MINIMUM:
                 multiplier = int(TARGET_MINIMUM / rarest_count)
-                # Keep it strictly <= 2x max (only add 1 extra duplicate)
                 added_copies = min(multiplier - 1, 1) 
                 for _ in range(added_copies):
                     balanced_dataset.append(item["original_line"])
