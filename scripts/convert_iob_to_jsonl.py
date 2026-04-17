@@ -1,77 +1,100 @@
 import json
+from pathlib import Path
 
+# --- Configuration ---
 INPUT_IOB = "data/train.iob"
-OUTPUT_JSONL = "data/train.jsonl"
+OUTPUT_JSONL = "data/valid.jsonl"
+
+# The hyper-concise system prompt for fine-tuning
 SYSTEM_PROMPT = "You are an expert annotator. Extract Engagement markers as a JSON array."
 
-def convert_iob_to_jsonl():
+def process_iob_to_jsonl():
+    print(f"Reading from {INPUT_IOB}...")
+    
     with open(INPUT_IOB, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    dataset = []
+    sentences_processed = 0
     current_words = []
-    current_markers = []
+    current_labels = []
     
-    # Track character offsets for strict span extraction
-    current_char_idx = 0 
-    current_span_start = None
-    current_label = None
-
-    print(f"Reading from {INPUT_IOB}...")
-
-    for line in lines:
-        line = line.strip()
-        if not line: # End of sentence
-            if current_words:
-                sentence_text = " ".join(current_words)
-                
-                # Format exactly like Run 1 (No CoT, just JSON)
-                message_dict = {
-                    "messages": [
-                        {"role": "system", "content": SYSTEM_PROMPT},
-                        {"role": "user", "content": sentence_text},
-                        {"role": "assistant", "content": json.dumps(current_markers)}
-                    ]
-                }
-                dataset.append(message_dict)
-                
-            # Reset for next sentence
-            current_words = []
-            current_markers = []
-            current_char_idx = 0
-            continue
-
-        parts = line.split('\t')
-        if len(parts) >= 2:
-            word = parts[0]
-            tag = parts[-1]
-
-            # Calculate start/end indices for the marker
-            start_idx = current_char_idx
-            end_idx = start_idx + len(word)
-
-            if tag.startswith("B-"):
-                # Save previous marker if exists
-                if current_label:
-                    current_markers.append({"label": current_label, "start": current_span_start, "end": start_idx - 1})
-                current_label = tag[2:]
-                current_span_start = start_idx
-            elif tag.startswith("I-") and current_label == tag[2:]:
-                pass # Continue the span
-            else:
-                if current_label:
-                    current_markers.append({"label": current_label, "start": current_span_start, "end": start_idx - 1})
-                    current_label = None
-
-            current_words.append(word)
-            current_char_idx = end_idx + 1 # +1 for the space
-
-    # Save the pure jsonl
     with open(OUTPUT_JSONL, 'w', encoding='utf-8') as out_f:
-        for item in dataset:
-            out_f.write(json.dumps(item) + '\n')
+        
+        for line in lines:
+            line = line.strip()
+            
+            # If the line is empty, we have reached the end of a sentence
+            if not line:
+                if current_words:
+                    process_sentence(current_words, current_labels, out_f)
+                    sentences_processed += 1
+                    current_words = []
+                    current_labels = []
+                continue
+            
+            # Split the line into word and label (handles both spaces and tabs)
+            parts = line.split()
+            if len(parts) >= 2:
+                word = parts[0]
+                label = parts[-1] # Label is usually the last item
+                current_words.append(word)
+                current_labels.append(label)
 
-    print(f"[SUCCESS] Saved {len(dataset)} sentences to {OUTPUT_JSONL}")
+        # Catch the last sentence if the file doesn't end with an empty line
+        if current_words:
+            process_sentence(current_words, current_labels, out_f)
+            sentences_processed += 1
+
+    print(f"\n[SUCCESS] Conversion complete! {sentences_processed} sentences saved to {OUTPUT_JSONL}")
+
+def process_sentence(words, labels, out_f):
+    sentence_text = " ".join(words)
+    markers = []
+    
+    i = 0
+    while i < len(words):
+        label = labels[i]
+        
+        # Clean up B- and I- tags if they exist in your IOB file
+        clean_label = label.replace("B-", "").replace("I-", "")
+        
+        if clean_label != "O":
+            start_idx = i
+            # Look ahead to find the full multi-word span
+            while i + 1 < len(words) and labels[i+1].replace("B-", "").replace("I-", "") == clean_label:
+                # Standard IOB rules: A 'B-' tag means a new marker starts, even if it's the same label
+                if labels[i+1].startswith("B-"):
+                    break
+                i += 1
+            
+            span_words = words[start_idx : i+1]
+            span_text = " ".join(span_words)
+            
+            # Grab context before (up to 3 words)
+            context_start = max(0, start_idx - 3)
+            context_words = words[context_start:start_idx]
+            context_text = " ".join(context_words)
+            
+            markers.append({
+                "text": span_text,
+                "label": clean_label.upper(),
+                "context_before": context_text
+            })
+            
+        i += 1
+
+    # Format into the exact Chat ML dictionary MLX requires
+    chat_dict = {
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": sentence_text},
+            # We convert the markers list into a strict JSON string for the assistant's response
+            {"role": "assistant", "content": json.dumps(markers)}
+        ]
+    }
+    
+    # Write as a single line in the JSONL file
+    out_f.write(json.dumps(chat_dict) + "\n")
 
 if __name__ == "__main__":
-    convert_iob_to_jsonl()
+    process_iob_to_jsonl()
