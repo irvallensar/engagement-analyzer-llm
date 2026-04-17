@@ -2,8 +2,8 @@ import json
 from pathlib import Path
 
 # --- Configuration ---
-INPUT_IOB = "data/train.iob"
-OUTPUT_JSONL = "data/train.jsonl"
+INPUT_IOB = "data/dev.iob"
+OUTPUT_JSONL = "data/valid.jsonl"
 
 # The hyper-concise system prompt for fine-tuning
 SYSTEM_PROMPT = "You are an expert annotator. Extract Engagement markers as a JSON array."
