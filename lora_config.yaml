@@ -1,25 +1,21 @@
-# lora_config.yaml
-
-# Model and Data
 model: "mlx-community/Qwen2.5-14B-Instruct-4bit"
 data: "data"
 train: true
-adapter_path: "adapters"
-
-# Core Hyperparameters
 iters: 4000
 batch_size: 4
 learning_rate: 5e-6
-num_layers: 32
-
-# Validation and Saving
 steps_per_eval: 100
 save_every: 100
-val_batches: 25
 
-# The Advanced LoRA Parameters (What broke the CLI)
-lora_parameters:
-  rank: 16
+lora:
+  r: 16
   alpha: 32
   dropout: 0.05
-  scale: 10.0
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
