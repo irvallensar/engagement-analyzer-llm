@@ -2,8 +2,8 @@ import json
 from collections import Counter
 import random
 
-INPUT_FILE = "data/train.jsonl"
-OUTPUT_FILE = "data/train_balanced.jsonl"
+INPUT_IOB = "data/train.iob"
+OUTPUT_JSONL = "data/train.jsonl"
 # SOFT CAP: We only boost severely underrepresented classes up to ~3500
 TARGET_MINIMUM = 3500 
 
