@@ -1,9 +1,8 @@
-model: "mlx-community/Qwen2.5-32B-Instruct-4bit"
+model: "mlx-community/Qwen2.5-32B-Instruct"
 train: true
 fine_tune_type: lora
 data: "data"
 seed: 42
-
 num_layers: 64
 
 lora_parameters:
