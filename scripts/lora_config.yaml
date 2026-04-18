@@ -1,0 +1,21 @@
+# lora_config.yaml
+model: "Qwen/Qwen2.5-32B-Instruct"
+train: true
+data: "data" 
+seed: 42
+
+# LoRA Parameters
+lora_layers: 32           
+lora_parameters:
+  keys: ["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "down_proj", "up_proj"]
+  rank: 16                
+  alpha: 32               
+  dropout: 0.05
+
+# Training Parameters (Optimized for M3 Ultra 256GB + 14k Dataset)
+batch_size: 8             # Increased from 2. The 256GB unified memory easily handles this.
+iters: 3500               # 14,100 sentences / batch size 8 = ~1,762 iters per epoch. 3,500 yields ~2 full epochs.
+learning_rate: 2e-5       
+steps_per_eval: 100       # Frequent evaluation to monitor validation loss
+save_every: 500           # Saves checkpoint weights regularly 
+adapter_path: "adapters"
