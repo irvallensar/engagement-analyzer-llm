@@ -1,24 +1,7 @@
-# lora_config.yaml
-model: "Qwen/Qwen2.5-32B-Instruct-4bit"
-train: true
-fine_tune_type: lora
-data: "data"
-seed: 42
-
-# Number of transformer layers to apply LoRA to (counted from the last layer)
-lora_layers: 16          # start with 16, not 64 — see note below
-
+# lora_config.yaml 
+num_layers: 64           
 lora_parameters:
-  rank: 16
-  alpha: 32
+  keys: ["self_attn.q_proj", "self_attn.v_proj", "self_attn.k_proj", "self_attn.o_proj", "mlp.gate_proj", "mlp.down_proj", "mlp.up_proj"]
+  rank: 16                
+  scale: 2.0              
   dropout: 0.05
-  # DO NOT include 'keys' here — it's not a valid subfield in most versions
-
-# Training Parameters
-batch_size: 1            # see note below
-iters: 3500
-learning_rate: 2e-5
-steps_per_eval: 100
-save_every: 500
-adapter_path: "adapters"
-val_batches: 25
