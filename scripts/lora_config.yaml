@@ -7,13 +7,13 @@ num_layers: 64
 
 lora_parameters:
   keys: [
-    "q_proj",
-    "k_proj",
-    "v_proj",
-    "o_proj",
-    "gate_proj",
-    "up_proj",
-    "down_proj"
+    "wq",
+    "wk",
+    "wv",
+    "wo",
+    "w1",
+    "w2",
+    "w3"
   ]
   rank: 16
   scale: 2.0
