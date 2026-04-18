@@ -4,15 +4,21 @@ train: true
 data: "data" 
 seed: 42
 
-# 1. UPDATED KEY: Use 'num_layers' instead of 'lora_layers'
-# Targeting all 64 layers of the 32B model for maximum semantic adaptation
 num_layers: 64           
 
-# 2. KEEP THESE: These are fully supported in 0.31.2
 lora_parameters:
-  keys: ["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "down_proj", "up_proj"]
+  # Added the required module prefixes (self_attn and mlp)
+  keys: [
+    "self_attn.q_proj", 
+    "self_attn.v_proj", 
+    "self_attn.k_proj", 
+    "self_attn.o_proj", 
+    "mlp.gate_proj", 
+    "mlp.down_proj", 
+    "mlp.up_proj"
+  ]
   rank: 16                
-  alpha: 32               
+  scale: 2.0              # Replaced 'alpha: 32' with 'scale: 2.0' (alpha/rank)
   dropout: 0.05
 
 # Training Parameters
