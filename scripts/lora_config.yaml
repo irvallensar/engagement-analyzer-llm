@@ -7,15 +7,14 @@ seed: 42
 num_layers: 64
 
 lora_parameters:
-  # Use transformer layer wildcard patterns so MLX can match actual module names
   keys:
-    - "transformer.layers.*.self_attn.q_proj"
-    - "transformer.layers.*.self_attn.k_proj"
-    - "transformer.layers.*.self_attn.v_proj"
-    - "transformer.layers.*.self_attn.o_proj"
-    - "transformer.layers.*.mlp.gate_proj"
-    - "transformer.layers.*.mlp.down_proj"
-    - "transformer.layers.*.mlp.up_proj"
+    - "model.layers.*.self_attn.q_proj"
+    - "model.layers.*.self_attn.k_proj"
+    - "model.layers.*.self_attn.v_proj"
+    - "model.layers.*.self_attn.o_proj"
+    - "model.layers.*.mlp.gate_proj"
+    - "model.layers.*.mlp.down_proj"
+    - "model.layers.*.mlp.up_proj"
   rank: 16
   scale: 20.0
   dropout: 0.05
