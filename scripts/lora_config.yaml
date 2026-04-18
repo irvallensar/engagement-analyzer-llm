@@ -1,22 +1,23 @@
-model: "Qwen/Qwen2.5-32B-Instruct"
+model: "mlx-community/Qwen2.5-32B-Instruct-4bit"
 train: true
+fine_tune_type: lora
 data: "data"
 seed: 42
 
-num_layers: 64   
+num_layers: 64
 
 lora_parameters:
-  keys: [
-    "wq",
-    "wk",
-    "wv",
-    "wo",
-    "w1",
-    "w2",
-    "w3"
-  ]
+  # Use transformer layer wildcard patterns so MLX can match actual module names
+  keys:
+    - "transformer.layers.*.self_attn.q_proj"
+    - "transformer.layers.*.self_attn.k_proj"
+    - "transformer.layers.*.self_attn.v_proj"
+    - "transformer.layers.*.self_attn.o_proj"
+    - "transformer.layers.*.mlp.gate_proj"
+    - "transformer.layers.*.mlp.down_proj"
+    - "transformer.layers.*.mlp.up_proj"
   rank: 16
-  scale: 2.0
+  scale: 20.0
   dropout: 0.05
 
 batch_size: 8
