@@ -1,30 +1,27 @@
-# lora_config.yaml
 model: "Qwen/Qwen2.5-32B-Instruct"
 train: true
-data: "data" 
+data: "data"
 seed: 42
 
-num_layers: 64           
+num_layers: 64   
 
 lora_parameters:
-  # Added the required module prefixes (self_attn and mlp)
   keys: [
-    "self_attn.q_proj", 
-    "self_attn.v_proj", 
-    "self_attn.k_proj", 
-    "self_attn.o_proj", 
-    "mlp.gate_proj", 
-    "mlp.down_proj", 
-    "mlp.up_proj"
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
   ]
-  rank: 16                
-  scale: 2.0              # Replaced 'alpha: 32' with 'scale: 2.0' (alpha/rank)
+  rank: 16
+  scale: 2.0
   dropout: 0.05
 
-# Training Parameters
-batch_size: 8             
-iters: 3500               
-learning_rate: 2e-5       
-steps_per_eval: 100       
-save_every: 500           
+batch_size: 8
+iters: 3500
+learning_rate: 2e-5
+steps_per_eval: 100
+save_every: 500
 adapter_path: "adapters"
