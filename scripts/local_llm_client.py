@@ -7,7 +7,7 @@ print("Loading model and adapters into Unified Memory...")
 model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
 
 # This loads the 32B base and your fine-tuned weights simultaneously
-model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters/0000500_adapters.safetensors")
+model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters/best_adapters.safetensors")
 print("Model loaded successfully! Ready for inference.")
 
 
