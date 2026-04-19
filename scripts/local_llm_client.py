@@ -40,7 +40,7 @@ def call_local_llm(sentence_text):
         model, 
         tokenizer, 
         prompt=formatted_prompt, 
-        max_tokens=500, 
+        max_tokens=1024, 
         verbose=False
     )
     
