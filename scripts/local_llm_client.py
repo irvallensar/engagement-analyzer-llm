@@ -15,9 +15,17 @@ print("Model loaded successfully! Ready for inference.")
 # 2. FUNCTION SPACE (Runs 1,700 times)
 # ==========================================
 def call_local_llm(sentence_text):
+    system_prompt = (
+        "You are an expert linguistic annotator. "
+        "Extract Engagement markers and output them as a JSON array. "
+        "Each item must follow this format: "
+        "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
+        "If there are no Engagement markers, output []."
+    )
+
     messages = [
-        {"role": "system", "content": "You are an expert annotator. Extract Engagement markers as a JSON array."},
-        {"role": "user", "content": sentence_text}
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": f"Analyze this sentence:\n\n{sentence_text}"}
     ]
     
     # Inject the special <|im_start|> tokens
