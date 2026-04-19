@@ -30,7 +30,7 @@ def parse_llm_json(text: str):
         
         # FIX: Accept if it has text (Ignore the 'id' requirement)
         if "text" not in item:
-             print(f"Warning: Skipping item {i} (missing 'text'): {item}")
+             print(f"Warning: Skipping item {i} (missing 'span'): {item}")
              continue
 
         if "label" not in item:
