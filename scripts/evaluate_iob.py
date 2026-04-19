@@ -21,11 +21,11 @@ DRIVE_DIR = Path("logs")
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune.json" # the cache of the run 
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune.json" # The master (final) record of the whole run
+CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune_run9.json" # the cache of the run 
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune_run9.json" # The master (final) record of the whole run
 
 # Hardware tracking setup
-HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune.csv"
+HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run9.csv"
 
 # Global flag to stop the thread when evaluation is done
 stop_monitoring = False 
@@ -103,7 +103,7 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
         if label == "O" or not label.strip():
             continue
             
-        span_text = item.get("text", "")    # gets the actual text of the predicted span
+        span_text = item.get("span", "")    # gets the actual text of the predicted span
         context_before = item.get("context_before", "").strip()    # gets the words before the span (target), used 
                                                                    # to find the exact location if the same words appear multiple times
         
