@@ -103,7 +103,7 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
         if label == "O" or not label.strip():
             continue
             
-        span_text = item.get("span", "")    # gets the actual text of the predicted span
+        span_text = item.get("text", "")    # gets the actual text of the predicted span
         context_before = item.get("context_before", "").strip()    # gets the words before the span (target), used 
                                                                    # to find the exact location if the same words appear multiple times
         
