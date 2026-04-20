@@ -99,7 +99,14 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
             continue  # Skip this item if the LLM hallucinated a string instead of a dictionary
           
         label = item.get("label", "O")
-        # Ignore "O" and empty string labels (""), as we only want the engagement markers (labels)
+        
+        # --- ADD THIS STRICT FILTER ---
+        allowed_labels = {"ATTRIBUTION", "CITATION", "COUNTER", "DENY", "ENDOPHORIC", 
+                          "ENTERTAIN", "JUSTIFYING", "MONOGLOSS", "PROCLAIM", "SOURCES"}
+        if label not in allowed_labels:
+            continue
+        # ------------------------------
+        
         if label == "O" or not label.strip():
             continue
             
