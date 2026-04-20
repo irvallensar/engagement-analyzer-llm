@@ -25,7 +25,7 @@ CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune_run11.json" # the cache
 EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune_run11.json" # The master (final) record of the whole run
 
 # Hardware tracking setup
-HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run9.csv"
+HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run11.csv"
 
 # Global flag to stop the thread when evaluation is done
 stop_monitoring = False 
