@@ -5,13 +5,23 @@ INPUT_IOB = "data/train.iob"
 OUTPUT_JSONL = "data/train.jsonl"
 
 SYSTEM_PROMPT = (
-    "You are an expert linguistic annotator. "
-    "Extract Engagement markers and output them as a JSON array. "
-    "You MUST strictly use ONLY the following 10 labels: "
-    "['ATTRIBUTION', 'CITATION', 'COUNTER', 'DENY', 'ENDOPHORIC', 'ENTERTAIN', 'JUSTIFYING', 'MONOGLOSS', 'PROCLAIM', 'SOURCES']. "
-    "Each item must follow this format: "
-    "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
-    "If there are no Engagement markers, output []."
+    "You are an expert linguistic annotator specializing in Engagement analysis (Appraisal Theory). "
+    "Extract Engagement markers using ONLY these 10 labels: "
+    "ATTRIBUTION, CITATION, COUNTER, DENY, ENDOPHORIC, ENTERTAIN, JUSTIFYING, MONOGLOSS, PROCLAIM, SOURCES. "
+    "\n\nLABEL DEFINITIONS:"
+    "\n- ENTERTAIN: hedges, epistemic uncertainty (e.g. 'might', 'perhaps', 'seems', 'I think')"
+    "\n- ATTRIBUTION: attributing a position to an external voice (e.g. 'X argues that', 'according to X')"
+    "\n- CITATION: direct reference to a specific source or work"
+    "\n- COUNTER: concessive or counter-expectational (e.g. 'although', 'however', 'while', 'despite')"
+    "\n- DENY: explicit negation of a position (e.g. 'this is not', 'contrary to', 'fails to')"
+    "\n- ENDOPHORIC: reference to another part of the same text (e.g. 'as shown above', 'see Figure 3')"
+    "\n- JUSTIFYING: providing evidence or reasoning (e.g. 'because', 'given that', 'since', 'therefore')"
+    "\n- MONOGLOSS: bare assertion with no dialogic acknowledgment"
+    "\n- PROCLAIM: emphatic assertion (e.g. 'clearly', 'obviously', 'of course', 'undeniably')"
+    "\n- SOURCES: reference to a data source or corpus (e.g. 'the data shows', 'our corpus reveals')"
+    "\n\nOutput format: JSON array only, no other text."
+    "\n[{\"label\": \"CATEGORY\", \"span\": \"exact text\", \"context_before\": \"preceding 3 words\"}]"
+    "\nIf no markers: []"
 )
 
 def process_iob_to_jsonl():
@@ -80,7 +90,15 @@ def process_iob_to_jsonl():
                         save_span(words, start_idx, len(tags_matrix), current_label, markers)
                         
             # Format into Chat ML with thought process
-            assistant_response = f"<thought_process>\nAnalyzing the sentence for heteroglossic and monoglossic markers...\n</thought_process>\n{json.dumps(markers)}"
+            # Real per-sentence chain-of-thought built from gold markers
+            if markers:
+                reasoning_parts = []
+                for m in markers:
+                    reasoning_parts.append(f'"{m["span"]}" is {m["label"]}')
+                reasoning = ", ".join(reasoning_parts)
+                assistant_response = f"<reasoning>{reasoning}</reasoning>\n{json.dumps(markers)}"
+            else:
+                assistant_response = "<reasoning>No engagement markers found in this sentence.</reasoning>\n[]"
             
             chat_dict = {
                 "messages": [
