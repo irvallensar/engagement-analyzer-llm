@@ -16,7 +16,7 @@ print("Model loaded successfully! Ready for inference.")
 # ==========================================
 def call_local_llm(sentence_text):
     system_prompt = (
-        ""You are an expert linguistic annotator. "
+        "You are an expert linguistic annotator. "
         "Extract Engagement markers and output them as a JSON array. "
         "You MUST strictly use ONLY the following 10 labels: "
         "['ATTRIBUTION', 'CITATION', 'COUNTER', 'DENY', 'ENDOPHORIC', 'ENTERTAIN', 'JUSTIFYING', 'MONOGLOSS', 'PROCLAIM', 'SOURCES']. "
