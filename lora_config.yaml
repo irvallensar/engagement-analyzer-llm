@@ -6,4 +6,4 @@ lora_parameters:
 lr_schedule:
   name: cosine_decay
   warmup: 100
-  arguments: [1e-4, 2000]
+  arguments: [1e-4, 4000]
