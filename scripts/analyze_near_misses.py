@@ -7,7 +7,7 @@ def analyze_near_misses(log_file):
     near_misses = 0
     total_errors = 0
 
-    print("--- 🔍 NEAR MISS ANALYSIS ---")
+    print("--- NEAR MISS ANALYSIS ---")
 
     for entry in data:
         gold_spans = entry.get("gold_spans", [])
