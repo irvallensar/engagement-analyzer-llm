@@ -9,17 +9,15 @@ SYSTEM_PROMPT = (
     "Extract Engagement markers and output them as a JSON array. "
     "You MUST strictly use ONLY the following 10 labels: "
     "['ATTRIBUTION', 'CITATION', 'COUNTER', 'DENY', 'ENDOPHORIC', 'ENTERTAIN', 'JUSTIFYING', 'MONOGLOSS', 'PROCLAIM', 'SOURCES']. "
+    "CRITICAL BOUNDARY EXTRACTION RULES:\n"
+    "1. CITATIONS: You must include the encapsulating parentheses and all authors/years within them (e.g., '(Smith, 2020; Doe, 2021)').\n"
+    "2. MARKER ISOLATION: For COUNTER, JUSTIFYING, and MONOGLOSS, isolate the specific transition word or phrase (e.g., 'However', 'since'). DO NOT highlight the entire surrounding clause.\n"
+    "3. MODIFIERS & AUXILIARIES: You must include adjacent adverbs, modals, and auxiliaries that modify the marker (e.g., 'strongly asserts', 'could not enforce', 'is also represented').\n"
+    "4. EXISTENTIALS: For PROCLAIM or DENY phrases using 'there is' or 'there can be', include those starting words (e.g., 'there is no doubt').\n"
     "Each item must follow this format: "
     "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
-    "If there are no Engagement markers, output [].\n\n"
-    "STRICT BOUNDARY RULES:\n"
-    "1. Adverbs & Auxiliaries: Always include modifying adverbs, auxiliary verbs, and existential phrases in the span (e.g., extract 'strongly asserts', 'is also represented', 'there is no doubt').\n"
-    "2. Citations: Extract the ENTIRE parenthetical block, including the parentheses and multiple authors (e.g., '( Pederson , 2005 ; see also Creedon , 1994 )').\n"
-    "3. Complex Phrases: Include the full head noun and participle for sources (e.g., 'guidelines laid down by the University of').\n"
-    "4. Intersecting Markers: Do not merge distinct markers. If an ENTERTAIN modal precedes a DENY marker, separate them (e.g., extract 'not enforce' instead of 'could not enforce').\n"
-    "5. Infinitives: Exclude trailing infinitive markers unless integral to the phrase (e.g., extract 'appear', not 'appear to')."
+    "If there are no Engagement markers, output []."
 )
-
 def process_iob_to_jsonl():
     print(f"Reading from {INPUT_IOB}...")
     
