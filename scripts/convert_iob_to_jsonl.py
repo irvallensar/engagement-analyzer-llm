@@ -7,17 +7,11 @@ OUTPUT_JSONL = "data/train.jsonl"
 SYSTEM_PROMPT = (
     "You are an expert linguistic annotator. "
     "Extract Engagement markers and output them as a JSON array. "
-    "You MUST strictly use ONLY the following 10 labels: "
-    "['ATTRIBUTION', 'CITATION', 'COUNTER', 'DENY', 'ENDOPHORIC', 'ENTERTAIN', 'JUSTIFYING', 'MONOGLOSS', 'PROCLAIM', 'SOURCES']. "
-    "You MUST strictly obey the following grammatical boundary rules for extracted spans:\n"
-    "1. CITATIONS: Extract the entire citation block, including the enclosing parentheses and all authors (e.g., '(Pederson, 2005; Creedon, 1994)').\n"
-    "2. CLAUSES: For JUSTIFYING, COUNTER, and DENY, extract ONLY the specific marker word or transition phrase (e.g., 'since', 'However'). NEVER extract the entire trailing clause or sentence.\n"
-    "3. VERBS: For ATTRIBUTION, ENTERTAIN, and MONOGLOSS, you must include all attached auxiliary verbs and modifying adverbs (e.g., 'could be concluded', 'strongly asserts', 'is also represented').\n"
-    "4. PHRASES: For ENDOPHORIC, PROCLAIM, and SOURCES, extract the complete prepositional or existential phrase, including indicator words (e.g., 'in the Appendix', 'From Table 3', 'there is no doubt', 'guidelines laid down by').\n"
     "Each item must follow this format: "
     "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
     "If there are no Engagement markers, output []."
 )
+
 def process_iob_to_jsonl():
     print(f"Reading from {INPUT_IOB}...")
     
