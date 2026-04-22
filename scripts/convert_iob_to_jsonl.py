@@ -11,7 +11,13 @@ SYSTEM_PROMPT = (
     "['ATTRIBUTION', 'CITATION', 'COUNTER', 'DENY', 'ENDOPHORIC', 'ENTERTAIN', 'JUSTIFYING', 'MONOGLOSS', 'PROCLAIM', 'SOURCES']. "
     "Each item must follow this format: "
     "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
-    "If there are no Engagement markers, output []."
+    "If there are no Engagement markers, output [].\n\n"
+    "STRICT BOUNDARY RULES:\n"
+    "1. Adverbs & Auxiliaries: Always include modifying adverbs, auxiliary verbs, and existential phrases in the span (e.g., extract 'strongly asserts', 'is also represented', 'there is no doubt').\n"
+    "2. Citations: Extract the ENTIRE parenthetical block, including the parentheses and multiple authors (e.g., '( Pederson , 2005 ; see also Creedon , 1994 )').\n"
+    "3. Complex Phrases: Include the full head noun and participle for sources (e.g., 'guidelines laid down by the University of').\n"
+    "4. Intersecting Markers: Do not merge distinct markers. If an ENTERTAIN modal precedes a DENY marker, separate them (e.g., extract 'not enforce' instead of 'could not enforce').\n"
+    "5. Infinitives: Exclude trailing infinitive markers unless integral to the phrase (e.g., extract 'appear', not 'appear to')."
 )
 
 def process_iob_to_jsonl():
