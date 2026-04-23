@@ -1,9 +1,9 @@
 lora_parameters:
-  rank: 8
+  rank: 16
   dropout: 0.05
-  scale: 20.0
+  scale: 8.0
 
 lr_schedule:
   name: cosine_decay
   warmup: 100
-  arguments: [1e-4, 1500]
+  arguments: [1e-4, 3000]
