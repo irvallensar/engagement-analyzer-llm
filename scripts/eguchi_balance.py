@@ -29,8 +29,7 @@ def eguchi_balance():
         else:
             majority_only.append(entry)
 
-    # Gently cap majority-only sentences to prevent the 19% / 16% dominance shown in Table 9 
-    # from overwhelming an LLM (LLMs need slightly tighter margins than BERT)
+    # from overwhelming an LLM 
     random.seed(42)
     random.shuffle(majority_only)
     capped_majority = majority_only[:4000]
