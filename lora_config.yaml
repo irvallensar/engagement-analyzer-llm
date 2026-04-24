@@ -1,9 +1,11 @@
 lora_parameters:
-  rank: 16
-  dropout: 0.05
-  scale: 8.0
+  rank: 16 #determines the capability and complexity of the model's parameters update. 
+           # instead of updating a full weight matrix directly, use the update as A×B where A and B are much smaller
+  dropout: 0.05 # 5% of adapter activations are randomly zeroed during each training step to reduce overfitting.
+  scale: 8.0 # alpha/rank, amplifies how much the LoRA weights actually influence the model's output
 
 lr_schedule:
-  name: cosine_decay
-  warmup: 100
-  arguments: [1e-4, 3000]
+  name: cosine_decay # the shape of the curve
+  warmup: 100 # for the first 100 iterations, LR ramps up gradually from ~0 to 1e-4 instead of jumping straight to it. 
+              # Goal is to prevent large destructive updates at the start when the adapter weights are randomly initialized
+  arguments: [1e-4, 3000] # [starting_lr, decay_steps]
