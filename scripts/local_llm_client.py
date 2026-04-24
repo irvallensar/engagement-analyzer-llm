@@ -13,12 +13,12 @@ def call_local_llm(sentence_text):
     "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
     "If there are no Engagement markers, output []."
 )
-    messages = [
+    messages = [ # must match training prompt
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": f"Analyze this sentence:\n\n{sentence_text}"}
     ]
     
-    formatted_prompt = tokenizer.apply_chat_template(
+    formatted_prompt = tokenizer.apply_chat_template( # Converts messages into model input format
         messages, 
         tokenize=False, 
         add_generation_prompt=True
@@ -28,8 +28,8 @@ def call_local_llm(sentence_text):
         model, 
         tokenizer, 
         prompt=formatted_prompt, 
-        max_tokens=1024, 
-        verbose=False
+        max_tokens=1024,  # output length
+        verbose=False # clean output
     )
     
     return response
