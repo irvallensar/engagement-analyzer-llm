@@ -1,5 +1,6 @@
 import json
 import os
+import random
 
 SYSTEM_PROMPT = (
     "You are an expert linguistic annotator. "
@@ -55,6 +56,8 @@ def iob_to_xml(iob_file_path, output_file_path):
                 dataset.append(format_chatml(data["raw_text"], data["tagged_text"]))
                 synthetic_count += 1
 
+    random.shuffle(dataset)
+    
     with open(output_file_path, 'w', encoding='utf-8') as f:
         for entry in dataset:
             f.write(json.dumps(entry) + '\n')
