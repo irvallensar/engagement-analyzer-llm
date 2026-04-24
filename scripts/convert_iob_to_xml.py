@@ -32,7 +32,7 @@ def iob_to_xml(iob_file_path, output_file_path):
             if len(parts) >= 2:
                 tokens.append(parts[0])
                 # Force uppercase to guarantee a match with our VALID_LABELS
-                labels.append(parts[-1].upper()) 
+                labels.append(parts[1].upper()) 
                 
         # Catch the final sentence
         if tokens:
