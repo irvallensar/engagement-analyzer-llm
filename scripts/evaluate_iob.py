@@ -21,11 +21,11 @@ DRIVE_DIR = Path("logs")
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune_run19.json" # the cache of the run 
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune_run19.json" # The master (final) record of the whole run
+CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune_run19-2.json" # the cache of the run 
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune_run19-2.json" # The master (final) record of the whole run
 
 # Hardware tracking setup
-HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run19.csv"
+HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run19-2.csv"
 
 # Global flag to stop the thread when evaluation is done
 stop_monitoring = False 
