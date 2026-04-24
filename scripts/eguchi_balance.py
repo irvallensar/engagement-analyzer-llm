@@ -15,9 +15,9 @@ def eguchi_balance():
     majority_only = []
 
     for entry in data:
-        content = entry['messages'][2]['content']
+        content = entry['messages'][2]['content'] # To detect which labels exist
         
-        # 1. Rare Classes (Multiply by 4 to mimic Table 9 scaling)
+        # 1. Rare Classes (Multiply by 4 to looke like Table 9 scaling)
         if any(f'"label": "{mc}"' in content for mc in rare_minority):
             balanced_data.extend([entry] * 4)
             
@@ -25,7 +25,7 @@ def eguchi_balance():
         elif any(f'"label": "{mc}"' in content for mc in moderate_minority):
             balanced_data.extend([entry] * 2)
             
-        # 3. Majority Only (Separate to cap them)
+        # 3. Majority Only (Stored separately)
         else:
             majority_only.append(entry)
 
@@ -36,7 +36,7 @@ def eguchi_balance():
     capped_majority = majority_only[:4000]
 
     final_dataset = balanced_data + capped_majority
-    random.shuffle(final_dataset) # Critical to prevent batch-spiking
+    random.shuffle(final_dataset) # Prevents training bias and batch clustering of same class
 
     with open('data/train_balanced.jsonl', 'w', encoding='utf-8') as f:
         for d in final_dataset:
