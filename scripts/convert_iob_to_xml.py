@@ -12,6 +12,7 @@ SYSTEM_PROMPT = (
 
 def iob_to_xml(iob_file_path, output_file_path):
     dataset = []
+    total_tags_injected = 0
     
     with open(iob_file_path, 'r', encoding='utf-8') as f:
         tokens, labels = [], []
@@ -20,38 +21,51 @@ def iob_to_xml(iob_file_path, output_file_path):
             line = line.strip()
             if not line: # End of sentence
                 if tokens:
-                    dataset.append(process_sentence(tokens, labels))
+                    entry, tag_count = process_sentence(tokens, labels)
+                    dataset.append(entry)
+                    total_tags_injected += tag_count
                 tokens, labels = [], []
                 continue
                 
+            # FIXING THE MULTI-COLUMN BUG
             parts = line.split()
             if len(parts) >= 2:
                 tokens.append(parts[0])
-                labels.append(parts[-1]) # Assuming label is the last column
+                # Force uppercase to guarantee a match with our VALID_LABELS
+                labels.append(parts[-1].upper()) 
                 
-        # Catch the last sentence if no trailing newline
+        # Catch the final sentence
         if tokens:
-            dataset.append(process_sentence(tokens, labels))
+            entry, tag_count = process_sentence(tokens, labels)
+            dataset.append(entry)
+            total_tags_injected += tag_count
 
-    # Read the synthetic data we just generated
+    print(f"\n[DIAGNOSTIC] Total XML tags successfully injected into real data: {total_tags_injected}")
+    
+    if total_tags_injected == 0:
+        print("\n[CRITICAL ERROR] NO TAGS WERE FOUND! Your IOB format has labels in a different column. Let me know if you see this!")
+
+    # Read the synthetic data
     synthetic_file = 'data/synthetic_xml.jsonl'
+    synthetic_count = 0
     if os.path.exists(synthetic_file):
         with open(synthetic_file, 'r', encoding='utf-8') as f:
             for line in f:
                 data = json.loads(line)
                 dataset.append(format_chatml(data["raw_text"], data["tagged_text"]))
+                synthetic_count += 1
 
-    # Save everything to the final training file
     with open(output_file_path, 'w', encoding='utf-8') as f:
         for entry in dataset:
             f.write(json.dumps(entry) + '\n')
             
-    print(f"[SUCCESS] Converted {len(dataset)} sentences to XML ChatML format!")
+    print(f"[SUCCESS] Merged {len(dataset) - synthetic_count} real sentences and {synthetic_count} synthetic sentences to {output_file_path}!\n")
 
 def process_sentence(tokens, tags):
     raw_sentence = " ".join(tokens)
     xml_result = []
     current_tag = None
+    tags_injected = 0
     
     for i, (word, tag) in enumerate(zip(tokens, tags)):
         # Close an active tag if needed
@@ -64,6 +78,7 @@ def process_sentence(tokens, tags):
         if tag.startswith("B-"):
             current_tag = tag[2:]
             xml_result.append(f"<{current_tag}>{word}")
+            tags_injected += 1
         else:
             xml_result.append(word)
             
@@ -72,7 +87,7 @@ def process_sentence(tokens, tags):
         xml_result[-1] += f"</{current_tag}>"
         
     tagged_sentence = " ".join(xml_result)
-    return format_chatml(raw_sentence, tagged_sentence)
+    return format_chatml(raw_sentence, tagged_sentence), tags_injected
 
 def format_chatml(raw_text, tagged_text):
     return {
@@ -84,5 +99,4 @@ def format_chatml(raw_text, tagged_text):
     }
 
 if __name__ == "__main__":
-    # Ensure you point this to your actual raw IOB file
     iob_to_xml('data/train.iob', 'data/train.jsonl')
