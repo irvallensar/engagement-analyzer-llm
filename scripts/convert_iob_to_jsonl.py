@@ -18,7 +18,7 @@ def process_iob_to_jsonl():
     with open(INPUT_IOB, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    sentences = []
+    sentences = []            # IOB format = word-by-word tagging, reconstruct full sentences
     current_words = []
     current_tags_matrix = []
     
@@ -38,7 +38,7 @@ def process_iob_to_jsonl():
         parts = line.split()
         if len(parts) >= 2:
             current_words.append(parts[0])
-            current_tags_matrix.append(parts[1:]) 
+            current_tags_matrix.append(parts[1:]) #dataset has multiple annotation layers, preserving overlapping annotations
 
     if current_words:
         sentences.append({"words": current_words, "tags_matrix": current_tags_matrix})
@@ -54,7 +54,7 @@ def process_iob_to_jsonl():
             
             if tags_matrix:
                 num_cols = len(tags_matrix[0])
-                for col_idx in range(num_cols):
+                for col_idx in range(num_cols): #iterate column by column
                     current_label = None
                     start_idx = -1
                     
@@ -75,12 +75,13 @@ def process_iob_to_jsonl():
                                 start_idx = -1
                                 
                     if current_label:
-                        save_span(words, start_idx, len(tags_matrix), current_label, markers)
+                        save_span(words, start_idx, len(tags_matrix), current_label, markers) 
                         
-            # Format into Chat ML with thought process
+            # Format into Chat ML with thought process, brings out reasoning
             assistant_response = f"<thought_process>\nAnalyzing the sentence for heteroglossic and monoglossic markers...\n</thought_process>\n{json.dumps(markers)}"
+
             
-            chat_dict = {
+            chat_dict = { #instruction following
                 "messages": [
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": f"Analyze this sentence:\n\n{sentence_text}"},
@@ -103,7 +104,7 @@ def save_span(words, start_idx, end_idx, label, markers):
     markers.append({
         "label": label.upper(),
         "span": span_text,
-        "context_before": context_text
+        "context_before": context_text #Structured annotations for LLM
     })
 
 if __name__ == "__main__":
