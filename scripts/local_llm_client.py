@@ -8,10 +8,11 @@ print("Model loaded successfully! Ready for inference.")
 def call_local_llm(sentence_text):
     system_prompt = (
     "You are an expert linguistic annotator. "
-    "Extract Engagement markers and output them as a JSON array. "
-    "Each item must follow this format: "
-    "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
-    "If there are no Engagement markers, output []."
+    "Rewrite the provided sentence and wrap all Engagement markers in XML tags corresponding to their category. "
+    "The 10 valid tags are: <ATTRIBUTION>, <CITATION>, <COUNTER>, <DENY>, <ENDOPHORIC>, <ENTERTAIN>, <JUSTIFYING>, <MONOGLOSS>, <PROCLAIM>, <SOURCES>. "
+    "Example Input: I do not believe this approach works. "
+    "Example Output: I do <DENY>not</DENY> <ENTERTAIN>believe</ENTERTAIN> this approach works. "
+    "If there are no markers, simply output the original sentence exactly as written."
 )
     messages = [ # must match training prompt
         {"role": "system", "content": system_prompt},
