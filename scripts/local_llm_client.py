@@ -34,9 +34,17 @@ def call_local_llm(sentence_text):
         "Input: Researchers have found that coverage of sport is biased .\n"
         "Output: <SOURCES>Researchers</SOURCES> have found that coverage of sport is biased .\n\n"
     
+        "Input: As noted in Smith ( 2019 ) , the results were inconclusive .\n"
+        "Output: <CITATION>As noted in Smith ( 2019 )</CITATION> , the results were inconclusive .\n"
+        "# Note: CITATION includes the author name AND year reference together as one span.\n\n"
+
         "Input: According to Smith , the findings were significant .\n"
-        "Output: <ATTRIBUTION>According to</ATTRIBUTION> <SOURCES>Smith</SOURCES> , the findings were significant .\n\n"
-    
+        "Output: <ATTRIBUTION>According to</ATTRIBUTION> <SOURCES>Smith</SOURCES> , the findings were significant .\n"
+        "# Note: Without a year reference, Smith alone is SOURCES, the framing is ATTRIBUTION.\n\n"
+        
+        "Input: The above analysis shows that growth declined .\n"
+        "Output: <ENDOPHORIC>The above</ENDOPHORIC> analysis shows that growth declined .\n\n"
+        
         "Input: The results are shown in Table 3 .\n"
         "Output: The results are shown <ENDOPHORIC>in Table 3</ENDOPHORIC> .\n\n"
     
