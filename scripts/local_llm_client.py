@@ -10,8 +10,27 @@ def call_local_llm(sentence_text):
         "You are an expert linguistic annotator. "
         "Rewrite the provided sentence and wrap all Engagement markers in XML tags corresponding to their category. "
         "The 10 valid tags are: <ATTRIBUTION>, <CITATION>, <COUNTER>, <DENY>, <ENDOPHORIC>, <ENTERTAIN>, <JUSTIFYING>, <MONOGLOSS>, <PROCLAIM>, <SOURCES>. "
-        "Example Input: I do not believe this approach works. "
-        "Example Output: I do <DENY>not</DENY> <ENTERTAIN>believe</ENTERTAIN> this approach works. "
+    
+        "Examples:\n"
+    
+        "Input: I do not believe this approach works.\n"
+        "Output: I do <DENY>not</DENY> <ENTERTAIN>believe</ENTERTAIN> this approach works.\n\n"
+    
+        "Input: According to Descartes , God was a supreme being .\n"
+        "Output: According to <SOURCES>Descartes</SOURCES> , God was a supreme being .\n\n"
+    
+        "Input: With one small article , Eysenck managed to undermine all of the hard work .\n"
+        "Output: With <SOURCES>one small article</SOURCES> , <SOURCES>Eysenck</SOURCES> managed to undermine all of the hard work .\n\n"
+    
+        "Input: These exposure pathways are illustrated in Figure 1 .\n"
+        "Output: These exposure pathways are illustrated <ENDOPHORIC>in Figure 1</ENDOPHORIC> .\n\n"
+    
+        "Input: As noted in Smith ( 2019 ) , the results were inconclusive .\n"
+        "Output: <CITATION>As noted in Smith ( 2019 )</CITATION> , the results were inconclusive .\n\n"
+    
+        "Input: Thus the evidence suggests that the policy failed .\n"
+        "Output: <JUSTIFYING>Thus</JUSTIFYING> the evidence suggests that the policy failed .\n\n"
+    
         "If there are no markers, simply output the original sentence exactly as written."
     )
     
