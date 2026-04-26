@@ -1,4 +1,5 @@
 import re
+import json
 
 VALID_LABELS = {
     'ATTRIBUTION', 'CITATION', 'COUNTER', 'DENY', 'ENDOPHORIC', 
@@ -6,24 +7,39 @@ VALID_LABELS = {
 }
 
 def parse_llm_json(raw_response):
-    # 1. THIS WILL PRINT EXACTLY WHAT THE LLM WROTE
     print(f"\n[DEBUG] LLM RAW OUTPUT:\n{raw_response}")
     
-    # 2. Bulletproof Regex: catches newlines and upper/lowercase
-    pattern = re.compile(r'<([A-Za-z_]+)>(.*?)</([A-Za-z_]+)>', re.DOTALL)
-    spans = []
+    # 1. Clean up Markdown artifacts
+    clean_response = raw_response.replace('```json', '').replace('```', '').strip()
     
-    for match in pattern.finditer(raw_response):
-        open_tag = match.group(1).upper() # Force uppercase to match VALID_LABELS
-        content = match.group(2).strip()
-        
-        if open_tag in VALID_LABELS:
-            spans.append({
-                "label": open_tag,
-                "span": content
-            })
+    try:
+        # 2. Hunt for the JSON array brackets
+        match = re.search(r'\[.*\]', clean_response, re.DOTALL)
+        if match:
+            clean_json = match.group(0)
+            extracted_spans = json.loads(clean_json)
             
-    # 3. THIS WILL PRINT WHAT THE REGEX ACTUALLY EXTRACTED
-    print(f"[DEBUG] REGEX EXTRACTED: {spans}\n")
-        
-    return spans
+            # 3. Validation: Only keep dicts with valid labels and a 'span' key
+            valid_spans = []
+            for item in extracted_spans:
+                # Ensure it's a dict and has the required keys
+                if isinstance(item, dict) and 'label' in item and 'span' in item:
+                    # Force uppercase just in case, and check against valid set
+                    label = str(item['label']).upper().strip()
+                    span = str(item['span']).strip()
+                    
+                    if label in VALID_LABELS:
+                        valid_spans.append({
+                            "label": label,
+                            "span": span
+                        })
+                        
+            print(f"[DEBUG] JSON EXTRACTED: {valid_spans}\n")
+            return valid_spans
+        else:
+            print("[DEBUG] No JSON array found in output.\n")
+            return []
+            
+    except json.JSONDecodeError as e:
+        print(f"[DEBUG] JSON Decode Error: {e}\n")
+        return []
