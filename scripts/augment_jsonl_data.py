@@ -52,11 +52,12 @@ SEED_TRIGGERS = {
 
 # ── System prompt used in train.jsonl (must match exactly) ───────────────────
 SYSTEM_PROMPT = (
-    "You are an expert linguistic annotator. "
-    "Extract Engagement markers and output them as a JSON array. "
-    "Each item must follow this format: "
-    "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
-    "If there are no Engagement markers, output []."
+    "You are an expert linguistic annotator. Analyze the sentence and extract all Engagement markers. "
+    "Output a JSON array of dictionaries with 'label' and 'span' keys. "
+    "The 10 valid tags are: ATTRIBUTION, CITATION, COUNTER, DENY, ENDOPHORIC, ENTERTAIN, JUSTIFYING, MONOGLOSS, PROCLAIM, SOURCES. "
+    "Example Input: I do not believe this approach works. "
+    "Example Output: [{\"label\": \"DENY\", \"span\": \"not\"}, {\"label\": \"ENTERTAIN\", \"span\": \"believe\"}] "
+    "If there are no markers, output []."
 )
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -120,15 +121,10 @@ def parse_response(response: str, category: str, seen: set) -> list:
             continue
         seen.add(key)
 
-        # Build context_before (everything before the marker in the sentence)
-        marker_start = sentence.find(marker)
-        context_before = sentence[:marker_start].strip() if marker_start > 0 else ""
-
         results.append({
             "sentence": sentence,
             "label": category,
-            "span": marker,
-            "context_before": context_before
+            "span": marker
         })
 
     return results
@@ -136,10 +132,10 @@ def parse_response(response: str, category: str, seen: set) -> list:
 
 def to_mlx_format(entry: dict) -> dict:
     """Convert a synthetic entry to the MLX chat format used in train.jsonl."""
+    # REPLACED: Enforcing pure [{"label": "X", "span": "Y"}] schema
     span_json = json.dumps([{
         "label": entry["label"],
-        "span": entry["span"],
-        "context_before": entry["context_before"]
+        "span": entry["span"]
     }], ensure_ascii=False)
 
     return {
