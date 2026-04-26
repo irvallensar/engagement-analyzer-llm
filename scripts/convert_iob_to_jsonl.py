@@ -1,111 +1,95 @@
 import json
+import os
+import random
 
-# --- Configuration ---
-INPUT_IOB = "data/train.iob"
-OUTPUT_JSONL = "data/train.jsonl"
-
+# PURE JSON PROMPT - NO CONTEXT_BEFORE
 SYSTEM_PROMPT = (
-    "You are an expert linguistic annotator. "
-    "Extract Engagement markers and output them as a JSON array. "
-    "Each item must follow this format: "
-    "[{\"label\": \"CATEGORY\", \"span\": \"target text\", \"context_before\": \"preceding text\"}]. "
-    "If there are no Engagement markers, output []."
+    "You are an expert linguistic annotator. Analyze the sentence and extract all Engagement markers. "
+    "Output a JSON array of dictionaries with 'label' and 'span' keys. "
+    "The 10 valid tags are: ATTRIBUTION, CITATION, COUNTER, DENY, ENDOPHORIC, ENTERTAIN, JUSTIFYING, MONOGLOSS, PROCLAIM, SOURCES. "
+    "Example Input: I do not believe this approach works. "
+    "Example Output: [{\"label\": \"DENY\", \"span\": \"not\"}, {\"label\": \"ENTERTAIN\", \"span\": \"believe\"}] "
+    "If there are no markers, output []."
 )
 
-def process_iob_to_jsonl():
-    print(f"Reading from {INPUT_IOB}...")
+def iob_to_jsonl(iob_file_path, output_file_path):
+    dataset = []
     
-    with open(INPUT_IOB, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
+    # 1. Process the Real Data
+    with open(iob_file_path, 'r', encoding='utf-8') as f:
+        tokens, labels = [], []
+        
+        for line in f:
+            line = line.strip()
+            if not line:
+                if tokens:
+                    dataset.append(process_sentence(tokens, labels))
+                tokens, labels = [], []
+                continue
+                
+            parts = line.split()
+            if len(parts) >= 2:
+                tokens.append(parts[0])
+                labels.append(parts[1].upper()) # Safely pulling from column 1
+                
+        if tokens:
+            dataset.append(process_sentence(tokens, labels))
 
-    sentences = []            # IOB format = word-by-word tagging, reconstruct full sentences
-    current_words = []
-    current_tags_matrix = []
+    # 2. Process the Synthetic Data (Reading from RAW to strip context_before)
+    synthetic_file = 'data/synthetic_json_raw.jsonl'
+    synthetic_count = 0
+    if os.path.exists(synthetic_file):
+        with open(synthetic_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                data = json.loads(line)
+                # Force the pure schema
+                spans = [{"label": data["label"], "span": data["span"]}]
+                dataset.append(format_chatml(data["sentence"], json.dumps(spans, ensure_ascii=False)))
+                synthetic_count += 1
+
+    # 3. The Crucial Shuffle
+    random.shuffle(dataset)
+
+    # 4. Save to Master File
+    with open(output_file_path, 'w', encoding='utf-8') as f:
+        for entry in dataset:
+            f.write(json.dumps(entry, ensure_ascii=False) + '\n')
+            
+    print(f"[SUCCESS] Merged and SHUFFLED {len(dataset) - synthetic_count} real and {synthetic_count} synthetic sentences to {output_file_path}!")
+
+def process_sentence(tokens, tags):
+    raw_sentence = " ".join(tokens)
+    spans = []
+    current_span = []
+    current_label = None
     
-    # 1. Parse the IOB into a sentence matrix
-    for line in lines:
-        line = line.strip()
-        if not line:
-            if current_words:
-                sentences.append({"words": current_words, "tags_matrix": current_tags_matrix})
-                current_words = []
-                current_tags_matrix = []
-            continue
-            
-        if "-DOCSTART-" in line or line == "-X-" or line == "O":
-            continue
-            
-        parts = line.split()
-        if len(parts) >= 2:
-            current_words.append(parts[0])
-            current_tags_matrix.append(parts[1:]) #dataset has multiple annotation layers, preserving overlapping annotations
+    for word, tag in zip(tokens, tags):
+        if tag.startswith("B-"):
+            if current_label:
+                spans.append({"label": current_label, "span": " ".join(current_span)})
+            current_label = tag[2:]
+            current_span = [word]
+        elif tag.startswith("I-") and current_label == tag[2:]:
+            current_span.append(word)
+        else:
+            if current_label:
+                spans.append({"label": current_label, "span": " ".join(current_span)})
+                current_label = None
+                current_span = []
+                
+    if current_label:
+        spans.append({"label": current_label, "span": " ".join(current_span)})
+        
+    return format_chatml(raw_sentence, json.dumps(spans, ensure_ascii=False))
 
-    if current_words:
-        sentences.append({"words": current_words, "tags_matrix": current_tags_matrix})
-
-    # 2. Extract overlapping spans from every column
-    sentences_processed = 0
-    with open(OUTPUT_JSONL, 'w', encoding='utf-8') as out_f:
-        for entry in sentences:
-            words = entry["words"]
-            tags_matrix = entry["tags_matrix"]
-            sentence_text = " ".join(words)
-            markers = []
-            
-            if tags_matrix:
-                num_cols = len(tags_matrix[0])
-                for col_idx in range(num_cols): #iterate column by column
-                    current_label = None
-                    start_idx = -1
-                    
-                    for i, row in enumerate(tags_matrix):
-                        tag = row[col_idx] if col_idx < len(row) else "O"
-                        
-                        if tag.startswith("B-"):
-                            if current_label:
-                                save_span(words, start_idx, i, current_label, markers)
-                            current_label = tag[2:]
-                            start_idx = i
-                        elif tag.startswith("I-") and current_label == tag[2:]:
-                            continue
-                        else:
-                            if current_label:
-                                save_span(words, start_idx, i, current_label, markers)
-                                current_label = None
-                                start_idx = -1
-                                
-                    if current_label:
-                        save_span(words, start_idx, len(tags_matrix), current_label, markers) 
-                        
-            # Format into Chat ML with thought process, brings out reasoning
-            assistant_response = f"<thought_process>\nAnalyzing the sentence for heteroglossic and monoglossic markers...\n</thought_process>\n{json.dumps(markers)}"
-
-            
-            chat_dict = { #instruction following
-                "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": f"Analyze this sentence:\n\n{sentence_text}"},
-                    {"role": "assistant", "content": assistant_response}
-                ]
-            }
-            out_f.write(json.dumps(chat_dict) + "\n")
-            sentences_processed += 1
-
-    print(f"\n[SUCCESS] Conversion complete! {sentences_processed} sentences saved to {OUTPUT_JSONL}")
-
-def save_span(words, start_idx, end_idx, label, markers):
-    span_words = words[start_idx:end_idx]
-    span_text = " ".join(span_words)
-    
-    context_start = max(0, start_idx - 3)
-    context_words = words[context_start:start_idx]
-    context_text = " ".join(context_words)
-    
-    markers.append({
-        "label": label.upper(),
-        "span": span_text,
-        "context_before": context_text #Structured annotations for LLM
-    })
+def format_chatml(raw_text, json_spans):
+    return {
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": f"Analyze this sentence:\n\n{raw_text}"},
+            {"role": "assistant", "content": json_spans}
+        ]
+    }
 
 if __name__ == "__main__":
-    process_iob_to_jsonl()
+    iob_to_jsonl('data/train.iob', 'data/train.jsonl')
