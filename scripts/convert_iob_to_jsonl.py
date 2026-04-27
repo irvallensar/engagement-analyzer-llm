@@ -23,7 +23,9 @@ def iob_to_jsonl(iob_file_path, output_file_path, include_synthetic=False):
             line = line.strip()
             if not line:
                 if tokens:
-                    dataset.append(process_sentence(tokens, labels))
+                    entry = process_sentence(tokens, labels)
+                    if entry: # SAFETY CHECK: Don't append None
+                        dataset.append(entry)
                 tokens, labels = [], []
                 continue
                 
@@ -33,7 +35,9 @@ def iob_to_jsonl(iob_file_path, output_file_path, include_synthetic=False):
                 labels.append(parts[1].upper())
                 
         if tokens:
-            dataset.append(process_sentence(tokens, labels))
+            entry = process_sentence(tokens, labels)
+            if entry: # SAFETY CHECK: Don't append None
+                dataset.append(entry)
 
     # 2. Only merge synthetic data for training split
     synthetic_count = 0
@@ -68,7 +72,6 @@ def process_sentence(tokens, tags):
     current_span = []
     current_label = None
 
-    
     for word, tag in zip(tokens, tags):
         if tag.startswith("B-"):
             if current_label:
@@ -98,7 +101,7 @@ def format_chatml(raw_text, json_spans):
     }
 
 if __name__ == "__main__":
-    iob_to_jsonl('data/train.iob', 'data/train.jsonl')
+    # FIX: Added include_synthetic=True for the training data
+    iob_to_jsonl('data/train.iob', 'data/train.jsonl', include_synthetic=True)
     iob_to_jsonl('data/dev.iob', 'data/valid.jsonl')
     iob_to_jsonl('data/test.iob', 'data/test.jsonl')
-    
