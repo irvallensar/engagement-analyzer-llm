@@ -12,7 +12,7 @@ SYSTEM_PROMPT = (
     "If there are no markers, output []."
 )
 
-def iob_to_jsonl(iob_file_path, output_file_path):
+def iob_to_jsonl(iob_file_path, output_file_path, include_synthetic=False):
     dataset = []
     
     # 1. Process the Real Data
@@ -21,45 +21,42 @@ def iob_to_jsonl(iob_file_path, output_file_path):
         
         for line in f:
             line = line.strip()
-            if not line or line.startswith("-DOCSTART-"):
+            if not line:
                 if tokens:
-                    entry = process_sentence(tokens, labels)
-                    if entry is not None:
-                        dataset.append(entry)
+                    dataset.append(process_sentence(tokens, labels))
                 tokens, labels = [], []
                 continue
                 
             parts = line.split()
             if len(parts) >= 2:
                 tokens.append(parts[0])
-                labels.append(parts[1].upper()) # Safely pulling from column 1
+                labels.append(parts[1].upper())
                 
         if tokens:
-            entry = process_sentence(tokens, labels)
-            if entry is not None:
-                dataset.append(entry)
+            dataset.append(process_sentence(tokens, labels))
 
-    # 2. Process the Synthetic Data (Reading from RAW to strip context_before)
-    synthetic_file = 'data/synthetic_json_raw.jsonl'
+    # 2. Only merge synthetic data for training split
     synthetic_count = 0
-    if os.path.exists(synthetic_file):
-        with open(synthetic_file, 'r', encoding='utf-8') as f:
-            for line in f:
-                data = json.loads(line)
-                # Force the pure schema
-                spans = [{"label": data["label"], "span": data["span"]}]
-                dataset.append(format_chatml(data["sentence"], json.dumps(spans, ensure_ascii=False)))
-                synthetic_count += 1
+    if include_synthetic:
+        synthetic_file = 'data/synthetic_json_raw.jsonl'
+        if os.path.exists(synthetic_file):
+            with open(synthetic_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    data = json.loads(line)
+                    spans = [{"label": data["label"], "span": data["span"]}]
+                    dataset.append(format_chatml(data["sentence"], json.dumps(spans, ensure_ascii=False)))
+                    synthetic_count += 1
 
-    # 3. The Crucial Shuffle
+    # 3. Shuffle
     random.shuffle(dataset)
 
-    # 4. Save to Master File
+    # 4. Save
     with open(output_file_path, 'w', encoding='utf-8') as f:
         for entry in dataset:
             f.write(json.dumps(entry, ensure_ascii=False) + '\n')
             
     print(f"[SUCCESS] Merged and SHUFFLED {len(dataset) - synthetic_count} real and {synthetic_count} synthetic sentences to {output_file_path}!")
+
 
 def process_sentence(tokens, tags):
     clean = [(w, t) for w, t in zip(tokens, tags) if w != "-DOCSTART-"]
