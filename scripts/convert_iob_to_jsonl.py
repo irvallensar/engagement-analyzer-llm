@@ -21,9 +21,11 @@ def iob_to_jsonl(iob_file_path, output_file_path):
         
         for line in f:
             line = line.strip()
-            if not line:
+            if not line or line.startswith("-DOCSTART-"):
                 if tokens:
-                    dataset.append(process_sentence(tokens, labels))
+                    entry = process_sentence(tokens, labels)
+                    if entry is not None:
+                        dataset.append(entry)
                 tokens, labels = [], []
                 continue
                 
@@ -33,7 +35,9 @@ def iob_to_jsonl(iob_file_path, output_file_path):
                 labels.append(parts[1].upper()) # Safely pulling from column 1
                 
         if tokens:
-            dataset.append(process_sentence(tokens, labels))
+            entry = process_sentence(tokens, labels)
+            if entry is not None:
+                dataset.append(entry)
 
     # 2. Process the Synthetic Data (Reading from RAW to strip context_before)
     synthetic_file = 'data/synthetic_json_raw.jsonl'
@@ -58,10 +62,15 @@ def iob_to_jsonl(iob_file_path, output_file_path):
     print(f"[SUCCESS] Merged and SHUFFLED {len(dataset) - synthetic_count} real and {synthetic_count} synthetic sentences to {output_file_path}!")
 
 def process_sentence(tokens, tags):
+    clean = [(w, t) for w, t in zip(tokens, tags) if w != "-DOCSTART-"]
+    if not clean:
+        return None
+    tokens, tags = zip(*clean)
     raw_sentence = " ".join(tokens)
     spans = []
     current_span = []
     current_label = None
+
     
     for word, tag in zip(tokens, tags):
         if tag.startswith("B-"):
