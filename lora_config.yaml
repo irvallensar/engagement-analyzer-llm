@@ -8,4 +8,4 @@ lr_schedule:
   name: cosine_decay # the shape of the curve
   warmup: 300 # for the first 100 iterations, LR ramps up gradually from ~0 to 1e-4 instead of jumping straight to it. 
               # Goal is to prevent large destructive updates at the start when the adapter weights are randomly initialized
-  arguments: [2e-5, 4500] # [starting_lr, decay_steps]
+  arguments: [2e-5, 4000] # [starting_lr, decay_steps]
