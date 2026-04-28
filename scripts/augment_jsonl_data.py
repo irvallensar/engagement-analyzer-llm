@@ -154,8 +154,8 @@ def generate_synthetic_data():
         collected = []
         triggers = SEED_TRIGGERS[category]
         attempts = 0
-        max_attempts = (target_count // 10) * 4  # allow 4x retries to hit target
-
+        max_attempts = (target_count // 10) * 8  
+        
         while len(collected) < target_count and attempts < max_attempts:
             domain = random.choice(DOMAINS)
             trigger = random.choice(triggers)
