@@ -108,6 +108,7 @@ def parse_response(response: str, category: str, seen: set) -> list:
             continue
         if '-DOCSTART-' in sentence or '-DOCSTART-' in marker:
             continue
+        marker_start = marker.split()[0] if marker.split() else marker
         if marker not in sentence:
             continue  # marker must actually appear in sentence
         if len(sentence.split()) < 5:
