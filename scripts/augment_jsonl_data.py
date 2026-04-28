@@ -188,7 +188,7 @@ def generate_synthetic_data():
 
     # ── Save raw synthetic data for inspection ───────────────────────────────
     raw_path = 'data/synthetic_json_raw.jsonl'
-    with open(raw_path, 'a', encoding='utf-8') as f:
+    with open(raw_path, 'w', encoding='utf-8') as f:
         for entry in synthetic_entries:
             f.write(json.dumps(entry, ensure_ascii=False) + '\n')
     print(f"[INFO] Raw synthetic data saved to {raw_path}")
