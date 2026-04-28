@@ -3,10 +3,10 @@ import json
 import random
 
 TARGET_CLASSES = {
-    "CITATION":    2400,
-    "SOURCES":     2200,
-    "JUSTIFYING":  2082,
-    "ENDOPHORIC":  1982,
+    "CITATION":    1454,
+    "SOURCES":     835,
+    "JUSTIFYING":  666,
+    "ENDOPHORIC":  847,
 }
 
 # ── Domains to force semantic diversity ─────────────────────────────────────
