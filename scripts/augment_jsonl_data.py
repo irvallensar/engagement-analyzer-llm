@@ -2,13 +2,11 @@ import mlx_lm
 import json
 import random
 
-# ── Targeted augmentation ratios based on run 18 F1 scores ──────────────────
 TARGET_CLASSES = {
-    "ENDOPHORIC": 500,
-    "JUSTIFYING":  400,
-    "SOURCES":     300,
-    "PROCLAIM":    200,
-    "CITATION":    100,
+    "CITATION":    2400,
+    "SOURCES":     2200,
+    "JUSTIFYING":  2082,
+    "ENDOPHORIC":  1982,
 }
 
 # ── Domains to force semantic diversity ─────────────────────────────────────
