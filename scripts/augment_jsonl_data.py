@@ -3,10 +3,9 @@ import json
 import random
 
 TARGET_CLASSES = {
-    "CITATION":    1454,
-    "SOURCES":     835,
-    "JUSTIFYING":  666,
-    "ENDOPHORIC":  847,
+    "ENDOPHORIC": 2000,
+    "JUSTIFYING":  2000,
+    "SOURCES":     2000,
 }
 
 # ── Domains to force semantic diversity ─────────────────────────────────────
@@ -109,8 +108,8 @@ def parse_response(response: str, category: str, seen: set) -> list:
         if '-DOCSTART-' in sentence or '-DOCSTART-' in marker:
             continue
         marker_start = marker.split()[0] if marker.split() else marker
-        if marker not in sentence:
-            continue  # marker must actually appear in sentence
+        if marker_start.lower() not in sentence.lower():
+            continue
         if len(sentence.split()) < 5:
             continue  # skip suspiciously short sentences
 
@@ -155,7 +154,7 @@ def generate_synthetic_data():
         collected = []
         triggers = SEED_TRIGGERS[category]
         attempts = 0
-        max_attempts = (target_count // 10) * 8  
+        max_attempts = (target_count // 10) * 20  
         
         while len(collected) < target_count and attempts < max_attempts:
             domain = random.choice(DOMAINS)
