@@ -15,28 +15,28 @@ SYSTEM_PROMPT = (
 def iob_to_jsonl(iob_file_path, output_file_path, include_synthetic=False):
     dataset = []
     
-    # 1. Process the Real Data
     with open(iob_file_path, 'r', encoding='utf-8') as f:
-        tokens, labels = [], []
+        tokens, labels1, labels2 = [], [], []
         
         for line in f:
             line = line.strip()
-            if not line:
+            if not line or line.startswith("-DOCSTART-"):
                 if tokens:
-                    entry = process_sentence(tokens, labels)
-                    if entry: # SAFETY CHECK: Don't append None
+                    entry = process_sentence(tokens, labels1, labels2)
+                    if entry is not None:
                         dataset.append(entry)
-                tokens, labels = [], []
+                tokens, labels1, labels2 = [], [], []
                 continue
                 
             parts = line.split()
             if len(parts) >= 2:
                 tokens.append(parts[0])
-                labels.append(parts[1].upper())
+                labels1.append(parts[1].upper())
+                labels2.append(parts[2].upper() if len(parts) >= 3 else 'O')
                 
         if tokens:
-            entry = process_sentence(tokens, labels)
-            if entry: # SAFETY CHECK: Don't append None
+            entry = process_sentence(tokens, labels1, labels2)
+            if entry is not None:
                 dataset.append(entry)
 
     # 2. Only merge synthetic data for training split
@@ -62,33 +62,32 @@ def iob_to_jsonl(iob_file_path, output_file_path, include_synthetic=False):
     print(f"[SUCCESS] Merged and SHUFFLED {len(dataset) - synthetic_count} real and {synthetic_count} synthetic sentences to {output_file_path}!")
 
 
-def process_sentence(tokens, tags):
-    clean = [(w, t) for w, t in zip(tokens, tags) if w != "-DOCSTART-"]
-    if not clean:
-        return None
-    tokens, tags = zip(*clean)
+def process_sentence(tokens, tags1, tags2):
     raw_sentence = " ".join(tokens)
     spans = []
-    current_span = []
-    current_label = None
-
-    for word, tag in zip(tokens, tags):
-        if tag.startswith("B-"):
-            if current_label:
-                spans.append({"label": current_label, "span": " ".join(current_span)})
-            current_label = tag[2:]
-            current_span = [word]
-        elif tag.startswith("I-") and current_label == tag[2:]:
-            current_span.append(word)
-        else:
-            if current_label:
-                spans.append({"label": current_label, "span": " ".join(current_span)})
-                current_label = None
-                current_span = []
-                
-    if current_label:
-        spans.append({"label": current_label, "span": " ".join(current_span)})
+    
+    # Process both label columns independently
+    for tag_sequence in [tags1, tags2]:
+        current_span = []
+        current_label = None
         
+        for word, tag in zip(tokens, tag_sequence):
+            if tag.startswith("B-"):
+                if current_label:
+                    spans.append({"label": current_label, "span": " ".join(current_span)})
+                current_label = tag[2:]
+                current_span = [word]
+            elif tag.startswith("I-") and current_label == tag[2:]:
+                current_span.append(word)
+            else:
+                if current_label:
+                    spans.append({"label": current_label, "span": " ".join(current_span)})
+                    current_label = None
+                    current_span = []
+                    
+        if current_label:
+            spans.append({"label": current_label, "span": " ".join(current_span)})
+    
     return format_chatml(raw_sentence, json.dumps(spans, ensure_ascii=False))
 
 def format_chatml(raw_text, json_spans):
