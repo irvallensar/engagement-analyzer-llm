@@ -100,7 +100,6 @@ def format_chatml(raw_text, json_spans):
     }
 
 if __name__ == "__main__":
-    # FIX: Added include_synthetic=True for the training data
-    iob_to_jsonl('data/train.iob', 'data/train.jsonl', include_synthetic=True)
-    iob_to_jsonl('data/dev.iob', 'data/valid.jsonl')
-    iob_to_jsonl('data/test.iob', 'data/test.jsonl')
+    iob_to_jsonl('data/train.iob', 'data/train.jsonl', include_synthetic=False)
+    iob_to_jsonl('data/dev.iob', 'data/valid.jsonl', include_synthetic=False)
+    iob_to_jsonl('data/test.iob', 'data/test.jsonl', include_synthetic=False)
