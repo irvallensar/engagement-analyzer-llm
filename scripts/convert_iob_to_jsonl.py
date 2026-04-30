@@ -98,8 +98,8 @@ def format_chatml(raw_text, json_spans):
             {"role": "assistant", "content": json_spans}
         ]
     }
-
+    
 if __name__ == "__main__":
-    iob_to_jsonl('data/train.iob', 'data/train.jsonl', include_synthetic=False)
+    iob_to_jsonl('data/train.iob', 'data/train.jsonl', include_synthetic=True)
     iob_to_jsonl('data/dev.iob', 'data/valid.jsonl', include_synthetic=False)
     iob_to_jsonl('data/test.iob', 'data/test.jsonl', include_synthetic=False)
