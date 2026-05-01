@@ -1,7 +1,7 @@
 import json
 import time
 # Import your existing local client (adjust the import based on your actual file)
-from scripts.local_llm_client import generate_response 
+from local_llm_client import generate_response 
 
 # The target minority classes and their definitions for the prompt
 TARGET_CLASSES = {
