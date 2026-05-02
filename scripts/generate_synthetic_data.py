@@ -5,10 +5,10 @@ import re
 
 # Set how many new sentences you want to generate to balance the 8000+ majority classes
 TARGET_CLASSES = {
-    "ENDOPHORIC": 2,
-    "JUSTIFYING": 2,
-    "SOURCES":    2,
-    "CITATION":   2
+    "ENDOPHORIC": 2000,
+    "JUSTIFYING": 2000,
+    "SOURCES":    2000,
+    "CITATION":   2000
 }
 
 DOMAINS = [
