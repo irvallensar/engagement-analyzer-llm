@@ -5,10 +5,10 @@ import re
 
 # Set how many new sentences you want to generate to balance the 8000+ majority classes
 TARGET_CLASSES = {
-    "ENDOPHORIC": 2000,
-    "JUSTIFYING": 2000,
-    "SOURCES":    2000,
-    "CITATION":   2000
+    "ENDOPHORIC": 2,
+    "JUSTIFYING": 2,
+    "SOURCES":    2,
+    "CITATION":   2
 }
 
 DOMAINS = [
@@ -48,19 +48,22 @@ model, tokenizer = mlx_lm.load(model_id)
 print("Model loaded.\n")
 
 def build_prompt(category: str, domain: str, trigger: str) -> str:
-    # Strict negative constraints to prevent label noise for RoBERTa
     negative_constraints = (
         "CRITICAL RULE: Do NOT include parenthetical citations (e.g., Smith, 2021), "
         "modal verbs of probability (might, may, could), negations (not, never), or "
         "explicit authorial pronouns (I believe, we contend) UNLESS they are specifically "
         "part of the requested marker.\n"
     )
+    
+    # INJECT RANDOMNESS: This forces the LLM to generate new text even with the same domain/trigger
+    variation_seed = random.randint(10000, 99999)
 
     return (
         f"You are an expert academic writer in the field of {domain}.\n"
         f"Write exactly 5 distinct academic sentences that contain a {category} "
         f"engagement marker. Each sentence MUST naturally use the trigger phrase "
         f"\"{trigger}\" or a close variant as the {category} marker.\n\n"
+        f"Variation Seed: {variation_seed} (Ensure these sentences are completely unique from previous generations).\n\n"
         f"{negative_constraints}\n"
         f"DIVERSITY RULES:\n"
         f"- Vary sentence length.\n"
@@ -127,8 +130,10 @@ def generate_synthetic_data():
         print(f"Generating sentences for {category} (Target: {target_count})...")
         collected = []
         triggers = SEED_TRIGGERS[category]
+        
         attempts = 0
-        max_attempts = (target_count // 5) * 3 # Prevent infinite loops
+        consecutive_zeros = 0
+        max_attempts = target_count * 2  # Massive ceiling (4000 loops)
         
         while len(collected) < target_count and attempts < max_attempts:
             domain = random.choice(DOMAINS)
@@ -141,20 +146,33 @@ def generate_synthetic_data():
             )
 
             try:
+                # Adding temp=0.6 to force more creative diversity in the generation
                 response = mlx_lm.generate(
                     model, tokenizer,
                     prompt=formatted,
                     max_tokens=1024,
+                    temp=0.8, 
                     verbose=False
                 )
 
                 parsed = parse_response_and_validate(response, category, seen_sentences)
+                
+                if len(parsed) == 0:
+                    consecutive_zeros += 1
+                else:
+                    consecutive_zeros = 0 # Reset if we successfully got at least 1 sentence
+                    
                 collected.extend(parsed)
                 attempts += 1
                 
-                # Print progress every 5 successful attempts
+                # Failsafe: if it fails to generate a single valid sentence 50 times in a row, break
+                if consecutive_zeros >= 50:
+                    print(f"  [WARNING] Stuck! 50 consecutive failed attempts. Breaking early.")
+                    break
+                
+                # Print progress
                 if attempts % 5 == 0:
-                    print(f"  [{category}] {len(collected)}/{target_count} collected...")
+                    print(f"  [{category}] {len(collected)}/{target_count} collected (Attempt {attempts})...")
 
             except Exception as e:
                 print(f"Generation error: {e}")
@@ -164,7 +182,7 @@ def generate_synthetic_data():
         synthetic_entries.extend(collected)
         print(f"  -> Final count for {category}: {len(collected)}\n")
 
-    # Save to pure JSONL format (ready for the IOB converter)
+    # Save to pure JSONL format
     output_path = 'data/synthetic_data_clean.jsonl'
     with open(output_path, 'w', encoding='utf-8') as f:
         for entry in synthetic_entries:
