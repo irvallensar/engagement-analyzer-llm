@@ -146,12 +146,10 @@ def generate_synthetic_data():
             )
 
             try:
-                # Adding temp=0.6 to force more creative diversity in the generation
                 response = mlx_lm.generate(
                     model, tokenizer,
                     prompt=formatted,
                     max_tokens=1024,
-                    temp=0.6, 
                     verbose=False
                 )
 
