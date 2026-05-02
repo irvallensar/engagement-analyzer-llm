@@ -123,62 +123,67 @@ def parse_response_and_validate(response: str, category: str, seen: set) -> list
     return results
 
 def generate_synthetic_data():
-    synthetic_entries = []
+    output_path = 'data/synthetic_data_clean.jsonl'
+    print(f"Starting crash-proof generation. Saving directly to {output_path}...\n")
+    
     seen_sentences = set()
 
     for category, target_count in TARGET_CLASSES.items():
         print(f"Generating sentences for {category} (Target: {target_count})...")
-        collected = []
+        collected_count = 0
         triggers = SEED_TRIGGERS[category]
         
         attempts = 0
         consecutive_zeros = 0
-        max_attempts = target_count * 2  # Massive ceiling (4000 loops)
+        max_attempts = target_count * 2
         
-        while len(collected) < target_count and attempts < max_attempts:
-            domain = random.choice(DOMAINS)
-            trigger = random.choice(triggers)
-            prompt = build_prompt(category, domain, trigger)
+        # OPEN FILE IN APPEND MODE ('a'). Saves every single line immediately.
+        with open(output_path, 'a', encoding='utf-8') as f:
+            while collected_count < target_count and attempts < max_attempts:
+                domain = random.choice(DOMAINS)
+                trigger = random.choice(triggers)
+                prompt = build_prompt(category, domain, trigger)
 
-            messages = [{"role": "user", "content": prompt}]
-            formatted = tokenizer.apply_chat_template(
-                messages, tokenize=False, add_generation_prompt=True
-            )
-
-            try:
-                response = mlx_lm.generate(
-                    model, tokenizer,
-                    prompt=formatted,
-                    max_tokens=1024,
-                    verbose=False
+                messages = [{"role": "user", "content": prompt}]
+                formatted = tokenizer.apply_chat_template(
+                    messages, tokenize=False, add_generation_prompt=True
                 )
 
-                parsed = parse_response_and_validate(response, category, seen_sentences)
-                
-                if len(parsed) == 0:
-                    consecutive_zeros += 1
-                else:
-                    consecutive_zeros = 0 # Reset if we successfully got at least 1 sentence
+                try:
+                    response = mlx_lm.generate(
+                        model, tokenizer,
+                        prompt=formatted,
+                        max_tokens=1024,
+                        verbose=False
+                    )
+
+                    parsed = parse_response_and_validate(response, category, seen_sentences)
                     
-                collected.extend(parsed)
-                attempts += 1
-                
-                # Failsafe: if it fails to generate a single valid sentence 50 times in a row, break
-                if consecutive_zeros >= 50:
-                    print(f"  [WARNING] Stuck! 50 consecutive failed attempts. Breaking early.")
-                    break
-                
-                # Print progress
-                if attempts % 5 == 0:
-                    print(f"  [{category}] {len(collected)}/{target_count} collected (Attempt {attempts})...")
+                    if len(parsed) == 0:
+                        consecutive_zeros += 1
+                    else:
+                        consecutive_zeros = 0 
+                        
+                    # CRASH PROOFING: Write immediately to disk
+                    for entry in parsed:
+                        if collected_count < target_count:
+                            f.write(json.dumps(entry, ensure_ascii=False) + '\n')
+                            f.flush() # Force the system to save it to the hard drive RIGHT NOW
+                            collected_count += 1
+                            
+                    attempts += 1
+                    
+                    if consecutive_zeros >= 50:
+                        print(f"  [WARNING] Stuck! 50 consecutive failed attempts. Breaking early.")
+                        break
+                    
+                    if attempts % 5 == 0:
+                        print(f"  [{category}] {collected_count}/{target_count} collected (Attempt {attempts})...")
 
-            except Exception as e:
-                print(f"Generation error: {e}")
+                except Exception as e:
+                    print(f"Generation error: {e}")
 
-        # Trim to exact target if we overshot
-        collected = collected[:target_count]
-        synthetic_entries.extend(collected)
-        print(f"  -> Final count for {category}: {len(collected)}\n")
+        print(f"  -> Final count for {category}: {collected_count}\n")
 
     # Save to pure JSONL format
     output_path = 'data/synthetic_data_clean.jsonl'
