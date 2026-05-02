@@ -151,7 +151,7 @@ def generate_synthetic_data():
                     model, tokenizer,
                     prompt=formatted,
                     max_tokens=1024,
-                    temp=0.8, 
+                    temp=0.6, 
                     verbose=False
                 )
 
