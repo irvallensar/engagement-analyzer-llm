@@ -21,11 +21,11 @@ DRIVE_DIR = Path("logs")
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune_run27.json" # the cache of the run 
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune_run27.json" # The master (final) record of the whole run
+CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune_run25_TEST.json" # the cache of the run 
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune_run25_TEST.json" # The master (final) record of the whole run
 
 # Hardware tracking setup
-HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run27.csv"
+HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run25_TEST.csv"
 
 # Global flag to stop the thread when evaluation is done
 stop_monitoring = False 
@@ -389,4 +389,4 @@ def evaluate(filepath, max_samples=None):
     print(f"Token F1-Score       : {t_f1:.4f}")
 
 if __name__ == "__main__":
-    evaluate("data/dev.iob", max_samples=None)
+    evaluate("data/test.iob", max_samples=None)
