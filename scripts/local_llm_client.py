@@ -1,27 +1,32 @@
-from mlx_lm import load, generate
+import mlx_lm
 
-# 1. Load the model globally so the function can see it.
-# IMPORTANT: Change this path to the exact MLX model path you are using!
-MODEL_PATH = "mlx-community/Qwen2.5-32B-Instruct-4bit" 
-
-print(f"Loading MLX model from {MODEL_PATH}...")
-model, tokenizer = load(MODEL_PATH)
+print("Loading model and adapters into Unified Memory...")
+model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
+model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters")
 print("Model loaded successfully! Ready for inference.")
 
-# 2. The generation function
-def generate_response(messages):
-    """
-    Accepts a list of message dictionaries and generates a response.
-    """
-    # Apply Qwen's chat template
+def call_local_llm(sentence_text):
+    SYSTEM_PROMPT = (
+        "You are an expert linguistic annotator. Analyze the sentence and extract all Engagement markers. "
+        "Output a JSON array of dictionaries with 'label' and 'span' keys. "
+        "The 10 valid tags are: ATTRIBUTION, CITATION, COUNTER, DENY, ENDOPHORIC, ENTERTAIN, JUSTIFYING, MONOGLOSS, PROCLAIM, SOURCES. "
+        "Example Input: I do not believe this approach works. "
+        "Example Output: [{\"label\": \"DENY\", \"span\": \"not\"}, {\"label\": \"ENTERTAIN\", \"span\": \"believe\"}] "
+        "If there are no markers, output []."
+    )
+    
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": f"Analyze this sentence:\n\n{sentence_text}"}
+    ]
+    
     formatted_prompt = tokenizer.apply_chat_template(
         messages, 
         tokenize=False, 
         add_generation_prompt=True
     )
     
-    # Generate the text
-    response = generate(
+    response = mlx_lm.generate(
         model, 
         tokenizer, 
         prompt=formatted_prompt, 
@@ -29,4 +34,4 @@ def generate_response(messages):
         verbose=False
     )
     
-    return response
+    return response # Return raw XML string to the evaluator
