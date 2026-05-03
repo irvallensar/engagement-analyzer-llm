@@ -1,26 +1,28 @@
 import json
 import spacy
 
-# Load a blank English tokenizer (to match RoBERTa's preprocessing behavior)
+# Load a blank English tokenizer
 nlp = spacy.blank("en")
 
 def convert_to_iob(text, label, span_text):
     doc = nlp(text)
-    
-    # Initialize all tokens to 'O'
     iob_tags = ["O"] * len(doc)
     
-    # Find the character start and end of the span
     start_char = text.find(span_text)
     if start_char == -1:
-        return None # Span not found, fail safely
+        return None 
+        
     end_char = start_char + len(span_text)
     
-    # Use spaCy's alignment to find which tokens fall in these character offsets
+    # Try strict first, fallback to contract, then expand to save the data
     span_obj = doc.char_span(start_char, end_char, alignment_mode="strict")
-    
     if span_obj is None:
-        return None # The LLM generated a span that breaks across token boundaries
+        span_obj = doc.char_span(start_char, end_char, alignment_mode="contract")
+    if span_obj is None:
+        span_obj = doc.char_span(start_char, end_char, alignment_mode="expand")
+        
+    if span_obj is None:
+        return None # Only fail if it's completely unalignable
         
     for i, token in enumerate(doc):
         if token.i == span_obj.start:
@@ -37,10 +39,13 @@ def convert_to_iob(text, label, span_text):
     return "\n".join(output_lines)
 
 def main():
-    input_file = "data/synthetic_raw.jsonl"
+    # Pointing to your 8,000 sentence golden dataset!
+    input_file = "data/synthetic_balanced.jsonl"
     output_file = "data/synthetic_train.iob"
     
     success_count = 0
+    fail_count = 0
+    
     with open(input_file, "r", encoding="utf-8") as infile, \
          open(output_file, "w", encoding="utf-8") as outfile:
          
@@ -51,8 +56,12 @@ def main():
             if iob_string:
                 outfile.write(iob_string + "\n")
                 success_count += 1
+            else:
+                fail_count += 1
                 
-    print(f"Successfully converted {success_count} synthetic sentences to strict IOB format.")
+    print(f"Successfully converted {success_count} sentences to IOB format.")
+    if fail_count > 0:
+        print(f"Skipped {fail_count} sentences due to complex tokenization boundaries.")
 
 if __name__ == "__main__":
     main()
