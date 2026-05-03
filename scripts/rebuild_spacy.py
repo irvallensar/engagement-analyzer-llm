@@ -2,7 +2,7 @@ import spacy
 from spacy.tokens import DocBin, Span
 import os
 
-def custom_iob_parser(iob_path, spacy_path):
+def robust_iob_parser(iob_path, spacy_path):
     if not os.path.exists(iob_path):
         return
         
@@ -25,14 +25,20 @@ def custom_iob_parser(iob_path, spacy_path):
             parts = line.split()
             if len(parts) >= 2:
                 words.append(parts[0])
-                tags.append(parts[-1]) # Forcefully grab the NER tag
+                
+                # SMART SCANNER: Look through all columns for a tag
+                found_tag = "O"
+                for p in parts[1:]:
+                    if p.startswith("B-") or p.startswith("I-"):
+                        found_tag = p
+                        break
+                tags.append(found_tag)
         
         if not words:
             continue
             
         doc = spacy.tokens.Doc(nlp.vocab, words=words)
         
-        # Manually build the spans
         spans = []
         start_idx = None
         current_label = None
@@ -65,17 +71,16 @@ def custom_iob_parser(iob_path, spacy_path):
             doc_bin.add(doc)
             success += 1
         except ValueError:
-            pass # Skip malformed overlaps
+            pass 
             
     doc_bin.to_disk(spacy_path)
     print(f"  -> Saved {success} fully annotated sentences to {spacy_path}")
 
-print("Rebuilding binary files with explicit entity extraction...")
-custom_iob_parser("data/combined_train.iob", "data/train.spacy")
+print("Rebuilding binary files with Multi-Column extraction...")
+robust_iob_parser("data/combined_train.iob", "data/train.spacy")
+robust_iob_parser("data/dev.iob", "data/dev.spacy")
 
-if os.path.exists("data/valid.iob"):
-    custom_iob_parser("data/valid.iob", "data/dev.spacy")
-elif os.path.exists("data/dev.iob"):
-    custom_iob_parser("data/dev.iob", "data/dev.spacy")
+if os.path.exists("data/test.iob"):
+    robust_iob_parser("data/test.iob", "data/test.spacy")
     
 print("Done. Ready for real training.")
