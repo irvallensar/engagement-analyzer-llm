@@ -77,10 +77,10 @@ def robust_iob_parser(iob_path, spacy_path):
     print(f"  -> Saved {success} fully annotated sentences to {spacy_path}")
 
 print("Rebuilding binary files with Multi-Column extraction...")
-robust_iob_parser("data/train.iob", "data/organic_train.spacy")
-robust_iob_parser("data/dev.iob", "data/dev.spacy")
+robust_iob_parser("data/context_combined_train.iob", "data/context_train.spacy")
+robust_iob_parser("data/context_dev.iob", "data/context_dev.spacy")
 
-if os.path.exists("data/test.iob"):
-    robust_iob_parser("data/test.iob", "data/test.spacy")
+if os.path.exists("data/context_test.iob"):
+    robust_iob_parser("data/context_test.iob", "context_test.spacy")
     
 print("Done. Ready for real training.")
