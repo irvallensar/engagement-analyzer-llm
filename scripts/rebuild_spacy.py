@@ -81,6 +81,6 @@ robust_iob_parser("data/context_combined_train.iob", "data/context_train.spacy")
 robust_iob_parser("data/context_dev.iob", "data/context_dev.spacy")
 
 if os.path.exists("data/context_test.iob"):
-    robust_iob_parser("data/context_test.iob", "context_test.spacy")
+    robust_iob_parser("data/context_test.iob", "data/context_test.spacy")
     
 print("Done. Ready for real training.")
