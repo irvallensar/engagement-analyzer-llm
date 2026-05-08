@@ -76,9 +76,6 @@ def robust_iob_parser(iob_path, spacy_path):
     doc_bin.to_disk(spacy_path)
     print(f"  -> Saved {success} fully annotated sentences to {spacy_path}")
 
-import sys
-import os
-
 if __name__ == "__main__":
     # If we pass exactly two arguments from the terminal (input and output)
     if len(sys.argv) == 3:
