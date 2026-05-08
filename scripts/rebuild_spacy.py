@@ -1,6 +1,7 @@
 import spacy
 from spacy.tokens import DocBin, Span
 import os
+import sys
 
 def robust_iob_parser(iob_path, spacy_path):
     if not os.path.exists(iob_path):
