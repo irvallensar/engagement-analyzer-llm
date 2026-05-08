@@ -1,7 +1,9 @@
+import argparse
 import mlx_lm
 import json
 import random
 import re
+import os
 
 # Set how many new sentences you want to generate to balance the 8000+ majority classes
 TARGET_CLASSES = {
@@ -18,34 +20,11 @@ DOMAINS = [
 ]
 
 SEED_TRIGGERS = {
-    "ENDOPHORIC": [
-        "in Table", "in Figure", "above", "below", "the following",
-        "as shown in", "see section", "the aforementioned",
-        "in the previous section", "as illustrated in",
-        "as depicted in", "the latter", "the former"
-    ],
-    "JUSTIFYING": [
-        "thus", "therefore", "because", "hence", "consequently",
-        "so", "given that", "since", "as a result", "for this reason",
-        "owing to", "due to", "this is why", "it follows that"
-    ],
-    "SOURCES": [
-        "researchers", "scholars", "studies", "the literature",
-        "previous work", "the author", "critics", "proponents",
-        "opponents", "analysts", "experts", "investigators", "theorists"
-    ],
-    "CITATION": [
-        "as noted in", "as argued by", "as shown by",
-        "as demonstrated in", "as reported by",
-        "as discussed in", "as outlined in", "as suggested by",
-        "as observed by", "as concluded by"
-    ]
+    "ENDOPHORIC": ["in Table", "in Figure", "above", "below", "the following", "as shown in", "see section", "the aforementioned", "in the previous section", "as illustrated in", "as depicted in", "the latter", "the former"],
+    "JUSTIFYING": ["thus", "therefore", "because", "hence", "consequently", "so", "given that", "since", "as a result", "for this reason", "owing to", "due to", "this is why", "it follows that"],
+    "SOURCES": ["researchers", "scholars", "studies", "the literature", "previous work", "the author", "critics", "proponents", "opponents", "analysts", "experts", "investigators", "theorists"],
+    "CITATION": ["as noted in", "as argued by", "as shown by", "as demonstrated in", "as reported by", "as discussed in", "as outlined in", "as suggested by", "as observed by", "as concluded by"]
 }
-
-print("Loading MLX model for synthetic data generation...")
-model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
-model, tokenizer = mlx_lm.load(model_id)
-print("Model loaded.\n")
 
 def build_prompt(category: str, domain: str, trigger: str) -> str:
     negative_constraints = (
@@ -54,10 +33,7 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
         "explicit authorial pronouns (I believe, we contend) UNLESS they are specifically "
         "part of the requested marker.\n"
     )
-    
-    # INJECT RANDOMNESS: This forces the LLM to generate new text even with the same domain/trigger
     variation_seed = random.randint(10000, 99999)
-
     return (
         f"You are an expert academic writer in the field of {domain}.\n"
         f"Write exactly 5 distinct academic sentences that contain a {category} "
@@ -70,93 +46,67 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
         f"- Place the marker at different positions (beginning, middle, end).\n"
         f"- Each sentence must be on its own line in this exact format:\n"
         f"  <sentence> | <marker span>\n\n"
-        f"Example for ENDOPHORIC with trigger 'in Table':\n"
-        f"  The correlation coefficients shown in Table 2 confirm the hypothesis. | in Table 2\n\n"
         f"Output ONLY the 5 formatted lines. No numbering, no extra text."
     )
 
 def parse_response_and_validate(response: str, category: str, seen: set) -> list:
-    """Parse output, run regex sanity check, and format to pure JSON."""
     results = []
     for line in response.split('\n'):
         line = line.strip()
-        if '|' not in line:
-            continue
-
+        if '|' not in line: continue
         parts = line.split('|', 1)
-        if len(parts) < 2:
-            continue
-
+        if len(parts) < 2: continue
         sentence = parts[0].strip()
         marker = parts[1].strip()
-
-        # Strip rogue numbering (e.g., "1. " or "- ")
         sentence = re.sub(r'^[\d\.\-\)\s]+', '', sentence).strip()
-
-        if not sentence or not marker:
-            continue
+        if not sentence or not marker: continue
         
-        # Deduplication
         key = sentence.lower().strip()
-        if key in seen:
-            continue
+        if key in seen: continue
         
-        # SANITY CHECK: Case-insensitive match and frequency check
-        # This prevents boundary errors in the IOB converter
         match = re.search(re.escape(marker), sentence, re.IGNORECASE)
         matches_count = len(re.findall(re.escape(marker), sentence, re.IGNORECASE))
         
         if match and matches_count == 1:
             seen.add(key)
-            # Use match.group(0) to grab the EXACT capitalization used in the sentence
             exact_span = match.group(0)
-            
-            results.append({
-                "text": sentence,
-                "label": category,
-                "span": exact_span
-            })
-        else:
-            # Silently discard noisy data (marker not found or found multiple times)
-            continue
-
+            results.append({"text": sentence, "label": category, "span": exact_span})
     return results
 
-def generate_synthetic_data():
-    output_path = 'data/synthetic_data_clean.jsonl'
+def main():
+    # 1. ADDED TERMINAL ARGUMENTS HERE
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=str, default="data/synthetic_data_clean.jsonl", help="Output JSONL file")
+    args = parser.parse_args()
+    output_path = args.output
+
+    print("Loading MLX model for synthetic data generation...")
+    model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
+    model, tokenizer = mlx_lm.load(model_id)
+    print("Model loaded.\n")
+
     print(f"Starting crash-proof generation. Saving directly to {output_path}...\n")
-    
     seen_sentences = set()
+    all_valid_entries = [] # Added to fix your bug at the end
 
     for category, target_count in TARGET_CLASSES.items():
         print(f"Generating sentences for {category} (Target: {target_count})...")
         collected_count = 0
         triggers = SEED_TRIGGERS[category]
-        
         attempts = 0
         consecutive_zeros = 0
         max_attempts = target_count * 2
         
-        # OPEN FILE IN APPEND MODE ('a'). Saves every single line immediately.
         with open(output_path, 'a', encoding='utf-8') as f:
             while collected_count < target_count and attempts < max_attempts:
                 domain = random.choice(DOMAINS)
                 trigger = random.choice(triggers)
                 prompt = build_prompt(category, domain, trigger)
-
                 messages = [{"role": "user", "content": prompt}]
-                formatted = tokenizer.apply_chat_template(
-                    messages, tokenize=False, add_generation_prompt=True
-                )
+                formatted = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
                 try:
-                    response = mlx_lm.generate(
-                        model, tokenizer,
-                        prompt=formatted,
-                        max_tokens=1024,
-                        verbose=False
-                    )
-
+                    response = mlx_lm.generate(model, tokenizer, prompt=formatted, max_tokens=1024, verbose=False)
                     parsed = parse_response_and_validate(response, category, seen_sentences)
                     
                     if len(parsed) == 0:
@@ -164,40 +114,29 @@ def generate_synthetic_data():
                     else:
                         consecutive_zeros = 0 
                         
-                    # CRASH PROOFING: Write immediately to disk
                     for entry in parsed:
                         if collected_count < target_count:
                             f.write(json.dumps(entry, ensure_ascii=False) + '\n')
-                            f.flush() # Force the system to save it to the hard drive RIGHT NOW
+                            f.flush() 
                             collected_count += 1
+                            all_valid_entries.append(entry) # Save for final count
                             
                     attempts += 1
-                    
                     if consecutive_zeros >= 50:
                         print(f"  [WARNING] Stuck! 50 consecutive failed attempts. Breaking early.")
                         break
-                    
                     if attempts % 5 == 0:
                         print(f"  [{category}] {collected_count}/{target_count} collected (Attempt {attempts})...")
-
                 except Exception as e:
                     print(f"Generation error: {e}")
-
         print(f"  -> Final count for {category}: {collected_count}\n")
 
-    # Save to pure JSONL format
-    output_path = 'data/synthetic_data_clean.jsonl'
-    with open(output_path, 'w', encoding='utf-8') as f:
-        for entry in synthetic_entries:
-            f.write(json.dumps(entry, ensure_ascii=False) + '\n')
-            
     print(f"\n[SUCCESS] Clean synthetic data saved to {output_path}")
-    
     from collections import Counter
-    counts = Counter(e["label"] for e in synthetic_entries)
+    counts = Counter(e["label"] for e in all_valid_entries)
     print("Final Breakdown:")
     for label, count in sorted(counts.items()):
         print(f"  {label:15s}: {count}")
 
 if __name__ == "__main__":
-    generate_synthetic_data()
+    main()
