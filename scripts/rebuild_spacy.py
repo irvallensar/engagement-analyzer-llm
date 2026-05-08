@@ -76,11 +76,21 @@ def robust_iob_parser(iob_path, spacy_path):
     doc_bin.to_disk(spacy_path)
     print(f"  -> Saved {success} fully annotated sentences to {spacy_path}")
 
-print("Rebuilding binary files with Multi-Column extraction...")
-robust_iob_parser("data/context_combined_train.iob", "data/context_train.spacy")
-robust_iob_parser("data/context_dev.iob", "data/context_dev.spacy")
+import sys
+import os
 
-if os.path.exists("data/context_test.iob"):
-    robust_iob_parser("data/context_test.iob", "data/context_test.spacy")
-    
-print("Done. Ready for real training.")
+if __name__ == "__main__":
+    # If we pass exactly two arguments from the terminal (input and output)
+    if len(sys.argv) == 3:
+        input_file = sys.argv[1]
+        output_file = sys.argv[2]
+        print(f"Rebuilding: {input_file} -> {output_file}")
+        robust_iob_parser(input_file, output_file)
+    else:
+        # Fallback to your original setup if no arguments are passed
+        print("Rebuilding default binary files...")
+        robust_iob_parser("data/combined_train.iob", "data/combined_train.spacy")
+        robust_iob_parser("data/dev.iob", "data/dev.spacy")
+        if os.path.exists("data/test.iob"):
+            robust_iob_parser("data/test.iob", "data/test.spacy")
+        print("Done. Ready for real training.")
