@@ -1,6 +1,6 @@
 import os
 from collections import defaultdict
-random.seed(42)
+import random
 
 def stratify_iob(input_file, num_folds=5):
     print(f"Reading {input_file} for stratification...")
