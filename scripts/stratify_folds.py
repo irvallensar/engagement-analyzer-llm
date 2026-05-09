@@ -1,6 +1,7 @@
 import os
 from collections import defaultdict
 import random
+random.seed(42)
 
 def stratify_iob(input_file, num_folds=5):
     print(f"Reading {input_file} for stratification...")
@@ -44,11 +45,10 @@ def stratify_iob(input_file, num_folds=5):
         test_bucket = buckets[fold_idx]
         random.shuffle(test_bucket)
         train_buckets = [b for i, b in enumerate(buckets) if i != fold_idx]
-        random.shuffle(train_flat)
         
         # Flatten the train buckets
         train_flat = [block for sublist in train_buckets for block in sublist]
-
+        random.shuffle(train_flat)
         # Write to files
         with open(f'data/5_fold_exp/strat_train{fold_idx+1}.iob', 'w', encoding='utf-8') as f:
             f.write('\n\n'.join(train_flat) + '\n\n')
