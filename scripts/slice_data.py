@@ -38,4 +38,4 @@ def reduce_iob(input_file, output_file, max_per_class=1000):
         print(f"{k}: {v} spans kept")
 
 if __name__ == "__main__":
-    reduce_iob('data/synthetic_only.iob', 'data/synthetic_half.iob')
+    reduce_iob('data/synthetic_train.iob', 'data/synthetic_half.iob')
