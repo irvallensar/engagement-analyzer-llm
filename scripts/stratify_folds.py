@@ -39,25 +39,37 @@ def stratify_iob(input_file, num_folds=5):
     for i, (_, block) in enumerate(scored_blocks):
         buckets[i % num_folds].append(block)
 
-    # Step 4: Write the new Train and Test files for each fold
     print("Writing perfectly stratified folds...")
     for fold_idx in range(num_folds):
+        # Test = current fold
         test_bucket = buckets[fold_idx]
+    
+        # Dev = next fold (rotating)
+        dev_idx = (fold_idx + 1) % num_folds
+        dev_bucket = buckets[dev_idx]
+    
+        # Train = remaining 3 folds
+        train_flat = [block 
+                    for i, sublist in enumerate(buckets) 
+                    if i != fold_idx and i != dev_idx 
+                    for block in sublist]
+    
         random.shuffle(test_bucket)
-        train_buckets = [b for i, b in enumerate(buckets) if i != fold_idx]
-        
-        # Flatten the train buckets
-        train_flat = [block for sublist in train_buckets for block in sublist]
+        random.shuffle(dev_bucket)
         random.shuffle(train_flat)
-        # Write to files
+    
+        # Write IOB files
         with open(f'data/5_fold_exp/strat_train{fold_idx+1}.iob', 'w', encoding='utf-8') as f:
             f.write('\n\n'.join(train_flat) + '\n\n')
-            
+        
+        with open(f'data/5_fold_exp/strat_dev{fold_idx+1}.iob', 'w', encoding='utf-8') as f:
+            f.write('\n\n'.join(dev_bucket) + '\n\n')
+        
         with open(f'data/5_fold_exp/strat_test{fold_idx+1}.iob', 'w', encoding='utf-8') as f:
             f.write('\n\n'.join(test_bucket) + '\n\n')
-            
+
     print("=== STRATIFICATION COMPLETE ===")
-    print(f"Generated strat_train1-5.iob and strat_test1-5.iob")
+    print(f"Generated strat_train1-5.iob, strat_dev1-5.iob, strat_test1-5.iob")
 
 if __name__ == "__main__":
     stratify_iob('data/5_fold_exp/master_organic_full.iob')
