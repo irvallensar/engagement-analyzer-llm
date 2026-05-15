@@ -39,7 +39,7 @@ def convert_to_iob(text, label, span_text):
     return "\n".join(output_lines)
 
 def main():
-    # Pointing to your 8,000 sentence golden dataset!
+    # Point to the 8,000 data augmented set
     input_file = "data/synthetic_balanced.jsonl"
     output_file = "data/synthetic_train.iob"
     
