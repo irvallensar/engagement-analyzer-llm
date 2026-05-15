@@ -5,7 +5,7 @@ import random
 import re
 import os
 
-# Set how many new sentences you want to generate to balance the 8000+ majority classes
+# how many sentences to generate for data augmentation
 TARGET_CLASSES = {
     "ENDOPHORIC": 2000,
     "JUSTIFYING": 2000,
@@ -74,7 +74,6 @@ def parse_response_and_validate(response: str, category: str, seen: set) -> list
     return results
 
 def main():
-    # 1. ADDED TERMINAL ARGUMENTS HERE
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=str, default="data/synthetic_data_clean.jsonl", help="Output JSONL file")
     args = parser.parse_args()
