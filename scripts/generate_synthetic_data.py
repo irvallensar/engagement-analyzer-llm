@@ -5,7 +5,7 @@ import random
 import re
 import os
 
-# how many sentences to generate for data augmentation
+# How many sentences to generate for data augmentation
 TARGET_CLASSES = {
     "ENDOPHORIC": 2000,
     "JUSTIFYING": 2000,
@@ -13,12 +13,15 @@ TARGET_CLASSES = {
     "CITATION":   2000
 }
 
+# A list of 11 academic domains. generator randomly picks one per prompt to esnure domain diversity in the syntethic data. 
 DOMAINS = [
     "Computer Science", "Sociology", "Molecular Biology", "History",
     "Macroeconomics", "Linguistics", "Quantum Physics", "Cognitive Psychology",
     "Philosophy of Mind", "Clinical Medicine", "Environmental Science"
 ]
 
+# Category-specific trigger phrases, associated with each engagement marker class. each prompt instructs the model to use one
+# of these triggers, making the marker explicit and locatable in the generated sentence.
 SEED_TRIGGERS = {
     "ENDOPHORIC": ["in Table", "in Figure", "above", "below", "the following", "as shown in", "see section", "the aforementioned", "in the previous section", "as illustrated in", "as depicted in", "the latter", "the former"],
     "JUSTIFYING": ["thus", "therefore", "because", "hence", "consequently", "so", "given that", "since", "as a result", "for this reason", "owing to", "due to", "this is why", "it follows that"],
@@ -26,6 +29,8 @@ SEED_TRIGGERS = {
     "CITATION": ["as noted in", "as argued by", "as shown by", "as demonstrated in", "as reported by", "as discussed in", "as outlined in", "as suggested by", "as observed by", "as concluded by"]
 }
 
+# Takes a category, domain, trigger phrase, returns a fully formatted prompt string.
+# Negative constraints that tells the model what to avoid.
 def build_prompt(category: str, domain: str, trigger: str) -> str:
     negative_constraints = (
         "CRITICAL RULE: Do NOT include parenthetical citations (e.g., Smith, 2021), "
@@ -33,7 +38,11 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
         "explicit authorial pronouns (I believe, we contend) UNLESS they are specifically "
         "part of the requested marker.\n"
     )
+    # A random integer injected into the prompt text. Adds noise to the prompt text itseld, nudging the model to produce
+    # different output across calls (to fight against repetitive generation)
     variation_seed = random.randint(10000, 99999)
+    # Prompt: To adopt an academic persona for a specific domain; generate exactly 5 sentences, use the trigger phrase,
+    # vary marker position and sentence length; and output in a strict sentence | span format. 
     return (
         f"You are an expert academic writer in the field of {domain}.\n"
         f"Write exactly 5 distinct academic sentences that contain a {category} "
