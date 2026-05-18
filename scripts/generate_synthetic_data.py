@@ -55,7 +55,11 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
         f"- Place the marker at different positions (beginning, middle, end).\n"
         f"- Each sentence must be on its own line in this exact format:\n"
         f"  <sentence> | <marker span>\n\n"
-        f"Output ONLY the 5 formatted lines. No numbering, no extra text."
+        f"Output ONLY the 5 formatted lines. No numbering, no extra text.\n\n"
+        f"EXAMPLES OF GOLD STANDARD FORMATTING:\n"
+        f"Although these methods are robust, they are not universally applicable. | Although\n"
+        f"These findings are consistent with Smith (2021). | Smith (2021)\n\n"
+        f"NOW GENERATE 5 NEW SENTENCES:\n"
     )
 
 def parse_response_and_validate(response: str, category: str, seen: set) -> list:
