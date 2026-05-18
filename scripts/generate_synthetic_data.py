@@ -23,11 +23,22 @@ DOMAINS = [
 # Category-specific trigger phrases, associated with each engagement marker class. each prompt instructs the model to use one
 # of these triggers, making the marker explicit and locatable in the generated sentence.
 SEED_TRIGGERS = {
-    "ENDOPHORIC": ["in Table", "in Figure", "above", "below", "the following", "as shown in", "see section", "the aforementioned", "in the previous section", "as illustrated in", "as depicted in", "the latter", "the former"],
-    "JUSTIFYING": ["thus", "therefore", "because", "hence", "consequently", "so", "given that", "since", "as a result", "for this reason", "owing to", "due to", "this is why", "it follows that"],
-    "SOURCES": ["researchers", "scholars", "studies", "the literature", "previous work", "the author", "critics", "proponents", "opponents", "analysts", "experts", "investigators", "theorists"],
-    "CITATION": ["as noted in", "as argued by", "as shown by", "as demonstrated in", "as reported by", "as discussed in", "as outlined in", "as suggested by", "as observed by", "as concluded by"]
+    "ENDOPHORIC": ["in Table", "as shown in", "above", "the following", "as described"],
+    "SOURCES": ["researchers", "scholars", "previous studies"],
+    # shared triggers across categories:
+    "JUSTIFYING": ["because", "therefore", "thus", "since"],  # "because" also in COUNTER
+    "COUNTER": ["however", "although", "because", "despite"],  # shared with JUSTIFYING
+    "CITATION": ["Schapiro et al. (2001)", "Lipton (1991, p.419)", "(Gordon, 1990)", "Brown et al. (1994)"]
 }
+
+GOLD_EXAMPLES = {
+    "ENDOPHORIC": "As Table 3 shows, vocabulary size and depth were significantly correlated. | Table 3",
+    "SOURCES": "Previous studies showed this effect consistently. | Previous studies",
+    "JUSTIFYING": "These methods were selected because they offer greater precision. | because",
+    "CITATION": " Some predictions made by Robertson et al (1999) make this even clearer  | Robertson et al (1999)",
+    "COUNTER": "Although provisional, our model has implications for pedagogy. | Although Provisional"
+}
+
 
 # Takes a category, domain, trigger phrase, returns a fully formatted prompt string.
 # Negative constraints that tells the model what to avoid.
@@ -41,26 +52,27 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
     # A random integer injected into the prompt text. Adds noise to the prompt text itseld, nudging the model to produce
     # different output across calls (to fight against repetitive generation)
     variation_seed = random.randint(10000, 99999)
-    # Prompt: To adopt an academic persona for a specific domain; generate exactly 5 sentences, use the trigger phrase,
+    # Few-shot Prompt: To adopt an academic persona for a specific domain; generate exactly 5 sentences, use the trigger phrase,
     # vary marker position and sentence length; and output in a strict sentence | span format. 
     return (
         f"You are an expert academic writer in the field of {domain}.\n"
-        f"Write exactly 5 distinct academic sentences that contain a {category} "
-        f"engagement marker. Each sentence MUST naturally use the trigger phrase "
-        f"\"{trigger}\" or a close variant as the {category} marker.\n\n"
-        f"Variation Seed: {variation_seed} (Ensure these sentences are completely unique from previous generations).\n\n"
+        f"Write exactly 5 distinct academic sentences where the phrase \"{trigger}\" "
+        f"functions specifically as a {category} engagement marker.\n\n"
+        f"IMPORTANT: The phrase \"{trigger}\" must function as {category} in context, "
+        f"NOT as any other engagement type. For example:\n"
+        f"- If category is JUSTIFYING, '{trigger}' must establish a causal justification\n"
+        f"- If category is COUNTER, '{trigger}' must signal a counter-expectation\n\n"
+        f"Variation Seed: {variation_seed}\n\n"
         f"{negative_constraints}\n"
         f"DIVERSITY RULES:\n"
         f"- Vary sentence length.\n"
         f"- Place the marker at different positions (beginning, middle, end).\n"
         f"- Each sentence must be on its own line in this exact format:\n"
         f"  <sentence> | <marker span>\n\n"
-        f"Output ONLY the 5 formatted lines. No numbering, no extra text.\n\n"
-        f"EXAMPLES OF GOLD STANDARD FORMATTING:\n"
-        f"Although these methods are robust, they are not universally applicable. | Although\n"
-        f"These findings are consistent with Smith (2021). | Smith (2021)\n\n"
+        f"EXAMPLE OF GOLD STANDARD FORMATTING:\n"
+        f"{GOLD_EXAMPLES[category]}\n\n"
         f"NOW GENERATE 5 NEW SENTENCES:\n"
-    )
+)
 
 def parse_response_and_validate(response: str, category: str, seen: set) -> list:
     results = []
