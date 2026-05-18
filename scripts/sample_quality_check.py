@@ -21,7 +21,7 @@ def extract_samples(iob_file_path, output_file_path, samples_per_label=50):
             parts = line.split()
             if len(parts) >= 2:
                 word = parts[0]
-                tag = parts[-1] # Grabs the last column
+                tag = parts[1] # Grabs the last column
                 words.append(word)
                 if tag.startswith('B-'):
                     labels_in_sentence.add(tag[2:]) # e.g., 'CITATION'
