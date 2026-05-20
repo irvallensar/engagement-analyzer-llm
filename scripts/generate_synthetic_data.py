@@ -28,7 +28,7 @@ SEED_TRIGGERS = {
     # shared triggers across categories:
     "JUSTIFYING": ["because", "therefore", "thus", "since"],  # "because" also in COUNTER
     "COUNTER": ["however", "although", "because", "despite"],  # shared with JUSTIFYING
-    "CITATION": ["Schapiro et al. (2001)", "Lipton (1991, p.419)", "(Gordon, 1990)", "Brown et al. (1994)"]
+    "CITATION": ["as noted in", "as argued by", "as shown by", "as demonstrated in"]
 }
 
 GOLD_EXAMPLES = {
