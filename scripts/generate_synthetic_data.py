@@ -49,10 +49,12 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
         "explicit authorial pronouns (I believe, we contend) UNLESS they are specifically "
         "part of the requested marker.\n"
     )
-    # A random integer injected into the prompt text. Adds noise to the prompt text itseld, nudging the model to produce
-    # different output across calls (to fight against repetitive generation)
+    # A random integer injected into the prompt text. Adds noise to the prompt text itseld, 
+    # nudging the model to produce.
+    # different output across calls (to fight against repetitive generation).
     variation_seed = random.randint(10000, 99999)
-    # Few-shot Prompt: To adopt an academic persona for a specific domain; generate exactly 5 sentences, use the trigger phrase,
+    # Zero-shot Prompt: To adopt an academic persona for a specific domain; 
+    # generate exactly 5 sentences, use the trigger phrase,
     # vary marker position and sentence length; and output in a strict sentence | span format. 
     return (
         f"You are an expert academic writer in the field of {domain}.\n"
