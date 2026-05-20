@@ -87,7 +87,7 @@ if __name__ == "__main__":
     else:
         # Fallback to your original setup if no arguments are passed
         print("Rebuilding default binary files...")
-        robust_iob_parser("data/combined_train.iob", "data/combined_train.spacy")
+        robust_iob_parser("data/synthetic_train.iob", "data/syntethic_train.spacy")
         robust_iob_parser("data/dev.iob", "data/dev.spacy")
         if os.path.exists("data/test.iob"):
             robust_iob_parser("data/test.iob", "data/test.spacy")
