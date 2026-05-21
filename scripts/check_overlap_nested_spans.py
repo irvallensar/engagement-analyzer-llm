@@ -1,80 +1,73 @@
-def check_original_multicolumn_iob(filepath):
-    with open(filepath, 'r', encoding='utf-8') as f:
-        # Split file into sentences by double line breaks
+def check_original_iob_overlaps(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        # Split the file into sentences by blank lines
         blocks = f.read().strip().split('\n\n')
 
     total_sentences = len(blocks)
-    multiple_spans = 0
-    nested_spans = 0
-    overlapping_spans = 0
+    sentences_with_overlaps = 0
+    sentences_with_nested = 0
+    total_multiple_spans = 0
 
     for block in blocks:
         lines = block.split('\n')
-        
-        # A list to store extracted spans as (start_idx, end_idx, label)
-        extracted_spans = []
-        
-        # Dictionary to track active spans currently open in each column
-        # Format: { column_index: {"label": "TAG", "start": int} }
-        active_spans = {}
+        if not lines: continue
 
-        for token_idx, line in enumerate(lines):
-            parts = line.split()
-            if len(parts) < 2: 
-                continue
-                
-            tags = parts[1:] # Grab all tag columns (ignoring the word itself)
+        # Determine the maximum number of columns in this sentence block
+        max_cols = max(len(line.split()) for line in lines)
+        if max_cols < 2:
+            continue
 
-            for col_idx, tag in enumerate(tags):
-                if tag.startswith('B-'):
-                    # If there's already an active span in this column, close it and save it
-                    if col_idx in active_spans:
-                        extracted_spans.append((active_spans[col_idx]['start'], token_idx, active_spans[col_idx]['label']))
-                    # Open the new span
-                    active_spans[col_idx] = {'label': tag[2:], 'start': token_idx}
-                    
-                elif tag.startswith('I-'):
-                    continue # Span remains open
-                    
-                else: # Tag is 'O' or '0'
-                    # Close the active span in this column if one exists
-                    if col_idx in active_spans:
-                        extracted_spans.append((active_spans[col_idx]['start'], token_idx, active_spans[col_idx]['label']))
-                        del active_spans[col_idx]
+        all_spans = []
 
-        # End of sentence: Close any spans that are still active
-        for col_idx, span_data in active_spans.items():
-            extracted_spans.append((span_data['start'], len(lines), span_data['label']))
+        # Iterate horizontally through each tag column (skipping column 0, which is the word)
+        for col_idx in range(1, max_cols):
+            current_span = None
+            for i, line in enumerate(lines):
+                parts = line.split()
+                # If a row has fewer columns, treat the missing column as a "0" (no tag)
+                tag = parts[col_idx] if col_idx < len(parts) else "0"
 
-        # --- Evaluate the extracted spans for this sentence ---
-        if len(extracted_spans) > 1:
-            multiple_spans += 1
+                if tag.startswith("B-"):
+                    if current_span:
+                        all_spans.append(current_span)
+                    current_span = {"label": tag[2:], "start": i, "end": i}
+                elif tag.startswith("I-") and current_span and tag[2:] == current_span["label"]:
+                    current_span["end"] = i
+                else:
+                    if current_span:
+                        all_spans.append(current_span)
+                        current_span = None
+            if current_span:
+                all_spans.append(current_span)
 
-        has_nested = False
+        if len(all_spans) > 1:
+            total_multiple_spans += 1
+
+        # Check for overlaps and nested spans mathematically
         has_overlap = False
+        has_nested = False
 
-        for i in range(len(extracted_spans)):
-            for j in range(i + 1, len(extracted_spans)):
-                a_start, a_end, _ = extracted_spans[i]
-                b_start, b_end, _ = extracted_spans[j]
+        for i in range(len(all_spans)):
+            for j in range(i + 1, len(all_spans)):
+                span_a = all_spans[i]
+                span_b = all_spans[j]
 
-                # Check for Nested (One span is entirely inside the other, or they are exact duplicates)
-                if (a_start <= b_start and b_end <= a_end) or (b_start <= a_start and a_end <= b_end):
+                # Nested: Span A is entirely inside Span B, or vice versa
+                if (span_a["start"] >= span_b["start"] and span_a["end"] <= span_b["end"]) or \
+                   (span_b["start"] >= span_a["start"] and span_b["end"] <= span_a["end"]):
                     has_nested = True
-                # Check for Partial Overlap (They intersect, but neither fully contains the other)
-                elif (a_start < b_end and b_start < a_end):
+                
+                # Overlapping: Not nested, but their boundaries intersect
+                elif span_a["start"] <= span_b["end"] and span_b["start"] <= span_a["end"]:
                     has_overlap = True
 
-        if has_nested:
-            nested_spans += 1
-        if has_overlap and not has_nested:
-            overlapping_spans += 1
+        if has_overlap: sentences_with_overlaps += 1
+        if has_nested: sentences_with_nested += 1
 
-    print("=== Original Multi-Column IOB Analysis ===")
-    print(f"Total sentences:                  {total_sentences}")
-    print(f"Sentences with >1 total spans:    {multiple_spans}")
-    print(f"Sentences with nested spans:      {nested_spans}")
-    print(f"Sentences with overlapping spans: {overlapping_spans}")
+    print(f"Total Sentences Analyzed: {total_sentences}")
+    print(f"Sentences with >1 Span:   {total_multiple_spans}")
+    print(f"Sentences with Nested:    {sentences_with_nested}")
+    print(f"Sentences with Overlaps:  {sentences_with_overlaps}")
 
-# Run the function on the original Eguchi dataset
-check_original_multicolumn_iob('data/train.iob') # Update path if needed
+# Point this directly to the original, multi-column EDT train.iob file
+check_original_iob_overlaps('data/train.iob')
