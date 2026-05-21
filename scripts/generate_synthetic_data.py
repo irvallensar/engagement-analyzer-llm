@@ -25,9 +25,7 @@ DOMAINS = [
 SEED_TRIGGERS = {
     "ENDOPHORIC": ["in Table", "as shown in", "above", "the following", "as described"],
     "SOURCES": ["researchers", "scholars", "previous studies"],
-    # shared triggers across categories:
-    "JUSTIFYING": ["because", "therefore", "thus", "since"],  # "because" also in COUNTER
-    "COUNTER": ["however", "although", "because", "despite"],  # shared with JUSTIFYING
+    "JUSTIFYING": ["because", "therefore", "thus", "since"],  
     "CITATION": ["as noted in", "as argued by", "as shown by", "as demonstrated in"]
 }
 
@@ -36,8 +34,7 @@ GOLD_EXAMPLES = {
     "ENDOPHORIC": "As Table 3 shows, vocabulary size and depth were significantly correlated. | Table 3",
     "SOURCES": "Previous studies showed this effect consistently. | Previous studies",
     "JUSTIFYING": "These methods were selected because they offer greater precision. | because",
-    "CITATION": " Some predictions made by Robertson et al (1999) make this even clearer  | Robertson et al (1999)",
-    "COUNTER": "Although provisional, our model has implications for pedagogy. | Although Provisional"
+    "CITATION": " Some predictions made by Robertson et al (1999) make this even clearer. | Robertson et al (1999)"
 }
 
 
