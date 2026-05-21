@@ -31,6 +31,7 @@ SEED_TRIGGERS = {
     "CITATION": ["as noted in", "as argued by", "as shown by", "as demonstrated in"]
 }
 
+#taken directly from engagement-annotation-project github (EDT)
 GOLD_EXAMPLES = {
     "ENDOPHORIC": "As Table 3 shows, vocabulary size and depth were significantly correlated. | Table 3",
     "SOURCES": "Previous studies showed this effect consistently. | Previous studies",
