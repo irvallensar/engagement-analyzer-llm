@@ -140,47 +140,54 @@ def main():
         print(f"Generating sentences for {category} (Target: {target_count})...")
         collected_count = 0
         triggers = SEED_TRIGGERS[category]
-        attempts = 0
-        consecutive_zeros = 0
-        max_attempts = target_count * 2
+        attempts = 0 # counts model generations attempted
+        consecutive_zeros = 0 # counts consecutive failed generations
+        max_attempts = target_count * 2 # safety limits, prevents infinite loops
         
-        with open(output_path, 'a', encoding='utf-8') as f:
-            while collected_count < target_count and attempts < max_attempts:
-                domain = random.choice(DOMAINS)
+        with open(output_path, 'a', encoding='utf-8') as f: # open file in append mode so that data is continuously saved
+            # continue generating until enought samples collected OR max attempts reached
+            while collected_count < target_count and attempts < max_attempts: 
+                domain = random.choice(DOMAINS) 
                 trigger = random.choice(triggers)
-                prompt = build_prompt(category, domain, trigger)
-                messages = [{"role": "user", "content": prompt}]
+                prompt = build_prompt(category, domain, trigger) # builds full prompt string
+                messages = [{"role": "user", "content": prompt}] # Creates chat-format input
+                # converts messages into model-specific chat format
                 formatted = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-                try:
+                try: # generates model output
                     response = mlx_lm.generate(model, tokenizer, prompt=formatted, max_tokens=1024, verbose=False)
+                    # cleans and validates model output
                     parsed = parse_response_and_validate(response, category, seen_sentences)
                     
-                    if len(parsed) == 0:
+                    if len(parsed) == 0: # if generation produced nothing usable, increase failure counter
                         consecutive_zeros += 1
                     else:
                         consecutive_zeros = 0 
                         
-                    for entry in parsed:
+                    for entry in parsed: # loop through validated examples
                         if collected_count < target_count:
-                            f.write(json.dumps(entry, ensure_ascii=False) + '\n')
+                            f.write(json.dumps(entry, ensure_ascii=False) + '\n') # write jsonl line
                             f.flush() 
-                            collected_count += 1
+                            collected_count += 1 # increment successful counter
                             all_valid_entries.append(entry) # Save for final count
                             
-                    attempts += 1
-                    if consecutive_zeros >= 50:
+                    attempts += 1 # track total generations attempted
+                    if consecutive_zeros >= 50: # if model stuck after 50 attempts, stop generation for that category
                         print(f"  [WARNING] Stuck! 50 consecutive failed attempts. Breaking early.")
                         break
-                    if attempts % 5 == 0:
+                    if attempts % 5 == 0: # prints progress every 5 attempts
                         print(f"  [{category}] {collected_count}/{target_count} collected (Attempt {attempts})...")
                 except Exception as e:
-                    print(f"Generation error: {e}")
+                    print(f"Generation error: {e}") # prints error
         print(f"  -> Final count for {category}: {collected_count}\n")
 
-    print(f"\n[SUCCESS] Clean synthetic data saved to {output_path}")
+    print(f"\n[SUCCESS] Clean synthetic data saved to {output_path}") # completion message
     from collections import Counter
-    counts = Counter(e["label"] for e in all_valid_entries)
+    counts = Counter(e["label"] for e in all_valid_entries) # counts examples per label
+    # {
+       # "JUSTIFYING": 2000,
+       # "CITATION": 2000
+    # }
     print("Final Breakdown:")
     for label, count in sorted(counts.items()):
         print(f"  {label:15s}: {count}")
