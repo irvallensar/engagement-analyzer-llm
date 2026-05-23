@@ -46,7 +46,7 @@ def parse_multicolumn_to_spancat(input_path, output_path):
                 spans_list.append(Span(doc, start, len(lines), label=label))
                 
         # Save the spans to the spancat dictionary (NOT doc.ents)
-        doc.spans["engagement"] = spans_list
+        doc.spans["sc"] = spans_list
         db.add(doc)
         
     db.to_disk(output_path)
