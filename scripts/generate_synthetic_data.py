@@ -135,11 +135,10 @@ def parse_response_and_validate(response: str, category: str, seen: set) -> list
     return results
 
 def main():
-    parser = argparse.ArgumentParser() # Creates command-line argument parser
-    # define command-line option
+    parser = argparse.ArgumentParser() 
     parser.add_argument("--output", type=str, default="data/synthetic_data_clean.jsonl", help="Output JSONL file")
-    args = parser.parse_args() # reads terminal arguments
-    output_path = args.output # stores output filename
+    args = parser.parse_args() 
+    output_path = args.output 
 
     print("Loading MLX model for synthetic data generation...")
     model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
@@ -147,57 +146,72 @@ def main():
     print("Model loaded.\n")
 
     print(f"Starting generation. Saving directly to {output_path}...\n")
-    seen_sentences = set() # duplication tracker
-    all_valid_entries = [] # stores every accepted example
+    seen_sentences = set() 
+    all_valid_entries = [] 
 
-    for category, target_count in TARGET_CLASSES.items(): # loops through each engagement category
-        print(f"Generating sentences for {category} (Target: {target_count})...")
-        collected_count = 0
-        triggers = SEED_TRIGGERS[category]
-        attempts = 0 # counts model generations attempted
-        consecutive_zeros = 0 # counts consecutive failed generations
-        max_attempts = target_count * 2 # safety limits, prevents infinite loops
+    # --- RESUME LOGIC (PREVENTS DUPLICATES AND OVER-GENERATION) ---
+    if os.path.exists(output_path):
+        print(f"Found existing file at {output_path}. Loading previous progress...")
+        with open(output_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                if not line.strip(): continue
+                data = json.loads(line.strip())
+                seen_sentences.add(data["text"].lower().strip())
+                all_valid_entries.append(data)
+        print(f"Loaded {len(seen_sentences)} sentences into deduplication memory.\n")
+    # --------------------------------------------------------------
+
+    for category, target_count in TARGET_CLASSES.items(): 
+        # Calculate how many sentences we already generated for this specific category
+        existing_count = sum(1 for e in all_valid_entries if e["label"] == category)
+        collected_count = existing_count
+
+        if collected_count >= target_count:
+            print(f"[{category}] Already completed ({collected_count}/{target_count}). Skipping...")
+            continue
+
+        print(f"Generating sentences for {category} (Target: {target_count}, Currently at: {collected_count})...")
+        attempts = 0 
+        consecutive_zeros = 0 
+        max_attempts = target_count * 2 
         
-        with open(output_path, 'a', encoding='utf-8') as f: # open file in append mode so that data is continuously saved
-            # continue generating until enought samples collected OR max attempts reached
+        with open(output_path, 'a', encoding='utf-8') as f: 
             while collected_count < target_count and attempts < max_attempts: 
                 domain = random.choice(DOMAINS) 
-                trigger = random.choice(triggers)
-                prompt = build_prompt(category, domain, trigger) # builds full prompt string
-                messages = [{"role": "user", "content": prompt}] # Creates chat-format input
-                # converts messages into model-specific chat format
+                trigger = random.choice(SEED_TRIGGERS[category])
+                prompt = build_prompt(category, domain, trigger) 
+                messages = [{"role": "user", "content": prompt}] 
                 formatted = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-                try: # generates model output
+                try: 
                     response = mlx_lm.generate(model, tokenizer, prompt=formatted, max_tokens=1024, verbose=False)
-                    # cleans and validates model output
                     parsed = parse_response_and_validate(response, category, seen_sentences)
                     
-                    if len(parsed) == 0: # if generation produced nothing usable, increase failure counter
+                    if len(parsed) == 0: 
                         consecutive_zeros += 1
                     else:
                         consecutive_zeros = 0 
                         
-                    for entry in parsed: # loop through validated examples
+                    for entry in parsed: 
                         if collected_count < target_count:
-                            f.write(json.dumps(entry, ensure_ascii=False) + '\n') # write jsonl line
+                            f.write(json.dumps(entry, ensure_ascii=False) + '\n') 
                             f.flush() 
-                            collected_count += 1 # increment successful counter
-                            all_valid_entries.append(entry) # Save for final count
+                            collected_count += 1 
+                            all_valid_entries.append(entry) 
                             
-                    attempts += 1 # track total generations attempted
-                    if consecutive_zeros >= 50: # if model stuck after 50 attempts, stop generation for that category
+                    attempts += 1 
+                    if consecutive_zeros >= 50: 
                         print(f"  [WARNING] Stuck! 50 consecutive failed attempts. Breaking early.")
                         break
-                    if attempts % 5 == 0: # prints progress every 5 attempts
+                    if attempts % 5 == 0: 
                         print(f"  [{category}] {collected_count}/{target_count} collected (Attempt {attempts})...")
                 except Exception as e:
-                    print(f"Generation error: {e}") # prints error
+                    print(f"Generation error: {e}") 
         print(f"  -> Final count for {category}: {collected_count}\n")
 
-    print(f"\n[SUCCESS] Clean synthetic data saved to {output_path}") # completion message
+    print(f"\n[SUCCESS] Clean synthetic data saved to {output_path}") 
     from collections import Counter
-    counts = Counter(e["label"] for e in all_valid_entries) # counts examples per label
+    counts = Counter(e["label"] for e in all_valid_entries) 
     
     print("Final Breakdown:")
     for label, count in sorted(counts.items()):
