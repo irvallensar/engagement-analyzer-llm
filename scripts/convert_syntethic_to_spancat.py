@@ -27,7 +27,7 @@ def jsonl_to_spancat(input_jsonl, output_spacy):
             
             if span_obj is not None:
                 span_obj.label_ = label
-                doc.spans["engagement"] = [span_obj]
+                doc.spans["sc"] = [span_obj]
                 db.add(doc)
                 success += 1
                 
