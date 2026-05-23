@@ -136,7 +136,7 @@ def parse_response_and_validate(response: str, category: str, seen: set) -> list
 
 def main():
     parser = argparse.ArgumentParser() 
-    parser.add_argument("--output", type=str, default="data/synthetic_data_clean.jsonl", help="Output JSONL file")
+    parser.add_argument("--output", type=str, default="data/synthetic_balanced.jsonl", help="Output JSONL file")
     args = parser.parse_args() 
     output_path = args.output 
 
