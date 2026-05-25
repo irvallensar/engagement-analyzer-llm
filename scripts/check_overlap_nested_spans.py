@@ -70,4 +70,4 @@ def check_original_iob_overlaps(file_path):
     print(f"Sentences with Overlaps:  {sentences_with_overlaps}")
 
 # Point this directly to the original, multi-column EDT train.iob file
-check_original_iob_overlaps('data/train.iob')
+check_original_iob_overlaps('data/synthetic_train.iob')
