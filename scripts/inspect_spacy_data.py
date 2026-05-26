@@ -77,5 +77,13 @@ if __name__ == "__main__":
     # Inspect the purely synthetic dataset
     inspect_spacy_file("data/synthetic_balanced.spacy", sample_size=30)
     
-    # Inspect the finalized merged dataset
+    # Inspect the finalized dataset
     inspect_spacy_file("data/synthetic_train.spacy", sample_size=30)
+    
+    # Inspect the finalized dataser (for 5-fold CV)
+    inspect_spacy_file("data/da_train1.spacy", sample_size=30)
+    inspect_spacy_file("data/da_train2.spacy", sample_size=30)
+    inspect_spacy_file("data/da_train3.spacy", sample_size=30)
+    inspect_spacy_file("data/da_train4.spacy", sample_size=30)
+    inspect_spacy_file("data/da_train5.spacy", sample_size=30)
+    
