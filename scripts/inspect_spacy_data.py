@@ -1,11 +1,12 @@
 import spacy
 from spacy.tokens import DocBin
+from collections import Counter
 import random
 import os
 
 def inspect_spacy_file(file_path, sample_size=20):
     if not os.path.exists(file_path):
-        print(f"[ERROR] Could not find {file_path}. Skipping...\n")
+        print(f"[WARNING] Could not find {file_path}. Skipping...\n")
         return
 
     print(f"=== Analyzing: {file_path} ===")
@@ -19,9 +20,10 @@ def inspect_spacy_file(file_path, sample_size=20):
     total_sentences = len(docs)
     print(f"  -> Total Sentences: {total_sentences}")
     
-    # 2. Check for Overlapping & Nested Spans
+    # 2. Check for Overlapping Spans, Nested Spans, and Count Labels
     overlapping_count = 0
     nested_count = 0
+    label_counts = Counter()
     
     for doc in docs:
         spans = doc.spans.get("sc", [])
@@ -29,6 +31,10 @@ def inspect_spacy_file(file_path, sample_size=20):
         has_nested = False
         
         for i in range(len(spans)):
+            # Tally the label
+            label_counts[spans[i].label_] += 1
+            
+            # Check for overlaps and nesting against other spans in the sentence
             for j in range(i + 1, len(spans)):
                 span_a = spans[i]
                 span_b = spans[j]
@@ -47,9 +53,15 @@ def inspect_spacy_file(file_path, sample_size=20):
     print(f"  -> Sentences with Overlapping Spans: {overlapping_count}")
     print(f"  -> Sentences with Nested Spans: {nested_count}")
     
+    # Print the Label Distribution
+    print("  -> Label Distribution:")
+    for label, count in label_counts.most_common():
+        print(f"       - {label}: {count}")
+    
     # 3. Export Sample for Manual Quality Check
     base_name = os.path.basename(file_path).replace('.spacy', '')
-    output_sample_file = f"data/{base_name}_manual_review.txt"
+    directory = os.path.dirname(file_path)
+    output_sample_file = os.path.join(directory, f"{base_name}_manual_review.txt")
     
     print(f"  -> Extracting {sample_size} random samples for manual review...")
     # Safely sample, in case the file has fewer sentences than the requested sample size
@@ -72,18 +84,17 @@ def inspect_spacy_file(file_path, sample_size=20):
     print(f"  -> [SUCCESS] Sample saved to {output_sample_file}\n")
 
 if __name__ == "__main__":
-    print("\nStarting Pre-Training Data Inspection...\n")
+    print("\nStarting Comprehensive Pre-Training Data Inspection...\n")
     
-    # Inspect the purely synthetic dataset
+    # 1. Inspect the original static split files
     inspect_spacy_file("data/synthetic_balanced.spacy", sample_size=30)
-    
-    # Inspect the finalized dataset
     inspect_spacy_file("data/synthetic_train.spacy", sample_size=30)
     
-    # Inspect the finalized dataser (for 5-fold CV)
-    inspect_spacy_file("data/da_train1.spacy", sample_size=30)
-    inspect_spacy_file("data/da_train2.spacy", sample_size=30)
-    inspect_spacy_file("data/da_train3.spacy", sample_size=30)
-    inspect_spacy_file("data/da_train4.spacy", sample_size=30)
-    inspect_spacy_file("data/da_train5.spacy", sample_size=30)
-    
+    # 2. Inspect the 5-Fold Cross Validation files
+    for fold in range(1, 6):
+        print(f"\n" + "="*40)
+        print(f"         EVALUATING FOLD {fold}")
+        print("="*40 + "\n")
+        
+        inspect_spacy_file(f"data/5_fold_exp/train{fold}.spacy", sample_size=30)
+        inspect_spacy_file(f"data/5_fold_exp/da_train{fold}.spacy", sample_size=30)
