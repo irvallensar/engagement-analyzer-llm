@@ -1,0 +1,93 @@
+--- MANUAL REVIEW SAMPLE FOR: data/synthetic_balanced.spacy ---
+Total Dataset Size: 8000 sentences
+
+Sentence 1: In the debate over free trade, proponents argue that it leads to greater economic efficiency and consumer welfare through increased competition and specialization.
+  [SOURCES] -> 'proponents' (Tokens 7 to 8)
+------------------------------------------------------------
+Sentence 2: The fiscal deficit percentages, as listed in Table 6, indicate a need for budgetary reforms.
+  [ENDOPHORIC] -> 'in Table 6' (Tokens 7 to 10)
+------------------------------------------------------------
+Sentence 3: Regular physical activity has been shown to reduce the risk of cardiovascular diseases, which is why healthcare professionals often recommend a daily exercise routine.
+  [JUSTIFYING] -> 'which is why' (Tokens 14 to 17)
+------------------------------------------------------------
+Sentence 4: Patient satisfaction scores increased following the implementation of telemedicine services, as demonstrated in our study.
+  [CITATION] -> 'as demonstrated in' (Tokens 11 to 14)
+------------------------------------------------------------
+Sentence 5: Thereby ensuring a more robust system, the integration of advanced encryption techniques was essential.
+  [JUSTIFYING] -> 'Thereby ensuring' (Tokens 0 to 2)
+------------------------------------------------------------
+Sentence 6: In elucidating the mechanisms of protein folding, analysts have highlighted the critical role of chaperone proteins in preventing aggregation.
+  [SOURCES] -> 'analysts have highlighted' (Tokens 8 to 11)
+------------------------------------------------------------
+Sentence 7: As illustrated in the case study, the community's resilience was significantly bolstered by its strong social networks.
+  [ENDOPHORIC] -> 'As illustrated in the case study' (Tokens 0 to 6)
+------------------------------------------------------------
+Sentence 8: In the study of urban development, the role of public spaces is crucial, as illustrated in the case of New York City.
+  [ENDOPHORIC] -> 'as illustrated in' (Tokens 15 to 18)
+------------------------------------------------------------
+Sentence 9: Community engagement programs have been shown to reduce crime rates, highlighting the importance of local initiatives, as explored in relevant literature.
+  [CITATION] -> 'as explored in' (Tokens 18 to 21)
+------------------------------------------------------------
+Sentence 10: Participants were able to recall more information when given context clues, so this method enhances memory recall.
+  [JUSTIFYING] -> 'so' (Tokens 12 to 13)
+------------------------------------------------------------
+Sentence 11: In the study below, participants demonstrated a higher proficiency in second language acquisition when exposed to immersive environments.
+  [ENDOPHORIC] -> 'below' (Tokens 3 to 4)
+------------------------------------------------------------
+Sentence 12: The role of artificial intelligence in healthcare has been increasingly recognized, as noted in Patel et al.
+  [CITATION] -> 'as noted in Patel et al.' (Tokens 12 to 19)
+------------------------------------------------------------
+Sentence 13: Quantum superposition, a principle fundamental to quantum mechanics, has been explored in depth by investigators to develop more efficient quantum computing algorithms.
+  [SOURCES] -> 'by investigators' (Tokens 15 to 17)
+------------------------------------------------------------
+Sentence 14: Recent studies suggest that the debate over mental causation, a topic of interest to many scholars, is far from settled.
+  [SOURCES] -> 'of interest to many scholars' (Tokens 12 to 17)
+------------------------------------------------------------
+Sentence 15: Analysts argue that the fall of the Roman Empire was precipitated by a series of internal and external pressures.
+  [SOURCES] -> 'Analysts argue' (Tokens 0 to 2)
+------------------------------------------------------------
+Sentence 16: The evolution of medieval castle architecture is detailed in Figure 7, emphasizing the transition from motte-and-bailey to concentric designs.
+  [ENDOPHORIC] -> 'in Figure 7' (Tokens 8 to 11)
+------------------------------------------------------------
+Sentence 17: The algorithm's efficiency is significantly improved, the former being a critical factor in its widespread adoption.
+  [ENDOPHORIC] -> 'the former' (Tokens 8 to 10)
+------------------------------------------------------------
+Sentence 18: In the context of fiscal stimulus, government spending often yields quicker results compared to tax cuts, with the former directly increasing aggregate demand.
+  [ENDOPHORIC] -> 'the former' (Tokens 19 to 21)
+------------------------------------------------------------
+Sentence 19: Recent studies have indicated that the CRISPR-Cas9 system can be effectively utilized for gene editing in plant cells, as the author elucidates in the latest research.
+  [SOURCES] -> 'as the author elucidates' (Tokens 21 to 25)
+------------------------------------------------------------
+Sentence 20: As a result of these challenges, some philosophers have turned to panpsychism to explain the nature of consciousness.
+  [JUSTIFYING] -> 'As a result of' (Tokens 0 to 4)
+------------------------------------------------------------
+Sentence 21: The model below illustrates the relationship between inflation and unemployment.
+  [ENDOPHORIC] -> 'below' (Tokens 2 to 3)
+------------------------------------------------------------
+Sentence 22: Economic growth in developing countries is increasingly driven by technological advancements, a trend observed and documented by the World Bank.
+  [CITATION] -> 'observed and documented by' (Tokens 14 to 18)
+------------------------------------------------------------
+Sentence 23: Scholars have identified the critical role of early intervention in reducing mortality rates among patients with acute myocardial infarction.
+  [SOURCES] -> 'Scholars have identified' (Tokens 0 to 3)
+------------------------------------------------------------
+Sentence 24: Experimental evidence supporting the existence of quantum tunneling has been robust, as evidenced by the consistent results obtained in various laboratory settings.
+  [CITATION] -> 'as evidenced by' (Tokens 12 to 15)
+------------------------------------------------------------
+Sentence 25: Monetary policy's effectiveness in controlling inflation is debated, as critics highlight its limitations in a globalized economy.
+  [SOURCES] -> 'as critics' (Tokens 10 to 12)
+------------------------------------------------------------
+Sentence 26: The implementation of universal basic income has been met with skepticism, with critics pointing out potential economic drawbacks.
+  [SOURCES] -> 'with critics pointing out' (Tokens 12 to 16)
+------------------------------------------------------------
+Sentence 27: The importance of early intervention in pediatric oncology cannot be overstated, as demonstrated in recent clinical trials.
+  [CITATION] -> 'as demonstrated in' (Tokens 13 to 16)
+------------------------------------------------------------
+Sentence 28: The interaction between the two proteins was confirmed, as evidenced in the co-immunoprecipitation data.
+  [ENDOPHORIC] -> 'as evidenced in' (Tokens 9 to 12)
+------------------------------------------------------------
+Sentence 29: Given that consciousness is a subjective experience, it cannot be fully explained by objective neurological processes alone.
+  [JUSTIFYING] -> 'Given that' (Tokens 0 to 2)
+------------------------------------------------------------
+Sentence 30: The debate over whether consciousness can be fully explained by physical processes continues, with proponents on both sides presenting compelling arguments.
+  [SOURCES] -> 'proponents on both sides' (Tokens 15 to 19)
+------------------------------------------------------------
