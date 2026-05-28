@@ -5,11 +5,13 @@ import random
 import os
 
 def inspect_spacy_file(file_path, sample_size=20):
+    # Stop early if the expected .spacy file is missing, so the rest of the inspection can continue.
     if not os.path.exists(file_path):
         print(f"[WARNING] Could not find {file_path}. Skipping...\n")
         return
 
     print(f"=== Analyzing: {file_path} ===")
+    # A blank English pipeline is enough here because DocBin only needs the vocabulary to reconstruct docs.
     nlp = spacy.blank("en")
     doc_bin = DocBin().from_disk(file_path)
     
@@ -26,6 +28,7 @@ def inspect_spacy_file(file_path, sample_size=20):
     label_counts = Counter()
     
     for doc in docs:
+        # The custom span group "sc" is where this project stores span categorizer annotations.
         spans = doc.spans.get("sc", [])
         has_overlap = False
         has_nested = False
@@ -46,7 +49,7 @@ def inspect_spacy_file(file_path, sample_size=20):
                     if (span_a.start >= span_b.start and span_a.end <= span_b.end) or \
                        (span_b.start >= span_a.start and span_b.end <= span_a.end):
                         has_nested = True
-        
+        # Count each sentence only once, even if it contains multiple overlapping or nested span pairs.
         if has_overlap: overlapping_count += 1
         if has_nested: nested_count += 1
         
@@ -59,6 +62,7 @@ def inspect_spacy_file(file_path, sample_size=20):
         print(f"       - {label}: {count}")
     
     # 3. Export Sample for Manual Quality Check
+    # The sample review file is saved next to the inspected .spacy file for easier comparison.
     base_name = os.path.basename(file_path).replace('.spacy', '')
     directory = os.path.dirname(file_path)
     output_sample_file = os.path.join(directory, f"{base_name}_manual_review.txt")
@@ -72,6 +76,7 @@ def inspect_spacy_file(file_path, sample_size=20):
         f.write(f"Total Dataset Size: {total_sentences} sentences\n\n")
         
         for i, doc in enumerate(sample_docs):
+            # Each sampled sentence is printed with its annotated spans and token boundaries.
             f.write(f"Sentence {i+1}: {doc.text}\n")
             spans = doc.spans.get("sc", [])
             if not spans:
@@ -92,6 +97,7 @@ if __name__ == "__main__":
     
     # 2. Inspect the 5-Fold Cross Validation files
     for fold in range(1, 6):
+        # The fold banner makes it easier to scan console output across all cross-validation splits.
         print(f"\n" + "="*40)
         print(f"         EVALUATING FOLD {fold}")
         print("="*40 + "\n")
