@@ -6,9 +6,11 @@ import torch
 
 def load_texts_from_spacy(file_path):
     print(f"Reading texts from {file_path}...")
+    # A blank English pipeline is enough to unpack DocBin documents without running a full NLP model.
     nlp = spacy.blank("en")
     doc_bin = DocBin().from_disk(file_path)
     docs = list(doc_bin.get_docs(nlp.vocab))
+    # Empty or whitespace-only documents are ignored so they do not affect embedding quality metrics.
     return [doc.text for doc in docs if len(doc.text.strip()) > 0]
 
 def main():
@@ -21,6 +23,7 @@ def main():
     
     # 2. Initialize the Sentence Transformer
     print("\nLoading sentence-transformers/all-MiniLM-L6-v2...")
+    # Prefer GPU acceleration when available, then Apple Silicon MPS, and otherwise fall back to CPU.
     device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
     model = SentenceTransformer('all-MiniLM-L6-v2', device=device)
     print(f"Running on device: {device}")
@@ -40,6 +43,7 @@ def main():
     all_max_similarities = []
     
     for i in range(0, len(synthetic_embeddings), batch_size):
+        # Slice the synthetic embeddings so each similarity matrix stays within memory limits.
         batch_syn = synthetic_embeddings[i:i+batch_size]
         # Compute cosine similarity matrix for this batch against all human embeddings
         similarity_matrix = util.cos_sim(batch_syn, human_embeddings)
@@ -47,11 +51,12 @@ def main():
         # Find the highest similarity score for each synthetic sentence to ANY human sentence
         max_sim_per_sentence = torch.max(similarity_matrix, dim=1).values
         all_max_similarities.extend(max_sim_per_sentence.cpu().tolist())
-        
+    # Convert to NumPy so the summary statistics below can be computed directly.        
     all_max_similarities = np.array(all_max_similarities)
     
     # 5. Compile Statistical Summary
     mean_sim = np.mean(all_max_similarities)
+    # These values summarize how closely synthetic sentences resemble the nearest human-written sentence.
     std_sim = np.std(all_max_similarities)
     min_sim = np.min(all_max_similarities)
     max_sim = np.max(all_max_similarities)
@@ -67,6 +72,7 @@ def main():
     
     # Save results to a file for your thesis appendix
     output_path = "data/synthetic_similarity_report.txt"
+    # The report mirrors the console output and records dataset sizes for reproducibility.
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("=== Sentence Transformer Similarity Report ===\n")
         f.write(f"Model Used: sentence-transformers/all-MiniLM-L6-v2\n")
