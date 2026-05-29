@@ -1,13 +1,19 @@
 import spacy
 from spacy.tokens import DocBin, Span
+import os
 
 def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
+    if not os.path.exists(baseline_model_path):
+        print(f"[ERROR] Baseline model path not found: {baseline_model_path}")
+        return
+
     print(f"Loading best baseline human model from: {baseline_model_path}")
     nlp = spacy.load(baseline_model_path)
     
-    print(f"Reading pristine synthetic documents from: {synthetic_input_path}")
+    print(f"Reading pristine synthetic documents using model vocabulary...")
     doc_bin_in = DocBin().from_disk(synthetic_input_path)
-    raw_docs = list(doc_bin_in.get_docs(spacy.blank("en").vocab))
+    # CRUCIAL FIX: Use nlp.vocab instead of spacy.blank("en").vocab
+    raw_docs = list(doc_bin_in.get_docs(nlp.vocab))
     
     processed_doc_bin = DocBin()
     added_labels_count = 0
@@ -35,8 +41,8 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
             # Check if this predicted token span overlaps with any part of our gold label
             span_tokens = set(range(p_span.start, p_span.end))
             if not span_tokens.intersection(gold_boundaries):
-                # Construct a clean new Span object inside the current doc context
-                new_span = Span(doc, p_span.start, p_span.end, label=p_span.label)
+                # CRUCIAL FIX: Use p_span.label_ (string text) instead of p_span.label (integer hash)
+                new_span = Span(doc, p_span.start, p_span.end, label=p_span.label_)
                 merged_spans.append(new_span)
                 added_labels_count += 1
                 # Update boundaries to prevent self-collisions within predictions
@@ -48,15 +54,15 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
         processed_doc_bin.add(doc)
         
     print(f"\nDistillation Complete!")
-    print(f"-> Preserved Gold Labels: {original_labels_count}")
+    print(f"-> Preserved Gold Labels from Qwen: {original_labels_count}")
     print(f"-> Recovered Pseudo-Labels (Missing background classes): {added_labels_count}")
     
     processed_doc_bin.to_disk(output_path)
     print(f"[SUCCESS] Dense synthetic training data saved to: {output_path}")
 
 if __name__ == "__main__":
-    # Point this to whichever baseline fold directory achieved your highest overall validation performance
-    BEST_BASELINE_FOLD = "models/fold1_baseline/model-best"
+    # Point this to whichever baseline fold directory achieved your highest overall performance
+    BEST_BASELINE_FOLD = "models/fold1_baseline/model-best" 
     SYNTHETIC_DATA = "data/synthetic_balanced.spacy"
     OUTPUT_DATA = "data/synthetic_pseudo_labeled.spacy"
     
