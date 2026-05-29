@@ -1,0 +1,139 @@
+--- MANUAL REVIEW SAMPLE FOR: data/synthetic_pseudo_labeled.spacy ---
+Total Dataset Size: 8000 sentences
+
+Sentence 1: The researchers decided to use a convolutional neural network, so the model could better recognize complex patterns in images.
+  [JUSTIFYING] -> 'so the model could' (Tokens 10 to 14)
+  [ATTRIBUTION] -> 'decided' (Tokens 2 to 3)
+  [SOURCES] -> 'The researchers' (Tokens 0 to 2)
+------------------------------------------------------------
+Sentence 2: In the study of sociolinguistics, the influence of social factors on language use is significant, a point emphasized by Brown.
+  [CITATION] -> 'emphasized by' (Tokens 19 to 21)
+  [SOURCES] -> 'Brown' (Tokens 21 to 22)
+  [ATTRIBUTION] -> 'In the study of sociolinguistics' (Tokens 0 to 5)
+------------------------------------------------------------
+Sentence 3: Recent analyses have highlighted the role of climate change in the collapse of ancient civilizations, a perspective supported in environmental history texts.
+  [CITATION] -> 'supported in' (Tokens 18 to 20)
+  [SOURCES] -> 'Recent analyses' (Tokens 0 to 2)
+  [ATTRIBUTION] -> 'have highlighted' (Tokens 2 to 4)
+  [SOURCES] -> 'environmental history texts' (Tokens 20 to 23)
+------------------------------------------------------------
+Sentence 4: The theoretical framework for quantum teleportation was first proposed and experimentally verified, as demonstrated in the work by Bouwmeester et al.
+  [CITATION] -> 'as demonstrated in' (Tokens 13 to 16)
+------------------------------------------------------------
+Sentence 5: Monetary policy adjustments have been more aggressive compared to fiscal measures, the former often leading to quicker economic responses.
+  [ENDOPHORIC] -> 'the former' (Tokens 12 to 14)
+  [ENTERTAIN] -> 'often' (Tokens 14 to 15)
+  [MONOGLOSS] -> 'have been' (Tokens 3 to 5)
+------------------------------------------------------------
+Sentence 6: The uncertainty principle, a cornerstone of quantum theory, is extensively discussed in the comprehensive guide to quantum physics.
+  [CITATION] -> 'extensively discussed in' (Tokens 11 to 14)
+------------------------------------------------------------
+Sentence 7: Economic models that incorporate behavioral finance principles tend to better predict market anomalies than those that do not, the former accounting for psychological factors.
+  [ENDOPHORIC] -> 'the former' (Tokens 19 to 21)
+  [ENTERTAIN] -> 'tend to' (Tokens 7 to 9)
+  [DENY] -> 'do not' (Tokens 16 to 18)
+------------------------------------------------------------
+Sentence 8: In the study of sociolinguistics, the role of gender in language use has been extensively explored, revealing that, as noted by Holmes (1995), women tend to use more standard forms of language in mixed-gender interactions.
+  [CITATION] -> 'as noted by' (Tokens 21 to 24)
+  [ATTRIBUTION] -> 'revealing' (Tokens 18 to 19)
+  [ENTERTAIN] -> 'tend to' (Tokens 30 to 32)
+  [SOURCES] -> 'the study of sociolinguistics' (Tokens 1 to 5)
+  [ATTRIBUTION] -> 'has been extensively explored' (Tokens 13 to 17)
+------------------------------------------------------------
+Sentence 9: In the debate over the effectiveness of cognitive-behavioral therapy, opponents often cite the lack of long-term follow-up studies.
+  [SOURCES] -> 'opponents often cite' (Tokens 12 to 15)
+------------------------------------------------------------
+Sentence 10: The syntactic structures discussed in this paper are exemplified in various sentences, see section 3 for detailed examples.
+  [ENDOPHORIC] -> 'see section 3' (Tokens 13 to 16)
+  [MONOGLOSS] -> 'are exemplified' (Tokens 7 to 9)
+  [ENDOPHORIC] -> 'in this paper' (Tokens 4 to 7)
+------------------------------------------------------------
+Sentence 11: Sustainable agricultural practices are vital for food security, given that they ensure long-term productivity of the land.
+  [JUSTIFYING] -> 'given that' (Tokens 9 to 11)
+  [MONOGLOSS] -> 'are' (Tokens 3 to 4)
+------------------------------------------------------------
+Sentence 12: The data in Table 5 supports the argument that pollution levels have significantly decreased since the implementation of new regulations.
+  [ENDOPHORIC] -> 'in Table 5' (Tokens 2 to 5)
+  [PROCLAIM] -> 'supports' (Tokens 5 to 6)
+  [ATTRIBUTION] -> 'the argument' (Tokens 6 to 8)
+------------------------------------------------------------
+Sentence 13: Quantum teleportation, a process enabling the transfer of quantum states between entangled particles, has been experimentally verified, as reported in numerous studies.
+  [CITATION] -> 'as reported in' (Tokens 20 to 23)
+  [SOURCES] -> 'numerous studies' (Tokens 23 to 25)
+  [ATTRIBUTION] -> 'has been experimentally verified' (Tokens 15 to 19)
+------------------------------------------------------------
+Sentence 14: The economic policies of the Tudor dynasty, as detailed in section 3.2, significantly influenced the agricultural output of England.
+  [ENDOPHORIC] -> 'in section 3.2' (Tokens 10 to 13)
+------------------------------------------------------------
+Sentence 15: The concept of qualia challenges the reductionist view of mental states, this is why philosophers argue for a more nuanced understanding of consciousness.
+  [JUSTIFYING] -> 'this is why' (Tokens 12 to 15)
+  [MONOGLOSS] -> 'challenges' (Tokens 4 to 5)
+  [SOURCES] -> 'philosophers' (Tokens 15 to 16)
+  [ATTRIBUTION] -> 'argue' (Tokens 16 to 17)
+------------------------------------------------------------
+Sentence 16: The analysis in the previous section reveals the significant impact of fiscal policy on economic growth.
+  [ENDOPHORIC] -> 'in the previous section' (Tokens 2 to 6)
+  [PROCLAIM] -> 'reveals' (Tokens 6 to 7)
+------------------------------------------------------------
+Sentence 17: Clinical trials and observational studies consistently show the benefits of exercise in managing diabetes.
+  [SOURCES] -> 'studies consistently show' (Tokens 4 to 7)
+------------------------------------------------------------
+Sentence 18: Community engagement programs have been implemented in various cities, with mixed outcomes, the latter often attributed to inadequate funding.
+  [ENDOPHORIC] -> 'the latter' (Tokens 14 to 16)
+  [ENTERTAIN] -> 'often' (Tokens 16 to 17)
+  [MONOGLOSS] -> 'have been implemented' (Tokens 3 to 6)
+------------------------------------------------------------
+Sentence 19: Cognitive biases, as identified by experts, play a crucial role in decision-making processes.
+  [SOURCES] -> 'as identified by experts' (Tokens 3 to 7)
+  [MONOGLOSS] -> 'play' (Tokens 8 to 9)
+------------------------------------------------------------
+Sentence 20: Above all, the reduction in carbon emissions is essential for mitigating climate change.
+  [ENDOPHORIC] -> 'Above all' (Tokens 0 to 2)
+  [MONOGLOSS] -> 'is' (Tokens 8 to 9)
+------------------------------------------------------------
+Sentence 21: Given the non-commutative nature of quantum operators, it is evident that the order of measurements can affect outcomes, illustrating the fundamental uncertainty in quantum systems.
+  [JUSTIFYING] -> 'it is evident that' (Tokens 10 to 14)
+  [ENTERTAIN] -> 'can' (Tokens 18 to 19)
+------------------------------------------------------------
+Sentence 22: The economic policies of the late Qing dynasty were largely reactive, hence they failed to address the underlying structural issues.
+  [JUSTIFYING] -> 'hence they failed' (Tokens 12 to 15)
+  [ENTERTAIN] -> 'largely' (Tokens 9 to 10)
+------------------------------------------------------------
+Sentence 23: The role of women in the French Revolution was multifaceted, involving both public and private spheres, as noted in Women and the French Revolution by Landers.
+  [CITATION] -> 'as noted in Women and the French Revolution by Landers' (Tokens 18 to 28)
+  [MONOGLOSS] -> 'was' (Tokens 8 to 9)
+------------------------------------------------------------
+Sentence 24: Inflation rates are expected to stabilize, according to market analysts who have observed recent trends in commodity prices.
+  [SOURCES] -> 'according to market analysts' (Tokens 7 to 11)
+  [ATTRIBUTION] -> 'are expected' (Tokens 2 to 4)
+  [ATTRIBUTION] -> 'have observed' (Tokens 12 to 14)
+------------------------------------------------------------
+Sentence 25: The acquisition of phonological rules is a critical phase in language development, for this reason, it receives considerable attention in linguistic studies.
+  [JUSTIFYING] -> 'for this reason' (Tokens 13 to 16)
+  [MONOGLOSS] -> 'is' (Tokens 5 to 6)
+  [MONOGLOSS] -> 'receives' (Tokens 18 to 19)
+------------------------------------------------------------
+Sentence 26: The investigators at MIT found that quantum computing could revolutionize data processing speeds, offering unprecedented capabilities in computational tasks.
+  [SOURCES] -> 'The investigators' (Tokens 0 to 2)
+  [ATTRIBUTION] -> 'found' (Tokens 4 to 5)
+  [ENTERTAIN] -> 'could' (Tokens 8 to 9)
+------------------------------------------------------------
+Sentence 27: Data preprocessing is crucial for improving model accuracy, which is why it is often the first step in any data analysis pipeline.
+  [JUSTIFYING] -> 'which is why' (Tokens 9 to 12)
+  [MONOGLOSS] -> 'is' (Tokens 2 to 3)
+  [ENTERTAIN] -> 'often' (Tokens 14 to 15)
+------------------------------------------------------------
+Sentence 28: Due to the reliance on empirical data, cognitive science offers a unique perspective on the philosophy of mind that challenges traditional philosophical approaches.
+  [JUSTIFYING] -> 'Due to the reliance' (Tokens 0 to 4)
+  [MONOGLOSS] -> 'offers' (Tokens 10 to 11)
+------------------------------------------------------------
+Sentence 29: The author's analysis of quantum field theory provides a deeper insight into the nature of particle interactions.
+  [SOURCES] -> 'The author's' (Tokens 0 to 3)
+  [MONOGLOSS] -> 'provides' (Tokens 8 to 9)
+------------------------------------------------------------
+Sentence 30: Recent studies have shown that quantum computing can significantly outperform classical methods, a claim supported by theorists in the field.
+  [SOURCES] -> 'by theorists' (Tokens 16 to 18)
+  [ENTERTAIN] -> 'can' (Tokens 7 to 8)
+  [SOURCES] -> 'Recent studies' (Tokens 0 to 2)
+  [ATTRIBUTION] -> 'have shown' (Tokens 2 to 4)
+------------------------------------------------------------
