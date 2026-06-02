@@ -16,7 +16,7 @@ def load_texts_from_spacy(file_path):
 def main():
     # 1. Load the text sets
     human_texts = load_texts_from_spacy("data/train.spacy")
-    synthetic_texts = load_texts_from_spacy("data/synthetic_pseudo_labeled.spacy")
+    synthetic_texts = load_texts_from_spacy("data/synthetic_pseudo_labeled_few_shot.spacy")
     
     print(f"Loaded {len(human_texts)} human sentences.")
     print(f"Loaded {len(synthetic_texts)} synthetic sentences.")
