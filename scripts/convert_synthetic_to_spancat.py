@@ -34,4 +34,4 @@ def jsonl_to_spancat(input_jsonl, output_spacy):
     db.to_disk(output_spacy)
     print(f"Successfully compiled {success} synthetic sentences directly to {output_spacy}.")
 
-jsonl_to_spancat('data/synthetic_balanced.jsonl', 'data/synthetic_balanced.spacy')
+jsonl_to_spancat('data/synthetic_few_shot.jsonl', 'data/synthetic_few_shot.spacy')
