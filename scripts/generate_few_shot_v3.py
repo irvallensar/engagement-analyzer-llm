@@ -4,8 +4,8 @@ import json
 import random
 import re
 import os
+from collections import Counter
 
-# Target generation counts
 TARGET_CLASSES = {
     "ENDOPHORIC": 2000,
     "JUSTIFYING": 2000,
@@ -13,7 +13,6 @@ TARGET_CLASSES = {
     "CITATION":   2000
 }
 
-# Academic domains for topical diversity
 DOMAINS = [
     "Computer Science", "Sociology", "Molecular Biology", "History",
     "Macroeconomics", "Linguistics", "Quantum Physics", "Cognitive Psychology",
@@ -22,7 +21,6 @@ DOMAINS = [
     "Literary Studies", "Urban Planning", "Neuroscience", "International Relations"
 ]
 
-# Expanded SEED_TRIGGERS — more variety reduces deduplication rejections
 SEED_TRIGGERS = {
     "ENDOPHORIC": [
         "in Table", "as shown in", "above", "the following", "as described",
@@ -33,9 +31,9 @@ SEED_TRIGGERS = {
     "SOURCES": [
         "researchers", "scholars", "previous studies", "recent studies",
         "experts", "the literature", "existing research", "empirical evidence",
-        "the report by", "according to the", "studies have shown",
-        "the findings of", "evidence suggests", "the data from",
-        "the survey by", "analysts", "practitioners in the field"
+        "studies have shown", "the findings", "evidence suggests",
+        "analysts", "practitioners", "survey data", "field studies",
+        "academic consensus", "prior work"
     ],
     "JUSTIFYING": [
         "because", "therefore", "thus", "since", "given that",
@@ -51,7 +49,7 @@ SEED_TRIGGERS = {
     ]
 }
 
-# V3 FIX: Hand-Curated, Leak-Proof Complex Human Examples
+# The fully curated, leak-proof, complex human examples
 GOLD_EXAMPLES = {
     "ENDOPHORIC": [
         "The final method, however, as it is used commonly as well as in the present study, was rendered by Beatty and Gibbons in 1937 (Farber, 1965). | in the present study",
@@ -82,98 +80,118 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
         "explicit authorial pronouns (I believe, we contend) UNLESS they are specifically "
         "part of the requested marker.\n"
     )
-    
     variation_seed = random.randint(10000, 99999)
     few_shot_context = "\n".join([f"{i+1}. {ex}" for i, ex in enumerate(GOLD_EXAMPLES[category])])
-    
+
     return (
         f"You are an expert academic writer in the field of {domain}.\n"
         f"Write exactly 5 distinct academic sentences where the phrase \"{trigger}\" "
         f"functions specifically as a {category} engagement marker.\n\n"
-        f"IMPORTANT: The phrase \"{trigger}\" must function as {category} in context, "
-        f"NOT as any other engagement type. For example:\n"
-        f"- If category is JUSTIFYING, '{trigger}' must establish a causal justification, "
-        f"not a counter-expectation.\n"
-        f"- If category is ENDOPHORIC, '{trigger}' must refer to content within the same "
-        f"text, not to an external source.\n"
-        f"- If category is SOURCES, '{trigger}' must reference a vague group of researchers "
-        f"or scholars, not a specific named author.\n"
-        f"- If category is CITATION, '{trigger}' must reference a specific named external "
-        f"source, not a vague group.\n\n"
+        f"IMPORTANT: The phrase \"{trigger}\" must function as {category} in context.\n\n"
         f"Variation Seed: {variation_seed}\n\n"
         f"{negative_constraints}\n"
-        f"DIVERSITY RULES:\n"
-        f"- Vary sentence length.\n"
-        f"- Place the marker at different positions (beginning, middle, end).\n"
-        f"- Each sentence must be on its own line in this exact format:\n"
-        f"  <sentence> | <marker span>\n\n"
-        f"FEW-SHOT EXAMPLES (MIMIC THIS EXACT TONE, COMPLEXITY, AND FORMAT):\n"
+        f"STRICT FORMAT RULE: Every line MUST follow this exact format with the marker "
+        f"copied EXACTLY as it appears in the sentence:\n"
+        f"  <full sentence> | <exact marker text copied from sentence>\n\n"
+        f"FEW-SHOT EXAMPLES:\n"
         f"{few_shot_context}\n\n"
         f"NOW GENERATE 5 NEW SENTENCES:\n"
     )
 
 def get_robust_span_boundaries(text: str, span_text: str):
+    """
+    Accepts first match even for multi-match spans.
+    Also tries progressively relaxed matching if exact match fails.
+    """
+    # Attempt 1: flexible regex match
     escaped_span = re.escape(span_text)
-    flexible_pattern = escaped_span.replace(r'\ ', r'\s*')
+    flexible_pattern = escaped_span.replace(r'\ ', r'\s+')
     flexible_pattern = flexible_pattern.replace(r'\(', r'\(\s*').replace(r'\)', r'\s*\)')
     matches = list(re.finditer(flexible_pattern, text, re.IGNORECASE))
-    
-    if len(matches) >= 1:
+    if matches:
         return matches[0].group(0)
-        
+
+    # Attempt 2: try matching just the first few words of the span
+    # Handles cases where model writes slightly different span than sentence
+    span_words = span_text.split()
+    if len(span_words) >= 2:
+        short_pattern = r'\s+'.join(re.escape(w) for w in span_words[:3])
+        short_matches = list(re.finditer(short_pattern, text, re.IGNORECASE))
+        if short_matches:
+            # Return the full span starting from this match position
+            start = short_matches[0].start()
+            end = min(start + len(span_text) + 10, len(text))
+            return text[start:end].strip()
+
     return None
 
-def parse_response_and_validate(response: str, category: str, seen: set) -> list:
+def parse_response_and_validate(response: str, category: str, seen: set) -> tuple:
+    """Returns (results, rejection_counts) for diagnostics."""
     results = []
+    rejections = Counter()
+
     for line in response.split('\n'):
         line = line.strip()
-        if '|' not in line: continue
+
+        # Handle numbered lines like "1. sentence | span"
+        line = re.sub(r'^[\d]+[\.\)]\s*', '', line).strip()
+
+        if '|' not in line:
+            rejections['no_pipe'] += 1
+            continue
         parts = line.split('|', 1)
-        if len(parts) < 2: continue
-        
+        if len(parts) < 2:
+            rejections['no_pipe'] += 1
+            continue
+
         sentence = parts[0].strip()
         marker = parts[1].strip()
-        sentence = re.sub(r'^[\d\.\-\)\s]+', '', sentence).strip()
-        
-        if not sentence or not marker: continue
-        if len(sentence.split()) < 5: continue  # skip suspiciously short sentences
-        
+
+        if not sentence or not marker:
+            rejections['empty'] += 1
+            continue
+        if len(sentence.split()) < 5:
+            rejections['too_short'] += 1
+            continue
+
         key = sentence.lower().strip()
-        if key in seen: continue
+        if key in seen:
+            rejections['duplicate'] += 1
+            continue
 
         exact_span = get_robust_span_boundaries(sentence, marker)
-        
-        if exact_span:
-            seen.add(key)
-            results.append({"text": sentence, "label": category, "span": exact_span})
-            
-    return results
+        if not exact_span:
+            rejections['span_not_found'] += 1
+            continue
+
+        seen.add(key)
+        results.append({"text": sentence, "label": category, "span": exact_span})
+
+    return results, rejections
 
 def main():
     parser = argparse.ArgumentParser()
-    # Outputting directly to v3
-    parser.add_argument("--output", type=str, default="data/synthetic_few_shot_v3.jsonl", help="Output JSONL file")
+    parser.add_argument("--output", type=str, default="data/synthetic_few_shot_v3.jsonl")
     args = parser.parse_args()
     output_path = args.output
 
-    print("Loading MLX model for Few-Shot V3 synthetic data generation...")
+    print("Loading MLX model...")
     model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
     model, tokenizer = mlx_lm.load(model_id)
     print("Model loaded.\n")
 
-    print(f"Starting generation. Saving directly to {output_path}...\n")
     seen_sentences = set()
     all_valid_entries = []
 
     if os.path.exists(output_path):
-        print(f"Found existing file at {output_path}. Loading previous progress...")
+        print(f"Resuming from {output_path}...")
         with open(output_path, 'r', encoding='utf-8') as f:
             for line in f:
                 if not line.strip(): continue
                 data = json.loads(line.strip())
                 seen_sentences.add(data["text"].lower().strip())
                 all_valid_entries.append(data)
-        print(f"Loaded {len(seen_sentences)} sentences into deduplication memory.\n")
+        print(f"Loaded {len(seen_sentences)} existing sentences.\n")
 
     for category, target_count in TARGET_CLASSES.items():
         existing_count = sum(1 for e in all_valid_entries if e["label"] == category)
@@ -183,25 +201,30 @@ def main():
             print(f"[{category}] Already completed ({collected_count}/{target_count}). Skipping...")
             continue
 
-        print(f"Generating Few-Shot V3 sentences for {category} (Target: {target_count}, Currently at: {collected_count})...")
+        print(f"\nGenerating {category} (Target: {target_count}, Currently: {collected_count})...")
         attempts = 0
         consecutive_zeros = 0
-
-        # Run until target is hit or truly stuck
-        max_attempts = 99999
-        max_consecutive_zeros = 150  # Elevated threshold for complex examples
+        total_rejections = Counter()
 
         with open(output_path, 'a', encoding='utf-8') as f:
-            while collected_count < target_count and attempts < max_attempts:
+            while collected_count < target_count and attempts < 99999:
                 domain = random.choice(DOMAINS)
                 trigger = random.choice(SEED_TRIGGERS[category])
                 prompt = build_prompt(category, domain, trigger)
                 messages = [{"role": "user", "content": prompt}]
-                formatted = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+                formatted = tokenizer.apply_chat_template(
+                    messages, tokenize=False, add_generation_prompt=True
+                )
 
                 try:
-                    response = mlx_lm.generate(model, tokenizer, prompt=formatted, max_tokens=1024, verbose=False)
-                    parsed = parse_response_and_validate(response, category, seen_sentences)
+                    response = mlx_lm.generate(
+                        model, tokenizer, prompt=formatted,
+                        max_tokens=1024, verbose=False
+                    )
+                    parsed, rejections = parse_response_and_validate(
+                        response, category, seen_sentences
+                    )
+                    total_rejections.update(rejections)
 
                     if len(parsed) == 0:
                         consecutive_zeros += 1
@@ -216,20 +239,24 @@ def main():
                             all_valid_entries.append(entry)
 
                     attempts += 1
-                    if consecutive_zeros >= max_consecutive_zeros:
-                        print(f"  [WARNING] Stuck! {max_consecutive_zeros} consecutive failed attempts. Breaking early.")
+
+                    if consecutive_zeros >= 150:
+                        print(f"  [WARNING] 150 consecutive empty batches. Breaking.")
                         break
-                    if attempts % 10 == 0:
-                        print(f"  [{category}] {collected_count}/{target_count} collected (Attempt {attempts})...")
+
+                    # Print progress + rejection breakdown every 20 attempts
+                    if attempts % 20 == 0:
+                        print(f"  [{category}] {collected_count}/{target_count} "
+                              f"(Attempt {attempts}) | Rejections: {dict(total_rejections)}")
+                        total_rejections.clear()  # reset per window
+
                 except Exception as e:
                     print(f"Generation error: {e}")
 
-        print(f"  -> Final count for {category}: {collected_count}\n")
+        print(f"  -> Final count for {category}: {collected_count}")
 
-    print(f"\n[SUCCESS] Clean Few-Shot V3 synthetic data saved to {output_path}")
-    from collections import Counter
+    print(f"\n[SUCCESS] Saved to {output_path}")
     counts = Counter(e["label"] for e in all_valid_entries)
-
     print("Final Breakdown:")
     for label, count in sorted(counts.items()):
         print(f"  {label:15s}: {count}")
