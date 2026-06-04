@@ -13,6 +13,7 @@ TARGET_CLASSES = {
     "CITATION":   2000
 }
 
+# Academic domains for topical diversity
 DOMAINS = [
     "Computer Science", "Sociology", "Molecular Biology", "History",
     "Macroeconomics", "Linguistics", "Quantum Physics", "Cognitive Psychology",
@@ -21,6 +22,7 @@ DOMAINS = [
     "Literary Studies", "Urban Planning", "Neuroscience", "International Relations"
 ]
 
+# Expanded SEED_TRIGGERS — more variety reduces deduplication rejections
 SEED_TRIGGERS = {
     "ENDOPHORIC": [
         "in Table", "as shown in", "above", "the following", "as described",
@@ -49,28 +51,27 @@ SEED_TRIGGERS = {
     ]
 }
 
-# V3 FIX: Complex, argumentative examples to prevent background class starvation.
-# These force the model to mimic sentences containing COUNTER, DENY, and PROCLAIM vocabulary.
+# V3 FIX: Hand-Curated, Leak-Proof Complex Human Examples
 GOLD_EXAMPLES = {
     "ENDOPHORIC": [
-        "While the information above , all discussed carbon in the soil , the Great Britain paper provided information for how much carbon was in the vegetation . | the information above",
-        "As illustrated by the above studies , the exact effects of particular prosecutorial strategies and case dispositions upon repeat violence or arrest remains unclear at this time — although we might tentatively assert that prosecution appears to bring about some positive outcomes , particularly within the context of a coordinated community response . | above",
-        "Finally , given that both approaches have essentially been developed within the wider Generative Grammar framework , it is likely that the minor differences of perspective and emphasis noted in this essay will , in time , be reconciled along the lines suggested by Grimshaw ( 1994 ) . | in this essay"
-    ],
-    "JUSTIFYING": [
-        "Although a wealth of research has identified more violence exposure , particularly victimization , among boys , perhaps this is a fallacious conclusion due to the existence of unmeasured community violence in these studies that girls are more likely to experience than males . | due to the existence of unmeasured community violence in these studies that girls are more likely to experience than males",
-        "Admittedly , this is not a conclusive finding as the sample size used was quite small and the ranking system was not completely objective or scientific . | as the sample size used",
-        "However , intuitively it is insufficient to ensure the safety of safety - critical system , since safety - critical software must have a very low probability of failure - typically 10 -8 to 10 -9 . | since safety - critical software must have a very low probability of failure - typically 10 -8 to 10 -9"
+        "The final method, however, as it is used commonly as well as in the present study, was rendered by Beatty and Gibbons in 1937 (Farber, 1965). | in the present study",
+        "As shown in Figure 1, it can be reasonably concluded that sacrifices are made at frequency levels where the human ear is not as sensitive. | in Figure 1",
+        "Finally, given that both approaches have essentially been developed within the wider Generative Grammar framework, it is likely that the minor differences of perspective and emphasis noted in this essay will, in time, be reconciled along the lines suggested by Grimshaw (1994). | in this essay"
     ],
     "SOURCES": [
-        "Although the FDA denied that it \" [ bowed ] to political pressure in making this decision , \" conservative lobbyists and congress members applied political pressure before the decision was made , and post - decision , liberal congress members called for the resignation of Mr. Galson ( 2328 ) . | the FDA",
-        "Although a wealth of research has identified more violence exposure , particularly victimization , among boys , perhaps this is a fallacious conclusion due to the existence of unmeasured community violence in these studies that girls are more likely to experience than males . | a wealth of research",
-        "However , although this interpretation of Hegel 's claim is generally considered flawed , modern interpretations have had more success . | Hegel"
+        "Considerable research indicates that people expect positive behavior from others when they are not given reasons to expect negative behavior. | Considerable research",
+        "While historically imported nursery stock has been the most common source of nonindigenous forest insects, most researchers agree that infested solid wood packing materials was the source for this invasion (Poland and Mcullough, et al., 2006). | most researchers",
+        "Many scholars, the most important of which may be Judith Butler (1990) and Joan Scott (1988) have argued that the differences among those traditionally identified as women are discursively produced and unfixed. | Many scholars"
+    ],
+    "JUSTIFYING": [
+        "However, intuitively it is insufficient to ensure the safety of safety-critical systems, since safety-critical software must have a very low probability of failure — typically 10⁻⁸ to 10⁻⁹. | since safety-critical software must have a very low probability of failure — typically 10⁻⁸ to 10⁻⁹",
+        "Therefore it is imperative that students, wherever possible and physically able-bodied, be able to contribute to the household income by working part time. | Therefore",
+        "Poor management practices that cause stress also contribute to high rates of infection as they lower a calf's ability to fight off the infection. | as they"
     ],
     "CITATION": [
-        "Although the FDA denied that it \" [ bowed ] to political pressure in making this decision , \" conservative lobbyists and congress members applied political pressure before the decision was made , and post - decision , liberal congress members called for the resignation of Mr. Galson ( 2328 ) . | ( 2328 )",
-        "Mass assault and arrests of women were not an uncommon sight any longer , which the particularly violent events of ' Black Friday ' in November 1910 highlighted ( Vicinus 1985 ) . | ( Vicinus 1985 )",
-        "His theory of commoditization of IT , with electricity and railroad analogy , however , do have their limitations and constraints . ( Brown et al 2003 ) | ( Brown et al 2003 )"
+        "However Reichheld and Schefter (2000) found that less than 20% of the online companies take advantage of this opportunity thus neglecting chances of up selling. | Reichheld and Schefter (2000)",
+        "The existing AWV is planned to be demolished in 2012 despite the lack of a consensus by federal, state, and local government officials of how to reroute the traffic (McGann 2008). | (McGann 2008)",
+        "For example, Bandura (1965) had a group of 3-5 year old children watch a video of an adult acting aggressively with a Bobo doll and another group who did not see this demonstration. | Bandura (1965)"
     ]
 }
 
@@ -135,7 +136,7 @@ def parse_response_and_validate(response: str, category: str, seen: set) -> list
         sentence = re.sub(r'^[\d\.\-\)\s]+', '', sentence).strip()
         
         if not sentence or not marker: continue
-        if len(sentence.split()) < 5: continue 
+        if len(sentence.split()) < 5: continue  # skip suspiciously short sentences
         
         key = sentence.lower().strip()
         if key in seen: continue
@@ -150,12 +151,12 @@ def parse_response_and_validate(response: str, category: str, seen: set) -> list
 
 def main():
     parser = argparse.ArgumentParser()
-    # Outputting to v3 to keep a clean record
+    # Outputting directly to v3
     parser.add_argument("--output", type=str, default="data/synthetic_few_shot_v3.jsonl", help="Output JSONL file")
     args = parser.parse_args()
     output_path = args.output
 
-    print("Loading MLX model for Few-Shot V3 (Complex Examples) generation...")
+    print("Loading MLX model for Few-Shot V3 synthetic data generation...")
     model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
     model, tokenizer = mlx_lm.load(model_id)
     print("Model loaded.\n")
@@ -182,11 +183,13 @@ def main():
             print(f"[{category}] Already completed ({collected_count}/{target_count}). Skipping...")
             continue
 
-        print(f"Generating V3 Few-Shot sentences for {category} (Target: {target_count}, Currently at: {collected_count})...")
+        print(f"Generating Few-Shot V3 sentences for {category} (Target: {target_count}, Currently at: {collected_count})...")
         attempts = 0
         consecutive_zeros = 0
+
+        # Run until target is hit or truly stuck
         max_attempts = 99999
-        max_consecutive_zeros = 150  
+        max_consecutive_zeros = 150  # Elevated threshold for complex examples
 
         with open(output_path, 'a', encoding='utf-8') as f:
             while collected_count < target_count and attempts < max_attempts:
@@ -223,7 +226,7 @@ def main():
 
         print(f"  -> Final count for {category}: {collected_count}\n")
 
-    print(f"\n[SUCCESS] Clean V3 Few-Shot synthetic data saved to {output_path}")
+    print(f"\n[SUCCESS] Clean Few-Shot V3 synthetic data saved to {output_path}")
     from collections import Counter
     counts = Counter(e["label"] for e in all_valid_entries)
 
