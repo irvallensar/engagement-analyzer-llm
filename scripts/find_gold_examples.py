@@ -52,7 +52,7 @@ def mine_leak_proof_gold():
                         count += 1
                         break
                         
-            if count >= 3: # We only need 3 solid examples per class
+            if count >= 6: # We only need 3 solid examples per class
                 break
 
 if __name__ == "__main__":
