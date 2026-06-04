@@ -2,58 +2,44 @@ import spacy
 from spacy.tokens import DocBin
 import os
 
-def mine_leak_proof_gold():
+def mine_generic_sources():
     nlp = spacy.blank("en")
-    master_train_path = "data/train.spacy"
-    fold_dir = "data/5_fold_exp"
+    master_db = DocBin().from_disk("data/train.spacy")
+    docs = list(master_db.get_docs(nlp.vocab))
     
-    if not os.path.exists(master_train_path):
-        print(f"Could not find master human data at {master_train_path}")
-        return
-        
-    # 1. Load all test set texts into a blacklist set to guarantee zero data leakage
+    # Load the leakage blacklist
     test_blacklist = set()
     for fold in range(1, 6):
-        test_path = f"{fold_dir}/test{fold}.spacy"
+        test_path = f"data/5_fold_exp/test{fold}.spacy"
         if os.path.exists(test_path):
             test_db = DocBin().from_disk(test_path)
             for doc in test_db.get_docs(nlp.vocab):
                 test_blacklist.add(doc.text.strip().lower())
-                
-    print(f"Loaded {len(test_blacklist)} test sentences into the leakage blacklist.")
+
+    diversity_words = ["although", "however", "despite", "not", "but", "while", "failed"]
+    # These force the span to be a generic group, avoiding 'he', 'his', 'it'
+    generic_nouns = ["research", "studies", "scholars", "critics", "literature", "authors", "analysts", "evidence"]
     
-    # 2. Open the master train file
-    master_db = DocBin().from_disk(master_train_path)
-    docs = list(master_db.get_docs(nlp.vocab))
-    
-    diversity_keywords = ["although", "however", "despite", "not", "but", "while", "failed"]
-    targets = ["ENDOPHORIC", "JUSTIFYING", "SOURCES", "CITATION"]
-    
-    print("\n=== MINING LEAK-PROOF COMPLEX HUMAN EXAMPLES ===")
-    for target in targets:
-        print(f"\n--- Leak-Proof Candidates for {target} ---")
-        count = 0
+    print("\n--- Leak-Proof Generic Candidates for SOURCES ---")
+    count = 0
+    for doc in docs:
+        text = doc.text.strip()
+        if text.lower() in test_blacklist: continue
         
-        for doc in docs:
-            cleaned_text = doc.text.strip()
-            text_lower = cleaned_text.lower()
+        has_div = any(w in text.lower() for w in diversity_words)
+        if not has_div: continue
             
-            # Skip if the sentence leaks into any test fold
-            if text_lower in test_blacklist:
-                continue
-                
-            has_target = any(span.label_ == target for span in doc.spans.get("sc", []))
-            has_diversity = any(word in text_lower for word in diversity_keywords)
-            
-            if has_target and has_diversity:
-                for span in doc.spans.get("sc", []):
-                    if span.label_ == target:
-                        print(f'"{cleaned_text} | {span.text.strip()}"')
-                        count += 1
-                        break
-                        
-            if count >= 6: # We only need 3 solid examples per class
-                break
+        for span in doc.spans.get("sc", []):
+            if span.label_ == "SOURCES":
+                # Only accept the span if it contains a generic noun
+                if any(noun in span.text.lower() for noun in generic_nouns):
+                    # Clean DOCSTART for output
+                    clean_text = text.replace("-DOCSTART-", "").strip()
+                    print(f'"{clean_text} | {span.text.strip()}"')
+                    count += 1
+                    break
+        if count >= 3:
+            break
 
 if __name__ == "__main__":
-    mine_leak_proof_gold()
+    mine_generic_sources()
