@@ -95,6 +95,7 @@ if __name__ == "__main__":
     inspect_spacy_file("data/synthetic_balanced.spacy", sample_size=30)
     inspect_spacy_file("data/synthetic_pseudo_labeled.spacy", sample_size=30)
     inspect_spacy_file("data/synthetic_pseudo_labeled_few_shot.spacy", sample_size=30)
+    inspect_spacy_file("data/synthetic_pseudo_labeled_few_shot_v3.spacy", sample_size=30)
     
     # 2. Inspect the 5-Fold Cross Validation files
     for fold in range(1, 6):
