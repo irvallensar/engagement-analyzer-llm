@@ -2,7 +2,7 @@ import spacy
 from spacy.tokens import DocBin
 import os
 
-def mine_abundant_gold():
+def mine_gold_examples():
     nlp = spacy.blank("en")
     master_db = DocBin().from_disk("data/train.spacy")
     docs = list(master_db.get_docs(nlp.vocab))
@@ -66,4 +66,4 @@ def mine_abundant_gold():
                 break
 
 if __name__ == "__main__":
-    mine_abundant_gold()
+    mine_gold_examples()
