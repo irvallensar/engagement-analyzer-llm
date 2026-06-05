@@ -63,8 +63,7 @@ def main():
 
                 examples = []
                 for doc in ref_docs:
-                    predicted = nlp.make_doc(doc.text)
-                    predicted = nlp(predicted)
+                    predicted = nlp(doc.text)
                     examples.append(Example(predicted, doc))
 
                 scores = nlp.evaluate(examples)
