@@ -48,7 +48,7 @@ def parse_multicolumn_iob(input_path):
 def main():
     # Load the 8,000 synthetic sentences once
     print("Loading synthetic data...")
-    synthetic_db = DocBin().from_disk("data/synthetic_pseudo_labeled_few_shot_v3.spacy")
+    synthetic_db = DocBin().from_disk("data/synthetic_pseudo_labeled_zero_shot.spacy")
     synthetic_docs = list(synthetic_db.get_docs(nlp.vocab))
     print(f"Loaded {len(synthetic_docs)} synthetic sentences.\n")
 
