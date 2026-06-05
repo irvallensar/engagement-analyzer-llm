@@ -9,9 +9,9 @@ import os
 # Use '{}' where the fold number (1-5) should go.
 # =====================================================================
 MODELS = {
-    "RoBERTa-base (Baseline)": "./models/fold{}/model-best", 
-    "DA-RoBERTa (Zero-Shot)": "./models/fold{}_zero_shot/model-best",
-    "DA-RoBERTa (Few-Shot V3)": "./models/fold{}_few_shot_v3/model-best"
+    "RoBERTa-base (Baseline)": "./models/fold{}_baseline/model-best", 
+    "DA-RoBERTa (Zero-Shot)": "./models/fold{}_augmented/model-best",
+    "DA-RoBERTa (Few-Shot)": "./models/fold{}_few_shot_v3/model-best"
 }
 
 TEST_DATA_PATH = "./data/5_fold_exp/test{}.spacy"
