@@ -63,7 +63,7 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
 if __name__ == "__main__":
     # Point this to whichever baseline fold directory achieved your highest overall performance
     BEST_BASELINE_FOLD = "models/fold1_baseline/model-best" 
-    SYNTHETIC_DATA = "data/synthetic_few_shot_v3.spacy"
-    OUTPUT_DATA = "data/synthetic_pseudo_labeled_few_shot_v3.spacy"
+    SYNTHETIC_DATA = "data/synthetic_zero_shot.spacy"
+    OUTPUT_DATA = "data/synthetic_pseudo_labeled_zero_shot.spacy"
     
     merge_pseudo_labels(BEST_BASELINE_FOLD, SYNTHETIC_DATA, OUTPUT_DATA)
