@@ -29,14 +29,6 @@ SEED_TRIGGERS = {
     "CITATION": ["as noted in", "as argued by", "as shown by", "as demonstrated in"]
 }
 
-#taken directly from engagement-annotation-project github (EDT)
-GOLD_EXAMPLES = {
-    "ENDOPHORIC": "As Table 3 shows, vocabulary size and depth were significantly correlated. | Table 3",
-    "SOURCES": "Previous studies showed this effect consistently. | Previous studies",
-    "JUSTIFYING": "These methods were selected because they offer greater precision. | because",
-    "CITATION": " Some predictions made by Robertson et al (1999) make this even clearer. | Robertson et al (1999)"
-}
-
 # Takes a category, domain, trigger phrase, returns a fully formatted prompt string.
 # Negative constraints that tells the model what to avoid.
 def build_prompt(category: str, domain: str, trigger: str) -> str:
@@ -75,7 +67,6 @@ def build_prompt(category: str, domain: str, trigger: str) -> str:
         f"- Each sentence must be on its own line in this exact format:\n"
         f"  <sentence> | <marker span>\n\n"
         f"EXAMPLE OF GOLD STANDARD FORMATTING:\n"
-        f"{GOLD_EXAMPLES[category]}\n\n"
         f"NOW GENERATE 5 NEW SENTENCES:\n"
 )
 
