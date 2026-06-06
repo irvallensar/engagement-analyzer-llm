@@ -3,6 +3,8 @@ from spacy.tokens import DocBin
 from spacy.training.example import Example
 from collections import defaultdict
 import os
+import thinc
+spacy.require_gpu()
 
 MODELS = {
     "RoBERTa-base (Baseline)": "./models/fold{}_baseline/model-best", 
