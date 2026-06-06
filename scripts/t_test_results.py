@@ -4,7 +4,7 @@ import numpy as np
 # Plug in your exact 5-fold Macro F1 scores (at the 0.5 threshold)
 baseline_scores = np.array([66.05, 66.14, 65.38, 66.87, 66.98])
 zero_shot_scores = np.array([64.54, 69.43, 70.83, 67.86, 70.64])
-few_shot_v3_scores = np.array([64.95, 70.70, 71.32, 66.47, 70.90, 68.87])
+few_shot_v3_scores = np.array([64.95, 70.70, 71.32, 66.47, 70.90])
 
 print("=== PAIRED T-TEST RESULTS ===")
 
