@@ -6,7 +6,7 @@ import os
 
 MODELS = {
     "RoBERTa-base (Baseline)": "./models/fold{}_baseline/model-best", 
-    "DA-RoBERTa (Zero-Shot)": "./models/fold{}_augmented/model-best",
+    "DA-RoBERTa (Zero-Shot)": "./models/fold{}_zero_shot/model-best",
     "DA-RoBERTa (Few-Shot V3)": "./models/fold{}_few_shot_v3/model-best"
 }
 
