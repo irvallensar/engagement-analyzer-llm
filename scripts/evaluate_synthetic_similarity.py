@@ -38,7 +38,7 @@ def main():
     # 4. Calculate Cosine Similarity
     print("\nCalculating semantic similarity matrix...")
     
-    # To prevent out-of-memory errors on large corpuses, we process in batches
+    # To prevent out-of-memory errors on large corpuses, process it in batches
     batch_size = 1000
     all_max_similarities = []
     
@@ -70,9 +70,8 @@ def main():
     print(f"Maximum Similarity:     {max_sim:.4f}")
     print("="*40)
     
-    # Save results to a file for your thesis appendix
+    # Save results to a text file 
     output_path = "data/synthetic_similarity_report.txt"
-    # The report mirrors the console output and records dataset sizes for reproducibility.
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("=== Sentence Transformer Similarity Report ===\n")
         f.write(f"Model Used: sentence-transformers/all-MiniLM-L6-v2\n")
