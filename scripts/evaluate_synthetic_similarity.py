@@ -27,7 +27,7 @@ def main():
     # The synthetic dataset will be compared against it.
     human_texts = load_texts_from_spacy("data/train.spacy")
     synthetic_texts = load_texts_from_spacy("data/synthetic_pseudo_labeled_few_shot_v3.spacy")
-    
+
     print(f"Loaded {len(human_texts)} human sentences.")
     print(f"Loaded {len(synthetic_texts)} synthetic sentences.")
     
