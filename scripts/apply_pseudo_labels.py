@@ -2,6 +2,12 @@ import spacy
 from spacy.tokens import DocBin, Span
 import os
 
+# Minimum confidence score required for a pseudo-label to be accepted.
+# Spans predicted below this threshold are discarded as unreliable.
+# 0.7 is a conventional starting point in the pseudo-labelling literature:
+# it balances label reliability against retaining sufficient augmentation volume.
+CONFIDENCE_THRESHOLD = 0.7
+
 # Merge gold synthetic labels with pseudo-labels predicted by a trained baseline model.
 # The goal is to densify the training data by preserving trusted synthetic labels
 # while filling in missing background entity classes predicted by the model.
@@ -54,43 +60,42 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
                 gold_boundaries.add(token_idx)
         
         # STEP 2: Run the baseline model to predict additional spans
-
         # Re-run inference on the raw document text
         predicted_doc = nlp(doc.text)
 
-        # Retrieve predicted spancat annotations
+        # Retrieve predicted spancat annotations and their confidence scores
         predicted_spans = predicted_doc.spans.get("sc", [])
+        span_scores = predicted_doc.spans["sc"].attrs.get("scores", [])
         
-        # STEP 3: Merge only non-conflicting predictions
-
-        # Start with all original gold spans
+        # STEP 3: Merge only non-conflicting, HIGH-CONFIDENCE predictions
         merged_spans = gold_spans.copy()
+        CONFIDENCE_THRESHOLD = 0.7
 
-        for p_span in predicted_spans:
+        # Ensure scores are available to avoid zip errors
+        if len(predicted_spans) == len(span_scores):
+            for p_span, score in zip(predicted_spans, span_scores):
+                
+                # Check confidence threshold first
+                if score >= CONFIDENCE_THRESHOLD:
+                    span_tokens = set(range(p_span.start, p_span.end))
 
-            # Convert predicted span into a token index set
-            # for overlap detection
-            span_tokens = set(range(p_span.start, p_span.end))
+                    # Only add predictions that do not overlap with existing gold annotations
+                    if not span_tokens.intersection(gold_boundaries):
+                        new_span = Span(
+                            doc,
+                            p_span.start,
+                            p_span.end,
+                            label=p_span.label_
+                        )
 
-            # Only add predictions that do not overlap
-            # with any existing gold annotation
-            if not span_tokens.intersection(gold_boundaries):
-                # Use label text (label_) instead of integer hash (label)
-                # so labels remain portable and interpretable.
-                new_span = Span(
-                    doc,
-                    p_span.start,
-                    p_span.end,
-                    label=p_span.label_
-                )
+                        merged_spans.append(new_span)
+                        added_labels_count += 1
 
-                merged_spans.append(new_span)
-                added_labels_count += 1
-
-                # Update occupancy map so future predicted spans
-                # cannot overlap with spans we've already accepted
-                for idx in span_tokens:
-                    gold_boundaries.add(idx)
+                        # Update occupancy map
+                        for idx in span_tokens:
+                            gold_boundaries.add(idx)
+        else:
+            print("[WARNING] Span scores not found. Ensure the spancat component saves scores.")
                     
         # Store the final merged span collection
         doc.spans["sc"] = merged_spans
@@ -113,7 +118,7 @@ if __name__ == "__main__":
 
     # Point this to whichever baseline fold directory
     # achieved the strongest validation performance
-    BEST_BASELINE_FOLD = "models/fold1_baseline/model-best" 
+    BEST_BASELINE_FOLD = "models/roberta_large_teacher/model-best"
 
     # Input synthetic dataset containing only gold synthetic labels
     SYNTHETIC_DATA = "data/synthetic_zero_shot.spacy"
