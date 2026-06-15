@@ -108,12 +108,13 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
     print(f"\nDistillation Complete!")
     print(f"-> Preserved Gold Labels from Qwen: {original_labels_count}")
     print(f"-> Recovered Pseudo-Labels (Missing background classes): {added_labels_count}")
+    print(f"-> Rejected Low-Confidence Pseudo-Labels (<{CONFIDENCE_THRESHOLD}): {rejected_labels_count}")
     
     # Save the densified dataset to disk
     processed_doc_bin.to_disk(output_path)
 
     print(f"[SUCCESS] Dense synthetic training data saved to: {output_path}")
-    print(f"-> Rejected Low-Confidence Pseudo-Labels (<{CONFIDENCE_THRESHOLD}): {rejected_labels_count}")
+
 
 if __name__ == "__main__":
 
