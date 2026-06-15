@@ -38,6 +38,7 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
     # Statistics for reporting
     added_labels_count = 0
     original_labels_count = 0
+    rejected_labels_count = 0 # ADDED rejected_labels_count
     
     print("Beginning knowledge distillation scan...")
 
@@ -94,6 +95,8 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
                         # Update occupancy map
                         for idx in span_tokens:
                             gold_boundaries.add(idx)
+                else:
+                    rejected_labels_count += 1  # ADDED THIS span failed confidence gate
         else:
             print("[WARNING] Span scores not found. Ensure the spancat component saves scores.")
                     
