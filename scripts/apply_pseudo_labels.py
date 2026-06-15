@@ -126,10 +126,10 @@ if __name__ == "__main__":
     BEST_BASELINE_FOLD = "models/roberta_large_teacher/model-best"
 
     # Input synthetic dataset containing only gold synthetic labels
-    SYNTHETIC_DATA = "data/synthetic_zero_shot.spacy"
+    SYNTHETIC_DATA = "data/synthetic_few_shot_v3.spacy"
 
     # Output dataset containing gold labels + pseudo-labels
-    OUTPUT_DATA = "data/synthetic_pseudo_labeled_zero_shot.spacy"
+    OUTPUT_DATA = "data/synthetic_pseudo_labeled_few_shot_v3.spacy"
     
     # Run the merge pipeline
     merge_pseudo_labels(BEST_BASELINE_FOLD, SYNTHETIC_DATA, OUTPUT_DATA)
