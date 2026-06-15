@@ -71,7 +71,7 @@ def main():
     print("Loading synthetic data...")
     # Synthetic documents are reused for every fold's
     # augmented training dataset.
-    synthetic_db = DocBin().from_disk("data/synthetic_pseudo_labeled_zero_shot.spacy")
+    synthetic_db = DocBin().from_disk("data/synthetic_pseudo_labeled_few_shot_v3.spacy")
     synthetic_docs = list(synthetic_db.get_docs(nlp.vocab))
 
     print(f"Loaded {len(synthetic_docs)} synthetic sentences.\n")
