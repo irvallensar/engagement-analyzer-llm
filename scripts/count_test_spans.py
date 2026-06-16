@@ -13,7 +13,7 @@ def main():
 
     # Loop through all 5 test folds
     for fold in range(1, 6):
-        file_path = f"data/5_fold_exp/test{fold}.spacy"
+        file_path = f"data/5_fold_exp/train{fold}.spacy"
 
         if not os.path.exists(file_path):
             print(f"[WARNING] {file_path} not found.")
