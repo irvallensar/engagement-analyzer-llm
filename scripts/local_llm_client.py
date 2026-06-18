@@ -2,7 +2,7 @@ import mlx_lm
 
 print("Loading model and adapters into Unified Memory...")
 model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
-model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters/adapters.safetensors")
+model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters")
 print("Model loaded successfully! Ready for inference.")
 
 def call_local_llm(sentence_text):
