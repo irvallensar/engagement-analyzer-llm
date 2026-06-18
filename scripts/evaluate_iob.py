@@ -301,16 +301,36 @@ def evaluate(filepath, max_samples=None):
     print("\n")
     print("CATEGORY BREAKDOWN (STRICT)")
     all_labels = set(list(cat_tp.keys()) + list(cat_fp.keys()) + list(cat_fn.keys()))
+    
+    # --- NEW: Variables to track Macro and Weighted sums for Strict Spans ---
+    macro_strict_f1_sum = 0
+    weighted_strict_f1_sum = 0
+    total_strict_support = 0
+
     for label in sorted(all_labels):
         c_tp = cat_tp[label]
         c_fp = cat_fp[label]
         c_fn = cat_fn[label]
+        
+        # Support is the true number of spans for this label
+        support = c_tp + c_fn
+        total_strict_support += support
+
         c_p = c_tp / (c_tp + c_fp) if (c_tp + c_fp) > 0 else 0
         c_r = c_tp / (c_tp + c_fn) if (c_tp + c_fn) > 0 else 0
         c_f1 = 2 * (c_p * c_r) / (c_p + c_r) if (c_p + c_r) > 0 else 0
+        
+        # --- NEW: Add to our running totals ---
+        macro_strict_f1_sum += c_f1
+        weighted_strict_f1_sum += (c_f1 * support)
+
         print(f"--- {label} ---")
         print(f"  TP: {c_tp} | FP: {c_fp} | FN: {c_fn}")
         print(f"  P: {c_p:.4f} | R: {c_r:.4f} | F1: {c_f1:.4f}")
+
+    # --- NEW: Calculate final Strict averages ---
+    macro_strict_f1 = macro_strict_f1_sum / len(all_labels) if len(all_labels) > 0 else 0
+    weighted_strict_f1 = weighted_strict_f1_sum / total_strict_support if total_strict_support > 0 else 0
 
     precision = true_positives / (true_positives + false_positives) if (true_positives + false_positives) > 0 else 0
     recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0
@@ -322,10 +342,12 @@ def evaluate(filepath, max_samples=None):
     print(f"False Positives (Hallucinations) : {false_positives}")
     print(f"False Negatives (Missed Markers) : {false_negatives}")
     print("----------------------------------------")
-    print(f"Precision : {precision:.4f}")
-    print(f"Recall    : {recall:.4f}")
-    print(f"F1-Score  : {f1:.4f}")
-
+    print(f"Precision (Micro) : {precision:.4f}")
+    print(f"Recall (Micro)    : {recall:.4f}")
+    print(f"F1-Score (Micro)  : {f1:.4f}")
+    print(f"F1-Score (Macro)  : {macro_strict_f1:.4f}")
+    print(f"F1-Score (Weighted): {weighted_strict_f1:.4f}")
+  
     # Token math printout and its formula (Micro)
     t_precision = token_tp / (token_tp + token_fp) if (token_tp + token_fp) > 0 else 0
     t_recall = token_tp / (token_tp + token_fn) if (token_tp + token_fn) > 0 else 0
