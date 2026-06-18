@@ -1,8 +1,3 @@
-import time
-from datetime import timedelta
-import threading
-import csv
-import psutil
 import os
 import json
 import re
@@ -17,39 +12,17 @@ from scripts.local_llm_client import call_local_llm    # function that sends pro
 from scripts.llm_utils import parse_llm_json    # function that converts the LLM's raw text response into a python list   
 
 nlp = spacy.load("en_core_web_sm")    #load spaCy model
+PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_finetune_run25_RETRY_few_shot.json" # the cache of the run 
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_finetune_run25_RETRY_few_shot.json" # The master (final) record of the whole run
+CACHE_FILE = DRIVE_DIR / "predictions_cache_32b.json" # the cache of the run (containing the logs such as predicted spans 
+                                                  # from the LLM, data saved)
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b.json" # The master (final) record of the whole run
 
-# Hardware tracking setup
-HARDWARE_LOG_FILE = DRIVE_DIR / "hardware_usage_32b_finetune_run25_RETRY_few_shot.csv"
-
-# Global flag to stop the thread when evaluation is done
-stop_monitoring = False 
-
-def monitor_hardware(interval=60):
-    """Runs in the background and logs CPU/RAM every 'interval' seconds."""
-    with open(HARDWARE_LOG_FILE, mode='w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(["Timestamp", "CPU_Percent", "RAM_Used_GB", "RAM_Percent"])
-        
-        while not stop_monitoring:
-            current_time = time.strftime('%Y-%m-%d %H:%M:%S')
-            cpu_usage = psutil.cpu_percent(interval=None)
-            
-            # Get RAM in GB
-            virtual_mem = psutil.virtual_memory()
-            ram_used_gb = virtual_mem.used / (1024 ** 3)
-            ram_percent = virtual_mem.percent
-            
-            writer.writerow([current_time, cpu_usage, round(ram_used_gb, 2), ram_percent])
-            file.flush() # Force write to disk immediately
-            
-            time.sleep(interval)
-
+def load_prompt():    # load prompt
+    return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
 
 def load_cache():
     if CACHE_FILE.exists():
@@ -70,47 +43,32 @@ def save_eval_log(log_data):
         json.dump(log_data, f, indent=4)
 
 def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
-    llm_raw = call_local_llm(text)
-
-    # --- ADD THIS DEBUG PRINT ---
-    print(f"\n[DEBUG] RAW LLM OUTPUT: {llm_raw}")
-    # ----------------------------
-
-    # Clean markdown wrappers SAFELY using replace, NOT strip
-    if isinstance(llm_raw, str):
-        llm_raw = llm_raw.replace('```json', '').replace('```', '').strip()
-
+    prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
+    llm_raw = call_local_llm(prompt) # sends it to the llm (ollama) and gets the raw response
+    
     try:
+        # Use Regex to aggressively search for the JSON array and ignore chatty text
         match = re.search(r'\[.*\]', llm_raw, re.DOTALL)
         if match:
             clean_json = match.group(0)
             llm_items = json.loads(clean_json)
         else:
+            # Fallback to your original parser just in case
             llm_items = parse_llm_json(llm_raw)
-
+            
     except Exception as e:
         print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    
         return []
-  
-    pred_spans = [] # <--- THIS IS THE FIX: Initialize the list so it always exists!
-
+      
+    pred_spans = []
+    
     for item in llm_items:    # Loops through each span the LLM predicted
-        if not isinstance(item, dict):
-            continue  # Skip this item if the LLM hallucinated a string instead of a dictionary
-          
         label = item.get("label", "O")
-        
-        # --- ADD THIS STRICT FILTER ---
-        allowed_labels = {"ATTRIBUTION", "CITATION", "COUNTER", "DENY", "ENDOPHORIC", 
-                          "ENTERTAIN", "JUSTIFYING", "MONOGLOSS", "PROCLAIM", "SOURCES"}
-        if label not in allowed_labels:
-            continue
-        # ------------------------------
-        
+        # Ignore "O" and empty string labels (""), as we only want the engagement markers (labels)
         if label == "O" or not label.strip():
             continue
             
-        span_text = item.get("span") or item.get("text", "")   # gets the actual text of the predicted span
+        span_text = item.get("text", "")    # gets the actual text of the predicted span
         context_before = item.get("context_before", "").strip()    # gets the words before the span (target), used 
                                                                    # to find the exact location if the same words appear multiple times
         
@@ -124,9 +82,7 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
             search_string = f"{context_before} {span_text}"
             combo_start = text.find(search_string)
             if combo_start != -1:
-                print(f"[ANCHOR FOUND] {label}: {search_string}")
                 start_char = combo_start + len(context_before) + 1 # +1 skips the space between context_before and span_text
-                
         
         # 2. Fallback if context anchoring fails or wasn't provided
         if start_char == -1:
@@ -227,18 +183,11 @@ def parse_iob_file(filepath):
         
     return dataset
 
+
 # --- EVALUATION  ---
 
 # Loads the full dataset
 def evaluate(filepath, max_samples=None):
-    # Start the stopwatch
-    start_time = time.time()
-    print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Started Evaluation Run...")
-
-    # Launch the tracker in the background
-    monitor_thread = threading.Thread(target=monitor_hardware, args=(60,))
-    monitor_thread.start()
-  
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
     
@@ -331,18 +280,6 @@ def evaluate(filepath, max_samples=None):
     # Save the complete log to disk after the loop finishes
     save_eval_log(master_eval_log)
     print(f"\n[SUCCESS] Master evaluation log saved to {EVAL_LOG_FILE}")
-
-    # Stop the stopwatch and kill the monitor
-    end_time = time.time()
-    elapsed_time = end_time - start_time
-
-    global stop_monitoring
-    stop_monitoring = True
-    monitor_thread.join() # Wait for the thread to safely close
-
-    print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Evaluation Complete!")
-    print(f"Total Run Time: {timedelta(seconds=int(elapsed_time))}")
-    print(f"Hardware usage saved to {HARDWARE_LOG_FILE}")
 
   # ----- CALCULATION OF PERFORMANCE METRIC SCORES ------
     
