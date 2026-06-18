@@ -1,36 +1,42 @@
-import mlx_lm
+from mlx_lm import load, generate
 
-print("Loading model and adapters into Unified Memory...")
-model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
-model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters")
-print("Model loaded successfully! Ready for inference.")
+# We initialize these as None globally. 
+# This ensures the massive model only loads into the Mac's RAM once, 
+# rather than reloading for every single sentence.
+model = None
+tokenizer = None
 
-def call_local_llm(sentence_text):
+def call_local_llm(prompt_text):
+    global model, tokenizer
+    
+    # 1. Load the model (Only happens on the first sentence)
+    if model is None or tokenizer is None:
+        print("\n[SYSTEM] Loading MLX model into Mac Studio memory... (This takes a moment)")
+        
+        # This will automatically download the 4-bit MLX model from HuggingFace
+        # If you upgrade to 32B later, you just change this string!
+        model_id = "mlx-community/Qwen2.5-32B-Instruct-4bit"
+        model, tokenizer = load(model_id)
 
-    with open("prompts/candidate_labeling.txt", "r", encoding="utf-8") as f:
-        SYSTEM_PROMPT = f.read()
-
-    prompt_text = SYSTEM_PROMPT.replace("{sentence}", sentence_text)
-
+    # 2. Format the prompt for Qwen 2.5 Instruct
+    # Qwen models expect a specific ChatML format (System message -> User message)
     messages = [
-        {
-            "role": "system",
-            "content": prompt_text
-        }
+        {"role": "system", "content": "You are an expert computational linguist."},
+        {"role": "user", "content": prompt_text}
     ]
-
+    
+    # The tokenizer automatically wraps your prompt in Qwen's required syntax
     formatted_prompt = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True
+        messages, tokenize=False, add_generation_prompt=True
     )
-
-    response = mlx_lm.generate(
-        model,
-        tokenizer,
-        prompt=formatted_prompt,
-        max_tokens=1024,
-        verbose=False
+    
+    # 3. Generate the response
+    response = generate(
+        model, 
+        tokenizer, 
+        prompt=formatted_prompt, 
+        max_tokens=1000,   # High enough to allow for the <thought_process> block
+        verbose=False      # Keeps your terminal output clean
     )
-
+    
     return response
