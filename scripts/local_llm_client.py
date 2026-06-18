@@ -6,32 +6,31 @@ model, tokenizer = mlx_lm.load(model_id, adapter_path="adapters")
 print("Model loaded successfully! Ready for inference.")
 
 def call_local_llm(sentence_text):
-    SYSTEM_PROMPT = (
-        "You are an expert linguistic annotator. Analyze the sentence and extract all Engagement markers. "
-        "Output a JSON array of dictionaries with 'label' and 'span' keys. "
-        "The 10 valid tags are: ATTRIBUTION, CITATION, COUNTER, DENY, ENDOPHORIC, ENTERTAIN, JUSTIFYING, MONOGLOSS, PROCLAIM, SOURCES. "
-        "Example Input: I do not believe this approach works. "
-        "Example Output: [{\"label\": \"DENY\", \"span\": \"not\"}, {\"label\": \"ENTERTAIN\", \"span\": \"believe\"}] "
-        "If there are no markers, output []."
-    )
-    
+
+    with open("candidate_labeling.txt", "r", encoding="utf-8") as f:
+        SYSTEM_PROMPT = f.read()
+
+    prompt_text = SYSTEM_PROMPT.replace("{sentence}", sentence_text)
+
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": f"Analyze this sentence:\n\n{sentence_text}"}
+        {
+            "role": "system",
+            "content": prompt_text
+        }
     ]
-    
+
     formatted_prompt = tokenizer.apply_chat_template(
-        messages, 
-        tokenize=False, 
+        messages,
+        tokenize=False,
         add_generation_prompt=True
     )
-    
+
     response = mlx_lm.generate(
-        model, 
-        tokenizer, 
-        prompt=formatted_prompt, 
-        max_tokens=1024, 
+        model,
+        tokenizer,
+        prompt=formatted_prompt,
+        max_tokens=1024,
         verbose=False
     )
-    
-    return response # Return raw XML string to the evaluator
+
+    return response
