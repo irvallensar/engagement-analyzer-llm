@@ -7,7 +7,7 @@ print("Model loaded successfully! Ready for inference.")
 
 def call_local_llm(sentence_text):
 
-    with open("candidate_labeling.txt", "r", encoding="utf-8") as f:
+    with open("prompts/candidate_labeling.txt", "r", encoding="utf-8") as f:
         SYSTEM_PROMPT = f.read()
 
     prompt_text = SYSTEM_PROMPT.replace("{sentence}", sentence_text)
