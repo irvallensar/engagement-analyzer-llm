@@ -17,9 +17,9 @@ DRIVE_DIR = Path("logs")
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_32b.json" # the cache of the run (containing the logs such as predicted spans 
+CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_RETRY.json" # the cache of the run (containing the logs such as predicted spans 
                                                   # from the LLM, data saved)
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b.json" # The master (final) record of the whole run
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_RETRY.json" # The master (final) record of the whole run
 
 def load_prompt():    # load prompt
     return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
@@ -207,6 +207,11 @@ def evaluate(filepath, max_samples=None):
     token_tp, token_fp, token_fn = 0, 0, 0
     cat_tp, cat_fp, cat_fn = defaultdict(int), defaultdict(int), defaultdict(int)
 
+    # --- NEW: Initialize token-level category dictionaries ---
+    token_cat_tp = defaultdict(int)
+    token_cat_fp = defaultdict(int)
+    token_cat_fn = defaultdict(int)
+
     for i, data in enumerate(dataset):
         cache_key = str(i)
         evaluated_live = False 
@@ -265,6 +270,16 @@ def evaluate(filepath, max_samples=None):
         token_fp += len(tok_fp)
         token_fn += len(tok_fn)
 
+        # --- NEW: Populate token-level category counts ---
+        for idx, label in tok_tp:
+            token_cat_tp[label] += 1
+
+        for idx, label in tok_fp:
+            token_cat_fp[label] += 1
+
+        for idx, label in tok_fn:
+            token_cat_fn[label] += 1
+
         # 4. NEW: Append everything to the Master Log
         # We convert sets to lists so they can be saved as JSON
         log_entry = {
@@ -311,10 +326,39 @@ def evaluate(filepath, max_samples=None):
     print(f"Recall    : {recall:.4f}")
     print(f"F1-Score  : {f1:.4f}")
 
-    # Token math printout and its formula
+    # Token math printout and its formula (Micro)
     t_precision = token_tp / (token_tp + token_fp) if (token_tp + token_fp) > 0 else 0
     t_recall = token_tp / (token_tp + token_fn) if (token_tp + token_fn) > 0 else 0
-    t_f1 = 2 * (t_precision * t_recall) / (t_precision + t_recall) if (t_precision + t_recall) > 0 else 0
+    t_micro_f1 = 2 * (t_precision * t_recall) / (t_precision + t_recall) if (t_precision + t_recall) > 0 else 0
+
+    # --- NEW: Macro and Weighted Token F1 Calculation ---
+    token_labels = set(list(token_cat_tp.keys()) + list(token_cat_fp.keys()) + list(token_cat_fn.keys()))
+    
+    macro_f1_sum = 0
+    weighted_f1_sum = 0
+    total_true_tokens = 0
+
+    for label in token_labels:
+        # Per-label token counts
+        l_tp = token_cat_tp[label]
+        l_fp = token_cat_fp[label]
+        l_fn = token_cat_fn[label]
+        
+        # Support is the actual number of true tokens for this label (TP + FN)
+        support = l_tp + l_fn
+        total_true_tokens += support
+        
+        # Per-label Precision, Recall, F1
+        l_p = l_tp / (l_tp + l_fp) if (l_tp + l_fp) > 0 else 0
+        l_r = l_tp / (l_tp + l_fn) if (l_tp + l_fn) > 0 else 0
+        l_f1 = 2 * (l_p * l_r) / (l_p + l_r) if (l_p + l_r) > 0 else 0
+        
+        macro_f1_sum += l_f1
+        weighted_f1_sum += l_f1 * support
+
+    # Final averages
+    t_macro_f1 = macro_f1_sum / len(token_labels) if len(token_labels) > 0 else 0
+    t_weighted_f1 = weighted_f1_sum / total_true_tokens if total_true_tokens > 0 else 0
 
     print("\n")
     print("2. TOKEN-LEVEL / PARTIAL EVALUATION")
@@ -323,9 +367,11 @@ def evaluate(filepath, max_samples=None):
     print(f"False Positive Words : {token_fp}")
     print(f"False Negative Words : {token_fn}")
     print("----------------------------------------")
-    print(f"Token Precision      : {t_precision:.4f}")
-    print(f"Token Recall         : {t_recall:.4f}")
-    print(f"Token F1-Score       : {t_f1:.4f}")
+    print(f"Token Precision (Micro)  : {t_precision:.4f}")
+    print(f"Token Recall (Micro)     : {t_recall:.4f}")
+    print(f"Token F1-Score (Micro)   : {t_micro_f1:.4f}")
+    print(f"Token F1-Score (Macro)   : {t_macro_f1:.4f}")
+    print(f"Token F1-Score (Weighted): {t_weighted_f1:.4f}")
 
 if __name__ == "__main__":
     evaluate("data/test.iob", max_samples=None)
