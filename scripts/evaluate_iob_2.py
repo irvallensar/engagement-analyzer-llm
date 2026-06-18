@@ -13,7 +13,7 @@ from collections import defaultdict    # dictionary that automatically starts at
                                        # used for counting TP/FP/FN per category
 
 # Import your existing tools
-from scripts.local_llm_client import call_local_llm    # function that sends prompts to Ollama
+from scripts.local_llm_client_2 import call_local_llm    # function that sends prompts to Ollama
 from scripts.llm_utils import parse_llm_json    # function that converts the LLM's raw text response into a python list   
 
 nlp = spacy.load("en_core_web_sm")    #load spaCy model
