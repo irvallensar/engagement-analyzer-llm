@@ -110,7 +110,7 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
         if label == "O" or not label.strip():
             continue
             
-        span_text = item.get("span", "")    # gets the actual text of the predicted span
+        span_text = item.get("span") or item.get("text", "")   # gets the actual text of the predicted span
         context_before = item.get("context_before", "").strip()    # gets the words before the span (target), used 
                                                                    # to find the exact location if the same words appear multiple times
         
@@ -124,7 +124,9 @@ def run_sentence_option2(text, doc):    # takes a sentence as plain text and its
             search_string = f"{context_before} {span_text}"
             combo_start = text.find(search_string)
             if combo_start != -1:
+                print(f"[ANCHOR FOUND] {label}: {search_string}")
                 start_char = combo_start + len(context_before) + 1 # +1 skips the space between context_before and span_text
+                
         
         # 2. Fallback if context anchoring fails or wasn't provided
         if start_char == -1:
