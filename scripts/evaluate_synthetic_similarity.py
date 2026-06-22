@@ -118,16 +118,22 @@ def main():
     # Distributional proportions:
     # These thresholds give an interpretable breakdown of where
     # the similarity scores fall, rather than relying on mean/SD alone.
-    #
-    # >0.7 — Strong preservation: synthetic sentence is very close
-    #         to a gold reference; flag for potential near-duplication.
-    # >0.5 — Moderate preservation: semantically related but not
-    #         a near-duplicate; healthy overlap with the gold domain.
-    # <0.3 — Likely semantic drift: synthetic sentence is weakly
-    #         related to any gold reference; may indicate off-topic generation.
-    prop_strong   = np.mean(all_max_similarities > 0.7)   # strong preservation
-    prop_moderate = np.mean(all_max_similarities > 0.5)   # moderate preservation
-    prop_drift    = np.mean(all_max_similarities < 0.3)   # likely semantic drift
+    # Distribution across non-overlapping similarity ranges.
+    # These four buckets cover 100% of all similarity scores.
+
+    prop_lt_03 = np.mean(all_max_similarities < 0.3)
+
+    prop_03_05 = np.mean(
+        (all_max_similarities >= 0.3) &
+        (all_max_similarities < 0.5)
+    )
+
+    prop_05_07 = np.mean(
+        (all_max_similarities >= 0.5) &
+        (all_max_similarities <= 0.7)
+    )
+
+    prop_gt_07 = np.mean(all_max_similarities > 0.7)
 
     print("\n" + "="*40)
     print("       DATA QUALITY METRIC RESULTS")
@@ -137,11 +143,22 @@ def main():
     print(f"Minimum Similarity:     {min_sim:.4f}")
     print(f"Maximum Similarity:     {max_sim:.4f}")
     print("-"*40)
-    print("  DISTRIBUTIONAL PROPORTIONS")
+    print("  DISTRIBUTION BY SIMILARITY RANGE")
     print("-"*40)
-    print(f"Strong preservation (>0.7):   {prop_strong:.2%}")
-    print(f"Moderate preservation (>0.5): {prop_moderate:.2%}")
-    print(f"Likely semantic drift (<0.3): {prop_drift:.2%}")
+    print(f"< 0.3:       {prop_lt_03:.2%}")
+    print(f"0.3 - 0.5:   {prop_03_05:.2%}")
+    print(f"0.5 - 0.7:   {prop_05_07:.2%}")
+    print(f"> 0.7:       {prop_gt_07:.2%}")
+
+    total_prop = (
+        prop_lt_03 +
+        prop_03_05 +
+        prop_05_07 +
+        prop_gt_07
+    )
+
+    print("-"*40)
+    print(f"Coverage Check: {total_prop:.2%}")
     print("="*40)
     
     # STEP 6: Export results
@@ -160,10 +177,11 @@ def main():
         f.write(f"Standard Deviation: {std_sim:.4f}\n")
         f.write(f"Min Similarity: {min_sim:.4f}\n")
         f.write(f"Max Similarity: {max_sim:.4f}\n")
-        f.write("\nDistributional Proportions:\n")
-        f.write(f"Strong preservation (>0.7):   {prop_strong:.2%}\n")
-        f.write(f"Moderate preservation (>0.5): {prop_moderate:.2%}\n")
-        f.write(f"Likely semantic drift (<0.3): {prop_drift:.2%}\n")
+        f.write("\nDistribution by Similarity Range:\n")
+        f.write(f"< 0.3:       {prop_lt_03:.2%}\n")
+        f.write(f"0.3 - 0.5:   {prop_03_05:.2%}\n")
+        f.write(f"0.5 - 0.7:   {prop_05_07:.2%}\n")
+        f.write(f"> 0.7:       {prop_gt_07:.2%}\n")
 
     print(f"[SUCCESS] Metrics exported to {output_path}")
 
