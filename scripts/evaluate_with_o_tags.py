@@ -62,24 +62,39 @@ def evaluate_strict_span_with_o(model_dir_pattern, test_dir_pattern, model_name)
             for gold_doc, pred_doc in zip(gold_docs, pred_docs):
                 gold_spans = get_span_set(gold_doc)
                 pred_spans = get_span_set(pred_doc)
+                doc_len = len(gold_doc)
 
-                # --- O-tag logic ---
-                # A sentence is "O" if it contains NO engagement spans at all.
-                # We treat the sentence itself as the O unit (one O per sentence).
-                # This mirrors how Eguchi & Kyle's evaluation inflates via O:
-                # sentences with no spans are correctly classified as background.
-                gold_has_no_spans = len(gold_spans) == 0
-                pred_has_no_spans = len(pred_spans) == 0
+                # --- O-tag logic: TOKEN-LEVEL ---
+                # Eguchi & Kyle used IOB tagging where O is assigned to every
+                # background token individually. To replicate this, we compute
+                # which tokens are covered by gold spans vs predicted spans,
+                # and count each uncovered token as one O instance.
 
-                if gold_has_no_spans and pred_has_no_spans:
-                    tp["O"] += 1          # Both agree: no engagement here
-                elif gold_has_no_spans and not pred_has_no_spans:
-                    fp["O"] += 1          # Model predicted spans where there are none (false alarm)
-                    # Each wrongly predicted label is already counted below as FP
-                elif not gold_has_no_spans and pred_has_no_spans:
-                    fn["O"] += 1          # Model missed all spans — entire sentence treated as O
+                # Build token-level coverage sets
+                gold_covered = set()
+                for (start, end, label) in gold_spans:
+                    for i in range(start, end):
+                        gold_covered.add(i)
+
+                pred_covered = set()
+                for (start, end, label) in pred_spans:
+                    for i in range(start, end):
+                        pred_covered.add(i)
+
+                for i in range(doc_len):
+                    gold_is_o = i not in gold_covered
+                    pred_is_o = i not in pred_covered
+
+                    if gold_is_o and pred_is_o:
+                        tp["O"] += 1      # Correctly left unlabelled
+                    elif gold_is_o and not pred_is_o:
+                        fp["O"] += 1      # Model labelled a background token
+                    elif not gold_is_o and pred_is_o:
+                        fn["O"] += 1      # Model missed an engagement token (left it as O)
 
                 # --- Strict span matching (exact start, end, label) ---
+                # Engagement labels: a prediction is TP only if (start, end, label)
+                # all match exactly — identical to spacy evaluate strict span F1.
                 for span in gold_spans:
                     if span in pred_spans:
                         tp[span[2]] += 1
