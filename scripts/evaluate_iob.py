@@ -253,14 +253,31 @@ def evaluate(filepath, max_samples=None):
 
         # 3. Token-Level Matches
         gold_tokens = set()
+        gold_indices_with_label = set() # NEW: Tracks tokens that have a real label
         for label, start, end in gold_spans:
             for idx in range(start, end):
                 gold_tokens.add((idx, label))
+                gold_indices_with_label.add(idx)
                 
         pred_tokens = set()
+        pred_indices_with_label = set() # NEW: Tracks tokens that have a real label
         for label, start, end in pred_spans:
             for idx in range(start, end):
                 pred_tokens.add((idx, label))
+                pred_indices_with_label.add(idx)
+                
+        # --- NEW: ASSIGN 'O' TAGS TO ALL BACKGROUND TOKENS ---
+        # We find the total length of the sentence
+        doc_length = len(data["doc"])
+        
+        for idx in range(doc_length):
+            # If the gold token has no engagement label, it is an 'O'
+            if idx not in gold_indices_with_label:
+                gold_tokens.add((idx, "O"))
+            # If the predicted token has no engagement label, it is an 'O'
+            if idx not in pred_indices_with_label:
+                pred_tokens.add((idx, "O"))
+        # -----------------------------------------------------
                 
         tok_tp = gold_tokens.intersection(pred_tokens)
         tok_fp = pred_tokens - gold_tokens
@@ -270,7 +287,7 @@ def evaluate(filepath, max_samples=None):
         token_fp += len(tok_fp)
         token_fn += len(tok_fn)
 
-        # --- NEW: Populate token-level category counts ---
+        # Populate token-level category counts (This will now naturally include "O")
         for idx, label in tok_tp:
             token_cat_tp[label] += 1
 
