@@ -23,19 +23,11 @@ def get_span_set(doc, key="sc"):
 
 
 def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
-    """
-    Hybrid evaluation matching Eguchi & Kyle (2023):
-    - Engagement labels: strict span-level F1
-      (start, end, label must all match exactly)
-    - O tag: token-level
-      (every background token is one O instance)
-    - Macro F1: averaged over 11 classes (10 engagement + O)
-    - Weighted F1 (engagement only): weighted average over 10 engagement
-      classes ONLY, excluding O — this matches E&K's macro ≈ weighted pattern
-    """
-
     macro_f1_scores = []
     weighted_engagement_f1_scores = []
+
+    # Per-label accumulators across folds: label -> list of (P, R, F1) per fold
+    per_label_scores = {label: {"precision": [], "recall": [], "f1": []} for label in ALL_LABELS}
 
     print(f"\n{'='*62}")
     print(f"EVALUATING: {model_name}")
@@ -69,17 +61,15 @@ def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
                 gold_spans = get_span_set(gold_doc)
                 pred_spans = get_span_set(pred_doc)
 
-                # --- O: token-level ---
+                # O: token-level
                 gold_covered = set()
                 for (s, e, l) in gold_spans:
                     for i in range(s, e):
                         gold_covered.add(i)
-
                 pred_covered = set()
                 for (s, e, l) in pred_spans:
                     for i in range(s, e):
                         pred_covered.add(i)
-
                 for i in range(doc_len):
                     g_o = i not in gold_covered
                     p_o = i not in pred_covered
@@ -90,7 +80,7 @@ def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
                     elif not g_o and p_o:
                         fn["O"] += 1
 
-                # --- Engagement: strict span-level ---
+                # Engagement: strict span-level
                 for span in gold_spans:
                     if span in pred_spans:
                         tp[span[2]] += 1
@@ -100,7 +90,7 @@ def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
                     if span not in gold_spans:
                         fp[span[2]] += 1
 
-            # Build flat lists for classification_report
+            # Build flat lists
             y_true_flat = []
             y_pred_flat = []
             for label in ALL_LABELS:
@@ -114,7 +104,6 @@ def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
                     y_true_flat.append(label)
                     y_pred_flat.append("__none__")
 
-            # Report 1: all 11 classes (for Macro F1 including O)
             report_all = classification_report(
                 y_true_flat, y_pred_flat,
                 labels=ALL_LABELS,
@@ -128,10 +117,6 @@ def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
                 target_names=ALL_LABELS,
                 zero_division=0
             )
-
-            # Report 2: 10 engagement classes only (for weighted F1 excluding O)
-            # This matches E&K's evaluation where macro ≈ weighted
-            # because O is not included in the support-weighted average
             report_eng = classification_report(
                 y_true_flat, y_pred_flat,
                 labels=ENGAGEMENT_LABELS,
@@ -146,12 +131,17 @@ def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
 
             fold_macro = report_all["macro avg"]["f1-score"]
             fold_weighted_eng = report_eng["weighted avg"]["f1-score"]
-
-            print(f"  Macro F1 (11-class incl. O):          {fold_macro:.4f}")
-            print(f"  Weighted F1 (10 engagement only):     {fold_weighted_eng:.4f}")
+            print(f"  Macro F1 (11-class incl. O):       {fold_macro:.4f}")
+            print(f"  Weighted F1 (10 engagement only):  {fold_weighted_eng:.4f}")
 
             macro_f1_scores.append(fold_macro)
             weighted_engagement_f1_scores.append(fold_weighted_eng)
+
+            # Accumulate per-label P, R, F1 for this fold
+            for label in ALL_LABELS:
+                per_label_scores[label]["precision"].append(report_all[label]["precision"])
+                per_label_scores[label]["recall"].append(report_all[label]["recall"])
+                per_label_scores[label]["f1"].append(report_all[label]["f1-score"])
 
         except Exception as e:
             import traceback
@@ -165,7 +155,24 @@ def evaluate_with_o(model_dir_pattern, test_dir_pattern, model_name):
     print(f"FINAL 5-FOLD AVERAGE")
     print(f"  Macro F1 (11-class incl. O):      {final_macro:.4f}")
     print(f"  Weighted F1 (engagement only):    {final_weighted_eng:.4f}")
-    print("="*62 + "\n")
+    print("="*62)
+
+    # Per-label averaged summary table
+    print(f"\n{'='*62}")
+    print(f"PER-LABEL AVERAGE ACROSS ALL 5 FOLDS: {model_name}")
+    print(f"{'='*62}")
+    print(f"{'Label':<16} {'Avg Precision':>14} {'Avg Recall':>11} {'Avg F1':>8}")
+    print(f"{'-'*16} {'-'*14} {'-'*11} {'-'*8}")
+    for label in ALL_LABELS:
+        avg_p  = np.mean(per_label_scores[label]["precision"])
+        avg_r  = np.mean(per_label_scores[label]["recall"])
+        avg_f1 = np.mean(per_label_scores[label]["f1"])
+        print(f"{label:<16} {avg_p:>14.4f} {avg_r:>11.4f} {avg_f1:>8.4f}")
+    print(f"{'-'*16} {'-'*14} {'-'*11} {'-'*8}")
+    print(f"{'Macro avg':<16} {np.mean([np.mean(per_label_scores[l]['precision']) for l in ALL_LABELS]):>14.4f} "
+          f"{np.mean([np.mean(per_label_scores[l]['recall']) for l in ALL_LABELS]):>11.4f} "
+          f"{final_macro:>8.4f}")
+    print(f"{'='*62}\n")
 
     return final_macro, final_weighted_eng
 
