@@ -76,7 +76,9 @@ def evaluate_multilabel_with_o_tags(model_dir_pattern, test_dir_pattern, model_n
             
             # 5. Calculate Metrics
             report = classification_report(y_true_bin, y_pred_bin, target_names=mlb.classes_, output_dict=True, zero_division=0)
-            
+            # --- ADD THIS LINE TO PRINT THE FULL TABLE ---
+            print(classification_report(y_true_bin, y_pred_bin, target_names=mlb.classes_, zero_division=0))
+            # ---------------------------------------------
             fold_macro = report["macro avg"]["f1-score"]
             fold_weighted = report["weighted avg"]["f1-score"]
             
