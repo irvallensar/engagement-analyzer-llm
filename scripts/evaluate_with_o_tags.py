@@ -1,5 +1,5 @@
 import spacy
-from spacy.tokens import DocBin
+from spacy.tokens import DocBin, Doc
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import MultiLabelBinarizer
 import numpy as np
@@ -7,12 +7,19 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-def evaluate_pipeline(model_dir_pattern, test_dir_pattern, model_name, threshold=0.30):
-    all_fold_reports = []
+# Trap 2 Fix: Explicitly define all 11 classes so 'O' is never dropped by scikit-learn
+TARGET_LABELS = [
+    'ATTRIBUTION', 'CITATION', 'COUNTER', 'DENY', 
+    'ENDOPHORIC', 'ENTERTAIN', 'JUSTIFYING', 
+    'MONOGLOSS', 'O', 'PROCLAIM', 'SOURCES'
+]
+
+def evaluate_multi_label_with_o(model_dir_pattern, test_dir_pattern, model_name):
+    macro_f1_scores = []
+    weighted_f1_scores = []
     
     print(f"\n==================================================")
-    print(f"EVALUATING: {model_name}")
-    print(f"SPAN CONFIDENCE THRESHOLD: {threshold}")
+    print(f"EVALUATING: {model_name} (STRICT 11-CLASS MULTI-LABEL)")
     print(f"==================================================")
     
     for fold in range(1, 6):
@@ -21,24 +28,27 @@ def evaluate_pipeline(model_dir_pattern, test_dir_pattern, model_name, threshold
         
         try:
             nlp = spacy.load(model_path)
-            
-            # Tune the spancat threshold to fix the low recall
-            if "spancat" in nlp.pipe_names:
-                nlp.get_pipe("spancat").cfg["threshold"] = threshold
-            elif "spancat_single" in nlp.pipe_names:
-                nlp.get_pipe("spancat_single").cfg["threshold"] = threshold
-                
             doc_bin = DocBin().from_disk(test_data_path)
             gold_docs = list(doc_bin.get_docs(nlp.vocab))
             
             y_true = []
             y_pred = []
             
-            # Run inference using the original document tokens to preserve structure
-            pred_docs = list(nlp.pipe(gold_docs))
+            # FIX FOR THE 1.000 BUG: Create completely fresh, blank documents.
+            # This strips all gold annotations before inference so the model cannot cheat.
+            clean_docs = []
+            for doc in gold_docs:
+                words = [t.text for t in doc]
+                spaces = [bool(t.whitespace_) for t in doc]
+                clean_docs.append(Doc(nlp.vocab, words=words, spaces=spaces))
+            
+            print(f"  Running inference for Fold {fold}...")
+            pred_docs = list(nlp.pipe(clean_docs))
             
             for gold_doc, pred_doc in zip(gold_docs, pred_docs):
                 doc_len = len(gold_doc)
+                
+                # Arrays of sets for each token
                 g_toks = [set() for _ in range(doc_len)]
                 p_toks = [set() for _ in range(doc_len)]
                 
@@ -54,51 +64,50 @@ def evaluate_pipeline(model_dir_pattern, test_dir_pattern, model_name, threshold
                         for i in range(span.start, span.end):
                             p_toks[i].add(span.label_)
                             
-                # Inject 'O' Tags for empty tokens
+                # Inject 'O' Tags for empty tokens ONLY
                 for i in range(doc_len):
-                    if not g_toks[i]: g_toks[i].add("O")
-                    if not p_toks[i]: p_toks[i].add("O")
+                    if not g_toks[i]: 
+                        g_toks[i].add("O")
+                    if not p_toks[i]: 
+                        p_toks[i].add("O")
                     
                 y_true.extend([list(s) for s in g_toks])
                 y_pred.extend([list(s) for s in p_toks])
                 
-            # Process metrics
-            mlb = MultiLabelBinarizer()
+            # Trap 3 Fix: Multi-Label Binarization (11-column binary matrix per token)
+            mlb = MultiLabelBinarizer(classes=TARGET_LABELS)
             y_true_bin = mlb.fit_transform(y_true)
             y_pred_bin = mlb.transform(y_pred)
             
-            # Print the complete breakdown for this fold exactly like the .md log
-            print(f"\n{'=' * 20} FOLD {fold} DETAILS {'=' * 20}")
-            fold_report_text = classification_report(
-                y_true_bin,
-                y_pred_bin,
-                target_names=mlb.classes_,
-                zero_division=0
-            )
-            print(fold_report_text)
+            # Generate the detailed report
+            report_dict = classification_report(y_true_bin, y_pred_bin, target_names=TARGET_LABELS, output_dict=True, zero_division=0)
+            report_text = classification_report(y_true_bin, y_pred_bin, target_names=TARGET_LABELS, zero_division=0)
             
-            fold_report_dict = classification_report(y_true_bin, y_pred_bin, target_names=mlb.classes_, output_dict=True, zero_division=0)
-            all_fold_reports.append(fold_report_dict)
+            print(f"\n{'='*20} FOLD {fold} DETAILS {'='*20}")
+            print(report_text)
+            
+            fold_macro = report_dict["macro avg"]["f1-score"]
+            fold_weighted = report_dict["weighted avg"]["f1-score"]
+            
+            macro_f1_scores.append(fold_macro)
+            weighted_f1_scores.append(fold_weighted)
             
         except Exception as e:
             print(f"  [ERROR] Could not process Fold {fold}: {e}")
 
-    # Calculate Cross-Validation Averages correctly across folds
-    if all_fold_reports:
-        macro_f1s = [r["macro avg"]["f1-score"] for r in all_fold_reports]
-        weighted_f1s = [r["weighted avg"]["f1-score"] for r in all_fold_reports]
-        micro_f1s = [r["micro avg"]["f1-score"] for r in all_fold_reports]
-        
-        print("\n" + "="*50)
-        print(f"FINAL 5-FOLD CROSS-VALIDATION SUMMARY")
-        print("="*50)
-        print(f"Mean Micro F1:    {np.mean(micro_f1s):.4f}")
-        print(f"Mean Macro F1:    {np.mean(macro_f1s):.4f}  <-- (Target Metric)")
-        print(f"Mean Weighted F1: {np.mean(weighted_f1s):.4f}")
-        print("="*50 + "\n")
+    final_macro = np.mean(macro_f1_scores) if macro_f1_scores else 0
+    final_weighted = np.mean(weighted_f1_scores) if weighted_f1_scores else 0
+    
+    print("\n-----------------------------------------------------------")
+    print(f"FINAL 5-FOLD AVERAGE -> Macro F1: {final_macro:.4f} | Weighted F1: {final_weighted:.4f}")
+    print("-----------------------------------------------------------\n")
 
 if __name__ == "__main__":
     TEST_DATA_PATTERN = "data/5_fold_exp/test{}.spacy"
     
-    # Run with a lowered threshold (e.g., 0.30) to boost recall
-    evaluate_pipeline("models/fold{}_baseline/model-best", TEST_DATA_PATTERN, "RoBERTa-base Baseline", threshold=0.30)
+    # Evaluate Baseline
+    evaluate_multi_label_with_o("models/fold{}_baseline/model-best", TEST_DATA_PATTERN, "RoBERTa-base Baseline")
+    
+    # Evaluate DA-RoBERTa
+    evaluate_multi_label_with_o("models/fold{}_zero_shot/model-best", TEST_DATA_PATTERN, "Zero-Shot DA-RoBERTa")
+    evaluate_multi_label_with_o("models/fold{}_few_shot_v3/model-best", TEST_DATA_PATTERN, "Few-Shot DA-RoBERTa")
