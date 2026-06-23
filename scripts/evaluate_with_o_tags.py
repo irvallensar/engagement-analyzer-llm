@@ -68,8 +68,13 @@ def evaluate_pipeline(model_dir_pattern, test_dir_pattern, model_name, threshold
             y_pred_bin = mlb.transform(y_pred)
             
             # Print the complete breakdown for this fold exactly like the .md log
-            print(f"\n{"="*20} FOLD {fold} DETAILS {"="*20}")
-            fold_report_text = classification_report(y_true_bin, y_pred_bin, target_names=mlb.classes_, zero_division=0)
+            print(f"\n{'=' * 20} FOLD {fold} DETAILS {'=' * 20}")
+            fold_report_text = classification_report(
+                y_true_bin,
+                y_pred_bin,
+                target_names=mlb.classes_,
+                zero_division=0
+            )
             print(fold_report_text)
             
             fold_report_dict = classification_report(y_true_bin, y_pred_bin, target_names=mlb.classes_, output_dict=True, zero_division=0)
