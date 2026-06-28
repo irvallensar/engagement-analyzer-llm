@@ -1,117 +1,84 @@
-You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse based on the Appraisal framework.
+You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse based on the Appraisal Framework (Martin & White, 2005).
 
-TASK & JSON SCHEMA:
-Analyze the sentence and output a JSON array of objects strictly matching this schema. If the sentence contains no engagement markers, output an empty array: []
-
-[
-  {
-    "text": "exact marker string from the sentence",
-    "label": "MONOGLOSS | DENY | COUNTER | PROCLAIM | ENTERTAIN | ATTRIBUTION | CITATION | SOURCES | ENDOPHORIC | JUSTIFYING",
-    "context_before": "2-3 words immediately preceding the marker (or empty string)"
-  }
-]
-
-FORMATTING RULES:
-1. You must copy the exact text from the sentence, preserving ALL strange spaces and punctuation (e.g., "( 1999 )"). Do not fix typos or spacing.
-2. ONLY use the 10 uppercase labels from the schema. 
+TASK: Analyze the sentence and extract engagement markers. Focus heavily on generating a logical "thought_process" before extracting the exact spans. Output strictly valid JSON.
 
 DEFINITIONS & CONSTRAINTS:
-1. MONOGLOSS: Bare assertions. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'are illustrated') of a definitive, undeniable factual statement. 
-2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts. STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
-3. COUNTER: Replaces an expected alternative. Extract single transition words (e.g., 'however', 'although', 'only', 'but') or full contrastive clauses.
-4. PROCLAIM: Shows rhetorical commitment. Extract words showing authorial backing (e.g., 'undoubtedly', 'in fact', 'conclude').
-5. ENTERTAIN: Presents possibility or conditionality. Extract modal verbs ('would', 'could', 'might', 'must', 'shall', 'would need to'), conditional words ('if'), and hedges ('appear', 'seem', 'largely', 'often', 'On average').
-6. ATTRIBUTION: Delegates responsibility. Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'stipulate') or attributing phrase ('According to', 'Their justification').
-7. CITATION: Explicit in-text citations. Extract the ENTIRE parenthetical block.
-8. SOURCES: The specific entity making a claim. Extract the exact noun or pronoun (e.g., 'Descartes', 'researchers', 'Some studies', 'Their', 'literature'). Tag this independently even if it is right next to an ATTRIBUTION.
-9. ENDOPHORIC: Structural references. Extract explicit document cross-references, including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( references )').
-10. JUSTIFYING: Signals persuasion/substantiation. Extract transition words (e.g., 'Thus', 'Therefore') and causal clauses.
 
-Example 1 (Counter, Entertain, Deny)
-Sentence: "Although the results are promising , they might not apply to all cases ."
-<thought_process>
-"Although" is COUNTER. "might" is ENTERTAIN. "not apply" is DENY.
-</thought_process>
-[
-  {
-    "text": "Although", 
-    "label": "COUNTER",
-    "context_before": ""
-  },
-  {
-    "text": "might", 
-    "label": "ENTERTAIN",
-    "context_before": "they"
-  },
-  {
-    "text": "not apply", 
-    "label": "DENY",
-    "context_before": "might"
-  }
-]
+1. MONOGLOSS: Bare assertions with no acknowledgment of alternative viewpoints. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'is illustrated') of a definitive, undeniable factual statement. STRICT RULE: Only tag the verb that carries the assertion — do NOT tag the entire clause.
 
-Example 2 (Spacing, Citation, Attribution, Sources)
-Sentence: "Christen ( 1999 ) strongly asserts that the study area is affected , and Davies ( 2002 , p107 ) warns against this ."
-<thought_process>
-"Christen" and "Davies" are the specific entities making the claims (SOURCES). "Christen ( 1999 )" and "Davies ( 2002 , p107 )" are explicit in-text citations. I must preserve the exact strange spacing (CITATION). "strongly asserts" and "warns" are reporting verb phrases (ATTRIBUTION).
-</thought_process>
-[
-  {
-    "text": "Christen", 
-    "label": "SOURCES",
-    "context_before": ""
-  },
-  {
-    "text": "Christen ( 1999 )", 
-    "label": "CITATION",
-    "context_before": ""
-  },
-  {
-    "text": "strongly asserts", 
-    "label": "ATTRIBUTION",
-    "context_before": ") "
-  },
-  {
-    "text": "Davies", 
-    "label": "SOURCES",
-    "context_before": "and"
-  },
-  {
-    "text": "Davies ( 2002 , p107 )", 
-    "label": "CITATION",
-    "context_before": "and"
-  },
-  {
-    "text": "warns", 
-    "label": "ATTRIBUTION",
-    "context_before": ") "
-  }
-]
+2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts (e.g., 'is not located', 'not apply'). STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
 
-Example 3 (Sources, Attribution, Monogloss)
-Sentence: "Researchers emphasize that the data proves the outcome ."
-<thought_process>
-"Researchers" is the specific entity making the claim (SOURCES). "emphasize" is the reporting verb (ATTRIBUTION). "proves" is a forceful action verb establishing an undeniable fact (MONOGLOSS).
-</thought_process>
-[
-  {
-    "text": "Researchers", 
-    "label": "SOURCES",
-    "context_before": ""
-  },
-  {
-    "text": "emphasize", 
-    "label": "ATTRIBUTION",
-    "context_before": "Researchers"
-  },
-  {
-    "text": "proves", 
-    "label": "MONOGLOSS",
-    "context_before": "data"
-  }
-]
+3. COUNTER: Replaces or contrasts with an expected alternative. Extract single transition words (e.g., 'however', 'although', 'only', 'but', 'yet', 'while', 'whereas') or full contrastive clauses. Multiple COUNTER spans in one sentence are valid if multiple contrastive signals appear.
 
-Now annotate the following.
+4. PROCLAIM: Shows strong rhetorical commitment or authorial backing. Extract words and phrases signalling high certainty (e.g., 'In fact', 'undoubtedly', 'indeed', 'conclude', 'demonstrate', 'confirms', 'clearly', 'of course').
 
-Sentence:
-{sentence}
+5. ENTERTAIN: Presents a proposition as one possibility among others, opening dialogic space. Extract:
+   - Modal verbs: 'may', 'might', 'could', 'would', 'will' (when expressing possibility or conditionality), 'shall', 'must' (when epistemic)
+   - Evidential markers: 'appear', 'seem', 'suggest' (and their inflected forms)
+   - Adverbial hedges: 'probably', 'perhaps', 'apparently', 'generally', 'largely', 'often', 'On average'
+   - Conditional words: 'if' (when introducing conditionality)
+   - Epistemic phrases: 'I think', 'it is possible that', 'it is likely that'
+   STRICT RULE: Tag only the hedge or modal — NOT the full clause it governs.
+
+6. ATTRIBUTION: Delegates responsibility for a claim to an external voice. Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'stipulate', 'considers', 'emphasize', 'warns') or attributing phrase ('According to', 'as mentioned in', 'as reported by'). Tag ATTRIBUTION independently even when co-occurring with SOURCES.
+
+7. CITATION: Explicit in-text citations identifying a specific source. Extract the ENTIRE citation block including surrounding punctuation and internal spaces exactly as they appear in the sentence (e.g., 'Chomsky ( 1995 )', '[ 10 ]', '(Smith, 2003)'). Preserve unusual spacing exactly.
+
+8. SOURCES: The specific named entity or pronoun making a claim. Extract the exact noun or noun phrase (e.g., 'Chomsky', 'researchers', 'Some studies', 'Dow Jones', 'His', 'the Scandinavian energy'). Tag SOURCES independently even when adjacent to ATTRIBUTION or CITATION — they are always separate spans.
+
+9. ENDOPHORIC: Structural references to other parts of the same text. Extract explicit document cross-references including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( 11 )', 'All above', '( references )'). Preserve unusual spacing exactly.
+
+10. JUSTIFYING: Signals persuasion or substantiation — provides reasons, evidence, or causal explanation. Extract causal clause introducers ('because', 'since', 'in that') together with their dependent clause, or concluding transition words ('Thus', 'Therefore', 'Hence') with their clause.
+
+---
+
+EXAMPLES:
+
+Example 1 — ATTRIBUTION, MONOGLOSS, DENY, COUNTER, SOURCES, CITATION, JUSTIFYING, ENDOPHORIC
+Sentence: "His deep structure is slightly different from that reported in Chomsky ( 1995 ) in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 ) shows only the VP ):"
+JSON Object:
+{
+  "thought_process": "'His' is the specific entity making the claim (SOURCES). 'His deep structure' is an ATTRIBUTION — it attributes the described structure to an external source. 'is' is a bare assertive linking verb (MONOGLOSS). 'that reported in Chomsky ( 1995 )' is a second ATTRIBUTION delegating the claim to a reported source. 'Chomsky ( 1995 )' is the explicit citation (CITATION) with preserved spacing. 'is not located' is a literal syntactic negation (DENY). 'but' is a contrastive transition (COUNTER). 'only' signals restriction/contrast (COUNTER). 'in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 )' is a causal justifying clause (JUSTIFYING). '( 11 )' is an endophoric structural reference (ENDOPHORIC).",
+  "spans": [
+    { "text": "His", "label": "SOURCES", "context_before": "" },
+    { "text": "His deep structure", "label": "ATTRIBUTION", "context_before": "" },
+    { "text": "is", "label": "MONOGLOSS", "context_before": "structure" },
+    { "text": "that reported in Chomsky ( 1995 )", "label": "ATTRIBUTION", "context_before": "from" },
+    { "text": "Chomsky ( 1995 )", "label": "CITATION", "context_before": "in" },
+    { "text": "is not located", "label": "DENY", "context_before": "Mary" },
+    { "text": "but", "label": "COUNTER", "context_before": "VP1 ," },
+    { "text": "only", "label": "COUNTER", "context_before": "shows" },
+    { "text": "in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 )", "label": "JUSTIFYING", "context_before": ")" },
+    { "text": "( 11 )", "label": "ENDOPHORIC", "context_before": "SpecIP (" }
+  ]
+}
+
+Example 2 — ATTRIBUTION, PROCLAIM, COUNTER, ENTERTAIN, SOURCES, CITATION, JUSTIFYING, ENDOPHORIC
+Sentence: "Centrica shares went up to 8 % during a fevered period of trading inspired by the speculation of the Scandinavian energy outfit Norsk Hydro leading as a potential buyer along with Shell and Gaz de France as mentioned in reports by Bloomberg . [ 10 ] In fact , Norsk Hydro was negotiating with Centrica on take over issues but the talks later faltered on the reservations of Norwegian government . [ 10 ] Also , Dow Jones considers Centrica as an attractive takeover target mainly because UK gas market bottleneck will ease after from 2007 . [ 11 ] All above confirms Centrica PLC to be a good take over target ."
+JSON Object:
+{
+  "thought_process": "'the Scandinavian energy' and 'reports by Bloomberg' and 'Dow Jones' are named entities making or conveying claims (SOURCES). 'the speculation of the Scandinavian energy' and 'as mentioned in reports by Bloomberg' and 'considers' and 'confirms' are reporting constructions (ATTRIBUTION). 'In fact' signals strong authorial commitment (PROCLAIM). 'but' is a contrastive transition (COUNTER). 'will' is a modal expressing possibility/futurity (ENTERTAIN). '[ 10 ]', '[ 10 ]', '[ 11 ]' are explicit citations with preserved spacing (CITATION). 'because UK gas market bottleneck will ease after from 2007' is a causal justifying clause (JUSTIFYING). 'All above' is an endophoric reference to earlier text (ENDOPHORIC).",
+  "spans": [
+    { "text": "the Scandinavian energy", "label": "SOURCES", "context_before": "of" },
+    { "text": "the speculation of the Scandinavian energy", "label": "ATTRIBUTION", "context_before": "by" },
+    { "text": "reports by Bloomberg", "label": "SOURCES", "context_before": "in" },
+    { "text": "as mentioned in reports by Bloomberg", "label": "ATTRIBUTION", "context_before": "France" },
+    { "text": "[ 10 ]", "label": "CITATION", "context_before": ". " },
+    { "text": "In fact", "label": "PROCLAIM", "context_before": "" },
+    { "text": "but", "label": "COUNTER", "context_before": "issues" },
+    { "text": "[ 10 ]", "label": "CITATION", "context_before": ". " },
+    { "text": "Dow Jones", "label": "SOURCES", "context_before": "" },
+    { "text": "considers", "label": "ATTRIBUTION", "context_before": "Jones" },
+    { "text": "will", "label": "ENTERTAIN", "context_before": "bottleneck" },
+    { "text": "because UK gas market bottleneck will ease after from 2007", "label": "JUSTIFYING", "context_before": "mainly" },
+    { "text": "[ 11 ]", "label": "CITATION", "context_before": ". " },
+    { "text": "All above", "label": "ENDOPHORIC", "context_before": "" },
+    { "text": "confirms", "label": "ATTRIBUTION", "context_before": "above" }
+  ]
+}
+
+---
+
+Now annotate the following sentence using the same JSON format.
+
+Sentence: {sentence}
