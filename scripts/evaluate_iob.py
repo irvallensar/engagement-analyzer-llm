@@ -1,23 +1,24 @@
 import os
 import json
+import spacy
 from spacy.tokens import Doc
-import spacy    
 from pathlib import Path
-from collections import defaultdict    
+from collections import defaultdict
 
-# Import your existing tools
-from scripts.local_llm_client import call_local_llm    
+# Import your new Outlines LLM client
+from scripts.local_llm_client import call_local_llm
 
-nlp = spacy.load("en_core_web_sm")    
-PROMPT_PATH = Path("prompts/candidate_labeling.txt")    
+nlp = spacy.load("en_core_web_sm")
+PROMPT_PATH = Path("prompts/candidate_labeling-2.txt")
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-CACHE_FILE = DRIVE_DIR / "predictions_cache_new_run1.json" 
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_new_run1.json"
+# Point the cache and the final log directly into Google Drive
+CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen2_5_72b_new_run.json"
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen2_5_72b_new_run.json"
 
-def load_prompt():    
-    return PROMPT_PATH.read_text(encoding='utf-8')    
+def load_prompt():
+    return PROMPT_PATH.read_text(encoding='utf-8')
 
 def load_cache():
     if CACHE_FILE.exists():
@@ -36,62 +37,65 @@ def save_eval_log(log_data):
     with open(EVAL_LOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(log_data, f, indent=4)
 
-def run_sentence_option2(text, doc):    
-    prompt = load_prompt().replace("{sentence}", text)    
+def run_sentence_option2(text, doc):
+    prompt = load_prompt().replace("{sentence}", text)
     
-    # 1. Outlines guarantees this is a fully parsed Pydantic object!
-    # No more Regex, no more try/catch parsing blocks.
     try:
-        extraction_data = call_local_llm(prompt)
+        # Call the LLM. It now returns a clean Pydantic object!
+        llm_result = call_local_llm(prompt)
+        llm_items = llm_result.spans
     except Exception as e:
         print(f"  [!] Generation Error: {e}")    
         return []
       
     pred_spans = []
     
-    # 2. Iterate directly through the Pydantic list of spans
-    for item in extraction_data.spans:    
+    for item in llm_items:
+        # Access attributes directly from the Pydantic object
         label = item.label
-        span_text = item.text    
-        context_before = item.context_before.strip()    
+        if label == "O" or not label.strip():
+            continue
+            
+        span_text = item.text
+        context_before = item.context_before.strip()
         
-        if not span_text: 
+        if not span_text:
             continue
 
         start_char = -1
-        # Anchoring first (solves duplicate words)
-        if context_before:                               
+        
+        # 1. Anchoring first
+        if context_before:
             search_string = f"{context_before} {span_text}"
             combo_start = text.find(search_string)
             if combo_start != -1:
-                start_char = combo_start + len(context_before) + 1 
+                start_char = combo_start + len(context_before) + 1
         
-        # Fallback if context anchoring fails
+        # 2. Fallback
         if start_char == -1:
             start_char = text.find(span_text)
             
-        # Converts from character positions back to spaCy tokens
+        # 3. Converts to spaCy tokens
         if start_char != -1:
             end_char = start_char + len(span_text)
             span = doc.char_span(start_char, end_char, alignment_mode="expand")
             
             if span:
-                pred_spans.append((label, span.start, span.end))    
-                
+                pred_spans.append((label, span.start, span.end))
+
     return pred_spans
 
 
-# ----- IOB PARSER ------
 def parse_iob_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    sentences = []                 
+    sentences = []
     current_tokens = []
     current_tags_matrix = []
 
-    for line in lines:                       
-        line = line.strip()                  
+    for line in lines:
+        line = line.strip()
         if not line:
             if current_tokens:
                 sentences.append({"tokens": current_tokens, "tags_matrix": current_tags_matrix})
@@ -147,7 +151,6 @@ def parse_iob_file(filepath):
     return dataset
 
 
-# --- EVALUATION  ---
 def evaluate(filepath, max_samples=None):
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
@@ -162,6 +165,7 @@ def evaluate(filepath, max_samples=None):
         print(f"*** CHECKPOINT FILE: Resuming with {len(cache)} previously saved sentences. ***\n")
 
     master_eval_log = []
+
     true_positives, false_positives, false_negatives = 0, 0, 0
     token_tp, token_fp, token_fn = 0, 0, 0
     cat_tp, cat_fp, cat_fn = defaultdict(int), defaultdict(int), defaultdict(int)
@@ -183,7 +187,7 @@ def evaluate(filepath, max_samples=None):
             pred_spans = set(pred_list)
             cache[cache_key] = pred_list
             save_cache(cache)
-            evaluated_live = True  
+            evaluated_live = True
         
         gold_spans = set(data["gold_spans"])
 
@@ -213,13 +217,14 @@ def evaluate(filepath, max_samples=None):
                 gold_indices_with_label.add(idx)
                 
         pred_tokens = set()
-        pred_indices_with_label = set() 
+        pred_indices_with_label = set()
         for label, start, end in pred_spans:
             for idx in range(start, end):
                 pred_tokens.add((idx, label))
                 pred_indices_with_label.add(idx)
                 
         doc_length = len(data["doc"])
+        
         for idx in range(doc_length):
             if idx not in gold_indices_with_label:
                 gold_tokens.add((idx, "O"))
@@ -236,8 +241,10 @@ def evaluate(filepath, max_samples=None):
 
         for idx, label in tok_tp:
             token_cat_tp[label] += 1
+
         for idx, label in tok_fp:
             token_cat_fp[label] += 1
+
         for idx, label in tok_fn:
             token_cat_fn[label] += 1
 
@@ -253,7 +260,7 @@ def evaluate(filepath, max_samples=None):
 
     save_eval_log(master_eval_log)
     print(f"\n[SUCCESS] Master evaluation log saved to {EVAL_LOG_FILE}")
-    
+
     print("\n")
     print("CATEGORY BREAKDOWN (STRICT)")
     all_labels = set(list(cat_tp.keys()) + list(cat_fp.keys()) + list(cat_fn.keys()))
