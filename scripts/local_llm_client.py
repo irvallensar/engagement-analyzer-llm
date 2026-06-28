@@ -27,7 +27,7 @@ def call_local_llm(prompt_text):
         model_id = "mlx-community/Qwen2.5-72B-Instruct-4bit"
         
         # FIX: The correct outlines attribute is .mlx(), not .mlxlm()
-        model = outlines.models.mlx(model_id)
+        model = outlines.models.mlxlm(model_id)
         
         # Initialize the structured JSON generator using our Pydantic schema
         generator = outlines.generate.json(model, ExtractionResult)
