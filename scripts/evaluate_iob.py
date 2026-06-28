@@ -1,28 +1,23 @@
 import os
 import json
-import re
 from spacy.tokens import Doc
-import spacy    # tokenize sentences (split into words) and align character positions to token positions
+import spacy    
 from pathlib import Path
-from collections import defaultdict    # dictionary that automatically starts at 0 for new keys, 
-                                       # used for counting TP/FP/FN per category
+from collections import defaultdict    
 
 # Import your existing tools
-from scripts.local_llm_client import call_local_llm    # function that sends prompts to Ollama
-from scripts.llm_utils import parse_llm_json    # function that converts the LLM's raw text response into a python list   
+from scripts.local_llm_client import call_local_llm    
 
-nlp = spacy.load("en_core_web_sm")    #load spaCy model
-PROMPT_PATH = Path("prompts/candidate_labeling.txt")    # points to the prompt (candidate_labeling.txt)
+nlp = spacy.load("en_core_web_sm")    
+PROMPT_PATH = Path("prompts/candidate_labeling.txt")    
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-# Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_32b_RETRY.json" # the cache of the run (containing the logs such as predicted spans 
-                                                  # from the LLM, data saved)
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_32b_RETRY.json" # The master (final) record of the whole run
+CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen3_5_moe.json" 
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen3_5_moe.json"
 
-def load_prompt():    # load prompt
-    return PROMPT_PATH.read_text(encoding='utf-8')    # reads the prompt everytime its called
+def load_prompt():    
+    return PROMPT_PATH.read_text(encoding='utf-8')    
 
 def load_cache():
     if CACHE_FILE.exists():
@@ -38,84 +33,65 @@ def save_cache(cache_data):
         json.dump(cache_data, f, indent=2)
 
 def save_eval_log(log_data):
-    # Saves the comprehensive evaluation record safely
     with open(EVAL_LOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(log_data, f, indent=4)
 
-def run_sentence_option2(text, doc):    # takes a sentence as plain text and its spaCy doc object
-    prompt = load_prompt().replace("{sentence}", text)    # inserts the sentence into the prompt template
-    llm_raw = call_local_llm(prompt) # sends it to the llm (ollama) and gets the raw response
+def run_sentence_option2(text, doc):    
+    prompt = load_prompt().replace("{sentence}", text)    
     
+    # 1. Outlines guarantees this is a fully parsed Pydantic object!
+    # No more Regex, no more try/catch parsing blocks.
     try:
-        # Use Regex to aggressively search for the JSON array and ignore chatty text
-        match = re.search(r'\[.*\]', llm_raw, re.DOTALL)
-        if match:
-            clean_json = match.group(0)
-            llm_items = json.loads(clean_json)
-        else:
-            # Fallback to your original parser just in case
-            llm_items = parse_llm_json(llm_raw)
-            
+        extraction_data = call_local_llm(prompt)
     except Exception as e:
-        print(f"  [!] JSON Parse Error (LLM Hallucinated bad syntax): {e}")    
+        print(f"  [!] Generation Error: {e}")    
         return []
       
     pred_spans = []
     
-    for item in llm_items:    # Loops through each span the LLM predicted
-        label = item.get("label", "O")
-        # Ignore "O" and empty string labels (""), as we only want the engagement markers (labels)
-        if label == "O" or not label.strip():
-            continue
-            
-        span_text = item.get("text", "")    # gets the actual text of the predicted span
-        context_before = item.get("context_before", "").strip()    # gets the words before the span (target), used 
-                                                                   # to find the exact location if the same words appear multiple times
+    # 2. Iterate directly through the Pydantic list of spans
+    for item in extraction_data.spans:    
+        label = item.label
+        span_text = item.text    
+        context_before = item.context_before.strip()    
         
-        if not span_text: # if there is none, then continue
+        if not span_text: 
             continue
 
         start_char = -1
         # Anchoring first (solves duplicate words)
-        if context_before:                               # Instead of just searching for "suggests" (which might appear 3 times), 
-                                                         # it searches for "arguably suggests" to find the exact occurrence
+        if context_before:                               
             search_string = f"{context_before} {span_text}"
             combo_start = text.find(search_string)
             if combo_start != -1:
-                start_char = combo_start + len(context_before) + 1 # +1 skips the space between context_before and span_text
+                start_char = combo_start + len(context_before) + 1 
         
-        # 2. Fallback if context anchoring fails or wasn't provided
+        # Fallback if context anchoring fails
         if start_char == -1:
             start_char = text.find(span_text)
             
-        # 3. Converts from character positions back to spaCy tokens (e.g. token 3-6)
+        # Converts from character positions back to spaCy tokens
         if start_char != -1:
             end_char = start_char + len(span_text)
             span = doc.char_span(start_char, end_char, alignment_mode="expand")
             
             if span:
-                pred_spans.append((label, span.start, span.end))    # Appends the final prediction as a tuple (e.g. "ENTERTAIN", 3, 6)
-            else:
-                pass # Suppressed warning for cleaner output
-        else:
-            pass # Suppressed warning for cleaner output
-
+                pred_spans.append((label, span.start, span.end))    
+                
     return pred_spans
 
 
 # ----- IOB PARSER ------
-
 def parse_iob_file(filepath):
-    """Reads the IOB file and extracts sentences and Gold Spans."""
     with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    sentences = []                 # Prepares empty containers to build sentences from the IOB file     
+    sentences = []                 
     current_tokens = []
     current_tags_matrix = []
 
-    for line in lines:                       # IOB files use blank lines to separate sentences
-        line = line.strip()                  # When a blank line is hit, saves the current sentence and resets for the next one.
+    for line in lines:                       
+        line = line.strip()                  
         if not line:
             if current_tokens:
                 sentences.append({"tokens": current_tokens, "tags_matrix": current_tags_matrix})
@@ -123,13 +99,9 @@ def parse_iob_file(filepath):
                 current_tags_matrix = []
             continue
         
-        # Skip metadata/header lines (not part of annotation word)
         if "-DOCSTART-" in line or line == "-X-" or line == "O":
             continue
 
-        # Each IOB line looks like: word TAG1 TAG2 TAG3
-        # parts[0] = the word itself
-        # parts[1:] = all the tag columns (supports multiple overlapping annotation layers)
         parts = line.split()
         if len(parts) >= 2:
             current_tokens.append(parts[0])
@@ -137,19 +109,10 @@ def parse_iob_file(filepath):
 
     dataset = []
     for entry in sentences:
-        # forces spaCy to use EXACTLY the tokens from your IOB file instead of re-tokenizing
-        # Without this, spaCy might split "don't" differently than the annotation file did, causing misalignment
         doc = Doc(nlp.vocab, words=entry["tokens"])        
         text = doc.text
-        
         gold_spans = set()
 
-        # IOB Decoder
-        # B-ENTERTAIN = Beginning of an ENTERTAIN span → start tracking a new span
-        # I-ENTERTAIN = Inside the same span → continue, don't save yet
-        # O or different label = span has ended → save it as ("ENTERTAIN", start_token, end_token)  
-        # It rocesses each column independently to support overlapping spans
-        # — e.g. a word can be both ENTERTAIN and ATTRIBUTE simultaneously.
         if entry["tags_matrix"]:                
             num_cols = len(entry["tags_matrix"][0])
             for col_idx in range(num_cols):
@@ -185,8 +148,6 @@ def parse_iob_file(filepath):
 
 
 # --- EVALUATION  ---
-
-# Loads the full dataset
 def evaluate(filepath, max_samples=None):
     print(f"Loading dataset from {filepath}...")
     dataset = parse_iob_file(filepath)
@@ -200,14 +161,11 @@ def evaluate(filepath, max_samples=None):
     if cache:
         print(f"*** CHECKPOINT FILE: Resuming with {len(cache)} previously saved sentences. ***\n")
 
-    # NEW: Initialize the master log list
     master_eval_log = []
-
     true_positives, false_positives, false_negatives = 0, 0, 0
     token_tp, token_fp, token_fn = 0, 0, 0
     cat_tp, cat_fp, cat_fn = defaultdict(int), defaultdict(int), defaultdict(int)
 
-    # --- NEW: Initialize token-level category dictionaries ---
     token_cat_tp = defaultdict(int)
     token_cat_fp = defaultdict(int)
     token_cat_fn = defaultdict(int)
@@ -216,7 +174,6 @@ def evaluate(filepath, max_samples=None):
         cache_key = str(i)
         evaluated_live = False 
         
-        # 1. Fetch LLM Prediction (from cache or live)
         if cache_key in cache:
             pred_list = [tuple(x) for x in cache[cache_key]] 
             pred_spans = set(pred_list)
@@ -226,11 +183,10 @@ def evaluate(filepath, max_samples=None):
             pred_spans = set(pred_list)
             cache[cache_key] = pred_list
             save_cache(cache)
-            evaluated_live = True  # <--- NEW: We flip the flag to True!
+            evaluated_live = True  
         
         gold_spans = set(data["gold_spans"])
 
-        # 2. Strict Matches
         tp_set = gold_spans.intersection(pred_spans)
         fp_set = pred_spans - gold_spans
         fn_set = gold_spans - pred_spans
@@ -243,41 +199,32 @@ def evaluate(filepath, max_samples=None):
         for span in fp_set: cat_fp[span[0]] += 1
         for span in fn_set: cat_fn[span[0]] += 1
 
-        # --- THE CORRECTED PRINT BLOCK ---
         if evaluated_live and (len(fp_set) > 0 or len(fn_set) > 0):
             print(f"  Sentence: {data['text']}")
             print(f"  Gold Spans: {gold_spans}")
             print(f"  Pred Spans: {pred_spans}")
             print(f"  -> Errors: {len(fp_set)} False Positives, {len(fn_set)} False Negatives\n")
-        # -------------------------------
 
-        # 3. Token-Level Matches
         gold_tokens = set()
-        gold_indices_with_label = set() # NEW: Tracks tokens that have a real label
+        gold_indices_with_label = set()
         for label, start, end in gold_spans:
             for idx in range(start, end):
                 gold_tokens.add((idx, label))
                 gold_indices_with_label.add(idx)
                 
         pred_tokens = set()
-        pred_indices_with_label = set() # NEW: Tracks tokens that have a real label
+        pred_indices_with_label = set() 
         for label, start, end in pred_spans:
             for idx in range(start, end):
                 pred_tokens.add((idx, label))
                 pred_indices_with_label.add(idx)
                 
-        # --- NEW: ASSIGN 'O' TAGS TO ALL BACKGROUND TOKENS ---
-        # We find the total length of the sentence
         doc_length = len(data["doc"])
-        
         for idx in range(doc_length):
-            # If the gold token has no engagement label, it is an 'O'
             if idx not in gold_indices_with_label:
                 gold_tokens.add((idx, "O"))
-            # If the predicted token has no engagement label, it is an 'O'
             if idx not in pred_indices_with_label:
                 pred_tokens.add((idx, "O"))
-        # -----------------------------------------------------
                 
         tok_tp = gold_tokens.intersection(pred_tokens)
         tok_fp = pred_tokens - gold_tokens
@@ -287,18 +234,13 @@ def evaluate(filepath, max_samples=None):
         token_fp += len(tok_fp)
         token_fn += len(tok_fn)
 
-        # Populate token-level category counts (This will now naturally include "O")
         for idx, label in tok_tp:
             token_cat_tp[label] += 1
-
         for idx, label in tok_fp:
             token_cat_fp[label] += 1
-
         for idx, label in tok_fn:
             token_cat_fn[label] += 1
 
-        # 4. NEW: Append everything to the Master Log
-        # We convert sets to lists so they can be saved as JSON
         log_entry = {
             "sentence_id": i + 1,
             "text": data["text"],
@@ -309,17 +251,13 @@ def evaluate(filepath, max_samples=None):
         }
         master_eval_log.append(log_entry)
 
-    # Save the complete log to disk after the loop finishes
     save_eval_log(master_eval_log)
     print(f"\n[SUCCESS] Master evaluation log saved to {EVAL_LOG_FILE}")
-
-  # ----- CALCULATION OF PERFORMANCE METRIC SCORES ------
     
     print("\n")
     print("CATEGORY BREAKDOWN (STRICT)")
     all_labels = set(list(cat_tp.keys()) + list(cat_fp.keys()) + list(cat_fn.keys()))
     
-    # --- NEW: Variables to track Macro and Weighted sums for Strict Spans ---
     macro_strict_f1_sum = 0
     weighted_strict_f1_sum = 0
     total_strict_support = 0
@@ -329,7 +267,6 @@ def evaluate(filepath, max_samples=None):
         c_fp = cat_fp[label]
         c_fn = cat_fn[label]
         
-        # Support is the true number of spans for this label
         support = c_tp + c_fn
         total_strict_support += support
 
@@ -337,7 +274,6 @@ def evaluate(filepath, max_samples=None):
         c_r = c_tp / (c_tp + c_fn) if (c_tp + c_fn) > 0 else 0
         c_f1 = 2 * (c_p * c_r) / (c_p + c_r) if (c_p + c_r) > 0 else 0
         
-        # --- NEW: Add to our running totals ---
         macro_strict_f1_sum += c_f1
         weighted_strict_f1_sum += (c_f1 * support)
 
@@ -345,7 +281,6 @@ def evaluate(filepath, max_samples=None):
         print(f"  TP: {c_tp} | FP: {c_fp} | FN: {c_fn}")
         print(f"  P: {c_p:.4f} | R: {c_r:.4f} | F1: {c_f1:.4f}")
 
-    # --- NEW: Calculate final Strict averages ---
     macro_strict_f1 = macro_strict_f1_sum / len(all_labels) if len(all_labels) > 0 else 0
     weighted_strict_f1 = weighted_strict_f1_sum / total_strict_support if total_strict_support > 0 else 0
 
@@ -365,12 +300,10 @@ def evaluate(filepath, max_samples=None):
     print(f"F1-Score (Macro)  : {macro_strict_f1:.4f}")
     print(f"F1-Score (Weighted): {weighted_strict_f1:.4f}")
   
-    # Token math printout and its formula (Micro)
     t_precision = token_tp / (token_tp + token_fp) if (token_tp + token_fp) > 0 else 0
     t_recall = token_tp / (token_tp + token_fn) if (token_tp + token_fn) > 0 else 0
     t_micro_f1 = 2 * (t_precision * t_recall) / (t_precision + t_recall) if (t_precision + t_recall) > 0 else 0
 
-    # --- NEW: Macro and Weighted Token F1 Calculation ---
     token_labels = set(list(token_cat_tp.keys()) + list(token_cat_fp.keys()) + list(token_cat_fn.keys()))
     
     macro_f1_sum = 0
@@ -378,16 +311,13 @@ def evaluate(filepath, max_samples=None):
     total_true_tokens = 0
 
     for label in token_labels:
-        # Per-label token counts
         l_tp = token_cat_tp[label]
         l_fp = token_cat_fp[label]
         l_fn = token_cat_fn[label]
         
-        # Support is the actual number of true tokens for this label (TP + FN)
         support = l_tp + l_fn
         total_true_tokens += support
         
-        # Per-label Precision, Recall, F1
         l_p = l_tp / (l_tp + l_fp) if (l_tp + l_fp) > 0 else 0
         l_r = l_tp / (l_tp + l_fn) if (l_tp + l_fn) > 0 else 0
         l_f1 = 2 * (l_p * l_r) / (l_p + l_r) if (l_p + l_r) > 0 else 0
@@ -395,7 +325,6 @@ def evaluate(filepath, max_samples=None):
         macro_f1_sum += l_f1
         weighted_f1_sum += l_f1 * support
 
-    # Final averages
     t_macro_f1 = macro_f1_sum / len(token_labels) if len(token_labels) > 0 else 0
     t_weighted_f1 = weighted_f1_sum / total_true_tokens if total_true_tokens > 0 else 0
 
