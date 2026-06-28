@@ -9,7 +9,7 @@ from collections import defaultdict
 from scripts.local_llm_client import call_local_llm
 
 nlp = spacy.load("en_core_web_sm")
-PROMPT_PATH = Path("prompts/candidate_labeling-2.txt")
+PROMPT_PATH = Path("prompts/candidate_labeling.txt")
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
