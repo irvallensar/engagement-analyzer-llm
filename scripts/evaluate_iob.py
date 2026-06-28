@@ -13,9 +13,9 @@ PROMPT_PATH = Path("prompts/candidate_labeling.txt")
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-# Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen_72b_new_run.json"
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen_72b_new_run.json"
+# FIX: Rename the cache file so we don't load the broken "instant" empty arrays from the previous run
+CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen2_5_72b_v2.json"
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen2_5_72b_v2.json"
 
 def load_prompt():
     return PROMPT_PATH.read_text(encoding='utf-8')
@@ -45,8 +45,10 @@ def run_sentence_option2(text, doc):
         llm_result = call_local_llm(prompt)
         llm_items = llm_result.spans
     except Exception as e:
-        print(f"  [!] Generation Error: {e}")    
-        return []
+        # FIX: Instead of silently returning [], we raise the error so the script stops
+        # and tells you exactly what is wrong without poisoning the cache.
+        print(f"\n[FATAL ERROR] The LLM crashed: {e}")
+        raise e
       
     pred_spans = []
     
