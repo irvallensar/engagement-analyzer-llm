@@ -14,8 +14,8 @@ DRIVE_DIR = Path("logs")
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Point the cache and the final log directly into Google Drive
-CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen2_5_72b_new_run.json"
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen2_5_72b_new_run.json"
+CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen_72b_new_run.json"
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen_72b_new_run.json"
 
 def load_prompt():
     return PROMPT_PATH.read_text(encoding='utf-8')
