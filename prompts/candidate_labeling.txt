@@ -6,11 +6,11 @@ DEFINITIONS & CONSTRAINTS:
 
 1. MONOGLOSS: Bare assertions with no acknowledgment of alternative viewpoints. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'is illustrated') of a definitive, undeniable factual statement. STRICT RULE: Only tag the verb that carries the assertion — do NOT tag the entire clause.
 
-2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts (e.g., 'is not located', 'not apply'). STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
+2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts (e.g., 'is not located', 'do not have'). STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
 
 3. COUNTER: Replaces or contrasts with an expected alternative. Extract single transition words (e.g., 'however', 'although', 'only', 'but', 'yet', 'while', 'whereas') or full contrastive clauses. Multiple COUNTER spans in one sentence are valid if multiple contrastive signals appear.
 
-4. PROCLAIM: Shows strong rhetorical commitment or authorial backing. Extract words and phrases signalling high certainty (e.g., 'In fact', 'undoubtedly', 'indeed', 'conclude', 'demonstrate', 'confirms', 'clearly', 'of course').
+4. PROCLAIM: Shows strong rhetorical commitment or authorial backing. Extract words and phrases signalling high certainty (e.g., 'In fact', 'undoubtedly', 'indeed', 'the fact', 'conclude', 'demonstrate', 'confirms', 'clearly', 'of course').
 
 5. ENTERTAIN: Presents a proposition as one possibility among others, opening dialogic space. Extract:
    - Modal verbs: 'may', 'might', 'could', 'would', 'will' (when expressing possibility or conditionality), 'shall', 'must' (when epistemic)
@@ -22,13 +22,13 @@ DEFINITIONS & CONSTRAINTS:
 
 6. ATTRIBUTION: Delegates responsibility for a claim to an external voice. Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'stipulate', 'considers', 'emphasize', 'warns') or attributing phrase ('According to', 'as mentioned in', 'as reported by'). Tag ATTRIBUTION independently even when co-occurring with SOURCES.
 
-7. CITATION: Explicit in-text citations identifying a specific source. Extract the ENTIRE citation block including surrounding punctuation and internal spaces exactly as they appear in the sentence (e.g., 'Chomsky ( 1995 )', '[ 10 ]', '(Smith, 2003)'). Preserve unusual spacing exactly.
+7. CITATION: Explicit in-text citations identifying a specific source. Extract the ENTIRE citation block including surrounding punctuation and internal spaces exactly as they appear in the sentence (e.g., 'Chomsky ( 1995 )', '[ 10 ]', '( Chan et al 2006 )'). Preserve unusual spacing exactly.
 
 8. SOURCES: The specific named entity or pronoun making a claim. Extract the exact noun or noun phrase (e.g., 'Chomsky', 'researchers', 'Some studies', 'Dow Jones', 'His', 'the Scandinavian energy'). Tag SOURCES independently even when adjacent to ATTRIBUTION or CITATION — they are always separate spans.
 
 9. ENDOPHORIC: Structural references to other parts of the same text. Extract explicit document cross-references including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( 11 )', 'All above', '( references )'). Preserve unusual spacing exactly.
 
-10. JUSTIFYING: Signals persuasion or substantiation — provides reasons, evidence, or causal explanation. Extract causal clause introducers ('because', 'since', 'in that') together with their dependent clause, or concluding transition words ('Thus', 'Therefore', 'Hence') with their clause.
+10. JUSTIFYING: Signals persuasion or substantiation — provides reasons, evidence, or causal explanation. Extract causal clause introducers ('because', 'since', 'in that', 'due to') together with their dependent clause, or concluding transition words ('Thus', 'Therefore', 'Hence') with their clause.
 
 ---
 
@@ -38,7 +38,7 @@ Example 1 — ATTRIBUTION, MONOGLOSS, DENY, COUNTER, SOURCES, CITATION, JUSTIFYI
 Sentence: "His deep structure is slightly different from that reported in Chomsky ( 1995 ) in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 ) shows only the VP ):"
 JSON Object:
 {
-  "thought_process": "'His' is the specific entity making the claim (SOURCES). 'His deep structure' is an ATTRIBUTION — it attributes the described structure to an external source. 'is' is a bare assertive linking verb (MONOGLOSS). 'that reported in Chomsky ( 1995 )' is a second ATTRIBUTION delegating the claim to a reported source. 'Chomsky ( 1995 )' is the explicit citation (CITATION) with preserved spacing. 'is not located' is a literal syntactic negation (DENY). 'but' is a contrastive transition (COUNTER). 'only' signals restriction/contrast (COUNTER). 'in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 )' is a causal justifying clause (JUSTIFYING). '( 11 )' is an endophoric structural reference (ENDOPHORIC).",
+  "thought_process": "'His' is the specific entity making the claim (SOURCES). 'His deep structure' is an ATTRIBUTION — it attributes the described structure to an external source. 'is' is a bare assertive linking verb (MONOGLOSS). 'that reported in Chomsky ( 1995 )' is a second ATTRIBUTION delegating the claim to a reported source. 'Chomsky ( 1995 )' is the explicit citation with preserved spacing (CITATION). 'is not located' is a literal syntactic negation (DENY). 'but' is a contrastive transition (COUNTER). 'only' signals restriction/contrast (COUNTER). 'in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 )' is a causal justifying clause (JUSTIFYING). '( 11 )' is an endophoric structural reference (ENDOPHORIC).",
   "spans": [
     { "text": "His", "label": "SOURCES", "context_before": "" },
     { "text": "His deep structure", "label": "ATTRIBUTION", "context_before": "" },
@@ -57,7 +57,7 @@ Example 2 — ATTRIBUTION, PROCLAIM, COUNTER, ENTERTAIN, SOURCES, CITATION, JUST
 Sentence: "Centrica shares went up to 8 % during a fevered period of trading inspired by the speculation of the Scandinavian energy outfit Norsk Hydro leading as a potential buyer along with Shell and Gaz de France as mentioned in reports by Bloomberg . [ 10 ] In fact , Norsk Hydro was negotiating with Centrica on take over issues but the talks later faltered on the reservations of Norwegian government . [ 10 ] Also , Dow Jones considers Centrica as an attractive takeover target mainly because UK gas market bottleneck will ease after from 2007 . [ 11 ] All above confirms Centrica PLC to be a good take over target ."
 JSON Object:
 {
-  "thought_process": "'the Scandinavian energy' and 'reports by Bloomberg' and 'Dow Jones' are named entities making or conveying claims (SOURCES). 'the speculation of the Scandinavian energy' and 'as mentioned in reports by Bloomberg' and 'considers' and 'confirms' are reporting constructions (ATTRIBUTION). 'In fact' signals strong authorial commitment (PROCLAIM). 'but' is a contrastive transition (COUNTER). 'will' is a modal expressing possibility/futurity (ENTERTAIN). '[ 10 ]', '[ 10 ]', '[ 11 ]' are explicit citations with preserved spacing (CITATION). 'because UK gas market bottleneck will ease after from 2007' is a causal justifying clause (JUSTIFYING). 'All above' is an endophoric reference to earlier text (ENDOPHORIC).",
+  "thought_process": "'the Scandinavian energy', 'reports by Bloomberg', and 'Dow Jones' are named entities making or conveying claims (SOURCES). 'the speculation of the Scandinavian energy', 'as mentioned in reports by Bloomberg', 'considers', and 'confirms' are reporting constructions (ATTRIBUTION). 'In fact' signals strong authorial commitment (PROCLAIM). 'but' is a contrastive transition (COUNTER). 'will' is a modal expressing possibility/futurity (ENTERTAIN). '[ 10 ]', '[ 10 ]', '[ 11 ]' are explicit citations with preserved spacing (CITATION). 'because UK gas market bottleneck will ease after from 2007' is a causal justifying clause (JUSTIFYING). 'All above' is an endophoric reference to earlier text (ENDOPHORIC).",
   "spans": [
     { "text": "the Scandinavian energy", "label": "SOURCES", "context_before": "of" },
     { "text": "the speculation of the Scandinavian energy", "label": "ATTRIBUTION", "context_before": "by" },
@@ -74,6 +74,23 @@ JSON Object:
     { "text": "[ 11 ]", "label": "CITATION", "context_before": ". " },
     { "text": "All above", "label": "ENDOPHORIC", "context_before": "" },
     { "text": "confirms", "label": "ATTRIBUTION", "context_before": "above" }
+  ]
+}
+
+Example 3 — MONOGLOSS, COUNTER, ENTERTAIN, PROCLAIM, DENY, CITATION, JUSTIFYING
+Sentence: "It is easier for them to achieve alignment but lesser advantages provided ( Chan et al 2006 ) , perhaps due to the fact that they do not have an urgent need compared to the Prospectors and Analyzers ( Keen 1996 )"
+JSON Object:
+{
+  "thought_process": "'It is easier' is a bare assertion stating a fact without hedging (MONOGLOSS) — the verb phrase carries the assertive claim. 'but' is a contrastive transition introducing an opposing condition (COUNTER). 'perhaps' is an adverbial hedge opening dialogic space (ENTERTAIN) — tag only the hedge, not the full clause. 'the fact' signals strong rhetorical commitment by the author (PROCLAIM). 'do not have' is a literal syntactic negation (DENY). '( Chan et al 2006 )' and '( Keen 1996 )' are explicit in-text citations with preserved spacing (CITATION). 'perhaps due to the fact that they do not have an urgent need compared to the Prospectors and Analyzers' is a causal justifying clause introduced by 'due to' (JUSTIFYING).",
+  "spans": [
+    { "text": "It is easier", "label": "MONOGLOSS", "context_before": "" },
+    { "text": "but", "label": "COUNTER", "context_before": "alignment" },
+    { "text": "( Chan et al 2006 )", "label": "CITATION", "context_before": "provided" },
+    { "text": "perhaps", "label": "ENTERTAIN", "context_before": "," },
+    { "text": "the fact", "label": "PROCLAIM", "context_before": "to" },
+    { "text": "do not have", "label": "DENY", "context_before": "they" },
+    { "text": "perhaps due to the fact that they do not have an urgent need compared to the Prospectors and Analyzers", "label": "JUSTIFYING", "context_before": "," },
+    { "text": "( Keen 1996 )", "label": "CITATION", "context_before": "Analyzers" }
   ]
 }
 
