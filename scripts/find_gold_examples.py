@@ -5,20 +5,21 @@ nlp = spacy.blank("en")
 doc_bin = DocBin().from_disk("data/train.spacy")
 docs = list(doc_bin.get_docs(nlp.vocab))
 
-# Find sentences with 3+ distinct labels — ideal for few-shot
-good_examples = []
+target = {"MONOGLOSS", "DENY", "PROCLAIM", "ENTERTAIN"}
+
+candidates = []
 for doc in docs:
     spans = doc.spans.get("sc", [])
     labels = set(s.label_ for s in spans)
-    if len(labels) >= 3:
-        good_examples.append((doc.text, spans, labels))
+    overlap = labels & target
+    if len(overlap) >= 3:  # hits at least 3 of the 4 target labels
+        candidates.append((len(overlap), len(labels), doc.text, spans, labels))
 
-# Sort by label diversity
-good_examples.sort(key=lambda x: len(x[2]), reverse=True)
+candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
 
-# Print top candidates
-for text, spans, labels in good_examples[:20]:
-    print(f"\nSentence: {text}")
+for score, diversity, text, spans, labels in candidates[:5]:
+    print(f"\nScore {score}/4 | Total labels: {diversity}")
+    print(f"Sentence: {text[:200]}")
     for s in spans:
         print(f"  [{s.label_}] '{s.text}'")
     print(f"  Labels: {labels}")
