@@ -36,7 +36,7 @@ def call_local_llm(prompt_text):
     ])
 
     # 4. Generate the response enforcing the Pydantic schema
-    raw_result = model(chat_prompt, max_tokens=1024, output_type=ExtractionResult)
+    raw_result = model(chat_prompt, max_tokens=4096, output_type=ExtractionResult)
     
     # Outlines v0.1+ returns a JSON string, so we parse it back into our Pydantic object
     if isinstance(raw_result, str):
