@@ -9,7 +9,7 @@ from collections import defaultdict
 from scripts.local_llm_client import call_local_llm
 
 nlp = spacy.load("en_core_web_sm")
-PROMPT_PATH = Path("prompts/candidate_labeling.txt")
+PROMPT_PATH = Path("prompts/candidate_labeling-2.txt")
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -45,10 +45,10 @@ def run_sentence_option2(text, doc):
         llm_result = call_local_llm(prompt)
         llm_items = llm_result.spans
     except Exception as e:
-        # FIX: Instead of silently returning [], we raise the error so the script stops
-        # and tells you exactly what is wrong without poisoning the cache.
-        print(f"\n[FATAL ERROR] The LLM crashed: {e}")
-        raise e
+        # If the LLM still gets cut off or hallucinates unparseable text, 
+        # we log it and return empty rather than crashing the whole 5000-sentence run.
+        print(f"\n  [WARNING] LLM failed on this sentence (Token limit or Validation): {e}")
+        return []
       
     pred_spans = []
     
