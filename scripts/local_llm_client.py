@@ -1,4 +1,6 @@
+import mlx_lm
 import outlines
+from outlines.inputs import Chat
 from pydantic import BaseModel, Field
 from typing import List
 
@@ -12,28 +14,34 @@ class ExtractionResult(BaseModel):
     thought_process: str = Field(description="Logical reasoning for extracting the spans")
     spans: List[SpanExtraction] = Field(description="List of extracted engagement markers")
 
-# Global variables to hold the massive model in memory
+# Global variables
 model = None
-generator = None
 
 def call_local_llm(prompt_text):
-    global model, generator
+    global model
     
-    # 2. Load the model and initialize the Outlines generator
-    if model is None or generator is None:
+    # 2. Load the model using the NEW Outlines API
+    if model is None:
         print("\n[SYSTEM] Loading Qwen 2.5 (72B) into 256GB Mac Studio memory...")
-        
-        # Load the 72B Instruct model via Outlines' MLX integration
         model_id = "mlx-community/Qwen2.5-72B-Instruct-4bit"
         
-        # FIX: The correct outlines attribute is .mlx(), not .mlxlm()
-        model = outlines.models.mlxlm(model_id)
-        
-        # Initialize the structured JSON generator using our Pydantic schema
-        generator = outlines.generate.json(model, ExtractionResult)
+        # The new Outlines integration requires loading via mlx_lm first
+        loaded_mlx = mlx_lm.load(model_id)
+        model = outlines.from_mlxlm(*loaded_mlx)
 
-    # 3. Generate the response
-    # Outlines forces the LLM to output a perfect ExtractionResult Pydantic object
-    result = generator(prompt_text, max_tokens=1024)
+    # 3. Format the chat prompt properly for Qwen 2.5's ChatML template
+    chat_prompt = Chat([
+        {"role": "system", "content": "You are an expert computational linguist."},
+        {"role": "user", "content": prompt_text}
+    ])
+
+    # 4. Generate the response enforcing the Pydantic schema
+    raw_result = model(chat_prompt, max_tokens=1024, output_type=ExtractionResult)
     
+    # Outlines v0.1+ returns a JSON string, so we parse it back into our Pydantic object
+    if isinstance(raw_result, str):
+        result = ExtractionResult.model_validate_json(raw_result)
+    else:
+        result = raw_result
+        
     return result
