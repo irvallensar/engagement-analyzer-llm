@@ -13,8 +13,8 @@ PROMPT_PATH = Path("prompts/candidate_labeling.txt")
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen3_5_moe.json" 
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen3_5_moe.json"
+CACHE_FILE = DRIVE_DIR / "predictions_cache_new_run1.json" 
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_new_run1.json"
 
 def load_prompt():    
     return PROMPT_PATH.read_text(encoding='utf-8')    
