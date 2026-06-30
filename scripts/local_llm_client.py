@@ -53,16 +53,9 @@ def call_local_llm(prompt_text):
     try:
         result = ExtractionResult.model_validate_json(raw_result)
         
-        # Convert the Pydantic object back into the dictionary format your eval script expects
-        formatted_spans = []
-        for span in result.spans:
-            formatted_spans.append({
-                "text": span.text,
-                "label": span.label,
-                "context_before": span.context_before
-            })
-        return formatted_spans
+        # RETURN THE PYDANTIC OBJECT DIRECTLY
+        return result
 
     except Exception as e:
         print(f"  [!] Pydantic Parse Error: {e}")
-        return []
+        return None
