@@ -1,6 +1,6 @@
-from mlx_lm import load, generate
+from mlx_lm import load
 import outlines
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import List
 
 # 1. Define the Strict Pydantic Schema
@@ -26,8 +26,9 @@ def call_local_llm(prompt_text):
         # Switched to the user-requested Qwen 3 32B MLX model
         model_id = "Qwen/Qwen3-32B-MLX-4bit"
         
-        # Load via outlines MLX integration (trusting remote code for new tokenizers)
-        model = outlines.models.mlxlm(model_id, tokenizer_config={"trust_remote_code": True})
+        # Use the correct new Outlines MLX API
+        mlx_model, tokenizer = load(model_id, tokenizer_config={"trust_remote_code": True})
+        model = outlines.models.mlx(mlx_model, tokenizer)
         
         # Build the structured JSON generator based on our Pydantic schema
         generator = outlines.generate.json(model, ExtractionResult)
