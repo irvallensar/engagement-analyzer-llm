@@ -28,7 +28,7 @@ def call_local_llm(prompt_text):
         
         # Use the correct new Outlines MLX API
         mlx_model, tokenizer = load(model_id, tokenizer_config={"trust_remote_code": True})
-        model = outlines.models.mlx(mlx_model, tokenizer)
+        model = outlines.models.mlxlm(mlx_model, tokenizer)
         
         # Build the structured JSON generator based on our Pydantic schema
         generator = outlines.generate.json(model, ExtractionResult)
