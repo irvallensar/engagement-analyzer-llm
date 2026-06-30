@@ -1,4 +1,3 @@
-from mlx_lm import load
 import outlines
 from pydantic import BaseModel
 from typing import List
@@ -21,14 +20,12 @@ def call_local_llm(prompt_text):
     
     # 2. Load the Model & Outlines Generator
     if model is None or generator is None:
-        print("\n[SYSTEM] Loading Qwen 3 (32B) into Mac Studio memory...")
-        
-        # Switched to the user-requested Qwen 3 32B MLX model
+        print("\n[SYSTEM] Loading Qwen 3 (32B) MLX Model into memory...")
         model_id = "Qwen/Qwen3-32B-MLX-4bit"
         
-        # Use the correct new Outlines MLX API
-        mlx_model, tokenizer = load(model_id, tokenizer_config={"trust_remote_code": True})
-        model = outlines.models.mlxlm(mlx_model, tokenizer)
+        # Using exactly the syntax you confirmed works.
+        # This natively leverages MLX framework for Apple Silicon optimization.
+        model = outlines.models.mlxlm(model_id)
         
         # Build the structured JSON generator based on our Pydantic schema
         generator = outlines.generate.json(model, ExtractionResult)
@@ -39,23 +36,30 @@ def call_local_llm(prompt_text):
         {"role": "user", "content": prompt_text}
     ]
     
-    # Convert messages into the exact ChatML string Qwen expects
-    formatted_prompt = model.tokenizer.tokenizer.apply_chat_template(
-        messages, tokenize=False, add_generation_prompt=True
-    )
-    
-    # 4. Generate the response with increased max_tokens to prevent EOF cutoffs
-    # Because Outlines forces JSON, native <think> tags are blocked.
-    # It will only reason inside the "thought_process" JSON string.
-    raw_result = generator(formatted_prompt, max_tokens=4096)
-    
-    # 5. Parse the validated JSON back into a Python object
     try:
-        result = ExtractionResult.model_validate_json(raw_result)
+        formatted_prompt = model.tokenizer.tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+    except AttributeError:
+        # Fallback if tokenizer lacks apply_chat_template
+        formatted_prompt = f"<|im_start|>system\nYou are an expert computational linguist.<|im_end|>\n<|im_start|>user\n{prompt_text}<|im_end|>\n<|im_start|>assistant\n"
+    
+    # 4. Generate the response 
+    try:
+        # Outlines uses highly optimized MLX sampling under the hood here
+        raw_result = generator(formatted_prompt, max_tokens=4096)
         
-        # RETURN THE PYDANTIC OBJECT DIRECTLY
-        return result
+        # THE FIX: Modern Outlines returns the Pydantic object directly. 
+        # If we try to parse it with model_validate_json again, it crashes silently!
+        if isinstance(raw_result, ExtractionResult):
+            return raw_result
+        elif isinstance(raw_result, str):
+            return ExtractionResult.model_validate_json(raw_result)
+        else:
+            print(f"  [!] Unexpected type from outlines: {type(raw_result)}")
+            return ExtractionResult(thought_process="Error", spans=[])
 
     except Exception as e:
-        print(f"  [!] Pydantic Parse Error: {e}")
-        return None
+        print(f"  [!] LLM Crash or Parsing Error: {e}")
+        # Returning an empty ExtractionResult prevents evaluate_iob.py from crashing
+        return ExtractionResult(thought_process="Error", spans=[])
