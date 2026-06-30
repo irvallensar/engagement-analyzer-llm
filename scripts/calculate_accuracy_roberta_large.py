@@ -43,13 +43,22 @@ def evaluate_single_fold(model_path, test_data_path):
             for span in pred_spans:
                 if span not in gold_spans:
                     fp += 1
-
-        accuracy = tp / (tp + fp + fn) if (tp + fp + fn) > 0 else 0
+        
+        # Calculate Micro Precision and Micro Recall
+        micro_p = tp / (tp + fp) if (tp + fp) > 0 else 0
+        micro_r = tp / (tp + fn) if (tp + fn) > 0 else 0
+        
+        # Calculate Micro F1 (This is what Eguchi & Kyle labeled as "Accuracy")
+        micro_f1 = (2 * micro_p * micro_r) / (micro_p + micro_r) if (micro_p + micro_r) > 0 else 0
+        
+        # Keep your Jaccard calculation just for your own strict reference
+        jaccard_accuracy = tp / (tp + fp + fn) if (tp + fp + fn) > 0 else 0
         
         print(f"True Positives (TP): {tp}")
         print(f"False Positives (FP): {fp}")
         print(f"False Negatives (FN): {fn}")
-        print(f"\nSTRICT ACCURACY: {accuracy:.4f}")
+        print(f"\nSpan-Level Micro F1 (Baseline 'Accuracy' similar to Eguchi and Kyle 2023): {micro_f1:.4f}")
+        print(f"Strict Jaccard Index: {jaccard_accuracy:.4f}")
         print("=" * 40)
 
     except Exception as e:
