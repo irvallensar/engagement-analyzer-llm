@@ -3,11 +3,11 @@ import mlx_lm
 from pydantic import BaseModel
 from typing import List
 
-# 1. Define the Strict Pydantic Schema
+# 1. Define the Strict Pydantic Schema with Token Indices
 class MarkerSpan(BaseModel):
-    text: str
+    start_token: int
+    end_token: int
     label: str
-    context_before: str
 
 class ExtractionResult(BaseModel):
     thought_process: str
