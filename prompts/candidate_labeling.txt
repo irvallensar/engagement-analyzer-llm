@@ -6,7 +6,7 @@ Output strictly valid JSON.
 STRICT EXTRACTION RULES:
 - Extract the MINIMAL valid engagement marker required by the definitions below.
 - NEVER include surrounding context unless it is strictly part of the marker.
-- NEVER output overlapping spans (a single token cannot belong to two different labels).
+- Overlapping spans across different labels are valid and expected (e.g., a SOURCES span may overlap with an adjacent ATTRIBUTION or CITATION span).
 - Prefer omitting a span entirely rather than guessing when uncertain.
 - Your output must provide integer `start_token` (INCLUSIVE) and `end_token` (EXCLUSIVE). (e.g., if the marker is at token 4, `start_token` is 4 and `end_token` is 5).
 
