@@ -14,8 +14,8 @@ DRIVE_DIR = Path("logs")
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # FIX: Rename the cache file to avoid clashes with the old character-span cache
-CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen_3_32b_mlx_token_indices.json"
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen_3_32b_mlx.json"
+CACHE_FILE = DRIVE_DIR / "predictions_cache_qwen_3_32b_mlx_run_2.json"
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_qwen_3_32b_mlx_run_2.json"
 
 def load_prompt():
     return PROMPT_PATH.read_text(encoding='utf-8')
