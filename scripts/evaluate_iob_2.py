@@ -6,7 +6,7 @@ from pathlib import Path
 from collections import defaultdict
 
 # Import your new Outlines LLM client
-from scripts.local_llm_client import call_local_llm
+from scripts.local_llm_client_2 import call_local_llm
 
 nlp = spacy.load("en_core_web_sm")
 PROMPT_PATH = Path("prompts/candidate_labeling.txt")
