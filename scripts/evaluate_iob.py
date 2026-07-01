@@ -39,7 +39,7 @@ def save_eval_log(log_data):
 
 def run_sentence_option2(doc):
     # Construct numbered token string exactly matching spaCy's tokenization
-    numbered_tokens_str = ", ".join([f"{i} {token.text}" for i, token in enumerate(doc)])
+    numbered_tokens_str = " | ".join([f"{i} {token.text}" for i, token in enumerate(doc)])
     prompt = load_prompt().replace("{sentence}", numbered_tokens_str)
     
     try:
@@ -54,9 +54,15 @@ def run_sentence_option2(doc):
     if not llm_result or llm_result.thought_process == "Error":
         return None, []
     
+    VALID_LABELS = {
+        "ATTRIBUTION", "CITATION", "COUNTER", "DENY", "ENDOPHORIC",
+        "ENTERTAIN", "JUSTIFYING", "MONOGLOSS", "PROCLAIM", "SOURCES",
+    }
+
     for item in llm_result.spans:
-        label = item.label
-        if label == "O" or not label.strip():
+        label = (item.label or "").strip().upper()
+
+        if label not in VALID_LABELS:
             continue
             
         start_t = item.start_token
