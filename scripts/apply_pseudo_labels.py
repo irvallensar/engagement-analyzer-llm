@@ -67,24 +67,16 @@ def merge_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
         # Retrieve predicted spancat annotations and their confidence scores
         predicted_spans = predicted_doc.spans.get("sc", [])
         span_scores = predicted_doc.spans["sc"].attrs.get("scores", [])
-
-        # DEBUG: verify score structure once per document
-        print(f"[DEBUG] Predicted spans: {len(predicted_spans)} | Scores: {len(span_scores)}")
         
         # STEP 3: Merge only non-conflicting, HIGH-CONFIDENCE predictions
         merged_spans = gold_spans.copy()
+        CONFIDENCE_THRESHOLD = 0.7
 
         # Ensure scores are available to avoid zip errors
         if len(predicted_spans) == len(span_scores):
             for p_span, score in zip(predicted_spans, span_scores):
                 
                 # Check confidence threshold first
-                print(
-                    f"[DEBUG] Span='{p_span.text}' Label={p_span.label_} "
-                    f"Score={float(score):.3f} "
-                    f"{'ACCEPTED' if score >= CONFIDENCE_THRESHOLD else 'REJECTED'}"
-                )
-
                 if score >= CONFIDENCE_THRESHOLD:
                     span_tokens = set(range(p_span.start, p_span.end))
 
