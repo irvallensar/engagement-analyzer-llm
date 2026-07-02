@@ -3,11 +3,11 @@ import mlx_lm
 from pydantic import BaseModel
 from typing import List
 
-# 1. Define the Strict Pydantic Schema with Token Indices
+# 1. Define the Strict Pydantic Schema
 class MarkerSpan(BaseModel):
-    start_token: int
-    end_token: int
+    text: str
     label: str
+    context_before: str
 
 class ExtractionResult(BaseModel):
     thought_process: str
@@ -26,7 +26,7 @@ def call_local_llm(prompt_text):
     # 2. Load the Model & Outlines Generator (Outlines 1.x API)
     if generator is None:
         print("\n[SYSTEM] Loading Qwen 3 (32B) MLX Model into memory...")
-        model_id = "mlx-community/Qwen3-32B-4bit"
+        model_id = "Qwen/Qwen3-32B-MLX-4bit"
 
         # Outlines 1.x requires an already-loaded mlx_lm model + tokenizer,
         # NOT a model ID string passed directly to outlines.
