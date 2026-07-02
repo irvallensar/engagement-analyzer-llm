@@ -1,31 +1,18 @@
 You are an expert linguistic annotator for ENGAGEMENT analysis in academic discourse based on the Appraisal Framework (Martin & White, 2005).
 
-TASK: Analyze the sentence provided as a numbered token list (e.g., '0 The, 1 results,...'). Extract engagement markers as explicit token indices. Focus heavily on generating a logical "thought_process" before extracting the exact boundaries.
-Output strictly valid JSON.
-
-STRICT EXTRACTION RULES:
-- Extract the MINIMAL valid engagement marker required by the definitions below.
-- NEVER include surrounding context unless it is strictly part of the marker.
-- Overlapping spans across different labels are valid and expected (e.g., a SOURCES span may overlap with an adjacent ATTRIBUTION or CITATION span).
-- Prefer omitting a span entirely rather than guessing when uncertain.
-- Your output must provide integer `start_token` (INCLUSIVE) and `end_token` (EXCLUSIVE). (e.g., if the marker is at token 4, `start_token` is 4 and `end_token` is 5).
+TASK: Analyze the sentence and extract engagement markers. Focus heavily on generating a logical "thought_process" before extracting the exact spans. Output strictly valid JSON.
 
 DEFINITIONS & CONSTRAINTS:
 
-1. MONOGLOSS: Bare assertions with no acknowledgment of alternative viewpoints.
-Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'is illustrated') of a definitive, undeniable factual statement.
-STRICT RULE: Only tag the verb that carries the assertion — do NOT tag the entire clause.
+1. MONOGLOSS: Bare assertions with no acknowledgment of alternative viewpoints. Extract the main verb or verb phrase (including linking verbs like 'is', 'are' and passive forms like 'is illustrated') of a definitive, undeniable factual statement. STRICT RULE: Only tag the verb that carries the assertion — do NOT tag the entire clause.
 
-2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts (e.g., 'is not located', 'do not have').
-STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
+2. DENY: Rejects an alternative directly. Extract ONLY literal syntactic negators ('no', 'not', 'never', 'none', 'fail') and their immediate concepts (e.g., 'is not located', 'do not have'). STRICT RULE: Do NOT tag negative-sounding words (e.g., 'problem', 'bad') or morphological negation (e.g., 'unable', 'unnecessary').
 
-3. COUNTER: Replaces or contrasts with an expected alternative. Extract single transition words (e.g., 'however', 'although', 'only', 'but', 'yet', 'while', 'whereas') or full contrastive clauses.
-Multiple COUNTER spans in one sentence are valid if multiple contrastive signals appear.
+3. COUNTER: Replaces or contrasts with an expected alternative. Extract single transition words (e.g., 'however', 'although', 'only', 'but', 'yet', 'while', 'whereas') or full contrastive clauses. Multiple COUNTER spans in one sentence are valid if multiple contrastive signals appear.
 
 4. PROCLAIM: Shows strong rhetorical commitment or authorial backing. Extract words and phrases signalling high certainty (e.g., 'In fact', 'undoubtedly', 'indeed', 'the fact', 'conclude', 'demonstrate', 'confirms', 'clearly', 'of course').
 
-5. ENTERTAIN: Presents a proposition as one possibility among others, opening dialogic space.
-Extract:
+5. ENTERTAIN: Presents a proposition as one possibility among others, opening dialogic space. Extract:
    - Modal verbs: 'may', 'might', 'could', 'would', 'will' (when expressing possibility or conditionality), 'shall', 'must' (when epistemic)
    - Evidential markers: 'appear', 'seem', 'suggest' (and their inflected forms)
    - Adverbial hedges: 'probably', 'perhaps', 'apparently', 'generally', 'largely', 'often', 'On average'
@@ -33,84 +20,77 @@ Extract:
    - Epistemic phrases: 'I think', 'it is possible that', 'it is likely that'
    STRICT RULE: Tag only the hedge or modal — NOT the full clause it governs.
 
-6. ATTRIBUTION: Delegates responsibility for a claim to an external voice.
-Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'stipulate', 'considers', 'emphasize', 'warns') or attributing phrase ('According to', 'as mentioned in', 'as reported by').
-Tag ATTRIBUTION independently even when co-occurring with SOURCES.
+6. ATTRIBUTION: Delegates responsibility for a claim to an external voice. Extract the reporting verb phrase (e.g., 'strongly asserts', 'reveals', 'stipulate', 'considers', 'emphasize', 'warns') or attributing phrase ('According to', 'as mentioned in', 'as reported by'). Tag ATTRIBUTION independently even when co-occurring with SOURCES.
 
-7. CITATION: Explicit in-text citations identifying a specific source.
-Extract the ENTIRE citation block exactly as it appears in the tokens (e.g., 'Chomsky ( 1995 )', '[ 10 ]', '( Chan et al 2006 )').
+7. CITATION: Explicit in-text citations identifying a specific source. Extract the ENTIRE citation block including surrounding punctuation and internal spaces exactly as they appear in the sentence (e.g., 'Chomsky ( 1995 )', '[ 10 ]', '( Chan et al 2006 )'). Preserve unusual spacing exactly.
 
-8. SOURCES: The specific named entity or pronoun making a claim.
-Extract the exact noun or noun phrase (e.g., 'Chomsky', 'researchers', 'Some studies', 'Dow Jones', 'His', 'the Scandinavian energy').
-Tag SOURCES independently even when adjacent to ATTRIBUTION or CITATION — they are always separate spans.
+8. SOURCES: The specific named entity or pronoun making a claim. Extract the exact noun or noun phrase (e.g., 'Chomsky', 'researchers', 'Some studies', 'Dow Jones', 'His', 'the Scandinavian energy'). Tag SOURCES independently even when adjacent to ATTRIBUTION or CITATION — they are always separate spans.
 
-9. ENDOPHORIC: Structural references to other parts of the same text.
-Extract explicit document cross-references including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( 11 )', 'All above', '( references )').
+9. ENDOPHORIC: Structural references to other parts of the same text. Extract explicit document cross-references including the preposition if present (e.g., 'in Figure 1', 'Table 8', '( 11 )', 'All above', '( references )'). Preserve unusual spacing exactly.
 
-10. JUSTIFYING: Signals persuasion or substantiation — provides reasons, evidence, or causal explanation.
-Extract causal clause introducers ('because', 'since', 'in that', 'due to') together with their dependent clause, or concluding transition words ('Thus', 'Therefore', 'Hence') with their clause.
+10. JUSTIFYING: Signals persuasion or substantiation — provides reasons, evidence, or causal explanation. Extract causal clause introducers ('because', 'since', 'in that', 'due to') together with their dependent clause, or concluding transition words ('Thus', 'Therefore', 'Hence') with their clause.
 
 ---
 
 EXAMPLES:
 
 Example 1 — ATTRIBUTION, MONOGLOSS, DENY, COUNTER, SOURCES, CITATION, JUSTIFYING, ENDOPHORIC
-Numbered Tokens: 0 His, 1 deep, 2 structure, 3 is, 4 slightly, 5 different, 6 from, 7 that, 8 reported, 9 in, 10 Chomsky, 11 (, 12 1995, 13 ), 14 in, 15 that, 16 the, 17 subject, 18 of, 19 John, 20 sent, 21 a, 22 letter, 23 to, 24 Mary, 25 is, 26 not, 27 located, 28 in, 29 the, 30 specifier, 31 position, 32 of, 33 VP1, 34 ,, 35 but, 36 in, 37 SpecIP, 38 (, 39 (, 40 11, 41 ), 42 shows, 43 only, 44 the, 45 VP, 46 ):
+Sentence: "His deep structure is slightly different from that reported in Chomsky ( 1995 ) in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 ) shows only the VP ):"
 JSON Object:
 {
-  "thought_process": "'His' (tokens 0-1) is the specific entity making the claim (SOURCES). 'His deep structure' (tokens 0-3) is an ATTRIBUTION. 'is' (tokens 3-4) is a bare assertive linking verb (MONOGLOSS). 'that reported in Chomsky ( 1995 )' (tokens 7-14) is a second ATTRIBUTION. 'Chomsky ( 1995 )' (tokens 10-14) is the explicit citation (CITATION). 'is not located' (tokens 25-28) is a literal syntactic negation (DENY). 'but' (tokens 35-36) is a contrastive transition (COUNTER). 'only' (tokens 43-44) signals restriction/contrast (COUNTER). 'in that the subject... SpecIP ( ( 11 )' (tokens 14-42) is a causal justifying clause (JUSTIFYING). '( 11 )' (tokens 39-42) is an endophoric structural reference (ENDOPHORIC).",
+  "thought_process": "'His' is the specific entity making the claim (SOURCES). 'His deep structure' is an ATTRIBUTION — it attributes the described structure to an external source. 'is' is a bare assertive linking verb (MONOGLOSS). 'that reported in Chomsky ( 1995 )' is a second ATTRIBUTION delegating the claim to a reported source. 'Chomsky ( 1995 )' is the explicit citation with preserved spacing (CITATION). 'is not located' is a literal syntactic negation (DENY). 'but' is a contrastive transition (COUNTER). 'only' signals restriction/contrast (COUNTER). 'in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 )' is a causal justifying clause (JUSTIFYING). '( 11 )' is an endophoric structural reference (ENDOPHORIC).",
   "spans": [
-    { "start_token": 0, "end_token": 1, "label": "SOURCES" },
-    { "start_token": 0, "end_token": 3, "label": "ATTRIBUTION" },
-    { "start_token": 3, "end_token": 4, "label": "MONOGLOSS" },
-    { "start_token": 7, "end_token": 14, "label": "ATTRIBUTION" },
-    { "start_token": 10, "end_token": 14, "label": "CITATION" },
-    { "start_token": 25, "end_token": 28, "label": "DENY" },
-    { "start_token": 35, "end_token": 36, "label": "COUNTER" },
-    { "start_token": 43, "end_token": 44, "label": "COUNTER" },
-    { "start_token": 14, "end_token": 42, "label": "JUSTIFYING" },
-    { "start_token": 39, "end_token": 42, "label": "ENDOPHORIC" }
+    { "text": "His", "label": "SOURCES", "context_before": "" },
+    { "text": "His deep structure", "label": "ATTRIBUTION", "context_before": "" },
+    { "text": "is", "label": "MONOGLOSS", "context_before": "structure" },
+    { "text": "that reported in Chomsky ( 1995 )", "label": "ATTRIBUTION", "context_before": "from" },
+    { "text": "Chomsky ( 1995 )", "label": "CITATION", "context_before": "in" },
+    { "text": "is not located", "label": "DENY", "context_before": "Mary" },
+    { "text": "but", "label": "COUNTER", "context_before": "VP1 ," },
+    { "text": "only", "label": "COUNTER", "context_before": "shows" },
+    { "text": "in that the subject of John sent a letter to Mary is not located in the specifier position of VP1 , but in SpecIP ( ( 11 )", "label": "JUSTIFYING", "context_before": ")" },
+    { "text": "( 11 )", "label": "ENDOPHORIC", "context_before": "SpecIP (" }
   ]
 }
 
 Example 2 — ATTRIBUTION, PROCLAIM, COUNTER, ENTERTAIN, SOURCES, CITATION, JUSTIFYING, ENDOPHORIC
-Numbered Tokens: 0 Centrica, 1 shares, 2 went, 3 up, 4 to, 5 8, 6 %, 7 during, 8 a, 9 fevered, 10 period, 11 of, 12 trading, 13 inspired, 14 by, 15 the, 16 speculation, 17 of, 18 the, 19 Scandinavian, 20 energy, 21 outfit, 22 Norsk, 23 Hydro, 24 leading, 25 as, 26 a, 27 potential, 28 buyer, 29 along, 30 with, 31 Shell, 32 and, 33 Gaz, 34 de, 35 France, 36 as, 37 mentioned, 38 in, 39 reports, 40 by, 41 Bloomberg, 42 ., 43 [, 44 10, 45 ], 46 In, 47 fact, 48 ,, 49 Norsk, 50 Hydro, 51 was, 52 negotiating, 53 with, 54 Centrica, 55 on, 56 take, 57 over, 58 issues, 59 but, 60 the, 61 talks, 62 later, 63 faltered, 64 on, 65 the, 66 reservations, 67 of, 68 Norwegian, 69 government, 70 ., 71 [, 72 10, 73 ], 74 Also, 75 ,, 76 Dow, 77 Jones, 78 considers, 79 Centrica, 80 as, 81 an, 82 attractive, 83 takeover, 84 target, 85 mainly, 86 because, 87 UK, 88 gas, 89 market, 90 bottleneck, 91 will, 92 ease, 93 after, 94 from, 95 2007, 96 ., 97 [, 98 11, 99 ], 100 All, 101 above, 102 confirms, 103 Centrica, 104 PLC, 105 to, 106 be, 107 a, 108 good, 109 take, 110 over, 111 target, 112 .
+Sentence: "Centrica shares went up to 8 % during a fevered period of trading inspired by the speculation of the Scandinavian energy outfit Norsk Hydro leading as a potential buyer along with Shell and Gaz de France as mentioned in reports by Bloomberg . [ 10 ] In fact , Norsk Hydro was negotiating with Centrica on take over issues but the talks later faltered on the reservations of Norwegian government . [ 10 ] Also , Dow Jones considers Centrica as an attractive takeover target mainly because UK gas market bottleneck will ease after from 2007 . [ 11 ] All above confirms Centrica PLC to be a good take over target ."
 JSON Object:
 {
-  "thought_process": "'the Scandinavian energy' (tokens 18-21), 'reports by Bloomberg' (tokens 39-42), and 'Dow Jones' (tokens 76-78) are named entities (SOURCES). 'the speculation of the Scandinavian energy' (tokens 15-21), 'as mentioned in reports by Bloomberg' (tokens 36-42), 'considers' (tokens 78-79), and 'confirms' (tokens 102-103) are reporting constructions (ATTRIBUTION). 'In fact' (tokens 46-48) signals strong authorial commitment (PROCLAIM). 'but' (tokens 59-60) is a contrastive transition (COUNTER). 'will' (tokens 91-92) is a modal expressing futurity (ENTERTAIN). '[ 10 ]' (tokens 43-46), '[ 10 ]' (tokens 71-74), and '[ 11 ]' (tokens 97-100) are explicit citations (CITATION). 'because UK gas market bottleneck will ease after from 2007' (tokens 86-96) is a causal justifying clause (JUSTIFYING). 'All above' (tokens 100-102) is an endophoric reference (ENDOPHORIC).",
+  "thought_process": "'the Scandinavian energy', 'reports by Bloomberg', and 'Dow Jones' are named entities making or conveying claims (SOURCES). 'the speculation of the Scandinavian energy', 'as mentioned in reports by Bloomberg', 'considers', and 'confirms' are reporting constructions (ATTRIBUTION). 'In fact' signals strong authorial commitment (PROCLAIM). 'but' is a contrastive transition (COUNTER). 'will' is a modal expressing possibility/futurity (ENTERTAIN). '[ 10 ]', '[ 10 ]', '[ 11 ]' are explicit citations with preserved spacing (CITATION). 'because UK gas market bottleneck will ease after from 2007' is a causal justifying clause (JUSTIFYING). 'All above' is an endophoric reference to earlier text (ENDOPHORIC).",
   "spans": [
-    { "start_token": 18, "end_token": 21, "label": "SOURCES" },
-    { "start_token": 15, "end_token": 21, "label": "ATTRIBUTION" },
-    { "start_token": 39, "end_token": 42, "label": "SOURCES" },
-    { "start_token": 36, "end_token": 42, "label": "ATTRIBUTION" },
-    { "start_token": 43, "end_token": 46, "label": "CITATION" },
-    { "start_token": 46, "end_token": 48, "label": "PROCLAIM" },
-    { "start_token": 59, "end_token": 60, "label": "COUNTER" },
-    { "start_token": 71, "end_token": 74, "label": "CITATION" },
-    { "start_token": 76, "end_token": 78, "label": "SOURCES" },
-    { "start_token": 78, "end_token": 79, "label": "ATTRIBUTION" },
-    { "start_token": 91, "end_token": 92, "label": "ENTERTAIN" },
-    { "start_token": 86, "end_token": 96, "label": "JUSTIFYING" },
-    { "start_token": 97, "end_token": 100, "label": "CITATION" },
-    { "start_token": 100, "end_token": 102, "label": "ENDOPHORIC" },
-    { "start_token": 102, "end_token": 103, "label": "ATTRIBUTION" }
+    { "text": "the Scandinavian energy", "label": "SOURCES", "context_before": "of" },
+    { "text": "the speculation of the Scandinavian energy", "label": "ATTRIBUTION", "context_before": "by" },
+    { "text": "reports by Bloomberg", "label": "SOURCES", "context_before": "in" },
+    { "text": "as mentioned in reports by Bloomberg", "label": "ATTRIBUTION", "context_before": "France" },
+    { "text": "[ 10 ]", "label": "CITATION", "context_before": ". " },
+    { "text": "In fact", "label": "PROCLAIM", "context_before": "" },
+    { "text": "but", "label": "COUNTER", "context_before": "issues" },
+    { "text": "[ 10 ]", "label": "CITATION", "context_before": ". " },
+    { "text": "Dow Jones", "label": "SOURCES", "context_before": "" },
+    { "text": "considers", "label": "ATTRIBUTION", "context_before": "Jones" },
+    { "text": "will", "label": "ENTERTAIN", "context_before": "bottleneck" },
+    { "text": "because UK gas market bottleneck will ease after from 2007", "label": "JUSTIFYING", "context_before": "mainly" },
+    { "text": "[ 11 ]", "label": "CITATION", "context_before": ". " },
+    { "text": "All above", "label": "ENDOPHORIC", "context_before": "" },
+    { "text": "confirms", "label": "ATTRIBUTION", "context_before": "above" }
   ]
 }
 
 Example 3 — MONOGLOSS, COUNTER, ENTERTAIN, PROCLAIM, DENY, CITATION, JUSTIFYING
-Numbered Tokens: 0 It, 1 is, 2 easier, 3 for, 4 them, 5 to, 6 achieve, 7 alignment, 8 but, 9 lesser, 10 advantages, 11 provided, 12 (, 13 Chan, 14 et, 15 al, 16 2006, 17 ), 18 ,, 19 perhaps, 20 due, 21 to, 22 the, 23 fact, 24 that, 25 they, 26 do, 27 not, 28 have, 29 an, 30 urgent, 31 need, 32 compared, 33 to, 34 the, 35 Prospectors, 36 and, 37 Analyzers, 38 (, 39 Keen, 40 1996, 41 )
+Sentence: "It is easier for them to achieve alignment but lesser advantages provided ( Chan et al 2006 ) , perhaps due to the fact that they do not have an urgent need compared to the Prospectors and Analyzers ( Keen 1996 )"
 JSON Object:
 {
-  "thought_process": "'It is easier' (tokens 0-3) is a bare assertion stating a fact without hedging (MONOGLOSS). 'but' (tokens 8-9) is a contrastive transition (COUNTER). 'perhaps' (tokens 19-20) is an adverbial hedge opening dialogic space (ENTERTAIN). 'the fact' (tokens 22-24) signals strong rhetorical commitment (PROCLAIM). 'do not have' (tokens 26-29) is a literal syntactic negation (DENY). '( Chan et al 2006 )' (tokens 12-18) and '( Keen 1996 )' (tokens 38-42) are explicit in-text citations (CITATION). 'perhaps due to the fact that they do not have an urgent need compared to the Prospectors and Analyzers' (tokens 19-38) is a causal justifying clause (JUSTIFYING).",
+  "thought_process": "'It is easier' is a bare assertion stating a fact without hedging (MONOGLOSS) — the verb phrase carries the assertive claim. 'but' is a contrastive transition introducing an opposing condition (COUNTER). 'perhaps' is an adverbial hedge opening dialogic space (ENTERTAIN) — tag only the hedge, not the full clause. 'the fact' signals strong rhetorical commitment by the author (PROCLAIM). 'do not have' is a literal syntactic negation (DENY). '( Chan et al 2006 )' and '( Keen 1996 )' are explicit in-text citations with preserved spacing (CITATION). 'perhaps due to the fact that they do not have an urgent need compared to the Prospectors and Analyzers' is a causal justifying clause introduced by 'due to' (JUSTIFYING).",
   "spans": [
-    { "start_token": 0, "end_token": 3, "label": "MONOGLOSS" },
-    { "start_token": 8, "end_token": 9, "label": "COUNTER" },
-    { "start_token": 12, "end_token": 18, "label": "CITATION" },
-    { "start_token": 19, "end_token": 20, "label": "ENTERTAIN" },
-    { "start_token": 22, "end_token": 24, "label": "PROCLAIM" },
-    { "start_token": 26, "end_token": 29, "label": "DENY" },
-    { "start_token": 19, "end_token": 38, "label": "JUSTIFYING" },
-    { "start_token": 38, "end_token": 42, "label": "CITATION" }
+    { "text": "It is easier", "label": "MONOGLOSS", "context_before": "" },
+    { "text": "but", "label": "COUNTER", "context_before": "alignment" },
+    { "text": "( Chan et al 2006 )", "label": "CITATION", "context_before": "provided" },
+    { "text": "perhaps", "label": "ENTERTAIN", "context_before": "," },
+    { "text": "the fact", "label": "PROCLAIM", "context_before": "to" },
+    { "text": "do not have", "label": "DENY", "context_before": "they" },
+    { "text": "perhaps due to the fact that they do not have an urgent need compared to the Prospectors and Analyzers", "label": "JUSTIFYING", "context_before": "," },
+    { "text": "( Keen 1996 )", "label": "CITATION", "context_before": "Analyzers" }
   ]
 }
 
@@ -118,4 +98,4 @@ JSON Object:
 
 Now annotate the following sentence using the same JSON format.
 
-Numbered Tokens: {sentence}
+Sentence: {sentence}
