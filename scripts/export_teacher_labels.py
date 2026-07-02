@@ -4,7 +4,7 @@ import os
 from collections import Counter
 
 # 1. Configuration
-# Replace this with the absolute path to the directory containing your 64 JSON files
+# The correct absolute path you provided
 BATCH_DIRECTORY = "/Users/irvallen/engagement-analyzer-llm/Engagement-Discourse-Treebank-Construction/output/annotation_batches" 
 OUTPUT_FILE = "pseudo_labeled_corpus.jsonl"
 
@@ -33,9 +33,8 @@ for i in range(1, 65):
     filename = f"{i}_annotation_data.json"
     file_path = os.path.join(BATCH_DIRECTORY, filename)
     
-    # Check if the file exists before trying to open it
     if not os.path.exists(file_path):
-        print(f"\nSkipping {filename} (File not found at {file_path})")
+        print(f"\nSkipping {filename} (File not found)")
         continue
         
     print(f"\nProcessing {filename}...")
@@ -46,12 +45,23 @@ for i in range(1, 65):
     for sentence_id, text in batch_data:
         clean_text = text.strip()
         
+        # Skip if the text is empty or too short (prevents suggester crashes)
+        if len(clean_text) < 3:
+            continue
+            
         # DATA LEAKAGE PREVENTION: Skip if the exact text is already in the Gold Standard
         if clean_text in gold_texts:
             continue
             
-        # Run the RoBERTa+LSTM inference
-        doc = nlp(text)
+        # Run the RoBERTa+LSTM inference with a safety net
+        try:
+            doc = nlp(text)
+        except ValueError:
+            # Skip junk sentences that crash the span suggester
+            continue
+        except Exception as e:
+            # Catch any other random spaCy crashes and ignore them
+            continue
         
         spans = []
         found_target_class = False
