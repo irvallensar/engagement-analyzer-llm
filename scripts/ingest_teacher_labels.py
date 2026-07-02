@@ -7,7 +7,7 @@ nlp = spacy.blank("en")
 doc_bin = DocBin()
 
 input_file = "pseudo_labeled_corpus.jsonl"
-output_file = "data/pseudo_labeled_training_data.spacy"
+output_file = "data/pseudo_labeled_training_corpus.spacy"
 
 print(f"Ingesting {input_file} into modern spaCy environment...")
 with open(input_file, "r", encoding="utf-8") as f:
