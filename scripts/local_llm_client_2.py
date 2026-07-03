@@ -5,9 +5,9 @@ from typing import List
 
 # 1. Define the Strict Pydantic Schema with Token Indices
 class MarkerSpan(BaseModel):
-    start_token: int
-    end_token: int
+    text: str
     label: str
+    context_before: str
 
 class ExtractionResult(BaseModel):
     thought_process: str
