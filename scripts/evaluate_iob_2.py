@@ -13,9 +13,9 @@ PROMPT_PATH = Path("prompts/candidate_labeling.txt")
 DRIVE_DIR = Path("logs") 
 DRIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-# FIX: Rename the cache file to avoid clashes with the old character-span cache
-CACHE_FILE = DRIVE_DIR / "predictions_cache_llama_3-3_70b_mlx.json"
-EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_llama_3-3_70b_mlx.json"
+# FIX: Rename the cache file so we don't load the broken "instant" empty arrays from the previous run
+CACHE_FILE = DRIVE_DIR / "predictions_cache_gemma_3_27b_mlx.json"
+EVAL_LOG_FILE = DRIVE_DIR / "comprehensive_eval_log_gemma_3_27b_mlx.json"
 
 def load_prompt():
     return PROMPT_PATH.read_text(encoding='utf-8')
@@ -37,43 +37,55 @@ def save_eval_log(log_data):
     with open(EVAL_LOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(log_data, f, indent=4)
 
-def run_sentence_option2(doc):
-    # Construct numbered token string exactly matching spaCy's tokenization
-    numbered_tokens_str = " | ".join([f"{i} {token.text}" for i, token in enumerate(doc)])
-    prompt = load_prompt().replace("{sentence}", numbered_tokens_str)
+def run_sentence_option2(text, doc):
+    prompt = load_prompt().replace("{sentence}", text)
     
     try:
         # Call the LLM. It now returns a clean Pydantic object!
         llm_result = call_local_llm(prompt)
+        llm_items = llm_result.spans
     except Exception as e:
+        # If the LLM still gets cut off or hallucinates unparseable text, 
+        # we log it and return empty rather than crashing the whole 5000-sentence run.
         print(f"\n  [WARNING] LLM failed on this sentence (Token limit or Validation): {e}")
-        return None, []
+        return []
       
     pred_spans = []
     
-    if not llm_result or llm_result.thought_process == "Error":
-        return None, []
-    
-    VALID_LABELS = {
-        "ATTRIBUTION", "CITATION", "COUNTER", "DENY", "ENDOPHORIC",
-        "ENTERTAIN", "JUSTIFYING", "MONOGLOSS", "PROCLAIM", "SOURCES",
-    }
-
-    for item in llm_result.spans:
-        label = (item.label or "").strip().upper()
-
-        if label not in VALID_LABELS:
+    for item in llm_items:
+        # Access attributes directly from the Pydantic object
+        label = item.label
+        if label == "O" or not label.strip():
             continue
             
-        start_t = item.start_token
-        end_t = item.end_token
+        span_text = item.text
+        context_before = item.context_before.strip()
+        
+        if not span_text:
+            continue
 
-        # Direct Validation: ensure valid integer boundaries within document length
-        if 0 <= start_t < end_t <= len(doc):
-            pred_spans.append((label, start_t, end_t))
+        start_char = -1
+        
+        # 1. Anchoring first
+        if context_before:
+            search_string = f"{context_before} {span_text}"
+            combo_start = text.find(search_string)
+            if combo_start != -1:
+                start_char = combo_start + len(context_before) + 1
+        
+        # 2. Fallback
+        if start_char == -1:
+            start_char = text.find(span_text)
+            
+        # 3. Converts to spaCy tokens
+        if start_char != -1:
+            end_char = start_char + len(span_text)
+            span = doc.char_span(start_char, end_char, alignment_mode="expand")
+            
+            if span:
+                pred_spans.append((label, span.start, span.end))
 
-    # Return raw dict for deep caching, and validated list for evaluation
-    return llm_result.model_dump(), pred_spans
+    return pred_spans
 
 
 def parse_iob_file(filepath):
@@ -169,19 +181,13 @@ def evaluate(filepath, max_samples=None):
         evaluated_live = False 
         
         if cache_key in cache:
-            # Reconstruct tuples from the dual-cache structure
-            pred_list = [tuple(x) for x in cache[cache_key].get("pred_tuples", [])] 
+            pred_list = [tuple(x) for x in cache[cache_key]] 
             pred_spans = set(pred_list)
         else:
             print(f"Evaluating Sentence {i+1}/{len(dataset)}...")
-            raw_dict, pred_list = run_sentence_option2(data["doc"])
+            pred_list = run_sentence_option2(data["text"], data["doc"])
             pred_spans = set(pred_list)
-            
-            # Save both the raw LLM dict and the evaluated tuples
-            cache[cache_key] = {
-                "raw_response": raw_dict,
-                "pred_tuples": pred_list
-            }
+            cache[cache_key] = pred_list
             save_cache(cache)
             evaluated_live = True
         
