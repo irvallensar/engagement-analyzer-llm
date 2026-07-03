@@ -25,8 +25,8 @@ def call_local_llm(prompt_text):
 
     # 2. Load the Model & Outlines Generator (Outlines 1.x API)
     if generator is None:
-        print("\n[SYSTEM] Loading Qwen 3 (32B) MLX Model into memory...")
-        model_id = "Qwen/Qwen3-32B-MLX-4bit"
+        print("\n[SYSTEM] Loading Llama-3.3-70B-Instruct-4bit into memory...")
+        model_id = "mlx-community/Llama-3.3-70B-Instruct-4bit"
 
         # Outlines 1.x requires an already-loaded mlx_lm model + tokenizer,
         # NOT a model ID string passed directly to outlines.
