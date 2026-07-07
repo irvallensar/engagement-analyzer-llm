@@ -2,11 +2,8 @@ import spacy
 from spacy.tokens import DocBin, Span
 import os
 
-# DUAL-THRESHOLD STRATEGY:
-# Forgiving threshold for the primary label Qwen was explicitly asked to generate.
-PRIMARY_CONFIDENCE_THRESHOLD = 0.5
-# Strict threshold for recovering unprompted background/secondary labels.
-SECONDARY_CONFIDENCE_THRESHOLD = 0.7
+# We remain strict for capturing unprompted, accidental background labels.
+BACKGROUND_CONFIDENCE_THRESHOLD = 0.7
 
 def merge_and_qa_pseudo_labels(baseline_model_path, synthetic_input_path, output_path):
 
@@ -24,7 +21,7 @@ def merge_and_qa_pseudo_labels(baseline_model_path, synthetic_input_path, output
     rejected_sentences_count = 0
     recovered_secondary_labels = 0 
     
-    print("Beginning QA and Knowledge Distillation scan...")
+    print("Beginning character-aligned QA and Knowledge Distillation scan...")
 
     for doc in raw_docs:
         llm_primary_spans = list(doc.spans.get("sc", []))
@@ -43,29 +40,38 @@ def merge_and_qa_pseudo_labels(baseline_model_path, synthetic_input_path, output
             
         has_scores = len(predicted_spans) == len(span_scores) and len(predicted_spans) > 0
         
-        # STEP 3: The QA Gate (Using PRIMARY Threshold)
+        # STEP 1: Character-Level QA Gate
         qa_passed = True
         verified_primary_spans = []
-        occupancy_map = set()
+        occupancy_map = set() # Tracked via token indices inside the target 'doc'
         
         for llm_span in llm_primary_spans:
-            llm_tokens = set(range(llm_span.start, llm_span.end))
             match_found = False
             
             for i, p_span in enumerate(predicted_spans):
                 if p_span.label_ == llm_span.label_:
-                    teacher_tokens = set(range(p_span.start, p_span.end))
                     
-                    if llm_tokens.intersection(teacher_tokens):
-                        score = span_scores[i] if has_scores else 1.0
+                    # ABSOLUTE CHARACTER OVERLAP CHECK:
+                    # Two character segments overlap if max(start1, start2) < min(end1, end2)
+                    if max(llm_span.start_char, p_span.start_char) < min(llm_span.end_char, p_span.end_char):
+                        match_found = True
                         
-                        # USE THE LOWER PRIMARY THRESHOLD HERE
-                        if score >= PRIMARY_CONFIDENCE_THRESHOLD:
-                            match_found = True
-                            verified_span = Span(doc, p_span.start, p_span.end, label=p_span.label_)
+                        # Safely map teacher character bounds back onto target doc tokens smoothly
+                        verified_span = doc.char_span(
+                            p_span.start_char, 
+                            p_span.end_char, 
+                            label=p_span.label_,
+                            alignment_mode="expand"
+                        )
+                        
+                        if verified_span is not None:
                             verified_primary_spans.append(verified_span)
-                            occupancy_map.update(teacher_tokens)
-                            break 
+                            occupancy_map.update(range(verified_span.start, verified_span.end))
+                        else:
+                            # Robust fallback to original tokenization bounds if character alignment fails
+                            verified_primary_spans.append(llm_span)
+                            occupancy_map.update(range(llm_span.start, llm_span.end))
+                        break 
             
             if not match_found:
                 qa_passed = False
@@ -77,24 +83,32 @@ def merge_and_qa_pseudo_labels(baseline_model_path, synthetic_input_path, output
             
         accepted_sentences_count += 1
 
-        # STEP 4: Secondary Label Distillation (Using SECONDARY Threshold)
+        # STEP 2: Background Secondary Label Distillation
         final_merged_spans = verified_primary_spans.copy()
         
         for i, p_span in enumerate(predicted_spans):
-            if p_span.text in [s.text for s in verified_primary_spans] and p_span.label_ in [s.label_ for s in verified_primary_spans]:
+            # Skip if this is the primary label we verified in Step 1
+            is_primary = False
+            for v_span in verified_primary_spans:
+                if p_span.start_char == v_span.start_char and p_span.end_char == v_span.end_char and p_span.label_ == v_span.label_:
+                    is_primary = True
+                    break
+            if is_primary:
                 continue
                 
             score = span_scores[i] if has_scores else 1.0
 
-            # USE THE STRICT SECONDARY THRESHOLD HERE
-            if score >= SECONDARY_CONFIDENCE_THRESHOLD:
-                teacher_tokens = set(range(p_span.start, p_span.end))
-
-                if not teacher_tokens.intersection(occupancy_map):
-                    new_secondary_span = Span(doc, p_span.start, p_span.end, label=p_span.label_)
-                    final_merged_spans.append(new_secondary_span)
-                    recovered_secondary_labels += 1
-                    occupancy_map.update(teacher_tokens)
+            # Enforce strict 0.7 rule for unexpected background findings
+            if score >= BACKGROUND_CONFIDENCE_THRESHOLD:
+                s_span = doc.char_span(p_span.start_char, p_span.end_char, label=p_span.label_, alignment_mode="expand")
+                
+                if s_span is not None:
+                    teacher_tokens = set(range(s_span.start, s_span.end))
+                    # Prevent background labels from clipping over verified primary bounds
+                    if not teacher_tokens.intersection(occupancy_map):
+                        final_merged_spans.append(s_span)
+                        recovered_secondary_labels += 1
+                        occupancy_map.update(teacher_tokens)
 
         doc.spans["sc"] = final_merged_spans
         processed_doc_bin.add(doc)
@@ -106,7 +120,7 @@ def merge_and_qa_pseudo_labels(baseline_model_path, synthetic_input_path, output
     print(f"-> Missing Secondary Labels Recovered: {recovered_secondary_labels}")
     
     processed_doc_bin.to_disk(output_path)
-    print(f"\n[SUCCESS] QA-verified synthetic training data saved to: {output_path}")
+    print(f"\n[SUCCESS] Character-aligned QA-verified data saved to: {output_path}")
 
 if __name__ == "__main__":
     BEST_BASELINE_FOLD = "en_engagement_LSTM"
