@@ -92,9 +92,8 @@ if __name__ == "__main__":
     print("\nStarting Comprehensive Pre-Training Data Inspection...\n")
     
     # 1. Inspect the original static split files
-    inspect_spacy_file("data/synthetic_balanced.spacy", sample_size=30)
+    inspect_spacy_file("data/pseudo_labeled_training_corpus.spacy", sample_size=30)
     inspect_spacy_file("data/synthetic_pseudo_labeled_zero_shot.spacy", sample_size=30)
-    inspect_spacy_file("data/synthetic_pseudo_labeled_few_shot.spacy", sample_size=30)
     inspect_spacy_file("data/synthetic_pseudo_labeled_few_shot_v3.spacy", sample_size=30)
     
     # 2. Inspect the 5-Fold Cross Validation files
