@@ -136,7 +136,7 @@ def merge_and_qa_pseudo_labels(baseline_model_path, synthetic_input_path, output
 
 if __name__ == "__main__":
     BEST_BASELINE_FOLD = "en_engagement_LSTM"
-    SYNTHETIC_DATA = "data/synthetic_few_shot_v3.spacy"
-    OUTPUT_DATA = "data/synthetic_pseudo_labeled_few_shot_v3.spacy"
+    SYNTHETIC_DATA = "data/synthetic_zero_shot.spacy"
+    OUTPUT_DATA = "data/synthetic_pseudo_labeled_zero_shot.spacy"
     
     merge_and_qa_pseudo_labels(BEST_BASELINE_FOLD, SYNTHETIC_DATA, OUTPUT_DATA)
