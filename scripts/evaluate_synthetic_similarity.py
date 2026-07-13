@@ -63,7 +63,7 @@ def main():
     print("\nCalculating intra-dataset semantic similarity...")
 
     batch_size = 1000
-    all_max_similarities = []
+    nearest_neighbor_similarities = []
 
     num_synthetic = len(synthetic_embeddings)
 
@@ -84,25 +84,25 @@ def main():
         # Find the most similar OTHER synthetic sentence
         max_sim_per_sentence = similarity_matrix.max(dim=1).values
 
-        all_max_similarities.extend(max_sim_per_sentence.cpu().tolist())
+        nearest_neighbor_similarities.extend(max_sim_per_sentence.cpu().tolist())
 
-    all_max_similarities = np.array(all_max_similarities)
+    nearest_neighbor_similarities = np.array(nearest_neighbor_similarities)
     
 
     # STEP 5: Statistical summary
     # Mean:
     # Average similarity between each synthetic sentence and
     # its closest human counterpart.
-    mean_sim = np.mean(all_max_similarities)
+    mean_sim = np.mean(nearest_neighbor_similarities)
 
     # Standard deviation:
     # Indicates how spread out similarity scores are.
     # Large values suggest inconsistent similarity levels.
-    std_sim = np.std(all_max_similarities)
+    std_sim = np.std(nearest_neighbor_similarities)
 
     # Extreme values provide insight into best- and worst-case matches.
-    min_sim = np.min(all_max_similarities)
-    max_sim = np.max(all_max_similarities)
+    min_sim = np.min(nearest_neighbor_similarities)
+    max_sim = np.max(nearest_neighbor_similarities)
 
     # Distributional proportions:
     # These thresholds give an interpretable breakdown of where
@@ -110,24 +110,24 @@ def main():
     # Distribution across non-overlapping similarity ranges.
     # These four buckets cover 100% of all similarity scores.
 
-    prop_lt_03 = np.mean(all_max_similarities < 0.3)
+    prop_lt_03 = np.mean(nearest_neighbor_similarities < 0.3)
 
     prop_03_05 = np.mean(
-        (all_max_similarities >= 0.3) &
-        (all_max_similarities < 0.5)
+        (nearest_neighbor_similarities >= 0.3) &
+        (nearest_neighbor_similarities < 0.5)
     )
 
     prop_05_07 = np.mean(
-        (all_max_similarities >= 0.5) &
-        (all_max_similarities <= 0.7)
+        (nearest_neighbor_similarities >= 0.5) &
+        (nearest_neighbor_similarities <= 0.7)
     )
 
-    prop_gt_07 = np.mean(all_max_similarities > 0.7)
+    prop_gt_07 = np.mean(nearest_neighbor_similarities > 0.7)
 
     print("\n" + "="*40)
     print("       DATA QUALITY METRIC RESULTS")
     print("="*40)
-    print(f"Mean Cosine Similarity: {mean_sim:.4f}")
+    print(f"Mean Nearest-Neighbor Cosine Similarity: {mean_sim:.4f}")
     print(f"Standard Deviation:     {std_sim:.4f}")
     print(f"Minimum Similarity:     {min_sim:.4f}")
     print(f"Maximum Similarity:     {max_sim:.4f}")
@@ -162,7 +162,7 @@ def main():
         f.write(f"Model Used: sentence-transformers/all-MiniLM-L6-v2\n")
         f.write(f"Synthetic Dataset Size: {len(synthetic_texts)} sentences\n")
         f.write("Similarity Type: Intra-dataset (nearest neighbour)\n\n")
-        f.write(f"Mean Cosine Similarity: {mean_sim:.4f}\n")
+        f.write(f"Mean Nearest-Neighbor Cosine Similarity: {mean_sim:.4f}\n")
         f.write(f"Standard Deviation: {std_sim:.4f}\n")
         f.write(f"Min Similarity: {min_sim:.4f}\n")
         f.write(f"Max Similarity: {max_sim:.4f}\n")
