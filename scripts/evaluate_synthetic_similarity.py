@@ -25,10 +25,8 @@ def main():
     # STEP 1: Load both datasets
     # The human dataset serves as the reference corpus.
     # The synthetic dataset will be compared against it.
-    human_texts = load_texts_from_spacy("data/train.spacy")
     synthetic_texts = load_texts_from_spacy("data/synthetic_pseudo_labeled_zero_shot.spacy")
 
-    print(f"Loaded {len(human_texts)} human sentences.")
     print(f"Loaded {len(synthetic_texts)} synthetic sentences.")
     
     # STEP 2: Initialize embedding model
@@ -51,12 +49,7 @@ def main():
     # STEP 3: Generate embeddings
     # Each sentence is converted into a dense vector representation.
     # Similar meanings should produce vectors that are close together.
-    print("Embedding human sentences (this may take a minute)...")
-    human_embeddings = model.encode(
-        human_texts,
-        convert_to_tensor=True,
-        show_progress_bar=True
-    )
+
     print("Embedding synthetic sentences...")
     synthetic_embeddings = model.encode(
         synthetic_texts,
@@ -64,39 +57,35 @@ def main():
         show_progress_bar=True
     )
     
-    # STEP 4: Measure semantic similarity
-    print("\nCalculating semantic similarity matrix...")
-    
-    # Computing a full similarity matrix can consume a large amount
-    # of memory when datasets become large.
-    #
-    # Example:
-    # 10,000 synthetic x 50,000 human sentences
-    # would produce a matrix with 500 million similarity scores.
-    #
-    # To avoid memory issues, process synthetic embeddings in chunks.
-    batch_size = 1000
-    all_max_similarities = []    
-    # Iterate through synthetic embeddings batch-by-batch.
-    # Each iteration computes similarities for only a subset
-    # of the synthetic corpus.
-    for i in range(0, len(synthetic_embeddings), batch_size):
-        # Current slice of synthetic embeddings.
-        batch_syn = synthetic_embeddings[i:i+batch_size]
-        # Cosine similarity compares semantic direction rather than magnitude.
-        # Higher values indicate stronger semantic similarity.
-        similarity_matrix = util.cos_sim(batch_syn, human_embeddings)        
-        # For each synthetic sentence:
-        # Find its closest matching human sentence.
+    # STEP 4: Measure semantic similarity WITHIN the synthetic dataset
+    # Each synthetic sentence will be compared against every other
+    # synthetic sentence to measure semantic redundancy/diversity.
+    print("\nCalculating intra-dataset semantic similarity...")
 
-        # dim=1 means:
-        # "take the maximum value across all human sentences
-        # for every synthetic sentence."
-        max_sim_per_sentence = torch.max(similarity_matrix, dim=1).values
-        # Move results from GPU/MPS to CPU and convert to Python numbers.
+    batch_size = 1000
+    all_max_similarities = []
+
+    num_synthetic = len(synthetic_embeddings)
+
+    for start in range(0, num_synthetic, batch_size):
+        end = min(start + batch_size, num_synthetic)
+
+        batch_syn = synthetic_embeddings[start:end]
+
+        # Compare this batch against ALL synthetic sentences
+        similarity_matrix = util.cos_sim(batch_syn, synthetic_embeddings)
+
+        # Ignore self-comparisons by setting the diagonal entries to -1
+        row_indices = torch.arange(end - start)
+        col_indices = torch.arange(start, end)
+
+        similarity_matrix[row_indices, col_indices] = -1.0
+
+        # Find the most similar OTHER synthetic sentence
+        max_sim_per_sentence = similarity_matrix.max(dim=1).values
+
         all_max_similarities.extend(max_sim_per_sentence.cpu().tolist())
-    # Convert to NumPy array so statistical operations can be
-    # computed efficiently.
+
     all_max_similarities = np.array(all_max_similarities)
     
 
@@ -171,8 +160,8 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("=== Sentence Transformer Similarity Report ===\n")
         f.write(f"Model Used: sentence-transformers/all-MiniLM-L6-v2\n")
-        f.write(f"Human Dataset Size: {len(human_texts)} sentences\n")
-        f.write(f"Synthetic Dataset Size: {len(synthetic_texts)} sentences\n\n")
+        f.write(f"Synthetic Dataset Size: {len(synthetic_texts)} sentences\n")
+        f.write("Similarity Type: Intra-dataset (nearest neighbour)\n\n")
         f.write(f"Mean Cosine Similarity: {mean_sim:.4f}\n")
         f.write(f"Standard Deviation: {std_sim:.4f}\n")
         f.write(f"Min Similarity: {min_sim:.4f}\n")
