@@ -15,7 +15,7 @@ def load_sentences_from_spacy(file_path):
 def main():
     print("Loading datasets...")
     # Update these paths if necessary based on your current fold
-    gold_file = "data/5_fold_exp/train.spacy"
+    gold_file = "data/train.spacy"
     silver_file = "data/pseudo_labeled_training_corpus.spacy"
     llm_file = "data/synthetic_pseudo_labeled_few_shot_v3.spacy"
 
