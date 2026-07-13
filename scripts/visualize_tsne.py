@@ -2,7 +2,7 @@ import spacy
 from spacy.tokens import DocBin
 from sentence_transformers import SentenceTransformer
 from sklearn.manifold import TSNE
-import matplotlib.pyplot import plt
+import matplotlib.pyplot as plt
 import numpy as np
 import os
 
