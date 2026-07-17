@@ -2,102 +2,71 @@ import spacy
 from spacy.tokens import DocBin
 from sentence_transformers import SentenceTransformer
 from sklearn.manifold import TSNE
-import matplotlib.pyplot as plt
+import matplotlib.pyplot import plt
 import numpy as np
 import os
 
-def load_sentences_from_spacy(file_path):
+def load_sentences_by_category(file_path, target_category, spans_key="sc"):
     nlp = spacy.blank("en")
     doc_bin = DocBin().from_disk(file_path)
     docs = list(doc_bin.get_docs(nlp.vocab))
-    return [doc.text for doc in docs]
+    
+    filtered_texts = []
+    for doc in docs:
+        # Check if the target category exists in the document's spans
+        if any(span.label_ == target_category for span in doc.spans.get(spans_key, [])):
+            filtered_texts.append(doc.text)
+    return filtered_texts
 
 def main():
-    print("Loading datasets...")
-    # Update these paths if necessary based on your current fold
+    # Change this to whatever category you want to analyze (e.g., "SOURCES", "JUSTIFYING")
+    TARGET_CATEGORY = "SOURCES"
+    
+    print(f"Loading datasets and filtering for {TARGET_CATEGORY}...")
     gold_file = "data/train.spacy"
     silver_file = "data/pseudo_labeled_training_corpus.spacy"
     llm_file = "data/synthetic_pseudo_labeled_few_shot_v3.spacy"
 
-    gold_texts = load_sentences_from_spacy(gold_file)
-    silver_texts = load_sentences_from_spacy(silver_file)
-    llm_texts = load_sentences_from_spacy(llm_file)
+    gold_texts = load_sentences_by_category(gold_file, TARGET_CATEGORY)
+    silver_texts = load_sentences_by_category(silver_file, TARGET_CATEGORY)
+    llm_texts = load_sentences_by_category(llm_file, TARGET_CATEGORY)
     
-    # Subsample to avoid memory crash and overlapping blobs (adjust as your RAM allows)
-    SAMPLE_SIZE = 2000 
-    gold_texts = np.random.choice(gold_texts, min(SAMPLE_SIZE, len(gold_texts)), replace=False)
-    silver_texts = np.random.choice(silver_texts, min(SAMPLE_SIZE, len(silver_texts)), replace=False)
-    llm_texts = np.random.choice(llm_texts, min(SAMPLE_SIZE, len(llm_texts)), replace=False)
+    # Subsample to balance the graph visually
+    SAMPLE_SIZE = min(len(gold_texts), len(silver_texts), len(llm_texts), 1000) 
+    
+    print(f"Sampling {SAMPLE_SIZE} sentences from each dataset for {TARGET_CATEGORY}...")
+    gold_texts = np.random.choice(gold_texts, SAMPLE_SIZE, replace=False)
+    silver_texts = np.random.choice(silver_texts, SAMPLE_SIZE, replace=False)
+    llm_texts = np.random.choice(llm_texts, SAMPLE_SIZE, replace=False)
 
-    print(f"Extracted {len(gold_texts)} Gold, {len(silver_texts)} Silver, and {len(llm_texts)} LLM sentences.")
-
-    print("Generating MiniLM embeddings (this may take a minute)...")
+    print("Generating MiniLM embeddings...")
     embedder = SentenceTransformer('all-MiniLM-L6-v2')
-    
     all_texts = list(gold_texts) + list(silver_texts) + list(llm_texts)
     embeddings = embedder.encode(all_texts, show_progress_bar=True)
 
-    print("Fitting t-SNE algorithm to map high-dimensional embeddings to 2D space...")
-    # perplexity controls the balance between local and global aspects of your data
+    print("Fitting t-SNE...")
     tsne = TSNE(n_components=2, perplexity=30, random_state=42, init='pca', learning_rate='auto')
     embeddings_2d = tsne.fit_transform(embeddings)
 
-    # Split the 2D coordinates back into their respective datasets
-    len_g = len(gold_texts)
-    len_s = len(silver_texts)
-    
-    gold_2d = embeddings_2d[:len_g]
-    silver_2d = embeddings_2d[len_g:len_g + len_s]
-    llm_2d = embeddings_2d[len_g + len_s:]
+    gold_2d = embeddings_2d[:SAMPLE_SIZE]
+    silver_2d = embeddings_2d[SAMPLE_SIZE:SAMPLE_SIZE*2]
+    llm_2d = embeddings_2d[SAMPLE_SIZE*2:]
 
-    # Create Output Directory
     os.makedirs("visualizations", exist_ok=True)
-    
-    # Global Plot Settings
     alpha_val = 0.6
     dot_size = 15
 
-    print("Plotting individual and combined graphs...")
-
-    # --- PLOT 1: ALL DATASETS COMBINED ---
+    # --- PLOT COMBINED ---
     plt.figure(figsize=(10, 8))
-    plt.scatter(gold_2d[:, 0], gold_2d[:, 1], c='blue', label='Gold-Standard (train.spacy)', alpha=alpha_val, s=dot_size)
-    plt.scatter(silver_2d[:, 0], silver_2d[:, 1], c='green', label='Silver-Standard (Real Corpus)', alpha=alpha_val, s=dot_size)
-    plt.scatter(llm_2d[:, 0], llm_2d[:, 1], c='red', label='LLM-Generated (Synthetic)', alpha=alpha_val, s=dot_size)
-    plt.title('t-SNE Overlay: Global Semantic Distribution')
+    plt.scatter(gold_2d[:, 0], gold_2d[:, 1], c='blue', label='Gold (Human)', alpha=alpha_val, s=dot_size)
+    plt.scatter(silver_2d[:, 0], silver_2d[:, 1], c='green', label='Silver (Real Corpus)', alpha=alpha_val, s=dot_size)
+    plt.scatter(llm_2d[:, 0], llm_2d[:, 1], c='red', label='LLM (Synthetic)', alpha=alpha_val, s=dot_size)
+    plt.title(f't-SNE Overlay: Semantic Distribution of {TARGET_CATEGORY}')
     plt.legend()
-    plt.savefig('visualizations/tsne_1_combined.png', dpi=300)
+    plt.savefig(f'visualizations/tsne_combined_{TARGET_CATEGORY}.png', dpi=300)
     plt.close()
-
-    # --- PLOT 2: GOLD-STANDARD ONLY ---
-    plt.figure(figsize=(10, 8))
-    plt.scatter(gold_2d[:, 0], gold_2d[:, 1], c='blue', alpha=alpha_val, s=dot_size)
-    # Fix the axes limits to match the combined graph so visual comparison is accurate
-    plt.xlim(embeddings_2d[:, 0].min() - 5, embeddings_2d[:, 0].max() + 5)
-    plt.ylim(embeddings_2d[:, 1].min() - 5, embeddings_2d[:, 1].max() + 5)
-    plt.title('t-SNE: Internal Clusters of Gold-Standard Data')
-    plt.savefig('visualizations/tsne_2_gold.png', dpi=300)
-    plt.close()
-
-    # --- PLOT 3: SILVER-STANDARD ONLY ---
-    plt.figure(figsize=(10, 8))
-    plt.scatter(silver_2d[:, 0], silver_2d[:, 1], c='green', alpha=alpha_val, s=dot_size)
-    plt.xlim(embeddings_2d[:, 0].min() - 5, embeddings_2d[:, 0].max() + 5)
-    plt.ylim(embeddings_2d[:, 1].min() - 5, embeddings_2d[:, 1].max() + 5)
-    plt.title('t-SNE: Internal Clusters of Silver-Standard Data')
-    plt.savefig('visualizations/tsne_3_silver.png', dpi=300)
-    plt.close()
-
-    # --- PLOT 4: LLM-GENERATED ONLY ---
-    plt.figure(figsize=(10, 8))
-    plt.scatter(llm_2d[:, 0], llm_2d[:, 1], c='red', alpha=alpha_val, s=dot_size)
-    plt.xlim(embeddings_2d[:, 0].min() - 5, embeddings_2d[:, 0].max() + 5)
-    plt.ylim(embeddings_2d[:, 1].min() - 5, embeddings_2d[:, 1].max() + 5)
-    plt.title('t-SNE: Internal Clusters of LLM-Generated Data')
-    plt.savefig('visualizations/tsne_4_llm.png', dpi=300)
-    plt.close()
-
-    print("[SUCCESS] All 4 t-SNE graphs saved to the 'visualizations' folder.")
+    
+    print(f"[SUCCESS] Saved combined t-SNE graph for {TARGET_CATEGORY}.")
 
 if __name__ == "__main__":
     main()
