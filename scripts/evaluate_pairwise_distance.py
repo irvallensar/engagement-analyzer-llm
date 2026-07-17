@@ -15,7 +15,8 @@ def load_sentences_by_category(file_path, target_category, spans_key="sc"):
             filtered_texts.append(doc.text)
     return filtered_texts
 
-def calculate_internal_similarity(texts, embedder, sample_size=1000):
+def calculate_internal_similarity(texts, embedder, sample_size=2000):
+    # Adjusted sample size to 2000 to match the t-SNE analysis
     if len(texts) > sample_size:
         texts = np.random.choice(texts, sample_size, replace=False)
     
@@ -45,10 +46,10 @@ def main():
     print("--------------------------------------------------")
     
     g_mean, g_std = calculate_internal_similarity(gold_texts, embedder)
-    print(f"Gold-Standard (Human):   {g_mean:.4f} (Std: {g_std:.4f})")
+    print(f"Gold-Standard (Human):     {g_mean:.4f} (Std: {g_std:.4f})")
 
     s_mean, s_std = calculate_internal_similarity(silver_texts, embedder)
-    print(f"Silver-Standard (Real):  {s_mean:.4f} (Std: {s_std:.4f})")
+    print(f"Silver-Standard (Real):    {s_mean:.4f} (Std: {s_std:.4f})")
 
     l_mean, l_std = calculate_internal_similarity(llm_texts, embedder)
     print(f"LLM-Generated (Synthetic): {l_mean:.4f} (Std: {l_std:.4f})")
