@@ -153,7 +153,7 @@ def main():
     output_path = args.output
 
     print("Loading MLX model for Zero-Shot synthetic data generation...")
-    model_id = "mlx-community/Qwen3-32B-Instruct-4bit"
+    model_id = "mlx-community/Qwen3-32B-4bit"
     model, tokenizer = mlx_lm.load(model_id)
     print("Model loaded.\n")
 
