@@ -1,4 +1,4 @@
-# Engagement Analyzer: LLM-Driven Discourse Extraction & Evaluation
+# Engagement Analyzer
 
 > **Note:** If you are looking for a quick overview or want to try the interactive web application, please visit the [Engagement Analyzer Demo Repository](https://github.com/irvallensar/engagement-analyzer-demo).
 
