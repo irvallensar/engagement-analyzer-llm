@@ -29,7 +29,7 @@ To overcome the limitations of traditional sequence tagging, we integrated front
 
 ## Tech Stack
 * **Machine Learning & NLP:** PyTorch, Hugging Face Transformers, RoBERTa, spaCy
-* **LLM Integration:** Llama 3, Prompt Engineering (Few-Shot, CoT), Structured Outputs
+* **LLM Integration:** Llama 3, Gemma 3, Qwen 3, Deepseek R1, Mistral 3.2, Prompt Engineering (Few-Shot, CoT), Structured Outputs
 * **Data & Tooling:** Python, pandas, NumPy, Git LFS (for large weight management)
 
 ## Context
