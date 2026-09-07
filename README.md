@@ -34,3 +34,7 @@ To overcome the limitations of traditional sequence tagging, we integrated front
 
 ## Context
 This research bridges theoretical linguistics with practical, production-ready AI. The frameworks built here demonstrate how to construct eval-driven, compound AI systems that prioritize both output accuracy and system reliability in complex text-processing environments.
+
+## Credits
+
+This work is an extension of the engagement analyzer methodology and findings introduced by Eguchi and Kyle (2023), titled "Span Identification of Epistemic Stance-Taking in Academic Written English". To see the detail of their research, [click Here](https://aclanthology.org/2023.bea-1.35/).
