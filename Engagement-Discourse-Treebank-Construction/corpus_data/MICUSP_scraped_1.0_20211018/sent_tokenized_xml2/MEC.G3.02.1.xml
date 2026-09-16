@@ -1,0 +1,831 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿A Pressure Dependent Plasticity Model of Nitinol
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1. INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        A pseudoelastically loaded NiTi wire is capable of large recoverable strains due to a stress induced phase transformation from austenite (A) to martensite (M) during loading and a reverse transformation M→A during unloading (see Figure 1).
+       </s>
+       <s pid="1" sid="2">
+        When a NiTi wire is pulled along its axis and the displacement of the grips is controlled, the extent of the transformation is linked to the grip displacement, and distinct martensite phase transformation fronts can be seen propagating through austenite regions of material (see Figure 2).
+       </s>
+       <s pid="1" sid="3">
+        Although the microstructural mechanisms are quite different, these phase transformation fronts are macroscopically analogous to L¨uders bands (see Figure 3), where plastic regions propagate through elastic regions of material. [#REF 1]
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        The tensile pseudoelastic behavior of NiTi wire at low to moderate strain rates is relatively well understood, [#REF 4] but the performance of stress states such as shear, bending, and compression is still an active area of research, not to mention multiaxial loading.
+       </s>
+       <s pid="2" sid="2">
+        These diverse loading conditions are clearly important in the case of stents, guidwires, vena cava filters, and other medical devices which use NiTi .
+       </s>
+       <s pid="2" sid="3">
+        Outside of the biomedical realm, NiTi is being used as vibration dampeners, actuators, tube couplings, eyeglass frames, antennae, and many other areas that deviate from pure uniaxial loading.
+       </s>
+       <s pid="2" sid="4">
+        Design of such devices are either totally iterative or based on models constructed solely on tensile NiTi data.
+       </s>
+       <s pid="2" sid="5">
+        The experiments to date indicate that NiTi ’s behavior is highly dependent on the loading scenario, [#REF 5] and tensile behavior cannot be generalized into 3 dimensions as is commonly done with more traditional metals such as steel and alumninum.
+       </s>
+       <s pid="2" sid="6">
+        NiTi has tension compression asymmetry: a higher stress is required to nucleate martensite under compression than under tension, [#REF 6] and the A→M transformation is unstable in tension leading to distinct transformation fronts, while the A→M transformation is stable in compression.
+       </s>
+       <s pid="2" sid="7">
+        This suggests the possibility of hydrostatic pressure dependence, consequently it has been specifically studied by Jacobus et. al. [#REF 7] Jacobus selected several different states of stress, shown via the stress tensor on the right of Figure 4, and ramped up the value of σ to generate an effective stress strain curve for each state of stress.
+       </s>
+       <s pid="2" sid="8">
+        Jacobus defined his effective stress as the Von Mises stress √J2, where J2 is the second invariant of the deviatoric stress tensor, which asserts that the intensity of a 3 dimensional stress state only depends on the deviatoric.
+       </s>
+       <s pid="2" sid="9">
+        If there were no hydrostatic pressure dependence, the 4 curves in Figure 4 would overlap, but clearly they do not.
+       </s>
+       <s pid="2" sid="10">
+        It is interesting to note, however, that the state of zero hydrostatic pressure does overlap at the onset of the transformation with the state of uniaxial tension.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Figure 1. Typical NiTi pseudoelastic stress strain curve (image taken from Reedlunn [#REF 2] ).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        Figure 2. Evolution of A→M phase transformation, as viewed via the cracking of a brittle oxide layer (image taken from Shaw [#REF 3] ).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        Figure 3. Evolution of Luders Band propagation, as viewed via the cracking of an applied Stress
+       </s>
+       <s pid="5" sid="2">
+        Coat layer (image taken from Kyriakides &amp; Miller [#REF 3] ).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Figure 4. NiTi effective stress strain curves with different degrees of hydrostatic compression (image taken from Jacobus et. al. [#REF 7] and slightly modified).
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2. PLASTICITYMODEL
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        Plasticity has been used in the past as a first approximation for the mechanical behavior of NiTi . [#REF 1] [#REF 3] [#REF 8]
+       </s>
+       <s pid="7" sid="2">
+        Following these past works, here we use a yield criterion as a phase nucleation criterion and a flow rule to govern the phase evolution.
+       </s>
+       <s pid="7" sid="3">
+        Clearly, we only focus only on the A→M transformation since plasticity models are inherently irreversible.
+       </s>
+       <s pid="7" sid="4">
+        Also, some models include the thermo-mechanical coupling of NiTi with its ambient environment, [#REF 8] which helps explain the strain rate dependence of the material, but here we only model isothermal, quasi-static loading.
+       </s>
+       <s pid="7" sid="5">
+        Austenite can transform into 24 different habit plane variants of martensite when it is pseudoelastically loaded.
+       </s>
+       <s pid="7" sid="6">
+        For modeling uniaxial loading it is possible to collect these variants into two groups: those that contribute to axial stretching and those that contribute to axial shortening. [#REF 9]
+       </s>
+       <s pid="7" sid="7">
+        If one only models pseudoelasticity, martensitic twinning can be ignored, and the two groups of martensite can be further reduced to one group.
+       </s>
+       <s pid="7" sid="8">
+        In this scenario, a plasticity model fits in quite cleanly: the elastic region can be austenite, while the plastic region can be martensite.
+       </s>
+       <s pid="7" sid="9">
+        However, in a model meant to capture behaviors other than tensile loading, more than 1 variant of martensite is probably required, and this is not tractable within the framework of plasticity.
+       </s>
+       <s pid="7" sid="10">
+        In the absence of such a framework, we must abandon the possibility of distinguishing between different variants.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2.1 Formulation
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       The Drucker-Prager yield surface, given by
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        (1)
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        was used as an A→M transformation surface in an attempt to capture the pressure dependence described in Section 1.
+       </s>
+       <s pid="9" sid="2">
+        Here J2 is the second invariant of the deviatoric stress
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (3 times the hydrostatic pressure); σ is the Cauchy stress tensor; and τy is the nucleation stress in pure shear. The effective normal stress σ¯ for a Drucker-Prager transformation surface is
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        (2)
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        which reduces to σ11 in uniaxial tension by definition.
+       </s>
+       <s pid="12" sid="2">
+        The total strain increment dǫ is decomposed into an elastic part
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and a plastic part
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        (3)
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        The elastic portion was modeled using isotropic linear elasticity with the elastic strain increments given by
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        (4)
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        where νe is the elastic poisson’s ratio and E1 is the austenite (elastic) modulus.
+       </s>
+       <s pid="17" sid="2">
+        Utilizing an associated flow rule, the
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       equation governing plastic strain is
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        (5)
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        All loading scenarios to be considered with this model will be radial (a.k.a. proportional) in nature, so isotropic hardening was assumed for simplicity.
+       </s>
+       <s pid="19" sid="2">
+        This means that the increment in plastic work accrued by an increment in plastic strain in uniaxial tension is equivalent to the increment in plastic work accrued for a general deformation, thus
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        (6)
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        where
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the effective plastic strain, which reduces to
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      in uniaxial tension by definition. Utilizing this equivalence of plastic work, we can define an explicit form for the effective plastic strain:
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        (7)
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        The effective stress and effective strains can be used to provide an alternate definition for the increment in plastic strain
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        (8)
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2.2 Model Calibration
+      </div>
+      <p>
+       <s pid="26" sid="1">
+        The plasticity model was calibrated by fitting
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and α to experimental tensile and compressive data on NiTi tubes. Calibrating
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      to a tensile stress plastic strain curve requires more than a least squares curve fit. The phase transformation fronts found at slow loading rates of pseudoelastic NiTi are manifestations of a material instability, thus the local stress strain curve actually has a non-monotonic character. Monotonic stress-strain curves are more commonly used in classic plasticity, but non-monotonic local stress-strain curves have also been used to model L¨uders band nucleation and growth.3 In fact, the loading plateau in Figure 1 looks very similar to the L¨uders plateau in Figure 5 for fine grained mild steel. One of the simplest local stress strain relations that captures this material instability is a trilinear curve (Two examples are shown in bold red in Figure 6 and Figure 8). The form of a trilinear curve is given by
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        (9)
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        where E1, E2, and E3 are the moduli of the trilinear curve (enumerated in the same order that they would be followed when loading a material),
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the nucleation/initial yield stress in tension, and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the total strain where the second and third slopes intersect. In order to calibrate
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , the trilinear curve in stress-total strain space was converted into a bilinear hardening curve in stress-plastic strain space. The form of that equation is
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="31" sid="1">
+        (10)
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        The moduli
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      correspond to E2 and E3. The relations between the 2 stress-plastic strain moduli and the 3 stresstotal strain moduli are
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        (11)
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        And
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , the plastic strain at the intersection of the two slopes in stress plastic strain space is
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="37" sid="1">
+        (12)
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        Next, to select an appropriate α the plasticity model was specialized to uniaxial tension and uniaxial compression.
+       </s>
+       <s pid="38" sid="2">
+        This led to three different relations involving α and the material properties the plastic strain poisson’s ratio in tension
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , the plastic strain poisson’s ratio in compression
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , the nucleation/initial yield stress in tension
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , and the nucleation/initial yield stress in compression
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      :
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        (13)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="41" sid="1">
+        (14)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="42" sid="1">
+        (15)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="43" sid="1">
+        Figure 5. Stress strain curve for fine grained mild steel (image taken from Shaw [#REF 1] ).
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        No one relation is more relevant than another, so (15) was chosen to ensure that the nucleation stress in compression
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        matched the experimental data.
+       </s>
+       <s pid="45" sid="2">
+        In addition, (15) matches the relation independently derived by Needleman and Rice.
+       </s>
+       <s pid="45" sid="3">
+        Note that by doing this, we have specified different poisson’s ratios in tension and compression.
+       </s>
+       <s pid="45" sid="4">
+        Different poisson’s ratios are entirely possible for NiTi since different variants of martensite could be being activated in tension versus compression.
+       </s>
+       <s pid="45" sid="5">
+        On the other hand, the fact that one cannot independently control the poisson’s ratios is an inherent limitation of the model.
+       </s>
+       <s pid="45" sid="6">
+        This is often overcome by researchers modeling geomaterials by using a non-associated flow rule to get the correct plastic dilantancy.
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        Two separate model calibrations were performed.
+       </s>
+       <s pid="46" sid="2">
+        First, the model was calibrated to the experimental data shown in
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        thin red (tension) and thin blue (compression) in Figure 6, resulting the in the calibration inputs listed in Table 1a.
+       </s>
+       <s pid="47" sid="2">
+        The data in Figure 6 came from tensile and compressive tests on pseudoelastic NiTi tubes with an approximately 10 to 1 diameter to thickness ratio. [#REF 10]
+       </s>
+       <s pid="47" sid="3">
+        After results were generated, the model was re-calibrated using the data in Figure 8a.
+       </s>
+       <s pid="47" sid="4">
+        The data in Figure 6a came from tensile tests on pseudoelastic NiTi tubes with an approximate 10 to 1 diameter to thickness ratio. [#REF 5]
+       </s>
+       <s pid="47" sid="5">
+        Since no compression data was available, the value for α calculated in calibration #1 was utilized again for calibration #2.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       3. RESULTS
+      </div>
+      <p>
+       <s pid="48" sid="1">
+        In analyzing the effectiveness of the plasticity model we will focus on the model’s prediction for the plastic poisson’s ratio, the compressive A→M transformation, and a shear A→M transformation.
+       </s>
+      </p>
+      <p>
+       <s pid="49" sid="1">
+        The plastic poisson’s ratios are listed in Table 1b.
+       </s>
+       <s pid="49" sid="2">
+        Note that the compressive plastic poisson’s ratio is well above 0.5,
+       </s>
+      </p>
+      <p>
+       <s pid="50" sid="1">
+        meaning the plastic volume actually increases on compression, which does not appear very physically realistic.
+       </s>
+       <s pid="50" sid="2">
+        Martensitic transformations of single crystals in NiTi are nearly isochoric (as can be seen by taking the determinate of a A→M transformation matrix listed on page 55 of Bhattacharya giving a volume ratio of nearly one), thus poisson’s ratio should be very near 0.5.
+       </s>
+       <s pid="50" sid="3">
+        One might argue that the total poisson’s ratio is not the plastic poisson’s ratio, but in the unstable region of the tensile curve the elastic strain actually decreases, so all the strain accrued in that region can be regarded as plastic strain.
+       </s>
+       <s pid="50" sid="4">
+        This means the plastic poisson’s ratio is roughly the total poisson’s ratio.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="51" sid="1">
+        Table 1. a)
+       </s>
+       <s pid="51" sid="2">
+        Calibration inputs to plasticity model, b) Calibration outputs
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="52" sid="1">
+        Figure 6. Fit of calibration # 1 to tension data and results in compression.
+       </s>
+      </p>
+      <p>
+       <s pid="53" sid="1">
+        Turning our attention to Figure 6, which displays the results of calibration #1, it is apparent that the only pieces of data that the model successfully matches are those that it was calibrated to.
+       </s>
+       <s pid="53" sid="2">
+        The strain difference between the austenite modulus and the martensite modulus did not visibly decrease to anywhere near the 0.02 strain experimentally found in compression.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="54" sid="1">
+        Figure 7. Predicted slope of middle portion of compression curve vs. alpha.
+       </s>
+      </p>
+      <p>
+       <s pid="55" sid="1">
+        In addition, the slope of the unstable portion in tension actually decreased instead of increasing in compression.
+       </s>
+       <s pid="55" sid="2">
+        The constitutive relations were integrated analytically, allowing us to see how the predicted slope in compression Ec2 depends on the model inputs:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="56" sid="1">
+        (16)
+       </s>
+      </p>
+      <p>
+       <s pid="57" sid="1">
+        This function is plotted in Figure 7 for the values listed under calibration # 1 in Table 1a, varying α.
+       </s>
+       <s pid="57" sid="2">
+        Clearly it is not possible to attain a positive slope without selecting an α that corresponds to a compressive nucleation stress that is smaller than the tensile nucleation stress.
+       </s>
+      </p>
+      <p>
+       <s pid="58" sid="1">
+        Lastly focusing on Figure 8, a) displays the fit of calibration #2 to the tensile data, while b) compares how the model predicts pure shear against torsion data.
+       </s>
+       <s pid="58" sid="2">
+        Sun and Li twisted a tube with a 10 to 1 diameter to thickness ratio (any thinner and they probably would have buckled) and held the axial stress at zero, which resulted in a state close to pure shear.
+       </s>
+       <s pid="58" sid="3">
+        This data, shown in a thin black line in Figure 8b, is compared against the plasticity model in pure shear, plotted in bold green in the same figure.
+       </s>
+       <s pid="58" sid="4">
+        Once again, the unstable portion of the tension curve remains unstable in pure shear, which does not compare well with the Sun and Li’s stable experimental results.
+       </s>
+       <s pid="58" sid="5">
+        The predicted elastic shear modulus also appears to be significantly higher.
+       </s>
+       <s pid="58" sid="6">
+        This is probably due to assuming isotropic elasticity, since NiTi tubes are known to be highly textured5 the stiffness in shear could easily be affected by aligning the grains along the axis of the tube.
+       </s>
+       <s pid="58" sid="7">
+        The single success of this model is in correctly predicting the stress at the onset of the A→M transformation in pure shear.
+       </s>
+       <s pid="58" sid="8">
+        This could be just coincidence given the sample size of 1 and the fact that α was assumed to be the same as in calibration #1, but it does suggest that the transformation surface is linearly dependent on the hydrostatic pressure.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       4. CONCLUSIONS
+      </div>
+      <p>
+       <s pid="59" sid="1">
+        On the whole, a Drucker-Prager yield surface with an associated flow rule and isotropic hardening does not capture the isothermal, pseudoelastic response of NiTi .
+       </s>
+       <s pid="59" sid="2">
+        One can select to fit the model to tension, compression, or shear, but this comes at the detriment to the model’s prediction in the remaining two stress states.
+       </s>
+       <s pid="59" sid="3">
+        The model appears especially poor at predicting the stress strain response during the phase transformation, which is not surprising given stark difference in the microstructural mechanisms behind martensitic phase transformations and dislocation motion.
+       </s>
+       <s pid="59" sid="4">
+        On the other hand, a Drucker-Prager yield surface does show some promise in predicting the onset of the A→M transition.
+       </s>
+       <s pid="59" sid="5">
+        The pressure dependent yield surface was selected in the first place because of past experimental data, but this work suggests that the Drucker-Prager linear dependence may be sufficient.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="60" sid="1">
+        Figure 8. a)
+       </s>
+       <s pid="60" sid="2">
+        Fit of calibration #2 to tension data b) Results of calibration #2 in pure shear.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="footnotes">
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1. J. A. Shaw and S. Kyriakides, “On the nucleation and propagation of phase transformation fronts in a NiTi alloy,” Acta Materialia 45(2), pp. 683–700, 1997.
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        2.
+       </a>
+       2. B. Reedlunn and J. Shaw, “Shape memory alloy cables,” 6929, SPIE, April 2008.
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        3.
+       </a>
+       3. J. A. Shaw, “Simulations of localized thermo–mechanical behavior in a NiTi shape memory alloy,” International Journal of Plasticity 16(5), pp. 541–562, 2000.
+      </div>
+      <div id="fn4">
+       <a href="#fnref_fn4">
+        4.
+       </a>
+       4. B.-C. Chang, J. A. Shaw, andM. A. Iadicola, “Thermodynamics of shapememory alloy wire: Modeling, experiments, and application,” Continuum Mechanics and Thermodynamics 18(1-2), pp. 83–118, 2006.
+      </div>
+      <div id="fn5">
+       <a href="#fnref_fn5">
+        5.
+       </a>
+       5. Q.-P. Sun and Z.-Q. Li, “Phase transformation in superelastic NiTi polycrystalline micro-tubes under tension and torsion–from localization to homogeneous deformation,” International Journal of Solids and Structures 39(13-14), pp. 3797–3809, 2002.
+      </div>
+      <div id="fn6">
+       <a href="#fnref_fn6">
+        6.
+       </a>
+       6. K. Gall, H. Sehitoglu, Y. Chumlyakov, and I. Kireeva, “Tension-compression asymmetry of the stress-strain response in aged single crystal and polycrystalline NiTi,” Acta Materialia 47(4), pp. 1203–1217, 1999.
+      </div>
+      <div id="fn7">
+       <a href="#fnref_fn7">
+        7.
+       </a>
+       7. K. Jacobus, H. Sehitoglu, and M. Balzer, “Effect of stress state on the stress-induced martensitic transformation in polycrystalline ni-ti alloy,” Metallurgical and Materials Transactions A 27A, pp. 3066–3073, October 1996.
+      </div>
+      <div id="fn8">
+       <a href="#fnref_fn8">
+        8.
+       </a>
+       8. M. A. Iadicola and J. A. Shaw, “Rate and thermal sensitivities of unstable transformation behavior in a shape memory alloy,” International Journal of Plasticity 20, pp. 577–605, 2004.
+      </div>
+      <div id="fn9">
+       <a href="#fnref_fn9">
+        9.
+       </a>
+       9. J. A. Shaw, “A thermomechanicalmodel for a 1–D shape memory alloy with propagating instabilities,” International Journal of Solids and Structures 39(5), pp. 1275–1305, 2002.
+      </div>
+      <div id="fn10">
+       <a href="#fnref_fn10">
+        10.
+       </a>
+       10. C. Churchill and J. Shaw, “Simulations and experiments of localized thermo-mechanical behavior of sma tubes,” (Unpublished) .
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

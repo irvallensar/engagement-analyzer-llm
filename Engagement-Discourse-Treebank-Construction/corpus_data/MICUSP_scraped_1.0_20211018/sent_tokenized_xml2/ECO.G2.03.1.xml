@@ -1,0 +1,791 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Debt and Labor Supply
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       I. Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Until recently, widespread access to credit markets was not part of the financial services landscape.
+       </s>
+       <s pid="1" sid="2">
+        In the early 1980s, advances in technology and the deregulation of interest rates created low-cost, high-reward opportunities for banks to issue credit cards to a much larger fraction of the population.
+       </s>
+       <s pid="1" sid="3">
+        Subsequently, credit cards have become popular due to their convenience, flexibility, lack of required collateral and open-ended payment plans.
+       </s>
+       <s pid="1" sid="4">
+        However, with the added flexibility comes the risk of paying high interest rates and thus rapidly compounding debt.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Empirically we know very little about how people respond to mounting debt and its concomitant limitations.
+       </s>
+       <s pid="2" sid="2">
+        The behavioral response to debt is particularly relevant if, as Duflo (2003) argues, the poor respond to incentives and process information differently than economic "rational behavior" would otherwise predict.
+       </s>
+       <s pid="2" sid="3">
+        Bertrand, et al. (2004) emphasize that it is not necessarily that the poor behave any more "irrationally" than the rest of us, but that their "irrational" decisions, in conjunction with the constraints of poverty, accentuate their mistakes.
+       </s>
+       <s pid="2" sid="4">
+        While poverty is not a prerequisite for debt, and certainly not in the sample I analyze below, there are obvious linkages between decision-making while in poverty and decision-making while in debt.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        One expected behavioral response to indebtedness is an increase in household labor supply to pay down the debt.
+       </s>
+       <s pid="3" sid="2">
+        At minimum, household labor supply is constrained to be non-zero in order to make minimum debt service payments.
+       </s>
+       <s pid="3" sid="3">
+        Del Boca and Lusardi (2003) find spouses' labor supply increases when households take out home mortgages.
+       </s>
+       <s pid="3" sid="4">
+        They identify this effect using the plausibly exogenous liberalization of Italy's mortgage market in the early 1990s.
+       </s>
+       <s pid="3" sid="5">
+        Similarly, using data from Canada, Fortin (1995) presents evidence that the constraints of mortgage payments bind for the labor supply decision of nearly 14 percent of married women.
+       </s>
+       <s pid="3" sid="6">
+        Del Boca and Lusardi and Fortin's results hold for both the spouses' intensive (number of hours) and extensive (labor force participation) decisions.
+       </s>
+       <s pid="3" sid="7">
+        Their evidence is illustrative for one type of debt, but the literature has not addressed the effect of other forms of indebtedness on labor supply.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        In this paper I analyze the labor supply response to a variety of debts, with a special emphasis on credit card debt.
+       </s>
+       <s pid="4" sid="2">
+        Using the 1986-1983 matched Survey of Consumer Finances (SCF), I find a positive relationship between labor supply and credit card debt among married couples.
+       </s>
+       <s pid="4" sid="3">
+        The correlation operates principally through the wife's choice of hours. [#REF 1] I find no relationship between a husband's work hours and the amount of credit card debt in the household.
+       </s>
+       <s pid="4" sid="4">
+        The responsiveness of labor supply to credit card debt is likely due to the unique flexibility of credit card borrowing.
+       </s>
+       <s pid="4" sid="5">
+        These results provide insight into both labor supply fluctuations and the behavioral reaction to debt burdens.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        While I cannot claim a causal interpretation of the relationship between credit card debt and labor supply here, I hope to do so in a subsequent paper, using an exogenous change in interest rate ceilings on credit cards.
+       </s>
+       <s pid="5" sid="2">
+        In the 1978 decision of Marquette National Bank v. First of Omaha Service Corp. (henceforth Marquette ), the Supreme Court ruled banks could charge the maximum interest rate in the state where the credit card was issued, rather than where the consumer resided.
+       </s>
+       <s pid="5" sid="3">
+        This ruling effectively eliminated state interest rate ceilings and deregulated the credit card market, which resulted in expanded availability of credit cards and increases in interest rates.
+       </s>
+       <s pid="5" sid="4">
+        States were differentially affected by the ruling, as states with the tightest interest rate policies saw the largest subsequent increases.
+       </s>
+       <s pid="5" sid="5">
+        Comparing across time and place, using the 1977 and 1983 SCF and CPS data, I intend to determine whether households with credit cards in the states that were most affected by the interest rate change increased their labor supply as compared to those households in unaffected states, a difference-in-differences approach.
+       </s>
+       <s pid="5" sid="6">
+        The Supreme Court decision functions as a causal mechanism to exogenously increase the present value of credit card debt.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        The rest of the paper is organized as follows.
+       </s>
+       <s pid="6" sid="2">
+        Section II provides background on the growth of credit cards and the credit card industry.
+       </s>
+       <s pid="6" sid="3">
+        Section III describes the data and the unique aspects of credit card debt.
+       </s>
+       <s pid="6" sid="4">
+        Section IV presents the relationship between labor supply and debt.
+       </s>
+       <s pid="6" sid="5">
+        Section V describes a research design which can establish causal links between credit card debt and labor supply, and section VI concludes.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       II. The Credit Card Industry
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        In the 1970s, interest rate laws and technological limitations constrained the profitability of credit card issuers (Mandell 1990).
+       </s>
+       <s pid="7" sid="2">
+        Originally banks issued cards only to wealthy households or those with steady income.
+       </s>
+       <s pid="7" sid="3">
+        Most cardholders paid off their full balance each month, which limited the amount of interest and fees the companies were able to collect.
+       </s>
+       <s pid="7" sid="4">
+        However, after deregulation of interest rates through the Marquette decision, credit card accounts became hugely profitable (Manning 2000).
+       </s>
+       <s pid="7" sid="5">
+        Marquette allowed banks to charge more interest on the revolving debt of current cardholders, as well as provide services to a previously untapped market, the middle-class, which had little experience with easily accessible credit.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        By 2001, over 75% of households had credit cards of some form, and two-thirds of those had more than one (Bertaut and Haliassos 2003).
+       </s>
+       <s pid="8" sid="2">
+        The increased access to collateral-free credit has been particularly dramatic among low-income and low-educated households.
+       </s>
+       <s pid="8" sid="3">
+        Furthermore, as the credit card companies have issued cards further down the income distribution, the strongest demographic growth in cardholders (and, not surprisingly, debt) is now students and the elderly (Draut and Silva 2003, 2004).
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        "Convenience" users, cardholders who pay their bill in full each month, benefit from the services of credit cards through flexibility, convenience, and a brief interest-free loan.
+       </s>
+       <s pid="9" sid="2">
+        On the other hand, "revolving" users, cardholders who leave a balance at the end of the month, are charged with high interest rates relative to other sources of borrowing (Manning 2000).
+       </s>
+       <s pid="9" sid="3">
+        While we might expect those borrowing on credit cards to have no other assets, Gross and Souleles (2002) find that most debt revolvers have some money in low-yield savings accounts.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        What can account for this behavior?
+       </s>
+       <s pid="10" sid="2">
+        Ausubel (1991) argues that consumers do not properly anticipate revolving debt on their credit cards, allowing banks to avoid competing away interest rate margins.
+       </s>
+       <s pid="10" sid="3">
+        Calem and Mester (1995) empirically confirm Ausubel's claim that consumers do not search for cards based on lower interest rates, as they expect to be convenience users.
+       </s>
+       <s pid="10" sid="4">
+        However, Brito and Hartley (1995) contend that it is rational for consumers to maintain a balance when there are transactions costs associated with other forms of borrowing.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        Regardless of their "rationality" or motivation, the magnitude of recent borrowing on credit cards is bewildering. [#REF 2]
+       </s>
+       <s pid="11" sid="2">
+        The most recent reports estimate nearly $700 billion in outstanding credit card debt in the United States, or roughly $4,100 per household (Draut and Silva 2003).
+       </s>
+       <s pid="11" sid="3">
+        Due to the magnitude and the prevalence of use, credit card debt affects economic behavior through a number of different channels.
+       </s>
+       <s pid="11" sid="4">
+        However, debt has not been considered its own economic phenomenon in the previous literature, in part because some debt is accumulated due to predicted life-cycle concerns.
+       </s>
+       <s pid="11" sid="5">
+        In addition, the decision to borrow is generally considered to be endogenous to labor market choices and other preferences, making it particularly difficult to disentangle the true impact of debt on behavior.
+       </s>
+       <s pid="11" sid="6">
+        Finally, there are few comprehensive sources of data on debt.
+       </s>
+       <s pid="11" sid="7">
+        The next section discusses one available dataset, the Survey of Consumer Finances.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       III. Data on Debt: The SCF
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        The Survey of Consumer Finances (SCF) is a triennial survey beginning in 1983, conducted by the Federal Reserve.
+       </s>
+       <s pid="12" sid="2">
+        Other comparable surveys were conducted in the early 1970s and 1977.
+       </s>
+       <s pid="12" sid="3">
+        The 1986 wave of the SCF is unique in that the 1983 respondents are re-interviewed about changes in their wealth and employment status.
+       </s>
+       <s pid="12" sid="4">
+        Despite problems with sample attrition over the three year period and the brevity of the re-interview questionnaire, the panel aspect of the data allows for analysis of changes in household debt holdings over time.
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        The SCF asks the most detailed questions on household assets and liabilities of any publicly available dataset.
+       </s>
+       <s pid="13" sid="2">
+        Many papers have used the SCF to answer questions regarding credit and liquidity, such as Jappelli (1990), Sullivan and Worden (1989), and Zinman (2003).
+       </s>
+       <s pid="13" sid="3">
+        This paper uses six different debt measures provided by the SCF to analyze the relationship between debt and labor supply.
+       </s>
+       <s pid="13" sid="4">
+        Credit card debt is defined in the SCF as "the total balance still owed, after the last payments were made, on all the household's credit cards" .
+       </s>
+       <s pid="13" sid="5">
+        An aggregate measure of consumer debt is used for all other non-real estate loans with regular payments.
+       </s>
+       <s pid="13" sid="6">
+        When available, I separate the aggregate into four components: loans for home repairs and additions; vehicle loans; furniture, appliance, and recreation loans; and education and other loans with regular payments.
+       </s>
+       <s pid="13" sid="7">
+        In addition, I incorporate a measure of "other debt" as debt with non-regular payments, such as debts to an individual or to an employer.
+       </s>
+       <s pid="13" sid="8">
+        Furthermore, all analysis below includes a mortgage dummy, equal to one if the household is paying off their home.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        Appendix table A1 provides summary statistics of the dataset and of the sub-sample used in the results that follow.
+       </s>
+       <s pid="14" sid="2">
+        Note that I use "head" and "husband" interchangeably. [#REF 3]
+       </s>
+       <s pid="14" sid="3">
+        The sub-sample is of married, prime-age respondents, which removed all blacks and Hispanics from the sample. [#REF 4]
+       </s>
+       <s pid="14" sid="4">
+        The average household in the sub-sample has $1000 in credit card debt (in 1986 dollars), $2000 in outstanding vehicle loans, and $3000 in education loans and other non-regular debts.
+       </s>
+       <s pid="14" sid="5">
+        Notably these variables are highly skewed; the median household has $320 in credit card debt, no outstanding vehicle loans, and no education loans or other non-regular debts. [#REF 5]
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        Table 1 presents correlations between the debt measures in 1986, in 1983, and across years.
+       </s>
+       <s pid="15" sid="2">
+        As in the second column of table A1, the 1986 SCF sample is restricted to married, white, prime-age households between 25 and 65 years old who have a credit card.
+       </s>
+       <s pid="15" sid="3">
+        As evident from the first two panels, credit card debt is unlike other kinds of debt, as it is uncorrelated with consumer debt, other debt, and the presence of a mortgage.
+       </s>
+       <s pid="15" sid="4">
+        This relationship did not change across the three year period.
+       </s>
+       <s pid="15" sid="5">
+        The third panel shows the persistence across time of credit card debt, other debt, and mortgage payments, contrasted by the surprisingly low correlation between consumer debt in both 1986 and 1983.
+       </s>
+       <s pid="15" sid="6">
+        Unlike consumer debts, which are paid regularly and can be terminated or initiated, credit card debt and other debt do not have temporal constraints, enabling persistence across time.
+       </s>
+       <s pid="15" sid="7">
+        Similarly, very few people start or finish a new mortgage within a three-year period, accounting for the high correlation across time.
+       </s>
+       <s pid="15" sid="8">
+        Credit card debt is fundamentally different from any of the types of other debt, including home repairs, vehicle loans, education payments, or furniture and appliance loans (the fourth panel).
+       </s>
+       <s pid="15" sid="9">
+        Put differently, households with credit card debt are no more or less likely to be burdened by other forms of debt.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       IV. Debt and Labor Supply
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        What labor supply response is anticipated from undertaking a heavy debt burden?
+       </s>
+       <s pid="16" sid="2">
+        Campbell and Hercowitz (2003) present a model where a household faces required payments and collateral holdings on its debt.
+       </s>
+       <s pid="16" sid="3">
+        In addition, using aggregate NIPA data, they identify a strong co-movement between household debt and hours worked at the aggregate level.
+       </s>
+       <s pid="16" sid="4">
+        Their findings motivate further investigation into the behavior of debtor households and their role in labor supply fluctuations using microdata. [#REF 6]
+       </s>
+       <s pid="16" sid="5">
+        This section presents micro-level evidence of the co-movement between credit card debt and labor supply.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        The results from OLS regressions of household total work hours on debt measures and a number of controls are shown in table 2.
+       </s>
+       <s pid="17" sid="2">
+        The sample is identical to that in table 1, see the note for details on the controls. [#REF 7]
+       </s>
+       <s pid="17" sid="3">
+        When there are no controls (column 1), a $100 increase in either credit card debt or vehicle loans is associated with an increase of 3.6 hours per year from the household.
+       </s>
+       <s pid="17" sid="4">
+        Debts due to home additions and repairs are noteworthy, with a similar $100 rise in debt associated with an increase of 1.7 hours worked per year.
+       </s>
+       <s pid="17" sid="5">
+        Both estimates are significant at conventional levels.
+       </s>
+       <s pid="17" sid="6">
+        However, when controls for age, education, and income are added, the impact of vehicle loans falls to 2.4 hours, and to two hours for credit card debt.
+       </s>
+       <s pid="17" sid="7">
+        Due to the small sample sizes, the standard errors around the effect of credit card debt are quite large in contrast to vehicle and home repair loans.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Tables 3 and 4 decompose total work hours into the spouse's and the husband's hours worked in 1986.
+       </s>
+       <s pid="18" sid="2">
+        Table 3 presents evidence that the relationship between credit card debt and labor supply operates principally through the labor supply decisions of the spouse.
+       </s>
+       <s pid="18" sid="3">
+        For the $100 increase in credit card debt, 3.5 more hours are supplied by the spouse (table 3, column 1), whereas the head's hours worked are essentially unchanged (table 4, column 1), with a fairly precisely estimated zero coefficient.
+       </s>
+       <s pid="18" sid="4">
+        When controls are included, the pattern in the point estimates remains robust, with the effect on the spouse's hours more than ten times that of the husband's, despite failing conventional tests of significance.
+       </s>
+       <s pid="18" sid="5">
+        In contrast, the labor supply correlations with vehicle loans and home additions appear to be split evenly between head and spouse.
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        Tables 5, 6, and 7 present the relationship between previous debt and current labor supply.
+       </s>
+       <s pid="19" sid="2">
+        The SCF does not match labor supply data across 1986 and 1983, so I am unable to estimate a proper fixed-effects model.
+       </s>
+       <s pid="19" sid="3">
+        Also, the SCF does not provide detailed consumer debt data for 1983, so the measures for vehicle loans, home addition and repair loans, furniture and appliance loans, and education and other regular loans are aggregated in these tables as "consumer debt" .
+       </s>
+       <s pid="19" sid="4">
+        These tables show a similar pattern as the three previous, namely that the lion's share of the relationship between credit card debt and labor supply is borne through the hours worked of the spouse.
+       </s>
+       <s pid="19" sid="5">
+        Without controls, a $100 rise in credit card debt in 1983 induces greater labor supply on the part of the spouse (5.2 hours) than on the husband (.7 hours) in 1986.
+       </s>
+       <s pid="19" sid="6">
+        The other debt measures are negligible in predicting total work hours.
+       </s>
+       <s pid="19" sid="7">
+        The effects of credit card debt appear to persist across time.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Table 8 shows the response of the household to a change in debt over the 1983 to 1986 period.
+       </s>
+       <s pid="20" sid="2">
+        The household's labor supply appears responsive to increases in credit card debt, whereas total hours are largely unaffected by consumer debt or other debt.
+       </s>
+       <s pid="20" sid="3">
+        Tables 9 and 10 separate out the household's labor supply into the spouse's and head's total work hours.
+       </s>
+       <s pid="20" sid="4">
+        Again, the response of the labor supply of the spouse is more affected by the increase in debt, as a $100 increase in credit card debt over the period is associated with an increase of 3.8 hours by the spouse, and 1.7 hours by the head.
+       </s>
+       <s pid="20" sid="5">
+        These cannot be interpreted as fixed effects, as the SCF does not match the hours worked in 1983 to the 1986 survey.
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        The tables provide suggestive evidence that credit card debt induces greater labor supply response on the part of the spouse than on the husband.
+       </s>
+       <s pid="21" sid="2">
+        Virtually all of the correlation in point estimates between credit card debt and labor supply comes through the hours of the wife; this holds in all three specifications of the debt variables and all combinations of controls.
+       </s>
+       <s pid="21" sid="3">
+        However, these results are not robust to inclusion of controls, as the estimated coefficients are no longer statistically significant.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        While the correlations can inform our understanding of labor supply fluctuations and behavior under debt, these results cannot be interpreted causally.
+       </s>
+       <s pid="22" sid="2">
+        There are at least two clear reasons why we might expect labor supply and credit card debt decisions to be endogenous.
+       </s>
+       <s pid="22" sid="3">
+        First, in the standard life-cycle model, debt in the early stages of life would be observed concurrently with individuals working on the steep portion of the wage profile.
+       </s>
+       <s pid="22" sid="4">
+        If individuals are working longer hours at the same time they are borrowing to maintain a "permanent" level of consumption, we would likely find a positive relationship between hours and credit card debt.
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        Second, in the 1980s, credit card companies screened applicants and issued cards only to those with steady employment as a form of collateral or likelihood of payment in the future.
+       </s>
+       <s pid="23" sid="2">
+        In addition, the decision to both borrow more and work more may be a simultaneous choice.
+       </s>
+       <s pid="23" sid="3">
+        In either case, the only way to identify a truly causal behavioral response to credit card debt would be from a source of exogenous variation in credit card debt.
+       </s>
+       <s pid="23" sid="4">
+        The following section describes one such source.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       V. A Causal Story
+      </div>
+      <p>
+       <s pid="24" sid="1">
+        The Marquette Supreme Court decision effectively removed state interest rate limits on credit card debt by allowing banks to charge interest based on the usury law of the state where the card was issued, rather than where the cardholder resided (White 1999).
+       </s>
+       <s pid="24" sid="2">
+        Prior to the law change, most states' legal usury limit was 18%, yet there was some variation in rates; some states had no law whatsoever (Johnson 1980).
+       </s>
+       <s pid="24" sid="3">
+        In response to Marquette, however, a number of states with regulated rates removed their interest ceilings in an attempt to lure the banking sector to their state (Ausubel 1997).
+       </s>
+       <s pid="24" sid="4">
+        The first state to remove their usury law on revolving credit was South Dakota, which successfully attracted Citibank's credit card division away from New York City in 1981 (Manning, 2000).
+       </s>
+       <s pid="24" sid="5">
+        Delaware and Maryland quickly followed suit, and banks relocated rapidly to take advantage of lenient interest rate laws: the system of state usury laws was effectively deregulated (White 1999; Zinman 2003).
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        The effects of the 1978 ruling were not fully felt until the early 1980s, when the credit card industry became immensely profitable (Ausubel 1991, 1997).
+       </s>
+       <s pid="25" sid="2">
+        Zinman (2003) shows that credit card access increased differentially for consumers in the states which were affected by the interest rate increase compared to consumers in unaffected states.
+       </s>
+       <s pid="25" sid="3">
+        He also shows that the number of households maintaining revolving debt on their credit cards increased by two percent more in states affected by the ruling from 1977 to 1983.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        I would have liked to have used this Supreme Court ruling as an instrument for exogenous variation in this paper, however I found the data on 1970s state interest rate laws (in the appendix to Johnson 1980) too late for this analysis to be completed.
+       </s>
+       <s pid="26" sid="2">
+        Judging from the obscurity of the publication (the Journal of Retail Banking) and the fact that previous researchers, most notably Zinman (2003), have not cited Johnson's appendix table, it is not surprising that this data was so hard to find.
+       </s>
+       <s pid="26" sid="3">
+        Unfortunately, to the best of my knowledge, the geographic identifiers in the 1983 SCF are not publicly available, so any further research will either need to obtain these identifiers directly or convince an employee of the Federal Reserve Board to run the appropriate regressions on their servers.
+       </s>
+       <s pid="26" sid="4">
+        Hopefully getting access to the confidential data will be a speed bump towards completion of this project.
+       </s>
+       <s pid="26" sid="5">
+        Below I outline an empirical approach to exploit the causal nature of the exogenous change in interest rates.
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        Using the 1977 and 1983 waves of the SCF, I intend to establish a relationship between the deregulation of state interest rate laws and an increase in credit card debt, as done by Zinman (2003) using the same data, and much earlier by Sullivan and Worden (1989) using the 1983 wave only.
+       </s>
+       <s pid="27" sid="2">
+        The deregulation differentially impacted consumers in different states, depending on the level of the maximum legal interest rate prior to the ruling.
+       </s>
+       <s pid="27" sid="3">
+        However, due to limited sample sizes in the SCF, I will likely group the states into "affected" and "unaffected" , following Zinman.
+       </s>
+       <s pid="27" sid="4">
+        Thus I can establish the first stage regression of credit card debt on interest rate changes is a valid one, with the interest rate changes as the instrument.
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        To analyze the second stage, I intend to estimate the reduced form of the model, using the larger sample in the Current Population Survey (CPS) to compare changes in labor supply in affected and unaffected states.
+       </s>
+       <s pid="28" sid="2">
+        However, the expansion of access to credit cards over the 1977-1983 period likely has serious selection effects on the results.
+       </s>
+       <s pid="28" sid="3">
+        The Marquette ruling affected both the present value of outstanding debt for cardholders as well as expanded access to credit.
+       </s>
+       <s pid="28" sid="4">
+        Both aspects need to be addressed by estimating of the impact on the intensive and extensive margins of credit card usage.
+       </s>
+       <s pid="28" sid="5">
+        Thus I propose inclusion of a propensity score measure, taken from the SCF, of the likelihood of having a credit card, based on simple exogenous characteristics that can be matched to the CPS, such as age, education, and marital status.
+       </s>
+       <s pid="28" sid="6">
+        The propensity score measure will control for the extensive margin of new cardholders across states and across time, and (hopefully) sufficiently address selection issues.
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        More formally, consider the structural equation
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        , (1)
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        where
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the change in credit card indebtedness from 1977 to 1983,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the change in labor supply,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the change in access to credit cards over the period, and controls have been suppressed.  However, the labor supply and the debt burden are endogenously determined.  Thus, we can consider the
+      <i>
+       Marquette
+      </i>
+      ruling to serve as an instrument in the first stage regression:
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        , (2)
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        where the ruling is reflected in the change in the maximum interest rate on credit card debt, possibly through an indicator variable which reflects whether the Supreme Court decision had a binding upward impact on rates.
+       </s>
+       <s pid="34" sid="2">
+        Then the reduced-form of equation (1) will be
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        , (3)
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        where the change in credit card access will be the propensity score measure discussed above.
+       </s>
+       <s pid="36" sid="2">
+        The SCF (with geographic identifiers) matched to the interest rate limits in each state will confirm the relevance of the instrument in the first-stage regression.
+       </s>
+       <s pid="36" sid="3">
+        Next I will create the measure for access using propensity scores, and then estimate the reduced-form version using the CPS.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        I predict that consumers in the states with the lowest interest rate ceilings were most strong affected by the Marquette decision, and I expect to find this in their labor supply response.
+       </s>
+       <s pid="37" sid="2">
+        With a larger sample size in the CPS, I hope to address spousal labor force participation, as in Del Boca and Lusardi (2003) and Fortin (1995), as well as the number of household work hours.
+       </s>
+       <s pid="37" sid="3">
+        These responses have a straightforward causal interpretation; the law change was exogenous to the prevailing state interest rate limits of the late 1970s, and the treatment and control groups of states are clearly distinguished by their usury laws.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       VI. Conclusion
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        Due to the growth of easy access to collateral-free debt, the credit card industry has gained importance in the provision of financial services and their role in everyday life.
+       </s>
+       <s pid="38" sid="2">
+        Debt likely has important effects on behavior, including labor supply.
+       </s>
+       <s pid="38" sid="3">
+        I present results from the 1986 SCF that are strongly suggestive of a link between credit card debt and labor supply.
+       </s>
+       <s pid="38" sid="4">
+        Credit card debt is particularly unique due to its flexibility and use of marginal purchases.
+       </s>
+       <s pid="38" sid="5">
+        Furthermore, households with credit card debt are no more likely to have other forms of debt.
+       </s>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        Household labor supply appears more responsive to credit card debt than most other forms of debt.
+       </s>
+       <s pid="39" sid="2">
+        In particular, the relationship operates through the hours decision of the spouse.
+       </s>
+       <s pid="39" sid="3">
+        This co-movement persists over time, as the amount of debt three years earlier is related to current labor supply.
+       </s>
+       <s pid="39" sid="4">
+        I find similar current effects for vehicle loans, but other forms of borrowing (besides real estate) do not have a significant relationship with the labor supply decision.
+       </s>
+      </p>
+      <p>
+       <s pid="40" sid="1">
+        In order to ascribe a causal interpretation to this relationship, I need to identify an exogenous shock to credit card debt.
+       </s>
+       <s pid="40" sid="2">
+        The Marquette v. First Omaha Supreme Court decision increased interest rates on credit cards through deregulation, exogenously increasing the present value of credit card debt.
+       </s>
+       <s pid="40" sid="3">
+        Because the ruling differentially affected states depending on their usury laws, the decision can serve as a causal mechanism to identify the labor supply response to a change in outstanding credit card debt.
+       </s>
+       <s pid="40" sid="4">
+        Such a study will provide a better understanding of labor market fluctuations, and posit a clear behavioral link between debt and labor supply.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N10204">
+       <li id="N10205">
+        Ausubel, Lawrence M., "The Failure of Competition in the Credit Card Market," American Economic Review 81 (March 1991), p. 50-81.
+       </li>
+       <li id="N10207">
+        Ausubel, Lawrence M., "Credit Card Defaults, Credit Card Profits, and Bankruptcy," American Bankruptcy Law Journal 71 (Spring 1997), p. 249-270.
+       </li>
+       <li id="N10209">
+        Bertaut, Carol C., and Michael Haliassos, "Credit Cards: Facts and Theories," in Bertola, Disney, and Grant, eds., The Economics of Consumer Credit, MIT Press, forthcoming.
+       </li>
+       <li id="N1020B">
+        Bertrand, Marianne, Sendhil Mullainathan, and Eldar Shafir, "A Behavioral-Economics View of Poverty," American Economic Review Papers &amp; Proceedings 94 (May 2004), p. 419-423.
+       </li>
+       <li id="N1020D">
+        Brito, Dagobert L., and Peter R. Hartley, "Consumer Rationality and Credit Cards," Journal of Political Economy 103 (April 1995), p. 400-433.
+       </li>
+       <li id="N1020F">
+        Calem, Paul S., and Loretta J. Mester, "Consumer Behavior and the Stickiness of Credit-Card Interest Rates," American Economic Review 85 (December 1995), p. 1327-1336.
+       </li>
+       <li id="N10211">
+        Campbell, Jeffrey R., and Zvi Hercowitz, "The Dynamics of Work and Debt," NBER Working Paper 10201, December 2003.
+       </li>
+       <li id="N10213">
+        Del Boca, Daniela, and Annamaria Lusardi, "Credit Market Constraints and Labor Market Decisions," Labour Economics 10 (2003), p. 681-703.
+       </li>
+       <li id="N10215">
+        Draut, Tamara, and Javier Silva, "Borrowing to Make Ends Meet: The Growth of Credit Card Debt in the '90s," Demos Report (September 2003), http://www.demos-usa.org.
+       </li>
+       <li id="N10217">
+        Draut, Tamara, and Javier Silva, "Generation Broke: The Growth of Debt Among Young Americans," Borrowing To Make Ends Meet Briefing Paper #2, Demos Report (October 2004), http://www.demos-usa.org.
+       </li>
+       <li id="N10219">
+        Duflo, Esther, "Poor But Rational?" MIT mimeo (January 2003).
+       </li>
+       <li id="N1021B">
+        Economic Behavior Program, Survey Research Center, University of Michigan; Robert B. Avery, Arthur B. Kennickell, and the Board of Governors of the Federal Reserve System, "Survey of Consumer Finances, 1986".
+       </li>
+       <li id="N1021D">
+        Fortin, Nicole M., "Allocation Inflexibilities, Female Labor Supply, and Housing Assets Accumulation: Are Women Working to Pay the Mortgage?" Journal of Labor Economics 13 (July 1995), p. 524-557.
+       </li>
+       <li id="N1021F">
+        Gross, David B., and Nicholas S. Souleles, "Do Liquidity Constraints and Interest Rates Matter For Consumer Behavior?  Evidence From Credit Card Data," Quarterly Journal of Economics 117 (February 2002), p. 149-185.
+       </li>
+       <li id="N10221">
+        Jappelli, Tullio, "Who is Credit Constrained in the U.S. Economy?" Quarterly Journal of Economics 105 (February 1990), p. 219-234.
+       </li>
+       <li id="N10223">
+        Johnson, Robert W., "Economic Effects of Graduated Rate Ceilings on Revolving Credit," Journal of Retail Banking 2 (March 1980), reprinted as Purdue University Credit Research Center Reprint #14.
+       </li>
+       <li id="N10225">
+        Mandell, Lewis, The Credit Card Industry: A History.  Boston: Twayne Publishers, 1990.
+       </li>
+       <li id="N10227">
+        Manning, Robert, Credit Card Nation: The Consequences of America's Addiction to Credit.  New York: Basic Books, 2000.
+       </li>
+       <li id="N10229">
+        Sullivan, A. Charlene, and Debra D. Worden, "Deregulation, Tax Reform, and the Use of Consumer Credit," Journal of Financial Services Research 3 (1989), p. 77-91, reprinted as Purdue University Credit Research Center Reprint #19.
+       </li>
+       <li id="N1022B">
+        White, James J., "The Usury Trompe L'Oeil," South Carolina Law Review 51 (1999), p. 445-472.
+       </li>
+       <li id="N1022D">
+        Zinman, Jonathan, "The Impact of Liquidity on Household Balance Sheets: Micro Responses to a Credit Card Supply Shock," Federal Reserve Bank of New York Working Paper, January 2003.
+       </li>
+      </ul>
+     </div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1 Due to the small sample size, I am unable to find any affects of credit card debt on female labor force participation, and these results have been omitted.
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        2.
+       </a>
+       2 For an outstanding overview of the credit card industry and its impact on society, see Manning (2000).
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        3.
+       </a>
+       3 Though the SCF did not keep a consistent survey approach (switching between head/spouse and respondent/spouse), the data was re-organized so that all "heads" are male.
+      </div>
+      <div id="fn4">
+       <a href="#fnref_fn4">
+        4.
+       </a>
+       4 It is unlikely that the SCF's marriage variable is correct.  The survey includes roughly 600 Hispanic and 250 black respondents, only one of whom is classified as "legally married".  That I select my sample based on cases where information on both husband and spouse is present is thus somewhat troubling.  I define married as either "legally married" or "common law married" for inclusion in my sample.
+      </div>
+      <div id="fn5">
+       <a href="#fnref_fn5">
+        5.
+       </a>
+       5 Median values are not presented in the table but are available from the author.  The median household income is $42,000, still very high in 1986 dollars.  Due to the likely heteroskedasticity in the data, I use Huber/White standard errors in all regressions.  Perhaps I should also trim the data at the top to get rid of some of the outliers?
+      </div>
+      <div id="fn6">
+       <a href="#fnref_fn6">
+        6.
+       </a>
+       6 Campbell and Hercowitz emphasize the role of collateralized debt in their discussion, namely residential property and vehicle loans, however their aggregate measures of debt show a break in the early 1980s around the time state interest rate limits on credit card debt were eliminated.  Though 90% of all debt requires some form of collateral, the co-movement appears to be much stronger post-1983, when credit card debt has rapidly increased.
+      </div>
+      <div id="fn7">
+       <a href="#fnref_fn7">
+        7.
+       </a>
+       7 I use household annual income rather than individual and spouse income or wages because the household measure is the only one not missing for more than 1/6 of my sample.  In addition, I include a dummy for respondents in the high income sub-sample, which was a non-random selection of wealthy individuals drawn from 1983 tax returns.  See SCF codebook (1986) for details.  Their inclusion or exclusion does not have an substantive effect on the results.
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

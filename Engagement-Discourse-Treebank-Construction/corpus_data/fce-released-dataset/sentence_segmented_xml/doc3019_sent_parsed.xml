@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     24.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to answer your letter where you asked for information about the
+       <ns type="S">
+        <i>
+         conferents
+        </i>
+       </ns>
+       and other points in relation
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       .
+      </p>
+      <p>
+       The hotel where your group has been booked is the Palace Hotel. It is a very nice hotel in the centre of the city, and that is very near
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the college
+       <ns type="SX">
+        <i>
+         which
+        </i>
+       </ns>
+       the conference is
+       <ns type="R">
+        <i>
+         into,
+        </i>
+       </ns>
+       five
+       <ns type="MP">
+        <i>
+         minutes
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         walking
+        </i>
+       </ns>
+       .
+       <ns type="UV">
+        <i>
+         Going walking
+        </i>
+       </ns>
+       is quicker than waiting for a taxi or a bus. When you arrive
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         Colleges
+        </i>
+       </ns>
+       there will be people indicating the way to the conference room.
+      </p>
+      <p>
+       At the end of the conference we are
+       <ns type="RV">
+        <i>
+         doing
+        </i>
+       </ns>
+       a party with some cold
+       <ns type="SX">
+        <i>
+         good
+        </i>
+       </ns>
+       and some drinks. There will be music as well for dancing. The director of the
+       <ns type="RP">
+        <i>
+         College
+        </i>
+       </ns>
+       has suggested
+       <ns type="FV">
+        <i>
+         to wear
+        </i>
+       </ns>
+       smart clothes for that occasion and I give you the same advice.
+      </p>
+      <p>
+       <ns type="W">
+        <i>
+         <ns type="L">
+          <i>
+           About
+          </i>
+         </ns>
+         the afternoon before
+         <ns type="MA">
+         </ns>
+         <ns type="TV">
+          <i>
+           leaving
+          </i>
+         </ns>
+         I have some suggestions
+        </i>
+       </ns>
+       . In the
+       <ns type="RN">
+        <i>
+         area
+        </i>
+       </ns>
+       of the
+       <ns type="RP">
+        <i>
+         Hotel
+        </i>
+       </ns>
+       there are two interesting places to visit. One is the Picasso museum and the other is an important Gallery where you can enjoy seeing
+       <ns type="IJ">
+        <i>
+         differents
+        </i>
+       </ns>
+       kinds of paintings.
+      </p>
+      <p>
+       I hope my information
+       <ns type="RV">
+        <i>
+         can
+        </i>
+       </ns>
+       help you and it has been useful for you.
+      </p>
+      <p>
+       I am looking forwards to
+       <ns type="FV">
+        <i>
+         see
+        </i>
+       </ns>
+       you at the
+       <ns type="RP">
+        <i>
+         Conference
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writting to answer your letter where you asked for information about the conferents and other points in relation with .
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The hotel where your group has been booked is the Palace Hotel.
+       </s>
+       <s pid="3" sid="2">
+        It is a very nice hotel in the centre of the city, and that is very near of the college which the conference is into, five minutes walking.
+       </s>
+       <s pid="3" sid="3">
+        Going walking is quicker than waiting for a taxi or a bus.
+       </s>
+       <s pid="3" sid="4">
+        When you arrive to the Colleges there will be people indicating the way to the conference room.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        At the end of the conference we are doing a party with some cold good and some drinks.
+       </s>
+       <s pid="4" sid="2">
+        There will be music as well for dancing.
+       </s>
+       <s pid="4" sid="3">
+        The director of the College has suggested to wear smart clothes for that occasion and I give you the same advice.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        About the afternoon before  leaving I have some suggestions.
+       </s>
+       <s pid="5" sid="2">
+        In the area of the Hotel there are two interesting places to visit.
+       </s>
+       <s pid="5" sid="3">
+        One is the Picasso museum and the other is an important Gallery where you can enjoy seeing differents kinds of paintings.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope my information can help you and it has been useful for you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am looking forwards to see you at the Conference.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       There is an invention that I think
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       has been very important: the computer.
+      </p>
+      <p>
+       The computer is very useful and
+       <ns type="RP">
+        <i>
+         It
+        </i>
+       </ns>
+       has
+       <ns type="TV">
+        <i>
+         affect
+        </i>
+       </ns>
+       our own
+       <ns type="IN">
+        <i>
+         lifes
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       in
+       <ns type="IJ">
+        <i>
+         differents
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         meanings
+        </i>
+       </ns>
+       . The computer has
+       <ns type="RV">
+        <i>
+         done
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="FJ">
+          <i>
+           easy
+          </i>
+         </ns>
+         a lot of
+         <ns type="RN">
+          <i>
+           works
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+       <ns type="W">
+        <i>
+         For
+         <ns type="RN">
+          <i>
+           works
+          </i>
+         </ns>
+         that you needed, for example three hours
+        </i>
+       </ns>
+       you can do
+       <ns type="UA">
+        <i>
+         them
+        </i>
+       </ns>
+       in ten minutes;
+       <ns type="R">
+        the same
+       </ns>
+       ! But computers
+       <ns type="X">
+        <i>
+         don't have affected only
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       in a good way because
+       <ns type="IN">
+        <i>
+         thank
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         you
+        </i>
+       </ns>
+       to computers the number the
+       <ns type="RN">
+        <i>
+         places of work
+        </i>
+       </ns>
+       <ns type="MJ">
+       </ns>
+       for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="L">
+        <i>
+         persons
+        </i>
+       </ns>
+       is
+       <ns type="RJ">
+        <i>
+         minor
+        </i>
+       </ns>
+       . But
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="S">
+          <i>
+           definetely
+          </i>
+         </ns>
+         they
+         <ns type="AGV">
+          <i>
+           has
+          </i>
+         </ns>
+        </i>
+       </ns>
+       been a very important invention.
+      </p>
+      <p>
+       The last
+       <ns type="DN">
+        relationed
+       </ns>
+       with computers is
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       .
+       <ns type="RT">
+        <i>
+         By
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       you can
+       <ns type="S">
+        <i>
+         comunicate
+        </i>
+       </ns>
+       with people
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="IJ">
+        <i>
+         differents
+        </i>
+       </ns>
+       places of the world at the same moment. And you can
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       lots of
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       about a lot of things.
+       <ns type="AS">
+        <i>
+         <ns type="RP">
+          <i>
+           Every thing
+          </i>
+         </ns>
+         that you need you can find it
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Nowadays
+       <ns type="AGN">
+        <i>
+         computer
+        </i>
+       </ns>
+       are very
+       <ns type="DJ">
+        <i>
+         developmented
+        </i>
+       </ns>
+       and
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="RV">
+        increasing
+       </ns>
+       . What will be
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       next?
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        There is an invention that I think that has been very important: the computer.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The computer is very useful and It has affect our own lifes, in differents meanings.
+       </s>
+       <s pid="2" sid="2">
+        The computer has done easy a lot of works.
+       </s>
+       <s pid="2" sid="3">
+        For works that you needed, for example three hours you can do them in ten minutes; the same!
+       </s>
+       <s pid="2" sid="4">
+        But computers don't have affected only  in a good way because thank you to computers the number the places of work  for the persons is minor.
+       </s>
+       <s pid="2" sid="5">
+        But, definetely they has been a very important invention.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The last relationed with computers is  internet.
+       </s>
+       <s pid="3" sid="2">
+        By  internet you can comunicate with people of differents places of the world at the same moment.
+       </s>
+       <s pid="3" sid="3">
+        And you can take lots of informations about a lot of things.
+       </s>
+       <s pid="3" sid="4">
+        Every thing that you need you can find it in  internet.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Nowadays computer are very developmented and it is increasing.
+       </s>
+       <s pid="4" sid="2">
+        What will be the next?
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

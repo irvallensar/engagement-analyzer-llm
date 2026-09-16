@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      31-40
+     </age>
+    </personnel>
+    <score>
+     17.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       17th June 2000
+      </p>
+      <p>
+       The Manager
+      </p>
+      <p>
+       The Circle Theatre
+      </p>
+      <p>
+       My wife and I are very keen on theatre, especially
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the funny actor "Danny Brook". When we saw your advertisement in the "Evening Post" we made a reservation.
+      </p>
+      <p>
+       Unfortunately, the next evening, one hour before the beginning of the show, we learnt that
+       <ns type="MD">
+       </ns>
+       actors
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       been changed at the last minute.
+      </p>
+      <p>
+       In addition, there was no discount available,
+       <ns type="MC">
+       </ns>
+       the show started at 20:15 and not at 19:30. After that, your restaurant was closed
+       <ns type="S">
+        <i>
+         whitout
+        </i>
+       </ns>
+       reason.
+      </p>
+      <p>
+       We are very disappointed. It was not a "perfect evening out" but "a dreadful evening out".
+      </p>
+      <p>
+       It would be nice
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       you if you could refund us some money or send us two new
+       <ns type="AGN">
+        <i>
+         ticket
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17th June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The Manager
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The Circle Theatre
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        My wife and I are very keen on theatre, especially of the funny actor "Danny Brook".
+       </s>
+       <s pid="4" sid="2">
+        When we saw your advertisement in the "Evening Post" we made a reservation.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Unfortunately, the next evening, one hour before the beginning of the show, we learnt that  actors have been changed at the last minute.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In addition, there was no discount available,  the show started at 20:15 and not at 19:30.
+       </s>
+       <s pid="6" sid="2">
+        After that, your restaurant was closed whitout reason.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        We are very disappointed.
+       </s>
+       <s pid="7" sid="2">
+        It was not a "perfect evening out" but "a dreadful evening out".
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        It would be nice from you if you could refund us some money or send us two new ticket.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+   </text>
+  </learner>
+ </body>
+</html>

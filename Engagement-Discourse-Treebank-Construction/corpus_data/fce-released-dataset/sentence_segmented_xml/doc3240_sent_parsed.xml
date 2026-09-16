@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     17.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       12th June 2001
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Dar
+        </i>
+       </ns>
+       Mrs. Maria Smith,
+      </p>
+      <p>
+       I am very glad to help you
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the International Student Conference. I hope that our friend Richard Brown doesn't have any serious
+       <ns type="FN">
+        <i>
+         <ns type="S">
+          <i>
+           willness
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="R">
+        Referent
+       </ns>
+       , where is the conference
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       This will be in the Casino Hotel and we don't need to worry
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the best way
+       <ns type="M">
+       </ns>
+       because
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       all the main routes in Devonport have signs
+       <ns type="R">
+        <i>
+         with
+        </i>
+       </ns>
+       correct way to
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       popular hotel.
+      </p>
+      <p>
+       After
+       <ns type="UV">
+        <i>
+         finish
+        </i>
+       </ns>
+       the conference, there is a party in
+       <ns type="MD">
+       </ns>
+       same hotel.
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       this party
+       <ns type="MP">
+       </ns>
+       there
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ;
+        </i>
+       </ns>
+       some
+       <ns type="FN">
+        <i>
+         foods
+        </i>
+       </ns>
+       , soft drinks, music and a special place for dancing. This party is for the students so the
+       <ns type="UN">
+        <i>
+         kinds of
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         clouthes
+        </i>
+       </ns>
+       won't be so formal.
+      </p>
+      <p>
+       On the
+       <ns type="W">
+        <i>
+         day free
+        </i>
+       </ns>
+       before
+       <ns type="FV">
+        <i>
+         catch
+        </i>
+       </ns>
+       our plane
+       <ns type="RP">
+        <i>
+         . We
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         chouse
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       two options
+       <ns type="R">
+        for spending
+       </ns>
+       our free time. One is a
+       <ns type="DJ">
+        <i>
+         guide
+        </i>
+       </ns>
+       tour
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="SA">
+          <i>
+           center
+          </i>
+         </ns>
+         city
+        </i>
+       </ns>
+       , and another is visiting the chocolate factory.
+      </p>
+      <p>
+       Please, if you have any more
+       <ns type="FN">
+        <i>
+         question
+        </i>
+       </ns>
+       , please call me
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       38755980.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        12th June 2001
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dar Mrs. Maria Smith,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am very glad to help you about the International Student Conference.
+       </s>
+       <s pid="3" sid="2">
+        I hope that our friend Richard Brown doesn't have any serious willness.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Referent, where is the conference.
+       </s>
+       <s pid="4" sid="2">
+        This will be in the Casino Hotel and we don't need to worry for the best way  because in all the main routes in Devonport have signs with correct way to the popular hotel.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        After finish the conference, there is a party in  same hotel.
+       </s>
+       <s pid="5" sid="2">
+        In this party there are; some foods, soft drinks, music and a special place for dancing.
+       </s>
+       <s pid="5" sid="3">
+        This party is for the students so the kinds of clouthes won't be so formal.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        On the day free before catch our plane.
+       </s>
+       <s pid="6" sid="2">
+        We could chouse  two options for spending our free time.
+       </s>
+       <s pid="6" sid="3">
+        One is a guide tour on  center city, and another is visiting the chocolate factory.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Please, if you have any more question, please call me at 38755980.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       I can live without this.
+      </p>
+      <p>
+       It's true.
+       <ns type="CE">
+        In our
+        <ns type="IN">
+         <i>
+          lifes
+         </i>
+        </ns>
+        ,
+        <ns type="RP">
+         <i>
+          may be
+         </i>
+        </ns>
+        , couldn't be without electricity
+       </ns>
+       . Some people can live without this, but I am sure that the world would be very different.
+      </p>
+      <p>
+       When we
+       <ns type="TV">
+        <i>
+         are using
+        </i>
+       </ns>
+       different
+       <ns type="CN">
+        <i>
+         equipments
+        </i>
+       </ns>
+       in our
+       <ns type="RN">
+        <i>
+         houses
+        </i>
+       </ns>
+       , we are using
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       electricity.
+       <ns type="R">
+        Small things but very
+        <ns type="IJ">
+         <i>
+          importants
+         </i>
+        </ns>
+        in our
+        <ns type="IN">
+         <i>
+          lifes
+         </i>
+        </ns>
+        . For example: T.V., computer, just light and a long list that now I
+        <ns type="RP">
+         <i>
+          can not
+         </i>
+        </ns>
+        write
+       </ns>
+       .
+      </p>
+      <p>
+       I don't like
+       <ns type="S">
+        <i>
+         tinking
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       my house
+       <ns type="SX">
+        <i>
+         of
+        </i>
+       </ns>
+       my life
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       without all
+       <ns type="AGD">
+        <i>
+         this
+        </i>
+       </ns>
+       facilities. In winter
+       <ns type="R">
+        when
+        <ns type="MA">
+        </ns>
+        <ns type="RV">
+         <i>
+          is
+         </i>
+        </ns>
+        dark very early, and after, I need to
+        <ns type="FV">
+         <i>
+          spent
+         </i>
+        </ns>
+        my free time
+        <ns type="RT">
+         <i>
+          in
+         </i>
+        </ns>
+        home
+       </ns>
+       . What
+       <ns type="W">
+        <i>
+         I can
+        </i>
+       </ns>
+       do without my music and my computer
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       Now,
+       <ns type="W">
+        <i>
+         just you
+        </i>
+       </ns>
+       need to think
+       <ns type="R">
+        that you would do or what would happen in a city, with a car,
+        <ns type="S">
+         <i>
+          aeroplans
+         </i>
+        </ns>
+        ,
+        <ns type="S">
+         <i>
+          shoops
+         </i>
+        </ns>
+        , all these things without lights
+       </ns>
+       .
+      </p>
+      <p>
+       Finally
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       I think that everybody
+       <ns type="AGV">
+        <i>
+         know
+        </i>
+       </ns>
+       that
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       electricity is
+       <ns type="MD">
+       </ns>
+       very important
+       <ns type="DN">
+        <i>
+         invent
+        </i>
+       </ns>
+       and for me it is the best.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I can live without this.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It's true.
+       </s>
+       <s pid="2" sid="2">
+        In our lifes, may be, couldn't be without electricity.
+       </s>
+       <s pid="2" sid="3">
+        Some people can live without this, but I am sure that the world would be very different.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        When we are using different equipments in our houses, we are using the electricity.
+       </s>
+       <s pid="3" sid="2">
+        Small things but very importants in our lifes.
+       </s>
+       <s pid="3" sid="3">
+        For example: T.V., computer, just light and a long list that now I can not write.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I don't like tinking , my house of my life, without all this facilities.
+       </s>
+       <s pid="4" sid="2">
+        In winter when  is dark very early, and after, I need to spent my free time in home.
+       </s>
+       <s pid="4" sid="3">
+        What I can do without my music and my computer.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Now, just you need to think that you would do or what would happen in a city, with a car, aeroplans, shoops, all these things without lights.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally.
+       </s>
+       <s pid="6" sid="2">
+        I think that everybody know that the electricity is  very important invent and for me it is the best.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

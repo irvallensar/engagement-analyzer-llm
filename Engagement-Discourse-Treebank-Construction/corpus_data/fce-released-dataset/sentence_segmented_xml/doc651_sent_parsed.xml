@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       been to London recently for a week's holiday and I have been to a musical show
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the Circle Theatre. When I saw the advertisement
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the show I got very excited, because I always wanted to see "Over the Rainbow", but I had some problems, and I want you to know about
+       <ns type="AGA">
+        <i>
+         that
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all, when I bought the tickets I
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       no discount, and in the advertisement it was
+       <ns type="RV">
+        <i>
+         mentioned
+        </i>
+       </ns>
+       that people would
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       some, and when I got
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the theatre to see the play, I had to wait for almost an hour until the show begun. Then, I got very disappointed because the actors in the play were not those ones mentioned in the advertisement. There were unknown actors, and they were not as good as the other ones. Afterwards, I was expecting to have at least a nice dinner in the theatre restaurant, but it was already closed because the show ended too late.
+      </p>
+      <p>
+       I
+       <ns type="X">
+        <i>
+         had had not
+        </i>
+       </ns>
+       a perfect night at all, so I would like to ask if I can have my money back. Please give me an answer. Thank you for reading this letter.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I had been to London recently for a week's holiday and I have been to a musical show in the Circle Theatre.
+       </s>
+       <s pid="2" sid="2">
+        When I saw the advertisement about the show I got very excited, because I always wanted to see "Over the Rainbow", but I had some problems, and I want you to know about that.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, when I bought the tickets I had no discount, and in the advertisement it was mentioned that people would have some, and when I got in the theatre to see the play, I had to wait for almost an hour until the show begun.
+       </s>
+       <s pid="3" sid="2">
+        Then, I got very disappointed because the actors in the play were not those ones mentioned in the advertisement.
+       </s>
+       <s pid="3" sid="3">
+        There were unknown actors, and they were not as good as the other ones.
+       </s>
+       <s pid="3" sid="4">
+        Afterwards, I was expecting to have at least a nice dinner in the theatre restaurant, but it was already closed because the show ended too late.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I had had not a perfect night at all, so I would like to ask if I can have my money back.
+       </s>
+       <s pid="4" sid="2">
+        Please give me an answer.
+       </s>
+       <s pid="4" sid="3">
+        Thank you for reading this letter.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       We cannot deny that technology has changed our lives. Nowadays, we
+       <ns type="X">
+        <i>
+         do not need anymore
+        </i>
+       </ns>
+       to spend hours cooking, for example: we just put some frozen food in the microwave, and in a few minutes our meal is ready. We can communicate with people in distant countries in real time, using the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       There
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       a lot of other examples of how technology has changed people's lives. I
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       not do my school projects without using a computer, because I have to do some statistical analysis that I
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       not do with a calculator. Also, I can communicate with some friends who live in other countries by e-mail almost every day, and I save some money because I pay for a local call, and not for an international call.
+       <ns type="RP">
+        <i>
+         An other
+        </i>
+       </ns>
+       thing which is very useful for me is my mobile phone, because people can talk to me whenever they need
+       <ns type="M">
+       </ns>
+       , but on the other hand it is very unpleasant to be interrupted by the phone when I am in an important meeting.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        We cannot deny that technology has changed our lives.
+       </s>
+       <s pid="1" sid="2">
+        Nowadays, we do not need anymore to spend hours cooking, for example: we just put some frozen food in the microwave, and in a few minutes our meal is ready.
+       </s>
+       <s pid="1" sid="3">
+        We can communicate with people in distant countries in real time, using the internet.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        There is a lot of other examples of how technology has changed people's lives.
+       </s>
+       <s pid="2" sid="2">
+        I would not do my school projects without using a computer, because I have to do some statistical analysis that I would not do with a calculator.
+       </s>
+       <s pid="2" sid="3">
+        Also, I can communicate with some friends who live in other countries by e-mail almost every day, and I save some money because I pay for a local call, and not for an international call.
+       </s>
+       <s pid="2" sid="4">
+        An other thing which is very useful for me is my mobile phone, because people can talk to me whenever they need , but on the other hand it is very unpleasant to be interrupted by the phone when I am in an important meeting.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

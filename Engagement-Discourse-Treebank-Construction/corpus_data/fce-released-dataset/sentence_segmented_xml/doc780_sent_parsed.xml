@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="L">
+        <i>
+         Hello
+        </i>
+       </ns>
+       Helen,
+      </p>
+      <p>
+       I have
+       <ns type="S">
+        <i>
+         recived
+        </i>
+       </ns>
+       your
+       <ns type="SX">
+        <i>
+         exiting
+        </i>
+       </ns>
+       letter, informing me that I have won two weeks at Camp California in the USA. I will answer your questions in this letter
+       <ns type="MP">
+       </ns>
+       <ns type="S">
+        <i>
+         begining
+        </i>
+       </ns>
+       with the best
+       <ns type="RN">
+        <i>
+         moment
+        </i>
+       </ns>
+       for
+       <ns type="R">
+        <i>
+         the
+         <ns type="RP">
+          <i>
+           Camp
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Because of my
+       <ns type="FN">
+        <i>
+         study
+        </i>
+       </ns>
+       I will not be free to travel until
+       <ns type="RP">
+        <i>
+         july
+        </i>
+       </ns>
+       and schools
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           goes
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       in August
+       <ns type="UY">
+        <i>
+         again
+        </i>
+       </ns>
+       so I hope July will be fine.
+      </p>
+      <p>
+       I much prefer sleeping in tents
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       seems
+       <ns type="RJ">
+        <i>
+         <ns type="IJ">
+          <i>
+           more friendly
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       <ns type="R">
+        sounds like
+        <ns type="S">
+         <i>
+          holydays
+         </i>
+        </ns>
+       </ns>
+       .
+      </p>
+      <p>
+       Choosing only two activities
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       such a
+       <ns type="L">
+        <i>
+         bunch
+        </i>
+       </ns>
+       of interesting ones was quite hard, but I decided to
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       the two I've never tried,
+       <ns type="RP">
+        <i>
+         Climbing and Surfing
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I would like to know what kind of clothes
+       <ns type="W">
+        <i>
+         should I
+        </i>
+       </ns>
+       bring and
+       <ns type="S">
+        <i>
+         wether
+        </i>
+       </ns>
+       I can wash
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       or not, and I'd like to know how much money
+       <ns type="W">
+        <i>
+         will I
+        </i>
+       </ns>
+       need for extras
+       <ns type="RP">
+        <i>
+         ?
+        </i>
+       </ns>
+      </p>
+      <p>
+       Thank you very much
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours sincerely
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Andre Michel
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hello Helen,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have recived your exiting letter, informing me that I have won two weeks at Camp California in the USA.
+       </s>
+       <s pid="2" sid="2">
+        I will answer your questions in this letter begining with the best moment for the Camp.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Because of my study I will not be free to travel until july and schools goes  on in August again so I hope July will be fine.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I much prefer sleeping in tents, it seems more friendly and realy sounds like holydays.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Choosing only two activities in such a bunch of interesting ones was quite hard, but I decided to take the two I've never tried, Climbing and Surfing.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I would like to know what kind of clothes should I bring and wether I can wash it or not, and I'd like to know how much money will I need for extras?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Thank you very much
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Andre Michel
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Hello Kim,
+      </p>
+      <p>
+       How are you?
+      </p>
+      <p>
+       <ns type="RV">
+        <i>
+         Excuse
+        </i>
+       </ns>
+       me for the long time I left you without any news. I wrote
+       <ns type="MT">
+       </ns>
+       you last time that I was going to
+       <ns type="ID">
+        <i>
+         give a hand
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the installation and preparation of "Garbage's" concert and you asked me to tell you how it
+       <ns type="TV">
+        <i>
+         has been
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       So one week
+       <ns type="S">
+        <i>
+         befor
+        </i>
+       </ns>
+       the concert I went
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       "L'Arena" to meet the other worker and receive the instructions. I've had the
+       <ns type="S">
+        <i>
+         hounour
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to help
+        </i>
+       </ns>
+       their sound
+       <ns type="S">
+        <i>
+         engeineer
+        </i>
+       </ns>
+       and
+       <ns type="R">
+        <ns type="FV">
+         <i>
+          branch
+         </i>
+        </ns>
+        the cables for microphones
+        <ns type="MP">
+        </ns>
+        <ns type="S">
+         <i>
+          ggitares
+         </i>
+        </ns>
+        etc
+       </ns>
+       .
+      </p>
+      <p>
+       We
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       started to
+       <ns type="ID">
+        work like ants
+       </ns>
+       the morning
+       <ns type="S">
+        <i>
+         befor
+        </i>
+       </ns>
+       the show. It was
+       <ns type="SX">
+        <i>
+         exiting
+        </i>
+       </ns>
+       looking
+       <ns type="MT">
+       </ns>
+       all three
+       <ns type="IN">
+        <i>
+         mens
+        </i>
+       </ns>
+       working together and building a
+       <ns type="RN">
+        <i>
+         scene
+        </i>
+       </ns>
+       , and it was
+       <ns type="S">
+        <i>
+         interresting
+        </i>
+       </ns>
+       to help the sound engineer to check the sound and
+       <ns type="FV">
+        <i>
+         configuring
+        </i>
+       </ns>
+       his computers to get the best sound possible.
+      </p>
+      <p>
+       About two hours
+       <ns type="S">
+        <i>
+         befor
+        </i>
+       </ns>
+       the beginning of the show, we met the band and
+       <ns type="S">
+        <i>
+         recieved
+        </i>
+       </ns>
+       tickets to
+       <ns type="MV">
+       </ns>
+       backstage
+       <ns type="RP">
+        <i>
+         , that
+        </i>
+       </ns>
+       was wonderful, maybe better than the concert itself!
+      </p>
+      <p>
+       And the next morning
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I was
+       <ns type="RY">
+        <i>
+         here
+        </i>
+       </ns>
+       again to help them
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           folding
+          </i>
+         </ns>
+        </i>
+       </ns>
+       their
+       <ns type="CN">
+        <i>
+         stuffs
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       That's a great
+       <ns type="S">
+        <i>
+         experienc
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Now Kim, tell me about
+       <ns type="R">
+        your side of the show
+       </ns>
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours
+       <ns type="MP">
+       </ns>
+       Andre
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hello Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        How are you?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Excuse me for the long time I left you without any news.
+       </s>
+       <s pid="3" sid="2">
+        I wrote  you last time that I was going to give a hand for the installation and preparation of "Garbage's" concert and you asked me to tell you how it has been.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        So one week befor the concert I went at "L'Arena" to meet the other worker and receive the instructions.
+       </s>
+       <s pid="4" sid="2">
+        I've had the hounour  to help their sound engeineer and branch the cables for microphones ggitares etc.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        We realy started to work like ants the morning befor the show.
+       </s>
+       <s pid="5" sid="2">
+        It was exiting looking  all three mens working together and building a scene, and it was interresting to help the sound engineer to check the sound and configuring his computers to get the best sound possible.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        About two hours befor the beginning of the show, we met the band and recieved tickets to  backstage, that was wonderful, maybe better than the concert itself!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        And the next morning, I was here again to help them folding their stuffs.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        That's a great experienc!
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Now Kim, tell me about your side of the show
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours Andre
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

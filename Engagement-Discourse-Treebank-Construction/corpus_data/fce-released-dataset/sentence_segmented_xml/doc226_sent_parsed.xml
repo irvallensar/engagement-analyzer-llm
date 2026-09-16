@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     28.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr. Clark,
+      </p>
+      <p>
+       I'm
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         italian
+        </i>
+       </ns>
+       student who
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           has come
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to the last International Arts Festival.
+      </p>
+      <p>
+       I think this festival is a great idea because it's
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to see and to
+       <ns type="RV">
+        <i>
+         love
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       art, but
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="W">
+        <i>
+         think also
+        </i>
+       </ns>
+       there are some things
+       <ns type="S">
+        <i>
+         thas
+        </i>
+       </ns>
+       could be changed.
+      </p>
+      <p>
+       I noticed that the artists were from only six countries
+       <ns type="R">
+        <ns type="S">
+         <i>
+          insted
+         </i>
+        </ns>
+        that
+       </ns>
+       from around the world. This
+       <ns type="RN">
+        choice
+       </ns>
+       doesn't give many artists the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to
+       <ns type="S">
+        <i>
+         expresse
+        </i>
+       </ns>
+       <ns type="IA">
+        <i>
+         themself
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Some concert halls were too small and often people couldn't see the performances.
+      </p>
+      <p>
+       There were many events
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       I think there were a few plays and films. Maybe it would be better
+       <ns type="FV">
+        <i>
+         put
+        </i>
+       </ns>
+       more of them in the programme because
+       <ns type="AS">
+        <i>
+         they like so much to young people
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="R">
+        The very about
+       </ns>
+       young people, the
+       <ns type="RN">
+        <i>
+         choice
+        </i>
+       </ns>
+       to offer a
+       <ns type="UP">
+        <i>
+         reasonably-priced
+        </i>
+       </ns>
+       weekend ticket is
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       excellent idea because it
+       <ns type="CE">
+        brings them to have a contact with all what it art
+       </ns>
+       .
+      </p>
+      <p>
+       I hope that my opinion can help you to
+       <ns type="RV">
+        <i>
+         set
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         fro
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       next year a great
+       <ns type="DJ">
+        <i>
+         internation
+        </i>
+       </ns>
+       arts festival
+       <ns type="R">
+        alone to young people
+       </ns>
+       .
+      </p>
+      <p>
+       Thank you and
+       <ns type="RN">
+        greetings
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr. Clark,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm a italian student who has come to the last International Arts Festival.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think this festival is a great idea because it's a possibility to see and to love the art, but, I think also there are some things thas could be changed.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I noticed that the artists were from only six countries insted that from around the world.
+       </s>
+       <s pid="4" sid="2">
+        This choice doesn't give many artists the possibility to expresse themself.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Some concert halls were too small and often people couldn't see the performances.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        There were many events that I think there were a few plays and films.
+       </s>
+       <s pid="6" sid="2">
+        Maybe it would be better put more of them in the programme because they like so much to young people.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        The very about young people, the choice to offer a reasonably-priced weekend ticket is a excellent idea because it brings them to have a contact with all what it art.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I hope that my opinion can help you to set fro the next year a great internation arts festival alone to young people.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Thank you and greetings.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       I think a good way to get money
+       <ns type="UA">
+        <i>
+         it's
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         work
+        </i>
+       </ns>
+       in a fast-food
+       <ns type="MN">
+       </ns>
+       .
+      </p>
+      <p>
+       Maybe the first impression isn't positive but
+       <ns type="MP">
+       </ns>
+       from my personal experience, I can say that this kind of job is
+       <ns type="RJ">
+        <i>
+         right
+        </i>
+       </ns>
+       for
+       <ns type="FV">
+        <i>
+         get
+        </i>
+       </ns>
+       some money. For six months I've worked in a McDonald's restaurant in Italy and I've got lots of money. I worked eight hours every day
+       <ns type="MP">
+       </ns>
+       but in every fast-food
+       <ns type="MN">
+       </ns>
+       you can work part-time, four, three, six hours every day.
+      </p>
+      <p>
+       It depends on what you need.
+      </p>
+      <p>
+       This kind of job is perfect for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       young people who want
+       <ns type="FV">
+        <i>
+         get
+        </i>
+       </ns>
+       money and
+       <ns type="RY">
+        <i>
+         in the meantime
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         they
+        </i>
+       </ns>
+       have to study.
+      </p>
+      <p>
+       If you work in a fast-food
+       <ns type="MN">
+       </ns>
+       you can work in the afternoon, or during the night
+       <ns type="MP">
+       </ns>
+       and so you have time for yourself.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       the staff you can also find young people and
+       <ns type="FV">
+        <i>
+         <ns type="RV">
+          <i>
+           getting
+          </i>
+         </ns>
+        </i>
+       </ns>
+       fun with them during
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       work.
+      </p>
+      <p>
+       What
+       <ns type="W">
+        <i>
+         do you want more
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       If you need money and you need time for yourself try a job like that.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I think a good way to get money it's work in a fast-food .
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Maybe the first impression isn't positive but from my personal experience, I can say that this kind of job is right for get some money.
+       </s>
+       <s pid="2" sid="2">
+        For six months I've worked in a McDonald's restaurant in Italy and I've got lots of money.
+       </s>
+       <s pid="2" sid="3">
+        I worked eight hours every day but in every fast-food  you can work part-time, four, three, six hours every day.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It depends on what you need.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        This kind of job is perfect for the young people who want get money and in the meantime they have to study.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        If you work in a fast-food  you can work in the afternoon, or during the night and so you have time for yourself.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In the staff you can also find young people and getting fun with them during the work.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        What do you want more?
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        If you need money and you need time for yourself try a job like that.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

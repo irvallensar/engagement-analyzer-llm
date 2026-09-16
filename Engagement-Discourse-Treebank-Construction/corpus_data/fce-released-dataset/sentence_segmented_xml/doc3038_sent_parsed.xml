@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     23.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Maria,
+      </p>
+      <p>
+       I've
+       <ns type="S">
+        <i>
+         recieved
+        </i>
+       </ns>
+       your letter asking me for further information about the conference that you
+       <ns type="TV">
+        <i>
+         going
+        </i>
+       </ns>
+       to organise very soon
+       <ns type="RP">
+        <i>
+         , here
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         yo
+        </i>
+       </ns>
+       <ns type="R">
+        have a little help for it
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       , I'd like to tell you that the hotel where you
+       <ns type="TV">
+        <i>
+         going
+        </i>
+       </ns>
+       to stay is "The Palace Hotel",
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       is situated at the
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       of the town. It can't be difficult to find, because
+       <ns type="MA">
+       </ns>
+       is very near
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the conference. Also there is a bus provided
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the organisation to take all the students
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the hotel. At the end of the conference
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       will be a party. I might suggest you
+       <ns type="FV">
+        <i>
+         to wear
+        </i>
+       </ns>
+       a casual
+       <ns type="RN">
+        <i>
+         dress
+        </i>
+       </ns>
+       , because many students
+       <ns type="AGV">
+        <i>
+         feels
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       relaxing after
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       whole day sitting and listening
+       <ns type="R">
+        <i>
+         all
+        </i>
+       </ns>
+       the conference. The party
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="RV">
+        amazed
+       </ns>
+       by a group of musicians, and
+       <ns type="UC">
+        <i>
+         as
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         remembered
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         from
+        </i>
+       </ns>
+       last year it was
+       <ns type="RJ">
+        <i>
+         unforgiven
+        </i>
+       </ns>
+       , because all the people
+       <ns type="SX">
+        <i>
+         where
+        </i>
+       </ns>
+       dancing and having a lot of fun.
+      </p>
+      <p>
+       It is a well-situated town with a lot of museums to visit
+       <ns type="MP">
+       </ns>
+       especially "the History
+       <ns type="RP">
+        <i>
+         museum
+        </i>
+       </ns>
+       "
+       <ns type="MP">
+       </ns>
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       I visited last year, and I think you
+       <ns type="RV">
+        <i>
+         can
+        </i>
+       </ns>
+       enjoy
+       <ns type="MA">
+       </ns>
+       <ns type="UY">
+        <i>
+         as well
+        </i>
+       </ns>
+       . It doesn't take a lot of time to
+       <ns type="RV">
+        visit
+       </ns>
+       and
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       entrance is free.
+      </p>
+      <p>
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           Whising
+          </i>
+         </ns>
+        </i>
+       </ns>
+       I've been very helpful to you.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Maria,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I've recieved your letter asking me for further information about the conference that you going to organise very soon, here yo have a little help for it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        At first, I'd like to tell you that the hotel where you going to stay is "The Palace Hotel", wich is situated at the center of the town.
+       </s>
+       <s pid="3" sid="2">
+        It can't be difficult to find, because  is very near of the conference.
+       </s>
+       <s pid="3" sid="3">
+        Also there is a bus provided for the organisation to take all the students at the hotel.
+       </s>
+       <s pid="3" sid="4">
+        At the end of the conference it will be a party.
+       </s>
+       <s pid="3" sid="5">
+        I might suggest you to wear a casual dress, because many students feels  relaxing after the whole day sitting and listening all the conference.
+       </s>
+       <s pid="3" sid="6">
+        The party is amazed by a group of musicians, and as I remembered from last year it was unforgiven, because all the people where dancing and having a lot of fun.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        It is a well-situated town with a lot of museums to visit especially "the History museum" wich I visited last year, and I think you can enjoy  as well.
+       </s>
+       <s pid="4" sid="2">
+        It doesn't take a lot of time to visit and the entrance is free.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Whising I've been very helpful to you.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="MD">
+       </ns>
+       TELEPHONE
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           CHANGE
+          </i>
+         </ns>
+        </i>
+       </ns>
+       OUR
+       <ns type="IN">
+        <i>
+         LIFES
+        </i>
+       </ns>
+      </p>
+      <p>
+       It's
+       <ns type="S">
+        <i>
+         imposible
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         <ns type="S">
+          <i>
+           Nowdays
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         think
+        </i>
+       </ns>
+       a life without that invention
+       <ns type="R">
+        how quickly affects our life especially in business
+       </ns>
+       . We can't imagine a big company without a phone,
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       can
+       <ns type="FV">
+        <i>
+         makes
+        </i>
+       </ns>
+       business more
+       <ns type="RJ">
+        <ns type="DJ">
+         <i>
+          quickly
+         </i>
+        </ns>
+       </ns>
+       than anything else.
+      </p>
+      <p>
+       Also, I
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       asking
+       <ns type="UY">
+        <i>
+         too
+        </i>
+       </ns>
+       <ns type="L">
+        <i>
+         many
+        </i>
+       </ns>
+       people in the street
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       Could you live without
+       <ns type="MD">
+       </ns>
+       telephone? The answer was
+       <ns type="RY">
+        <i>
+         all
+        </i>
+       </ns>
+       the same
+       <ns type="MP">
+       </ns>
+       "
+       <ns type="S">
+        <i>
+         Imposible
+        </i>
+       </ns>
+       ". An old woman told me how important
+       <ns type="W">
+        <i>
+         was the phone
+        </i>
+       </ns>
+       when her only son was abroad
+       <ns type="IV">
+        <i>
+         studing
+        </i>
+       </ns>
+       computers
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       "Chicago University"
+       <ns type="RP">
+        <i>
+         , she
+        </i>
+       </ns>
+       told me that every night
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         was expecting
+        </i>
+       </ns>
+       a call from her son,
+       <ns type="L">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="R">
+        her was the line of the
+        <ns type="S">
+         <i>
+          hapiness
+         </i>
+        </ns>
+       </ns>
+       .
+      </p>
+      <p>
+       However
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was one
+       <ns type="S">
+        <i>
+         persone
+        </i>
+       </ns>
+       <ns type="AGA">
+        <i>
+         <ns type="S">
+          <i>
+           wich
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         he
+        </i>
+       </ns>
+       told me
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       wasn't happy at all with the phone, because he used to
+       <ns type="S">
+        <i>
+         writte
+        </i>
+       </ns>
+       a lot, especially at Christmas
+       <ns type="M">
+       </ns>
+       to wish all his friends a very nice Christmas but now everybody
+       <ns type="AGV">
+        <i>
+         phone
+        </i>
+       </ns>
+       him
+       <ns type="MP">
+       </ns>
+       <ns type="RV">
+        <i>
+         losing
+        </i>
+       </ns>
+       a very old
+       <ns type="RN">
+        <i>
+         fashion
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In my opinion this little "box" that everybody has at home can
+       <ns type="DV">
+        <i>
+         safe
+        </i>
+       </ns>
+       your life, especially if you need to ring a doctor in an emergency situation.
+      </p>
+      <p>
+       In conclusion don't make
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very long phone calls and you won't have to pay a very expensive bill.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        TELEPHONE CHANGE OUR LIFES
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It's imposible Nowdays to think a life without that invention how quickly affects our life especially in business.
+       </s>
+       <s pid="2" sid="2">
+        We can't imagine a big company without a phone, that can makes business more quickly than anything else.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Also, I was asking too many people in the street.
+       </s>
+       <s pid="3" sid="2">
+        Could you live without  telephone?
+       </s>
+       <s pid="3" sid="3">
+        The answer was all the same "Imposible".
+       </s>
+       <s pid="3" sid="4">
+        An old woman told me how important was the phone when her only son was abroad studing computers in the "Chicago University", she told me that every night  was expecting a call from her son, for her was the line of the hapiness.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        However it was one persone wich he told me, it wasn't happy at all with the phone, because he used to writte a lot, especially at Christmas  to wish all his friends a very nice Christmas but now everybody phone him losing a very old fashion.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In my opinion this little "box" that everybody has at home can safe your life, especially if you need to ring a doctor in an emergency situation.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In conclusion don't make a very long phone calls and you won't have to pay a very expensive bill.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,609 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Project 2
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Our team recreated the experimental setup shown in the project 2 description and shown in figure 1 in Braza et al.
+       </s>
+       <s pid="1" sid="2">
+        We created two different meshes, shown in figures 2 and 3 below, to check for grid independence.
+       </s>
+       <s pid="1" sid="3">
+        The team used a uniform quad mesh.
+       </s>
+       <s pid="1" sid="4">
+        The meshes were then imported into Fluent where the calculations began.
+       </s>
+       <s pid="1" sid="5">
+        We doubled the resolution, until our results were very close to each other which indicated that the solution we obtained was grid independent.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Our first task was to show the vector plots of the velocity field in the wake region at each Reynolds number (Re) and this can be seen in figure 6 on page 5.
+       </s>
+       <s pid="2" sid="2">
+        Next, we had to show contour plots of pressure and streamlines in the wake region at each Re number.
+       </s>
+       <s pid="2" sid="3">
+        Our fourth task was to show a plot of the re-attachment length versus time for Re=40 and compare it to figure 4 in Braza et al; this is shown in figure 9 on page 8.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Next, we show a plot of the pressure distribution on the cylinder wall as a function of θ at Re=40 and compare that to figure 5 in Braza et al; this is shown in figure 10 on page 9.
+       </s>
+       <s pid="3" sid="2">
+        Our sixth task was to plot drag coefficients and separation angles as a function of Re and compare it to figures 6 and 9 in Braza et al; this is shown in figures 11 and 12 on pages 9 and 10.
+       </s>
+       <s pid="3" sid="3">
+        Next, we plotted the time history of pressure at a selected point in the near wake and used this to calculate the Strouhal number; this is shown in figure 13 on page 10.
+       </s>
+       <s pid="3" sid="4">
+        Our last and final task was to plot the Strouhal number as a function of Re and compare it to figure 9 in Braza et al; this is shown in figure 14 on page 12.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Fluent
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        In Fluent, we used air at 273K with a kinematic viscosity (νk) of 1.32E-5 m2/s and an inlet velocity determined by equation 1.
+       </s>
+       <s pid="4" sid="2">
+        The same mesh was used for all Reynolds numbers (Re).
+       </s>
+       <s pid="4" sid="3">
+        The density of the fluid (air) used was 1.292 kg/m3 and the dynamic viscosity (νd) used was 1.71e-05 kg/m*s.
+       </s>
+       <s pid="4" sid="4">
+        We first scaled our mesh in Fluent to convert from cm to m.
+       </s>
+       <s pid="4" sid="5">
+        We solved with an unsteady time and 2nd order implicit unsteady formulation.
+       </s>
+       <s pid="4" sid="6">
+        The momentum was changed to second order upwind and the absolute criteria of the residuals were changed to 1E-5 to increase the accuracy of our results.
+       </s>
+       <s pid="4" sid="7">
+        The boundary conditions of the velocity inlets were set to have an x-velocity shown in the table below and the model was initialized with zero initial conditions.
+       </s>
+       <s pid="4" sid="8">
+        From figure 9a in Braza et al, we were able to find an approximate Strouhal number and estimate the period for each Reynolds number using equation 2 below.
+       </s>
+       <s pid="4" sid="9">
+        We divided the period by 20 to find an appropriate time step size while iterating.
+       </s>
+       <s pid="4" sid="10">
+        The max iterations per a time step was set to 100 to make sure that the solution would reach the residuals and converge each cycle.
+       </s>
+       <s pid="4" sid="11">
+        For Re values of 100, 200, and 400, the model first needed to be manually triggered to achieve a periodic steady-state solution represented by vortex shedding from alternate sides of the back of the cylinder.
+       </s>
+       <s pid="4" sid="12">
+        This was done by setting the bottom velocity inlet to twice the U velocity.
+       </s>
+       <s pid="4" sid="13">
+        The trigger was allowed to run until the iteration plot showed a fine steady line under the set residual.
+       </s>
+       <s pid="4" sid="14">
+        We used a time step size 100 times less than the predicted time step size while triggering.
+       </s>
+       <s pid="4" sid="15">
+        The pressure was plotted at a point in the wake region 0.03 m above and 0.15 m to the right of the cylinder while the model was iterated.
+       </s>
+       <s pid="4" sid="16">
+        From here we could see when the solution produced a steady frequency of at least five cycles at which point we took our data measurements over five different times.
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (Eqn. 1)
+      <p>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (Eqn. 2)
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        Table 1: Summary of Data
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Gambit
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        Using Gambit, we created a mesh based on the experimental setup shown in figure 1 and tried to recreate the mesh shown in the project description.
+       </s>
+       <s pid="10" sid="2">
+        Using Gambit, many different meshes were created and tested and the best single mesh is shown in figure 2.
+       </s>
+       <s pid="10" sid="3">
+        The type of mesh used was a uniform quad mesh.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Mesh Independence
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        In order to verify that we had mesh independence, we compared the values of reattachment length, drag coefficient, Strouhal Number, and separation angles for the two meshes.
+       </s>
+       <s pid="11" sid="2">
+        After creating the single mesh, we doubled it and calculated the four variables we were looking for.
+       </s>
+       <s pid="11" sid="3">
+        After realizing they were not as close as we would have like them to be, we went ahead and halved the single mesh we had and calculated the four variables again.
+       </s>
+       <s pid="11" sid="4">
+        We believe the results obtained, shown in table 2 for the three different meshes, are sufficient enough for us to use the single mesh.
+       </s>
+       <s pid="11" sid="5">
+        We showed our mesh independence for Re=400 based on 2nd-order steady flow.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        Table 2: Mesh independence results for half, single, and double mesh for Re=400
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        Figure 1: Dimensions of experimental setup
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        Figures 2 and 3: Single and double meshes used to check for grid independence
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        The boundary layers can be seen in figure 4 on page 5.
+       </s>
+       <s pid="15" sid="2">
+        We created two velocity inlets.
+       </s>
+       <s pid="15" sid="3">
+        The first one was the 2nd quadrant of the large circle attached to the top horizontal line of the rectangular box and the other was the 3rd quadrant of the large circle attached to the bottom horizontal line of the rectangular box.
+       </s>
+       <s pid="15" sid="4">
+        This was done because Fluent cannot naturally predict periodic unsteady flow.
+       </s>
+       <s pid="15" sid="5">
+        Also, an outflow was created at the end of the rectangle and both the top and bottom halves of the smaller circle were set as walls to model the cylinder.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        Figure 4: Boundary layer conditions
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Vector Plots of Velocity Fields in the Wake Region at each Re
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        As the Re becomes greater than 40, asymmetrical eddy patterns occur seen in c. and d. below.
+       </s>
+       <s pid="17" sid="2">
+        This is shown as the alternating separation of the vortices which have been diffused from the cylinder; these are known as the Karman vortex paths.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        Figure 6: a, b, c, and d show the velocity field for Re=40, 100, 200, and 400 respectively in the near wake region
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Contour Plots of Pressure and Streamlines in the Wake Region at each Re
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        Figure 7: a, b, c, and d show the contour plots of pressure for Re=40, 100, 200, and 400 respectively in the near wake region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        Figure 8: a, b, c, and d show the contour plots of streamlines for Re=40, 100, 200, and 400 respectively in the near wake region
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Plot of Re-attachment Length versus Time for Re=40 (Compare to figure 4 in Braza et al)
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        Using our single mesh, we obtained a plot of the reattachment length vs. time for a Re=40 as shown in figure 9 below.
+       </s>
+       <s pid="21" sid="2">
+        Our data analysis is shown in table 3.
+       </s>
+       <s pid="21" sid="3">
+        For Re=40, figure 6a on page 5, one can see that there are two attached vortices behind the cylinder.
+       </s>
+       <s pid="21" sid="4">
+        The flow reaches steady state at approximately 16 when looking at our experimental compared to 15 when looking at figure 4 in Braza et al.
+       </s>
+       <s pid="21" sid="5">
+        Our figure for reattachment length closely matches figure 4 in Braza et al.
+       </s>
+       <s pid="21" sid="6">
+        Equation 3 was used to make time (t) dimensionless.
+       </s>
+       <s pid="21" sid="7">
+        We obtained a dimensionless reattachment length by dividing it by the radius.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        Table 3: Summary of data for reattachment length
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        (Eqn. 3)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="24" sid="1">
+        Figure 9: Time evolution of the reattachment length a) our data b) figure 4a Braza et al
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Plot of Pressure Distribution on the Cylinder Wall as a Function of θ at Re=40 (Compare to figure 5 in Braza et al)
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        We were able to calculate
+       </s>
+       <s pid="25" sid="2">
+        Cp by using equation 4 below where P represents the total pressure and Po represents the initial pressure.
+       </s>
+       <s pid="25" sid="3">
+        Our values showed a similar curve to that of Braza et al, but were slightly lower than Braza’s Re=40 values and more closely match Braza’s Re=20.
+       </s>
+       <s pid="25" sid="4">
+        This can be seen in figure 10 below.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        Cp=(P-P0+.5*ρ*U2)/( .5*ρ*U2) (Eq. 4)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="27" sid="1">
+        Figure 10: Plot of the Pressure coefficient versus theta for Re=40 a) our data b) figure 5a Braza et al
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Plots of Drag Coefficient and Separation Angle as a function of Re (Compare to figures 6 and 9 in Braza et al)
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        To solve for the Drag Coefficient (Cd), equation 5 was used.
+       </s>
+       <s pid="28" sid="2">
+        In Fluent, we ran 5 trials for each Re and found the Drag Force.
+       </s>
+       <s pid="28" sid="3">
+        Then using density (), velocity, and the frontal area (A), we are able to produce figure 11 that shows Cd versus Re.
+       </s>
+       <s pid="28" sid="4">
+        This graph compares nicely to the one shown in figure 6 in Braza et al with our values being just slightly higher which shows that our data agrees.
+       </s>
+       <s pid="28" sid="5">
+        The area consisted of the height (diameter) of the cylinder and the width was assumed to be of unit length meter.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        (Eqn. 5)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        Figure 11: Plot of Cd versus Re a) our data and b) figure 9b in Braza et al
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        To calculate the separation angle (Ѳd), we ran 5 trials for each Re and took the average Ѳd.
+       </s>
+       <s pid="31" sid="2">
+        The results are shown in table 4 and in figure 12 below.
+       </s>
+       <s pid="31" sid="3">
+        One can see that our figure compares very nicely to figure 6 in Braza et al.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="32" sid="1">
+        Table 4: Averaged values of Ѳd and Cd for each Re
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        Figure 12: Separation angle plotted against Re a) our data and b) figure 6b in Braza et al
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Plots of the Time History of Pressure at a Selected Point in the Near Wake
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        Figure 13: Plots of Pressure versus time for Re 100, 200, and 400
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Plot of Strouhal Number as a Function of Re (Compare to figure 9 in Braza et al)
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        For each
+       </s>
+       <s pid="35" sid="2">
+        Re not including 40, we ran five trials and found the period.
+       </s>
+       <s pid="35" sid="3">
+        Then we calculated the Strouhal Number (SH) using equation 2 below.
+       </s>
+       <s pid="35" sid="4">
+        D is for diameter and u, the uniform-flow velocity, was calculated from each Re. Figure 14 a) below shows the Strouhal number for each Re which compares nicely to the reference b).
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (Eqn. 2)
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        Table 5: Data used to calculate the Strouhal Number for each Re
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="39" sid="1">
+        Figure 13: Strouhal Number plotted Re a) our data and b) figure 9a in Braza et al
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusions
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        After running many simulations in Fluent, we noticed that at low
+       </s>
+       <s pid="40" sid="2">
+        Re values around 40, the flow was steady state with two separation bubbles as shown in figure 6a.
+       </s>
+       <s pid="40" sid="3">
+        As the Re values became higher there was vortex shedding behind the cylinder.
+       </s>
+       <s pid="40" sid="4">
+        In conclusion, we found that our calculations very closely match that in the reference Braza et al.
+       </s>
+       <s pid="40" sid="5">
+        The values for separation angle, reattachment length, Strouhal number, and drag coefficient are all within 7% for the single and double mesh.
+       </s>
+       <s pid="40" sid="6">
+        The coefficient of drag and wall pressure were the most different compared to the Braza et al., with our values leveling out around 1.5-1.6 and Braza’s near 1.2 for the coefficient of drag and our Cp closer to Braza’s Re=20 instead of 40.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

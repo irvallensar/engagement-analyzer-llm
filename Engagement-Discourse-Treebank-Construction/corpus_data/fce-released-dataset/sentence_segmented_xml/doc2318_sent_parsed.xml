@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan
+      </p>
+      <p>
+       I am replying
+       <ns type="R">
+        in response of the competition I won
+       </ns>
+       . As you asked in the letter, I will write everything I need to know about the
+       <ns type="RN">
+        <i>
+         travel
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all, I would like to travel
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July, because
+       <ns type="MP">
+       </ns>
+       during the other months, I will be studying, preparing myself for
+       <ns type="UJ">
+        <i>
+         other
+        </i>
+       </ns>
+       exams or I will be
+       <ns type="RY">
+        <i>
+         out
+        </i>
+       </ns>
+       travelling somewhere else with my relatives.
+      </p>
+      <p>
+       I have been thinking and I decided I would prefer to stay in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       , simply because it's a new experience and I would like to try everything new. Also, it seems more dangerous.
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       the two activities I have to choose, I decided to choose a new
+       <ns type="S">
+        <i>
+         activitie
+        </i>
+       </ns>
+       that I have never done before, which is Sailing
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="UC">
+        <i>
+         so
+        </i>
+       </ns>
+       I am a
+       <ns type="DJ">
+        <i>
+         totally
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         begginer
+        </i>
+       </ns>
+       at this. The other
+       <ns type="S">
+        <i>
+         activitie
+        </i>
+       </ns>
+       is Photography
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am not an expert, but I know how to use a camera
+       <ns type="RP">
+        <i>
+         , all
+        </i>
+       </ns>
+       I want is to improve my knowledge.
+      </p>
+      <p>
+       Finally, I need to know what kind of clothes and how many
+       <ns type="MN">
+       </ns>
+       I should pack. Is there any place
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       I can wash my clothes? I also
+       <ns type="TV">
+        <i>
+         needed
+        </i>
+       </ns>
+       some information
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the money I
+       <ns type="RV">
+        <i>
+         will
+        </i>
+       </ns>
+       take. Do you have any kind of souvenirs that I can buy? Do I need to take any money at all?
+      </p>
+      <p>
+       I will be waiting
+       <ns type="MT">
+       </ns>
+       a reply.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely,
+      </p>
+      <p>
+       Sara Todi
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am replying in response of the competition I won.
+       </s>
+       <s pid="2" sid="2">
+        As you asked in the letter, I will write everything I need to know about the travel.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I would like to travel on July, because during the other months, I will be studying, preparing myself for other exams or I will be out travelling somewhere else with my relatives.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I have been thinking and I decided I would prefer to stay in  tents, simply because it's a new experience and I would like to try everything new.
+       </s>
+       <s pid="4" sid="2">
+        Also, it seems more dangerous.
+       </s>
+       <s pid="4" sid="3">
+        For the two activities I have to choose, I decided to choose a new activitie that I have never done before, which is Sailing, so I am a totally begginer at this.
+       </s>
+       <s pid="4" sid="4">
+        The other activitie is Photography, I am not an expert, but I know how to use a camera, all I want is to improve my knowledge.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, I need to know what kind of clothes and how many  I should pack.
+       </s>
+       <s pid="5" sid="2">
+        Is there any place that I can wash my clothes?
+       </s>
+       <s pid="5" sid="3">
+        I also needed some information on the money I will take.
+       </s>
+       <s pid="5" sid="4">
+        Do you have any kind of souvenirs that I can buy?
+       </s>
+       <s pid="5" sid="5">
+        Do I need to take any money at all?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I will be waiting  a reply.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Sara Todi
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       I'm sorry it took so long for me to answer your letter, but I've been too busy with my school, papers and everything. But now I
+       <ns type="TV">
+        <i>
+         found
+        </i>
+       </ns>
+       some time to tell you everything about the pop concert I helped
+       <ns type="M">
+       </ns>
+       .
+      </p>
+      <p>
+       There were about a hundred people that wanted to help, but only two would be chosen. When they said my name, I couldn't believe it! All I could think was "Oh my god, I'm gonna be talking
+       <ns type="MT">
+       </ns>
+       and helping the most famous pop bands!" I was so excited that I couldn't believe
+       <ns type="MA">
+       </ns>
+       .
+      </p>
+      <p>
+       When I arrived to help them, they welcomed me and were so nice
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       me that it seemed we had known each
+       <ns type="RA">
+        <i>
+         others
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       ages! They weren't
+       <ns type="R">
+        <i>
+         those
+        </i>
+       </ns>
+       kind of people that think they're gods.
+      </p>
+      <p>
+       I helped them
+       <ns type="MT">
+       </ns>
+       organizing the stage, cleaning everything, fixing what was broken and they even let me play with their
+       <ns type="S">
+        <i>
+         guittars
+        </i>
+       </ns>
+       ! That was so great!
+      </p>
+      <p>
+       I don't know exactly how I felt
+       <ns type="RP">
+        <i>
+         , sometimes
+        </i>
+       </ns>
+       I wake up and think it was nothing but a dream. I hope you liked everything I said and I hope
+       <ns type="R">
+        <i>
+         an
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         answer
+        </i>
+       </ns>
+       as soon as possible.
+      </p>
+      <p>
+       Best wishes,
+      </p>
+      <p>
+       Sara
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm sorry it took so long for me to answer your letter, but I've been too busy with my school, papers and everything.
+       </s>
+       <s pid="2" sid="2">
+        But now I found some time to tell you everything about the pop concert I helped .
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        There were about a hundred people that wanted to help, but only two would be chosen.
+       </s>
+       <s pid="3" sid="2">
+        When they said my name, I couldn't believe it!
+       </s>
+       <s pid="3" sid="3">
+        All I could think was "Oh my god, I'm gonna be talking  and helping the most famous pop bands!"
+       </s>
+       <s pid="3" sid="4">
+        I was so excited that I couldn't believe .
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        When I arrived to help them, they welcomed me and were so nice with me that it seemed we had known each others in ages!
+       </s>
+       <s pid="4" sid="2">
+        They weren't those kind of people that think they're gods.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I helped them  organizing the stage, cleaning everything, fixing what was broken and they even let me play with their guittars!
+       </s>
+       <s pid="5" sid="2">
+        That was so great!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I don't know exactly how I felt, sometimes I wake up and think it was nothing but a dream.
+       </s>
+       <s pid="6" sid="2">
+        I hope you liked everything I said and I hope an answer as soon as possible.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Best wishes,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Sara
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

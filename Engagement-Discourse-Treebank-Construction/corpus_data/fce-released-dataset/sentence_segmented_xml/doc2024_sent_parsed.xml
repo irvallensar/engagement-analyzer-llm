@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Ryan
+      </p>
+      <p>
+       Thank you for your information. I am very happy to win this prize but also I have some questions about
+       <ns type="R">
+        <i>
+         this
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Camp
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I would like to know if it is possible to travel to this
+       <ns type="RP">
+        <i>
+         Camp
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July because for me it is the best time and I
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       travel before or after
+       <ns type="M">
+       </ns>
+       <ns type="MP">
+       </ns>
+       according to my employer.
+       <ns type="R">
+        <i>
+         While
+        </i>
+       </ns>
+       <ns type="AGQ">
+        <i>
+         this
+        </i>
+       </ns>
+       two weeks I would like to stay in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       because you can be nearer to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature
+       <ns type="RT">
+        <i>
+         as
+        </i>
+       </ns>
+       you are
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         log cabins
+        </i>
+       </ns>
+       . I like to go camping. From the activities
+       <ns type="MP">
+       </ns>
+       I choose
+       <ns type="RP">
+        <i>
+         Basketball and Golf
+        </i>
+       </ns>
+       .
+       <ns type="W">
+        <i>
+         <ns type="RT">
+          <i>
+           In
+          </i>
+         </ns>
+         <ns type="RP">
+          <i>
+           Basketball
+          </i>
+         </ns>
+         I am very good
+        </i>
+       </ns>
+       , because I have played in a
+       <ns type="RP">
+        <i>
+         Basketball-Team
+        </i>
+       </ns>
+       for ten years. But
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Golf
+        </i>
+       </ns>
+       I am a beginner.
+      </p>
+      <p>
+       I would like to know if it is necessary for me to take some clothes with me for the
+       <ns type="DJ">
+        <i>
+         sport
+        </i>
+       </ns>
+       activities? Also I would like to know how much money I should take with me. If you could tell me
+       <ns type="R">
+        <i>
+         this
+        </i>
+       </ns>
+       answers it would be very nice.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Aydo Ackermann
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your information.
+       </s>
+       <s pid="2" sid="2">
+        I am very happy to win this prize but also I have some questions about this Camp.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to know if it is possible to travel to this Camp on July because for me it is the best time and I can not travel before or after  according to my employer.
+       </s>
+       <s pid="3" sid="2">
+        While this two weeks I would like to stay in  tents because you can be nearer to the nature as you are on  log cabins.
+       </s>
+       <s pid="3" sid="3">
+        I like to go camping.
+       </s>
+       <s pid="3" sid="4">
+        From the activities I choose Basketball and Golf.
+       </s>
+       <s pid="3" sid="5">
+        In Basketball I am very good, because I have played in a Basketball-Team for ten years.
+       </s>
+       <s pid="3" sid="6">
+        But in Golf I am a beginner.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to know if it is necessary for me to take some clothes with me for the sport activities?
+       </s>
+       <s pid="4" sid="2">
+        Also I would like to know how much money I should take with me.
+       </s>
+       <s pid="4" sid="3">
+        If you could tell me this answers it would be very nice.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Aydo Ackermann
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       I think shopping is not always an enjoyable thing because there are a lot of things which are not good
+       <ns type="M">
+       </ns>
+       . For example: you need a lot of money each month for shopping, and a part of this money is only for buying the
+       <ns type="IJ">
+        <i>
+         necessaryiest
+        </i>
+       </ns>
+       things like bread and other things to eat. I enjoy shopping when I can buy some clothes.
+      </p>
+      <p>
+       Also a problem
+       <ns type="R">
+        <i>
+         while
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       shopping is that most
+       <ns type="M">
+       </ns>
+       there are
+       <ns type="R">
+        <i>
+         so
+        </i>
+       </ns>
+       many people and a lot of traffic in all
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         shopping-centres
+        </i>
+       </ns>
+       . All the people are there
+       <ns type="RY">
+        <i>
+         most
+        </i>
+       </ns>
+       on the same day because there are not a lot of other
+       <ns type="RN">
+        <i>
+         possibilities
+        </i>
+       </ns>
+       for shopping
+       <ns type="R">
+        <i>
+         while
+        </i>
+       </ns>
+       the week for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         employees
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I think one
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       is to buy your things on the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       , because then you
+       <ns type="X">
+        <i>
+         have not
+        </i>
+       </ns>
+       to invest a lot of time
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       buying all
+       <ns type="AGQ">
+        <i>
+         this
+        </i>
+       </ns>
+       things, and they bring you the things
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       home
+       <ns type="MP">
+       </ns>
+       In the end I think it is
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       best if you have the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to shop when there are not so many people because then you have enough time and you are not stressed.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I think shopping is not always an enjoyable thing because there are a lot of things which are not good .
+       </s>
+       <s pid="2" sid="2">
+        For example: you need a lot of money each month for shopping, and a part of this money is only for buying the necessaryiest things like bread and other things to eat.
+       </s>
+       <s pid="2" sid="3">
+        I enjoy shopping when I can buy some clothes.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Also a problem while the shopping is that most  there are so many people and a lot of traffic in all  shopping-centres.
+       </s>
+       <s pid="3" sid="2">
+        All the people are there most on the same day because there are not a lot of other possibilities for shopping while the week for the employees.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think one possibility is to buy your things on the internet, because then you have not to invest a lot of time for buying all this things, and they bring you the things at  home
+       </s>
+       <s pid="4" sid="2">
+        In the end I think it is the best if you have the possibility to shop when there are not so many people because then you have enough time and you are not stressed.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

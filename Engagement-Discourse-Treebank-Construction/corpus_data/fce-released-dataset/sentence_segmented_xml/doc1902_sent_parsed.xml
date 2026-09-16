@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     36.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Helen Ryan,
+      </p>
+      <p>
+       Thank you very much for your letter. I am glad to be informed that I have won first prize in your competition. I am now
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       this letter to give you further information about myself
+       <ns type="ID">
+        with pleasure
+       </ns>
+       .
+      </p>
+      <p>
+       Firstly, the date I would like to travel on would only be in July. Since I am a full-time student, I will not have finished my lessons until the end of June. In addition, I will be busy with my
+       <ns type="S">
+        <i>
+         cousework
+        </i>
+       </ns>
+       in August.
+      </p>
+      <p>
+       Regarding
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       , I would prefer to stay in tents because I think it will be closer to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature. I am sure I will have a lot of fun and release myself from
+       <ns type="R">
+        the busy study
+       </ns>
+       totally.
+      </p>
+      <p>
+       I am pretty good at painting. I have won several prizes in the competitions which were held by my college. On the other hand, I started to play tennis at the age of six. Tennis is my
+       <ns type="S">
+        <i>
+         favourate
+        </i>
+       </ns>
+       <ns type="UJ">
+        <i>
+         sports
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           evant
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . So I would like to
+       <ns type="RV">
+        <i>
+         choose
+        </i>
+       </ns>
+       these two activities while I am at the Camp.
+      </p>
+      <p>
+       Lastly, I have some questions to ask you. Since I have never been to
+       <ns type="MD">
+       </ns>
+       U.S.A, I know nothing about it. Would you like to tell me how much
+       <ns type="MA">
+       </ns>
+       should
+       <ns type="FV">
+        <i>
+         be taken
+        </i>
+       </ns>
+       with me as pocket money and what
+       <ns type="RV">
+        <i>
+         shall
+        </i>
+       </ns>
+       I wear at that time
+       <ns type="M">
+       </ns>
+       ?
+      </p>
+      <p>
+       I will be grateful for your help. I am looking forward to hearing from you.
+      </p>
+      <p>
+       Best wishes.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I am glad to be informed that I have won first prize in your competition.
+       </s>
+       <s pid="2" sid="3">
+        I am now writting this letter to give you further information about myself with pleasure.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, the date I would like to travel on would only be in July.
+       </s>
+       <s pid="3" sid="2">
+        Since
+       </s>
+       <s pid="3" sid="3">
+        I am a full-time student, I will not have finished my lessons until the end of June.
+       </s>
+       <s pid="3" sid="4">
+        In addition, I will be busy with my cousework in August.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Regarding to the accomodation, I would prefer to stay in tents because I think it will be closer to the nature.
+       </s>
+       <s pid="4" sid="2">
+        I am sure I will have a lot of fun and release myself from the busy study totally.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am pretty good at painting.
+       </s>
+       <s pid="5" sid="2">
+        I have won several prizes in the competitions which were held by my college.
+       </s>
+       <s pid="5" sid="3">
+        On the other hand, I started to play tennis at the age of six.
+       </s>
+       <s pid="5" sid="4">
+        Tennis is my favourate sports evant.
+       </s>
+       <s pid="5" sid="5">
+        So I would like to choose these two activities while I am at the Camp.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Lastly, I have some questions to ask you.
+       </s>
+       <s pid="6" sid="2">
+        Since I have never been to  U.S.A, I know nothing about it.
+       </s>
+       <s pid="6" sid="3">
+        Would you like to tell me how much  should be taken with me as pocket money and what shall I wear at that time ?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I will be grateful for your help.
+       </s>
+       <s pid="7" sid="2">
+        I am looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Best wishes.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       Shopping
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       is becoming a popular way of killing time
+       <ns type="S">
+        <i>
+         nowdays
+        </i>
+       </ns>
+       . In some
+       <ns type="RP">
+        <i>
+         peoples'
+        </i>
+       </ns>
+       opinion, shopping and spending money is a kind of
+       <ns type="RN">
+        <i>
+         fun
+        </i>
+       </ns>
+       and they can even get
+       <ns type="RN">
+        <i>
+         self-satisfaction
+        </i>
+       </ns>
+       from it.
+      </p>
+      <p>
+       However, more and more people are now asking, "Is shopping always so enjoyable?" In my view, the answer is, NO.
+      </p>
+      <p>
+       Firstly, since more and more people go shopping, shops are always so crowded, especially the popular ones. Try to imagine the
+       <ns type="S">
+        <i>
+         scence
+        </i>
+       </ns>
+       : twenty or thirty or even more people are
+       <ns type="R">
+        <i>
+         keeping
+        </i>
+       </ns>
+       a
+       <ns type="S">
+        <i>
+         quel
+        </i>
+       </ns>
+       outside the fitting room. Would you say that shopping is enjoyable? Would you be patient enough to wait for half an hour or more just because you
+       <ns type="L">
+        <i>
+         wanna buy
+        </i>
+       </ns>
+       a T-shirt?
+      </p>
+      <p>
+       Secondly, the cost is also a problem. It
+       <ns type="TV">
+        <i>
+         will be
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         really an
+        </i>
+       </ns>
+       annoying thing when you are keen on something but you can't afford it. One of my
+       <ns type="AGN">
+        <i>
+         friend
+        </i>
+       </ns>
+       , Emma, happened to see a fantastic jacket which costs £105. Then she spent all her spare time doing part-time jobs to earn money. After a week, she had got enough money and rushed to that shop. But it was just not there! She felt really
+       <ns type="DJ">
+        <i>
+         badly
+        </i>
+       </ns>
+       after that. So, would you still say that shopping is enjoyable?
+      </p>
+      <p>
+       More and more people find that there are a lot of nicer things they can do rather than shopping. Shopping is not always enjoyable. Sometimes it can be a waste of time. So, let's have a new
+       <ns type="RP">
+        <i>
+         life style
+        </i>
+       </ns>
+       in this new generation!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Shopping, is becoming a popular way of killing time nowdays.
+       </s>
+       <s pid="2" sid="2">
+        In some peoples' opinion, shopping and spending money is a kind of fun and they can even get self-satisfaction from it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        However, more and more people are now asking, "Is shopping always so enjoyable?"
+       </s>
+       <s pid="3" sid="2">
+        In my view, the answer is, NO.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, since more and more people go shopping, shops are always so crowded, especially the popular ones.
+       </s>
+       <s pid="4" sid="2">
+        Try to imagine the scence: twenty or thirty or even more people are keeping a quel outside the fitting room.
+       </s>
+       <s pid="4" sid="3">
+        Would you say that shopping is enjoyable?
+       </s>
+       <s pid="4" sid="4">
+        Would you be patient enough to wait for half an hour or more just because you wanna buy a T-shirt?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, the cost is also a problem.
+       </s>
+       <s pid="5" sid="2">
+        It will be really an annoying thing when you are keen on something but you can't afford it.
+       </s>
+       <s pid="5" sid="3">
+        One of my friend, Emma, happened to see a fantastic jacket which costs £105.
+       </s>
+       <s pid="5" sid="4">
+        Then she spent all her spare time doing part-time jobs to earn money.
+       </s>
+       <s pid="5" sid="5">
+        After a week, she had got enough money and rushed to that shop.
+       </s>
+       <s pid="5" sid="6">
+        But it was just not there!
+       </s>
+       <s pid="5" sid="7">
+        She felt really badly after that.
+       </s>
+       <s pid="5" sid="8">
+        So, would you still say that shopping is enjoyable?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        More and more people find that there are a lot of nicer things they can do rather than shopping.
+       </s>
+       <s pid="6" sid="2">
+        Shopping is not always enjoyable.
+       </s>
+       <s pid="6" sid="3">
+        Sometimes it can be a waste of time.
+       </s>
+       <s pid="6" sid="4">
+        So, let's have a new life style in this new generation!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

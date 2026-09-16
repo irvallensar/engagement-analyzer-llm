@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     37.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr Ryan
+      </p>
+      <p>
+       I have just received your letter and I am really delighted and thrilled to win the first prize in your competition.
+      </p>
+      <p>
+       For the trip to California, I can only go in July, I am afraid, because my English course finishes in June and it starts again in August.
+      </p>
+      <p>
+       In your letter you mentioned that I could choose between sleeping in tents or
+       <ns type="MD">
+       </ns>
+       log cabin, and I would like to sleep in a log cabin please.
+       <ns type="M">
+        <i>
+         Because
+        </i>
+       </ns>
+       last time I was in a tent, I found it really uncomfortable and when it rained in the night I couldn't
+       <ns type="TV">
+        <i>
+         got
+        </i>
+       </ns>
+       to sleep because of the sound of water hitting the tent.
+      </p>
+      <p>
+       I would like to take part in surfing and swimming please. Although I have never done surfing before, I am a quite advanced swimmer.
+      </p>
+      <p>
+       Finally I would like to ask some questions. What is the weather like over there and what should I wear? How much money would I need? How big is the camp?
+      </p>
+      <p>
+       I look forward to hearing from you soon.
+      </p>
+      <p>
+       Yours
+       <ns type="DY">
+        <i>
+         sincerly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just received your letter and I am really delighted and thrilled to win the first prize in your competition.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        For the trip to California, I can only go in July, I am afraid, because my English course finishes in June and it starts again in August.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In your letter you mentioned that I could choose between sleeping in tents or  log cabin, and I would like to sleep in a log cabin please.
+       </s>
+       <s pid="4" sid="2">
+        Because last time I was in a tent, I found it really uncomfortable and when it rained in the night I couldn't got to sleep because of the sound of water hitting the tent.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I would like to take part in surfing and swimming please.
+       </s>
+       <s pid="5" sid="2">
+        Although I have never done surfing before, I am a quite advanced swimmer.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally I would like to ask some questions.
+       </s>
+       <s pid="6" sid="2">
+        What is the weather like over there and what should I wear?
+       </s>
+       <s pid="6" sid="3">
+        How much money would I need?
+       </s>
+       <s pid="6" sid="4">
+        How big is the camp?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping can be very exciting and fun. The feeling of buying new things is wonderful. But it might not be the same
+       <ns type="RP">
+        <i>
+         everytime
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       We all go shopping, maybe not every day, but certainly at least once a week. Shopping is very important because it's the only way to get things. For example, food. You will not be able to survive without food. So buying
+       <ns type="W">
+        <i>
+         things
+         <ns type="S">
+          <i>
+           neccessary
+          </i>
+         </ns>
+        </i>
+       </ns>
+       is fine I think. But buying things that
+       <ns type="MA">
+       </ns>
+       do not need or you have not planned to might make you feel good at the time, but days or weeks later when you realise you did not need to spend money on them, you might regret buying them. For example you did not plan to buy any crisps, but they are at half price and you buy them without thinking. But
+       <ns type="RY">
+        <i>
+         after
+        </i>
+       </ns>
+       you never eat them and just bin them.
+      </p>
+      <p>
+       I think buying things needed and planned could be enjoyable but buying things you don't need or unplanned, might make you feel sad after
+       <ns type="RP">
+        <i>
+         sometime
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping can be very exciting and fun.
+       </s>
+       <s pid="1" sid="2">
+        The feeling of buying new things is wonderful.
+       </s>
+       <s pid="1" sid="3">
+        But it might not be the same everytime.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        We all go shopping, maybe not every day, but certainly at least once a week.
+       </s>
+       <s pid="2" sid="2">
+        Shopping is very important because it's the only way to get things.
+       </s>
+       <s pid="2" sid="3">
+        For example, food.
+       </s>
+       <s pid="2" sid="4">
+        You will not be able to survive without food.
+       </s>
+       <s pid="2" sid="5">
+        So buying things neccessary is fine I think.
+       </s>
+       <s pid="2" sid="6">
+        But buying things that  do not need or you have not planned to might make you feel good at the time, but days or weeks later when you realise you did not need to spend money on them, you might regret buying them.
+       </s>
+       <s pid="2" sid="7">
+        For example you did not plan to buy any crisps, but they are at half price and you buy them without thinking.
+       </s>
+       <s pid="2" sid="8">
+        But after you never eat them and just bin them.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think buying things needed and planned could be enjoyable but buying things you don't need or unplanned, might make you feel sad after sometime.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       DEAR SIR
+      </p>
+      <p>
+       I AM WRITING IN ORDER TO COMPLAIN
+       <ns type="RT">
+        <i>
+         FOR
+        </i>
+       </ns>
+       THE TERRIBLE NIGHT I HAD IN YOUR THEATRE.
+      </p>
+      <p>
+       FIRSTLY I WANT TO COMPLAIN ABOUT WHAT YOU WROTE
+       <ns type="RT">
+        <i>
+         ON
+        </i>
+       </ns>
+       THE BROCHURE. IT WAS COMPLETELY WRONG!
+      </p>
+      <p>
+       I WAS DISAPPOINTED TO FIND OUT THAT THE ACTOR WAS NOT THE ONE YOU WROTE
+       <ns type="MT">
+       </ns>
+       <ns type="MP">
+       </ns>
+       I DISCOVERED THIS ONLY WHEN THE PLAY STARTED, AND
+       <ns type="RA">
+        <i>
+         IT
+        </i>
+       </ns>
+       WAS VERY LATE!
+      </p>
+      <p>
+       SECONDLY, AS I WROTE BEFORE, THE PLAY STARTED LATE, AND FOR ME IT WAS TERRIBLE TO WAIT
+       <ns type="MP">
+        <i>
+         FORTY FIVE
+        </i>
+       </ns>
+       MINUTES.
+      </p>
+      <p>
+       THIRDLY, I WAS VERY
+       <ns type="S">
+        <i>
+         EMBARASED
+        </i>
+       </ns>
+       TO DISCOVER THERE WERE
+       <ns type="RD">
+        <i>
+         NOT
+        </i>
+       </ns>
+       DISCOUNTS AT THE ENTRANCE.
+      </p>
+      <p>
+       FINALLY I COULDN'T EAT
+       <ns type="R">
+        <i>
+         TOO
+        </i>
+       </ns>
+       . IN FACT THE RESTAURANT WAS CLOSED,
+       <ns type="ID">
+        <i>
+         VERY FAR FROM MY THOUGHTS
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       FOR THESE REASONS I WOULD LIKE TO ASK FOR MY MONEY BACK. BECAUSE FOR ME IT WAS NOT A "PERFECT EVENING OUT".
+      </p>
+      <p>
+       I AM SURE THIS LETTER WILL RECEIVE YOUR PROMPT ATTENTION.
+      </p>
+      <p>
+       I LOOK FORWARD TO HEARING FROM YOU.
+      </p>
+      <p>
+       YOURS FAITHFULLY
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        DEAR SIR
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I AM WRITING IN ORDER TO COMPLAIN FOR THE TERRIBLE NIGHT I HAD IN YOUR THEATRE.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        FIRSTLY I WANT TO COMPLAIN ABOUT WHAT YOU WROTE ON THE BROCHURE.
+       </s>
+       <s pid="3" sid="2">
+        IT WAS COMPLETELY WRONG!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I WAS DISAPPOINTED TO FIND OUT THAT THE ACTOR WAS NOT THE ONE YOU WROTE  I DISCOVERED THIS ONLY WHEN THE PLAY STARTED, AND IT WAS VERY LATE!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        SECONDLY, AS I WROTE BEFORE, THE PLAY STARTED LATE, AND FOR ME IT WAS TERRIBLE TO WAIT FORTY FIVE MINUTES.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        THIRDLY, I WAS VERY EMBARASED TO DISCOVER THERE WERE NOT DISCOUNTS AT THE ENTRANCE.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        FINALLY I COULDN'T EAT TOO.
+       </s>
+       <s pid="7" sid="2">
+        IN FACT THE RESTAURANT WAS CLOSED, VERY FAR FROM MY THOUGHTS.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        FOR THESE REASONS I WOULD LIKE TO ASK FOR MY MONEY BACK.
+       </s>
+       <s pid="8" sid="2">
+        BECAUSE FOR ME IT WAS NOT A "PERFECT EVENING OUT".
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I AM SURE THIS LETTER WILL RECEIVE YOUR PROMPT ATTENTION.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I LOOK FORWARD TO HEARING FROM YOU.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        YOURS FAITHFULLY
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       UNFORTUNATELY, PAT WAS NOT VERY GOOD AT KEEPING SECRETS. THIS WAS LIKE AN ILLNESS FOR HIM. SO MANY
+       <ns type="AGN">
+        <i>
+         TIME
+        </i>
+       </ns>
+       HE WAS TOLD: "PAT
+       <ns type="MP">
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       <ns type="RV">
+        <i>
+         SAY
+        </i>
+       </ns>
+       THIS SECRET ONLY TO YOU". PAT COULD STAND THIS SECRET ONLY
+       <ns type="MD">
+       </ns>
+       FEW DAYS, AFTER
+       <ns type="MA">
+       </ns>
+       THE SECRET
+       <ns type="TV">
+        <i>
+         COME
+        </i>
+       </ns>
+       FROM
+       <ns type="UD">
+        <i>
+         THE
+        </i>
+       </ns>
+       DEEP INSIDE, AND HAD TO BE SAID. THIS WAS TERRIBLE FOR HIS
+       <ns type="FN">
+        <i>
+         FRIENDSHIP
+        </i>
+       </ns>
+       : HE ALWAYS LOST HIS FRIENDS. HE WANTED TO DIE
+       <ns type="RT">
+        <i>
+         FOR
+        </i>
+       </ns>
+       THIS. THE WORST THING
+       <ns type="TV">
+        <i>
+         IS
+        </i>
+       </ns>
+       THAT HE COULD NOT IMPROVE THIS BEHAVIOUR. ONE DAY
+       <ns type="UD">
+        <i>
+         THE
+        </i>
+       </ns>
+       FORTUNE HELPED OUR POOR PAT. ON THE BUS HE SAW A
+       <ns type="RN">
+        <i>
+         ROBBER
+        </i>
+       </ns>
+       WHILE HE WAS STEALING A WALLET, HE WANTED TO SCREAM, BUT HE WAS ASTONISHED. WHEN THE ROBBER
+       <ns type="RV">
+        <i>
+         UNDERSTOOD
+        </i>
+       </ns>
+       HE COULD BE DISCOVERED
+       <ns type="MC">
+       </ns>
+       HE SAID
+       <ns type="MP">
+       </ns>
+       "IF YOU DON'T KEEP
+       <ns type="RD">
+        <i>
+         THE
+        </i>
+       </ns>
+       SECRET I WILL KILL YOU". PAT, AS HE ALWAYS DID, COULDN'T KEEP THE SECRET, EVEN IF HE WAS SCARED. EVENTUALLY THE ROBBER WAS CAUGHT BY THE POLICE, AND FOR HIS
+       <ns type="DN">
+        <i>
+         BRAVE
+        </i>
+       </ns>
+       AND HONESTY HE HAD A LOT OF FRIENDS.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        UNFORTUNATELY, PAT WAS NOT VERY GOOD AT KEEPING SECRETS.
+       </s>
+       <s pid="1" sid="2">
+        THIS WAS LIKE AN ILLNESS FOR HIM.
+       </s>
+       <s pid="1" sid="3">
+        SO MANY TIME HE WAS TOLD: "PAT I  SAY THIS SECRET ONLY TO YOU".
+       </s>
+       <s pid="1" sid="4">
+        PAT COULD STAND THIS SECRET ONLY  FEW DAYS, AFTER  THE SECRET COME FROM THE DEEP INSIDE, AND HAD TO BE SAID.
+       </s>
+       <s pid="1" sid="5">
+        THIS WAS TERRIBLE FOR HIS FRIENDSHIP: HE ALWAYS LOST HIS FRIENDS.
+       </s>
+       <s pid="1" sid="6">
+        HE WANTED TO DIE FOR THIS.
+       </s>
+       <s pid="1" sid="7">
+        THE WORST THING IS THAT HE COULD NOT IMPROVE THIS BEHAVIOUR.
+       </s>
+       <s pid="1" sid="8">
+        ONE DAY THE FORTUNE HELPED OUR POOR PAT.
+       </s>
+       <s pid="1" sid="9">
+        ON THE BUS HE SAW A ROBBER WHILE HE WAS STEALING A WALLET, HE WANTED TO SCREAM, BUT HE WAS ASTONISHED.
+       </s>
+       <s pid="1" sid="10">
+        WHEN THE ROBBER UNDERSTOOD HE COULD BE DISCOVERED  HE SAID "IF YOU DON'T KEEP THE SECRET I WILL KILL YOU".
+       </s>
+       <s pid="1" sid="11">
+        PAT, AS HE ALWAYS DID, COULDN'T KEEP THE SECRET, EVEN IF HE WAS SCARED.
+       </s>
+       <s pid="1" sid="12">
+        EVENTUALLY THE ROBBER WAS CAUGHT BY THE POLICE, AND FOR HIS BRAVE AND HONESTY HE HAD A LOT OF FRIENDS.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

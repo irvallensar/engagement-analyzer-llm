@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen:
+      </p>
+      <p>
+       I have just received your letter, and I am very happy about this. Thanks very much!
+      </p>
+      <p>
+       I think I would like to travel only
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July because
+       <ns type="TV">
+        <i>
+         I've just finished
+        </i>
+       </ns>
+       my course at that time, and I can have a short
+       <ns type="AGN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       <ns type="R">
+        in these days
+       </ns>
+       . It will be very nice for me.
+      </p>
+      <p>
+       Accommodation at Camp California is in tents or log cabins
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think I
+       <ns type="RV">
+        <i>
+         prefer
+        </i>
+       </ns>
+       both of them, because I've never been there before, and never heard of these two
+       <ns type="RN">
+        places
+       </ns>
+       . I am very interested in both
+       <ns type="RN">
+        places
+       </ns>
+       but, I can just choose one
+       <ns type="RN">
+        place
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think I will choose log cabins
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="AGA">
+        <i>
+         <ns type="UV">
+          <i>
+           it's
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         sounds
+        </i>
+       </ns>
+       good and if I have time, maybe I can
+       <ns type="RV">
+        <i>
+         go to
+        </i>
+       </ns>
+       tents next time (maybe next year
+       <ns type="RP">
+        <i>
+         .)
+        </i>
+       </ns>
+      </p>
+      <p>
+       When I am at Camp, I will choose singing and photography
+       <ns type="MP">
+       </ns>
+       I can sing
+       <ns type="RJ">
+        <i>
+         classic
+        </i>
+       </ns>
+       music and pop music,
+       <ns type="R">
+        seem
+       </ns>
+       like rock &amp; roll. Maybe TITANIC. My mum
+       <ns type="TV">
+        <i>
+         liked
+        </i>
+       </ns>
+       me singing this song. And I can also
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       very good
+       <ns type="RN">
+        <i>
+         photography
+        </i>
+       </ns>
+       , because I learned
+       <ns type="MV">
+       </ns>
+       this in China two years ago.
+      </p>
+      <p>
+       Another thing is I would like to ask you some questions about
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         journey
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       What's the weather like? What kind of clothes shall I take?
+       <ns type="RP">
+        <i>
+         and
+        </i>
+       </ns>
+       how much does it cost per night
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           live
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in a Hotel? Thanks for your help.
+      </p>
+      <p>
+       Yours
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just received your letter, and I am very happy about this.
+       </s>
+       <s pid="2" sid="2">
+        Thanks very much!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think I would like to travel only on July because I've just finished my course at that time, and I can have a short holidays in these days.
+       </s>
+       <s pid="3" sid="2">
+        It will be very nice for me.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Accommodation at Camp California is in tents or log cabins, I think I prefer both of them, because I've never been there before, and never heard of these two places.
+       </s>
+       <s pid="4" sid="2">
+        I am very interested in both places but, I can just choose one place, I think I will choose log cabins, it's sounds good and if I have time, maybe I can go to tents next time (maybe next year.)
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        When I am at Camp, I will choose singing and photography I can sing classic music and pop music, seem like rock &amp; roll.
+       </s>
+       <s pid="5" sid="2">
+        Maybe TITANIC.
+       </s>
+       <s pid="5" sid="3">
+        My mum liked me singing this song.
+       </s>
+       <s pid="5" sid="4">
+        And I can also make very good photography, because I learned  this in China two years ago.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Another thing is I would like to ask you some questions about  journey, What's the weather like?
+       </s>
+       <s pid="6" sid="2">
+        What kind of clothes shall I take?
+       </s>
+       <s pid="6" sid="3">
+        and how much does it cost per night live in a Hotel?
+       </s>
+       <s pid="6" sid="4">
+        Thanks for your help.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       A lot of people enjoy shopping very much
+       <ns type="RP">
+        <i>
+         , me
+        </i>
+       </ns>
+       too. But sometimes shopping is not very enjoyable.
+      </p>
+      <p>
+       Firstly, I am a student
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I don't have
+       <ns type="MD">
+       </ns>
+       job, so, I have to
+       <ns type="FV">
+        <i>
+         asked
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       money from my parents. I can't
+       <ns type="FV">
+        <i>
+         asked
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       too much
+       <ns type="MP">
+        <i>
+         that's
+        </i>
+       </ns>
+       very bad for my parents. When I go shopping
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       I
+       <ns type="S">
+        <i>
+         alway
+        </i>
+       </ns>
+       feel
+       <ns type="DJ">
+        <i>
+         shame
+        </i>
+       </ns>
+       because I spend my
+       <ns type="MP">
+        <i>
+         parents
+        </i>
+       </ns>
+       money. (
+       <ns type="RP">
+        <i>
+         although
+        </i>
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       part-time job, it
+       <ns type="MV">
+       </ns>
+       just enough to pay my rent.)
+      </p>
+      <p>
+       Secondly, if you live in a big city,
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       things
+       <ns type="MV">
+       </ns>
+       always expensive. You
+       <ns type="UV">
+        <i>
+         should
+        </i>
+       </ns>
+       spend more money on buying clothes and food,
+       <ns type="M">
+       </ns>
+       you will
+       <ns type="MV">
+       </ns>
+       very happy when you
+       <ns type="RV">
+        <i>
+         buy
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       , but
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when you come back home
+       <ns type="MC">
+       </ns>
+       take out
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       purse, you
+       <ns type="RV">
+        <i>
+         must
+        </i>
+       </ns>
+       be
+       <ns type="UV">
+        <i>
+         feel
+        </i>
+       </ns>
+       sad
+       <ns type="RP">
+        <i>
+         ,
+         <ns type="DD">
+          <i>
+           you
+          </i>
+         </ns>
+        </i>
+       </ns>
+       purse
+       <ns type="MV">
+       </ns>
+       nearly empty
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       (when you don't have enough money
+       <ns type="RP">
+        <i>
+         .)
+        </i>
+       </ns>
+      </p>
+      <p>
+       Sometimes, when you
+       <ns type="TV">
+        <i>
+         shopping
+        </i>
+       </ns>
+       <ns type="R">
+        on the street
+       </ns>
+       , you will see a lot of things that you like, and you can't buy
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="RY">
+        once
+       </ns>
+       ,
+       <ns type="MY">
+       </ns>
+       <ns type="W">
+        <i>
+         you will feel very sad maybe
+        </i>
+       </ns>
+       .
+       <ns type="R">
+        And then, you may save money for the things you like, nothing to do, just for the poor things what you like so
+       </ns>
+       funny
+       <ns type="MP">
+       </ns>
+       isn't it?
+      </p>
+      <p>
+       Another thing is when you
+       <ns type="TV">
+        <i>
+         shopping
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a busy street,
+       <ns type="UV">
+        <i>
+         seem
+        </i>
+       </ns>
+       like
+       <ns type="RP">
+        <i>
+         oxford st
+        </i>
+       </ns>
+       in London
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       a lot of
+       <ns type="AGN">
+        <i>
+         thief
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       there
+       <ns type="RP">
+        <i>
+         , they
+        </i>
+       </ns>
+       will steal
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       money
+       <ns type="RP">
+        <i>
+         , that's
+        </i>
+       </ns>
+       so dangerous.
+      </p>
+      <p>
+       So, in my opinion shopping is not really enjoyable all the time for me.
+       <ns type="RA">
+        <i>
+         It
+        </i>
+       </ns>
+       will stop when I get a good job. Maybe I will feel better and enjoy it.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        A lot of people enjoy shopping very much, me too.
+       </s>
+       <s pid="2" sid="2">
+        But sometimes shopping is not very enjoyable.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I am a student, I don't have  job, so, I have to asked  money from my parents.
+       </s>
+       <s pid="3" sid="2">
+        I can't asked  too much that's very bad for my parents.
+       </s>
+       <s pid="3" sid="3">
+        When I go shopping.
+       </s>
+       <s pid="3" sid="4">
+        I alway feel shame because I spend my parents money.
+       </s>
+       <s pid="3" sid="5">
+        (although I got  part-time job, it  just enough to pay my rent.)
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, if you live in a big city, the things  always expensive.
+       </s>
+       <s pid="4" sid="2">
+        You should spend more money on buying clothes and food,  you will  very happy when you buy it, but, when you come back home  take out you purse, you must be feel sad, you purse  nearly empty, (when you don't have enough money.)
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Sometimes, when you shopping on the street, you will see a lot of things that you like, and you can't buy it once,  you will feel very sad maybe.
+       </s>
+       <s pid="5" sid="2">
+        And then, you may save money for the things you like, nothing to do, just for the poor things what you like so funny isn't it?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Another thing is when you shopping in a busy street, seem like oxford st in London.
+       </s>
+       <s pid="6" sid="2">
+        a lot of thief  there, they will steal you money, that's so dangerous.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So, in my opinion shopping is not really enjoyable all the time for me.
+       </s>
+       <s pid="7" sid="2">
+        It will stop when I get a good job.
+       </s>
+       <s pid="7" sid="3">
+        Maybe I will feel better and enjoy it.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

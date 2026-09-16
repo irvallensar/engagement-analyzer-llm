@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     38.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       17th June 2000
+      </p>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       About two weeks ago, I went to London for a
+       <ns type="MP">
+        <i>
+         week
+        </i>
+       </ns>
+       holiday. While there I saw your advertisement for the show "Over the rainbow" and decided to go.
+      </p>
+      <p>
+       I was looking forward to a great evening, but much to my surprise,
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was not exactly the case: there were no discounts available,
+       <ns type="MQ">
+       </ns>
+       as
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       <ns type="IV">
+        <i>
+         mentionned
+        </i>
+       </ns>
+       in the advertisement; the show started 45 minutes late; I was then very disappointed to see that Danny Brook
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       replaced by someone else.
+      </p>
+      <p>
+       After the show was over, it was not possible to visit the theatre restaurant, as it was closed that day.
+      </p>
+      <p>
+       I am very sorry to say it was definitely not a perfect evening out, and I am therefore asking you
+       <ns type="MT">
+       </ns>
+       a refund
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the amount I paid, or part of it. You will find the receipt enclosed.
+      </p>
+      <p>
+       Yours
+       <ns type="DY">
+        <i>
+         faithfuly
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17th June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        About two weeks ago, I went to London for a week holiday.
+       </s>
+       <s pid="3" sid="2">
+        While there I saw your advertisement for the show "Over the rainbow" and decided to go.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I was looking forward to a great evening, but much to my surprise, it was not exactly the case: there were no discounts available,  as it was mentionned in the advertisement; the show started 45 minutes late; I was then very disappointed to see that Danny Brook was replaced by someone else.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        After the show was over, it was not possible to visit the theatre restaurant, as it was closed that day.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I am very sorry to say it was definitely not a perfect evening out, and I am therefore asking you  a refund of the amount I paid, or part of it.
+       </s>
+       <s pid="6" sid="2">
+        You will find the receipt enclosed.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfuly,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Modern technology is affecting my daily life a lot, I can even say
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         changed
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       I will take the
+       <ns type="S">
+        <i>
+         exemple
+        </i>
+       </ns>
+       of the use of the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       . I use it on a daily basis for many different reasons:
+      </p>
+      <p>
+       I don't write letters to my friends anymore, and wait weeks before receiving answers, I just send an electronic mail
+       <ns type="RT">
+        <i>
+         through
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       and the person
+       <ns type="TV">
+        <i>
+         received
+        </i>
+       </ns>
+       it within seconds.
+      </p>
+      <p>
+       I don't need to go to the stores anymore
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       if I don't want to: I can just stay at home and buy almost everything through it: books, video tapes, clothes and even groceries.
+      </p>
+      <p>
+       It is also possible to read the news or play games.
+      </p>
+      <p>
+       I also have the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       of making new friends: I can connect to a special site which will enable me to virtually meet people.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Modern technology is affecting my daily life a lot, I can even say  changed it.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I will take the exemple of the use of the internet.
+       </s>
+       <s pid="2" sid="2">
+        I use it on a daily basis for many different reasons:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I don't write letters to my friends anymore, and wait weeks before receiving answers, I just send an electronic mail through the internet and the person received it within seconds.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I don't need to go to the stores anymore, if I don't want to: I can just stay at home and buy almost everything through it: books, video tapes, clothes and even groceries.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        It is also possible to read the news or play games.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I also have the possibility of making new friends: I can connect to a special site which will enable me to virtually meet people.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

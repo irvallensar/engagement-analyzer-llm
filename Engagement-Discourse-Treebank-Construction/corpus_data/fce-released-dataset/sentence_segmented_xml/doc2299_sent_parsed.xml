@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       17th - June - 2000
+      </p>
+      <p>
+       Auda. Lolas 44
+      </p>
+      <p>
+       MADRID 23456
+      </p>
+      <p>
+       SPAIN
+      </p>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I am writing to complain about the show "Over the rainbow"
+       <ns type="MP">
+       </ns>
+       <ns type="RV">
+        <i>
+         taking part
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       the 15th of June
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The last
+        </i>
+       </ns>
+       week I
+       <ns type="RV">
+        <i>
+         have been
+        </i>
+       </ns>
+       to London for a holiday. There
+       <ns type="R">
+        <i>
+         is
+        </i>
+       </ns>
+       saw the advertisement for this show and I decided to go
+       <ns type="UY">
+        <i>
+         there
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I went to buy the tickets but when I paid there was not any discount
+       <ns type="S">
+        <i>
+         avaible
+        </i>
+       </ns>
+       . In the advertisement you told me I would
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         discounts
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       This was not the worst thing because when I arrived at the theatre I
+       <ns type="TV">
+        <i>
+         was waiting
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         <ns type="S">
+          <i>
+           fourty five
+          </i>
+         </ns>
+        </i>
+       </ns>
+       minutes because the show should start at 19:30 and it started at 20:15. When it started the main actor Danny Brook was not in
+       <ns type="MA">
+       </ns>
+       , another
+       <ns type="MP">
+       </ns>
+       worse actor
+       <ns type="RV">
+        <i>
+         was
+        </i>
+       </ns>
+       taken his part. In my opinion when the main actor
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       do the show it is better not
+       <ns type="FV">
+        <i>
+         do
+        </i>
+       </ns>
+       the show than
+       <ns type="FV">
+        <i>
+         do
+        </i>
+       </ns>
+       it with a horrible actor.
+      </p>
+      <p>
+       When it finished
+       <ns type="MP">
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         arrived at
+        </i>
+       </ns>
+       the theatre restaurant but it was closed because they are going to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       a new
+       <ns type="MP">
+       </ns>
+       better restaurant.
+      </p>
+      <p>
+       In my opinion you should
+       <ns type="RV">
+        <i>
+         refuse
+        </i>
+       </ns>
+       my money because the evening and the show were so terrible.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17th - June - 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Auda.
+       </s>
+       <s pid="2" sid="2">
+        Lolas 44
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        MADRID 23456
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        SPAIN
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I am writing to complain about the show "Over the rainbow" taking part  the 15th of June
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        The last week I have been to London for a holiday.
+       </s>
+       <s pid="7" sid="2">
+        There is saw the advertisement for this show and I decided to go there.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I went to buy the tickets but when I paid there was not any discount avaible.
+       </s>
+       <s pid="8" sid="2">
+        In the advertisement you told me I would have  discounts.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        This was not the worst thing because when I arrived at the theatre I was waiting fourty five minutes because the show should start at 19:30 and it started at 20:15.
+       </s>
+       <s pid="9" sid="2">
+        When it started the main actor Danny Brook was not in , another worse actor was taken his part.
+       </s>
+       <s pid="9" sid="3">
+        In my opinion when the main actor can not do the show it is better not do the show than do it with a horrible actor.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        When it finished I arrived at the theatre restaurant but it was closed because they are going to do a new better restaurant.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        In my opinion you should refuse my money because the evening and the show were so terrible.
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Your faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       But I did not know it, and I told her my secret: I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         fell
+        </i>
+       </ns>
+       in love with Paul
+       <ns type="MP">
+       </ns>
+       a friend of
+       <ns type="RA">
+        <i>
+         us
+        </i>
+       </ns>
+       . No one
+       <ns type="TV">
+        <i>
+         know
+        </i>
+       </ns>
+       it
+       <ns type="R">
+        <i>
+         else
+        </i>
+       </ns>
+       her.
+      </p>
+      <p>
+       <ns type="RD">
+        <i>
+         The
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         <ns type="S">
+          <i>
+           wendsday
+          </i>
+         </ns>
+        </i>
+       </ns>
+       Pat phoned me and told me that Sally also
+       <ns type="TV">
+        <i>
+         love
+        </i>
+       </ns>
+       Paul. I had also told Sally my secret.
+       <ns type="MT">
+        <i>
+         The
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         thursday
+        </i>
+       </ns>
+       Sally phoned me, because we are also friends, but she did not tell me anything about Paul.
+      </p>
+      <p>
+       The weekend
+       <ns type="RV">
+        <i>
+         started
+        </i>
+       </ns>
+       and
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       Friday we went to the
+       <ns type="S">
+        <i>
+         dyscoteque
+        </i>
+       </ns>
+       . I
+       <ns type="RV">
+        <i>
+         spent
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         there a good time
+        </i>
+       </ns>
+       but
+       <ns type="MP">
+       </ns>
+       at the end
+       <ns type="M">
+       </ns>
+       , when we were going to
+       <ns type="RV">
+        <i>
+         come
+        </i>
+       </ns>
+       back home, I saw Sally kissing Paul!! It was terrible!!
+      </p>
+      <p>
+       When Sally came out
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         dyscotheque
+        </i>
+       </ns>
+       I was very
+       <ns type="RJ">
+        <i>
+         nervous
+        </i>
+       </ns>
+       and I started to shout
+       <ns type="MT">
+       </ns>
+       her. She hit me and I decided
+       <ns type="R">
+        <i>
+         in this moment
+        </i>
+       </ns>
+       that I
+       <ns type="W">
+        <i>
+         never should
+        </i>
+       </ns>
+       speak
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       her
+       <ns type="MY">
+       </ns>
+       .
+      </p>
+      <p>
+       Paul
+       <ns type="TV">
+        <i>
+         ask
+        </i>
+       </ns>
+       Pat what had happened and she told him my secret. One friend of mine told me that Pat had told Paul my secret and I went to speak with her. Now we are friends but I know that I
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       tell her any
+       <ns type="AGN">
+        <i>
+         secret
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        But I did not know it, and I told her my secret: I have fell in love with Paul a friend of us.
+       </s>
+       <s pid="2" sid="2">
+        No one know it else her.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The wendsday Pat phoned me and told me that Sally also love Paul.
+       </s>
+       <s pid="3" sid="2">
+        I had also told Sally my secret.
+       </s>
+       <s pid="3" sid="3">
+        The thursday Sally phoned me, because we are also friends, but she did not tell me anything about Paul.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The weekend started and this Friday we went to the dyscoteque.
+       </s>
+       <s pid="4" sid="2">
+        I spent there a good time but at the end , when we were going to come back home, I saw Sally kissing Paul!!
+       </s>
+       <s pid="4" sid="3">
+        It was terrible!!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        When Sally came out  the dyscotheque I was very nervous and I started to shout  her.
+       </s>
+       <s pid="5" sid="2">
+        She hit me and I decided in this moment that I never should speak with her .
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Paul ask
+       </s>
+       <s pid="6" sid="2">
+        Pat what had happened and she told him my secret.
+       </s>
+       <s pid="6" sid="3">
+        One friend of mine told me that Pat had told Paul my secret and I went to speak with her.
+       </s>
+       <s pid="6" sid="4">
+        Now we are friends but I know that I can not tell her any secret.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

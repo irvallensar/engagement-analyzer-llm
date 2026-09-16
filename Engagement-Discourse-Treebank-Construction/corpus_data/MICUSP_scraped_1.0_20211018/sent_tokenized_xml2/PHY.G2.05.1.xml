@@ -1,0 +1,830 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Opinion dynamics in the voter model
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       The voter model is one of the most elementary interacting particle systems.
+      </s>
+      <s pid="1" sid="2">
+       It can be used to describe simple opinion dynamics, as the name implies, as well as certain kinds of dimer-dimer kinetics [1].
+      </s>
+      <s pid="1" sid="3">
+       However, the voter model is often studied primarily because the relative simplicity of its rules frequently allows it to yield exact solutions.
+      </s>
+      <s pid="1" sid="4">
+       Each lattice point k can be in one of two states.
+      </s>
+      <s pid="1" sid="5">
+       For convenience, I shall denote these by + and −.
+      </s>
+      <s pid="1" sid="6">
+       A lattice point and one of its nearest neighbors are selected at random.
+      </s>
+      <s pid="1" sid="7">
+       The selected opinion then takes on the value of the chosen nearest neighbor.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       A number of important aspects of the model jump out of this dynamic immediately.
+      </s>
+      <s pid="2" sid="2">
+       First and foremost is the exitance of two absorbing states, one comprised of all + opinions, the other of all − opinions.
+      </s>
+      <s pid="2" sid="3">
+       For a finite system, one of these solutions will be the necessary outcome.
+      </s>
+      <s pid="2" sid="4">
+       Furthermore, the system will behave identically under the transformation ± → ∓, implying a Z2 symmetry.
+      </s>
+      <s pid="2" sid="5">
+       Thirdly, despite the stochasticity of neighbor selection, the system will never change a value randomly.
+      </s>
+      <s pid="2" sid="6">
+       Equivalently, the system is at zero temperature.
+      </s>
+      <s pid="2" sid="7">
+       This means that all of the dynamics takes place at the edges of domains of similar opinion.
+      </s>
+      <s pid="2" sid="8">
+       A correspondence thus exists between the behavior of domain edges and random walks that helps the solubility of many VM problems.
+      </s>
+     </p>
+     <p>
+      <s pid="3" sid="1">
+       Although the voter model is at zero temperature, the critical temperature is also zero, so the standard array of critical exponents may be found [6].
+      </s>
+      <s pid="3" sid="2">
+       For the remainder of this paper, however, I will focus on the dynamics of opinion switching and persistence in the manner of Ben-Naim et al. [2]
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       1 Mean field theory
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        In order to get an initial idea of what solutions to the voter model will be like, I will start with a mean field approach to a large lattice.
+       </s>
+       <s pid="4" sid="2">
+        Being a mean field solution, the exact nature of the lattice does not matter and a complete graph is used instead.
+       </s>
+       <s pid="4" sid="3">
+        Also, set the density of + opinions, c+ is equal to that of − opinions, c−. Define Pn(t) to be the fraction of sites at time t that have made n flips.
+       </s>
+       <s pid="4" sid="4">
+        Since the system is large, we can approximate the change of Pn(t) with a set of differential equations:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        (1)
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        where λ sets the characteristic time of flipping.
+       </s>
+       <s pid="6" sid="2">
+        Note that we implicitly invoked the requirement that c+ = c− in treating the system as one population.
+       </s>
+       <s pid="6" sid="3">
+        Relaxing this will lead to interesting behavior later.
+       </s>
+       <s pid="6" sid="4">
+        Redefining
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and solving with the initial condition that no states are flipped at time zero,
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        (2)
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        This is the large N limit of a Poisson distribution, thus
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . It is thus already obvious that coarsening will not occur in this approximation. By considering all even flips, the probability of being in the initial state can be determined.
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        Therefore after a very short amount of time, the initial opinions are effectively lost to the system.
+       </s>
+       <s pid="11" sid="2">
+        The mean-field topology makes this unsurprising.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        The case of uneven distributions of opinions can be derived in a similar manner, but the system must be separated into two species on the basis of the initial state of each lattice point.
+       </s>
+       <s pid="12" sid="2">
+        Thus P+n (t) is the probability of a voter with an initial + opinion to flip states n times by time t.
+       </s>
+       <s pid="12" sid="3">
+        Note that this also makes even numbers of changes distinct from odd numbers, since each will come from different pools of initial voters.
+       </s>
+       <s pid="12" sid="4">
+        The set of equations analogous to (1) is then
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        (3)
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        Before solving the system, note that we can trivially solve
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . The persistence time of a given opinion is scaled simply by the opposite opinion. As before, it is interesting to consider all even and odd changes taken together, so we define Peven/odd = P+even/odd+ P− even/odd and look at its properties. Taking linear combinations of (3) and noting that
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , it is simple to find that
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        (4)
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        This is again a simple exponential equation to solve, taking the initial condition that
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        (5)
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        This is the first indication of substantively different behavior of the even and odd changes.
+       </s>
+       <s pid="20" sid="2">
+        For
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      even corresponding to the dominant sign will be larger than the
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      describing the same sign. This results in the autocorrelation function
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      not going to zero with time. In fact,
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        (6)
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        That A(t) does not tend toward zero may seem strange given the lack of conservation of net opinion during an interaction, but in the limit of large system size that is being considered, the average concentration of opinions is in fact fixed.
+       </s>
+       <s pid="23" sid="2">
+        A single voter may not have a memory of its initial opinion, but the statistical prevalence of the majority opinion initially skews the future toward the majority opinion for all time, keeping the autocorrelation positive.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2 The Voter Model on a Lattice
+      </div>
+      <p>
+       <s pid="24" sid="1">
+        The mean field techniques provided some insight into the time scales of the voter model and the effect of concentration on the long term behavior.
+       </s>
+       <s pid="24" sid="2">
+        However, large amounts of information were obviously lost as the mean field solution exhibits none of the expected coarsening.
+       </s>
+       <s pid="24" sid="3">
+        Continuing in the manner and notation of Ben-Naim et al.
+       </s>
+       <s pid="24" sid="4">
+        I will now investigate the exact solution of Pn(t) on an arbitrary lattice.
+       </s>
+       <s pid="24" sid="5">
+        This process will show that dc = 2 is the critical dimension above which coarsening does not occur.
+       </s>
+       <s pid="24" sid="6">
+        For the remainder of this paper the initial opinions will be set equal, thus
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .
+      <p>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        The state of the system S as a whole must be considered now.
+       </s>
+       <s pid="26" sid="2">
+        Let
+       </s>
+       <s pid="26" sid="3">
+        Sk be the opinion at site k and Sk be the lattice S with
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Then the probability distribution P(S, t) increase by the rate of flipping
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      while being in
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      for all k and decreases by the rate of flipping any Sk while already in S. Denoting the rate of flipping site k by
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , this says that
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        (7)
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        The rules of the voter model make Wk(S) easy to write down, as well.
+       </s>
+       <s pid="29" sid="2">
+        When all nearest neighbors are different, Wk = 1 and when all are the same, Wl = 0.
+       </s>
+       <s pid="29" sid="3">
+        Between these two values, the rate should scale linearly with the number of different nearest neighbors.
+       </s>
+       <s pid="29" sid="4">
+        Thus for z denoting the coordination number,
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        (8)
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        With these definitions in hand, it is now easy to determine the evolution of the average opinion at site
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and the similarly defined two point correlation function
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        (9)
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        Remembering that Sk differs from S exactly at k,
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        (10)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="36" sid="1">
+        (11)
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        Putting equations (10) and (11) into (9) gives us the final relation:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        (12)
+       </s>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        A similar derivation gives the equation for the two point correlation function:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        (13)
+       </s>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        Reflecting briefly on the form of these equations, it is apparent that
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      evolve according to a d-dimensional discrete Laplace equation in a rescaled time coordinant. They can be thought of as having some of the same properties as a diffusion process. This is to be expected since, as was mentioned previously, the dynamics can be thought of as the random walks of domain edges. An exact solution to equation (12) on a d-dimensional cubic lattice and with
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is given by in [2] as:
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="43" sid="1">
+        (14)
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        with
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      being the multi-index function
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      being the modified Bessel function of the first kind. The autocorrelation function
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      solves the same equation. If the initial distribution of opinions is δ-correlated, then
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="46" sid="1">
+        (15)
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        Since
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      for large
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Before moving further, this alone is an interesting result. Either by citing known results of the time dependence of the typical length scale L(t) of nonconserved scalar order parameters such as the one in the voter model [4], or by remembering that the order parameter evolves according to a discrete diffusion equation, it is expected that the correlation length
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Thus
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and we have stumbled onto the value for the critical exponent
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .
+      <p>
+      </p>
+      <p>
+       <s pid="49" sid="1">
+        It is also possible to calculate the average number of flips in opinion,
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      in the limit of long times. Since
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      another derivation similar to (9) shows that
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="51" sid="1">
+        (16)
+       </s>
+      </p>
+      <p>
+       <s pid="52" sid="1">
+        However, the right hand side has a physical meaning.
+       </s>
+       <s pid="52" sid="2">
+        Since
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      takes 1 for like nearest neighbors and −1 for unlike nearest neighbors,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      measures the global density of unlike nearest neighbors. Frachebourgh and Krapivsky solved the long time behavior of active bond density for dimer-dimer reactions in a system which happens to be identical to the voter model [1]. According to them,
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="54" sid="1">
+        (17)
+       </s>
+      </p>
+      <p>
+       <s pid="55" sid="1">
+        Much of the physics of what goes on lies in these equations.
+       </s>
+       <s pid="55" sid="2">
+        The convergence to zero of the density of unlike nodes for d ≤ 2 means that the system is taking on more and more order.
+       </s>
+       <s pid="55" sid="3">
+        Furthermore, d = 2 is a critical dimension, above which coarsening is not able to occur.
+       </s>
+       <s pid="55" sid="4">
+        After a simple integration, the long time behavior of the average number of flips is also known.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="56" sid="1">
+        (18)
+       </s>
+      </p>
+      <p>
+       <s pid="57" sid="1">
+        The mean field time dependence occurs for d &amp;gt; 2, but fails for lower dimensions.
+       </s>
+       <s pid="57" sid="2">
+        This implies that, while the mean field distribution of Pn(t) may be acceptable for higher dimensions, the previous discussion does not have any input on d ≤ 2 distributions.
+       </s>
+       <s pid="57" sid="3">
+        However, Derrida et al. solved for one particular value, the persistence of unchanged opinions, P0(t), for the q state Potts model [5] for d = 1.
+       </s>
+       <s pid="57" sid="4">
+        The details of this calculation are beyond the scope of this discussion, but the idea was to again employ the duality with random walks.
+       </s>
+       <s pid="57" sid="5">
+        When a site is changed for the first time, it must be at the edge of an ordered domain.
+       </s>
+       <s pid="57" sid="6">
+        This relates the problem to that of finding a first passage time of certain random walkers.
+       </s>
+       <s pid="57" sid="7">
+        This can in turn be described by a reaction-diffusion equation which they then solve.
+       </s>
+       <s pid="57" sid="8">
+        After much calculation, they find that the exact power law describing persistence is given by
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="58" sid="1">
+        (19)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="59" sid="1">
+        (20)
+       </s>
+      </p>
+      <p>
+       <s pid="60" sid="1">
+        For the equal initial concentration voter model, q = 2 and θ(2) = 3/8.
+       </s>
+       <s pid="60" sid="2">
+        Uneven concentrations can be handled by defining larger q Potts models and equating certain states.
+       </s>
+       <s pid="60" sid="3">
+        For instance, if c+ = 3c−, a q = 4 state model would describe the dynamics and three states would together form those with initial state + [2].
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       3 Discussion
+      </div>
+      <p>
+       <s pid="61" sid="1">
+        The dynamics of coarsening of the voter model are a rich subject, and the above treatment only scratched the surface.
+       </s>
+       <s pid="61" sid="2">
+        A mean field solution qualitatively reproduces many of the dynamics of opinion changing for d &amp;gt; 2, but fails for smaller dimensions.
+       </s>
+       <s pid="61" sid="3">
+        This is expected, as the voter model is sensitive to dimension and converges relatively weakly even for d = 2.
+       </s>
+       <s pid="61" sid="4">
+        Neglecting a discussion of more exotic topologies, the universality class, other critical exponents, and a field theoretic treatment [7] [6], there are other questions open based on the work described here.
+       </s>
+       <s pid="61" sid="5">
+        Understanding the two dimensional coarsening process further would be important, and seems likely solvable for small initial concentration.
+       </s>
+       <s pid="61" sid="6">
+        Also, an investigation of the behavior of smaller systems and the impact of fluctuations could be very interesting for its use as a caricature of opinion propagation in the social sciences.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N1021E">
+       <li id="N1021F">
+        [1] L. Frachebourg and P.L. Krapivsky. cond-mat/9508123
+       </li>
+       <li id="N10221">
+        [2] E. Ben-Naim, L. Frachebourg, and P. L. Krapivsky. Phys. Rev. E. 53, 3078 (1996)
+       </li>
+       <li id="N10223">
+        [3] J. Jackson. Classical Electrodynamics. (Wiley, New York, 1999).
+       </li>
+       <li id="N10225">
+        [4] I. Dornic, H. Chaté, J. Chave, and Haye Hinrichsen. Phys. Rev. Lett. 87, 4.
+       </li>
+       <li id="N10227">
+        [5] B. Derrida, V. Hakim, and V. Pasquier. Phys. Rev. Lett. 75, 4.
+       </li>
+       <li id="N10229">
+        [6] H. Henrichsen. Adv. Phys. 49, 815.
+       </li>
+       <li id="N1022B">
+        [7] G. Ódor. Rev. Mod. Phys. 76, 663.
+       </li>
+       <li id="N1022D">
+        [8] V. Sood and S. Redner. Phys. Rev. Lett. 94, 178701
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

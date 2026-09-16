@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     27.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       Manager
+      </p>
+      <p>
+       I am writing this letter to
+       <ns type="S">
+        <i>
+         complane
+        </i>
+       </ns>
+       about the Circle Theatre. I went to the theatre last weekend to see "Over the rainbow'. I read your advertisement. However, it
+       <ns type="R">
+        was different from the fact
+       </ns>
+       . I had a very disappointing evening.
+      </p>
+      <p>
+       Firstly, Danny Brook did not
+       <ns type="RV">
+        <i>
+         act
+        </i>
+       </ns>
+       as you had
+       <ns type="RV">
+        <i>
+         said
+        </i>
+       </ns>
+       . A different actor
+       <ns type="RV">
+        <i>
+         acted
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         in stead
+        </i>
+       </ns>
+       of him.
+       <ns type="RP">
+        <i>
+         it
+        </i>
+       </ns>
+       was disappointing.
+      </p>
+      <p>
+       Secondly
+       <ns type="RP">
+        <i>
+         Discounts
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         did
+        </i>
+       </ns>
+       not
+       <ns type="S">
+        <i>
+         availabe
+        </i>
+       </ns>
+       . Even though I brought
+       <ns type="MD">
+       </ns>
+       discount
+       <ns type="SX">
+        <i>
+         taken
+        </i>
+       </ns>
+       which I was given by
+       <ns type="MD">
+       </ns>
+       travel agency.
+      </p>
+      <p>
+       What's more, the theatre
+       <ns type="S">
+        <i>
+         reastaurant
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         had been
+        </i>
+       </ns>
+       closed
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when the show finished
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       the show started
+       <ns type="MT">
+       </ns>
+       20:15. It should have started at 19:30 as you said
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       advertisement,
+       <ns type="RC">
+        <i>
+         or
+        </i>
+       </ns>
+       you should not have closed
+       <ns type="MA">
+       </ns>
+       before the show finished.
+      </p>
+      <p>
+       It was not
+       <ns type="MD">
+       </ns>
+       perfect evening
+       <ns type="S">
+        <i>
+         whatoever
+        </i>
+       </ns>
+       . I would like to ask for
+       <ns type="MD">
+       </ns>
+       money back.
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear the Manager
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing this letter to complane about the Circle Theatre.
+       </s>
+       <s pid="2" sid="2">
+        I went to the theatre last weekend to see "Over the rainbow'.
+       </s>
+       <s pid="2" sid="3">
+        I read your advertisement.
+       </s>
+       <s pid="2" sid="4">
+        However, it was different from the fact.
+       </s>
+       <s pid="2" sid="5">
+        I had a very disappointing evening.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, Danny
+       </s>
+       <s pid="3" sid="2">
+        Brook did not act as you had said.
+       </s>
+       <s pid="3" sid="3">
+        A different actor acted in stead of him.
+       </s>
+       <s pid="3" sid="4">
+        it was disappointing.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly Discounts did not availabe.
+       </s>
+       <s pid="4" sid="2">
+        Even though I brought  discount taken which I was given by  travel agency.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        What's more, the theatre reastaurant had been closed, when the show finished.
+       </s>
+       <s pid="5" sid="2">
+        Because the show started  20:15.
+       </s>
+       <s pid="5" sid="3">
+        It should have started at 19:30 as you said at  advertisement, or you should not have closed  before the show finished.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        It was not  perfect evening whatoever.
+       </s>
+       <s pid="6" sid="2">
+        I would like to ask for  money back.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Fashion of the Future.
+      </p>
+      <p>
+       My grandchildren will wear
+       <ns type="DN">
+        fish-liked-suit
+       </ns>
+       100 years from now. As you can imagine, people will be lazier than now. Everything will be
+       <ns type="DJ">
+        <i>
+         usefull
+        </i>
+       </ns>
+       and
+       <ns type="RJ">
+        <ns type="S">
+         <i>
+          combinient
+         </i>
+        </ns>
+       </ns>
+       , even fashion.
+      </p>
+      <p>
+       More or less
+      </p>
+      <p>
+       The clothes will be more comfortable but less
+       <ns type="DJ">
+        <i>
+         decorations
+        </i>
+       </ns>
+       . People will put on
+       <ns type="FN">
+        <i>
+         <ns type="UP">
+          <i>
+           fitted-suit
+          </i>
+         </ns>
+        </i>
+       </ns>
+       such as diving
+       <ns type="FN">
+        <i>
+         suit
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       or perhaps
+       <ns type="X">
+        <i>
+         nothing to wear
+        </i>
+       </ns>
+       . For instance, people
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       not care about what other people see. Or maybe we will not need to
+       <ns type="RV">
+        <i>
+         meet
+        </i>
+       </ns>
+       each other
+       <ns type="RQ">
+        <i>
+         no
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         longer
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Male or Female
+      </p>
+      <p>
+       <ns type="R">
+        Between male and female
+       </ns>
+       will
+       <ns type="W">
+        <i>
+         be not
+        </i>
+       </ns>
+       important
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       clothes in 100
+       <ns type="MP">
+        <i>
+         years
+        </i>
+       </ns>
+       time. The most important
+       <ns type="AGN">
+        <i>
+         things
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         fugure
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        such as long legs or
+        <ns type="S">
+         <i>
+          pear-sharped
+         </i>
+        </ns>
+       </ns>
+       .
+      </p>
+      <p>
+       Traditional or
+       <ns type="S">
+        <i>
+         Comtemporaly
+        </i>
+       </ns>
+      </p>
+      <p>
+       Even though the clothes
+       <ns type="R">
+        become so
+       </ns>
+       , the traditional clothes will
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       continue
+       <ns type="MV">
+       </ns>
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       fashion has
+       <ns type="R">
+        repeated many times in the circle
+       </ns>
+       .
+      </p>
+      <p>
+       In
+       <ns type="S">
+        <i>
+         concrution
+        </i>
+       </ns>
+       , the clothes will
+       <ns type="MV">
+       </ns>
+       more interesting than now
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       for everybody
+       <ns type="MP">
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Fashion of the Future.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My grandchildren will wear fish-liked-suit 100 years from now.
+       </s>
+       <s pid="2" sid="2">
+        As you can imagine, people will be lazier than now.
+       </s>
+       <s pid="2" sid="3">
+        Everything will be usefull and combinient, even fashion.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        More or less
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The clothes will be more comfortable but less decorations.
+       </s>
+       <s pid="4" sid="2">
+        People will put on fitted-suit such as diving suit.
+       </s>
+       <s pid="4" sid="3">
+        or perhaps nothing to wear.
+       </s>
+       <s pid="4" sid="4">
+        For instance, people would not care about what other people see.
+       </s>
+       <s pid="4" sid="5">
+        Or maybe we will not need to meet each other no longer.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Male or Female
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Between male and female will be not important for clothes in 100 years time.
+       </s>
+       <s pid="6" sid="2">
+        The most important things is the fugure, such as long legs or pear-sharped.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Traditional or Comtemporaly
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Even though the clothes become so, the traditional clothes will be continue .
+       </s>
+       <s pid="8" sid="2">
+        Because the fashion has repeated many times in the circle.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        In concrution, the clothes will  more interesting than now.
+       </s>
+       <s pid="9" sid="2">
+        for everybody
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

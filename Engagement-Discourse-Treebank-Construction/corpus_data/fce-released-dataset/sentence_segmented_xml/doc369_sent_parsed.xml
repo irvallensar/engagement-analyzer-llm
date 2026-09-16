@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     31.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       After having read your letter, I
+       <ns type="TV">
+        <i>
+         write
+        </i>
+       </ns>
+       to you to inform you that I would like to travel in July. It is the only month
+       <ns type="RC">
+        <i>
+         where
+        </i>
+       </ns>
+       I don't work. As for the
+       <ns type="CN">
+        <i>
+         accommodations
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I would prefer a tent
+       <ns type="RP">
+        <i>
+         , there's
+        </i>
+       </ns>
+       nothing like hearing raindrops on canvas at night!
+      </p>
+      <p>
+       Last but not least, I would like to go sailing and climbing. I have sailed
+       <ns type="RA">
+        <i>
+         some
+        </i>
+       </ns>
+       in my youth but have never
+       <ns type="RV">
+        <i>
+         went
+        </i>
+       </ns>
+       climbing. It would be a fun
+       <ns type="S">
+        <i>
+         experiance
+        </i>
+       </ns>
+       ! Will I be needing any money
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       Please send me a list of
+       <ns type="RJ">
+        <i>
+         needed
+        </i>
+       </ns>
+       clothes and/or supplies. Thank you very much.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+      <p>
+       Gilbert Neville
+      </p>
+      <p>
+       P.S.
+      </p>
+      <p>
+       I would like to know if there is a medical staff present during the two weeks
+       <ns type="RP">
+        <i>
+         ?
+        </i>
+       </ns>
+       Does any medication
+       <ns type="M">
+       </ns>
+       have to be declared to them?
+       <ns type="ID">
+        <i>
+         In case of
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         any
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         accidents
+        </i>
+       </ns>
+       , will the transport back home be paid for?
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        After having read your letter, I write to you to inform you that I would like to travel in July.
+       </s>
+       <s pid="2" sid="2">
+        It is the only month where I don't work.
+       </s>
+       <s pid="2" sid="3">
+        As for the accommodations I would prefer a tent, there's nothing like hearing raindrops on canvas at night!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last but not least, I would like to go sailing and climbing.
+       </s>
+       <s pid="3" sid="2">
+        I have sailed some in my youth but have never went climbing.
+       </s>
+       <s pid="3" sid="3">
+        It would be a fun experiance!
+       </s>
+       <s pid="3" sid="4">
+        Will I be needing any money.
+       </s>
+       <s pid="3" sid="5">
+        Please send me a list of needed clothes and/or supplies.
+       </s>
+       <s pid="3" sid="6">
+        Thank you very much.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Gilbert Neville
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        P.S.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I would like to know if there is a medical staff present during the two weeks?
+       </s>
+       <s pid="7" sid="2">
+        Does any medication  have to be declared to them?
+       </s>
+       <s pid="7" sid="3">
+        In case of any accidents, will the transport back home be paid for?
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Why
+       <ns type="R">
+        <i>
+         can shopping be unenjoyable
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       First of all, it depends on who is with you and what the other person likes to shop for.
+      </p>
+      <p>
+       Some people are boring to shop with, they don't talk or comment
+       <ns type="MT">
+       </ns>
+       anything they see. Why would anyone shop with that type of person? Well, I really don't know. Women, in
+       <ns type="S">
+        <i>
+         perticular
+        </i>
+       </ns>
+       , have the annoying habit of always having to touch everything they see. If it is something they like, they always have to try it on. We all know how it is when a woman
+       <ns type="TV">
+        <i>
+         tried
+        </i>
+       </ns>
+       on some clothes (usually several
+       <ns type="MN">
+       </ns>
+       ) but
+       <ns type="RA">
+        <i>
+         it's
+        </i>
+       </ns>
+       still better than when we're talking about shoes! That has to be the worst. Seeing or imagining a woman in the
+       <ns type="RN">
+        <i>
+         cloths
+        </i>
+       </ns>
+       she chooses can at least help when
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         being
+        </i>
+       </ns>
+       bored, but shoes are just shoes. Shopping for them is a very long and tiring
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           experiance
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . It seems to last forever and just when you think she's done, she spots
+       <ns type="S">
+        <i>
+         an othe
+        </i>
+       </ns>
+       pair.
+      </p>
+      <p>
+       Shopping
+       <ns type="ID">
+        <i>
+         for me
+        </i>
+       </ns>
+       is supposed to be a very
+       <ns type="RJ">
+        <i>
+         fast
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           experiance
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . As soon as someone else is with you, it can become horrible!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Why can shopping be unenjoyable?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all, it depends on who is with you and what the other person likes to shop for.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Some people are boring to shop with, they don't talk or comment  anything they see.
+       </s>
+       <s pid="3" sid="2">
+        Why would anyone shop with that type of person?
+       </s>
+       <s pid="3" sid="3">
+        Well, I really don't know.
+       </s>
+       <s pid="3" sid="4">
+        Women, in perticular, have the annoying habit of always having to touch everything they see.
+       </s>
+       <s pid="3" sid="5">
+        If it is something they like, they always have to try it on.
+       </s>
+       <s pid="3" sid="6">
+        We all know how it is when a woman tried on some clothes (usually several ) but it's still better than when we're talking about shoes!
+       </s>
+       <s pid="3" sid="7">
+        That has to be the worst.
+       </s>
+       <s pid="3" sid="8">
+        Seeing or imagining a woman in the cloths she chooses can at least help when  being bored, but shoes are just shoes.
+       </s>
+       <s pid="3" sid="9">
+        Shopping for them is a very long and tiring experiance.
+       </s>
+       <s pid="3" sid="10">
+        It seems to last forever and just when you think she's done, she spots an othe pair.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Shopping for me is supposed to be a very fast experiance.
+       </s>
+       <s pid="4" sid="2">
+        As soon as someone else is with you, it can become horrible!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

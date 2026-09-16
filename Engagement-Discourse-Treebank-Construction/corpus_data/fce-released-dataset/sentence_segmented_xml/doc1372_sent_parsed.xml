@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Lausanne, the 20th of May 2000
+      </p>
+      <p>
+       Dear M. Smith,
+      </p>
+      <p>
+       My name is Marie Bouchard, I come from Switzerland. Two weeks ago, I spent a week in your fabulous city of London with my friend. On Thursday, the 3rd of May 2000, we went to your theatre to see "Over the rainbow". Unfortunately, we were really disappointed about everything in the theatre.
+      </p>
+      <p>
+       Firstly, we got our tickets
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your ticket office just one hour before the show. We thought, as
+       <ns type="DY">
+        <i>
+         usual
+        </i>
+       </ns>
+       we do in London
+       <ns type="AGN">
+        <i>
+         theatre
+        </i>
+       </ns>
+       , we could
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       discounts
+       <ns type="MP">
+       </ns>
+       <ns type="RC">
+        <i>
+         as
+        </i>
+       </ns>
+       it's written on your advertisement
+       <ns type="M">
+       </ns>
+       .
+       <ns type="DY">
+        <i>
+         Surprisily
+        </i>
+       </ns>
+       , there were no
+       <ns type="S">
+        <i>
+         discounds
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Secondly, the show started at 20:15 instead of 19:30
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it's a theatre
+       <ns type="MP">
+       </ns>
+       <ns type="UC">
+        <i>
+         but
+        </i>
+       </ns>
+       not a concert hall!!!!
+      </p>
+      <p>
+       Thirdly, we were astonished
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the actors
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         whose
+        </i>
+       </ns>
+       we know from
+       <ns type="IQ">
+        <i>
+         others
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         musical
+        </i>
+       </ns>
+       . Why did you not change the
+       <ns type="AGN">
+        <i>
+         name
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       your advertisement?
+      </p>
+      <p>
+       In the end, the restaurant was closed because you didn't have enough
+       <ns type="IN">
+        <i>
+         staffs
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       evening!!
+       <ns type="R">
+        Nothing was serious
+       </ns>
+       . We really like London, the people, the night-life but this evening was really awful.
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         sent
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       you a
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           copie
+          </i>
+         </ns>
+        </i>
+       </ns>
+       of our tickets. Would you
+       <ns type="R">
+        <i>
+         pleased
+        </i>
+       </ns>
+       return our money
+       <ns type="UY">
+        <i>
+         back
+        </i>
+       </ns>
+       . In advance, thank you.
+      </p>
+      <p>
+       I hope we are not the only people to be so upset, but it was the first and the last time that I
+       <ns type="TV">
+        <i>
+         came
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your theatre.
+      </p>
+      <p>
+       Sincerely yours
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Lausanne, the 20th of May 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear M. Smith,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        My name is Marie Bouchard, I come from Switzerland.
+       </s>
+       <s pid="3" sid="2">
+        Two weeks ago, I spent a week in your fabulous city of London with my friend.
+       </s>
+       <s pid="3" sid="3">
+        On Thursday, the 3rd of May 2000, we went to your theatre to see "Over the rainbow".
+       </s>
+       <s pid="3" sid="4">
+        Unfortunately, we were really disappointed about everything in the theatre.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, we got our tickets in your ticket office just one hour before the show.
+       </s>
+       <s pid="4" sid="2">
+        We thought, as usual we do in London theatre, we could have discounts as it's written on your advertisement .
+       </s>
+       <s pid="4" sid="3">
+        Surprisily, there were no discounds.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, the show started at 20:15 instead of 19:30, it's a theatre but not a concert hall!!!!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Thirdly, we were astonished about the actors whose we know from others musical.
+       </s>
+       <s pid="6" sid="2">
+        Why did you not change the name of your advertisement?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        In the end, the restaurant was closed because you didn't have enough staffs, this evening!!
+       </s>
+       <s pid="7" sid="2">
+        Nothing was serious.
+       </s>
+       <s pid="7" sid="3">
+        We really like London, the people, the night-life but this evening was really awful.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I sent to you a copie of our tickets.
+       </s>
+       <s pid="8" sid="2">
+        Would you pleased return our money back.
+       </s>
+       <s pid="8" sid="3">
+        In advance, thank you.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I hope we are not the only people to be so upset, but it was the first and the last time that I came in your theatre.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Sincerely yours
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. When her best friend, Scala, asked her
+       <ns type="MT">
+       </ns>
+       an idea to surprise her husband
+       <ns type="MT">
+       </ns>
+       because
+       <ns type="TV">
+        <i>
+         she's
+        </i>
+       </ns>
+       pregnant, Pat put her
+       <ns type="ID">
+        <i>
+         <ns type="IN">
+          <i>
+           feets
+          </i>
+         </ns>
+         in the plate
+        </i>
+       </ns>
+       just before Scala's husband
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       the surprise.
+      </p>
+      <p>
+       The problem is that Pat works in
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       Neubathin
+       <ns type="MP">
+       </ns>
+       a little village. She's a secretary in an office. Everybody knows everybody.
+      </p>
+      <p>
+       Pat and Scala have been good friends for 10 years, their
+       <ns type="FN">
+        <i>
+         husband
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       too.
+      </p>
+      <p>
+       It was a
+       <ns type="W">
+        <i>
+         Friday
+         <ns type="DJ">
+          <i>
+           suny
+          </i>
+         </ns>
+        </i>
+       </ns>
+       afternoon, Scala was really excited
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to tell
+        </i>
+       </ns>
+       her the
+       <ns type="IN">
+        <i>
+         new
+        </i>
+       </ns>
+       . Despite
+       <ns type="M">
+       </ns>
+       she knew that Pat couldn't keep
+       <ns type="MD">
+       </ns>
+       secret
+       <ns type="MP">
+       </ns>
+       <ns type="U">
+        <i>
+         but for
+        </i>
+       </ns>
+       this time she was confident
+       <ns type="MC">
+       </ns>
+       maybe
+       <ns type="R">
+        <i>
+         too
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Just after Scala told her the
+       <ns type="IN">
+        <i>
+         new
+        </i>
+       </ns>
+       , Pat phoned her mother who worked in a bakery, to tell
+       <ns type="MA">
+       </ns>
+       that Scala
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       pregnant.
+      </p>
+      <p>
+       As usual, Jon, Scala's husband came &amp; bought the bread for the evening. Pat's mum was so excited about the baby, she just said "Congratulations
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the new baby."
+      </p>
+      <p>
+       He was so amazed and asked
+       <ns type="MA">
+       </ns>
+       to repeat
+       <ns type="M">
+       </ns>
+       . She just
+       <ns type="RV">
+        <i>
+         thought
+        </i>
+       </ns>
+       it
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         be
+        </i>
+       </ns>
+       a secret,
+       <ns type="MC">
+       </ns>
+       she
+       <ns type="RV">
+        <i>
+         came
+        </i>
+       </ns>
+       really
+       <ns type="S">
+        <i>
+         embarassed
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       When he went back to his house, his wife gave him the box with the shoes but it wasn't a surprise! Scala was
+       <ns type="RJ">
+        <i>
+         hungry
+        </i>
+       </ns>
+       with Pat because she thought she
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       keep this kind of secret.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        When her best friend, Scala, asked her  an idea to surprise her husband  because she's pregnant, Pat put her feets in the plate just before Scala's husband got the surprise.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The problem is that Pat works in the Neubathin a little village.
+       </s>
+       <s pid="2" sid="2">
+        She's a secretary in an office.
+       </s>
+       <s pid="2" sid="3">
+        Everybody knows everybody.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Pat and Scala have been good friends for 10 years, their husband  too.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        It was a Friday suny afternoon, Scala was really excited  to tell her the new.
+       </s>
+       <s pid="4" sid="2">
+        Despite  she knew that Pat couldn't keep  secret but for this time she was confident  maybe too.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Just after Scala told her the new, Pat phoned her mother who worked in a bakery, to tell  that Scala is pregnant.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        As usual, Jon, Scala's husband came &amp; bought the bread for the evening.
+       </s>
+       <s pid="6" sid="2">
+        Pat's mum was so excited about the baby, she just said "Congratulations for the new baby."
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        He was so amazed and asked  to repeat .
+       </s>
+       <s pid="7" sid="2">
+        She just thought it would be a secret,  she came really embarassed.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        When he went back to his house, his wife gave him the box with the shoes but it wasn't a surprise!
+       </s>
+       <s pid="8" sid="2">
+        Scala was hungry with Pat because she thought she can keep this kind of secret.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

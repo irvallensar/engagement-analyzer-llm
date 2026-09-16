@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     26.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="L">
+        Dear Mrs Smith, Hello Maria
+       </ns>
+       . In this letter you will get all the information that you need.
+      </p>
+      <p>
+       The hotel that group has been booked into is the Palace Hotel (
+       <ns type="RT">
+        <i>
+         <ns type="RP">
+          <i>
+           In
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the Victoria road). And you can
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       the Bus in front of the hotel to go to the College. It is four bus stops
+       <ns type="MJ">
+       </ns>
+       . Then walk
+       <ns type="RY">
+        <i>
+         straight
+        </i>
+       </ns>
+       for five minutes
+       <ns type="RP">
+        <i>
+         , you
+        </i>
+       </ns>
+       will see the college.
+      </p>
+      <p>
+       After the party, we will go to an
+       <ns type="DN">
+        entertainment area
+       </ns>
+       to have fun and we will eat in Mc'Donalds. The rest you already
+       <ns type="AGV">
+        <i>
+         knows
+        </i>
+       </ns>
+       . I suggest
+       <ns type="FV">
+        <i>
+         to wear
+        </i>
+       </ns>
+       shirts and jeans.
+      </p>
+      <p>
+       And the last three hours before you return, we can go to the "Imax" cinema to watch a 3-D film!
+       <ns type="RY">
+        <i>
+         After
+        </i>
+       </ns>
+       we
+       <ns type="TV">
+        <i>
+         eat
+        </i>
+       </ns>
+       in the KFC. Then we
+       <ns type="TV">
+        <i>
+         all take
+        </i>
+       </ns>
+       you and the students to the airport. That's
+       <ns type="RA">
+        <i>
+         all
+        </i>
+       </ns>
+       . I
+       <ns type="RV">
+        wait
+       </ns>
+       you.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         sincerly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith, Hello Maria.
+       </s>
+       <s pid="1" sid="2">
+        In this letter you will get all the information that you need.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The hotel that group has been booked into is the Palace Hotel (In the Victoria road).
+       </s>
+       <s pid="2" sid="2">
+        And you can take the Bus in front of the hotel to go to the College.
+       </s>
+       <s pid="2" sid="3">
+        It is four bus stops .
+       </s>
+       <s pid="2" sid="4">
+        Then walk straight for five minutes, you will see the college.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        After the party, we will go to an entertainment area to have fun and we will eat in Mc'Donalds.
+       </s>
+       <s pid="3" sid="2">
+        The rest you already knows.
+       </s>
+       <s pid="3" sid="3">
+        I suggest to wear shirts and jeans.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        And the last three hours before you return, we can go to the "Imax" cinema to watch a 3-D film!
+       </s>
+       <s pid="4" sid="2">
+        After we eat in the KFC.
+       </s>
+       <s pid="4" sid="3">
+        Then we all take you and the students to the airport.
+       </s>
+       <s pid="4" sid="4">
+        That's all.
+       </s>
+       <s pid="4" sid="5">
+        I wait you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Your sincerly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Madrid is a big city and
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       many interesting places. But the best place for me is "La Vaguada"
+       <ns type="RP">
+        <i>
+         . An
+        </i>
+       </ns>
+       <ns type="RN">
+        entertainment
+       </ns>
+       and commercial building.
+      </p>
+      <p>
+       In there, students can have fun in the recreation areas, can watch a film and eat all
+       <ns type="AGN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of food and
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       shopping. We can have fun as well. And that's why I recommend this place to you.
+      </p>
+      <p>
+       The building itself is a large building. It is very safe as there are policemen and cameras. The
+       <ns type="AGN">
+        <i>
+         buildings
+        </i>
+       </ns>
+       seems to be very new but it is quite old. People love this place and called it "
+       <ns type="RP">
+        <i>
+         Madrid-two
+        </i>
+       </ns>
+       ".
+      </p>
+      <p>
+       Around it, there are many restaurants and shops as the building
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           bring
+          </i>
+         </ns>
+        </i>
+       </ns>
+       a lot of people. Inside, there are fast-food restaurants and shops as well. And it is easy to
+       <ns type="RV">
+        <i>
+         come
+        </i>
+       </ns>
+       . Just take the
+       <ns type="W">
+        <i>
+         bus 83
+        </i>
+       </ns>
+       or the
+       <ns type="UP">
+        <i>
+         sub-way
+        </i>
+       </ns>
+       . In here, you can find everything that you want. Hope you like it.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Madrid is a big city and have many interesting places.
+       </s>
+       <s pid="1" sid="2">
+        But the best place for me is "La Vaguada".
+       </s>
+       <s pid="1" sid="3">
+        An entertainment and commercial building.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In there, students can have fun in the recreation areas, can watch a film and eat all kind of food and have shopping.
+       </s>
+       <s pid="2" sid="2">
+        We can have fun as well.
+       </s>
+       <s pid="2" sid="3">
+        And that's why I recommend this place to you.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The building itself is a large building.
+       </s>
+       <s pid="3" sid="2">
+        It is very safe as there are policemen and cameras.
+       </s>
+       <s pid="3" sid="3">
+        The buildings seems to be very new but it is quite old.
+       </s>
+       <s pid="3" sid="4">
+        People love this place and called it "Madrid-two".
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Around it, there are many restaurants and shops as the building bring a lot of people.
+       </s>
+       <s pid="4" sid="2">
+        Inside, there are fast-food restaurants and shops as well.
+       </s>
+       <s pid="4" sid="3">
+        And it is easy to come.
+       </s>
+       <s pid="4" sid="4">
+        Just take the bus 83 or the sub-way.
+       </s>
+       <s pid="4" sid="5">
+        In here, you can find everything that you want.
+       </s>
+       <s pid="4" sid="6">
+        Hope you like it.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

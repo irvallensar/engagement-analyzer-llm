@@ -1,0 +1,426 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <p>
+    ﻿A Discussion of the VP-External and VP-Internal Subjects Hypotheses
+   </p>
+  </div>
+  <div class="dynacloud">
+   <p>
+    There are two competing theories about the D-structure position of subjects, one positing VP-external subjects and the other positing VP-internal subjects.
+   </p>
+   <p>
+    The VP-external subjects hypothesis proposes that the subject of a clause is base-generated in the [Spec, IP] position.
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 1
+   </p>
+   <p>
+    In this position at D-structure, the subject does not have to undergo movement to be in [Spec, IP] at S-structure.
+   </p>
+   <p>
+    The VP-internal subjects hypothesis claims that the subject starts in a position immediately dominated by the VP and then moves to [Spec, IP].
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 2
+   </p>
+   <p>
+    The movement is captured symbolically with NP* representing the NP where it is base-generated and NPˆ is the NP at S-structure. This notation, adopted from Sportiche (1988) will facilitate the discussion.
+   </p>
+   <p>
+    The goal of this paper is to explore the benefits and drawbacks of each theory. This will involve looking at theta-role assignment, theoretical motivations (idiosyncratic theta role assignment), empirical motivations stemming from an analysis of 'floating' quantifiers (Sportiche, 1988), and the ungovernability of PRO.
+   </p>
+   <p>
+    With the information presented so far it seems like VP-external subjects would be preferable because it is simpler. VP-internal subjects theorizes movement from daughter of V'' to [Spec, IP] while VP-external puts the subject in [Spec, IP] in D-structure, bypassing the need for movement. Theta role assignment complicates the discussion.
+   </p>
+   <p>
+    Let’s look at an example: Norman will kick the ball. The verb kick assigns two theta roles, one to the subject (the agent theta role), one to the direct object (the patient theta role). We will be working with the assumption that theta roles are assigned by mutual m-command. How the theta roles are assigned varies in the VP-external and VP-internal hypotheses.
+   </p>
+   <p>
+    In VP-internal subjects, the patient theta role would be assigned to its VP-internal sister NP 'the ball' through mutual m-command. The agent theta role would be assigned to the internal NP in the [Spec, VP] position. That NP in the [Spec, VP], once it received the agent theta role, would then move to [Spec, IP], and then be pronounced. This is captured in the following diagram:
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 3
+   </p>
+   <p>
+    In this scenario, both theta roles are assigned by the head of the verb phrase.
+   </p>
+   <p>
+    In VP-external subjects, the subject NP starts in the [Spec, IP] position. This position is not mutually m-commanded by the V head. Thus, while the V head will be able to assign its patient theta role to
+    <q>
+     the ball
+    </q>
+    it will not be able to assign its agent theta role to 'Norman'. This can be overcome by saying that the agent theta role is not assigned from the V head but instead by the V’’ projection. This is captured in the following diagram:
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 4
+   </p>
+   <p>
+    This representation is simpler in one sense but more complicated in another. As stated above, it is simpler because there need be no movement of the subject from [Spec, VP] to [Spec, IP]. But it is more complicated because it means that there are two positions that are assigning the verb kick’s two theta roles, the Vo and V’’ positions.
+   </p>
+   <p>
+    At this point it is unclear which theory is preferable. VP-external subjects requires two positions from which the predicate’s theta roles are assigned but no movement. VP-internal subjects, on the other hand, would mean both theta roles are assigned by the Vo position but that there must be movement from the Spec,VP to the Spec,IP. It turns out there is support, both theoretical and empirical, for the VP-internal subjects hypothesis.
+   </p>
+   <p>
+    A theoretical motivation for the VP-internal subjects hypothesis is mentioned in
+    <i>
+     The Theory of Principles and Parameters
+    </i>
+    (Chomsky &amp; Lasnik, 1993), reprinted in (Chomsky, 1995). With VP-external subjects, [Spec, IP] is
+    <q>
+     the only position in which θ-role is not assigned within the m-command domain of a lexical head
+    </q>
+    (Chomsky, 1995, p. 60). This is an undesirable idiosyncrasy and it can be eliminated with the VP-internal subjects hypothesis. By claiming the thematic subject originates within VP, and thus within the m-command domain of the lexical head V, then the V head can assign its subject θ-role to the subject itself. And then all θ-roles are assigned by lexical heads. This is a much more elegant, and desirable, account.
+   </p>
+   <p>
+    There is also an empirical motivation for the VP-internal subjects hypothesis. Dominique Sportiche’s analysis of floating quantifiers in a 1988 paper in
+    <i>
+     Linguistic Inquiry
+    </i>
+    leads him to conclusions about constituent structure. In particular he proposes VP-internal subjects as providing an explanatory account of
+    <q>
+     floating
+    </q>
+    quantifier distribution. Let’s look at a couple examples he provides from French:
+   </p>
+   <p>
+    <q>
+     (1) Tous les garçons ont lu ce livre
+     <br/>
+     (2) Les garçons ont tous lu ce livre
+    </q>
+   </p>
+   <p>
+    These two sentences are paraphrases of each other. Traditional accounts of so-called floating quantifiers would claim that the full NP
+    <i>
+     tous les garçons
+    </i>
+    is base-generated in the [Spec, IP] position and the quantifier
+    <i>
+     tous
+    </i>
+    would then float to another position in the sentence. This proposal would mean that the
+    <i>
+     tous
+    </i>
+    would float rightward, or down the tree. Accounting for where the quantifier could float, and why, was challenging.
+   </p>
+   <p>
+    Sportiche proposes an alternative hypothesis whereby it is not the quantifier that moves but the NP itself. In this hypothesis, the variation in position of the quantifier
+    <i>
+     tous
+    </i>
+    is due to whether or not it goes along with the movement
+    <i>
+     les garçons
+    </i>
+    undergoes. He posits a VP-internal subject structure, which would mean (1) and (2) have a D-structure of the form (diagrams largely adopted from (Haegeman, 1994, pp. 354-355)):
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 5
+   </p>
+   <p>
+    (1) would then take the S-structure:
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 6
+   </p>
+   <p>
+    And (2) would take the S-structure:
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 7
+   </p>
+   <p>
+    In this explanation, there is NP-movement, not Q-movement (quantifier movement). In (1),
+    <i>
+     les garçons
+    </i>
+    takes the quantifier with it when it moves, whereas in (2) the quantifier stays behind and modifies the NP-trace. This accounts for the location of the quantifier. In S-structure, in French at least, there is flexibility over whether the quantifier moves with the NP or whether it remains and modifies the trace. Thus, the distribution of so-called floating quantifiers can be explained with VP-internal subjects (Figure 2). Furthermore, this explanation leads to the conclusion that there is no Q-float at all! Instead, there is NP movement and variability in whether the quantifier tags along on the movement.
+   </p>
+   <p>
+    Sportiche discusses an alternative account of so-called floating quantifiers that claims they are adverbs. Drawing on previous work by Jackendoff (1972), he restricts his analysis to three sets of adverbs: sentential adverbs, manner adverbs and subject-oriented adverbs. His analysis shows that quantifiers are not like sentential or manner adverbs. In contrast, assimilating quantifiers to the set of subject-oriented adverbs may lead to a descriptively adequate account. But, crucially, it is not explanatory. The VP-internal subjects hypothesis, however, leads to a descriptively adequate account
+    <i>
+     and
+    </i>
+    offers explanation.
+   </p>
+   <p>
+    The VP-internal subjects hypothesis offers explanation because the distribution follows from two main parts. First, Qs can appear in NP-initial position. This follows from a principle Sportiche mentions, the
+    <i>
+     Adjunct Projection Principle
+    </i>
+    , which he defines thusly:
+   </p>
+   <p>
+    <q>
+     If some semantic type X "modifies" some semantic type Y, and X and Y are syntactically realized as
+     <i>
+      a
+     </i>
+     and
+     <i>
+      b
+     </i>
+     ,
+     <i>
+      a
+     </i>
+     is projected as adjacent either to
+     <i>
+      b
+     </i>
+     or to the head of
+     <i>
+      b
+     </i>
+    </q>
+    (1988, p. 429).
+   </p>
+   <p>
+    By claiming
+    <q>
+     modifiers
+    </q>
+    are adjacent to what they
+    <q>
+     modify,
+    </q>
+    this principle is basically saying quantifiers can appear in NP-initial position. Second, subjects are base-generated inside VP and then move to the [Spec, IP] position (i.e. the VP-internal subjects hypothesis). With these two understandings, the distribution of the quantifiers follows. If Qs can be NP-initial and NPs start inside VP and then move, then it follows that the Qs can be anywhere the NPs are or have been. Where the Qs actually are at S-structure ends up being a factor of whether the Q moves with the NP or remains behind and modifies the NP-trace. The adverbial account fails to explain the nature of the distribution of Qs. The constituent structure in Figure 2 (VP-internal subjects), and the ability of Qs to appear NP-initially, does offer an explanatory account for Q distribution. It means Qs do not float, they simply appear NP initially. It is the movement of the NP that explains the distribution of the Qs.
+   </p>
+   <p>
+    A point should be made about the relation of the S-structure NP (i.e. NPˆ) and Q, namely that the relation is not free. In fact, Sportiche (1988) says it seems to obey two conditions of antecedent-anaphor relations. First, Q must be c-commanded by the S-structure NP. This is seen in the following two examples, from Sportiche (1988):
+   </p>
+   <p>
+   </p>
+   <p>
+    (3)
+    <br/>
+    <q>
+     a. L’auteur   de tous ces     livres a   vu   ce  film.
+     <br/>
+     the-author of   all     these   books has seen this movie.
+     <br/>
+     b. *L’auteur de ces livres a tous vu ce film.
+    </q>
+   </p>
+   <p>
+    In (3a),
+    <i>
+     tous
+    </i>
+    directly modifies
+    <i>
+     ces livres
+    </i>
+    . In (3b), it is in a position that is not c-commanded by its NP antecedent. Thus, it is ungrammatical.
+   </p>
+   <p>
+    A second condition on relations between Q and its NP is locality, as seen in the ungrammaticality of the following example:
+   </p>
+   <p>
+    (4) *Les enfants  l’ont         	persuadé     [de        tous acheter  ce   livre].
+    <br/>
+    the children him-have 	persuaded   Comp   all    buy       this book
+   </p>
+   <p>
+    The
+    <i>
+     tous
+    </i>
+    in (4) is not in the same clause as the NP
+    <i>
+     les enfants
+    </i>
+    and the sentence is ungrammatical.
+   </p>
+   <p>
+    An appeal of the VP-internal subjects hypothesis put forward in Sportiche’s paper is that these two conditions, (3) and (4), follow from it. It is an illusion that there is an antecedent-anaphor relation between Q and NPˆ directly. VP-internal subjects entails NP movement, and that is where the antecedent-anaphor relationship comes from. As Sportiche says,
+    <q>
+     because Q is adjacent to NP*, the illusion is created that antecedent-anaphor properties hold of the pair NPˆ/Q
+    </q>
+    (1988, p. 433). Instead, Q modifies NP*, which itself is the one that has an antecedent-anaphor relation with NPˆ.
+   </p>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Figure 8
+   </p>
+   <p>
+    Figure 8 visually represents the antecedent-anaphor relation between NP* (the trace) and NPˆ. Q modifies the NP it is adjacent to, not necessarily the S-structure NP.
+   </p>
+   <p>
+    Sportiche (1988) tries to extend his proposed analysis to English, which presents some problems. One of those is that English has a much richer auxiliary system which provides many potential positions for Q – NP*.  Furthermore, while the first (leftmost) position is consistently agreed to be grammatical, the other positions show much variation in grammaticality judgments by native speakers. He gives the following example:
+   </p>
+   <p>
+    <q>
+     (5) The carpets#willˆhaveˆbeenˆbeingˆdusted for two hours
+    </q>
+    .
+   </p>
+   <p>
+    In (5), the Q is consistently agreed by native speakers to be allowed in the first ˆ position. The other positions, however, are not regularly agreed upon. Nevertheless, there is no position that there is agreement can never get a Q. Sportiche concludes that this means he’s on the right track.
+   </p>
+   <p>
+    Another problem is that English, unlike French, allows quantifiers in the Pre-Infl position in tensed clauses. So, in [The children all will leave], the Q
+    <i>
+     all
+    </i>
+    precedes the INFL
+    <i>
+     will
+    </i>
+    . This is allowed in English but not in French.
+   </p>
+   <p>
+    Finally, there are issues with Qs modifying NP-traces, the most problematic appearing in passive constructions. The raising in passives would be expected to leave a trace, a trace that should be able to be modified by a Q. But bare Qs in postverbal position are excluded, e.g. in *
+    <i>
+     The children were seen all
+    </i>
+    while
+    <i>
+     All the children were seen
+    </i>
+    is ok. If passive raising leaves an NP-trace, then the Q would be expected to be able to modify the trace. But in this example in English, it cannot.
+   </p>
+   <p>
+    While there are problems with the extension of Sportiche’s proposed VP-internal subjects constituent structure to English, it offers an explanatory account of the distribution of Q that the VP-external subjects hypothesis does not.
+   </p>
+   <div>
+    <div class="head_1">
+     PRO and Problems
+    </div>
+    <p>
+     As discussed above, VP-external subjects cannot be assigned their θ-role by a V head because they are not in the m-command domain of the V head. Thus, it was hypothesized that the V’’ projection could assign the θ-role to the subject while the V head would still assign a θ-role to the object. But if PRO requires governors to be restricted to heads, as has been claimed, then the V’’ projection would not be allowed to assign a theta role. This would reject the VP-external subjects hypothesis but still allow the VP-internal.
+    </p>
+    <p>
+     So, the VP-external subjects hypothesis runs into a problem with PRO. It would be hoped that a shift to VP-internal subjects would resolve problems with PRO. In some sense it does, in that θ-roles are assigned solely by heads. Unfortunately, limiting the class of θ-role assigners to heads does not itself prevent PRO from being ungoverned. The problem is more intractable than this alternative constituent structure alone could resolve.
+    </p>
+    <p>
+     The claim about PRO needing to be ungoverned presents a host of problems. First, a word about PRO. PRO is a non-overt argument. It is hypothesized because of examples like [John tried to eat grapes], where eat has two θ-roles to assign and only one overt argument to which to assign a θ-role. Thus, it is hypothesized that there is a non-overt argument, PRO, that receives the other θ-role and makes the sentence grammatical. The structure would then be [John tried PRO to eat grapes].
+    </p>
+    <p>
+     The reason PRO is argued to need to be ungoverned is due to the problem of overgeneration. Now that we have hypothesized a non-overt argument, what is to stop it from appearing all over the place? That is, we need to rule out ungrammatical sentences like *[PRO likes grapes] or *[PRO saw PRO with PRO yesterday]. Thus it is claimed that PRO must be ungoverned. But that would rule out [John tried PRO to eat grapes], right? Well, to allow this grammatical sentence it is stipulated that infinitival I, i.e.
+     <i>
+      to
+     </i>
+     of
+     <i>
+      to eat grapes
+     </i>
+     , is not a governor. But what about I’? Wouldn’t I’ govern PRO? It would. And so, it is also stipulated that only heads can be governors. But then, if PRO is in [Spec, IP], C could still govern PRO, since I’’ projections have been claimed to be transparent to government (because of ECM, exceptional case-marking, as seen in examples like [John believes him to be happy]). This is getting messy. The more important question for this paper is, are these problems resolved with a VP-internal subjects constituent structure? The answer is no; it’s different but still problematic. PRO would still be receiving its θ-role through government, when PRO is not allowed to be governed. This prompts the hypothesis that θ-role assignment takes place at a different time from the assessment of the ungovernability of PRO.
+    </p>
+    <p>
+     If we split θ-role assignment and assessments of governed status into two different phases, then there are a couple possible solutions. A first possibility, PRO could get a θ-role through government, but then the θ-role assigner moves away, leaving no trace and thus no government relation. In this scenario, PRO has received a θ-role and is no longer governed by the θ-role assigner. This would prevent the θ-role assigner from violating the constraint that PRO cannot be governed. PRO would still have to be in a position where nothing else governs it. A second possibility is that PRO could receive a θ-role through government and then itself move to some position that is not governed. These are two possible work-arounds for the problem that PRO needs a θ-role, which it can only get through government, and that PRO cannot be governed.
+    </p>
+    <p>
+     The VP-internal subjects hypothesis does make one aspect of this scenario easier. With VP-internal subjects, PRO would get its θ-role and then move from [Spec, VP] up to [Spec, IP]. The first condition, PRO getting a theta role, is met. The second, PRO needing to be ungoverned, is
+     <i>
+      not
+     </i>
+     broken by the θ-role assigner. Another requirement remaining is that PRO be in an ungoverned position, i.e. not governed by any constituents at all. This would have to be done somehow such that any and all government access to that position would be blocked by one or more constituents that themselves did not govern the position. Thus, [Spec, IP] would have to be theorized to be an ungoverned position. This cannot be the case, however, because other NPs need to be governed in [Spec, IP], e.g.
+     <i>
+      John
+     </i>
+     of [John ate the grapes]. One possibility could be that IP adjuncts are ungoverned. In this scenario, PRO would first raise from [Spec, VP] to [Spec, IP] and then raise again from [Spec, IP] to IP adjunct (see figure below).
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     Figure 9
+    </p>
+    <p>
+     In this example, PRO would be in an IP adjunct position, not [Spec, IP].
+    </p>
+    <p>
+     It may be possible to stipulate IP adjuncts as ungoverned positions. This does, however, contradict the transparency of IPs to government as put forward by ECM. This issue will not be explored further in this paper.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     CONCLUSION
+    </div>
+    <p>
+     Initially it was unclear which hypothesis, VP-external or VP-internal subjects, better represented constituent structure. An analysis of so-called floating quantifiers showed the Qs distribution to be better accounted for with a VP-internal subjects constituent structure. The VP-internal subjects hypothesis is also theoretically motivated because it eliminates an idiosyncrasy, reducing all θ-role assignment to being within the m-command domain of a lexical head. In addition, the issues associated with the governability of PRO seem to be ameliorated, though not resolved, by adopting the VP-internal instead of the VP-external subjects hypothesis. In conclusion, it seems the VP-internal subjects hypothesis is preferable to the VP-external subjects hypothesis.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N10233">
+     <li id="N10234">
+      Chomsky, N. (1995). The minimalist program. Cambridge, Mass.: The MIT Press.
+     </li>
+     <li id="N10236">
+      Chomsky, N., &amp; Lasnik, H. (1993). The Theory of Principles and Parameters. In J. Jacobs, A. von Stechow, W. Sternefeld &amp; T. Vennemann (Eds.), SYNTAX: EIN INTERNATIONALES HANDBUCH ZEITGENOSSISCHER FORSCHUNG. AN INTERNATIONAL HANDBOOK OF CONTEMPORARY RESEARCH, (Vol. 1. HALBBAND /VOL. 1, pp. 506-569). Berlin, Federal Republic of Germany: Walter de Gruyter.
+     </li>
+     <li id="N10238">
+      Haegeman, L. (1994). Introduction to Government &amp; Binding Theory (Second ed.). Malden: Blackwell Publishing.
+     </li>
+     <li id="N1023A">
+      Jackendoff, R. (1972). Semantic interpretation in generative grammar. Cambridge, Mass.,: MIT Press.
+     </li>
+     <li id="N1023C">
+      Sportiche, D. (1988). A Theory of Floating Quantifiers and Its Corollaries for Constituent Structure. Linguistic Inquiry, 19(3), 425-449.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

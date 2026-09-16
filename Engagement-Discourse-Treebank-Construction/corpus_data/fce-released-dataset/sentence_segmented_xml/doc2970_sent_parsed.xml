@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       I am glad to
+       <ns type="FV">
+        <i>
+         helping
+        </i>
+       </ns>
+       you
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the organisation of the international student conference.
+      </p>
+      <p>
+       The group has been booked into the Palace Hotel, and the best way to get from there to the conference is by tube
+       <ns type="RP">
+        <i>
+         , the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         building
+        </i>
+       </ns>
+       of the conference is then five minutes by
+       <ns type="S">
+        <i>
+         footh
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       At the
+       <ns type="MD">
+        <i>
+         <ns type="UP">
+          <i>
+           end-of-conference
+          </i>
+         </ns>
+        </i>
+       </ns>
+       there is a party, where we can eat something, dance and speak to each other about the conference.
+      </p>
+      <p>
+       For the party I suggest you
+       <ns type="FV">
+        <i>
+         to wear
+        </i>
+       </ns>
+       classic clothes; maybe something black and not red or pink. I am going to wear
+       <ns type="W">
+        <i>
+         black classic
+        </i>
+       </ns>
+       trousers and a white
+       <ns type="S">
+        <i>
+         jorsey
+        </i>
+       </ns>
+       - it
+       <ns type="RV">
+        <i>
+         can
+        </i>
+       </ns>
+       be that this information
+       <ns type="AGV">
+        <i>
+         give
+        </i>
+       </ns>
+       you some idea too.
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       On the last day we are going to have about three
+       <ns type="MP">
+        <i>
+         hours
+        </i>
+       </ns>
+       free
+       <ns type="FN">
+        <i>
+         times
+        </i>
+       </ns>
+       . What do you think
+       <ns type="R">
+        <i>
+         if we will
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         go
+        </i>
+       </ns>
+       to
+       <ns type="UV">
+        <i>
+         visit
+        </i>
+       </ns>
+       the Arts Museum?
+       <ns type="SX">
+        <i>
+         Of
+        </i>
+       </ns>
+       <ns type="UC">
+        <i>
+         if
+        </i>
+       </ns>
+       we
+       <ns type="RV">
+        <i>
+         will
+        </i>
+       </ns>
+       go to hear a classic concert near the conference
+       <ns type="UP">
+        <i>
+         building's
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ?
+        </i>
+       </ns>
+      </p>
+      <p>
+       I hope that I have been able to give you some help.
+       <ns type="RP">
+        <i>
+         and
+        </i>
+       </ns>
+       I am looking forward to seeing you at the conference.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am glad to helping you for the organisation of the international student conference.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The group has been booked into the Palace Hotel, and the best way to get from there to the conference is by tube, the building of the conference is then five minutes by footh.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        At the end-of-conference there is a party, where we can eat something, dance and speak to each other about the conference.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For the party I suggest you to wear classic clothes; maybe something black and not red or pink.
+       </s>
+       <s pid="5" sid="2">
+        I am going to wear black classic trousers and a white jorsey - it can be that this information give you some idea too..
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        On the last day we are going to have about three hours free times.
+       </s>
+       <s pid="6" sid="2">
+        What do you think if we will go to visit the Arts Museum?
+       </s>
+       <s pid="6" sid="3">
+        Of if we will go to hear a classic concert near the conference building's?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I hope that I have been able to give you some help.
+       </s>
+       <s pid="7" sid="2">
+        and I am looking forward to seeing you at the conference.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Morgan,
+      </p>
+      <p>
+       I am writing a report,
+       <ns type="MT">
+       </ns>
+       which
+       <ns type="MA">
+       </ns>
+       will describe
+       <ns type="MT">
+       </ns>
+       you the most important building
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       my town.
+      </p>
+      <p>
+       The most important building of Biasco is the ,,Casa Cavalier Pellanda". It is
+       <ns type="RD">
+        <i>
+         an
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         old big
+        </i>
+       </ns>
+       house of a rich lord in the middle of the town.
+       <ns type="RT">
+        <i>
+         Into
+        </i>
+       </ns>
+       this house there is a big museum, where you
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         know
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         past
+        </i>
+       </ns>
+       of Biasco.
+      </p>
+      <p>
+       Under the museum there is a big dark place, where the wine is produced. Your American students could learn how the ,,Meriot ticinese" is produced and why
+       <ns type="W">
+        <i>
+         is it
+        </i>
+       </ns>
+       so famous in Tiano. I think that these suggestions could interest your
+       <ns type="FN">
+        <i>
+         student
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         <ns type="RY">
+          <i>
+           then
+          </i>
+         </ns>
+        </i>
+       </ns>
+       Biasco, with its ,,Casa Cavalier Pellanda", is the middle
+       <ns type="FN">
+        <i>
+         points
+        </i>
+       </ns>
+       of two
+       <ns type="DN">
+        tailes
+       </ns>
+       - Leventina and Blenio - and the middle
+       <ns type="FN">
+        <i>
+         points
+        </i>
+       </ns>
+       of two similar but also different cultures too.
+      </p>
+      <p>
+       I hope that
+       <ns type="CD">
+        <i>
+         these
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       will
+       <ns type="RV">
+        <i>
+         bring
+        </i>
+       </ns>
+       you to visit Biasco and its ,,house".
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Morgan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing a report,  which  will describe  you the most important building of my town.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The most important building of Biasco is the ,,Casa Cavalier Pellanda".
+       </s>
+       <s pid="3" sid="2">
+        It is an old big house of a rich lord in the middle of the town.
+       </s>
+       <s pid="3" sid="3">
+        Into this house there is a big museum, where you could know  the past of Biasco.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Under the museum there is a big dark place, where the wine is produced.
+       </s>
+       <s pid="4" sid="2">
+        Your American students could learn how the ,,Meriot ticinese" is produced and why is it so famous in Tiano.
+       </s>
+       <s pid="4" sid="3">
+        I think that these suggestions could interest your student then Biasco, with its ,,Casa Cavalier Pellanda", is the middle points of two tailes - Leventina and Blenio - and the middle points of two similar but also different cultures too.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope that these informations will bring you to visit Biasco and its ,,house".
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

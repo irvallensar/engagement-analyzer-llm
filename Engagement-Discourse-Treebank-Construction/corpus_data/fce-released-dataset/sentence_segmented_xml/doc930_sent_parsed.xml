@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Saturday 17th June
+      </p>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I am writing to complain about your musical show. I am not really satisfied
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       it. Lots of information in your advertisement
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       not correct. Some problems of organisation seem to
+       <ns type="RV">
+        <i>
+         be
+        </i>
+       </ns>
+       appeared.
+      </p>
+      <p>
+       Firstly, I hoped to have a relaxing
+       <ns type="RN">
+        <i>
+         entertainment
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       your
+       <ns type="UJ">
+        <i>
+         musical
+        </i>
+       </ns>
+       show but
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         was not the case
+        </i>
+       </ns>
+       . In your advertisement you announced the actors were Danny Brook and Tina Truelove. They were replaced by less famous actors. Unfortunately, the musical
+       <ns type="UN">
+        <i>
+         show
+        </i>
+       </ns>
+       was
+       <ns type="RJ">
+        <i>
+         annoying
+        </i>
+       </ns>
+       . I was terribly disappointed. Moreover, it started at 20.15 instead of 19.30 as you had written
+       <ns type="U">
+        <i>
+         on it
+        </i>
+       </ns>
+       . I had to wait for 45 minutes
+       <ns type="UT">
+        <i>
+         without
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         nothing doing
+        </i>
+       </ns>
+       . I
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         informed
+        </i>
+       </ns>
+       us
+       <ns type="RY">
+        <i>
+         before
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Secondly,
+       <ns type="UY">
+        <i>
+         furthermore
+        </i>
+       </ns>
+       I had to pay full price whereas you
+       <ns type="RV">
+        <i>
+         granted
+        </i>
+       </ns>
+       us some discount prices. I was very interested in visiting your theatre restaurant after the show but it seemed to me it was closed. Your assistant prevented us from visiting it because it was too late and he was so busy.
+      </p>
+      <p>
+       Finally, you thought that you could
+       <ns type="RV">
+        <i>
+         grant
+        </i>
+       </ns>
+       us a perfect evening but
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was not true. Consequently, I would like you
+       <ns type="FV">
+        <i>
+         refund
+        </i>
+       </ns>
+       my
+       <ns type="RN">
+        <i>
+         bill
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Saturday 17th June
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am writing to complain about your musical show.
+       </s>
+       <s pid="3" sid="2">
+        I am not really satisfied about it.
+       </s>
+       <s pid="3" sid="3">
+        Lots of information in your advertisement are not correct.
+       </s>
+       <s pid="3" sid="4">
+        Some problems of organisation seem to be appeared.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, I hoped to have a relaxing entertainment with your musical show but it was not the case.
+       </s>
+       <s pid="4" sid="2">
+        In your advertisement you announced the actors were Danny Brook and Tina Truelove.
+       </s>
+       <s pid="4" sid="3">
+        They were replaced by less famous actors.
+       </s>
+       <s pid="4" sid="4">
+        Unfortunately, the musical show was annoying.
+       </s>
+       <s pid="4" sid="5">
+        I was terribly disappointed.
+       </s>
+       <s pid="4" sid="6">
+        Moreover, it started at 20.15 instead of 19.30 as you had written on it.
+       </s>
+       <s pid="4" sid="7">
+        I had to wait for 45 minutes without nothing doing.
+       </s>
+       <s pid="4" sid="8">
+        I would you informed us before.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, furthermore I had to pay full price whereas you granted us some discount prices.
+       </s>
+       <s pid="5" sid="2">
+        I was very interested in visiting your theatre restaurant after the show but it seemed to me it was closed.
+       </s>
+       <s pid="5" sid="3">
+        Your assistant prevented us from visiting it because it was too late and he was so busy.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, you thought that you could grant us a perfect evening but it was not true.
+       </s>
+       <s pid="6" sid="2">
+        Consequently, I would like you refund my bill.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Nowadays, we need modern technology to improve
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       daily life. In my opinion, science and technology will have consequences on my
+       <ns type="CN">
+        <i>
+         behaviours
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all, as you
+       <ns type="UY">
+        <i>
+         also
+        </i>
+       </ns>
+       know, lots of technology
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         boosted
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         since
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       few years. For example, without using
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       I could not
+       <ns type="RV">
+        <i>
+         put
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         me
+        </i>
+       </ns>
+       through to foreign people. This interactive
+       <ns type="RN">
+        <i>
+         way
+        </i>
+       </ns>
+       of communication allows me to reach everybody everywhere without restrictions. I feel free as
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       eagle. I can take advantage of
+       <ns type="RQ">
+        <i>
+         those
+        </i>
+       </ns>
+       technologies as mobile
+       <ns type="AGN">
+        <i>
+         phone
+        </i>
+       </ns>
+       , lap top
+       <ns type="AGN">
+        <i>
+         computer
+        </i>
+       </ns>
+       ,
+       <ns type="AGN">
+        <i>
+         television
+        </i>
+       </ns>
+       , to have
+       <ns type="FN">
+        <i>
+         contacts
+        </i>
+       </ns>
+       with different cultures.
+      </p>
+      <p>
+       Secondly, technology has changed my daily life because it allows me to do
+       <ns type="CQ">
+        <i>
+         much
+        </i>
+       </ns>
+       more things than before. Unfortunately, it could
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       an
+       <ns type="DN">
+        <i>
+         inconvenient
+        </i>
+       </ns>
+       for me because of pollution from cars
+       <ns type="R">
+        <i>
+         ,
+        </i>
+       </ns>
+       factories. I can't go to the
+       <ns type="RP">
+        <i>
+         towncentre
+        </i>
+       </ns>
+       of
+       <ns type="MD">
+       </ns>
+       big city. There are links between the
+       <ns type="MN">
+        <i>
+         greenhouse
+        </i>
+       </ns>
+       , technology and me.
+      </p>
+      <p>
+       To conclude, we must not forget that science and technology is a tool
+       <ns type="MV">
+       </ns>
+       <ns type="MA">
+       </ns>
+       to live better. Be
+       <ns type="DJ">
+        <i>
+         carefull
+        </i>
+       </ns>
+       , my own technology can kill me. I can use it but
+       <ns type="R">
+        <i>
+         with some
+        </i>
+       </ns>
+       limits.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Nowadays, we need modern technology to improve on daily life.
+       </s>
+       <s pid="1" sid="2">
+        In my opinion, science and technology will have consequences on my behaviours.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all, as you also know, lots of technology have boosted since  few years.
+       </s>
+       <s pid="2" sid="2">
+        For example, without using  internet I could not put me through to foreign people.
+       </s>
+       <s pid="2" sid="3">
+        This interactive way of communication allows me to reach everybody everywhere without restrictions.
+       </s>
+       <s pid="2" sid="4">
+        I feel free as a eagle.
+       </s>
+       <s pid="2" sid="5">
+        I can take advantage of those technologies as mobile phone, lap top computer, television, to have contacts with different cultures.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Secondly, technology has changed my daily life because it allows me to do much more things than before.
+       </s>
+       <s pid="3" sid="2">
+        Unfortunately, it could have an inconvenient for me because of pollution from cars, factories.
+       </s>
+       <s pid="3" sid="3">
+        I can't go to the towncentre of  big city.
+       </s>
+       <s pid="3" sid="4">
+        There are links between the greenhouse, technology and me.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        To conclude, we must not forget that science and technology is a tool   to live better.
+       </s>
+       <s pid="4" sid="2">
+        Be carefull, my own technology can kill me.
+       </s>
+       <s pid="4" sid="3">
+        I can use it but with some limits.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

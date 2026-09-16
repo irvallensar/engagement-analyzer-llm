@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     35.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan
+      </p>
+      <p>
+       I have just received your letter and I am really looking forward to going
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       this trip. Here is some information you asked for and also a few questions.
+      </p>
+      <p>
+       I would like to travel in July, as it will be summer, and the weather will be nicer.
+       <ns type="MT">
+        <i>
+         Accommodation
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       log cabins would be better for me, because they are more comfortable.
+      </p>
+      <p>
+       One of the activities I will do is tennis, but I am just a beginner, so I would like someone to teach me. The other activity will be photography, which I am very good at.
+      </p>
+      <p>
+       I am wondering if there will be anywhere for me to wash my clothes, or if I will have them washed. I would also like to know how much money I should bring with me.
+      </p>
+      <p>
+       I am waiting for your prompt reply.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+      <p>
+       Bradley Tudela.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just received your letter and I am really looking forward to going to this trip.
+       </s>
+       <s pid="2" sid="2">
+        Here is some information you asked for and also a few questions.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to travel in July, as it will be summer, and the weather will be nicer.
+       </s>
+       <s pid="3" sid="2">
+        Accommodation in log cabins would be better for me, because they are more comfortable.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        One of the activities I will do is tennis, but I am just a beginner, so I would like someone to teach me.
+       </s>
+       <s pid="4" sid="2">
+        The other activity will be photography, which I am very good at.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am wondering if there will be anywhere for me to wash my clothes, or if I will have them washed.
+       </s>
+       <s pid="5" sid="2">
+        I would also like to know how much money I should bring with me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I am waiting for your prompt reply.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Bradley Tudela.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       Many people enjoy going
+       <ns type="CN">
+        <i>
+         shoppings
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       meeting friends and mainly spending their money, but sometimes shopping can be a terrible experience.
+      </p>
+      <p>
+       The good side of this activity is that it can be
+       <ns type="R">
+        a good leisure
+       </ns>
+       , provided you are not in a hurry.
+      </p>
+      <p>
+       On the other hand, when the shops are crowded (for instance, just before Christmas), going shopping can be very stressful, as you cannot walk
+       <ns type="R">
+        freely
+       </ns>
+       and have to
+       <ns type="RV">
+        <i>
+         bear
+        </i>
+       </ns>
+       endless queues. Another problem is the shortage of trolleys in supermarkets, which is very common when they are full of people. As if
+       <ns type="FA">
+        <i>
+         these
+        </i>
+       </ns>
+       were not enough, there are always impolite assistants, who make your day even worse.
+      </p>
+      <p>
+       Summing up, going shopping can be a relaxing activity if you choose the right day, but be aware of how dangerous it can be for your patience.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Many people enjoy going shoppings meeting friends and mainly spending their money, but sometimes shopping can be a terrible experience.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The good side of this activity is that it can be a good leisure, provided you are not in a hurry.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        On the other hand, when the shops are crowded (for instance, just before Christmas), going shopping can be very stressful, as you cannot walk freely and have to bear endless queues.
+       </s>
+       <s pid="4" sid="2">
+        Another problem is the shortage of trolleys in supermarkets, which is very common when they are full of people.
+       </s>
+       <s pid="4" sid="3">
+        As if these were not enough, there are always impolite assistants, who make your day even worse.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Summing up, going shopping can be a relaxing activity if you choose the right day, but be aware of how dangerous it can be for your patience.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

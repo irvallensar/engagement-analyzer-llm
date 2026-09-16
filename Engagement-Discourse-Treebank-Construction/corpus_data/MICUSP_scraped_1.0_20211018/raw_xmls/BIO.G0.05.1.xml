@@ -1,0 +1,281 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Mn (III) TPPS4: A metallophorphryin used for tumor identification in MRI
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <p>
+    From as early as 1948, scientists have studied the potential of porphryins and metalloporphyrins in cancer detection and therapy. For reasons unknown then, these compounds had high affinities for neoplasms (tumors) when injected into mice.
+    <a class="fnref" href="#fn1" id="fnref_fn1">
+     1
+    </a>
+    In fact, porphyrin concentration was highest in and near necrotic areas (unprogrammed cell death). The potential for metalloporphyrins in tumor identification was further uncovered with the effects of paramagnetic substances on proton relaxation time of surrounding tissues.
+    <a class="fnref" href="#fn2" id="fnref_fn2">
+     2
+    </a>
+    While X-ray imaging is used for bony, dense structures, Magnetic Resonance Imaging (MRI), an application of Nuclear Magnetic Resonance, has been used with soft tissues for decades.  The magnetic moments of paramagnetic species such as MnTPPS4 significantly enhance MRI signal in the soft tissues to which it is bound, making it an optimal contrast agent.
+   </p>
+   <div>
+    <div class="head_1">
+     Synthesis
+    </div>
+    <p>
+     MnTPPS4 can be synthesized by heating meso-tetra(4-sulfonatophenyl)porphine (H2TPPS4) and manganese (II) acetate in acetic acid under reflux for 8 hours.
+     <a class="fnref" href="#fn4" id="fnref_fn4">
+      4
+     </a>
+     Air bubbling through the reflux solution oxidizes Mn(II) to Mn(III).
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The presence of MnTPPS4 and disappearance of H2TPPS4 can be confirmed with UV spectroscopy:
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1: Absorption spectra of equimolar aqueous solutions of H2TPPS4 (full line) and MnTPPS4 (dotted line)
+     <a class="fnref" href="#fn2" id="fnref_fn2">
+      2
+     </a>
+    </p>
+    <p>
+     Additionally, the absorbance maxima of Mn(III)TPPS4 occur at 465, 561, and 593 nm, while the absorbance maxima of Mn(II)TPPS4 are at 434, 572, and 612 nm.
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+    </p>
+    <p>
+     While the synthesis of MnTPPS4 has been documented since the 1960's, and it is commercially available, it is a very polar molecule and is thus often contaminated with un-identified by- product. Bockhorst and coworkers
+     <a class="fnref" href="#fn4" id="fnref_fn4">
+      4
+     </a>
+     proposed an optimized purification method: washing the product multiple times with hot
+    </p>
+    <p>
+     acetic acid, then hot ethanol, and dissolving in aqueous Na2CO3.
+    </p>
+    <p>
+     The solution is then filtered, acidified with HCl, centrifuged and dried; this procedure is done twice.  Finally, drying over KOH in a desiccator gives the desired product, a dark green, metallic solid, at 98% purity.
+    </p>
+    <p>
+     Tetraphenylporphine sulfonate, TPPS4 can be synthesized by heating meso-tetraphenylporphine with concentrated sulfuric acid over a steam bath for 4h.
+     <a class="fnref" href="#fn5" id="fnref_fn5">
+      5
+     </a>
+     Meso-tetraphenylporphine can be prepared by refluxing pyrrole and benzaldehyde in propionic acid.
+     <a class="fnref" href="#fn6" id="fnref_fn6">
+      6
+     </a>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Structure
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2: Mn(III)-tetrakis(4-sulfonatophenyl)porphin (MnTPPS4) Mol. Formula: MnC44H24N4O12S4ClNa4, MW=1111.3 g/mol *
+    </p>
+    <p>
+     *the ligands on the product from the synthesis described are SO3H instead of SO3 - Na+
+    </p>
+    <p>
+     Tetraphenylsulfonyl is a hydrophilic water-soluble porphryin with a highly developed π-conjugation system.  Its Mn(III) complex has been extensively studied as an MRI contrast agent. Mn(III) is a high spin d4 transition metal ion that has four unpaired electrons; it is thus paramagnetic. The geometry of the molecule is square planar, with the Mn(III) chelated by the four nitrogen atoms of a porphine that has four attached sulfonyl groups.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Discussion
+    </div>
+    <p>
+     Nuclear Magnetic Resonance is the observation of the frequency at which magnetic nuclei in molecules come into resonance with an externally applied electromagnetic field. The signal depends on a variety of factors, including field strength and
+    </p>
+    <p>
+     concentration. It follows that Magnetic Resonance Imaging is essentially a measure of proton density. When the magnetic field varies linearly across an object, the signal intensity is proportional to proton concentration.  Tumor identification is possible because of differences in relaxation rates of bulk water of normal tissues and tumors.
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+     However, the difference is usually no more than 2-3 fold. T1, longitudinal relaxation time, is the taken by a proton to align with the external magnetic field.  As referenced by Runge and coworkers,
+     <a class="fnref" href="#fn7" id="fnref_fn7">
+      7
+     </a>
+     longitudinal relation rate (1/T1) can be described by the following equation:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     where ε is the viscosity of the solvent, k is the Boltzman constant, N is the concentration of ions,  T is the absolute temperature, and γ is the gyromagnetic ratio for the hydrogen nucleus.  The variable of interest is μ, the effective magnetic moment. As the equation shows, spin lattice rate (another name for 1/T1) is directly proportional to the square of μ. Paramagnetic species alter the local magnetic field to enhance proton relaxation (spin-lattice T1 and spin-spin relaxation T2 rates) of neighboring nuclei. T2, transverse magnetization time, is also tissue specific; it depends on the exchange of energy and interaction of spins with neighboring nuclei.  In essence, T2 measures decay of magnetization perpendicular to the main magnetic field. Through a complex set of equations, it can be determined that paramagnetic species also shortens T2.
+     <a class="fnref" href="#fn7" id="fnref_fn7">
+      7
+     </a>
+     This is unfavorable, as a decrease in T2 weakens signal.
+     <a class="fnref" href="#fn7" id="fnref_fn7">
+      7
+     </a>
+     An optimal contrast agent would therefore reduce T1, increasing spin lattice relaxation rate, without significantly compromising T2.
+    </p>
+    <p>
+     In the presence of an externally applied magnetic field, the magnetic moments of MnTPPS4 that were previously randomly aligned become preferentially aligned with the field.
+     <a class="fnref" href="#fn7" id="fnref_fn7">
+      7
+     </a>
+     This local magnetic field produced by the paramagnetic species shortens T1 and T2 of surrounding protons in the tumor. This paramagnetic effect decreases with distance:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     where r is the mean distance from paramagnetic center to the proton.
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+    </p>
+    <p>
+     Thus, an effective paramagnetic contrast agent should include a high spin, metal ion with a large magnetic moment and easily accessible axial coordination sites. Chen and coworkers
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+     demonstrated that spin lattice relaxation rate (1/T1) increases linearly with concentration of various metallo-TPPS4 complexes.  Of these, the slope is steepest with Mn(III) compared to various other ions and metallo-TPPS4 complexes (Figure 2).  It is the most effective in enhancing proton relaxation due to its four unpaired electrons and ability to coordinate axial ligands. While Mn(II) would have five unpaired electrons and theoretically induce an even shorter T1, Mn(II)TPPS4 is not as stable in solution as Mn(III)TPPS4  because it is readily oxidized.
+    </p>
+    <p>
+     A variety of paramagnetic species have been considered for use as MRI contrast agents - both free and chelated metal ions.  Aside from enhancing relaxation rates as determined in vitro, toxicity, stability in human plasma and at various pH, clearance from blood, and tissue distribution must also be taken into account when examining an MRI contrast agent.  NMR contrast media can also be classified by method of uptake into body: oral, intravenous, inhalational. Furthermore, blood transport bio distribution and relaxation efficiency are related to differences in binding and aggregation properties of the metalloporphyrin that
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2: Spin lattice relaxation rate (l/Tr) of water as a function of concentration of metal ion or metallo-TPPS4 complex. Lines are least square fits: (___) Mn,  (- - -) Fe, (__  __) Cu. Symbols are for experimental data:(•) Mn(III) TPPS, (o) Mn(OAc) 3, () MnC12, () Fe(III)TPPS4, () FeCl3, () FeEDTA, () Cu(II)TPPS4, () CuC12 or CuSO4, () Cu(II)TPPS4-CH3.
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+    </p>
+    <p>
+     are dose dependent. For example, Fe(III) transforms into low spin dimers at physiological pH. It also aggregates on the surface of bovine serum albumin (mimicking human plasma) 5-7 times more than MnTPPS4; antiferromagnetic coupling between metals ions in the aggregates disables proton relaxation enhancement ability.
+     <a class="fnref" href="#fn8" id="fnref_fn8">
+      8
+     </a>
+     Also, the dose of metal ions needed for clinical efficiency as a contrast agent is very toxic; chelating the ion significantly lowers toxicity.
+    </p>
+    <p>
+     Perhaps the most fundamental quality of any tumor identification/contrast agent is the ability to localize in tumors. This selective retention of porphyrins in tumors makes it of special interest in deep tumor detection. Figge and coworkers found that when porphryin was injected into tumor-bearing mice, most of it migrated to the tumor within 24-48 hours.
+     <a class="fnref" href="#fn9" id="fnref_fn9">
+      9
+     </a>
+     Porphyrin localization was directly observable by the red fluorescence in the tumors that lasted 10-14 days.
+     <a class="fnref" href="#fn9" id="fnref_fn9">
+      9
+     </a>
+     It has been suggested that porphyrin aggregation is involved with tumor localization.10 Fiel and coworker also found that porphyrins tend to be localized mostly in soluble and stromal fractions (connective tissue).
+     <a class="fnref" href="#fn10" id="fnref_fn10">
+      10
+     </a>
+     Mn(III)TPPS4 accumulated in tumors at ratios as high as 1.0:0.3:0.01 (tumor:liver:muscle). In analyzing subcelleular distribution of Mn(III)TPPS4, it was found that accumulation occurs mostly in the extracellular compartments of the tumor, possibly due to mechanism of localization that depends on volume; interstitial space in tumors is large enough to favor retention of large sized porphryins.  Finally, Figge and coworkers also noted that while hydrophobic porphyrins would be transported across cell membranes more easily, charged porphyrins (like Mn(III)TPPS4) would remain extracellular.
+     <a class="fnref" href="#fn10" id="fnref_fn10">
+      10
+     </a>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Conclusion
+    </div>
+    <p>
+     Mn(III)TPPS4 has been extensively studied for its use as an MRI contrast agent.  Its paramagnetism gives it the ability to enhance proton relaxation time and enhance MRI signal, and its porphryin component is useful in tumor detection in that it is selectively retained in those tissues. Of various metallo-TPPS4 compounds studied, it is the most stable in vivo and thus an optimal contrast agent for detection of deep tumors.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 Figge, F.; Weiland, G.; Manangiello, L. Proc. Soc. Exptl. Biol. Med. 1948, 68, 640-641.
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2 Runge, V.M.; Clanton, J.A.; Lukehart, C.M.; Partain, C.L.; James, A.E. Jr. AJR. 1983, 141, 1209-1215.
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3 Chen, C; Cohen, J.S.; Myers, C.E.; Sohn, M. FEBS Lett. 1984, 168, 70-74.
+    </div>
+    <div id="fn4">
+     <a href="#fnref_fn4">
+      4.
+     </a>
+     4 Bockhorst, K.; Hoehn-Beriage, M. Tetrahedron. 1994, 50, 8657.
+    </div>
+    <div id="fn5">
+     <a href="#fnref_fn5">
+      5.
+     </a>
+     5 Srivastava, T.S.; Tsutsui, M. J. Org. Chem. 1973, 38, 2103.
+    </div>
+    <div id="fn6">
+     <a href="#fnref_fn6">
+      6.
+     </a>
+     6 Adler, A.D.; Longo, F.R.; Finarelli, J.D.; Goldmacher, J.; Assour, J.; Korsakoff, L. J. Org. Chem. 1967, 32, 476.
+    </div>
+    <div id="fn7">
+     <a href="#fnref_fn7">
+      7.
+     </a>
+     7 Runge, V.M.; Clanton, J.A.; Lukehart, C.M.; Partain, C.L.; James, A.E. Jr. AJR. 1983, 141, 1209-1215.
+    </div>
+    <div id="fn8">
+     <a href="#fnref_fn8">
+      8.
+     </a>
+     8 Yushmanov, V.E.; Tominaga, T.T.; Borissevitch, I.E.; Imasato, H.; Tabak, M. MRI. 1996, 14, 255-261.
+    </div>
+    <div id="fn9">
+     <a href="#fnref_fn9">
+      9.
+     </a>
+     9 Kessel, D. Biochem. Pharm. 1984, 33, 1389-1393.
+    </div>
+    <div id="fn10">
+     <a href="#fnref_fn10">
+      10.
+     </a>
+     10 Fiel R.J.; Button, T.M.; Gilani, S.; Mark, E.H.; Musser, D.A. Cancer Letters. 1988, 40, 23-32.
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

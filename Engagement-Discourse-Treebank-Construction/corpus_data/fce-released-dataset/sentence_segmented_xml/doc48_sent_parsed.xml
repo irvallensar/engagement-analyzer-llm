@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Thai
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Helen Ryan
+      </p>
+      <p>
+       Thank you very much for the prize
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       camp California in America.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       the time that I would like to travel
+       <ns type="MP">
+       </ns>
+       <ns type="MA">
+       </ns>
+       must be
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July only. This is because my
+       <ns type="FN">
+        <i>
+         A-levels
+        </i>
+       </ns>
+       exams
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       coming up so I really need
+       <ns type="FN">
+        <i>
+         times
+        </i>
+       </ns>
+       to revise, and July is the only
+       <ns type="CL">
+        <i>
+         month and time
+        </i>
+       </ns>
+       that I am free.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         An
+        </i>
+       </ns>
+       accommodation, I
+       <ns type="MV">
+       </ns>
+       prefer to stay in a tent. This is because it is my first
+       <ns type="RN">
+        <i>
+         time
+        </i>
+       </ns>
+       to see
+       <ns type="RD">
+        <i>
+         an
+        </i>
+       </ns>
+       outside world by myself so I need to gather up new experiences. I have never ever stayed in a tent before but some of the people I know said that it is fun and much more
+       <ns type="SX">
+        <i>
+         exiting
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       As I am a person who
+       <ns type="RV">
+        <i>
+         is love
+        </i>
+       </ns>
+       <ns type="UC">
+        <i>
+         and
+        </i>
+       </ns>
+       doing activities,
+       <ns type="UC">
+        <i>
+         so
+        </i>
+       </ns>
+       I would like to choose to do sailing and photography.
+       <ns type="UY">
+        <i>
+         Once
+        </i>
+       </ns>
+       I used to take a photography course at my school and my teacher taught me well about taking
+       <ns type="FN">
+        <i>
+         photo
+        </i>
+       </ns>
+       . Also I
+       <ns type="TV">
+        <i>
+         tried
+        </i>
+       </ns>
+       <ns type="UY">
+        <i>
+         how
+        </i>
+       </ns>
+       to sail before, but I am not
+       <ns type="RY">
+        perfectly
+       </ns>
+       good at it, but I
+       <ns type="MV">
+       </ns>
+       love to sail more.
+      </p>
+      <p>
+       Finally, I would like to ask about what kind of clothes
+       <ns type="UV">
+        <i>
+         do
+        </i>
+       </ns>
+       I need to bring
+       <ns type="RP">
+        <i>
+         ? and
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       money, do I need much of
+       <ns type="AGA">
+        <i>
+         them
+        </i>
+       </ns>
+       ? Please, give me
+       <ns type="RQ">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         suggestion
+        </i>
+       </ns>
+       about these
+       <ns type="MN">
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear, Helen Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for the prize at camp California in America.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        For the time that I would like to travel  must be on July only.
+       </s>
+       <s pid="3" sid="2">
+        This is because my A-levels exams is coming up so I really need times to revise, and July is the only month and time that I am free.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        An accommodation, I  prefer to stay in a tent.
+       </s>
+       <s pid="4" sid="2">
+        This is because it is my first time to see an outside world by myself so I need to gather up new experiences.
+       </s>
+       <s pid="4" sid="3">
+        I have never ever stayed in a tent before but some of the people I know said that it is fun and much more exiting.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        As I am a person who is love and doing activities, so I would like to choose to do sailing and photography.
+       </s>
+       <s pid="5" sid="2">
+        Once I used to take a photography course at my school and my teacher taught me well about taking photo.
+       </s>
+       <s pid="5" sid="3">
+        Also I tried how to sail before, but I am not perfectly good at it, but I  love to sail more.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, I would like to ask about what kind of clothes do I need to bring?
+       </s>
+       <s pid="6" sid="2">
+        and the money, do I need much of them?
+       </s>
+       <s pid="6" sid="3">
+        Please, give me a suggestion about these .
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Kim
+      </p>
+      <p>
+       How are you? I have written to you to tell you about the greatest experience that I
+       <ns type="TV">
+        <i>
+         ever have
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Last week I offered
+       <ns type="UA">
+        <i>
+         myself
+        </i>
+       </ns>
+       to help the others at the concert and it was amazing. I couldn't
+       <ns type="FV">
+        <i>
+         believed
+        </i>
+       </ns>
+       how close I was to the band. There were so many youngsters at the concert, but because I was the youngest in
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="RN">
+        helping
+       </ns>
+       team
+       <ns type="UC">
+        <i>
+         so
+        </i>
+       </ns>
+       I guess that I was the luckiest at that moment.
+      </p>
+      <p>
+       <ns type="RD">
+        <i>
+         A
+        </i>
+       </ns>
+       concert
+       <ns type="RV">
+        <i>
+         did
+        </i>
+       </ns>
+       very well and I enjoyed it so much. Later on the band took a break for ten or fifteen minutes, so I served them with glasses of fizzy drink and chocolate bars, biscuits and sandwiches. You will not believe how close I was to the singers.
+      </p>
+      <p>
+       After
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       break, the
+       <ns type="RN">
+        <i>
+         bank
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         carried
+        </i>
+       </ns>
+       on
+       <ns type="MT">
+       </ns>
+       the concert for another
+       <ns type="UQ">
+        <i>
+         one
+        </i>
+       </ns>
+       hour and a half. People
+       <ns type="U">
+        <i>
+         at the
+        </i>
+       </ns>
+       backstage
+       <ns type="MP">
+       </ns>
+       including me
+       <ns type="MP">
+       </ns>
+       were helping to clean up all the stuff and
+       <ns type="M">
+       </ns>
+       ready for the end of the concert.
+      </p>
+      <p>
+       <ns type="U">
+        <i>
+         The time has come, when
+        </i>
+       </ns>
+       the band finished the concert, we
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         served
+        </i>
+       </ns>
+       them drinks again and
+       <ns type="FV">
+        <i>
+         helped
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         clear up
+        </i>
+       </ns>
+       the stage. Afterwards, I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       a chance to
+       <ns type="TV">
+        <i>
+         took photos
+        </i>
+       </ns>
+       with them and
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       their autographs etc.
+      </p>
+      <p>
+       It was
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       enjoyable time in my life and
+       <ns type="MA">
+       </ns>
+       wished that you were there with me.
+       <ns type="RT">
+        <i>
+         From
+        </i>
+       </ns>
+       this letter, I am sure that you
+       <ns type="RV">
+        <i>
+         should
+        </i>
+       </ns>
+       be able to share this experience with me.
+      </p>
+      <p>
+       Lots of Love
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear, Kim
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        How are you?
+       </s>
+       <s pid="2" sid="2">
+        I have written to you to tell you about the greatest experience that I ever have.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last week I offered myself to help the others at the concert and it was amazing.
+       </s>
+       <s pid="3" sid="2">
+        I couldn't believed how close I was to the band.
+       </s>
+       <s pid="3" sid="3">
+        There were so many youngsters at the concert, but because I was the youngest in a helping team so I guess that I was the luckiest at that moment.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        A concert did very well and I enjoyed it so much.
+       </s>
+       <s pid="4" sid="2">
+        Later on the band took a break for ten or fifteen minutes, so I served them with glasses of fizzy drink and chocolate bars, biscuits and sandwiches.
+       </s>
+       <s pid="4" sid="3">
+        You will not believe how close I was to the singers.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        After a break, the bank have to carried on  the concert for another one hour and a half.
+       </s>
+       <s pid="5" sid="2">
+        People at the backstage including me were helping to clean up all the stuff and  ready for the end of the concert.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The time has come, when the band finished the concert, we have to served them drinks again and helped to clear up the stage.
+       </s>
+       <s pid="6" sid="2">
+        Afterwards, I have a chance to took photos with them and have their autographs etc.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        It was the enjoyable time in my life and  wished that you were there with me.
+       </s>
+       <s pid="7" sid="2">
+        From this letter, I am sure that you should be able to share this experience with me.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Lots of Love
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

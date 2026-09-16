@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     39.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       I am writing in reply to your letter, which I received yesterday. Below is
+       <ns type="RQ">
+        <i>
+         a piece of
+        </i>
+       </ns>
+       information you will need for the next international student conference at Bournemouth College and some recommendations, which might be useful for the students.
+      </p>
+      <p>
+       First of all, the hotel booked for the group is the Palace Hotel, which is very impressive in terms of comfort and facilities. This is a very central hotel located not far away from the conference hall. You will be able to get there either by bus (no 150) or on foot.
+      </p>
+      <p>
+       Next you are welcome to attend the party organized at the end of the conference. It will begin at elevenish p.m. and may last the whole night. People are going to be
+       <ns type="RJ">
+        <i>
+         disguised
+        </i>
+       </ns>
+       there and it would be a good idea to wear extravagant multi-coloured clothes.
+      </p>
+      <p>
+       Finally I think that you should jump at
+       <ns type="MD">
+       </ns>
+       opportunity to go to the
+       <ns type="RJ">
+        <i>
+         historical
+        </i>
+       </ns>
+       Pergam's Museum before leaving. Some of the most amazing masterpieces are
+       <ns type="RV">
+        <i>
+         exposed
+        </i>
+       </ns>
+       there.
+      </p>
+      <p>
+       I wish you
+       <ns type="UY">
+        <i>
+         in advance
+        </i>
+       </ns>
+       a wonderful trip and look forward to meeting you in Bournemouth.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing in reply to your letter, which I received yesterday.
+       </s>
+       <s pid="2" sid="2">
+        Below is a piece of information you will need for the next international student conference at Bournemouth College and some recommendations, which might be useful for the students.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, the hotel booked for the group is the Palace Hotel, which is very impressive in terms of comfort and facilities.
+       </s>
+       <s pid="3" sid="2">
+        This is a very central hotel located not far away from the conference hall.
+       </s>
+       <s pid="3" sid="3">
+        You will be able to get there either by bus (no 150) or on foot.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Next you are welcome to attend the party organized at the end of the conference.
+       </s>
+       <s pid="4" sid="2">
+        It will begin at elevenish p.m. and may last the whole night.
+       </s>
+       <s pid="4" sid="3">
+        People are going to be disguised there and it would be a good idea to wear extravagant multi-coloured clothes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally
+       </s>
+       <s pid="5" sid="2">
+        I think that you should jump at  opportunity to go to the historical Pergam's Museum before leaving.
+       </s>
+       <s pid="5" sid="3">
+        Some of the most amazing masterpieces are exposed there.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I wish you in advance a wonderful trip and look forward to meeting you in Bournemouth.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       To: (group leader)
+      </p>
+      <p>
+       From:
+      </p>
+      <p>
+       Subject: Bournemouth National Museum
+      </p>
+      <p>
+       As requested I visited the Bournemouth National Museum, which is, to my mind, one of the most interesting buildings of the area. Below is a summary of the most important
+       <ns type="UJ">
+        <i>
+         relevant
+        </i>
+       </ns>
+       points and some recommendations you may need.
+      </p>
+      <p>
+       1. Architecture
+      </p>
+      <p>
+       The architecture of the building in itself is really breathtaking in terms of luxury and ornamentation
+       <ns type="UN">
+        <i>
+         choice
+        </i>
+       </ns>
+       . Even if the architectural style may seem a bit
+       <ns type="UP">
+        <i>
+         '
+        </i>
+       </ns>
+       heavy, this building is really a masterpiece with no
+       <ns type="RJ">
+        <i>
+         similar
+        </i>
+       </ns>
+       comparison
+       <ns type="R">
+        <i>
+         all over
+        </i>
+       </ns>
+       the world.
+      </p>
+      <p>
+       2. Exposition
+      </p>
+      <p>
+       Although I have to admit that it is very tiring to visit the whole museum in one day, it is such a rewarding and enriching
+       <ns type="RN">
+        <i>
+         time
+        </i>
+       </ns>
+       that people
+       <ns type="W">
+        <i>
+         get never
+        </i>
+       </ns>
+       tired of looking at the paintings and sculptures
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       each section of the museum.
+      </p>
+      <p>
+       3. Restaurant
+      </p>
+      <p>
+       The adjoining restaurant is very
+       <ns type="RJ">
+        <i>
+         enjoyable
+        </i>
+       </ns>
+       as well. The waiters are friendly and always ready to give advice. In fact it is just what visitors need after their trip through the museum.
+      </p>
+      <p>
+       To sum up, I would say that this museum is more interesting than the other museums, because you can enjoy not only wonderful masterpieces but also
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very
+       <ns type="RJ">
+        <i>
+         uncommon
+        </i>
+       </ns>
+       architecture and a quiet restaurant
+       <ns type="M">
+       </ns>
+       to have a rest if you need to.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To: (group leader)
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        From:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Subject: Bournemouth National Museum
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As requested I visited the Bournemouth National Museum, which is, to my mind, one of the most interesting buildings of the area.
+       </s>
+       <s pid="4" sid="2">
+        Below is a summary of the most important relevant points and some recommendations you may need.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        1. Architecture
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The architecture of the building in itself is really breathtaking in terms of luxury and ornamentation choice.
+       </s>
+       <s pid="6" sid="2">
+        Even if the architectural style may seem a bit 'heavy, this building is really a masterpiece with no similar comparison all over the world.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        2. Exposition
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Although I have to admit that it is very tiring to visit the whole museum in one day, it is such a rewarding and enriching time that people get never tired of looking at the paintings and sculptures of each section of the museum.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        3. Restaurant
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        The adjoining restaurant is very enjoyable as well.
+       </s>
+       <s pid="10" sid="2">
+        The waiters are friendly and always ready to give advice.
+       </s>
+       <s pid="10" sid="3">
+        In fact it is just what visitors need after their trip through the museum.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        To sum up, I would say that this museum is more interesting than the other museums, because you can enjoy not only wonderful masterpieces but also a very uncommon architecture and a quiet restaurant  to have a rest if you need to.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,418 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Report on Vapor Compression Cycle Training Cart Testing
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       FOREWORD
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Your company trains heating, ventilation and air conditioning (HVAC) technicians to install and optimize refrigeration and heating systems.
+       </s>
+       <s pid="1" sid="2">
+        After training, you test them on their ability to find a system’s best operating condition but you have been receiving complaints that this test is unfair due to the uncertainties in the vapor compression cycle (VCC) training carts used.
+       </s>
+       <s pid="1" sid="3">
+        Thus, you have provided our company with the VCC cart used for training and requested that we quantify the coefficient of performance using compressor frequencies of 30 Hz, 45 Hz and 60 Hz and show the results on a temperature-entropy diagram.
+       </s>
+       <s pid="1" sid="4">
+        Additionally, you have asked for any other properties to consider when determining a unit’s ability to heat or cool efficiently, and if they should also be used to test your technicians.
+       </s>
+       <s pid="1" sid="5">
+        We have completed these tasks.
+       </s>
+       <s pid="1" sid="6">
+        The purpose of this report is to present our procedure, findings, conclusions, recommendations and supporting documents.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       SUMMARY
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        We determined the values of the coefficient of performance shown in Table 1 below.
+       </s>
+       <s pid="2" sid="2">
+        We also constructed a temperature-entropy diagram (Fig. 2 on p. 3) from our results.
+       </s>
+       <s pid="2" sid="3">
+        Our results show that the coefficient of performance decreases as the compressor frequency increases, and that the values at each frequency are distinct even with uncertainties.
+       </s>
+       <s pid="2" sid="4">
+        The clear distinction in these values leads us to conclude that your testing is fair and that the uncertainties should not create any confusion as to which compressor speed produces the best coefficient of performance.
+       </s>
+       <s pid="2" sid="5">
+        We recommend that in addition to training your technicians on optimizing the coefficient of performance that you also train them to understand the minimum cooling and heating capacities needed for the building the system is used on.
+       </s>
+       <s pid="2" sid="6">
+        We observed the cooling and heating capacities (also shown in Table 1) decreased as the compressor speed increases, the opposite trend of the coefficient of performance.
+       </s>
+       <s pid="2" sid="7">
+        If the cooling and heating capacities are too low with respect to the volume of building they operate on, the system will not be able to produce enough heat transfer to cool or heat the building to a desired temperature.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Table 1: Both values of the coefficient of performance decrease and the values of the cooling/heating capacities increase with an increasing operating speed.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       PROCEDURE
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        This section details the equipment setup and the methodology we used for testing.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Setup
+       </div>
+       <p>
+        <s pid="5" sid="1">
+         Your company provided us with a Hampden Model H-CRT-1 Refrigeration Trainer cart as well as a computer controlled data acquisition system to record data.
+        </s>
+        <s pid="5" sid="2">
+         The cart’s working fluid was R-134a refrigerant.
+        </s>
+        <s pid="5" sid="3">
+         A simplified schematic of the cart can be seen in Figure 1 which shows the path of the fluid and the points where digital transducers measured temperature and pressure.
+        </s>
+        <s pid="5" sid="4">
+         The schematic omits additional elements (such as an oil separator for the compressor) and extra transducers because they were not used in our analysis.
+        </s>
+        <s pid="5" sid="5">
+         We have defined the following points on the schematic, which will be used later in reference to the vapor compression cycle: point 1 is at the entrance to the compressor, point 2 is at the exit of the compressor, point 3 is at the exit of the condenser, and point 4 is at the entrance to the evaporator.
+        </s>
+       </p>
+       <p>
+        <s pid="6" sid="1">
+         Figure 1: A simplified schematic of the VCC training cart tested
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Testing
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         We conducted our tests in a laboratory with ambient air temperature of 295.9±0.5 K and ambient pressure of 97.8±0.1 kPa. First, we turned on the fans inside the condenser and evaporator.
+        </s>
+        <s pid="7" sid="2">
+         Then, we set the speed controller to 30 Hz. Using LabView, we monitored the temperature and pressure through all of the transducers as well as the compressor input power and the flow rate into the throttling valve.
+        </s>
+        <s pid="7" sid="3">
+         We waited for readings to reach steady state, at which time their values were recorded five times at 10 second intervals.
+        </s>
+        <s pid="7" sid="4">
+         We repeated this process twice more with speed controller values of 45 Hz and 59 Hz.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       FINDINGS
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        This section outlines each process in the ideal vapor compression cycle and the expectations for each process in reality.
+       </s>
+       <s pid="8" sid="2">
+        It also presents the requested temperature-entropy diagram, coefficients of performance and all relevant derivations.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        The Vapor Compression Cycle
+       </div>
+       <p>
+        <s pid="9" sid="1">
+         Each process in the vapor compression cycle occurs as the fluid passes through the compressor, condenser, throttling valve or evaporator.
+        </s>
+        <s pid="9" sid="2">
+         We assumed that the fluid does not undergo any thermodynamic changes in the tubes from one device to another.
+        </s>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         The ideal cycle: First, the fluid increases in pressure through the compressor in an adiabatic, reversible process.
+        </s>
+        <s pid="10" sid="2">
+         Then, the fluid lowers in temperature at constant pressure through the condenser and changes phase from a superheated vapor to a saturated liquid.
+        </s>
+        <s pid="10" sid="3">
+         Next, the pressure decreases through the throttling valve with no change in enthalpy, which consequently lowers the temperature.
+        </s>
+        <s pid="10" sid="4">
+         Finally, the fluid absorbs heat in the evaporator in an isothermal, constant-pressure process.
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         Differences from the ideal cycle to reality:
+        </s>
+        <s pid="11" sid="2">
+         We expect that the entropy through the compressor will not be constant but will increase.
+        </s>
+        <s pid="11" sid="3">
+         We also expect that the pressure will decrease across the condenser.
+        </s>
+        <s pid="11" sid="4">
+         Finally, we expect a decrease in pressure and temperature across the evaporator.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Determining the Specific Entropy
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         The specific entropy at points 1, 2, and 3 were found in thermodynamic tables[1] using their measured temperature and absolute pressure.
+        </s>
+        <s pid="12" sid="2">
+         The specific entropy at point 2 during the 30 Hz test corresponded to a compressed liquid, which we know is not possible.
+        </s>
+        <s pid="12" sid="3">
+         This would mean the compressor was more than 100% efficient.
+        </s>
+        <s pid="12" sid="4">
+         We observed that the specific entropy value is sensitive to pressure changes, so we hypothesized that the pressure gauge at point 2 may not be measuring accurately.
+        </s>
+        <s pid="12" sid="5">
+         The specific entropy of a saturated vapor at the same temperature was used for this point.
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         The specific entropy at point 4 was determined using a different procedure due to a lack of a pressure transducer there.
+        </s>
+        <s pid="13" sid="2">
+         It was determined using the assumption that the process of fluid passing through the throttling valve was adiabatic and that the enthalpy remained constant.
+        </s>
+        <s pid="13" sid="3">
+         To find the specific entropy in the tables, we needed to know a pressure and specific enthalpy, so we used the pressure of a saturated liquid at the measured temperature and the enthalpy at point 3 as read from tables.
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         As requested, we made a temperature-entropy diagram using our results and plotted it on top of the R-134a saturation dome, as shown in Fig. 2.
+        </s>
+        <s pid="14" sid="2">
+         When looking at the process from point 1 to point 2, it can be seen that the cycle is not quite the ideal vapor compression cycle as the entropy does not remain constant.
+        </s>
+        <s pid="14" sid="3">
+         We observed that the entropy decreased through the compressor, contrary to what we expected.
+        </s>
+        <s pid="14" sid="4">
+         Also contrary to what we expected, we observed that the temperature and pressure increased through the evaporator at 45 and 59 Hz.
+        </s>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         Fig. 2: Temperature and specific entropy differ in value at different operating speeds.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         Error Analysis:
+        </s>
+        <s pid="16" sid="2">
+         The resolution error of the transducers was considered negligible.
+        </s>
+        <s pid="16" sid="3">
+         A precision error for each temperature was generated from the five runs of data and this error was used as the total error.
+        </s>
+        <s pid="16" sid="4">
+         This error and the precision error in pressure gave us a range of values for entropy in the tables.
+        </s>
+        <s pid="16" sid="5">
+         The largest difference between one of these values and the mean value was used as the total error in specific entropy.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Determining the Coefficients of Performance and Cooling/Heating Capacities
+       </div>
+       <p>
+        <s pid="17" sid="1">
+         The values for the coefficient of performance (COP) for cooling and heating can be found in Table 2 as well the cooling capacity, heating capacity and power input to the compressor.
+        </s>
+        <s pid="17" sid="2">
+         Both values of the COP decrease as the compressor speed and power input to the system increase, and the values at each operating speed are distinct.
+        </s>
+        <s pid="17" sid="3">
+         These values do not come close to one another even at the far ends uncertainty.
+        </s>
+        <s pid="17" sid="4">
+         The values of the cooling and heating capacities increase as the compressor speed and power input to the system increase.
+        </s>
+       </p>
+       <p>
+        <s pid="18" sid="1">
+         Table 2: Both values of the coefficient of performance decrease and the values of the cooling/heating capacities increase with an increasing operating speed.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         The coefficient of performance ( β ) in a VCC is defined as the heat energy sought divided by the power input (compressor power) into the system[2].
+        </s>
+        <s pid="19" sid="2">
+         The heat energy sought in a refrigeration cycle is the cooling capacity from the evaporator and the heat energy sought in a heating cycle is the heating capacity from the condenser.
+        </s>
+        <s pid="19" sid="3">
+         These values are determined by the states of the fluid entering and exiting each device and represent the total amount of cooling or heating the system can do.
+        </s>
+        <s pid="19" sid="4">
+         The cooling capacity was calculated using Eq. 1 and the heating capacity was calculated using Eq. 2 where
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       was the flow rate at point 3,
+       <i>
+        ρ
+       </i>
+       was density of the R-134a at point 3 (determined as the inverse of its specific volume), and  was the enthalpy of the R-134a at point
+       <i>
+        n
+       </i>
+       .
+       <p>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         Cooling Capacity
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Eq. 1
+       <p>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         Heating Capacity
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Eq. 2
+       <p>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         Error Analysis: Similar to specific entropy, the error in temperature and pressure data produced a range of specific enthalpy and specific volume values.
+        </s>
+        <s pid="25" sid="2">
+         The largest difference between one of these values and the mean value was used as the total error.
+        </s>
+        <s pid="25" sid="3">
+         The error in specific volume was then translated to an error in density.
+        </s>
+        <s pid="25" sid="4">
+         The error in the cooling and heating capacities is a combination of all these errors which is dominated by the error generated from finding the difference between specific enthalpies.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSIONS AND RECOMMENDATIONS
+      </div>
+      <p>
+       <s pid="26" sid="1">
+        We found the values of the specific entropy for each point in the VCC and plotted them on a temperature-entropy diagram in Fig. 2. Additionally, we determined the values of the COP for each compressor frequency as shown in Table 2.
+       </s>
+       <s pid="26" sid="2">
+        We observed that the values for both cooling and heating COP were distinct from one another with uncertainties.
+       </s>
+       <s pid="26" sid="3">
+        The clear distinction in these values leads us to conclude that your testing is fair and that the uncertainties should not create any confusion as to which compressor speed produces the best COP.
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        We recommend that in addition to training your technicians in optimizing the COP, you also train them to understand the minimum cooling and heating capacities needed for the building the system is used on.
+       </s>
+       <s pid="27" sid="2">
+        Our results showed that the COP was highest at the lowest operating speed, which also corresponded to the lower value in the cooling and heating capacities.
+       </s>
+       <s pid="27" sid="3">
+        If the cooling and heating capacities are too low with respect to the volume of building they operate on, the system won’t be able to produce enough heat transfer to cool or heat the building to a desired temperature.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N1019C">
+       <li id="N1019D">
+        [1] Sonnttag, R., Borgnakke, C., Wylen, G., 2003, Fundamentals of Thermodynamics, 6th ed., John Wiley &amp; Sons, Inc., New York, NY, pp. 708-713.
+       </li>
+       <li id="N1019F">
+        [2] Sonnttag, R., Borgnakke, C., Wylen, G., 2003, Fundamentals of Thermodynamics, 6th ed., John Wiley &amp; Sons, Inc., New York, NY, pp. 171.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

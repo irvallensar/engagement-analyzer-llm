@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Bernard Moreau
+      </p>
+      <p>
+       place de la Madeleine
+      </p>
+      <p>
+       87022 PARIS
+      </p>
+      <p>
+       Competition Organiser
+      </p>
+      <p>
+       Helen Ryan
+      </p>
+      <p>
+       Dear Mrs. Ryan,
+      </p>
+      <p>
+       You have sent me a letter about the competition
+       <ns type="M">
+       </ns>
+       first prize I have won. You asked me
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       some further information.
+      </p>
+      <p>
+       First, I'd like to travel
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July at any time from the first to the
+       <ns type="RP">
+        <i>
+         30st
+        </i>
+       </ns>
+       because of my vacation period. I'd rather have a few days at the beginning of July to prepare
+       <ns type="RA">
+        <i>
+         me
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Second, I'd prefer
+       <ns type="FV">
+        <i>
+         have
+        </i>
+       </ns>
+       a log cabin where I could
+       <ns type="RV">
+        <i>
+         let
+        </i>
+       </ns>
+       some
+       <ns type="L">
+        <i>
+         stuff
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="DY">
+        <i>
+         Finaly
+        </i>
+       </ns>
+       , I'd like to
+       <ns type="RV">
+        <i>
+         <ns type="DV">
+          <i>
+           practice
+          </i>
+         </ns>
+        </i>
+       </ns>
+       tennis and to try climbing. Is
+       <ns type="UA">
+        <i>
+         there
+        </i>
+       </ns>
+       any ability required?
+      </p>
+      <p>
+       Could you send me a
+       <ns type="RN">
+        note
+       </ns>
+       about travelling in California which could help me?
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Bernard Moreau
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Bernard Moreau
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        place de la Madeleine
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        87022 PARIS
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Competition Organiser
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Helen Ryan
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Dear Mrs. Ryan,
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        You have sent me a letter about the competition  first prize I have won.
+       </s>
+       <s pid="7" sid="2">
+        You asked me about some further information.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        First, I'd like to travel on July at any time from the first to the 30st because of my vacation period.
+       </s>
+       <s pid="8" sid="2">
+        I'd rather have a few days at the beginning of July to prepare me.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Second, I'd prefer have a log cabin where I could let some stuff.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Finaly, I'd like to practice tennis and to try climbing.
+       </s>
+       <s pid="10" sid="2">
+        Is there any ability required?
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Could you send me a note about travelling in California which could help me?
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="13">
+       <s pid="13" sid="1">
+        Bernard Moreau
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      5b
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       The Old Man and the Sea
+      </p>
+      <p>
+       This book
+       <ns type="RV">
+        <i>
+         stays
+        </i>
+       </ns>
+       one of the best
+       <ns type="MT">
+       </ns>
+       <ns type="RP">
+        <i>
+         american
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         litterature
+        </i>
+       </ns>
+       <ns type="UN">
+        <i>
+         book
+        </i>
+       </ns>
+       . It is
+       <ns type="RV">
+        <i>
+         classified
+        </i>
+       </ns>
+       as one of the ten books that should
+       <ns type="RV">
+        <i>
+         figure
+        </i>
+       </ns>
+       in your own library. But it is also the most famous short story
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       Ernest Hemingway. Based on a very simple story, the story of an old man fishing, it
+       <ns type="RV">
+        <i>
+         allows
+        </i>
+       </ns>
+       a deep
+       <ns type="S">
+        <i>
+         reflexion
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         oldness
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       A veteran
+       <ns type="DN">
+        <i>
+         fisher
+        </i>
+       </ns>
+       takes his boat and goes fishing to
+       <ns type="S">
+        <i>
+         convine
+        </i>
+       </ns>
+       himself and other
+       <ns type="IN">
+        <i>
+         mans
+        </i>
+       </ns>
+       that he is still able to do
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       . Then, Hemingway paints a marvellous description of fishing
+       <ns type="UN">
+        <i>
+         act
+        </i>
+       </ns>
+       and of the great fight between the fish and the old man. The 24-hour fight is described in
+       <ns type="R">
+        <i>
+         a so
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         peacful
+        </i>
+       </ns>
+       , faithful way that it
+       <ns type="R">
+        callas a though about life and death
+       </ns>
+       . I
+       <ns type="S">
+        <i>
+         recommand
+        </i>
+       </ns>
+       this book
+       <ns type="UY">
+        <i>
+         a lot
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       <ns type="W">
+        <i>
+         both to discover
+        </i>
+       </ns>
+       Hemingway and
+       <ns type="RP">
+        <i>
+         american
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         litterature
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The Old Man and the Sea
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        This book stays one of the best  american litterature book.
+       </s>
+       <s pid="2" sid="2">
+        It is classified as one of the ten books that should figure in your own library.
+       </s>
+       <s pid="2" sid="3">
+        But it is also the most famous short story from Ernest Hemingway.
+       </s>
+       <s pid="2" sid="4">
+        Based on a very simple story, the story of an old man fishing, it allows a deep reflexion about oldness.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        A veteran fisher takes his boat and goes fishing to convine himself and other mans that he is still able to do that.
+       </s>
+       <s pid="3" sid="2">
+        Then, Hemingway paints a marvellous description of fishing act and of the great fight between the fish and the old man.
+       </s>
+       <s pid="3" sid="3">
+        The 24-hour fight is described in a so peacful, faithful way that it callas a though about life and death.
+       </s>
+       <s pid="3" sid="4">
+        I recommand this book a lot  both to discover Hemingway and american litterature.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

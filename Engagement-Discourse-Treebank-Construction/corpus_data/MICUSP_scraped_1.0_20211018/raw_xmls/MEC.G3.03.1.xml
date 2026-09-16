@@ -1,0 +1,304 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Literature Survey Report
+    <br/>
+    Material and Mechanical Designs for stretchable electronics
+   </div>
+   <p>
+    ﻿
+   </p>
+  </div>
+  <div class="dynacloud">
+   <p>
+    <b>
+     Introduction:
+    </b>
+    Researchers in the field of electronic circuits and devices have made foray into the domain of flexible, large area circuits in the past decade or so in a big way. Integrated electronic circuits on flexible substrates can find immense use in sensors, displays and biomedical devices. Conventional microfabrication technologies have essentially planar patterning, deposition, etching and doping methods, developed for rigid semiconductor wafers or glass plates. These technologies are, therefore, not suitable for flexible substrate electronics either due to the high temperature requirements of various processes (which degrade plastic and other flexible substrates) or due to the high strain applications which exceed the fracture strain of the electronic component materials. These limitations emphasized the need to develop novel alternative methods for fabricating electronic circuit elements on flexible substrates. A discussion of the current state of the art fabrication methods used for stretchable electronics is presented in the coming sections of this report.
+   </p>
+   <p>
+    One of the novel strategies to fabricate flexible electronic circuits involves deposition and patterning of organic semiconductors (require less temperature than their inorganic counterparts) on ultra-high heat-resistant flexible substrates (polyethylene naphthalate (PEN))
+    <a class="fnref" href="#fn1" id="fnref_fn1">
+     1
+    </a>
+    . This is integrated with pressure sensitive rubber sheet to form a large-area flexible pressure sensor matrix. Since organic semiconductors have very modest mobilities, this method makes a minimal use of chemical solvents to prevent the degradation of transistor performance. This device can have applications as artificial electronic skin or intelligent rubber surgical gloves. An extension of this device was obtained by incorporating organic semiconductor based thermal sensors to it in order to achieve greater sensory properties for the proposed artificial skin
+    <a class="fnref" href="#fn2" id="fnref_fn2">
+     2
+    </a>
+    . Another strategy involves distribution of rigid subcircuit islands over the flexible polymer surface, fabrication of active circuit elements on the islands and connecting them with stretchable metal interconnects (gold (Au))
+    <a class="fnref" href="#fn3" id="fnref_fn3">
+     3
+    </a>
+    . In addition to the planar gold interconnect film; another variant was tried in which gold film was deposited on a prestretched polymer membrane leading to a wavy geometry upon the relaxation of the substrate. This device was found to be functional up to a maximum of 12% strain associated with repeated stretching and relaxation. The need to image non-planar (curved) surfaces using flexible, large-area sensor arrays led to the development of a low temperature thin film transistor fabrication process involving deposition of amorphous silicon and amorphous silicon nitride at a lower temperature on plastic substrate (120°C as against the conventional 250-300°C temperature requirement)
+    <a class="fnref" href="#fn4" id="fnref_fn4">
+     4
+    </a>
+    . This device can find application in human body conformable health monitors and imagers. Prof John Rogers’ research group at the University of Illinois at Urbana-Champaign developed a dry transfer printing technique for transfer of active electronic devices on flexible substrate after fabrication on semiconductor wafers, using conventional microfabrication methods. The research contribution of Rogers’ lab in the field of stretchable electronics has been discussed in the next section.
+   </p>
+   <p>
+    <b>
+     Research in Rogers’ Lab on stretchable electronics and its applications:
+    </b>
+    Prof John Rogers (Department of Materials Science and Engineering, University of Illinois at Urbana-Champaign, Beckman Institute) and his research group have done pioneering work in devising innovative methods for integrating electronic circuits (fabricated using different materials) with flexible substrates. The series of research endeavors pursued in this field by Prof Rogers can be traced back to the fabrication (during his stint with the Bell Laboratories) of paper-like electronic displays
+    <a class="fnref" href="#fn5" id="fnref_fn5">
+     5
+    </a>
+    . These displays consisted of plastic substrates (sheets) with stamped electronic circuits (by microcontact printing). These electronic circuits combined with organic semiconductors to form active matrix backplanes for the electronic paper. The electronic design was such that activating a transistor (by applying voltage to gate and source electrodes) led to the generation of an electric field. This field caused the electrophoretic movement of microencapsulated pigments which got registered as the color of the corresponding pixel. The niche research field carved by the flexible electronic displays has ever since motivated a large number of research projects on stretchable electronics in the research fraternity in general and Prof Rogers’ Lab in particular. Rogers’ Lab has supplemented experimental findings and practical applications of its devices with theoretical explanations which are going to be discussed as well in this report.
+   </p>
+   <p>
+    The fabrication technique for stretchable electronic devices in the Rogers’ lab entails a dry transfer printing technique wherein free standing micro and nano-sized patterned circuit components are picked up from their substrate using a conformal elastomer stamp. These electronic circuit components (transistors, photodiodes etc.) are subsequently, transferred to a specific locations on thin, flexible substrate. The materials used for constructing micro and nano circuit components range widely from amorphous, polycrystalline and single crystal silicon
+    <a class="fnref" href="#fn6" id="fnref_fn6">
+     6
+    </a>
+    to Gallium Arsenide (GaAs) &amp; Indium Phosphide (InP)
+    <a class="fnref" href="#fn7" id="fnref_fn7">
+     7
+    </a>
+    to single walled carbon nanotubes (SWNT’s)
+    <a class="fnref" href="#fn8" id="fnref_fn8">
+     8
+    </a>
+    . The dry transfer printing technique provides a superior alternative to the conventional high temperature deposition of these materials which is not compatible with the plastic substrates. They also replace the organic semiconductor materials as the material of choice which, although, can be deposited at room temperature but have a limited electronic application as they have very modest mobilities. To illustrate the dry transfer printing technology in some detail, we discuss a representative research work involving single-crystal silicon based electronics on elastomeric substrates
+    <a class="fnref" href="#fn9" id="fnref_fn9">
+     9
+    </a>
+    .
+   </p>
+   <p>
+    Thin sub-micron silicon elements are fabricated on a silicon-on-insulator (SOI) wafer using conventional photolithography and dry etching processes to etch the top silicon layer. This is followed by the removal of photoresist using acetone and the buried oxide layer using concentrated hydrofluoric acid, respectively, leaving silicon ribbons tethered to the ends. A polydimethylsiloxane (PDMS) piece is elastically stretched and brought into contact with the ribbons. When the PDMS is peeled away, the ribbons are lifted off from the wafer and the release in PDMS strain leads to formation of wave like features in the silicon ribbons. The amplitude and wavelength of these waves depend upon the thickness of silicon ribbon and the amount of prestrain in the PDMS piece. Upon the application of tensile and compressive strains respectively, for assessing the usefulness of silicon ribbons (on the PDMS piece) to stretchable electronics application, it is observed that the strains are accommodated by changes in the wavelength and amplitudes of the waves, hence protecting ribbon from fracture and thereby, enabling greater stretchability.  By having additional steps to pattern dopants, thin metal contacts and dielectric layers in the beginning of the fabrication sequence, advanced functionality electronic circuits were devised and subsequently transferred onto the flexible substrate using dry transfer printing techniques.
+   </p>
+   <p>
+    It is imperative, at this point, to emphasize upon the electrical characteristics and mechanical bendability of the devices fabricated using dry transfer printing techniques and different materials mentioned above. Rogers’ group has presented extreme bendability of single crystal silicon thin film transistors on plastic substrates
+    <a class="fnref" href="#fn10" id="fnref_fn10">
+     10
+    </a>
+    . A high value of effective device mobility is registered for the devices made using single crystal silicon TFT’s. The devices work well even for high values of compressive and tensile strains, hence, highlighting their utility for highly stretchable electronic applications. The devices can also be used for studying charge transport in silicon for strain values not easily achieved for bulk silicon wafers. A similar behavior of extreme bendability was also obtained for devices fabricated using GaAs
+    <a class="fnref" href="#fn11" id="fnref_fn11">
+     11
+    </a>
+    or SWNT’s
+    <a class="fnref" href="#fn12" id="fnref_fn12">
+     12
+    </a>
+    for the electronic circuits. Bending and folding tests results establish SWNT’s as one of the most mechanically robust materials for electronic circuits in stretchable electronics applications.
+   </p>
+   <p>
+    Rogers’ group has also performed theoretical studies to explain the behavior of micro and nano electronic features on the flexible substrates under the influence of various kinds of mechanical stresses. An analytical approach was used to study the two-dimensional buckling of thin films (Si and GaAs) on flexible substrates
+    <a class="fnref" href="#fn13" id="fnref_fn13">
+     13
+    </a>
+    . This approach yielded the buckled wavelength and amplitude of the wavy features based on the thin film and substrate elastic properties, thin film thickness and prestrain in PDMS. This approach also explained the preferred formation of herringbone type wave over 1-D and checkerboard wave formation as it has the least energy. Another analytical study was made of local and global buckling of thin films on elastomeric substrates and the critical condition separating the two buckling modes were derived
+    <a class="fnref" href="#fn14" id="fnref_fn14">
+     14
+    </a>
+    . SWNT’s being a preferred material of choice for stretchable electronics applications; study was also made of the mechanics of buckled carbon nanotubes on elastomeric substrates like PDMS
+    <a class="fnref" href="#fn15" id="fnref_fn15">
+     15
+    </a>
+    . As in the previous studies, expressions were derived for the buckle wavelength and amplitude as well as the critical spacing ascertained for two consecutive CNT’s to interact and buckle together.
+   </p>
+   <p>
+    Rogers’ Lab has been instrumental in taking stretchable electronics a step ahead from the proof of concept stage and fabricating functional devices to serve different purposes. This was preceded by the development of fabrication schemes to obtain controlled buckling of nanoribbons (of Si and GaAs) on flexible substrates having extreme stretchability, compressibility and bendability
+    <a class="fnref" href="#fn16" id="fnref_fn16">
+     16
+    </a>
+    . The devices based on this technology include electronic eye cameras
+    <a class="fnref" href="#fn17" id="fnref_fn17">
+     17
+    </a>
+    , flexible digital logic circuits based on SWNT thin films
+    <a class="fnref" href="#fn18" id="fnref_fn18">
+     18
+    </a>
+    , flexible solar modules based on monocrystalline silicon
+    <a class="fnref" href="#fn19" id="fnref_fn19">
+     19
+    </a>
+    and stretchable silicon CMOS integrated circuits
+    <a class="fnref" href="#fn20" id="fnref_fn20">
+     20
+    </a>
+    <a class="fnref" href="#fn21" id="fnref_fn21">
+     21
+    </a>
+    . We will be describing the fabrication and working of the hemispherical electronic eye camera
+    <a class="fnref" href="#fn17" id="fnref_fn17">
+     17
+    </a>
+    which was presented by Prof Rogers in his talk. The camera attempts to mimic the human eye by having a hemispherical detector surface in place of the planar detectors present in conventional cameras. A hemispherical, elastomeric transfer element is used to transfer planar circuit layouts fabricated on a wafer onto curved surfaces using dry transfer printing techniques discussed earlier. These curved surfaces act as focal planes (with circuit arrays consisting of single crystal silicon photodetectors, p-n junction diodes and metal interconnects) which are integrated with simple plano-convex lens and hemispherical housing to result into an electronic eye camera of shape and size comparable to the human eye. The narrow, thin interconnects shield the pixel elements from large strains (in the course of integration with hemispherical surfaces) by delaminating from the elastomeric surfaces in arc shape. The current-voltage response of an individual pixel in the hemispherical focal plane array was found to be similar to that obtained for pixels in planar imaging modules. The camera provides a clear shape resolution for imaged objects, but a biomimetic strategy has to be used for getting a better spatial resolution. In this strategy, a sequence of images is obtained by eucentrically rotating the camera with respect to the object and then reconstructing the images. The curved detector system used in this camera is a marked improvement over the planar detector configurations in terms of a wider field of view, more homogeneous intensity of images and reduced geometric distortions.
+   </p>
+   <p>
+    Rogers’ group used sub-monolayer, random networks of single-walled carbon nanotubes to create medium-scale integrated digital circuits
+    <a class="fnref" href="#fn18" id="fnref_fn18">
+     18
+    </a>
+    . High electrical performance of carbon nanotubes enables the transistors to have excellent mobilities and switching speeds. This device is poised to find some potential application in various electronic devices. Ultrathin, monocrystalline silicon solar microcells
+    <a class="fnref" href="#fn19" id="fnref_fn19">
+     19
+    </a>
+    are another class of stretchable electronics device fabricated by the Rogers’ group. Fabricated using dry transfer printing technique, they aim towards harnessing high efficiency of silicon in solar cells to make flexible solar cells for large scale production of solar energy. Complementary metal oxide silicon (CMOS) circuits based on single crystal silicon were also integrated with flexible substrates using the dry transfer printing technique
+    <a class="fnref" href="#fn20" id="fnref_fn20">
+     20
+    </a>
+    <a class="fnref" href="#fn21" id="fnref_fn21">
+     21
+    </a>
+    . They incorporated stretchable wavy interconnects and polymer bridges which accommodated a bulk of the applied flexure strain and shielded active device regions from excessive strains helping them retain their electrical performance in the stretched configurations.
+   </p>
+   <p>
+    <b>
+     Future prospects and challenges ahead for stretchable electronics:
+    </b>
+    As presented above in the discussion of the current state of the art in stretchable electronics, such devices hold great promise of use in a range of applications from existing consumer electronics devices (like flat panel displays) to more involved (both technologically and commercially) systems like large area radio frequency communication devices and a whole range of biomedical and biomimetic devices. This would require a detailed study and analysis of several unexplored electrical and mechanical features of these devices. Mechanical and electrical properties of the semiconductor-dielectric interfaces are one of such key issues to be studied. For the devices incorporating wavy semiconductor nanoribbons, it would be an interesting direction of future research to study the influence of mechanical strains on semiconductor’s electronic properties and to subsequently design devices with electronic responses controlled by varying the mechanical strains. In order to enhance the working range of the devices, directed work towards increasing the range of stretchability will also have to be undertaken.
+   </p>
+   <p>
+    Though the fabrication methods described above worked very well for a whole range of proof of concept devices, they need to be developed further for viable, large scale commercial applications. Future research will be strongly focused towards developing alternative materials to the conventional ones which can be patterned at low temperatures directly, on the flexible substrates. This would be very important from the point of view of saving the cost, labor and complexity encountered in transferring the fabricated patterns from rigid substrates to the flexible sheets. Better electronic performance and lower cost (per unit area) as compared to the existing IC fabrication materials, would be other equally important factors driving the synthesis of new materials
+    <a class="fnref" href="#fn22" id="fnref_fn22">
+     22
+    </a>
+    . Some of the alternative materials currently being looked into comprise of silicon in different crystalline forms, transparent oxides and chalcogenides. Carbon nanotubes with extremely high electrical performance and mechanical robustness are emerging as the material of the future for stretchable electronics and will comprise a major fraction of the future research in this field. All the stretchable electronics devices developed by different labs have very promising projected applications. However, as of now, most of them have very involved fabrication procedure and use very expensive semiconductor materials. A successful commercialization of these devices would require development of cheaper materials and fabrication methods without compromising on the device performance. In fact, an enhancement in the device performance would be expected for these devices to compete and surpass the existing products. Rapid progress in the field of stretchable electronics and the development of new, high performance materials (like SWNT’s) in the past decade holds the promise of the technology maturing in next few years and flexible electronics devices moving into the markets as commercial products.
+   </p>
+  </div>
+  <div>
+   <div class="head_1">
+    References:
+   </div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1. Someya, T. et al., A large area, flexible pressure sensor matrix with organic field-effect transistors for artificial skin applications, PNAS 101(27): 9966-9970 (2004).
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2. Someya, T. et al., Conformable, flexible, large-area networks of pressure and thermal sensors with organic transistor active matrices, PNAS 102(35): 12321-12325 (2005).
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3. Lacour, S. P. et al., Stretchable interconnects for elastic electronic surfaces, Proc. IEEE 93(8): 1459-1467 (2005).
+    </div>
+    <div id="fn4">
+     <a href="#fnref_fn4">
+      4.
+     </a>
+     4. Nathan, A. et al., Amorphous silicon detector and thin film transistor technology for large-area imaging of X-rays, Microelectronics Journal 31, 883-891 (2000).
+    </div>
+    <div id="fn5">
+     <a href="#fnref_fn5">
+      5.
+     </a>
+     5. Rogers, J. A. et al., Paper-like electronic displays: Large area rubber-stamped plastic sheets of electronics and microencapsulated electrophoretic inks, PNAS 98(9): 4835-4840 (2001).
+    </div>
+    <div id="fn6">
+     <a href="#fnref_fn6">
+      6.
+     </a>
+     6. Menard, E. et al., A printable form of silicon for high performance thin film transistors on plastic substrates, Applied Physics Letters 84(26): 5398:5400 (2004).
+    </div>
+    <div id="fn7">
+     <a href="#fnref_fn7">
+      7.
+     </a>
+     7. Sun, Y. et al., Fabricating semiconductor nano/microwires and transfer printing ordered arrays of them onto plastic substrates, Nano Letters 4(10): 1953:1959 (2004).
+    </div>
+    <div id="fn8">
+     <a href="#fnref_fn8">
+      8.
+     </a>
+     8. Meitl, M. A. et al., Solution casting and transfer printing single-walled carbon nanotube films, Nano Letters 4(9): 1643-1647 (2004).
+    </div>
+    <div id="fn9">
+     <a href="#fnref_fn9">
+      9.
+     </a>
+     9. Khang, D. et al., A stretchable form of single-crystal silicon for high-performance electronics on rubber substrates, Science 311: 208-212 (2006).
+    </div>
+    <div id="fn10">
+     <a href="#fnref_fn10">
+      10.
+     </a>
+     10. Menard, E. et al., Bendable single crystal silicon thin film transistors formed by printing on plastic substrates, Applied Physics Letters 86: 093507 (2005).
+    </div>
+    <div id="fn11">
+     <a href="#fnref_fn11">
+      11.
+     </a>
+     11. Sun, Y. et al., Bendable GaAs metal-semiconductor field-effect transistors formed with printing GaAs wire arrays on plastic substrates, Applied Physics Letters 87: 083501 (2005).
+    </div>
+    <div id="fn12">
+     <a href="#fnref_fn12">
+      12.
+     </a>
+     12. Hur, S. et al., Extreme bendability of single-walled carbon nanotube networks transferred from high-temperature growth substrates to plastic and their use in thin-film transistors, Applied Physics Letters 86: 243502 (2005).
+    </div>
+    <div id="fn13">
+     <a href="#fnref_fn13">
+      13.
+     </a>
+     13. Song, J. et al., An analytical study of two-dimensional buckling of thin films on compliant substrates, Journal of Applied Physics 103: 014303 (2008).
+    </div>
+    <div id="fn14">
+     <a href="#fnref_fn14">
+      14.
+     </a>
+     14. Wang, S. et al., Local versus global buckling of thin films on elastomeric substrates, Applied Physics Letters 93: 023126 (2008).
+    </div>
+    <div id="fn15">
+     <a href="#fnref_fn15">
+      15.
+     </a>
+     15. Xiao, J. et al., Mechanics of buckled carbon nanotubes on elastomeric substrates, Journal of Applied Physics 104: 033543 (2008).
+    </div>
+    <div id="fn16">
+     <a href="#fnref_fn16">
+      16.
+     </a>
+     16. Sun, Y. et al., Controlled buckling of semiconductor nanoribbons for stretchable electronics, Nature Nanotechnology 1: 201-207 (2006).
+    </div>
+    <div id="fn17">
+     <a href="#fnref_fn17">
+      17.
+     </a>
+     17. Ko, H. C. et al., A hemispherical electronic eye camera based on compressible silicon optoelectronics, Nature 454, 748-753 (2008).
+    </div>
+    <div id="fn18">
+     <a href="#fnref_fn18">
+      18.
+     </a>
+     18. Cao, Q. et al., Medium-scale carbon nanotube thin-film integrated circuits on flexible plastic substrates, Nature 454, 495-502 (2008).
+    </div>
+    <div id="fn19">
+     <a href="#fnref_fn19">
+      19.
+     </a>
+     19. Yoon, J. et al., Ultrathin silicon solar microcells for semitransparent, mechanically flexible and microconcentrator module designs, Nature Materials, AO Publication (2008).
+    </div>
+    <div id="fn20">
+     <a href="#fnref_fn20">
+      20.
+     </a>
+     20. Kim, D. H. et al., Stretchable and foldable silicon integrated circuits, Science 320, 507-511 (2008).
+    </div>
+    <div id="fn21">
+     <a href="#fnref_fn21">
+      21.
+     </a>
+     21. Kim, D. H. et al., Complementary metal oxide silicon integrated circuits incorporating monolithically integrated stretchable wavy interconnects, Applied Physics Letters 93, 044102 (2008).
+    </div>
+    <div id="fn22">
+     <a href="#fnref_fn22">
+      22.
+     </a>
+     22. Sun, Y. et al., Inorganic semiconductors for flexible electronics, Advanced Materials 19, 1897-1916 (2007).
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

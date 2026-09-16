@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+      </p>
+      <p>
+       I am writing to make a complaint about the Circle Theatre. I recently went there to see the musical show "Over the Rainbow". I was very
+       <ns type="S">
+        <i>
+         disapointed
+        </i>
+       </ns>
+       to find out that most of the things said in the advertisement for the show were not true.
+      </p>
+      <p>
+       For example, the advertisement said that Danny Brook would be the lead actor, but he was not. Instead, there was this unknown actor
+       <ns type="R">
+        <i>
+         with
+        </i>
+       </ns>
+       a very bad performance and
+       <ns type="MV">
+       </ns>
+       a terribly annoying voice. Moreover, the play did not start at the time it was supposed to. I had to wait for
+       <ns type="MP">
+        <i>
+         forty five
+        </i>
+       </ns>
+       minutes. All the waiting made me quite hungry, so I was expecting to have good meal at the theatre restaurant after the show. However, it was closed for cleaning.
+      </p>
+      <p>
+       All these problems spoiled my evening and frustrated me, since I was expecting to see a good play, so I expect a full refund. By the way, why weren't any discounts available for the tickets, as
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       was
+       <ns type="RV">
+        <i>
+         said
+        </i>
+       </ns>
+       in the advertisement?
+      </p>
+      <p>
+       I look forward to hearing from you and having my money back.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to make a complaint about the Circle Theatre.
+       </s>
+       <s pid="2" sid="2">
+        I recently went there to see the musical show "Over the Rainbow".
+       </s>
+       <s pid="2" sid="3">
+        I was very disapointed to find out that most of the things said in the advertisement for the show were not true.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        For example, the advertisement said that Danny Brook would be the lead actor, but he was not.
+       </s>
+       <s pid="3" sid="2">
+        Instead, there was this unknown actor with a very bad performance and  a terribly annoying voice.
+       </s>
+       <s pid="3" sid="3">
+        Moreover, the play did not start at the time it was supposed to.
+       </s>
+       <s pid="3" sid="4">
+        I had to wait for forty five minutes.
+       </s>
+       <s pid="3" sid="5">
+        All the waiting made me quite hungry, so I was expecting to have good meal at the theatre restaurant after the show.
+       </s>
+       <s pid="3" sid="6">
+        However, it was closed for cleaning.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        All these problems spoiled my evening and frustrated me, since I was expecting to see a good play, so I expect a full refund.
+       </s>
+       <s pid="4" sid="2">
+        By the way, why weren't any discounts available for the tickets, as it was said in the advertisement?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I look forward to hearing from you and having my money back.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       The New Modern Life
+      </p>
+      <p>
+       Modern technology and science have changed my life in many ways.
+       <ns type="UD">
+        <i>
+         The easy
+        </i>
+       </ns>
+       access to information and the new ways of communicating with other people help me save time that I can spend doing whatever I want to.
+      </p>
+      <p>
+       Of all the recent technological advances, the one that
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       the
+       <ns type="FJ">
+        <i>
+         great
+        </i>
+       </ns>
+       impact on my life
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       the Internet. It provides you
+       <ns type="MT">
+       </ns>
+       all the information you want. I don't watch the news on television anymore, because I can use my computer to read only the things that interest me.
+      </p>
+      <p>
+       Mobile phones are another thing that
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       making my life much easier. They allow you to talk to other people no matter where you are. This can be very useful when you have a problem that needs an immediate solution.
+      </p>
+      <p>
+       All these things save me lots of time. I get to rest more and spend more time at home, and so they make me a happier person. For the next
+       <ns type="MQ">
+       </ns>
+       years, we can expect many more
+       <ns type="R">
+        <i>
+         technologies
+        </i>
+       </ns>
+       that will continue making our lives easier.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The New Modern Life
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Modern technology and science have changed my life in many ways.
+       </s>
+       <s pid="2" sid="2">
+        The easy access to information and the new ways of communicating with other people help me save time that I can spend doing whatever I want to.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Of all the recent technological advances, the one that had the great impact on my life was the Internet.
+       </s>
+       <s pid="3" sid="2">
+        It provides you  all the information you want.
+       </s>
+       <s pid="3" sid="3">
+        I don't watch the news on television anymore, because I can use my computer to read only the things that interest me.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Mobile phones are another thing that is making my life much easier.
+       </s>
+       <s pid="4" sid="2">
+        They allow you to talk to other people no matter where you are.
+       </s>
+       <s pid="4" sid="3">
+        This can be very useful when you have a problem that needs an immediate solution.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        All these things save me lots of time.
+       </s>
+       <s pid="5" sid="2">
+        I get to rest more and spend more time at home, and so they make me a happier person.
+       </s>
+       <s pid="5" sid="3">
+        For the next  years, we can expect many more technologies that will continue making our lives easier.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,278 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Atom Interferometer as a Sagnac Effect Gyroscope
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Optical interferometry is a scientific technique that is based on the interference of light waves that interfere constructively and destructively due to a difference in phases.
+      </s>
+      <s pid="1" sid="2">
+       These phase differences are normally due to path length differences achieved by causing light from a single source to pass through some type of physical apparatus.
+      </s>
+      <s pid="1" sid="3">
+       In an atom interferometer the roles of matter and light are reversed; light is used to manipulate and control one or multiple "matter" beams and the wave-particle duality of the atoms in the "matter" beam(s) is exploited with promising results.
+      </s>
+      <s pid="1" sid="4">
+       As expected, an interference pattern results and the atom interferometer can be adapted to make precision rotational measurements, thereby effectively constructing an atomic gyroscope/rotational sensor.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       This paper gives a summary of the roles of Raman Transitions and the Sagnac Effect in atomic gyroscopes, cites some sources of noise in the system and techniques to minimize the noise, and highlights some of the current and future applications of atomic gyroscopes.
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       I. Role of Raman Transitions in Atomic Gyroscopes
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        In an atom interferometer, a sequence of
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Raman pulses (Mach-Zehnder configuration) is used to manipulate the atomic beam that has been laser-cooled and slowed using a MOT or an optical molasses system, in order to do precision measurements.  One starts with a beam of atoms having some mean momentum in the direction of the laser beam and with the atoms all lying in the ground state.  The first Raman pulse is applied and it causes the atoms to now lie in an intermediate state that is a superposition of the ground state and an excited state that has a new momentum of
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      associated with it.  The atomic beam is now allowed to propagate uninterrupted for some time, Δt.  During this time period the atomic beam separates into two separate wave packets (separation ~
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ).  The next π-pulse is applied to the atomic beam which now induces transitions from the ground state to the excited state and from the excited state to the ground state.  The atomic wave packets react by starting to merge together and after a second time period of Δt, the final
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      pulse is applied which places the atoms in an hyperfine ground state. [1]   Once the atomic wave packets have been recombined, there is an overall phase shift due to the difference in the path lengths that the two wave packets followed before being detected.  An interference pattern is detected by measuring the atoms that lie in the ground states by the fluorescence given off as the atoms transition back to the ground state and the signal can be imaged in many ways.   The phase shift can be calculated from the position of the fringes in the interference patterns [3, 5, 6].
+      <p>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        FIG.
+       </s>
+       <s pid="7" sid="2">
+        1. Diagram of a
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Raman pulse interferometer, a) paths manipulation of wave packets b) inertial frame of the setup
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       II. Role of the Sagnac Effect in Atomic Gyroscopes
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        One can adapt an atom interferometer into a rotation sensor by setting up an experimental configuration where the interferometer is rotated at a particular angular velocity.
+       </s>
+       <s pid="9" sid="2">
+        A phase shift occurs because of this rotation and is equal to
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ,
+      <p>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        where
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the velocity of the angular rotation, υ is the velocity of the atom, λ is the atom’s de Broglie wavelength, and A is the area enclosed by the loop constructed by the two paths of the atomic wave packets.  The phase shift is measured by tuning a detection laser to the resonance frequency of the specific ground state and then imaging the signal on a photodiode.  The position of the interference fringes depends on the velocity of the rotation of the experimental setup [2].
+      <p>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        When the Mach-Zehnder configuration is utilized in the atomic gyroscope the Raman transitions become beam splitters (
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      pulse) and mirrors (
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      pulse) for atomic beam while the entire experimental setup is rotated.    When calculating the Sagnac effect in the rotating frame, the phase shift due to the Coriolis acceleration also contributes to the rotationally-induced phase shift.  If the direction of propagation of the atomic beam is reversed, then the effect of the Coriolis acceleration will change sign.  In a configuration with two counterpropagating atomic beams the gyroscopic signal’s dependence on the area enclosed by the paths of the atomic beams and the phase shifts due to the interactions of the atoms with the Ramam pulses are eliminated, and the rotation rate of the setup relative to the non-rotating lab frame can be calculated.  Since collisions in this setup are negligible, no extra atom sources or Raman beams are needed [2].
+      <p>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        If only one atomic beam is used, then the Sagnac phase shift is assumed to be the result of the atoms interacting with the rotating Raman lasers and the Raman transitions are treated semiclassically.
+       </s>
+       <s pid="16" sid="2">
+        A fringe pattern is achieved by varying the optical phase of the final Raman pulse.
+       </s>
+       <s pid="16" sid="3">
+        The gyroscopic signal (number of atoms in the hyperfine ground state) is sampled at various rates and plotted vs. the rotation rate of the Raman lasers in μrads.
+       </s>
+       <s pid="16" sid="4">
+        The data is then fitted using a semiclassical model that averages over the velocity distributions within the atom beam but does not spatial averages over the beams.
+       </s>
+       <s pid="16" sid="5">
+        From the fit the Sagnac phase shift can be calculated and the corresponding rotation value can be extracted.
+       </s>
+       <s pid="16" sid="6">
+        To test the validity of the model used for fitting the data, the rotation rate of the Raman beams is measured independently using a seismometer and checked against the value given by the model used to fit the data [3].
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        FIG.
+       </s>
+       <s pid="19" sid="2">
+        2. Rotationg interferometer setup [2]
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       III.  Noise and noise minimizing techniques
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        In the experimental setup containing two atomic beams, if the beams aren’t aligned perfectly spatially then position fluctuations result, which in turn induces rotational noise in the signal.
+       </s>
+       <s pid="20" sid="2">
+        Also, because lasers are used as mirrors and gratings, optical aberrations also pose a serious threat to the signal clarity.
+       </s>
+       <s pid="20" sid="3">
+        These two sources of noise coupled together are the main contributors to an atomic gyroscope’s long term stability.
+       </s>
+       <s pid="20" sid="4">
+        However, many techniques have been investigated to address these noise issues and have been shown to be effective [4].
+       </s>
+       <s pid="20" sid="5">
+        Another major source of noise is mechanical vibrations due to the electronics used to rotate the setup.
+       </s>
+       <s pid="20" sid="6">
+        These vibrations lead to random rotational and translational phase shifts within the sample and the interference signal.
+       </s>
+       <s pid="20" sid="7">
+        To minimize this type of noise, much care should be taken vibration isolation of every component of the experimental setup.
+       </s>
+       <s pid="20" sid="8">
+        Lastly, alignment techniques can be utilized to overcome the effects of earth’s gravity and rotation. [3]
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       IV. Current/future applications
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        To date, atomic gyroscopes have been used to get high-precision measurements of earth’s rotation rate and with improvement in sensitivity, they will be able to detect any fluctuations in earth’s rotation, gravity gradients, and carry out tests of general relativity.
+       </s>
+       <s pid="21" sid="2">
+        Implementation in navigation systems (gps) and inertial navigation are also plausible uses of atomic gyroscopes.
+       </s>
+       <s pid="21" sid="3">
+        NASA has various ongoing research projects that plan to investigate the behavior of atom interferometers in a gravity free environment and the viability of making an atomic gyroscope on a microchip in an effort to use atomic gyroscopes for rotation and acceleration sensors and for inertial guidance and navigation in the Earth Science and Space Science missions.
+       </s>
+       <s pid="21" sid="4">
+        The next step in atom interferometry is to minimize the de Broglie wavelength of the "atom" beam by using larger atoms or even molecules to test the limits of quantum mechanics.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       V.  References
+      </div>
+      <ul id="N10174">
+       <li id="N10175">
+        1.   Kasevich M and Chu S, Atomic Interferometry Using Stimulated Raman Transistions, Physical Review Letters 67, 2 (1991).
+       </li>
+       <li id="N10177">
+        2.   Gustavson A, Landragin A, and Kasevich M, Rotation Sensing with a Dual Aton-Interferometer Sagnac Gyroscope, Class. Quantum Grav. 17, (2000)
+       </li>
+       <li id="N10179">
+        3.   Gustavson A, Bouyer P, and Kasevich M, Precision Rotation Measurements with an Atom Interferometer Gyroscope, Physical Review Letters, 78, 11 (1997)
+       </li>
+       <li id="N1017B">
+        4.   Fils J, Leduc F, Bouyer P, Holleville D, et al, Influence of Optical Aberrations in an Atomic Gyroscope, The European Physical Journal D, 36, 257-260 (2005)
+       </li>
+       <li id="N1017D">
+        5.   Hellwarth, R W, Theory of Stimulated Raman Scattering, Physical Review, 130, 5, (1963)
+       </li>
+       <li id="N1017F">
+        6.   Moler K, Weiss D, Kasevich M, Theorectical Analysis of Velocity-Selective Raman Transistions, Physical Review A, 45, 1 (1992)
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Ms Ryan,
+      </p>
+      <p>
+       I am writing to you regarding the letter you sent me
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       about the two weeks at Camp California that I won.
+      </p>
+      <p>
+       Firstly, I would like to travel in July because I have 2 weeks off
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the beginning of the month.
+      </p>
+      <p>
+       For the accommodation, I would prefer
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       because I like adventure and simplicity.
+      </p>
+      <p>
+       Concerning the available activities, firstly, I would choose climbing because I have
+       <ns type="RV">
+        <i>
+         practised
+        </i>
+       </ns>
+       it for many years.
+       <ns type="S">
+        <i>
+         Secondely
+        </i>
+       </ns>
+       , I am interested in
+       <ns type="RV">
+        <i>
+         discovering
+        </i>
+       </ns>
+       something that I have never done, so I would like to do sailing.
+      </p>
+      <p>
+       Finally, I was wondering if
+       <ns type="RQ">
+        <i>
+         some
+        </i>
+       </ns>
+       special clothes are required and how much pocket money I need for this trip?
+      </p>
+      <p>
+       I thank you
+       <ns type="ID">
+        <i>
+         in advanced
+        </i>
+       </ns>
+       and
+       <ns type="FV">
+        <i>
+         looking
+        </i>
+       </ns>
+       forward to your reply.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ms Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to you regarding the letter you sent me, about the two weeks at Camp California that I won.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I would like to travel in July because I have 2 weeks off in the beginning of the month.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        For the accommodation, I would prefer in  tents because I like adventure and simplicity.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Concerning the available activities, firstly, I would choose climbing because I have practised it for many years.
+       </s>
+       <s pid="5" sid="2">
+        Secondely, I am interested in discovering something that I have never done, so I would like to do sailing.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, I was wondering if some special clothes are required and how much pocket money I need for this trip?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I thank you in advanced and looking forward to your reply.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       I'm writing to you to
+       <ns type="L">
+        <i>
+         relate
+        </i>
+       </ns>
+       my experience
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       helping at a pop concert last month.
+      </p>
+      <p>
+       First of all, I would like to tell you that I've never had
+       <ns type="W">
+        <i>
+         a such
+        </i>
+       </ns>
+       good time in my life!
+      </p>
+      <p>
+       The
+       <ns type="R">
+        <i>
+         day one
+        </i>
+       </ns>
+       <ns type="CE">
+        consisted in surrounding
+       </ns>
+       the
+       <ns type="UN">
+        <i>
+         festival's
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         place
+        </i>
+       </ns>
+       with fences.
+      </p>
+      <p>
+       The second
+       <ns type="MP">
+        <i>
+         day
+        </i>
+       </ns>
+       objective was to install the
+       <ns type="R">
+        <ns type="RN">
+         <i>
+          scene
+         </i>
+        </ns>
+        <ns type="UP">
+         <i>
+          ,
+         </i>
+        </ns>
+        <ns type="UC">
+         <i>
+          with
+         </i>
+        </ns>
+        lights, loudspeakers and all
+        <ns type="M">
+        </ns>
+        stuff
+       </ns>
+       . This job was quite hard, but we took
+       <ns type="R">
+        <i>
+         enough
+        </i>
+       </ns>
+       time
+       <ns type="R">
+        to be not exhausted
+       </ns>
+       !
+      </p>
+      <p>
+       The last day,
+       <ns type="R">
+        <i>
+         in fact
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         the concert day
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       was absolutely fantastic. The
+       <ns type="RN">
+        <i>
+         public
+        </i>
+       </ns>
+       was so excited to see the concert that we had to place some
+       <ns type="AGN">
+        <i>
+         bouncer
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       front of the
+       <ns type="RN">
+        <i>
+         scene
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         avoid
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       people
+       <ns type="R">
+        coming on the concert floor
+       </ns>
+       . Finally, the concert was exactly
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       the people were
+       <ns type="TV">
+        <i>
+         expected
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I
+       <ns type="SX">
+        <i>
+         hop
+        </i>
+       </ns>
+       that the next time you will come with me!
+      </p>
+      <p>
+       I'm looking forward to hearing
+       <ns type="R">
+        <i>
+         your impressions
+        </i>
+       </ns>
+       about this!
+      </p>
+      <p>
+       See you soon.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to you to relate my experience in helping at a pop concert last month.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I would like to tell you that I've never had a such good time in my life!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The day one consisted in surrounding the festival's place with fences.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The second day objective was to install the scene, with lights, loudspeakers and all stuff.
+       </s>
+       <s pid="5" sid="2">
+        This job was quite hard, but we took enough time to be not exhausted!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The last day, in fact the concert day was absolutely fantastic.
+       </s>
+       <s pid="6" sid="2">
+        The public was so excited to see the concert that we had to place some bouncer  front of the scene, to avoid the people coming on the concert floor.
+       </s>
+       <s pid="6" sid="3">
+        Finally, the concert was exactly that the people were expected.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I hop that the next time you will come with me!
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I'm looking forward to hearing your impressions about this!
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        See you soon.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

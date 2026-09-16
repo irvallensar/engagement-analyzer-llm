@@ -1,0 +1,338 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    <i>
+     V. Cholerae
+    </i>
+    : First Steps towards a Spatially Explicit Model
+   </div>
+   <div class="abstract">
+    Abstract
+    <p>
+     The recurrent cholera pandemics have been related with environmental variability and spatial heterogeneity. However, no spatially explicit model has been developed in order to consider such variations. The first step towards a spatially explicit model for cholera consists of the identification of the influence of processes and patterns at different spatial scales: micro (local), meso (intermediate) and macro (regional) scales. Analysis applying Point Pattern Analysis, Geostatistical and Epidemiological techniques are proposed in this work to perform such spatial characterization on cholera mortality data from the last 23 years in Matlab, Bangladesh.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     Introduction
+    </div>
+    <p>
+     The world is still suffering the effects of the seventh cholera pandemic since 1961. This current pandemic  originated in Indonesia with the first instance of an epidemic form of the strain known as
+     <q>
+      El Tor
+     </q>
+     , while the former six pandemics of cholera have been attributed to the
+     <q>
+      Classical
+     </q>
+     biotype (See Table 1). Hence, the challenge for epidemiologist nowadays is to have an
+     <q>
+      epidemic-anticipatory-capability
+     </q>
+     for the appearance of new strains and the reemergence and/or  rapid geographic expansion of old strains. Because one of the most important goals of epidemiology is to avoid the occurrence of pandemics, revealing the processes leading the occurrence of outbreaks is critical.
+    </p>
+    <p>
+     The recurrent epidemics of cholera present peculiar characteristics involving:
+    </p>
+    <list>
+     <item>
+      – a strong association with climate (Rodó et al., 2002; Pascual et al., 2000; Colwell, 1996),
+     </item>
+     <item>
+      – different strains, which potentially may displace each other  or even exhibit cycles between them (Simanjuntak et al., 2001),
+     </item>
+     <item>
+      – a temporary immunity, which only recently has been  estimated (Koelle and Pascual, 2004),
+     </item>
+     <item>
+      – and a world wide presence, with cases reported in Nigeria, Chad, Cameron and Senegal at the end of 2004 (WHO, 2005), aside from the abominable epidemics in Peru during 1991-2, the endemic presence in the Indian subcontinent, and a
+      <q>
+       potential eighth pandemics in Indonesia
+      </q>
+      (Simanjuntak et al., 2001).
+     </item>
+    </list>
+    <p>
+     Unfortunately, in spite of the advances in cholera research, a full characterization of its dynamics still remains distant.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Epidemiology of Cholera
+    </div>
+    <p>
+     During the first cholera pandemic in 1817, the spread of cholera was believed to take place throughout the
+     <q>
+      miasma
+     </q>
+     (fog) coming from the rivers, showing some initial empirical findings in relation with water (Sack et al., 2004). Only in 1854, John Snow showed that contaminated water was the cause of cholera, and finally, during the epidemics in 1884 the causal agent was identified: the bacterium
+     <i>
+      Vibrio cholerae
+     </i>
+     (Colwell, 1996). Cholera is characterized by producing a
+     <q>
+      profuse watery diarrhea, vomiting, circulatory collapse and shock
+     </q>
+     (CDC, 2005). Such symptoms are usually manifested in a period ranging between 18 hours and 5 days of incubation, potentially in conjunction with an important liquid loss that may be close to one liter per hour (Sack et al., 2004). The treatment, basically, consists of a rehydration therapy, which may be complemented with appropriated antibiotic assistance, depending on whether complications occur.
+    </p>
+    <p>
+     Cholera is considered a water-borne disease, although the bacterium may also be transmitted by contaminated food or a mixing of both, during (improper) cooking. Secondary infections (for example, during unhygienic funeral practices) rarely occur, and therefore, the pattern of water use is responsible for the dynamics of the epidemics (Sack et al., 2004).
+    </p>
+    <p>
+     The causes for contamination of water sources are, however, not so clear. On the one hand, considering human beings as reservoirs positive feedback from infected individuals to water sources, introducing or maintaining the levels of cholera, may play a major role, leading to a strong correlation between patterns of mortality and human aggregation. On the other hand, if the bacterium life cycle is mainly controlled by environmental conditions, there might be a correlation with environmental variables or variability (Pascual et al., 2002; Rodó et al., 2002; Pascual et al., 2000).
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Findings in Cholera Dynamics
+    </div>
+    <p>
+     Previous research demonstrated some of the most intriguing characteristics of cholera. Early in 1925, Russell, questioned for the first time, whether a relationship between cholera and rainfalls exists. He found that the coefficient of correlation between cholera and rainfalls exhibited a maximum value in the northern districts of the former British-empire-province of Madras, whereas in southern districts the maximum value was reached when a delay of two months was introduced between both time series (with rainfall preceding cholera). Since then, more concrete analyses where performed studying the relationship between cholera and climate variables. The isolation of
+     <i>
+      V. Cholerae
+     </i>
+     from water samples at several locations in the late 1970's and early 1980's (Colwell et al., 1977; Colwell et al., 1981) motivated further works on identifying which ecological factors are strongly associated with the bacterium. The results of such analyses have showed that coastal algal blooms, which are strongly related with increases in sea surface temperature (SST), have acted as a trigger for cholera outbreaks (Colwell, 1996). More recently, Pascual
+     <i>
+      et al.
+     </i>
+     (2000), using nonlinear and nonparametric time-series techniques, confirmed a similar connection between cholera and climate in Dhaka, Bangladesh (between 1980 and 1998). More precisely, they found that cholera mortality is affected not only by extrinsic factors (El Niño-Southern Oscillation, ENSO, and  climate variables, like upper-tropospheric humidity, cloud cover and top-of-atmosphere absorbed solar radiation), but also by intrinsic factors (i.e., previous levels of infection). Finally, their analyses also showed a latitudinal variation in the time lags between climate factors and cholera incidence in Bangladesh. Synchronization among ENSO, Sea Surface Temperature (SST) and cholera mortality has been successfully found/detected in Bengal (actually Bangladesh) exhibiting also a relation to the geographical distance from Bay of Bengal (Bouma and Pascual, 2001).
+    </p>
+    <p>
+     Kwofie (1976) showed that the spread of cholera in western Africa presented two main components: a first component that followed the coastal line, and a second component with a complex behavior attributable to lagoons, rivers, and massive movement of people. Beside these findings, the spatial occurrence of cholera during the epidemic cycles with a detailed spatial scale remains unexplored. Colwell ,1996, however, has recognized the importance of incorporating into their analysis, natural water bodies, which potentially are playing both roles: reservoirs and sources.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Modeling Cholera
+    </div>
+    <p>
+     The prevention of pandemics requires on a better knowledge of the disease diffusion pattern. A better understanding of the transmission of cholera underlies the development of accurate mathematical models, which may be used in evaluation of possible scenarios. The first mathematical model developed by Capasso in 1979 (Torres Codeço, 2001) proposed only the dynamics of an infected population within a community together with an aquatic population of bacteria. This model was improved in 2001 (Torres Codeço, 2001), by including a third differential equation modeling: concentration of pathogen
+     <i>
+      V. Cholerae
+     </i>
+     in a water source,  susceptible and infected individuals. With these three equations the emergence of cholera was analyzed and three possible outcomes were identified: (1) No outbreak, (2) an epidemic peak followed by extinction of the disease, and (3) an epidemic peak followed by subsequent outbreaks seasonally persisting. The numerical simulations exhibited a good fit with the actual cholera mortality data, but only for locations where a unique epidemic peak was present during the year.
+    </p>
+    <p>
+     A third mathematical model was proposed by Pascual et al. (2002) adding a fourth equation. The variables under consideration were: number of susceptible individuals, infected individuals, bacteria abundance and water volume. The model hence, was able to capture the seasonality showed by cholera in several endemic zones. Furthermore, they have found that R0, the basic reproductive number that quantifies the number of new infections produced in a population of susceptible individuals by the first infected host individual, was sensitive to environmental variables that can vary not only during the year but also over long time scales. These findings envisioned a potential dual role of rainfall. On the one hand, short wet seasons favor environmental conditions for cholera leading to outbreaks. On the other hand, long wet seasons create a
+     <i>
+      dilution effect
+     </i>
+     avoiding the settlement of the bacterium in the environment, although outbreaks might still occur due to human aggregation. Analysis based on point pattern analysis techniques, considering cholera and rainfall time series from 1900 to 1940 in the Madras Presidency region agree with this double role of rainfall (Ruiz-Moreno et al., 2005).
+    </p>
+    <p>
+     Although, the three mathematical models described above showed concordance between data and results, none of them is able to capture the dynamics of the infection at the level of villages because space is modeled implicitly. Therefore, the objective of this work is to perform the first steps in order to develop a spatially explicit model for
+     <i>
+      V. cholerae
+     </i>
+     , which might quantify the nature of the different ecological and climate processes involved during and between epidemic peaks.
+    </p>
+    <p>
+     The incorporation of the spatial dimension in the analysis of ecological dynamics processes was clearly defined by Hanski (1999):
+     <q>
+      Spatially explicit and spatially realistic approaches are used when it seems that the spatial locations of individuals in populations or local populations in metapopulations critically underpin the phenomena of interest
+     </q>
+     . In this particular case, the metapopulation approach can help to understand the dynamic of  cholera at different spatial scales (Anderson and May 1991, Grenfell and Harwood, 1997). The spatial scales proposed in this work will connect: a microscale (the spatial scale resulting from considering each host as an island to be colonized by the pathogen, Keeling et al. 2004), a mesoscale (the spatial scale determined by the aggregation of hosts into communities) and a macroscale (the regional spatial scale defined by set of communities, Keeling et al. 2004, and the connections among them).
+    </p>
+    <p>
+     In conjunction with the characterization of the spatial scales, the dynamics of the disease also depends on a precise metapopulation description. The parameterization of a metapopulation model consist of estimation of: patch areas, including their spatial location; pairwise distances between them; presence and absence of the species under study; distribution of migrating distances; colonization ability and critical patch area. Each of these parameters may be mapped to epidemiological variables, in particular the critical patch area can be easily linked to the critical community size (Keeling, 1997). The patch areas, distances and distribution of migrating distances, however, are strongly dependent on the transmission of the disease, and the study of the spatial patterns formed during epidemics may provide empirical evidence to determine their realistic values.
+    </p>
+    <p>
+     In order to find accurate parameter values for spatially explicit model for cholera dynamics, different methodological approach may be used including Point Pattern Analysis, Geostatistical Analysis, and determination of the Critical Community Size, among others.
+    </p>
+    <p>
+     Point Pattern Analysis (PPA) and Geostatistical techniques provide enough power to characterize a spatial pattern (Weigand and Moloney, 2004; Rossi et al. 1992, Ripley, 1977).  PPA techniques have been applied in previous research to discriminate among hypotheses on the processes that are responsible for the formation of the spatial diffusion pattern of a marine disease (Jolles et al., 2002), and also identifying patterns and spatial scales in systems formed by discrete units (Spooner et al., 2004; Oyana and Lwebuga-Mukasa, 2004; Kelly and Meentemeyer, 2002).Geostatistical tools are more adequate to model and evaluate diffusion patterns when a continuous process may be involved including not only space (Feng et al., 2004; Holdenrieder et al., 2004; Fortin et al., 2002; Unwin and Unwin, 1998; Legendre, 1993 ) but also time (Kuldorff et al. 2005;  Odoi et al., 2003; Zhao et al., 2002; Ward and Carpenter, 2000; Knox and Bartlett, 1964). Therefore, the first step in order to characterize the diffusion of cholera proposed here consist of performing a complete exploratory spatial data analysis, which will provide an effective estimate of the degree of clustering of the epidemic and might be utilized to link the empirical cholera data with an accurate metapopulation diseases model. Further analyses will address the reliability of the metapopulation approach for the dataset available.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Data and Proposed Methodology
+    </div>
+    <p>
+     The study of the cholera dynamics to identify spatial and temporal patterns, which might be seen in light of the metapopulation paradigm, will be based on recent historical records. The available dataset consists of mortality cholera data aggregated at the level of bari for the area of Matlab, Bangladesh over the last 23 years (Figure 1). The basic social unit in a village is the family (paribar or gushti), generally consisting of a complete or incomplete patrilineally (by descent through the male line) extended household (chula) and residing in a homestead (bari). For each bari geographic position, population and cholera mortality (including serotype and biotype) data from 1982 to 2004 are available. Climate information for the same period might be used to complement this dataset. With such degree of spatial detail, it will be possible to study the clustering of the disease following the ideas of Jolles and colleagues (2002). The dataset might present different degree of aggregation not only at the spatial scale but also at temporal scales. Therefore, this work will explore also the seasonality of cholera to verify previous findings, although new patterns could arise due to scalability properties (Pascual and Dobson, 2005; Sultan et al., 2005). Previous research provides enough insights to envision at least two hypotheses acting jointly and determining the dynamics of the epidemic:
+    </p>
+    <p>
+     (a) when long rainfall periods occurred, when land availability is drastically reduced due to floods, the degree of aggregation of population may increase as well as direct or indirect human-to-human contagion, this mechanism may be acting during the monsoon season and hence high correlation between human aggregation and the aggregation of the disease is expected. The methodology proposed for analyze this case will measure the degree of aggregation at different spatial scales (Ripley, 1977) for both population and mortality. Bootstrap analyses could provide additional information in order to evaluate the likelihood of the spatial patterns.
+    </p>
+    <p>
+     (b) on the other hand when short wet periods occurred the bacterium might be able to settle in the environmental producing massive infections, in such situation the spatial pattern of the infection might be coincident with the one of the environmental reservoirs and sources, in particular water ponds (Colwell, 1996). The same analysis proposed for the previous hypothesis could be used in this case, but additionally this hypothesis could be split into two cases: (b-1) If the reservoirs and sources of cholera are indeed the water ponds, which are widely distributed on the area of study, the pattern of emergence of epidemic waves should emerge from different sources, whereas (b-2) if the sources of infection are closely associated with major sources of water, i.e. rivers, the waves of epidemic could reflect some degree of directionality. Directionality could be evaluate by study how variability depends of space and direction, typically with directional semivariograms, but also quadrant methods could reveal places with high variability in the intensity of the infection process, which might be a indicator of such directionality (Bailey and Gatrell, 1995).
+    </p>
+    <p>
+     Additionally, the information about serotype and biotype could be utilized in order to study whether strain cycles occurred during the period of study, or if some places exhibited preference for one particular strain, what might lead to a better classification of reservoirs and sources of infection. Such information combined with aggregation measures that include local variations (Anselin, 1995) could lead to the determination of not only endemic and epidemics zones (Ruiz-Moreno et al. 2005) but also to discriminate which strain could occur in each zone.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Discussion
+    </div>
+    <p>
+     The analyses proposed in this work will provide a better understanding of the dynamics of cholera in Matlab, Bangladesh. Combining the expected findings with previous works, it could be possible to elaborate a clear picture involving the regional climate variability, the local seasonality, the intrinsic dynamics of cholera and human population dynamics, enabling an evaluation of the importance of each factor. Sultan and colleagues (2005) have been able to develop an Early Warning Index in order to prevent the massive occurrence of Meningitis in western Africa, but it only characterize regional risk, however, the degree of detail in the case of cholera might even lead to the development of a similar index at different spatial scales providing a powerful tool to prevent the occurrence of epidemics not only in Matlab, but also be carefully extended and applied to other countries, such as India, Indonesia,  Nigeria, Chad, Cameron, Senegal and Peru among other, where the fight against cholera is still a devastating reality.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N101A3">
+     <li id="N101A4">
+      Anderson, R. M. and May, R. M. (1991), "Infectious Diseases of Human. Oxford University Press.
+     </li>
+     <li id="N101A6">
+      Anselin, L. (1995), "Local indicators of spatial association - LISA," Geographical Analysis 27:93-115.
+     </li>
+     <li id="N101A8">
+      Bailey, T. C. and Gatrell, A. C.  (1995), "Interactive Spatial data Analysis," Addison Wesley Longman.
+     </li>
+     <li id="N101AA">
+      Bouma, M. J., and Pascual, M. (2001), "Seasonal and interannual cycles of epidemic cholera in Bengal 1891-1940 in relation to climate and geography," Hidrobiologia 460:147-156.
+     </li>
+     <li id="N101AC">
+      CDC (2005), Center for Disease Control and Prevention, Disease Information, Cholera, http://www.cdc.gov/ncidod/dbmd/diseaseinfo/cholera_t.htm.
+     </li>
+     <li id="N101AE">
+      Colwell, R. R., Kaper, J. and Joseph, S. W. (1977) "Vibrio Cholerae, Vibrio Parahaemolyticus and other vibrios: occurrence and distribution in Chesapeake Bay," Science 198:394-396.
+     </li>
+     <li id="N101B0">
+      Colwell, R. R., Seidler, R. J., Kaper, J., Joseph, S. W., Garges, S., Lockman, H., Maneval, D., Bradford, H., Roberts, N., Remmers, E., Huq, I., and Huq, A. (1981) "Occurrence of Vibrio Cholerae serotype 01 in Maryland and Lousiana estuaries," Applied and Environmental Microbiology 41(2):555-558.
+     </li>
+     <li id="N101B2">
+      Colwell, R. R. (1996), "Global Climate and Infectious Disease: The Cholera Paradigm," Science 274:2025-2031.
+     </li>
+     <li id="N101B4">
+      Feng, Q., Liu, Y. and Mikami, M. (2004), "Geostatistical analysis of soil moisture variability in grassland," Journal of Arid Environments 58:357-372.
+     </li>
+     <li id="N101B6">
+      Fortin, MJ., Dale, M. R. T., and ver Hoef J. (2002), "Spatial analysis in Ecology," Volume 4 :2051-2058 in Encyclopedia of Environmetrics (ISBN 0471-899976) edited by El-Shaarawi and Piergorsch, Jhon Wiley and Sons, Ltd, Chichester.
+     </li>
+     <li id="N101B8">
+      Grenfell, B. and Harwood, J., (1997) "(Meta)population dynamics of infectious diseases," Trends in Ecology and Evolution 12(10):395-399.
+     </li>
+     <li id="N101BA">
+      Hansky, I. (1999), "Metapopulation Ecology," Oxford University Press.
+     </li>
+     <li id="N101BC">
+      Holdenrieder, O., Pautasso, M. Weisberg, P. J. and Lonsdale, D. (2004), "Tree diseases and landscape process: the challenge of lanscape pathology" TRENDS in Ecology and Evolution 19(8):446-452.
+     </li>
+     <li id="N101BE">
+      Jolles, A. E., Sullivan, P., Alker, A. P., and Harvell, C. D. (2002), "Disease Transmission of Aspergillosis in sea fans: Inferring process from spatial pattern," Ecology 83(9):2373-2378.
+     </li>
+     <li id="N101C0">
+      Keeling, M. (1997) "Modeling the persistence of measles," Trends in Microbiology 5:513-518.
+     </li>
+     <li id="N101C2">
+      Keeling, M. J., Bjønstad, O. N. and Grenfell, B. T. (2004) "Metapopulation Dynamics of Infectious Diseases" in Ecology, Genetics and Evolution of Metapopulations, edited by Hansky and Gaggiotti, Elsevier.
+     </li>
+     <li id="N101C4">
+      Kelly, M. and Meentemeyer, R. K. (2002), "Landscape Dynamics of the spread of sudden Oak Death," Photogrammetric Engineering and Remote Sensing 68(10):1001-1009.
+     </li>
+     <li id="N101C6">
+      Knox, E. G. and Bartlett, M. S. (1964), "The detection of Space-Time interactions," Applied Statistics 13(1):25-30.
+     </li>
+     <li id="N101C8">
+      Koelle, K. and Pascual, M. (2004) "Disentangling extrinsic from intrinsic factors in disease dynamics: A nonlinear time series approach with an application to cholera," The American Naturalist 163(6):901-913.
+     </li>
+     <li id="N101CA">
+      Kulldorff, M., Heffernan, R., Hartman, J., Assunção, R. and Mostashari, F. (2005), "A Space-Time permutation scan statistic for disease outbreak detection," PLoS Med 2(3):216-224.
+     </li>
+     <li id="N101CC">
+      Kwofie, K. M. (1976) "Spatio-temporal analysis of Cholera diffusion in western Africa," Economic geography 52(2):127-135.
+     </li>
+     <li id="N101CE">
+      Legender, P. (1993), "Spatial autocorrelation: Trouble or new paradigm?," Ecology 74(6):1659-1673.
+     </li>
+     <li id="N101D0">
+      Odoi, A., Martin, S. W., Michel, P., Holt, J. Middleton, D. and Wilson, J. (2003), "Geographical and temporal distribution of human giardiases in Ontario Canada," International Journal of Health Geographics 2:5-28.
+     </li>
+     <li id="N101D2">
+      Oyana, T. J. and Lwebuga-Mukasa, J. S. (2004), "Spatial relationships among asthma prevalence, health care utilization, and pollution sources in neighborhoods of Buffalo, New York," Journal of Environmental Health 66(8):25-37.
+     </li>
+     <li id="N101D4">
+      Pascual, M. and Dobson, A. P. (2005), "Seasonal Pattern of Infectious Diseases," PloS Med 2(1):18-20.
+     </li>
+     <li id="N101D6">
+      Pascual, M., Bouma, M. J. and Dobson, A. P. (2002) "Cholera and climate: revisiting the quantitative evidence," Microbes and Infection 4:237-245.
+     </li>
+     <li id="N101D8">
+      Pascual, M., Rodó, X., Elner, S., Colwell, R. and Bouma, M. (2000), "Cholera Dynamics and El Niño-Southern Oscillation," Science 289:1766-1769.
+     </li>
+     <li id="N101DA">
+      Ripley, B. D. (1977), "Modelling spatial Patterns," Journal of the Royal Statistical Society, Series B (Methodological) 39(2):172-212.
+     </li>
+     <li id="N101DC">
+      Rodó, X., Pascual, M, Fuchs, G., and Faruque, A. S. G. (2002), "ENSO and cholera: A nonstationary link related to climate change?," PNAS 99(20):12901-12906.
+     </li>
+     <li id="N101DE">
+      Rossi, R. E., Mulla, D. J., Journel, A. G., and Franz, E. H. (1992), "Geostatistical tools for modeling and interpreting ecological spatial dependence," Ecological Monographs 62(2):277-314.
+     </li>
+     <li id="N101E0">
+      Russell, A. (1925), "A statistical approach to the epidemiology of cholera in Madras Presidency," PNAS 11:653-657.
+     </li>
+     <li id="N101E2">
+      Ruiz-Moreno, D., Pascual, M., Dobson, A. and Bouma, M (2005), "Cholera seasonality, rainfall, and fade-outs: a geostatical approach," In preparation.
+     </li>
+     <li id="N101E4">
+      Sack, D. A., Sack, R. B., Nair, G. B. and Siddique, A. K. (2004), "Cholera," The Lancet 363:223-233.
+     </li>
+     <li id="N101E6">
+      Simanjuntak, C. H., Larasati, W., Arjoso, S., Putri, M., Lesmana, M., Oyofo, B. A., Sukri, N., Nurdin, D., Kusumaningrum, R. P., Punjabi, N. H., Subekti, D., Djelantik, S., Sukarma, Sriwati, Muzahar, Lubis, A., Siregar, H., Mas'ud, B., Abdi, M., Sumardiati, A., Wibisana, S., Hendarwanto, Setiawan, B., Santoso, W., Putra, E., Sarumpaet, S., Ma'ani, H., Lebron, C., Soeparmanto, S. A., Campbell, J. R., Corwin, A. L. (2001), "Cholera in Indonesia in 1993-1999," The American journal of tropical medicine and hygiene 65(6):788-797.
+     </li>
+     <li id="N101E8">
+      Spooner, P. G., Lunt, I. D., Okabe, A. and Shiode, S. (2004), "Spatial analysis of a roadside Acacia population on a road network using the network k-function," Landscape Ecology 19:491-499.
+     </li>
+     <li id="N101EA">
+      Sultan, B., Labadi, K., Guegan, J. and Janicot, S. (2005), "Climate Drives the Meningitis Epidemics Onset in West Africa," PloS Med 2(1):43-49.
+     </li>
+     <li id="N101EC">
+      Torres Codeço, C. T. (2001), "Endemic and epidemic dynamics of cholera: the role of the aquatic reservoir," BioMed Central Infectious Diseases 1:1.
+     </li>
+     <li id="N101EE">
+      Unwin, A. and Unwin, D. (1998), "Exploratory spatial data analysis with local statistics," The Statistician 47(3):415-421.
+     </li>
+     <li id="N101F0">
+      Ward, M. P. and Carpenter, T. E. (2000), "Analysis of time-space clustering in veterinary epidemiology," Preventive Veterinary Medicine 43:225-237.
+     </li>
+     <li id="N101F2">
+      WHO (2005), World Health Organization, Communicable Disease Surveillance &amp; Response, Cholera, http://www.who.int/csr/don/archive/disease/cholera/en/index.html.
+     </li>
+     <li id="N101F4">
+      Wiegand, T. and Moloney, K. A. (2004), "Rings, circles, and null-models for point pattern analysis in ecology," OIKOS 104:209-229.
+     </li>
+     <li id="N101F6">
+      Zhao, H. X., Moyeed, R. A., Stenhouse, E. A., Demaine, A. G. and Millwars B. A. (2002), "Space-time clustering of childhood Type 1 diabetes in Devon and Cornwall, England," Diabetic Medicine 19:667-672.
+     </li>
+    </ul>
+   </div>
+   <div>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     *Identification of water as a cause of Cholera
+    </p>
+    <p>
+     **Discovery of Vibrio Cholerae Bacterium
+    </p>
+    <p>
+     Table 1: Cholera Pandemics.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1: Study area with black points representing bari locations.
+    </p>
+   </div>
+  </div>
+ </div>
+</div>

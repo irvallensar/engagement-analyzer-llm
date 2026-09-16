@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I am writing to complain about the musical show "OVER THE RAINBOW"
+       <ns type="MP">
+       </ns>
+       which I saw in your theatre
+       <ns type="MT">
+       </ns>
+       the 5th of June. I have been very disappointed by the quality of the show and the lies in your advertisement.
+      </p>
+      <p>
+       Firstly, I was looking forward to seeing Danny Brook, as written in the advertisement, but his part was played by another actor, without
+       <ns type="MQ">
+       </ns>
+       information or
+       <ns type="RN">
+        <i>
+         excuse
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         direction
+        </i>
+       </ns>
+       . Secondly, I
+       <ns type="S">
+        <i>
+         coudn't
+        </i>
+       </ns>
+       get a discount with my student card and the show started 45 minutes
+       <ns type="FY">
+        <i>
+         later
+        </i>
+       </ns>
+       . In addition, the theatre restaurant, where we had planned to eat, was closed because the cook was ill.
+      </p>
+      <p>
+       I am therefore asking for a complete refund of my ticket and I hope you will improve the quality of your services in the future.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+      <p>
+       H. Coulez
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about the musical show "OVER THE RAINBOW" which I saw in your theatre  the 5th of June.
+       </s>
+       <s pid="2" sid="2">
+        I have been very disappointed by the quality of the show and the lies in your advertisement.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I was looking forward to seeing Danny Brook, as written in the advertisement, but his part was played by another actor, without  information or excuse  from the direction.
+       </s>
+       <s pid="3" sid="2">
+        Secondly, I coudn't get a discount with my student card and the show started 45 minutes later.
+       </s>
+       <s pid="3" sid="3">
+        In addition, the theatre restaurant, where we had planned to eat, was closed because the cook was ill.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am therefore asking for a complete refund of my ticket and I hope you will improve the quality of your services in the future.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        H. Coulez
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="DY">
+        <i>
+         Unfortunatly
+        </i>
+       </ns>
+       , Pat wasn't very good at keeping secrets. The poor boy was only 5
+       <ns type="AGN">
+        <i>
+         year
+        </i>
+       </ns>
+       old and at this age
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it's very difficult to keep your mouth shut knowing an important secret. So when he heard
+       <ns type="ID">
+        <i>
+         at random
+        </i>
+       </ns>
+       that my parents were planning to
+       <ns type="RV">
+        <i>
+         offer
+        </i>
+       </ns>
+       me a trip to San Fansisco as
+       <ns type="MD">
+       </ns>
+       present for my birthday, my little brother ran
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my bedroom
+       <ns type="RY">
+        <i>
+         wherever
+        </i>
+       </ns>
+       I was studying and whispered
+       <ns type="W">
+        <i>
+         in my ear the wonderful news
+        </i>
+       </ns>
+       . I knew they wanted to send me to America because they didn't want me to spend the summer with my boyfriend Fred, whom they didn't appreciate. But Fred booked a
+       <ns type="RN">
+        <i>
+         place
+        </i>
+       </ns>
+       on a plane to San Fransisco and that's why, even if I didn't look delighted when my mum gave me my ticket for America, I had been looking forward to going with Fred for
+       <ns type="W">
+        <i>
+         already one month
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunatly,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        The poor boy was only 5 year old and at this age, it's very difficult to keep your mouth shut knowing an important secret.
+       </s>
+       <s pid="1" sid="4">
+        So when he heard at random that my parents were planning to offer me a trip to San Fansisco as  present for my birthday, my little brother ran in my bedroom wherever I was studying and whispered in my ear the wonderful news.
+       </s>
+       <s pid="1" sid="5">
+        I knew they wanted to send me to America because they didn't want me to spend the summer with my boyfriend Fred, whom they didn't appreciate.
+       </s>
+       <s pid="1" sid="6">
+        But Fred booked a place on a plane to San Fransisco and that's why, even if I didn't look delighted when my mum gave me my ticket for America, I had been looking forward to going with Fred for already one month.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

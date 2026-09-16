@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     27.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Helen Ryan,
+      </p>
+      <p>
+       I am very happy to have won the first prize
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the competition, and I am going
+       <ns type="RV">
+        <i>
+         to clear up
+        </i>
+       </ns>
+       some details you asked me
+       <ns type="MT">
+       </ns>
+       in your letter.
+      </p>
+      <p>
+       Firstly, because of my school exam, I would like to travel only
+       <ns type="MT">
+       </ns>
+       <ns type="RP">
+        <i>
+         july
+        </i>
+       </ns>
+       .
+       <ns type="S">
+        <i>
+         Moroever
+        </i>
+       </ns>
+       , I have chosen this month because I think the weather will be fine. At Camp California, I hope I will be in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       because I like very much this kind of
+       <ns type="DN">
+        <i>
+         style life
+        </i>
+       </ns>
+       : I love
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       contact with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature.
+      </p>
+      <p>
+       <ns type="U">
+        <i>
+         On the other hand
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         During
+        </i>
+       </ns>
+       my stay
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       Camp California, I want to go swimming because I
+       <ns type="DV">
+        <i>
+         practice
+        </i>
+       </ns>
+       this
+       <ns type="S">
+        <i>
+         activitie
+        </i>
+       </ns>
+       regularly and I often
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       competitions: this is one of my hobbies. In addition to this, I wish
+       <ns type="U">
+        <i>
+         I am
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         going
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to sail
+        </i>
+       </ns>
+       : I have never
+       <ns type="TV">
+        <i>
+         try
+        </i>
+       </ns>
+       it, but it
+       <ns type="R">
+        <i>
+         seems to be
+        </i>
+       </ns>
+       great!
+      </p>
+      <p>
+       Finally, I have two questions more: I wonder if I can change my
+       <ns type="RP">
+        <i>
+         french
+        </i>
+       </ns>
+       money in the
+       <ns type="RP">
+        <i>
+         Camp
+        </i>
+       </ns>
+       and what kind of clothes I have to buy before coming?
+      </p>
+      <p>
+       Yours sincerely.
+      </p>
+      <p>
+       Didier Bovie
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am very happy to have won the first prize of the competition, and I am going to clear up some details you asked me  in your letter.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, because of my school exam, I would like to travel only  july.
+       </s>
+       <s pid="3" sid="2">
+        Moroever, I have chosen this month because I think the weather will be fine.
+       </s>
+       <s pid="3" sid="3">
+        At Camp California, I hope I will be in  tents because I like very much this kind of style life: I love the contact with the nature.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        On the other handDuring my stay in Camp California, I want to go swimming because I practice this activitie regularly and I often do competitions: this is one of my hobbies.
+       </s>
+       <s pid="4" sid="2">
+        In addition to this, I wish I am going to sail: I have never try it, but it seems to be great!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, I have two questions more: I wonder if I can change my french money in the Camp and what kind of clothes I have to buy before coming?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Didier Bovie
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       As you asked me in your last letter, I am going to tell you more about
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       last month's pop concert.
+      </p>
+      <p>
+       Firstly, I arrived five hours before the
+       <ns type="S">
+        <i>
+         begining
+        </i>
+       </ns>
+       of the concert in order to help the musicians to move the
+       <ns type="RN">
+        <i>
+         material
+        </i>
+       </ns>
+       from the van to the
+       <ns type="RN">
+        <i>
+         scene
+        </i>
+       </ns>
+       . As soon as all the conections
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       made, we tested the
+       <ns type="R">
+        <i>
+         <ns type="DN">
+          <i>
+           nivel
+          </i>
+         </ns>
+         of the sound
+        </i>
+       </ns>
+       : I found it too loud, so I advised them to
+       <ns type="R">
+        <i>
+         regular
+        </i>
+       </ns>
+       it, and they
+       <ns type="RV">
+        <i>
+         listed
+        </i>
+       </ns>
+       to me! Then, there was only one hour left to install the
+       <ns type="IJ">
+        <i>
+         differents
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         color
+        </i>
+       </ns>
+       lights
+       <ns type="RP">
+        <i>
+         :
+        </i>
+       </ns>
+       it was just
+       <ns type="S">
+        <i>
+         enought
+        </i>
+       </ns>
+       time.
+      </p>
+      <p>
+       <ns type="L">
+        <i>
+         Thus
+        </i>
+       </ns>
+       , it was a fantastic afternoon because I like
+       <ns type="W">
+        <i>
+         very much music
+        </i>
+       </ns>
+       , even if I don't play any
+       <ns type="DJ">
+        <i>
+         music
+        </i>
+       </ns>
+       instrument. Moreover, I learnt a lot about music, especially concerning
+       <ns type="R">
+        <i>
+         the way of
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         <ns type="RV">
+          <i>
+           using
+          </i>
+         </ns>
+        </i>
+       </ns>
+       an instrument. Consequently, I hope I will play an instrument in the future, especially because the group promises
+       <ns type="UA">
+        <i>
+         me
+        </i>
+       </ns>
+       to help me to learn any instrument.
+      </p>
+      <p>
+       See you soon.
+      </p>
+      <p>
+       Best wishes
+      </p>
+      <p>
+       Didier Bovie
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        As you asked me in your last letter, I am going to tell you more about the last month's pop concert.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I arrived five hours before the begining of the concert in order to help the musicians to move the material from the van to the scene.
+       </s>
+       <s pid="3" sid="2">
+        As soon as all the conections was made, we tested the nivel of the sound: I found it too loud, so I advised them to regular it, and they listed to me!
+       </s>
+       <s pid="3" sid="3">
+        Then, there was only one hour left to install the differents color lights: it was just enought time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Thus, it was a fantastic afternoon because I like very much music, even if I don't play any music instrument.
+       </s>
+       <s pid="4" sid="2">
+        Moreover, I learnt a lot about music, especially concerning the way of using an instrument.
+       </s>
+       <s pid="4" sid="3">
+        Consequently, I hope I will play an instrument in the future, especially because the group promises me to help me to learn any instrument.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        See you soon.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Best wishes
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Didier Bovie
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

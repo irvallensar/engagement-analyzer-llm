@@ -1,0 +1,560 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Fixation in a generalized voter model
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1 Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The voter model [1] is one of the simplest multi-particle dynamics that yields rich behavior.
+       </s>
+       <s pid="1" sid="2">
+        In its most basic form, it describes a situation where individuals take one of two states, +1 or −1.
+       </s>
+       <s pid="1" sid="3">
+        Following a given network of connections, a person will talk to one of his neighbors uniformly at random and adopt that neighbor’s opinion.
+       </s>
+       <s pid="1" sid="4">
+        The probability of a person adopting a given opinion is thus the concentration of that opinion among his friends.
+       </s>
+       <s pid="1" sid="5">
+        There are exactly two absorbing states, corresponding to complete consensus for either opinion.
+       </s>
+       <s pid="1" sid="6">
+        Despite the crudeness of the model, it has been applied across many fields for a wide variety of purposes, often under different names.
+       </s>
+       <s pid="1" sid="7">
+        The voter model appears in physics for surface catalysis [2], in social science for opinion dynamics [3] and cultural or linguistic evolution [4], and in population genetics for neutral genetic drift [5].
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        A two state process in which individuals hold only one opinion is grossly unrealistic when attempting to model the spread of political opinions.
+       </s>
+       <s pid="2" sid="2">
+        People hold a spectrum of opinions on topics like abortion, the Iraq war, tax policy, foreign aid, etc.
+       </s>
+       <s pid="2" sid="3">
+        However, these opinions often sort themselves into coherent categories.
+       </s>
+       <s pid="2" sid="4">
+        A pair of democrats would likely agree about many topics by virtue of having the same political party, as would a pair of republicans.
+       </s>
+       <s pid="2" sid="5">
+        We consider this to indicate a drive for internal consistency.
+       </s>
+       <s pid="2" sid="6">
+        There is also a general desire by many people to adopt the behavior of his or her peers.
+       </s>
+       <s pid="2" sid="7">
+        This is considered a drive for conformity.
+       </s>
+       <s pid="2" sid="8">
+        It is conceivable that the interplay of these two forces can cause interesting behavior in the spread of opinions [6].
+       </s>
+       <s pid="2" sid="9">
+        We create a network topology into which conformity and consistency are imbedded with differing strengths and study how this topology affects the voter model, with special emphasis on the time to consensus.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Let there be N individuals, each with an opinion, +1 or −1, on M issues.
+       </s>
+       <s pid="3" sid="2">
+        With probability p, an individual will select a topic and interact with another individual on the same topic.
+       </s>
+       <s pid="3" sid="3">
+        Conversely, with probability q = 1−p an individual selects two topics internally.
+       </s>
+       <s pid="3" sid="4">
+        Consistency is thus enforced with a weight q and conformity with a weight p.
+       </s>
+       <s pid="3" sid="5">
+        For a given topic, any individual is accessible from any other individual and, within a given person, any internal topic from any internal topic.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        The M = 1 (or N = 1, mutatis mutandis ) case is equivalent to a standard mean field.
+       </s>
+       <s pid="4" sid="2">
+        This is the simplest topology for the voter model, since a connection to random walks makes solving for many properties relatively simple [5].
+       </s>
+       <s pid="4" sid="3">
+        See, for instance, [7].
+       </s>
+       <s pid="4" sid="4">
+        There are N sites and only two possible states per site, so the system can be characterized at any given time by only the number of plus opinions, denoted by n.
+       </s>
+       <s pid="4" sid="5">
+        This analogy changes the problem to that of a random walker on a line.
+       </s>
+       <s pid="4" sid="6">
+        For N large enough that
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , the probability of hopping in either direction is
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . The mean extinction time from a state, Tn, can be calculated directly with a self-consistency argument. In the continuum limit,
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        (1)
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        This is easily integrable under the boundary condition that T(0) = T(1) = 0, giving
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        (2)
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        Using the results of the mean field, we can guess the scaling of the extinction time with respect to N, M, and p.
+       </s>
+       <s pid="9" sid="2">
+        For values of p near 1/2, the
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      or
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      situations approach the mean field voter model with M or N voters, respectively. If we let N = 1, the average time to extinction, T(N = 1,M), is that of the one dimensional mean field, so the extinction time of this process scales with system size as M2. All edges are equally weighted, so the system is also symmetric under exchange of N and M. The most reasonable guess to allow both characteristics is
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        If p &amp;lt;&amp;lt; 1, almost all of the dynamics occurs within individuals.
+       </s>
+       <s pid="11" sid="2">
+        Each person is almost always at consensus in himself, and so is like a single node in the one dimensional mean field.
+       </s>
+       <s pid="11" sid="3">
+        The system goes to extinction as N2, but with a rescaled time to account for the average time to flip a whole person instead of just one site.
+       </s>
+       <s pid="11" sid="4">
+        To properly scale the time, first note that only in 1/p time steps is there an exchange.
+       </s>
+       <s pid="11" sid="5">
+        That exchange only confers one conflicting site, however, and often this dissent will not cause a switch in the whole person.
+       </s>
+       <s pid="11" sid="6">
+        The probability of a single introduced opinion causing internal convergence is the opinion’s initial concentration, 1/M.
+       </s>
+       <s pid="11" sid="7">
+        An opinion will need to be introduced M times before flipping an individual’s state.
+       </s>
+       <s pid="11" sid="8">
+        Exchanging
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      simultaniously gives the complementary scaling in for
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . This leads to the estimate
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        (3)
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        We can use network theory to make these estimates more rigorous.
+       </s>
+       <s pid="14" sid="2">
+        An adjacency matrix element Aij denotes the probability that, having selected node i, node j will be picked to transmit its state.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        (4)
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        A standard technique of solving the voter model on a lattice [8] can be adapted to the network approach [9].
+       </s>
+       <s pid="16" sid="2">
+        Let the state of the voters be given by the set of all nodes,
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , and let
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      be the same state as S, but with
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . The probability of being in state S at time t is P(S, t). The transition rate for
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        (5)
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        The master equation for P(S) is the Chapman-Komolgorov equation
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        (6)
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        The fixation time for a network can be estimated by looking at the decay of the density
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      of edges that connect disagreeing nodes [2]. The density is related to the average over all correlations by
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        (7)
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        The time constant with which the correlations approach one should thus be proportional to the mean extinction time.
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        By multiplying equation (6) by
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and summing over all configurations S, we can derive the evolution equations for the ensemble average correlations
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="27" sid="1">
+        (8)
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        The conformity-consistency network defined by equation (4) is symmetric under exchange of any two topics and exchange of any two individuals, so we only have four distinct correlations.
+       </s>
+       <s pid="28" sid="2">
+        There is a trivial autocorrelation which is 1 for all time, a correlation rp between individuals on one topic, a correlation rq between topics within an individual, and the correlation between unconnected nodes, r2.
+       </s>
+       <s pid="28" sid="3">
+        The three remaining equations are
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        (9)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        (10)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="31" sid="1">
+        (11)
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        This can be represented by a linear equation by making the substitutions
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        12)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        (13)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        (14)
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        giving the final form
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="37" sid="1">
+        The slowest time scale in the evolution of the correlations is proportional to the inverse of the smallest eigenvalue of B.
+       </s>
+       <s pid="37" sid="2">
+        In the limit of small p, matrix perturbation theory tells us that the smallest eigenvalue is p/(N −1).
+       </s>
+       <s pid="37" sid="3">
+        To first order, the time constant is proportional to MN2/p, in agreement with our earlier guess.
+       </s>
+       <s pid="37" sid="4">
+        Second order and higher terms can also be calculated, though in principle the eigenvalues are solutions to a cubic equation and therefore have a closed form.
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        Computer simulations have been done confirming the scaling properties we have shown and further showing that the smallest eigenvalues give the extinction time for any p. See Figure 1.
+       </s>
+       <s pid="38" sid="2">
+        In fact, the time constant _ appears to relate to the fixation time T by
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      for all explored system parameters. The reason for this constant is not known. We are attempting to understand the exact connection between the correlations and the fixation time. Other future work is to ask how adding noise affects dynamics on a weighted network and to explore the use of population genetics tools such as coalescent theory [10] in these models.
+      <p>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="head_1">
+      References
+     </div>
+     <div>
+      <ul id="N101B4">
+       <li id="N101B5">
+        [1] T.M. Liggett. Interacting Particle Systems. Springer-Verlag, 1985.3
+       </li>
+       <li id="N101B7">
+        [2] P. L. Krapivsky. Kinetics of monomer-monomer surface catalytic reactions. Physical Review A, 45(2), 1992.
+       </li>
+       <li id="N101B9">
+        [3] M. San Miguel, V. M. Eguíluz, R. Toral, and K. Klemm. Binary and multivariate stochastic models of consensus formation. Computing in Science and Engineering, 2005.
+       </li>
+       <li id="N101BB">
+        [4] G. Baxter, R. A. Blythe, W. Croft, and A. J. McKane. Utterance selection model of language change. Physical Review E, 73, 2006.
+       </li>
+       <li id="N101BD">
+        [5] M. Kimura and T. Ohta. The average number of generations until fixation of a mutant gene in a finite population. Genetics, 61:763–771, March 1969.
+       </li>
+       <li id="N101BF">
+        [6] J. Bednar and S. Page. Conformity, consistency, and cultural heterogeneity. preprint, February 2006.
+       </li>
+       <li id="N101C1">
+        [7] S. Redner. A Guide to First-Passage Processes. Cambridge University Press, New York, 2001.
+       </li>
+       <li id="N101C3">
+        [8] L. Frachebourg and P. L. Krapivsky. Exact results for kinetics of catalytic reactions. Physica Review E, 53(4), 1996.
+       </li>
+       <li id="N101C5">
+        [9] V. Sood and S. Redner. Voter model on heterogeneous graphs. Physical Review Letters, 94, 2005.
+       </li>
+       <li id="N101C7">
+        [10] W.J. Ewans. Mathematical Population Genetics Vol. 1 Theoretical Introduction. Springer, 2004.
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="head_1">
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        Figure 1: Simulation of mean fixation time for a network with N = 15, M = 10 averaged over 1000 runs. The data is shown in blue and the inverse of the smallest eigenvalue is shown in black. An order one constant factor was introduced by hand to the eigenvalues.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

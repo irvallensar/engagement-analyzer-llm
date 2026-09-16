@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Ryan,
+      </p>
+      <p>
+       I have received your letter and I
+       <ns type="MV">
+       </ns>
+       so happy because I have won the holiday in California. It will be a pleasure for me
+       <ns type="FV">
+        <i>
+         give
+        </i>
+       </ns>
+       you the information that you need.
+      </p>
+      <p>
+       First of all I would like to travel in July because I am going to Ibiza with my parents in June and in August I start to work part-time, so I am afraid
+       <ns type="RC">
+        <i>
+         but
+        </i>
+       </ns>
+       I can go only in July.
+      </p>
+      <p>
+       With reference to the accommodation
+       <ns type="MP">
+       </ns>
+       I would prefer
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         log cabins
+        </i>
+       </ns>
+       to
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       . I think
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       log cabins are more comfortable and I have never slept in a
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I am very good at playing basketball. When I was a child I used to play daily with my classmates and now I
+       <ns type="TV">
+        <i>
+         am playing
+        </i>
+       </ns>
+       at least
+       <ns type="R">
+        <i>
+         at the
+        </i>
+       </ns>
+       weekend. I have taken a Photography course and I enjoy taking photos
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       animals.
+      </p>
+      <p>
+       I would like to know
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       how much
+       <ns type="MN">
+       </ns>
+       I need and what type of clothes I should take? Could you tell me about the weather, please?
+      </p>
+      <p>
+       I look forward to hearing from you soon.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have received your letter and I  so happy because I have won the holiday in California.
+       </s>
+       <s pid="2" sid="2">
+        It will be a pleasure for me give you the information that you need.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all I would like to travel in July because I am going to Ibiza with my parents in June and in August I start to work part-time, so I am afraid but I can go only in July.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        With reference to the accommodation I would prefer  log cabins to  tents.
+       </s>
+       <s pid="4" sid="2">
+        I think the log cabins are more comfortable and I have never slept in a tents.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am very good at playing basketball.
+       </s>
+       <s pid="5" sid="2">
+        When I was a child I used to play daily with my classmates and now I am playing at least at the weekend.
+       </s>
+       <s pid="5" sid="3">
+        I have taken a Photography course and I enjoy taking photos to animals.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I would like to know, how much  I need and what type of clothes I should take?
+       </s>
+       <s pid="6" sid="2">
+        Could you tell me about the weather, please?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       I hope you are very well. I am writing about my exciting experience at a pop concert.
+      </p>
+      <p>
+       First of all
+       <ns type="MP">
+       </ns>
+       I was too busy but it
+       <ns type="TV">
+        <i>
+         does
+        </i>
+       </ns>
+       not matter because I enjoyed
+       <ns type="W">
+        <i>
+         a lot
+         <ns type="UT">
+          <i>
+           of
+          </i>
+         </ns>
+         this experience
+        </i>
+       </ns>
+       . I was doing different activities
+       <ns type="MP">
+       </ns>
+       from
+       <ns type="DV">
+        <i>
+         designering
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         flier
+        </i>
+       </ns>
+       to selling tickets.
+      </p>
+      <p>
+       I had to search
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       pictures that could be used for the flier. We booked the accommodation for the group. I was responsible for checking the light and sound. In addition I checked the e-mail
+       <ns type="S">
+        <i>
+         dialy
+        </i>
+       </ns>
+       and answered the phone. As you know
+       <ns type="MP">
+       </ns>
+       I sold tickets in some schools and pubs, too.
+      </p>
+      <p>
+       Anyway, it has been one of the most wonderful
+       <ns type="AGN">
+        <i>
+         experience
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my life, but the
+       <ns type="W">
+        <i>
+         concert day
+        </i>
+       </ns>
+       was really amazing. I think this was the best of all. I feel really happy that I participated in this event.
+      </p>
+      <p>
+       If you have the opportunity of
+       <ns type="RV">
+        <i>
+         involving
+        </i>
+       </ns>
+       in something like this
+       <ns type="UA">
+        <i>
+         you
+        </i>
+       </ns>
+       do not hesitate.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I hope you are very well.
+       </s>
+       <s pid="2" sid="2">
+        I am writing about my exciting experience at a pop concert.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all I was too busy but it does not matter because I enjoyed a lot of this experience.
+       </s>
+       <s pid="3" sid="2">
+        I was doing different activities from designering flier to selling tickets.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I had to search in the internet  pictures that could be used for the flier.
+       </s>
+       <s pid="4" sid="2">
+        We booked the accommodation for the group.
+       </s>
+       <s pid="4" sid="3">
+        I was responsible for checking the light and sound.
+       </s>
+       <s pid="4" sid="4">
+        In addition I checked the e-mail dialy and answered the phone.
+       </s>
+       <s pid="4" sid="5">
+        As you know I sold tickets in some schools and pubs, too.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Anyway, it has been one of the most wonderful experience in my life, but the concert day was really amazing.
+       </s>
+       <s pid="5" sid="2">
+        I think this was the best of all.
+       </s>
+       <s pid="5" sid="3">
+        I feel really happy that I participated in this event.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        If you have the opportunity of involving in something like this you do not hesitate.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Quantum Information Reference Article Critique
+     </div>
+     <p>
+      Critique of:
+     </p>
+     <p>
+      B.B. Blinov, D.L. Moehring, L.-M. Duan, C. Monroe, Observation of entanglement between a single trapped atom and a single photon, Nature 428, 153-157 (2004)
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Because quantum states cannot in general be copied, applications of quantum information science such as quantum communication, quantum teleportation of matter, and distributed quantum computation require entanglement of a stable quantum memory and the quantum communication channel.
+      </s>
+      <s pid="1" sid="2">
+       The authors of this paper report direct observation of such entanglement with a single trapped 111Cd+ ion representing a bit of ideal quantum memory and a single photon spontaneously emitted from the ion representing the ideal quantum communication channel.
+      </s>
+      <s pid="1" sid="3">
+       They directly verify the entanglement via coincidence measurements between the quantum state of the ion and the polarization state of the photon.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       In the experiment, a single 111Cd+ ion is trapped and laser cooled in an asymmetric-quadrupole r.f. trap.
+      </s>
+      <s pid="2" sid="2">
+       The two qubit states of the ion are represented by two ground-state hyperfine sub-levels of Cadmium.
+      </s>
+      <s pid="2" sid="3">
+       The appropriate levels, denoted as
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     ,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , are
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     ,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .  The ion is prepared in the excited state
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     by first initializing the atom in the
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     state via optical pumping and a microwave rotation and then applying a σ+-polarized optical pulse coupling
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     to the excited state.  Because of the angular momentum selection rules obeyed by radiative dipole transitions, the excited state will then decay via one of two equally probable decay channels.  The ion will either emit a σ+-polarized photon and decay to the
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     state or emit a π-polarized photon and decay to the
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     state.  The polarization of these photons is defined relative to a quantization axis provided by a small magnetic field.  Along an axis perpendicular to the quantization axis, these two polarization states are orthogonal.  The photon emitted from the ion is collected along one such perpendicular direction and passes through a polarization rotator (a λ/2 waveplate) and a polarizing beamsplitter.  The two polarization components (σ+ and π) are thus split and directed to separate photon-counting photomultiplier tubes (PMTs).  Following a single photon detection on either PMT, the qubit state of the ion is then measured via the standard
+     <q>
+      quantum jumps
+     </q>
+     technique discussed in class.  They apply a microwave rotation and then observe the emitted fluorescence of the atom as it is driven on a cycling transition by a σ+-polarized detection pulse.  In this way, the authors effect a coincidence measurement of the polarization of the emitted photon and the internal qubit state of the ion.
+     <p>
+     </p>
+     <p>
+      <s pid="4" sid="1">
+       The authors define the qubit states of the photon by the two possible polarization states of the photon;
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .  Therefore, the atomic and photonic qubits are entangled following spontaneous emission because the two decay channels from the excited state each result in distinct atomic quibit/photon qubit pairs.
+     <p>
+     </p>
+     <p>
+      <s pid="6" sid="1">
+       Ideally, one would expect perfect entanglement since the two decay channels are equally probable.
+      </s>
+      <s pid="6" sid="2">
+       The authors use the entanglement fidelity as the entanglement witness which detects the degree of entanglement of the system.
+      </s>
+      <s pid="6" sid="3">
+       The entanglement fidelity, or projection of the system onto a maximally entangled state, is defined as
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     where
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is a maximally entangled state such as a Bell state or EPR state.  It can be shown that any state with
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is an entangled state.  They did not specify whether Bell or EPR states were used in their calculation since the two are locally equivalent under LOCC operations and, thus, contain the same amount of entanglement (1 e-bit).   In the case of ideal entanglement the authors would create the state
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     which is identical to a maximally entangled Bell or EPR state depending on the association of {H,V} with {↑,↓} or {↓,↑}.  We would expect, therefore, to find F=1, the ideal case where they generate 1e-bit of entanglement in the system.
+     <p>
+     </p>
+     <p>
+      <s pid="8" sid="1">
+       The authors, however, expect to generate the non-maximally entangled state
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     which has a highly-entangled but non-unit fidelity of F=0.97.  This is because the intensity of the radiation patterns for the σ+-polarized photons and the π-polarized photons are not equal, but differ by a factor of two along the observation direction.  They, therefore, generate a system with less than 1-ebit of entanglement.  The authors could achieve unit fidelity and perfect entanglement by measuring photon polarization states with equal intensity distributions along a certain axis but failed to do so due to experimental difficulties.
+     <p>
+     </p>
+     <p>
+      <s pid="10" sid="1">
+       As first evidence that they generate a highly entangled state such as given above, the authors compute the conditional probabilities for the atomic qubit states given the photon qubit state, averaged over 1000 successful coincidence measurements.
+      </s>
+      <s pid="10" sid="2">
+       The conditional probabilities they found are as follows: P(↑|H)=0.97±0.01, P(↓|H)=0.03±0.01, P(↑|V)=0.06±0.01, P(↓|V)=0.94±0.01.
+      </s>
+      <s pid="10" sid="3">
+       Although these conditional probabilities show that a given photon polarization is associated with a distinct atomic qubit state, it does not prove entanglement, as a statistical mixture of
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     states could produce such probabilities.
+     <p>
+     </p>
+     <p>
+      <s pid="12" sid="1">
+       To verify entanglement, the authors used the λ/2 waveplate to rotate the basis for photon qubit measurement by 45º and applied microwaves driving transitions among the atomic qubit states to rotate the basis of atomic qubit states by 45º.
+      </s>
+      <s pid="12" sid="2">
+       They then varied the relative phase of the photon and atomic qubit rotations and plotted the conditional probabilities as a function of relative phase difference, as shown below in Fig 1.
+      </s>
+      <s pid="12" sid="3">
+       If the atomic and photonic qubits were not entangled, but instead prepared in a statistically mixed state, all probabilities at φ=0º would be 0.5. Instead, due to the fact that the authors created a coherent entangled pure state, the probabilities are maximally correlated at φ=0º and oscillate between ~0 and ~1 depending on the relative phase difference of the basis rotations.
+      </s>
+      <s pid="12" sid="4">
+       The authors use the conditional probabilities at the point of maximal correlation to calculate the fidelity of entanglement.
+      </s>
+      <s pid="12" sid="5">
+       They find F≥0.87, lower than the F=0.97 expected for the state they excite due to several experimental factors, but well above the entanglement threshold of F=0.5.
+      </s>
+      <s pid="12" sid="6">
+       They, therefore, directly observe entanglement between a trapped ion and a spontaneously emitted photon.
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="13" sid="1">
+       Figure 1: Conditional probabilities as a function of the relative phase between the atomic and photonic basis rotations.
+      </s>
+     </p>
+     <p>
+      <s pid="14" sid="1">
+       The authors note that, in addition to the more obvious application to quantum communication, this type of entanglement can also be used to generate entangled states of remotely located trapped ion qubits.
+      </s>
+      <s pid="14" sid="2">
+       This is done via the ion-photon coupling scheme, or "Partial Bell Measurement" in which two ions spontaneously emit photons with which they are entangled and the two photons are then mode selected and combined on a beamsplitter.
+      </s>
+      <s pid="14" sid="3">
+       Coincidence measurements as described above ensure that the corresponding ions are entangled.
+      </s>
+      <s pid="14" sid="4">
+       The probability of such a coincidence measurement is small but, when it occurs, success is known and the entanglement can be used to implement quantum gates.
+      </s>
+     </p>
+     <p>
+      <s pid="15" sid="1">
+       Because the ion-photon entanglement described above can be used to entangle a stable quantum memory and a quantum communication channel or to entangle to two ionic qubits, this work represents an important advance towards the physical realization of different quantum information systems.
+      </s>
+      <s pid="15" sid="2">
+       The authors assert that atom-photon entanglement has been implicit in many previous experimental systems; however, this paper represents the first direct observation of atom-photon entanglement.
+      </s>
+      <s pid="15" sid="3">
+       The paper includes a reliable scheme for initialization and detection of entangled atom-photon states and provides a thorough study of the dependence of the degree of entanglement on the relative phase between the atom and photon measurement bases.
+      </s>
+      <s pid="15" sid="4">
+       For these reasons, this paper represents a significant contribution to the quantum information literature and is likely to be well-referenced for years to come.
+      </s>
+     </p>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

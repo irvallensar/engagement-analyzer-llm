@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Thai
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       manager
+      </p>
+      <p>
+       My name is Sally Smith. I went to see a musical show last Wednesday. I had a very disappointing evening.
+      </p>
+      <p>
+       In the advertisement you said "Danny Brook" is the actor but it wasn't
+       <ns type="MA">
+       </ns>
+       . It was somebody else. I went to see the show because I like Danny Brook. The person that
+       <ns type="RV">
+        <i>
+         played
+        </i>
+       </ns>
+       instead of Denny was not very good.
+      </p>
+      <p>
+       The show
+       <ns type="TV">
+        <i>
+         <ns type="S">
+          <i>
+           supposted
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to start at 19.30 pm but it started at 20.15 pm. It was very late. We had to wait nearly an hour. Staff did not tell us why it started late.
+      </p>
+      <p>
+       When I bought tickets, they
+       <ns type="R">
+        did not discount
+       </ns>
+       at all. I asked them about discounts because I
+       <ns type="RV">
+        <i>
+         saw
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       in the advertisement.
+      </p>
+      <p>
+       They ignored me. We bought tickets without
+       <ns type="MD">
+       </ns>
+       discount. I don't know
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       they
+       <ns type="MV">
+       </ns>
+       <ns type="MD">
+       </ns>
+       discount
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       somebody else or not.
+      </p>
+      <p>
+       After the show we went to the theatre restaurant but it
+       <ns type="MV">
+       </ns>
+       closed. It closed at 11 pm. It was not our fault that we went in after 11 pm. The show finished late. The restaurant should
+       <ns type="MV">
+       </ns>
+       open until the show
+       <ns type="AGV">
+        <i>
+         finish
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       It was not a perfect evening at all. Could I please have my money back? It was £60 for
+       <ns type="MD">
+       </ns>
+       tickets. I was very disappointed about this. I am looking forward to hearing from you.
+      </p>
+      <p>
+       Yours
+       <ns type="S">
+        <i>
+         sinecerely
+        </i>
+       </ns>
+      </p>
+      <p>
+       Sally. Smith.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear the manager
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My name is Sally Smith.
+       </s>
+       <s pid="2" sid="2">
+        I went to see a musical show last Wednesday.
+       </s>
+       <s pid="2" sid="3">
+        I had a very disappointing evening.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In the advertisement you said "Danny Brook" is the actor but it wasn't .
+       </s>
+       <s pid="3" sid="2">
+        It was somebody else.
+       </s>
+       <s pid="3" sid="3">
+        I went to see the show because I like Danny Brook.
+       </s>
+       <s pid="3" sid="4">
+        The person that played instead of Denny was not very good.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The show supposted to start at 19.30 pm but it started at 20.15 pm.
+       </s>
+       <s pid="4" sid="2">
+        It was very late.
+       </s>
+       <s pid="4" sid="3">
+        We had to wait nearly an hour.
+       </s>
+       <s pid="4" sid="4">
+        Staff did not tell us why it started late.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        When I bought tickets, they did not discount at all.
+       </s>
+       <s pid="5" sid="2">
+        I asked them about discounts because I saw  in the advertisement.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        They ignored me.
+       </s>
+       <s pid="6" sid="2">
+        We bought tickets without  discount.
+       </s>
+       <s pid="6" sid="3">
+        I don't know that they   discount for somebody else or not.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        After the show we went to the theatre restaurant but it  closed.
+       </s>
+       <s pid="7" sid="2">
+        It closed at 11 pm.
+       </s>
+       <s pid="7" sid="3">
+        It was not our fault that we went in after 11 pm.
+       </s>
+       <s pid="7" sid="4">
+        The show finished late.
+       </s>
+       <s pid="7" sid="5">
+        The restaurant should  open until the show finish.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        It was not a perfect evening at all.
+       </s>
+       <s pid="8" sid="2">
+        Could I please have my money back?
+       </s>
+       <s pid="8" sid="3">
+        It was £60 for  tickets.
+       </s>
+       <s pid="8" sid="4">
+        I was very disappointed about this.
+       </s>
+       <s pid="8" sid="5">
+        I am looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours sinecerely
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Sally.
+       </s>
+       <s pid="10" sid="2">
+        Smith.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. She is one of my
+       <ns type="AGN">
+        <i>
+         friend
+        </i>
+       </ns>
+       at school. She is very nice, clever, polite and friendly. Everybody
+       <ns type="AGV">
+        <i>
+         love
+        </i>
+       </ns>
+       her. If you have any problems, she can give you some
+       <ns type="FN">
+        <i>
+         suggestion
+        </i>
+       </ns>
+       . If you want her to keep
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="IJ">
+        <i>
+         secrets
+        </i>
+       </ns>
+       , do not tell her. She
+       <ns type="TV">
+        <i>
+         is not keeping
+        </i>
+       </ns>
+       secrets. This is her bad point. She always tells someone else about it.
+      </p>
+      <p>
+       Last week, Tim told Pat about his serious problem. He wanted Pat to keep it between them but Pat did not keep
+       <ns type="AGD">
+        <i>
+         his
+        </i>
+       </ns>
+       promise. She told us about it. When Tim found out that we knew his problem and
+       <ns type="MA">
+       </ns>
+       tried to help him
+       <ns type="RP">
+        <i>
+         . He
+        </i>
+       </ns>
+       was very angry with Pat. He
+       <ns type="TV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       talk to Pat at all. Basically, Tim did not know that Pat was not very good at keeping secrets.
+      </p>
+      <p>
+       She
+       <ns type="TV">
+        <i>
+         did
+        </i>
+       </ns>
+       not know
+       <ns type="R">
+        when she can speak or not speak
+       </ns>
+       . We
+       <ns type="MV">
+       </ns>
+       so
+       <ns type="DJ">
+        <i>
+         worry
+        </i>
+       </ns>
+       about her
+       <ns type="U">
+        <i>
+         in the
+        </i>
+       </ns>
+       future. She has not a lot of
+       <ns type="AGN">
+        <i>
+         friend
+        </i>
+       </ns>
+       because of this
+       <ns type="RN">
+        point
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        She is one of my friend at school.
+       </s>
+       <s pid="1" sid="4">
+        She is very nice, clever, polite and friendly.
+       </s>
+       <s pid="1" sid="5">
+        Everybody love her.
+       </s>
+       <s pid="1" sid="6">
+        If you have any problems, she can give you some suggestion.
+       </s>
+       <s pid="1" sid="7">
+        If you want her to keep it secrets, do not tell her.
+       </s>
+       <s pid="1" sid="8">
+        She is not keeping secrets.
+       </s>
+       <s pid="1" sid="9">
+        This is her bad point.
+       </s>
+       <s pid="1" sid="10">
+        She always tells someone else about it.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Last week, Tim told Pat about his serious problem.
+       </s>
+       <s pid="2" sid="2">
+        He wanted Pat to keep it between them but Pat did not keep his promise.
+       </s>
+       <s pid="2" sid="3">
+        She told us about it.
+       </s>
+       <s pid="2" sid="4">
+        When Tim found out that we knew his problem and  tried to help him.
+       </s>
+       <s pid="2" sid="5">
+        He was very angry with Pat.
+       </s>
+       <s pid="2" sid="6">
+        He wasn't talk to Pat at all.
+       </s>
+       <s pid="2" sid="7">
+        Basically,
+       </s>
+       <s pid="2" sid="8">
+        Tim did not know that Pat was not very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        She did not know when she can speak or not speak.
+       </s>
+       <s pid="3" sid="2">
+        We  so worry about her in the future.
+       </s>
+       <s pid="3" sid="3">
+        She has not a lot of friend because of this point.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

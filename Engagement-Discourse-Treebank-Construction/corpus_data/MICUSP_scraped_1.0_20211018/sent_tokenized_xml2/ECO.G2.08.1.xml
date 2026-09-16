@@ -1,0 +1,774 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Referee Report on: "Country Size, Currency Unions, and International Asset Returns"
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Traditional models of international assets typically assume that countries and currency areas are identical in size.
+      </s>
+      <s pid="1" sid="2">
+       The major contribution of the paper that I am going to discuss demonstrates analytically and empirically the implications of relaxing this assumption.
+      </s>
+      <s pid="1" sid="3">
+       The primary finding is that the differences in sizes of economies have important implications for international asset returns.
+      </s>
+      <s pid="1" sid="4">
+       More specifically, the author’s model predicts that larger countries’ bonds must pay lower excess returns in equilibrium.
+      </s>
+      <s pid="1" sid="5">
+       This is because the bonds of larger countries provide better insurance against shocks that affect a larger fraction of the world economy.
+      </s>
+      <s pid="1" sid="6">
+       The author interprets the results of his model to declare that uncovered interest parity (UIP) fails unless countries are identical in size.
+      </s>
+      <s pid="1" sid="7">
+       He conducts a set of regressions to test whether his model’s predictions are empirically significant.
+      </s>
+      <s pid="1" sid="8">
+       I describe below the author’s motivation, theoretical development, empirical strategy, and his results while providing a critical assessment of each of these parts at the same time.
+      </s>
+      <s pid="1" sid="9">
+       I focus in this paper on the intuition of the author’s model and its pros and cons as well as providing my assessment of his empirical strategy.
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       Motivation:
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        The author’s research question is motivated by some recent empirical findings that document the existence of significantly better hedging properties of large country assets.
+       </s>
+       <s pid="2" sid="2">
+        For instance, he cites: 1) Campbell, de Medeiros, and Viceira (2007), who find the Euro and the Dollar to be better hedges against the risk faced by a global equity investor than other currencies; and 2) Lustig and Verdelhan (2007), who suggest that portfolios of bonds denominated in low interest-rate currencies tend to be good hedges against US consumption risk.
+       </s>
+       <s pid="2" sid="3">
+        These citations do not necessarily justify the expectation that it is primarily the sizes of the economies which lead to these empirical regularities.
+       </s>
+       <s pid="2" sid="4">
+        One could possibly argue that there is an unobserved effect that is correlated both with country size and low interest rates, or some other omitted factor.
+       </s>
+       <s pid="2" sid="5">
+        To preempt such an argument and to further motivate his question, the author runs a couple of regressions with time fixed effects (although one would also like to see individual effects included) to show that there is a strong negative correlation between a country’s share in total OECD output and interest rates.
+       </s>
+       <s pid="2" sid="6">
+        While this first pass at the data propels us to care about country size, the author’s interpretation of these regressions as a significant departure from UIP is premature, mainly because the simple empirical approach here is unable to capture the assumptions of a UIP framework.
+       </s>
+       <s pid="2" sid="7">
+        Another deficiency with the motivation of the research question and the "descriptive" regressions is that none of the model’s key arguments are communicated at this point to describe why we would see such a negative correlation between country size and interest rates.
+       </s>
+       <s pid="2" sid="8">
+        The motivation seems to arise solely due to an empirical observation for interest rates but with no theoretical inquiry about why earlier models have not cared about country size and we now should.
+       </s>
+       <s pid="2" sid="9">
+        As a result, the author cannot motivate well enough why we should care about this question theoretically as well as trying to explain the data better.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       The Model:
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        The author carries out two main exercises to study the effects of differences in country size on international asset returns.
+       </s>
+       <s pid="3" sid="2">
+        The first and major model of the paper is a standard Lucas-tree endowment economy with complete asset markets which includes non-tradable goods.
+       </s>
+       <s pid="3" sid="3">
+        In this respect, it is very much in the spirit of Backus and Smith (1993), Tesar (1993), and Stockman and Tesar (1995) – the author only relaxes the assumption of identical country sizes and derives the implications for asset returns under this case.
+       </s>
+       <s pid="3" sid="4">
+        The second exercise is introducing monetary shocks to the previous model.
+       </s>
+       <s pid="3" sid="5">
+        The author departs from the complete asset markets assumption in this part to establish the desired relationship between country size and interest rates under a weaker set of conditions.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        The introduction of non-traded goods in consumption has the primary role of allowing the consumer price index to differ across countries.
+       </s>
+       <s pid="4" sid="2">
+        Since the real exchange rate is defined as the ratio of two countries’ consumption price indices, shocks to a country’s endowment of the non-traded good is the driver behind the fluctuations in its exchange rate with the other country.
+       </s>
+       <s pid="4" sid="3">
+        The author skillfully makes use of this regularity to demonstrate how stochastic shocks to a country’s endowment of the traded and non-traded goods affect its asset prices.
+       </s>
+       <s pid="4" sid="4">
+        More specifically, the author solves the competitive equilibrium problem for a representative household, where, taking prices as given, the household solves [#REF 1] :
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        where Q(ω) is the first period price of a state-contingent security that pays one unit of the traded good if state ω occurs in the second period, and W1(i) is the NPV of household i’s endowments (net of transfers).
+       </s>
+       <s pid="5" sid="2">
+        Notice that the household exhibits constant relative risk aversion (CRRA) utility.
+       </s>
+       <s pid="5" sid="3">
+        The consumption and price indices are given by:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , respectively.
+      <a class="fnref" href="#fn2" id="fnref_fn2">
+       2
+      </a>
+      Hence, the author uses the same utility form that is found in Backus and Smith (1993) and Tesar (1993), who work with isoelastic period utility functions with a constant elasticity of substitution between traded and non-traded goods. Maximizing lifetime utility subject to the regular market clearing conditions, the author finds the household’s Euler equation to be:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      where
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the household’s marginal utility from tradable consumption at time t. Clearly, the price of a state-contingent security is given by the ratio of marginal utilities from tradable consumption in the two periods. This equation is the first of the two primary identities in the paper, revealing the fact that all international assets must ultimately be settled in terms of tradable output and that non-tradable goods can affect international asset prices only through their impact on the marginal utility from tradables (λT). Thus, it will be crucial to keep an eye on how this impact plays out under the assumptions of the model.
+      <p>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Before discussing how the endowment of non-tradable goods affects λT and how the author demonstrates the implications of country size differences, a few remarks are in place.
+       </s>
+       <s pid="7" sid="2">
+        After solving for the Euler equation of the household, the author presents Lemma 1 of his paper which relates the difference in the (log) expected returns between two arbitrary assets to the difference between the covariances of the payouts of these assets with λT.
+       </s>
+       <s pid="7" sid="3">
+        The lemma basically says that households prefer assets that pay off high whenever additional traded goods are sorely needed (i.e. marginal utility tradables consumption is high), which implies that the asset that has the higher covariance with λT must pay a lower return in equilibrium.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Appendix
+       </s>
+       <s pid="8" sid="2">
+        A shows that the return to an asset is found by summing up the prices of state-contingent securities from the households’
+       </s>
+       <s pid="8" sid="3">
+        FOCs, and the final result is found by using statistical identities that make use of the assumption that the payouts of the assets are log-normally distributed.
+       </s>
+       <s pid="8" sid="4">
+        While there is a nice intuition that arises out of this lemma, the author actually possesses the required findings to solve for asset return differentials directly from his model.
+       </s>
+       <s pid="8" sid="5">
+        He is able to do this since he solves for the marginal utility from tradable goods in the planner’s problem, the equation for which is given in (14) on p.12.
+       </s>
+       <s pid="8" sid="6">
+        Then plugging this in to (10), the equation for the price of a state-contingent asset, he can solve for
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      in terms of the optimal allocations that the planner determines for individual countries. These will surely depend on the aggregate world endowment of tradables as well as individual countries’ endowments of non-tradable goods. Thus, he can actually show directly how the difference in prices of two countries’ assets are related to the differences in their stochastic discount factors, which would have been solved in terms of the tradable and non-tradable endowments. Indeed, this is the exact approach that is followed by Backus and Smith (1993), whose setup actually allows for differences in country sizes.
+      <p>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        With the exact same setup, Backus and Smith (1993) solve for the interest rate differential between two countries in Example 1 of their paper (p.306).
+       </s>
+       <s pid="10" sid="2">
+        This example not only demonstrates how to derive the interest rate differential directly from the model, but also shows that the relationship between the interest rate differential and non-tradable endowments crucially depends on the assumptions on functional form.
+       </s>
+       <s pid="10" sid="3">
+        Backus and Smith (1993) assume that α = 0 and γ = 0, thereby allowing for additive separability. [#REF 3]
+       </s>
+       <s pid="10" sid="4">
+        Correspondingly, the state utility function form is the Cobb-Douglas case.
+       </s>
+       <s pid="10" sid="5">
+        Their only assumption on the planner’s weights is that
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , which does not impose the assumption of identical country sizes. Notice that the author’s setup is also the same, as his interpretation of θ is a country’s share in total OECD output, and these surely sum to 1. Backus and Smith (1993) solve for the bond price and express the difference between two countries’ bond prices in equation (4.14) of their paper. Their illustration of the real interest differential between two countries, given by equation (4.15), indicates:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , where xi is country i’s endowment of the non-traded good. Hence, Backus and Smith (1993) actually show that under the assumption of additively separable utility (α = 0) and γ = 0, the country which has a higher endowment of the non-tradable good will offer a higher interest rate. Backus and Smith (1993) conclude that the separable utility function causes the growth rate of the real exchange rate and the real interest rate differential to have identical moments and dynamics, which is in support of the UIP. This is in sharp contrast to the current author’s finding, which suggests that the author’s results may not be robust to the use of different functional forms.
+      <a class="fnref" href="#fn4" id="fnref_fn4">
+       4
+      </a>
+      <p>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        The second primary identity that the author establishes shows why we should care about differences in country size.
+       </s>
+       <s pid="12" sid="2">
+        This identity is the closed-form solution for the marginal utility from tradable goods, λT, from the planner’s problem.
+       </s>
+       <s pid="12" sid="3">
+        The planner’s problem is cast as: max
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      s.t. the regular resource constraints, where θn is the weight that the planner attaches to each country (in the context of the current paper, this is a country’s share in total OECD GDP). The author log-linearizes the FOC and the resource constraints to provide closed-form solutions. Solving for the equilibrium level of the home consumption of tradables, the author finds:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , where upper bars indicate average world endowments. More importantly, the second primary identity of the paper is given by:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . The author presents the country weights explicitly in these solutions to highlight his point that larger countries affect λT to a greater degree than smaller countries. This observation lies at the heart of the author’s arguments. Notice, however, that the direction of the impact of the endowment of non-tradables on λT will be in line with the author’s arguments only if Condition 1 in the paper holds:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . This condition basically requires that agents should be sufficiently risk-averse such that the cross-partial of marginal utility from tradable consumption with respect to the non-traded good is negative. This requires that the elasticity of substitution between tradable and non-tradable consumption be sufficiently high as well as the degree of risk-averseness. Backus and Smith (1993) report that α is typically found to be -1.27, which translates into an elasticity of substitution between the two goods,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , of approximately 0.44. For Condition 1 to hold, this means that γ&gt;2.27, which implies a mild degree of risk aversion. The author rightly argues that most empirical applications of consumption-based asset pricing models find a γ significantly larger than 1; the accepted interval is generally from 2 to 4.
+      <p>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        How does this condition compare to earlier findings in the literature?
+       </s>
+       <s pid="14" sid="2">
+        In her paper focusing on a two-country version of the complete markets economy model with non-tradable goods, Tesar (1993) notes the importance of the assumptions on the functional form of utility, just like Backus and Smith (1993) demonstrated the implications of different forms.
+       </s>
+       <s pid="14" sid="3">
+        She shows that if utility is separable, then the realization of the endowments of the non-traded good does not affect the optimal allocation of the tradable good.
+       </s>
+       <s pid="14" sid="4">
+        If utility is not separable between traded and non-traded goods, however, the allocations of the traded good will depend on the endowment of the non-traded good.
+       </s>
+       <s pid="14" sid="5">
+        This is the case that the author implicitly assumes throughout his paper.
+       </s>
+       <s pid="14" sid="6">
+        Tesar (1993) shows (equation (6) in her paper) that consumption of the traded good in the home country is an increasing function of the home country’s endowment of the non-traded good when the sign of the cross-derivative of utility is greater than zero.
+       </s>
+       <s pid="14" sid="7">
+        That is, if this cross-derivative is positive, the home country wishes to consume more of the traded good when its endowment of the non-traded good is large, because its marginal utility from tradable goods will be large.
+       </s>
+       <s pid="14" sid="8">
+        Now, contrast this with the author’s findings above.
+       </s>
+       <s pid="14" sid="9">
+        While Tesar (1993) relies on a sufficiently high degree of complementarity between the tradable and the non-tradable goods, the author requires a high enough substitutability between the two.
+       </s>
+       <s pid="14" sid="10">
+        Indeed, focusing on the author’s equilibrium levels of the consumption of the tradable good in the home country and λT, we see that a higher level of a country’s endowment of the non-traded good means a lower level of its consumption of the tradable good and a lower value of λT, under Condition 1.
+       </s>
+       <s pid="14" sid="11">
+        To see the sharp contrast between the two papers more explicitly, note that under the identical isoelastic preferences and CRRA utility setup, the requirement on the parameters for Tesar’s (1993) results is
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , which I have written in the notation of the author’s paper. Notice that this inequality is exactly the
+      <i>
+       opposite
+      </i>
+      of Condition 1. Tesar’s (1993) argument focuses on the rate of intertemporal substitution with respect to a composite consumption good to be greater than the elasticity of substitution between traded and non-traded goods, as her model is an infinite-period setup. The author’s setup, however, consists of two time periods, only the second of which presents uncertainty. The author’s model thus cannot provide insight about this particular discussion of intertemporal substitution, which is crucial given that asset trading is primarily concerned with international risk sharing and smoothing consumption over time. Hence, the implications of his model stand in stark contrast to the earlier literature which has been accepted to explain international risk-sharing. It is surprising that the author does not mention this great departure from the earlier literature, which he actually cites. One expects to see a discussion of the meaning of this difference, perhaps pointing to a puzzle that accounting for interest rate differentials between countries and explaining international risk-sharing with non-traded goods cannot be done successfully at the same time.
+      <p>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        It is thus highly important for the author to address the importance of the functional form of utility and the assumptions on the parameters of the model.
+       </s>
+       <s pid="16" sid="2">
+        Going back to Example 1 of Backus and Smith (1993), we see that the assumptions α = 0 and γ = 0, which allow for separable utility, do not agree with Condition 1 of the author, but with Tesar’s (1993) condition.
+       </s>
+       <s pid="16" sid="3">
+        In the case of α = 0, the direction of the inequality will be determined by whether γ&amp;gt;1 or not.
+       </s>
+       <s pid="16" sid="4">
+        If γ&amp;gt;1, as the author assumes, then Tesar’s (1993) condition is no longer satisfied.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        After solving for the important variables in the model, the author solves for the prices of the traded and non-traded goods by calculating the Lagrange multipliers associated with the planner’s problem, which I do not report here.
+       </s>
+       <s pid="17" sid="2">
+        The implications on the prices actually follow from the discussion about the relationship between consumption of tradables and the endowment of non-tradables from earlier on.
+       </s>
+       <s pid="17" sid="3">
+        Whenever the world average endowment of non-tradables is high, more tradables are delivered to the domestic economy, which diminishes the relative supply of the non-traded good within the country and hence makes it relatively more expensive.
+       </s>
+       <s pid="17" sid="4">
+        These implications are again dependent on Condition 1, which stand in contrast to the condition in Tesar (1993).
+       </s>
+       <s pid="17" sid="5">
+        The author finally presents the spread on international bonds, which depends on a country’s price level since the country’s risk-free bond pays in terms of the home consumption bundle.
+       </s>
+       <s pid="17" sid="6">
+        The intuition is well posed: when the domestic endowment of non-tradables is high, the home consumption bundle is relatively cheap and the ex-post payoff from the risk-free bond is relatively low.
+       </s>
+       <s pid="17" sid="7">
+        The author presents his Proposition 1:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        , which directly reveals that there will be an interest rate differential unless countries are of the same size.
+       </s>
+       <s pid="18" sid="2">
+        The author argues that this points to the failure of the UIP, and this result is derived in a neat and analytical way under certain assumptions.
+       </s>
+       <s pid="18" sid="3">
+        We see this result independent of the fact that the equation above corrects for expected movements in the exchange rate, although it does not account for the presence of an exchange risk premium (I turn to this in greater detail below).
+       </s>
+       <s pid="18" sid="4">
+        However, the direction of the interest rate differential is again dependent on whether Condition 1 holds, which is contestable given the earlier literature and the indeterminant results surrounding what the value of γ should be.
+       </s>
+       <s pid="18" sid="5">
+        Taking this equation to the data might potentially return ambivalent results given that countries will differ in their respective degrees of risk aversion and elasticities of substitution.
+       </s>
+       <s pid="18" sid="6">
+        Indeed, some of the robustness checks that the author provides in his empirical results show no particular difference from zero in any direction.
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        The second exercise that the author carries out is to introduce monetary shocks to the model economy that is constructed previously.
+       </s>
+       <s pid="19" sid="2">
+        This extension is of secondary importance to the results of the paper, and seems to be constructed to support the analytical findings of the earlier model in a different setup.
+       </s>
+       <s pid="19" sid="3">
+        The value added from this extension, however, is to establish the point that Condition 1 is no longer needed to arrive at the author’s conclusions.
+       </s>
+       <s pid="19" sid="4">
+        This is done by switching to an incomplete markets economy, where only a subset of households in each country is allowed to trade complete state-contingent assets in a Calvo-style formulation, and all households are subject to a cash in advance constraint.
+       </s>
+       <s pid="19" sid="5">
+        The results of the model will be very similar to the ones presented above, with the exception that home country assets will now be priced by the ratio of the marginal utility of "active" households, i.e. those household which can access complete markets.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        The competitive equilibrium solution to the household’s problem in the monetary extension case (not reported here) indicates that inflation at home country will lower the tradable and non-tradable consumption of the inactive households, thereby functioning as an inflation tax.
+       </s>
+       <s pid="20" sid="2">
+        After having established this result, the author solves the planner’s problem in the case of incomplete markets for active households by adding the ratio of the active households in the population to the Lagrangian presented above.
+       </s>
+       <s pid="20" sid="3">
+        The new equilibrium solution for the marginal utility from tradables becomes:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . This result says that inflationary shocks unambiguously lower λT, and inflationary shocks in larger countries have a larger impact on the stochastic discount factor than inflationary shocks in smaller countries. Solving for the active households’ equilibrium consumption of non-tradables, the author gets:
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        , where the upper bar again denotes the world average.
+       </s>
+       <s pid="22" sid="2">
+        Whenever domestic inflation exceeds the world average, the non-traded good becomes relatively more abundant at home, leading to a decrease in its relative price and thus to a depreciation of the domestic currency in real terms.
+       </s>
+       <s pid="22" sid="3">
+        It follows from here that a larger country’s risk-free bond is a better hedge against consumption risk, so it should pay lower returns in equilibrium.
+       </s>
+       <s pid="22" sid="4">
+        Notice that these conclusions are actually much stronger than the ones presented for the previous model.
+       </s>
+       <s pid="22" sid="5">
+        These results do not require any restrictions on the parameters of the model like Condition 1 does.
+       </s>
+       <s pid="22" sid="6">
+        The reason is that since inflation directly affects the amount of tradables available to active households, it must always lower marginal utility, giving the required condition to establish the author’s results.
+       </s>
+       <s pid="22" sid="7">
+        Hence, he no longer needs additional conditions to be imposed on the model.
+       </s>
+       <s pid="22" sid="8">
+        This is surely a strong result, which comes at the cost of leaving the realm of complete markets, though.
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        The final piece of the author’s theoretical work concerns the formation of a currency union.
+       </s>
+       <s pid="23" sid="2">
+        This additional step is not motivated theoretically, but from an empirical point of view to account for the fact that the bonds of most European countries started to be denominated in Euros from 1998 on.
+       </s>
+       <s pid="23" sid="3">
+        The author simply extends one of his earlier propositions to say that the formation of a currency union should lower the expected return on risk-free and nominal bonds as well as stock returns in the non-traded sector of all participating countries.
+       </s>
+       <s pid="23" sid="4">
+        This claim and earlier predictions about interest rate differentials are tested in the empirical part of the paper.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Econometrics:
+      </div>
+      <p>
+       <s pid="24" sid="1">
+        As noted before, instead of solving directly for the relationship between the interest rate differential and the stochastic discount factors, the author chooses to provide identities that are more amenable to econometric estimation.
+       </s>
+       <s pid="24" sid="2">
+        Specifically, the theoretical discussion of the paper produces four testable predictions: 1) bonds issued in the currencies of larger countries should pay lower expected returns; 2) the introduction of a currency union should lower expected returns on bonds within the union; 3) stocks in the non-traded sector of larger countries should pay lower expected returns than those of smaller countries; 4) the introduction of a currency union should lower expected returns on stocks in the non-traded sector of participating countries.
+       </s>
+       <s pid="24" sid="3">
+        The main interest is on the first prediction here, as it is the closest test of the UIP.
+       </s>
+       <s pid="24" sid="4">
+        The author uses quarterly data from OECD for the period 1980-2007 and presents his empirical results for several specifications and sets of right hand side controls.
+       </s>
+       <s pid="24" sid="5">
+        The main empirical findings support the author’s predictions, although the econometric setup still has room for improvement.
+       </s>
+       <s pid="24" sid="6">
+        Instead of focusing on these minor econometric details, I will provide below a main discussion about the author’s argument that UIP fails and argue why this implication is still immature.
+       </s>
+       <s pid="24" sid="7">
+        I describe below why his econometric strategy is not a complete test of his theory, thereby weakening his paper despite the strong theoretical results.
+       </s>
+       <s pid="24" sid="8">
+        I also provide a suggestion to the author that could either strengthen his case or tell him more about the interaction between country size and interest rate differentials once carried out.
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        Underlying the UIP concept is that under perfect capital mobility, interest-rate differences must be offset by expectations of exchange-rate movements.
+       </s>
+       <s pid="25" sid="2">
+        So for instance, the domestic interest rate can exceed the foreign interest rate only if the domestic currency is expected to depreciate at a rate equal to the interest-rate differential.
+       </s>
+       <s pid="25" sid="3">
+        This is in essence a no-arbitrage principle.
+       </s>
+       <s pid="25" sid="4">
+        The author argues that UIP fails unless the countries are of the same size, since larger countries tend to have lower risk-free interest rates.
+       </s>
+       <s pid="25" sid="5">
+        The theoretical derivation of this result is well-constructed and demonstrated (although still subject to my comments above and below).
+       </s>
+       <s pid="25" sid="6">
+        However, when it comes to estimating econometrically whether this effect is significant, the author reveals the weak side of his paper and does not seem to present convincingly whether a structural or reduced-form estimation method is relevant.
+       </s>
+       <s pid="25" sid="7">
+        Here are some of my concerns.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        There are several reasons why the author’s findings would come about even when capital is perfectly mobile within the framework of UIP.
+       </s>
+       <s pid="26" sid="2">
+        The first reason is that the rational expectations hypothesis might not apply in this context.
+       </s>
+       <s pid="26" sid="3">
+        A quick check for this would be to look at the serial correlation in the error terms of the regressions that the author runs.
+       </s>
+       <s pid="26" sid="4">
+        If serial correlation is detected, this could pose a serious problem to the assumption that the shocks that are realized this period are not correlated with any future shocks.
+       </s>
+       <s pid="26" sid="5">
+        Indeed, the variables under the author’s focus, such as quarterly interest rates or exchange rates, are likely to follow time trends and the dataset that is available is essentially of a panel form.
+       </s>
+       <s pid="26" sid="6">
+        Given the time-series properties of these variables, it is highly likely that one will detect serial correlation in the error terms.
+       </s>
+       <s pid="26" sid="7">
+        Pooled OLS regressions that do not take such concerns into account as in this paper are likely to return inefficient estimates where standard errors are miscalculated [#REF 5] .
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        Another reason is the closely related issue of econometric implementation.
+       </s>
+       <s pid="27" sid="2">
+        The author notes (p. 23):
+       </s>
+       <s pid="27" sid="3">
+        "Since the model developed in this paper has only two time periods, I interpret the panel as a series of cross-sections and make the appropriate econometric adjustments."
+       </s>
+       <s pid="27" sid="4">
+        Firstly, it is not clear which econometric adjustments are carried out in order to be able to interpret the panel as a two-period system.
+       </s>
+       <s pid="27" sid="5">
+        The author uses quarterly data over the period 1980-2007 and compressing this relatively long panel into a two-period system has its drawbacks which are not mentioned.
+       </s>
+       <s pid="27" sid="6">
+        Second, rational expectations are imposed on the econometric estimation and the author rules out any concerns of autocorrelation to start with.
+       </s>
+       <s pid="27" sid="7">
+        Interpreting the panel as a two-period set of observations effectively prevents one from estimating HAC (heteroskedasticity and autocorrelation consistent) standard errors.
+       </s>
+       <s pid="27" sid="8">
+        Yet, testing for autocorrelation and correcting the standard errors for such a possible problem is what the author needs to argue that the interest rate differential comes from differences in country size as opposed to other possible factors.
+       </s>
+       <s pid="27" sid="9">
+        This brings me to my third point that this is not merely an econometric concern.
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        The third reason why the author’s results might still be consistent with perfectly mobile capital in the UIP framework is the presence of exchange risk premia.
+       </s>
+       <s pid="28" sid="2">
+        While the author uses a constant relative risk aversion (CRRA) utility form to solve for household optimization, he bypasses the role that risk premia play in the determination of exchange rates, and correspondingly interest rate differentials.
+       </s>
+       <s pid="28" sid="3">
+        UIP holds under the assumption of no risk premia.
+       </s>
+       <s pid="28" sid="4">
+        If there exists exchange risk premia, then (part of) the cross-country difference in the interest rates can be attributed to the risk aversion of agents who want to be compensated for the exchange rate uncertainty they face.
+       </s>
+       <s pid="28" sid="5">
+        Hence, the author should be able to isolate the effect that differences in country size have on interest rate differentials on top of the portion that risk premia have in explaining these movements.
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        The current regressions included in the paper fail to account for the presence of risk premia.
+       </s>
+       <s pid="29" sid="2">
+        Hence, I would suggest the author to do a simple test of whether such premia exist.
+       </s>
+       <s pid="29" sid="3">
+        The author can easily carry out this test given the data set he has, and here is how to proceed [#REF 6] :
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        UIP implies that the interest differential between two countries equals the expected exchange rate change: i.e.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      where
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the risk-free interest rate in the foreign country,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the risk-free interest in the domestic country (US in this case), and St is the current spot (exchange) rate. Let log Ft denote the log of the forward exchange rate. Then the equality
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      along with covered interest parity (which is a pure no-arbitrage condition) implies the above uncovered interest parity condition. So the null hypothesis that there is no risk premium can be written as
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Since the difference between a random variable and its conditional expectation given a certain information set is uncorrelated with any variable from this information set, we can write:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      for any xt-1 that is known at time t-1. This gives the regression form:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , where
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . If the null hypothesis is correct, and if xt-1 is known at time t-1, then we should find β = 0. Notice that under the null hypothesis, the error terms εt exhibit no autocorrelation. Hence, if autocorrelation in the error terms is detected, this would indicate the presence of a risk premium. Making no assumptions on the variance of these error terms, the author should proceed with HAC estimation to test for the existence of risk premia in his sample.
+      <p>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        As a result, the lack of a theoretical argument about exchange rate uncertainty and exchange risk premia as well as an inconclusive econometric setup weaken the author’s ambitious argument that UIP fails merely due to differences in country size.
+       </s>
+       <s pid="32" sid="2">
+        Testing for the presence of risk premia is relatively easy and certainly doable for the author.
+       </s>
+       <s pid="32" sid="3">
+        A more careful treatment of the data and econometric estimation can certainly help the author strengthen the implications of his theoretical model.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Concluding Remarks:
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        Overall, the author presents a well-written, clearly worked out, and a very intuitive piece of work especially in the theoretical parts of the paper.
+       </s>
+       <s pid="33" sid="2">
+        Results are demonstrated in a nice and clear way, and the implications of the model are well posed.
+       </s>
+       <s pid="33" sid="3">
+        However, the paper is weak on the side of highlighting its contribution and especially linking it to the previous literature on complete asset markets models with non-tradable goods.
+       </s>
+       <s pid="33" sid="4">
+        The author fails to identify how his results and theory are a step forward from previous papers, not providing any discussion about whether his results stand in contrast or complement earlier work on closely related topics.
+       </s>
+       <s pid="33" sid="5">
+        Moreover, the author does not check how functional forms or other parameter restrictions affect his model and only focuses on a single case.
+       </s>
+       <s pid="33" sid="6">
+        However, earlier literature suggests that these concerns are definitely in place.
+       </s>
+       <s pid="33" sid="7">
+        Another drawback of the paper is that the econometric estimation seems to be done only for expository purposes – an econometric framework that aims to truly test the implications of the model is missing.
+       </s>
+       <s pid="33" sid="8">
+        More thorough work on the theoretical part that puts the author’s findings in context with the literature and discusses its implications can be more telling than the regressions.
+       </s>
+       <s pid="33" sid="9">
+        However, improving the econometric framework and confirming the main model’s predictions would also be a huge success.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1 For a complete description of the model economy and notation, please see the presentation slides.
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        2.
+       </a>
+       2 Notice that the price of the tradable good is normalized to unity.
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        3.
+       </a>
+       3 The notation here follows the author’s paper. I have changed the notation of Backus and Smith (1993) to make their results comparable with the author’s.
+      </div>
+      <div id="fn4">
+       <a href="#fnref_fn4">
+        4.
+       </a>
+       4 As a further illustration of how functional forms matter in models with non-tradable goods, Backus and Smith (1993) present their Example 2 (p.308) which only assumes α = 0, and show that the direction of the relationship between the consumption ratio and the growth rate of endowments of non-traded goods depends on whether γ&gt;1 or not.
+      </div>
+      <div id="fn5">
+       <a href="#fnref_fn5">
+        5.
+       </a>
+       5 The finding of autocorrelation usually points to model misspecification (e.g. omitting a variable or functional form misspecification). If detected, the natural thing to do is not to change the estimator (OLS in this case) but to change the model (Verbeek, 2000). In this sense, if the author was able to derive a structural estimation form and report tests of autocorrelation, he would have also provided a test of whether his theoretical model is well-formulated or not.
+      </div>
+      <div id="fn6">
+       <a href="#fnref_fn6">
+        6.
+       </a>
+       6 The following discussion closely follows that in Verbeek (2000).
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

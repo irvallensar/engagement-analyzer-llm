@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     21.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="RN">
+        <i>
+         Mr.
+        </i>
+       </ns>
+       Helen:
+      </p>
+      <p>
+       I hope you
+       <ns type="TV">
+        <i>
+         be
+        </i>
+       </ns>
+       well. Thank you for this prize, I'm really
+       <ns type="S">
+        <i>
+         ecited
+        </i>
+       </ns>
+       and
+       <ns type="DJ">
+        <i>
+         emotions
+        </i>
+       </ns>
+       .
+       <ns type="FV">
+        <i>
+         Answering
+        </i>
+       </ns>
+       your
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           reguest
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="U">
+        <i>
+         you asked me
+        </i>
+       </ns>
+       , I would like to travel only
+       <ns type="MT">
+       </ns>
+       July because
+       <ns type="U">
+        <i>
+         , in fact.
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         I ll
+        </i>
+       </ns>
+       be on vacation until August and I think
+       <ns type="RA">
+        <i>
+         this
+        </i>
+       </ns>
+       is the best month to travel.
+       <ns type="R">
+        According to my great experience on climbing
+       </ns>
+       , I prefer
+       <ns type="R">
+        <i>
+         accommodation
+        </i>
+       </ns>
+       in log cabins because in tents we can't sleep or
+       <ns type="RV">
+        <i>
+         being
+        </i>
+       </ns>
+       well with
+       <ns type="RD">
+        <i>
+         such
+        </i>
+       </ns>
+       cold! Never the less
+       <ns type="MP">
+       </ns>
+       in summer we can't resist such
+       <ns type="DN">
+        <i>
+         hot
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       In
+       <ns type="R">
+        <i>
+         base of
+        </i>
+       </ns>
+       your activities option, I would say that climbing is one of my first
+       <ns type="AGN">
+        <i>
+         option
+        </i>
+       </ns>
+       , as I've mentioned
+       <ns type="MP">
+       </ns>
+       and I really think that photography will help me in my other adventures.
+      </p>
+      <p>
+       I would like to ask if we need
+       <ns type="MQ">
+       </ns>
+       money
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         paying
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       or
+       <ns type="FV">
+        <i>
+         <ns type="SX">
+          <i>
+           baying
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         something
+        </i>
+       </ns>
+       because you didn't specify what is included in the trip, such as food.
+      </p>
+      <p>
+       I really
+       <ns type="S">
+        <i>
+         apreciate
+        </i>
+       </ns>
+       this kind of trip and I'm really
+       <ns type="R">
+        <i>
+         thank
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       your
+       <ns type="UY">
+        <i>
+         truly
+        </i>
+       </ns>
+       attention.
+      </p>
+      <p>
+       Yours
+       <ns type="S">
+        <i>
+         sincirely
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         :
+        </i>
+       </ns>
+      </p>
+      <p>
+       Camila Playhouse.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr. Helen:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I hope you be well.
+       </s>
+       <s pid="2" sid="2">
+        Thank you for this prize, I'm really ecited and emotions.
+       </s>
+       <s pid="2" sid="3">
+        Answering your reguest you asked me, I would like to travel only  July because, in fact.
+       </s>
+       <s pid="2" sid="4">
+        I ll be on vacation until August and I think this is the best month to travel.
+       </s>
+       <s pid="2" sid="5">
+        According to my great experience on climbing, I prefer accommodation in log cabins because in tents we can't sleep or being well with such cold!
+       </s>
+       <s pid="2" sid="6">
+        Never the less in summer we can't resist such hot!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In base of your activities option, I would say that climbing is one of my first option, as I've mentioned and I really think that photography will help me in my other adventures.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to ask if we need  money for paying  or baying something because you didn't specify what is included in the trip, such as food.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I really apreciate this kind of trip and I'm really thank  your truly attention.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincirely:
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Camila Playhouse.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       The truth
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       Shopping
+      </p>
+      <p>
+       Shopping... a great and
+       <ns type="DJ">
+        <i>
+         emotion
+        </i>
+       </ns>
+       statement, don't you think?
+       <ns type="RP">
+        <i>
+         Every one
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         think
+        </i>
+       </ns>
+       that shopping
+       <ns type="R">
+        <i>
+         in
+        </i>
+       </ns>
+       the best way to
+       <ns type="RV">
+        <i>
+         carry off
+        </i>
+       </ns>
+       your problems and, in fact a big solution
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       many
+       <ns type="AGN">
+        <i>
+         problem
+        </i>
+       </ns>
+       or
+       <ns type="DN">
+        estrés
+       </ns>
+       , boring, or only for distraction.
+      </p>
+      <p>
+       But the question is:
+       <ns type="UP">
+        <i>
+         Why
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         shopping is
+        </i>
+       </ns>
+       not always enjoyable?
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       For many people, shopping
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       always been only for one kind of elite, or social class; not all people can go shopping and buy hundreds and thousands of
+       <ns type="L">
+        <i>
+         stuff
+        </i>
+       </ns>
+       in those big malls as
+       <ns type="MD">
+       </ns>
+       distraction. Let's talk about women; nightmare!
+       <ns type="RP">
+        <i>
+         women
+        </i>
+       </ns>
+       can't resist the
+       <ns type="RN">
+        <i>
+         fact
+        </i>
+       </ns>
+       of shopping and they are
+       <ns type="S">
+        <i>
+         dissapointed
+        </i>
+       </ns>
+       when they don't have the
+       <ns type="RN">
+        <i>
+         wants
+        </i>
+       </ns>
+       to shop.
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The shopmania
+        </i>
+       </ns>
+       is really
+       <ns type="DJ">
+        <i>
+         unstapped
+        </i>
+       </ns>
+       . I know women
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       everything they can to buy only a dress, or even
+       <ns type="FJ">
+        <i>
+         worst
+        </i>
+       </ns>
+       , women
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       buy things
+       <ns type="R">
+        <i>
+         that was nothing to do with them
+        </i>
+       </ns>
+       , for example,
+       <ns type="RN">
+        snap
+       </ns>
+       ,
+       <ns type="S">
+        <i>
+         esculptures
+        </i>
+       </ns>
+       , kitchen tissues, or
+       <ns type="S">
+        <i>
+         eveything
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         on
+        </i>
+       </ns>
+       telemarketing that really
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         unuseful
+        </i>
+       </ns>
+       , but
+       <ns type="W">
+        <i>
+         the fact of
+         <ns type="UV">
+          <i>
+           have
+          </i>
+         </ns>
+         it "
+         <ns type="MV">
+         </ns>
+         there" they can
+         <ns type="MY">
+         </ns>
+         resist
+        </i>
+       </ns>
+      </p>
+      <p>
+       There are many facts to prove that shopping is not "pretty and
+       <ns type="S">
+        <i>
+         armonious
+        </i>
+       </ns>
+       ",
+       <ns type="RC">
+        <i>
+         but
+        </i>
+       </ns>
+       believe me,
+       <ns type="MA">
+       </ns>
+       is not always enjoyable.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The truth of Shopping
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Shopping... a great and emotion statement, don't you think?
+       </s>
+       <s pid="2" sid="2">
+        Every one think that shopping in the best way to carry off your problems and, in fact a big solution of many problem or estrés, boring, or only for distraction.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        But the question is:
+       </s>
+       <s pid="3" sid="2">
+        Why shopping is not always enjoyable?.
+       </s>
+       <s pid="3" sid="3">
+        For many people, shopping had always been only for one kind of elite, or social class; not all people can go shopping and buy hundreds and thousands of stuff in those big malls as  distraction.
+       </s>
+       <s pid="3" sid="4">
+        Let's talk about women; nightmare!
+       </s>
+       <s pid="3" sid="5">
+        women can't resist the fact of shopping and they are dissapointed when they don't have the wants to shop.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The shopmania is really unstapped.
+       </s>
+       <s pid="4" sid="2">
+        I know women that make everything they can to buy only a dress, or even worst, women that buy things that was nothing to do with them, for example, snap, esculptures, kitchen tissues, or eveything on telemarketing that really are unuseful, but the fact of have it " there" they can  resist
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        There are many facts to prove that shopping is not "pretty and armonious", but believe me,  is not always enjoyable.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

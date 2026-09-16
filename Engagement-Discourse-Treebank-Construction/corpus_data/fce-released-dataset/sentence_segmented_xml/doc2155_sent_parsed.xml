@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Ryan
+      </p>
+      <p>
+       I'm writing concerning your letter about my
+       <ns type="RN">
+        <i>
+         win
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         in your competition
+         <ns type="UT">
+          <i>
+           for
+          </i>
+         </ns>
+         two weeks at Camp California
+        </i>
+       </ns>
+       . I'm very happy to be the winner
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       your competition.
+      </p>
+      <p>
+       Because I'm working in an
+       <ns type="MP">
+        <i>
+         accountant
+        </i>
+       </ns>
+       office, I'm very busy. The only month I could go
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       is July, when we haven't got a lot to do.
+      </p>
+      <p>
+       Moreover,
+       <ns type="RT">
+        <i>
+         because of
+        </i>
+       </ns>
+       the accommodation, I would like to be in a tent, because I want to spend my holidays
+       <ns type="R">
+        different than usually
+       </ns>
+       . And in my opinion, when you
+       <ns type="RV">
+        <i>
+         live
+        </i>
+       </ns>
+       in a tent, you
+       <ns type="R">
+        have more from the nature and the adventure
+       </ns>
+       .
+      </p>
+      <p>
+       I like a lot
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       your list
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         sport
+        </i>
+       </ns>
+       possibilities
+       <ns type="RP">
+        <i>
+         , however
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I will choose swimming. I
+       <ns type="TV">
+        <i>
+         used to be
+        </i>
+       </ns>
+       a member
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a swimming club for about 10 years. Additionally I'm keen on taking pictures. But
+       <ns type="RY">
+        <i>
+         until now
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         only took
+        </i>
+       </ns>
+       pictures on
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       and
+       <ns type="MT">
+       </ns>
+       some family
+       <ns type="S">
+        <i>
+         celabrations
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Lastly, I would like to ask if I have to take a lot of money with me,
+       <ns type="W">
+        <i>
+         for example for the food
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         . And
+        </i>
+       </ns>
+       also if the weather will be good at this time
+       <ns type="M">
+       </ns>
+       .
+      </p>
+      <p>
+       I'm looking forward to hearing from you soon.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing concerning your letter about my win in your competition for two weeks at Camp California.
+       </s>
+       <s pid="2" sid="2">
+        I'm very happy to be the winner from your competition.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Because I'm working in an accountant office, I'm very busy.
+       </s>
+       <s pid="3" sid="2">
+        The only month I could go to holidays is July, when we haven't got a lot to do.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Moreover, because of the accommodation, I would like to be in a tent, because I want to spend my holidays different than usually.
+       </s>
+       <s pid="4" sid="2">
+        And in my opinion, when you live in a tent, you have more from the nature and the adventure.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I like a lot from your list for the sport possibilities, however I will choose swimming.
+       </s>
+       <s pid="5" sid="2">
+        I used to be a member in a swimming club for about 10 years.
+       </s>
+       <s pid="5" sid="3">
+        Additionally I'm keen on taking pictures.
+       </s>
+       <s pid="5" sid="4">
+        But until now I only took pictures on holidays and  some family celabrations.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Lastly, I would like to ask if I have to take a lot of money with me, for example for the food.
+       </s>
+       <s pid="6" sid="2">
+        And also if the weather will be good at this time .
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm looking forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable.
+      </p>
+      <p>
+       I would like to begin this composition by saying that
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         not for everyone is shopping the same
+        </i>
+       </ns>
+       . For some people it's great fun, but for some
+       <ns type="FA">
+        <i>
+         other
+        </i>
+       </ns>
+       it's a "
+       <ns type="RN">
+        <i>
+         must
+        </i>
+       </ns>
+       ".
+      </p>
+      <p>
+       In my opinion, shopping is like relaxing. I like to go very often, to look around and to buy some new clothes
+       <ns type="RP">
+        <i>
+         . As
+        </i>
+       </ns>
+       long as I am not searching for something specific. When I must buy something, I usually can't find it and then
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       shopping
+       <ns type="AGV">
+        <i>
+         become
+        </i>
+       </ns>
+       a nightmare.
+      </p>
+      <p>
+       On the other hand, when you go
+       <ns type="W">
+        <i>
+         with someone else shopping
+        </i>
+       </ns>
+       , and you both want to see and buy different things, it can also be
+       <ns type="CL">
+        <i>
+         boring and uninteresting
+        </i>
+       </ns>
+       . Then it is perhaps better
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when you make an appointment in one hour and everybody
+       <ns type="RV">
+        <i>
+         enjoys
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       shopping alone.
+      </p>
+      <p>
+       To sum up, I would like to say that
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       to have an exciting shopping
+       <ns type="MN">
+       </ns>
+       , you
+       <ns type="W">
+        <i>
+         have sometimes
+        </i>
+       </ns>
+       to plan it or just be in the right mood.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I would like to begin this composition by saying that, not for everyone is shopping the same.
+       </s>
+       <s pid="2" sid="2">
+        For some people it's great fun, but for some other it's a "must".
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In my opinion, shopping is like relaxing.
+       </s>
+       <s pid="3" sid="2">
+        I like to go very often, to look around and to buy some new clothes.
+       </s>
+       <s pid="3" sid="3">
+        As long as I am not searching for something specific.
+       </s>
+       <s pid="3" sid="4">
+        When I must buy something, I usually can't find it and then the shopping become a nightmare.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        On the other hand, when you go with someone else shopping, and you both want to see and buy different things, it can also be boring and uninteresting.
+       </s>
+       <s pid="4" sid="2">
+        Then it is perhaps better, when you make an appointment in one hour and everybody enjoys the shopping alone.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        To sum up, I would like to say that for to have an exciting shopping , you have sometimes to plan it or just be in the right mood.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

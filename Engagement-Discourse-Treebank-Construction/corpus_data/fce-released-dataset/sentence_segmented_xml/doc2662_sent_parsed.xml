@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir:
+      </p>
+      <p>
+       I'm writing to you to complain about last
+       <ns type="MP">
+        <i>
+         evening
+        </i>
+       </ns>
+       musical show. I was very happy to see your musical show but I have to say that it has been a very disappointing evening. At first my favourite actor Danny Brook didn't perform
+       <ns type="MP">
+       </ns>
+       without any
+       <ns type="S">
+        <i>
+         explictions
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       , and the show should
+       <ns type="TV">
+        <i>
+         started
+        </i>
+       </ns>
+       at 19:30 instead of 20:15!! I was sure that
+       <ns type="S">
+        <i>
+         discouts
+        </i>
+       </ns>
+       were available because I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       read
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       , but at the
+       <ns type="FN">
+        <i>
+         tickets
+        </i>
+       </ns>
+       office they didn't
+       <ns type="RV">
+        <i>
+         accept
+        </i>
+       </ns>
+       them. What a terrible evening! So I
+       <ns type="IV">
+        <i>
+         payed
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       the ticket. After the show I was hungry so I went to the restaurant but it was closed!
+      </p>
+      <p>
+       It wasn't my perfect evening out so I'd like to have my money back!
+      </p>
+      <p>
+       Yours Faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to you to complain about last evening musical show.
+       </s>
+       <s pid="2" sid="2">
+        I was very happy to see your musical show but I have to say that it has been a very disappointing evening.
+       </s>
+       <s pid="2" sid="3">
+        At first my favourite actor Danny Brook didn't perform without any explictions , and the show should started at 19:30 instead of 20:15!!
+       </s>
+       <s pid="2" sid="4">
+        I was sure that discouts were available because I have read it , but at the tickets office they didn't accept them.
+       </s>
+       <s pid="2" sid="5">
+        What a terrible evening!
+       </s>
+       <s pid="2" sid="6">
+        So I payed  the ticket.
+       </s>
+       <s pid="2" sid="7">
+        After the show I was hungry so I went to the restaurant but it was closed!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It wasn't my perfect evening out so I'd like to have my money back!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Yours Faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets so he told his mother how his brother Jim lost her suit suitcase on the train. Jim's mum didn't want him to take her suitcase, but he did
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       . So
+       <ns type="RQ">
+        <i>
+         a
+        </i>
+       </ns>
+       morning he reached Victoria Station with the suitcase and
+       <ns type="TV">
+        <i>
+         take
+        </i>
+       </ns>
+       the train for the countryside where he had to work. But when he walked out
+       <ns type="MT">
+       </ns>
+       the station he realised that he
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         lost
+        </i>
+       </ns>
+       the suitcase on the train. Then he waited for the next train to London and he caught it. He was worried about his mother's reaction, but when he arrived he went to the Station Manager's office and he found it on the table. He was so happy! All this story was a secret but Pat
+       <ns type="DV">
+        <i>
+         realived
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       to his mother. She was so angry and confused because Jim
+       <ns type="TV">
+        <i>
+         haven't
+        </i>
+       </ns>
+       told her the truth.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets so he told his mother how his brother Jim lost her suit suitcase on the train.
+       </s>
+       <s pid="1" sid="3">
+        Jim's mum didn't want him to take her suitcase, but he did it.
+       </s>
+       <s pid="1" sid="4">
+        So a morning he reached Victoria Station with the suitcase and take the train for the countryside where he had to work.
+       </s>
+       <s pid="1" sid="5">
+        But when he walked out  the station he realised that he have lost the suitcase on the train.
+       </s>
+       <s pid="1" sid="6">
+        Then he waited for the next train to London and he caught it.
+       </s>
+       <s pid="1" sid="7">
+        He was worried about his mother's reaction, but when he arrived he went to the Station Manager's office and he found it on the table.
+       </s>
+       <s pid="1" sid="8">
+        He was so happy!
+       </s>
+       <s pid="1" sid="9">
+        All this story was a secret but Pat realived  to his mother.
+       </s>
+       <s pid="1" sid="10">
+        She was so angry and confused because Jim haven't told her the truth.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

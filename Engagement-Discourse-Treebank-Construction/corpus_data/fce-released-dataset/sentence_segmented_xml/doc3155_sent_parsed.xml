@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     29.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Madam,
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         received
+        </i>
+       </ns>
+       your letter and I'm pleased to answer your questions.
+      </p>
+      <p>
+       M. Brown has booked rooms in the Palace Hotel. This is a
+       <ns type="MP">
+        <i>
+         first class
+        </i>
+       </ns>
+       hotel. The easiest way
+       <ns type="MV">
+       </ns>
+       from the hotel to the conference is
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       bus. There is a bus stop in front of your hotel. Take the bus in
+       <ns type="MD">
+       </ns>
+       direction
+       <ns type="MT">
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       town. After four stops
+       <ns type="MP">
+       </ns>
+       get off the bus. The name of this bus stop is 'Kongresshaus'.
+       <ns type="RC">
+        <i>
+         If
+        </i>
+       </ns>
+       you
+       <ns type="RV">
+        <i>
+         leave
+        </i>
+       </ns>
+       the bus, the conference is in the
+       <ns type="RN">
+        <i>
+         house
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         opposite
+        </i>
+       </ns>
+       the road. You can't miss it.
+      </p>
+      <p>
+       Afterwards we will eat together in a restaurant and we will go
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a disco. For the disco
+       <ns type="MP">
+       </ns>
+       you
+       <ns type="S">
+        <i>
+         musn't
+        </i>
+       </ns>
+       wear blue jeans.
+      </p>
+      <p>
+       Finally
+       <ns type="MP">
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       your last day
+       <ns type="MP">
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         propose
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         to do
+        </i>
+       </ns>
+       a sightseeing tour in our town. It takes you two hours. Afterwards you will have
+       <ns type="RQ">
+        <i>
+         any
+        </i>
+       </ns>
+       time to buy some souvenirs from Switzerland. If you have any more questions,
+       <ns type="AS">
+        <i>
+         write me back
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         sincerely
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I received your letter and I'm pleased to answer your questions.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        M. Brown has booked rooms in the Palace Hotel.
+       </s>
+       <s pid="3" sid="2">
+        This is a first class hotel.
+       </s>
+       <s pid="3" sid="3">
+        The easiest way  from the hotel to the conference is with the bus.
+       </s>
+       <s pid="3" sid="4">
+        There is a bus stop in front of your hotel.
+       </s>
+       <s pid="3" sid="5">
+        Take the bus in  direction   center  town.
+       </s>
+       <s pid="3" sid="6">
+        After four stops get off the bus.
+       </s>
+       <s pid="3" sid="7">
+        The name of this bus stop is 'Kongresshaus'.
+       </s>
+       <s pid="3" sid="8">
+        If you leave the bus, the conference is in the house opposite the road.
+       </s>
+       <s pid="3" sid="9">
+        You can't miss it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Afterwards we will eat together in a restaurant and we will go in a disco.
+       </s>
+       <s pid="4" sid="2">
+        For the disco you musn't wear blue jeans.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally at your last day I propose you to do a sightseeing tour in our town.
+       </s>
+       <s pid="5" sid="2">
+        It takes you two hours.
+       </s>
+       <s pid="5" sid="3">
+        Afterwards you will have any time to buy some souvenirs from Switzerland.
+       </s>
+       <s pid="5" sid="4">
+        If you have any more questions, write me back.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       I will write about the invention of the computer.
+      </p>
+      <p>
+       With the computer
+       <ns type="MP">
+       </ns>
+       our work is easier and more interesting.
+      </p>
+      <p>
+       Before the time
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       computers, people had to write
+       <ns type="W">
+        <i>
+         every time a whole letter
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       . When they
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         would correct
+        </i>
+       </ns>
+       a word, they had to write the whole letter again. With the computer
+       <ns type="MP">
+       </ns>
+       we can write a letter, correct a word or change the name without
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       the whole letter again. We save the letter and in three
+       <ns type="AGN">
+        <i>
+         week
+        </i>
+       </ns>
+       we could send it to another person.
+      </p>
+      <p>
+       I work
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       a bank and I work all day with computers. If we
+       <ns type="S">
+        <i>
+         hand't
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         ay
+        </i>
+       </ns>
+       <ns type="UQ">
+        <i>
+         one
+        </i>
+       </ns>
+       , we
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       to write all the transactions on
+       <ns type="FN">
+        <i>
+         papers
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       If I order money for our bank with the computer
+       <ns type="MP">
+       </ns>
+       I can be sure that
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       will arrive the day after. But if I had to write a letter and to send it by post, the money
+       <ns type="TV">
+        <i>
+         will arrive
+        </i>
+       </ns>
+       two or three days after.
+      </p>
+      <p>
+       I have never
+       <ns type="TV">
+        <i>
+         work
+        </i>
+       </ns>
+       without a computer, but if we hadn't any
+       <ns type="MP">
+       </ns>
+       we would
+       <ns type="W">
+        <i>
+         it find
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         normally
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I will write about the invention of the computer.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        With the computer our work is easier and more interesting.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Before the time with computers, people had to write every time a whole letter .
+       </s>
+       <s pid="3" sid="2">
+        When they  would correct a word, they had to write the whole letter again.
+       </s>
+       <s pid="3" sid="3">
+        With the computer we can write a letter, correct a word or change the name without writting the whole letter again.
+       </s>
+       <s pid="3" sid="4">
+        We save the letter and in three week we could send it to another person.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I work at a bank and I work all day with computers.
+       </s>
+       <s pid="4" sid="2">
+        If we hand't ay one, we had to write all the transactions on papers.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        If I order money for our bank with the computer I can be sure that I will arrive the day after.
+       </s>
+       <s pid="5" sid="2">
+        But if I had to write a letter and to send it by post, the money will arrive two or three days after.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I have never work without a computer, but if we hadn't any we would it find normally.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

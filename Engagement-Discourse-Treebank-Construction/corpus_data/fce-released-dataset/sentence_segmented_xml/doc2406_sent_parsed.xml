@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      51+
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear...
+      </p>
+      <p>
+       Thanks for your letter. I am very happy that I have
+       <ns type="RV">
+        <i>
+         received
+        </i>
+       </ns>
+       the first prize in your competition.
+      </p>
+      <p>
+       I am looking forward
+       <ns type="MT">
+       </ns>
+       my
+       <ns type="RN">
+        <i>
+         holy day
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       <ns type="MA">
+       </ns>
+       begins on
+       <ns type="MD">
+       </ns>
+       first of
+       <ns type="RP">
+        <i>
+         july
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       twenty-first
+       <ns type="RP">
+        <i>
+         july
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       so it is possible
+       <ns type="U">
+        <i>
+         to take the
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         <ns type="S">
+          <i>
+           travell
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       this time. I like to sleep in a tent under the
+       <ns type="RJ">
+        <i>
+         free
+        </i>
+       </ns>
+       sky since I have done
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         military-service
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       <ns type="S">
+        <i>
+         therfore
+        </i>
+       </ns>
+       I would prefer a tent as my
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       . My favourite
+       <ns type="AGN">
+        <i>
+         activity
+        </i>
+       </ns>
+       are swimming and singing. It is important for my health that I swim an hour a week because I am
+       <ns type="S">
+        <i>
+         overwight
+        </i>
+       </ns>
+       . I like to
+       <ns type="FV">
+        <i>
+         singing
+        </i>
+       </ns>
+       a song when I am alone. Singing is good for my
+       <ns type="RN">
+        emotion
+       </ns>
+       .
+       <ns type="R">
+        <i>
+         Also
+        </i>
+       </ns>
+       I choose singing and swimming as my
+       <ns type="AGN">
+        <i>
+         activity
+        </i>
+       </ns>
+       . I am a beginner
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       swimming and also
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       singing.
+      </p>
+      <p>
+       Can you
+       <ns type="RV">
+        <i>
+         say
+        </i>
+       </ns>
+       me
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         cloths
+        </i>
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       take
+       <ns type="R">
+        <i>
+         away
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       for
+       <ns type="MD">
+       </ns>
+       two weeks.
+       <ns type="RQ">
+        <i>
+         Which
+        </i>
+       </ns>
+       kind of weather
+       <ns type="AS">
+        <i>
+         have you
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       this time
+       <ns type="M">
+       </ns>
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       Do I need a lot of money etc. for
+       <ns type="MD">
+       </ns>
+       different excursions
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Thanks for your answer.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear...
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thanks for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I am very happy that I have received the first prize in your competition.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am looking forward  my holy day  begins on  first of july  to twenty-first july so it is possible to take the travell in this time.
+       </s>
+       <s pid="3" sid="2">
+        I like to sleep in a tent under the free sky since I have done the military-service therfore I would prefer a tent as my accomodation.
+       </s>
+       <s pid="3" sid="3">
+        My favourite activity are swimming and singing.
+       </s>
+       <s pid="3" sid="4">
+        It is important for my health that I swim an hour a week because I am overwight.
+       </s>
+       <s pid="3" sid="5">
+        I like to singing a song when I am alone.
+       </s>
+       <s pid="3" sid="6">
+        Singing is good for my emotion.
+       </s>
+       <s pid="3" sid="7">
+        Also I choose singing and swimming as my activity.
+       </s>
+       <s pid="3" sid="8">
+        I am a beginner in swimming and also in singing.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Can you say me which cloths I  take away  for  two weeks.
+       </s>
+       <s pid="4" sid="2">
+        Which kind of weather have you in this time .
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Do I need a lot of money etc. for  different excursions
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Thanks for your answer.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       <ns type="CE">
+        What does
+        <ns type="MA">
+        </ns>
+        <ns type="AGV">
+         <i>
+          means
+         </i>
+        </ns>
+        <ns type="MP">
+        </ns>
+        the
+        <ns type="RN">
+         <i>
+          world
+         </i>
+        </ns>
+        "shopping"?
+       </ns>
+       I live and I need different
+       <ns type="RN">
+        <i>
+         goods
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         survive
+        </i>
+       </ns>
+       . I need
+       <ns type="R">
+        <i>
+         material for drinking and eating
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , that
+        </i>
+       </ns>
+       is the basic fact that
+       <ns type="MV">
+       </ns>
+       I must go shopping for food.
+      </p>
+      <p>
+       It is not enjoyable to see that the
+       <ns type="RN">
+        <i>
+         prize
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       food
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       going
+       <ns type="ID">
+        <i>
+         more and more higher
+        </i>
+       </ns>
+       . My salary
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         going
+        </i>
+       </ns>
+       lower
+       <ns type="R">
+        <i>
+         than
+        </i>
+       </ns>
+       lower. When I have enough money the price isn't important, then I can buy a lot of
+       <ns type="RN">
+        <i>
+         goods
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         whitout
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         take care on
+        </i>
+       </ns>
+       my money. Despite
+       <ns type="UA">
+        <i>
+         I
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         have
+        </i>
+       </ns>
+       enough money
+       <ns type="MP">
+       </ns>
+       shopping is not always enjoyable
+       <ns type="UT">
+        <i>
+         too
+        </i>
+       </ns>
+       , because I don't know which
+       <ns type="RN">
+        <i>
+         goods
+        </i>
+       </ns>
+       I
+       <ns type="R">
+        will buy in the future
+       </ns>
+       . Also I will buy
+       <ns type="RN">
+        <i>
+         goods
+        </i>
+       </ns>
+       which I don't need.
+      </p>
+      <p>
+       There are many
+       <ns type="RN">
+        <i>
+         goods
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         which quality
+        </i>
+       </ns>
+       is bad
+       <ns type="MC">
+       </ns>
+       <ns type="R">
+        <i>
+         in this way
+        </i>
+       </ns>
+       the
+       <ns type="DJ">
+        <i>
+         environment
+        </i>
+       </ns>
+       pollution will
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         more and more increase
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RA">
+        <i>
+         This
+        </i>
+       </ns>
+       is
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       fact that shopping is not enjoyable.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        What does  means the world "shopping"?
+       </s>
+       <s pid="2" sid="2">
+        I live and I need different goods for survive.
+       </s>
+       <s pid="2" sid="3">
+        I need material for drinking and eating, that is the basic fact that  I must go shopping for food.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It is not enjoyable to see that the prize for food are going more and more higher.
+       </s>
+       <s pid="3" sid="2">
+        My salary are going lower than lower.
+       </s>
+       <s pid="3" sid="3">
+        When I have enough money the price isn't important, then I can buy a lot of goods whitout take care on my money.
+       </s>
+       <s pid="3" sid="4">
+        Despite
+       </s>
+       <s pid="3" sid="5">
+        I have enough money shopping is not always enjoyable too, because I don't know which goods I will buy in the future.
+       </s>
+       <s pid="3" sid="6">
+        Also I will buy goods which I don't need.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        There are many goods which quality is bad  in this way the environment pollution will be more and more increase.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        This is the fact that shopping is not enjoyable.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

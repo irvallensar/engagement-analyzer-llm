@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Thai
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Helen
+      </p>
+      <p>
+       Thank you for the letter. I was very
+       <ns type="DJ">
+        <i>
+         please
+        </i>
+       </ns>
+       when I knew that I had won the first prize. I would like to go there only in July, please
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       I have a holiday in July. For accommodation I would
+       <ns type="UV">
+        <i>
+         rather
+        </i>
+       </ns>
+       prefer log cabins because
+       <ns type="AGV">
+        <i>
+         <ns type="AGA">
+          <i>
+           it's
+          </i>
+         </ns>
+        </i>
+       </ns>
+       more comfortable than tents. And I don't have to worry about the weather. For two activities,
+       <ns type="MT">
+       </ns>
+       the first one
+       <ns type="MP">
+       </ns>
+       can I
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       Tennis, please
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       I'm very good
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       tennis. I used to play a lot when I was a student.
+       <ns type="MT">
+        <i>
+         The
+        </i>
+       </ns>
+       second one
+       <ns type="MP">
+       </ns>
+       can I
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       Photography, please
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         this's
+        </i>
+       </ns>
+       my hobby. And my dad just bought me a new camera. So
+       <ns type="UV">
+        <i>
+         <ns type="UP">
+          <i>
+           this's
+          </i>
+         </ns>
+        </i>
+       </ns>
+       will be my first chance
+       <ns type="U">
+        <i>
+         that I can
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         use
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       Can you tell me what sort of clothes
+       <ns type="UV">
+        <i>
+         do
+        </i>
+       </ns>
+       I need to bring, please. I'm not sure about the weather in California in the daytime and in the
+       <ns type="S">
+        <i>
+         nightime
+        </i>
+       </ns>
+       . And
+       <ns type="M">
+       </ns>
+       any idea
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       how much money
+       <ns type="UV">
+        <i>
+         do
+        </i>
+       </ns>
+       I need to bring
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       Thank you very much for your
+       <ns type="RN">
+        <i>
+         <ns type="DN">
+          <i>
+           offerring
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . I hope to hear
+       <ns type="UY">
+        <i>
+         back
+        </i>
+       </ns>
+       from you.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear, Helen
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for the letter.
+       </s>
+       <s pid="2" sid="2">
+        I was very please when I knew that I had won the first prize.
+       </s>
+       <s pid="2" sid="3">
+        I would like to go there only in July, please.
+       </s>
+       <s pid="2" sid="4">
+        Because I have a holiday in July.
+       </s>
+       <s pid="2" sid="5">
+        For accommodation I would rather prefer log cabins because it's more comfortable than tents.
+       </s>
+       <s pid="2" sid="6">
+        And I don't have to worry about the weather.
+       </s>
+       <s pid="2" sid="7">
+        For two activities,  the first one can I have Tennis, please.
+       </s>
+       <s pid="2" sid="8">
+        Because I'm very good with tennis.
+       </s>
+       <s pid="2" sid="9">
+        I used to play a lot when I was a student.
+       </s>
+       <s pid="2" sid="10">
+        The second one can I have Photography, please.
+       </s>
+       <s pid="2" sid="11">
+        Because this's my hobby.
+       </s>
+       <s pid="2" sid="12">
+        And my dad just bought me a new camera.
+       </s>
+       <s pid="2" sid="13">
+        So this's will be my first chance that I can use it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Can you tell me what sort of clothes do I need to bring, please.
+       </s>
+       <s pid="3" sid="2">
+        I'm not sure about the weather in California in the daytime and in the nightime.
+       </s>
+       <s pid="3" sid="3">
+        And  any idea of how much money do I need to bring.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Thank you very much for your offerring.
+       </s>
+       <s pid="4" sid="2">
+        I hope to hear back from you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Hi, Kim
+      </p>
+      <p>
+       Thanks for the letter asking about
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       pop concert. It was really good. I'm glad I went. My responsibilities
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       selling the tickets and making sure that everything
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         right
+        </i>
+       </ns>
+       . It was good to work with a lot of people and
+       <ns type="FV">
+        <i>
+         shared
+        </i>
+       </ns>
+       experiences. I met a lot of famous pop bands for the first time. I would feel sad if I
+       <ns type="TV">
+        <i>
+         didn't go
+        </i>
+       </ns>
+       there. They gave me a concert
+       <ns type="UJ">
+        <i>
+         printed
+        </i>
+       </ns>
+       T-shirt. I'll show you
+       <ns type="R">
+        <i>
+         by
+        </i>
+       </ns>
+       photographs.
+      </p>
+      <p>
+       <ns type="R">
+        From that time I had a lot of friends
+       </ns>
+       also some of them
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       old friends from college. So we
+       <ns type="UV">
+        <i>
+         are
+        </i>
+       </ns>
+       still keep in touch. And
+       <ns type="MD">
+       </ns>
+       next concert we were promised we'll be there again. I wish you
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       there with us. Because sometimes you
+       <ns type="R">
+        wouldn't have known the experience until you had
+        <ns type="RV">
+         <i>
+          done
+         </i>
+        </ns>
+        it
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         Any way
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I will
+       <ns type="FV">
+        <i>
+         sent
+        </i>
+       </ns>
+       you some photographs. I hope to hear back from you. Take care and don't work too hard. Please
+       <ns type="RV">
+        <i>
+         send
+        </i>
+       </ns>
+       my love to your family.
+      </p>
+      <p>
+       Best wishes
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hi, Kim
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thanks for the letter asking about a pop concert.
+       </s>
+       <s pid="2" sid="2">
+        It was really good.
+       </s>
+       <s pid="2" sid="3">
+        I'm glad I went.
+       </s>
+       <s pid="2" sid="4">
+        My responsibilities are selling the tickets and making sure that everything is right.
+       </s>
+       <s pid="2" sid="5">
+        It was good to work with a lot of people and shared experiences.
+       </s>
+       <s pid="2" sid="6">
+        I met a lot of famous pop bands for the first time.
+       </s>
+       <s pid="2" sid="7">
+        I would feel sad if I didn't go there.
+       </s>
+       <s pid="2" sid="8">
+        They gave me a concert printed T-shirt.
+       </s>
+       <s pid="2" sid="9">
+        I'll show you by photographs.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        From that time I had a lot of friends also some of them are old friends from college.
+       </s>
+       <s pid="3" sid="2">
+        So we are still keep in touch.
+       </s>
+       <s pid="3" sid="3">
+        And  next concert we were promised we'll be there again.
+       </s>
+       <s pid="3" sid="4">
+        I wish you were there with us.
+       </s>
+       <s pid="3" sid="5">
+        Because sometimes you wouldn't have known the experience until you had done it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Any way I will sent you some photographs.
+       </s>
+       <s pid="4" sid="2">
+        I hope to hear back from you.
+       </s>
+       <s pid="4" sid="3">
+        Take care and don't work too hard.
+       </s>
+       <s pid="4" sid="4">
+        Please send my love to your family.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Best wishes
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

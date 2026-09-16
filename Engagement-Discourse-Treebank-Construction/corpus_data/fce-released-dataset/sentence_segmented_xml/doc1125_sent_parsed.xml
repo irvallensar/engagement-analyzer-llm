@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="R">
+        <i>
+         Mrs/Mis
+        </i>
+       </ns>
+      </p>
+      <p>
+       Last night I went to your theatre to see the musical show "Over the
+       <ns type="RP">
+        <i>
+         rainbow
+        </i>
+       </ns>
+       " and I would like to tell you that it wasn't what I expected to see.
+      </p>
+      <p>
+       Actually this
+       <ns type="RV">
+        <i>
+         happened
+        </i>
+       </ns>
+       because
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       most things I
+       <ns type="RV">
+        saw
+       </ns>
+       were
+       <ns type="S">
+        <i>
+         differend
+        </i>
+       </ns>
+       from what the advertisement
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           had been written
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all it
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           had been written
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that Danny Brook and Tina Truelove were starring, but Danny wasn't there and somebody else took his place. This was the most disappointing thing I
+       <ns type="IV">
+        <i>
+         herd
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Also you
+       <ns type="RV">
+        <i>
+         wrote
+        </i>
+       </ns>
+       that the show
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       was going to start at 19:30 but it started at 20:15. You ought to know that all the people hated
+       <ns type="FV">
+        <i>
+         to wait
+        </i>
+       </ns>
+       and started
+       <ns type="MV">
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         complains
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The discounts weren't available and your theatre restaurant wasn't open
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       because the owners were
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At last
+        </i>
+       </ns>
+       you
+       <ns type="RV">
+        <i>
+         wrote
+        </i>
+       </ns>
+       that it
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       our perfect evening out, but like I said before
+       <ns type="MP">
+       </ns>
+       it wasn't. Actually it was terrible and I would like to have my money back.
+      </p>
+      <p>
+       I am looking forward to
+       <ns type="RV">
+        <i>
+         taking
+        </i>
+       </ns>
+       your
+       <ns type="RN">
+        <i>
+         answer
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         <ns type="S">
+          <i>
+           senciarly
+          </i>
+         </ns>
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs/Mis
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Last night I went to your theatre to see the musical show "Over the rainbow" and I would like to tell you that it wasn't what I expected to see.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Actually this happened because the most things I saw were differend from what the advertisement had been written.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First of all it had been written that Danny Brook and Tina Truelove were starring, but Danny wasn't there and somebody else took his place.
+       </s>
+       <s pid="4" sid="2">
+        This was the most disappointing thing I herd.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Also you wrote that the show it was going to start at 19:30 but it started at 20:15.
+       </s>
+       <s pid="5" sid="2">
+        You ought to know that all the people hated to wait and started  the complains.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The discounts weren't available and your theatre restaurant wasn't open, because the owners were for holidays.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        At last you wrote that it was our perfect evening out, but like I said before it wasn't.
+       </s>
+       <s pid="7" sid="2">
+        Actually it was terrible and I would like to have my money back.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I am looking forward to taking your answer
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours senciarly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="DY">
+        <i>
+         Unfortunatly
+        </i>
+       </ns>
+       , Pat wasn't very good at keeping secrets. After we had had an argument she told all the school my secrets. She
+       <ns type="TV">
+        <i>
+         had really let me down
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         met
+        </i>
+       </ns>
+       her
+       <ns type="W">
+        <i>
+         before a year
+        </i>
+       </ns>
+       and from the first time we
+       <ns type="TV">
+        <i>
+         talk
+        </i>
+       </ns>
+       to each other we
+       <ns type="RV">
+        <i>
+         became
+        </i>
+       </ns>
+       friends. It took us a
+       <ns type="R">
+        <i>
+         few
+        </i>
+       </ns>
+       time to
+       <ns type="FV">
+        <i>
+         became
+        </i>
+       </ns>
+       best
+       <ns type="FN">
+        <i>
+         friend
+        </i>
+       </ns>
+       and after that we were always together. Every day after school she
+       <ns type="RV">
+        <i>
+         went
+        </i>
+       </ns>
+       to my house or I went to hers.
+      </p>
+      <p>
+       <ns type="W">
+        <i>
+         Always we were
+        </i>
+       </ns>
+       laughing and having
+       <ns type="MD">
+       </ns>
+       great time. I loved her a lot and I thought she felt the same about me, but I
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       wrong. Anyway,
+       <ns type="W">
+        <i>
+         always I
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         trust
+        </i>
+       </ns>
+       her
+       <ns type="MT">
+       </ns>
+       my secrets, because I was sure she wouldn't tell them to other people, even if some
+       <ns type="SX">
+        <i>
+         say
+        </i>
+       </ns>
+       we would be apart. But I was wrong again.
+      </p>
+      <p>
+       One day, we went to a party, where she met some of the most
+       <ns type="S">
+        <i>
+         pobular
+        </i>
+       </ns>
+       girls in the school. She started to act like them and speak like them. When I told her, she became very angry
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       and she left
+       <ns type="X">
+        <i>
+         without saying nothing
+        </i>
+       </ns>
+       .
+       <ns type="RY">
+        <i>
+         After
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       when I saw her, she
+       <ns type="IV">
+        <i>
+         laught
+        </i>
+       </ns>
+       at me and the next day all the school knew everything about me. I started to cry but later I got over it
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Now the only thing I care
+       <ns type="MT">
+       </ns>
+       is that she couldn't keep secrets and all the school is looking down on me.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunatly,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        After we had had an argument she told all the school my secrets.
+       </s>
+       <s pid="1" sid="4">
+        She had really let me down.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I met her before a year and from the first time we talk to each other we became friends.
+       </s>
+       <s pid="2" sid="2">
+        It took us a few time to became best friend and after that we were always together.
+       </s>
+       <s pid="2" sid="3">
+        Every day after school she went to my house or I went to hers.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Always we were laughing and having  great time.
+       </s>
+       <s pid="3" sid="2">
+        I loved her a lot and I thought she felt the same about me, but I had wrong.
+       </s>
+       <s pid="3" sid="3">
+        Anyway, always I trust her  my secrets, because I was sure she wouldn't tell them to other people, even if some say we would be apart.
+       </s>
+       <s pid="3" sid="4">
+        But I was wrong again.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        One day, we went to a party, where she met some of the most pobular girls in the school.
+       </s>
+       <s pid="4" sid="2">
+        She started to act like them and speak like them.
+       </s>
+       <s pid="4" sid="3">
+        When I told her, she became very angry.
+       </s>
+       <s pid="4" sid="4">
+        and she left without saying nothing.
+       </s>
+       <s pid="4" sid="5">
+        After when I saw her, she laught at me and the next day all the school knew everything about me.
+       </s>
+       <s pid="4" sid="6">
+        I started to cry but later I got over it
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Now the only thing I care  is that she couldn't keep secrets and all the school is looking down on me.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

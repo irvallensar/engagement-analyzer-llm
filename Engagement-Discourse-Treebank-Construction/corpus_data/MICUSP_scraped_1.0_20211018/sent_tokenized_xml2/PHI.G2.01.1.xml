@@ -1,0 +1,473 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      On Hempel's Account of Scientific Explanations
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       What should a scientific explanation consist of?
+      </s>
+      <s pid="1" sid="2">
+       This is a question that Carl Hempel tackles in his essay "Laws and their role in scientific explanation."
+      </s>
+      <s pid="1" sid="3">
+       His prescription has played an important role in the history of the philosophy of science and arguably in science itself.
+      </s>
+      <s pid="1" sid="4">
+       However, as I will discuss in this paper, his theory does not address some important concerns that can be raised with this criterion of explanatory relevance: the role of post hoc explanations and the role of human psychology.
+      </s>
+      <s pid="1" sid="5">
+       As I shall address, Hempel's model is not explicit about these topics, but if it is the case that the model excludes post hoc explanations and explanations where human cognition does not allow the prediction of the explanandum based on the explanans, we would apparently be left with no explanation at all.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       Hempel proposes two models of scientific explanations, both of which require the use of laws.
+      </s>
+      <s pid="2" sid="2">
+       The first type Hempel discusses is the deductive-nomological explanation.
+      </s>
+      <s pid="2" sid="3">
+       Under this model, a scientific explanation is a deductively valid argument, where the fact to be explained – called the explanandum – is the conclusion.
+      </s>
+      <s pid="2" sid="4">
+       The premises consist both of laws of nature, and particular facts about the world.
+      </s>
+      <s pid="2" sid="5">
+       These statements are called explanans.
+      </s>
+      <s pid="2" sid="6">
+       An example of such an argument-cum-explanation would be:
+      </s>
+     </p>
+     <list>
+      <item>
+       <i>
+        1 A gas exerts more pressure as its temperature increases, all else equal.
+       </i>
+      </item>
+      <item>
+       <i>
+        2 The temperature today is higher than it was yesterday.
+       </i>
+      </item>
+      <item>
+       <i>
+        3 My tire pressure is higher today than it was yesterday, but I have not added air.
+       </i>
+      </item>
+     </list>
+     <p>
+      <s pid="3" sid="1">
+       Statement 1 is a law of nature, or in Hempel's terminology a "covering law," as it subsumes the explanandum 3.
+      </s>
+      <s pid="3" sid="2">
+       Statement 2 is a particular fact about the world.
+      </s>
+      <s pid="3" sid="3">
+       Statement 3 is the deductively valid conclusion of premises 1 and 2 (given some additional implied premises such as "my tire contains a gas," "my tire pressure gauge is accurate," and the like).
+      </s>
+     </p>
+     <p>
+      <s pid="4" sid="1">
+       The inductive-statistical explanation also models explanation as an argument, with laws of nature and particular facts as the premises and the explanandum as the conclusion.
+      </s>
+      <s pid="4" sid="2">
+       However, in an I-S explanation, the argument does not have to be deductively valid; rather, it must be inductively strong – that is, that the premises must make the conclusion highly likely.
+      </s>
+      <s pid="4" sid="3">
+       The I-S model allows for probabilistic laws to be used as premises.
+      </s>
+     </p>
+     <p>
+      <s pid="5" sid="1">
+       Hempel proposes two conditions that must be met for an explanation to be satisfactory.
+      </s>
+      <s pid="5" sid="2">
+       The first of these criteria he calls "the requirement of explanatory relevance."
+      </s>
+      <s pid="5" sid="3">
+       By this, he means that the explanation must make one expect or believe that the fact to be explained did or would occur.
+      </s>
+      <s pid="5" sid="4">
+       Hempel calls his second criterion "the requirement of testability," meaning just that the statements used as premises in the explanation (the laws and particular facts) must be able to be empirically tested.
+      </s>
+     </p>
+     <p>
+      <s pid="6" sid="1">
+       According to Hempel, laws are a necessary part of explanations because laws fill the requirement of explanatory relevance.
+      </s>
+      <s pid="6" sid="2">
+       That is, laws provide the link whereby the explanandum is to be expected based upon the other explanans.
+      </s>
+      <s pid="6" sid="3">
+       In a sense, scientific laws could be thought of as rigid, well-verified if-then statements.
+      </s>
+      <s pid="6" sid="4">
+       If a gas is heated, then it will expand.
+      </s>
+      <s pid="6" sid="5">
+       If a magnet is broken, then the two pieces will be magnets as well.
+      </s>
+      <s pid="6" sid="6">
+       Hempel puts it this way "laws….are...statements of universal form [which] asserts a uniform connection between different empirical phenomena or between different aspects of an empirical phenomenon" (p. 309).
+      </s>
+     </p>
+     <p>
+      <s pid="7" sid="1">
+       Hempel's model of explanations seems quite simple and perhaps too straightforward to bring any major criticism against.
+      </s>
+      <s pid="7" sid="2">
+       Upon reflection, however, it has some serious and problematic implications.
+      </s>
+      <s pid="7" sid="3">
+       One question that can be raised against Hempel's view of explanation is, why are laws needed as premises/explanans rather than simply universal generalizations?
+      </s>
+      <s pid="7" sid="4">
+       Indeed, what makes a law different from a universal generalization in the first place?
+      </s>
+      <s pid="7" sid="5">
+       This is a fairly titanic question that Hempel hands off to other philosophers (at least in his essay “Laws and their Roles in Scientific Explanations).
+      </s>
+      <s pid="7" sid="6">
+       I will do the same, except to note that Hempel fails to justify the inclusion of laws over universal generalizations.
+      </s>
+      <s pid="7" sid="7">
+       He comments that laws are thought of as different from other universal generalizations because laws can be used to support counterfactuals.
+      </s>
+      <s pid="7" sid="8">
+       However, he does not address why this is the case, nor why the property of supporting counterfactuals is necessary for explanation.
+      </s>
+     </p>
+     <p>
+      <s pid="8" sid="1">
+       Beyond this, we must ask, what is unique about Hempel's model in terms of description or prescription?
+      </s>
+      <s pid="8" sid="2">
+       One feature seems the most prominent: his requirement that people must expect (be able to predict) the explanandum based upon the explanans – that is, the requirement of explanatory relevance.
+      </s>
+      <s pid="8" sid="3">
+       This leads to two problems that I will address in turn: it does not seem to allow for post-hoc explanations, and it apparently does not allow for explanations where human cognitive limitations prevent the prediction of the explanandum from the explanans.
+      </s>
+     </p>
+     <p>
+      <s pid="9" sid="1">
+       The first issue is that the Hempel's criterion of explanatory relevance means that the model does not account for certain situations in which explanations are taken as acceptable (e.g., by the scientific community) but where the explanandum cannot be predicted from the explanans.
+      </s>
+      <s pid="9" sid="2">
+       One example of this could be evolutionary explanations.
+      </s>
+      <s pid="9" sid="3">
+       Suppose that one wants to explain how a species of moths came to have very long tongues.
+      </s>
+      <s pid="9" sid="4">
+       A D-N style explanation would require premises (laws and particular facts) that would predict this.
+      </s>
+      <s pid="9" sid="5">
+       But, though we can have extensive knowledge about the environment of these moths and the mechanisms of evolution, it does not seem possible to predict a particular adaptation.
+      </s>
+      <s pid="9" sid="6">
+       It seems that in such cases, if we did not already know what sort of adaptation had occurred, the premises available to us would be something along the lines of:
+      </s>
+     </p>
+     <list>
+      <item>
+       <i>
+        4 Having a trait that makes survival and reproduction more likely causes that trait to become more common in the species.  (Law)
+       </i>
+      </item>
+      <item>
+       <i>
+        5 Moths of species X live in an environment where having a longer tongue would make survival and reproduction more likely. (Particular fact)
+       </i>
+      </item>
+      <item>
+       <i>
+        6 Moths of species X live in an environment where having black wings would make survival and reproduction more likely. (Particular fact)
+       </i>
+      </item>
+      <item>
+       <i>
+        7 Moths of species X live in an environment where having short antennae would make survival and reproduction more likely. (Particular fact)
+       </i>
+      </item>
+      <item>
+       <i>
+        8 Etc., ad infinitum.
+       </i>
+      </item>
+     </list>
+     <p>
+      <s pid="10" sid="1">
+       It is apparent that we could not predict the explanandum (that moths of species X have long tongues) based upon these premises.
+      </s>
+      <s pid="10" sid="2">
+       However, we do find certain evolutionary explanations to be acceptable.
+      </s>
+      <s pid="10" sid="3">
+       For the moths in question, the evolutionary explanation would go something like this:
+      </s>
+     </p>
+     <list>
+      <item>
+       <i>
+        9 Moths of species X evolved in an environment where having a longer tongue would make survival and reproduction more likely. (Particular fact)
+       </i>
+      </item>
+      <item>
+       <i>
+        10 Having a trait that makes survival and reproduction more likely causes that trait to become more common in the species.  (Law)
+       </i>
+      </item>
+      <item>
+       <i>
+        11 Moths of species X randomly mutated such that some moths had longer tongues. (Particular fact)
+       </i>
+      </item>
+      <item>
+       <i>
+        12 Moths of species X have very long tongues.
+       </i>
+      </item>
+     </list>
+     <p>
+      <s pid="11" sid="1">
+       Here, the explanandum does follow from the explanans.
+      </s>
+      <s pid="11" sid="2">
+       But in order to make this happen, we had to add a particular fact (11) post hoc.
+      </s>
+      <s pid="11" sid="3">
+       The only way we know fact 11 is through an argument with the explanandum as a premise:
+      </s>
+     </p>
+     <list>
+      <item>
+       <i>
+        13 Moths of species X have very long tongues
+       </i>
+      </item>
+      <item>
+       <i>
+        14 Random mutation leading to a trait that makes survival and reproduction more likely causes that trait to become more common in the species.
+       </i>
+      </item>
+      <item>
+       <i>
+        15 Moths of species X evolved in an environment where having a longer tongue would make survival and reproduction more likely.
+       </i>
+      </item>
+      <item>
+       <i>
+        16 Moths of species X must have randomly mutated such that some moths had longer tongues.
+       </i>
+      </item>
+     </list>
+     <p>
+      <s pid="12" sid="1">
+       If Hempel's model of explanation bars this sort of post hoc reasoning (as it seems it should, since one should not be able to assume the conclusion in order to predict the conclusion), it would bar the argument we find acceptable as an explanation.
+      </s>
+      <s pid="12" sid="2">
+       It is unclear how Hempel would respond to this problem.
+      </s>
+      <s pid="12" sid="3">
+       He may conclude that the argument we take as an explanation isn't properly an explanation, and further, evolutionary explanations in general are nearly impossible to provide – the random nature of mutations prevents us from having knowledge of particular facts of mutations.
+      </s>
+      <s pid="12" sid="4">
+       However, it seems that the post hoc explanation given is better than nothing, and does contribute to our understanding.
+      </s>
+     </p>
+     <p>
+      <s pid="13" sid="1">
+       If Hempel's model does not accommodate our post hoc explanations, this would be a problem for his model.
+      </s>
+      <s pid="13" sid="2">
+       The model requires explanation to involve prediction, but prediction and explanation are very different animals, with the key difference here being that facts learned post hoc can be (and regularly are) used for explanation.
+      </s>
+      <s pid="13" sid="3">
+       Consider this scenario: you are in a casino with a friend.
+      </s>
+      <s pid="13" sid="4">
+       Suddenly, near the slot machines, bells and whistles and lights go off, and a woman jumps up and down, whooping and yelling, "hooray!"
+      </s>
+      <s pid="13" sid="5">
+       Your friend asks, "Why is she yelling like that?"
+      </s>
+      <s pid="13" sid="6">
+       You take in the sights and deduce from the explanandum (the woman's yelling), and other particular facts (the bells and lights, your location in a casino, the woman's location near the slot machines, the nature of slot machines) that she must have won the jackpot.
+      </s>
+      <s pid="13" sid="7">
+       You reply to your friend, "I think she won the jackpot."
+      </s>
+      <s pid="13" sid="8">
+       Your friend is satisfied with your explanation, but you would not have been able to predict the yelling without knowing she won the jackpot, a fact you deduced using the yelling itself.
+      </s>
+     </p>
+     <p>
+      <s pid="14" sid="1">
+       Many other scenarios can be given where the explanandum is required to deduce some fact used as part of the explanans, and where people take these as perfectly satisfactory explanations.
+      </s>
+      <s pid="14" sid="2">
+       In order for Hempel to defend his model, he would need to show either how such accounts fit in his model, or why we should not accept such accounts as explanations when they seem to contribute to our understanding of how things happen.
+      </s>
+     </p>
+     <p>
+      <s pid="15" sid="1">
+       The second issue I take with Hempel's model is that there seems to be a heavy psychological component in the requirement of explanatory relevance, but its importance is not addressed.
+      </s>
+      <s pid="15" sid="2">
+       Suppose we have a situation where the explanandum is theoretically predictable from the explanans, but this prediction would require much more computing power or mental capacity than any person is capable of.
+      </s>
+      <s pid="15" sid="3">
+       Is the account provided an explanation?
+      </s>
+      <s pid="15" sid="4">
+       What if there was a situation where only people with particularly large working memory capacity could predict the explanandum from the explanans?
+      </s>
+      <s pid="15" sid="5">
+       Is the account an explanation, but only for some people?
+      </s>
+      <s pid="15" sid="6">
+       Do we want our conception of an "explanation" to depend upon the mental abilities of those we are explaining to?
+      </s>
+      <s pid="15" sid="7">
+       The answer to this question is not readily apparent.
+      </s>
+      <s pid="15" sid="8">
+       Further, and perhaps more pertinent to modern science, what if a person could only predict the explanandum from the explanans within his lifetime with the aid of a computer?
+      </s>
+      <s pid="15" sid="9">
+       Does this count as an explanation?
+      </s>
+     </p>
+     <p>
+      <s pid="16" sid="1">
+       One aspect of science that these questions seem particularly relevant to is connectionist models or neural networks in cognitive psychology.
+      </s>
+      <s pid="16" sid="2">
+       Scientists have attempted to understand, explain, model, or simulate (depending upon which scientist you ask) how the human brain processes information by using networks of idealized neurons instantiated on a computer.
+      </s>
+      <s pid="16" sid="3">
+       The networks consist of many "units" that mimic the actions of human neurons.
+      </s>
+      <s pid="16" sid="4">
+       Each unit is connected to many others and a unit can send signals to other units it is connected to.
+      </s>
+      <s pid="16" sid="5">
+       An individual unit performs only the following functions: it adds up the strengths of signals it is receiving from other neurons, weighting them based upon the strength of its connection with the transmitting unit.
+      </s>
+      <s pid="16" sid="6">
+       Then, the unit calculates (based upon an assigned function) what strength signal to send out based upon the inputs it received, and then sends out this signal.
+      </s>
+      <s pid="16" sid="7">
+       The strength of a connection can be changed through intervention (i.e., the experimenter changes the weight) or though a learning mechanism (e.g., back propagation) wherein the network changes its own connection weights based upon programmed rules.
+      </s>
+      <s pid="16" sid="8">
+       Some units in a network get input from the environment, and some output their activity into the environment.
+      </s>
+     </p>
+     <p>
+      <s pid="17" sid="1">
+       A network built of these simple units, adhering to these simple rules can be made (through appropriate learning mechanisms and input) to do remarkable things and become quite complicated.
+      </s>
+      <s pid="17" sid="2">
+       For example, one network (discussed by Hinton, 1992) can recognize handwritten digits.
+      </s>
+      <s pid="17" sid="3">
+       A typical network may consist of thousands of units with hundreds of thousands of connections.
+      </s>
+      <s pid="17" sid="4">
+       But, if a person was made fully aware of all the parameters of the network (how the units work, all the connections between units and their weights, the rules by which the weights change, the input-output conversion function the units implement, and the input the network has received) she could not predict what the output would be – at least not without using a computer to implement the network – though theoretically, the explanandum is predictable from the explanans.
+      </s>
+      <s pid="17" sid="5">
+       So, should we consider the parameters of the network an explanation?
+      </s>
+      <s pid="17" sid="6">
+       Even more, should we by analogy take – as some scientists do – the features of a human's neurons to be explanations of how the brain works?
+      </s>
+     </p>
+     <p>
+      <s pid="18" sid="1">
+       Some scientists (most notably McCloskey, 1991) have argued that appealing to the parameters of neural networks is no explanation, since one still does not really understand the inner workings of the network.
+      </s>
+      <s pid="18" sid="2">
+       He makes an analogy to a black box, saying that if you do not understand what happens between input and output, one cannot refer to the black box as an explanation.
+      </s>
+      <s pid="18" sid="3">
+       McCloskey's objection is that he does not understand how these networks work.
+      </s>
+      <s pid="18" sid="4">
+       He discusses a particular network (Seidenberg &amp; McClelland's 1989 model of word recognition and naming) designed for word recognition.
+      </s>
+      <s pid="18" sid="5">
+       He argues that one cannot answer questions such as "why doesn't the network distinguish 'shin' from 'chin'?" by appealing to the parameters of the network, and it is not possible to give an explanation on appropriately understandable theoretical levels.
+      </s>
+      <s pid="18" sid="6">
+       For example, one cannot ask of a network, "does it perform orthography-phonology conversion in a single mechanism?" and get an understandable answer.
+      </s>
+     </p>
+     <p>
+      <s pid="19" sid="1">
+       If we cannot appeal to the parameters of the neural network to explain why it does not distinguish 'shin' from 'chin' – since a person could not predict this outcome based upon the parameters – what else can we use to explain this?
+      </s>
+      <s pid="19" sid="2">
+       The apparent answer is nothing.
+      </s>
+      <s pid="19" sid="3">
+       Failing an explanation that fulfils Hempel's explanatory relevance criterion, are we left with no explanation at all?
+      </s>
+      <s pid="19" sid="4">
+       This seems unsatisfactory.
+      </s>
+      <s pid="19" sid="5">
+       Again we have a circumstance where Hempel's model of explanation may bar an account as explanation but fail to provide an alternative.
+      </s>
+      <s pid="19" sid="6">
+       Surely appealing to a neural network's parameters to explain its behavior is better than no explanation at all.
+      </s>
+      <s pid="19" sid="7">
+       It is unclear how Hempel would accommodate these charges.
+      </s>
+     </p>
+     <p>
+      <s pid="20" sid="1">
+       To sum, Hempel's D-N and I-S models of explanation fail to explicitly address the two concerns raised: the role of post hoc explanations and the role of human cognition in explanation.
+      </s>
+      <s pid="20" sid="2">
+       The model's apparent stance, though, would give us no explanation at all in situations where explanations not in accord with the model are typically given.
+      </s>
+      <s pid="20" sid="3">
+       This is a problem for the model and warrants further discussion.
+      </s>
+     </p>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N101D4">
+       <li id="N101D5">
+        Hempel, C.G.  (1966).  Philosophy of Natural Science.  Englewood Cliffs: Prentice-Hall.
+       </li>
+       <li id="N101D7">
+        Hinton, G. E. (1992). How neural networks learn from experience.  Scientific American, 267(3), 105-109.
+       </li>
+       <li id="N101D9">
+        McCloskey, M. (1991). Networks and theories - The place of connectionism in cognitive science. Psychological Science, 2(6):387-395.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

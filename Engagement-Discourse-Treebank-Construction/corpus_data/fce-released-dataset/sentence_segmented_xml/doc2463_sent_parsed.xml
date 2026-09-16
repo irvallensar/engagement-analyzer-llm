@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       To the manger of the Circle Theatre Mr Smith
+      </p>
+      <p>
+       Caen, Saturday June 17th
+      </p>
+      <p>
+       Mr Smith,
+      </p>
+      <p>
+       I have recently been to London on
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       holiday
+       <ns type="UN">
+        <i>
+         trip
+        </i>
+       </ns>
+       so I decided to spend my
+       <ns type="UP">
+        <i>
+         free-time
+        </i>
+       </ns>
+       going to the musical show you were advertising
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       . It seemed very attractive and the
+       <ns type="UJ">
+        <i>
+         different
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       on the ad pushed me into going to it.
+      </p>
+      <p>
+       Unfortunately, I've been really disappointed. I'm not keen on liars
+       <ns type="MP">
+       </ns>
+       Mr Smith
+       <ns type="MP">
+       </ns>
+       and I think that you've lied to
+       <ns type="UD">
+        <i>
+         such
+        </i>
+       </ns>
+       naive
+       <ns type="AGN">
+        <i>
+         tourist
+        </i>
+       </ns>
+       like us: some brilliant actors were supposed to play the
+       <ns type="AGN">
+        <i>
+         part
+        </i>
+       </ns>
+       and we only had different
+       <ns type="MP">
+       </ns>
+       <ns type="UC">
+        <i>
+         and
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         pityful
+        </i>
+       </ns>
+       ones. Moreover the show was expected to begin at 19.30 but it was delayed
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       forty-five minutes. It is a shame! I ought not to talk about the restaurant
+       <ns type="MP">
+       </ns>
+       <ns type="M">
+       </ns>
+       closed for no apparent reasons
+      </p>
+      <p>
+       You had promised a perfect evening but I
+       <ns type="TV">
+        <i>
+         spend
+        </i>
+       </ns>
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       horrible one
+       <ns type="MY">
+       </ns>
+       and you ruined my holiday!
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         What are you mistaken us for
+        </i>
+       </ns>
+       , Mr Smith? Foolish idiots? We did not deserve such
+       <ns type="MD">
+       </ns>
+       bad show. That's why I want my money back! Now!
+       <ns type="S">
+        <i>
+         Otherweise
+        </i>
+       </ns>
+       I'll have to put some
+       <ns type="IQ">
+        <i>
+         others
+        </i>
+       </ns>
+       ads
+       <ns type="MY">
+       </ns>
+       in London saying that your show is just a
+       <ns type="RN">
+        <i>
+         fake
+        </i>
+       </ns>
+       !
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To the manger of the Circle Theatre Mr Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Caen, Saturday June 17th
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Mr Smith,
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I have recently been to London on a holiday trip so I decided to spend my free-time going to the musical show you were advertising for.
+       </s>
+       <s pid="4" sid="2">
+        It seemed very attractive and the different informations on the ad pushed me into going to it.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Unfortunately, I've been really disappointed.
+       </s>
+       <s pid="5" sid="2">
+        I'm not keen on liars Mr Smith and I think that you've lied to such naive tourist like us: some brilliant actors were supposed to play the part and we only had different and pityful ones.
+       </s>
+       <s pid="5" sid="3">
+        Moreover the show was expected to begin at 19.30 but it was delayed of forty-five minutes.
+       </s>
+       <s pid="5" sid="4">
+        It is a shame!
+       </s>
+       <s pid="5" sid="5">
+        I ought not to talk about the restaurant  closed for no apparent reasons
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        You had promised a perfect evening but I spend an horrible one  and you ruined my holiday!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        What are you mistaken us for, Mr Smith?
+       </s>
+       <s pid="7" sid="2">
+        Foolish idiots?
+       </s>
+       <s pid="7" sid="3">
+        We did not deserve such  bad show.
+       </s>
+       <s pid="7" sid="4">
+        That's why I want my money back!
+       </s>
+       <s pid="7" sid="5">
+        Now!
+       </s>
+       <s pid="7" sid="6">
+        Otherweise
+       </s>
+       <s pid="7" sid="7">
+        I'll have to put some others ads  in London saying that your show is just a fake!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       How modern technology changed your daily life!
+      </p>
+      <p>
+       To begin with, I'd like to underline how the
+       <ns type="RN">
+        <i>
+         place
+        </i>
+       </ns>
+       of technology has increased
+       <ns type="RT">
+        <i>
+         since
+        </i>
+       </ns>
+       a couple of years. With the end of the Second world war and the
+       <ns type="MN">
+       </ns>
+       economic prosperity
+       <ns type="MP">
+       </ns>
+       many goods like
+       <ns type="FN">
+        <i>
+         TV
+        </i>
+       </ns>
+       ,
+       <ns type="FN">
+        <i>
+         <ns type="UP">
+          <i>
+           washing-machine
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , etc. became cheaper and
+       <ns type="FJ">
+        <i>
+         available
+        </i>
+       </ns>
+       . Nowadays, the Internet and the mobile phone
+       <ns type="MP">
+       </ns>
+       with the
+       <ns type="S">
+        <i>
+         developpment
+        </i>
+       </ns>
+       of satellite
+       <ns type="MN">
+       </ns>
+       <ns type="MP">
+       </ns>
+       seem to take the lead. Do they affect my daily life?
+      </p>
+      <p>
+       As far as I am concerned, the first way modern technology
+       <ns type="AGV">
+        <i>
+         influence
+        </i>
+       </ns>
+       me is
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my work: the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       has become such an incredible tool, I can
+       <ns type="UV">
+        <i>
+         make
+        </i>
+       </ns>
+       research
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       everything I want, find
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       for lectures
+       <ns type="MP">
+       </ns>
+       for example
+       <ns type="MP">
+       </ns>
+       or
+       <ns type="S">
+        <i>
+         exercices
+        </i>
+       </ns>
+       . The internet is really the widest source of knowledge.
+      </p>
+      <p>
+       Nevertheless, new technology has made me
+       <ns type="UV">
+        <i>
+         become
+        </i>
+       </ns>
+       more lazy. I spend a lot of
+       <ns type="MY">
+       </ns>
+       free time watching TV, or surfing on the Internet or playing
+       <ns type="MT">
+       </ns>
+       the computer. Maybe it
+       <ns type="MV">
+       </ns>
+       change me into a kind of
+       <ns type="SA">
+        <i>
+         self-centered
+        </i>
+       </ns>
+       person, a loner.
+      </p>
+      <p>
+       But the positive way new technology
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       changed my life is in
+       <ns type="MD">
+       </ns>
+       way
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         to communicate
+        </i>
+       </ns>
+       . It made it possible to discover, to talk with new people on the Internet but also to join and to be joined by my friends or parent. I can send e-mails or use the mobile phone. But we should not forget that
+       <ns type="R">
+        <i>
+         it's
+        </i>
+       </ns>
+       only tools and
+       <ns type="MV">
+       </ns>
+       <ns type="S">
+        <i>
+         emphazise
+        </i>
+       </ns>
+       human relationships.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How modern technology changed your daily life!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        To begin with, I'd like to underline how the place of technology has increased since a couple of years.
+       </s>
+       <s pid="2" sid="2">
+        With the end of the Second world war and the  economic prosperity many goods like TV, washing-machine, etc. became cheaper and available.
+       </s>
+       <s pid="2" sid="3">
+        Nowadays, the Internet and the mobile phone with the developpment of satellite  seem to take the lead.
+       </s>
+       <s pid="2" sid="4">
+        Do they affect my daily life?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As far as I am concerned, the first way modern technology influence me is in my work: the internet has become such an incredible tool, I can make research about everything I want, find informations for lectures for example or exercices.
+       </s>
+       <s pid="3" sid="2">
+        The internet is really the widest source of knowledge.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Nevertheless, new technology has made me become more lazy.
+       </s>
+       <s pid="4" sid="2">
+        I spend a lot of  free time watching TV, or surfing on the Internet or playing  the computer.
+       </s>
+       <s pid="4" sid="3">
+        Maybe it  change me into a kind of self-centered person, a loner.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But the positive way new technology have changed my life is in  way  to communicate.
+       </s>
+       <s pid="5" sid="2">
+        It made it possible to discover, to talk with new people on the Internet but also to join and to be joined by my friends or parent.
+       </s>
+       <s pid="5" sid="3">
+        I can send e-mails or use the mobile phone.
+       </s>
+       <s pid="5" sid="4">
+        But we should not forget that it's only tools and  emphazise human relationships.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

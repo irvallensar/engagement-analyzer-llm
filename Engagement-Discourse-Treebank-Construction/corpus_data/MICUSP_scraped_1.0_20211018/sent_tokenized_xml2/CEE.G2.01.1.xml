@@ -1,0 +1,1337 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Sustainability of the Internal Combustion Engine
+     </div>
+     <p>
+     </p>
+     <div class="abstract">
+      Abstract
+      <p>
+       The motivation for addressing the sustainability of the internal combustion engine (ICE) is discussed. Aspects relating to the sustainability of ICEs, electric vehicles (EV), and fuel cell vehicles (FCV) are laid out, along with characteristics such as safety, range, and availability of fuels that will determine public acceptance and usage. The various fuels that each of these tools use are then defined and their sustainability is evaluated; of course, the ICE should not be considered sustainable if there is no fuel to use with it. All fuels must utilize some form of primary energy, whether it is for resource extraction, fabrication, processing and delivery or for direct usage in the energy conversion tool as is the case for EVs. As such, the primary energy portfolio is discussed. Since a great deal of governmental attention is paid to global climate change and regulations or policies geared towards its mitigation, it is assumed that there will be a transition to cleaner power plants and renewable sources will be utilized more. This information is compiled to produce an outlook for transportation which concludes with a probable scenario that includes ICEs running off of biofuels and H2.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        This paper will discuss the future role of the internal combustion engine (ICE) in society.
+       </s>
+       <s pid="1" sid="2">
+        While this energy conversion technology has been used commercially for over a century, concerns regarding the environmental impact of emissions (CO2, CO, unburned hydrocarbons, NOx, and SOx) and the stability of the fuel supply have raised basic questions about whether we should use it in the future, or even if we will be able to use it.
+       </s>
+       <s pid="1" sid="3">
+        This analysis addresses both of these questions by evaluating competing technologies, such as electric vehicles (EV) and fuel cell (FC) vehicles, the advances possible with each technology, and the sustainability of the energy conversion tool and fuel.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Perhaps the greatest difficulty in evaluating the sustainability of the ICE is defining the word sustainability .
+       </s>
+       <s pid="2" sid="2">
+        In 1992, the United Nations sponsored Earth Summit defined sustainable development as the “development that meets the needs of the present without compromising the ability of future generations to meet their own needs [1].
+       </s>
+       <s pid="2" sid="3">
+        Marshall and Toffel [2] have pointed out that this requires the knowledge of the needs of future generations and their ability to reach those needs, which in turn requires knowledge of their available technologies.
+       </s>
+       <s pid="2" sid="4">
+        History has taught us that we are not good at predicting future technology, and predicting the needs is difficult because we constantly strive to improve the quality of life of our societies which means needs will also change.
+       </s>
+       <s pid="2" sid="5">
+        A number of sustainability frameworks have been developed to address this issue and make the concept of sustainability palpable for industry and policy makers to enable movement.
+       </s>
+       <s pid="2" sid="6">
+        An attempt was made to use one of these frameworks in this assessment, the Triple Bottom Line (TBL).
+       </s>
+       <s pid="2" sid="7">
+        The Triple Bottom Line suggests that, in addition to economic returns, organizations must consider the environmental and social consequences of their activities.
+       </s>
+       <s pid="2" sid="8">
+        This presented difficulties since many of the topics discussed were for future technologies for which quantitative data is either unavailable or, if available, it is probably inaccurate.
+       </s>
+       <s pid="2" sid="9">
+        Nevertheless, the tenets of the TBL provide excellent talking points for this analysis.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Some analysis look at a fixed time frame, such as 50 years, to gauge the sustainability of a product or process, assuming that by that time another technology or alternative will become available or economically competitive.
+       </s>
+       <s pid="3" sid="2">
+        While this has been the case for many products or processes such as energy (wood 􀃆 coal 􀃆 oil), at some point, for some product or process, the outlook for both the original process or product and the alternatives may look bleak.
+       </s>
+       <s pid="3" sid="3">
+        For this reason, and because of the vital role that individual transportation plays in society, this paper will define the sustainability of a product as the ability to manufacture and use the product indefinitely.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        There are a couple of issues that will not be addressed for simplicity.
+       </s>
+       <s pid="4" sid="2">
+        Improving public transportation and urban landscape redesign and revitalization are ways to reduce fuel consumption, and these ideas will gain popularity with time.
+       </s>
+       <s pid="4" sid="3">
+        However, they will also not be considered in this analysis.
+       </s>
+       <s pid="4" sid="4">
+        Similarly, hybrid vehicles are a means to reduce fuel consumption.
+       </s>
+       <s pid="4" sid="5">
+        The sustainability of these vehicles depends on the sustainability of its major components (i.e. a ICE hybrid electric vehicle will not be sustainable if the ICE, electrical components, or ICE fuel is not sustainable).
+       </s>
+       <s pid="4" sid="6">
+        Since these components are addressed, emphasis will not be placed on hybrid vehicles.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        Energy conversion technologies are analyzed first.
+       </s>
+       <s pid="5" sid="2">
+        These technologies all require their respective fuels, and therefore cannot be considered sustainable unless the fuels are also sustainable.
+       </s>
+       <s pid="5" sid="3">
+        Following the discussion of fuels, a brief outlook on transportation will be given to introduce a timeline for potential transitions from the ICE to another energy conversion tool.
+       </s>
+       <s pid="5" sid="4">
+        This will lead into a discussion of EV, biofuels, and synthetic fuel technologies that are currently in their infancy.
+       </s>
+       <s pid="5" sid="5">
+        A more detailed outlook will then be given looking further into the future.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Energy Conversion Technologies
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Viable energy conversion technologies suitable for transportation use include ICEs, hybrid vehicles, electric vehicles, and fuel cells.
+       </s>
+       <s pid="6" sid="2">
+        In this section, the triple bottom line tenets will be discussed to each of these technologies (excluding the hybrid vehicles).
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        ICEs are currently the dominant energy conversion tool used for transportation and remote power generation.
+       </s>
+       <s pid="7" sid="2">
+        Two stroke engines are used on smaller scales for weed whackers, some lawnmowers, some motorcycles, etc.
+       </s>
+       <s pid="7" sid="3">
+        Four stroke gasoline engines are typically used for smaller vehicles in certain markets, like the US, and four stroke Diesel engines are used in vehicles of all sizes and are the predominant type of engine in remote power generators.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        A discussion of the economic bottom line for ICEs is quite simple.
+       </s>
+       <s pid="8" sid="2">
+        These engines have been in widespread use for decades, and much effort has gone into improving their performance and making them less expensive.
+       </s>
+       <s pid="8" sid="3">
+        The infrastructure for manufacturing ICEs is sufficiently developed to supply the current demand, and expansion should not be difficult.
+       </s>
+       <s pid="8" sid="4">
+        Also, significant ICE development and manufacturing knowledge is available to transfer to future generations facilitating further refinement of the processes.
+       </s>
+       <s pid="8" sid="5">
+        The natural resources required to produce ICEs are plentiful, so fluctuating resource prices will not likely make ICEs too expensive for many to afford.
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        The social justice aspect of ICE production and use echoes that of the economic view; current ICEs as well as more advanced ICEs anticipated in the future are accessible to a fair and growing portion of society.
+       </s>
+       <s pid="9" sid="2">
+        As with most industries who produce material products (as opposed to intellectual property), attention must continue to be paid to working conditions in the factories and compensation.
+       </s>
+       <s pid="9" sid="3">
+        Unions have had a considerable influence in improving the working environments and compensation in the United States up to this point.
+       </s>
+       <s pid="9" sid="4">
+        The United Auto Workers, the salient union in the US, even strives to improve working conditions and compensation for auto workers around the globe.
+       </s>
+       <s pid="9" sid="5">
+        Also, some automakers, such as Ford, have begun to offer human rights courses to suppliers.
+       </s>
+       <s pid="9" sid="6">
+        There is also an industry wide push to improve the working conditions for workers all along the supply chain [3].
+       </s>
+       <s pid="9" sid="7">
+        If these efforts are sustained, the social consequences of producing ICEs are fair.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        The environmental consequences of manufacturing an ICE are not prevalent in the literature.
+       </s>
+       <s pid="10" sid="2">
+        Many life cycle analyses of ICEs show the energy usage and CO2 emissions for the manufacturing phase in comparison to the use phase and conclude that the use phase is the most damaging aspect of the life cycle and that modifications to the product cycle should focus on that phase.
+       </s>
+       <s pid="10" sid="3">
+        Some of the information found is presented in Figure 1.
+       </s>
+       <s pid="10" sid="4">
+        Figure 1: Energy consumption for the manufacture of future ICE and FC vehicles
+       </s>
+       <s pid="10" sid="5">
+        The estimated energy consumption when manufacturing future vehicles with ICEs and FCs is shown.
+       </s>
+       <s pid="10" sid="6">
+        Emissions are not presented here since it depends largely on the types and size of power plants used in the region of manufacture.
+       </s>
+       <s pid="10" sid="7">
+        The important thing to note here is that the energy consumption is nearly equal.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        Figure 1: Energy consumption for the manufacture of future ICE and FC vehicles [4].
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        It should be noted that there is enormous potential for ICE remanufacturing.
+       </s>
+       <s pid="12" sid="2">
+        Keolean et al. at the University of Michigan in Ann Arbor quantified the impact in a 2004 study.
+       </s>
+       <s pid="12" sid="3">
+        They found that raw material consumption drops between 26% and 90%, manufacturing energy drops by 68% to 83% (and accordingly CO2, CO, NOx, and SOx emissions dropped substantially), consumer cost dropped by 30% to 53%, solid waste generated was to 11 to 34% compared to a new engine [5].
+       </s>
+       <s pid="12" sid="4">
+        The transition from a more energy intensive to labor intensive process means jobs will be produced in the process, improving social welfare.
+       </s>
+       <s pid="12" sid="5">
+        Of course, the main obstacle to widespread use of remanufactured engines is public acceptance.
+       </s>
+       <s pid="12" sid="6">
+        Extended producer responsibility laws already established in many European countries enable widespread engine remanufacturing operations.
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        Fuel cells were invented in 1839 by Sir William Grove.
+       </s>
+       <s pid="13" sid="2">
+        They have the potential to be used in power plants, transportation vehicles, and as battery replacements.
+       </s>
+       <s pid="13" sid="3">
+        There are a number of different types of fuel cells.
+       </s>
+       <s pid="13" sid="4">
+        The Department of Energy believes the polymer exchange membrane fuel cell (PEMFC) is the most likely type to be used in automobiles [6], so it will be considered in this work.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        Economically, fuel cells must come down in price by a factor of 10 or more to compete with ICEs [7].
+       </s>
+       <s pid="14" sid="2">
+        The catalyst is typically platinum, which is precious metal, so availability might make drive up the price of these fuel cells if they are widely used.
+       </s>
+       <s pid="14" sid="3">
+        Platinum is a significant reason why PEMFCs are so expensive, so researchers must find ways to reduce the amount required or find an alternative catalyst [168].
+       </s>
+       <s pid="14" sid="4">
+        FCs also suffer from durability issues related to cyclic loading conditions.
+       </s>
+       <s pid="14" sid="5">
+        If this cannot be addressed in research and development, then replacement of fuel stacks may have to be considered which could drastically affect the economic consequences of FC use.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        A partial or full transition to FC vehicles would have some social justice consequences.
+       </s>
+       <s pid="15" sid="2">
+        Best manufacturing practices would have to be developed to ensure worker safety.
+       </s>
+       <s pid="15" sid="3">
+        These will develop as manufacturing managers learn from the problems they encounter.
+       </s>
+       <s pid="15" sid="4">
+        If FCs replaced ICEs, some of the workers in ICE plants could seek work in FC plants, although due to lower complexity many jobs will likely be eliminated.
+       </s>
+       <s pid="15" sid="5">
+        First responders to accident scenes may be endangered if they attempt to extract people from damaged vehicles given the large amounts of electrical energy present.
+       </s>
+       <s pid="15" sid="6">
+        This issue must be addressed in both vehicle design and proper training of the first responders.
+       </s>
+       <s pid="15" sid="7">
+        Development of a hydrogen economy would produce many jobs and make regions less dependent upon resources in other regions where oversight of working conditions may be difficult or impossible.
+       </s>
+       <s pid="15" sid="8">
+        Also, quiet cars may pose danger to pedestrians and facilitate stealthy escape of criminals.
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        The environmental aspects of widespread FC use are similar to those of ICE manufacturing in that they require essentially the same amount of energy (and emissions, if produced in the same location).
+       </s>
+       <s pid="16" sid="2">
+        The potential of remanufacturing FCs was not found in the literature.
+       </s>
+       <s pid="16" sid="3">
+        Thus, if a non‐trivial amount of ICEs are remanufactured in the future, the net manufacturing energy required per engine would be less than that required to manufacture a FC.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        The EV concept has been around for over a century, but advantages of ICEs such as long range and quick refueling time have kept it from mass production.
+       </s>
+       <s pid="17" sid="2">
+        EVs actually held many land speed and distance records before the ICE became dominant.
+       </s>
+       <s pid="17" sid="3">
+        More recently in the late 1990’s, the California Air Resources Board mandated EV sales in California.
+       </s>
+       <s pid="17" sid="4">
+        Many automakers complied but challenged the mandate in federal court and were eventually successful.
+       </s>
+       <s pid="17" sid="5">
+        For reasons mentioned earlier along with the development of more advanced batteries, there has been renewed interest in developing them.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Economically, EVs are expensive initially and years later, since many suspect that the battery pack will have to be replaced.
+       </s>
+       <s pid="18" sid="2">
+        Automakers assure customers that internal tests have suggested the battery pack will last the life of the vehicle, yet warranties never extend beyond 10 years or 100,000 miles.
+       </s>
+       <s pid="18" sid="3">
+        Recent research has focused on developing nickel metal hydride (NiMH) and lithium‐ion batteries.
+       </s>
+       <s pid="18" sid="4">
+        Lead acid batteries have been used in many of the older EVs.
+       </s>
+       <s pid="18" sid="5">
+        They are the least expensive, but they don’t hold a high enough charge, last long, and they lead to high lead emissions.
+       </s>
+       <s pid="18" sid="6">
+        The limited supply of lithium and the competition for lithium resources from the electronics industry may make lithium ion battery packs expensive [9].
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        Since mass production of modern battery packs suitable for transportation is not currently done, best practices must be developed.
+       </s>
+       <s pid="19" sid="2">
+        Also, like FC and hybrid electric vehicles (HEV), EVs present unique challenges to first responders.
+       </s>
+       <s pid="19" sid="3">
+        Automakers have developed the interface between the charging source and vehicle such that accidents are unlikely.
+       </s>
+       <s pid="19" sid="4">
+        Two issues that are generally not discussed are whether or not quiet cars will increase pedestrian accidents or facilitate crimes, since a stealthy escape would be facilitated.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Environmentally, EVs get mixed reviews.
+       </s>
+       <s pid="20" sid="2">
+        They are lauded for having zero "tailpipe" emissions, which will be discussed further in the next section.
+       </s>
+       <s pid="20" sid="3">
+        From an energy conversion tool point of view, certain batteries may be sustainable and others may not be.
+       </s>
+       <s pid="20" sid="4">
+        For instance, all of the components of Toyota’s NiMH batteries can be recycled.
+       </s>
+       <s pid="20" sid="5">
+        Toyota has even printed a phone number on these packs and offers a $200 bounty for them [10].
+       </s>
+       <s pid="20" sid="6">
+        Tesla Motors claims their batteries can be downgraded to less demanding applications such as backup power for an off‐grid home, but these will eventually end up in a landfill.
+       </s>
+       <s pid="20" sid="7">
+        However, they have been experimenting with a recycling process and claim that they can recycle about 60% of the materials and reuse 10% [11].
+       </s>
+       <s pid="20" sid="8">
+        Much will be learned about disposal and recycling of these large battery packs in the coming years, as battery packs from commercialized hybrid electric vehicles and EVs begin to fail.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Sustainability of Fuels
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        One thing that all fuels have in common is that a certain amount of primary energy (coal, nuclear, etc.) is required to acquire, process, and deliver them to consumers.
+       </s>
+       <s pid="21" sid="2">
+        Energy is required to extract petroleum from the earth, refine it and deliver it to filling stations.
+       </s>
+       <s pid="21" sid="3">
+        At the other end of the spectrum, EVs use primary fuel directly.
+       </s>
+       <s pid="21" sid="4">
+        This means that an analysis on the sustainability of various fuels should include a discussion on the status of primary energy production.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        Global climate change has received considerable attention is recent years from governing bodies around the world.
+       </s>
+       <s pid="22" sid="2">
+        It is generally accepted that anthropogenic CO2 emissions contribute to warming, and these governing bodies are taking the beginning steps to reduce and eventually mitigate these emissions.
+       </s>
+       <s pid="22" sid="3">
+        Barring any unforeseen turn of events, it is assumed that the developed nations will begin utilizing more renewable energy and cleaner energy technologies such as carbon capture.
+       </s>
+       <s pid="22" sid="4">
+        In the future, nuclear fission may also enter the picture and begin producing cleaner energy.
+       </s>
+       <s pid="22" sid="5">
+        It is also assumed that developed nations will assist developing nations in developing a clean energy portfolio.
+       </s>
+       <s pid="22" sid="6">
+        EVs utilize electricity that can be generated with any primary fuel.
+       </s>
+       <s pid="22" sid="7">
+        LaPuma and McCleese performed an LCA for EVs and ICE vehicles using the Monte Carlo simulation and concluded that greenhouse gas emissions may actually be increased with electric vehicles if the electricity is produced using the USs energy portfolio.
+       </s>
+       <s pid="22" sid="8">
+        Other results include higher SOx, NOx, and particulate matter emissions, and a possible reduction in VOCs and CO emissions [12].
+       </s>
+       <s pid="22" sid="9">
+        However, if a sustainable primary fuel is used such as wind, solar, or geothermal, then the fuel for electric vehicles can be considered sustainable.
+       </s>
+       <s pid="22" sid="10">
+        One thing to note is that with widespread use of EVs, the electrical grid in developed countries will have to be upgraded.
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        H2 is currently considered a synthetic fuel, as opposed to a biofuel.
+       </s>
+       <s pid="23" sid="2">
+        It is a candidate for gasoline engines, namely spark ignition direct injection lean burn engines, and FCs.
+       </s>
+       <s pid="23" sid="3">
+        It is currently produced mainly by steam reforming natural gas.
+       </s>
+       <s pid="23" sid="4">
+        This is not a sustainable practice given the use of fossil fuels, so the next best current option that has the potential to be sustainable is the electrolysis of water.
+       </s>
+       <s pid="23" sid="5">
+        Electrolysis is a process by which electrical current is passed through the water molecules, breaking them apart.
+       </s>
+       <s pid="23" sid="6">
+        Accordingly, the sustainability of producing H2 via this process is determined by the sustainability of the primary energy source used to generate the electricity.
+       </s>
+       <s pid="23" sid="7">
+        There are a number of processes currently in the research phase to renewably produce H2, but they have yet to show potential for commercial use.
+       </s>
+       <s pid="23" sid="8">
+        These processes are as follows:
+       </s>
+      </p>
+      <list>
+       <item>
+        1. Biological water splitting
+       </item>
+       <item>
+        2. Photo‐electrochemical water splitting
+       </item>
+       <item>
+        3. Solar‐thermal methane decomposition
+       </item>
+       <item>
+        4. Reforming of biomass and waste
+       </item>
+       <item>
+        5. Renewable electrolysis
+       </item>
+      </list>
+      <p>
+       <s pid="24" sid="1">
+        The Fischer Tropsch, Bergius, and Karrick processes each produce synthetic hydrocarbons in different ways.
+       </s>
+       <s pid="24" sid="2">
+        The Fischer Tropsch and Bergius processes reacts CO and coal, respectively, with H2 to produce fuel.
+       </s>
+       <s pid="24" sid="3">
+        The Karrick process is a low temperature coal distillation process which produces fuel and other oils.
+       </s>
+       <s pid="24" sid="4">
+        These processes, especially the latter, provide great potential for countries to reduce dependence upon foreign oil and to fill the possible gap in fuels if petroleum reserves dry up and biofuels and other transportation vehicles fulfill the transportation needs.
+       </s>
+       <s pid="24" sid="5">
+        China has recently begun to invest in this technology.
+       </s>
+       <s pid="24" sid="6">
+        However, these are carbonaceous fuels and the net result of producing and burning them will result in CO2 emissions into the atmosphere, among other emissions, so they are not sustainable.
+       </s>
+       <s pid="24" sid="7">
+        The Fischer Tropsch process may see usage in the interim since the feedstock is CO2, and there may be plenty of CO2 available by carbon capture at coal fired power plants.
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        Methanol is a synthetic alcohol fuel that is considered by some to be a viable replacement to petroleum based fuels.
+       </s>
+       <s pid="25" sid="2">
+        It can be utilized in ICEs and FCs.
+       </s>
+       <s pid="25" sid="3">
+        It is typically produced by reforming natural gas and steam in a furnace to produce CO and H2, which are then reacted in the presence of a catalyst.
+       </s>
+       <s pid="25" sid="4">
+        Another method of producing methanol is via a fuel cell developed by researchers at the University of Southern California.
+       </s>
+       <s pid="25" sid="5">
+        It runs in reverse compared to other fuel cells; H2O and CO2 are fed into the cell along with electricity, and the products are methanol molecules.
+       </s>
+       <s pid="25" sid="6">
+        While this may find some use as a carbon capture technology since there are many uses for methanol, it is not a sustainable fuel since it produces CO2 when burned or chemically reacted in FCs.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        Ethanol is receiving a large amount of attention as an alternative fuel front runner.
+       </s>
+       <s pid="26" sid="2">
+        Several factors lend to the buzz ethanol receives in the U.S.
+       </s>
+       <s pid="26" sid="3">
+        As the source of ethanol production, corn is viewed by many as a fully sustainable source.
+       </s>
+       <s pid="26" sid="4">
+        Corn is grown domestically in large quantities, therefore is readily available.
+       </s>
+       <s pid="26" sid="5">
+        The fermentation processes from either sucrose of sugarcane or enzymatically derived from starch of corn are two mature and widespread technologies [21].
+       </s>
+       <s pid="26" sid="6">
+        Each of these factors appears to point to a viable alternative.
+       </s>
+       <s pid="26" sid="7">
+        However, bioethanol will not be able to act as a full replacement of petrol fuels in current or slightly modified ICEs.
+       </s>
+       <s pid="26" sid="8">
+        Even with 100% dedication of agricultural corn production to ethanol development there would not be enough to completely relieve the U.S. of petroleum dependency.
+       </s>
+       <s pid="26" sid="9">
+        Bioethanol has a lower energy density and would require more quantities to match the output of current fuels in ICEs.
+       </s>
+       <s pid="26" sid="10">
+        In terms of the environmental impact from production, the current infrastructure for bioethanol is still based in fossil fuel dependency.
+       </s>
+       <s pid="26" sid="11">
+        Currently, a significant amount of fossil fuels are expended from making fertilizers for agriculture.
+       </s>
+       <s pid="26" sid="12">
+        Ethanol production uses the same fertilizers.
+       </s>
+       <s pid="26" sid="13">
+        Another aspect of the bioethanol infrastructure that is counterproductive is the use of coal and other fossil fuels to power the conversion process from starch to ethanol.
+       </s>
+       <s pid="26" sid="14">
+        The ideal biofuel is carbon neutral, but under the current infrastructure bioethanol is in fact a negative contributor.
+       </s>
+       <s pid="26" sid="15">
+        It is clear that bioethanol is not a final solution, but with improvements of infrastructure opportunities exist as a partial replacement and additive to gasoline [22].
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        An area that bioethanol can have an immediate positive environmental impact is in gasoline additives.
+       </s>
+       <s pid="27" sid="2">
+        By replacing traditional additives, a significant decrease in harmful exhaust gases results.
+       </s>
+       <s pid="27" sid="3">
+        Ethanol competes on basis of cost and quality in gasoline additives markets [21].
+       </s>
+       <s pid="27" sid="4">
+        The ideal blend to run in ICEs is E30 (30% ethanol).
+       </s>
+       <s pid="27" sid="5">
+        E30 has a comparable compression ration to diesel.
+       </s>
+       <s pid="27" sid="6">
+        The lower energy density is approaches a negligible level.
+       </s>
+       <s pid="27" sid="7">
+        Flexfuel E85 and E20 and below do not compensate for lower energy density.
+       </s>
+       <s pid="27" sid="8">
+        For this reason higher blends do not actually displace more gasoline.
+       </s>
+       <s pid="27" sid="9">
+        The amount of power lost in comparison to gasoline is proportional to the blend of Ethanol.
+       </s>
+       <s pid="27" sid="10">
+        Larger quantities of ethanol fuel are necessary to power ICEs above E30.
+       </s>
+       <s pid="27" sid="11">
+        Ethanol will not be able to completely displace gasoline by any means, but Ethanol could be sustainable in the immediate future in the niche market for additives [22].
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        In terms of bioalcohols, butanol is the alcohol that most resembles the performance of petroleum based fuels.
+       </s>
+       <s pid="28" sid="2">
+        Butanol is an excellent fuel.
+       </s>
+       <s pid="28" sid="3">
+        The caloric value of butanol is much closer to that of gasoline than ethanol.
+       </s>
+       <s pid="28" sid="4">
+        A lower freezing point makes butanol more suited for cooler climates than ethanol.
+       </s>
+       <s pid="28" sid="5">
+        In current ICEs, butanol works well as a gasoline replacement.
+       </s>
+       <s pid="28" sid="6">
+        100% concentration butanol can be used in ICEs.
+       </s>
+       <s pid="28" sid="7">
+        The prospect of butanol fully replacing gasoline in ICEs is aided by the fact that butanol can be pumped through existing pipelines.
+       </s>
+       <s pid="28" sid="8">
+        Ethanol on the other hand must be transported via trucks from location to location.
+       </s>
+       <s pid="28" sid="9">
+        Maintaining existing infrastructure is a characteristic of a sustainable fuel.
+       </s>
+       <s pid="28" sid="10">
+        Many of the mentioned factors point to butanol as a potential gasoline replacement, but all factors must be considered.
+       </s>
+       <s pid="28" sid="11">
+        Currently, the production of butanol is not in large quantity.
+       </s>
+       <s pid="28" sid="12">
+        What is holding butanol back from large scale production?
+       </s>
+       <s pid="28" sid="13">
+        Economics.
+       </s>
+       <s pid="28" sid="14">
+        Producing butanol is more expensive than producing ethanol.
+       </s>
+       <s pid="28" sid="15">
+        The ABE (Acetone‐Butanol‐
+       </s>
+       <s pid="28" sid="16">
+        Ethanol) fermentation process uses bacteria cultures to ferment biomass.
+       </s>
+       <s pid="28" sid="17">
+        Currently, the cost of the cultures is far higher than desired for economic growth.
+       </s>
+       <s pid="28" sid="18">
+        Research is now being conducted to develop higher output bacteria cultures.
+       </s>
+       <s pid="28" sid="19">
+        One culture considered is C. acetobutylicum, which outputs a greater butanol yield than other cultures.
+       </s>
+       <s pid="28" sid="20">
+        If ABE is produced from C. acetobutylicum, the price of butanol drops from $0.73 kg‐1 to $0.55 kg‐1.
+       </s>
+       <s pid="28" sid="21">
+        Adding a credit from selling acetone, which is one of the byproducts, and then the butanol price drops to $0.46 kg‐1 [24].
+       </s>
+       <s pid="28" sid="22">
+        It should be noted that the byproduct potential for ABE fermentation is strong.
+       </s>
+       <s pid="28" sid="23">
+        Along with acetone additional byproducts include: ethanol, gases (H2 and CO2), biomass corn fiber, and corn oil.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        Table 1: By‐product credits for a butanol plant (capacity 121.60 x 106 kg year‐1).
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        Such economic advances must continue if butanol is to ever become viable as a gasoline replacement.
+       </s>
+       <s pid="30" sid="2">
+        An immediate impact that butanol may have is in the fuel additive market.
+       </s>
+       <s pid="30" sid="3">
+        Similar to ethanol, adding butanol to gasoline or diesel fuels improve the performance while hedging emissions.
+       </s>
+       <s pid="30" sid="4">
+        Butanol as an additive is sustainable, but as a replacement there is a large gap in progress that must be addressed.
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        The next stage in bioalcohols use for ICEs is mixed alcohols.
+       </s>
+       <s pid="31" sid="2">
+        Mixing alcohols such as ethanol, butanol, propanol, and higher alcohols can have beneficiary results.
+       </s>
+       <s pid="31" sid="3">
+        The overall performance as a fuel improves in comparison with standard ethtanol.
+       </s>
+       <s pid="31" sid="4">
+        Another concern with ethanol is the compatibility issues with gasoline due to higher water solubility and higher phase separation temperature, but mixing in butanol and other alcohols provides more compatibility.
+       </s>
+       <s pid="31" sid="5">
+        Increased water tolerance and decreased phase separation temperature of mixed alcohols blend open the possibility of pipeline shipping, which is not possible with pure ethanol [21].
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        Derived from vegetable oils and animal fats, Biodiesel has an advantage over other biofuels in that the feedstock used may be of regional origin.
+       </s>
+       <s pid="32" sid="2">
+        Corn cannot be grown everywhere, hence ethanol has limitations on where it can be produced.
+       </s>
+       <s pid="32" sid="3">
+        But, for biodiesel the local oil bearing crop is adequate.
+       </s>
+       <s pid="32" sid="4">
+        Along with animal fats, coconuts, soybean, rapeseed, sunflower seeds, and canola are used in the biodiesel process known as transesterification.
+       </s>
+       <s pid="32" sid="5">
+        During transesterification, the vegetable oils or animal fat are exposed to an alcohol (ethanol or methanol) and glycerin is separated as a byproduct.
+       </s>
+       <s pid="32" sid="6">
+        The biodiesel left behind is sold as fuel and the glycerin can be sold to the pharmaceutical and cosmetic industries.
+       </s>
+       <s pid="32" sid="7">
+        The process has a yield of 70%‐90%.
+       </s>
+       <s pid="32" sid="8">
+        As mentioned each region has a preferred feedstock that has higher yields.
+       </s>
+       <s pid="32" sid="9">
+        For the United States, the soybean is the most viable feedstock despite its lower yield.
+       </s>
+       <s pid="32" sid="10">
+        It should be noted that biodiesel cost can be lowered with increasing feedstock yields.
+       </s>
+       <s pid="32" sid="11">
+        Currently the cost of biodiesel at $0.80‐$0.90 L‐1 is not comparable to petroleum derived diesel.
+       </s>
+       <s pid="32" sid="12">
+        While the price is not desirable, the environmental benefits certainly are.
+       </s>
+       <s pid="32" sid="13">
+        Biodiesel reduce exhaust emissions in comparison to the petroleum diesel [21].
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        Figure 2: Environmental impact of biodiesel compared with Diesel measured at the tailpipe and across the life cycle.
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        As the figure indicates in most cases the emissions are reduced by good margins.
+       </s>
+       <s pid="34" sid="2">
+        The fact that current diesel engines are completely compatible with no modification necessary lends well to the immediate possibilities of biodiesel.
+       </s>
+       <s pid="34" sid="3">
+        Something that must be addressed is the available power for a biodiesel fueled vehicle.
+       </s>
+       <s pid="34" sid="4">
+        The lower caloric value of biodiesel dictates the need for more fuel consumption in comparison with petroleum diesel.
+       </s>
+       <s pid="34" sid="5">
+        Indeed, for higher blends the performance is not as strong.
+       </s>
+       <s pid="34" sid="6">
+        Unless reduced power is not a concern, it appears currently biodiesel is best suited for the additive market [23].
+       </s>
+       <s pid="34" sid="7">
+        What provides hope in the performance area modifications to the engine that recirculate and reform the exhaust so that the fuel can be more completely combusted.
+       </s>
+       <s pid="34" sid="8">
+        Exhaust Gas Reformation (EGR) makes use of exhaust (H2, CO, CO2, and CH4) that would be wasted in other engines.
+       </s>
+       <s pid="34" sid="9">
+        What can be said about biodiesel is that the compatibility and flexibility of feedstock make immediate use possible.
+       </s>
+       <s pid="34" sid="10">
+        What holds biodiesel back is the current cost and lower energy density.
+       </s>
+       <s pid="34" sid="11">
+        The fact that biodiesel has a higher cost and requires use of more fuel than petroleum diesel hampers the sustainability beyond short term, unless costs come down.
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        "Oilgae" (Oil and Biodiesel from Algae) is garnering a large amount of interest from the energy community as a next generation biofuel.
+       </s>
+       <s pid="35" sid="2">
+        The upside of oilgae is far greater than the currently used renewable fuels.
+       </s>
+       <s pid="35" sid="3">
+        While ethanol from corn would require 50 million ha to displace only 11% of gasoline usage in the United States, oilgae needs around 15 thousand acres to totally displace petroleum diesel [25].
+       </s>
+       <s pid="35" sid="4">
+        The oil yield per acre from algae is an amazing 30‐100 times higher than oil bearing seeds currently used for biodiesel production.
+       </s>
+       <s pid="35" sid="5">
+        What holds other renewable energy sources back is the cannibalization of agricultural land and resources to produce fuel.
+       </s>
+       <s pid="35" sid="6">
+        Taking from one need to give to another is not a sustainable practice.
+       </s>
+       <s pid="35" sid="7">
+        Algae produced biodiesel does not require fertile farmlands or forests to reach full production.
+       </s>
+       <s pid="35" sid="8">
+        Adverse climates and conditions such as deserts and unusable land are adequate growing locations.
+       </s>
+       <s pid="35" sid="9">
+        This information has become reality as the first algal oil plant went online April 1, 2008.
+       </s>
+       <s pid="35" sid="10">
+        The plant is located near coastal Texas in an arid region taking up 1100 acres.
+       </s>
+       <s pid="35" sid="11">
+        This small area is being put to good use as the plant is slated to produce 4.4 million gallons of oil per year.
+       </s>
+       <s pid="35" sid="12">
+        It is not unreasonable to suggest that opening a dozen plants could greatly improve the renewable fuels market.
+       </s>
+       <s pid="35" sid="13">
+        Oilgae looks to be the first truly viable alternative fuel source for ICEs [26].
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        Algae are being considered to enhance another market.
+       </s>
+       <s pid="36" sid="2">
+        The hydrogen market is currently dominated by synthetic production.
+       </s>
+       <s pid="36" sid="3">
+        While in extremely early stages of development, algae may be able to be used to harvest hydrogen.
+       </s>
+       <s pid="36" sid="4">
+        With the same advantages of low land to production ratio and flexible location, the hydrogen producing algae could make a hydrogen economy a possibility [27].
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       An Outlook on Transportation
+      </div>
+      <p>
+       <s pid="37" sid="1">
+        A transition to more sustainable transportation technologies cannot happen overnight, so we will continue to use petroleum based fuels for some time.
+       </s>
+       <s pid="37" sid="2">
+        The amount of biofuels will be increased; some lawmakers may wish to do so simply to reduce foreign oil dependency, while others also want to reduce CO2 emissions.
+       </s>
+       <s pid="37" sid="3">
+        The environmental benefits of these first generation biofuels are disputed and the use of arable land to produce fuel has reduced food supply and hence raising food costs, so this is an interim measure.
+       </s>
+       <s pid="37" sid="4">
+        Electric vehicles may also be introduced which will relocate pollution away from urban centers.
+       </s>
+       <s pid="37" sid="5">
+        This may positively affect environmental conditions in local areas, but depending on the region they receive electricity from the net impact could be more pollution.
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        Renewable energy sources such as wind, solar, and geothermal must be developed and tapped to produce clean energy.
+       </s>
+       <s pid="38" sid="2">
+        Also, significant investment must be put into developing nuclear fission reactors and carbon capture technologies.
+       </s>
+       <s pid="38" sid="3">
+        If the usage of EVs is considered a long term solution, then the development and implementation of these technologies must proceed at a faster rate than the growth of primary energy demand.
+       </s>
+       <s pid="38" sid="4">
+        When the proportion of cleaner power gets large enough, EVs will begin to mitigate CO2, NOx, SOx, and PM pollution not only locally but globally.
+       </s>
+       <s pid="38" sid="5">
+        At this point, if governing bodies are still concerned with global warming and/or other pollutants, their use may be promoted by governments in the form of subsidies or tax breaks and their market share will likely increase.
+       </s>
+       <s pid="38" sid="6">
+        At this point, two scenarios may develop.
+       </s>
+       <s pid="38" sid="7">
+        If the development of next generation biofuels such as "oilgae" are successful in that the processes are optimized and infrastructure developed, the supply of biofuels will increase, displacing petroleum based fuels.
+       </s>
+       <s pid="38" sid="8">
+        Eventually, the next generation of biofuels could replace petroleum based fuels entirely.
+       </s>
+       <s pid="38" sid="9">
+        If there are not enough biofuels and EVs will not satisfactorily cover the worldsworld’s transportation needs or their development stagnates, hydrogen economies may be developed.
+       </s>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        The infrastructure required for a hydrogen economy would probably be developed quickly relative to other large scale infrastructure projects, but not quickly enough to immediately commercialize vehicles that run solely on hydrogen.
+       </s>
+       <s pid="39" sid="2">
+        Dual fuelled ICE vehicles utilizing hydrogen and biofuels (and possibly petroleum based fuels) will probably be developed.
+       </s>
+       <s pid="39" sid="3">
+        This will alleviate the fuelling station density problems which would prevent consumers from buying the vehicles.
+       </s>
+       <s pid="39" sid="4">
+        Once hydrogen infrastructures are complete, there will likely be competition between hydrogen ICE vehicles and FC vehicles; the emissions from hydrogen ICEs are extremely low and potentially negligible.
+       </s>
+       <s pid="39" sid="5">
+        Assuming the differences in cost and efficiency of these vehicles is non‐trivial, the winner will probably have the best combination of cost and fuel efficiency (instead of for other reasons, such as noise level).
+       </s>
+       <s pid="39" sid="6">
+        The hydrogen ICE may or may not be coupled to a hybrid electric drivetrain.
+       </s>
+       <s pid="39" sid="7">
+        Depending on the availability and demand, biofueled ICE vehicles or dual hydrogen and bio fuelled vehicles may still be prevalent.
+       </s>
+       <s pid="39" sid="8">
+        The development of hydrogen storage technologies and techniques will influence this dynamic.
+       </s>
+      </p>
+      <p>
+       <s pid="40" sid="1">
+        A more detailed discussion on why we will see some of these changes is discussed in the following section.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Future Internal Combustion Engine Usage
+      </div>
+      <p>
+       <s pid="41" sid="1">
+        Earlier in this paper the sustainability of the manufacturing ICEs was addressed, along with the sustainability of the various fuels that can be used with it.
+       </s>
+       <s pid="41" sid="2">
+        It appeared to be sustainable to manufacture these engines, and that there are certain scenarios in which fuels for ICEs are sustainable.
+       </s>
+       <s pid="41" sid="3">
+        While this analysis provides some idea of whether or not we can use ICEs in the future, it is also interesting to know whether or not we will use ICEs in the future.
+       </s>
+      </p>
+      <p>
+       <s pid="42" sid="1">
+        One factor is whether or not a breakthrough in ultra‐capacitors research will happen to make them commercially viable.
+       </s>
+       <s pid="42" sid="2">
+        EEStor, a company based in Cedar Park, Texas, may have already made breakthroughs as evident by bold claims about their ultra‐capacitor technology that can be found in Error!
+       </s>
+       <s pid="42" sid="3">
+        Reference source not found.
+       </s>
+       <s pid="42" sid="4">
+        Table 2.
+       </s>
+       <s pid="42" sid="5">
+        It is quite clear from this data that these units have significantly better characteristics over other batteries considered for electric vehicles.
+       </s>
+       <s pid="42" sid="6">
+        These capacitors address long charging times, weight and cost issues with EVs.
+       </s>
+       <s pid="42" sid="7">
+        Also, no hazardous or dangerous materials are used, so if the materials are readily available and abundant with respect to the amount used in a pack, than it has the potential to be sustainable.
+       </s>
+       <s pid="42" sid="8">
+        These units are also half the cost per kWh of lead acid batteries, making them commercially viable [13].
+       </s>
+       <s pid="42" sid="9">
+        EEStor has yet to produce a prototype and the company has been quiet for the past couple of years suggesting they have run into problems.
+       </s>
+       <s pid="42" sid="10">
+        They have however managed to gain the support of Lockheed Martin.
+       </s>
+       <s pid="42" sid="11">
+        Lockheed Martin has also signed an agreement giving them exclusive rights to use the technology for military and homeland security applications.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="43" sid="1">
+        Table 2: Comparison of EEStor’s ceramic EESU ultra capacitor system with other batteries considered for use in electric vehicles.
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        Ultra‐capacitors do not address the issue of primary energy production pollution (and supply), but they do reduce cost, weight (and subsequently, range), and charging time.
+       </s>
+       <s pid="44" sid="2">
+        This allows automakers to produce more desirable vehicles, which could lead to EVs covering a larger portion of the transportation needs of society, and perhaps displace ICEs almost entirely (ICEs would still be favorable for remote power generation at this point).
+       </s>
+       <s pid="44" sid="3">
+        If enough biofuels and clean primary energy are produced and electrical grids are upgraded to handle greater capacity, it may become unnecessary to develop a H2 economy and subsequently produce FCs for transportation.
+       </s>
+       <s pid="44" sid="4">
+        Ultra‐capacitors could also be coupled with an ICE or FC.
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        Advanced flywheel technologies, sometimes referred to as electromechanical batteries (EMB), are also being investigated with the hopes that they can replace battery packs in electric vehicles.
+       </s>
+       <s pid="45" sid="2">
+        These flywheels store energy temporarily by way of rotational inertia.
+       </s>
+       <s pid="45" sid="3">
+        The flywheel may be energized by recovering braking energy.
+       </s>
+       <s pid="45" sid="4">
+        Efficiency is very high since magnetic bearings and are utilized and composite materials allow for higher speeds.
+       </s>
+       <s pid="45" sid="5">
+        Calculations suggest that four barrels of petroleum delivered to a refinery, and subsequently to a representative ICE vehicle, would yield the same number of urban driving miles as if the energy equivalent of one barrel of petroleum in electricity was delivered to a vehicle with an EMB [14].
+       </s>
+       <s pid="45" sid="6">
+        The goal of present research is to make them lighter, smaller, less expensive, and to increase storage capacity.
+       </s>
+       <s pid="45" sid="7">
+        Also, effective ways to mount them to the vehicle must be investigated further.
+       </s>
+       <s pid="45" sid="8">
+        Flywheels can act as gyroscopes when a vehicle is turning if not mounted properly, and they must also have a heavy duty shield surrounding them in case the flywheel spins too fast and shatters.
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        Another question that may arise is whether or not FCs will overtake ICEs if a H2 economy is developed.
+       </s>
+       <s pid="46" sid="2">
+        Before, it was mentioned that fuel efficiency will play a significant role in which they will become ubiquitous.
+       </s>
+       <s pid="46" sid="3">
+        It is commonplace for people to cite high efficiencies of FCs, and hence say they will replace ICEs.
+       </s>
+       <s pid="46" sid="4">
+        This is not surprising given that the theoretical efficiency of fuel cells is 83%, whereas that of an ICE is 60% (for the otto cycle).
+       </s>
+       <s pid="46" sid="5">
+        However, FC efficiency dwindles rapidly if it experiences realistic driving schedules, must reform the incoming fuel stream, runs ancillary devices such as compressors, and utilizes air as the O2 source instead of pure O2 via an onboard oxygen tank that might also have to be refilled regularly.
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        Emadi et al. performed a study using the ADVISOR advanced vehicle simulator software developed by the National Renewable Energy Laboratory (NREL) to analyze the drive train efficiencies of HEVs and hybrid FC vehicles under various driving schedules.
+       </s>
+       <s pid="47" sid="2">
+        The parallel HEV electric assist strategy was selected.
+       </s>
+       <s pid="47" sid="3">
+        This strategy uses both the ICE and electric traction motor directly to power the vehicle, with the contributions from each depending on several variables that are accounted for in a complex control scheme.
+       </s>
+       <s pid="47" sid="4">
+        A series thermostat control strategy for hybrid FC vehicle simulation was chosen; NREL believes production FC vehicles will have hybrid architectures [15].
+       </s>
+       <s pid="47" sid="5">
+        This strategy involves turning the fuel cell on and off to keep the battery between a lower and upper charge limit.
+       </s>
+       <s pid="47" sid="6">
+        A schematic of the architectures can be found in Figure 3: Schematic of the drivetrain architectures used in the simulations.
+       </s>
+       <s pid="47" sid="7">
+        Figure 3.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="48" sid="1">
+        Figure 3: Schematic of the drivetrain architectures used in the simulations.
+       </s>
+      </p>
+      <p>
+       <s pid="49" sid="1">
+        Figure 4 shows the results of this exercise for a highway driving schedule.
+       </s>
+       <s pid="49" sid="2">
+        The result was similar for a city driving schedule.
+       </s>
+       <s pid="49" sid="3">
+        Interestingly, the hybrid FC vehicle was less efficient than both the Diesel and gasoline HEVs.
+       </s>
+       <s pid="49" sid="4">
+        The author also notes that the Diesel and gasoline engines were not fully optimized, but instead the designs and constructions were practical and economically feasible to manufacture and market [16].
+       </s>
+       <s pid="49" sid="5">
+        Since H2 ICEs can potentially achieve 25% higher fuel economy [17], the conventional ICE and gasoline HE vehicles may achieve up to 23% and 36% efficiencies if designed for and run on H2, while the hybrid FC vehicle efficiency may fall if the design and construction are geared more towards practical, economically feasible designs and construction.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="50" sid="1">
+        Figure 4: Estimated efficiencies of vehicles for a highway driving schedule [16].
+       </s>
+      </p>
+      <p>
+       <s pid="51" sid="1">
+        Of course, this is only one study, simulation software is used which will have inherent inaccuracies and omissions, and the results are largely dependent upon the energy management strategies utilized in each system.
+       </s>
+       <s pid="51" sid="2">
+        In fact, one could argue that scientists have had more experience developing control strategies for parallel HEVs which would contribute to higher calculated efficiencies.
+       </s>
+       <s pid="51" sid="3">
+        Regardless, the purpose of this study and ensuing analysis is not to claim that HEVs or hydrogen ICEs are more fuel efficient or have equivalent efficiency than hybrid FCs, but instead to highlight the fact that they may not necessarily be the most fuel efficient option, despite what many people claim.
+       </s>
+      </p>
+      <p>
+       <s pid="52" sid="1">
+        BMW has recently introduced the Hydrogen 7 (Figure 5), which is capable of running on hydrogen or gasoline.
+       </s>
+       <s pid="52" sid="2">
+        The emissions levels were tested in Argonne National Lab, the only facility in North America that could measure exhaust concentrations low enough.
+       </s>
+       <s pid="52" sid="3">
+        During testing, it was found that the engine exhaust air was actually cleaner than the ambient air for certain components.
+       </s>
+       <s pid="52" sid="4">
+        It is in limited production, and only available to "influential public figures" [18].
+       </s>
+       <s pid="52" sid="5">
+        The Hydrogen 7 passed the super ultra low emissions vehicle standards, which means that it is at least 90% cleaner than the emissions of a comparable vehicle.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="53" sid="1">
+        Figure 5: Pictures of the BMW Hydrogen 7.
+       </s>
+      </p>
+      <p>
+       <s pid="54" sid="1">
+        Combustion of H2 fuel produces mainly water.
+       </s>
+       <s pid="54" sid="2">
+        Indeed, Jay Leno has even gone as far as to drink the water produced by a hydrogen ICE while showing it to the media [19].
+       </s>
+       <s pid="54" sid="3">
+        The only harmful emission cited is NOx; trace amounts of CO2 and CO are emitted because of combustion of lubricating oil, but levels are negligible).
+       </s>
+       <s pid="54" sid="4">
+        Ford has shown to reduce NOx emissions to 1 ppm levels using exhaust gas recirculation techniques in a 2.0 L four cylinder engine with a standard catalytic converter [20], which is orders of magnitude less than current vehicles.
+       </s>
+       <s pid="54" sid="5">
+        This study was only performed at one engine speed for various loads and it certainly doesn’t imply that these levels can be reached for all engine loads and speeds.
+       </s>
+       <s pid="54" sid="6">
+        However, it shows the potential for operating these engines in a practical manner with near zero pollution.
+       </s>
+      </p>
+      <p>
+       <s pid="55" sid="1">
+        The discussion of NOx emissions should be put in perspective too.
+       </s>
+       <s pid="55" sid="2">
+        Figure 6 shows that heavyduty diesel truck engine (which emit the most NOx) NOx emissions will have dropped by between 96% and 97% since 1990.
+       </s>
+       <s pid="55" sid="3">
+        Will this alone have a positive impact on acid rain and human health in several years when older, more polluting vehicles are off the road?
+       </s>
+       <s pid="55" sid="4">
+        If it doesn’t, efforts to reduce NOx may be justified, but if it does, to what extent should we keep striving for less emissions?
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="56" sid="1">
+        Figure 6: Illustration of the progress that has been made in reducing NOx.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusions
+      </div>
+      <p>
+       <s pid="57" sid="1">
+        At the turn of the 20th century in America, ICEs, steam engines and EVs were used in nearly equal proportions.
+       </s>
+       <s pid="57" sid="2">
+        It should not be surprising that the portfolio for future transportation may include different energy conversion tools.
+       </s>
+      </p>
+      <p>
+       <s pid="58" sid="1">
+        It appears that the ICE is suitable for manufacture for decades to come, and the remanufacturing potential could lessen the impact.
+       </s>
+       <s pid="58" sid="2">
+        In certain situations, the fuels that can be used in ICEs are also sustainable.
+       </s>
+      </p>
+      <p>
+       <s pid="59" sid="1">
+        ICEs will first compete with EVs for market share.
+       </s>
+       <s pid="59" sid="2">
+        Breakthroughs in EV research, namely ultracapacitors or flywheels, along with a much cleaner primary energy portfolio will have to happen in order for EVs to overtake ICEs.
+       </s>
+       <s pid="59" sid="3">
+        Even so, ICEs will find use as remote power generators.
+       </s>
+      </p>
+      <p>
+       <s pid="60" sid="1">
+        If EV research and development does not realize any breakthroughs or primary energy remains "dirty" , ICEs will be burning biofuels, and possibly hydrogen if there are not enough.
+       </s>
+       <s pid="60" sid="2">
+        With hydrogen economies in place, the hydrogen ICE and FCs will compete directly.
+       </s>
+       <s pid="60" sid="3">
+        NOx emissions can be extraordinarily low compared to older vehicles, so they may be able to be neglected and the technology of choice may simply be based on initial cost and fuel efficiency.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N101EC">
+       <li id="N101ED">
+        1. World Commission on Environment and Development. OurCommon Future; Oxford University Press: Oxford, UK, 1987.
+       </li>
+       <li id="N101EF">
+        2. Marshall, J., and Toffel, M., Framing the Elusive Concept of Sustainability: A Sustainability Hierarchy, Environmental Science and Technology, Vol. 39, No. 3, 2005.
+       </li>
+       <li id="N101F1">
+        3. Ford Motor Company, Sustainability Report 2006‐2007. &lt;http://www.ford.com/aboutford/microsites/sustainability‐report‐2006‐07/com.htm&gt;, accessed 3/5/2008.
+       </li>
+       <li id="N101F3">
+        4. Li, X., and Zamel, N., Life cycle comparison of fuel cell vehicles and internal combustion engine vehicles for Canada and the United States, Journal of Power Sources 162 (2006) 1241‐1253, 2006.
+       </li>
+       <li id="N101F5">
+        5. Smith, V., and Keolean, G., The Value of Remanufactured Engines: Life Cycle and Environmental Perspectives, Journal of Industrial Ecology, Vol. 8, Number 1‐2, 2004.
+       </li>
+       <li id="N101F7">
+        6. HFCIT Fuel Cells: Types of Fuel Cells, http://www1.eere.energy.gov/hydrogenandfuelcells/fuelcells/fc_types.html, accessed 4/6/2008.
+       </li>
+       <li id="N101F9">
+        7. Department of Energy, Basic Research Needs for the Hydrogen Economy, Basic Energy Sciences Workshop on Hydrogen Production, Storage, and Use, May 13‐15, 2003.
+       </li>
+       <li id="N101FB">
+        8. Verhelst, S., Verstraeten, S., and Sierens, R., A Comprehensive Overview of Hydrogen Engine Design Features, Proc. IMechE Vol 221 Part D: J. Automobile Engineering, 2007.
+       </li>
+       <li id="N101FD">
+        9. Lithium Supply May Not Be Sufficient for Electric Car Battery Production Study Finds, http://www.prnewsnow.com/PR%20News%20Releases/Automotive/Lithium%20Supply%20May%20Not%20Be%20Sufficient%20for%20Electric%20Car%20Battery%20Production%20Study%20 Finds, accessed 4/4/2008.
+       </li>
+       <li id="N101FF">
+        10. Should we be Worried about Hybrid Car Batteries? http://www.treehugger.com/files/2005/06/should_we_be_wo_1.php, accessed 3/20/2008.
+       </li>
+       <li id="N10201">
+        11. Tesla Motors – touch, http://www.teslamotors.com/blog4/, accessed 4/4/2008.
+       </li>
+       <li id="N10203">
+        12. LaPuma, P., and McCleese, D., Using Monte Carlo Simulation in Life Cycle Assessment for Electric and Internal Combustion Vehicles, LCA Case Studies, Int. J LCA 7 (4) 230‐236 (2002).
+       </li>
+       <li id="N10205">
+        13. Kleiner Perkins’ Latest Energy Investment, Business Week, http://www.businessweek.com/the_thread/dealflow/archives/2005/09/kleiner_perkins_1.html, accessed 4/3/2008.
+       </li>
+       <li id="N10207">
+        14. A New Look at an Old Idea: The Electromechanical Battery, https://www.llnl.gov/str/pdfs/04_96.2.pdf, accessed 4/4/2008.
+       </li>
+       <li id="N10209">
+        15. NREL: Advanced Vehicles and Fuels Research – Hybrid Electric and Fuel Cell Vehicles, http://www.nrel.gov/vehiclesandfuels/hev/, accessed 3/20/2008.
+       </li>
+       <li id="N1020B">
+        16. Emadi, A., et al., Comprehensive Drive Train Efficiency Analysis of Hybrid Electric and Fuel Cell Vehicles Based on Motor‐Controller Efficiency Modeling, IEEE Transactions on Power lectronics, Vol. 21, No. 3, May 2006.
+       </li>
+       <li id="N1020D">
+        17. Ford Moves Forward with Hydrogen Engine Research, http://media.ford.com/newsroom/feature_display.cfm?release=18794, accessed 3/30/2008.
+       </li>
+       <li id="N1020F">
+        18. Argonne tests validate BMW Hydrogen 7 emissions well‐below SULEV, http://www.eurekalert.org/pub_releases/2008‐03/dnl‐atv032708.php, accessed 4/4/2008.
+       </li>
+       <li id="N10211">
+        19. http://driving.timesonline.co.uk/tol/life_and_style/driving/new_car_reviews/article3250623.ece, accessed 4/3/2008.
+       </li>
+       <li id="N10213">
+        20. Heffel, J., NOx emission and performance data for a hydrogen fuelled internal combustion engine
+       </li>
+       <li id="N10215">
+        at 1500rpm using exhaust gas recirculation, International Journal of Hydrogen Energy 28 (2003) 901‐908, 2002.
+       </li>
+       <li id="N10217">
+        21. Granda, C., et al, Sustainable Liquid Biofuels and Their Environmental Impact, Wiley InterScience June 2007.
+       </li>
+       <li id="N10219">
+        22. Szklo, A., et al, Can One Say Ethanol Is a Real Threat to Gasoline? Elsevier July 2007.
+       </li>
+       <li id="N1021B">
+        23. Antoni, D., et al, Biofuels From Microbes, Appl Microbiol Biotechnol (2007) 77: 23‐35.
+       </li>
+       <li id="N1021D">
+        24. Qureshi, N. and Blaschek, P., Economics of Butanol Fermentation Using Hyper‐Butanol Producing Clostridium BeiJerinckii BA101, Trans IChemE, Vol 78, Part C, September 2000
+       </li>
+       <li id="N1021F">
+        25. Sheehan, J., et al, A Look Back at the U.S. Department of Energy’s Aquatic Species Program: Biodiesel from Algae, NREL/TP‐580‐24190, July 1998
+       </li>
+       <li id="N10221">
+        26. First Algae Biodiesel Plant Goes Online: April 1, 2008, http://gas2.org/2008/03/29/first‐algaebiodiesel‐plant‐goes‐online‐april‐1‐2008/, accessed 4/2/2008
+       </li>
+       <li id="N10223">
+        27. Algae Could be Major Hydrogen Fuel Source, http://gas2.org/2008/04/01/algae‐could‐be‐majorhydrogen‐fuel‐source/, accessed 4/2/2008
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

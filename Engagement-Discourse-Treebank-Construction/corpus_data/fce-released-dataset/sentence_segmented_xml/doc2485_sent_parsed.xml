@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Turkish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     19.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I have received your letter
+       <ns type="MP">
+       </ns>
+       which
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         make
+        </i>
+       </ns>
+       me happy.
+       <ns type="MT">
+        <i>
+         The
+        </i>
+       </ns>
+       first time in my life I have won
+       <ns type="MD">
+       </ns>
+       competition. I would like to
+       <ns type="RV">
+        <i>
+         attempt
+        </i>
+       </ns>
+       your
+       <ns type="L">
+        <i>
+         invite
+        </i>
+       </ns>
+       in July. I
+       <ns type="MV">
+       </ns>
+       only able to take my
+       <ns type="S">
+        <i>
+         holidy
+        </i>
+       </ns>
+       in July
+       <ns type="RP">
+        <i>
+         ,
+         <ns type="MD">
+         </ns>
+        </i>
+       </ns>
+       rest of the year I work.
+      </p>
+      <p>
+       I would prefer to stay in
+       <ns type="MD">
+       </ns>
+       tent. I think it is more enjoyable. I don't know why but I have
+       <ns type="R">
+        feel toward to tent from
+       </ns>
+       my childhood. When I was
+       <ns type="MD">
+       </ns>
+       kid I used to ask my mum to buy me a tent for my bedroom
+       <ns type="M">
+       </ns>
+       to sleep in there instead of
+       <ns type="MD">
+       </ns>
+       bed.
+      </p>
+      <p>
+       I'm
+       <ns type="S">
+        <i>
+         crayz
+        </i>
+       </ns>
+       about tennis and swimming. I used to take tennis and swimming
+       <ns type="FN">
+        <i>
+         lesson
+        </i>
+       </ns>
+       when I was
+       <ns type="MT">
+       </ns>
+       high school. I have
+       <ns type="R">
+        good talent and skill about them
+       </ns>
+       .
+       <ns type="R">
+        Most of the weekend
+       </ns>
+       I go
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         swiming
+        </i>
+       </ns>
+       and
+       <ns type="MV">
+       </ns>
+       tennis.
+       <ns type="R">
+        That is the fun for me to doing it
+       </ns>
+       .
+      </p>
+      <p>
+       Do I have to bring some cash
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       me? Do you think
+       <ns type="DN">
+        <i>
+         travel
+         <ns type="FN">
+          <i>
+           <ns type="S">
+            <i>
+             chaque
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       would be more
+       <ns type="RJ">
+        <i>
+         secure
+        </i>
+       </ns>
+       ? I
+       <ns type="W">
+        <i>
+         also would
+        </i>
+       </ns>
+       like to get some information about
+       <ns type="MD">
+       </ns>
+       weather. What
+       <ns type="RV">
+        <i>
+         does
+        </i>
+       </ns>
+       it like in July over there?
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have received your letter which is make me happy.
+       </s>
+       <s pid="2" sid="2">
+        The first time in my life I have won  competition.
+       </s>
+       <s pid="2" sid="3">
+        I would like to attempt your invite in July.
+       </s>
+       <s pid="2" sid="4">
+        I  only able to take my holidy in July,  rest of the year I work.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would prefer to stay in  tent.
+       </s>
+       <s pid="3" sid="2">
+        I think it is more enjoyable.
+       </s>
+       <s pid="3" sid="3">
+        I don't know why but I have feel toward to tent from my childhood.
+       </s>
+       <s pid="3" sid="4">
+        When I was  kid I used to ask my mum to buy me a tent for my bedroom  to sleep in there instead of  bed.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I'm crayz about tennis and swimming.
+       </s>
+       <s pid="4" sid="2">
+        I used to take tennis and swimming lesson when I was  high school.
+       </s>
+       <s pid="4" sid="3">
+        I have good talent and skill about them.
+       </s>
+       <s pid="4" sid="4">
+        Most of the weekend I go for swiming and  tennis.
+       </s>
+       <s pid="4" sid="5">
+        That is the fun for me to doing it.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Do I have to bring some cash on me?
+       </s>
+       <s pid="5" sid="2">
+        Do you think travel chaque would be more secure?
+       </s>
+       <s pid="5" sid="3">
+        I also would like to get some information about  weather.
+       </s>
+       <s pid="5" sid="4">
+        What does it like in July over there?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Your sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is part of our life. I don't like shopping. Can you
+       <ns type="RV">
+        <ns type="S">
+         <i>
+          imagene
+         </i>
+        </ns>
+       </ns>
+       <ns type="RP">
+        <i>
+         friday
+        </i>
+       </ns>
+       night
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       Most
+       <ns type="U">
+        <i>
+         of the
+        </i>
+       </ns>
+       people get
+       <ns type="TV">
+        <i>
+         pay
+        </i>
+       </ns>
+       on
+       <ns type="RP">
+        <i>
+         friday
+        </i>
+       </ns>
+       night then they go
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       shopping. I can't stand
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       long
+       <ns type="FN">
+        <i>
+         queue
+        </i>
+       </ns>
+       .
+       <ns type="AS">
+        <i>
+         All day you had worked hard
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , on
+        </i>
+       </ns>
+       the way home you want to pick up some milk from
+       <ns type="MD">
+       </ns>
+       shop
+       <ns type="MC">
+       </ns>
+       you have to
+       <ns type="S">
+        <i>
+         waite
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         on
+         <ns type="S">
+          <i>
+           avarage
+          </i>
+         </ns>
+         ten minute
+        </i>
+       </ns>
+       . It is not good. Your time
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       been stolen. I can't cope with that. I prefer
+       <ns type="FV">
+        <i>
+         go
+        </i>
+       </ns>
+       home without
+       <ns type="MQ">
+       </ns>
+       milk. There are a lot of
+       <ns type="AGN">
+        <i>
+         <ns type="RN">
+          <i>
+           tile
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in the shop but most of them are
+       <ns type="RJ">
+        <i>
+         close
+        </i>
+       </ns>
+       . It is
+       <ns type="RJ">
+        <i>
+         annoyed
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       There are a lot of
+       <ns type="AGN">
+        <i>
+         option
+        </i>
+       </ns>
+       and
+       <ns type="AGN">
+        <i>
+         item
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         make
+        </i>
+       </ns>
+       our
+       <ns type="DN">
+        <i>
+         chose
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         difficut
+        </i>
+       </ns>
+       .
+       <ns type="RP">
+        <i>
+         it
+        </i>
+       </ns>
+       is hard
+       <ns type="UV">
+        <i>
+         to make
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         decide
+        </i>
+       </ns>
+       which
+       <ns type="MV">
+       </ns>
+       <ns type="RJ">
+        <i>
+         suitable
+        </i>
+       </ns>
+       for you. After shopping you have to carry
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         havy
+        </i>
+       </ns>
+       bag
+       <ns type="MD">
+       </ns>
+       long way
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       home
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is part of our life.
+       </s>
+       <s pid="1" sid="2">
+        I don't like shopping.
+       </s>
+       <s pid="1" sid="3">
+        Can you imagene friday night.
+       </s>
+       <s pid="1" sid="4">
+        Most of the people get pay on friday night then they go to shopping.
+       </s>
+       <s pid="1" sid="5">
+        I can't stand on the long queue.
+       </s>
+       <s pid="1" sid="6">
+        All day you had worked hard, on the way home you want to pick up some milk from  shop  you have to waite on avarage ten minute.
+       </s>
+       <s pid="1" sid="7">
+        It is not good.
+       </s>
+       <s pid="1" sid="8">
+        Your time have been stolen.
+       </s>
+       <s pid="1" sid="9">
+        I can't cope with that.
+       </s>
+       <s pid="1" sid="10">
+        I prefer go home without  milk.
+       </s>
+       <s pid="1" sid="11">
+        There are a lot of tile in the shop but most of them are close.
+       </s>
+       <s pid="1" sid="12">
+        It is annoyed.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        There are a lot of option and item make our chose difficut.
+       </s>
+       <s pid="2" sid="2">
+        it is hard to make decide which  suitable for you.
+       </s>
+       <s pid="2" sid="3">
+        After shopping you have to carry  havy bag  long way to home
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

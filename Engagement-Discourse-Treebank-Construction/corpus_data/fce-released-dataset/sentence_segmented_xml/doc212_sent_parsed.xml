@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I address this letter to the manager of the theatre.
+      </p>
+      <p>
+       I want to talk to you about an evening I had in your theatre
+       <ns type="MP">
+       </ns>
+       <ns type="MV">
+       </ns>
+       : OVER THE RAINBOW.
+      </p>
+      <p>
+       Your advertisement was excellent and it gave me a lot of
+       <ns type="S">
+        <i>
+         enthousiasm
+        </i>
+       </ns>
+       . But I had a very disappointing evening and it was because
+       <ns type="MT">
+       </ns>
+       many
+       <ns type="RN">
+        <i>
+         points
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First point, I didn't see Danny BROOK
+       <ns type="U">
+        <i>
+         as starring
+        </i>
+       </ns>
+       . I
+       <ns type="RV">
+        <i>
+         was coming
+        </i>
+       </ns>
+       to see him but there was a different actor.
+      </p>
+      <p>
+       Second point, the
+       <ns type="UJ">
+        <i>
+         musical
+        </i>
+       </ns>
+       show
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       to begin at 7:30 PM but we
+       <ns type="TV">
+        <i>
+         have waited
+        </i>
+       </ns>
+       for
+       <ns type="MP">
+        <i>
+         <ns type="S">
+          <i>
+           fourty five
+          </i>
+         </ns>
+        </i>
+       </ns>
+       minutes to see the show
+       <ns type="FV">
+        <i>
+         started
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Third point, your advertisement told
+       <ns type="MA">
+       </ns>
+       about
+       <ns type="MD">
+       </ns>
+       "discount available"
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the
+       <ns type="W">
+        <i>
+         ticket's price
+        </i>
+       </ns>
+       but
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       wasn't
+       <ns type="MA">
+       </ns>
+       .
+      </p>
+      <p>
+       Fourth point, after the show, I wanted to visit your theatre restaurant but it was closed and no one
+       <ns type="UV">
+        <i>
+         didn't
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         know
+        </i>
+       </ns>
+       why!
+      </p>
+      <p>
+       Well, as you see
+       <ns type="MP">
+       </ns>
+       it wasn't a "perfect evening out!" and I think that you could give
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       me some money back because I really have the impression that your advertisement is wrong. I'm waiting
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       your
+       <ns type="RN">
+        <i>
+         news
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       Yours FAITHFULLY,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I address this letter to the manager of the theatre.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I want to talk to you about an evening I had in your theatre : OVER THE RAINBOW.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Your advertisement was excellent and it gave me a lot of enthousiasm.
+       </s>
+       <s pid="4" sid="2">
+        But I had a very disappointing evening and it was because  many points.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        First point, I didn't see Danny BROOK as starring.
+       </s>
+       <s pid="5" sid="2">
+        I was coming to see him but there was a different actor.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Second point, the musical show had to begin at 7:30 PM but we have waited for fourty five minutes to see the show started.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Third point, your advertisement told  about  "discount available" about the ticket's price but it wasn't .
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Fourth point, after the show, I wanted to visit your theatre restaurant but it was closed and no one didn't know why!
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Well, as you see it wasn't a "perfect evening out!" and I think that you could give to me some money back because I really have the impression that your advertisement is wrong.
+       </s>
+       <s pid="9" sid="2">
+        I'm waiting about your news,
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours FAITHFULLY,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       We live in a society where
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       technology
+       <ns type="RV">
+        <i>
+         grows up
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       . We can find some everywhere. Then, I think it's
+       <ns type="DJ">
+        <i>
+         interssant
+        </i>
+       </ns>
+       to answer the following question:
+      </p>
+      <p>
+       How has modern technology changed my daily life?
+      </p>
+      <p>
+       My plan
+       <ns type="TV">
+        <i>
+         will be
+        </i>
+       </ns>
+       very simple: a description
+       <ns type="U">
+        <i>
+         in a
+        </i>
+       </ns>
+       first
+       <ns type="UN">
+        <i>
+         time
+        </i>
+       </ns>
+       and an analysis
+       <ns type="U">
+        <i>
+         in a
+        </i>
+       </ns>
+       second
+       <ns type="UN">
+        <i>
+         time
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         Everyday
+        </i>
+       </ns>
+       at 7:00 a.m, I am woken up by my radio.
+       <ns type="RY">
+        <i>
+         After
+        </i>
+       </ns>
+       , when I
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       my breakfast, I use my toaster for my bread and, as I want
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       hot milk, I use my modern
+       <ns type="RN">
+        <i>
+         oven
+        </i>
+       </ns>
+       too. When I go to school, I can see
+       <ns type="W">
+        <i>
+         in many stores the new tools they've just received
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       But I think that the most important
+       <ns type="MN">
+       </ns>
+       is my cellular phone: I can
+       <ns type="RV">
+        <i>
+         give
+        </i>
+       </ns>
+       a call or receive a call from
+       <ns type="RY">
+        <i>
+         everywhere
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       This little
+       <ns type="RN">
+        <i>
+         paragraph
+        </i>
+       </ns>
+       shows that I depend
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       technology and,
+       <ns type="RP">
+        <i>
+         more over
+        </i>
+       </ns>
+       , because I'm in an electronic
+       <ns type="S">
+        <i>
+         eegenering
+        </i>
+       </ns>
+       school, I'm keen on technology.
+      </p>
+      <p>
+       I don't know if it is good or bad but we are a generation
+       <ns type="RA">
+        <i>
+         who's
+        </i>
+       </ns>
+       grown up with
+       <ns type="MP">
+        <i>
+         technologies
+        </i>
+       </ns>
+       progress. Modern technology doesn't
+       <ns type="FV">
+        <i>
+         changed
+        </i>
+       </ns>
+       my daily life, it just allows
+       <ns type="MA">
+       </ns>
+       to
+       <ns type="DV">
+        evoluate
+       </ns>
+       in this new world....
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        We live in a society where the technology grows up everyday.
+       </s>
+       <s pid="1" sid="2">
+        We can find some everywhere.
+       </s>
+       <s pid="1" sid="3">
+        Then, I think it's interssant to answer the following question:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        How has modern technology changed my daily life?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        My plan will be very simple: a description in a first time and an analysis in a second time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Everyday at 7:00 a.m, I am woken up by my radio.
+       </s>
+       <s pid="4" sid="2">
+        After, when I take my breakfast, I use my toaster for my bread and, as I want a hot milk, I use my modern oven too.
+       </s>
+       <s pid="4" sid="3">
+        When I go to school, I can see in many stores the new tools they've just received.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But I think that the most important  is my cellular phone: I can give a call or receive a call from everywhere.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        This little paragraph shows that I depend of technology and, more over, because I'm in an electronic eegenering school, I'm keen on technology.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I don't know if it is good or bad but we are a generation who's grown up with technologies progress.
+       </s>
+       <s pid="7" sid="2">
+        Modern technology doesn't changed my daily life, it just allows  to evoluate in this new world....
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

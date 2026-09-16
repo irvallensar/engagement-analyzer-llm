@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Thai
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     32.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs. Smith,
+      </p>
+      <p>
+       I am writing in reply to your enquiry about this
+       <ns type="MP">
+        <i>
+         year
+        </i>
+       </ns>
+       international conference.
+      </p>
+      <p>
+       The conference will be held at The Palace Hotel on Old Street. There will be signs to follow from
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         Central
+        </i>
+       </ns>
+       train station. The conference
+       <ns type="TV">
+        <i>
+         is
+         <ns type="S">
+          <i>
+           commensing
+          </i>
+         </ns>
+        </i>
+       </ns>
+       on 31st June 2001 from 10.00-15.00.
+       <ns type="MD">
+        <i>
+         Light
+        </i>
+       </ns>
+       lunch will be provided.
+      </p>
+      <p>
+       After the conference, there will be a relaxing party. There is no
+       <ns type="DN">
+        <i>
+         dressed-code
+        </i>
+       </ns>
+       for the party. However
+       <ns type="MP">
+       </ns>
+       I suggest you
+       <ns type="UV">
+        <i>
+         could
+        </i>
+       </ns>
+       wear the same outfit
+       <ns type="RC">
+        <i>
+         as
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         wear
+        </i>
+       </ns>
+       for the conference.
+      </p>
+      <p>
+       I have included
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       local map
+       <ns type="RP">
+        <i>
+         , there
+        </i>
+       </ns>
+       are some
+       <ns type="RN">
+        ideas
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the back of the map. Please let me know if you would like to book one of the city-walk tours
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       We have
+       <ns type="TV">
+        <i>
+         arrange
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         spacial
+        </i>
+       </ns>
+       discounts for the conference
+       <ns type="RN">
+        <i>
+         attendance
+        </i>
+       </ns>
+       .
+       <ns type="DY">
+        <i>
+         Personly
+        </i>
+       </ns>
+       I recommend the
+       <ns type="UP">
+        <i>
+         Dicken's
+        </i>
+       </ns>
+       tour because it is a good length
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         walking
+        </i>
+       </ns>
+       and very historical.
+      </p>
+      <p>
+       I hope that I have covered all
+       <ns type="MD">
+       </ns>
+       information you
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       need and look forward to seeing you.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely,
+      </p>
+      <p>
+       P.S. Please find the
+       <ns type="W">
+        <i>
+         enclosed map
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs. Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing in reply to your enquiry about this year international conference.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The conference will be held at The Palace Hotel on Old Street.
+       </s>
+       <s pid="3" sid="2">
+        There will be signs to follow from  Central train station.
+       </s>
+       <s pid="3" sid="3">
+        The conference is commensing on 31st June 2001 from 10.00-15.00.
+       </s>
+       <s pid="3" sid="4">
+        Light lunch will be provided.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After the conference, there will be a relaxing party.
+       </s>
+       <s pid="4" sid="2">
+        There is no dressed-code for the party.
+       </s>
+       <s pid="4" sid="3">
+        However I suggest you could wear the same outfit as you wear for the conference.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I have included the local map, there are some ideas at the back of the map.
+       </s>
+       <s pid="5" sid="2">
+        Please let me know if you would like to book one of the city-walk tours, We have arrange spacial discounts for the conference attendance.
+       </s>
+       <s pid="5" sid="3">
+        Personly I recommend the Dicken's tour because it is a good length of walking and very historical.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope that I have covered all  information you would need and look forward to seeing you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        P.S. Please find the enclosed map.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       There are several interesting buildings in the city of London. I believe Liverpool Street Station is at the top
+       <ns type="M">
+       </ns>
+       list.
+      </p>
+      <p>
+       The building itself looks grand and elegant. Despite the fact that this building
+       <ns type="TV">
+        <i>
+         has served
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         half-a
+        </i>
+       </ns>
+       million commuters in a day, it
+       <ns type="MV">
+       </ns>
+       always clean and functional.
+      </p>
+      <p>
+       There are two parts of Liverpool Street Station that make it so interesting
+       <ns type="MD">
+       </ns>
+       building. The newly decorated section is fairly modern
+       <ns type="MT">
+       </ns>
+       style with escalators and
+       <ns type="DN">
+        <i>
+         touched-screen
+        </i>
+       </ns>
+       ticket
+       <ns type="FN">
+        <i>
+         machine
+        </i>
+       </ns>
+       . It is also very well linked
+       <ns type="RT">
+        <i>
+         into
+        </i>
+       </ns>
+       the old underground station
+       <ns type="MP">
+       </ns>
+       which
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       is such a contrast in
+       <ns type="RN">
+        transformation
+       </ns>
+       . The old bit is rather unique and charming. You
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       really imagine
+       <ns type="R">
+        <i>
+         how
+        </i>
+       </ns>
+       it looked like in
+       <ns type="ID">
+        <i>
+         the old day
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       There is another surprising section in this building. At the far
+       <ns type="RN">
+        <i>
+         back
+        </i>
+       </ns>
+       of the station
+       <ns type="MA">
+       </ns>
+       is
+       <ns type="UY">
+        <i>
+         also
+        </i>
+       </ns>
+       connected to a spacious
+       <ns type="MP">
+       </ns>
+       <ns type="MP">
+        <i>
+         well designed
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         <ns type="MP">
+          <i>
+           pedestrians
+          </i>
+         </ns>
+        </i>
+       </ns>
+       park. It is a good example of
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       great architecture that was designed to provide services
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the public.
+      </p>
+      <p>
+       Finally, it is in the heart of
+       <ns type="MD">
+       </ns>
+       city and
+       <ns type="W">
+        <i>
+         everyone
+         <ns type="TV">
+          <i>
+           would
+          </i>
+         </ns>
+         be able to find
+         <ns type="MA">
+         </ns>
+         without doubt
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        There are several interesting buildings in the city of London.
+       </s>
+       <s pid="1" sid="2">
+        I believe Liverpool Street Station is at the top  list.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The building itself looks grand and elegant.
+       </s>
+       <s pid="2" sid="2">
+        Despite the fact that this building has served half-a million commuters in a day, it  always clean and functional.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        There are two parts of Liverpool Street Station that make it so interesting  building.
+       </s>
+       <s pid="3" sid="2">
+        The newly decorated section is fairly modern  style with escalators and touched-screen ticket machine.
+       </s>
+       <s pid="3" sid="3">
+        It is also very well linked into the old underground station which it is such a contrast in transformation.
+       </s>
+       <s pid="3" sid="4">
+        The old bit is rather unique and charming.
+       </s>
+       <s pid="3" sid="5">
+        You could really imagine how it looked like in the old day.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        There is another surprising section in this building.
+       </s>
+       <s pid="4" sid="2">
+        At the far back of the station  is also connected to a spacious well designed pedestrians park.
+       </s>
+       <s pid="4" sid="3">
+        It is a good example of a great architecture that was designed to provide services to the public.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, it is in the heart of  city and everyone would be able to find  without doubt.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

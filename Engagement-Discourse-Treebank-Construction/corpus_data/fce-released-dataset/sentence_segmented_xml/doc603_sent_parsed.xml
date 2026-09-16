@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam!
+      </p>
+      <p>
+       I'm writing to you because of the musical show "Over the rainbow",
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         visited
+        </i>
+       </ns>
+       on Friday the 16th of June in your theatre. There are several points I have to complain
+       <ns type="MT">
+       </ns>
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       the evening
+       <ns type="MV">
+       </ns>
+       not nice at all.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       the show started much later than
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       was
+       <ns type="RV">
+        <i>
+         written out
+        </i>
+       </ns>
+       . Instead of half past seven the show
+       <ns type="IV">
+        <i>
+         startet
+        </i>
+       </ns>
+       at quarter past eight. I couldn't go to
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         a
+        </i>
+       </ns>
+       refreshment
+       <ns type="R">
+        <i>
+         because of
+        </i>
+       </ns>
+       two reasons, the first one is that there was no information
+       <ns type="MT">
+       </ns>
+       how
+       <ns type="R">
+        <i>
+         much time
+        </i>
+       </ns>
+       the start of the show
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       going to be late
+       <ns type="MT">
+       </ns>
+       . The second reason is that the
+       <ns type="W">
+        <i>
+         restaurant of the theatre
+        </i>
+       </ns>
+       was closed
+       <ns type="W">
+        <i>
+         because of building plans for the next two month
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After I waited for about 45 minutes the show suddenly started but I
+       <ns type="UV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         to realize
+        </i>
+       </ns>
+       that the main actor Danny Brook, who was the reason why I went
+       <ns type="RT">
+        <i>
+         into
+        </i>
+       </ns>
+       the show
+       <ns type="MP">
+       </ns>
+       had been
+       <ns type="RV">
+        <i>
+         traded
+        </i>
+       </ns>
+       by
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       actor, who couldn't sing
+       <ns type="UC">
+        <i>
+         as
+        </i>
+       </ns>
+       half as
+       <ns type="DY">
+        <i>
+         good
+        </i>
+       </ns>
+       <ns type="RC">
+        <i>
+         then
+        </i>
+       </ns>
+       Brook.
+      </p>
+      <p>
+       On your
+       <ns type="FN">
+        <i>
+         ticket
+        </i>
+       </ns>
+       information is written
+       <ns type="UY">
+        <i>
+         out
+        </i>
+       </ns>
+       that discounts are available, when I
+       <ns type="TV">
+        <i>
+         ask
+        </i>
+       </ns>
+       at the ticket
+       <ns type="RN">
+        <i>
+         reception
+        </i>
+       </ns>
+       I couldn't get any discount for
+       <ns type="IV">
+        <i>
+         beeng
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       student.
+      </p>
+      <p>
+       To
+       <ns type="R">
+        <i>
+         make an result
+        </i>
+       </ns>
+       the evening in your theatre and the show was very disappointing and not like
+       <ns type="MA">
+       </ns>
+       promised. For these reasons I want to ask you
+       <ns type="R">
+        <i>
+         to get
+        </i>
+       </ns>
+       my money
+       <ns type="MP">
+       </ns>
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       £25
+       <ns type="MP">
+       </ns>
+       back.
+      </p>
+      <p>
+       <ns type="S">
+        reasently
+       </ns>
+      </p>
+      <p>
+       Miss. Winkler
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to you because of the musical show "Over the rainbow", wich I visited on Friday the 16th of June in your theatre.
+       </s>
+       <s pid="2" sid="2">
+        There are several points I have to complain  wich made the evening  not nice at all.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        At first the show started much later than it was written out.
+       </s>
+       <s pid="3" sid="2">
+        Instead of half past seven the show startet at quarter past eight.
+       </s>
+       <s pid="3" sid="3">
+        I couldn't go to have a refreshment because of two reasons, the first one is that there was no information  how much time the start of the show is going to be late .
+       </s>
+       <s pid="3" sid="4">
+        The second reason is that the restaurant of the theatre was closed because of building plans for the next two month.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After I waited for about 45 minutes the show suddenly started but I had to realize that the main actor Danny Brook, who was the reason why I went into the show had been traded by an other actor, who couldn't sing as half as good then Brook.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        On your ticket information is written out that discounts are available, when I ask at the ticket reception I couldn't get any discount for beeng  student.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        To make an result the evening in your theatre and the show was very disappointing and not like  promised.
+       </s>
+       <s pid="6" sid="2">
+        For these reasons I want to ask you to get my money of £25 back.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        reasently
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Miss.
+       </s>
+       <s pid="8" sid="2">
+        Winkler
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       What is the prize?
+      </p>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. He didn't want to say what Sarah
+       <ns type="W">
+        <i>
+         just had
+        </i>
+       </ns>
+       told him, it just came
+       <ns type="UT">
+        <i>
+         over
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       his mouth, when he talked to James. "Sarah has won in a quiz show?" James was more than just interested, he wanted to know what she had won. But Pat made a promise not to tell anybody about the quiz show and he
+       <ns type="W">
+        <i>
+         already had
+        </i>
+       </ns>
+       told enough.
+      </p>
+      <p>
+       After one hour the
+       <ns type="W">
+        <i>
+         hohle
+        </i>
+       </ns>
+       class had heard about Sarah's secret. Everybody was interested in what she had won but
+       <ns type="S">
+        <i>
+         knowbody
+        </i>
+       </ns>
+       wanted to ask Sarah because it was told
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a secret to them. Sarah realized that everybody was nice and friendly to her but something was going on in the class, when she turned around
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       talking and
+       <ns type="S">
+        <i>
+         wispering
+        </i>
+       </ns>
+       started. Suddenly, she went to Pat and asked him
+       <ns type="MP">
+        <i>
+         did
+        </i>
+       </ns>
+       you tell anybody about our secret
+       <ns type="MP">
+        <i>
+         .
+        </i>
+       </ns>
+       Pat told her everything. Sarah looked at him for a while,
+       <ns type="SX">
+        <i>
+         than
+        </i>
+       </ns>
+       she stood in front of the class and
+       <ns type="IV">
+        <i>
+         explaind
+        </i>
+       </ns>
+       to the others
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that she
+       <ns type="TV">
+        <i>
+         won
+        </i>
+       </ns>
+       a prize for 20 people to travel for 1 week to the
+       <ns type="RN">
+        <i>
+         sea
+        </i>
+       </ns>
+       of southern France and
+       <ns type="R">
+        <i>
+         everybody
+        </i>
+       </ns>
+       of the 19 pupils was invited, except Pat who wasn't very good at keeping secrets.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        What is the prize?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="2" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="2" sid="3">
+        He didn't want to say what Sarah just had told him, it just came over  his mouth, when he talked to James.
+       </s>
+       <s pid="2" sid="4">
+        "Sarah has won in a quiz show?"
+       </s>
+       <s pid="2" sid="5">
+        James was more than just interested, he wanted to know what she had won.
+       </s>
+       <s pid="2" sid="6">
+        But Pat made a promise not to tell anybody about the quiz show and he already had told enough.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        After one hour the hohle class had heard about Sarah's secret.
+       </s>
+       <s pid="3" sid="2">
+        Everybody was interested in what she had won but knowbody wanted to ask Sarah because it was told in a secret to them.
+       </s>
+       <s pid="3" sid="3">
+        Sarah realized that everybody was nice and friendly to her but something was going on in the class, when she turned around a talking and wispering started.
+       </s>
+       <s pid="3" sid="4">
+        Suddenly, she went to Pat and asked him did you tell anybody about our secret.
+       </s>
+       <s pid="3" sid="5">
+        Pat told her everything.
+       </s>
+       <s pid="3" sid="6">
+        Sarah looked at him for a while, than she stood in front of the class and explaind to the others, that she won a prize for 20 people to travel for 1 week to the sea of southern France and everybody of the 19 pupils was invited, except Pat who wasn't very good at keeping secrets.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

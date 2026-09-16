@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sirs,
+      </p>
+      <p>
+       I refer to your
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       in the Herald Tribune where you advertised
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       the Circle Theatre and the recent musical: Over the Rainbow.
+      </p>
+      <p>
+       On Saturday, June 5th, 2000 my wife and I wanted to
+       <ns type="RV">
+        <i>
+         spend
+        </i>
+       </ns>
+       a nice and enjoyable evening and decided to go and see the musical.
+      </p>
+      <p>
+       When we arrived at the theatre we
+       <ns type="UV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         to realise
+        </i>
+       </ns>
+       that there were no
+       <ns type="RJ">
+        <i>
+         discountable
+        </i>
+       </ns>
+       tickets available as
+       <ns type="MV">
+       </ns>
+       mentioned in your
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       so we had to buy the most expensive ones. After that one of the theatre assistants told us that the
+       <ns type="RN">
+        <i>
+         film
+        </i>
+       </ns>
+       would
+       <ns type="TV">
+        <i>
+         have began
+        </i>
+       </ns>
+       at 20:15
+       <ns type="UN">
+        <i>
+         o'clock
+        </i>
+       </ns>
+       instead of 19:30
+       <ns type="UN">
+        <i>
+         o'clock
+        </i>
+       </ns>
+       as
+       <ns type="RV">
+        <i>
+         indicated
+        </i>
+       </ns>
+       . So we had to
+       <ns type="RV">
+        <i>
+         arrest
+        </i>
+       </ns>
+       for a while and had a drink.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         To make the matters worse
+        </i>
+       </ns>
+       Danny Brook
+       <ns type="MP">
+       </ns>
+       who was
+       <ns type="RV">
+        <i>
+         announced
+        </i>
+       </ns>
+       as one of the starring
+       <ns type="RN">
+        <i>
+         <ns type="AGN">
+          <i>
+           person
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in the musical
+       <ns type="MP">
+       </ns>
+       was not acting this evening. You can imagine how disappointed we were
+       <ns type="MP">
+       </ns>
+       especially
+       <ns type="MC">
+       </ns>
+       the
+       <ns type="W">
+        <i>
+         acting of Danny Brook
+        </i>
+       </ns>
+       was the main reason
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         us
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       to see the musical.
+      </p>
+      <p>
+       On top of this we
+       <ns type="TV">
+        <i>
+         intend
+        </i>
+       </ns>
+       to go to the theatre restaurant
+       <ns type="MP">
+       </ns>
+       which was closed because of building activities.
+      </p>
+      <p>
+       As you can imagine we were very disappointed and it wasn't a perfect evening out
+       <ns type="MP">
+       </ns>
+       I would like to have 50% of the
+       <ns type="RN">
+        <i>
+         prize
+        </i>
+       </ns>
+       of the tickets back.
+      </p>
+      <p>
+       I am looking forward to your
+       <ns type="S">
+        <i>
+         promt
+        </i>
+       </ns>
+       reply.
+      </p>
+      <p>
+       yours faithfully,
+      </p>
+      <p>
+       Heine Bitz
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sirs,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I refer to your advertisment in the Herald Tribune where you advertised for the Circle Theatre and the recent musical:
+       </s>
+       <s pid="2" sid="2">
+        Over the Rainbow.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        On Saturday, June 5th, 2000 my wife and I wanted to spend a nice and enjoyable evening and decided to go and see the musical.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        When we arrived at the theatre we had to realise that there were no discountable tickets available as  mentioned in your advertisment so we had to buy the most expensive ones.
+       </s>
+       <s pid="4" sid="2">
+        After that one of the theatre assistants told us that the film would have began at 20:15 o'clock instead of 19:30 o'clock as indicated.
+       </s>
+       <s pid="4" sid="3">
+        So we had to arrest for a while and had a drink.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        To make the matters worse Danny Brook who was announced as one of the starring person in the musical was not acting this evening.
+       </s>
+       <s pid="5" sid="2">
+        You can imagine how disappointed we were especially  the acting of Danny Brook was the main reason for us  to see the musical.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        On top of this we intend to go to the theatre restaurant which was closed because of building activities.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        As you can imagine we were very disappointed and it wasn't a perfect evening out I would like to have 50% of the prize of the tickets back.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I am looking forward to your promt reply.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        yours faithfully,
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Heine Bitz
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       What would we wear in 100 years time?
+      </p>
+      <p>
+       Fashion will always be an interesting and important subject for all ages. Today the fashion
+       <ns type="S">
+        <i>
+         industrie
+        </i>
+       </ns>
+       has a great importance in the commercial market. In the next 100 years there will be no change in that but
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       fashion is going to develop in a special imaginative way.
+      </p>
+      <p>
+       Firstly, the material of which clothes are made
+       <ns type="RV">
+        <i>
+         has
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       a wide
+       <ns type="RN">
+        <i>
+         range
+        </i>
+       </ns>
+       . There are the natural
+       <ns type="AGN">
+        <i>
+         material
+        </i>
+       </ns>
+       on one side whereas on the other side the fashion industry
+       <ns type="AGV">
+        <i>
+         produce
+        </i>
+       </ns>
+       more and more
+       <ns type="DJ">
+        <i>
+         syntetical
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         clothes
+        </i>
+       </ns>
+       , which
+       <ns type="RV">
+        relay on
+       </ns>
+       the production cost.
+      </p>
+      <p>
+       In 100 years most
+       <ns type="U">
+        <i>
+         of the
+        </i>
+       </ns>
+       clothes
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       made from
+       <ns type="DJ">
+        <i>
+         syntetical
+        </i>
+       </ns>
+       material.
+      </p>
+      <p>
+       Beyond
+       <ns type="MA">
+       </ns>
+       colours will play an important role in the next century for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       fashion. Light and bright colours will be very common.
+       <ns type="W">
+        <i>
+         <ns type="MD">
+          <i>
+           Especially
+          </i>
+         </ns>
+         contrast will be
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         attractiv
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Furthermore the style of the clothes
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       going to be more crazy and
+       <ns type="S">
+        <i>
+         individuell
+        </i>
+       </ns>
+       but there will
+       <ns type="W">
+        <i>
+         be still
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         enumerous
+        </i>
+       </ns>
+       clothes for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         solid
+        </i>
+       </ns>
+       people.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         One balance
+        </i>
+       </ns>
+       fashion in 100 years time will be
+       <ns type="S">
+        <i>
+         confortable
+        </i>
+       </ns>
+       and colourful. The fashion industry will deliver a wide
+       <ns type="UN">
+        <i>
+         range
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         of
+         <ns type="S">
+          <i>
+           vararity
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         style
+        </i>
+       </ns>
+       ,
+       <ns type="AGN">
+        <i>
+         material
+        </i>
+       </ns>
+       and
+       <ns type="AGN">
+        <i>
+         colour
+        </i>
+       </ns>
+       . There will be clothes for
+       <ns type="MP">
+        <i>
+         everyones
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         tast
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        What would we wear in 100 years time?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Fashion will always be an interesting and important subject for all ages.
+       </s>
+       <s pid="2" sid="2">
+        Today the fashion industrie has a great importance in the commercial market.
+       </s>
+       <s pid="2" sid="3">
+        In the next 100 years there will be no change in that but the fashion is going to develop in a special imaginative way.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, the material of which clothes are made has  a wide range.
+       </s>
+       <s pid="3" sid="2">
+        There are the natural material on one side whereas on the other side the fashion industry produce more and more syntetical clothes, which relay on the production cost.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In 100 years most of the clothes are made from syntetical material.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Beyond  colours will play an important role in the next century for the fashion.
+       </s>
+       <s pid="5" sid="2">
+        Light and bright colours will be very common.
+       </s>
+       <s pid="5" sid="3">
+        Especially contrast will be attractiv.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Furthermore the style of the clothes are going to be more crazy and individuell but there will be still enumerous clothes for the solid people.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        One balance fashion in 100 years time will be confortable and colourful.
+       </s>
+       <s pid="7" sid="2">
+        The fashion industry will deliver a wide range of vararity in style, material and colour.
+       </s>
+       <s pid="7" sid="3">
+        There will be clothes for everyones tast.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

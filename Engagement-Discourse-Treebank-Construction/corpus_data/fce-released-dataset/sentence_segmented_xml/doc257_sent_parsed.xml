@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      41-50
+     </age>
+    </personnel>
+    <score>
+     32.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs or Miss Jane X,
+      </p>
+      <p>
+       I am writing to thank you for the annual international arts festival which was organized on 21st-22nd November. I
+       <ns type="AS">
+        <i>
+         <ns type="TV">
+          <i>
+           had spent
+          </i>
+         </ns>
+         at this festival for two days
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       It was a great idea to organize such
+       <ns type="MD">
+       </ns>
+       festival. I am a teacher and I love music. Most of the events which I
+       <ns type="TV">
+        <i>
+         had seen
+        </i>
+       </ns>
+       were good. I enjoyed
+       <ns type="MD">
+       </ns>
+       dance shows,
+       <ns type="M">
+       </ns>
+       jazz and rock concerts. I visited art exhibitions. There were a lot of nice pictures, sculptures and other creative works. I was impressed by them. At
+       <ns type="MD">
+       </ns>
+       festival I could talk with writers. It was an excellent idea to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       one
+       <ns type="UP">
+        <i>
+         <ns type="S">
+          <i>
+           reasonaly-priced
+          </i>
+         </ns>
+        </i>
+       </ns>
+       weekend ticket for all events. A lot of people could visit as many events as
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       they
+       <ns type="RV">
+        <i>
+         could
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I was very surprised when I
+       <ns type="RV">
+        <i>
+         knew
+        </i>
+       </ns>
+       that
+       <ns type="MD">
+       </ns>
+       stars and artists were
+       <ns type="W">
+        <i>
+         only from
+        </i>
+       </ns>
+       six countries. It was too
+       <ns type="CQ">
+        <i>
+         little
+        </i>
+       </ns>
+       for this festival. It was
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         pitty
+        </i>
+       </ns>
+       that
+       <ns type="AS">
+        <i>
+         too small halls were used for
+         <ns type="MD">
+         </ns>
+         classical concerts
+        </i>
+       </ns>
+       . I like going to classical concerts but at this festival the
+       <ns type="FN">
+        <i>
+         sounds
+        </i>
+       </ns>
+       of
+       <ns type="MD">
+       </ns>
+       music
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       terrible.
+      </p>
+      <p>
+       I have some
+       <ns type="FN">
+        <i>
+         suggestion
+        </i>
+       </ns>
+       for next year's festival. Firstly, it will be great if you invite more famous singers and bands. The second one is to include more musical films and plays. I would like to help you in your interesting
+       <ns type="RN">
+        <i>
+         job
+        </i>
+       </ns>
+       . I look forward to your answer.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs or Miss Jane X,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to thank you for the annual international arts festival which was organized on 21st-22nd November.
+       </s>
+       <s pid="2" sid="2">
+        I had spent at this festival for two days.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It was a great idea to organize such  festival.
+       </s>
+       <s pid="3" sid="2">
+        I am a teacher and I love music.
+       </s>
+       <s pid="3" sid="3">
+        Most of the events which I had seen were good.
+       </s>
+       <s pid="3" sid="4">
+        I enjoyed  dance shows,  jazz and rock concerts.
+       </s>
+       <s pid="3" sid="5">
+        I visited art exhibitions.
+       </s>
+       <s pid="3" sid="6">
+        There were a lot of nice pictures, sculptures and other creative works.
+       </s>
+       <s pid="3" sid="7">
+        I was impressed by them.
+       </s>
+       <s pid="3" sid="8">
+        At  festival I could talk with writers.
+       </s>
+       <s pid="3" sid="9">
+        It was an excellent idea to make one reasonaly-priced weekend ticket for all events.
+       </s>
+       <s pid="3" sid="10">
+        A lot of people could visit as many events as the they could.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I was very surprised when I knew that  stars and artists were only from six countries.
+       </s>
+       <s pid="4" sid="2">
+        It was too little for this festival.
+       </s>
+       <s pid="4" sid="3">
+        It was  pitty that too small halls were used for  classical concerts.
+       </s>
+       <s pid="4" sid="4">
+        I like going to classical concerts but at this festival the sounds of  music were terrible.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I have some suggestion for next year's festival.
+       </s>
+       <s pid="5" sid="2">
+        Firstly, it will be great if you invite more famous singers and bands.
+       </s>
+       <s pid="5" sid="3">
+        The second one is to include more musical films and plays.
+       </s>
+       <s pid="5" sid="4">
+        I would like to help you in your interesting job.
+       </s>
+       <s pid="5" sid="5">
+        I look forward to your answer.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Traditional Folk Stories of the World
+      </p>
+      <p>
+       There are a lot of folk stories
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the world and there are a lot of folk stories in Estonia
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I would like to tell you one of them. This story is about a man and his three sons. This story happened a long time ago. The man was old and his sons were young.
+      </p>
+      <p>
+       One day the man
+       <ns type="IV">
+        <i>
+         quarreled
+        </i>
+       </ns>
+       with his sons and they left the house
+       <ns type="FV">
+        <i>
+         trying
+        </i>
+       </ns>
+       to find work. They were successful. And they
+       <ns type="TV">
+        <i>
+         had lived
+        </i>
+       </ns>
+       far from their father for two years. They
+       <ns type="TV">
+        <i>
+         grow
+        </i>
+       </ns>
+       up and became wise. They decided to return to
+       <ns type="RD">
+        <i>
+         his
+        </i>
+       </ns>
+       father because he was old and he needed help.
+      </p>
+      <p>
+       When the sons were old they began to
+       <ns type="RV">
+        <i>
+         tell
+        </i>
+       </ns>
+       about their life
+       <ns type="MP">
+       </ns>
+       beginning with this story
+       <ns type="M">
+       </ns>
+       <ns type="IV">
+        <i>
+         happend
+        </i>
+       </ns>
+       a long time ago
+       <ns type="MP">
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Traditional Folk Stories of the World
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        There are a lot of folk stories in the world and there are a lot of folk stories in Estonia, I would like to tell you one of them.
+       </s>
+       <s pid="2" sid="2">
+        This story is about a man and his three sons.
+       </s>
+       <s pid="2" sid="3">
+        This story happened a long time ago.
+       </s>
+       <s pid="2" sid="4">
+        The man was old and his sons were young.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        One day the man quarreled with his sons and they left the house trying to find work.
+       </s>
+       <s pid="3" sid="2">
+        They were successful.
+       </s>
+       <s pid="3" sid="3">
+        And they had lived far from their father for two years.
+       </s>
+       <s pid="3" sid="4">
+        They grow up and became wise.
+       </s>
+       <s pid="3" sid="5">
+        They decided to return to his father because he was old and he needed help.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        When the sons were old they began to tell about their life beginning with this story happend a long time ago
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

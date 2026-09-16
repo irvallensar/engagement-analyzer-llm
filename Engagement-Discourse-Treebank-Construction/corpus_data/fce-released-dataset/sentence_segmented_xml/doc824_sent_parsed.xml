@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       17th June, 2000
+      </p>
+      <p>
+       Dear Sir/Madam:
+      </p>
+      <p>
+       Or
+       <ns type="ID">
+        <i>
+         to whom it main concern
+        </i>
+       </ns>
+       :
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to you because I had a very disappointing evening at the Circle Theatre.
+      </p>
+      <p>
+       Well
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       seems to me that you should know what
+       <ns type="TV">
+        <i>
+         had happened
+        </i>
+       </ns>
+       there.
+      </p>
+      <p>
+       First of all, I read your advertisement where it was written that the
+       <ns type="UN">
+        <i>
+         musical
+        </i>
+       </ns>
+       show started at 19.30, but do you know
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       what
+       <ns type="RN">
+        <i>
+         hour
+        </i>
+       </ns>
+       it started? It started at 20:15! Don't you think
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         is
+        </i>
+       </ns>
+       a lack of respect? Really it
+       <ns type="RV">
+        <i>
+         was
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I forgot to tell you that there were no
+       <ns type="W">
+        <i>
+         available discounts
+        </i>
+       </ns>
+       . And
+       <ns type="MD">
+       </ns>
+       tickets were too expensive! Most people couldn't afford them.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         As a matter of fact
+        </i>
+       </ns>
+       , when the
+       <ns type="UN">
+        <i>
+         musical
+        </i>
+       </ns>
+       show was over, I was really hungry. But as I had read your advertisement I knew there was a restaurant. So I went there in order to have something to eat. But can you believed it
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       was closed.
+       <ns type="RY">
+        <i>
+         Absolutely
+        </i>
+       </ns>
+       closed. So I asked someone who seemed to be in charge, and he told me that it was too late to have a meal. This really
+       <ns type="TV">
+        <i>
+         disappoint
+        </i>
+       </ns>
+       me. I was both hungry and angry.
+      </p>
+      <p>
+       Well I think that is all, but I will ask you to give
+       <ns type="MA">
+       </ns>
+       my money back.
+      </p>
+      <p>
+       Looking forward
+       <ns type="MT">
+       </ns>
+       hearing from you.
+      </p>
+      <p>
+       yours Faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17th June, 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir/Madam:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Or to whom it main concern:
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am writting to you because I had a very disappointing evening at the Circle Theatre.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Well I seems to me that you should know what had happened there.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        First of all, I read your advertisement where it was written that the musical show started at 19.30, but do you know at what hour it started?
+       </s>
+       <s pid="6" sid="2">
+        It started at 20:15!
+       </s>
+       <s pid="6" sid="3">
+        Don't you think it is a lack of respect?
+       </s>
+       <s pid="6" sid="4">
+        Really it was.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I forgot to tell you that there were no available discounts.
+       </s>
+       <s pid="7" sid="2">
+        And  tickets were too expensive!
+       </s>
+       <s pid="7" sid="3">
+        Most people couldn't afford them.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        As a matter of fact, when the musical show was over, I was really hungry.
+       </s>
+       <s pid="8" sid="2">
+        But as I had read your advertisement I knew there was a restaurant.
+       </s>
+       <s pid="8" sid="3">
+        So I went there in order to have something to eat.
+       </s>
+       <s pid="8" sid="4">
+        But can you believed it, it was closed.
+       </s>
+       <s pid="8" sid="5">
+        Absolutely closed.
+       </s>
+       <s pid="8" sid="6">
+        So I asked someone who seemed to be in charge, and he told me that it was too late to have a meal.
+       </s>
+       <s pid="8" sid="7">
+        This really disappoint me.
+       </s>
+       <s pid="8" sid="8">
+        I was both hungry and angry.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Well I think that is all, but I will ask you to give  my money back.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Looking forward  hearing from you.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        yours Faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Secrets
+      </p>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. Maybe this is how my story begins.
+      </p>
+      <p>
+       Well first of all
+       <ns type="MP">
+       </ns>
+       Pat was a very
+       <ns type="MJ">
+       </ns>
+       friend of mine. He was really a good friend, until something
+       <ns type="TV">
+        <i>
+         had happened
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I was attending college, as I normally do. With nothing to lose, at all, but on the contrary, with a lot to learn
+       <ns type="UT">
+        <i>
+         from
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I was very keen on English lessons, maybe because I was sitting near the Boy I
+       <ns type="TV">
+        <i>
+         loves
+        </i>
+       </ns>
+       . Yes, I think this was the only reason. His name was Cody. He was a very handsome and
+       <ns type="MP">
+        <i>
+         good looking
+        </i>
+       </ns>
+       boy. But
+       <ns type="ID">
+        <i>
+         far from that
+        </i>
+       </ns>
+       , he was a very kind person.
+      </p>
+      <p>
+       Pat told me that he was also in love with me. He told me that it was
+       <ns type="S">
+        <i>
+         nessary
+        </i>
+       </ns>
+       to do something about
+       <ns type="MA">
+       </ns>
+       . But I didn't know what to do.
+      </p>
+      <p>
+       Pat suggested
+       <ns type="RA">
+        <i>
+         me
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to talk
+        </i>
+       </ns>
+       to him. But I really didn't
+       <ns type="FV">
+        <i>
+         managed
+        </i>
+       </ns>
+       to do so.
+      </p>
+      <p>
+       As Pat was
+       <ns type="IV">
+        <i>
+         lossing
+        </i>
+       </ns>
+       his patience, he decided to talk to him. I can say that I was very
+       <ns type="S">
+        <i>
+         nervious
+        </i>
+       </ns>
+       <ns type="RC">
+        <i>
+         or
+        </i>
+       </ns>
+       anxious about what was going to happen. He didn't
+       <ns type="TV">
+        <i>
+         kept
+        </i>
+       </ns>
+       my secret.
+      </p>
+      <p>
+       Pat told him that I was in love with him. This was my secret and now it was not. But
+       <ns type="MY">
+       </ns>
+       so, I think it was for the best, he was also in love with me.
+      </p>
+      <p>
+       But on the other hand I will never trust
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       Pat.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Secrets
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="2" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="2" sid="3">
+        Maybe this is how my story begins.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Well first of all Pat was a very  friend of mine.
+       </s>
+       <s pid="3" sid="2">
+        He was really a good friend, until something had happened.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I was attending college, as I normally do.
+       </s>
+       <s pid="4" sid="2">
+        With nothing to lose, at all, but on the contrary, with a lot to learn from.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I was very keen on English lessons, maybe because I was sitting near the Boy I loves.
+       </s>
+       <s pid="5" sid="2">
+        Yes, I think this was the only reason.
+       </s>
+       <s pid="5" sid="3">
+        His name was Cody.
+       </s>
+       <s pid="5" sid="4">
+        He was a very handsome and good looking boy.
+       </s>
+       <s pid="5" sid="5">
+        But far from that, he was a very kind person.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Pat told me that he was also in love with me.
+       </s>
+       <s pid="6" sid="2">
+        He told me that it was nessary to do something about .
+       </s>
+       <s pid="6" sid="3">
+        But I didn't know what to do.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Pat suggested me to talk to him.
+       </s>
+       <s pid="7" sid="2">
+        But I really didn't managed to do so.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        As Pat was lossing his patience, he decided to talk to him.
+       </s>
+       <s pid="8" sid="2">
+        I can say that I was very nervious or anxious about what was going to happen.
+       </s>
+       <s pid="8" sid="3">
+        He didn't kept my secret.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Pat told him that I was in love with him.
+       </s>
+       <s pid="9" sid="2">
+        This was my secret and now it was not.
+       </s>
+       <s pid="9" sid="3">
+        But  so, I think it was for the best, he was also in love with me.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        But on the other hand I will never trust in Pat.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

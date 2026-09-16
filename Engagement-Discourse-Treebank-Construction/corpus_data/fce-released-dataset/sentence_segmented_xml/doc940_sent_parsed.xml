@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+      </p>
+      <p>
+       During my holiday in London I decided to go to the theatre. I found your advertisement in the
+       <ns type="RN">
+        <i>
+         tourism
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         officis
+        </i>
+       </ns>
+       and
+       <ns type="R">
+        <i>
+         how
+        </i>
+       </ns>
+       the musical "Over the rainbow" seemed to be a good option I
+       <ns type="TV">
+        <i>
+         choose
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       The problem is that there
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       some differences between the advertisement and the show
+       <ns type="TV">
+        <i>
+         I've seen
+        </i>
+       </ns>
+       . First, Danny Brook wasn't the star that night, he was replaced by an actor that seemed
+       <ns type="MT">
+       </ns>
+       a rookie. Another problem, the show started at 20:15
+       <ns type="R">
+        <i>
+         in the place
+        </i>
+       </ns>
+       of 19:30 and when it finished I couldn't have
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       dinner because the theatre's restaurant was closed (it closes at 22:00). Moreover, there
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       any discounts
+       <ns type="IJ">
+        <i>
+         availables
+        </i>
+       </ns>
+       (I'm
+       <ns type="MD">
+       </ns>
+       student but I paid
+       <ns type="MT">
+       </ns>
+       a
+       <ns type="RJ">
+        <i>
+         full
+        </i>
+       </ns>
+       ticket).
+      </p>
+      <p>
+       <ns type="R">
+        How it was explained above, I'm not satisfied
+       </ns>
+       and I want to be
+       <ns type="MV">
+       </ns>
+       <ns type="MD">
+       </ns>
+       refund.
+      </p>
+      <p>
+       yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        During my holiday in London I decided to go to the theatre.
+       </s>
+       <s pid="2" sid="2">
+        I found your advertisement in the tourism officis and how the musical "Over the rainbow" seemed to be a good option I choose it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The problem is that there was some differences between the advertisement and the show I've seen.
+       </s>
+       <s pid="3" sid="2">
+        First, Danny Brook wasn't the star that night, he was replaced by an actor that seemed  a rookie.
+       </s>
+       <s pid="3" sid="3">
+        Another problem, the show started at 20:15 in the place of 19:30 and when it finished I couldn't have a dinner because the theatre's restaurant was closed (it closes at 22:00).
+       </s>
+       <s pid="3" sid="4">
+        Moreover, there wasn't any discounts availables (I'm  student but I paid  a full ticket).
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        How it was explained above, I'm not satisfied and I want to be   refund.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. She's the sister of my ex-girlfriend
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         which
+        </i>
+       </ns>
+       is called Eingrid. She was a really nice person and loved me a lot.
+       <ns type="R">
+        We'll
+       </ns>
+       understand why I'm writing
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the past.
+      </p>
+      <p>
+       Last weekend we
+       <ns type="RV">
+        <i>
+         diced
+        </i>
+       </ns>
+       to go to the
+       <ns type="S">
+        <i>
+         bach
+        </i>
+       </ns>
+       with Pat and Nick (her boyfriend). When we arrived there Eingrid and Pat decided to
+       <ns type="DV">
+        <i>
+         take a sunbath
+        </i>
+       </ns>
+       while I and Nik walked
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the sand.
+       <ns type="RT">
+        <i>
+         <ns type="S">
+          <i>
+           Lyter
+          </i>
+         </ns>
+        </i>
+       </ns>
+       a long time walking we decided to return and
+       <ns type="R">
+        <i>
+         how
+        </i>
+       </ns>
+       the weather was so hot we
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         found
+        </i>
+       </ns>
+       a place to drink something. Then I found an ex-girlfriend that Eingrid hates. We had a little conversation and suddenly she kissed me, but I refused to continue. I called Nick to go search
+       <ns type="MT">
+       </ns>
+       the girls (he was in the WC) and said goodbye to
+       <ns type="RA">
+        <i>
+         she
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       When we met the girls Eingrid was furious, she said
+       <ns type="MT">
+       </ns>
+       me that Pat had
+       <ns type="TV">
+        <i>
+         saw
+        </i>
+       </ns>
+       me kissing another girl and our relationship was over! I'm really very
+       <ns type="DJ">
+        <i>
+         unlucked
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        She's the sister of my ex-girlfriend which is called Eingrid.
+       </s>
+       <s pid="1" sid="4">
+        She was a really nice person and loved me a lot.
+       </s>
+       <s pid="1" sid="5">
+        We'll understand why I'm writing in the past.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Last weekend we diced to go to the bach with Pat and Nick (her boyfriend).
+       </s>
+       <s pid="2" sid="2">
+        When we arrived there Eingrid and Pat decided to take a sunbath while I and Nik walked in the sand.
+       </s>
+       <s pid="2" sid="3">
+        Lyter a long time walking we decided to return and how the weather was so hot we  found a place to drink something.
+       </s>
+       <s pid="2" sid="4">
+        Then I found an ex-girlfriend that Eingrid hates.
+       </s>
+       <s pid="2" sid="5">
+        We had a little conversation and suddenly she kissed me, but I refused to continue.
+       </s>
+       <s pid="2" sid="6">
+        I called Nick to go search  the girls (he was in the WC) and said goodbye to she.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        When we met the girls Eingrid was furious, she said  me that Pat had saw me kissing another girl and our relationship was over!
+       </s>
+       <s pid="3" sid="2">
+        I'm really very unlucked.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

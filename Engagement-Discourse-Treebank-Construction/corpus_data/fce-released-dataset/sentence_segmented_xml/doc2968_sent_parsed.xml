@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     26.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith
+      </p>
+      <p>
+       I am writing to answer your letter about the details of
+       <ns type="MD">
+       </ns>
+       international students conference.
+      </p>
+      <p>
+       <ns type="MD">
+       </ns>
+       Palace Hotel has been booked and you should first walk from the hotel to the Town Hall railway station, which is
+       <ns type="M">
+       </ns>
+       North City Line,
+       <ns type="MA">
+       </ns>
+       is
+       <ns type="MD">
+       </ns>
+       yellow line on the map. After getting on the train, you should get off at the Mountain station
+       <ns type="MP">
+       </ns>
+       which is
+       <ns type="R">
+        <i>
+         for twenty minutes
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+         <ns type="MA">
+         </ns>
+        </i>
+       </ns>
+       is
+       <ns type="RT">
+        <i>
+         in front of
+        </i>
+       </ns>
+       the conference
+       <ns type="MN">
+       </ns>
+       .
+      </p>
+      <p>
+       The conference which
+       <ns type="MP">
+       </ns>
+       will be held from 1 pm through 4 pm, is a formal party. You should wear formal clothes, and are going to play a game and enjoy
+       <ns type="MD">
+       </ns>
+       welcome drink together.
+      </p>
+      <p>
+       Before catching our plane, we will be able to enjoy going shopping around the airport for three hours in the afternoon
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       there are so many unique shops and you should buy good gifts for your parents
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to answer your letter about the details of  international students conference.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Palace
+       </s>
+       <s pid="3" sid="2">
+        Hotel has been booked and you should first walk from the hotel to the Town Hall railway station, which is  North City Line,  is  yellow line on the map.
+       </s>
+       <s pid="3" sid="3">
+        After getting on the train, you should get off at the Mountain station which is for twenty minutes,  is in front of the conference .
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The conference which will be held from 1 pm through 4 pm, is a formal party.
+       </s>
+       <s pid="4" sid="2">
+        You should wear formal clothes, and are going to play a game and enjoy  welcome drink together.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Before catching our plane, we will be able to enjoy going shopping around the airport for three hours in the afternoon.
+       </s>
+       <s pid="5" sid="2">
+        Because there are so many unique shops and you should buy good gifts for your parents
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr Wolf
+      </p>
+      <p>
+       I am writing to answer your question about
+       <ns type="U">
+        <i>
+         the information on
+        </i>
+       </ns>
+       an interesting building to visit. I would like to introduce one building in my town.
+      </p>
+      <p>
+       "Sky Heaven"
+       <ns type="MP">
+       </ns>
+       which is the name of the building, is
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       fifteen minutes from the centre of my town. This building
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       a hundred
+       <ns type="AGN">
+        <i>
+         floor
+        </i>
+       </ns>
+       and it takes
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       five minutes
+       <ns type="MV">
+       </ns>
+       from the
+       <ns type="SX">
+        <i>
+         grand
+        </i>
+       </ns>
+       to the top in the elevator. There are many
+       <ns type="RN">
+        <i>
+         facilities
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         which are
+        </i>
+       </ns>
+       a museum,
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       exhibition and many gift shops where we might also enjoy going shopping.
+      </p>
+      <p>
+       The reason for my recommendation is that Sky Heaven is the
+       <ns type="RJ">
+        <i>
+         highest
+        </i>
+       </ns>
+       building in the world. You should
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       the top of the building and
+       <ns type="RV">
+        <i>
+         experience
+        </i>
+       </ns>
+       <ns type="UQ">
+        <i>
+         such
+        </i>
+       </ns>
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       amazing view. Another reason is that there is a good museum, which
+       <ns type="RV">
+        <ns type="AGV">
+         <i>
+          tell
+         </i>
+        </ns>
+       </ns>
+       you about the history of my town so easily and clearly. It
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       a good experience for your students.
+      </p>
+      <p>
+       I hope you will accept my recommendation and am looking forward to hearing from you soon.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr Wolf
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to answer your question about the information on an interesting building to visit.
+       </s>
+       <s pid="2" sid="2">
+        I would like to introduce one building in my town.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        "Sky Heaven" which is the name of the building, is for fifteen minutes from the centre of my town.
+       </s>
+       <s pid="3" sid="2">
+        This building have a hundred floor and it takes for five minutes  from the grand to the top in the elevator.
+       </s>
+       <s pid="3" sid="3">
+        There are many facilities which are a museum, a exhibition and many gift shops where we might also enjoy going shopping.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The reason for my recommendation is that Sky Heaven is the highest building in the world.
+       </s>
+       <s pid="4" sid="2">
+        You should get  the top of the building and experience such a amazing view.
+       </s>
+       <s pid="4" sid="3">
+        Another reason is that there is a good museum, which tell you about the history of my town so easily and clearly.
+       </s>
+       <s pid="4" sid="4">
+        It is a good experience for your students.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope you will accept my recommendation and am looking forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

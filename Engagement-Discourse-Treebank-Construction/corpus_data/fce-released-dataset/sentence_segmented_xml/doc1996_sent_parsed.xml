@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       June 13th, 2000
+      </p>
+      <p>
+       Dear Mrs Ryan,
+      </p>
+      <p>
+       I am very glad
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         receiving
+        </i>
+       </ns>
+       such a wonderful surprise
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       that I have won first prize. What a lovely opportunity to go to America!
+      </p>
+      <p>
+       About the information you asked me for, the most suitable month for me to travel would be July, since it is when I am free
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         <ns type="IV">
+          <i>
+           traveling
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         due to
+        </i>
+       </ns>
+       I won't have classes at school by that time.
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       the matter of accommodation I'd
+       <ns type="UV">
+        <i>
+         rather
+        </i>
+       </ns>
+       prefer
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         log cabins
+        </i>
+       </ns>
+       , because I consider them better for resting and
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         know
+        </i>
+       </ns>
+       people.
+      </p>
+      <p>
+       I also want to mention that it's great you have so many activities. The ones I consider I'm good at are painting and photography. I love nature and I'd like to record the Californian landscapes.
+      </p>
+      <p>
+       I have something I'd like to ask you. Do I have to take any special clothes with me? How warm is California in
+       <ns type="AGD">
+        <i>
+         those
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         days
+        </i>
+       </ns>
+       ? Another thing, should I
+       <ns type="UV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to take
+        </i>
+       </ns>
+       my camera with me for the activity at the Camp? I'd appreciate any further information you can give me.
+      </p>
+      <p>
+       Looking forward to your
+       <ns type="S">
+        <i>
+         repply
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        June 13th, 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Mrs Ryan,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am very glad for receiving such a wonderful surprise,  that I have won first prize.
+       </s>
+       <s pid="3" sid="2">
+        What a lovely opportunity to go to America!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        About the information you asked me for, the most suitable month for me to travel would be July, since it is when I am free for traveling due to I won't have classes at school by that time.
+       </s>
+       <s pid="4" sid="2">
+        In the matter of accommodation I'd rather prefer  log cabins, because I consider them better for resting and  know people.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I also want to mention that it's great you have so many activities.
+       </s>
+       <s pid="5" sid="2">
+        The ones I consider I'm good at are painting and photography.
+       </s>
+       <s pid="5" sid="3">
+        I love nature and I'd like to record the Californian landscapes.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I have something I'd like to ask you.
+       </s>
+       <s pid="6" sid="2">
+        Do I have to take any special clothes with me?
+       </s>
+       <s pid="6" sid="3">
+        How warm is California in those days?
+       </s>
+       <s pid="6" sid="4">
+        Another thing, should I have to take my camera with me for the activity at the Camp?
+       </s>
+       <s pid="6" sid="5">
+        I'd appreciate any further information you can give me.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Looking forward to your repply.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       June 13th, 2000 Dear Kim, It was quite nice to hear from you and your family in the last letter you sent me. Hope everybody is
+       <ns type="RJ">
+        <i>
+         fine
+        </i>
+       </ns>
+       . And, yes! I helped my friend Jane at the concert! It was such a wonderful
+       <ns type="S">
+        <i>
+         experiece
+        </i>
+       </ns>
+       ! When Jane asked me to help her with
+       <ns type="U">
+        <i>
+         the organisation of
+        </i>
+       </ns>
+       the publicity and specially with the
+       <ns type="S">
+        <i>
+         inverviews
+        </i>
+       </ns>
+       , I just couldn't believe it. You know that I love going to concerts, but being
+       <ns type="M">
+       </ns>
+       <ns type="DN">
+        <i>
+         beging
+        </i>
+       </ns>
+       of
+       <ns type="UD">
+        <i>
+         all
+        </i>
+       </ns>
+       the show and
+       <ns type="W">
+        <i>
+         in the staff as a member
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       was something I was always interested in. I never imagined how many people
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       involved in the organization
+       <ns type="M">
+       </ns>
+       ! In the area of publicity we were about 50 guys, all of us investigating, calling
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       radio stations, organizing the reporters, specifying where the press would be for the interview that took place afterwards... yet, it was
+       <ns type="UD">
+        <i>
+         an
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         incredible
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           satisfation
+          </i>
+         </ns>
+        </i>
+       </ns>
+       when everything
+       <ns type="RV">
+        <i>
+         finished
+        </i>
+       </ns>
+       just fine! Wish you were there! But, I heard you went on
+       <ns type="FN">
+        <i>
+         vacations
+        </i>
+       </ns>
+       to Bermuda. Cool! How was it? You have to tell me everything! Looking forward to hearing from you. Love,
+      </p>
+      <p>
+       XXX
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        June 13th, 2000 Dear Kim,
+       </s>
+       <s pid="1" sid="2">
+        It was quite nice to hear from you and your family in the last letter you sent me.
+       </s>
+       <s pid="1" sid="3">
+        Hope everybody is fine.
+       </s>
+       <s pid="1" sid="4">
+        And, yes!
+       </s>
+       <s pid="1" sid="5">
+        I helped my friend Jane at the concert!
+       </s>
+       <s pid="1" sid="6">
+        It was such a wonderful experiece!
+       </s>
+       <s pid="1" sid="7">
+        When Jane asked me to help her with the organisation of the publicity and specially with the inverviews, I just couldn't believe it.
+       </s>
+       <s pid="1" sid="8">
+        You know that I love going to concerts, but being  beging of all the show and in the staff as a member, was something I was always interested in.
+       </s>
+       <s pid="1" sid="9">
+        I never imagined how many people is involved in the organization !
+       </s>
+       <s pid="1" sid="10">
+        In the area of publicity we were about 50 guys, all of us investigating, calling to radio stations, organizing the reporters, specifying where the press would be for the interview that took place afterwards... yet, it was an incredible satisfation when everything finished just fine!
+       </s>
+       <s pid="1" sid="11">
+        Wish you were there!
+       </s>
+       <s pid="1" sid="12">
+        But, I heard you went on vacations to Bermuda.
+       </s>
+       <s pid="1" sid="13">
+        Cool!
+       </s>
+       <s pid="1" sid="14">
+        How was it?
+       </s>
+       <s pid="1" sid="15">
+        You have to tell me everything!
+       </s>
+       <s pid="1" sid="16">
+        Looking forward to hearing from you.
+       </s>
+       <s pid="1" sid="17">
+        Love,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        XXX
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

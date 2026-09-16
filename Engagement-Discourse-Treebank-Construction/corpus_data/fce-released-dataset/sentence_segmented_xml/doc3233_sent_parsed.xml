@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     34.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith:
+      </p>
+      <p>
+       My name is Juniper
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am helping to organise the conference in the college. I received your letter the other day and I am writing to answer your questions.
+      </p>
+      <p>
+       The group has been booked into
+       <ns type="MD">
+       </ns>
+       Palace Hotel
+       <ns type="MP">
+       </ns>
+       which is not very far from the place where the conference will be held. You can take the No.41 bus from the hotel to the conference
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       only takes ten minutes approximately.
+      </p>
+      <p>
+       As for the end-of-conference party, it will be on the morning of the last day
+       <ns type="MP">
+       </ns>
+       starting at 9:00. All the students and
+       <ns type="IN">
+        <i>
+         staffs
+        </i>
+       </ns>
+       will
+       <ns type="RV">
+        <i>
+         join
+        </i>
+       </ns>
+       together in the hall. They can play games and talk about
+       <ns type="MD">
+       </ns>
+       personal
+       <ns type="FN">
+        <i>
+         experience
+        </i>
+       </ns>
+       . The main aim of
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       is to
+       <ns type="RV">
+        <i>
+         deepen
+        </i>
+       </ns>
+       the friendship among all these pupils coming from all over the world. So it would be fine if you
+       <ns type="TV">
+        <i>
+         wear
+        </i>
+       </ns>
+       casual clothes and
+       <ns type="TV">
+        <i>
+         look
+        </i>
+       </ns>
+       smart.
+      </p>
+      <p>
+       I have made
+       <ns type="FN">
+        <i>
+         arrangement
+        </i>
+       </ns>
+       for the afternoon on the last day for you. If you are free I will show you
+       <ns type="S">
+        <i>
+         arround
+        </i>
+       </ns>
+       our college. You can visit our
+       <ns type="UP">
+        <i>
+         newly-built
+        </i>
+       </ns>
+       science lab as well. I'm sure you would acquire a lot of knowledge there.
+      </p>
+      <p>
+       I'm looking forward to meeting you.
+      </p>
+      <p>
+       Best wishes.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My name is Juniper, I am helping to organise the conference in the college.
+       </s>
+       <s pid="2" sid="2">
+        I received your letter the other day and I am writing to answer your questions.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The group has been booked into  Palace Hotel which is not very far from the place where the conference will be held.
+       </s>
+       <s pid="3" sid="2">
+        You can take the No.41 bus from the hotel to the conference, it only takes ten minutes approximately.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As for the end-of-conference party, it will be on the morning of the last day starting at 9:00.
+       </s>
+       <s pid="4" sid="2">
+        All the students and staffs will join together in the hall.
+       </s>
+       <s pid="4" sid="3">
+        They can play games and talk about  personal experience.
+       </s>
+       <s pid="4" sid="4">
+        The main aim of it is to deepen the friendship among all these pupils coming from all over the world.
+       </s>
+       <s pid="4" sid="5">
+        So it would be fine if you wear casual clothes and look smart.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I have made arrangement for the afternoon on the last day for you.
+       </s>
+       <s pid="5" sid="2">
+        If you are free I will show you arround our college.
+       </s>
+       <s pid="5" sid="3">
+        You can visit our newly-built science lab as well.
+       </s>
+       <s pid="5" sid="4">
+        I'm sure you would acquire a lot of knowledge there.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I'm looking forward to meeting you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Best wishes.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Best choice
+      </p>
+      <p>
+       Welcome to London. You asked me
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       an interesting building to visit.
+       <ns type="ID">
+        In my opinion
+       </ns>
+       ,
+       <ns type="TV">
+        <i>
+         I'll recommend
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       British Museum. One of the reasons is you can learn almost everything about British history there.
+      </p>
+      <p>
+       The museum looks very old
+       <ns type="MP">
+       </ns>
+       <ns type="RT">
+        <i>
+         as
+        </i>
+       </ns>
+       some other buildings in London, but it is very modern inside. After going through the enormous main door, you can see a huge
+       <ns type="W">
+        <i>
+         white round
+        </i>
+       </ns>
+       building
+       <ns type="MP">
+       </ns>
+       which is a library. A lot of famous people have been to this library
+       <ns type="UY">
+        <i>
+         before
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       The British Hall is on the first floor, not far from the library. It shows a large number of valuable things. Almost
+       <ns type="AGQ">
+        <i>
+         each
+        </i>
+       </ns>
+       one tells you a story or gives you a picture
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       British history. I'm sure all the students will gain a wonderful
+       <ns type="RN">
+        lesson
+       </ns>
+       !
+      </p>
+      <p>
+       Apart from
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       national history, there are more
+       <ns type="RN">
+        <ns type="AGN">
+         <i>
+          content
+         </i>
+        </ns>
+       </ns>
+       about the
+       <ns type="RN">
+        <i>
+         past
+        </i>
+       </ns>
+       of the world. You can go to many sections such as
+       <ns type="MD">
+       </ns>
+       <ns type="DJ">
+        <i>
+         Asia
+        </i>
+       </ns>
+       Hall,
+       <ns type="DJ">
+        <i>
+         Egypt
+        </i>
+       </ns>
+       Hall,
+       <ns type="DJ">
+        <i>
+         Europe
+        </i>
+       </ns>
+       Hall and so on.
+       <ns type="MD">
+        <i>
+         Countless
+        </i>
+       </ns>
+       fascinating things will
+       <ns type="S">
+        <i>
+         definely
+        </i>
+       </ns>
+       take you the whole day to appreciate. After a visit to
+       <ns type="MD">
+       </ns>
+       British Museum, you will
+       <ns type="W">
+        <i>
+         be certainly
+        </i>
+       </ns>
+       able to put your history textbook away!
+      </p>
+      <p>
+       Also you don't have to pay any money for it, and the transport is extremely convenient, therefore
+       <ns type="MD">
+       </ns>
+       British Museum is your best choice. Don't be hesitant any more!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Best choice
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Welcome to London.
+       </s>
+       <s pid="2" sid="2">
+        You asked me for an interesting building to visit.
+       </s>
+       <s pid="2" sid="3">
+        In my opinion, I'll recommend  British Museum.
+       </s>
+       <s pid="2" sid="4">
+        One of the reasons is you can learn almost everything about British history there.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The museum looks very old as some other buildings in London, but it is very modern inside.
+       </s>
+       <s pid="3" sid="2">
+        After going through the enormous main door, you can see a huge white round building which is a library.
+       </s>
+       <s pid="3" sid="3">
+        A lot of famous people have been to this library before!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The British Hall is on the first floor, not far from the library.
+       </s>
+       <s pid="4" sid="2">
+        It shows a large number of valuable things.
+       </s>
+       <s pid="4" sid="3">
+        Almost each one tells you a story or gives you a picture about British history.
+       </s>
+       <s pid="4" sid="4">
+        I'm sure all the students will gain a wonderful lesson!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Apart from the national history, there are more content about the past of the world.
+       </s>
+       <s pid="5" sid="2">
+        You can go to many sections such as  Asia Hall, Egypt Hall, Europe Hall and so on.
+       </s>
+       <s pid="5" sid="3">
+        Countless fascinating things will definely take you the whole day to appreciate.
+       </s>
+       <s pid="5" sid="4">
+        After a visit to  British Museum, you will be certainly able to put your history textbook away!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Also you don't have to pay any money for it, and the transport is extremely convenient, therefore  British Museum is your best choice.
+       </s>
+       <s pid="6" sid="2">
+        Don't be hesitant any more!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

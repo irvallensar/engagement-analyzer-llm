@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan,
+      </p>
+      <p>
+       I am very happy to have won first prize in your competition. I am very interested in
+       <ns type="RV">
+        <i>
+         going
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       two weeks at Camp California in the USA. I would like to travel
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July, because it is the summer and the weather is sunny, moreover I am totally free during this month.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       the accommodation, I would prefer a log cabin, because I
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       sleep in
+       <ns type="MD">
+       </ns>
+       tent.
+      </p>
+      <p>
+       I like to do sports and I would like to do sailing and surfing for
+       <ns type="R">
+        speed sensations
+       </ns>
+       . I am good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       those two activities, because I go to the sea every weekend.
+      </p>
+      <p>
+       I would like to
+       <ns type="RV">
+        <i>
+         <ns type="SX">
+          <i>
+           now
+          </i>
+         </ns>
+        </i>
+       </ns>
+       more information about clothes. I think that
+       <ns type="MD">
+       </ns>
+       weather is very hot and that the nights are not cold, but I do not know if I must take
+       <ns type="MD">
+       </ns>
+       lot of pullovers.
+      </p>
+      <p>
+       Best regards
+      </p>
+      <p>
+       Henri
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am very happy to have won first prize in your competition.
+       </s>
+       <s pid="2" sid="2">
+        I am very interested in going to two weeks at Camp California in the USA.
+       </s>
+       <s pid="2" sid="3">
+        I would like to travel on July, because it is the summer and the weather is sunny, moreover I am totally free during this month.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        For the accommodation, I would prefer a log cabin, because I can not sleep in  tent.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I like to do sports and I would like to do sailing and surfing for speed sensations.
+       </s>
+       <s pid="4" sid="2">
+        I am good in those two activities, because I go to the sea every weekend.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I would like to now more information about clothes.
+       </s>
+       <s pid="5" sid="2">
+        I think that  weather is very hot and that the nights are not cold, but I do not know if I must take  lot of pullovers.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Best regards
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Henri
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       "Shopping is not always enjoyable" is a statement
+       <ns type="MV">
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       men in general. Women like to go
+       <ns type="UV">
+        <i>
+         to do
+        </i>
+       </ns>
+       shopping, but not alone and they want to motivate their husbands. Men do not like shopping, because their women buy a lot of clothes and it is very expensive. Moreover, men prefer to do sports, because
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       shopping
+       <ns type="RV">
+        <i>
+         loses
+        </i>
+       </ns>
+       a lot of time
+       <ns type="MP">
+       </ns>
+       <ns type="M">
+       </ns>
+       <ns type="R">
+        <ns type="S">
+         <i>
+          controry
+         </i>
+        </ns>
+        to
+        <ns type="M">
+        </ns>
+        women
+       </ns>
+       , because if they have
+       <ns type="R">
+        <i>
+         a
+        </i>
+       </ns>
+       free time, they will go
+       <ns type="UV">
+        <i>
+         to do
+        </i>
+       </ns>
+       shopping.
+      </p>
+      <p>
+       I think that
+       <ns type="MD">
+       </ns>
+       child does not like shopping because he often
+       <ns type="FV">
+        <i>
+         waits
+        </i>
+       </ns>
+       , and I prefer to play with
+       <ns type="R">
+        <i>
+         these friends
+        </i>
+       </ns>
+       .
+       <ns type="AGA">
+        <i>
+         He
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         goes
+        </i>
+       </ns>
+       <ns type="UV">
+        <i>
+         to do
+        </i>
+       </ns>
+       shopping only if
+       <ns type="AGA">
+        <i>
+         he
+        </i>
+       </ns>
+       <ns type="X">
+        <i>
+         <ns type="AGV">
+          <i>
+           has
+          </i>
+         </ns>
+         not clothes
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       To conclude, I think that "Shopping is not always enjoyable" is a true statement, but not always for all people.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        "Shopping is not always enjoyable" is a statement  of men in general.
+       </s>
+       <s pid="1" sid="2">
+        Women like to go to do shopping, but not alone and they want to motivate their husbands.
+       </s>
+       <s pid="1" sid="3">
+        Men do not like shopping, because their women buy a lot of clothes and it is very expensive.
+       </s>
+       <s pid="1" sid="4">
+        Moreover, men prefer to do sports, because the shopping loses a lot of time  controry to  women, because if they have a free time, they will go to do shopping.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I think that  child does not like shopping because he often waits, and I prefer to play with these friends.
+       </s>
+       <s pid="2" sid="2">
+        He goes to do shopping only if he has not clothes.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        To conclude, I think that "Shopping is not always enjoyable" is a true statement, but not always for all people.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,834 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Does Conceivability Imply Possibility?: Relieving Kripke's Worries about Mind-Body Identity
+     </div>
+     <div class="abstract">
+      <p>
+       Abstract: Kripke argues that mental states are not identical to neurological states, for identities hold necessarily, and we can conceive of the alleged identity failing to hold. This argument assumes that conceivability is a reliable guide to possibility; but I offer a sketch of an account of possibility that suggests otherwise. Conceivability is often a reliable guide to possibility, but not always; I give a plausible criterion that (1) preserves the reliability of our intuitions about possibility over a broad range of cases and (2) explains why our ability to conceive of non-identity between mental and neurological states does not supply any evidence for the genuine possibility of such a non-identity. I thus claim to have removed this particular barrier to various physicalist theories of mind.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Saul Kripke has revived a Cartesian argument against the identity of mental states with physical states.
+      </s>
+      <s pid="1" sid="2">
+       His argument, which I will review in section I, hinges on a premise about the relation between conceivability and possibility, namely, that conceivability is a good guide to possibility.
+      </s>
+      <s pid="1" sid="3">
+       In section II, I will consider some broad intuitions about the nature of possibility and sketch how we might systematize these intuitions.
+      </s>
+      <s pid="1" sid="4">
+       With this sketch in hand, I will return to Kripke's argument in section III and attempt to show that the crucial premise about conceivability and possibility is false, though a slightly weaker claim is true.
+      </s>
+      <s pid="1" sid="5">
+       I suggest that conceivability is a good guide to possibility only in certain cases, and I explain how to recognize such cases.
+      </s>
+      <s pid="1" sid="6">
+       But Kripke's argument against the identity of mental states and physical states fails if only this weaker claim is true.
+      </s>
+      <s pid="1" sid="7">
+       Thus I hope to have removed this particular barrier to identity theorists and other physicalists.
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       I
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        Suppose we have some rigid designators a and b .
+       </s>
+       <s pid="2" sid="2">
+        (Recall that a rigid designator is a term that picks out the same object in every possible world.)
+       </s>
+       <s pid="2" sid="3">
+        Then, as Kripke's Naming and Necessity famously shows, the statement "a is identical to b" is necessarily true if true at all.
+       </s>
+       <s pid="2" sid="4">
+        For example, "Hesperus" refers to a particular thing, and "Phosphorous" to the very same thing, and naturally in any possible world this thing is identical to itself.
+       </s>
+       <s pid="2" sid="5">
+        So the statement "Hesperus is Phosphorous" is necessarily true, as it holds in all possible worlds.
+       </s>
+       <s pid="2" sid="6">
+        If, on the other hand, we have some non-rigid designators c and d - where a non-rigid designator is a term that does not pick out the same object in every possible world - then the statement "c is identical to d" may not be a necessary truth.
+       </s>
+       <s pid="2" sid="7">
+        (But the object(s) referred to in this world by c and d will still be necessarily identical, if identical at all.) [#REF 1]
+       </s>
+       <s pid="2" sid="8">
+        Further, there is a simple test for rigidity.
+       </s>
+       <s pid="2" sid="9">
+        If the claim "x could have not been x" is true, then x is a non-rigid designator; otherwise it is a rigid designator.
+       </s>
+       <s pid="2" sid="10">
+        For instance: "the inventor of the bifocals could have not been the inventor of the bifocals" is true, because surely Benjamin Franklin could have failed to invent bifocals, so "the inventor of the bifocals" is a non-rigid designator.
+       </s>
+       <s pid="2" sid="11">
+        But "Nixon could have not been Nixon" is false, so "Nixon" designates rigidly.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Apply these observations to the claims of mind-body identity theorists like Armstrong.
+       </s>
+       <s pid="3" sid="2">
+        These theorists want to say something like this: "Any mental state is identical to some neurological state."
+       </s>
+       <s pid="3" sid="3">
+        Mental states such as pain are supposed to be identical to, say, C-fiber firings.
+       </s>
+       <s pid="3" sid="4">
+        This identity, Kripke notes, cannot be contingent.
+       </s>
+       <s pid="3" sid="5">
+        For when we apply our test for rigidity and ask, "Could pain have not been pain?" the answer is no.
+       </s>
+       <s pid="3" sid="6">
+        Likewise, Kripke supposes, for C-fiber firings. [#REF 2]
+       </s>
+       <s pid="3" sid="7">
+        The identity between pain and C-fiber firings, like all identities, must hold necessarily if at all.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Kripke now poses a problem.
+       </s>
+       <s pid="4" sid="2">
+        It is at least logically possible, Kripke suggests, to have pain without C-fiber firings, and vice-versa.
+       </s>
+       <s pid="4" sid="3">
+        But if one can exist without the other, then the identity between pain and C-fiber firings would be contingent.
+       </s>
+       <s pid="4" sid="4">
+        As we saw above, this identity cannot be contingent because it holds between rigid designators.
+       </s>
+       <s pid="4" sid="5">
+        So there can be no identity between pain and C-fiber firings at all; pain cannot just be C-fiber firings. [#REF 3]
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        This argument does not quite work, for the premise that it is logically possible to have pain without C-fiber firings and vice-versa is a very weak one.
+       </s>
+       <s pid="5" sid="2">
+        I assume that, by "logically possible," Kripke means something like, "consistent with all deductive logical consequences of the given premises."
+       </s>
+       <s pid="5" sid="3">
+        But what is the relevant premise supposed to be?
+       </s>
+       <s pid="5" sid="4">
+        If the relevant premise is something like, "Pain is feeling x ," where x is picked out by ostension, then even statements like "Pain doesn't hurt" are logically possible.
+       </s>
+       <s pid="5" sid="5">
+        Yet surely it is necessary, in the sense of necessity relevant to the above argument, that pain hurts; something that doesn't hurt isn't pain, in every possible world.
+       </s>
+       <s pid="5" sid="6">
+        This talk of possible worlds points us in the right direction: the sense of possibility that Kripke wants is metaphysical rather than logical possibility.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Then Kripke must argue that "Pain is C-fiber firings" is not metaphysically necessary, i.e., that there is some possible world where pain isn't C-fiber firings or where C-fiber firings aren't pains.
+       </s>
+       <s pid="6" sid="2">
+        His argument is the familiar Cartesian one: we can easily imagine pain without C-fiber firings (just imagine a disembodied pain); and we can easily imagine C-fiber firings without pain (consider an otherwise ordinary individual who has no qualia whatsoever, but whose neurophysiology is identical to ours - the familiar "zombie" case).
+       </s>
+       <s pid="6" sid="3">
+        So Kripke must be committed to some thesis such as the following: conceivability implies possibility .
+       </s>
+       <s pid="6" sid="4">
+        (Kripke does not have to hold that this works the other way around: it is all right for the argument if possibility does not imply conceivability.)
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        At first blush many of Kripke's own examples appear to be counterexamples to this thesis.
+       </s>
+       <s pid="7" sid="2">
+        Take the necessary identity of water and H2O.
+       </s>
+       <s pid="7" sid="3">
+        Can't I conceive of a situation in which water is not H2O?
+       </s>
+       <s pid="7" sid="4">
+        For I can imagine that chemists have known all along that water was composed of sprites, and that they have been conspiratorially hiding this information from the public.
+       </s>
+       <s pid="7" sid="5">
+        One can tell similar stories for the necessary identity of heat with molecular motion.
+       </s>
+       <s pid="7" sid="6">
+        I can conceive that delta-waves rather than molecular motion cause the sensation of heat in me, for instance.
+       </s>
+       <s pid="7" sid="7">
+        It seems that this is a case where heat is not molecular motion, but delta-waves.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Kripke accounts for such examples by retaining the view that conceivability implies possibility, but denying that we are conceiving of what we think we are conceiving of.
+       </s>
+       <s pid="8" sid="2">
+        When I think that I am conceiving of water being composed of sprites rather than H2O, in fact I am instead conceiving of something qualitatively identical to water - something that looks, tastes, feels, and smells just like water - being composed of sprites.
+       </s>
+       <s pid="8" sid="3">
+        This is perfectly possible.
+       </s>
+       <s pid="8" sid="4">
+        What isn't possible is for water not to be composed of H2O.
+       </s>
+       <s pid="8" sid="5">
+        Likewise for heat and molecular motion: it is possible for delta-waves or whatever else to cause the sensation that is in fact caused by heat; what is not possible is for heat , for that very thing , to be something other than molecular motion.
+       </s>
+       <s pid="8" sid="6">
+        In general, if I think that I can conceive of some situation S , either S is possible, or I am in fact conceiving of some situation that is merely qualitatively identical with S (call it S' ) and S' is possible.
+       </s>
+       <s pid="8" sid="7">
+        iv
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        Maybe the identity theorist can make a move like Kripke's move in the water-H2O case and the heat-molecular motion case.
+       </s>
+       <s pid="9" sid="2">
+        That is, maybe the identity theorist can say that we cannot conceive of pain without C-fiber firings or vice-versa; rather, we can only conceive of something qualitatively identical to pain without C-fiber firings.
+       </s>
+       <s pid="9" sid="3">
+        But anything qualitatively identical to pain just is pain .
+       </s>
+       <s pid="9" sid="4">
+        Pain, at least on one use of the term, is nothing more than a certain qualitative feeling.
+       </s>
+       <s pid="9" sid="5">
+        So there remains no alternative possibility for the identity theorist to appeal to, no other situation that we are in fact conceiving of when we think we are conceiving of pain without C-fiber firings.
+       </s>
+       <s pid="9" sid="6">
+        Since the Kripkean move fails in the pain case, it is indeed conceivable that there be pain without C-fiber firings; so the identity between pain and C-fiber firings is not necessary; we have already concluded that it cannot be contingent; there must then be no identity between pain and C-fiber firings.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        But identity theorists are not the only physicalists on the market.
+       </s>
+       <s pid="10" sid="2">
+        How do other physicalists, like functionalists and eliminative materialists, fare?
+       </s>
+       <s pid="10" sid="3">
+        Functionalists claim that mental states are identical to functional states.
+       </s>
+       <s pid="10" sid="4">
+        Functional states may be roughly defined as some sort of relation among inputs, system states, and outputs; two systems may be composed of radically different substances but still instantiate the same functional state.
+       </s>
+       <s pid="10" sid="5">
+        Unfortunately for the functionalists, Kripke can run an argument that parallels the above argument against identity theory.
+       </s>
+       <s pid="10" sid="6">
+        Suppose the functionalist identifies some type of pain P with functional state F .
+       </s>
+       <s pid="10" sid="7">
+        To have P , the functionalist wants to say, is to be in F .
+       </s>
+       <s pid="10" sid="8">
+        There are at least two different ways this claim may be spelled out.
+       </s>
+       <s pid="10" sid="9">
+        P might be a type of pain: this sort of pain in my left knee.
+       </s>
+       <s pid="10" sid="10">
+        Or it might just be pain , simpliciter.
+       </s>
+       <s pid="10" sid="11">
+        Indeed the functionalist could make both claims and identify the type of pain with functional state F1 , and pain simpliciter with functional state F2 .
+       </s>
+       <s pid="10" sid="12">
+        Of course then every F1 needs to be an F2 , but not vice versa.
+       </s>
+       <s pid="10" sid="13">
+        Kripke's argument will work just as well against any of these permutations.
+       </s>
+       <s pid="10" sid="14">
+        For we can conceive of pain P without functional state F , and vice versa.
+       </s>
+       <s pid="10" sid="15">
+        (Just as before, we can conceive of disembodied pain and of zombies.)
+       </s>
+       <s pid="10" sid="16">
+        Conceivability implies possibility; so it is possible to have P without F ; so P and F are not necessarily identical; so they are not identical at all.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        Eliminative materialists do not bother to identify pain with any physical state; they argue that there is no such thing as pain.
+       </s>
+       <s pid="11" sid="2">
+        This is not meant to be the silly assertion that it doesn't hurt when I bang my knee into the table; instead, the suggestion is that the folk-psychological concept of "pain" has an empty extension.
+       </s>
+       <s pid="11" sid="3">
+        Completed science will furnish a new set of concepts, including no doubt some concept under which will fall the mental state that I am in when I bang my knee against a table.
+       </s>
+       <s pid="11" sid="4">
+        Call this concept schmain .
+       </s>
+       <s pid="11" sid="5">
+        Eliminative materialists can attempt to resist Kripke's argument by holding that it is inconceivable that there be schmain without, say, some neurological state.
+       </s>
+       <s pid="11" sid="6">
+        For being a neurological state will be part of the concept schmain .
+       </s>
+       <s pid="11" sid="7">
+        How well this strategy works is unclear; Kripke will doubtless respond that those things that hurt surely share some (purely qualitative) property.
+       </s>
+       <s pid="11" sid="8">
+        How will the physicalist identify that property with anything physicalistically respectable?
+       </s>
+       <s pid="11" sid="9">
+        More can be said on both sides here, but let us suppose that the eliminative materialist can contort her way out of the problem.
+       </s>
+       <s pid="11" sid="10">
+        Then the physicalist can, as a last resort, fall back to eliminative materialism to evade Kripke's argument, but only at the cost of giving up 'pain' as a genuine natural-kind term.
+       </s>
+       <s pid="11" sid="11">
+        This conclusion alone merits rebuttal.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        We have so far considered arguments against physicalism.
+       </s>
+       <s pid="12" sid="2">
+        What is alarming is that Kripke's strategy against the physicalist likewise hits many stripes of dualist !
+       </s>
+       <s pid="12" sid="3">
+        Consider the "substance dualist," who says that mental states are identical to states of some non-material substance.
+       </s>
+       <s pid="12" sid="4">
+        (There are several ways one might explain how a substance could be non-material: maybe the substance is non-spatial, or doesn't interact in any way with quarks or whatever the bottom-level physical things are.)
+       </s>
+       <s pid="12" sid="5">
+        Suppose that pain ends up being identified with M-charges in non-material substance S . I can conceive of pain without substance S , though (embodied pain), and I can conceive of substance S without pain (a soul-zombie)!
+       </s>
+       <s pid="12" sid="6">
+        So it's possible for there to be pain without M-charges in substance S and vice-versa … so pain is not identical to M-charges in substance S . Likewise for the functional dualist.
+       </s>
+       <s pid="12" sid="7">
+        For, strictly speaking, functionalism need not be a physicalist theory.
+       </s>
+       <s pid="12" sid="8">
+        One might suggest that the relevant functional states are functional states of non-material substances .
+       </s>
+       <s pid="12" sid="9">
+        But the above argument against functionalism remains unimpeded.
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        We might begin to get suspicious here.
+       </s>
+       <s pid="13" sid="2">
+        For Kripke's argument is so strong that it rules out, not only any form of physicalism that takes "pain" to be a natural-kind term, but also any form of dualism that does the same!
+       </s>
+       <s pid="13" sid="3">
+        The remaining contenders seem to be eliminative materialism and, I suppose, eliminative dualism (dualism of a type that denies the existence of pain) - and even these may not escape Kripke's argument.
+       </s>
+       <s pid="13" sid="4">
+        We might also consider "anti-reductionism," the claim that mental states aren't reducible to anything , except maybe other mental states.
+       </s>
+       <s pid="13" sid="5">
+        And all of this is supposed to follow from an argument about what we can imagine?
+       </s>
+       <s pid="13" sid="6">
+        Let us keep this suspicion in mind as we turn to the topic of possibility.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       II
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        If we would like to argue that conceivability does not imply possibility in the pain-C-fiber case, a natural first step is to examine the notion of possibility.
+       </s>
+       <s pid="14" sid="2">
+        Perhaps an independent account of possibility will clarify what the conceivability of state of affairs S tells us about its possibility.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        What is it for state of affairs S to be possible?
+       </s>
+       <s pid="15" sid="2">
+        I take it that the following paraphrase is uncontentious: if S is possible, then there is a way things could be such that S obtains.
+       </s>
+       <s pid="15" sid="3">
+        Replacing the italicized phrase with another: if S is possible, there exists an arrangement of things (which need not be actualized) such that S .
+       </s>
+       <s pid="15" sid="4">
+        We might turn this intuition into a formalized theory as follows.
+       </s>
+       <s pid="15" sid="5">
+        Call complete possible situations possible worlds .
+       </s>
+       <s pid="15" sid="6">
+        Then let possible worlds be composed of things arranged in certain ways relative to each other.
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        A quick aside on the ontological status of possible worlds: one might think, with David Lewis, that possible worlds are things that are really out there, with various events really going on in them, in the same sense that our world is really here and events are really going in our world.
+       </s>
+       <s pid="16" sid="2">
+        Alternatively, one might claim that possible worlds are abstract objects of some kind, or sets of sentences/statements/propositions, or both.
+       </s>
+       <s pid="16" sid="3">
+        I prefer the latter approach for reasons of ontological parsimony, and I will accordingly tell a story about possibility using the ontologically deflationary variety of possible worlds.
+       </s>
+       <s pid="16" sid="4">
+        But my argument goes through just the same if one takes Lewis's view of the ontological status of possible worlds.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        Here is one way of explaining what goes into a possible world.
+       </s>
+       <s pid="17" sid="2">
+        Let possible worlds be abstract objects consisting of mathematical representations of space and time.
+       </s>
+       <s pid="17" sid="3">
+        Consider an n-dimensional grid , which represents spacetime.
+       </s>
+       <s pid="17" sid="4">
+        It has whatever features our completed physics will attribute to spacetime: perhaps n-1 dimensions are spatial and the remaining dimension is temporal.
+       </s>
+       <s pid="17" sid="5">
+        Consider also a set of micro-level entities .
+       </s>
+       <s pid="17" sid="6">
+        Let these be whatever the bottom-level particles of the actual world are: quarks, gluons, strings, or whatever is in fact the particle or particles from which all other particles are built.
+       </s>
+       <s pid="17" sid="7">
+        A possible world is just an n-dimensional grid populated with these micro-level entities.
+       </s>
+       <s pid="17" sid="8">
+        We can construct all possible worlds using the following rules:
+       </s>
+      </p>
+      <list>
+       <item>
+        1. The actual world is possible.
+       </item>
+       <item>
+        2. If world
+        <i>
+         w1
+        </i>
+        is possible, then so is a world
+        <i>
+         w2
+        </i>
+        which is exactly like
+        <i>
+         w1
+        </i>
+        , except that exactly one of the following obtains:
+       </item>
+       <item>
+        <list>
+         <item>
+          a. Any single empty spacetime-point in
+          <i>
+           w1
+          </i>
+          instead contains any single micro-particle in
+          <i>
+           w2
+          </i>
+          .
+         </item>
+         <item>
+          b. Any single non-empty spacetime point in
+          <i>
+           w1
+          </i>
+          is empty in
+          <i>
+           w2
+          </i>
+          .
+         </item>
+         <item>
+          c. Any single spacetime point in
+          <i>
+           w1
+          </i>
+          does not exist in
+          <i>
+           w2
+          </i>
+          .
+         </item>
+        </list>
+       </item>
+      </list>
+      <p>
+       <s pid="18" sid="1">
+        At least one more rule is needed to add spacetime points.
+       </s>
+       <s pid="18" sid="2">
+        Exactly how this rule is phrased depends on facts about the geometry of spacetime about which I plead ignorance.
+       </s>
+       <s pid="18" sid="3">
+        But I doubt that, given the mathematical formulation of spacetime in completed physics, it will be particularly difficult to develop such a rule.
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        There are many important objections which can be raised against such a theory, most of which are outside the scope of this paper.
+       </s>
+       <s pid="19" sid="2">
+        Let me mention just a few objections which are especially relevant for my purposes here.
+       </s>
+       <s pid="19" sid="3">
+        First, one might have a worry about certain terms I have used above.
+       </s>
+       <s pid="19" sid="4">
+        Suppose for a moment that final physics tells us that there is one fundamental particle in the universe: strings.
+       </s>
+       <s pid="19" sid="5">
+        It follows from my account that there are possible worlds with things I call "strings" which, the objection might maintain, are not strings at all.
+       </s>
+       <s pid="19" sid="6">
+        For suppose that, in the actual world, strings follow some set of laws L . Kripke points out that natural-kind terms, like "string" , are rigid designators, so they pick out the same thing in every possible world; and presumably, it is essential to strings that they obey the set of laws L .
+       </s>
+       <s pid="19" sid="7">
+        But in some possible worlds, things that I call "strings" fail to obey these laws (e.g., perhaps a string spontaneously disappears at some time t when L would not permit such a disappearance).
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Point well taken.
+       </s>
+       <s pid="20" sid="2">
+        I need to have some replacement for the various terms I use to pick out micro-particles: I can't say "string" , "quark" , or whatever.
+       </s>
+       <s pid="20" sid="3">
+        Instead, let me use some suitable mathematical description for each micro-particle, and replace every instance of the name of the relevant micro-particle with this description.
+       </s>
+       <s pid="20" sid="4">
+        Obviously, the mathematical description will have to omit any claims about how the micro-particle behaves over time; it will confine itself to a description of how large the particle is, whether the particle has (let us say) positive or negative charge, etc.
+       </s>
+       <s pid="20" sid="5">
+        (Or rather, positive or negative "charge," lest the objection recur for my use of that term.
+       </s>
+       <s pid="20" sid="6">
+        Again, some kind of time-independent mathematical description will have to be given for each property that characterizes the micro-particle.)
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        Next objection.
+       </s>
+       <s pid="21" sid="2">
+        One might think that this account is too restrictive to capture all the metaphysically necessary truths.
+       </s>
+       <s pid="21" sid="3">
+        For couldn't spacetime have had a different number of dimensions?
+       </s>
+       <s pid="21" sid="4">
+        And couldn't there have been different fundamental micro-particles?
+       </s>
+       <s pid="21" sid="5">
+        In response to such worries, one might broaden the generation rules for possible worlds.
+       </s>
+       <s pid="21" sid="6">
+        Suppose we have our theory from completed physics.
+       </s>
+       <s pid="21" sid="7">
+        It tells us that there is a world of n-dimensional spacetime with some number of micro-particles; when we ask for details about the natures of these micro-particles, the physicists give us some mathematically formalized properties.
+       </s>
+       <s pid="21" sid="8">
+        I contend that there will be natural ways of extending these mathematical formalizations so as to define new particles, none of which actually exist.
+       </s>
+       <s pid="21" sid="9">
+        Likewise for spacetime: we can develop natural extensions of the mathematical formalization which describes spacetime.
+       </s>
+       <s pid="21" sid="10">
+        We could then rewrite the possible world generation rules so as to capture these extensions.
+       </s>
+       <s pid="21" sid="11">
+        This project is not feasible now for the simple reason that we don't have completed physics before us.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        One final objection with direct relevance for my thesis of the possibility of physicalism.
+       </s>
+       <s pid="22" sid="2">
+        Doesn't my account just beg the question against anti-reductionists?
+       </s>
+       <s pid="22" sid="3">
+        The emergent dualist, for instance, will say that two worlds might have exactly the same micro-particles in exactly the same places throughout spacetime, and yet differ in their mental properties.
+       </s>
+       <s pid="22" sid="4">
+        I concede immediately that the emergent dualist will have to subscribe to a different view of possibility.
+       </s>
+       <s pid="22" sid="5">
+        (Though she can go in for something that looks a lot like my view; she will have to modify 2a-2c by, say, adding qualia-generation and qualia-elimination rules.)
+       </s>
+       <s pid="22" sid="6">
+        But my goal in this paper is merely the modest goal of showing how one might plausibly meet the Kripkean objection.
+       </s>
+       <s pid="22" sid="7">
+        It is not my concern to refute emergent dualism, but only to show how an identity theorist, functionalist, etc., might defend himself via a certain view of possibility.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       III
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        I hope we now have a better handle on what it is for a situation to be possible: there must be a possible world of micro-particles arranged in spacetime such that the situation obtains.
+       </s>
+       <s pid="23" sid="2">
+        Given the above account of possibility, what does the conceivability of a situation tell us about its possibility?
+       </s>
+       <s pid="23" sid="3">
+        Before we can answer this question, we have to know what conceivability is.
+       </s>
+       <s pid="23" sid="4">
+        Let me avoid a fight and grant my opponent the most charitable reading: let us take conceivability to be vivid imaginability .
+       </s>
+       <s pid="23" sid="5">
+        This reading of conceivability is a particularly strong one; and I will also grant that we can conceive, in this strong sense, that pain exists without C-fiber firings and C-fiber firings without pain.
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        Conceivability is good evidence for possibility exactly when our ability to conceive of a situation S is good evidence for there being some possible arrangement of micro-particles such that S obtains.
+       </s>
+       <s pid="24" sid="2">
+        So here is a case in which conceivability seems to provide very strong evidence for possibility.
+       </s>
+       <s pid="24" sid="3">
+        I can conceive of (vividly imagine there being) things like horses which have two antlers emerging from their heads.
+       </s>
+       <s pid="24" sid="4">
+        Call these creatures bicorns .
+       </s>
+       <s pid="24" sid="5">
+        The fact that I can conceive of bicorns makes it very likely that it is possible for there to be bicorns.
+       </s>
+       <s pid="24" sid="6">
+        For, having seen horses before, I know that horses are possible - that there exists some arrangement of micro-particles, I know not which one, that forms a horse.
+       </s>
+       <s pid="24" sid="7">
+        And, having seen antlers before, I know that they are also possible, for there is at least one arrangement of micro-particles that makes up an antler.
+       </s>
+       <s pid="24" sid="8">
+        So I know that it is possible for there to be bicorns, since all that requires is having the antler-micro-particle arrangement placed twice, in the appropriate places, atop the horse-micro-particle arrangement.
+       </s>
+       <s pid="24" sid="9">
+        Moreover, my vividly imagining a bicorn is what reveals to me that bicorns are possible: it makes perspicuous the spatial relationships that need to obtain between the antlers and the horse.
+       </s>
+       <s pid="24" sid="10">
+        Put another way: it tells me how to construct the possible world in which there are bicorns.
+       </s>
+       <s pid="24" sid="11">
+        I begin with the actual world and pick out some horse, and then I twice replace some of the micro-particles above its head with the antler-micro-particle arrangement, using rules a and b of the possible-world generation rules.
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        Inconceivability may also be good evidence for impossibility.
+       </s>
+       <s pid="25" sid="2">
+        I cannot conceive of anything - say, the lamp on my desk - that is both red all over and green all over.
+       </s>
+       <s pid="25" sid="3">
+        When I try, I realize that the closest I can come is imagining the lamp red all over, and then imagining it being green all over.
+       </s>
+       <s pid="25" sid="4">
+        Now there is some arrangement of micro-particles R that forms a red-all-over lamp, and there is a different arrangement of micro-particles G that forms a green-all-over lamp.
+       </s>
+       <s pid="25" sid="5">
+        But there cannot be both at the same time in the same place, and the possible-world generation rules tell us why not.
+       </s>
+       <s pid="25" sid="6">
+        In the actual world, I assume, there is no time and place at which two particles exist; and the possible-world generation rules never replace one particle in a spacetime point with two particles.
+       </s>
+       <s pid="25" sid="7">
+        Again, the fact that I cannot conceive of something being both red all over and green all over is what gives me good evidence for the impossibility of such a situation obtaining, since the reason that I fail to be able to imagine the situation vividly is that I cannot imagine two things in the same place at the same time.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        But inconceivability is not always good evidence for impossibility.
+       </s>
+       <s pid="26" sid="2">
+        One example: I cannot conceive of things being the way they actually are.
+       </s>
+       <s pid="26" sid="3">
+        Given my very limited cognitive capacity, I can't vividly imagine everything in the entire universe, even if I had before me a complete description of it.
+       </s>
+       <s pid="26" sid="4">
+        But my failure to be able to conceive of things being how they actually are doesn't yield any evidence that there is no possible arrangement of micro-particles such that things are as they actually are.
+       </s>
+       <s pid="26" sid="5">
+        Even though I can't conceive of how everything actually is, I can still easily tell you how to generate all of actuality from the possible-world generation rules: stop at step 1.
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        Recall Kripke's account of modal error: when we conceive of situation S , either situation S is possible or some qualitatively identical situation is possible .
+       </s>
+       <s pid="27" sid="2">
+        The italicized bit explains how we mistakenly think we can conceive of water that isn't H2O, or heat that isn't molecular motion.
+       </s>
+       <s pid="27" sid="3">
+        I offer a different account of modal error.
+       </s>
+       <s pid="27" sid="4">
+        For (alleged) situation S to be possible is for there to be some arrangement of micro-particles such that S .
+       </s>
+       <s pid="27" sid="5">
+        There are two ways that we might mistakenly take S to be possible.
+       </s>
+       <s pid="27" sid="6">
+        First, there might be some possible situation S' which we mistake for the (impossible) situation S . Second, there might be no arrangement of micro-particles such that S .
+       </s>
+       <s pid="27" sid="7">
+        The first type of mistake is my analysis for the water-without-H2O case and the heat-without-molecular-motion case.
+       </s>
+       <s pid="27" sid="8">
+        The second type of mistake is my analysis of the pain-without-C-fiber-firings case.
+       </s>
+       <s pid="27" sid="9">
+        Let us take these one at a time.
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        There are possible situations (arrangements of micro-particles) where there is stuff that is superficially like water, but isn't H2O.
+       </s>
+       <s pid="28" sid="2">
+        There are also possible situations (arrangements of micro-particles) where there is something that feels like heat, but isn't molecular motion.
+       </s>
+       <s pid="28" sid="3">
+        It is a fact about language - about what counts as water - that the superficially-water-like stuff isn't water, and it is also a fact about language that the thing that feels hot, but isn't molecular motion, isn't heat.
+       </s>
+       <s pid="28" sid="4">
+        We conceive of possible situations with water-like and heat-like things and incorrectly take them to be situations where water and heat fail to have their actual deep structures.
+       </s>
+       <s pid="28" sid="5">
+        The mistake is understandable, as it merely involves confusing things recognized in the same way that we recognize the thing picked out by a term for the thing that is actually picked out by the term .
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        Now for the second type of mistake, and, at last, the rebuttal of Kripke's argument.
+       </s>
+       <s pid="29" sid="2">
+        I need to show that the fact that I can imagine pain without C-fiber firings, or functional state F, or whatever, lends no support to the claim that there is a possible arrangement of micro-particles such that there is pain without the relevant physical state.
+       </s>
+       <s pid="29" sid="3">
+        What happens when I imagine pain without C-fiber firings?
+       </s>
+       <s pid="29" sid="4">
+        I imagine a person with no C-fibers in her head - just silicon, say - and then work myself into a state of mind where I'm imagining pain.
+       </s>
+       <s pid="29" sid="5">
+        I then say to myself, "All right, that sensation is what she is feeling."
+       </s>
+       <s pid="29" sid="6">
+        But that doesn't tell me how to construct, using the possible-world generation rules, a situation where there's pain but no C-fiber firings.
+       </s>
+       <s pid="29" sid="7">
+        At best it tells me how to construct a situation where there's a person with silicon in her head; it leaves me baffled about what micro-particles to add, and where to add them, for there to be pain, too.
+       </s>
+       <s pid="29" sid="8">
+        I may be mislead by my vivid imaginings into believing that there is some arrangement of micro-particles such that pain-without-C-fiber-firings obtains, but there needn't be any such situation .
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        Likewise for conceiving of C-fiber firings without pain.
+       </s>
+       <s pid="30" sid="2">
+        I can imagine myself in a brain state where my C-fibers are firing, and I can add to that picture the thought that I feel no pain.
+       </s>
+       <s pid="30" sid="3">
+        But that doesn't tell me how to construct a situation where my C-fibers are firing without my feeling pain; the best I can do is reproduce the micro-particle state that I am actually in when my C-fibers are firing, and by hypothesis whenever that actually happens I'm in pain!
+       </s>
+       <s pid="30" sid="4">
+        Again, the physicalist can claim that there really is no situation where there's C-fiber-firings without pain, and the conceivability argument does nothing to show otherwise.
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        This tack might be taken as question-begging.
+       </s>
+       <s pid="31" sid="2">
+        I have packed into my notion of possibility that there can be no difference in the world without a difference in micro-particle arrangement, and this could be taken as already begging the question against the Kripkean.
+       </s>
+       <s pid="31" sid="3">
+        So the dedicated Kripkean need not be persuaded by my argument here.
+       </s>
+       <s pid="31" sid="4">
+        Even if that is the case, my argument does something important in response to Kripke's objection: it shows that there is a coherent, and indeed very attractive, alternative.
+       </s>
+       <s pid="31" sid="5">
+        My alternative (1) preserves our intuition that conceivability is a good guide to possibility in many important cases (and inconceivability a good guide to impossibility), (2) gives us a way of telling when conceivability isn't a good guide to possibility (and similarly, mutatis mutandis , for inconceivability and impossibility), and (3) lets us be physicalists and allows science, rather than a priori philosophy, to resolve the apparently empirical question of what pain and other mental states are.
+       </s>
+       <s pid="31" sid="6">
+        The force of Kripke's objection lay, in part, in the apparent difficulty of providing any satisfactory alternative account of the relationship between conceivability and possibility.
+       </s>
+       <s pid="31" sid="7">
+        I claim to have provided one.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       i Saul Kripke, Naming and Necessity (Harvard University Press: Cambridge, 1972), p. 3.
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        2.
+       </a>
+       ii Ibid, pp. 148-9.
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        3.
+       </a>
+       iii Ibid, pp. 146-9.
+      </div>
+      <div id="fn4">
+       <a href="#fnref_fn4">
+        4.
+       </a>
+       iv Ibid, pp. 99-104.
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

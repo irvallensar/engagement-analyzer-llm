@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+       <ns type="UP">
+        <i>
+         !
+        </i>
+       </ns>
+      </p>
+      <p>
+       Thank you very much for your letter. I was surprised because I didn't expect that I could win.
+      </p>
+      <p>
+       Now I
+       <ns type="TV">
+        <i>
+         study
+        </i>
+       </ns>
+       and I'll continue my
+       <ns type="FN">
+        <i>
+         study
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         untill
+        </i>
+       </ns>
+       the end of June. Then I'll have
+       <ns type="MD">
+       </ns>
+       holiday which
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           finish
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in August. That's why I'd like to travel only in July.
+      </p>
+      <p>
+       I prefer to
+       <ns type="RV">
+        <i>
+         live
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       log cabin because I think it's more comfortable.
+       <ns type="RA">
+        <i>
+         There
+        </i>
+       </ns>
+       are warmer and drier and I'm afraid of insects and spiders.
+      </p>
+      <p>
+       It's really great that you can suggest how to spend the rest
+       <ns type="M">
+       </ns>
+       time, because I enjoy swimming and it doesn't matter where
+       <ns type="MP">
+       </ns>
+       in the lake or
+       <ns type="UP">
+        <i>
+         swimming-pool
+        </i>
+       </ns>
+       . I think it's
+       <ns type="MD">
+       </ns>
+       very
+       <ns type="S">
+        <i>
+         usefull
+        </i>
+       </ns>
+       and helpful thing for my health
+       <ns type="MP">
+       </ns>
+       especially when I do it with pleasure. The second
+       <ns type="MT">
+       </ns>
+       my
+       <ns type="S">
+        <i>
+         favorit
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         sport
+        </i>
+       </ns>
+       is tennis. I've played tennis for ten years
+       <ns type="MP">
+       </ns>
+       I'm a
+       <ns type="S">
+        <i>
+         profesional
+        </i>
+       </ns>
+       and I have to be good at it,
+       <ns type="R">
+        in any
+       </ns>
+       time.
+      </p>
+      <p>
+       I want to ask you about money. How much money
+       <ns type="MV">
+       </ns>
+       I need and
+       <ns type="R">
+        <i>
+         if
+        </i>
+       </ns>
+       I have to have
+       <ns type="AGA">
+        <i>
+         them
+        </i>
+       </ns>
+       in cash or
+       <ns type="W">
+        <i>
+         I can
+        </i>
+       </ns>
+       use a credit card
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       Could you let me know about the weather because I don't know what kind of clothes I should take. Would you send me your answer as
+       <ns type="RY">
+        <i>
+         fast
+        </i>
+       </ns>
+       as it
+       <ns type="MV">
+       </ns>
+       possible. I look forward to seeing you soon. Thank you
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+      <p>
+       Katerina Petrov
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I was surprised because I didn't expect that I could win.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Now I study and I'll continue my study untill the end of June.
+       </s>
+       <s pid="3" sid="2">
+        Then I'll have  holiday which finish in August.
+       </s>
+       <s pid="3" sid="3">
+        That's why I'd like to travel only in July.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I prefer to live in  log cabin because I think it's more comfortable.
+       </s>
+       <s pid="4" sid="2">
+        There are warmer and drier and I'm afraid of insects and spiders.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        It's really great that you can suggest how to spend the rest  time, because I enjoy swimming and it doesn't matter where  in the lake or swimming-pool.
+       </s>
+       <s pid="5" sid="2">
+        I think it's  very usefull and helpful thing for my health especially when I do it with pleasure.
+       </s>
+       <s pid="5" sid="3">
+        The second  my favorit sport is tennis.
+       </s>
+       <s pid="5" sid="4">
+        I've played tennis for ten years I'm a profesional and I have to be good at it, in any time.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I want to ask you about money.
+       </s>
+       <s pid="6" sid="2">
+        How much money  I need and if I have to have them in cash or I can use a credit card.
+       </s>
+       <s pid="6" sid="3">
+        Could you let me know about the weather because I don't know what kind of clothes I should take.
+       </s>
+       <s pid="6" sid="4">
+        Would you send me your answer as fast as it  possible.
+       </s>
+       <s pid="6" sid="5">
+        I look forward to seeing you soon.
+       </s>
+       <s pid="6" sid="6">
+        Thank you
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Katerina Petrov
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Hi, Kim!
+      </p>
+      <p>
+       How are you? I'm fine
+       <ns type="MP">
+        <i>
+         soon
+        </i>
+       </ns>
+       I'll have my holiday and I look forward
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="AGA">
+        <i>
+         them
+        </i>
+       </ns>
+       but now I have a lot of exams and if I want to pass them I have to learn a lot.
+      </p>
+      <p>
+       Now I want to tell you about a pop concert
+       <ns type="MP">
+        <i>
+         as
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         have already
+         <ns type="IV">
+          <i>
+           knowen
+          </i>
+         </ns>
+        </i>
+       </ns>
+       I helped my father to organize this concert. I was doing a lot of things like redecorating, drawing. Sometimes I gave some
+       <ns type="CN">
+        <i>
+         advices
+        </i>
+       </ns>
+       about suits and dresses. Often we
+       <ns type="RV">
+        <i>
+         looked
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         repetitions
+        </i>
+       </ns>
+       and if something didn't
+       <ns type="RV">
+        <i>
+         like
+        </i>
+       </ns>
+       us we tried to correct it. The most
+       <ns type="DJ">
+        <i>
+         enjoable
+        </i>
+       </ns>
+       thing was to
+       <ns type="DV">
+        <i>
+         smart
+        </i>
+       </ns>
+       people. We have a good and rich sponsor
+       <ns type="RP">
+        <i>
+         , that's
+        </i>
+       </ns>
+       why we could buy a lot of different materials with different colours and we tried to be polite with actors even if they didn't want to wear that
+       <ns type="RN">
+        <i>
+         part
+        </i>
+       </ns>
+       of
+       <ns type="RN">
+        <i>
+         cloth
+        </i>
+       </ns>
+       which we thought was
+       <ns type="FJ">
+        <i>
+         more
+         <ns type="RJ">
+          <i>
+           similar
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       their style. We always explained
+       <ns type="M">
+       </ns>
+       them and
+       <ns type="ID">
+        <i>
+         at the end
+        </i>
+       </ns>
+       they agreed with us. These days were so busy. But when we saw our show and heard how
+       <ns type="RY">
+        <i>
+         loud
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       audience
+       <ns type="RV">
+        <i>
+         <ns type="IV">
+          <i>
+           claped
+          </i>
+         </ns>
+        </i>
+       </ns>
+       them we were proud and understood that we
+       <ns type="R">
+        spent a good time
+       </ns>
+       . You should try it and
+       <ns type="RV">
+        <i>
+         feel
+        </i>
+       </ns>
+       . I'll be waiting for your answer.
+      </p>
+      <p>
+       Best wishes.
+      </p>
+      <p>
+       Katerina.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hi, Kim!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        How are you?
+       </s>
+       <s pid="2" sid="2">
+        I'm fine soon I'll have my holiday and I look forward for them but now I have a lot of exams and if I want to pass them I have to learn a lot.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Now I want to tell you about a pop concert as you have already knowen I helped my father to organize this concert.
+       </s>
+       <s pid="3" sid="2">
+        I was doing a lot of things like redecorating, drawing.
+       </s>
+       <s pid="3" sid="3">
+        Sometimes
+       </s>
+       <s pid="3" sid="4">
+        I gave some advices about suits and dresses.
+       </s>
+       <s pid="3" sid="5">
+        Often we looked repetitions and if something didn't like us we tried to correct it.
+       </s>
+       <s pid="3" sid="6">
+        The most enjoable thing was to smart people.
+       </s>
+       <s pid="3" sid="7">
+        We have a good and rich sponsor, that's why we could buy a lot of different materials with different colours and we tried to be polite with actors even if they didn't want to wear that part of cloth which we thought was more similar to their style.
+       </s>
+       <s pid="3" sid="8">
+        We always explained  them and at the end they agreed with us.
+       </s>
+       <s pid="3" sid="9">
+        These days were so busy.
+       </s>
+       <s pid="3" sid="10">
+        But when we saw our show and heard how loud  audience claped them we were proud and understood that we spent a good time.
+       </s>
+       <s pid="3" sid="11">
+        You should try it and feel.
+       </s>
+       <s pid="3" sid="12">
+        I'll be waiting for your answer.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Best wishes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Katerina.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

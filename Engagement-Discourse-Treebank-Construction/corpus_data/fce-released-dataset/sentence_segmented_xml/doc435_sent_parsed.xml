@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Ms Helen Ryan
+      </p>
+      <p>
+       I am writing this letter as an answer to your request for some further information from me.
+      </p>
+      <p>
+       I would like to travel in July, because I have recently got a new job, which I am going to start in August. Therefore, July is my last free month until much later. I would prefer to stay in a tent during the camp, as I find tents a lot more exciting than log cabins. I am a very good swimmer, so I choose swimming from the activities you listed. I am also very keen on climbing, although I am not extremely good at it. I would also like to ask how much money I am supposed to take with me and I would be glad if you could give me an answer before the camp begins.
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Bibiana Krol
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ms Helen Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing this letter as an answer to your request for some further information from me.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to travel in July, because I have recently got a new job, which I am going to start in August.
+       </s>
+       <s pid="3" sid="2">
+        Therefore, July is my last free month until much later.
+       </s>
+       <s pid="3" sid="3">
+        I would prefer to stay in a tent during the camp, as I find tents a lot more exciting than log cabins.
+       </s>
+       <s pid="3" sid="4">
+        I am a very good swimmer, so I choose swimming from the activities you listed.
+       </s>
+       <s pid="3" sid="5">
+        I am also very keen on climbing, although I am not extremely good at it.
+       </s>
+       <s pid="3" sid="6">
+        I would also like to ask how much money I am supposed to take with me and I would be glad if you could give me an answer before the camp begins.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Bibiana Krol
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Most people enjoy shopping. But not me. I think shopping is hard, exhausting work, especially when you are trying to buy yourself some new clothes.
+      </p>
+      <p>
+       The most annoying thing about shopping is that in most cases you have to search for a particular
+       <ns type="RN">
+        <i>
+         stuff
+        </i>
+       </ns>
+       for a long time and visit several shops before you find something that suits you. Eventually, after long
+       <ns type="RN">
+        <i>
+         seeking
+        </i>
+       </ns>
+       you find a skirt you like. But it doesn't fit. You get really angry trying to find a bigger one but unfortunately this is the last one. And finally, after a few more hours, you buy the skirt of your dreams. And suddenly you notice the identical but cheaper one in the next shop.
+       <ns type="MD">
+        <i>
+         Accident
+        </i>
+       </ns>
+       like that can really make you livid. At last you come back home, carrying the most beautiful skirt in the whole town. You phone your friend to visit you and your friend
+       <ns type="AGV">
+        <i>
+         come
+        </i>
+       </ns>
+       , wearing
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       skirt not unlike the one you have just bought.
+      </p>
+      <p>
+       But that's
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       life. You can always go and buy a new one.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Most people enjoy shopping.
+       </s>
+       <s pid="1" sid="2">
+        But not me.
+       </s>
+       <s pid="1" sid="3">
+        I think shopping is hard, exhausting work, especially when you are trying to buy yourself some new clothes.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The most annoying thing about shopping is that in most cases you have to search for a particular stuff for a long time and visit several shops before you find something that suits you.
+       </s>
+       <s pid="2" sid="2">
+        Eventually, after long seeking you find a skirt you like.
+       </s>
+       <s pid="2" sid="3">
+        But it doesn't fit.
+       </s>
+       <s pid="2" sid="4">
+        You get really angry trying to find a bigger one but unfortunately this is the last one.
+       </s>
+       <s pid="2" sid="5">
+        And finally, after a few more hours, you buy the skirt of your dreams.
+       </s>
+       <s pid="2" sid="6">
+        And suddenly you notice the identical but cheaper one in the next shop.
+       </s>
+       <s pid="2" sid="7">
+        Accident like that can really make you livid.
+       </s>
+       <s pid="2" sid="8">
+        At last you come back home, carrying the most beautiful skirt in the whole town.
+       </s>
+       <s pid="2" sid="9">
+        You phone your friend to visit you and your friend come, wearing the skirt not unlike the one you have just bought.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        But that's the life.
+       </s>
+       <s pid="3" sid="2">
+        You can always go and buy a new one.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

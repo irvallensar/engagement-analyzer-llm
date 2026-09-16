@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       Thank you very much for your nice letter which informed me
+       <ns type="MC">
+       </ns>
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         to have
+        </i>
+       </ns>
+       won first prize in
+       <ns type="RD">
+        <i>
+         my
+        </i>
+       </ns>
+       competition.
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         I'am
+        </i>
+       </ns>
+       really
+       <ns type="RJ">
+        <i>
+         surprising
+        </i>
+       </ns>
+       and happy about it.
+      </p>
+      <p>
+       In your letter you
+       <ns type="R">
+        <i>
+         needed
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       some
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       about me. Unfortunately, I
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       only
+       <ns type="U">
+        <i>
+         the possibility
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to travel
+        </i>
+       </ns>
+       in July because in August I will start a new job for six months.
+       <ns type="CE">
+        I won't be free, however all July I am at home
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         accommodations
+        </i>
+       </ns>
+       at this camp, I would prefer
+       <ns type="RV">
+        <i>
+         being
+        </i>
+       </ns>
+       in a tent to
+       <ns type="RV">
+        <i>
+         being
+        </i>
+       </ns>
+       in a log cabin. It is more
+       <ns type="L">
+        <i>
+         amusing
+        </i>
+       </ns>
+       and
+       <ns type="RJ">
+        <i>
+         <ns type="FJ">
+          <i>
+           friendly
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . It will allow me to make friends more quickly.
+      </p>
+      <p>
+       Two of my
+       <ns type="RJ">
+        <i>
+         best
+        </i>
+       </ns>
+       activities are swimming and photography. The first one
+       <ns type="M">
+       </ns>
+       <ns type="R">
+        is a needless for me
+       </ns>
+       . I go
+       <ns type="W">
+        <i>
+         every day swimming
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       one
+       <ns type="RP">
+        <i>
+         Mile
+        </i>
+       </ns>
+       .
+       <ns type="UD">
+        <i>
+         The last
+        </i>
+       </ns>
+       summer I won a prize in
+       <ns type="W">
+        <i>
+         competition of swimming
+        </i>
+       </ns>
+       . The second
+       <ns type="R">
+        <i>
+         one
+        </i>
+       </ns>
+       is more
+       <ns type="MT">
+       </ns>
+       a hobby. I like
+       <ns type="FV">
+        <i>
+         go
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         in nature
+        </i>
+       </ns>
+       and
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         photography
+        </i>
+       </ns>
+       . I started
+       <ns type="UT">
+        <i>
+         it
+        </i>
+       </ns>
+       two months ago. I don't have any
+       <ns type="RN">
+        <i>
+         material
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Could you tell me if you
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       lend me some
+       <ns type="W">
+        <i>
+         <ns type="RN">
+          <i>
+           material
+          </i>
+         </ns>
+         for photography
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       What sort of clothes will I need for these two weeks?
+      </p>
+      <p>
+       How much money
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       I take with me?
+      </p>
+      <p>
+       I look forward to hearing from you soon.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+      <p>
+       Henri Devereux
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for your nice letter which informed me   to have won first prize in my competition.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I'am really surprising and happy about it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In your letter you needed  some informations about me.
+       </s>
+       <s pid="4" sid="2">
+        Unfortunately, I have only the possibility to travel in July because in August I will start a new job for six months.
+       </s>
+       <s pid="4" sid="3">
+        I won't be free, however all July I am at home.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For accommodations at this camp, I would prefer being in a tent to being in a log cabin.
+       </s>
+       <s pid="5" sid="2">
+        It is more amusing and friendly.
+       </s>
+       <s pid="5" sid="3">
+        It will allow me to make friends more quickly.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Two of my best activities are swimming and photography.
+       </s>
+       <s pid="6" sid="2">
+        The first one  is a needless for me.
+       </s>
+       <s pid="6" sid="3">
+        I go every day swimming  one Mile.
+       </s>
+       <s pid="6" sid="4">
+        The last summer I won a prize in competition of swimming.
+       </s>
+       <s pid="6" sid="5">
+        The second one is more  a hobby.
+       </s>
+       <s pid="6" sid="6">
+        I like go in nature and make photography.
+       </s>
+       <s pid="6" sid="7">
+        I started it two months ago.
+       </s>
+       <s pid="6" sid="8">
+        I don't have any material.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Could you tell me if you would lend me some material for photography?
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        What sort of clothes will I need for these two weeks?
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        How much money will I take with me?
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I look forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Henri Devereux
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       I'm so happy
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       the experience I
+       <ns type="RV">
+        <i>
+         lived
+        </i>
+       </ns>
+       last month.
+      </p>
+      <p>
+       I told you that I
+       <ns type="TV">
+        <i>
+         have helped
+        </i>
+       </ns>
+       at a pop concert last month.
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       was really great.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         Firstly
+        </i>
+       </ns>
+       I was
+       <ns type="RN">
+        <i>
+         designed
+        </i>
+       </ns>
+       to sell the tickets. I was
+       <ns type="RY">
+        <i>
+         already
+        </i>
+       </ns>
+       happy to help
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         such a big concert than the Mylene Farmer's concert
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I was starting to sell the tickets when
+       <ns type="R">
+        <i>
+         a person who organised
+        </i>
+       </ns>
+       told me to go into the
+       <ns type="RN">
+        <i>
+         lodge
+        </i>
+       </ns>
+       . They needed one person
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         putting
+        </i>
+       </ns>
+       the clothes into a wardrobe. It was the
+       <ns type="RN">
+        <i>
+         lodge
+        </i>
+       </ns>
+       of Mylene Farmer.
+       <ns type="ID">
+        <i>
+         Are you thinking
+        </i>
+       </ns>
+       ? I was so
+       <ns type="RJ">
+        <i>
+         exciting
+        </i>
+       </ns>
+       ! Unfortunately, I didn't see her but it allowed me to talk with her manager
+       <ns type="MP">
+       </ns>
+       John
+       <ns type="MP">
+       </ns>
+       and her musicians.
+       <ns type="MA">
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="RP">
+          <i>
+           All
+          </i>
+         </ns>
+         were
+        </i>
+       </ns>
+       very
+       <ns type="L">
+        <i>
+         kindly
+        </i>
+       </ns>
+       and pleasant. It was a big moment for me.
+       <ns type="UY">
+        <i>
+         Finally these
+        </i>
+       </ns>
+       people are like us, they
+       <ns type="W">
+        <i>
+         have just
+        </i>
+       </ns>
+       a special job with
+       <ns type="R">
+        special times
+       </ns>
+       .
+       <ns type="UD">
+        <i>
+         The next
+        </i>
+       </ns>
+       year, if it
+       <ns type="TV">
+        <i>
+         will be
+        </i>
+       </ns>
+       possible, I would like go back with you. They will organise
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       same
+       <ns type="W">
+        <i>
+         concert pop
+        </i>
+       </ns>
+       but with
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       singer. I look forward to hearing from you soon.
+      </p>
+      <p>
+       Love,
+      </p>
+      <p>
+       Henri
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm so happy with the experience I lived last month.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I told you that I have helped at a pop concert last month.
+       </s>
+       <s pid="3" sid="2">
+        I was really great.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly I was designed to sell the tickets.
+       </s>
+       <s pid="4" sid="2">
+        I was already happy to help in such a big concert than the Mylene Farmer's concert.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I was starting to sell the tickets when a person who organised told me to go into the lodge.
+       </s>
+       <s pid="5" sid="2">
+        They needed one person for putting the clothes into a wardrobe.
+       </s>
+       <s pid="5" sid="3">
+        It was the lodge of Mylene Farmer.
+       </s>
+       <s pid="5" sid="4">
+        Are you thinking?
+       </s>
+       <s pid="5" sid="5">
+        I was so exciting!
+       </s>
+       <s pid="5" sid="6">
+        Unfortunately, I didn't see her but it allowed me to talk with her manager John and her musicians.
+       </s>
+       <s pid="5" sid="7">
+        All were very kindly and pleasant.
+       </s>
+       <s pid="5" sid="8">
+        It was a big moment for me.
+       </s>
+       <s pid="5" sid="9">
+        Finally these people are like us, they have just a special job with special times.
+       </s>
+       <s pid="5" sid="10">
+        The next year, if it will be possible, I would like go back with you.
+       </s>
+       <s pid="5" sid="11">
+        They will organise a same concert pop but with an other singer.
+       </s>
+       <s pid="5" sid="12">
+        I look forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Love,
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Henri
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

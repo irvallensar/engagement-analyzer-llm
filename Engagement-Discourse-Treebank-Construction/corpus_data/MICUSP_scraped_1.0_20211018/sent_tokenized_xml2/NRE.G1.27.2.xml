@@ -1,0 +1,401 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Florida Panther Conservation
+     </div>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       Populations of Florida Panthers have been put under extreme stress as a result of human impacts.  Habitat fragmentation, busy highways, reduced habitat, and limiting immigration / emigration are just a few of the problems faced by the Panther.  The Panther populations have been in decline for……….., but there is hope for the populations.  Using conservation techniques, scientists can find ways to help the populations of the Florida panther increase in numbers and genetic diversity.  In order to better assist the Florida Panther, scientists must look at and understand it’s life history traits, including; survival rates, fecundity, age of maturation, age of first reproduction, and the age structure of the population.  In lab, we looked in-depth at each of these factors, and used them to find out how each factor affects the growth and decline of panther populations.  We also looked how the rate of population increase, expected number of replacements (the net reproductive rate), and elasticity effect the populations’ duration, and survival.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The Florida Panther, Puma puma concolor , is a large predatory cat which has an average length of around 7 ft.
+       </s>
+       <s pid="1" sid="2">
+        including the tail.
+       </s>
+       <s pid="1" sid="3">
+        Females weigh in general 35-45 kgs, while males are larger by about 15-20 kgs.
+       </s>
+       <s pid="1" sid="4">
+        The coat is generally dark brown, with light spots of darker brown, almost black markings.
+       </s>
+       <s pid="1" sid="5">
+        Small patches of white hair can be seen on front section of the body (head, and shoulders).
+       </s>
+       <s pid="1" sid="6">
+        Florida panthers used to have a range that included all of the Southeastern United States.
+       </s>
+       <s pid="1" sid="7">
+        Due to human interaction and development, range has been reduced to small isolated areas in southern Florida.
+       </s>
+       <s pid="1" sid="8">
+        The type of habitat that Florida panthers usually seek is a combination of forests and swamps, with heavy vegetation.
+       </s>
+       <s pid="1" sid="9">
+        A low reproduction rate is one of the reasons that Florida Panther is in need of conservation.
+       </s>
+       <s pid="1" sid="10">
+        With adults not becoming reproductively active until the second or third year of life, and parental care lasting one and a half years, reproduction rates are not fast enough to keep the present populations stable.
+       </s>
+       <s pid="1" sid="11">
+        With the long parental care time period, this forces female to breed only every other year, further decreasing the reproductive rate.
+       </s>
+       <s pid="1" sid="12">
+        The Florida Panthers have been on the endanger species list since 1973.
+       </s>
+       <s pid="1" sid="13">
+        Along with habitat reduction and fragmentation, other human impacts include hunting, and killing the panthers as to protect livestock. (1)
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Florida panthers genarlly live to be 3-5 years old, in the wild.
+       </s>
+       <s pid="2" sid="2">
+        For our simulation we only accounted for age classes of newborns, first year, second year, third year, and four year individuals.
+       </s>
+       <s pid="2" sid="3">
+        There was a record for five year old individuals, however in our simulation, no individuals ever survived to an age of five.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        With these numerous problems facing the declining populations of the Florida panther, action must be taken if we don’t want to lose this vital species.
+       </s>
+       <s pid="3" sid="2">
+        Many different conservation techniques could be used in order to try and strengthen the populations of the Florida panther.
+       </s>
+       <s pid="3" sid="3">
+        One method would be to try and connected the isolated populations of the Florida panther populations, in order to gain more cross breeding between sub populations, as well as give the panther more room to hunt, and gain less interaction with humans.
+       </s>
+       <s pid="3" sid="4">
+        This method would work, however given the tight hold that development has in Southern Florida, converting land back to panther habitat is not very likely.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Another method would be to bring in panthers from other regions to increase the number of panthers in Southern Florida.
+       </s>
+       <s pid="4" sid="2">
+        This would also increase the genetic diversity of the populations of the Florida panther, and strengthen the populations.
+       </s>
+       <s pid="4" sid="3">
+        As with the first method, importing panthers also has a downfall.
+       </s>
+       <s pid="4" sid="4">
+        Bringing in other non-Florida panthers would remove the pure Florida panther sub species, once outside genes were brought into the population through breeding.
+       </s>
+       <s pid="4" sid="5">
+        Losing the pure Florida panther species is a concern to many.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        In order to have these methods work more effectively in helping the Florida panther, we must understand it’s life history and how factors affect the population structure and stability.
+       </s>
+       <s pid="5" sid="2">
+        The life history of the Florida panther, for this particular lab, can be summarized in figure 1 below.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Figure 1. Life history of the Florida Panther for present lab
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        In figure 1, the values along the bottom are the survival rates of one year of age from the previous year (Px).
+       </s>
+       <s pid="7" sid="2">
+        For example the 0.8 between 1 and 2, show that the probability that a one year old panther will survive to be two years old is 80%.
+       </s>
+       <s pid="7" sid="3">
+        The curved lives near the top of the figure are the fecundity of each age class within the panther population (Fx).
+       </s>
+       <s pid="7" sid="4">
+        These numbers show how many offspring will be produced from that specific age class, per individual of that age class.
+       </s>
+       <s pid="7" sid="5">
+        For example the curved line from circle 3 to circle 0, shows that for every panther that is 3 years of age, 0.38 newborns will be produced.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        We can combine this information with the Florida panther’s life history traits, to better understand how to help increase the population.
+       </s>
+       <s pid="8" sid="2">
+        The Florida panther is a k-selected species, in that it is slow to evolve to changes in its environment, due to slow reproduction rates.
+       </s>
+       <s pid="8" sid="3">
+        As mentioned above, the slow breeding rates, and long term parental care, are two key examples of a k-selected species.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       METHODS
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        In the lab we used a Leslie Matrix to see how exactly changes in life history traits of the Florida panther will affect the populations stability.
+       </s>
+       <s pid="9" sid="2">
+        Using the numbers presented in figure one, we constructed the Leslie Matrix seen in table 1.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        Table 1. Leslie Matrix for the Florida Panther
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        The Leslie matrix was generated from the age, lx, mx, Px, and Fx values given to us at the beginning of the lab.
+       </s>
+       <s pid="11" sid="2">
+        The vector for this lab was set at each age group beginning with 25 indivduals.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        Using the present matrix as basis analysis was run and found values for r (rate of population increase)
+       </s>
+       <s pid="12" sid="2">
+        Ro (expected number of replacements) and T (generation time.)
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        Along with a basic analysis, a projection was also run.
+       </s>
+       <s pid="13" sid="2">
+        The projection was used to see how the population as a whole, and individual age classes would fluctuate during the next ten years.
+       </s>
+       <s pid="13" sid="3">
+        Each age class began with 25 individuals, and any numeral value under one, was considered to be extinct / removed from the population.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        Elasticity was also calculated using the values generated by the Leslie matrix.
+       </s>
+       <s pid="14" sid="2">
+        Elasticity, which is a values relative impact on the overall system, was calculated for each age class survivability (Px) and fecundity (Fx).
+       </s>
+       <s pid="14" sid="3">
+        The higher the elasticity of a value the more impact it will have on the entire system.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        The original Leslie matrix was used to generate basic analysis, projection, and elasticity values.
+       </s>
+       <s pid="15" sid="2">
+        Next the matrix was changed in one area, in this case P1, and the analysis was run again.
+       </s>
+       <s pid="15" sid="3">
+        For a third and final time, more numerical values were changed in the matrix, and the outcomes were viewed and compared to the first two trials.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       RESULTS
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        In using the original Leslie matrix (Table 1) we calculated the r value to be -0.37012, a Ro value of 0.353, and a T value of 2.8133.
+       </s>
+       <s pid="16" sid="2">
+        The projection for the population, starting with 25 individuals of each age group, found the population unstable.
+       </s>
+       <s pid="16" sid="3">
+        After ten years, no single age group had a concentration over 1, which indicated that all age groups, and therefore the population was extinct.
+       </s>
+       <s pid="16" sid="4">
+        The elasticity of the first analysis found the P1 and P2 values most elastic at values of .34 and .23.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        For our second analysis, the P1 value was changed from 0.5, to 0.8.
+       </s>
+       <s pid="17" sid="2">
+        For a real life example, this would mean that the survivability of newborns to first years had a slight increase.
+       </s>
+       <s pid="17" sid="3">
+        This small alteration of the Leslie matrix had an effect on the analysis, projection and elasticity, but was not significant.
+       </s>
+       <s pid="17" sid="4">
+        The r value was still negative at -0.206, the Ro value was 0.56, and the T value was decrease to 2.77.
+       </s>
+       <s pid="17" sid="5">
+        The elasticity was still greatest for the P1 and P2 values, at .35 and .22.
+       </s>
+       <s pid="17" sid="6">
+        The projection analysis was found to have higher numbers after the ten year period; however, the population was still unstable.
+       </s>
+       <s pid="17" sid="7">
+        As seen in table 2.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Table 2. Projection of Florida panther populations with an increased P1 value.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        After ten years the values are all above one, which indicates that individuals in all of the age classes are still alive.
+       </s>
+       <s pid="19" sid="2">
+        However, the values are not the same as the starting values, so the population is not stable.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        In the final analysis, a number of changes were made to the Leslie matrix.
+       </s>
+       <s pid="20" sid="2">
+        The F1 and F2 values were increased to 1.2, and the F3 value was increased to 0.8.
+       </s>
+       <s pid="20" sid="3">
+        The P2 value was increased to 1, the P3 value was increased to 1.2, and finally, the P4 value was increased to 0.8.
+       </s>
+       <s pid="20" sid="4">
+        These changes had a dramatic effect on the outcomes of the basic analysis, projection and the elasticity of the model.
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        In the basic analysis the r value had increased to a positive value of 0.18, the Ro value had increased to a value of 1.68, and the T value had increased to 2.87.
+       </s>
+       <s pid="21" sid="2">
+        In the projection the final population dynamics after ten years were found to stable, and growing at an accelerated rate.
+       </s>
+       <s pid="21" sid="3">
+        Beginning with 25 individuals in each age class, this number was increased to 308 individuals for newborns, 130 individuals for one year olds, 107 individuals for two year olds, 109 individuals for three year olds, and over 70 four year old panthers were present in the population.
+       </s>
+       <s pid="21" sid="4">
+        The elasticity had minimal change.
+       </s>
+       <s pid="21" sid="5">
+        The elasticity of P1 was 0.35, P2 was found to be 0.21, and the elasticity for the fecundity values were all between 0.14 and 0.82.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       DISCUSSION
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        In the first two trials the population was found to be unstable, simply because the starting age structure was not represented after the ten year projection.
+       </s>
+       <s pid="22" sid="2">
+        After ten years, the entire population in the first trial was extinct.
+       </s>
+       <s pid="22" sid="3">
+        In the second trial, with the increased P1 value, after ten years, individuals of each age class were still present, but in lower numbers.
+       </s>
+       <s pid="22" sid="4">
+        The drop in the numbers in individuals in every age class suggests that the population is unstable, and will become extinct eventually; it will just take longer than the ten year projection.
+       </s>
+       <s pid="22" sid="5">
+        It was interesting to see how such a small adjustment in the life history make-up of the Florida panther could have such an effect on the population dynamics.
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        In the third trial, the small increases in the Leslie matrix, had a huge affect on the population dynamics.
+       </s>
+       <s pid="23" sid="2">
+        The small changes made to the Px and Fx values, allowed the population to increase to nearly exponential levels.
+       </s>
+       <s pid="23" sid="3">
+        With the adjustments made to the matrix we overshot the goal of attaining a stable population.
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        With one of our trials falling short of a stable population, and the final trial overshooting a stable population, we have a general idea of where the life history trait values need to be to achive a stable population.
+       </s>
+       <s pid="24" sid="2">
+        It would be only a matter of time, and trials, before a stable population could be simulated, using the Leslie matrix.
+       </s>
+       <s pid="24" sid="3">
+        Once survival and fecundity values of a stable population were found, then this would give us values to achieve in the real population.
+       </s>
+       <s pid="24" sid="4">
+        We can influence the fecundity and survivorship values of a population by using conservation techniques, to help raise the values, to support a stable population.
+       </s>
+       <s pid="24" sid="5">
+        This is how we can use the Leslie matrix, and other tools, to help us conserve populations of endangered species to help preserve the fragile populations.
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        If I had sole control over how to save the Florida panther, I would try and connect the isolated populations, in order to achieve one, larger, more diverse, population.
+       </s>
+       <s pid="25" sid="2">
+        I realize that this would take a huge cooperation with land owners in Southern Florida, and would definitely decrease profits for industries, and reduce the amount of land available for development.
+       </s>
+       <s pid="25" sid="3">
+        As well as turn massive amounts of developed land, back into useable panther habitat.
+       </s>
+       <s pid="25" sid="4">
+        In increasing the habitat available, and increasing the gene exchange between populations, a stronger single population will be built, and will have a much better chance of being stable.
+       </s>
+       <s pid="25" sid="5">
+        This tactic would also keep the Florida panther sub species a pure species, by not bringing in individuals from other sub species of panther to aid the failing populations of the Florida panther.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Literature Cited
+      </div>
+      <ul id="N1017A">
+       <li id="N1017B">
+        1. Myers, P. et al. The Animal Diversity Web (online) 2006. National Science Foundation, University of Michigan Museum of Zoology. 2006 http://animaldiversity.ummz.umich.edu/site/index.html
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam:
+      </p>
+      <p>
+       I'm writing this letter to complain about some aspects of the musical show "Over the rainbow"
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       was
+       <ns type="RV">
+        <i>
+         held
+        </i>
+       </ns>
+       in your theatre. It was a very disappointing evening so I ask for my money back.
+      </p>
+      <p>
+       The first problem we had was that the discounts announced in the advertisement were not available and we had to pay the full
+       <ns type="RN">
+        <i>
+         ticket
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Another problem was that the show started 45 minutes late and I had a surprise when I saw that the main character was not played by Danny Brook, who is one of my favourite actors.
+      </p>
+      <p>
+       Finally I want to complain about the theatre restaurant. We read that we could visit it after the show but it was closed because the waiters were on strike.
+      </p>
+      <p>
+       I think that all these problems could have been avoided and that asking
+       <ns type="MT">
+       </ns>
+       my money back is the best way of forgetting that evening.
+      </p>
+      <p>
+       Yours
+       <ns type="DY">
+        <i>
+         sincerelly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing this letter to complain about some aspects of the musical show "Over the rainbow" that was held in your theatre.
+       </s>
+       <s pid="2" sid="2">
+        It was a very disappointing evening so I ask for my money back.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The first problem we had was that the discounts announced in the advertisement were not available and we had to pay the full ticket.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Another problem was that the show started 45 minutes late and I had a surprise when I saw that the main character was not played by Danny Brook, who is one of my favourite actors.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally I want to complain about the theatre restaurant.
+       </s>
+       <s pid="5" sid="2">
+        We read that we could visit it after the show but it was closed because the waiters were on strike.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I think that all these problems could have been avoided and that asking  my money back is the best way of forgetting that evening.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerelly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Fashion news
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       followed by lots of people.
+      </p>
+      <p>
+       We want to know what we will have to wear next year but we want to know it now. But have you thought about what kind of clothes we will wear 100 years from now?
+      </p>
+      <p>
+       People have always looked for the most comfortable clothes for
+       <ns type="DD">
+        <i>
+         they
+        </i>
+       </ns>
+       daily
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       . I think that this
+       <ns type="S">
+        <i>
+         tendence
+        </i>
+       </ns>
+       will not change but what will change is life. We tend to
+       <ns type="MV">
+       </ns>
+       a society that wants more free time so people will need more comfortable clothes to enjoy it.
+      </p>
+      <p>
+       Another important thing will be the use of technology. Scientists are looking for new materials that will
+       <ns type="FV">
+        <i>
+         made
+        </i>
+       </ns>
+       our clothes more comfortable
+       <ns type="MC">
+       </ns>
+       stronger. Clothes will have a strong relation to the new technologies
+       <ns type="MP">
+       </ns>
+       and modern devices will be included in our
+       <ns type="RJ">
+        <i>
+         daily
+        </i>
+       </ns>
+       clothes.
+      </p>
+      <p>
+       Fashion reflects the way we live so we can expect that fashion will be connected
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       technology and society.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Fashion news are followed by lots of people.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        We want to know what we will have to wear next year but we want to know it now.
+       </s>
+       <s pid="2" sid="2">
+        But have you thought about what kind of clothes we will wear 100 years from now?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        People have always looked for the most comfortable clothes for they daily life.
+       </s>
+       <s pid="3" sid="2">
+        I think that this tendence will not change but what will change is life.
+       </s>
+       <s pid="3" sid="3">
+        We tend to  a society that wants more free time so people will need more comfortable clothes to enjoy it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Another important thing will be the use of technology.
+       </s>
+       <s pid="4" sid="2">
+        Scientists are looking for new materials that will made our clothes more comfortable  stronger.
+       </s>
+       <s pid="4" sid="3">
+        Clothes will have a strong relation to the new technologies and modern devices will be included in our daily clothes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Fashion reflects the way we live so we can expect that fashion will be connected with technology and society.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

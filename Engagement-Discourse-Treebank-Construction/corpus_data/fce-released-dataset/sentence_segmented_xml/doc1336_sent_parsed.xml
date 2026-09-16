@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       Thank you for your letter. I'm very happy that I have won.
+      </p>
+      <p>
+       You ask me when I would like to travel? I can travel only in July because I
+       <ns type="W">
+        <i>
+         have
+         <ns type="MD">
+         </ns>
+         <ns type="AGN">
+          <i>
+           holidays
+          </i>
+         </ns>
+         from my work only
+        </i>
+       </ns>
+       in this month. So it would be very nice
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       if
+       <ns type="RA">
+        <i>
+         it's
+        </i>
+       </ns>
+       possible.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         By
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         <ns type="S">
+          <i>
+           Accomodation
+          </i>
+         </ns>
+        </i>
+       </ns>
+       at the
+       <ns type="RP">
+        <i>
+         Camp
+        </i>
+       </ns>
+       , I would prefer the tents, because it is something different
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       you don't
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Then the activities that I would like to do are
+       <ns type="RP">
+        <i>
+         Singing
+        </i>
+       </ns>
+       and
+       <ns type="RP">
+        <i>
+         Swimming
+        </i>
+       </ns>
+       .
+       <ns type="M">
+        <i>
+         Singing
+        </i>
+       </ns>
+       because it's my favourite hobby and I grew up with it and
+       <ns type="RP">
+        <i>
+         Swimming
+        </i>
+       </ns>
+       because I like water and the feeling that you have when you are in it. Another reason for
+       <ns type="MV">
+       </ns>
+       swimming is that I'm good at it because a few years ago I had lessons, where I
+       <ns type="TV">
+        <i>
+         learn
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         very
+         <ns type="DY">
+          <i>
+           good
+          </i>
+         </ns>
+         <ns type="FV">
+          <i>
+           swimming
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="DY">
+        <i>
+         Finaly
+        </i>
+       </ns>
+       I've got a question: What clothes must I bring with me and how much money?
+      </p>
+      <p>
+       I'm looking forward
+       <ns type="MT">
+       </ns>
+       hearing from you.
+      </p>
+      <p>
+       yours
+       <ns type="DY">
+        <i>
+         faithfuly
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I'm very happy that I have won.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        You ask me when I would like to travel?
+       </s>
+       <s pid="3" sid="2">
+        I can travel only in July because I have  holidays from my work only in this month.
+       </s>
+       <s pid="3" sid="3">
+        So it would be very nice, if it's possible.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        By the Accomodation at the Camp, I would prefer the tents, because it is something different wich you don't make everyday!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Then the activities that I would like to do are Singing and Swimming.
+       </s>
+       <s pid="5" sid="2">
+        Singing because it's my favourite hobby and I grew up with it and Swimming because I like water and the feeling that you have when you are in it.
+       </s>
+       <s pid="5" sid="3">
+        Another reason for  swimming is that I'm good at it because a few years ago I had lessons, where I learn very good swimming.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finaly I've got a question:
+       </s>
+       <s pid="6" sid="2">
+        What clothes must I bring with me and how much money?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm looking forward  hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        yours faithfuly,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Everybody likes shopping!
+       <ns type="FV">
+        <i>
+         To look
+        </i>
+       </ns>
+       for clothes and shoes is for every
+       <ns type="AGN">
+        <i>
+         women
+        </i>
+       </ns>
+       one of
+       <ns type="AGD">
+        <i>
+         their
+        </i>
+       </ns>
+       favourite
+       <ns type="AGN">
+        <i>
+         hobby
+        </i>
+       </ns>
+       and if it were possible
+       <ns type="AGA">
+        <i>
+         they
+        </i>
+       </ns>
+       would stay
+       <ns type="W">
+        <i>
+         the whole day in the shopping-centre
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       But shopping isn't always enjoyable.
+      </p>
+      <p>
+       Sometimes it isn't so easy to find what you need. For example: you
+       <ns type="R">
+        have in your memory
+       </ns>
+       a great pair of shoes that you
+       <ns type="TV">
+        <i>
+         have seen
+        </i>
+       </ns>
+       last week in a shop. Now you
+       <ns type="RV">
+        <i>
+         will
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         <ns type="SX">
+          <i>
+           by
+          </i>
+         </ns>
+        </i>
+       </ns>
+       it but it's nowhere to
+       <ns type="TV">
+        <i>
+         find
+        </i>
+       </ns>
+       ! That's a pity!
+      </p>
+      <p>
+       Sometimes it's
+       <ns type="RY">
+        <i>
+         very
+        </i>
+       </ns>
+       awful when you have to wait
+       <ns type="MD">
+       </ns>
+       very long
+       <ns type="MN">
+       </ns>
+       until it's your turn to pay or to try some clothes on.
+      </p>
+      <p>
+       Another thing that makes you
+       <ns type="S">
+        <i>
+         fourious
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       is when you see a great shirt in
+       <ns type="MD">
+       </ns>
+       shop and somebody else
+       <ns type="AGV">
+        <i>
+         take
+        </i>
+       </ns>
+       it away or
+       <ns type="AGV">
+        <i>
+         buy
+        </i>
+       </ns>
+       it before you can react.
+       <ns type="AGD">
+        <i>
+         That
+        </i>
+       </ns>
+       things
+       <ns type="TV">
+        <i>
+         had
+         <ns type="IV">
+          <i>
+           happend
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to everybody,
+       <ns type="RV">
+        <i>
+         hadn't
+        </i>
+       </ns>
+       they?
+      </p>
+      <p>
+       So you see that shopping isn't always enjoyable.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Everybody likes shopping!
+       </s>
+       <s pid="1" sid="2">
+        To look for clothes and shoes is for every women one of their favourite hobby and if it were possible they would stay the whole day in the shopping-centre.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        But shopping isn't always enjoyable.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Sometimes it isn't so easy to find what you need.
+       </s>
+       <s pid="3" sid="2">
+        For example: you have in your memory a great pair of shoes that you have seen last week in a shop.
+       </s>
+       <s pid="3" sid="3">
+        Now you will by it but it's nowhere to find!
+       </s>
+       <s pid="3" sid="4">
+        That's a pity!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Sometimes it's very awful when you have to wait  very long  until it's your turn to pay or to try some clothes on.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Another thing that makes you fourious, is when you see a great shirt in  shop and somebody else take it away or buy it before you can react.
+       </s>
+       <s pid="5" sid="2">
+        That things had happend to everybody, hadn't they?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        So you see that shopping isn't always enjoyable.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

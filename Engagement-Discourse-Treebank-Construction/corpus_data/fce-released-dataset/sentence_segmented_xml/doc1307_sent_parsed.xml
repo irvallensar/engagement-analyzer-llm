@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Turkish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       To the manager of the Circle Theatre.
+      </p>
+      <p>
+       I am PINAR xxx. One week ago I watched your show. I was
+       <ns type="RY">
+        <i>
+         so
+        </i>
+       </ns>
+       disappointed because I didn't find what I
+       <ns type="TV">
+        <i>
+         expect
+        </i>
+       </ns>
+       at your show.
+      </p>
+      <p>
+       The first thing that
+       <ns type="TV">
+        <i>
+         <ns type="S">
+          <i>
+           dissapoint
+          </i>
+         </ns>
+        </i>
+       </ns>
+       me was the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       . I expected to see Danny Brook because
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the paper that you
+       <ns type="TV">
+        <i>
+         have given
+        </i>
+       </ns>
+       to me it
+       <ns type="TV">
+        <i>
+         wrote
+        </i>
+       </ns>
+       that Danny Brook
+       <ns type="TV">
+        <i>
+         came
+        </i>
+       </ns>
+       but there was a different actor. Then you wrote that it
+       <ns type="TV">
+        <i>
+         start
+        </i>
+       </ns>
+       at 19.30 but it started at 20:15. You wrote that discounts
+       <ns type="MV">
+       </ns>
+       available but they
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       not available. You wrote
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       "visit our restaurant after the show" so I didn't eat my supper, to eat at your restaurant
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       but the
+       <ns type="S">
+        <i>
+         reastaurant
+        </i>
+       </ns>
+       was closed because the show started
+       <ns type="MT">
+       </ns>
+       20:15 and
+       <ns type="S">
+        <i>
+         finissed
+        </i>
+       </ns>
+       at 00.15 and the restaurant was
+       <ns type="DJ">
+        <i>
+         opened
+        </i>
+       </ns>
+       until 00.00. Finally you wrote that
+       <ns type="M">
+       </ns>
+       "your perfect evening out" but after all
+       <ns type="AGD">
+        <i>
+         this
+        </i>
+       </ns>
+       problems how would you expect
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       to have a perfect evening out
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       After all
+       <ns type="AGD">
+        <i>
+         this
+        </i>
+       </ns>
+       problems I became
+       <ns type="S">
+        <i>
+         dissappointed
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       was only a
+       <ns type="MP">
+        <i>
+         week
+        </i>
+       </ns>
+       holiday in London. If you
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       give me some of my money back that would be a great
+       <ns type="RN">
+        <i>
+         excuse
+        </i>
+       </ns>
+       for the
+       <ns type="RN">
+        <i>
+         loss
+        </i>
+       </ns>
+       of time and my
+       <ns type="DN">
+        <i>
+         <ns type="S">
+          <i>
+           dissopointness
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To the manager of the Circle Theatre.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am PINAR xxx.
+       </s>
+       <s pid="2" sid="2">
+        One week ago I watched your show.
+       </s>
+       <s pid="2" sid="3">
+        I was so disappointed because I didn't find what I expect at your show.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The first thing that dissapoint me was the starring.
+       </s>
+       <s pid="3" sid="2">
+        I expected to see Danny Brook because at the paper that you have given to me it wrote that Danny Brook came but there was a different actor.
+       </s>
+       <s pid="3" sid="3">
+        Then you wrote that it start at 19.30 but it started at 20:15.
+       </s>
+       <s pid="3" sid="4">
+        You wrote that discounts  available but they are not available.
+       </s>
+       <s pid="3" sid="5">
+        You wrote that "visit our restaurant after the show" so I didn't eat my supper, to eat at your restaurant.
+       </s>
+       <s pid="3" sid="6">
+        but the reastaurant was closed because the show started  20:15 and finissed at 00.15 and the restaurant was opened until 00.00.
+       </s>
+       <s pid="3" sid="7">
+        Finally you wrote that  "your perfect evening out" but after all this problems how would you expect the to have a perfect evening out.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After all this problems I became dissappointed.
+       </s>
+       <s pid="4" sid="2">
+        Because that was only a week holiday in London.
+       </s>
+       <s pid="4" sid="3">
+        If you would give me some of my money back that would be a great excuse for the loss of time and my dissopointness.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't good at keeping secrets. I
+       <ns type="TV">
+        <i>
+         know
+        </i>
+       </ns>
+       that before but I thought that he
+       <ns type="TV">
+        <i>
+         may
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         change
+        </i>
+       </ns>
+       . I trusted him and told
+       <ns type="MA">
+       </ns>
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         reality
+        </i>
+       </ns>
+       . It was about Marine, who was our
+       <ns type="S">
+        <i>
+         clase
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         friends
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The reality was
+       <ns type="MC">
+       </ns>
+       Marine's parents
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       not her real parents, they found her in their
+       <ns type="MP">
+        <i>
+         houses
+        </i>
+       </ns>
+       garden. They
+       <ns type="TV">
+        <i>
+         try
+        </i>
+       </ns>
+       so many things to find her family
+       <ns type="MP">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         one
+        </i>
+       </ns>
+       year they did everything to find her family but they couldn't find
+       <ns type="MA">
+       </ns>
+       . In this one year they
+       <ns type="TV">
+        <i>
+         spend
+        </i>
+       </ns>
+       most of their time with Marine and they loved her so much and they
+       <ns type="TV">
+        <i>
+         want
+        </i>
+       </ns>
+       to be her parents. When Marine was three years old a man came to their house and
+       <ns type="SX">
+        <i>
+         sad
+        </i>
+       </ns>
+       that he
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       Marine's father and
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         <ns type="SX">
+          <i>
+           wont
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to take her
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       and he added that he
+       <ns type="TV">
+        <i>
+         leave
+        </i>
+       </ns>
+       Marine because her mother
+       <ns type="TV">
+        <i>
+         was dead
+        </i>
+       </ns>
+       two days after Marine's birth
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       and the police thought Marine's father did this so they put him
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       prison
+       <ns type="MP">
+        <i>
+         he
+        </i>
+       </ns>
+       had nobody that he
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       give
+       <ns type="RP">
+        <i>
+         marry
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       so he
+       <ns type="TV">
+        <i>
+         leave
+        </i>
+       </ns>
+       her
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       their garden.
+       <ns type="UD">
+        <i>
+         The
+        </i>
+       </ns>
+       Marine's real father
+       <ns type="TV">
+        <i>
+         want
+        </i>
+       </ns>
+       her back but the other
+       <ns type="AGN">
+        <i>
+         <ns type="S">
+          <i>
+           cuples
+          </i>
+         </ns>
+        </i>
+       </ns>
+       didn't want to give her
+       <ns type="MY">
+       </ns>
+       because they loved Marine so much. They
+       <ns type="TV">
+        <i>
+         give
+        </i>
+       </ns>
+       a lot of money to Marine's real father to
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       her. After that Marine's father
+       <ns type="TV">
+        <i>
+         take
+        </i>
+       </ns>
+       the money &amp; left her. The
+       <ns type="FN">
+        <i>
+         <ns type="S">
+          <i>
+           cuples
+          </i>
+         </ns>
+        </i>
+       </ns>
+       couldn't
+       <ns type="RV">
+        <i>
+         say
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         reality
+        </i>
+       </ns>
+       to Marine because they were afraid of losing her.
+      </p>
+      <p>
+       After I told
+       <ns type="W">
+        <i>
+         the
+         <ns type="RN">
+          <i>
+           reality
+          </i>
+         </ns>
+         <ns type="UD">
+          <i>
+           the
+          </i>
+         </ns>
+         Pat
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       Pat said this
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       Marine. Marine said to Pat
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       "I
+       <ns type="TV">
+        <i>
+         had
+         <ns type="IV">
+          <i>
+           knowed
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that because I
+       <ns type="TV">
+        <i>
+         talked
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       my real father every month but my parents
+       <ns type="AGV">
+        <i>
+         doesn't
+        </i>
+       </ns>
+       know that because I am waiting for them to
+       <ns type="RV">
+        <i>
+         say
+        </i>
+       </ns>
+       me the
+       <ns type="RN">
+        <i>
+         reality
+        </i>
+       </ns>
+       ".
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        I know that before but I thought that he may change.
+       </s>
+       <s pid="1" sid="4">
+        I trusted him and told  about the reality.
+       </s>
+       <s pid="1" sid="5">
+        It was about Marine, who was our clase friends.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The reality was  Marine's parents are not her real parents, they found her in their houses garden.
+       </s>
+       <s pid="2" sid="2">
+        They try so many things to find her family for one year they did everything to find her family but they couldn't find .
+       </s>
+       <s pid="2" sid="3">
+        In this one year they spend most of their time with Marine and they loved her so much and they want to be her parents.
+       </s>
+       <s pid="2" sid="4">
+        When Marine was three years old a man came to their house and sad that he is Marine's father and  wont to take her.
+       </s>
+       <s pid="2" sid="5">
+        and he added that he leave Marine because her mother was dead two days after Marine's birth.
+       </s>
+       <s pid="2" sid="6">
+        and the police thought Marine's father did this so they put him on prison he had nobody that he can give marry  so he leave her on their garden.
+       </s>
+       <s pid="2" sid="7">
+        The Marine's real father want her back but the other cuples didn't want to give her  because they loved Marine so much.
+       </s>
+       <s pid="2" sid="8">
+        They give a lot of money to Marine's real father to take her.
+       </s>
+       <s pid="2" sid="9">
+        After that Marine's father take the money &amp; left her.
+       </s>
+       <s pid="2" sid="10">
+        The cuples couldn't say the reality to Marine because they were afraid of losing her.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        After I told the reality the Pat.
+       </s>
+       <s pid="3" sid="2">
+        Pat said this the Marine.
+       </s>
+       <s pid="3" sid="3">
+        Marine said to Pat that "I had knowed that because I talked with my real father every month but my parents doesn't know that because I am waiting for them to say me the reality".
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

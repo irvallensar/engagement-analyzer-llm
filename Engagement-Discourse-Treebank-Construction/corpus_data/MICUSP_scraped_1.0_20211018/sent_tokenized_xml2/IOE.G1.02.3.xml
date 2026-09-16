@@ -1,0 +1,681 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Hand Grip Force and Coefficient of Friction with Different Materials and Conditions
+     </div>
+     <p>
+     </p>
+     <div>
+      Table of Contents
+      <p>
+       Page #
+      </p>
+      <p>
+       Abstract    ………………………………………………………………………..
+      </p>
+      <p>
+       2
+      </p>
+      <p>
+       1. Introduction   …………………………………………………………...……..
+      </p>
+      <p>
+       3
+      </p>
+      <p>
+       2. Comparison   ………………………………………………………………….
+      </p>
+      <p>
+       4
+      </p>
+      <p>
+       2.1. Modification / Confirmation  …………………………………….....             4
+      </p>
+      <p>
+       2.2. Different Objectives ……………………………………...................             8
+      </p>
+      <p>
+       2.3 Contradiction	……………………………………………………	       10
+      </p>
+      <p>
+       3. Discussion   ………...…………………………………………………………
+      </p>
+      <p>
+       12
+      </p>
+      <p>
+       4. Reference   ……………………………………………………………………
+      </p>
+      <p>
+       14
+      </p>
+     </div>
+     <div class="abstract">
+      Abstract
+      <p>
+       Friction is an important factor of workers' ability to grasp and manipulate work objects and their risks of developing work related musculoskeletal disorders (MSDs), since poor friction conditions require greater grip force to prevent slipping of objects, and repetitive forceful exertions, common in industries, are well known as the cause of MSDs. Four laboratory studies were selected to examine the relationship between friction, load force, and grip force, with consideration of anesthesia or moistness. These papers provided important insights to the relation between work force exertions on MSDs.
+      </p>
+      <p>
+       That the grip force is affected by the previous friction condition is important, because lifting an object with an unexpected friction condition may cause slipping. It was observed in Westling and Johansson (1984) and was more investigated to find the adaptation of force coordination to friction condition changes between fingers and an object in their second paper, Johansson and Westling (1984). However, they found the adaptation of force coordination to surface structure was lost under anesthesia of finger skin, which would enable to anticipate the effect of hand vibration and low temperature on grip force adjustment. Sweat and moist condition is also an important factor in friction condition and hand tool design, since workers' hands are rarely sweat free and moistness can cause a poor friction condition in handles that can contribute to MSDs. The variation of coefficient of friction (µ) due to sweat was detected in Westling and Johansson's two studies and was investigated as an independent factor in Buchholz et al (1988). Moreover, overexertion (safety margin), lifting an object with unnecessarily high grip force, which would also contribute to MSDs, was investigated in Westling and Johansson's two papers and Frederick and Armstrong (1995).
+      </p>
+      <p>
+       Westling and Johansson's two papers, published in Experimental Brain Research, focused on motor controls, whereas Buchholz et al (1988) and Frederick and Armstrong (1995), published in Ergonomics, concerned with analysis and design of work. Thus, Westling and Johansson varied materials as a way to study motor control, whereas Buchholz et al and Frederick and Armstrong varied materials to study friction as a primary objective.
+      </p>
+      <p>
+       Even though all four papers looked at the same topic, not every finding was agreed. The observed grip forces for aluminum in Frederick and Armstrong (1995) were 20% lower than the minimum grip forces predicted with μ from Buchholz et al (1988), which can be due to the high standard deviations, variation in μ between subjects' fingers, different washing condition, different sweating rates, or different contact area. In addition, the effect of friction condition on grip force was found in Westling and Johansson's two studies, whereas Frederick and Armstrong (1995) found subjects were not sensitive to friction effects at the overlapped range, which can be due to different tasks (static vs. dynamic), extra pinch force capacity availability, or different contact area.
+      </p>
+      <p>
+       Overall, important factors to determine friction condition and grip force were covered in four papers, suggesting controls of materials and environment in work place to prevent MSDs. Also, it was realized that different hypothesis and different design of experiment could result in a huge differences in findings. Study trend from investigating genuine phenomena and static tasks to applied simulation and dynamic tasks were observed.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1. Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Friction is an important factor of workers' ability to grasp and manipulate work objects and their risks of developing work related musculoskeletal disorders (MSDs).
+       </s>
+       <s pid="1" sid="2">
+        Poor friction conditions, i.e., a slippery surface, require greater grip force to produce the same amount of push force than moderate conditions, as illustrated in Figure 1.
+       </s>
+       <s pid="1" sid="3">
+        Since repetitive forceful exertions are well known as the cause of MSDs, poor friction conditions that cause high force demanding jobs, especially in the industry where workers have to perform same tasks repetitively for a prolonged time, can be a major factor of MSDs as well as cumulative trauma disorders (CTDs).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        Figure 1: Grip force and push force
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Four papers were selected to examine the relationship between friction, load force, and grip force.
+       </s>
+       <s pid="3" sid="2">
+        These papers came from two different bodies of the literature.
+       </s>
+       <s pid="3" sid="3">
+        Westling and Johansson's two papers were published in Experimental Brain Research, and focused on basic motor controls, whereas the Frederick and Buchholz papers were published in Ergonomics and concerned with analysis and design of work.
+       </s>
+       <s pid="3" sid="4">
+        Together these papers provided important insights to the relation between work force exertions on MSDs.
+       </s>
+       <s pid="3" sid="5">
+        Specific factors considered included weight of an object, surface structures, previous friction conditions, anesthesia, static and dynamic load force changes, hand moistness, and grip force as well as slip force.
+       </s>
+       <s pid="3" sid="6">
+        Laboratory experiments were conducted for all four papers, to investigate the effect of each factor.
+       </s>
+       <s pid="3" sid="7">
+        All four studies included sandpaper and aluminum in common in their experiments.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        The four studies were based on Amontons' law of friction; the coefficient of friction (μ) did not vary appreciably with a load force for load forces greater than 1N, illustrated in Figure 2.
+       </s>
+       <s pid="4" sid="2">
+        Also, they took into account the finding by Comaish and Bottoms (1971) that the normal force had the greatest effect on the coefficient of friction, μ, when normal forces were below 3N, due to the visco-elastic nature of skin.
+       </s>
+       <s pid="4" sid="3">
+        Based on the previous studies, some of which are known as principles, the four papers had the same rationale that the grip force or the slip force (minimum required grip force to prevent slip) would vary with different conditions such as materials, load force, and skin properties.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        Figure 2: Amonton's law of friction
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        They found interesting interactions between those different conditions and grip and slip force.
+       </s>
+       <s pid="6" sid="2">
+        However, as they investigated it with different objectives and different methods, some findings were consistent and some were not, which will be discussed in this paper.
+       </s>
+       <s pid="6" sid="3">
+        Furthermore, further findings from updates of experimental designs will be discussed, as well as lessons learned from comparing the four relevant papers.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2. Comparison
+      </div>
+      <div>
+       <div class="head_2">
+        2.1. Modification / Confirmation
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         Modifications of the design of experiments and analysis from each other were discovered from the four papers as follows.
+        </s>
+        <s pid="7" sid="2">
+         From the study by Westling and Johansson (1984), it was found that the grip force was affected by the previous frictional condition;
+        </s>
+        <s pid="7" sid="3">
+         The safety margin significantly increased from 45% to 60% (p &amp;lt; .02) for the test with a sandpaper with a preceding test with silk, compared to the test with a sandpaper with a preceding test with a sandpaper, as shown in Figure 3.
+        </s>
+        <s pid="7" sid="4">
+         It means the grip force for a sandpaper right after a test with a silk was greater than the one after with a sandpaper.
+        </s>
+        <s pid="7" sid="5">
+         Therefore, in their second study, Johansson and Westling (1984), when they investigated the different grip force for different surface structures, only trials whose previous trials were carried out using the same surface structure were analyzed to avoid an effect from previous friction condition.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="8" sid="1">
+         Figure 3: Influence of the previous frictional condition on relative safety margin
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         The finding that the previous friction condition affected the grip force suggested the existence of memory trace , which was strengthened with more supportive findings in Westling and Johansson's second paper.
+        </s>
+        <s pid="9" sid="2">
+         The observations that the force coordination was maintained as the previous during anesthesia, that the force coordination during preload phase (from the moment when the index finger and thumb first touched the object, while the grip force was increasing, until the load force started to increase) was influenced by a previous friction condition, and that the new force coordination, following slips, was preserved elucidated the existence and the role of memory trace in their second paper.
+        </s>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         The additional supportive and new findings were allowed partly by the modification of the experiment device to add an accelerometer that recorded vibration in the object caused by secondary adjustment and latency.
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         Along with the memory trace, the influence of the previous friction condition also suggested the adaptation of force coordination to the changes in the frictional condition, as shown in Figure 4; Regardless of the current friction condition, the grip force development during the preload phase was as same as the previous trial.
+        </s>
+        <s pid="11" sid="2">
+         However, during the loading phase (after preload phase, during the parallel increase of grip force and load force, until the object started to move), adjustment of force was observed, but, since the force build-up was late, it was not enough to reach the same grip force as the one with a preceding test of a same material.
+        </s>
+        <s pid="11" sid="3">
+         The hypothesis that it was friction rather than the texture of the surface that was accounted for the adjustment of the grip force (or motor coordination) was proven by the observation that the grip force was adjusted to the slip force, even with large variations in slip force between trials with the same surface structure in Westling and Johansson (1984), which was strengthened by the additional observation in their pilot study that, when the lifting task was performed before and after washing hands, where skin got less adhesive and less frictional after washing, the grip force coordination clearly adapted to these changes for the same surface structure.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         Figure 4: Adjustment to changes in friction
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         The finding of the adaptation of force coordination was possible, in Westling and Johansson's second study, by dividing the time course of a lifting trial into more detail phases as shown in Figure 5, then by examining the preload and the loading phase for trials carried out subsequent to a change of the surface structure compared with corresponding trials not preceded by such a change.
+        </s>
+        <s pid="13" sid="2">
+         From the time course of lifting trials in their first study, it was found out that the grip force and the load force increased in parallel right before the object was actually lifted, the peak force occurred right after the object movement, then, one second later, static phase was maintained.
+        </s>
+        <s pid="13" sid="3">
+         Frederick and Armstrong (1995) also tried timing, not dividing the task into detail phases, but measuring the whole cycle of the task.
+        </s>
+        <s pid="13" sid="4">
+         Unfortunately their timing analysis was not lead to a significant conclusion, possibly because the test was with self-paced speed rather than with a specific instruction such as "as soon as possible."
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="14" sid="1">
+         Figure 5: Load force, grip force, position, and ratio as a function of time
+        </s>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         It is important to understand the memory trace or the influence of the previous or "remembered" friction condition, because, when a worker lifts an object with a different friction condition which they have not experienced or expected, i.e., when lifting an object wrapped with silk after lifting continuously sandpaper-surfaced objects, it is likely to fail lifting the object, which may cause an accident.
+        </s>
+        <s pid="15" sid="2">
+         In spite of the adaptation of the force coordination, since it was observed that grip force still did not reach the level with preceding tests with a same material, it is very possible to slip.
+        </s>
+       </p>
+       <p>
+        <s pid="16" sid="1">
+         The finger anesthesia in Westling and Johansson's two studies that supported memory trace also suggests an importance of a force feedback, since it was observed that the anesthesia of fingers caused lost appropriate adjustment of the grip force to surface structure changes, which caused slipping.
+        </s>
+        <s pid="16" sid="2">
+         It was found out that the adjustment to frictional conditions depends on cutaneous afferents signals innervating the skin area in contact with the object, by anesthetizing the skin of the pads of the distal phalanx of the index finger and the thumb in their second study, rather than a complete clinical anesthesia of the fingers as in their first study.
+        </s>
+        <s pid="16" sid="3">
+         This would enable to anticipate the effects of hand and arm vibration and low temperature on grip force used with Buchholz et al (1988) and Frederick and Armstrong (1995) model.
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         Besides motor control, sweat and moist condition was the one investigated more and more passed over papers.
+        </s>
+        <s pid="17" sid="2">
+         Sweat and skin property was suggested as a cause of the variation in slip forces between trials with the same surface structure in Johansson and Westling (1984).
+        </s>
+        <s pid="17" sid="3">
+         And it was tested as an independent variable in Buchholz et al (1988).
+        </s>
+        <s pid="17" sid="4">
+         The results revealed that μ increased with moistness which contributed 7.2% of the total variation of μ, and material-moistness interaction contributed 15.9% of the total variation of μ.
+        </s>
+        <s pid="17" sid="5">
+         Also, the study by Buchholz et al (1988) found that increase of μ with moistness was only for porous materials as shown in Table 1.
+        </s>
+        <s pid="17" sid="6">
+         The explanation was provided that porous materials with moistness have a softening effect so that moistness increases the true area of contact, thus, increases μ.
+        </s>
+       </p>
+       <p>
+        <s pid="18" sid="1">
+         Table 1: Effect of moisture on the coefficient of friction for various materials against human palmar skin
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        2.2. Different Objectives
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         Westling and Johansson varied materials as a way to study motor control - μ secondary effect, whereas Buchholz et al (1988) and Frederick and Armstrong (1995) varied materials to study friction as a primary objective.
+        </s>
+        <s pid="19" sid="2">
+         Even though variation of μ between subjects and trials with a same material was noticed from the experiments, Westling and Johansson did not attempt to analyze any effect or factor determining μ, since it was not the focus of their study.
+        </s>
+        <s pid="19" sid="3">
+         By contrast, Buchholz et al (1988)'s study had a full interest on μ, thus, only focused on what factors and how much each factor contributed to μ.
+        </s>
+        <s pid="19" sid="4">
+         Frederick and Armstrong (1995)'s study was interested in the effect of friction in a simulated industrial task, therefore, they assumed μ was a determined value for each material.
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         It was hard to tell whether μ varied due to grip force.
+        </s>
+        <s pid="20" sid="2">
+         Johansson and Westling (1984) showed that μ was fairly constant within 80 ~ 780g weight for each of three surface structures, which is consistent with Amonton's law of friction.
+        </s>
+        <s pid="20" sid="3">
+         They added that an increase of μ would be expected at lower forces due to an increased relative contribution of adhesive forces to the friction.
+        </s>
+        <s pid="20" sid="4">
+         Actually a small increase of μ with a decreasing pinch force was observed in Buchholz et al (1988), but the pinch forces covered in Buchholz et al seem too high, as shown in Figure 6, to be matched with the low forces that Johansson and Westling mentioned which were lower than 1N, or lower than 3N according to Comaish and Bottoms (1971).
+        </s>
+        <s pid="20" sid="5">
+         It may be possible that the effect is significant for low forces and insignificant for high forces.
+        </s>
+        <s pid="20" sid="6">
+         Regardless of its value for occupations and industrial work improvement, μ for low forces seems not investigated enough to prove Johansson and Westling's expectation; an increase of μ with grip force lower than 1N.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         Figure 6: Covered grip force range by each papers
+        </s>
+       </p>
+       <p>
+        <s pid="22" sid="1">
+         The different objectives lead different discussions and conclusions.
+        </s>
+        <s pid="22" sid="2">
+         Compared with Buchholz et al (1988) and Frederick and Armstrong (1995), the two papers by Westling and Johansson provided profound physiological discussions of motor coordination.
+        </s>
+        <s pid="22" sid="3">
+         For example, they inferred that cutaneous receptors sensed the friction condition between skin and the object and the information was mediated from the receptors to central nervous system (CNS) which coordinated critical motor control of fingers.
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         While the two papers by Westling and Johansson put huge effort on physiological aspects of hand friction, i.e., motor coordination for different friction condition, the other two papers, Buchholz et al (1988) and Frederick and Armstrong (1995), had an occupational view on hand friction to collect useful information in the hand tool design such as handle and tool materials, and to consider the real work place by examining a simulated industrial task.
+        </s>
+        <s pid="23" sid="2">
+         For example, Buchholz et al (1988) suggested that the desirable material for hand tools was the material with a high μ when moist, to reduce grip force requirements, since the palm is very rarely sweat free.
+        </s>
+        <s pid="23" sid="3">
+         Since bare aluminum had a significantly lower μ when moist, they concluded that it would not be a good choice of tool handle coverings, but a good choice when low friction is needed.
+        </s>
+        <s pid="23" sid="4">
+         Also, consideration to limit injuries from an abrasion was mentioned.
+        </s>
+        <s pid="23" sid="5">
+         Thus, rather than abrasive materials such as sandpaper, it was recommended to use suede, adhesive tape, and vinyl rubber for frequently used handles.
+        </s>
+        <s pid="23" sid="6">
+         Frederick and Armstrong (1995) found that handle friction enhancements decreased grip forces for objects requiring upwards of 50% or more of maximum grip strength.
+        </s>
+        <s pid="23" sid="7">
+         Also, for analysis of task force requirements, the usefulness of μ was emphasized.
+        </s>
+        <s pid="23" sid="8">
+         However, the latter two papers did not provide physiological analysis, any phase distinction in grip force analysis, and any reason or state of why and how much peak grip forces occurred.
+        </s>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         The different objectives can explain different choices and interpretations of parameters in analysis.
+        </s>
+        <s pid="24" sid="2">
+         Different safety margin between subjects was discussed as related to differences in a performance criterion in Johansson and Westling (1984), while it could be treated as an important factor of MSDs as in Frederick and Armstrong (1995), since high safety margin implies overexertion.
+        </s>
+        <s pid="24" sid="3">
+         Furthermore, Frederick and Armstrong concerned how much force subjects exerted in a fraction of their maximum strength, since high grip force that is close to MVC may cause musculoskeletal disorders when it is repetitive which is common in industries.
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         Also, Frederick and Armstrong stated that the peak grip force is significantly greater than the steady-state grip force, while, with the physiological view, Westling and Johansson discussed what the peak grip force meant in the motor coordination.
+        </s>
+        <s pid="25" sid="2">
+         Westling and Johansson did not conclude how much greater the peak force was than the steady-state force, however, it is understandable since the peak grip force was not remarkably higher than the steady-state grip force.
+        </s>
+       </p>
+       <p>
+        <s pid="26" sid="1">
+         In addition, the occupational point of view provided rationales for the choice of tested weights.
+        </s>
+        <s pid="26" sid="2">
+         The weight of 39.2N was chosen as the maximum grip force that subject could easily maintain at a constant level in Buchholz et al (1988).
+        </s>
+        <s pid="26" sid="3">
+         And the weight of 41.5N was the weight slightly lowered from the maximum load, 45N, that the weakest subject could lift and move using the more slippery surface, to avoid undue fatigue in Frederick and Armstrong (1995), as opposed to arbitrarily choosing weights of load in Westling and Johansson's two papers.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.3 Contradiction
+       </div>
+       <p>
+        <s pid="27" sid="1">
+         Not all findings were agreed between papers.
+        </s>
+        <s pid="27" sid="2">
+         The observed grip forces for aluminum in Frederick and Armstrong (1995) were 20% lower than the minimum grip forces predicted with μ from Buchholz et al (1988), as shown in Table 2, which was hard to neglect as errors due to the high standard deviations.
+        </s>
+        <s pid="27" sid="3">
+         The finding that the sweat and skin property played a crucial role in a hand friction was referred partly as the cause resulting in the less grip force observed.
+        </s>
+        <s pid="27" sid="4">
+         Frederick and Armstrong (1995), from their pilot study, found out that the finger washing condition could make a significant difference in μ and, therefore, a grip force; subjects used 10% less grip force when they cleaned hands with a moist towel and air-dry (Frederick and Armstrong's) than washing hands with soap and water, rinsing, and drying with a paper towel (Buchholz's).
+        </s>
+        <s pid="27" sid="5">
+         It can also be due to variations in μ of fingers between subjects and in sweating rates within subjects, which can easily happen in workers' hands, thus, may require considering a large variation of μ when designing hand tool friction conditions.
+        </s>
+        <s pid="27" sid="6">
+         In addition, it should be considered that, even though, theoretically, μ does not change with the area of contact, because of the special friction condition of a finger skin, using three fingers might have resulted in a greater μ, which caused less grip force in Frederick and Armstrong (1995) than predicted from Buchholz et al (1988) using two fingers.
+        </s>
+        <s pid="27" sid="7">
+         Furthermore, different test devices and different test environments such as temperature and humidity could have contributed to the different results between two papers.
+        </s>
+        <s pid="27" sid="8">
+         It was hard to find a logical reason to say the postural differences of subjects between two studies caused the inconsistency.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         Table 2 : Comparison of predicted and observed values of steady-state grip force
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         The two papers by Westling and Johansson mentioned the effect of μ on the grip force was noticed, in the load range of 0.1 to 10N.
+        </s>
+        <s pid="29" sid="2">
+         About the same issue, Frederick and Armstrong (1995) found that subjects were sensitive to friction changes only to the highest load of 41.5N (p &amp;lt; .001) out of three different loads including 7.5N and 24.5N.
+        </s>
+        <s pid="29" sid="3">
+         These findings are consistent in suggesting a load-dependent friction effect.
+        </s>
+        <s pid="29" sid="4">
+         However, they are contrary in the effect of friction on grip force at the low loads.
+        </s>
+        <s pid="29" sid="5">
+         This contradiction may be explained by the different task conditions; a static task was performed in Westling and Johansson's studies, while a dynamic task was performed in Frederick and Armstrong's study.
+        </s>
+        <s pid="29" sid="6">
+         Frederick and Armstrong inferred that dynamic tasks might drive use of additional force due to inertial effects of moving it from side to side and repeatedly grasping and re-grasping.
+        </s>
+        <s pid="29" sid="7">
+         In addition, they inferred that there might be a potential for a greater variation in grip force at the loads requiring a low MVC, due to the extra grip force capacity available.
+        </s>
+        <s pid="29" sid="8">
+         Also, suggested was an optimized motor control that might employ no more force than necessary at higher weight levels, to prevent fatigue and injury.
+        </s>
+        <s pid="29" sid="9">
+         The same argument could be applied to another point that the extra grip force capacity availability might have caused greater relative safety margins for sandpaper in Westling and Johansson's studies.
+        </s>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         Frederick and Armstrong seem to have not considered the effect of using three fingers, a thumb and first two fingers, in a pinch grip in their study, as opposed to using two fingers, a thumb and an index finger, in other three studies including Buchholz et al (1988).
+        </s>
+        <s pid="30" sid="2">
+         Using three fingers might have allowed enough or greater grip forces more easily than using two fingers, which can explain why subjects' grip forces were not very low at low loads.
+        </s>
+        <s pid="30" sid="3">
+         In addition, the differences in the finger washing conditions (soap and water in Westling and Johansson, versus moist towel and air dry in Frederick and Armstrong) that resulted in less grip forces in Frederick and Armstrong (1995) as discussed earlier, could have hindered the effect of μ on grip forces.
+        </s>
+        <s pid="30" sid="4">
+         Furthermore, the fact that Westling and Johansson did not perform ANOVA leaves a possibility that the grip forces might have not been statistically significantly different in their study, either.
+        </s>
+        <s pid="30" sid="5">
+         Since they did not perform ANOVA, it is possible that they could not tell whether they were significantly different from each other (sensitive) or not.
+        </s>
+       </p>
+       <p>
+        <s pid="31" sid="1">
+         It also seems to be true that there was a trend that the grip force varies with the friction for the entire range of loads, even at low loads, in the results by Frederick and Armstrong as shown in Table 3.
+        </s>
+        <s pid="31" sid="2">
+         However, it may be also true that, statistically speaking, the grip forces were not significantly different at low loads.
+        </s>
+        <s pid="31" sid="3">
+         Lastly, it should not be missed that Frederick and Armstrong (1995) used different materials, sandpaper and aluminum, while Westling and Johansson (1984) used sandpaper, suede, and silk, even though sandpaper was a common material.
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Table 3: Steady-state and peak pinch force for six experimental conditions
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       3. Discussion
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        The comparison between papers showed how little difference could result in a huge difference in results as well as in conclusions between different studies.
+       </s>
+       <s pid="33" sid="2">
+        It cannot be emphasized enough how important the design of an experiment is, i.e., to minimize variations in results, material, hand cleaning, and behavior should be controlled for measuring grip force, since it is very sensitive to those.
+       </s>
+       <s pid="33" sid="3">
+        It also shows that a finding in one study can be impossible to be repeated in other studies with a little change, which suggests experimenters or researchers should not believe or totally rely on previous studies without a doubt and a careful inspection.
+       </s>
+       <s pid="33" sid="4">
+        Also, it was learned that a trend observed from samples cannot always represent the true phenomena, as all know from statistics study.
+       </s>
+       <s pid="33" sid="5">
+        Statistical analysis should be conducted to make the experiment results valid for the whole populations or norms.
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        It was hard to say one method is better than the other one.
+       </s>
+       <s pid="34" sid="2">
+        Buchholz et al (1988) let subjects maintain a certain grip force on purpose, while Westling and Johansson let subjects choose grip forces at what they wanted.
+       </s>
+       <s pid="34" sid="3">
+        The latter seems more natural than the former, and also more applicable in real lives.
+       </s>
+       <s pid="34" sid="4">
+        Probably the unnatural nature of the experimental setting is the reason why subjects often failed in maintaining a certain grip force in Buchholz et al (1988).
+       </s>
+       <s pid="34" sid="5">
+        However, it could not be said the latter was better than the former in terms of the design of experiments, since Buchholz et al hypothesized different grip force would result in different μ.
+       </s>
+       <s pid="34" sid="6">
+        The only thing that can be said is that the design of an experiment should be comprehensible with the objectives of studies.
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        It was interesting to see how different objectives of studies established different hypothesis and different experimental settings, which could result in different interpretations on same phenomena.
+       </s>
+       <s pid="35" sid="2">
+        It was reminded, from comparing different papers on the same topic, that researchers should be very careful about determining a hypothesis so that it would not distort a true meaning or a real principle of interested phenomena.
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        It was surprising to see that even those who could conduct such a complicated and sophisticated experiment and study could make a mistake.
+       </s>
+       <s pid="36" sid="2">
+        Westling and Johansson (1984) stated that μ for sandpaper and suede were 1.21 and 0.68, respectively, which were almost doubles of μ found in Buchholz et al (1988).
+       </s>
+       <s pid="36" sid="3">
+        Buchholz et al mentioned that it was possible that Westling and Johansson forgot to consider two surfaces on which grip forces were applied.
+       </s>
+       <s pid="36" sid="4">
+        It was confirmed in one of the figures in their second paper where they used μ of about a half of the values they mentioned for sandpaper and suede, respectively, for slip rate values.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        A chronological study trend was shown in four papers.
+       </s>
+       <s pid="37" sid="2">
+        Westling and Johansson's two papers (1984) were the earlier ones than Buchholz et al (1988) and Frederick and Armstrong (1995).
+       </s>
+       <s pid="37" sid="3">
+        The interest was originate from genuine grip forces and slip forces for different friction conditions and different loads, only under static conditions in Westling and Johansson's first paper, then with addition of dynamic components in the task in their second paper.
+       </s>
+       <s pid="37" sid="4">
+        Then, Buchholz et al (1988) tried to determine μ with considering all factors affecting μ that were discovered previously such as Westling and Johansson (1984).
+       </s>
+       <s pid="37" sid="5">
+        Then, Frederick and Armstrong (1995) conducted an experiment about friction conditions and grip forces in an industrial simulation to apply the concept to the real world situations.
+       </s>
+       <s pid="37" sid="6">
+        Developed from a simple task such as moving a container between two targets at a slow speed, next step would be to study more complicated tasks to investigate how a friction effect interacts with a certain task.
+       </s>
+       <s pid="37" sid="7">
+        It can be lifting by friction when there is no handle, pulling and pushing carts, or hose insertion tasks.
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        By facilitating the findings from hand friction studies as listed below, required grip force to prevent slipping can be reduced, which can modify jobs from an immediate action required state to below action limit state as illustrated in Figure 7, and help prevent MSDs.
+       </s>
+      </p>
+      <list>
+       <item>
+        - Use of high frictional, but not abrasive, material for handles or gloves
+       </item>
+       <item>
+        - Control of environment, i.e., temperature, to prevent losing cutaneous feedback of frictional conditions due to low temperature, and to minimize sweat rate changes
+       </item>
+       <item>
+        - Isolation of contaminants that cause poor friction condition from hands/handles
+       </item>
+       <item>
+        - Keeping object weight under workers' capability with a large variation of friction condition
+       </item>
+      </list>
+     </div>
+    </div>
+    <div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 7: TLV for mono-task handwork.
+     </p>
+     <div>
+      <div class="head_1">
+       4. Reference
+      </div>
+      <ul id="N101FA">
+       <li id="N101FB">
+        1. G.Westling and R.S. Johansson (1984). Factors influencing the Force Control During Precise Grip. Experimental Brain Research, 53:277-284.
+       </li>
+       <li id="N101FD">
+        2. R.S. Johansson and G.Westling (1984). Roles of glabrous skin receptors and sensorimotor memory in automatic control of precision grip when lifting rougher or more slippery objects. Experimental Brain Research, 56:550-564.
+       </li>
+       <li id="N101FF">
+        3. Bryan Buchholz, Linda J. Frederick and Thomas J. Armstrong (1988). An investigation of human palmar skin friction and the effects of materials, pinch force and moisture. Ergonomics, vol. 31, no. 3, 317-325.
+       </li>
+       <li id="N10201">
+        4. Linda J. Frederick and Thomas J. Armstrong (1995). Effect of friction and load on pinch force in a hand transfer task. Ergonomics, vol. 38, no. 12, 2447-2454.
+       </li>
+       <li id="N10203">
+        5. Comaish S. and Bottoms E. (1971). The skin and friction: deviations from Amonton's law, and the effects of hydration and lubrication. Br J Dermatol 84:37-43.
+       </li>
+       <li id="N10205">
+        6. ACGIH (2002). Hand Activity Level. Two Thousand Two Threshold Limit Values for Chemical Substances and Physical Agents and Biological Exposure Limits. Cincinnati, American Conference of Governmental Industrial Hygienists: 109-119.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

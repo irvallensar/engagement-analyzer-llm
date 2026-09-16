@@ -1,0 +1,680 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="paper_title">
+      Manufacturing System Design for a Car Assembly Process
+     </div>
+     <div class="abstract">
+      EXECUTIVE SUMMARY
+      <p>
+       We have been assigned the task of designing the manufacturing system for the assembly of a simple vehicle. The manufacturer wishes to anticipate any changes in demand, and also wishes to know the impact of reliability at the system and machine levels (100% system and 95% machine reliability). As a result, three scenarios of demand and reliability were considered: (1) 50,000 units per year with 100% reliability, (2) 50,000 units per year with 95% machine reliability and lastly (3) a 75,000 units per year with 95% machine reliability. This task has been completed.
+      </p>
+      <p>
+       By performing tasks in parallel at the same station, the total number of stations required for assembly was reduced to 7. In turn, the system reliability was increased in order to meet the yearly demand. Specifically, for scenario 1, the plant can operate a single 8 hour shift for 51 weeks per year. For scenarios 2 and 3, respectively, two and three 6 hours-a-day shifts for 49 weeks per year can be used to meet the yearly demand. Lastly, a future state map is included to implement lean manufacturing methods and reduce the costs of operation. The approach, costs and recommendations regarding the assembly designs are discussed in this report.
+      </p>
+     </div>
+     <div>
+      Table of Contents
+      <p>
+       1	PROBLEM STATEMENT	4
+      </p>
+      <p>
+       2	COMPONENTS AND MANUFACTURING TASK INFORMATION	5
+      </p>
+      <p>
+       3	ASSUMPTIONS	6
+      </p>
+      <p>
+       4	TASK ANALYSIS	7
+      </p>
+      <p>
+       4.1	PRECEDENCE GRAPH	8
+      </p>
+      <p>
+       4.2	PRODUCTION LINE SCHEME	9
+      </p>
+      <p>
+       5	DESIGNS	10
+      </p>
+      <p>
+       5.1	APPROACH	10
+      </p>
+      <p>
+       5.1.1	BUFFER IMPLEMENTATION	10
+      </p>
+      <p>
+       5.1.2	MODIFICATION OF LABOR HOURS	11
+      </p>
+      <p>
+       5.2	COST OF PRODUCTION	11
+      </p>
+      <p>
+       5.3	1 YEAR AND 5 YEAR PROFIT FORECAST	12
+      </p>
+      <p>
+       6	CONCLUSIONS AND RECOMMENDATIONS	12
+      </p>
+      <p>
+       6.1	FUTURE STATE MAP	13
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1 PROBLEM STATEMENT
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        We have been tasked to design the manufacturing system for the assembly of a simple car.
+       </s>
+       <s pid="1" sid="2">
+        It is projected that the manufacturer will need to produce at least 50,000 units per year during the first years of operation.
+       </s>
+       <s pid="1" sid="3">
+        One case is considered for 100% reliability, while another for 95% machine reliability.
+       </s>
+       <s pid="1" sid="4">
+        The manufacturer wants to anticipate changes in demand which may quickly rise to 75,000 units per year.
+       </s>
+       <s pid="1" sid="5">
+        The manufacturer wants to know what system setup will meet the manufacturing goal under three discreet conditions, shown in Table 1, below.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Table 1: Demand and Reliability Scenarios
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Additionally, we have been informed of the following conditions regarding financial and physical details of the manufacturing system.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Table 2: Variable and Fixed Costs for the System (in USD)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       2 COMPONENTS AND MANUFACTURING TASK INFORMATION
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        Figure 1: Schematic of car components and sub-assemblies
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Table 3: Task breakdown and information
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       3 ASSUMPTIONS
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        Based on the given task information as described in Section 2, several assumptions were made to facilitate the construction of a liaison diagram.
+       </s>
+       <s pid="7" sid="2">
+        The assumptions made are listed below.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Working Hours
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        1. Shifts can be 6 to 8* hrs/day, 5 days/week, 49 to 51* weeks/year * Varies with design scenarios
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        Manufacturing Operations
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        2. Inspections done in a different, quiet and clean zone
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        3.
+       </s>
+       <s pid="12" sid="2">
+        Task time includes all mounting and un-mounting during installation of components
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        Machines
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        4. Each task needs 1 machine
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        5. Each station used has 95% efficiency (Design #2 &amp; Design #3)
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        6. Failure of one machine does not cause the failure of another machine
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        Employee
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        7.
+       </s>
+       <s pid="18" sid="2">
+        Any operator can work on any station, and operators will complete a scheduled rotation for all stations
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        8.
+       </s>
+       <s pid="19" sid="2">
+        Workers will not be absent for sick days or vacations
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Sub-assembly supply
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        9.
+       </s>
+       <s pid="21" sid="2">
+        There is uninterrupted flow of sub-components and parts
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        10.
+       </s>
+       <s pid="22" sid="2">
+        The engine comes with its own sub-wiring harness
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        11.
+       </s>
+       <s pid="23" sid="2">
+        The ECU comes with the wiring harness as it is installed
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        12.
+       </s>
+       <s pid="24" sid="2">
+        The vehicle body is present at each station of the assembly
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        The assumptions relating to cost and profit calculations are discussed in the Designs section.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       4 TASK ANALYSIS
+      </div>
+      <p>
+       <s pid="26" sid="1">
+        In order to design the manufacturing system for this application, the assembly tasks have been analyzed and simple heuristics were used to create a precedence graph and a production line scheme.
+       </s>
+       <s pid="26" sid="2">
+        Task information, task times and number of operators were taken into account, as well as the components needed to complete a task and the predecessor tasks for each task.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        4.1 Precedence Graph
+       </div>
+       <p>
+        <s pid="27" sid="1">
+         According to task information, a precedence graph was drawn, as shown in Figure 2, below.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="28" sid="1">
+         Figure 2: Task precedence graph
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.2 Production Line Scheme
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         A production line schematic was generated for each design and is shown in Figures 3 and 4, below.
+        </s>
+        <s pid="29" sid="2">
+         These were drawn in accordance to space requirements listed by the manufacturer.
+        </s>
+        <s pid="29" sid="3">
+         The space occupied for Design 1 is 972 m2, while Designs 2 and 3 occupy 1215 m2.
+        </s>
+        <s pid="29" sid="4">
+         The approach used to create the production line schemes is detailed in section 5.1.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="30" sid="1">
+         Figure 3: Production Line Scheme for Design #1
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="31" sid="1">
+         Figure 4: Production Line Scheme for Design #2 &amp; #3
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       5 DESIGNS
+      </div>
+      <p>
+       <s pid="32" sid="1">
+        This section outlines the approach, implementation and outcome of the three demand and reliability scenarios discussed in Section 1.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        5.1 Approach
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         To obtain a possible task group according to takt time, Ranked Positional Weight (RPW) heuristics were performed for the manufacturing process design.
+        </s>
+        <s pid="33" sid="2">
+         The results of RPW can be seen in Table 4, below.
+        </s>
+        <s pid="33" sid="3">
+         When assembly order was determined, we considered the difference in number of operators for each task along with task precedence.
+        </s>
+        <s pid="33" sid="4">
+         For example, task 5.2 requires 4 operators and must be done after task 5.1.
+        </s>
+        <s pid="33" sid="5">
+         So the four operators of task 5.2 can perform two other two-operator tasks in parallel, after task 5.1 is completed.
+        </s>
+        <s pid="33" sid="6">
+         With more operators, it was possible to do tasks in parallel at the same station.
+        </s>
+        <s pid="33" sid="7">
+         These are indicated by tasks that are grouped in parentheses.
+        </s>
+        <s pid="33" sid="8">
+         Thus, it was possible to use 7 assembly stations, with only one instance of significant idle time in station 5.
+        </s>
+       </p>
+       <p>
+        <s pid="34" sid="1">
+         Table 4: RPW Results
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <div>
+        <div class="head_3">
+         5.1.1 Buffer Implementation
+        </div>
+        <p>
+         <s pid="35" sid="1">
+          Using PAMS software version 4.2 to verify and improve our assembly process, we determined that we should incorporate two buffers into Designs 2 and 3, between stations 3 and 4, and 4 and 5.
+         </s>
+         <s pid="35" sid="2">
+          The size of each buffer should only be 1 car, and the implementation of buffers would result in a higher system reliability and throughput.
+         </s>
+         <s pid="35" sid="3">
+          The PAMS approach is further discussed in Appendix A.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         5.1.2 Modification of Labor Hours
+        </div>
+        <p>
+         <s pid="36" sid="1">
+          With the decreased machine reliability of Designs 2 and 3, it is essential to decrease the number of stations and maximize the system reliability.
+         </s>
+         <s pid="36" sid="2">
+          Using seven stations in series, the overall reliability is 0.957 or 69.8%.
+         </s>
+         <s pid="36" sid="3">
+          To counteract the impact of significantly decreased production, three labor hour modifications were made: (1) a shift was added, (2) the length of the work day was reduced and (3) the number of weeks of operation per year was decreased.
+         </s>
+         <s pid="36" sid="4">
+          This will allow the manufacturer to produce more than 50,000 units per year and fulfill the requirements of Design 2, without implementing a second assembly line and without changing the task assignment order.
+         </s>
+        </p>
+        <p>
+         <s pid="37" sid="1">
+          In order to reach the production goal of 75,000 units for Design 3, a third shift can be added and will work with the same reliability of Design 2.
+         </s>
+         <s pid="37" sid="2">
+          The production outcome and labor hours of each design can be seen in Table 5, below.
+         </s>
+        </p>
+        <p>
+         <s pid="38" sid="1">
+          Table 5: Production Results with Modified Labor Hours
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        5.2 Cost of Production
+       </div>
+       <p>
+        <s pid="39" sid="1">
+         The costs of production for each of the proposed designs can be seen in Table 6, below.
+        </s>
+        <s pid="39" sid="2">
+         Each design requires 7 stations to be constructed, while designs 2 and 3 require two buffers to be added.
+        </s>
+        <s pid="39" sid="3">
+         The labor costs are determined from the number of hours in production as well as the number of operators on each station.
+        </s>
+        <s pid="39" sid="4">
+         To implement designs 2 and 3, no machine reconfiguration is required, since the layout is very similar with the difference being the addition of two buffers.
+        </s>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         Table 6: Variable and Fixed Cost Breakdowns
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        5.3 1 Year and 5 Year Profit Forecast
+       </div>
+       <p>
+        <s pid="41" sid="1">
+         For the first year of production, scenarios 1 and 2 will incur losses financially.
+        </s>
+        <s pid="41" sid="2">
+         After 5 years the profit should start to exceed the initial investment cost.
+        </s>
+        <s pid="41" sid="3">
+         Design 3 will be profitable from the first year.
+        </s>
+        <s pid="41" sid="4">
+         A profit analysis can be seen in Table 7, below.
+        </s>
+        <s pid="41" sid="5">
+         In order to calculate the profit margin after both 1 and 5 years, we assumed the following:
+        </s>
+       </p>
+       <list>
+        <item>
+         1. Overhead cost to make each car was $3,200.
+        </item>
+        <item>
+         2. Value of the material in each car was $10,000.
+        </item>
+        <item>
+         3. The Manufacturer Suggested Retail Price (MSRP) of the cars is $14,800 for Designs 1 and 2, and $14,480 for Design 3.
+        </item>
+        <item>
+         4. The cost of marketing the car was $70 million for the first two Designs, but greater for Design 3 because of the quantity needed to be sold.
+        </item>
+        <item>
+         5. Administration costs were $5.5 million per year, regardless of number of cars sold.
+        </item>
+        <item>
+         6. The cost to rent or own the factory was $3 million, regardless of cars sold.
+        </item>
+        <item>
+         7. All cars that were produced were sold.
+        </item>
+       </list>
+       <p>
+        <s pid="42" sid="1">
+         Table 7: Design 3 will be profitable after 1 year, Designs 2 and 3 after 5 years
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="43" sid="1">
+         *
+        </s>
+        <s pid="43" sid="2">
+         This price is decreased to $14,480 for Design 3, because of the quantity sold
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       6 CONCLUSIONS AND RECOMMENDATIONS
+      </div>
+      <p>
+       <s pid="44" sid="1">
+        We were asked to create a process design for the assembly of a car that composed of 23 different tasks.
+       </s>
+       <s pid="44" sid="2">
+        Through the implementation of doing tasks in parallel at the same station, we were able to reduce the total number of stations to 7.
+       </s>
+       <s pid="44" sid="3">
+        Minimizing the number of stations for assembly had a significant impact on system reliability, given the reduced machine reliability of 95% for scenarios 2 and 3.
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        In order to meet the 50,000 unit demand per year for scenario 1, Design 1 can be implemented.
+       </s>
+       <s pid="45" sid="2">
+        This entails operating the plant for 51 weeks per year, with a single, 8 hour daily shift, using the production line scheme shown in Figure 3, on page 9.
+       </s>
+       <s pid="45" sid="3">
+        To meet the demand of scenarios 2 and 3 with their respective machine reliability of 95%, we altered the labor hours while keeping the same task assignment order.
+       </s>
+       <s pid="45" sid="4">
+        Specifically, Design 2 uses two 6 hour daily shifts for 49 weeks per year, under the production scheme shown in Figure 4, on page 9.
+       </s>
+       <s pid="45" sid="5">
+        Lastly, Design 3 uses three 6 hour daily shifts for 49 weeks per year, under the same production scheme.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        6.1 Future State Map
+       </div>
+       <p>
+        <s pid="46" sid="1">
+         Applying value stream mapping enables us to generate a Future State Map of the manufacturing process, as seen in Figure 5, below.
+        </s>
+        <s pid="46" sid="2">
+         The following explains the lean manufacturing principles that are implemented.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="47" sid="1">
+         Figure 5: Future state mapping uses principles of lean manufacturing to reduce waste
+        </s>
+       </p>
+       <p>
+        <s pid="48" sid="1">
+         Utilizing a supermarket after the stamping process, we will be able to set a "pull" system through the manufacturing line.
+        </s>
+        <s pid="48" sid="2">
+         1 piece flow and first-in-first-out part flow are implemented between stations, increasing the system's predictability and reduces inventory.
+        </s>
+        <s pid="48" sid="3">
+         The customer also sends 30, 60 and 90 day forecasts, as well as daily orders to the production control, which in turn sends the aforementioned information to the steel plant.
+        </s>
+        <s pid="48" sid="4">
+         This enables just-in-time manufacturing which greatly reduces inventory.
+        </s>
+        <s pid="48" sid="5">
+         After each batch of orders produced, the supermarket will also send a production Kanban to the production control to have constant update of production information.
+        </s>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       APPENDIX A - PAMS Analysis
+      </div>
+      <p>
+       We used PAMS to help verify that our system designs would function as we thought they would in our initial calculations.
+      </p>
+      <p>
+       Iterative Approach in PAMS System Design
+      </p>
+      <p>
+       We initially created a 7 station system using PAMS as shown below, in Figure 6. We gave each station the processing time shown in Table 4, on page 10. For Design 1 with 100% efficiency, we achieved our expected throughput as shown in Table 8, on page 15. For Designs 2 and 3, we assumed each station would break down twice per shift. In an attempt to give each station a 95% reliability, we gave each station a MTBF of 180 minutes and a MTTR of 9.5 minutes. This yields approximately 95% reliability since Reliability = MTBF / (MTBF + MTTR). However, in the PAMS simulation we were only achieving a breakdown rate of about 4%, yielding a 96% reliability.
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure 6: PAMS manufacturing system layout
+      </p>
+      <p>
+       In order to increase the breakdown rate to 5%, we increased the MTTR incrementally until we achieved a 5% breakdown rate in the PAMS simulation. However, once this goal was accomplished, we found that our throughput was below the target throughput.
+      </p>
+      <p>
+       In order to improve our throughput, we decided to add buffers. To determine the best place to add buffers, we ran a PAMS simulation which improved throughput given a buffer size of 5. It focused the buffer size at Buf_3 and Buf_4 as shown in Figure 6, above. Using the PAMS output regarding the best placement and size of buffers, we added one unit to Buf_3 and Buf_4 and left the other buffers at 0. By doing this, our target demand per year was met. The average work in progress (WIP) can be seen in Figure 7 below. Throughput for each design can be seen in Table 8, below.
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure 7: The average WIP in each station for Designs 2 and 3
+      </p>
+      <p>
+       Table 8: Throughputs using PAMS simulation for each design
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

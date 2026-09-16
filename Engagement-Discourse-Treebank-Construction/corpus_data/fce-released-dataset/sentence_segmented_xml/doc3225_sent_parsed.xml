@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     34.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Neuchâtel, 12th June 2001
+      </p>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       <ns type="UA">
+        <i>
+         I thank
+        </i>
+       </ns>
+       you for your recent letter. First, I would like to congratulate
+       <ns type="MA">
+       </ns>
+       on your new
+       <ns type="S">
+        <i>
+         responsability
+        </i>
+       </ns>
+       ,
+       <ns type="M">
+       </ns>
+       because of Mr Brown's illness.
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         give
+        </i>
+       </ns>
+       you with great pleasure all the details needed.
+      </p>
+      <p>
+       Your group is staying at the Palace Hotel, which is located directly
+       <ns type="RT">
+        <i>
+         in front of
+        </i>
+       </ns>
+       the bus station.
+      </p>
+      <p>
+       To go to the conference from your hotel is really easy. You have to take the
+       <ns type="W">
+        <i>
+         bus number 1
+        </i>
+       </ns>
+       and get off at "Black House", which is the third stop.
+      </p>
+      <p>
+       After the conference, at about 8 pm
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       a party is
+       <ns type="TV">
+        <i>
+         organised
+        </i>
+       </ns>
+       . During it, everybody will have the opportunity to
+       <ns type="FV">
+        <i>
+         met
+        </i>
+       </ns>
+       and talk to the speakers of the conference. Food and beverages will be available. After the
+       <ns type="FN">
+        <i>
+         cocktail
+        </i>
+       </ns>
+       , the Band "Zero one"
+       <ns type="TV">
+        <i>
+         is playing
+        </i>
+       </ns>
+       their famous songs.
+      </p>
+      <p>
+       The clothes
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       required for the party are suits for men and cocktail dresses for women.
+      </p>
+      <p>
+       Before your departure, you will have time to visit the Olympic Museum or to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       a sightseeing tour
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       our city.
+      </p>
+      <p>
+       I hope you will enjoy your
+       <ns type="RN">
+        <i>
+         journey
+        </i>
+       </ns>
+       in our city and look forward to meeting you at this conference.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Neuchâtel, 12th June 2001
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I thank you for your recent letter.
+       </s>
+       <s pid="3" sid="2">
+        First, I would like to congratulate  on your new responsability,  because of Mr Brown's illness.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I give you with great pleasure all the details needed.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Your group is staying at the Palace Hotel, which is located directly in front of the bus station.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        To go to the conference from your hotel is really easy.
+       </s>
+       <s pid="6" sid="2">
+        You have to take the bus number 1 and get off at "Black House", which is the third stop.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        After the conference, at about 8 pm. a party is organised.
+       </s>
+       <s pid="7" sid="2">
+        During it, everybody will have the opportunity to met and talk to the speakers of the conference.
+       </s>
+       <s pid="7" sid="3">
+        Food and beverages will be available.
+       </s>
+       <s pid="7" sid="4">
+        After the cocktail, the Band "Zero one" is playing their famous songs.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        The clothes, required for the party are suits for men and cocktail dresses for women.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Before your departure, you will have time to visit the Olympic Museum or to make a sightseeing tour in our city.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I hope you will enjoy your journey in our city and look forward to meeting you at this conference.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Report on the "Paintings Museum"
+      </p>
+      <p>
+       In order to write this report, I spent hours in this wonderful museum. There, I saw the
+       <ns type="S">
+        <i>
+         exibitions
+        </i>
+       </ns>
+       and admired the building itself. I walked around the garden too.
+      </p>
+      <p>
+       Location
+      </p>
+      <p>
+       The museum is located in Ouchy,
+       <ns type="RT">
+        <i>
+         in front of
+        </i>
+       </ns>
+       the "Delamuraz Hotel". It is close to the main road, and
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       300
+       <ns type="SA">
+        <i>
+         meters
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the station.
+      </p>
+      <p>
+       Outside
+      </p>
+      <p>
+       The building is made of white stones. It has two floors. Before going inside, you have to
+       <ns type="SX">
+        <i>
+         pas
+        </i>
+       </ns>
+       through the huge garden. There, ponds, pools, trees, flowers and ducks can be admired. I recommend you to take your
+       <ns type="RP">
+        <i>
+         swim suit
+        </i>
+       </ns>
+       , because in summer, it is allowed to swim in
+       <ns type="MD">
+       </ns>
+       pools.
+      </p>
+      <p>
+       Inside
+      </p>
+      <p>
+       When you are inside the museum, you will be impressed by the paintings on the walls.
+       <ns type="AGA">
+        <i>
+         There
+        </i>
+       </ns>
+       were all
+       <ns type="TV">
+        <i>
+         painting
+        </i>
+       </ns>
+       during the war by nurses. If you go down a few steps, you will discover the
+       <ns type="S">
+        <i>
+         ceilar
+        </i>
+       </ns>
+       . Everything in this room is
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       wine.
+      </p>
+      <p>
+       To learn the whole history of the building, there is a room dedicated to it on the first floor.
+      </p>
+      <p>
+       I particularly recommend you to visit the "blue" room. Everything in this room is blue, the carpet, the ceiling and even the door.
+      </p>
+      <p>
+       According to the owner, it was a room where in the past people used to go when they were depressed.
+      </p>
+      <p>
+       Conclusion
+      </p>
+      <p>
+       To sum up, I would like to add that this house is the most famous in our city. You should come and visit it for the paintings or for the building itself.
+      </p>
+      <p>
+       You won't be disappointed.
+      </p>
+      <p>
+       The only negative point is that you have to pay 10 francs to visit
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       the house and the garden.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Report on the "Paintings Museum"
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In order to write this report, I spent hours in this wonderful museum.
+       </s>
+       <s pid="2" sid="2">
+        There, I saw the exibitions and admired the building itself.
+       </s>
+       <s pid="2" sid="3">
+        I walked around the garden too.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Location
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The museum is located in Ouchy, in front of the "Delamuraz Hotel".
+       </s>
+       <s pid="4" sid="2">
+        It is close to the main road, and at 300 meters of the station.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Outside
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The building is made of white stones.
+       </s>
+       <s pid="6" sid="2">
+        It has two floors.
+       </s>
+       <s pid="6" sid="3">
+        Before going inside, you have to pas through the huge garden.
+       </s>
+       <s pid="6" sid="4">
+        There, ponds, pools, trees, flowers and ducks can be admired.
+       </s>
+       <s pid="6" sid="5">
+        I recommend you to take your swim suit, because in summer, it is allowed to swim in  pools.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Inside
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        When you are inside the museum, you will be impressed by the paintings on the walls.
+       </s>
+       <s pid="8" sid="2">
+        There were all painting during the war by nurses.
+       </s>
+       <s pid="8" sid="3">
+        If you go down a few steps, you will discover the ceilar.
+       </s>
+       <s pid="8" sid="4">
+        Everything in this room is about wine.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        To learn the whole history of the building, there is a room dedicated to it on the first floor.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I particularly recommend you to visit the "blue" room.
+       </s>
+       <s pid="10" sid="2">
+        Everything in this room is blue, the carpet, the ceiling and even the door.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        According to the owner, it was a room where in the past people used to go when they were depressed.
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Conclusion
+       </s>
+      </p>
+      <p pid="13">
+       <s pid="13" sid="1">
+        To sum up, I would like to add that this house is the most famous in our city.
+       </s>
+       <s pid="13" sid="2">
+        You should come and visit it for the paintings or for the building itself.
+       </s>
+      </p>
+      <p pid="14">
+       <s pid="14" sid="1">
+        You won't be disappointed.
+       </s>
+      </p>
+      <p pid="15">
+       <s pid="15" sid="1">
+        The only negative point is that you have to pay 10 francs to visit.
+       </s>
+       <s pid="15" sid="2">
+        the house and the garden.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

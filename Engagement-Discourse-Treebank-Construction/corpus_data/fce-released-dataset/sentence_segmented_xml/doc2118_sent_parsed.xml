@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Thank you for your letter. I'm pleased
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       that I've won the first prize
+       <ns type="MP">
+       </ns>
+       <ns type="W">
+        <i>
+         at camp california in the U.S.A
+         <ns type="UT">
+          <i>
+           during
+          </i>
+         </ns>
+         two weeks
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all,
+      </p>
+      <p>
+       I would like
+       <ns type="FV">
+        <i>
+         travel
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July because I am going to finish
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       college at the end of June and I will work
+       <ns type="MT">
+       </ns>
+       the first of
+       <ns type="RP">
+        <i>
+         august
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         Second of all
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         About
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       , I would prefer a log cabin
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think that will be
+       <ns type="IJ">
+        <i>
+         more safety
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       all my
+       <ns type="L">
+        <i>
+         stuff
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I'm very keen to have the chance to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       some activities
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I'm very
+       <ns type="R">
+        <i>
+         attracted by
+        </i>
+       </ns>
+       the golf. I will be a beginner because I've never done this sport before but I will have a try. Also, I choose surfing
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I love this sport. I've been
+       <ns type="RV">
+        <i>
+         <ns type="SA">
+          <i>
+           practicing
+          </i>
+         </ns>
+        </i>
+       </ns>
+       this sport
+       <ns type="RT">
+        <i>
+         since
+        </i>
+       </ns>
+       5 years, so I'm
+       <ns type="SX">
+        <i>
+         quiet
+        </i>
+       </ns>
+       good.
+      </p>
+      <p>
+       Finally I would like to know if I need a lot of money
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       this
+       <ns type="RN">
+        <i>
+         excursion
+        </i>
+       </ns>
+       and if we are going to visit some
+       <ns type="RN">
+        <ns type="AGN">
+         <i>
+          building
+         </i>
+        </ns>
+       </ns>
+       . I've
+       <ns type="X">
+        <i>
+         know
+        </i>
+       </ns>
+       idea what
+       <ns type="R">
+        <i>
+         kind of weather it is
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       USA
+       <ns type="MP">
+        <i>
+         could
+        </i>
+       </ns>
+       you let me know what type of clothes
+       <ns type="W">
+        <i>
+         should I
+        </i>
+       </ns>
+       bring with me
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         yours
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         <ns type="DY">
+          <i>
+           Sincerly
+          </i>
+         </ns>
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I'm pleased to that I've won the first prize at camp california in the U.S.A during two weeks.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all,
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like travel on July because I am going to finish the college at the end of June and I will work  the first of august.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Second of all,
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        About the accomodation, I would prefer a log cabin, I think that will be more safety about all my stuff.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm very keen to have the chance to do some activities, I'm very attracted by the golf.
+       </s>
+       <s pid="7" sid="2">
+        I will be a beginner because I've never done this sport before but I will have a try.
+       </s>
+       <s pid="7" sid="3">
+        Also, I choose surfing, I love this sport.
+       </s>
+       <s pid="7" sid="4">
+        I've been practicing this sport since 5 years, so I'm quiet good.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Finally
+       </s>
+       <s pid="8" sid="2">
+        I would like to know if I need a lot of money about this excursion and if we are going to visit some building.
+       </s>
+       <s pid="8" sid="3">
+        I've know idea what kind of weather it is in  USA could you let me know what type of clothes should I bring with me.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        yours Sincerly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Thank you for your last letter
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="UV">
+        <i>
+         I'm
+        </i>
+       </ns>
+       really envy you
+       <ns type="MD">
+       </ns>
+       holiday
+       <ns type="RT">
+        <i>
+         under
+        </i>
+       </ns>
+       the sun.
+      </p>
+      <p>
+       Last month was amazing for me
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I was helping at a pop concert. All right, I wasn't able to do all the stuff like the lights
+       <ns type="MP">
+       </ns>
+       the
+       <ns type="RN">
+        stereo
+       </ns>
+       , the sound but
+       <ns type="TV">
+        <i>
+         I've been helping
+        </i>
+       </ns>
+       to
+       <ns type="SX">
+        <i>
+         built
+        </i>
+       </ns>
+       the stage and
+       <ns type="R">
+        the installation of micros
+       </ns>
+       . The stage was
+       <ns type="DJ">
+        <i>
+         gigantesque
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         crowed
+        </i>
+       </ns>
+       <ns type="R">
+        could be all around
+       </ns>
+       .
+      </p>
+      <p>
+       I really enjoyed
+       <ns type="FV">
+        <i>
+         to be
+        </i>
+       </ns>
+       next to the pop stars
+       <ns type="MP">
+       </ns>
+       I got a lot of
+       <ns type="S">
+        <i>
+         autographes
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , that
+        </i>
+       </ns>
+       was the first time I've seen
+       <ns type="MA">
+       </ns>
+       like Jagger
+       <ns type="MP">
+        <i>
+         a
+        </i>
+       </ns>
+       lot of
+       <ns type="MP">
+        <i>
+         well
+         <ns type="DJ">
+          <i>
+           know
+          </i>
+         </ns>
+        </i>
+       </ns>
+       pop stars
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       there.
+      </p>
+      <p>
+       I mean
+       <ns type="MP">
+       </ns>
+       <ns type="RP">
+        <i>
+         It's
+        </i>
+       </ns>
+       still
+       <ns type="S">
+        <i>
+         inbelivable
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , can
+        </i>
+       </ns>
+       you imagine
+       <ns type="U">
+        <i>
+         that was
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       like a dream
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       was
+       <ns type="MV">
+       </ns>
+       <ns type="RV">
+        <i>
+         checking
+        </i>
+       </ns>
+       their hands.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         keep
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very good
+       <ns type="AGN">
+        <i>
+         <ns type="RN">
+          <i>
+           souvenir
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       this experience. I think I will go back
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       next year.
+      </p>
+      <p>
+       Do you want
+       <ns type="FV">
+        <i>
+         join
+        </i>
+       </ns>
+       me?
+      </p>
+      <p>
+       I look forward to hearing from you as soon as possible
+      </p>
+      <p>
+       Love
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your last letter, I'm really envy you  holiday under the sun.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last month was amazing for me, I was helping at a pop concert.
+       </s>
+       <s pid="3" sid="2">
+        All right, I wasn't able to do all the stuff like the lights the stereo, the sound but I've been helping to built the stage and the installation of micros.
+       </s>
+       <s pid="3" sid="3">
+        The stage was gigantesque the crowed could be all around.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I really enjoyed to be next to the pop stars I got a lot of autographes, that was the first time I've seen  like Jagger a lot of well know pop stars was there.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I mean
+       </s>
+       <s pid="5" sid="2">
+        It's still inbelivable, can you imagine that was  like a dream I was  checking their hands.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I keep a very good souvenir about this experience.
+       </s>
+       <s pid="6" sid="2">
+        I think I will go back the next year.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Do you want join me?
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I look forward to hearing from you as soon as possible
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Love
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

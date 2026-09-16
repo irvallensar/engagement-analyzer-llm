@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     24.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith
+      </p>
+      <p>
+       Thank you for your
+       <ns type="S">
+        <i>
+         lettre
+        </i>
+       </ns>
+       . Of course I will give you some more
+       <ns type="AGN">
+        <i>
+         detail
+        </i>
+       </ns>
+       about the student conference.
+      </p>
+      <p>
+       First of all the hotel Richard Brown
+       <ns type="TV">
+        <i>
+         has been
+         <ns type="DV">
+          <i>
+           loocked
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       is the Palace Hotel.
+       <ns type="MP">
+        <i>
+         Its
+        </i>
+       </ns>
+       located close to the main
+       <ns type="RP">
+        <i>
+         trainstation
+        </i>
+       </ns>
+       in our town. It is quite near the conference building. There will be
+       <ns type="FN">
+        <i>
+         <ns type="RP">
+          <i>
+           extrabus
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to get there. The bus will pick you up right at your hotel
+       <ns type="RN">
+        <i>
+         <ns type="DN">
+          <i>
+           entery
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . The end-of-conference party will be a small dinner for all
+       <ns type="MD">
+       </ns>
+       students. You do not have to wear
+       <ns type="S">
+        <i>
+         spezial
+        </i>
+       </ns>
+       clothes, just wear what you always wear. If you take your uniform with you it would be pleasant to leave it at the hotel
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       and wear something else.
+      </p>
+      <p>
+       There are many things you could do for this short time on the last day. You could visit our famous Museum of Art or go for a walk along the
+       <ns type="RN">
+        <i>
+         lake
+        </i>
+       </ns>
+       . If you want
+       <ns type="MV">
+       </ns>
+       something for fun or entertainment
+       <ns type="MP">
+       </ns>
+       go bowling.
+      </p>
+      <p>
+       If you have any further questions, just let me know
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your lettre.
+       </s>
+       <s pid="2" sid="2">
+        Of course I will give you some more detail about the student conference.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all the hotel Richard Brown has been loocked in is the Palace Hotel.
+       </s>
+       <s pid="3" sid="2">
+        Its located close to the main trainstation in our town.
+       </s>
+       <s pid="3" sid="3">
+        It is quite near the conference building.
+       </s>
+       <s pid="3" sid="4">
+        There will be extrabus to get there.
+       </s>
+       <s pid="3" sid="5">
+        The bus will pick you up right at your hotel entery.
+       </s>
+       <s pid="3" sid="6">
+        The end-of-conference party will be a small dinner for all  students.
+       </s>
+       <s pid="3" sid="7">
+        You do not have to wear spezial clothes, just wear what you always wear.
+       </s>
+       <s pid="3" sid="8">
+        If you take your uniform with you it would be pleasant to leave it at the hotel.
+       </s>
+       <s pid="3" sid="9">
+        and wear something else.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        There are many things you could do for this short time on the last day.
+       </s>
+       <s pid="4" sid="2">
+        You could visit our famous Museum of Art or go for a walk along the lake.
+       </s>
+       <s pid="4" sid="3">
+        If you want  something for fun or entertainment go bowling.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        If you have any further questions, just let me know
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Our
+       <ns type="RP">
+        <i>
+         Church
+        </i>
+       </ns>
+       is a very famous building
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       our country. It is eighty
+       <ns type="SA">
+        <i>
+         meters
+        </i>
+       </ns>
+       long and its tower is
+       <ns type="MP">
+        <i>
+         <ns type="DN">
+          <i>
+           fourty
+          </i>
+         </ns>
+         five
+        </i>
+       </ns>
+       <ns type="SA">
+        <i>
+         meters
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         high
+        </i>
+       </ns>
+       . On the top of the tower it has a huge clock on
+       <ns type="S">
+        <i>
+         eatch
+        </i>
+       </ns>
+       side. The tower is red and the church itself is
+       <ns type="W">
+        <i>
+         white painted
+        </i>
+       </ns>
+       . In the church are many expensive
+       <ns type="RN">
+        <i>
+         draws
+        </i>
+       </ns>
+       . There is space for about five hundred people. The church was built in 1385. It
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       rebuilt in 1948 because of the
+       <ns type="S">
+        <i>
+         Secound
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         world war
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       <ns type="MY">
+       </ns>
+       it had been
+       <ns type="S">
+        <i>
+         demaged
+        </i>
+       </ns>
+       . The church is located
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       a place where you
+       <ns type="MV">
+       </ns>
+       see the whole
+       <ns type="W">
+        <i>
+         mountain chain of Rigi
+        </i>
+       </ns>
+       . Visit our church because it is one of the most famous
+       <ns type="AGN">
+        <i>
+         church
+        </i>
+       </ns>
+       in our country. It has
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       interesting past. The tower is
+       <ns type="DY">
+        <i>
+         absolutly
+        </i>
+       </ns>
+       <ns type="SA">
+        <i>
+         marvelous
+        </i>
+       </ns>
+       . You can walk to the top of the tower and it
+       <ns type="RV">
+        <i>
+         shows
+        </i>
+       </ns>
+       you a beautiful view. If you want to visit the church, there will be a special guide who
+       <ns type="TV">
+        <i>
+         shows
+        </i>
+       </ns>
+       you
+       <ns type="S">
+        <i>
+         al
+        </i>
+       </ns>
+       the things and answer your questions.
+       <ns type="UD">
+        <i>
+         The
+         <ns type="DN">
+          <i>
+           entery
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         will be
+        </i>
+       </ns>
+       free.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Our Church is a very famous building at our country.
+       </s>
+       <s pid="1" sid="2">
+        It is eighty meters long and its tower is fourty five meters high.
+       </s>
+       <s pid="1" sid="3">
+        On the top of the tower it has a huge clock on eatch side.
+       </s>
+       <s pid="1" sid="4">
+        The tower is red and the church itself is white painted.
+       </s>
+       <s pid="1" sid="5">
+        In the church are many expensive draws.
+       </s>
+       <s pid="1" sid="6">
+        There is space for about five hundred people.
+       </s>
+       <s pid="1" sid="7">
+        The church was built in 1385.
+       </s>
+       <s pid="1" sid="8">
+        It is rebuilt in 1948 because of the Secound world war  it had been demaged.
+       </s>
+       <s pid="1" sid="9">
+        The church is located on a place where you  see the whole mountain chain of Rigi.
+       </s>
+       <s pid="1" sid="10">
+        Visit our church because it is one of the most famous church in our country.
+       </s>
+       <s pid="1" sid="11">
+        It has a interesting past.
+       </s>
+       <s pid="1" sid="12">
+        The tower is absolutly marvelous.
+       </s>
+       <s pid="1" sid="13">
+        You can walk to the top of the tower and it shows you a beautiful view.
+       </s>
+       <s pid="1" sid="14">
+        If you want to visit the church, there will be a special guide who shows you al the things and answer your questions.
+       </s>
+       <s pid="1" sid="15">
+        The entery will be free.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

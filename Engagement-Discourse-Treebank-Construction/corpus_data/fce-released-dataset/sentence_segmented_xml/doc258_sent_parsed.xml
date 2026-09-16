@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Turkish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     34.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr. Robertson,
+      </p>
+      <p>
+       I would like to say "thank you" for this
+       <ns type="R">
+        <i>
+         London trip plan
+        </i>
+       </ns>
+       . We are really excited about it
+       <ns type="RP">
+        <i>
+         . Especially
+        </i>
+       </ns>
+       the boat trip on
+       <ns type="MD">
+       </ns>
+       river
+       <ns type="MP">
+        <i>
+         <ns type="MA">
+         </ns>
+        </i>
+       </ns>
+       is a good idea because we all want to see Greenwich. We also
+       <ns type="RV">
+        <i>
+         enjoy
+        </i>
+       </ns>
+       the idea of going to the National Art Gallery and sightseeing by bus. It seems it's going to be
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       great fun.
+      </p>
+      <p>
+       I do not know if it is possible to make any
+       <ns type="AGN">
+        <i>
+         change
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       this plan but we saw an ad in "Time Out" magazine last week about a fashion show which we would like to see. The show's date is very
+       <ns type="S">
+        <i>
+         convinient
+        </i>
+       </ns>
+       - March 14 -, and it is on
+       <ns type="MT">
+       </ns>
+       <ns type="MD">
+       </ns>
+       Central Exhibition Hall so I do not think it would be a problem to get there.
+      </p>
+      <p>
+       As you know, we all come from different countries and we are keen
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         learning
+        </i>
+       </ns>
+       some other things about English culture besides the language itself.
+       <ns type="RV">
+        <i>
+         Joining
+        </i>
+       </ns>
+       this fashion and leisure show, we will get the chance to see a lot of enjoyable and different things, such as new hair styles and
+       <ns type="MP">
+        <i>
+         make up
+        </i>
+       </ns>
+       <ns type="UN">
+        <i>
+         ways
+        </i>
+       </ns>
+       , or what
+       <ns type="W">
+        <i>
+         <ns type="AGV">
+          <i>
+           is
+          </i>
+         </ns>
+         <ns type="MD">
+         </ns>
+         <ns type="FN">
+          <i>
+           fashion
+          </i>
+         </ns>
+         in London
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         recently
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Briefly, we would be happy if we could see this show instead of the Science Museum. We can find another
+       <ns type="RN">
+        <i>
+         chance
+        </i>
+       </ns>
+       to go to the Science Museum
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       any other day, but this show is just
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       this Tuesday. Also, it's free for students. I hope
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it
+       <ns type="TV">
+        <i>
+         wouldn't
+        </i>
+       </ns>
+       cause a
+       <ns type="RN">
+        <i>
+         trouble
+        </i>
+       </ns>
+       to change the programme. I look forward to hearing from you soon.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr. Robertson,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I would like to say "thank you" for this London trip plan.
+       </s>
+       <s pid="2" sid="2">
+        We are really excited about it.
+       </s>
+       <s pid="2" sid="3">
+        Especially the boat trip on  river  is a good idea because we all want to see Greenwich.
+       </s>
+       <s pid="2" sid="4">
+        We also enjoy the idea of going to the National Art Gallery and sightseeing by bus.
+       </s>
+       <s pid="2" sid="5">
+        It seems it's going to be a great fun.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I do not know if it is possible to make any change in this plan but we saw an ad in "Time Out" magazine last week about a fashion show which we would like to see.
+       </s>
+       <s pid="3" sid="2">
+        The show's date is very convinient - March 14 -, and it is on   Central Exhibition Hall so I do not think it would be a problem to get there.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As you know, we all come from different countries and we are keen on learning some other things about English culture besides the language itself.
+       </s>
+       <s pid="4" sid="2">
+        Joining this fashion and leisure show, we will get the chance to see a lot of enjoyable and different things, such as new hair styles and make up ways, or what is  fashion in London recently.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Briefly, we would be happy if we could see this show instead of the Science Museum.
+       </s>
+       <s pid="5" sid="2">
+        We can find another chance to go to the Science Museum in any other day, but this show is just for this Tuesday.
+       </s>
+       <s pid="5" sid="3">
+        Also, it's free for students.
+       </s>
+       <s pid="5" sid="4">
+        I hope, it wouldn't cause a trouble to change the programme.
+       </s>
+       <s pid="5" sid="5">
+        I look forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Although
+       <ns type="FN">
+        <i>
+         human
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       social
+       <ns type="AGN">
+        <i>
+         creature
+        </i>
+       </ns>
+       , all people need an area
+       <ns type="M">
+       </ns>
+       <ns type="TV">
+        <i>
+         to be able
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           to stay
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         away
+        </i>
+       </ns>
+       from other people. This is essential to renew the energy which is necessary for daily life. Also we all like to have some special things and people in our lives to help us to feel different from others. It can be a lover, a hobby or a habit.
+      </p>
+      <p>
+       Thinking about famous people, we generally tend to ignore this need. I believe this feeling
+       <ns type="CE">
+        sources from a strange though
+       </ns>
+       ; when somebody gets famous, whatever the job is they do, we think we have some kind of right over them. Consequently we demand to know every single detail about them and their lives.
+       <ns type="MD">
+        <i>
+         Press
+        </i>
+       </ns>
+       takes this demand as an order, and "but
+       <ns type="MD">
+       </ns>
+       public wants to know" becomes a nightmare for famous people.
+      </p>
+      <p>
+       In fact, what is a need for ordinary people is a more important need for famous people. Because they have to spend
+       <ns type="RY">
+        <i>
+         too
+        </i>
+       </ns>
+       much time in front of other people, they are even more sensitive about their privacy. I am
+       <ns type="SX">
+        <i>
+         quiet
+        </i>
+       </ns>
+       sure
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="MC">
+       </ns>
+       even the ones
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       who have chosen their
+       <ns type="DN">
+        <i>
+         occupies
+        </i>
+       </ns>
+       just to be famous, don't like to be
+       <ns type="RV">
+        <i>
+         pictured
+        </i>
+       </ns>
+       when they believe they are alone. The situation
+       <ns type="SX">
+        <i>
+         much
+        </i>
+       </ns>
+       be much worse for the ones who have become famous without desiring
+       <ns type="RA">
+        <i>
+         this
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Obviously, there is no point in saying "famous people have a right to their own
+       <ns type="AGN">
+        <i>
+         <ns type="DN">
+          <i>
+           live
+          </i>
+         </ns>
+        </i>
+       </ns>
+       ." Although this statement is
+       <ns type="S">
+        <i>
+         absuletely
+        </i>
+       </ns>
+       true, it seems there is no way to stop public attention, so they will
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         keep
+        </i>
+       </ns>
+       living with journalists.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Although human is a social creature, all people need an area  to be able to stay away from other people.
+       </s>
+       <s pid="1" sid="2">
+        This is essential to renew the energy which is necessary for daily life.
+       </s>
+       <s pid="1" sid="3">
+        Also we all like to have some special things and people in our lives to help us to feel different from others.
+       </s>
+       <s pid="1" sid="4">
+        It can be a lover, a hobby or a habit.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thinking about famous people, we generally tend to ignore this need.
+       </s>
+       <s pid="2" sid="2">
+        I believe this feeling sources from a strange though; when somebody gets famous, whatever the job is they do, we think we have some kind of right over them.
+       </s>
+       <s pid="2" sid="3">
+        Consequently we demand to know every single detail about them and their lives.
+       </s>
+       <s pid="2" sid="4">
+        Press takes this demand as an order, and "but  public wants to know" becomes a nightmare for famous people.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In fact, what is a need for ordinary people is a more important need for famous people.
+       </s>
+       <s pid="3" sid="2">
+        Because they have to spend too much time in front of other people, they are even more sensitive about their privacy.
+       </s>
+       <s pid="3" sid="3">
+        I am quiet sure,  even the ones, who have chosen their occupies just to be famous, don't like to be pictured when they believe they are alone.
+       </s>
+       <s pid="3" sid="4">
+        The situation much be much worse for the ones who have become famous without desiring this.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Obviously, there is no point in saying "famous people have a right to their own live."
+       </s>
+       <s pid="4" sid="2">
+        Although this statement is absuletely true, it seems there is no way to stop public attention, so they will  keep living with journalists.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

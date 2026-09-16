@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       My name is Yakimo Nashoto
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I study in France and I went to London just to see "Over the Rainbow" because all my friends told me that it was "great". However, when I saw it, I was really
+       <ns type="S">
+        <i>
+         disapointed
+        </i>
+       </ns>
+       and I
+       <ns type="MV">
+       </ns>
+       ask you
+       <ns type="MT">
+       </ns>
+       some money back. The reasons why I was disappointed
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       :
+      </p>
+      <p>
+       First of all, Danny Brook was not there
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I was very upset because he is my
+       <ns type="SA">
+        <i>
+         favorite
+        </i>
+       </ns>
+       singer and
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was one of the reasons why I wanted to see this show.
+      </p>
+      <p>
+       Then, the show started
+       <ns type="S">
+        <i>
+         t
+        </i>
+       </ns>
+       <ns type="ID">
+        <i>
+         20.15 pm
+        </i>
+       </ns>
+       instead of 19.30. My Euro Star was at
+       <ns type="ID">
+        <i>
+         22 pm
+        </i>
+       </ns>
+       . As you can see, I missed my train to go back to Paris.
+      </p>
+      <p>
+       <ns type="R">
+        On the
+        <ns type="S">
+         <i>
+          developpement
+         </i>
+        </ns>
+       </ns>
+       , they also said that
+       <ns type="RA">
+        <i>
+         they
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be a discount for students who are between eighteen and twenty-five years old but
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was totally wrong because I paid the full price
+       <ns type="MP">
+       </ns>
+       which was £20.
+      </p>
+      <p>
+       Finally, I wanted to buy something to drink,
+       <ns type="MC">
+       </ns>
+       the restaurant was closed because it was
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       a bank holiday!
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         As a conclusion
+        </i>
+       </ns>
+       , it was the
+       <ns type="FJ">
+        <i>
+         worse
+        </i>
+       </ns>
+       evening I have ever had in my life so I
+       <ns type="MV">
+       </ns>
+       ask you for
+       <ns type="MD">
+       </ns>
+       money back.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My name is Yakimo Nashoto, I study in France and I went to London just to see "Over the Rainbow" because all my friends told me that it was "great".
+       </s>
+       <s pid="2" sid="2">
+        However, when I saw it, I was really disapointed and I  ask you  some money back.
+       </s>
+       <s pid="2" sid="3">
+        The reasons why I was disappointed were :
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, Danny Brook was not there, I was very upset because he is my favorite singer and it was one of the reasons why I wanted to see this show.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Then, the show started t 20.15 pm instead of 19.30.
+       </s>
+       <s pid="4" sid="2">
+        My Euro Star was at 22 pm.
+       </s>
+       <s pid="4" sid="3">
+        As you can see, I missed my train to go back to Paris.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        On the developpement, they also said that they will be a discount for students who are between eighteen and twenty-five years old but it was totally wrong because I paid the full price which was £20.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, I wanted to buy something to drink,  the restaurant was closed because it was on a bank holiday!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        As a conclusion, it was the worse evening I have ever had in my life so I  ask you for  money back.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Your faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="UD">
+        <i>
+         The modern
+        </i>
+       </ns>
+       technology has changed my daily life a lot.
+      </p>
+      <p>
+       First of all,
+       <ns type="MD">
+       </ns>
+       Internet makes my life easier. Some of my friends live
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       overseas
+       <ns type="RP">
+        <i>
+         , we
+        </i>
+       </ns>
+       keep in touch
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       e-mails
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       is a very good way
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         communicating
+        </i>
+       </ns>
+       because it is much cheaper than a phone call and we can re-read
+       <ns type="RN">
+        <i>
+         <ns type="CN">
+          <i>
+           mails
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and keep them forever.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         Then
+        </i>
+       </ns>
+       , nine
+       <ns type="L">
+        <i>
+         persons
+        </i>
+       </ns>
+       out of ten have a mobile phone in our society. I have one too! It is very useful for several reasons:
+      </p>
+      <p>
+       when I want to call someone, I don't need to look
+       <ns type="RY">
+        <i>
+         after
+        </i>
+       </ns>
+       a phone box
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       people can phone me at
+       <ns type="RP">
+        <i>
+         anytime
+        </i>
+       </ns>
+       they want from
+       <ns type="RY">
+        <i>
+         everywhere
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       when I go out, sometimes my parents are worried so they phone
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       me
+       <ns type="MV">
+       </ns>
+       if everything is
+       <ns type="UV">
+        <i>
+         going
+        </i>
+       </ns>
+       alright.
+      </p>
+      <p>
+       Finally, there is a TV in my
+       <ns type="RP">
+        <i>
+         parent's
+        </i>
+       </ns>
+       car. We can watch TV
+       <ns type="RP">
+        <i>
+         , there
+        </i>
+       </ns>
+       is also a map so when we get lost, it is very
+       <ns type="SX">
+        <i>
+         east
+        </i>
+       </ns>
+       to
+       <ns type="R">
+        find out the place
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         As a conclusion
+        </i>
+       </ns>
+       , I agree that modern technology has changed my daily life but I am sure that
+       <ns type="MP">
+       </ns>
+       in the future, my life will not be the same as now because more modern technology will appear.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The modern technology has changed my daily life a lot.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all,  Internet makes my life easier.
+       </s>
+       <s pid="2" sid="2">
+        Some of my friends live in overseas, we keep in touch by e-mails, it is a very good way for communicating because it is much cheaper than a phone call and we can re-read mails and keep them forever.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Then, nine persons out of ten have a mobile phone in our society.
+       </s>
+       <s pid="3" sid="2">
+        I have one too!
+       </s>
+       <s pid="3" sid="3">
+        It is very useful for several reasons:
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        when I want to call someone, I don't need to look after a phone box.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        people can phone me at anytime they want from everywhere
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        when I go out, sometimes my parents are worried so they phone to me  if everything is going alright.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Finally, there is a TV in my parent's car.
+       </s>
+       <s pid="7" sid="2">
+        We can watch TV, there is also a map so when we get lost, it is very east to find out the place.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        As a conclusion, I agree that modern technology has changed my daily life but I am sure that in the future, my life will not be the same as now because more modern technology will appear.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

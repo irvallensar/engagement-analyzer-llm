@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Maria Smith,
+      </p>
+      <p>
+       First of all, the group has been booked into the Palace Hotel. It is a big hotel because there will be a lot of people. It has a
+       <ns type="UP">
+        <i>
+         swimming-pool
+        </i>
+       </ns>
+       and a nice bar.
+      </p>
+      <p>
+       The hotel is ten minutes
+       <ns type="RY">
+        <i>
+         far
+        </i>
+       </ns>
+       from the conference
+       <ns type="MN">
+       </ns>
+       and there will be a bus available to go directly over there.
+      </p>
+      <p>
+       At the end of the conference
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       there will be a dinner in a luxurious restaurant
+       <ns type="MP">
+       </ns>
+       so people must have nice clothes;
+       <ns type="UP">
+        <i>
+         jean's
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       not allowed. Next to the restaurant, there is a disco for people who like dancing.
+      </p>
+      <p>
+       We can do a lot of things in my area. We have the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to visit the old town
+       <ns type="RP">
+        <i>
+         , it's
+        </i>
+       </ns>
+       very nice and there
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       a lot of shops. We can visit the old castle or the painting museum too.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Maria Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all, the group has been booked into the Palace Hotel.
+       </s>
+       <s pid="2" sid="2">
+        It is a big hotel because there will be a lot of people.
+       </s>
+       <s pid="2" sid="3">
+        It has a swimming-pool and a nice bar.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The hotel is ten minutes far from the conference  and there will be a bus available to go directly over there.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        At the end of the conference, there will be a dinner in a luxurious restaurant so people must have nice clothes; jean's is not allowed.
+       </s>
+       <s pid="4" sid="2">
+        Next to the restaurant, there is a disco for people who like dancing.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        We can do a lot of things in my area.
+       </s>
+       <s pid="5" sid="2">
+        We have the possibility to visit the old town, it's very nice and there is a lot of shops.
+       </s>
+       <s pid="5" sid="3">
+        We can visit the old castle or the painting museum too.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       I find television the most important invention. I think it's good for old people because some of them cannot go to the cinema
+       <ns type="SA">
+        <i>
+         anymore
+        </i>
+       </ns>
+       .
+       <ns type="ID">
+        <i>
+         In one hand
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       's because they
+       <ns type="RP">
+        <i>
+         have not
+        </i>
+       </ns>
+       enough money to pay
+       <ns type="MT">
+       </ns>
+       it and
+       <ns type="ID">
+        <i>
+         in the other hand
+        </i>
+       </ns>
+       it's because they can't move very well
+       <ns type="MP">
+       </ns>
+       for example if they are disabled. With television, old people are less alone because most
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       old
+       <ns type="FN">
+        <i>
+         woman
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         have not
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         her
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         husband
+        </i>
+       </ns>
+       <ns type="SA">
+        <i>
+         anymore
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Television is a good way to be informed
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       the news. I prefer being informed by television than by newspapers
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it's more relaxing.
+      </p>
+      <p>
+       I think television is a good invention for children
+       <ns type="MP">
+       </ns>
+       <ns type="MT">
+       </ns>
+       when they have free time
+       <ns type="MP">
+        <i>
+         <ns type="UC">
+          <i>
+           and
+          </i>
+         </ns>
+         while
+        </i>
+       </ns>
+       they are watching television, we don't have to look after them if we have something important to do.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I find television the most important invention.
+       </s>
+       <s pid="1" sid="2">
+        I think it's good for old people because some of them cannot go to the cinema anymore.
+       </s>
+       <s pid="1" sid="3">
+        In one hand it's because they have not enough money to pay  it and in the other hand it's because they can't move very well for example if they are disabled.
+       </s>
+       <s pid="1" sid="4">
+        With television, old people are less alone because most of old woman have not her husband anymore.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Television is a good way to be informed with the news.
+       </s>
+       <s pid="2" sid="2">
+        I prefer being informed by television than by newspapers, it's more relaxing.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think television is a good invention for children  when they have free time and while they are watching television, we don't have to look after them if we have something important to do.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

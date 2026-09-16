@@ -1,0 +1,554 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    ﻿Atomic and Molecular Spectroscopy
+   </div>
+   <div class="abstract">
+    Abstract
+    <p>
+     We used the hydrogen spectrum to test the Balmer hypothesis.  We also derived the Rydberg constant from this information.  The sodium spectrum is dominated by the behavior of its single valence electron.  We analyzed the sodium spectrum for evidence of nuclear screening and electron spin.  Finally, we measured the spectrum of diatomic nitrogen to learn about the chemical bond.  The additional degrees of freedom in diatomic nitrogen allow for vibrational and rotational motion.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     Introduction
+    </div>
+    <p>
+     Atomic and molecular spectroscopy has provided experimental verification for many of the most profound predictions in physics.  There has been excellent agreement between theory and experiment in the study of visible light emissions.
+    </p>
+    <p>
+     In this experiment, we used spectroscopy to test theoretical predictions on three levels of complexity.  We start with hydrogen, the simplest atom, to test Bohr’s model of quantized atomic energy levels.  We then increase the complexity by studying sodium, an alkali atom.  Sodium displays nuclear screening, electron spin, and selection rules, all predicted by quantum mechanics.  Finally, we looked at the vibrational and rotational excitations of diatomic nitrogen to infer the structure of the chemical bond between the two atoms.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Experimental Procedure
+    </div>
+    <p>
+     We used an Ocean Optics SD2000 fiber spectrometer calibrated with mercury and helium.  The spectrometer consists of two gratings: the master, which has a spectral rand of 632 nm to 880 nm, and the slave, which has a spectral range of 371 nm to 677 nm.  Both gratings are mounted in a crossed Czerny-Turner configuration.  The device has a resolution of 3.57×10-7 pixels and is therefore able to resolve features such as the sodium doublet, which has a separation of 0.121 pixels.  However, the spectrometer is not fit to study the hydrogen Lyman series, which does not lie in the spectral range of the instrument.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     The Balmer Series in Hydrogen
+    </div>
+    <p>
+     The Balmer formula describes the visible spectrum produced by excited hydrogen atoms.  In 1889, Rydberg recognized the Balmer formula to be a particular case of a more general expression in which n1 = 2 and RH is the Rydberg constant.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     <b>
+      Balmer Formula
+     </b>
+    </p>
+    <p>
+     (G is an empirical constant)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     <b>
+      Rydberg Formula
+     </b>
+    </p>
+    <p>
+     In 1913, Bohr revolutionized our view of the atom with his model of atomic quantization.  Bohr suggested that orbital energy is fixed at discrete values, as a function of a quantum number n.  Changes in energy states are accounted for by the emission or absorption of a photon, which balances the energy difference.
+    </p>
+    <p>
+     This relation is described by the Planck formula:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     Our measurement of the visible part of the hydrogen spectrum is evidence of Bohr’s quantized energy levels.
+    </p>
+    <p>
+     <b>
+      Table 1: Hydrogen Balmer Wavelengths
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     Figure 1 shows a plot of:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     By the Rydberg formula, the slope of the line gives the Rydberg constant.  Our estimation of this constant is 109683 + 1000 cm-1 (accepted value RH=109737.318 + 0.012 cm-1).
+    </p>
+    <p>
+     The straightness of the line is a test of Balmer’s hypothesis regarding the quantized energy levels of the hydrogen spectrum.  We used Excel to plot a linear trend, which gave an R2 value of 1.  This indicates that a straight line is a good fit for the data, thus verifying the Balmer hypothesis.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Fine Structure in Sodium
+    </div>
+    <p>
+     Sodium is an alkali atom, meaning it has one l = 0 electron in its valence shell.  As the nucleus is shielded by the charge distribution of the inner shells, his lone electron
+     <q>
+      sees
+     </q>
+     a net potential similar to that of hydrogen.  However, for smaller n, the behavior of electrons of small l deviates from hydrogenic behavior.  The small l states do not have enough angular momentum to maintain a large radius, causing their orbits to cross inside the closed shells (Fig. 2).  When this occurs, there is less of a screening effect and a lowering of the Coulomb energy.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     <b>
+      Fig. 2
+     </b>
+    </p>
+    <p>
+     Evidence for nuclear screening is found by fitting our measurement of the sodium spectrum to a Balmer-like relation.  We did this using a quantum defect, which mathematically summarizes the effect of nuclear screening.  The quantum defect (δ) is a correction to the quantized energy predicted by Bohr.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     <b>
+      Bohr energy with quantum defect
+     </b>
+    </p>
+    <p>
+     Following the selection rule,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     , the wavelength of a photon emitted to bring an electron from energy state nd to 3p is determined by:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     Figure 3 is a plot of
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    vs.
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    for transitions from nd to 3p.  The quantum defect calculated from this plot is
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     <b>
+      Fig. 3
+     </b>
+    </p>
+    <p>
+     The sodium spectrum also shows evidence of electron spin.  In the rest frame of the electron, the proton creates a circular positive current and therefore produces a magnetic field.  The spin of an electron can point either up or down with respect to the internal magnetic field.  The interaction energy between the magnetic field and the internal magnetic moment of the electron is described as the spin-orbit interaction.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     Since spin can only have two values, the spin-orbit interaction energy can also only have two values:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     The interaction energy is either added or subtracted from the total energy of each state.  This leads to a small energy split for every state with
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     .
+    </p>
+    <p>
+     The spin-orbit interaction manifests itself as a ~0.1% split of spectral lines.  Therefore, the presence of doublets in the sodium spectrum verifies the prediction of spin-orbit coupling.  These doublets can also be used to infer the magnitude of the internal magnetic field of the atom.  The classic example of a doublet is the sodium D line, shown in Figure 4.
+    </p>
+    <p>
+     We calculated the expected internal atomic magnetic field to be 1.332×1021 T for an expected energy split of 0.00617 eV.  Our measured energy split was 0.00104 + 0.001 eV.  This gives 2.2432620×1020 T for the internal magnetic field, which is about an order of magnitude lower than expected.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     <b>
+      Fig. 4: Sodium D doublet
+     </b>
+    </p>
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Molecular Spectroscopy of N2
+    </div>
+    <p>
+     The spectrum of diatomic nitrogen differs from those of hydrogen and sodium greatly.  The hydrogen and sodium spectra consist of several sharp peaks whereas the N2 spectrum shows a broad
+     <q>
+      comb-like
+     </q>
+     band of emission wavelengths.  Diatomic nitrogen is more complex and has both vibrational and rotational degrees of freedom.
+    </p>
+    <p>
+     According to the Born-Oppenheimer approximation, vibrational and rotational excitations can be treated separately.  The vibrational mode is described by the quantum harmonic oscillator model.  In the following equation, ω0 represents the fundamental frequency oscillation.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     A transition in which
+     <i>
+      n
+     </i>
+     is decreased by 1 forms a spectrum of equally spaced lines.  The separation of these lines can be measured and then used to calculate ω0.  In figure 5, the coarser set of lines represents the vibrational excitations.  These lines were not exactly equally spaced, which we expect to be the result of coupling with rotational motion.  We found the fundamental vibrational frequency of nitrogen to be 3.11×1013 Hz.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     <b>
+      Fig. 5: N2 spectrum
+     </b>
+    </p>
+    <p>
+    </p>
+    <p>
+     The bond holding the two nitrogen atoms together can be viewed as a spring.  The
+    </p>
+    <p>
+     strength of the bond can therefore be approximated using
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     , where m is the reduced mass (7.0015 amu).   We found k=11.237 N/m.
+    </p>
+    <p>
+     The rotational excitations are seen in the fine structure of each of the coarse peaks in the N2 spectrum.  These emissions are described by a quantum rigid rotator.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     In the above equation J=0,1,2… h is Planck’s constant and I is the moment of inertia of the molecule.  For two particles separated a distance r with a reduced mass m, the moment of inertia is I=mr2.
+    </p>
+    <p>
+     We again extracted a frequency for rotational motion, which was found to be 2.52×1012 Hz.  This is an order of magnitude smaller than the vibrational frequency.  We also calculated the distance between the atoms as 0.19 nm.
+    </p>
+    <p>
+     It is curious that the same comb-like structure was not seen in the diatomic hydrogen spectrum.  This is because the rotational energy is a function of 1/m and the mass of a hydrogen molecule is very small compared to nitrogen.  This would result in emissions with wavelengths much larger than our apparatus can detect.
+    </p>
+    <p>
+     An application of our knowledge of molecular excitations is found in a common kitchen appliance.  A molecule will absorb a photon that matches its fundamental frequency.
+    </p>
+    <p>
+     This causes the energy of the molecule to increase, which increases the temperature of the material.  In a microwave oven, microwaves are used to excite water molecules in order to heat food.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Conclusions
+    </div>
+    <p>
+     The atomic and molecular spectra studied in this experiment verify several famous theoretical predictions in physics.  The hydrogen spectrum verifies Bohr’s model of quantized energy levels.  On a more complex level, quantum mechanical predictions of electron spin, nuclear screening and selection rules are manifested in the sodium spectrum.  Finally, the spectrum of diatomic nitrogen shows the validity of the Born-Oppenheimer approximation regarding vibrational and rotational energies.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     Appendix
+    </div>
+    <p>
+     Variables:
+    </p>
+    <p>
+     • λ: wavelength
+    </p>
+    <p>
+     • υ: frequency
+    </p>
+    <p>
+     • δ: quantum defect
+    </p>
+    <p>
+     • RH: Rydberg constant (accepted value: 109737.318 + 0.012 cm-1)
+    </p>
+    <p>
+     • r: radial distance from nucleus
+    </p>
+    <p>
+     • n: principal quantum number
+    </p>
+    <p>
+     • l: angular momentum quantum number
+    </p>
+    <p>
+     • ms: magnetic moment quantum number
+    </p>
+    <p>
+     • s: spin quantum number (s=1/2 for electrons)
+    </p>
+    <p>
+     • h: Planck’s constant (accepted value:  4.13566733(10) ×10-15 eV ∙s)
+    </p>
+    <p>
+     • ħ: Dirac constant (h/2π) (accepted value:  6.58211899(16) ×10-16 eV ∙s)
+    </p>
+    <p>
+     • c: speed of light (accepted value: 299,792,458 m/s)
+    </p>
+    <p>
+     • E: energy
+    </p>
+    <p>
+     • m: mass of electron (accepted value: 9.10938188 × 10-31 kg)
+    </p>
+    <p>
+     • e: charge of electron (accepted value: 1.60217646 × 10-19 C)
+    </p>
+    <p>
+     • εo: permittivity of free space (accepted value: 8.8541878176 × 10−12 F/m)
+    </p>
+    <p>
+     • μs: magnetic dipole moment
+    </p>
+    <p>
+     • μB: Bohr magneton (accepted value: 0.927 × 10-23 amp-m2)
+    </p>
+    <p>
+     • gs: spin g-factor (for electrons ~2)
+    </p>
+    <p>
+     • S: spin angular momentum (Sz: projection of S on z-axis,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    for electrons)
+    <p>
+    </p>
+    <p>
+     • J: combined spin (Jz: projection of J on z-axis)
+    </p>
+    <p>
+     • B: magnetic field
+    </p>
+    <p>
+     Equations referenced:
+    </p>
+    <p>
+     • Energy of a photon
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+     • Bohr’s orbital energy:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     • Spin and Magnetic Moment
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+   </div>
+  </div>
+ </div>
+</div>

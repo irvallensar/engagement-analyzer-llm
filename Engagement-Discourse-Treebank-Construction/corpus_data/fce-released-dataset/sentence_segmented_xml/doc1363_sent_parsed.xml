@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Mrs/Miss Helen:
+      </p>
+      <p>
+       Thank you very much for your letter. It is excellent to have won this prize.
+      </p>
+      <p>
+       To be honest I had doubts about winning the competition, because in spite of
+       <ns type="UA">
+        <i>
+         I
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         think
+        </i>
+       </ns>
+       I did well, I had to play against
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very strong
+       <ns type="RN">
+        <i>
+         competence
+        </i>
+       </ns>
+       . The idea
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       going to California for 2 weeks
+       <ns type="AGV">
+        <i>
+         make
+        </i>
+       </ns>
+       me feel very excited.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         According
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       your letter, July is the
+       <ns type="U">
+        <i>
+         period of
+        </i>
+       </ns>
+       time
+       <ns type="MC">
+       </ns>
+       suits me best. My job is less demanding in July.
+      </p>
+      <p>
+       About the accommodation
+       <ns type="MP">
+       </ns>
+       I would prefer to stay in a tent. I have never done it before, so I really fancy the idea.
+      </p>
+      <p>
+       I am really
+       <ns type="DJ">
+        <i>
+         surprise
+        </i>
+       </ns>
+       about how many activities can be
+       <ns type="RV">
+        <i>
+         practised
+        </i>
+       </ns>
+       in this place. If
+       <ns type="MA">
+       </ns>
+       is possible I would like
+       <ns type="FV">
+        <i>
+         swimming
+        </i>
+       </ns>
+       . I am very good at swimming.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         On one hand
+        </i>
+       </ns>
+       I think that climbing sounds very exciting, but on the other hand it scares me a lot, so I will play tennis. I am not so bad at tennis but I would like to improve my style.
+      </p>
+      <p>
+       By the way, I would like to know if the
+       <ns type="ID">
+        <i>
+         level of life
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       USA is similar to
+       <ns type="MD">
+       </ns>
+       UK. How much money should I bring with me?
+      </p>
+      <p>
+       Another point is about
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       clothes
+       <ns type="RP">
+        <i>
+         , could
+        </i>
+       </ns>
+       you confirm
+       <ns type="UA">
+        <i>
+         me
+        </i>
+       </ns>
+       that I'll need summer clothes? I would be very pleased
+       <ns type="M">
+       </ns>
+       .
+      </p>
+      <p>
+       Please
+       <ns type="MP">
+       </ns>
+       if you need further information from me, don't hesitate to contact me again.
+      </p>
+      <p>
+       Yours sincerely.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Mrs/Miss Helen:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for your letter.
+       </s>
+       <s pid="2" sid="2">
+        It is excellent to have won this prize.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        To be honest I had doubts about winning the competition, because in spite of I think I did well, I had to play against a very strong competence.
+       </s>
+       <s pid="3" sid="2">
+        The idea about going to California for 2 weeks make me feel very excited.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        According with your letter, July is the period of time  suits me best.
+       </s>
+       <s pid="4" sid="2">
+        My job is less demanding in July.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        About the accommodation I would prefer to stay in a tent.
+       </s>
+       <s pid="5" sid="2">
+        I have never done it before, so I really fancy the idea.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I am really surprise about how many activities can be practised in this place.
+       </s>
+       <s pid="6" sid="2">
+        If  is possible I would like swimming.
+       </s>
+       <s pid="6" sid="3">
+        I am very good at swimming.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        On one hand I think that climbing sounds very exciting, but on the other hand it scares me a lot, so I will play tennis.
+       </s>
+       <s pid="7" sid="2">
+        I am not so bad at tennis but I would like to improve my style.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        By the way, I would like to know if the level of life in  USA is similar to  UK.
+       </s>
+       <s pid="8" sid="2">
+        How much money should I bring with me?
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Another point is about the clothes, could you confirm me that I'll need summer clothes?
+       </s>
+       <s pid="9" sid="2">
+        I would be very pleased .
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Please if you need further information from me, don't hesitate to contact me again.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Yours sincerely.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Normally I
+       <ns type="W">
+        <i>
+         enjoy really
+         <ns type="UY">
+          <i>
+           much
+          </i>
+         </ns>
+         shopping
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In fact when I don't feel very happy I decide to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       shopping to try to
+       <ns type="S">
+        <i>
+         cher
+        </i>
+       </ns>
+       myself up. And really, it works.
+      </p>
+      <p>
+       But not everything about shopping is enjoyable. For example, I hate
+       <ns type="MA">
+       </ns>
+       when I get into a shopping centre and it is crowded. I don't like
+       <ns type="MA">
+       </ns>
+       when I have to try on
+       <ns type="IJ">
+        <i>
+         differents
+        </i>
+       </ns>
+       sizes because the small
+       <ns type="MN">
+       </ns>
+       doesn't fit
+       <ns type="R">
+        <i>
+         on my body
+        </i>
+       </ns>
+       because I have
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       weight. It is
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       this moment when really I
+       <ns type="S">
+        <i>
+         realiase
+        </i>
+       </ns>
+       I am getting fat and it is a horrible feeling.
+      </p>
+      <p>
+       I think women, in general, are very impulsive
+       <ns type="MC">
+       </ns>
+       purchasing things. Many times we buy things that
+       <ns type="MP">
+       </ns>
+       <ns type="R">
+        <i>
+         in fact
+        </i>
+       </ns>
+       , we don't need and, sometimes you
+       <ns type="MV">
+       </ns>
+       <ns type="DJ">
+        <i>
+         surprise
+        </i>
+       </ns>
+       when you check the balance of your bank account and then you need to cut down
+       <ns type="MT">
+       </ns>
+       your expenses for 2 months.
+      </p>
+      <p>
+       But from another point of view, it is silly to be earning money and
+       <ns type="X">
+        <i>
+         don't spend
+        </i>
+       </ns>
+       it as you want. At the end of the day money is just money.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Normally I enjoy really much shopping.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In fact when I don't feel very happy I decide to do shopping to try to cher myself up.
+       </s>
+       <s pid="2" sid="2">
+        And really, it works.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        But not everything about shopping is enjoyable.
+       </s>
+       <s pid="3" sid="2">
+        For example, I hate  when I get into a shopping centre and it is crowded.
+       </s>
+       <s pid="3" sid="3">
+        I don't like  when I have to try on differents sizes because the small  doesn't fit on my body because I have got weight.
+       </s>
+       <s pid="3" sid="4">
+        It is in this moment when really I realiase I am getting fat and it is a horrible feeling.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think women, in general, are very impulsive  purchasing things.
+       </s>
+       <s pid="4" sid="2">
+        Many times we buy things that in fact, we don't need and, sometimes you  surprise when you check the balance of your bank account and then you need to cut down  your expenses for 2 months.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But from another point of view, it is silly to be earning money and don't spend it as you want.
+       </s>
+       <s pid="5" sid="2">
+        At the end of the day money is just money.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Manager:
+      </p>
+      <p>
+       I
+       <ns type="S">
+        <i>
+         reciently
+        </i>
+       </ns>
+       was in London,
+       <ns type="MV">
+       </ns>
+       in my sister's home, and I went to
+       <ns type="S">
+        <i>
+         se
+        </i>
+       </ns>
+       "Over the Rainbow". I had a
+       <ns type="AGN">
+        <i>
+         lots
+        </i>
+       </ns>
+       of problems and I would like to tell you about them.
+      </p>
+      <p>
+       Early that day I went to buy the tickets and I decided to buy the expensive ones,
+       <ns type="RT">
+        <i>
+         like
+        </i>
+       </ns>
+       the
+       <ns type="DN">
+        promotion paper
+       </ns>
+       said they
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       discounts to people
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       worked at the British Institute. I mentioned it, but they told me that
+       <ns type="MD">
+       </ns>
+       promotion had ended a long time ago. Why do you put
+       <ns type="MA">
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the paper then? In the evening I got a flat tire, and because of this I got
+       <ns type="W">
+        <i>
+         late to the show
+        </i>
+       </ns>
+       , when I got to my
+       <ns type="RN">
+        <i>
+         place
+        </i>
+       </ns>
+       , it was
+       <ns type="RV">
+        <i>
+         used
+        </i>
+       </ns>
+       (it cost a lot) and they took me to the cheapest seats, where I couldn't see a thing. After waiting a while in this uncomfortable
+       <ns type="RN">
+        <i>
+         place
+        </i>
+       </ns>
+       the show started
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I waited 45 minutes and then the actors appeared, but I
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           find
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         myself
+        </i>
+       </ns>
+       that the main one wasn't Danny Brook, it was an impostor.
+      </p>
+      <p>
+       And finally when the show ended I decided to go
+       <ns type="MC">
+       </ns>
+       eat something, but the restaurant was closed because the chef was sick. Sorry, but
+       <ns type="X">
+        <i>
+         all these stuff are not
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         proffesional
+        </i>
+       </ns>
+       , and I am going to
+       <ns type="R">
+        make a demand exactly because you don't have that
+       </ns>
+       , if you don't give me my money back.
+      </p>
+      <p>
+       I hope you understand me
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Manager:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I reciently was in London,  in my sister's home, and I went to se "Over the Rainbow".
+       </s>
+       <s pid="2" sid="2">
+        I had a lots of problems and I would like to tell you about them.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Early that day I went to buy the tickets and I decided to buy the expensive ones, like the promotion paper said they made discounts to people that worked at the British Institute.
+       </s>
+       <s pid="3" sid="2">
+        I mentioned it, but they told me that  promotion had ended a long time ago.
+       </s>
+       <s pid="3" sid="3">
+        Why do you put  on the paper then?
+       </s>
+       <s pid="3" sid="4">
+        In the evening I got a flat tire, and because of this I got late to the show, when I got to my place, it was used (it cost a lot) and they took me to the cheapest seats, where I couldn't see a thing.
+       </s>
+       <s pid="3" sid="5">
+        After waiting a while in this uncomfortable place the show started, I waited 45 minutes and then the actors appeared, but I find myself that the main one wasn't Danny Brook, it was an impostor.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        And finally when the show ended I decided to go  eat something, but the restaurant was closed because the chef was sick.
+       </s>
+       <s pid="4" sid="2">
+        Sorry, but all these stuff are not proffesional, and I am going to make a demand exactly because you don't have that, if you don't give me my money back.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope you understand me
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       Yesterday I decided to go to the "blue disco" because the guy I liked was going to be there. But there was a little problem and it was that my
+       <ns type="UP">
+        <i>
+         parent's
+        </i>
+       </ns>
+       didn't let me go
+       <ns type="W">
+        <i>
+         alone to
+         <ns type="UP">
+          <i>
+           disco's
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , so I had to go
+       <ns type="DY">
+        <i>
+         illegaly
+        </i>
+       </ns>
+       , and I decided I would do it.
+      </p>
+      <p>
+       That night I waited until my parents were asleep and I
+       <ns type="RV">
+        <i>
+         went
+        </i>
+       </ns>
+       out
+       <ns type="MT">
+       </ns>
+       my window. I had told Pat to pick me up
+       <ns type="RP">
+        <i>
+         , she
+        </i>
+       </ns>
+       was the only one
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         new
+        </i>
+       </ns>
+       my plan. I made her promise she wouldn't tell anyone my secret. So when we arrived
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the disco there was my guy waiting for me. To
+       <ns type="S">
+        <i>
+         sumarize
+        </i>
+       </ns>
+       the night
+       <ns type="MP">
+       </ns>
+       I am going steady with him, and he took me home. The next morning Pat came to my house
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I was sleeping so she talked to my mom and she suddenly asked her: At what time did Catana arrive
+       <ns type="MN">
+       </ns>
+       last night?...
+      </p>
+      <p>
+       All the truth was then told, and now I am
+       <ns type="S">
+        <i>
+         grownded
+        </i>
+       </ns>
+       for life. She
+       <ns type="S">
+        <i>
+         defintevely
+        </i>
+       </ns>
+       doesn't know how to keep secrets.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Yesterday I decided to go to the "blue disco" because the guy I liked was going to be there.
+       </s>
+       <s pid="2" sid="2">
+        But there was a little problem and it was that my parent's didn't let me go alone to disco's, so I had to go illegaly, and I decided I would do it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        That night I waited until my parents were asleep and I went out  my window.
+       </s>
+       <s pid="3" sid="2">
+        I had told Pat to pick me up, she was the only one that new my plan.
+       </s>
+       <s pid="3" sid="3">
+        I made her promise she wouldn't tell anyone my secret.
+       </s>
+       <s pid="3" sid="4">
+        So when we arrived to the disco there was my guy waiting for me.
+       </s>
+       <s pid="3" sid="5">
+        To sumarize the night I am going steady with him, and he took me home.
+       </s>
+       <s pid="3" sid="6">
+        The next morning Pat came to my house, I was sleeping so she talked to my mom and she suddenly asked her:
+       </s>
+       <s pid="3" sid="7">
+        At what time did Catana arrive  last night?...
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        All the truth was then told, and now I am grownded for life.
+       </s>
+       <s pid="4" sid="2">
+        She defintevely doesn't know how to keep secrets.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

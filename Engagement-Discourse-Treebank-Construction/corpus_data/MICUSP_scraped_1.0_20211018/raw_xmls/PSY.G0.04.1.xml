@@ -1,0 +1,605 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Meta-games: An analysis, interpretation, and application to the Theory of Mind through a consideration of the Prisoner's Dilemma
+   </div>
+   <div class="abstract">
+    Abstract:
+    <p>
+     Howard Nigel's theory of Metagames was developed to provide new insights into the notions of
+     <q>
+      rationality
+     </q>
+     and its various paradoxes. When the Metagame theory is applied to the Prisoner's Dilemma, it yields a theoretical result traditional game theory does not anticipate, but intuition and empirical evidence suggest. This paper will discuss the Prisoner's Dilemma, its meta-game, its meta-meta game, and its 3-person meta-meta game. The discussion will present the Metagame framework as a possible model for a person's
+     <q>
+      Theory of Mind
+     </q>
+     in matrix game situations, and then analyze both the strengths and the drawbacks of this model.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <p>
+    The phrase
+    <q>
+     Theory of Mind
+    </q>
+    (ToM) is used in different ways to refer to distinct areas of investigation. There are the general theories that describe how people think (functionalist theories such as the
+    <i>
+     Computational Theory of Mind
+    </i>
+    , and brain-mind identity theories are of this kind). This paper, however, will use the term
+    <i>
+     ToM
+    </i>
+    <a class="fnref" href="#fn1" id="fnref_fn1">
+     1
+    </a>
+    to refer to a specific cognitive capacity: the ability to consider and model another person's beliefs, desires and thoughts
+    <a class="fnref" href="#fn2" id="fnref_fn2">
+     2
+    </a>
+    . The phrase
+    <i>
+     ToM
+    </i>
+    in this context refers to a person's own
+    <q>
+     theory
+    </q>
+    for another person's mind. For example, if I were playing a game of Chess, I will, whether consciously or not, develop a
+    <i>
+     Theory of Mind
+    </i>
+    for my opponent to model his future moves. Beyond my understanding of the explicit rules of the game, my
+    <i>
+     ToM
+    </i>
+    for my particular opponent will also govern how I act. The sum of my observations helps create a
+    <i>
+     ToM
+    </i>
+    that I will draw on throughout a game. Individual
+    <i>
+     ToMs
+    </i>
+    thus are not objective constructs concerning thinking in general (as the general theories do); they are individual-specific, and may be related to our capacities for empathy and
+    <i>
+     mental simulation
+    </i>
+    <a class="fnref" href="#fn3" id="fnref_fn3">
+     3
+    </a>
+    . This paper will investigate how a
+    <i>
+     ToM
+    </i>
+    is relevant in a specific kind of conflict: the Prisoner's Dilemma. And discuss how a mathematical framework, previously developed to investigate the Prisoner's Dilemma, is fundamentally related to current investigations in
+    <i>
+     ToM
+    </i>
+    .
+   </p>
+   <p>
+    The Prisoner's Dilemma (PD) is both one of the most compelling and relevant discoveries of Game Theory
+    <a class="fnref" href="#fn4" id="fnref_fn4">
+     4
+    </a>
+    . The PD has been used to model conflicts ranging from nuclear arms races to oligopolistic competition, and a game-theoretic analysis into the PD has even been used to justify preemptive war. The PD that is relevant to our current investigation in
+    <i>
+     ToM
+    </i>
+    , however, is on a smaller, more individualistic scale
+    <a class="fnref" href="#fn5" id="fnref_fn5">
+     5
+    </a>
+    . Past experiments that have put two people in a PD (represented by a matrix game) has produced results that differs greatly from what traditional game theory would deem
+    <q>
+     rational
+    </q>
+    . A significant amount of work into the PD has involved creating new definitions and measures of ratonality, and introducing different interpretations of the conflict. These new constructs have been developed to reconcile the central
+    <q>
+     dilemma
+    </q>
+    : despite the fact that mutual defection is the most
+    <q>
+     rational
+    </q>
+    outcome by traditional measures
+    <a class="fnref" href="#fn6" id="fnref_fn6">
+     6
+    </a>
+    , mutual cooperation is preferred from both individuals, and in fact, occurs quite frequently empirically. When Nigel Howard introduced the theory behind
+    <i>
+     Metagames
+    </i>
+    <a class="fnref" href="#fn7" id="fnref_fn7">
+     7
+    </a>
+    , however, he was able to retain the standard measures of rationality while providing a legitimate theoretical explanation for the intuitive conclusion that mutual cooperation is in fact
+    <q>
+     rational
+    </q>
+    in its own sense.
+   </p>
+   <p>
+    Howard's metagame approach is general in theory, but we will only consider it here as it is relevant to the PD. Instead of a standard PD, the metagame of the PD involves a Player 1 (P1) having the standard choice between Cooperating (C) or Defecting (D). And a Player 2 (P2), choosing a
+    <q>
+     meta-strategy
+    </q>
+    , which are strategies that are contingent on P1's choice. Since P1 pickes one of two strategies (C or D) and P2 can respond to each of P1's strategy one of two ways (C or D), P2 has a total of 4 meta-strategies as follows:
+   </p>
+   <list>
+    <item>
+     I. If player 1 cooperates, then defect; if player 1 defects, then defect
+    </item>
+    <item>
+     II. If player 1 cooperates, then defect; if player 1 defects, then cooperate
+    </item>
+    <item>
+     III. If player 1 cooperates, then cooperate; if player 1 defects, then defect
+    </item>
+    <item>
+     IV. If player 1 cooperates, then cooperate; if player 1 defects, then cooperate
+    </item>
+   </list>
+   <p>
+    Player 2's four strategies may be nicknamed I. defect regardless, II. do the opposite, III. do the same, and IV. cooperate regardless. The metagame PD thus yields the following set of outcomes:
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    Which in turn yields the following payoffs
+    <a class="fnref" href="#fn8" id="fnref_fn8">
+     8
+    </a>
+    :
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    An analysis of this metagame shows that the only Nash Equilibrium is when P1 chooses D (bottom row), and P2 chooses I (1st column); this results in the mutual defection outcome with the corresponding payoff of (2,2). So this metagame actually does not produce a new equilibrium, and the equilibrium between P1's Defect, and P2's
+    <q>
+     defect regardless
+    </q>
+    is maintained.
+   </p>
+   <p>
+    The metagame approach starts producing unique results once we consider the
+    <q>
+     meta-meta game
+    </q>
+    . In the meta-meta game, P1 chooses from one of the four meta-strategies described earlier; P2, however, chooses from one of 16
+    <q>
+     meta-meta
+    </q>
+    strategies. A meta-meta strategy is not contingent on P1's decision of C or D, but on one of the four (I, II, III, IV) metastrategies that P1 chooses from. P2's meta-meta strategies thus are as follows
+    <a class="fnref" href="#fn9" id="fnref_fn9">
+     9
+    </a>
+    :
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    The meta-meta game thus yields the following set of outcomes:
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    This set of outcomes, in turn yields the following payoffs
+    <a class="fnref" href="#fn10" id="fnref_fn10">
+     10
+    </a>
+    :
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    An analysis of this meta-meta game reveals three Nash Equilibriums. When P1 selects
+    <q>
+     I
+    </q>
+    and P2 selects
+    <q>
+     1
+    </q>
+    , the familiar mutual defection occurs (as it did in the meta-game and in the standard PD). When P1 selects
+    <q>
+     III
+    </q>
+    and P2 selects
+    <q>
+     3
+    </q>
+    , however, there is a Nash Equilibrium of mutual cooperation; this new equilibrium also occurs in the intersection of P1's
+    <q>
+     III
+    </q>
+    and P2's
+    <q>
+     6
+    </q>
+    strategies, respectively.
+   </p>
+   <p>
+    So what do these new equilibriums mean? And how is Howard's theory of metagames relevant to a Theory of Mind? Firstly, the fact that there is a new equilibrium at mutual cooperation is significant for several reasons. There has always been a lack of theoretically-convincing arguments that advocate cooperation as a
+    <q>
+     rational
+    </q>
+    strategy. Howard's theory of metagames not only makes mutual cooperation a
+    <i>
+     stable outcome
+    </i>
+    , it also accounts for elements of
+    <i>
+     psychological game theory
+    </i>
+    that traditional game theory is unable to consider. The fact that the two players involved in this conflict (the PD) are human beings, means that their theories of mind about each other will certainly play a factor in their decision-making. Although the objection that the meta-metagame PD is fundamentally different from the standard PD is valid, this fact does not imply that the findings of the meta-meta game are not relevant. Most important in introducing new frameworks to interpret the prisoner's dilemma is that the original conflict is preserved. Manipulations of the matrix that represents it or the ordinal preferences(payoffs) threaten the integrity of the conflict; Howard's metagames, however, does neither. Two individuals who have ToM's concerning each other could, presumably, interpret the game in such a way that the meta-metagame framework becomes
+    <i>
+     an appropriate model
+    </i>
+    for their respective
+    <i>
+     ToMs
+    </i>
+    for one another. If for example, P1 was employing 1st-order reasoning, he would see four possible strategies to choose from (strategies I through IV). Since P1 is aware that P2 is rational and wants to maximize his own payoffs as well P1 thus might reason
+    <q>
+     since we both want to maximize our payoffs, I should choose a strategy that would retain the possibility that of the outcome that maximizes our combined payoffs: mutual cooperation
+    </q>
+    ; thus P1 would eliminate strategies I and II. P1 could then reason
+    <q>
+     I don't, however, want to leave myself open to the possiblity of being exploited. And since III can always ensure a payoff that is at least as good as what IV can ensure, I will select III
+     <a class="fnref" href="#fn11" id="fnref_fn11">
+      11
+     </a>
+    </q>
+    .
+   </p>
+   <p>
+    Since P2 believes that P1 is employing 1st-order reasoning; P2 could thus conclude that P1 is deciding between the strategies I, II, III, or IV. The strategies 1-16 are thus appropriate representations of P2's choices. P2's thought process might be as follows
+    <q>
+     If P1 chooses I (defect regardless), I certainly will not employ a strategy where I will cooperate and be exploited
+    </q>
+    , therefore P2 would eliminates strategies (5, 9, 10, 11, 13, 14, 15, 16). P2 could continue and reason
+    <q>
+     If P1 chooses II (do opposite), I again won't select a strategy where I would end up cooperating, since I would then receive the worst payoff
+    </q>
+    , and so P2 then eliminates, of the strategies remaining (4, 7, 8, 12). P2 then would reason
+    <q>
+     If P1 chooses III (do same), then I would want to cooperate, since I am really choosing between either CC or DD, and mutual cooperation is better than mutual defection
+    </q>
+    and so he eliminates (1, 2). Note that P2's two remaining strategies (3 and 6) are the two (and only two) strategies that contain the mutual cooperation outcome as a Nash Equilibrium. Either one of those two choices would thus yield the mutual cooperation outcome (since P1 will, rationally, play III), but it is worth noting that P2 could further reason
+    <q>
+     If P1 chooses IV (always C), then I would prefer a strategy that defects so as to exploit him and receive the best payoff
+    </q>
+    ; and thus eliminate strategy 6.
+    <a class="fnref" href="#fn12" id="fnref_fn12">
+     12
+    </a>
+   </p>
+   <p>
+    The lines of reasoning I have presented are certainly not the only lines that can be deemed
+    <q>
+     rational
+    </q>
+    . As Nigel notes, the concept of rationality
+    <q>
+     breaks down
+    </q>
+    under different conditions, and so the same definition of rationality can, employed with different logic, yield different results (in fact, this is the very nature of the paradox in the PD). The reason I have employed that specific logic, however, is to demonstrate how the Nash Equilibriums found in the meta-meta game are not only theoretically valid, but intuitively valid as well. The logical progressions of reasoning by a 1st-order and 2nd-order player not only mirrors the elimination of
+    <q>
+     unintuitive
+    </q>
+    strategies in the meta-meta game, it also concludes that mutual cooperation is a rational outcome both intuitively, and when the meta-meta game is considered, theoretically.
+   </p>
+   <p>
+    Using the fundamentals of the meta and meta-meta game for the 2-person PD, we can now extrapolate, and consider a 3-person meta game. A 3-person PD is defined as having the following ordinal payoffs:
+   </p>
+   <list>
+    <item>
+     1. DCC
+    </item>
+    <item>
+     2. CCC
+    </item>
+    <item>
+     3. DCD = DDC
+    </item>
+    <item>
+     4. DDD
+    </item>
+    <item>
+     5. CCD = CDC
+    </item>
+    <item>
+     6. CDD
+    </item>
+   </list>
+   <p>
+    Where the payoffs are ordered according to the player whose decision is the 1st of the 3 letters. For example, in outcome 1, the 1st player receives the best payoff, since both the other players cooperated and he defected. The 2nd player (corresponding to the 2nd letter), meanwhile, receives the 5th payoff (CDC) because from his perspective, he cooperated while one other player cooperated and one other player defected. The 3rd player's payoff is similarly defined.
+   </p>
+   <p>
+    For a 3-person meta game, let the non-meta player (0th-order) be P1, with m1 strategies (in general, m1 = 2, because that is the standard PD). The meta player (P2) then has 2^(2^( p1p3)) strategies (m2), with each strategy having 2^( p1p3) elements (where p1=p3=2, the number of
+    <q>
+     distinct resolutions
+    </q>
+    , and an
+    <q>
+     element
+    </q>
+    is a single
+    <q>
+     If-then
+    </q>
+    statement). A
+    <q>
+     distinct resolution
+    </q>
+    is defined as an output (for all players, either C or D). Notice that m2 depends on p1 and p3; m2 cannot possibly depend on m1 and m3 (the number of strategies P3 has) because m3 depends on the number of strategies P2 has (m2)
+    <a class="fnref" href="#fn13" id="fnref_fn13">
+     13
+    </a>
+    . The distinction between the input pi (a strategy) and the output mi (a distinct resolution) is important not only on theoretical grounds, but on its implications for
+    <i>
+     ToM
+    </i>
+    .
+   </p>
+   <p>
+    In this 3-person meta-meta PD, the players 1 and 2 have the following strategies:
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    Where 1C3C → C is a single
+    <q>
+     element
+    </q>
+    that reads
+    <q>
+     If Player 1 cooperates and Player 3 cooperates, then cooperate
+    </q>
+    and each element is separated by a comma. Roman Numerals I - XVI denote P2's 16 strategies, and we will simply use
+    <q>
+     C
+    </q>
+    and
+    <q>
+     D
+    </q>
+    to denote both the strategy and distinct resolution of P1. A single strategy from P3, since it is contingent on both the strategies of P1 and P2, is as follows
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    Since each strategy from P3 has 32 elements, P3 has 2^(32) strategies, far more than that which can be listed here. We do not, however, need to consider all the strategies from each player in order to analyze this game.
+   </p>
+   <p>
+    Let us consider first how we might arrive at a Nash Equilibrium to this game without exhaustively mapping it out. If one were to take the point of view of each player, one can then
+    <q>
+     build
+    </q>
+    an optimal strategy by considering each possibility (each
+    <q>
+     If
+    </q>
+    , what the other two players might do) and then deciding whether a D or C would yield a higher payoff. In doing so, it quickly becomes clear that the optimal strategy is one that corresponds to the nickname
+    <q>
+     cooperate if, in doing so, the other players will also both cooperate. Defect otherwise
+    </q>
+    . This nickname makes evident why Nash Equilibriums of mutual cooperation
+    <a class="fnref" href="#fn14" id="fnref_fn14">
+     14
+    </a>
+    exists in n-person (n-1)-meta games. By making one's strategy choice not independent of the relevant element in another person's strategy choice, meta-games possess a facet of
+    <q>
+     causality
+    </q>
+    . P3, being rational, will thus select a strategy such that if P1 cooperates and P2 cooperates, he too will cooperate (if defecting meant another player would defect as well). By choosing a strategy that defects in every other situation, P3 is making sure that the other players won't have an incentive to defect; there is thus a Nash Equilibrium at the intersection of the dominant strategies that we
+    <q>
+     build
+    </q>
+    <a class="fnref" href="#fn15" id="fnref_fn15">
+     15
+    </a>
+    (no player would want to move away from the equilibrium because doing so would directly
+    <q>
+     cause
+    </q>
+    another player to move away from it as well, thus producing a mutually less-desirable payoff). I therefore argue that a Nash Equilibrium exists when P1 cooperates, P2 chooses XII (C only if both P1 &amp; P3 C, D otherwise), and P3 chooses
+    <q>
+     K
+    </q>
+    , defined below:
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <p>
+    Likewise, other (and all beyond DDD) Nash Equilibriums exist where all three players can
+    <q>
+     coordinate
+    </q>
+    a C, and where if any one person moves unilaterally away from that equilibrium to a strategy that yields a
+    <q>
+     D
+    </q>
+    , the other meta-player has a strategy that would produce a
+    <q>
+     D
+    </q>
+    as well.
+   </p>
+   <p>
+    When trying to use our meta-game analysis to model
+    <i>
+     ToMs
+    </i>
+    , we do encounter a few problems. Firstly, P1 has no basis whatsoever to make his decision. By definition, a myopic player is one that is unable to consider how another player's thoughts and beliefs plays a role in his own payoff. A myopic player can therefore only consider his own desires; in order for P1 to make a choice, he must have some kind of payoff immediately available (but since the payoff is contingent on what P2 and P3 decide, which in turn is contingent on what P1 decides, P1 has no basis for making this decision without developing some kind of
+    <i>
+     ToM
+    </i>
+    about the other two players). Another limitation of this model is that it requires that the three players (1, 2, 3) to be 0th-order, 1st-order, and 2nd-order thinkers, respectively. This is a very specific situation, and so this model is not applicable to all n-person Prisoner's Dilemmas (or even all 3-person PDs). A final, important point to consider is that, in applying this model, we have made the assumption that a particuar player's
+    <i>
+     ToM
+    </i>
+    is indicative of the actual order of reasoning another player is employing. The number of strategies the meta-meta player has in this game is not derived objectively from a measure of the number of strategies the normal and meta player are actually considering. Even if a 2nd-order player is actually employing a
+    <i>
+     ToM
+    </i>
+    modeled by a meta-meta player, then, for our theoretical results to be valid, his subjective belief of the strategies the other players are considering must be the objective reality. Our analysis, interpretation, and application of Meta-games to
+    <i>
+     ToM
+    </i>
+    will be therefore be invalid if the
+    <i>
+     ToMs
+    </i>
+    are not themselves indicative of what other players are actually considering.
+   </p>
+   <p>
+    Future studies into
+    <i>
+     ToM
+    </i>
+    using Metagame Theory should expand beyond the Prisoner's Dilemma. Since the fundamentals of a metagame are, intuitively, very similar to the recursions of logic employed in higher order reasoning, the applicability of metagame theoretical results to
+    <i>
+     ToMs
+    </i>
+    during other matrix games should be investigated. One of the primary drawbacks of Metagame theory is that it is unable to account for the situation where two or more players are applying the same meta-level. If two players in a prisoner's dilemma are both 2nd-order thinkers, metagame theory currently has not prediction for what kind of reasoning would take place. Until these limitations in metagame theory are addressed, it is unlikely that the theory of Metagames will be used to model more situations where
+    <i>
+     ToMs
+    </i>
+    are relevant.
+   </p>
+  </div>
+  <div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 Though ToM will be used, this paper is interested, precisely, in a Theory for Theories of Mind.
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2 Though there are arguments for the existence of the ToM capacity in primates.
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3 Gordon, 1986
+    </div>
+    <div id="fn4">
+     <a href="#fnref_fn4">
+      4.
+     </a>
+     4
+    </div>
+    <div id="fn5">
+     <a href="#fnref_fn5">
+      5.
+     </a>
+     5 Though it is conceptually possible for an individual to have a ToM about another nation or marketplace competitor, we will only consider the case when a ToM regards another person.
+    </div>
+    <div id="fn6">
+     <a href="#fnref_fn6">
+      6.
+     </a>
+     6 Mutual Defection is both an intersection of dominant strategies for both players, and a Nash Equilibrium
+    </div>
+    <div id="fn7">
+     <a href="#fnref_fn7">
+      7.
+     </a>
+     7 Howard, 1971
+    </div>
+    <div id="fn8">
+     <a href="#fnref_fn8">
+      8.
+     </a>
+     8 The numbers used are ordinal, they are used only to rank preferences
+    </div>
+    <div id="fn9">
+     <a href="#fnref_fn9">
+      9.
+     </a>
+     9 Each strategy is a set of four "If-then" statements separated by the semi-colons. For example, I → D means "If P1 chooses 'I', then defect". Since P1 has 4 choices (I, II, III,IV), each of P2's strategy must have 4 separate "If-then" statements to account for the 4 different possibilities he must 'respond' to.
+    </div>
+    <div id="fn10">
+     <a href="#fnref_fn10">
+      10.
+     </a>
+     10 Instead of (j,k) denoting the payoffs to the 1st and 2nd player, respectively, we are simply using jk
+    </div>
+    <div id="fn11">
+     <a href="#fnref_fn11">
+      11.
+     </a>
+     11 Using our standard measure of rationality, III is a dominant strategy over IV
+    </div>
+    <div id="fn12">
+     <a href="#fnref_fn12">
+      12.
+     </a>
+     12 Note that, although a Nash Equilibrium is contained in 6, P2 can still prefer 3 to 6 (and in fact does) because the outcome that make 3 preferable to 6 is away from the outcome of the Nash Equilibrium. Since P1 would not rationally choose IV, however, this last line of reasoning is irrelevant.
+    </div>
+    <div id="fn13">
+     <a href="#fnref_fn13">
+      13.
+     </a>
+     13 m3, the number of strategies P3 has, depends on m2 because this is a meta-meta game, with P3 being the meta-meta player
+    </div>
+    <div id="fn14">
+     <a href="#fnref_fn14">
+      14.
+     </a>
+     14 Mutual cooperation among all n players
+    </div>
+    <div id="fn15">
+     <a href="#fnref_fn15">
+      15.
+     </a>
+     15 This is not to say there are not other Nash Equilibriums as well
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,620 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Predicting the Biomechanical Behavior of Aortic Tissue Using Constitutive Models
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        There has long been and interest in studying the mechanics of aortic rupture [1].
+       </s>
+       <s pid="1" sid="2">
+        The biomechanical behavior of the human aorta has been interest of study primarily due to its susceptibility to atherosclerotic occlusive disease [2] and aneurysms [3, 4].
+       </s>
+       <s pid="1" sid="3">
+        These are due in part to the weakening of the walls of the aorta.
+       </s>
+       <s pid="1" sid="4">
+        The stresses and strains in these walls are factors in the creation and development of cardiovascular diseases.
+       </s>
+       <s pid="1" sid="5">
+        Thus, it is important to know how to predict the stress and strain states of aortic walls to discover the progression of certain vascular pathologies.
+       </s>
+       <s pid="1" sid="6">
+        Since stress cannot be experimentally measured, constitutive models are used to calculate tissue stresses.
+       </s>
+       <s pid="1" sid="7">
+        It is important, therefore, to identify the appropriate constitutive models that will accurately describe the biomechanical response of the biological tissue.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        To understand this complex problem, one must examine the biomechanical behavior of the human aorta.
+       </s>
+       <s pid="2" sid="2">
+        In the past, studies were done to record the biomechanical response of human aortic tissue to uniaxial loading conditions.
+       </s>
+       <s pid="2" sid="3">
+        However, recent studies have shown that the behavior of human aortic tissue is nonlinear elastic, thus data from uniaxial tensile testing is unsuitable for this application.
+       </s>
+       <s pid="2" sid="4">
+        For a nonlinear elastic material, the slope of the stress-strain curve changes with deformation, hence the instantaneous stiffness of the material changes with deformation.
+       </s>
+       <s pid="2" sid="5">
+        Most biological soft tissues become stiffer with increased deformation.
+       </s>
+       <s pid="2" sid="6">
+        For these reasons, there is a need for a better description of the biomechanical response of human aortic tissue under biaxial stress.
+       </s>
+       <s pid="2" sid="7">
+        Biaxial mechanical testing allows for the investigation of the nature of mechanical anisotropy [5].
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Constitutive models serve a vital role in studying the role biomechanical behavior because they are a quantitative measure of a tissue function.
+       </s>
+       <s pid="3" sid="2">
+        The linear elastic models do not do a good job of characterizing aortic tissue because a) soft tissues undergo large deformation and b) the relationship between stress and strain for soft tissues is nonlinear.
+       </s>
+       <s pid="3" sid="3">
+        This means that the stiffness of a soft tissue will change with deformation, unlike a linear elastic model where the stiffness is constant as long as the material is in the elastic range.
+       </s>
+       <s pid="3" sid="4">
+        For soft tissues, like aortic tissue, there may be one or more strain energy functions that work for a given tissue.
+       </s>
+       <s pid="3" sid="5">
+        After relating the tissue structure to this function, one may derive a structure-function relationship, from which one can quantitatively analyze how alterations in tissue structure due to aging or disease affect its function [6].
+       </s>
+       <s pid="3" sid="6">
+        In this paper, aortic tissue data from Dinesh Mohan’s Failure Properties of Passive Human Aortic Tissue II was optimized to fit to the Mooney-Rivlin constitutive model and the Neo-Hookian constitutive model to see if either model was a good fit.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Methods
+      </div>
+      <div>
+       <div class="head_2">
+        Experimental Tests Performed on Samples
+       </div>
+       <p>
+        <s pid="4" sid="1">
+         In Mohan’s paper, the aortic tissues were modeled as nonlinear elastic materials and were tested biaxially as flat specimens.
+        </s>
+        <s pid="4" sid="2">
+         Mohan’s circular samples were tested using a biaxial test apparatus (see Fig. 1).
+        </s>
+        <s pid="4" sid="3">
+         In these tests, the specimen was inflated using the hand operated valve and the deformation was monitored using a movie camera.
+        </s>
+        <s pid="4" sid="4">
+         All tests were run till complete rupture of the tissue.
+        </s>
+        <s pid="4" sid="5">
+         The data used in this paper were the tissue samples tested quasi-statically.
+        </s>
+       </p>
+       <p>
+        <s pid="5" sid="1">
+         Figure 1: Biaxial Testing Apparatus
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Background
+       </div>
+       <p>
+        <s pid="8" sid="1">
+         A strain energy function is a model describing a hyperelastic material.
+        </s>
+        <s pid="8" sid="2">
+         According to Hollister, unlike linear elastic materials, "there is no 'one' material strain energy function for a nonlinear elastic material" [6].
+        </s>
+        <s pid="8" sid="3">
+         For soft tissues, there may be one or more strain energy functions that work for a given tissue.
+        </s>
+        <s pid="8" sid="4">
+         Two classic forms of the strain energy function are known as the Mooney-Rivlin model and the neo-Hookian model.
+        </s>
+        <s pid="8" sid="5">
+         These models are commonly applied to analyze the deformation of materials such as rubber or plastics and assume both incompressibility and isotropy.
+        </s>
+        <s pid="8" sid="6">
+         Carew concludes that for most practical purposes arteries should be assumed to be incompressible, homogenous, and isotropic [1,7].
+        </s>
+        <s pid="8" sid="7">
+         My reasons for choosing the Mooney-Rivlin and the neo-Hookian model are based on two papers that claim that the aortic wall displays rubber-like qualities that suggest that the aortic wall material is essentially elastomeric [8, 9].
+        </s>
+        <s pid="8" sid="8">
+         The neo-Hookian model is the simplest model to describe such rubber-like behavior.
+        </s>
+        <s pid="8" sid="9">
+         The Mooney-Rivlin model is more accurate because the free energy function depends on two invariants.
+        </s>
+        <s pid="8" sid="10">
+         Based on various plots by Macosko, I hypothesized that the Mooney-Rivlin would be the better fit [10].
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         Now that we have defined constitutive models, the next step is to fit these models to experimental data to define the model constants.
+        </s>
+        <s pid="9" sid="2">
+         Since constitutive models relate stress and strain, we need to know the approximate stress and strain state.
+        </s>
+        <s pid="9" sid="3">
+         From this stress and strain state we then fit the constants from the constitutive model.
+        </s>
+        <s pid="9" sid="4">
+         When the material behavior is nonlinear fitting constants for the constitutive model requires multiple tests to mathematically fit the constitutive model to the data.
+        </s>
+        <s pid="9" sid="5">
+         To fit constitutive data, the square of the difference between the experimental measurement of stress and that calculated by the constitutive model is minimized using a numerical algorithm [6].
+        </s>
+        <s pid="9" sid="6">
+         The algorithm modifies constants within the chosen constitutive model to minimize the error.
+        </s>
+        <s pid="9" sid="7">
+         The result gives the constants of the constituent model that best fit the data.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Derivation of Stress State
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         Full derivations of the Cauchy stress states for the Mooney-Rivlin model and neo-Hookian model can be found in Appendix A and B respectively.
+        </s>
+        <s pid="10" sid="2">
+         I began the derivation with the strain energy functions for the Mooney-Rivlin model (Eq. 1) and neo-Hookian model (Eq. 2).
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (1)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (2)
+       <p>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         Note that the neo-Hookian model is an abridged version of the Mooney-Rivlin.
+        </s>
+        <s pid="15" sid="2">
+         The second constant is truncated from the neo-Hookian.
+        </s>
+        <s pid="15" sid="3">
+         Both derivations followed the same steps.
+        </s>
+        <s pid="15" sid="4">
+         From here, I derived the 2nd Piola-Kirchoff (PK) stress tensor, Sij, from the strain energy function, W, in terms of the right Cauchy deformation tensor, Cij.
+        </s>
+        <s pid="15" sid="5">
+         The 2nd PK is then used in the equation for the Cauchy stress equivalents.
+        </s>
+        <s pid="15" sid="6">
+         ij.
+        </s>
+        <s pid="15" sid="7">
+         For the Cauchy stress, I had to find the deformation gradient tensor, Fij by solving using the three principal stretch ratios ( 1, ,2, ,3).
+        </s>
+        <s pid="15" sid="8">
+         Since the specimen is thin, only S11, ,22, and ,33 are needed.
+        </s>
+        <s pid="15" sid="9">
+         Due to incompressibility, d33 is set to zero, this makes it possible to solve for the hydrostatic pressure, p. I substituted the 2nd PK equations and hydrostatic pressure into the 11 and a22 equations.
+        </s>
+        <s pid="15" sid="10">
+         After simplifying, I applied the incompressibility assumptions (Eq. 3).
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (3)
+       <p>
+       </p>
+       <p>
+        <s pid="18" sid="1">
+         This gave me further simplified equations in terms of the stretch ratios and ∂W⁄∂r.
+        </s>
+        <s pid="18" sid="2">
+         This worked out well, since both the Mooney-Rivlin and neo-Hookian models may be defined in terms of principal stretch ratios.
+        </s>
+        <s pid="18" sid="3">
+         After substituting the derivative of the strain energy function in terms of the extension ratio, into the Cauchy stress equations we obtain Equations 4 and 5 for the Mooney-Rivlin model, and Equations 6 and 7 for the neo-Hookian.
+        </s>
+        <s pid="18" sid="4">
+         Notice the similarities between the two sets of equations.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (4)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (5)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (6)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (7)
+       <p>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         The final step is optimization of the sets of equations using the formula below (Eq. 8):
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (8)
+       <p>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         For the neo-Hookian model, I did not use a constraint for the fitting of the experimental data.
+        </s>
+        <s pid="30" sid="2">
+         However, for the Mooney-Rivlin model, the Baker-Ericksen inequality was used (Eq. 9).
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (9)
+       <p>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         A detailed derivation of the inequality can be found in Appendix A. After derivation of the model equations, the next step was writing the MATLAB code.
+        </s>
+        <s pid="33" sid="2">
+         I chose 0 as seed value, for the both the Mooney–
+        </s>
+        <s pid="33" sid="3">
+         Rivlin, which has two material parameters, and the neo-Hookian model, which has only one.
+        </s>
+        <s pid="33" sid="4">
+         The code written for the Mooney-Rivlin fitting and the neo-Hookian fitting can be found in Appendices C and D, respectively.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Results
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        Below, is the aortic tissue data from Mohan’s Failure Properties of Passive Human Aortic Tissue II fit to the proposed constitutive models.
+       </s>
+       <s pid="34" sid="2">
+        Figure 2 describes the tissue data fit to the Mooney-Rivlin model and Figure 3 describes the tissue data fit to the neo-Hookian model.
+       </s>
+       <s pid="34" sid="3">
+        The experimental data are depicted by the stars and the predictions of the models are shown as lines.
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        Figure 1: Mooney-Rivlin constitutive model for aortic tissue data
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        Figure 2: Neo-Hookian constitutive model for aortic tissue data
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        As hypothesized earlier, the Mooney-Rivlin is clearly the better fit of the two.
+       </s>
+       <s pid="41" sid="2">
+        The neo–Hookian model is insufficient for describing the nonlinear mechanical behavior of aortic tissue.
+       </s>
+       <s pid="41" sid="3">
+        When the neo-Hookian model was used to predict stress relaxation at extension ratios between 1.1 and 1.25, the ability of the model to accurately predict the stress response of the tissue was limited.
+       </s>
+       <s pid="41" sid="4">
+        The Mooney-Rivlin model was closer to the experimental data, but still overestimated the stress for several data points.
+       </s>
+      </p>
+      <p>
+       <s pid="42" sid="1">
+        The overall fit of each model’s predictions is evaluated from the calculated coefficients between experimental and theoretical data.
+       </s>
+       <s pid="42" sid="2">
+        The constants are not unique meaning two very different sets of constants can generate an excellent fit for the plot.
+       </s>
+       <s pid="42" sid="3">
+        The constants c1 and c2 equal -14.0292 and 28.4883 respectively in the Mooney-Rivlin strain energy function equation.
+       </s>
+       <s pid="42" sid="4">
+        The constant c1 equals 29.6073 in the neo-Hookian strain energy equation.
+       </s>
+      </p>
+      <p>
+       <s pid="43" sid="1">
+        In Appendix E, the polynomial residuals have been plotted and the norm of the residuals has been calculated.
+       </s>
+      </p>
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Discussion
+      </div>
+      <p>
+       <s pid="45" sid="1">
+        This paper evaluated the fit of passive human aortic tissue, based on experimental response, to the Mooney-Rivlin and neo-Hookian constitutive models.
+       </s>
+       <s pid="45" sid="2">
+        The biomechanical response of the soft tissue was modeled as a homogenous, isotropic, and incompressible nonlinear elastic material using the two different strain energy functions associated with the constitutive models.
+       </s>
+       <s pid="45" sid="3">
+        It was discovered that neither model was an excellent fit, though the Mooney-Rivlin was a much better fit than the neo-Hookian model.
+       </s>
+       <s pid="45" sid="4">
+        The constitutive models were designed to accurately fit elastomers, so it is understandable that biological tissue, which is not as homogeneous as an elastomer, will not fit perfectly.
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        Accurately modeling the biomechanical response of soft tissue remains a challenge due to unique properties such as nonlinearities in the material, large deformations, anisotropy, and viscoelasticity [11].
+       </s>
+       <s pid="46" sid="2">
+        Vande Geest suggests that difficult to model human aortic tissue past the age of 30 [5].
+       </s>
+       <s pid="46" sid="3">
+        The age of the specimen in Mohan’s study was 60 years of age.
+       </s>
+       <s pid="46" sid="4">
+        This was one of the limitations encountered.
+       </s>
+       <s pid="46" sid="5">
+        Other studies have suggested that aortic tissue cannot be modeled as isotropic.
+       </s>
+       <s pid="46" sid="6">
+        Patel found determined from the response of canine aorta that the tissue is anisotropic [12].
+       </s>
+       <s pid="46" sid="7">
+        Neither model can be reliably used for the mechanics of passive human aortic tissue.
+       </s>
+       <s pid="46" sid="8">
+        One suggestion for further study are the exponential-based models to describe the behavior of aortic tissue [13].
+       </s>
+       <s pid="46" sid="9">
+        In some cases, they have proven to be more effective in describing tissue behavior than constitutive models.
+       </s>
+       <s pid="46" sid="10">
+        Other studies have been conducted with soft tissue using the Ogden model, Martins model, or Humphrey model.
+       </s>
+       <s pid="46" sid="11">
+        I would suggest using the former two with aortic tissue because of the number of constants.
+       </s>
+       <s pid="46" sid="12">
+        For optimization, the number of constants to fit influences the fit directly.
+       </s>
+       <s pid="46" sid="13">
+        The Ogden model has six coefficients for fitting, and the Martins model has four.
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        It is important to identify the appropriate constitutive model that will accurately describe the biomechanical behavior of the aortic tissue.
+       </s>
+       <s pid="47" sid="2">
+        Such information is useful because identifying relevant changes in the biomechanical response of the aortic tissue can lead to an early prediction of an aneurysm.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N101A4">
+       <li id="N101A5">
+        1. Mohan, D., Melvin, J.W., (1983)."Failure properties of passive human aortic tissue. II--Biaxial tension tests" Journal of Biomechanics 16(1): 31-37.
+       </li>
+       <li id="N101A7">
+        2. Shteinberg, D., Halak, M., Shapiro, S., Kinarty, A., Sobol, E.,  Lahat, N., Karmeli, R. (2000). “Abdominal aortic aneurysm and aortic occlusive disease: a comparison of risk factors and inflammatory response”  European Journal of Vascular and Endovascular Surgery. 20(5): 462-465.
+       </li>
+       <li id="N101A9">
+        3.  Treska, V., Kocova, J., Boudova, L., Neparsova, P., Topolcan, O. and Pecen, L., “Inflammation in the wall of abdominal aortic aneurysm and its role in the symptomology of aneurysm” Cytokine, Cell Mol Therapy.  7(3): 91-97.
+       </li>
+       <li id="N101AB">
+        4.  Vorp, D.A., Raghavan, M.L. and Webster, M.W., “Mechanical wall stress in abdominal aortic aneurysm: influence of diameter and asymmetry” J Vasc Surg. 27(4): 632-639.
+       </li>
+       <li id="N101AD">
+        5.  Vande Geest, J.P., Sacks, M.A., and Vorp, D.A., (2004). “Age Dependency of the Biaxial Biomechanical Behavior of Human Abdominal Aorta” J. Biomech Eng. 40(9):126.
+       </li>
+       <li id="N101AF">
+        6.  Hollister S., “Fitting Nonlinear Elastic Model Data Using Experiments and Optimization” References [Online].  Available: www.engin.umich.edu/class/bme456/ [2007, Dec  1].
+       </li>
+       <li id="N101B1">
+        7.  Carew T.E., Vaishnav R.N., and Patel D.J., (1968). “Compressibility of the arterial wall” Circ Res 23: 61–68.
+       </li>
+       <li id="N101B3">
+        8.  Hamilton, W.F., Remington, J.W., and Dow, P., (1945). “The Measurement of Cardiac Output” Amer. J. Physiol., 144, 536.
+       </li>
+       <li id="N101B5">
+        9.  Roy, C.S. “The elastic properties of the arterial wall” J. Physiol., 1880, 3, 125.
+       </li>
+       <li id="N101B7">
+        10.  Macosko, C.W., (1994) Rheology principles, measurements and applications, 1994, VCH Publications
+       </li>
+       <li id="N101B9">
+        11. DeFrate, L., Li, G., (2007). “The prediction of stress-relaxation of ligaments and tendons using the quasi-linear viscoelastic model” Biomechanics and Modeling in Mechanobiology. 6(4): 245-251
+       </li>
+       <li id="N101BB">
+        12.  Patel, D. J., and Fry, D. L., (1969). ‘‘The Elastic Symmetry of Arterial Segments in Dogs,’’ Circ. Res., 24: 1–8.
+       </li>
+       <li id="N101BD">
+        13.  Humphrey, J. D. (2003) Continuum biomechanics of soft biological tissues. Proc. Math. Phys. Eng. Sci. (Ser. A) 459: 3–46.
+       </li>
+      </ul>
+     </div>
+     <div>
+      <p>
+       Appendix A – Derivation of Mooney-Rivlin Cauchy stress equations
+      </p>
+      <p>
+       Appendix B – Derivation of neo-Hookian Cauchy stress equations
+      </p>
+      <p>
+       Appendix C – MATLAB code for Mooney-Rivlin model
+      </p>
+      <div class="gap">
+       <span>
+        Code
+       </span>
+       here
+      </div>
+      <p>
+       Appendix D – MATLAB code for neo-Hookian model
+      </p>
+      <div class="gap">
+       <span>
+        Code
+       </span>
+       here
+      </div>
+      <p>
+       Appendix E – Plot of the residuals and norm of the residuals
+      </p>
+      <p>
+       Mooney-Rivlin
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Neo-Hookian
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

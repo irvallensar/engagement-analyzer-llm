@@ -1,0 +1,693 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      E-Dining Expansion Project Proposal
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       INTRODUCTION
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       E-Dining's demand is growing beyond its current capacity; packing and shipping need to be reorganized and streamlined to meet customer demands.
+      </s>
+      <s pid="2" sid="2">
+       The customer base is not as diverse as it could be; though its base of operations is on the outskirts of a major university, it receives relatively low student patronage.
+      </s>
+      <s pid="2" sid="3">
+       Both of these issues can be addressed by reorganizing and expanding the current facility to include a walk-in store.
+      </s>
+      <s pid="2" sid="4">
+       The walk-in store would attract college students and other new markets, while the reorganization would allow E-Dining to handle an increased demand for shipping orders.
+      </s>
+      <s pid="2" sid="5">
+       Because this expansion has just become possible (by the closing of the hardware store next door) you have asked Consultant Experts, Inc. (CEI) to construct a plan to improve and expand the E-Dining facilities.
+      </s>
+     </p>
+     <p>
+      <s pid="3" sid="1">
+       We will deliver to you two designs that you can directly employ or use as a basis to create a customized design of your own.
+      </s>
+      <s pid="3" sid="2">
+       The designs will be the product of a thorough analysis of the current and proposed systems.
+      </s>
+      <s pid="3" sid="3">
+       This analysis will include data collection, current system modeling and simulation, facility layout reconstruction, and final system modeling and simulation.
+      </s>
+      <s pid="3" sid="4">
+       One of the final models will completely remove the wall between the stores, the other will keep the wall and add an opening.
+      </s>
+     </p>
+     <p>
+      <s pid="4" sid="1">
+       In this proposal we present a summary of the actions we will take to create the best possible layout alternatives.
+      </s>
+      <s pid="4" sid="2">
+       The proposal includes the following elements:
+      </s>
+     </p>
+     <list>
+      <item>
+       • An overview of the current system
+      </item>
+      <item>
+       • The project goals and objectives
+      </item>
+      <item>
+       • The project scope
+      </item>
+      <item>
+       • A detailed action plan
+      </item>
+      <item>
+       • The project timeline
+      </item>
+      <item>
+       • A list of the deliverables to be provided upon completion
+      </item>
+      <item>
+       • Our qualifications
+      </item>
+      <item>
+       • Investment considerations
+      </item>
+     </list>
+     <div>
+      <div class="head_1">
+       BACKGROUND
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        The following is a summary of the current situation of your company its environment.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Employees
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         A total of 15 people work full-time for E-Dining.
+        </s>
+        <s pid="6" sid="2">
+         You, the owner, handle sales, financial activities, and personnel issues.
+        </s>
+        <s pid="6" sid="3">
+         Four employees process the online orders and ten employees prepare orders for shipping.
+        </s>
+        <s pid="6" sid="4">
+         They work in two shifts, with two of the processors and five of the preparers working from 6am-3pm and the rest working from 1pm-10pm.
+        </s>
+        <s pid="6" sid="5">
+         This overlap in shifts exists to handle the daily peak that occurs normally in the afternoons.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Orders
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         Demand for E-Dining kits has been increasing steadily over the past few years, and the trend is expected to continue.
+        </s>
+        <s pid="7" sid="2">
+         Currently the majority of E-Dining's customers are parents with children, but you hope to increase market share and customer diversity with the storefront expansion.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         E-Dining receives between 215 and 290 orders a day, each requesting 1-6 kits.
+        </s>
+        <s pid="8" sid="2">
+         There is a slight peak in order frequency from 12pm to 3pm daily.
+        </s>
+        <s pid="8" sid="3">
+         A more general rise in demand occurs during the holiday season.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         All orders received before 3pm Monday through Friday are shipped that day and any orders received after that time or on the weekends are shipped the next business day.
+        </s>
+        <s pid="9" sid="2">
+         These shipments are sent out twice a day, Monday through Friday.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Kits
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         There are 21 kinds of kits, all nearly equal in popularity.
+        </s>
+        <s pid="10" sid="2">
+         Two of the kits are completely vegetarian.
+        </s>
+        <s pid="10" sid="3">
+         Each kit contains two refrigerated items, four non-refrigerated items, and weighs between 3 and 5 pounds.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Inventory
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         One week of refrigerated goods and two months of non-refrigerated goods are kept in inventory at all times.
+        </s>
+        <s pid="11" sid="2">
+         The refrigerated foods can be stored for up to one week.
+        </s>
+        <s pid="11" sid="3">
+         Three of the four non-refrigerated items can be stored for up to one month; the fourth can be stored indefinitely.
+        </s>
+        <s pid="11" sid="4">
+         All of the ingredients arrive in shipments twice a week.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Current Facility Layout
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         The current facility floor is approximately 1800 square feet and the hardware store to be added is approximately 1200 square feet.
+        </s>
+        <s pid="12" sid="2">
+         There is an alley and parking lot behind the buildings, though currently the only entrances to either building are in the front.
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         The hardware store contains:
+        </s>
+       </p>
+       <list>
+        <item>
+         • a cashier station
+        </item>
+        <item>
+         • a display area with shelving
+        </item>
+        <item>
+         • an office
+        </item>
+        <item>
+         • a small storage room
+        </item>
+        <item>
+         • a rest room
+        </item>
+       </list>
+       <p>
+        <s pid="14" sid="1">
+         The current E-Dining facility includes:
+        </s>
+       </p>
+       <list>
+        <item>
+         • a workbench for kit assembly
+        </item>
+        <item>
+         • a large office space
+        </item>
+        <item>
+         • a rest room
+        </item>
+        <item>
+         • an office and cleaning supply storage closet
+        </item>
+        <item>
+         • an overflow area for extra boxes
+        </item>
+        <item>
+         • a break room with a table, chairs, and a vending machine
+        </item>
+        <item>
+         • refrigerated storage space
+        </item>
+        <item>
+         • non-refrigerated storage space (with shelves)
+        </item>
+       </list>
+      </div>
+      <div>
+       <div class="head_2">
+        Procedure
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         At the beginning of the shift all workers first check the office for order forms that contain shipping and kit information.
+        </s>
+        <s pid="15" sid="2">
+         Then, for each order, the worker will: gather kit ingredients, package for shipment, handwrite shipping info on package, and place ready-to-ship box near door.
+        </s>
+        <s pid="15" sid="3">
+         Depending on the size of the finished kits, they are packaged into one or more boxes of three different sizes.
+        </s>
+        <s pid="15" sid="4">
+         These empty boxes are scattered in the hallway without an overall organization strategy.
+        </s>
+        <s pid="15" sid="5">
+         This procedure of processing, assembly, packaging, and shipping is not standardized; all operators use whatever strategy they find to be the most effective.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Issues with the Current Layout and Procedure
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         The current layout and procedure are suboptimal for a number of reasons.
+        </s>
+        <s pid="16" sid="2">
+         One large issue is the fact that the facility was designed to produce only a small fraction of the current demand.
+        </s>
+        <s pid="16" sid="3">
+         This means that bad habits and inefficiencies are built into the system, as the system was created in a time where efficiency was not necessary.
+        </s>
+        <s pid="16" sid="4">
+         Another issue is that there are not designated areas for specific items.
+        </s>
+        <s pid="16" sid="5">
+         Areas that are used for walking are also used for storage of both empty and full boxes.
+        </s>
+        <s pid="16" sid="6">
+         This causes problems with both congestion of foot traffic and lack of organization of the boxes.
+        </s>
+        <s pid="16" sid="7">
+         These issues coupled with the expectation of continued increase in demand have created the need for reorganization and expansion.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       GOALS AND OBJECTIVES
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        The primary goal of this project is to determine the most efficient layout plan for the newly expanded E-Dining facility.
+       </s>
+       <s pid="17" sid="2">
+        The new facility will be more productive in its output of online orders, which will keep costs down as demand increases.
+       </s>
+       <s pid="17" sid="3">
+        To achieve this goal we will collect data on current procedures and use that data to standardize the assembly and packaging processes.
+       </s>
+       <s pid="17" sid="4">
+        We will also create two efficient layout plan options, one retaining the wall that stands between the hardware store and the E-Dining facility and one that removes it.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Both new layouts will include a walk-in store where patrons will be able to purchase kits directly.
+       </s>
+       <s pid="18" sid="2">
+        A secondary goal of this project is to minimize walk-in patron wait time, which we will address by examining the advantages and disadvantages of keeping an assembled kit inventory on hand.
+       </s>
+       <s pid="18" sid="3">
+        Assembled kit inventory may be shown to be unnecessary if the assembly process can be drastically quickened.
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        An overarching goal for this project is to maintain the quality and reliability established by the current layout and processes.
+       </s>
+       <s pid="19" sid="2">
+        These aspects of production and service are especially important because E-Dining customers have come to expect them.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       PROJECT SCOPE
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        This project will include the examination of:
+       </s>
+      </p>
+      <list>
+       <item>
+        • Current processes and their capacity for improvement
+       </item>
+       <item>
+        • A diverse set of layout options, both with and without the separating wall
+       </item>
+       <item>
+        • Addition or removal of entry/exit points and interior walls
+       </item>
+       <item>
+        • Personnel organization, responsibility delegation, and employee scheduling
+       </item>
+       <item>
+        • Automation as a possible addition
+       </item>
+       <item>
+        • Pre-made kits for walk in orders
+       </item>
+       <item>
+        • Ability of facility to respond to continued growth in demand for the next 5-7 years
+       </item>
+       <item>
+        • Future systems with the following qualities:
+       </item>
+       <item>
+        <list>
+         <item>
+          • Walk-in store open from 10am-8pm M-F, 11am-5pm Sat-Sun
+         </item>
+         <item>
+          • A range of 30-50 customers/day at the walk-in store
+         </item>
+         <item>
+          • A range of 1-3 kits ordered per customer at the walk-in store
+         </item>
+        </list>
+       </item>
+       <item>
+        • Future layouts with the following qualities:
+       </item>
+       <item>
+        <list>
+         <item>
+          • One office space
+         </item>
+         <item>
+          • One break room/area
+         </item>
+         <item>
+          • One restroom for both customers and workers
+         </item>
+        </list>
+       </item>
+      </list>
+      <p>
+       <s pid="21" sid="1">
+        This project will not examine:
+       </s>
+      </p>
+      <list>
+       <item>
+        • The invention or implementation of new kit types
+       </item>
+       <item>
+        • Estimated production downtimes due to layout and process implementation
+       </item>
+       <item>
+        • Other costs associated with layout implementation
+       </item>
+       <item>
+        • External facility appearance
+       </item>
+      </list>
+     </div>
+     <div>
+      <div class="head_1">
+       ACTION PLAN
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        To create the optimal layouts and processes we will create simulations based on real world data.
+       </s>
+       <s pid="22" sid="2">
+        This data will include employee recommendations, standardized work element times, and facility layout dimensions.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Data Collection
+       </div>
+       <div>
+        <div class="head_3">
+         Study Employee Surveys
+        </div>
+        <p>
+         <s pid="23" sid="1">
+          We will examine the employee surveys that were conducted in August 2006 to help formulate early ideas about areas for improvement and definite elements to avoid implementing.
+         </s>
+         <s pid="23" sid="2">
+          If this existing survey is found to be inadequate for our purposes, we will perform another survey or a series of short interviews.
+         </s>
+         <s pid="23" sid="3">
+          If such a survey or interview is created, we will first ask for your approval before interacting with your workers.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Analyze Process Time Data
+        </div>
+        <p>
+         <s pid="24" sid="1">
+          We will attempt to measure the time required to perform all of the steps in the current procedures.
+         </s>
+         <s pid="24" sid="2">
+          First, we will perform a small number of our own time studies and compare the results to the data gathered by the workers.
+         </s>
+         <s pid="24" sid="3">
+          We will statistically analyze the two data sets to identify significant.
+         </s>
+         <s pid="24" sid="4">
+          If such differences exist we will perform time studies on all existing processes.
+         </s>
+         <s pid="24" sid="5">
+          For this portion of the data collection we will need access to the E-Dining facility, though production need not be stopped for the data gathering.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Measure Interior Space
+        </div>
+        <p>
+         <s pid="25" sid="1">
+          To create an accurate simulation, the dimensions of the existing floor space will be measured in great detail.
+         </s>
+         <s pid="25" sid="2">
+          This measurement can take place during business hours with minor production interruption, or if you prefer we can measure the facility on a non-business day.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Analysis
+       </div>
+       <div>
+        <div class="head_3">
+         Create Current State Simulation
+        </div>
+        <p>
+         <s pid="26" sid="1">
+          With the gathered process and layout data we will construct a computer simulation of the current state of the facility.
+         </s>
+         <s pid="26" sid="2">
+          This simulation will be used as a basis and comparison point for the new designs.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Design Alternate Facility Layouts
+        </div>
+        <p>
+         <s pid="27" sid="1">
+          Using mathematical systems analysis, facility planning procedures, simulation, and our engineering expertise, CEI will develop, test, and continuously improve several layout designs.
+         </s>
+         <s pid="27" sid="2">
+          This process will continue until we have found two decidedly optimal layouts, one with and one without the dividing wall.
+         </s>
+        </p>
+        <p>
+         <s pid="28" sid="1">
+          If new work elements are required in the new processes, we will need to perform additional time studies on these elements.
+         </s>
+         <s pid="28" sid="2">
+          The same requirement of access to the E-Dining facility without production disruption would be required if these additional time studies were performed.
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       DELIVERABLES
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        Upon project completion, CEI will deliver a final project report that contains:
+       </s>
+      </p>
+      <list>
+       <item>
+        • Two floor plan alternatives, one with the current dividing wall and one without
+       </item>
+       <item>
+        • Written instructions on how to implement new processes, including training suggestions and step by step process descriptions
+       </item>
+       <item>
+        • Explanations behind all of the layout and process changes that we made
+       </item>
+       <item>
+        • A copy of the original and final simulations, as well as a sampling of the intermediate simulations
+       </item>
+      </list>
+     </div>
+     <div>
+      <div class="head_1">
+       QUALIFICATIONS
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        Consultant Experts,
+       </s>
+       <s pid="30" sid="2">
+        Incorporated has handled 27 facility layout projects in 2006 alone.
+       </s>
+       <s pid="30" sid="3">
+        The average estimated gain for these projects is $200,000 a year.
+       </s>
+       <s pid="30" sid="4">
+        In July, CEI finished a project with a similar online sales company, and the week after we sent him the final report, the owner sent us this email:
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        To Whom It May Concern:
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        Your service has been, by far and away, the best investment that I have ever made for my company, and I cannot express how grateful I am for the hard work performed by you and your team.
+       </s>
+      </p>
+      <p>
+       <s pid="33" sid="1">
+        Sincerely,
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        (Name withheld)
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        We are well trained: over 90% of our employees have degrees in operations management, and 25% of those degrees are Masters and PhD.
+       </s>
+       <s pid="35" sid="2">
+        All of our full time consultants have been working here for at least two years, and all have experience in the field of facilities planning.
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        INVESTMENT CONSIDERATIONS
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        CEI will perform the proposed project for a $50,000 payable according to the following schedule:
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        $7,500 due upon project approval
+       </s>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        $7,500 due upon survey approval
+       </s>
+      </p>
+      <p>
+       <s pid="40" sid="1">
+        $15,000 due upon completion of facility data collection
+       </s>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        $20,000 due upon project completion
+       </s>
+      </p>
+      <p>
+       <s pid="42" sid="1">
+        The task breakdown of the $50,000 is as follows:
+       </s>
+      </p>
+      <p>
+       <s pid="43" sid="1">
+        $7,500 for survey work
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        $15,000 for facility data collection
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        $20,000 for simulation and facility design
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        $7,500 for final report composition
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        If at any time during the project, E-Dining requests changes to the project scope or deliverables, E-Dining and CEI will discuss how these changes might impact the project fees.
+       </s>
+       <s pid="47" sid="2">
+        If changes occur, CEI will document them for E-Dining's approval.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSION
+      </div>
+      <p>
+       <s pid="48" sid="1">
+        E-Dining would like to merge its facility with the newly vacant facility next door to create a more efficient assembly and packaging system and to add a walk-in store.
+       </s>
+       <s pid="48" sid="2">
+        To make the new facility as efficient as possible Consultant Experts, Inc. will collect and analyze data to construct two improved facility design options.
+       </s>
+       <s pid="48" sid="3">
+        These designs will be described in full in a final report delivered to E-Dining no later than December 22nd, so that E-Dining can begin the implementation as soon as January.
+       </s>
+       <s pid="48" sid="4">
+        Implementing the recommended changes in layout and process will increase output and worker efficiency, and the addition of the walk-in store will expand market share and increase demand.
+       </s>
+       <s pid="48" sid="5">
+        These benefits together will raise overall profits.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

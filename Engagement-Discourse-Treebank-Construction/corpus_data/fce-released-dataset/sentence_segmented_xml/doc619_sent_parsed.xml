@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     20.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Manager,
+      </p>
+      <p>
+       I am writing to complain about the Musical Show
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         have seen
+        </i>
+       </ns>
+       last week. There is some disagreement
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       between your advertisement and
+       <ns type="MD">
+       </ns>
+       show
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       which I
+       <ns type="TV">
+        <i>
+         could see
+        </i>
+       </ns>
+       at the Circle Theatre.
+      </p>
+      <p>
+       First of all, I would like to
+       <ns type="RV">
+        <i>
+         indicate
+        </i>
+       </ns>
+       that you
+       <ns type="RV">
+        <i>
+         put
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       wrong starting and finishing
+       <ns type="RN">
+        <i>
+         hours
+        </i>
+       </ns>
+       . The Musical started at 20:15 not at 14:30 - as you
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         mentioned
+        </i>
+       </ns>
+       . It was very surprising for me and I had
+       <ns type="UV">
+        <i>
+         got
+        </i>
+       </ns>
+       a lot of trouble with
+       <ns type="RV">
+        <i>
+         coming
+        </i>
+       </ns>
+       back home at night - when it finished.
+      </p>
+      <p>
+       Furthermore, there was no Danny Brook
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the stage.
+       <ns type="AGA">
+        <i>
+         She
+        </i>
+       </ns>
+       is my
+       <ns type="RJ">
+        <i>
+         famous
+        </i>
+       </ns>
+       artist and I
+       <ns type="TV">
+        <i>
+         was
+         <ns type="RV">
+          <i>
+           coming
+          </i>
+         </ns>
+        </i>
+       </ns>
+       there mainly because of him.
+       <ns type="UC">
+        <i>
+         If this
+        </i>
+       </ns>
+       made me really disappointed - he wasn't
+       <ns type="RV">
+        <i>
+         playing
+        </i>
+       </ns>
+       there.
+      </p>
+      <p>
+       Another point
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I want you to consider
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       is
+       <ns type="MD">
+       </ns>
+       restaurant. The place you
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       offered was closed and there was nothing to eat inside the theatre at all. Despite changing the hours, you
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       closed the restaurant without any reason. Could you possibly explain why you didn't provide us
+       <ns type="MT">
+       </ns>
+       anything to eat?
+      </p>
+      <p>
+       Finally, you
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         advertised
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I would have
+       <ns type="MD">
+       </ns>
+       perfect evening out. Unfortunately, I can't say that. I am very disappointed and I would like to ask you for
+       <ns type="UV">
+        <i>
+         giving
+        </i>
+       </ns>
+       my money back. I think
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       this could be the only
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       right
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       for me
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       to forget about my
+       <ns type="DJ">
+        <i>
+         not interesting
+        </i>
+       </ns>
+       evening.
+      </p>
+      <p>
+       I would appreciate it
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       if you could consider my complaint. I look forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Manager,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about the Musical Show, I have seen last week.
+       </s>
+       <s pid="2" sid="2">
+        There is some disagreement a between your advertisement and  show, which I could see at the Circle Theatre.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I would like to indicate that you put  wrong starting and finishing hours.
+       </s>
+       <s pid="3" sid="2">
+        The Musical started at 20:15 not at 14:30 - as you have mentioned.
+       </s>
+       <s pid="3" sid="3">
+        It was very surprising for me and I had got a lot of trouble with coming back home at night - when it finished.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Furthermore, there was no Danny Brook at the stage.
+       </s>
+       <s pid="4" sid="2">
+        She is my famous artist and I was coming there mainly because of him.
+       </s>
+       <s pid="4" sid="3">
+        If this made me really disappointed - he wasn't playing there.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Another point, I want you to consider, is  restaurant.
+       </s>
+       <s pid="5" sid="2">
+        The place you have offered was closed and there was nothing to eat inside the theatre at all.
+       </s>
+       <s pid="5" sid="3">
+        Despite changing the hours, you have closed the restaurant without any reason.
+       </s>
+       <s pid="5" sid="4">
+        Could you possibly explain why you didn't provide us  anything to eat?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, you have advertised, I would have  perfect evening out.
+       </s>
+       <s pid="6" sid="2">
+        Unfortunately, I can't say that.
+       </s>
+       <s pid="6" sid="3">
+        I am very disappointed and I would like to ask you for giving my money back.
+       </s>
+       <s pid="6" sid="4">
+        I think, this could be the only, right possibility for me, to forget about my not interesting evening.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I would appreciate it, if you could consider my complaint.
+       </s>
+       <s pid="7" sid="2">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       FASHION OF THE FUTURE
+      </p>
+      <p>
+       Try to imagine
+       <ns type="UP">
+        <i>
+         :
+        </i>
+       </ns>
+       the wide, colourful street with many fantastic cars and
+       <ns type="W">
+        <i>
+         <ns type="SX">
+          <i>
+           shinny
+          </i>
+         </ns>
+         large
+        </i>
+       </ns>
+       shops. Try to think about people in weird black and grey clothes
+       <ns type="U">
+        <i>
+         on them
+        </i>
+       </ns>
+       . It isn't a film, it isn't even a picture from mysterious books. It's a REALITY,
+       <ns type="MP">
+        <i>
+         its
+        </i>
+       </ns>
+       the FASHION OF THE FUTURE...
+      </p>
+      <p>
+       People
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       wearing almost everything, during more than 2000 years of their living on Earth. Everything
+       <ns type="TV">
+        <i>
+         was changing
+        </i>
+       </ns>
+       : style, colour
+       <ns type="MP">
+       </ns>
+       <ns type="S">
+        <i>
+         qual
+        </i>
+       </ns>
+       . Fashion. Their clothes were always strictly connected with their lifestyle, climate and money. We saw almost all kinds of skirts, trousers, coats, skirts and even hats - which
+       <ns type="S">
+        <i>
+         untill
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         nowadays
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       the main point of many fashion
+       <ns type="RN">
+        creatures
+       </ns>
+       . What can we suspect then? What
+       <ns type="R">
+        something new
+       </ns>
+       hasn't been invented
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       now? I
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           say
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="U">
+        <i>
+         it to
+        </i>
+       </ns>
+       you - black and grey. These are two powerful colours, which will be expanding for the
+       <ns type="RJ">
+        <i>
+         nearest
+        </i>
+       </ns>
+       100 years.
+      </p>
+      <p>
+       The climate is changing, so we
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       have only two seasons. And we will need only two colours: grey for hot days and black for cold ones. Women will wear only skirts and dresses but men will be strictly connected with trousers. I hope
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       there will be times
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when women
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       like
+       <ns type="W">
+        <i>
+         to be again
+        </i>
+       </ns>
+       thought
+       <ns type="UT">
+        <i>
+         as
+        </i>
+       </ns>
+       delicate and
+       <ns type="RJ">
+        <i>
+         sensible
+        </i>
+       </ns>
+       human beings. Showing their figure, they would have
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to show their sexuality. But, don't forget,
+       <ns type="RQ">
+        <i>
+         any
+        </i>
+       </ns>
+       exhibitionism! We have too many
+       <ns type="DJ">
+        taken off
+       </ns>
+       people around us, now. And
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       will be
+       <ns type="M">
+       </ns>
+       the past.
+       <ns type="MD">
+        <i>
+         Streets
+        </i>
+       </ns>
+       of
+       <ns type="MD">
+       </ns>
+       21st century will be smart.
+      </p>
+      <p>
+       So, are you interested in that style? Do you agree with me? If not, you are very
+       <ns type="RJ">
+        poor
+       </ns>
+       . This fashion is coming, so think about it.
+      </p>
+      <p>
+       Grey and black - like
+       <ns type="R">
+        <i>
+         weather
+        </i>
+       </ns>
+       seasons, like
+       <ns type="MP">
+        <i>
+         people
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         charakters
+        </i>
+       </ns>
+       , like all
+       <ns type="MD">
+       </ns>
+       night and dark
+       <ns type="S">
+        <i>
+         sourranding
+        </i>
+       </ns>
+       us. These are the colours of the FUTURE.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        FASHION OF THE FUTURE
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Try to imagine: the wide, colourful street with many fantastic cars and shinny large shops.
+       </s>
+       <s pid="2" sid="2">
+        Try to think about people in weird black and grey clothes on them.
+       </s>
+       <s pid="2" sid="3">
+        It isn't a film, it isn't even a picture from mysterious books.
+       </s>
+       <s pid="2" sid="4">
+        It's a REALITY, its the FASHION OF THE FUTURE...
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        People were wearing almost everything, during more than 2000 years of their living on Earth.
+       </s>
+       <s pid="3" sid="2">
+        Everything was changing: style, colour qual.
+       </s>
+       <s pid="3" sid="3">
+        Fashion.
+       </s>
+       <s pid="3" sid="4">
+        Their clothes were always strictly connected with their lifestyle, climate and money.
+       </s>
+       <s pid="3" sid="5">
+        We saw almost all kinds of skirts, trousers, coats, skirts and even hats - which untill nowadays are the main point of many fashion creatures.
+       </s>
+       <s pid="3" sid="6">
+        What can we suspect then?
+       </s>
+       <s pid="3" sid="7">
+        What something new hasn't been invented for now?
+       </s>
+       <s pid="3" sid="8">
+        I say it to you - black and grey.
+       </s>
+       <s pid="3" sid="9">
+        These are two powerful colours, which will be expanding for the nearest 100 years.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The climate is changing, so we would have only two seasons.
+       </s>
+       <s pid="4" sid="2">
+        And we will need only two colours: grey for hot days and black for cold ones.
+       </s>
+       <s pid="4" sid="3">
+        Women will wear only skirts and dresses but men will be strictly connected with trousers.
+       </s>
+       <s pid="4" sid="4">
+        I hope, there will be times, when women would like to be again thought as delicate and sensible human beings.
+       </s>
+       <s pid="4" sid="5">
+        Showing their figure, they would have  possibility to show their sexuality.
+       </s>
+       <s pid="4" sid="6">
+        But, don't forget, any exhibitionism!
+       </s>
+       <s pid="4" sid="7">
+        We have too many taken off people around us, now.
+       </s>
+       <s pid="4" sid="8">
+        And it will be  the past.
+       </s>
+       <s pid="4" sid="9">
+        Streets of  21st century will be smart.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        So, are you interested in that style?
+       </s>
+       <s pid="5" sid="2">
+        Do you agree with me?
+       </s>
+       <s pid="5" sid="3">
+        If not, you are very poor.
+       </s>
+       <s pid="5" sid="4">
+        This fashion is coming, so think about it.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Grey and black - like weather seasons, like people charakters, like all  night and dark sourranding us.
+       </s>
+       <s pid="6" sid="2">
+        These are the colours of the FUTURE.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

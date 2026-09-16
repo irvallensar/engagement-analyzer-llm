@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Impact on atmospheric carbon dioxide levels: Sequestration vs. reduced emissions
+   </div>
+   <div class="abstract">
+    ABSTRACT
+    <p>
+     This paper explores the relative efficacy of six levers to slow climate change, focusing on carbon sequestration and reduced emissions. Climate change is caused by rising levels of greenhouse gas concentrations in the atmosphere which reflect heat radiated from the earth, causing global mean temperatures to rise. While temperatures have only risen slightly to date, atmospheric concentrations of greenhouse gasses are expected to rise dramatically over the next century. The resulting temperature increase will pose problems including flooding, extreme weather events, salinity intrusion, reduced crop productivity, and increased disease transmission. In order to reverse this trend, either the inputs to atmospheric greenhouse gas storage must be reduced or the outputs must be increased. This paper examines this input-output relationship mathematically, using the Intergovernmental Panel on Climate Change’s upwelling-diffusion climate model. It assesses the impact of halving and doubling emissions, fixation, respiration, upwelling, downwelling, and deposition. Emissions and fixation are shown to have the greatest impact, leading to greater changes in carbon dioxide levels than the other four flows. Fortunately, these are also the flows over which humans have the most direct control. However, the magnitude of change needed to achieve the level of greenhouse gasses most scientists consider “safe” is daunting.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     INTRODUCTION
+    </div>
+    <p>
+     Atmospheric concentrations of greenhouse gasses (GHGs) have been steadily rising since the start of the Industrial Revolution due to anthropogenic emissions. This has caused global mean temperature to rise by an estimated .5 degrees Celsius, with some regions experiencing much higher increases than the average (Agarwal, 2008). Higher temperatures have ushered in rising sea levels, more erratic weather patterns, and adverse human health impacts. This trend is difficult to reverse because human emissions are a net addition to the carbon cycle; they represent an additional input to the global carbon balance which has led to ever-increasing net storage. Furthermore, GHGs persist in the atmosphere for long periods of time. In order to reduce atmospheric concentrations of GHGs, either the inputs (primarily emissions) must be lowered or the outputs (primarily carbon sequestration in forests) must be raised. This paper looks at the relative efficacy of different approaches to reducing the concentration of carbon dioxide, and concludes that a combination of measures, including both emissions reduction
+     <i>
+      and
+     </i>
+     sequestration, is needed to achieve stability.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     METHOD
+    </div>
+    <p>
+     I first performed background research using lecture notes and existing literature to determine how climate change works, what the impacts of climate change are, how carbon dioxide is cycled through the oceans and atmosphere, and how carbon dioxide concentrations have changed over time. Next, I modeled these flows using the upwelling-diffusion climate model from the Intergovernmental Panel on Climate Change (Harvey et. al., 1997). This model is shown in Figure 1. There are three
+     <q>
+      storage
+     </q>
+     compartments for carbon dioxide: the atmosphere, land and shallow oceans, and deep oceans. The IPCC model identifies the input rates and output rates from each of these storage boxes. For example, the outputs from land and shallow oceans are downwelling into deep oceans, at a rate of .11S gigatons per year, and respiration up into the atmosphere, at .27S per year.
+    </p>
+    <p>
+     Figure 1: IPCC Upwelling-Diffusion Climate Model - Carbon Dioxide Storage and Flows
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Source: Kao, Y.C., 2008. Lab on Climate Change. University of Michigan, 11/18/.08.
+    </p>
+    <p>
+     Using this model, I simulated future scenarios using IS92 data as my baseline. In these scenarios, I demonstrated the impact of halving and doubling each of the six flows (emissions, fixation, respiration, downwelling, upwelling, and deposition), while holding the other flows constant. The model produced future projections for atmospheric carbon dioxide concentrations based on these parameters for the year 2200 and the maximum level. The output from this scenario modeling allowed me to determine the impact of each
+     <q>
+      lever
+     </q>
+     on achieving carbon reductions. In my analysis, I assumed that sequestration is equivalent to fixation (as it represents the earth’s ability to sequester carbon in vegetation). However, one could also consider
+     <i>
+      man-made
+     </i>
+     carbon sequestration and storage (CCS) techniques in devising a practical, comprehensive strategy to reduce GHG concentrations (for instance, the possibility of trapping emissions from coal-fired power plants and burying them underground). I also applied learnings from my literature review to assess which levers could in fact be altered and by how much.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     RESULTS &amp; DISCUSSION
+    </div>
+    <p>
+     <b>
+      How climate change works:
+     </b>
+     We are lucky enough to live on a planet with a warm surface temperature; most planets are either too hot or too cold to sustain life because they lack atmosphere. The gasses in our atmosphere trap the sun’s heat, supporting rich biodiversity here on Earth. When the sun shines, high frequency solar radiation enters the atmosphere. This heat is bounced back from the earth’s surface by black body and infrared radiation. However, not all of the heat escapes because of the greenhouse effect: GHGs are opaque to infrared radiation, so some heat is trapped in the atmosphere. This keeps temperatures mild and stable such that plants and animals – including humans – can thrive. The main greenhouse gas is carbon dioxide, though methane, water vapor, ozone, nitrous oxide, and some man-made compounds like halocarbons have similar effects. Oceans play a part in regulating GHG concentrations as well: the ocean acts as a sink for carbon dioxide, storing the majority of the global carbon budget (Wiley, 2008). Through upwelling and downwelling, these gasses are transitioned to and from the surface layer, from whence they dissolve into and out of the atmosphere.
+    </p>
+    <p>
+     <b>
+      Climate change trends:
+     </b>
+     In its natural state, the flows of gasses between the atmosphere, surface ocean, and deep ocean are balanced (Harvey et. al., 1997). For millennia, this balance left approximately 280 ppm of carbon dioxide stored in the atmosphere (Fischlowitz-Roberts, 2002). However, anthropogenic emissions from electricity generation, industry, agriculture, and transportation have caused that concentration to rise to roughly 385 ppm since the year 1750, raising the global mean temperature (Hansen et. al., 2008). This trend can be seen in Figure 2. The IPCC predicts that
+     <q>
+      business as usual
+     </q>
+     , or a doubling of carbon dioxide emissions, will produce a temperature rise of 1.5 – 4.5 degrees Celsius by the end of the 21st century (Harvey et. al., 1997). Scientists are now signaling the alarm that 350 ppm of carbon dioxide is the concentration we should strive towards, otherwise we risk unleashing a slough of positive feedback loops that could put us on an irreversible upward trajectory in temperature (Hansen et. al., 2008). So we may in fact be past the Earth’s tipping point as far as climate change is concerned.
+    </p>
+    <p>
+     Figure 2: Atmospheric Carbon Dioxide Concentrations
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Source: Guggenheim, D., 2006. An Inconvenient Truth (movie).
+    </p>
+    <p>
+     <b>
+      Effects of climate change:
+     </b>
+     Why should we care? Global climate change creates myriad issues associated with unevenly distributed temperature rises (as in, some regions will warm much more than others). Ecological impacts directly affecting human well-being include more intense storms, increased incidence of drought, higher sea levels inundating coastal cities, salinity intrusion into fresh water resources, increased prevalence of vector-borne diseases, and reduced crop productivity, just to name a few. But biodiversity will also suffer, as species’ habitats are altered. Furthermore, once climate change takes off, positive feedback loops will lead to its acceleration. For instance, as temperatures rise, ice caps melt, reducing the earth’s ability to reflect light (albedo). Nothing short of the ongoing survival of mankind depends on our ability to reverse this trend.
+    </p>
+    <p>
+     <b>
+      Levers to reduce climate change:
+     </b>
+     While the actual science behind climate change is incredibly complex, we can simplify the mechanism for the concentration of carbon dioxide to the input-output model in Figure 1. With input-output models, it is relatively easy to demonstrate reductions in storage: you either have to reduce inputs or increase outputs. The direct inputs to atmospheric concentrations of GHGs are respiration (e.g. animals breathing out carbon dioxide) and industrial emissions. An indirect input is upwelling from the ocean (some carbon dioxide that is upwelled into the shallow waters may eventually diffuse into the atmosphere). The only direct output is fixation or sequestration (plants take in carbon dioxide through photosynthesis). Indirect outputs are downwelling into the deep ocean and deposition from the ocean into the underlying sediment. The results of halving and doubling each of these flows can be seen in Table 1.
+    </p>
+    <p>
+     Table 1: Scenario Analysis of Carbon Dioxide Concentrations
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     The results of the scenario modeling show that the most effective lever in altering atmospheric carbon dioxide levels is emissions: the range in carbon dioxide concentrations that result from halving or doubling emissions is the highest, at 1,229.9 ppm in year 2200 or 2,072.5 ppm maximum. Fixation is a close second, with a range of 1,028.2 ppm in year 2200 or 1,684.6 ppm maximum. Respiration is still somewhat effective, while downwelling, upwelling, and deposition yield smaller and smaller changes in storage. However, note than even a halving of current emissions still leads to atmospheric concentrations of 702.9 ppm CO2 by the year 2200 – this is twice the level deemed
+     <q>
+      safe
+     </q>
+     by Hansen and his team of scientists! Doubling fixation also does not achieve our goal, reaching only 653.2 ppm CO2.
+    </p>
+    <p>
+     <b>
+      A viable strategy:
+     </b>
+     The good news is that emissions reduction and increased fixation - the most effective levers – are also those levers most easily controlled by humans. Emissions reductions can be achieved through switching to
+     <q>
+      clean
+     </q>
+     energy (such as wind power or geothermal energy), reducing overall energy consumption, and capturing GHG emissions before they reach the atmosphere (such as trapping methane from cows and converting it to biogas). Fixation, or sequestration, can be increased by planting more trees to absorb carbon dioxide through photosynthesis. The other levers really cannot feasibly be changed by humans: we can’t stop breathing, we can’t force sediment to absorb more carbon dioxide, and we probably shouldn’t mess with ocean currents since that could seriously disturb other ecological processes. So if those levers are off-limits, that means we must reduce emissions and increase sequestration simultaneously to achieve 350 ppm. In the model, if emissions are cut to 25% of current levels and fixation is doubled, the maximum carbon dioxide level is 355.1 ppm – right about where scientists believe we should be. Unfortunately, doubling the world’s forests while slashing emissions to a quarter of their current levels looks abysmally difficult, given the political and behavioral changes needed to exact this magnitude of change.
+    </p>
+    <p>
+     Furthermore, this simple model omits several complicating variables that would have to be considered in crafting a realistic response to climate change. Scientists still don’t fully understand the whole suite of
+     <q>
+      interactions between the terrestrial biosphere and climate
+     </q>
+     ( Harvey et. al., 1997). For instance, what will the impact of melting permafrost be on methane emissions? Additionally, cooling mechanisms such as aerosols and cloud cover are poorly understood and not reflected in the model above. Indeed, earth scientists are still struggling to create and run models which incorporate the true complexities of climate change.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     CONCLUDING REMARKS
+    </div>
+    <p>
+     Carbon sequestration and reduced emissions are the most viable strategies for reducing atmospheric concentrations of GHGs. But while changes in emissions have a slightly greater effect on carbon dioxide storage than fixation, neither one alone can reduce atmospheric concentrations to a level low enough to avoid runaway temperature increases resulting from the initiation of positive feedback loops. Earth scientists have yet to derive completely accurate models, but it is clear that a multi-pronged strategy is needed to curb – and hopefully reverse – the accumulation of these gasses in the atmosphere. Intensive reforestation measures must be coupled with rigorous efforts to reduce anthropogenic emissions of GHGs.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     REFERENCES
+    </div>
+    <ul id="N1018B">
+     <li id="N1018C">
+      Agarwal, A., 2008. Climate Change. Lecture at the University of Michigan on 12/1/08.
+     </li>
+     <li id="N1018E">
+      Fischlowitz-Roberts B., 2002. Carbon Emissions Climbing. Earth Policy Institute, http://www.earth-policy.org/Indicators/indicator5.htm, accessed 11/30/08.
+     </li>
+     <li id="N10190">
+      Hansen, J., Sato, M., Kharecha, P., Beerling, D., Berner, R., Masson-Delmote, V., Pagani, M., Raymo, M., Royer, D., and Zachos, M., 2008. Target Atmospheric CO2: Where Should Humanity Aim? Open Atmospheric Science Journal vol. 2: 217-231.
+     </li>
+     <li id="N10192">
+      Harvey, D., Gregory, J., Hoffert, M., Jain, A., Lal, M., Leemans, R., Raper, S., Wigley, T., de Wolde, J., 1997. An Introduction to Simple Climate Models Used in the IPCC Second Assessment Report. Intergovernmental Panel on Climate Change.
+     </li>
+     <li id="N10194">
+      Wiley, M., 2008. Oceans. Lecture at the University of Michigan on 11/17/08.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

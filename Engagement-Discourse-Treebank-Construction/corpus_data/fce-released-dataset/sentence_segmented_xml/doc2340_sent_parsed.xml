@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Ideas to
+       <ns type="RP">
+        <i>
+         improve
+        </i>
+       </ns>
+       the Festival
+      </p>
+      <p>
+       Dear Jane Clark,
+      </p>
+      <p>
+       I went to the International Arts Festival and saw some interesting things, but many points could be better. That is why
+       <ns type="TV">
+        <i>
+         I write
+        </i>
+       </ns>
+       to you, to give you some suggestions that you can take into consideration or not.
+      </p>
+      <p>
+       Firstly, it is a good idea that the Festival is
+       <ns type="RP">
+        <i>
+         International
+        </i>
+       </ns>
+       . But in the advertisement it was
+       <ns type="RV">
+        <i>
+         written
+        </i>
+       </ns>
+       that the artists were from all
+       <ns type="MT">
+       </ns>
+       the world
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       I saw only six nationalities.
+      </p>
+      <p>
+       Secondly, the classical concerts were excellent
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       the halls were so crowded that nobody could walk. In my opinion, it would be important to rent bigger halls next year.
+      </p>
+      <p>
+       Thirdly, I noticed that the plays and the films were
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       good entertainment.
+       <ns type="AGA">
+        <i>
+         It
+        </i>
+       </ns>
+       attracted a lot of people and they were really
+       <ns type="L">
+        joyous
+       </ns>
+       after that.
+      </p>
+      <p>
+       Finally, the
+       <ns type="DJ">
+        <i>
+         reasonably
+        </i>
+       </ns>
+       price of the tickets for the weekend was a good point, because all
+       <ns type="AGN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of people
+       <ns type="S">
+        <i>
+         an
+        </i>
+       </ns>
+       afford to buy
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       . I also think that you should
+       <ns type="RV">
+        <i>
+         put
+        </i>
+       </ns>
+       a
+       <ns type="RP">
+        <i>
+         Snack-Bar
+        </i>
+       </ns>
+       or a little restaurant so
+       <ns type="RC">
+        <i>
+         as
+        </i>
+       </ns>
+       the people are not too
+       <ns type="S">
+        <i>
+         hangry
+        </i>
+       </ns>
+       and
+       <ns type="S">
+        <i>
+         morever
+        </i>
+       </ns>
+       you can
+       <ns type="R">
+        <i>
+         realise big benefits
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       In conclusion,
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the whole the Festival was a success, but these suggestions can maybe help you to improve
+       <ns type="MA">
+       </ns>
+       .
+      </p>
+      <p>
+       I hope you will not take this letter as a complaint and I look forward to going to the next festival.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Ideas to improve the Festival
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Jane Clark,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I went to the International Arts Festival and saw some interesting things, but many points could be better.
+       </s>
+       <s pid="3" sid="2">
+        That is why I write to you, to give you some suggestions that you can take into consideration or not.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, it is a good idea that the Festival is International.
+       </s>
+       <s pid="4" sid="2">
+        But in the advertisement it was written that the artists were from all  the world and I saw only six nationalities.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, the classical concerts were excellent and the halls were so crowded that nobody could walk.
+       </s>
+       <s pid="5" sid="2">
+        In my opinion, it would be important to rent bigger halls next year.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Thirdly, I noticed that the plays and the films were a good entertainment.
+       </s>
+       <s pid="6" sid="2">
+        It attracted a lot of people and they were really joyous after that.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Finally, the reasonably price of the tickets for the weekend was a good point, because all kind of people an afford to buy it.
+       </s>
+       <s pid="7" sid="2">
+        I also think that you should put a Snack-Bar or a little restaurant so as the people are not too hangry and morever you can realise big benefits
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        In conclusion, in the whole the Festival was a success, but these suggestions can maybe help you to improve .
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I hope you will not take this letter as a complaint and I look forward to going to the next festival.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Home and school rules
+      </p>
+      <p>
+       Dear Andrew,
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         receive
+        </i>
+       </ns>
+       your letter and thank you for it. I am very happy to
+       <ns type="FV">
+        <i>
+         hearing
+        </i>
+       </ns>
+       from you and I hope that you are
+       <ns type="RJ">
+        <i>
+         fit
+        </i>
+       </ns>
+       .
+       <ns type="RY">
+        As expected
+       </ns>
+       , I want to talk
+       <ns type="RY">
+        <i>
+         at first
+        </i>
+       </ns>
+       about my school and then about my home.
+      </p>
+      <p>
+       As you know, I finished school two years ago. This year, I started a private school in Dijon. So the rules are clear, you need to participate
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the lessons and also
+       <ns type="R">
+        <i>
+         be successful at
+        </i>
+       </ns>
+       the exam
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       June 2000. In our class, we don't have
+       <ns type="MD">
+       </ns>
+       problem with students who dislike
+       <ns type="FV">
+        <i>
+         to work
+        </i>
+       </ns>
+       , because we are all there for the same reasons and nobody wants to
+       <ns type="RV">
+        <i>
+         say
+        </i>
+       </ns>
+       there
+       <ns type="MT">
+       </ns>
+       years and years. It is also expensive and I can't afford to stay there too long.
+      </p>
+      <p>
+       In my
+       <ns type="RJ">
+        sweet
+       </ns>
+       home, my parents let me do what I want, because I am an adult now. But when we are
+       <ns type="RY">
+        <i>
+         in society
+        </i>
+       </ns>
+       , we have to be careful not to disturb the other
+       <ns type="L">
+        <i>
+         persons
+        </i>
+       </ns>
+       . It is the same in our family
+       <ns type="MP">
+        <i>
+         <ns type="UC">
+          <i>
+           and
+          </i>
+         </ns>
+         for
+        </i>
+       </ns>
+       example
+       <ns type="MP">
+       </ns>
+       my parents dislike hearing music
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the whole house
+       <ns type="CE">
+        or that I let dust everywhere
+       </ns>
+       . When I go out, they don't give me
+       <ns type="RN">
+        <i>
+         an hour
+        </i>
+       </ns>
+       to be
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       home, because
+       <ns type="R">
+        <i>
+         I don't
+         <ns type="S">
+          <i>
+           exagerate
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In conclusion, I don't want to change
+       <ns type="RA">
+        <i>
+         something
+        </i>
+       </ns>
+       in my house or at school, because I
+       <ns type="DY">
+        <i>
+         totaly
+        </i>
+       </ns>
+       agree with the few rules that I have.
+      </p>
+      <p>
+       I hope these few
+       <ns type="MQ">
+       </ns>
+       information can help you and I look forward to hearing from you
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Best wishes
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Home and school rules
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Andrew,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I receive your letter and thank you for it.
+       </s>
+       <s pid="3" sid="2">
+        I am very happy to hearing from you and I hope that you are fit.
+       </s>
+       <s pid="3" sid="3">
+        As expected, I want to talk at first about my school and then about my home.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As you know, I finished school two years ago.
+       </s>
+       <s pid="4" sid="2">
+        This year, I started a private school in Dijon.
+       </s>
+       <s pid="4" sid="3">
+        So the rules are clear, you need to participate to the lessons and also be successful at the exam of June 2000.
+       </s>
+       <s pid="4" sid="4">
+        In our class, we don't have  problem with students who dislike to work, because we are all there for the same reasons and nobody wants to say there  years and years.
+       </s>
+       <s pid="4" sid="5">
+        It is also expensive and I can't afford to stay there too long.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In my sweet home, my parents let me do what I want, because I am an adult now.
+       </s>
+       <s pid="5" sid="2">
+        But when we are in society, we have to be careful not to disturb the other persons.
+       </s>
+       <s pid="5" sid="3">
+        It is the same in our family and for example my parents dislike hearing music in the whole house or that I let dust everywhere.
+       </s>
+       <s pid="5" sid="4">
+        When I go out, they don't give me an hour to be at home, because I don't exagerate.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In conclusion, I don't want to change something in my house or at school, because I totaly agree with the few rules that I have.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I hope these few  information can help you and I look forward to hearing from you
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Best wishes
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

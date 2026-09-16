@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Ms. Ryan,
+      </p>
+      <p>
+       Thank you very much for your letter
+       <ns type="RT">
+        <i>
+         with reference to
+        </i>
+       </ns>
+       the competition. Here
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       the information you
+       <ns type="TV">
+        <i>
+         required
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Firstly, I would like to travel in July, because it is the only month that I am free.
+      </p>
+      <p>
+       Secondly, I prefer cabins. The main reason is that I love wood. In addition, due to my height (185 cm), I think cabins may be a better choice.
+      </p>
+      <p>
+       Thirdly, from the activity list, I chose swimming and tennis as my favourite ones. Although I have played tennis only twice, I really enjoyed it.
+       <ns type="ID">
+        <i>
+         With contrast to
+        </i>
+       </ns>
+       this , I
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       swim when I was six. Furthermore, I once
+       <ns type="TV">
+        <i>
+         have been trained
+        </i>
+       </ns>
+       in a swimming centre, so I am quite confident
+       <ns type="R">
+        <i>
+         with it
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Lastly, could you please tell me what kind of clothes and how much money I should
+       <ns type="RV">
+        <i>
+         prepare
+        </i>
+       </ns>
+       and do I have to buy insurance myself?
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ms. Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for your letter with reference to the competition.
+       </s>
+       <s pid="2" sid="2">
+        Here are the information you required.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I would like to travel in July, because it is the only month that I am free.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, I prefer cabins.
+       </s>
+       <s pid="4" sid="2">
+        The main reason is that I love wood.
+       </s>
+       <s pid="4" sid="3">
+        In addition, due to my height (185 cm), I think cabins may be a better choice.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Thirdly, from the activity list, I chose swimming and tennis as my favourite ones.
+       </s>
+       <s pid="5" sid="2">
+        Although I have played tennis only twice, I really enjoyed it.
+       </s>
+       <s pid="5" sid="3">
+        With contrast to this , I can swim when I was six.
+       </s>
+       <s pid="5" sid="4">
+        Furthermore, I once have been trained in a swimming centre, so I am quite confident with it.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Lastly, could you please tell me what kind of clothes and how much money I should prepare and do I have to buy insurance myself?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       The aim of this report is to suggest lessons and some activities which should be filmed in the video
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       my school.
+      </p>
+      <p>
+       In my opinion, maths, politics,
+       <ns type="RP">
+        <i>
+         chinese
+        </i>
+       </ns>
+       , English and painting lessons are the most interesting ones. They are also the lessons which English
+       <ns type="MN">
+       </ns>
+       and other foreigners are
+       <ns type="DY">
+        <i>
+         particularlly
+        </i>
+       </ns>
+       curious
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       As far as I know, English people are really surprised
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       Chinese students' advanced level in Maths, as well as
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       knowledge
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       politics. This is a good
+       <ns type="S">
+        <i>
+         oppertunate
+        </i>
+       </ns>
+       to see how they learn in class.
+       <ns type="R">
+        As it is expected, painting lesson is an amazing one
+       </ns>
+       . You can find students
+       <ns type="FV">
+        <i>
+         use
+        </i>
+       </ns>
+       traditional
+       <ns type="RP">
+        <i>
+         chinese
+        </i>
+       </ns>
+       ink to draw and write.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         In spite of
+        </i>
+       </ns>
+       lessons, there are all
+       <ns type="AGN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of activities such as sports
+       <ns type="FN">
+        <i>
+         meeting
+        </i>
+       </ns>
+       , racing
+       <ns type="FN">
+        <i>
+         competition
+        </i>
+       </ns>
+       , and countryside activities. Some are held once a year and some are held every term. You will experience a different life in them.
+      </p>
+      <p>
+       In conclusion, besides all
+       <ns type="M">
+       </ns>
+       mentioned, I highly
+       <ns type="S">
+        <i>
+         recommond
+        </i>
+       </ns>
+       you video
+       <ns type="MD">
+       </ns>
+       students' daily life and interview them. That will
+       <ns type="W">
+        <i>
+         make it
+         <ns type="S">
+          <i>
+           defenitely
+          </i>
+         </ns>
+        </i>
+       </ns>
+       a successful video.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The aim of this report is to suggest lessons and some activities which should be filmed in the video from my school.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In my opinion, maths, politics, chinese, English and painting lessons are the most interesting ones.
+       </s>
+       <s pid="2" sid="2">
+        They are also the lessons which English  and other foreigners are particularlly curious in.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As far as I know, English people are really surprised about  Chinese students' advanced level in Maths, as well as the knowledge in politics.
+       </s>
+       <s pid="3" sid="2">
+        This is a good oppertunate to see how they learn in class.
+       </s>
+       <s pid="3" sid="3">
+        As it is expected, painting lesson is an amazing one.
+       </s>
+       <s pid="3" sid="4">
+        You can find students use traditional chinese ink to draw and write.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In spite of lessons, there are all kind of activities such as sports meeting, racing competition, and countryside activities.
+       </s>
+       <s pid="4" sid="2">
+        Some are held once a year and some are held every term.
+       </s>
+       <s pid="4" sid="3">
+        You will experience a different life in them.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In conclusion, besides all  mentioned, I highly recommond you video  students' daily life and interview them.
+       </s>
+       <s pid="5" sid="2">
+        That will make it defenitely a successful video.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

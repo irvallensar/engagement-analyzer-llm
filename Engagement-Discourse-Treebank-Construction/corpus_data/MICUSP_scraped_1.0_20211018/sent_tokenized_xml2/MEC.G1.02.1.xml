@@ -1,0 +1,987 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Auto Body Structures
+      <br/>
+      Mini-project
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       PROBLEM STATEMENT
+      </div>
+      <div>
+       <div class="head_2">
+        Customer Description
+       </div>
+       <p>
+        <s pid="1" sid="1">
+         Our customer is a new and growing family with a limited income.
+        </s>
+        <s pid="1" sid="2">
+         The customer wants a primary transportation for the next 6 years with high degree of safety and an enough cargo space at a target price of $25000.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Step 1. Interpret the customer description
+      </div>
+      <div>
+       <div class="head_2">
+        Design Description
+       </div>
+       <p>
+        <s pid="2" sid="1">
+         Based on the customer requirement, our team’s design focuses on the safety (energy absorbing) and durability (strength) with high fuel efficiency.
+        </s>
+        <s pid="2" sid="2">
+         Accordingly our team concentrated in developing high performance especially in the front barrier crush test, side barrier crush test, and roof crush test.
+        </s>
+        <s pid="2" sid="3">
+         The maximum number of passengers is assumed to be 5 adults each weighing 70 kg and the cargo mass is assumed to be 120 kg.
+        </s>
+        <s pid="2" sid="4">
+         The two assumptions are sufficient to consider the worst case scenario, so that our design does not incorporate any safety factor.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Step 2. Estimate the vehicle mass for a nominal vehicle
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        The length of the vehicle was measured to be 4700 mm and the width of the vehicle to be 1800 mm.
+       </s>
+       <s pid="3" sid="2">
+        Using these two dimensions with the "MassCompRev5" provided in class, the vehicle plan view was calculated as 8.46 m2 and the vehicle curb mass as 1479.56 kg.
+       </s>
+       <s pid="3" sid="3">
+        Along with each mass of the 5 passengers being 70kg and the cargo mass being 120 kg, the gross vehicle mass (nominal mass) was calculated to be 1950 kg .
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Table 1: Calculating Gross vehicle mass
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Step 3. Adjust the mass of subsystems
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        To incorporate customer’s requirements into our team’s design, the subsystems of a vehicle was adjusted, partially different from the nominal based needs.
+       </s>
+       <s pid="5" sid="2">
+        The Table 2 below shows the subsystems of a vehicle and adjusted subsystem.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Table 2: Adjusted subsystems based on customer requirement
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        Taking into account of the customer requirement resulted in the compounded gross vehicle mass as to be 2061.36 kg as shown in the Table 3.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Table 3: Compounded vehicle mass
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Step 4. Determine numerical structural requirements
+      </div>
+      <div>
+       <div class="head_2">
+        (a) Bending moment diagrams
+       </div>
+       <p>
+        <s pid="9" sid="1">
+         Dimensions of a vehicle were determined to calculate the bending moment and shown in the Table 4.
+        </s>
+        <s pid="9" sid="2">
+         We assumed the mass of an engine to be 300 kg, a seat to be 20 kg, and a passenger to be70 kg.
+        </s>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         Table 4: Dimensions of a vehicle
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <div>
+        <div class="head_3">
+         Static loading
+        </div>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        (B) Bending strength load for the H point bending test
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         Bending moment diagram of single point load 1200kg at 2400mm covers all the maximum value of various bending moment diagram (1g, 2g, front towing and rear towing).
+        </s>
+        <s pid="13" sid="2">
+         Therefore, bending strength requirement should be
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       .
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        (C) Twist ditch torque
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         Track = 1560 mm
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         Front and rear support load is calculated from the spreadsheet for bending moment calculation.
+        </s>
+        <s pid="16" sid="2">
+         As we can see rear support load is heavier than front support load.
+        </s>
+        <s pid="16" sid="3">
+         We should use rear support load for calculation of twist ditch torque.
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         Twist ditch torque
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        (D) Bending stiffness requirement
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         The required bending stiffness is determined by the desired bending frequency of the car and the final vehicle mass.
+        </s>
+        <s pid="19" sid="2">
+         Using a first order model of bending frequency, we find that:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="20" sid="1">
+         is the natural frequency of the beam, is the distance between the suspension attachment points, is the total length of the car, and is the rigidly mounted mass of the vehicle mass which is 60% of the total mass of the vehicle.
+        </s>
+        <s pid="20" sid="2">
+         Rearranging this equation, we find:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         From the noise and vibration mode map for sources and responders for vehicles, it was determined that the desired natural frequency lies in the range of 22-25 Hz.
+        </s>
+        <s pid="21" sid="2">
+         We choose 22 Hz as our goal since our objective does not require an extremely stiff car body.
+        </s>
+        <s pid="21" sid="3">
+         All other parameters are known and thus we are able to determine our required bending stiffness by substituting.
+        </s>
+        <s pid="21" sid="4">
+         Bending stiffness K is found to be 12644 N/mm.
+        </s>
+        <s pid="21" sid="5">
+         This value is divided by 2 to consider one side frame of the vehicle.
+        </s>
+        <s pid="21" sid="6">
+         Then K = 6322 N/mm is used to compare to the simulated stiffness.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        (E) Torsional stiffness requirement
+       </div>
+       <p>
+        <s pid="22" sid="1">
+         Customer does not want the vehicle with precise handling but one with good handling.
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         We set the torsional stiffness with nominal value,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        (F) Front crush space available
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="25" sid="1">
+         Crush space (Δ) = 660mm
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        (G) The average front barrier crush force required
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         Crush space (Δ) = 660mm
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         Velocity (V) = 13.3 m/sec (30 mph)
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         Assume = 20g
+        </s>
+       </p>
+       <p>
+        <s pid="29" sid="1">
+         [
+        </s>
+        <s pid="29" sid="2">
+         We determine maximum allowable cabin deceleration in order to avoid injury because the customer wants to buy safe car.]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="30" sid="1">
+         η= 0.70% which is well within achievable.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="31" sid="1">
+         The crush load taken by each of the front 2 crash members is 25% of = 70799 N (Pm)
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        (H) Roof Crush
+       </div>
+       <p>
+        <s pid="32" sid="1">
+         Maximum of 5 inches of deformation at static load of 2.5 times vehicle weight.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Step 5. The first order model analysis
+      </div>
+      <div>
+       <div class="head_2">
+        (A)  Designing process
+       </div>
+       <div>
+        <div class="head_3">
+         Body Structure Concept
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="33" sid="1">
+          Because our primary objective was safety in our car design, the curb weight of our vehicle was slightly higher than average due to the added features.
+         </s>
+         <s pid="33" sid="2">
+          The crush area was increased to allow a lower deceleration of the entire vehicle during a crash.
+         </s>
+         <s pid="33" sid="3">
+          We also provided for the extra safety features to be added to the car such as airbags.
+         </s>
+         <s pid="33" sid="4">
+          All of this added weight thus required larger beam sections elsewhere in the car to meet the bending and torsion requirements.
+         </s>
+         <s pid="33" sid="5">
+          In the front section of the vehicle, where the driver’s feet were to be located, we made changes to the structure to allow for more room.
+         </s>
+         <s pid="33" sid="6">
+          Beams were thus added in this area to support the crushable beams to ensure the driver would be safe in a crash.
+         </s>
+         <s pid="33" sid="7">
+          Our vehicle was optimized to meet all structural requirements using only rectangular cross section beams since this basic shape is one of the easiest to manufacture.
+         </s>
+         <s pid="33" sid="8">
+          However in future work, using more refined cross section shapes would create a more mass efficient design.
+         </s>
+         <s pid="33" sid="9">
+          Areas that would benefit from this would be locations such as the crush areas where a hexagonal or octagonal shape could be used to more efficiently absorb energy.
+         </s>
+         <s pid="33" sid="10">
+          Also, in our design, the joints were not optimized to be the most efficient in strength they could be.
+         </s>
+         <s pid="33" sid="11">
+          By adding fillets or blending features to the areas where beams meet one another, joints could be strengthened and the body could be made stiffer.
+         </s>
+         <s pid="33" sid="12">
+          Adding internal ribs to the joint areas would also strengthen these areas significantly.
+         </s>
+         <s pid="33" sid="13">
+          These changes would reduce the total mass of the vehicle by allowing smaller beams to be used.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        (B) Size the sections
+       </div>
+       <div>
+        <div class="head_3">
+         [1] Design for bending stiffness
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="34" sid="1">
+          The stiffness calculated from the spread sheet with default dimensions above is 1042.75 N/mm.
+         </s>
+         <s pid="34" sid="2">
+          This simulated stiffness is less than the required bending stiffness of 6322N/mm calculated by Eq 1.
+         </s>
+         <s pid="34" sid="3">
+          To meet the stiffness requirement the beam with the highest strain energy must be resized.
+         </s>
+         <s pid="34" sid="4">
+          The right part of the rocker has the highest strain energy with a magnitude of 1.26 ×102 N∙mm.
+         </s>
+         <s pid="34" sid="5">
+          Ideally, increasing the height of a beam is the most efficient way to increase the stiffness because increasing the moment of inertia of the beam decreases the stresses
+         </s>
+         <s pid="34" sid="6">
+          In the beam.
+         </s>
+         <s pid="34" sid="7">
+          Then the beam can absorb more external force, so that the stiffness of the beam increases.
+         </s>
+         <s pid="34" sid="8">
+          However, due to space limitations, not only a moderate magnitude of the height of the rocker is increased but also that of the width and thickness are increased by 50%.
+         </s>
+         <s pid="34" sid="9">
+          After this iteration, the maximum strain energy is in the roof rail, so that the width, height, and thickness of the roof rail are increased by 100% but the stiffness still doesn’t meet the requirement.
+         </s>
+         <s pid="34" sid="10">
+          After this iteration the highest strain energy is in the C-pillar upper beam, so that the width, height, and thickness of the C-pillar upper beam are increased by 100% but the stiffness still doesn’t meet the requirement.
+         </s>
+         <s pid="34" sid="11">
+          In the end when we changed the height of the C-pillar by 30% and the width of the C-pillar by 30%, the simulated stiffness exceeds the requirement stiffness.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+       </div>
+       <div>
+        <div class="head_3">
+         [2] Design for torsional stiffness
+        </div>
+        <p>
+         <s pid="35" sid="1">
+          -
+         </s>
+         <s pid="35" sid="2">
+          Shear stiffness of side frames
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="36" sid="1">
+          Torsioinal stiffness of the vehicle with side frame is 28264 which much higher than requirement 12000 .
+         </s>
+         <s pid="36" sid="2">
+          We need to change the design of the panels to make effective shear stiffness
+         </s>
+         <s pid="36" sid="3">
+          Gt lower.
+         </s>
+         <s pid="36" sid="4">
+          For example, we can add sun roof to vehicle which makes roof panel more flexible.
+         </s>
+         <s pid="36" sid="5">
+          Or we can design car with folded rear seat that we can put larger cargo into cabin area through seat back.
+         </s>
+         <s pid="36" sid="6">
+          Also, glass will be put into windshield and back light.
+         </s>
+         <s pid="36" sid="7">
+          Those panels are not flat panel anymore.
+         </s>
+         <s pid="36" sid="8">
+          We can assume them with rectangular beam structure.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="37" sid="1">
+          If we can design each panel with above value of effective shear stiffness
+         </s>
+         <s pid="37" sid="2">
+          Gt, we can meet the vehicle torsional stiffness 12000 .
+         </s>
+         <s pid="37" sid="3">
+          Ranking of the above values seem to be reasonable according to typical ranking of panel shear stiffness from the lecture note.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+       </div>
+       <div>
+        <div class="head_3">
+         [3] Design for bending and torsional strength
+        </div>
+       </div>
+       <div>
+        <div class="head_3">
+         [4] Crashworthiness
+        </div>
+        <p>
+         <s pid="38" sid="1">
+          - Front barrier crush test
+         </s>
+        </p>
+        <p>
+         <s pid="39" sid="1">
+          •
+         </s>
+         <s pid="39" sid="2">
+          Motor compartment side rails
+         </s>
+        </p>
+        <p>
+         <s pid="40" sid="1">
+          From the GA drawing, maximum height and width of mid-rail we can get are 100mm and 50mm.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="41" sid="1">
+          • Reaction member
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="42" sid="1">
+          From the previous calculation,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="43" sid="1">
+          From the safety view, we’ll set to be the value of 105000N.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="44" sid="1">
+          -
+         </s>
+         <s pid="44" sid="2">
+          Side barrier crush test
+         </s>
+        </p>
+        <p>
+         <s pid="45" sid="1">
+          -
+         </s>
+         <s pid="45" sid="2">
+          Roof crush test
+         </s>
+        </p>
+        <p>
+         <s pid="46" sid="1">
+          We set the roof crush load to be 2.5 time the vehicle weight for more safety.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="47" sid="1">
+          We just did 2-dimensional analysis with FEA software as we can’t do the 3-dimensional analysis.
+         </s>
+         <s pid="47" sid="2">
+          The load will be applied to the joint between the roof rail and the A pillar.
+         </s>
+         <s pid="47" sid="3">
+          The angle between the load and the vertical to the roof rail is 5°.
+         </s>
+         <s pid="47" sid="4">
+          Applied load is divided into X component and Y component.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="48" sid="1">
+          Combined deformation at the joint between the roof rail and the A pillar is
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="49" sid="1">
+          , which is much lower than 5 inches (127mm).
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        (C) Select the specific materials for the major structural elements
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Step. 6,7 Packaging and manufacturing constraints
+      </div>
+      <p>
+       <s pid="50" sid="1">
+        In sizing our beams, we paid careful attention to other vehicle subsystems.
+       </s>
+       <s pid="50" sid="2">
+        We sized our mid rail so it would be small enough to fit between the front wheels and the engine but large enough to be as efficiently strong as possible.
+       </s>
+       <s pid="50" sid="3">
+        The horizontal beams that support the mid rail were carefully positioned under the seats so they would allow the most room in the passenger compartment as possible while still meeting structural requirements.
+       </s>
+       <s pid="50" sid="4">
+        In the rear part of the vehicle, the mid rail beams as well as the upper crush beams were placed in positions that would allow the greatest amount of luggage space possible.
+       </s>
+       <s pid="50" sid="5">
+        In the rest of our design, we tried to remain within the space allowed to us in the parts location drawings.
+       </s>
+       <s pid="50" sid="6">
+        We ensured that the cross section of our beams met all space requirements so they would not contact any other parts.
+       </s>
+       <s pid="50" sid="7">
+        We also sized our beams in the side frame so they would fit to the car drawing dimensions within 50mm.
+       </s>
+       <s pid="50" sid="8">
+        At the same time, we made all of the beams straight to ensure creation of the parts is as easy as possible to manufacture.
+       </s>
+       <s pid="50" sid="9">
+        Our design intention is to have all the beams formed by welding two c beams together.
+       </s>
+       <s pid="50" sid="10">
+        This allows quick and reliable manufacturing of parts.
+       </s>
+       <s pid="50" sid="11">
+        The weld joints are also in easily accessible areas making manufacturing of the parts possible.
+       </s>
+      </p>
+      <p>
+       <s pid="51" sid="1">
+        After FEA analysis, it was determined that the required roof rail beam size was smaller than the original size allowed.
+       </s>
+       <s pid="51" sid="2">
+        So we inspected the possibility of roof crush due to small height but our calculations done in Step 5 meet the requirement of the roof crush test.
+       </s>
+       <s pid="51" sid="3">
+        Therefore, the roof rail did not need to be modified.
+       </s>
+      </p>
+      <p>
+       <s pid="52" sid="1">
+        On the other hand, the required rocker beam size was determined to be larger than the original size allowed.
+       </s>
+       <s pid="52" sid="2">
+        There are two options in increasing the size of the rocker beam.
+       </s>
+       <s pid="52" sid="3">
+        First, the rocker beam can be increased entirely downward, which will increase the possibility of damaging the bottom part of the vehicle due to small clearance from the ground.
+       </s>
+       <s pid="52" sid="4">
+        Therefore, this case was not considered for our design and took the other method that increases the rocker beam size entirely upward.
+       </s>
+       <s pid="52" sid="5">
+        This increased rocker beam size would decrease the door frame space making it less comfortable for passengers to enter and exit the vehicle.
+       </s>
+       <s pid="52" sid="6">
+        To resolve this problem, high strength steel could have been used.
+       </s>
+       <s pid="52" sid="7">
+        However, in calculations, it was determined that the required roof rail beam size was smaller than the allowed size.
+       </s>
+       <s pid="52" sid="8">
+        This extra space allows the rocker to be increased in height without decreasing the overall ingress/egress space.
+       </s>
+       <s pid="52" sid="9">
+        Thus normal strength steel can be used in the rocker beam.
+       </s>
+      </p>
+      <p>
+       <s pid="53" sid="1">
+        The upper C-pillar was slightly increased beyond the original allowed space for structural reasons.
+       </s>
+       <s pid="53" sid="2">
+        This decreases the driver’s field of view but not significantly.
+       </s>
+       <s pid="53" sid="3">
+        However, if we had been required to fit within the original allotted space, high strength steel could have been used to meet the requirements.
+       </s>
+       <s pid="53" sid="4">
+        Ribs and/or foam could also have been added in the upper C-pillar beam to make it stronger without changing the allowed original size of the beam.
+       </s>
+      </p>
+      <p>
+       <s pid="54" sid="1">
+        The lower C-pillar size was determined to fit within the original allowed space.
+       </s>
+      </p>
+      <p>
+       <s pid="55" sid="1">
+        The required mid-rail size exceeded the space between the mid-rail and the engine.
+       </s>
+       <s pid="55" sid="2">
+        This problem can be resolved by changing the section shape of the mid-rail from a square to a rectangular.
+       </s>
+       <s pid="55" sid="3">
+        However, this change in the section shape will increase the thickness of the mid-rail.
+       </s>
+       <s pid="55" sid="4">
+        Therefore, the total mass of the mid-rail will increase which will decrease the fuel efficiency of the vehicle.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Step.8 Estimate the structure mass
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

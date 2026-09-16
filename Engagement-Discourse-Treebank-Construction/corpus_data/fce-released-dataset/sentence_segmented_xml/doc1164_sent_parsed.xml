@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Mr. Circle Theatre's Manager
+      </p>
+      <p>
+       I am writing to you
+       <ns type="FV">
+        <i>
+         complaining
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the Play you are advertising as the "London's Newest and Best Musical Show" in newspapers and leaflets. To tell you the truth, it has been the most disappointing experience
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my whole life. I cannot bear
+       <ns type="MA">
+       </ns>
+       when somebody says something and then does just the
+       <ns type="S">
+        <i>
+         opposit
+        </i>
+       </ns>
+       <ns type="UN">
+        <i>
+         way
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       To begin with, I would like to inform you, in case you do not know
+       <ns type="MP">
+       </ns>
+       that the play does not start at 19.30 as it says
+       <ns type="M">
+       </ns>
+       . What is more
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         lasted
+        </i>
+       </ns>
+       45 minutes of waiting
+       <ns type="M">
+       </ns>
+       <ns type="TV">
+        <i>
+         to start
+        </i>
+       </ns>
+       and
+       <ns type="MA">
+       </ns>
+       did not
+       <ns type="RV">
+        <i>
+         supply
+        </i>
+       </ns>
+       all the expectations people had.
+      </p>
+      <p>
+       On the other hand, despite the fact that you said that it was starring
+       <ns type="UT">
+        <i>
+         by
+        </i>
+       </ns>
+       Danny Brook and Tina Truelove, I must tell you that Danny Brook did not appear at all. Instead of him there was another actor who
+       <ns type="MV">
+       </ns>
+       neither act nor sing,
+       <ns type="UC">
+        <i>
+         and,
+        </i>
+       </ns>
+       even though
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it was a Musical
+       <ns type="UN">
+        <i>
+         Show
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The last thing I would like to complain
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       is that the Theatre Restaurant was closed
+       <ns type="MP">
+       </ns>
+       because, as
+       <ns type="R">
+        <i>
+         it said
+        </i>
+       </ns>
+       , of "VACATIONS". If
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       the advertisements and leaflets
+       <ns type="AGV">
+        <i>
+         says
+        </i>
+       </ns>
+       "VISIT OUR THEATRE RESTAURANT AFTER THE SHOW" there
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         not
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         reasons
+        </i>
+       </ns>
+       for
+       <ns type="MA">
+       </ns>
+       being closed. It should be
+       <ns type="DJ">
+        <i>
+         opened
+        </i>
+       </ns>
+       at least until
+       <ns type="R">
+        <i>
+         all people
+        </i>
+       </ns>
+       gets out of the place. It must be our
+       <ns type="S">
+        <i>
+         decission
+        </i>
+       </ns>
+       whether to stay and eat there, or not.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         To make it shorter
+        </i>
+       </ns>
+       , because of everything I have said
+       <ns type="R">
+        <i>
+         before
+        </i>
+       </ns>
+       , the correct thing
+       <ns type="W">
+        <i>
+         to do for me
+        </i>
+       </ns>
+       is to ask for my money back, and for you
+       <ns type="MA">
+       </ns>
+       is just
+       <ns type="FV">
+        <i>
+         giving
+        </i>
+       </ns>
+       it back to me because of all the
+       <ns type="FN">
+        <i>
+         troubles
+        </i>
+       </ns>
+       and
+       <ns type="DN">
+        <i>
+         <ns type="IJ">
+          <i>
+           disappointings
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UN">
+        <i>
+         feeling
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         made
+        </i>
+       </ns>
+       me suffer. I am looking forward to
+       <ns type="FV">
+        <i>
+         hear
+        </i>
+       </ns>
+       from you as soon as possible.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Mr. Circle Theatre's Manager
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to you complaining for the Play you are advertising as the "London's Newest and Best Musical Show" in newspapers and leaflets.
+       </s>
+       <s pid="2" sid="2">
+        To tell you the truth, it has been the most disappointing experience in my whole life.
+       </s>
+       <s pid="2" sid="3">
+        I cannot bear  when somebody says something and then does just the opposit way.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        To begin with, I would like to inform you, in case you do not know that the play does not start at 19.30 as it says .
+       </s>
+       <s pid="3" sid="2">
+        What is more it lasted 45 minutes of waiting  to start and  did not supply all the expectations people had.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        On the other hand, despite the fact that you said that it was starring by Danny Brook and Tina Truelove, I must tell you that Danny Brook did not appear at all.
+       </s>
+       <s pid="4" sid="2">
+        Instead of him there was another actor who  neither act nor sing, and, even though, it was a Musical Show.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The last thing I would like to complain for is that the Theatre Restaurant was closed because, as it said, of "VACATIONS".
+       </s>
+       <s pid="5" sid="2">
+        If in the advertisements and leaflets says "VISIT OUR THEATRE RESTAURANT AFTER THE SHOW" there are not reasons for  being closed.
+       </s>
+       <s pid="5" sid="3">
+        It should be opened at least until all people gets out of the place.
+       </s>
+       <s pid="5" sid="4">
+        It must be our decission whether to stay and eat there, or not.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        To make it shorter, because of everything I have said before, the correct thing to do for me is to ask for my money back, and for you  is just giving it back to me because of all the troubles and disappointings feeling you made me suffer.
+       </s>
+       <s pid="6" sid="2">
+        I am looking forward to hear from you as soon as possible.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       HOW HAS TECHNOLOGY CHANGED OUR
+       <ns type="S">
+        <i>
+         DAYLY
+        </i>
+       </ns>
+       <ns type="IN">
+        <i>
+         LIFES
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       <ns type="W">
+        <i>
+         In times of our grandparents
+        </i>
+       </ns>
+       life was so different
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that we cannot
+       <ns type="S">
+        <i>
+         beleive
+        </i>
+       </ns>
+       that this huge change to our
+       <ns type="DJ">
+        <i>
+         day
+        </i>
+       </ns>
+       life happened in only one hundred years or less.
+      </p>
+      <p>
+       First, we have to admit that technology has really increased
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         access to
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         communication
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        <i>
+         <ns type="IV">
+          <i>
+           traveling
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and
+       <ns type="FV">
+        <i>
+         <ns type="IV">
+          <i>
+           geting
+          </i>
+         </ns>
+        </i>
+       </ns>
+       information. You can now know what
+       <ns type="TV">
+        <i>
+         happens
+        </i>
+       </ns>
+       on the other side of the world
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       at the same time
+       <ns type="MT">
+       </ns>
+       it is happening. What is more, you can get the information you need in just one second by pressing the "enter" key
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a computer.
+      </p>
+      <p>
+       Furthermore, as we all know,
+       <ns type="DJ">
+        <i>
+         day
+        </i>
+       </ns>
+       life
+       <ns type="RP">
+        <i>
+         now a days
+        </i>
+       </ns>
+       is quite
+       <ns type="IJ">
+        <i>
+         simplier
+        </i>
+       </ns>
+       and an example of this is that instead of buying a
+       <ns type="S">
+        <i>
+         peice
+        </i>
+       </ns>
+       of ice to cool drinks (as our grandparents used to do) we not only have a refrigerator but also a freezer in case you want it faster and
+       <ns type="RJ">
+        <i>
+         cooler
+        </i>
+       </ns>
+       . Strange as it seems, we now
+       <ns type="UV">
+        <i>
+         can
+        </i>
+       </ns>
+       have
+       <ns type="RQ">
+        <i>
+         every
+        </i>
+       </ns>
+       <ns type="MN">
+       </ns>
+       machine or
+       <ns type="S">
+        <i>
+         especialized
+        </i>
+       </ns>
+       technology to make our
+       <ns type="DJ">
+        <i>
+         dayly
+        </i>
+       </ns>
+       life more
+       <ns type="S">
+        <i>
+         confortable
+        </i>
+       </ns>
+       and less
+       <ns type="RJ">
+        <i>
+         workable
+        </i>
+       </ns>
+       . Things that human beings used to do
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         now are
+        </i>
+       </ns>
+       being done by computers and machines more efficiently and rapidly.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         One the other hand
+        </i>
+       </ns>
+       , despite the fact that technology
+       <ns type="AGV">
+        <i>
+         make
+        </i>
+       </ns>
+       things easier in our
+       <ns type="DJ">
+        <i>
+         day
+        </i>
+       </ns>
+       life, the same happens in industries and companies where they use computers and machines instead of people. As people do not get
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         job
+        </i>
+       </ns>
+       because
+       <ns type="MA">
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       not needed they
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       into
+       <ns type="DN">
+        <i>
+         poorness
+        </i>
+       </ns>
+       , criminal activities,
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           being
+          </i>
+         </ns>
+        </i>
+       </ns>
+       isolated and
+       <ns type="R">
+        <i>
+         without the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       of getting a good education. This is the most
+       <ns type="DJ">
+        <i>
+         terribly
+        </i>
+       </ns>
+       disadvantage technology has.
+      </p>
+      <p>
+       With advantages and disadvantages, technology is
+       <ns type="ID">
+        <i>
+         in our life
+        </i>
+       </ns>
+       and may represent an advance for some and a bad thing for others.
+       <ns type="W">
+        <i>
+         Things and technology
+         <ns type="AGV">
+          <i>
+           changes
+          </i>
+         </ns>
+         every day
+        </i>
+       </ns>
+       our life, our jobs, our way of
+       <ns type="FV">
+        <i>
+         face
+        </i>
+       </ns>
+       the world, this is
+       <ns type="CE">
+        what differences both centuries, our grandparents' changes lasted to long to change human life
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        HOW HAS TECHNOLOGY CHANGED OUR DAYLY LIFES
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In times of our grandparents life was so different, that we cannot beleive that this huge change to our day life happened in only one hundred years or less.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First, we have to admit that technology has really increased the access to communication, traveling and geting information.
+       </s>
+       <s pid="3" sid="2">
+        You can now know what happens on the other side of the world, at the same time  it is happening.
+       </s>
+       <s pid="3" sid="3">
+        What is more, you can get the information you need in just one second by pressing the "enter" key in a computer.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Furthermore, as we all know, day life now a days is quite simplier and an example of this is that instead of buying a peice of ice to cool drinks (as our grandparents used to do) we not only have a refrigerator but also a freezer in case you want it faster and cooler.
+       </s>
+       <s pid="4" sid="2">
+        Strange as it seems, we now can have every  machine or especialized technology to make our dayly life more confortable and less workable.
+       </s>
+       <s pid="4" sid="3">
+        Things that human beings used to do, now are being done by computers and machines more efficiently and rapidly.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        One the other hand, despite the fact that technology make things easier in our day life, the same happens in industries and companies where they use computers and machines instead of people.
+       </s>
+       <s pid="5" sid="2">
+        As people do not get a job because  is not needed they get into poorness, criminal activities, being isolated and without the possibility of getting a good education.
+       </s>
+       <s pid="5" sid="3">
+        This is the most terribly disadvantage technology has.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        With advantages and disadvantages, technology is in our life and may represent an advance for some and a bad thing for others.
+       </s>
+       <s pid="6" sid="2">
+        Things and technology changes every day our life, our jobs, our way of face the world, this is what differences both centuries, our grandparents' changes lasted to long to change human life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Turkish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       13
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       June
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       00
+      </p>
+      <p>
+       Dear Mrs Ryan,
+      </p>
+      <p>
+       I have been the happiest woman since I
+       <ns type="TV">
+        <i>
+         have got
+        </i>
+       </ns>
+       your letter. I could not believe my eyes. This was the first competition which I took part
+       <ns type="MT">
+       </ns>
+       and I have won the first prize. It is incredible!
+      </p>
+      <p>
+       I would like to give you some information. First of all, I would like to travel on
+       <ns type="MD">
+       </ns>
+       19th of July and come back on
+       <ns type="MD">
+       </ns>
+       2nd of August, because I have to work until 19th of July.
+      </p>
+      <p>
+       Secondly, I would prefer to stay at Camp California, because I have
+       <ns type="RV">
+        <i>
+         been
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       log cabins before and I didn't enjoy it. This time I want to try something different.
+      </p>
+      <p>
+       I would also like to tell you about my free-time activities. I like painting and climbing. I am actually not so good at climbing, but I like the fear of risks and
+       <ns type="FN">
+        <i>
+         dangers
+        </i>
+       </ns>
+       . My painting is not bad, but many people don't like the way I paint, because I use only
+       <ns type="R">
+        <ns type="MD">
+        </ns>
+        pencil
+       </ns>
+       . I am happy`,, because I will have the chance to do
+       <ns type="AGD">
+        <i>
+         this
+        </i>
+       </ns>
+       two activities.
+      </p>
+      <p>
+       Finally, I would like to ask you if I should take a lot of clothes with me, because I do not know
+       <ns type="W">
+        <i>
+         <ns type="RP">
+          <i>
+           what's
+          </i>
+         </ns>
+         the weather
+        </i>
+       </ns>
+       like there. My last question
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           were
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ;
+        </i>
+       </ns>
+       how much money do I need? I hope
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I have answered all
+       <ns type="MD">
+       </ns>
+       questions.
+      </p>
+      <p>
+       I am looking forward to hearing from you soon.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        13. June.
+       </s>
+       <s pid="1" sid="2">
+        00
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Mrs Ryan,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I have been the happiest woman since I have got your letter.
+       </s>
+       <s pid="3" sid="2">
+        I could not believe my eyes.
+       </s>
+       <s pid="3" sid="3">
+        This was the first competition which I took part  and I have won the first prize.
+       </s>
+       <s pid="3" sid="4">
+        It is incredible!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to give you some information.
+       </s>
+       <s pid="4" sid="2">
+        First of all, I would like to travel on  19th of July and come back on  2nd of August, because I have to work until 19th of July.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, I would prefer to stay at Camp California, because I have been at log cabins before and I didn't enjoy it.
+       </s>
+       <s pid="5" sid="2">
+        This time I want to try something different.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I would also like to tell you about my free-time activities.
+       </s>
+       <s pid="6" sid="2">
+        I like painting and climbing.
+       </s>
+       <s pid="6" sid="3">
+        I am actually not so good at climbing, but I like the fear of risks and dangers.
+       </s>
+       <s pid="6" sid="4">
+        My painting is not bad, but many people don't like the way I paint, because I use only  pencil.
+       </s>
+       <s pid="6" sid="5">
+        I am happy`,, because I will have the chance to do this two activities.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Finally, I would like to ask you if I should take a lot of clothes with me, because I do not know what's the weather like there.
+       </s>
+       <s pid="7" sid="2">
+        My last question were; how much money do I need?
+       </s>
+       <s pid="7" sid="3">
+        I hope, I have answered all  questions.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I am looking forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always
+       <ns type="S">
+        <i>
+         enjeyable
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       If I had the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       , I would never go shopping
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the big supermarkets. You can lose your way if you do not follow the signs, or you
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       find the items
+       <ns type="RA">
+        <i>
+         what
+        </i>
+       </ns>
+       you want to buy.
+      </p>
+      <p>
+       When I was at
+       <ns type="MD">
+       </ns>
+       supermarket last week
+       <ns type="MP">
+       </ns>
+       I suddenly decided not
+       <ns type="FV">
+        <i>
+         buying
+        </i>
+       </ns>
+       from a supermarket at all. First of all
+       <ns type="MP">
+       </ns>
+       you need a lot of time, because the
+       <ns type="RN">
+        <i>
+         market
+        </i>
+       </ns>
+       is so big. Secondly, you have a lot of
+       <ns type="S">
+        <i>
+         choises
+        </i>
+       </ns>
+       and you do not know
+       <ns type="R">
+        <i>
+         which one
+        </i>
+       </ns>
+       to buy. Lastly, there is a
+       <ns type="S">
+        <i>
+         recyling
+        </i>
+       </ns>
+       problem
+       <ns type="MP">
+       </ns>
+       which many people do not care about. You buy a lot of items without thinking where
+       <ns type="W">
+        <i>
+         should go so much rubbish
+        </i>
+       </ns>
+       .
+       <ns type="U">
+        <i>
+         For instance,
+        </i>
+       </ns>
+       I think a lot about this issue, and sometimes I do not even want to
+       <ns type="RV">
+        <i>
+         spend
+        </i>
+       </ns>
+       water, although I should
+       <ns type="U">
+        <i>
+         do it
+        </i>
+       </ns>
+       . I think I am too sensible.
+      </p>
+      <p>
+       <ns type="UV">
+        <i>
+         I'd
+        </i>
+       </ns>
+       prefer to go
+       <ns type="MT">
+       </ns>
+       <ns type="R">
+        <i>
+         the markets which are open and outside
+        </i>
+       </ns>
+       .
+       <ns type="UC">
+        <i>
+         So you
+        </i>
+       </ns>
+       can ask about the
+       <ns type="FN">
+        <i>
+         qualities
+        </i>
+       </ns>
+       and prices and get
+       <ns type="W">
+        <i>
+         immediately
+         <ns type="RD">
+          <i>
+           your
+          </i>
+         </ns>
+         <ns type="FN">
+          <i>
+           answers
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In my opinion, small
+       <ns type="MN">
+       </ns>
+       and the
+       <ns type="W">
+        <i>
+         markets
+         <ns type="R">
+          <i>
+           <ns type="IJ">
+            <i>
+             outsides
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       should be supported
+       <ns type="RP">
+        <i>
+         , on
+        </i>
+       </ns>
+       the other hand
+       <ns type="MP">
+       </ns>
+       the big supermarkets should think more about the
+       <ns type="S">
+        <i>
+         recyling
+        </i>
+       </ns>
+       problem, which will be the most important problem in the near future.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjeyable.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        If I had the possibility, I would never go shopping to the big supermarkets.
+       </s>
+       <s pid="2" sid="2">
+        You can lose your way if you do not follow the signs, or you can not find the items what you want to buy.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        When I was at  supermarket last week I suddenly decided not buying from a supermarket at all.
+       </s>
+       <s pid="3" sid="2">
+        First of all you need a lot of time, because the market is so big.
+       </s>
+       <s pid="3" sid="3">
+        Secondly, you have a lot of choises and you do not know which one to buy.
+       </s>
+       <s pid="3" sid="4">
+        Lastly, there is a recyling problem which many people do not care about.
+       </s>
+       <s pid="3" sid="5">
+        You buy a lot of items without thinking where should go so much rubbish.
+       </s>
+       <s pid="3" sid="6">
+        For instance, I think a lot about this issue, and sometimes I do not even want to spend water, although I should do it.
+       </s>
+       <s pid="3" sid="7">
+        I think I am too sensible.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I'd prefer to go  the markets which are open and outside.
+       </s>
+       <s pid="4" sid="2">
+        So you can ask about the qualities and prices and get immediately your answers.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In my opinion, small  and the markets outsides should be supported, on the other hand the big supermarkets should think more about the recyling problem, which will be the most important problem in the near future.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

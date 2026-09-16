@@ -1,0 +1,518 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      An Analysis of Vowel Variation in Vlach
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Intro:
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Vlach has a phonemic system of five vowels.
+       </s>
+       <s pid="1" sid="2">
+        However, when I was building a sound inventory in a previous project involving this language, I recorded a wide variation in the realization of these five vowels.
+       </s>
+       <s pid="1" sid="3">
+        In this project, I will use the Praat software package to perform a close analysis of the nature of some of these variations.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        In keeping with the intended scope of this project, I have decided to record the following words (Vlach in IPA transcription, followed by English glosses):
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       	chicken
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       	the girls
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       	to be absent
+      </div>
+      <p>
+       <s pid="3" sid="1">
+         long (f.)
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       	tongue
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        These words were chosen to allow me to compare certain vowel sounds appearing in certain environments.
+       </s>
+       <s pid="4" sid="2">
+        Below I outline the vowels and environments that will be analyzed as well as the comparisons I will make.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        <b>
+         Comparison 1:
+        </b>
+        The vowel in the first syllable of  and the vowel in the final syllable of . Both vowels occur in unstressed position following a []. The only difference is that one occurs word-finally and the other does not. These are both realizations of the same phoneme, but I transcribed them differently. I want to look more closely at whatever difference may exist, and see if I can relate the difference in realization to the difference in environment. I hypothesize that these are tense and lax variations of the same phoneme.
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        <b>
+         Comparison 2:
+        </b>
+        The final vowel of d the final vowel of . Both are feminine noun/adjectives, so the final phoneme should be the same. However, I transcribed them differently. In both words, the vowel occurs in a word-final, unstressed position. The only difference lies in the stop preceding the vowel; the stops differ in place of articulation and in voicing, and I hypothesize that the difference between the stops accounts for the difference in the realization of the following vowel.
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        <b>
+         Comparison 3:
+        </b>
+        The vowel in the first syllable of and the vowel in the final syllable of . For the comparison, the two vowels occur in unstressed position following a voiced palatal stop. The only difference is that one occurs word-finally and the other does not. As I suggested above, I suspect that the final [] in is the same phoneme as the final [] in , and the sounds should be somewhat similar. I want to compare how similar these vowels are to the [] in . I hypothesize that they are all the same phoneme, but that the vowel in the first syllable of should be more similar to the vowel in the final syllable of  due to the preceding []; both should differ from the final vowel in  in a similar way.
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Methods
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        To obtain a statically representative set of data, each of the above words was spoken ten times by a native speaker and recorded into a digital wave file.
+       </s>
+       <s pid="5" sid="2">
+        To standardize the speaker's pronunciation as much as possible, each word was recorded within a frame sentence and the list order was randomized.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        After recording, the sound files were analyzed using the Praat software.
+       </s>
+       <s pid="6" sid="2">
+        Each of the fifty tokens was isolated and its duration measured. [#REF 1]
+       </s>
+       <s pid="6" sid="3">
+        The frequencies of the first three formants were measured at three points separated by equally spaced intervals throughout the duration of the vowel: at 1/4, 1/2, and 3/4 of the duration.
+       </s>
+       <s pid="6" sid="4">
+        The formant measurements were obtained automatically by Praat; only in situations where Praat's formant values were clearly incongruent with the spectrogram did I measure the formant frequencies myself.
+       </s>
+       <s pid="6" sid="5">
+        In these cases, the measurement was made by subjectively locating the central area of the formant on the spectrogram in Praat.
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        The analysis provided ten examples of each of the five vowels being investigated, and for each example, three measurements (corresponding to the 1/4, 1/2, and offset times) of each of the first three formants.
+       </s>
+       <s pid="7" sid="2">
+        To approximate the vowel quality of each token, these three measurements of each formant were averaged together.
+       </s>
+       <s pid="7" sid="3">
+        These values are reflected in figure 1 below, which plots F1 and F2 for each token on a traditional vowel chart.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        To give an approximate value for the vowel quality of each of the five vowels being investigated, the values for the three formants were averaged over the ten tokens relating to each vowel.
+       </s>
+       <s pid="8" sid="2">
+        The mean values for F1, F2, and F3 for each vowel (in Hz), as well as the standard deviation for each formant, are listed in the table below along with the mean value (in milliseconds) and standard deviation for the vowel duration.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Results
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        n.b.
+       </s>
+       <s pid="9" sid="2">
+        In the tables below, all frequencies are in Hz and all times are in seconds.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        The tables below outline the average values for F1, F2, and F3 at each of the recording intervals, the overall average values for F1, F2, and F3 with standard deviation, and the average vowel duration with standard deviation, for each of the five vowels.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+         (word-final [])
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="12" sid="1">
+         (word-medial [])
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+         (word-final [])
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="14" sid="1">
+         (word-final [])
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="15" sid="1">
+         (word-medial [])
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        The vowel chart below plots the F1 and F2 (averaged over 1/4, 1/2, and 3/4) for all fifty tokens:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Fig 1.
+       </s>
+       <s pid="17" sid="2">
+        Vowel chart based on average values for all vowels being discussed.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Discussion
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        The vowel chart above clearly shows a similarity between the two realizations of [i], and noticable distinctions between the three environments of [] and [].
+       </s>
+       <s pid="18" sid="2">
+        Below I will discuss the specific data and how it relates to each of the three comparisons I am making.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        <b>
+         Comparison 1:
+        </b>
+        The vowel in the first syllable of  and the vowel in the final syllable of .
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         Based on my transcription of these words, I expected to find that the [] in  was a lax version of the [] in : not quite as high and not quite as front.
+        </s>
+        <s pid="19" sid="2">
+         In fact, the analysis showed virtually the opposite result.
+        </s>
+        <s pid="19" sid="3">
+         While there is an audible difference in the sounds, it is not the same as the difference I had supposed.
+        </s>
+        <s pid="19" sid="4">
+         Consulting the tables above, the differences between the vowels are: F1 is consistently lower in  (avg. 358 Hz) than in  (avg. 321 Hz); and the vowel duration in is significantly shorter (avg. 67 ms) than in  (avg. 93 ms).
+        </s>
+        <s pid="19" sid="5">
+         However, the vowel chart also shows a fair amount of overlap in the F1/F2 values, suggesting that the difference between the two vowel realizations is minimal.
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         One cause of these differences is the extreme lack of stress on the [] in .
+        </s>
+        <s pid="20" sid="2">
+         Because the second syllable is stressed, the initial syllable in the word is barely pronounced at all; resulting in the noticeable shortness of the vowel duration (by far the shortest out of all five vowels).
+        </s>
+        <s pid="20" sid="3">
+         The lack of stress is also quite evident in the spectrogram, where the contrast between the light first syllable and the dark second syllable was striking.
+        </s>
+        <s pid="20" sid="4">
+         I think that the shortness the main reason why I transcribed the word as I did.
+        </s>
+        <s pid="20" sid="5">
+         While the final syllable of  is similarly not stressed, it has a significantly longer duration because it occurs at the end of the word.
+        </s>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         It is possible to suggest an explanation for the difference in the two vowels in terms of the target theory of coarticulation.
+        </s>
+        <s pid="21" sid="2">
+         The final [i] in  shows a clear, if not especially pronounced, tendency for F1 to gradually rise over the duration of the vowel, corresponding to a lowering of the tongue.
+        </s>
+        <s pid="21" sid="3">
+         This can occur because at the end of the word there are no remaining target positions for the speaker to aim at.
+        </s>
+        <s pid="21" sid="4">
+         This shift in F1 may simply be due to a general relaxing of the mouth at the end of the word, or it may be a controlled movement toward the "ideal" location for this phoneme.
+        </s>
+       </p>
+       <p>
+        <s pid="22" sid="1">
+         The [] in  on the other hand, shows much less of a shift in F1, and overall a much higher F1.
+        </s>
+        <s pid="22" sid="2">
+         Both syllables examined here begin with an [l], which has assumes a high tongue position before the vowel.
+        </s>
+        <s pid="22" sid="3">
+         However, in the speaker anticipates another high tongue position consonant, [s] ([p] has no target for tongue position), so the tongue is not allowed to relax to a lower point in the mouth as much as in 
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         The overall result here is that both vowels are clearly the same phoneme and are in fact realized in a very similar manner.
+        </s>
+        <s pid="23" sid="2">
+         The major observable differences (shorter duration and higher tongue position in in ) could be attributed to the overall relaxation of the mouth that occurs at the end of the word in 
+        </s>
+        <s pid="23" sid="3">
+         It would be good to see measurements of this phoneme in more different environments to judge the overall range of realizations of this phoneme.
+        </s>
+        <s pid="23" sid="4">
+         It may be that there are tense/lax allophones existing in other environments, or it may be that the only changes that appear in the realization of this vowel are due to the surrounding phones.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        <b>
+         Comparison 2:
+        </b>
+        The final vowel of d the final vowel of .
+       </div>
+       <p>
+        <s pid="24" sid="1">
+         Consulting the vowel chart above, it is clear that the [] in  forms a cluster distinct from that of the [] in , the [] being lower (avg. F1 683 Hz) and more back (avg. F2 1368Hz) than the [] (avg. F1 607 Hz, F2 1570 Hz).
+        </s>
+        <s pid="24" sid="2">
+         These measurements explain why I transcribed the two vowels differently when recording them, even though they should both be realizations of the final /a/ of a feminine noun or vowel.
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         A closer analysis of the data can help explain why this vowel is realized so differently in the two positions.
+        </s>
+        <s pid="25" sid="2">
+         Consulting the table above, it is clear that while the [] in  maintains fairly constant values for its formants over the duration of the vowel, the [] in  changes drastically from onset to offset.
+        </s>
+        <s pid="25" sid="3">
+         F1 and F2 both experience a rise/fall of over 200 Hz over the duration of the vowel.
+        </s>
+        <s pid="25" sid="4">
+         The resulting effect is that the [] is actually gradually becoming more like the [] over its duration.
+        </s>
+        <s pid="25" sid="5">
+         This is best illustrated by a vowel chart, where we can compare the formants of the two vowels at onset and again at offset:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         Fig 2. Formant values for [] in and [] in  at ¼ duration (left) and ¾ duration (right)
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         The chart above shows the ten values for each vowel at onset, and the ten values at offset.
+        </s>
+        <s pid="27" sid="2">
+         The change is dramatic; while the two vowels are clearly distinct at onset, the [] has shifted to overlap with the region of the [] (which remains stable) by offset.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         The conclusion must be that the speaker has the same target for both vowels, but the environment of causes the vowel to initially be produced higher and more front/centrally than the actual target.
+        </s>
+        <s pid="28" sid="2">
+         This is consistent with the fact that the vowel is preceded by a velar stop, which we would expect to produce much sharper transitions than the bilabial stop in .
+        </s>
+        <s pid="28" sid="3">
+         Because the vowel occurs word-finally, there are no future anticipated targets and the speaker is able to fully reach the intended target of the vowel, which is represented by the offset values in both environments.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        <b>
+         Comparison 3:
+        </b>
+        The vowel in the first syllable of and the vowel in the final syllable of .
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         Based on the previous analysis, it would be reasonable to expect that the first [] in [] would have very similar initial values to the [] in [], but that the vowel would never fully reach its low, back target values due to the following [].
+        </s>
+        <s pid="29" sid="2">
+         In fact, this is very similar to what is observed, but the difference between the two vowels is much larger than expected.
+        </s>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         Referring back again to fig. 1, the vowel chart, it is clear that the first [] in [] is a vowel that is distinct both from the [] in [] and the [] in .
+        </s>
+        <s pid="30" sid="2">
+         Also, as expected based on the transcription, this vowel is more similar to the [] than the [].
+        </s>
+        <s pid="30" sid="3">
+         However, the values of this medial [] are significantly different than the word-final [] in [].
+        </s>
+        <s pid="30" sid="4">
+         Even the onset values, which should be very similar since both vowels are produced immediately after a [] sound, are rather different; the medial [] has average onset values (F1 389 Hz, F2 1855 Hz) that indicate a much higher position than the final []
+        </s>
+        <s pid="30" sid="5">
+         (F1 481 Hz, F2 1738 Hz).
+        </s>
+        <s pid="30" sid="6">
+         Furthermore, the formant frequencies of the medial [] never even approach the final values of the final []; the highest F1 recorded for the [] in [] is around 500 Hz, compared to the final value of 700 Hz for the word-final [].
+        </s>
+       </p>
+       <p>
+        <s pid="31" sid="1">
+         While the formant values of the first [] in [] do vary over the duration of the vowel (showing an overall increase in F1 of around 100Hz, and a decrease in F2 of around 300 Hz), the vowel is generally stable.
+        </s>
+        <s pid="31" sid="2">
+         The vowel duration is short relative to the word-final [], which may partially explain why the values do not change more.
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         The question of whether this vowel is the same phoneme as the [] in  (and thus also the same phoneme as the [] in ) is difficult to answer based on this data.
+        </s>
+        <s pid="32" sid="2">
+         The difference between the formant values of this [] (in []) and the other [] (in ) are significant, and would support the argument that they are in fact different phonemes.
+        </s>
+        <s pid="32" sid="3">
+         It is difficult to believe that the entire difference in formant values could be due to the surrounding consonants.
+        </s>
+        <s pid="32" sid="4">
+         However, to fully answer this question, one would need to analyze the features of word-medial [] sounds, which do occur in Vlach, and also study the distribution of the environments in which these sounds occur as compared to word medial [] sounds.
+        </s>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         The best conclusion seems to be that the final [] in  and the [] in  are one phoneme, with the same target values (indicated by the offset formant values of those two vowels, indicating a low, back vowel), but the first [] in [] is a different phoneme (a more central, mid vowel).
+        </s>
+        <s pid="33" sid="2">
+         The confusion arises from the preceding [] in , which causes the low, back vowel to have more mid, central formants at the onset of the vowel.
+        </s>
+        <s pid="33" sid="3">
+         This makes the vowel sound overall more like the mid, central vowel that appears in the first syllable of [].
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusion
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        The results above show that the surrounding consonants do play a role in the realization of vowels in Vlach, as do the stress of the syllable and the position (e.g. word-final) of the syllable containing the vowel.
+       </s>
+       <s pid="34" sid="2">
+        While the variations that appeared in this analysis were generally able to be explained by concepts like the target model of speech production and the locus theory of vowel transitions, larger issues such as what vowels may or may not be the same phoneme, or allophones, or entirely different phonemes, cannot be answered with such a small data set.
+       </s>
+       <s pid="34" sid="3">
+        To answer these larger questions would require both acoustic analysis of more vowels in a number of similar and contrasting environments, as well as a paper analysis of the distribution of the phones.
+       </s>
+       <s pid="34" sid="4">
+        In particular, the [] / [] question could be further investigated by doing a similar analysis to the one above incorporating word-medial [] (which does appear in my word list), ideally in the same or similar environment as word-medial [].
+       </s>
+       <s pid="34" sid="5">
+        This could help explain whether my transcriptions are over-detailed, using two symbols for the same phoneme, or if these sounds are in fact distinct in Vlach.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Appendix
+      </div>
+      <p>
+       Below is the randomized wordlist used for the recording sessions. Before the session, the native Vlach speaker and I went over the short wordlist so that he knew which words he would be producing. We also agreed on the frame sentence below:
+      </p>
+      <p>
+       [_______ 	"I say the word ______ in Vlach."
+      </p>
+      <p>
+       I prompted the speaker before each sentence with the English word (e.g. "chicken") which he then would translate and pronounce in the frame sentence, (e.g. [    The wordlist was visible to him to read along with the IPA transcriptions as we progressed.
+      </p>
+      <p>
+       The wordlist consists of each of the five words repeated ten times, randomized / shuffled by hand. Below is the wordlist.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1 Determining the duration of the word-final vowels was often difficult, since the vowel often "trails off" towards the end. I subjectively chose the end of the vowel as the approximate time where the first formant becomes indistinct. This criterion made it much easier to measure the formants of the vowel, but in reality the duration for the final vowels could be considered to be significantly longer than is reported here (in some cases more than twice as long).
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

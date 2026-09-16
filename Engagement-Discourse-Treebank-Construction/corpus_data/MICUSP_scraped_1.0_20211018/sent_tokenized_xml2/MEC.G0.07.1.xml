@@ -1,0 +1,754 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Human Fall Monitoring
+     </div>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       Millions of senior citizens suffer from injuries each year due to unintentional falls. Through fast emergency response, countless long term injuries and deaths may be prevented. Our objective is to use a MEMS accelerometer to characterize static positioning and falling in order to develop trigger parameters for an emergency response unit for senior citizens. We developed a test setup to measure body orientation and angle from vertical ranging from 0 to 90 degrees. In addition, we used the setup to measure fixed-axis falling through a 90 degree arc. We also tested various average daily motion activities such as walking, jumping, sitting down, and laying down quickly. Through testing and calculations, we have concluded that it is possible to measure static body orientation within 3 degrees and angle from vertical within 2 degrees. We also developed a theoretical acceleration response for a falling body and validated it with experimental data.  We also proved through testing that this response is not consistent with any other daily activates. Therefore, we concluded that a MEMS accelerometer can be used in an emergency response fall detection system for senior citizens.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        In 2005 a study completed by the Center for Disease Control found that 5,800 people 65 and older died from injuries related to unintentional falls and another 1.8 million received emergency room care.
+       </s>
+       <s pid="1" sid="2">
+        Of those treated, 433,000 were hospitalized for long term care [1].
+       </s>
+       <s pid="1" sid="3">
+        Seniors who live alone may suffer from an unintentional fall and are often not found for hours or days.
+       </s>
+       <s pid="1" sid="4">
+        Long waits for medical care exacerbate their injuries and increase their risk of death or permanent hospitalization.
+       </s>
+       <s pid="1" sid="5">
+        However, fast emergency response to a fall reduces the risk of hospitalization by 26% and death by 80% [3].
+       </s>
+       <s pid="1" sid="6">
+        The problem with seniors not receiving immediate attention needs to be addressed.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        A National University of Singapore study researched and developed a garment-based 3-axis MEMS accelerometer designed as an alert system for senior citizen falls by recording an impact [2].
+       </s>
+       <s pid="2" sid="2">
+        The system was to be worn by seniors in a pouch attached to the shoulder which contained the accelerometer.
+       </s>
+       <s pid="2" sid="3">
+        The power supply and blue-tooth wireless system to transmit an alert signal was located in a pouch attached at the waist.
+       </s>
+       <s pid="2" sid="4">
+        The chip itself was designed to record a heavy impact of magnitude consistent with a fall situation.
+       </s>
+       <s pid="2" sid="5">
+        When a fall was detected, the system would transmit a signal to the wearer’s cell phone, which would signal an emergency response team and the person’s family.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        We have found several flaws in the system developed at the University of Singapore.
+       </s>
+       <s pid="3" sid="2">
+        Since the accelerometer measures impact, if it were to break during the fall it would not function properly and emergency response would not be alerted.
+       </s>
+       <s pid="3" sid="3">
+        In addition, a number of daily motion activities could cause g-force readings consistent with that of a fall, which would trigger a false fall alert and cause unnecessary emergency response action.
+       </s>
+       <s pid="3" sid="4">
+        If there were an emergency response unit which measured the fall itself and not the impact, the possible break would not be an issue and false alarms would not occur.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Our objective is to develop an emergency response system to detect unintentional falls of senior citizens.
+       </s>
+       <s pid="4" sid="2">
+        This system would be triggered by a characteristic acceleration response associated only with falling and would be accurate enough to not register false falls.
+       </s>
+       <s pid="4" sid="3">
+        In addition, we aim to use the device as a static orientation system that would be able to correctly measure the wearer’s angle from vertical, as well as body orientation (i.e. face down, on left side, etc.)
+       </s>
+       <s pid="4" sid="4">
+        We have completed this work.
+       </s>
+       <s pid="4" sid="5">
+        In this report we will cover:
+       </s>
+      </p>
+      <list>
+       <item>
+        1. The methods used for calibration, static orientation testing and free fall testing
+       </item>
+       <item>
+        2. The experimental data for calibration, static orientation, and free fall
+       </item>
+       <item>
+        3. The development of our freefall theoretical model
+       </item>
+       <item>
+        4. Discussion of the application of the system
+       </item>
+       <item>
+        5. Our conclusions and recommendations
+       </item>
+      </list>
+     </div>
+     <div>
+      <div class="head_1">
+       NOMENCLATURE
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       METHODS
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        In order to reach our final goal of characterizing free fall several experiments were performed.
+       </s>
+       <s pid="5" sid="2">
+        The accelerometer ADXL203EB was first calibrated, and then used to record data for static orientation, fixed axis free fall, and daily human activities.
+       </s>
+       <s pid="5" sid="3">
+        Voltage input to the accelerometer was provided by the HP 33120A function generator.
+       </s>
+       <s pid="5" sid="4">
+        Voltage outputs were observed and recorded using the HP 5460213 oscilloscope.
+       </s>
+       <s pid="5" sid="5">
+        From there Microsoft Excel and Matlab were used to analyze data.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Calibration
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         In order to interpret readings from the accelerometer we needed to determine a relationship between voltage and acceleration.
+        </s>
+        <s pid="6" sid="2">
+         The accelerometer was rotated to angles and orientations of known acceleration and the voltage output recorded.
+        </s>
+        <s pid="6" sid="3">
+         Using this data we were able to then know the acceleration of the accelerometer given a voltage at any point in time.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Static Orientation
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         To gather experimental data for the orientation of the accelerometer in space we performed experiments holding the accelerometer in static orientations.
+        </s>
+        <s pid="7" sid="2">
+         The accelerometer was placed at the end of a pivot arm as shown in Fig. 1, below, and the arm was held at 0, 30, 45, 60 and 90 degrees from vertical.
+        </s>
+        <s pid="7" sid="3">
+         Output voltages were recorded at each angle.
+        </s>
+        <s pid="7" sid="4">
+         From there the accelerometer was rotated about its z-axis, which is depicted in Figure 2 on page 4.
+        </s>
+        <s pid="7" sid="5">
+         The accelerometer was rotated to 45, 90 and 135 degrees while the pivot arm was moved through the previously described static positions.
+        </s>
+        <s pid="7" sid="6">
+         Data was recorded at every orientation.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         Figure 1: Test setup for static orientation and free fall experiments
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Fixed Axis Free Fall
+       </div>
+       <p>
+        <s pid="9" sid="1">
+         Once static orientation had been performed we experimented with free fall in a two dimensional plane.
+        </s>
+        <s pid="9" sid="2">
+         The accelerometer was reattached to the end of the pivot arm as shown in Figure 1, page 3, so that the accelerometer recorded data in the plane of motion.
+        </s>
+        <s pid="9" sid="3">
+         This meant that that analysis was only done in two dimensions to ensure that we were able to accurately measure the radial and tangential acceleration.
+        </s>
+        <s pid="9" sid="4">
+         The orientation of the accelerometer can be seen in Figure 3, below.
+        </s>
+        <s pid="9" sid="5">
+         The pivot arm was then dropped from vertical and data was recorded.
+        </s>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         Figure 2: Static orientation schematic
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         Figure 3: Fixed axis free fall schematic
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Typical Daily Activities
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         In order to compare data collected for fixed axis free fall motion to other motions we recorded data performing a variety of activities.
+        </s>
+        <s pid="12" sid="2">
+         The accelerometer was attached to the experimenters’ waist and the subject walked, jumped, sat down and laid down.
+        </s>
+        <s pid="12" sid="3">
+         Data was recorded for every action.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       RESULTS
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        During testing we were able to accurately calibrate the accelerometer and predict static orientation.
+       </s>
+       <s pid="13" sid="2">
+        In addition, we developed a theoretical model for falling, and gathered data for fixed axis falling and other daily activities.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Calibration
+       </div>
+       <p>
+        <s pid="14" sid="1">
+         During the calibration, numerous voltages were recorded for known accelerations and plotted against each other.
+        </s>
+        <s pid="14" sid="2">
+         This can be seen in Figure 4 on page 3.
+        </s>
+        <s pid="14" sid="3">
+         We found that there was a positive linear trend between the measured voltage and known acceleration.
+        </s>
+        <s pid="14" sid="4">
+         This relationship was used to calculate the acceleration of the accelerometer given the output voltages for the rest of the lab.
+        </s>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         Figure 4: Linear result for accelerometer calibration
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Static Orientation
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         Logic was derived to use both the x and y axis data in conjunctions with the calibration data to determine the orientation of the chip which could be located on a person.
+        </s>
+        <s pid="16" sid="2">
+         It was able to accurately predict the angle from vertical within an error of ±2 degrees as described in Figure 5 below.
+        </s>
+        <s pid="16" sid="3">
+         It was also able to predict the rotation about the vertical axis of a person within an error of ±3 degrees as described in Figure 6 below.
+        </s>
+        <s pid="16" sid="4">
+         Combining these two angular outputs the orientation of a stable fallen person can be accurately determined.
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         Figure 5: Description of the angle from vertical human axis used for static orientation
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="18" sid="1">
+         Figure 6: Description of the rotation about the vertical human axis during static orientation
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Theoretical Falling Model
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         In order to analyze a fall situation a theoretical model first needed to be derived as a comparison to real world data.
+        </s>
+        <s pid="19" sid="2">
+         A schematic of the setup can be seen in Figure 7 below.
+        </s>
+        <s pid="19" sid="3">
+         The chip was oriented so that the y-axis of the chip read the radial acceleration and the x-axis read the tangential acceleration.
+        </s>
+        <s pid="19" sid="4">
+         We simplified the problem assuming a frictionless pivot at the base of the arm and the force of gravity acting at the center of the arm.
+        </s>
+        <s pid="19" sid="5">
+         The shaft also had length l.
+        </s>
+        <s pid="19" sid="6">
+         By performing static and kinematic analysis we were able to predict both the theoretical x and y-axis acceleration and they can be seen in Figure 8 below.
+        </s>
+        <s pid="19" sid="7">
+         More information on the calculation for the theoretical model can be seen in Appendix A.
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         Figure 7: Schematic of Theoretical Free Fall Setup
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         Figure 8: Theoretical model of the fixed axis free fall situation
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Experimental Results – Fixed Axis Free Fall
+       </div>
+       <p>
+        <s pid="22" sid="1">
+         To verify our theoretical model it was compared to experimental data from the fixed axis free fall experiment.
+        </s>
+        <s pid="22" sid="2">
+         Our experimental data can be seen in Figure 9 below.
+        </s>
+        <s pid="22" sid="3">
+         There are results from three free fall tests plotted together in Figure 9, and the results are extremely similar from one test to another.
+        </s>
+        <s pid="22" sid="4">
+         The experimental data had results that were expected.
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         Figure 9: Similar experimental data for three fixed axis free fall tests
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Experimental Results – Typical Daily Activities
+       </div>
+       <p>
+        <s pid="24" sid="1">
+         Other daily activities needed to be investigated to ensure that their results were not similar to those seen in the free fall situation data.
+        </s>
+        <s pid="24" sid="2">
+         Walking, jumping, sitting and lying down were investigated and their results can be seen in Figures 10 – 11 below and 12 – 13 on page 8 respectively.
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         Figure 10: Walking response
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         Figure 10: Jumping response
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="27" sid="1">
+         Figure 12: Sitting down response
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="28" sid="1">
+         Figure 13: Laying down response
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       DISCUSSION
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        To further investigate free falling we must compare the theoretical model to the experimentally collected data for free fall.
+       </s>
+       <s pid="29" sid="2">
+        Radial and tangential acceleration for three trials as compared to our theoretical model are shown in Figure 14 below.
+       </s>
+       <s pid="29" sid="3">
+        Note that experimental data does not exactly follow the theoretical model.
+       </s>
+       <s pid="29" sid="4">
+        The tangential acceleration has a very similar output but the radial acceleration seems to have a time delay.
+       </s>
+       <s pid="29" sid="5">
+        This could be due to a delay in the response of the accelerometer or a delay in the data collection of the electrical system.
+       </s>
+       <s pid="29" sid="6">
+        Further investigation of this discrepancy needs to be completed.
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        Figure 14: The theoretical free fall model compared to the experimental data
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="31" sid="1">
+        Assuming that the time delay can be identified and then predicted we can accurately model fixed axis free fall.
+       </s>
+       <s pid="31" sid="2">
+        Using the validated model we can define parameters to analyze data and sense if a fall situation occurs.
+       </s>
+       <s pid="31" sid="3">
+        One method of doing this would be to create bands around the validated theoretical model and detect if a majority of the data being collected was within the bands on both channels.
+       </s>
+       <s pid="31" sid="4">
+        If the data did fall within both channel margins it would signal a fall and actuate an alarm.
+       </s>
+       <s pid="31" sid="5">
+        The theoretical model with bands is shown in Figure 15 below.
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        Figure 15: Theoretical model with bands of sensing around them
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div>
+       <div class="head_2">
+        Typical Daily Activities
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         In addition to investigating free fall situations we had to determine if the falling model was similar to any other daily activities.
+        </s>
+        <s pid="33" sid="2">
+         To have an accurate system, we had to ensure that there would be no false falling alarms.
+        </s>
+        <s pid="33" sid="3">
+         After comparing our theoretical model to typical daily motion activities in Figures 10 – 13 on pages 7 and 8 previously, it is clear that falling is not consistent with any of these plots.
+        </s>
+        <s pid="33" sid="4">
+         Therefore, the system will be able to distinguish between falls and any other daily motion activity and there will be no false falls.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSIONS
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        We were able to use a MEMS accelerometer to characterize a free fall response and observe body orientation.
+       </s>
+       <s pid="34" sid="2">
+        Through this, we were able to develop a theoretical model consistent only with falling and not any other daily motion activity.
+       </s>
+       <s pid="34" sid="3">
+        This model could be used as trigger parameters for an emergency response system for senior citizens who experience unintentional falls.
+       </s>
+       <s pid="34" sid="4">
+        If widely used, this system could greatly decrease hospitalization and death as a result of slow emergency response and better many lives.
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        After completing the calibration we were able to accurately determine the static orientation of a person.
+       </s>
+       <s pid="35" sid="2">
+        Using our logic we could accurately determine someone’s angle from vertical within 2 degrees as described by Figure 5 page 5 and rotation about the vertical axis within 3 degrees as described by Figure 6 on page 5.
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        Next we were able to create a theoretical model using kinematic analysis to predict what the free fall acceleration response would be shown in Figure 8 on page 6.
+       </s>
+       <s pid="36" sid="2">
+        This was then validated using experimental data and the only discrepancy was a time shift, which is shown in Figure 14 on page 8.
+       </s>
+       <s pid="36" sid="3">
+        Using the theoretical model we were able to design parameters to sense a fall as described in Figure 15 on page 9.
+       </s>
+       <s pid="36" sid="4">
+        We then were able to determine that there would be no false alarms due to other daily activities by comparing normal daily activities including walking, jumping, sitting, and lying down to the parameters used to sense falling.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        Through this analysis we were able to use a MEMS accelerometer device to sense motion of the human body specifically in a free fall situation.
+       </s>
+       <s pid="37" sid="2">
+        This has many benefits to an elderly user.
+       </s>
+       <s pid="37" sid="3">
+        Even if the chip is damaged on impact, a fall is still recorded by the system and emergency response is alerted.
+       </s>
+       <s pid="37" sid="4">
+        Voltage characteristics consistent only with a fall situation eliminate false fall alerts that were present in the impact-based system.
+       </s>
+       <s pid="37" sid="5">
+        As discussed earlier in this report, faster emergency response leads to decrease in hospitalization by 26% and death by 80%.
+       </s>
+       <s pid="37" sid="6">
+        Therefore, we hope to drastically reduce the emergency response time through the use of this system and greatly improve countless lives.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       RECOMMENDATIONS AND FUTURE WORK
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        We recommend further testing be conducted with a 3-axis MEMS accelerometer in order to have a better 3-dimensioanl analysis of human motion.
+       </s>
+       <s pid="38" sid="2">
+        Such analysis would be more advantageous than using the 2-dimensional analysis conducted in our experimentation.
+       </s>
+       <s pid="38" sid="3">
+        Also we believe that more full scale testing should be conducted.
+       </s>
+       <s pid="38" sid="4">
+        We also recommend generating models for other modes of falling.
+       </s>
+       <s pid="38" sid="5">
+        Since falling is not always likely to occur in a fixed axis position there are many different ways in which a person may fall.
+       </s>
+       <s pid="38" sid="6">
+        Further testing could analyze and characterize many falling different falling scenarios.
+       </s>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        The next step includes development of a computer program that has the ability to recognize the data response consistent with falling.
+       </s>
+       <s pid="39" sid="2">
+        Such a program would then trigger an alert for emergency response to hospitals or family members.
+       </s>
+       <s pid="39" sid="3">
+        Also it is necessary to design the device with the accelerometer to be worn by the individual.
+       </s>
+       <s pid="39" sid="4">
+        Such a device would ideally be small so it would not disrupt normal activities.
+       </s>
+       <s pid="39" sid="5">
+        We recommend the device be attached to a garment on the individual’s shoulder.
+       </s>
+       <s pid="39" sid="6">
+        The device must also be capable to wirelessly transmit data to a central computer in the home that would monitor for falling.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       ACKNOWLEDGEMENTS
+      </div>
+      <p>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N101EE">
+       <li id="N101EF">
+        [1] "Falls Among Older Adults: An Overview." CDC Online. 12 March 2008.
+       </li>
+       <li id="N101F1">
+        Centers for Disease Control and Prevention. 7 Apr 2008 &lt;http://www.cdc.gov/ncipc/factsheets/adultfalls.htm&gt;.
+       </li>
+       <li id="N101F3">
+        [2] Nyan, M. N.. "Garment-based detection of falls and activities of daily living." Journal of Physics: Conference Series 34(2006): 1059–1067.
+       </li>
+       <li id="N101F5">
+        [3]Tinetti ME, Williams CS. Falls, injuries due to falls, and the risk of admission to a nursing home.  New England Journal of Medicine. 1997;337:1279-1284
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="head_1">
+       APPENDIX A
+      </div>
+      <p>
+       Dynamic Theoretical Model Equations
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       Dynamic and Static Theoretical Model Equations
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

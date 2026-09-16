@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      31-40
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       To the manager of the
+      </p>
+      <p>
+       Circle Theatre in London
+      </p>
+      <p>
+       I'm a tourist and I had a week's holiday in London
+       <ns type="RQ">
+        <i>
+         a few
+        </i>
+       </ns>
+       time ago. I had
+       <ns type="RV">
+        <i>
+         <ns type="IV">
+          <i>
+           enjoied
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to see the musical show that the Circle Theatre presented some
+       <ns type="AGN">
+        <i>
+         night
+        </i>
+       </ns>
+       ago; and the
+       <ns type="UP">
+        <i>
+         actor's
+        </i>
+       </ns>
+       Danny
+       <ns type="MP">
+        <i>
+         Brook
+        </i>
+       </ns>
+       performance. I went to the theatre at 19.30
+       <ns type="UN">
+        <i>
+         o'clock
+        </i>
+       </ns>
+       but,
+       <ns type="ID">
+        <i>
+         with my surprise
+        </i>
+       </ns>
+       , the show started at 20:15 and so I couldn't remain
+       <ns type="RY">
+        <i>
+         here
+        </i>
+       </ns>
+       until the end because I
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         left
+        </i>
+       </ns>
+       London, with my group before the end of the show. The star, the actor Danny Brook,
+       <ns type="UY">
+        <i>
+         there
+        </i>
+       </ns>
+       wasn't in the musical show but there was
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       actor,
+       <ns type="ID">
+        <i>
+         with my great disappoint
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Then, in the
+       <ns type="SA">
+        <i>
+         program
+        </i>
+       </ns>
+       I could read
+       <ns type="MT">
+       </ns>
+       a discount available
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the tickets, for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       groups, but I couldn't
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       that. I couldn't have all the things I expected.
+      </p>
+      <p>
+       That evening was terrible for me and for my friends, so I'm not satisfied
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       your
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       and I ask
+       <ns type="MT">
+       </ns>
+       some money back.
+      </p>
+      <p>
+       I hope
+       <ns type="R">
+        in your answer and in your explanation
+       </ns>
+       about this.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       Sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To the manager of the
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Circle
+       </s>
+       <s pid="2" sid="2">
+        Theatre in London
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I'm a tourist and I had a week's holiday in London a few time ago.
+       </s>
+       <s pid="3" sid="2">
+        I had enjoied to see the musical show that the Circle Theatre presented some night ago; and the actor's Danny Brook performance.
+       </s>
+       <s pid="3" sid="3">
+        I went to the theatre at 19.30 o'clock but, with my surprise, the show started at 20:15 and so I couldn't remain here until the end because I  left London, with my group before the end of the show.
+       </s>
+       <s pid="3" sid="4">
+        The star, the actor Danny Brook, there wasn't in the musical show but there was an other actor, with my great disappoint.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Then, in the program I could read  a discount available for the tickets, for the groups, but I couldn't have that.
+       </s>
+       <s pid="4" sid="2">
+        I couldn't have all the things I expected.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        That evening was terrible for me and for my friends, so I'm not satisfied about your informations and I ask  some money back.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope in your answer and in your explanation about this.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your Sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       Some days ago, when
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       school was
+       <ns type="RV">
+        <i>
+         ending
+        </i>
+       </ns>
+       , Pat and her friends decided to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       a party for their friend, Frances, because the end of the school
+       <ns type="MN">
+       </ns>
+       and
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       Francis's birthday were
+       <ns type="MT">
+       </ns>
+       the same day. That
+       <ns type="RV">
+        <i>
+         might
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         be
+        </i>
+       </ns>
+       a secret for Francis - and they decided
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="RN">
+        program
+       </ns>
+       and the present, a new gold watch.
+      </p>
+      <p>
+       Peter and Sue asked
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       Francis
+       <ns type="MT">
+       </ns>
+       some help
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       their
+       <ns type="UP">
+        <i>
+         exam's
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         subjets
+        </i>
+       </ns>
+       and Francis,
+       <ns type="AS">
+        <i>
+         for to help them, was very busy all the week
+        </i>
+       </ns>
+       . The last day all the friends went to Pat's home with food, musical instruments,
+       <ns type="MC">
+       </ns>
+       <ns type="MD">
+       </ns>
+       tape recorder. Pat was very excited about this. In the afternoon she had phoned
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       Francis's mother and she
+       <ns type="RV">
+        <i>
+         explained
+        </i>
+       </ns>
+       her the secret, then she phoned
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       her best friend and she
+       <ns type="TV">
+        <i>
+         speak
+        </i>
+       </ns>
+       about that
+       <ns type="RY">
+        <i>
+         too
+        </i>
+       </ns>
+       ; she phoned
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       many people all
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       day. Now
+       <ns type="RQ">
+        <i>
+         many
+        </i>
+       </ns>
+       people knew the secret but Pat
+       <ns type="RV">
+        <i>
+         said
+        </i>
+       </ns>
+       everyone: "I
+       <ns type="MV">
+       </ns>
+       tell you a small secret, but
+       <ns type="W">
+        <i>
+         you don't
+        </i>
+       </ns>
+       speak
+       <ns type="M">
+       </ns>
+       , please!"
+      </p>
+      <p>
+       In the night Francis was invited to the party, at Pat's home. When he was out he needed to buy some cigarettes so he went to the shop where the owner,
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       his friend,
+       <ns type="TV">
+        <i>
+         ask
+        </i>
+       </ns>
+       him if he was very happy about his present, the new gold watch, he was very lucky to have best friends like Pat and her friends.
+       <ns type="W">
+        <i>
+         The
+         <ns type="UP">
+          <i>
+           Francis's
+          </i>
+         </ns>
+         secret
+         <ns type="TV">
+          <i>
+           was discovered
+          </i>
+         </ns>
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Now
+       <ns type="X">
+        <i>
+         all the Pat's friend don't
+        </i>
+       </ns>
+       tell her about their secrets because Pat isn't very good at keeping secrets.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Some days ago, when the school was ending, Pat and her friends decided to make a party for their friend, Frances, because the end of the school  and the Francis's birthday were  the same day.
+       </s>
+       <s pid="2" sid="2">
+        That might be a secret for Francis - and they decided  the program and the present, a new gold watch.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Peter and Sue asked to Francis  some help for their exam's subjets and Francis, for to help them, was very busy all the week.
+       </s>
+       <s pid="3" sid="2">
+        The last day all the friends went to Pat's home with food, musical instruments,   tape recorder.
+       </s>
+       <s pid="3" sid="3">
+        Pat was very excited about this.
+       </s>
+       <s pid="3" sid="4">
+        In the afternoon she had phoned at a Francis's mother and she explained her the secret, then she phoned at her best friend and she speak about that too; she phoned at many people all the day.
+       </s>
+       <s pid="3" sid="5">
+        Now many people knew the secret but Pat said everyone: "I  tell you a small secret, but you don't speak , please!"
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In the night Francis was invited to the party, at Pat's home.
+       </s>
+       <s pid="4" sid="2">
+        When he was out he needed to buy some cigarettes so he went to the shop where the owner, a his friend, ask him if he was very happy about his present, the new gold watch, he was very lucky to have best friends like Pat and her friends.
+       </s>
+       <s pid="4" sid="3">
+        The Francis's secret was discovered!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Now all the Pat's friend don't tell her about their secrets because Pat isn't very good at keeping secrets.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I recently visited your theatre to see the musical show "over the rainbow". I was very disappointed because the actors
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       Danny Brook and Tina Truelove. Instead of them you had different actors. Then the show
+       <ns type="TV">
+        <i>
+         delayed
+        </i>
+       </ns>
+       , it started at 20:15, not at 19.30. I had to wait 45 minutes! Another
+       <ns type="RN">
+        <i>
+         point
+        </i>
+       </ns>
+       is that the discounts
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       available although I
+       <ns type="RV">
+        <i>
+         could
+        </i>
+       </ns>
+       <ns type="IV">
+        <i>
+         red
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         before
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       your
+       <ns type="RN">
+        <i>
+         notice
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After the show was finished, I decided to drink something, but
+       <ns type="RC">
+        <i>
+         as
+        </i>
+       </ns>
+       I arrived
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the restaurant it had been closed. But in your advertisement you wrote that people can visit the
+       <ns type="S">
+        <i>
+         resaurant
+        </i>
+       </ns>
+       after the show. I can't understand
+       <ns type="RD">
+        <i>
+         such
+        </i>
+       </ns>
+       kind of
+       <ns type="AGN">
+        <i>
+         mistakes
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       You
+       <ns type="W">
+        <i>
+         wrote also
+        </i>
+       </ns>
+       that the evening would be perfect. For me it wasn't and because of that I ask you to give me my money back. If you can't give me all the money back then do it
+       <ns type="RY">
+        <i>
+         particularly
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I
+       <ns type="MV">
+       </ns>
+       give you my phone number, you can reach me from 8 o'clock till 12 o'clock: 08532143251
+      </p>
+      <p>
+       Please call me back soon.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+      <p>
+       Carolina Schwitt
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I recently visited your theatre to see the musical show "over the rainbow".
+       </s>
+       <s pid="2" sid="2">
+        I was very disappointed because the actors wasn't Danny Brook and Tina Truelove.
+       </s>
+       <s pid="2" sid="3">
+        Instead of them you had different actors.
+       </s>
+       <s pid="2" sid="4">
+        Then the show delayed, it started at 20:15, not at 19.30.
+       </s>
+       <s pid="2" sid="5">
+        I had to wait 45 minutes!
+       </s>
+       <s pid="2" sid="6">
+        Another point is that the discounts wasn't available although I could red  it before at your notice.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        After the show was finished, I decided to drink something, but as I arrived in the restaurant it had been closed.
+       </s>
+       <s pid="3" sid="2">
+        But in your advertisement you wrote that people can visit the resaurant after the show.
+       </s>
+       <s pid="3" sid="3">
+        I can't understand such kind of mistakes.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        You wrote also that the evening would be perfect.
+       </s>
+       <s pid="4" sid="2">
+        For me it wasn't and because of that I ask you to give me my money back.
+       </s>
+       <s pid="4" sid="3">
+        If you can't give me all the money back then do it particularly.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I  give you my phone number, you can reach me from 8 o'clock till 12 o'clock: 08532143251
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Please call me back soon.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Carolina Schwitt
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed your daily life?
+      </p>
+      <p>
+       Modern technology has changed my daily life in the
+       <ns type="RN">
+        <i>
+         point
+        </i>
+       </ns>
+       that
+       <ns type="RA">
+        <i>
+         all
+        </i>
+       </ns>
+       I do is becoming
+       <ns type="RJ">
+        <i>
+         more comfortable
+        </i>
+       </ns>
+       . For example when I have to write a letter or do my homework, I always write it on the computer. If I search
+       <ns type="MT">
+       </ns>
+       something like a
+       <ns type="S">
+        <i>
+         telefonnumber
+        </i>
+       </ns>
+       or an
+       <ns type="S">
+        <i>
+         adress
+        </i>
+       </ns>
+       I also look it up
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       . I
+       <ns type="W">
+        <i>
+         use also
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       when I need any
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       for example
+       <ns type="MC">
+       </ns>
+       I need
+       <ns type="R">
+        <i>
+         them
+        </i>
+       </ns>
+       for school or
+       <ns type="DY">
+        <i>
+         private
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       for myself. A few years ago I had to go
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a library and look
+       <ns type="R">
+        <i>
+         it
+        </i>
+       </ns>
+       up in many books.
+       <ns type="UA">
+        <i>
+         Most that
+        </i>
+       </ns>
+       took a long time.
+      </p>
+      <p>
+       I think the advantage of modern technology is that
+       <ns type="RA">
+        <i>
+         all
+        </i>
+       </ns>
+       I do goes very fast and I have more time for my
+       <ns type="IN">
+        <i>
+         hobbys
+        </i>
+       </ns>
+       or for friends.
+      </p>
+      <p>
+       Another important point for me is that things like listening
+       <ns type="MT">
+       </ns>
+       music or watching TV
+       <ns type="AGV">
+        <i>
+         sounds
+        </i>
+       </ns>
+       better and the pictures on TV are being
+       <ns type="S">
+        <i>
+         impoved
+        </i>
+       </ns>
+       , because the machines become
+       <ns type="IJ">
+        <i>
+         more better
+        </i>
+       </ns>
+       . And also a good
+       <ns type="RN">
+        intention
+       </ns>
+       for me is the
+       <ns type="DN">
+        <i>
+         Handy
+        </i>
+       </ns>
+       , because everywhere I go I can talk to other people.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed your daily life?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Modern technology has changed my daily life in the point that all I do is becoming more comfortable.
+       </s>
+       <s pid="2" sid="2">
+        For example when I have to write a letter or do my homework, I always write it on the computer.
+       </s>
+       <s pid="2" sid="3">
+        If I search  something like a telefonnumber or an adress I also look it up from the internet.
+       </s>
+       <s pid="2" sid="4">
+        I use also the internet when I need any informations for example  I need them for school or private for myself.
+       </s>
+       <s pid="2" sid="5">
+        A few years ago I had to go in a library and look it up in many books.
+       </s>
+       <s pid="2" sid="6">
+        Most that took a long time.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think the advantage of modern technology is that all I do goes very fast and I have more time for my hobbys or for friends.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Another important point for me is that things like listening  music or watching TV sounds better and the pictures on TV are being impoved, because the machines become more better.
+       </s>
+       <s pid="4" sid="2">
+        And also a good intention for me is the Handy, because everywhere I go I can talk to other people.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

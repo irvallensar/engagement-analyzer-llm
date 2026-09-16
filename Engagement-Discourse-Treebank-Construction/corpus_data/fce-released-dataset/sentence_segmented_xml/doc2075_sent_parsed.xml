@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Manager: I am Angela Ounis and I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to you because I went to see 'Over the Rainbow', London's newest and best musical show. I am very
+       <ns type="RJ">
+        <i>
+         disappointing
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       this evening's show. First of all
+       <ns type="MP">
+       </ns>
+       the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       that
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       supposed to be
+       <ns type="MY">
+       </ns>
+       (Danny Brook and Tina Truelove) weren't there
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I was so enthusiastic about your
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       , when I realized
+       <ns type="R">
+        <i>
+         was a failure
+        </i>
+       </ns>
+       , even though
+       <ns type="R">
+        <i>
+         they
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           do
+          </i>
+         </ns>
+        </i>
+       </ns>
+       good, it wasn't the same. I arrived there
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       at 19:15
+       <ns type="RP">
+        <i>
+         , the
+        </i>
+       </ns>
+       show was supposed to start at 19.30, but started at 20:15
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       cannot be possible that a schedule for a show
+       <ns type="MV">
+       </ns>
+       <ns type="R">
+        <i>
+         have had a big change
+        </i>
+       </ns>
+       . You go there to see a show and have a good time, not to wait
+       <ns type="RP">
+        <i>
+         forever
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         until
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       you want. Also
+       <ns type="MA">
+       </ns>
+       was said that Discounts
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be available, but I didn't
+       <ns type="TV">
+        <i>
+         received
+        </i>
+       </ns>
+       any discount as you were cheating us. I know that you have a big
+       <ns type="S">
+        <i>
+         responsability
+        </i>
+       </ns>
+       but if you
+       <ns type="TV">
+        <i>
+         told
+        </i>
+       </ns>
+       something to people,
+       <ns type="R">
+        <i>
+         do
+        </i>
+       </ns>
+       it.
+       <ns type="ID">
+        <i>
+         On the other hand
+        </i>
+       </ns>
+       , the theatre Restaurant was closed because they've got a problem with the
+       <ns type="RN">
+        schedule's organization
+       </ns>
+       . That was so
+       <ns type="RJ">
+        <i>
+         uncomfortable
+        </i>
+       </ns>
+       , people
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       starving. I am so disappointed with this
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that I am
+       <ns type="ID">
+        <i>
+         in all my right
+        </i>
+       </ns>
+       to ask for some money back, your theatre show wasn't
+       <ns type="MA">
+       </ns>
+       <ns type="MV">
+       </ns>
+       expected. Please let me know
+       <ns type="M">
+       </ns>
+       . sincerely yours
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Manager: I am Angela Ounis and I am writting to you because I went to see 'Over the Rainbow', London's newest and best musical show.
+       </s>
+       <s pid="1" sid="2">
+        I am very disappointing at this evening's show.
+       </s>
+       <s pid="1" sid="3">
+        First of all the starring that was supposed to be  (Danny Brook and Tina Truelove) weren't there, I was so enthusiastic about your starring, when I realized was a failure, even though they do good, it wasn't the same.
+       </s>
+       <s pid="1" sid="4">
+        I arrived there, at 19:15, the show was supposed to start at 19.30, but started at 20:15, it cannot be possible that a schedule for a show  have had a big change.
+       </s>
+       <s pid="1" sid="5">
+        You go there to see a show and have a good time, not to wait forever until  you want.
+       </s>
+       <s pid="1" sid="6">
+        Also  was said that Discounts will be available, but I didn't received any discount as you were cheating us.
+       </s>
+       <s pid="1" sid="7">
+        I know that you have a big responsability but if you told something to people, do it.
+       </s>
+       <s pid="1" sid="8">
+        On the other hand, the theatre Restaurant was closed because they've got a problem with the schedule's organization.
+       </s>
+       <s pid="1" sid="9">
+        That was so uncomfortable, people was starving.
+       </s>
+       <s pid="1" sid="10">
+        I am so disappointed with this, that I am in all my right to ask for some money back, your theatre show wasn't   expected.
+       </s>
+       <s pid="1" sid="11">
+        Please let me know . sincerely yours
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed your daily life?
+      </p>
+      <p>
+       I am 17 years old, and my life has been very normal. Since
+       <ns type="TV">
+        <i>
+         I've got
+        </i>
+       </ns>
+       a computer with
+       <ns type="M">
+       </ns>
+       Internet, my social life has changed. Now I have more friends and I have more fun. This has helped me a lot, because I can talk with my friends
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         are living
+        </i>
+       </ns>
+       in other countries.
+      </p>
+      <p>
+       <ns type="RN">
+        <i>
+         Technology
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         has
+        </i>
+       </ns>
+       a lot of programs that
+       <ns type="RV">
+        <i>
+         lead
+        </i>
+       </ns>
+       you communicate with others in
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="IJ">
+        <i>
+         more easy
+        </i>
+       </ns>
+       way. 'Speak Freely' is fantastic, you don't pay and you can hear the voice of the one you miss. This has opened another world to me, distances aren't so sad, they are
+       <ns type="RJ">
+        <i>
+         <ns type="IJ">
+          <i>
+           more close
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I have learned a lot with
+       <ns type="MD">
+       </ns>
+       Internet
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         gaves
+        </i>
+       </ns>
+       me the
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           posibility
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to know more about things
+       <ns type="TV">
+        <i>
+         I've never knew
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       . It is incredible how it opens
+       <ns type="MY">
+       </ns>
+       <ns type="U">
+        <i>
+         to you
+        </i>
+       </ns>
+       another reality, a different view of life.
+      </p>
+      <p>
+       Now I have a different
+       <ns type="W">
+        <i>
+         style of life
+        </i>
+       </ns>
+       , I am more open to
+       <ns type="MD">
+       </ns>
+       world's problems and progress. I am
+       <ns type="RJ">
+        <i>
+         interesting
+        </i>
+       </ns>
+       in reading articles and developing myself.
+      </p>
+      <p>
+       Technology
+       <ns type="TV">
+        <i>
+         had gave
+        </i>
+       </ns>
+       me another life,
+       <ns type="MA">
+       </ns>
+       has helped me. My knowledge has been developed and also my
+       <ns type="RP">
+        <i>
+         life style
+        </i>
+       </ns>
+       . I think that modern technology is our future, we don't have to depend on it, but we have to work for
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       biggest improvement.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed your daily life?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am 17 years old, and my life has been very normal.
+       </s>
+       <s pid="2" sid="2">
+        Since I've got a computer with  Internet, my social life has changed.
+       </s>
+       <s pid="2" sid="3">
+        Now I have more friends and I have more fun.
+       </s>
+       <s pid="2" sid="4">
+        This has helped me a lot, because I can talk with my friends that are living in other countries.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Technology has a lot of programs that lead you communicate with others in a more easy way.
+       </s>
+       <s pid="3" sid="2">
+        'Speak Freely' is fantastic, you don't pay and you can hear the voice of the one you miss.
+       </s>
+       <s pid="3" sid="3">
+        This has opened another world to me, distances aren't so sad, they are more close.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I have learned a lot with  Internet, it gaves me the posibility to know more about things I've never knew .
+       </s>
+       <s pid="4" sid="2">
+        It is incredible how it opens  to you another reality, a different view of life.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Now I have a different style of life, I am more open to  world's problems and progress.
+       </s>
+       <s pid="5" sid="2">
+        I am interesting in reading articles and developing myself.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Technology had gave me another life,  has helped me.
+       </s>
+       <s pid="6" sid="2">
+        My knowledge has been developed and also my life style.
+       </s>
+       <s pid="6" sid="3">
+        I think that modern technology is our future, we don't have to depend on it, but we have to work for a biggest improvement.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

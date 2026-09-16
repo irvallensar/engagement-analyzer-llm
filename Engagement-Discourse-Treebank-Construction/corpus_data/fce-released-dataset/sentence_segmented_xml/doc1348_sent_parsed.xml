@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Madam/Sir,
+      </p>
+      <p>
+       I'm
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to you to explain
+       <ns type="R">
+        <i>
+         my
+        </i>
+       </ns>
+       problem that I have had in your theatre.
+      </p>
+      <p>
+       I
+       <ns type="S">
+        <i>
+         recentely
+        </i>
+       </ns>
+       had a week's holiday in London, and
+       <ns type="MP">
+       </ns>
+       during my stay, I went
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your theatre to see "Over the Rainbow" because I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       seen an advertisement
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       this show and I was really
+       <ns type="S">
+        <i>
+         interrested
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to see
+        </i>
+       </ns>
+       it for many reasons, one of
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       reasons
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       is that I love the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       Danny Brook. And I would like
+       <ns type="UA">
+        <i>
+         that
+        </i>
+       </ns>
+       you
+       <ns type="FV">
+        <i>
+         know
+        </i>
+       </ns>
+       that I have had a very disappointing evening, due to the differences between the advertisement and the show that I saw.
+      </p>
+      <p>
+       First of all, the actor was not Danny Brook.
+      </p>
+      <p>
+       Secondly, in your advertisement the time of the show was 19:30 and in
+       <ns type="S">
+        <i>
+         reallity
+        </i>
+       </ns>
+       the show
+       <ns type="TV">
+        <i>
+         has started
+        </i>
+       </ns>
+       at 20:15 and the discount was not available.
+      </p>
+      <p>
+       Finally, I wanted to visit
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       theatre restaurant after the show but it was already closed.
+      </p>
+      <p>
+       So, I had a very disappointing evening and it would be very kind of you if you
+       <ns type="TV">
+        <i>
+         give
+        </i>
+       </ns>
+       me back the money
+       <ns type="M">
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="UP">
+        <i>
+         I'am
+        </i>
+       </ns>
+       looking forward to
+       <ns type="FV">
+        <i>
+         hear
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you as soon as possible.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Madam/Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writting to you to explain my problem that I have had in your theatre.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I recentely had a week's holiday in London, and during my stay, I went in your theatre to see "Over the Rainbow" because I have seen an advertisement about this show and I was really interrested  to see it for many reasons, one of this reasons it is that I love the starring Danny Brook.
+       </s>
+       <s pid="3" sid="2">
+        And I would like that you know that I have had a very disappointing evening, due to the differences between the advertisement and the show that I saw.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First of all, the actor was not Danny Brook.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, in your advertisement the time of the show was 19:30 and in reallity the show has started at 20:15 and the discount was not available.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, I wanted to visit you theatre restaurant after the show but it was already closed.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So, I had a very disappointing evening and it would be very kind of you if you give me back the money .
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I'am looking forward to hear  you as soon as possible.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Your faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       I think it is very good to have
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       science and technology because
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       can really
+       <ns type="AGV">
+        <i>
+         affects
+        </i>
+       </ns>
+       our lives.
+      </p>
+      <p>
+       For example
+       <ns type="MP">
+       </ns>
+       20 years ago, people who were affected by the AIDS Virus couldn't live more than two or three years, but now with the new science, there
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       several
+       <ns type="AGN">
+        <i>
+         <ns type="S">
+          <i>
+           therapi
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and now people affected by this virus can live many years.
+      </p>
+      <p>
+       I think you can do a lot
+       <ns type="MY">
+       </ns>
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         <ns type="SX">
+          <i>
+           think
+          </i>
+         </ns>
+        </i>
+       </ns>
+       now than before with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         techonology
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       You can travel around the world by train, by plane or by ship and maybe one day you can fly by car. Why not
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I hope that you will find this composition interesting.
+      </p>
+      <p>
+       best
+       <ns type="S">
+        <i>
+         reguard
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I think it is very good to have a science and technology because it can really affects our lives.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        For example 20 years ago, people who were affected by the AIDS Virus couldn't live more than two or three years, but now with the new science, there is several therapi and now people affected by this virus can live many years.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think you can do a lot  of think now than before with the techonology.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        You can travel around the world by train, by plane or by ship and maybe one day you can fly by car.
+       </s>
+       <s pid="4" sid="2">
+        Why not.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope that you will find this composition interesting.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        best reguard.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

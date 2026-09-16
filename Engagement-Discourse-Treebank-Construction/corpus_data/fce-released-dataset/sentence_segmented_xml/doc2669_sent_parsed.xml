@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I'd like to explain
+       <ns type="MT">
+       </ns>
+       you the problems I
+       <ns type="TV">
+        <i>
+         have had
+        </i>
+       </ns>
+       when I went to the theatre. The main problem I had was
+       <ns type="MT">
+       </ns>
+       the actor, because he wasn't Danny Brook. Although Tina Truelove was there, I went to the theatre to see Danny Brook.
+      </p>
+      <p>
+       Another problem I had was
+       <ns type="MT">
+       </ns>
+       the time
+       <ns type="M">
+       </ns>
+       .
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       was going to begin at 19.30 but It began at 20.15 and the problem was that It was raining. I'd like to explain too that I didn't see
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       you
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       <ns type="MQ">
+       </ns>
+       discounts to
+       <ns type="RA">
+        <i>
+         no one
+        </i>
+       </ns>
+       . I was queuing for a long time and I didn't see it
+       <ns type="MV">
+       </ns>
+       . And I went with a lot of friends and we didn't
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       any discount.
+      </p>
+      <p>
+       Another
+       <ns type="RN">
+        <i>
+         question
+        </i>
+       </ns>
+       is that in the advertisement you
+       <ns type="RV">
+        <i>
+         advised
+        </i>
+       </ns>
+       we could visit your restaurant but as it was closed we couldn't
+       <ns type="U">
+        <i>
+         do it
+        </i>
+       </ns>
+       . And we were very hungry after being three hours in the theatre.
+      </p>
+      <p>
+       And
+       <ns type="AGA">
+        <i>
+         that
+        </i>
+       </ns>
+       are all
+       <ns type="MD">
+       </ns>
+       problems I
+       <ns type="RV">
+        <i>
+         found
+        </i>
+       </ns>
+       . And, because of these
+       <ns type="RN">
+        <i>
+         faults
+        </i>
+       </ns>
+       , I'd like to have my money back. If you don't mind, of course.
+      </p>
+      <p>
+       Yours,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'd like to explain  you the problems I have had when I went to the theatre.
+       </s>
+       <s pid="2" sid="2">
+        The main problem I had was  the actor, because he wasn't Danny Brook.
+       </s>
+       <s pid="2" sid="3">
+        Although Tina Truelove was there, I went to the theatre to see Danny Brook.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Another problem I had was  the time .
+       </s>
+       <s pid="3" sid="2">
+        I was going to begin at 19.30 but It began at 20.15 and the problem was that It was raining.
+       </s>
+       <s pid="3" sid="3">
+        I'd like to explain too that I didn't see that you made  discounts to no one.
+       </s>
+       <s pid="3" sid="4">
+        I was queuing for a long time and I didn't see it .
+       </s>
+       <s pid="3" sid="5">
+        And I went with a lot of friends and we didn't have any discount.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Another question is that in the advertisement you advised we could visit your restaurant but as it was closed we couldn't do it.
+       </s>
+       <s pid="4" sid="2">
+        And we were very hungry after being three hours in the theatre.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        And that are all  problems I found.
+       </s>
+       <s pid="5" sid="2">
+        And, because of these faults, I'd like to have my money back.
+       </s>
+       <s pid="5" sid="3">
+        If you don't mind, of course.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       I met Pat when we were children. We went
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the same school and
+       <ns type="MV">
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the same class. I liked a boy who was in the same class. I told her that and she assured me that she wouldn't say
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       to him. When we finished
+       <ns type="MT">
+       </ns>
+       our primary school we went
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the same
+       <ns type="S">
+        <i>
+         secundary
+        </i>
+       </ns>
+       school too, but we were in different classes. We went out every
+       <ns type="AGN">
+        <i>
+         weekends
+        </i>
+       </ns>
+       . And when we finished
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         secundary
+        </i>
+       </ns>
+       school, I decided go to a foreign University. I
+       <ns type="TV">
+        <i>
+         spend
+        </i>
+       </ns>
+       five years there, although I came
+       <ns type="MY">
+       </ns>
+       <ns type="R">
+        <i>
+         all
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         summers
+        </i>
+       </ns>
+       and we continued going out as we
+       <ns type="TV">
+        <i>
+         did
+        </i>
+       </ns>
+       before. When I finished I
+       <ns type="TV">
+        <i>
+         return
+        </i>
+       </ns>
+       to my city to find a job.
+      </p>
+      <p>
+       <ns type="RQ">
+        <i>
+         A
+        </i>
+       </ns>
+       day, Pat told me that
+       <ns type="RA">
+        <i>
+         we
+        </i>
+       </ns>
+       was talking with this boy and that he told her that
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         like
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         him
+        </i>
+       </ns>
+       and immediately she told him that
+       <ns type="RA">
+        <i>
+         he
+        </i>
+       </ns>
+       liked
+       <ns type="RA">
+        <i>
+         me
+        </i>
+       </ns>
+       too.
+      </p>
+      <p>
+       A week after that I found him in a
+       <ns type="RN">
+        <i>
+         coffee
+        </i>
+       </ns>
+       and he asked me if I would like to be his girlfriend and I accepted. Now, five years later we are going to get married.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I met Pat when we were children.
+       </s>
+       <s pid="2" sid="2">
+        We went at the same school and  at the same class.
+       </s>
+       <s pid="2" sid="3">
+        I liked a boy who was in the same class.
+       </s>
+       <s pid="2" sid="4">
+        I told her that and she assured me that she wouldn't say it to him.
+       </s>
+       <s pid="2" sid="5">
+        When we finished  our primary school we went at the same secundary school too, but we were in different classes.
+       </s>
+       <s pid="2" sid="6">
+        We went out every weekends.
+       </s>
+       <s pid="2" sid="7">
+        And when we finished  the secundary school, I decided go to a foreign University.
+       </s>
+       <s pid="2" sid="8">
+        I spend five years there, although I came  all summers and we continued going out as we did before.
+       </s>
+       <s pid="2" sid="9">
+        When I finished I return to my city to find a job.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        A day, Pat told me that we was talking with this boy and that he told her that I like him and immediately she told him that he liked me too.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        A week after that I found him in a coffee and he asked me if I would like to be his girlfriend and I accepted.
+       </s>
+       <s pid="4" sid="2">
+        Now, five years later we are going to get married.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

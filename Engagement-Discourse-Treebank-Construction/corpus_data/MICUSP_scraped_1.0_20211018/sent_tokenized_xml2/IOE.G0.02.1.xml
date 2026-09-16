@@ -1,0 +1,736 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The design features of a speedometer are not trivial details.
+       </s>
+       <s pid="1" sid="2">
+        Everyday, millions of people rely on speedometer details when driving automobiles.
+       </s>
+       <s pid="1" sid="3">
+        A few small defects in the speedometer design could distract the driver enough time to cause an accident and potentially cost many people their lives.
+       </s>
+       <s pid="1" sid="4">
+        Consequently, studying the effects of speedometer design parameters on speedometer reading time and accuracy is very important.
+       </s>
+       <s pid="1" sid="5">
+        The design parameters examined in the experiment include character color, location on the instrument panel, character size (strokewidth and height), radius and numbering scale.
+       </s>
+       <s pid="1" sid="6">
+        Each parameter was examined in order to explore the possible combinations of design features such that the speedometer average reading time would be low as well as having high reading accuracy.
+       </s>
+       <s pid="1" sid="7">
+        These design parameters, however, may have a different effect on reading time and accuracy depending on the task condition.
+       </s>
+       <s pid="1" sid="8">
+        Two task conditions were examined in this experiment.
+       </s>
+       <s pid="1" sid="9">
+        The first speedometer task condition was to find the exact speed while the second was to verify if the vehicle was above or below the speed limit.
+       </s>
+       <s pid="1" sid="10">
+        Therefore, the two objectives of the experiment were:
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        -To find the relationship between speedometer design parameters, task condition and task performance (reading time and accuracy).
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        -To find which speedometer is best for each given task condition and why.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Test Plan
+      </div>
+      <div>
+       <div class="head_2">
+        Test Participants
+       </div>
+       <p>
+        <s pid="4" sid="1">
+         The experiment was conducted using 13 test participants.
+        </s>
+        <s pid="4" sid="2">
+         Appendix
+        </s>
+        <s pid="4" sid="3">
+         A displays the relevant information for each test participant.
+        </s>
+        <s pid="4" sid="4">
+         All the test subjects were volunteers and students of the University of Michigan.
+        </s>
+        <s pid="4" sid="5">
+         There were many individual differences between the test participants that were considered relevant to the experiment and will be analyzed in later sections of this report.
+        </s>
+        <s pid="4" sid="6">
+         These differences include participant vision, handedness, sex and viewing distance.
+        </s>
+        <s pid="4" sid="7">
+         All other factors were considered negligible.
+        </s>
+        <s pid="4" sid="8">
+         For example, test participant age was considered to be negligible due to the small range of values (18 to 21).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Test Equipment and Materials
+       </div>
+       <p>
+        <s pid="5" sid="1">
+         The experiment used a simple projection and timing system to collect the data.
+        </s>
+        <s pid="5" sid="2">
+         This system included the following equipment:
+        </s>
+       </p>
+       <list>
+        <item>
+         Kodak Carousel 4400 Projector
+        </item>
+        <item>
+         Electronic Shutter
+        </item>
+        <item>
+         IBM Compatible, base configuration
+        </item>
+        <item>
+         Decision Response Control Unit (DRCU)
+        </item>
+        <item>
+         Projector and Shutter Control Unit (PSCU)
+        </item>
+        <item>
+         13 Response Boxes
+        </item>
+        <item>
+         2 Standard Televisions, 19 in. (approx.)
+        </item>
+        <item>
+         Standard Projection Screen
+        </item>
+       </list>
+       <p>
+        <s pid="6" sid="1">
+         The DRCU, PSCU, and response boxes were all custom made at the University of Michigan.
+        </s>
+        <s pid="6" sid="2">
+         This system worked such that the software in the computer controlled, directly or indirectly, all the elements of the system.
+        </s>
+        <s pid="6" sid="3">
+         The software was called RT334 and written by Prof.
+        </s>
+        <s pid="6" sid="4">
+         Chuck Wooley of the University of Michigan.
+        </s>
+        <s pid="6" sid="5">
+         The system projected various images of speedometers for an exact determined amount of time while being able to store data that was collected at the response boxes.
+        </s>
+        <s pid="6" sid="6">
+         The images were projected on a large projection screen in the front of the room.
+        </s>
+        <s pid="6" sid="7">
+         Two TVs were used to show summary data to the test participants in between testing blocks.
+        </s>
+        <s pid="6" sid="8">
+         Figure 1 displays the system's electronic connections.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         Figure 1: Projection and Timing System Electronic Connections
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         Figure 1 displays how the computer, directly or indirectly, controlled the entire system.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         Four unique speedometers were used in the experiment.
+        </s>
+        <s pid="9" sid="2">
+         Table gives a description of the significant differences for each speedometer.
+        </s>
+        <s pid="9" sid="3">
+         It is important to note that the measurement values are for the size of the characteristics when projected on the screen, not the actual size.
+        </s>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         Table 1: Speedometer Characteristics and Attributes
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         One characteristic of speedometer 4 that is not apparent from Table 1 is that the first number on the speedometer after 0 mph was 15 mph.
+        </s>
+        <s pid="11" sid="2">
+         From then on a scale of 10 mph was used.
+        </s>
+        <s pid="11" sid="3">
+         All the speedometers were circular in shape.
+        </s>
+        <s pid="11" sid="4">
+         The pointing needles of the different speedometers had negligible differences.
+        </s>
+        <s pid="11" sid="5">
+         Figure 2 displays the instrument control panel layout, common to all the speedometers, shown on the projection screen (without negligible and non-effecting details).
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         Figure 2: Common Instrument Control Panel Layout (not to scale)
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         The speedometer was found in either of the large, inner circles in Figure 1.
+        </s>
+        <s pid="14" sid="2">
+         The other circles represent other gauges for RPM, temperature, oil level, etc.
+        </s>
+        <s pid="14" sid="3">
+         Other test materials and equipment used in the experiment include a standard tape measure, chairs, and tables.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Test Activities and Their Sequence
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         Each experiment began with the 13 test participants seated in two rows, each with their own response pad directly in front of them on a standard classroom table.
+        </s>
+        <s pid="15" sid="2">
+         The middle of the first row was 10 feet and 5 inches from the projection screen and had 8 participants.
+        </s>
+        <s pid="15" sid="3">
+         The second row, containing 5 participants, was 15 feet from the projection screen.
+        </s>
+        <s pid="15" sid="4">
+         The participants in the second row were sitting in slightly higher (approx.
+        </s>
+        <s pid="15" sid="5">
+         6 inches) chairs than the first row.
+        </s>
+        <s pid="15" sid="6">
+         Figure 3 depicts the testing room layout.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         Figure 3: Testing Room Layout
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         Each number on figure 3 represents the respective test participant's seat.
+        </s>
+        <s pid="17" sid="2">
+         Both televisions projected identical information, which was easily visible for every test participant.
+        </s>
+       </p>
+       <p>
+        <s pid="18" sid="1">
+         The experiment was run in blocks of trials.
+        </s>
+        <s pid="18" sid="2">
+         Each trial began when the shutter opened revealing an image of a speedometer.
+        </s>
+        <s pid="18" sid="3">
+         This is also when the clock started for the trial.
+        </s>
+        <s pid="18" sid="4">
+         The participants could then begin to enter a response by pushing a button on the response box in front of them.
+        </s>
+        <s pid="18" sid="5">
+         After pushing the button, a signal would be sent indirectly to the computer.
+        </s>
+        <s pid="18" sid="6">
+         The time after the shutter opened until the response button was pushed was stored in the computer for each participant.
+        </s>
+        <s pid="18" sid="7">
+         The shutter would then close, completing the exposure duration.
+        </s>
+        <s pid="18" sid="8">
+         The participant could enter a response after the shutter closed, but only until the maximum response time for that trial.
+        </s>
+        <s pid="18" sid="9">
+         Only the first response the test participant gave was recorded.
+        </s>
+        <s pid="18" sid="10">
+         If the participant had responded with an incorrect response (error), the time as well as the fact that it was incorrect was recorded.
+        </s>
+        <s pid="18" sid="11">
+         After the maximum response time, data collection ended and the projector advanced.
+        </s>
+        <s pid="18" sid="12">
+         If the participant gave no response, the maximum response time was recorded for that participant as well as the fact that the participant did not respond (miss).
+        </s>
+        <s pid="18" sid="13">
+         The time in between the end of data collection and the shutter opening again was called the intertrial interval and was common for all trials.
+        </s>
+       </p>
+       <p>
+        <s pid="19" sid="1">
+         Nine blocks, each with either 16 or 32 trials were conducted.
+        </s>
+        <s pid="19" sid="2">
+         In all the blocks the speedometers read 50, 55, 60 or 65 mph.
+        </s>
+        <s pid="19" sid="3">
+         With blocks 1 through 6, each participant pressed one of the four buttons on the response box that had been assigned a respective speedometer reading (50, 55, 60 or 65 mph).
+        </s>
+        <s pid="19" sid="4">
+         In blocks 7 through 9, the participants pressed 1 of the 2 buttons that had been assigned "speeding" and "not speeding" .
+        </s>
+        <s pid="19" sid="5">
+         The "speed limit" was considered to be 55 mph.
+        </s>
+        <s pid="19" sid="6">
+         In both protocols, the participants were instructed to assign one finger for each button.
+        </s>
+        <s pid="19" sid="7">
+         Also, before every block the test participants were given the instruction to "be as fast and as accurate as possible" .
+        </s>
+        <s pid="19" sid="8">
+         The first two blocks were practice in order to familiarize the test participants with the routine and system.
+        </s>
+        <s pid="19" sid="9">
+         Block 7 was also practice because of the new response protocol.
+        </s>
+        <s pid="19" sid="10">
+         The practice blocks had one large difference from the testing blocks.
+        </s>
+        <s pid="19" sid="11">
+         In the practice blocks no speedometers were shown, only 3 boxes, each with a word in them.
+        </s>
+        <s pid="19" sid="12">
+         Only one box actually had a correct spelling of fifty, fifty-five, sixty or sixty-five.
+        </s>
+        <s pid="19" sid="13">
+         The one correctly spelled speed was viewed as the speedometer reading for the trial.
+        </s>
+        <s pid="19" sid="14">
+         This difference was to make sure that the test participants did not get any practice at looking at any speedometer before they were tested on it.
+        </s>
+        <s pid="19" sid="15">
+         Also, between each block, the test participants were shown their mean response time and error count of the previous block on the 2 televisions in the front of the room.
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         The speedometers were grouped into 2 groups.
+        </s>
+        <s pid="20" sid="2">
+         Speedometers 1 and 2 were group A and speedometers 3 and 4 were group B.
+        </s>
+        <s pid="20" sid="3">
+         Only one group was shown per block of trials.
+        </s>
+        <s pid="20" sid="4">
+         Within each block, the 2 speedometers of the group as well as the reading on them would randomly change from trial to trial.
+        </s>
+        <s pid="20" sid="5">
+         Table 2 displays each block with its respective parameters.
+        </s>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         Table 2: Individual Block Descriptions
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="22" sid="1">
+         *
+        </s>
+        <s pid="22" sid="2">
+         The first trial of block 5 had an error and was considered junk.
+        </s>
+        <s pid="22" sid="3">
+         This means that there were only 31 legitimate trials in block 5.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Results
+      </div>
+      <div>
+       <div class="head_2">
+        Task Condition Comparison
+       </div>
+       <p>
+        <s pid="23" sid="1">
+         The first step in analyzing the data was look at the summary data of each block with respect to each speedometer.
+        </s>
+        <s pid="23" sid="2">
+         Table 3 displays each speedometer's average response time for each block in which the speedometer was shown.
+        </s>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         Table 3: Average Response Time (s) for Each Speedometer in Each Block
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="25" sid="1">
+         Table 4 displays the average error percentage rate and average miss percentage rate for each speedometer.
+        </s>
+       </p>
+       <p>
+        <s pid="26" sid="1">
+         Table 4: Average Error and Miss Percentage Rates
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="27" sid="1">
+         Comparing blocks 3 and 5 (the blocks with prolonged speedometer exposure duration), patterns become apparent.
+        </s>
+        <s pid="27" sid="2">
+         Speedometer 2 had the lowest average response time and the lowest error and miss percentage rates.
+        </s>
+        <s pid="27" sid="3">
+         Speedometer 1 was very close in average response time, but not as close in error rate.
+        </s>
+        <s pid="27" sid="4">
+         Speedometers 3 and 4 seem to be stratified from speedometers 1 and 2 in response time.
+        </s>
+        <s pid="27" sid="5">
+         One possible explanation for these differences can be in the overall size of speedometers 1 and 2 versus 3 and 4.
+        </s>
+        <s pid="27" sid="6">
+         Speedometer set A averaged much larger character strokewidth, character height, and speedometer radius than speedometer set B, accounting for the large difference in task performances.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         Comparing blocks 4 and 6 (the blocks with shortened speedometer exposure duration), similar patterns become apparent.
+        </s>
+        <s pid="28" sid="2">
+         Overall, the average response times were all reduced from blocks 3 and 5.
+        </s>
+        <s pid="28" sid="3">
+         Also, as with blocks 3 and 5, speedometer set A is stratified from speedometer set B in that it has much lower average response times.
+        </s>
+        <s pid="28" sid="4">
+         Overall, average error and miss percentage rates were much higher than in blocks 3 and 5 due to the shortened exposure time for the blocks.
+        </s>
+        <s pid="28" sid="5">
+         This shows that as response time decreased, error and miss percentage rate increased.
+        </s>
+        <s pid="28" sid="6">
+         The error rates for all the speedometers were about equal, however, the average miss percentage rates for set B were double that of set A.
+        </s>
+        <s pid="28" sid="7">
+         This can also be attributed to the overall size difference of the speedometer parameters.
+        </s>
+       </p>
+       <p>
+        <s pid="29" sid="1">
+         When the task condition changed to whether or not the car was "speeding" , the patterns remained the same.
+        </s>
+        <s pid="29" sid="2">
+         Speedometer set A had lower average response times than set B, as well as having lower average error rate percentages.
+        </s>
+        <s pid="29" sid="3">
+         Overall speedometer response times as well as error and miss percentage rates did decrease due to the lower number of response choices.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Speedometer and Design Feature Comparison
+       </div>
+       <p>
+        <s pid="30" sid="1">
+         The overall size increase of many speedometer design parameters between speedometer set A to set B seem to have accounted for the overall lower average response times and lower average error and miss percentage rates.
+        </s>
+        <s pid="30" sid="2">
+         However, other design differences, such as location of the speedometer on the instrument display panel, did not have such influential effects on the data.
+        </s>
+        <s pid="30" sid="3">
+         Comparing speedometers 1 and 4 (speedometer on left side) to speedometers 2 and 3 (speedometer on right side) only one small pattern was seen.
+        </s>
+        <s pid="30" sid="4">
+         Speedometers 2 and 3 had, compared to their respective speedometer set, slightly lower average response times than the other speedometer in the set.
+        </s>
+        <s pid="30" sid="5">
+         Whether or not this small difference in average response time can be attributed to the location of the speedometers on the instrument display panel was not possible.
+        </s>
+       </p>
+       <p>
+        <s pid="31" sid="1">
+         Other major differences in design features within speedometer set B also seemed to have little effect on the data.
+        </s>
+        <s pid="31" sid="2">
+         Speedometer 4 had a different character color, location, numbering scale and character height than speedometer 3.
+        </s>
+        <s pid="31" sid="3">
+         However, the differences did not produce much stratification in the data.
+        </s>
+        <s pid="31" sid="4">
+         Speedometer 4 had slightly lower average error and miss percentage rates than speedometer 3 while speedometer 3 had slightly lower average response times than speedometer 4.
+        </s>
+        <s pid="31" sid="5">
+         From prior established patterns, the speedometer with larger character height (speedometer 4 in this case) should have had lower average response times and error and miss percentage rates.
+        </s>
+        <s pid="31" sid="6">
+         Although speedometer 4 did have lower error and miss percentage rates, it did not have lower average response times.
+        </s>
+        <s pid="31" sid="7">
+         Therefore, it is possible that the combined differences in speedometer design between speedometers 3 and 4 caused speedometer 4 to be slightly less legible than speedometer 3.
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Speedometers 1 and 2 differed in location and radius size.
+        </s>
+        <s pid="32" sid="2">
+         However, the speedometers differed only slightly in average response times and error and miss percentage rates.
+        </s>
+        <s pid="32" sid="3">
+         Speedometer 2 consistently had the lowest average response time as well as having the lower average error and miss percentage rates (except in one instance).
+        </s>
+        <s pid="32" sid="4">
+         The effect of location, as discussed earlier, was not clear.
+        </s>
+        <s pid="32" sid="5">
+         However, the larger radius of speedometer 2 could of caused the small differences in the data.
+        </s>
+        <s pid="32" sid="6">
+         This inference continues the pattern concerning the size of speedometer parameters.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Effects of Individual Test Participant Differences
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         It is necessary to examine the effects of the test participant differences in order to find any discrepancies in the data.
+        </s>
+        <s pid="33" sid="2">
+         The relevant differences examined were sex, handedness, visibility (defined as the need of correctional lenses vs. no need), and distance from the projection screen.
+        </s>
+        <s pid="33" sid="3">
+         The first step in evaluating the effect of the test participant differences was to compare how each of the 4 modeled differences affected the average response times and total incorrect (errors and misses) responses.
+        </s>
+        <s pid="33" sid="4">
+         The discrepancies in average response times for most of the test participant differences were very small (less than 0.060 s).
+        </s>
+        <s pid="33" sid="5">
+         The same result occurred for the average incorrect responses.
+        </s>
+        <s pid="33" sid="6">
+         The sample size of test participants was also small, making almost all inferences impossible.
+        </s>
+        <s pid="33" sid="7">
+         However, the one individual difference that did stick out as possibly meaningful was sex.
+        </s>
+        <s pid="33" sid="8">
+         The average response times for males were, on average, 0.111 s faster than for females.
+        </s>
+        <s pid="33" sid="9">
+         Also, the average total incorrect responses for the males was 6.3 less than for females.
+        </s>
+        <s pid="33" sid="10">
+         One explanation for this difference can be attributed to the test sequence.
+        </s>
+        <s pid="33" sid="11">
+         Due to the 2 televisions, all the participants could see each other's average response times after every block, creating a small competition in which males are commonly known to be more aggressive and competitive.
+        </s>
+        <s pid="33" sid="12">
+         This would explain the reason for the 0.111 s lower male average response time.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Optimal Speedometer Comparison
+       </div>
+       <p>
+        <s pid="34" sid="1">
+         In order to find the best speedometer of the 4 examined, it is required to first define which task condition is being used.
+        </s>
+        <s pid="34" sid="2">
+         For the task condition of reading the exact speed (4 choices), speedometer 2 was clearly the optimal speedometer.
+        </s>
+        <s pid="34" sid="3">
+         It consistently had the lowest average response time and average miss percentage rate.
+        </s>
+        <s pid="34" sid="4">
+         It had the lowest average error rate percentage one of the two 4 choice blocks.
+        </s>
+       </p>
+       <p>
+        <s pid="35" sid="1">
+         For the task condition of "speeding" versus "non-speeding" (2 choices), the decision was not as simple.
+        </s>
+        <s pid="35" sid="2">
+         Although speedometer 2 had the lowest average response time, it had 6 errors.
+        </s>
+        <s pid="35" sid="3">
+         Speedometer 1 had a slightly larger average response time with 4 errors.
+        </s>
+        <s pid="35" sid="4">
+         However, the task performance measurement that becomes more important in the selection criteria for this task condition should be the average response time.
+        </s>
+        <s pid="35" sid="5">
+         This is because the most important task while driving is to have your eyes on the road.
+        </s>
+        <s pid="35" sid="6">
+         Whether you are mistaken in your knowledge of speeding or not speeding is generally not as important to your safety as the time you look away from the road.
+        </s>
+        <s pid="35" sid="7">
+         Therefore, the optimal speedometer for this task condition was also speedometer 2.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusions
+      </div>
+      <p>
+       <s pid="36" sid="1">
+        The relationships between speedometer design parameters, task condition and task performance were not obvious or clear given the collected data.
+       </s>
+       <s pid="36" sid="2">
+        However, some inferences can be drawn.
+       </s>
+       <s pid="36" sid="3">
+        For example, the larger the character height, character strokewidth and radius, no matter what the task condition, the more the task performance improved.
+       </s>
+       <s pid="36" sid="4">
+        This was shown in the stratification between speedometer sets A and B for all task conditions in the task performance measurements.
+       </s>
+       <s pid="36" sid="5">
+        This pattern was also visible when speedometers 1 and 2 were compared based on their radius size.
+       </s>
+       <s pid="36" sid="6">
+        Conclusions about the effects of location, character color and numbering scale were not possible.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        Using the relationships found above as well as the data collected, the optimal speedometers for each task condition were found.
+       </s>
+       <s pid="37" sid="2">
+        Using low response time and incorrect response rate as the criteria, speedometer 2 was selected the optimal speedometer for both task conditions.
+       </s>
+       <s pid="37" sid="3">
+        One interesting point was the difference in importance between response time and incorrect response rate.
+       </s>
+       <s pid="37" sid="4">
+        This was concluded due to the natural consequence of not having your eyes on the road.
+       </s>
+       <s pid="37" sid="5">
+        The safety issues concerning the amount of time your eyes are off the road are generally more severe than incorrect knowledge of whether you are speeding.
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        Revisions in the experiment could prove to be very helpful.
+       </s>
+       <s pid="38" sid="2">
+        For example, due to the poor choice of speedometers, it was very difficult to assign the causes of differences in task performance to attributes of the speedometers.
+       </s>
+       <s pid="38" sid="3">
+        Speedometers with similar characteristics and one large difference should have been chosen for the experiment such that the process of assigning the causes of differences in the data could have been clearer.
+       </s>
+       <s pid="38" sid="4">
+        Also, a larger sample size of test participants as well as testing blocks should have been used to increase confidence in the inferences made.
+       </s>
+       <s pid="38" sid="5">
+        With these changes, the experiment could be much more effective in answering the objectives stated.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Appendix A: Test Participant Data
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

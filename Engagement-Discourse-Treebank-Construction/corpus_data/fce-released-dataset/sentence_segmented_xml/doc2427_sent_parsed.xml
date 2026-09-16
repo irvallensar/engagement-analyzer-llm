@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     35.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Monday, the 5th of June 2000
+      </p>
+      <p>
+       To the Circle Theatre's manager
+      </p>
+      <p>
+       Dear
+       <ns type="RN">
+        <i>
+         Mister
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       I recently had the opportunity to see "over the rainbow"
+       <ns type="MP">
+       </ns>
+       which was
+       <ns type="RV">
+        <i>
+         played
+        </i>
+       </ns>
+       last week in the Circle theatre.
+      </p>
+      <p>
+       I'm writing to you because I'm very disappointed by the bad evening I
+       <ns type="RV">
+        <i>
+         spent
+        </i>
+       </ns>
+       there. Actually, I read the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       for the show and there were a few mistakes
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       In fact, Danny Brook didn't
+       <ns type="RV">
+        <i>
+         play
+        </i>
+       </ns>
+       or appear on stage last Tuesday,
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       role was played by another - a quite bad - actor, less famous than Danny Brook.
+      </p>
+      <p>
+       I'm also
+       <ns type="RJ">
+        <i>
+         sorry
+        </i>
+       </ns>
+       because I had to wait 45
+       <ns type="L">
+        <i>
+         mn
+        </i>
+       </ns>
+       before the
+       <ns type="RN">
+        <i>
+         pieces
+        </i>
+       </ns>
+       started. I can't accept waiting so long for the result I had. I was in London with some friends (we
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       students) and no discount was
+       <ns type="RV">
+        <i>
+         proposed
+        </i>
+       </ns>
+       or
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       us. We had to pay £15 each
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         seeing
+        </i>
+       </ns>
+       a miserable
+       <ns type="RN">
+        <i>
+         pieces
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After the
+       <ns type="RN">
+        <i>
+         piece
+        </i>
+       </ns>
+       , we
+       <ns type="RV">
+        <i>
+         waned
+        </i>
+       </ns>
+       to eat at the
+       <ns type="SA">
+        <i>
+         theater
+        </i>
+       </ns>
+       restaurant but we couldn't. It was apparently closed and I'm asking you why.
+      </p>
+      <p>
+       As you can see, there are some (
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           volontary
+          </i>
+         </ns>
+        </i>
+       </ns>
+       ?) mistakes
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       you made. We didn't have a "perfect evening out" at all. That's why I'm asking you
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         giving
+        </i>
+       </ns>
+       us
+       <ns type="MD">
+       </ns>
+       money back.
+      </p>
+      <p>
+       I'm sure we'll find a compromise and I'm really looking forward to hearing from you soon.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Monday, the 5th of June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        To the Circle Theatre's manager
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Dear Mister,
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I recently had the opportunity to see "over the rainbow" which was played last week in the Circle theatre.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I'm writing to you because I'm very disappointed by the bad evening I spent there.
+       </s>
+       <s pid="5" sid="2">
+        Actually, I read the advertisment for the show and there were a few mistakes on it.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In fact, Danny Brook didn't play or appear on stage last Tuesday, the role was played by another - a quite bad - actor, less famous than Danny Brook.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm also sorry because I had to wait 45 mn before the pieces started.
+       </s>
+       <s pid="7" sid="2">
+        I can't accept waiting so long for the result I had.
+       </s>
+       <s pid="7" sid="3">
+        I was in London with some friends (we were students) and no discount was proposed or made for us.
+       </s>
+       <s pid="7" sid="4">
+        We had to pay £15 each for seeing a miserable pieces.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        After the piece, we waned to eat at the theater restaurant but we couldn't.
+       </s>
+       <s pid="8" sid="2">
+        It was apparently closed and I'm asking you why.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        As you can see, there are some (volontary?) mistakes on the advertisment you made.
+       </s>
+       <s pid="9" sid="2">
+        We didn't have a "perfect evening out" at all.
+       </s>
+       <s pid="9" sid="3">
+        That's why I'm asking you for giving us  money back.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I'm sure we'll find a compromise and I'm really looking forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       An unusual part of life.
+      </p>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets, and half a week later, all the school knew about me.
+      </p>
+      <p>
+       I had a strange feeling then because it was just amazing to
+       <ns type="RV">
+        <i>
+         notice
+        </i>
+       </ns>
+       how money can attract so
+       <ns type="CQ">
+        <i>
+         much
+        </i>
+       </ns>
+       people.
+      </p>
+      <p>
+       I started to have a lot of new friends, they all wanted to be my best friend.
+      </p>
+      <p>
+       Actually,
+       <ns type="W">
+        <i>
+         my best friend would still remain Pat
+        </i>
+       </ns>
+       , even if he failed me. It's not easy to keep such an enormous secret and I couldn't keep it inside
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       me.
+      </p>
+      <p>
+       I
+       <ns type="W">
+        <i>
+         became quickly
+        </i>
+       </ns>
+       bored by this
+       <ns type="S">
+        <i>
+         hypocrital
+        </i>
+       </ns>
+       attention they
+       <ns type="RV">
+        <i>
+         had for
+        </i>
+       </ns>
+       me. They didn't stop giving me advice or telling me what to do with my money. I always
+       <ns type="AGV">
+        <i>
+         has
+        </i>
+       </ns>
+       been involved in many
+       <ns type="IJ">
+        <i>
+         differents
+        </i>
+       </ns>
+       associations, which are fighting against AIDS or cancer. I knew at this moment
+       <ns type="W">
+        <i>
+         what to do exactly
+        </i>
+       </ns>
+       and
+       <ns type="MP">
+       </ns>
+       finally, I could
+       <ns type="RV">
+        <i>
+         refind
+        </i>
+       </ns>
+       my ordinary life as an unpopular student.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        An unusual part of life.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="2" sid="2">
+        Pat wasn't very good at keeping secrets, and half a week later, all the school knew about me.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I had a strange feeling then because it was just amazing to notice how money can attract so much people.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I started to have a lot of new friends, they all wanted to be my best friend.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Actually, my best friend would still remain Pat, even if he failed me.
+       </s>
+       <s pid="5" sid="2">
+        It's not easy to keep such an enormous secret and I couldn't keep it inside of me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I became quickly bored by this hypocrital attention they had for me.
+       </s>
+       <s pid="6" sid="2">
+        They didn't stop giving me advice or telling me what to do with my money.
+       </s>
+       <s pid="6" sid="3">
+        I always has been involved in many differents associations, which are fighting against AIDS or cancer.
+       </s>
+       <s pid="6" sid="4">
+        I knew at this moment what to do exactly and finally, I could refind my ordinary life as an unpopular student.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

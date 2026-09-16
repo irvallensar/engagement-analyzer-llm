@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      31-40
+     </age>
+    </personnel>
+    <score>
+     21.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       To Competition Organiser
+      </p>
+      <p>
+       Helen Ryan
+      </p>
+      <p>
+       Thank you for choosing me in your competition for first prize. I feel very happy
+       <ns type="R">
+        <i>
+         a
+        </i>
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       <ns type="AS">
+        <i>
+         answer
+         <ns type="S">
+          <i>
+           immidiatly
+          </i>
+         </ns>
+         to your letter
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I would like to travel only in July, because I will have
+       <ns type="MD">
+       </ns>
+       holiday
+       <ns type="MT">
+       </ns>
+       that time. I'm always having holidays in July
+       <ns type="MP">
+        <i>
+         it
+        </i>
+       </ns>
+       is my
+       <ns type="SA">
+        <i>
+         favorite
+        </i>
+       </ns>
+       time for holidays.
+      </p>
+      <p>
+       For accommodation at Camp California I prefer tents, because I
+       <ns type="TV">
+        <i>
+         use
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         go
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       tents
+       <ns type="M">
+       </ns>
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I like it.
+      </p>
+      <p>
+       From
+       <ns type="MD">
+       </ns>
+       activities which you offer
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       me I choose swimming and tennis. I am very good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       swimming. I
+       <ns type="TV">
+        <i>
+         do
+        </i>
+       </ns>
+       this sport since I was
+       <ns type="MD">
+       </ns>
+       child and I really enjoy it. I'm not so good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       tennis but I would like to play it
+       <ns type="R">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         practise
+        </i>
+       </ns>
+       . Also I find that
+       <ns type="R">
+        <i>
+         it
+        </i>
+       </ns>
+       sport is very
+       <ns type="RJ">
+        <i>
+         <ns type="DJ">
+          <i>
+           usefull
+          </i>
+         </ns>
+        </i>
+       </ns>
+       for my health and
+       <ns type="RV">
+        <i>
+         does
+        </i>
+       </ns>
+       me feel better.
+       <ns type="R">
+        It is all about me
+       </ns>
+       .
+      </p>
+      <p>
+       I would like to ask you something.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       ,
+       <ns type="RA">
+        <i>
+         which
+        </i>
+       </ns>
+       kind of clothes
+       <ns type="MV">
+       </ns>
+       I need
+       <ns type="FV">
+        <i>
+         take
+        </i>
+       </ns>
+       with me, because I don't know anything about the weather in California, and
+       <ns type="R">
+        at tend
+       </ns>
+       how much money
+       <ns type="W">
+        <i>
+         I will
+        </i>
+       </ns>
+       need
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To Competition Organiser
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Helen Ryan
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Thank you for choosing me in your competition for first prize.
+       </s>
+       <s pid="3" sid="2">
+        I feel very happy a I  answer immidiatly to your letter.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to travel only in July, because I will have  holiday  that time.
+       </s>
+       <s pid="4" sid="2">
+        I'm always having holidays in July it is my favorite time for holidays.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For accommodation at Camp California I prefer tents, because I use to go  tents  holidays, I like it.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        From  activities which you offer to me I choose swimming and tennis.
+       </s>
+       <s pid="6" sid="2">
+        I am very good in swimming.
+       </s>
+       <s pid="6" sid="3">
+        I do this sport since I was  child and I really enjoy it.
+       </s>
+       <s pid="6" sid="4">
+        I'm not so good in tennis but I would like to play it for practise.
+       </s>
+       <s pid="6" sid="5">
+        Also I find that it sport is very usefull for my health and does me feel better.
+       </s>
+       <s pid="6" sid="6">
+        It is all about me.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I would like to ask you something.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        At first, which kind of clothes  I need take with me, because I don't know anything about the weather in California, and at tend how much money I will need.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable.
+      </p>
+      <p>
+       Some people
+       <ns type="AGV">
+        <i>
+         likes
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       shopping. I hate it. I
+       <ns type="TV">
+        <i>
+         never liked
+        </i>
+       </ns>
+       shopping. It
+       <ns type="TV">
+        <i>
+         always was
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         trouble
+        </i>
+       </ns>
+       for me.
+      </p>
+      <p>
+       I don't like to have many things in my house
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I don't like to have many clothes and shoes, and I don't know what else. Just
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         nesseccary
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I think the people who
+       <ns type="TV">
+        <i>
+         are enjoying
+        </i>
+       </ns>
+       shopping
+       <ns type="UA">
+        <i>
+         they
+        </i>
+       </ns>
+       are
+       <ns type="S">
+        <i>
+         greede
+        </i>
+       </ns>
+       for materialistic things and they
+       <ns type="S">
+        <i>
+         havn't
+        </i>
+       </ns>
+       <ns type="MQ">
+       </ns>
+       interests
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       spirit (?),
+       <ns type="M">
+       </ns>
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           intelect
+          </i>
+         </ns>
+        </i>
+       </ns>
+       life. They are
+       <ns type="RV">
+        <i>
+         <ns type="RV">
+          <i>
+           loosing
+          </i>
+         </ns>
+        </i>
+       </ns>
+       time
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       their life for nothing. In my opinion we must spend more time
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       more interesting
+       <ns type="W">
+        <i>
+         than shopping things
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       like sport, reading,
+       <ns type="IV">
+        <i>
+         chating
+        </i>
+       </ns>
+       about ideas which make our lives better. We must do something
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         help
+        </i>
+       </ns>
+       other people to feel better and
+       <ns type="MV">
+       </ns>
+       <ns type="DJ">
+        <i>
+         usefull
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Some people likes to do shopping.
+       </s>
+       <s pid="2" sid="2">
+        I hate it.
+       </s>
+       <s pid="2" sid="3">
+        I never liked shopping.
+       </s>
+       <s pid="2" sid="4">
+        It always was  trouble for me.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I don't like to have many things in my house, I don't like to have many clothes and shoes, and I don't know what else.
+       </s>
+       <s pid="3" sid="2">
+        Just  nesseccary.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think the people who are enjoying shopping they are greede for materialistic things and they havn't  interests for  spirit (?),  intelect life.
+       </s>
+       <s pid="4" sid="2">
+        They are loosing time of their life for nothing.
+       </s>
+       <s pid="4" sid="3">
+        In my opinion we must spend more time for more interesting than shopping things like sport, reading, chating about ideas which make our lives better.
+       </s>
+       <s pid="4" sid="4">
+        We must do something for help other people to feel better and  usefull.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

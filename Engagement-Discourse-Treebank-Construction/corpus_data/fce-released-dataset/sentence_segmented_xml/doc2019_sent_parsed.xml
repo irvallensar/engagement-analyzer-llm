@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="MJ">
+       </ns>
+       <ns type="RN">
+        <i>
+         Mr/Mrs
+        </i>
+       </ns>
+       <ns type="U">
+        <i>
+         ... manager
+        </i>
+       </ns>
+      </p>
+      <p>
+       I am writing to you about your musical show "OVER THE RAINBOW". I
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           have come
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and
+       <ns type="TV">
+        <i>
+         see
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       the theatre but I
+       <ns type="TV">
+        <i>
+         am
+        </i>
+       </ns>
+       very disappointed. I
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           have come
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to see a good
+       <ns type="RN">
+        <i>
+         theatre
+        </i>
+       </ns>
+       but I did not. Danny Brook was
+       <ns type="RV">
+        <i>
+         going
+        </i>
+       </ns>
+       to be the starring actor but he
+       <ns type="S">
+        <i>
+         wasn
+        </i>
+       </ns>
+       not,
+       <ns type="MQ">
+       </ns>
+       actor took his place. That was very disappointing. The play was
+       <ns type="RV">
+        <i>
+         going
+        </i>
+       </ns>
+       to start at 19.30 but
+       <ns type="R">
+        <i>
+         is
+        </i>
+       </ns>
+       was very
+       <ns type="TV">
+        <i>
+         delay
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       It
+       <ns type="TV">
+        <i>
+         start
+        </i>
+       </ns>
+       at 20.15.
+      </p>
+      <p>
+       And this is not all
+       <ns type="MP">
+       </ns>
+       there is more. In the advertisement you
+       <ns type="RV">
+        <i>
+         write
+        </i>
+       </ns>
+       that there is
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         biscount
+        </i>
+       </ns>
+       available but
+       <ns type="RA">
+        <i>
+         <ns type="RP">
+          <i>
+           It
+          </i>
+         </ns>
+        </i>
+       </ns>
+       was not. Also the restaurant was closed because there was not
+       <ns type="W">
+        <i>
+         left any food
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I think the next time you
+       <ns type="RV">
+        write
+       </ns>
+       an
+       <ns type="S">
+        <i>
+         advertiment
+        </i>
+       </ns>
+       you
+       <ns type="MV">
+       </ns>
+       <ns type="RV">
+        <i>
+         write
+        </i>
+       </ns>
+       <ns type="U">
+        <i>
+         it with
+        </i>
+       </ns>
+       the right information.
+      </p>
+      <p>
+       I did not have a perfect evening with so many
+       <ns type="S">
+        <i>
+         proplems
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         . So
+        </i>
+       </ns>
+       I am asking
+       <ns type="MA">
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           retern
+          </i>
+         </ns>
+        </i>
+       </ns>
+       me some money back.
+      </p>
+      <p>
+       I hope to hear from you soon
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours
+       <ns type="S">
+        <i>
+         fouthfouly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Mr/Mrs... manager
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to you about your musical show "OVER THE RAINBOW".
+       </s>
+       <s pid="2" sid="2">
+        I have come and see  the theatre but I am very disappointed.
+       </s>
+       <s pid="2" sid="3">
+        I have come to see a good theatre but I did not.
+       </s>
+       <s pid="2" sid="4">
+        Danny Brook was going to be the starring actor but he wasn not,  actor took his place.
+       </s>
+       <s pid="2" sid="5">
+        That was very disappointing.
+       </s>
+       <s pid="2" sid="6">
+        The play was going to start at 19.30 but is was very delay
+       </s>
+       <s pid="2" sid="7">
+        It start at 20.15.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        And this is not all there is more.
+       </s>
+       <s pid="3" sid="2">
+        In the advertisement you write that there is  biscount available but It was not.
+       </s>
+       <s pid="3" sid="3">
+        Also the restaurant was closed because there was not left any food.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think the next time you write an advertiment you  write it with the right information.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I did not have a perfect evening with so many proplems.
+       </s>
+       <s pid="5" sid="2">
+        So I am asking  to retern me some money back.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope to hear from you soon
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours fouthfouly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="MV">
+        <i>
+         <ns type="S">
+          <i>
+           Techology
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         is
+        </i>
+       </ns>
+       a bad or a good
+       <ns type="DN">
+        <i>
+         efection
+        </i>
+       </ns>
+       ? What does it offer to us? How
+       <ns type="MV">
+       </ns>
+       people use modern technology?
+       <ns type="MP">
+        <i>
+         Let
+        </i>
+       </ns>
+       see if we use
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       modern technology
+       <ns type="MP">
+       </ns>
+       <ns type="MC">
+       </ns>
+       we
+       <ns type="UV">
+        <i>
+         may
+        </i>
+       </ns>
+       have good
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       bad results.
+      </p>
+      <p>
+       In
+       <ns type="MD">
+       </ns>
+       <ns type="MP">
+        <i>
+         18
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         cetury
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       technology started to grow more and more
+       <ns type="MC">
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="MP">
+        <i>
+         20
+        </i>
+       </ns>
+       century
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           named
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the century of technology. During that time technology made a great step
+       <ns type="MY">
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Thechnology
+        </i>
+       </ns>
+       helps people. It informs people,
+       <ns type="FN">
+        <i>
+         hospital
+        </i>
+       </ns>
+       use modern
+       <ns type="S">
+        <i>
+         technogoly
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       <ns type="MC">
+       </ns>
+       <ns type="MD">
+       </ns>
+       computer helps
+       <ns type="R">
+        staders
+       </ns>
+       <ns type="MC">
+       </ns>
+       <ns type="AGV">
+        <i>
+         help
+        </i>
+       </ns>
+       people do their job.
+      </p>
+      <p>
+       But modern technology
+       <ns type="AGV">
+        <i>
+         do
+        </i>
+       </ns>
+       a lot of bad
+       <ns type="SX">
+        <i>
+         thinks
+        </i>
+       </ns>
+       . A lot of
+       <ns type="AGN">
+        <i>
+         <ns type="RN">
+          <i>
+           county
+          </i>
+         </ns>
+        </i>
+       </ns>
+       buy
+       <ns type="S">
+        <i>
+         gans
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       for their
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           safty
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UC">
+        <i>
+         as
+        </i>
+       </ns>
+       they say
+       <ns type="MP">
+       </ns>
+       but they buy them
+       <ns type="SX">
+        <i>
+         do
+        </i>
+       </ns>
+       kill people.
+      </p>
+      <p>
+       Modern technology is
+       <ns type="RV">
+        <i>
+         effecting
+        </i>
+       </ns>
+       people
+       <ns type="M">
+       </ns>
+       good and bad way. We have to be very careful with technology.
+       <ns type="S">
+        <i>
+         Technogoly
+        </i>
+       </ns>
+       <ns type="X">
+        <i>
+         can't never
+        </i>
+       </ns>
+       stop going forward
+       <ns type="MP">
+       </ns>
+       <ns type="MC">
+       </ns>
+       so people always go
+       <ns type="S">
+        <i>
+         farward
+        </i>
+       </ns>
+       but with
+       <ns type="MD">
+       </ns>
+       same
+       <ns type="R">
+        effection of
+       </ns>
+       modern
+       <ns type="S">
+        <i>
+         techology
+        </i>
+       </ns>
+       . Technology is in our
+       <ns type="FN">
+        <i>
+         life
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Techology is a bad or a good efection?
+       </s>
+       <s pid="1" sid="2">
+        What does it offer to us?
+       </s>
+       <s pid="1" sid="3">
+        How  people use modern technology?
+       </s>
+       <s pid="1" sid="4">
+        Let see if we use the modern technology  we may have good and bad results.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In  18 cetury technology started to grow more and more   20 century named the century of technology.
+       </s>
+       <s pid="2" sid="2">
+        During that time technology made a great step .
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Thechnology helps people.
+       </s>
+       <s pid="3" sid="2">
+        It informs people, hospital use modern technogoly   computer helps staders  help people do their job.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But modern technology do a lot of bad thinks.
+       </s>
+       <s pid="4" sid="2">
+        A lot of county buy gans for their safty as they say but they buy them do kill people.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Modern technology is effecting people  good and bad way.
+       </s>
+       <s pid="5" sid="2">
+        We have to be very careful with technology.
+       </s>
+       <s pid="5" sid="3">
+        Technogoly can't never stop going forward  so people always go farward but with  same effection of modern techology.
+       </s>
+       <s pid="5" sid="4">
+        Technology is in our life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

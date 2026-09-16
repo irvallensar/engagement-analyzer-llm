@@ -1,0 +1,1532 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Thermoelectric Waste Heat Recovery for a Toyota Prius
+     </div>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       Manufacturers and consumers of automobiles have a large interest in increased automobile energy efficiency. By integrating a thermoelectric generator (TEG) system to currently existing exhaust systems it is possible to recover heat energy lost through exhaust. We determined the practicality and feasibility of the integration of such a system in a Toyota Prius. Using a fractional factorial Design of Experiments (DOE) we analyzed the thermoelectric cycle to optimize system performance. In addition, we determined the level of improvements in TEG systems that need to be made to make it cost beneficial.
+      </p>
+      <p>
+       ﻿
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        In the average internal combustion enginedriven automobile, only 25% of the energy generated from combustion can be used by the vehicle for mobility and accessories.
+       </s>
+       <s pid="1" sid="2">
+        The rest of the combustion energy is wasted, including 40% that is lost to exhaust gas [1].
+       </s>
+       <s pid="1" sid="3">
+        Various methods have been developed to try to recover some of this lost energy, including turbogenerators, Rankine Cycle recovery systems, thermochemical recuperation, and thermoelectric generators (TEGs) [2].
+       </s>
+       <s pid="1" sid="4">
+        Additionally, some hybrid cars including the Toyota Prius use regenerative braking to recover some of the kinetic energy lost when stopping the vehicle [3].
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Thermoelectric generators are attractive potential waste heat recovery systems because they are relatively inexpensive, have no moving parts (and thus produce no noise and no vibrations), and are highly reliable [4].
+       </s>
+       <s pid="2" sid="2">
+        Previous studies have attempted to develop TEG systems for waste energy recovery in light trucks [5][6][7], but these studies have not considered lighter cars with hybrid engines such as the Prius.
+       </s>
+       <s pid="2" sid="3">
+        In addition, previous researchers have not specifically taken into account the driving habits of university students.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        In this study, we investigated the possibility of developing a waste heat recovery system mounted on the exhaust system of the Toyota Prius as driven by college students using TEGs coupled with heat sinks mounted on the exhaust system of the vehicle.
+       </s>
+       <s pid="3" sid="2">
+        Specifically our goals for this study were as follows:
+       </s>
+      </p>
+      <list>
+       <item>
+        1 Determine the average driving conditions for college students.
+       </item>
+       <item>
+        2 Find the TEGheat sink configuration for optimum power output for our smallscale laboratory setup.
+       </item>
+       <item>
+        3 Develop a mathematical model to extrapolate experimental data to realworld conditions based on our driving conditions survey.
+       </item>
+       <item>
+        4 Assess the feasibility of implementing a TEGbased energy recovery system in the Toyota Prius.
+       </item>
+      </list>
+     </div>
+     <div>
+      <div class="head_1">
+       NOMENCLATURE
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        All variables used throughout this report have been defined in Table 1, below.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        Table 1. Variable names and definitions used throughout the document
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       METHODS
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        We considered the effects of heat sink size, pin shape, pin height, and pin density on the voltage output of a thermoelectric generator.
+       </s>
+       <s pid="6" sid="2">
+        In order to determine the effects of these factors with a minimal number of experiments, we used a fractional factorial DOE methodology and analyzed the results with an analysis of variance (ANOVA).
+       </s>
+       <s pid="6" sid="3">
+        We then predicted the optimum heat sink configuration for our application based on the ANOVA and design considerations.
+       </s>
+       <s pid="6" sid="4">
+        This configuration was then tested under various wind speeds and temperatures to extrapolate the
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        TEG’s performance at typical driving conditions as determined from a survey of college students.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        TEST EQUIPMENT
+       </s>
+      </p>
+      <list>
+       <item>
+        • Hewlett Packard E3631 Triple
+       </item>
+       <item>
+        • Barnstead Thermolyne Cimarec
+       </item>
+       <item>
+        • LabView v.8.2
+       </item>
+       <item>
+        • National Instruments Data Acquisition
+        <br/>
+        Hardware Part Numbers:
+       </item>
+       <item>
+        <list>
+         <item>
+          o 	NI SCXI1000
+         </item>
+         <item>
+          o 	NI SCXI1313
+         </item>
+         <item>
+          o 	NI SCXI1112
+         </item>
+        </list>
+       </item>
+       <item>
+        • HighZ HZ2 Thermoelectric Output DC Power Supply Generator Module (Bi2Te3)
+       </item>
+       <item>
+        • Ceramic Insulating Wafer Hot Plate
+       </item>
+       <item>
+        • Thermal Grease
+       </item>
+       <item>
+        • Alpha Novatech brand heat sinks
+       </item>
+       <item>
+        • SanAce 60 DC 12V Case Fan
+       </item>
+       <item>
+        • Microsoft Excel 2007
+       </item>
+       <item>
+        • 	MATLAB R2007a
+       </item>
+       <item>
+        • 	Mathematica 6.0
+       </item>
+       <item>
+        • 	Maple 11
+       </item>
+      </list>
+      <p>
+       <s pid="9" sid="1">
+        SURVEY DESIGN
+       </s>
+       <s pid="9" sid="2">
+        The purpose of our survey was to determine the driving conditions of the average collegeage driver.
+       </s>
+       <s pid="9" sid="3">
+        The survey was created and distributed using the website SurveyMonkey.com, and was taken by 168 college students.
+       </s>
+       <s pid="9" sid="4">
+        The results of this survey were used to estimate the temperature of the exhaust system of the Toyota Prius during average driving conditions.
+       </s>
+       <s pid="9" sid="5">
+        The survey questions and results can be found in Table 3, on page 10.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        DESIGN OF EXPERIMENTS
+       </s>
+       <s pid="10" sid="2">
+        The first step to developing our Design of Experiments (DOE) consisted of defining the factors that may affect the TEG output voltage.
+       </s>
+       <s pid="10" sid="3">
+        We tested the factors of heat sink (HS) shape, size, height, and the pin density.
+       </s>
+       <s pid="10" sid="4">
+        If we were to run tests on every possible combination of the four factors, we would have to run tests on 24=16 different operating conditions.
+       </s>
+       <s pid="10" sid="5">
+        To minimize the number of experiments, we ran a fractional factorial analysis using 12 different sets of operating conditions.
+       </s>
+       <s pid="10" sid="6">
+        This fractional factorial was determined from taking the full factorial and eliminating the heat sinks that were not provided in the laboratory.
+       </s>
+       <s pid="10" sid="7">
+        Table 2, below shows the fractional factorial DOE that was used in the experiment and the Alpha Novatech part number for each heat sink.
+       </s>
+       <s pid="10" sid="8">
+        The levels of all of the factors are also defined in Table 2, page 4.
+       </s>
+       <s pid="10" sid="9">
+        It should be noted that the levels were defined in a relative manner, so that the minus and plus designations indicate the smallest and largest values that we had available for each heat sink.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        The results of the fractional factorial analysis were used to determine the significant factors in TEG voltage output using an ANOVA statistical analysis.
+       </s>
+       <s pid="11" sid="2">
+        The ANOVA and power data from the initial tests were used to determine the best heat sink geometry.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        Table 2. Fractional factorial design of experiments used to determine the optimal heat sink.
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        DETERMINATION OF OPTIMAL HEAT SINK
+       </s>
+       <s pid="13" sid="2">
+        We ran smallscale tests on the TEG using 12 different heat sinks and a hotplate.
+       </s>
+       <s pid="13" sid="3">
+        A test was also run on the TEG without a heat sink.
+       </s>
+       <s pid="13" sid="4">
+        All tests were performed with an ambient temperature ranging from 2025°C.
+       </s>
+       <s pid="13" sid="5">
+        A TEG module was placed between two ceramic electrically insulating wafers and then placed on the center of the hotplate.
+       </s>
+       <s pid="13" sid="6">
+        The heat sink was then centered on top of the TEG module.
+       </s>
+       <s pid="13" sid="7">
+        Thermal grease was used to decrease contact resistance at each interface.
+       </s>
+       <s pid="13" sid="8">
+        The leads of the TEG were connected to a National Instruments data acquisition board across a load resistance matching the internal resistance of the TEG (4.0�).
+       </s>
+       <s pid="13" sid="9">
+        This setup is shown in Fig. 1, page 5.
+       </s>
+       <s pid="13" sid="10">
+        The voltage output from the TEG was measured by the data acquisition board and recorded with LabView software.
+       </s>
+       <s pid="13" sid="11">
+        In addition, two Ktype thermocouples were used to measure the temperature of the plate and the heat sink.
+       </s>
+       <s pid="13" sid="12">
+        The coldside thermocouple was placed in the middle of the base of the heat sink, and the hotside thermocouple was placed on the hot plate on the side of the TEG opposite from the fan.
+       </s>
+       <s pid="13" sid="13">
+        These temperatures were also recorded with the LabView software.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        A fan was placed to flow across the heat sink to simulate the air flow under a moving car.
+       </s>
+       <s pid="14" sid="2">
+        The fan was approximately 15cm from the TEG and was placed at approximately the same height as the base of the heat sink.
+       </s>
+       <s pid="14" sid="3">
+        The fan speed was kept constant at 2.7 ± 0.5 m/s for the initial set of tests.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        For each test defined in the DOE table, we placed the corresponding heat sink on top of the TEG, turned on the hotplate, and recorded the temperatures and voltage as the hotplate temperature increased to steady state.
+       </s>
+       <s pid="15" sid="2">
+        For our tests the steady state temperature was approximately
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        190±10°C.
+       </s>
+       <s pid="16" sid="2">
+        However, this was difficult to control due to high uncertainty and uneven temperature distribution produced by the hotplate.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Figure 1. Setup of TEG module between hotplate and heat sink for laboratory tests [1].
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        DETERMINATION OF LUMPED THERMAL CONDUCTIVITY OF TEG
+       </s>
+       <s pid="18" sid="2">
+        The readings of temperature with no heat sink present were used to determine the device efficiency, η, calculated using Eq.(1), below, which assumes an optimized TEG with a matched load resistance.
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (1)
+      <p>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        The thermoelectric figure of merit, ZT, under our test conditions was found using the following plots illustrated in Fig. 2, below.
+       </s>
+       <s pid="21" sid="2">
+        We evaluated the ZT value for a Bismuth Telluride (Bi2Te3) material, taking the average of the pand ntype values, at a temperature equal to the mean temperature of the test (~140°C).
+       </s>
+       <s pid="21" sid="3">
+        The resulting ZT value was approximately 0.7 for this case.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        Figure 2: Relationship of figure of merit values, semiconductor type, and material [1]
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        We then used the mechanical efficiency defined as the ratio of the electrical power generated to the thermal power into the device, given by Eqs. (2) and (3).
+       </s>
+       <s pid="23" sid="2">
+        This allowed us to determine the constant K for the TEG, which we assumed to be independent of temperature.
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        In these equations, the constant K (W/K) represents the lumped thermal conductivity of the TEG device, assuming it to be a semiinfinite slab according to heat transfer analysis.
+       </s>
+       <s pid="24" sid="2">
+        This constant incorporates the thermal conductivity, k, crosssectional area, A, and height, L, of the TEG.
+       </s>
+       <s pid="24" sid="3">
+        The Voltage is given by V and the resistance is defined by R, assuming a value of 4.0 Ohms according to manufacturer specifications [1].
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (2)
+      <p>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (3)
+      <p>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        DETERMINATION OF CONVECTIVE HEAT TRANSFER COEFFICIENT
+       </s>
+       <s pid="29" sid="2">
+        Using the optimal heat sink, with the simplified setup described by Fig. 3, page 7, we varied the air velocity &amp;lt;uf&amp;gt; using different fan speeds ranging from 0 m/s to 2.7 m/s.
+       </s>
+       <s pid="29" sid="3">
+        For our analysis, we neglected the contact and thermal resistance of the ceramic wafers, and assumed the hot plate temperature did not vary spatially under the TEG.
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        Since a gradient of temperature exists between the base of the heat sink, TL (where we measured), and the cold side of the TEG, we used the thermal conductivity of the TEG to predict the actual value by solving for TC using Eq. 4, below, which was determined by combining Eq. 2 and 3:
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (4)
+      <p>
+      </p>
+      <p>
+       <s pid="33" sid="1">
+        A heat transfer analysis using a conservation of energy approach for this setup resulted in Eq. 5 below.
+       </s>
+       <s pid="33" sid="2">
+        In this equation, the heat flux QH into the system is balanced by the convective heat transfer Qconvected out of the system and the power generated by the device.
+       </s>
+       <s pid="33" sid="3">
+        Equation 6, below, defines the convective heat transfer, where hA (W/K) is a measure of the convective heat transfer to the ambient.
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (5)
+      <p>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (6)
+      <p>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        Using the results of the optimal heat sink tests, we determined a relationship between the convective heat transfer coefficient, hA and the air velocity.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="39" sid="1">
+        Figure 3: Simplified diagram of tested TEG configuration
+       </s>
+      </p>
+      <p>
+       <s pid="40" sid="1">
+        EXTRAPOLATION TO REAL WORLD DRIVING CONDITIONS
+       </s>
+       <s pid="40" sid="2">
+        After determining the thermal constants associated with both the heat sink and the TEG, we predicted the device behavior at automotive conditions.
+       </s>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        We used the survey results to estimate TH at various points in the exhaust system (Fig. 7 on page 10).
+       </s>
+       <s pid="41" sid="2">
+        Combining equations (2) – (6) yielded Eq. (7), below.
+       </s>
+       <s pid="41" sid="3">
+        This equation was solved explicitly in terms of TC to estimate the cold side temperature of the TEG for the estimated TH, taking into account the higher convective heat transfer with a moving automobile.
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (7)
+      <p>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        We estimated the ambient temperature as 10˚C, which was determined to be an estimate for the average yearly temperature in Ann Arbor, MI [9].
+       </s>
+       <s pid="44" sid="2">
+        We used an iterative process to estimate the ZT value for various TE materials optimized for the calculated mean temperature and find Tc. This
+       </s>
+       <s pid="44" sid="3">
+        Tc value is then used in Eq. 4 to determine the output power.
+       </s>
+       <s pid="44" sid="4">
+        Since the TEG material we tested cannot withstand sustained temperatures greater than 250˚C [1], Fig. 4, on page 8, was used to estimate the figure of merit for various TE materials.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="45" sid="1">
+        Figure 4. Figure of Merit Values for Researched TEGs [10]
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        COST AND ENVIRONMENTAL IMPACT
+       </s>
+       <s pid="46" sid="2">
+        Figure 5, p.9 shows the effect of the electrical load on the alternator on the fuel economy of a vehicle.
+       </s>
+       <s pid="46" sid="3">
+        If we assume that the Prius behaves as a small car, and that the fuel economyelectrical load is the same for negative alternator load (electrical generation), we can see that the fuel economy increases 1 mpg for every 250 W generated.
+       </s>
+       <s pid="46" sid="4">
+        Additionally, Fig. 6 on page 9 shows that if we assume that the Prius has similar weight dependence on fuel economy as a light truck, the fuel economy decreases 1 mpg for every additional 1250 lb.
+       </s>
+       <s pid="46" sid="5">
+        Therefore, the increase in a Prius’ fuel economy for any electrical generation system is given by:
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (8)
+      <p>
+      </p>
+      <p>
+       <s pid="49" sid="1">
+        where ∆FE is the fuel efficiency increase in mpg, P is the electrical power generated in Watts and W is the additional weight of the system in lbs.
+       </s>
+       <s pid="49" sid="2">
+        Additionally, assuming a gas a price of $3.20/gallon and a car lifetime of 150,000 miles, the amount of money saved in fuel consumption over the lifetime of the car is given in terms of P, W, and the original fuel economy FE0 by Eq. 9.
+       </s>
+       <s pid="49" sid="3">
+        The EPA’s estimate for the average fuel economy of the 2007 Toyota Prius is 46 mpg [11].
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (9)
+      <p>
+      </p>
+      <p>
+       <s pid="52" sid="1">
+        For an electrical generation system to be practical to implement, it should save the consumer more money in gas than it costs in additional vehicle price.
+       </s>
+       <s pid="52" sid="2">
+        Similarly, since one gallon of gas produces 9 kg of CO2 gas in the average car [12], and the Prius’ CO2 emissions are about half of that [13], the reduction of CO2 emissions (in kg) over the lifetime of the car is given by:
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation (10)
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="55" sid="1">
+        Figure 5. Fuel economy as a function of alternator electric electrical load for various vehicle types [14].
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="56" sid="1">
+        Figure 6. Change in fuel economy dependence of a midsize truck on alternator electric electrical load for various weights [14].
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       RESULTS
+      </div>
+      <p>
+       <s pid="57" sid="1">
+        We used the conducted survey to approximate the exhaust temperatures of the Toyota Prius at various component locations under the car.
+       </s>
+       <s pid="57" sid="2">
+        Using the dimensions of the exhaust, we then approximated the useable area for TEG implementation.
+       </s>
+       <s pid="57" sid="3">
+        Thorough analysis of the tested heat sinks yielded an optimal configuration taking into account power, cost, and added weight of the system.
+       </s>
+       <s pid="57" sid="4">
+        We predicted the thermal constants associated with the TEG and optimal heat sink at design temperatures.
+       </s>
+       <s pid="57" sid="5">
+        An Estimation of the performance and cost of the proposed system with current technology is then presented.
+       </s>
+      </p>
+      <p>
+       <s pid="58" sid="1">
+        DRIVING HABITS SURVEY
+       </s>
+       <s pid="58" sid="2">
+        The results of the driving habits survey are shown in Table 3, page 10.
+       </s>
+       <s pid="58" sid="3">
+        The survey had 168 total respondents, and each question had at least 165 responses, which is enough to give us a representative sample of college student drivers.
+       </s>
+       <s pid="58" sid="4">
+        The highestscoring responses to each question are highlighted.
+       </s>
+       <s pid="58" sid="5">
+        The "average" student driver conditions were determined by taking a weighted average of the responses.
+       </s>
+      </p>
+      <p>
+       <s pid="59" sid="1">
+        Table 3 on page 10 shows that the average time per trip is about 15 minutes and the average driving time per day is about 25 minutes.
+       </s>
+       <s pid="59" sid="2">
+        Additionally, the average time spent towing a trailer, letting the car idle, and driving on dirt or poorly paved roads is negligible for the purpose of this analysis.
+       </s>
+       <s pid="59" sid="3">
+        Finally, 27.7% of college students’ driving time is spent on the highway, and college drivers drive aggressively 17.9% of the time.
+       </s>
+       <s pid="59" sid="4">
+        Both of these activities significantly increase the load experienced by the car.
+       </s>
+      </p>
+      <p>
+       <s pid="60" sid="1">
+        Since the average student drives about 25.4 minutes per day, 72.3% city driving (approximately 30 mph) and 27.7% highway driving (approximately 70 mph), the average distance driven per day is 17 miles/day, so the average college student’s car is driven about 6000 miles/year.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="61" sid="1">
+        Table 3. Results of college student driving style survey.
+       </s>
+       <s pid="61" sid="2">
+        The highestscoring responses to each question are highlighted.
+       </s>
+      </p>
+      <p>
+       <s pid="62" sid="1">
+        Figure 7 shows the exhaust system component temperatures at partial and full loads for a BMW 318i sedan.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="63" sid="1">
+        Figure 7. Exhaust system component temperatures of a BMW 318i MJ 04 [15]
+       </s>
+      </p>
+      <p>
+       <s pid="64" sid="1">
+        Assuming that the Prius has a similar exhaust system, we determined the typical component temperatures for city and highway driving.
+       </s>
+       <s pid="64" sid="2">
+        City driving is approximated as driving at 30mph, and the component temperatures are approximated as the temperature partial load plus 25% of the difference between the full and partial loads.
+       </s>
+       <s pid="64" sid="3">
+        This estimate takes into account the transient behavior of the car as it warms up, driver aggressiveness, and the temperature fluctuation due to the unique engine behavior of the Prius (see Discussion Section).
+       </s>
+       <s pid="64" sid="4">
+        Highway driving is
+       </s>
+      </p>
+      <p>
+       <s pid="65" sid="1">
+        approximated as the partial load plus 75% of the difference between the full and partial loads.
+       </s>
+       <s pid="65" sid="2">
+        This estimate takes into account vehicle transient behavior and driver aggressiveness.
+       </s>
+       <s pid="65" sid="3">
+        Table 4, below, summarizes these exhaust system temperatures with the corresponding useable area for mounting the TEGs.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="66" sid="1">
+        Table 4. Estimates of Prius exhaust system component temperatures at 30mph and 70mph.
+       </s>
+      </p>
+      <p>
+       <s pid="67" sid="1">
+        DETERMINATION OF OPTIMAL HEAT SINK
+       </s>
+       <s pid="67" sid="2">
+        For each tested heat sink, the corresponding high temperature, TH, cold side temperature, TC, power generated, P, and efficiency are summarized in Table 5, below.
+       </s>
+       <s pid="67" sid="3">
+        To validate the use of a heat sink, the data for the test without a heat sink is also presented.
+       </s>
+       <s pid="67" sid="4">
+        The TC values reported were calculated using heat transfer analysis based on TH and Power measured.
+       </s>
+       <s pid="67" sid="5">
+        Prices are taken from the manufacturer’s website as the price per heat sink for ordering quantities of 100199 [16].
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="68" sid="1">
+        Table 5: Experimental results for each tested heat sink.
+       </s>
+       <s pid="68" sid="2">
+        The highest power per cost heat sink is highlighted.
+       </s>
+      </p>
+      <p>
+       <s pid="69" sid="1">
+        Table 6, below, summarizes the results of our ANOVA analysis.
+       </s>
+       <s pid="69" sid="2">
+        The full ANOVA results outputted from MATLAB can be found in Appendix B.
+       </s>
+       <s pid="69" sid="3">
+        We examined the effect of various factors related to the heat sink geometry on both the power output of the TEG and the temperature difference across the device, ignoring interactions between the factors.
+       </s>
+       <s pid="69" sid="4">
+        Using a 90% confidence interval, we determined the only significant factor was pin height.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="70" sid="1">
+        Table 6: Pin height had a significant effect on both the ΔT and the TEG power output.
+       </s>
+      </p>
+      <p>
+       <s pid="71" sid="1">
+        Using the ANOVA analysis and the power per cost ratio from Table 5, p.11, we determined that the best heat sink for this application is the Alpha Novatech PN S153020W.
+       </s>
+      </p>
+      <p>
+       <s pid="72" sid="1">
+        DETERMINATION OF THERMAL COEFFICIENTS
+       </s>
+       <s pid="72" sid="2">
+        Using the results of the TEG test without a heat sink and Eq. 3, on page 6, we determined the lumped thermal conductivity constant K to be approximately 0.045 W/K.
+       </s>
+      </p>
+      <p>
+       <s pid="73" sid="1">
+        Figure 8 shows that there is a linear relationship between the convective heat transfer coefficient, hA, and air velocity.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="74" sid="1">
+        Figure 8: Convective Heat Transfer coefficient varies linearly with fluid velocity
+       </s>
+      </p>
+      <p>
+       <s pid="75" sid="1">
+        The hA values for city and highway driving were determined from the relationship shown in Fig.
+       </s>
+      </p>
+      <p>
+       <s pid="76" sid="1">
+        8.
+       </s>
+       <s pid="76" sid="2">
+        For city driving (30mph), hA=0.28 W/K, and for highway driving (70mph), hA=0.62.
+       </s>
+      </p>
+      <p>
+       <s pid="77" sid="1">
+        PERFORMANCE PREDICTIONS FOR AUTOMOTIVE SCALE
+       </s>
+       <s pid="77" sid="2">
+        To estimate the surface area available for TEG placement we assume the Toyota Prius exhaust system geometry to be similar to the BMW as shown in Fig.9.
+       </s>
+       <s pid="77" sid="3">
+        The surface area of one TEG is assumed to be 0.00084 m2 (the same area of the TEG tested in the laboratory).
+       </s>
+       <s pid="77" sid="4">
+        In addition, about 55% of the calculated exhaust system surface area is unusable because of structural and spatial constraints [17].
+       </s>
+       <s pid="77" sid="5">
+        Therefore, the maximum number of TEGs that can be installed on the Toyota Prius exhaust system is 283.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="78" sid="1">
+        Figure 9: Optimal TEG placement on exhaust system.
+       </s>
+      </p>
+      <p>
+       <s pid="79" sid="1">
+        To maximize the power output of the system, the TEGs placed on the exhaust manifold and the exhaust pipe are filled skutterudite TEGs while the TEGs on the catalyst, the center muffler, and the rear muffler are Bi2Te3 TEGs (see Fig. 9).
+       </s>
+       <s pid="79" sid="2">
+        This configuration was chosen to maximize the ZT value at each component based on Fig. 4, p.8.
+       </s>
+       <s pid="79" sid="3">
+        It should be noted that HiZ 2 TEGs that we tested in the laboratory would not be acceptable for this application, as they cannot be exposed to sustained temperature of more than 250˚C, however more robust Bi2Te3 TEGs could be used.
+       </s>
+       <s pid="79" sid="4">
+        The performance of this system is summarized in Table 8, below.
+       </s>
+       <s pid="79" sid="5">
+        The filled skutterudite TEGs are assumed to have similar geometrical, mass, conductivity properties, and costs as the Bi2Te3 TEGs.
+       </s>
+       <s pid="79" sid="6">
+        The system weight is estimated as the weight of the TEGs and heat sinks, plus approximately 5lbs (2.3kg) for installation hardware.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="80" sid="1">
+        Table 7. Summary of performance of TEG heat recovery system using current technology.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       DISCUSSION
+      </div>
+      <p>
+       <s pid="81" sid="1">
+        In order to draw conclusions about our data, we needed to assess the validity and implications of our results.
+       </s>
+       <s pid="81" sid="2">
+        We then also further investigated the characteristics of the Toyota Prius, and current and future TEG technologies.
+       </s>
+      </p>
+      <p>
+       <s pid="82" sid="1">
+        CHOICE OF OPTIMUM HEAT SINK
+       </s>
+       <s pid="82" sid="2">
+        We chose to base the extrapolation of our laboratory data to driving conditions using the "best" heat sink tested in the laboratory.
+       </s>
+       <s pid="82" sid="3">
+        We attempted to use an ANOVA to determine this heat sink, but the analysis only found one significant factor (pin length) using a 90% confidence interval.
+       </s>
+       <s pid="82" sid="4">
+        This may have been due to inaccurate laboratory tests (see below).
+       </s>
+       <s pid="82" sid="5">
+        In addition, the ANOVA did not take into account important design considerations such as cost, size, and weight.
+       </s>
+       <s pid="82" sid="6">
+        In the initial laboratory tests, the S153020W heat sink produced the highest power output per cost, and was one of the smallest and lightest heat sinks available (see Table 5, p.11 and Table A.1, Appendix A).
+       </s>
+       <s pid="82" sid="7">
+        Thus, we chose to extrapolate assuming the use of S153020W heat sinks.
+       </s>
+      </p>
+      <p>
+       <s pid="83" sid="1">
+        While a small fan mounted on top of the heat sink may have increased the convective heat transfer from the heat sink, we chose not to propose the use of a fan for several reasons.
+       </s>
+       <s pid="83" sid="2">
+        The fans would take power from the system, add weight to the car, and add a degree of complexity to the system due to moving parts.
+       </s>
+       <s pid="83" sid="3">
+        Since the fans were only able to generate a maximum of about 3 m/s (6.7mph) while using about 1 watt of power, the increased convection due to the fan would not outweigh the energy cost of using the fan.
+       </s>
+      </p>
+      <p>
+       <s pid="84" sid="1">
+        DETERMINATION OF LUMPED THERMAL CONDUCTIVITY
+       </s>
+       <s pid="84" sid="2">
+        To determine the lumped thermal conductivity (K) of the TEG, we performed a laboratory test with no heat sink.
+       </s>
+       <s pid="84" sid="3">
+        In this test, the fan was blowing over the TEG.
+       </s>
+       <s pid="84" sid="4">
+        In the tests using heat sinks, we used the heat sink to shield the thermocouple from the airflow so that convection from the thermocouple tip did not alter our temperature measurements.
+       </s>
+       <s pid="84" sid="5">
+        However, when there was no heat sink, there was nothing to protect the thermocouple tip from the fan, and the temperature reading was lower than the actual temperature.
+       </s>
+       <s pid="84" sid="6">
+        Using the K value determined from this test predicted that the heat sink surface was hotter than the cold side of the TEG, which cannot be true, since heat always flows from high to low temperatures.
+       </s>
+       <s pid="84" sid="7">
+        Thus, we were given consent to use one set of data from another ME495 group (see Acknowledgments Section) in which the hot and cold side temperatures were measured without a heat sink and with no airflow over the TEG.
+       </s>
+       <s pid="84" sid="8">
+        The new K value determined from this data yields more realistic predictions of TEG temperatures.
+       </s>
+      </p>
+      <p>
+       <s pid="85" sid="1">
+        DETERMINATION OF CONVECTION HEAT TRANSFER COEFFICIENT
+       </s>
+       <s pid="85" sid="2">
+        Figure 8, p.12 shows that there is a linear relationship between convection heat transfer coefficient (hA) of the S153020W heat sink and fan speed over the range of air speeds tested.
+       </s>
+       <s pid="85" sid="3">
+        For the purposes of extrapolation, we assumed that this trend continues for higher air velocities, even though our air velocity range is limited.
+       </s>
+       <s pid="85" sid="4">
+        In addition, we assumed that hA is independent of temperature.
+       </s>
+      </p>
+      <p>
+       <s pid="86" sid="1">
+        PROBLEMS WITH EXPERIMENTAL SETUP
+       </s>
+       <s pid="86" sid="2">
+        There were many problems with the smallscale laboratory setup used to determine the optimal heat sink for this application and extrapolate data to driving conditions.
+       </s>
+      </p>
+      <p>
+       <s pid="87" sid="1">
+        First, the hotplate had a very uneven temperature distribution.
+       </s>
+       <s pid="87" sid="2">
+        If the thermocouple used to measure the hotplate temperature was moved even slightly, the temperature reading would change by up to 20°C.
+       </s>
+       <s pid="87" sid="3">
+        In addition, the set point of the hotplate was not consistent.
+       </s>
+       <s pid="87" sid="4">
+        Setting the hotplate to 260°C resulted in hotplate temperatures of between 150°C and 210°C, varying from test to test.
+       </s>
+       <s pid="87" sid="5">
+        While we attempted to compensate for these problems by changing the set point to achieve a consistent temperature, and trying to place the thermocouple in a consistent spot, the temporal and spatial fluctuations made the hotplate temperature extremely difficult to measure accurately.
+       </s>
+       <s pid="87" sid="6">
+        A more precise heating element would have greatly improved our temperature reading accuracy, and thus improve our performance predictions.
+       </s>
+      </p>
+      <p>
+       <s pid="88" sid="1">
+        Second, the contact resistance of the setup did not seem to be consistent.
+       </s>
+       <s pid="88" sid="2">
+        While we tried to use a consistent amount of thermal grease at each contact, other factors may have affected this resistance.
+       </s>
+       <s pid="88" sid="3">
+        For example, contact resistance decreases with increasing contact pressure [18].
+       </s>
+       <s pid="88" sid="4">
+        However, we used heat sinks of different weights, so the contact pressure was never consistent.
+       </s>
+       <s pid="88" sid="5">
+        Additionally, to measure the heat sink surface temperature, we had to put some pressure on the heat sink with the thermocouple.
+       </s>
+       <s pid="88" sid="6">
+        While we attempted to keep this pressure consistent, we had to hold the thermocouple by hand, and the pressure may have changed from test to test.
+       </s>
+       <s pid="88" sid="7">
+        Our results would be more accurate if the contact pressure could be kept constant by using a clamp to hold down the heat sink and take temperature measurements.
+       </s>
+       <s pid="88" sid="8">
+        Additionally, the thermal grease seemed to clump over time and create air pockets that would increase the contact resistance.
+       </s>
+       <s pid="88" sid="9">
+        This could be remedied by using a different kind of thermal grease or by reapplying thermal grease between each test.
+       </s>
+      </p>
+      <p>
+       <s pid="89" sid="1">
+        Finally, the resistor used to simulate a load across the TEG was attached very close to the TEG, so the resistor heated up during the tests.
+       </s>
+       <s pid="89" sid="2">
+        This temperature change may have changed the resistance, which would affect our voltage measurements.
+       </s>
+       <s pid="89" sid="3">
+        If the resistor had been placed in parallel with the TEG with longer wires, the resistor could have been kept closer to the ambient temperature, and thus maintained a more consistent resistance.
+       </s>
+      </p>
+      <p>
+       <s pid="90" sid="1">
+        These laboratory testing problems probably affected our results for our ANOVA analysis and our extrapolation to realworld driving conditions.
+       </s>
+       <s pid="90" sid="2">
+        However, since the results of our system analysis show that the necessary TEG technology is an order of magnitude higher than that which is available today, our recommendations are not highly affected by our laboratory problems.
+       </s>
+      </p>
+      <p>
+       <s pid="91" sid="1">
+        CHARACTERISTICS OF THE TOYOTA PRIUS
+       </s>
+       <s pid="91" sid="2">
+        The Prius produces less exhaust than traditional cars because of its hybrid engine.
+       </s>
+       <s pid="91" sid="3">
+        Figure 10, p.16 shows that the Prius’ engine will only produce exhaust gas when the car is cruising, since this is the only time that the engine is running on gasoline [3].
+       </s>
+       <s pid="91" sid="4">
+        Thus, the frequent engine shutoffs during starting and stopping cause the Prius’ exhaust temperature during city driving is lower than that of a traditional small car.
+       </s>
+       <s pid="91" sid="5">
+        This has been incorporated in our estimate of the exhaust temperature.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="92" sid="1">
+        Figure 10.
+       </s>
+       <s pid="92" sid="2">
+        Diagram of the Prius’ energy use profile over time [3].
+       </s>
+      </p>
+      <p>
+       <s pid="93" sid="1">
+        The Prius also uses fuelsaving technology other than the hybrid engine.
+       </s>
+       <s pid="93" sid="2">
+        The Prius’ fuel efficiency is increased by the car’s aerodynamic shape, which is due in part to its flat underside designed at for smoother air flow beneath the car (see Fig. 11, below).
+       </s>
+       <s pid="93" sid="3">
+        The Prius also uses a weightsaving design, using lightweight components as much as possible [3].
+       </s>
+       <s pid="93" sid="4">
+        Any proposed changes to the Prius design should be made with these factors in mind.
+       </s>
+       <s pid="93" sid="5">
+        In our aircooled system the TEGs and heat sinks would add both weight and drag beneath the car.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="94" sid="1">
+        Figure 11.
+       </s>
+       <s pid="94" sid="2">
+        The underside of the Prius is flat to make the underbody air flow smoother and reduce drag. [3].
+       </s>
+      </p>
+      <p>
+       <s pid="95" sid="1">
+        CURRENT TEG TECHNOLOGIES
+       </s>
+       <s pid="95" sid="2">
+        Research was done on the previously completed work related to thermoelectric generators in an automotive application.
+       </s>
+       <s pid="95" sid="3">
+        It was found that two current TEG types were most appropriate for the Toyota Prius exhaust temperatures and are compared in the Table 8, p.17.
+       </s>
+       <s pid="95" sid="4">
+        Other TEG materials and their respective ZT values at various temperatures are shown in
+       </s>
+      </p>
+      <p>
+       <s pid="96" sid="1">
+        Fig. 4, p.8.
+       </s>
+       <s pid="96" sid="2">
+        These materials have lower ZT values than the materials listed in Table 8, so they were not considered for this application.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="97" sid="1">
+        Table 8. Comparison of characteristics for recommended TEG Materials.
+       </s>
+      </p>
+      <p>
+       <s pid="98" sid="1">
+        EXTRAPOLATED PERFORMANCE PREDICTIONS ANALYSIS
+       </s>
+       <s pid="98" sid="2">
+        Table 7, p. 13 shows that while the system discussed in the Results Section can produce a significant amount of power, the net savings of the system makes its implementation completely impractical.
+       </s>
+      </p>
+      <p>
+       <s pid="99" sid="1">
+        The goal of several US Department of Energy programs investigating waste heat recovery is a fuel economy increase of 10% [14].
+       </s>
+       <s pid="99" sid="2">
+        In the Prius, this corresponds to a fuel economy increase of
+       </s>
+      </p>
+      <p>
+       <s pid="100" sid="1">
+        4.6 mpg. Neglecting the TEG system weight, Eq. 8, p.8 implies that this could be achieved with a TEG power generation of 1150 W.
+       </s>
+       <s pid="100" sid="2">
+        In order for this to be possible with the system proposed in the Results Section above, our models show that TEGs with a ZT near 3 would need to be developed.
+       </s>
+       <s pid="100" sid="3">
+        However, the cost of the system would still be a major hurdle before implementation could be realistic.
+       </s>
+      </p>
+      <p>
+       <s pid="101" sid="1">
+        In order to estimate the requirements for a TEG system to be feasible on the Toyota Prius, an economic evaluation was performed to determine the point at which a TEG system could pay for itself over the lifetime of the car (the breakeven point).
+       </s>
+       <s pid="101" sid="2">
+        One way to reduce cost would be to reduce the number of TEGs needed.
+       </s>
+       <s pid="101" sid="3">
+        By only mounting TEGs on the three highesttemperature elements (the exhaust manifold, exhaust pipe, and catalyst), the number of TEGs could be reduced to 155.
+       </s>
+      </p>
+      <p>
+       <s pid="102" sid="1">
+        Figure 12 p. 18 shows the amount of fuel economy savings with respect to time and the figure of merit ZT.
+       </s>
+       <s pid="102" sid="2">
+        The plot shows that with a TEG cost reduction of 85% and a ZT of 4, the system will exactly pay for itself at the end of the car’s life cycle (150,000 miles and 25 years).
+       </s>
+       <s pid="102" sid="3">
+        Figure 12 also shows the breakeven points for other combinations of cost reduction and figure of merit ZT.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="103" sid="1">
+        Figure 12: Fuel economy savings after certain technology improvements are made illustrating the time to reach the break-even point.
+       </s>
+      </p>
+      <p>
+       <s pid="104" sid="1">
+        In order to increase the savings achieved with a TEG without increasing the number of TEGs, the figure of merit of the individual TEGs must be increased.
+       </s>
+       <s pid="104" sid="2">
+        Figure 13 illustrates that increasing ZT would lead to increased fuel efficiency.
+       </s>
+       <s pid="104" sid="3">
+        The figure also shows that there is a limit to how much the ZT can be increased before it does not significantly affect the fuel economy.
+       </s>
+       <s pid="104" sid="4">
+        This occurs around a ZT value of 20.
+       </s>
+       <s pid="104" sid="5">
+        For high ZT values, the factor limiting power output shifts from the material properties to the Carnot efficiency.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="105" sid="1">
+        Figure 13: Fuel economy increases with increasing figure of merit.
+       </s>
+       <s pid="105" sid="2">
+        The fuel economy does not significantly increase beyond ZT values of 20.
+       </s>
+      </p>
+      <p>
+       <s pid="106" sid="1">
+        FUTURE TEG TECHNOLOGIES
+       </s>
+       <s pid="106" sid="2">
+        New TEG materials being developed will have significantly higher efficiencies and lower costs than current materials.
+       </s>
+       <s pid="106" sid="3">
+        Quantum well TEGs currently being developed are especially lucrative, since they have raw material costs more than 10 times less
+       </s>
+      </p>
+      <p>
+       <s pid="107" sid="1">
+        than that of the Bi2Te3 TEGs.
+       </s>
+       <s pid="107" sid="2">
+        Development of technology for automated fabrication should further decrease the cost of quantum well TEGs.
+       </s>
+       <s pid="107" sid="3">
+        In addition, quantum well TEGs are predicted to have very high efficiencies compared to the TEGs available today and can also be utilized in higher temperature ranges [8].
+       </s>
+       <s pid="107" sid="4">
+        Figure 14 shows the relationship between efficiency and cost of future TEG modules with respect to temperature.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="108" sid="1">
+        Figure 14. New Quantum Well TEG technologies predict a substantial future increase in efficiency and a decrease in price per watt [8].
+       </s>
+      </p>
+      <p>
+       <s pid="109" sid="1">
+        OTHER WAYS TO ACHIEVE A PERFORMANCE IMPROVEMENT
+       </s>
+       <s pid="109" sid="2">
+        There are other ways to improve the power output of a TEG waste heat recovery system besides advancement of TEG materials.
+       </s>
+       <s pid="109" sid="3">
+        Use of these techniques could make a practical TEG waste heat recovery system more achievable.
+       </s>
+      </p>
+      <p>
+       <s pid="110" sid="1">
+        The temperature of the gas that flows through the exhaust system is higher than the temperature on the outer shell of the exhaust system.
+       </s>
+       <s pid="110" sid="2">
+        Since the TEG is mounted on this outer shell, maximizing this temperature would increase the TEG power output.
+       </s>
+       <s pid="110" sid="3">
+        To achieve this, the exhaust system could be constructed with a less thermally resistive material, or the exhaust gas could be forced to have turbulent flow with the help of spiraled fins inside the exhaust system [17].
+       </s>
+      </p>
+      <p>
+       <s pid="111" sid="1">
+        In addition, a reduction in thermal resistance of the insulating wafer that is placed between the exhaust system and the TEG and also between the TEG and heat sink could also improve the performance [17].
+       </s>
+       <s pid="111" sid="2">
+        Similarly, an increased thermal conductivity of the thermal paste would increase heat flux through the TEG system and thus improve performance.
+       </s>
+      </p>
+      <p>
+       <s pid="112" sid="1">
+        Many studies of waste heat recovery systems in automobiles have used coolant from the car’s engine to cool the cold side of the TEG instead of flowing ambient air [5][6][7][17].
+       </s>
+       <s pid="112" sid="2">
+        Use of such a coolant system would increase the temperature difference across the TEG and thus increase our power output.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSIONS
+      </div>
+      <p>
+       <s pid="113" sid="1">
+        We have investigated the possibility of implementing an aircooled TEG waste heat recovery system mounted on the exhaust system of a Toyota Prius driven by college students.
+       </s>
+       <s pid="113" sid="2">
+        Our conclusions are as follows:
+       </s>
+      </p>
+      <list>
+       <item>
+        1 The average driving conditions for college students were determined from our survey and are summarized in Table 3, p.10.
+       </item>
+       <item>
+        2 Out of the heat sinks we tested, the optimal heat sink for this application is the Alpha Novatech S153020W.
+       </item>
+       <item>
+        3 The results of laboratory experiments can be extrapolated to real world conditions using the techniques outlined in the Methods Section (see pp.59).
+       </item>
+       <item>
+        4 With the technology available today, it is not practical to implement an aircooled TEG waste heat recovery system in the Toyota Prius.
+       </item>
+      </list>
+      <p>
+       <s pid="114" sid="1">
+        While our laboratory tests had a high level of uncertainty, it is clear that the current TEG technology is far below the necessary level to be feasibly implemented.
+       </s>
+       <s pid="114" sid="2">
+        Assuming gas prices of $3.20/gallon, an average ZT of 4 and an 85% reduction in TEG system price would be necessary for the system to pay for itself in saved fuel costs over the lifetime of the car.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       RECOMMENDATIONS AND FUTURE WORK
+      </div>
+      <p>
+       <s pid="115" sid="1">
+        While the implementation of a TEG waste heat recovery system in the Toyota Prius is not practical using today’s technology, future TEG materials may make such a system a viable option.
+       </s>
+       <s pid="115" sid="2">
+        Specifically, when ZT values approach 4 and TEG costs are reduced by 85% (a realistic target based on the prediction of quantum well TEG technologies), the system should be reconsidered.
+       </s>
+      </p>
+      <p>
+       <s pid="116" sid="1">
+        The following recommendations should be considered when investigating a TEG waste heat recovery system in the future:
+       </s>
+      </p>
+      <list>
+       <item>
+        • Testing should be done to determine the actual exhaust system temperature of the Prius under typical driving conditions instead of using estimates.
+       </item>
+       <item>
+        • Similarly, the geometry of the Prius’ exhaust should be more accurately determined to provide more realistic estimate of the available surface area.
+       </item>
+       <item>
+        • Since the temperature of exhaust system has a large range (190 790°C) different TEG materials should be used in different areas to maximize ZT at each location.
+       </item>
+       <item>
+        • 	A liquid coolant heat exchanger system should be considered instead of air cooling.
+       </item>
+       <item>
+        <list>
+         <item>
+          o 	This would increase the temperature difference across the TEG, thus increasing the output power.
+         </item>
+         <item>
+          o 	A heat exchanger system could be designed aerodynamically to reduce drag caused by the system mounted on the exhaust.
+         </item>
+         <item>
+          o 	A heat exchanger would protect the delicate TEGs from debris.
+         </item>
+        </list>
+       </item>
+      </list>
+      <p>
+       <s pid="117" sid="1">
+        ACKNOWLEDGEMENTS
+       </s>
+      </p>
+      <p>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N102DB">
+       <li id="N102DC">
+        [1] University of Michigan, ME 495 Lecture Notes, November 5, 2007: “Thermoelectric Waste Heat Recovery for Automobiles.”
+       </li>
+       <li id="N102DE">
+        [2] Shabashevich, A., 2007, “Maximizing Exhaust Energy Quality from Hybrid Electric Vehicles for Potential Exhaust Energy Recovery to Increase Overall Vehicle Efficiency and Reduce Fuel Consumption” Application to Fuel Cell, Hydrogen, and Hybrid Vehicle GATE Center of Excellence, pp. 2.
+       </li>
+       <li id="N102E0">
+        [3] Hybrid Synergy Drive Information Terminal presented by Toyota, “HYBRID SYNERGY DRIVE,” retrieved November 18, 2007. Website: http://www.hybridsynergydrive.com/
+       </li>
+       <li id="N102E2">
+        [4] Hendricks, T. J., 2004, “Advanced Thermoelectric Energy Recovery Systems in Future Vehicle Systems” DOE/EPRI HighEfficiency Thermoelectrics Workshop, San Diego, California, pp. 4.
+       </li>
+       <li id="N102E4">
+        [5] Thacher, E. F., Helenbrook, B. T., Karri, M. A., and Richter, C. J., 2007, “Testing of an automobile exhaust thermoelectric generator in a light truck,” Proc. IMechE Vol. 221 Part D: J. Automobile Engineering, pp. 95107.
+       </li>
+       <li id="N102E6">
+        [6] Thacher, E. F., Helenbrook, B. T., Karri, M.A., Compeau, M. S., Kushch, A. S., Elsner, N.B., Bhatti, M. J., O’Brien, J., and Stabler, F., 2003, “Thermoelectrical energy recovery from the exhaust of a light truck,” 2003 Diesel Engine Emissions Reduction (DEER) Conference, Newport, Rhode Island, pp. 121.
+       </li>
+       <li id="N102E8">
+        [7] Schock, H., 2005, “Thermeoelectric Conversion of Waste Heat to Electricity in an IC Engine Powered Vehicle,” 2005 Diesel Engine Emissions Reduction (DEER) Conference Presentations, Chicago, Illinois, pp. 130.
+       </li>
+       <li id="N102EA">
+        [8] “HiZ Brochure”, 2006, retrieved December 4, 2007. Website: http://hiz.com/HiZ.Brochure.2006.pdf, pp.5.11.
+       </li>
+       <li id="N102EC">
+        [9] Weather.com, “Average Weather for Ann Arbor, MI – Temperature and Precipitation,” retrieved December 5, 2007. Website: http://www.weather.com/weather/wxclimatology/monthly /graph/48109?locid=48109&amp;from=36hr_bottomnav_undeclared
+       </li>
+       <li id="N102EE">
+        [10] Sales, B.C., 2002, “Filled Skutterudites”, retrieved December 5, 2007. Website: http://www.cemg.ornl.gov/library/pdf_papr/FilledSkutterudites.pdf, pp. 39
+       </li>
+       <li id="N102F0">
+        [11] FuelEconomy.gov, “Compare Old and New MPG Estimates,” retrieved December 4, 2007. Website: http://www.fueleconomy.gov/feg/calculatorSelectEngine.jsp?year=2007&amp;make= Toyota&amp;model=Prius
+       </li>
+       <li id="N102F2">
+        [12] National Resources Canada, “Fuel Consumption Calculator: Gasoline,” retrieved December 4, 2007. Website: http://www.oee.nrcan.gc.ca/publications/transportation/fuelcalculator/index.cfm?attr=8:.
+       </li>
+       <li id="N102F4">
+        [13] Llanos, M., May 26 2004, MSNBC.com, “Reality meets road to hybrid heaven,” retrieved December 4, 2007. Website: http://www.msnbc.msn.com/id/3540844.
+       </li>
+       <li id="N102F6">
+        [14] Yang, J., 2005, “Potential applications of thermoelectric waste heat recovery in the automotive industry”, Intl. Conf. on Thermoelectrics.
+       </li>
+       <li id="N102F8">
+        [15] LaGrandeur, J, Crane, D. and Eder, A., 2005, “Vehicle Fuel Economy Improvement through Thermoelectric Waste Heat Recovery,” 2005 Diesel Engine Emissions Reduction (DEER) Conference Presentations, Chicago, Illinois, pp. 21.
+       </li>
+       <li id="N102FA">
+        [16] Alpha NovaTech “Online Catalog – Passive Heat Sink (Pin)” retrieved December 5, 2007. Website: http://www.alphanovatech.com/cat_pine.html
+       </li>
+       <li id="N102FC">
+        [17] Rowe, D.M., 2006, Thermoelectrics Handbook, Taylor &amp; Francis Group, New York, NY, ch. 52. “A Thermoelectric Application to Vehicles”.
+       </li>
+       <li id="N102FE">
+        [18] Kaviany, M., 2002, Principles of Heat Transfer, John Wiley &amp; Sons, Inc. New York, NY, pp. 254.
+       </li>
+       <li id="N10300">
+        The following table describes the physical properties of each tested heat sink.
+       </li>
+      </ul>
+     </div>
+     <div>
+      <p>
+       APPENDIX A: HEAT SINK PROPERTIES
+      </p>
+      <p>
+       The following table describes the physical properties of each tested heat sink.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table A.1: Properties of tested heat sinks [16]
+      </p>
+      <p>
+       APPENDIX B: ANOVA Results
+      </p>
+      <p>
+       Table B.1, below, displays the full ANOVA results outputted from MATLAB. We examined the effect of each of the four factors on the temperature difference between the hot and cold side of the TEG (ΔT). The height of the pins was the only significant factor using a 90% confidence interval.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table B.1: Factors vs. DT
+      </p>
+      <p>
+       Table B.2, below, displays ANOVA outputted when we examined the effect of each of the four factors on the power output of the TEG. The height of the pins was the only significant factor using a 90% confidence interval.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table B.2: Factors vs. TEG Power output
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

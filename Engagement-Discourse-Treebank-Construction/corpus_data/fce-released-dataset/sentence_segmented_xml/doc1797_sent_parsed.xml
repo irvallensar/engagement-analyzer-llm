@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     9
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      1.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to you about the show. I was very disappointed after
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       show. I would like to have my money back.
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       the show started at 10.15, and it should
+       <ns type="TV">
+        <i>
+         be
+        </i>
+       </ns>
+       at 19.30.
+      </p>
+      <p>
+       After your show I wanted to visit my friends, and because of it, I
+       <ns type="RV">
+        <i>
+         didn't
+        </i>
+       </ns>
+       do
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Also, you wrote about discounts, but
+       <ns type="TV">
+        <i>
+         it's
+        </i>
+       </ns>
+       not true! The woman
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       who sold
+       <ns type="MA">
+       </ns>
+       a ticket was very
+       <ns type="S">
+        <i>
+         roud
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       me, actually she started swearing at me.
+      </p>
+      <p>
+       During the show, I was very hungry but I hoped to visit
+       <ns type="MD">
+       </ns>
+       restaurant,
+       <ns type="TV">
+        <i>
+         <ns type="RA">
+          <i>
+           it's
+          </i>
+         </ns>
+        </i>
+       </ns>
+       a pity,
+       <ns type="RC">
+        <i>
+         but
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       restaurant was closed because it was too late.
+      </p>
+      <p>
+       And, I forget to say
+       <ns type="MA">
+       </ns>
+       about
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         actor
+        </i>
+       </ns>
+       , I didn't enjoy them.
+      </p>
+      <p>
+       So, I hope I will get my money back
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       was
+       <ns type="MD">
+       </ns>
+       very disappointing evening
+       <ns type="UT">
+        <i>
+         out
+        </i>
+       </ns>
+       in my life! I hope you understand me!
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         your
+        </i>
+       </ns>
+       sincerely
+      </p>
+      <p>
+       Ongelina
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writting to you about the show.
+       </s>
+       <s pid="2" sid="2">
+        I was very disappointed after this show.
+       </s>
+       <s pid="2" sid="3">
+        I would like to have my money back.
+       </s>
+       <s pid="2" sid="4">
+        At first the show started at 10.15, and it should be at 19.30.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        After your show I wanted to visit my friends, and because of it, I didn't do it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Also, you wrote about discounts, but it's not true!
+       </s>
+       <s pid="4" sid="2">
+        The woman, who sold  a ticket was very roud with me, actually she started swearing at me.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        During the show, I was very hungry but I hoped to visit  restaurant, it's a pity, but  restaurant was closed because it was too late.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        And, I forget to say  about  actor, I didn't enjoy them.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So, I hope I will get my money back, it was  very disappointing evening out in my life!
+       </s>
+       <s pid="7" sid="2">
+        I hope you understand me!
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        your sincerely
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Ongelina
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      1.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets, but
+       <ns type="W">
+        <i>
+         <ns type="RP">
+          <i>
+           any way
+          </i>
+         </ns>
+         I trusted him
+        </i>
+       </ns>
+       .
+       <ns type="UV">
+        <i>
+         It's
+        </i>
+       </ns>
+       happened 3 months ago, and during
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       months I
+       <ns type="TV">
+        <i>
+         am
+        </i>
+       </ns>
+       very upset.
+      </p>
+      <p>
+       I have a friend, his name
+       <ns type="MV">
+       </ns>
+       Peter, he is my best friend.
+      </p>
+      <p>
+       One day Peter killed
+       <ns type="RD">
+        <i>
+         one
+        </i>
+       </ns>
+       boy. They were just playing and
+       <ns type="MP">
+       </ns>
+       <ns type="R">
+        <i>
+         be
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         acsident
+        </i>
+       </ns>
+       , Peter
+       <ns type="TV">
+        <i>
+         shoot
+        </i>
+       </ns>
+       him. I was there, I saw it. I
+       <ns type="RV">
+        <i>
+         hoped
+        </i>
+       </ns>
+       that it
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="RY">
+          <i>
+           just
+          </i>
+         </ns>
+         could
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         see
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       3 people, but
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was
+       <ns type="MD">
+       </ns>
+       mistake... Pat saw it! We
+       <ns type="RV">
+        <i>
+         spoke with
+        </i>
+       </ns>
+       Pat many times to keep this secret, not to tell anyone. We trusted him.
+       <ns type="R">
+        <i>
+         At
+        </i>
+       </ns>
+       first
+       <ns type="RQ">
+        <i>
+         several
+        </i>
+       </ns>
+       days, Pat
+       <ns type="W">
+        <i>
+         all the time was with us
+        </i>
+       </ns>
+       . He promised to keep
+       <ns type="MA">
+       </ns>
+       secret
+       <ns type="UT">
+        <i>
+         <ns type="RP">
+          <i>
+           , in the
+          </i>
+         </ns>
+        </i>
+       </ns>
+       next morning we had
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         arguiment
+        </i>
+       </ns>
+       with Pat
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       3 of us were shouting at each other
+       <ns type="RP">
+        <i>
+         , in
+        </i>
+       </ns>
+       <ns type="FJ">
+        <i>
+         shorter
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       Pat
+       <ns type="RV">
+        <i>
+         went away from
+        </i>
+       </ns>
+       us.
+      </p>
+      <p>
+       Two days later
+       <ns type="MP">
+       </ns>
+       in the morning,
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       policeman came to
+       <ns type="MV">
+       </ns>
+       Peter... So, now my best friend is
+       <ns type="MD">
+       </ns>
+       prisoner. All the time
+       <ns type="MP">
+       </ns>
+       I am thinking about Peter. I don't forget him. He will be in
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       prison
+       <ns type="MT">
+       </ns>
+       5 years. By the way
+       <ns type="MP">
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         don't
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         see
+        </i>
+       </ns>
+       Pat
+       <ns type="MT">
+       </ns>
+       about one year. Perhaps, he moved
+       <ns type="RT">
+        <i>
+         into
+        </i>
+       </ns>
+       another town. It's good that he
+       <ns type="MV">
+       </ns>
+       far away... I miss Peter very much, it's unfair to put him in a prison. But it's life, destiny, very cruel destiny...
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets, but any way I trusted him.
+       </s>
+       <s pid="1" sid="3">
+        It's happened 3 months ago, and during this  months I am very upset.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have a friend, his name  Peter, he is my best friend.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        One day Peter killed one boy.
+       </s>
+       <s pid="3" sid="2">
+        They were just playing and be acsident, Peter shoot him.
+       </s>
+       <s pid="3" sid="3">
+        I was there, I saw it.
+       </s>
+       <s pid="3" sid="4">
+        I hoped that it, just could see  3 people, but it was  mistake...
+       </s>
+       <s pid="3" sid="5">
+        Pat saw it!
+       </s>
+       <s pid="3" sid="6">
+        We spoke with Pat many times to keep this secret, not to tell anyone.
+       </s>
+       <s pid="3" sid="7">
+        We trusted him.
+       </s>
+       <s pid="3" sid="8">
+        At first several days, Pat all the time was with us.
+       </s>
+       <s pid="3" sid="9">
+        He promised to keep  secret, in the next morning we had  arguiment with Pat,  3 of us were shouting at each other, in shorter Pat went away from us.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Two days later in the morning, the policeman came to  Peter...
+       </s>
+       <s pid="4" sid="2">
+        So, now my best friend is  prisoner.
+       </s>
+       <s pid="4" sid="3">
+        All the time I am thinking about Peter.
+       </s>
+       <s pid="4" sid="4">
+        I don't forget him.
+       </s>
+       <s pid="4" sid="5">
+        He will be in the prison  5 years.
+       </s>
+       <s pid="4" sid="6">
+        By the way I don't see Pat  about one year.
+       </s>
+       <s pid="4" sid="7">
+        Perhaps, he moved into another town.
+       </s>
+       <s pid="4" sid="8">
+        It's good that he  far away...
+       </s>
+       <s pid="4" sid="9">
+        I miss
+       </s>
+       <s pid="4" sid="10">
+        Peter very much, it's unfair to put him in a prison.
+       </s>
+       <s pid="4" sid="11">
+        But it's life, destiny, very cruel destiny...
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I am writing in order to complain about the show "Over the Rainbow", which
+       <ns type="TV">
+        <i>
+         was played
+        </i>
+       </ns>
+       in the "Circle Theatre", because the information which was given in your advertisement was not true at all.
+      </p>
+      <p>
+       First of all
+       <ns type="MP">
+       </ns>
+       I would like to say something about the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       : I went to the theatre because I wanted to see Danny Brook, but once there I found an actor who I had never heard
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       . So the main
+       <ns type="RN">
+        <i>
+         point
+        </i>
+       </ns>
+       of my visit had
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           dissappeared
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Another point is the time when it started, exactly 45 minutes
+       <ns type="FY">
+        <i>
+         later
+        </i>
+       </ns>
+       . A serious theatre can't
+       <ns type="RV">
+        <i>
+         miss
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       such an important thing, the
+       <ns type="RN">
+        <i>
+         starting-time
+        </i>
+       </ns>
+       . I had to wait all that time in the street, because the hall was not big enough. Moreover, once I was
+       <ns type="UV">
+        <i>
+         going
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to pay
+        </i>
+       </ns>
+       for the tickets, I found another thing
+       <ns type="MY">
+       </ns>
+       : there were no discounts
+       <ns type="S">
+        <i>
+         avaible
+        </i>
+       </ns>
+       . In your advertisement you informed us
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       their false existence.
+      </p>
+      <p>
+       But there is still another point: the theatre restaurant where I had decided
+       <ns type="FV">
+        <i>
+         having
+        </i>
+       </ns>
+       supper was closed, without
+       <ns type="MA">
+       </ns>
+       <ns type="RV">
+        <i>
+         saying
+        </i>
+       </ns>
+       the reason. I had to go back to the hotel, because all
+       <ns type="MD">
+       </ns>
+       restaurants in the area were
+       <ns type="RY">
+        <i>
+         <ns type="DY">
+          <i>
+           absolutelly
+          </i>
+         </ns>
+        </i>
+       </ns>
+       crowded.
+      </p>
+      <p>
+       Summing up, you might have
+       <ns type="RV">
+        <i>
+         noticed
+        </i>
+       </ns>
+       that that wasn't "my perfect evening out"
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       you promised, so I would like you to give me the money I paid for the ticket back. This might be the only way I keep on relying on your theatre.
+      </p>
+      <p>
+       I hope I will receive an answer.
+      </p>
+      <p>
+       yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing in order to complain about the show "Over the Rainbow", which was played in the "Circle Theatre", because the information which was given in your advertisement was not true at all.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all I would like to say something about the starring: I went to the theatre because I wanted to see Danny Brook, but once there I found an actor who I had never heard about.
+       </s>
+       <s pid="3" sid="2">
+        So the main point of my visit had dissappeared.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Another point is the time when it started, exactly 45 minutes later.
+       </s>
+       <s pid="4" sid="2">
+        A serious theatre can't miss  such an important thing, the starting-time.
+       </s>
+       <s pid="4" sid="3">
+        I had to wait all that time in the street, because the hall was not big enough.
+       </s>
+       <s pid="4" sid="4">
+        Moreover, once I was going to pay for the tickets, I found another thing : there were no discounts avaible.
+       </s>
+       <s pid="4" sid="5">
+        In your advertisement you informed us about their false existence.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But there is still another point: the theatre restaurant where I had decided having supper was closed, without  saying the reason.
+       </s>
+       <s pid="5" sid="2">
+        I had to go back to the hotel, because all  restaurants in the area were absolutelly crowded.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Summing up, you might have noticed that that wasn't "my perfect evening out" wich you promised, so I would like you to give me the money I paid for the ticket back.
+       </s>
+       <s pid="6" sid="2">
+        This might be the only way I keep on relying on your theatre.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I hope I will receive an answer.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets, and because of this Pat caused a big, but stupid
+       <ns type="MP">
+       </ns>
+       problem.
+      </p>
+      <p>
+       It was late in the night, and Pat was thinking about something Nick had told her that afternoon: - "Don't tell Marie I was here". Nick was Marie's boyfriend, and Marie
+       <ns type="MV">
+       </ns>
+       a very good friend of hers. They were in the shopping centre, and the problem was that Nick wasn't alone, he was with a very beautiful girl. What could Pat do? That morning Marie had told her that Nick couldn't go to the cinema with her because he had a lot of work to do in the afternoon so.. what was he doing there with that girl?
+      </p>
+      <p>
+       In the end Pat phoned Marie and told her: she was a very good friend. Marie was so shocked that, as soon as Pat had stopped speaking, she phoned Nick and, without letting him say anything, she broke up their
+       <ns type="RN">
+        <i>
+         relation
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       But the truth was very different, because what Nick was doing there was something which had nothing to
+       <ns type="RV">
+        <i>
+         be
+        </i>
+       </ns>
+       with what Pat had thought. Nick was there because the following Sunday would be a very special day for him: he would have been going out with Marie for three years, and he wanted to buy a present for her. But..what about the girl? She was his cousin! She works as a model, and she was
+       <ns type="S">
+        <i>
+         advicing
+        </i>
+       </ns>
+       him about
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       clothes, etc,...
+       <ns type="FV">
+        <i>
+         buy
+        </i>
+       </ns>
+       for her.
+      </p>
+      <p>
+       Pat couldn't keep that secret, and in spite of helping Marie, she made a couple
+       <ns type="RV">
+        <i>
+         disappear
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets, and because of this Pat caused a big, but stupid problem.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It was late in the night, and Pat was thinking about something Nick had told her that afternoon: - "Don't tell Marie I was here".
+       </s>
+       <s pid="2" sid="2">
+        Nick was Marie's boyfriend, and Marie  a very good friend of hers.
+       </s>
+       <s pid="2" sid="3">
+        They were in the shopping centre, and the problem was that Nick wasn't alone, he was with a very beautiful girl.
+       </s>
+       <s pid="2" sid="4">
+        What could Pat do?
+       </s>
+       <s pid="2" sid="5">
+        That morning Marie had told her that Nick couldn't go to the cinema with her because he had a lot of work to do in the afternoon so.. what was he doing there with that girl?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In the end Pat phoned Marie and told her: she was a very good friend.
+       </s>
+       <s pid="3" sid="2">
+        Marie was so shocked that, as soon as Pat had stopped speaking, she phoned Nick and, without letting him say anything, she broke up their relation.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But the truth was very different, because what Nick was doing there was something which had nothing to be with what Pat had thought.
+       </s>
+       <s pid="4" sid="2">
+        Nick was there because the following Sunday would be a very special day for him: he would have been going out with Marie for three years, and he wanted to buy a present for her.
+       </s>
+       <s pid="4" sid="3">
+        But..what about the girl?
+       </s>
+       <s pid="4" sid="4">
+        She was his cousin!
+       </s>
+       <s pid="4" sid="5">
+        She works as a model, and she was advicing him about which clothes, etc,... buy for her.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Pat couldn't keep that secret, and in spite of helping Marie, she made a couple disappear.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     27.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith
+      </p>
+      <p>
+       I am writing to reply
+       <ns type="MT">
+       </ns>
+       <ns type="RD">
+        <i>
+         your
+        </i>
+       </ns>
+       letter you wrote
+       <ns type="MT">
+       </ns>
+       me on 10 June.
+      </p>
+      <p>
+       Firstly, I would like to tell you
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that the group has been booked into
+       <ns type="MD">
+       </ns>
+       Palace Hotel, which
+       <ns type="TV">
+        <i>
+         locates
+        </i>
+       </ns>
+       beside the congress house in the centre. You can make contact with Mrs Brackenbury
+       <ns type="R">
+        using the number
+       </ns>
+       06 8793888. Secondly, the best way
+       <ns type="MV">
+       </ns>
+       from the hotel to the conference is to take the bus, which
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       specially organized by us. The bus leaves at 8:00 every morning and gets back to the hotel at 6 o'clock in the evening.
+       <ns type="SX">
+        <i>
+         Off
+        </i>
+       </ns>
+       course there's also a
+       <ns type="W">
+        <i>
+         bus number 8
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       in front of the hotel
+       <ns type="M">
+       </ns>
+       is also suitable, but it leaves only every half an hour.
+      </p>
+      <p>
+       The end-of-conference party, which
+       <ns type="RV">
+        <i>
+         happens
+        </i>
+       </ns>
+       in the evening on 20 June, is going to be held on the coast. Beside the barbecue, there
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       some well-known student bands from our country
+       <ns type="FV">
+        <i>
+         are
+         <ns type="RV">
+          <i>
+           performing
+          </i>
+         </ns>
+        </i>
+       </ns>
+       music through the whole night. What's more is
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that there's a Latin music band coming to make the party more colourful. It
+       <ns type="TV">
+        <i>
+         plays
+        </i>
+       </ns>
+       from 10:00 to 11:00,
+       <ns type="R">
+        while the students can enjoy it with dancing
+       </ns>
+       . The main events of the party will
+       <ns type="RV">
+        <i>
+         end up
+        </i>
+       </ns>
+       at about 12:30 in the night. As you see, what to wear is just something casual.
+      </p>
+      <p>
+       Finally,
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the last afternoon, we could visit the museums
+       <ns type="R">
+        <i>
+         ,
+        </i>
+       </ns>
+       markets (we have a very interesting robot-market). Basically it's
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       free time for the students to look round
+       <ns type="RY">
+        here
+       </ns>
+       by themselves.
+      </p>
+      <p>
+       I hope your questions
+       <ns type="TV">
+        <i>
+         <ns type="SX">
+          <i>
+           re
+          </i>
+         </ns>
+        </i>
+       </ns>
+       answered
+       <ns type="DY">
+        <i>
+         appropriatly
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I'm looking forward to seeing you
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the conference.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to reply  your letter you wrote  me on 10 June.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I would like to tell you, that the group has been booked into  Palace Hotel, which locates beside the congress house in the centre.
+       </s>
+       <s pid="3" sid="2">
+        You can make contact with Mrs Brackenbury using the number 06 8793888.
+       </s>
+       <s pid="3" sid="3">
+        Secondly, the best way  from the hotel to the conference is to take the bus, which is specially organized by us.
+       </s>
+       <s pid="3" sid="4">
+        The bus leaves at 8:00 every morning and gets back to the hotel at 6 o'clock in the evening.
+       </s>
+       <s pid="3" sid="5">
+        Off course there's also a bus number 8  in front of the hotel is also suitable, but it leaves only every half an hour.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The end-of-conference party, which happens in the evening on 20 June, is going to be held on the coast.
+       </s>
+       <s pid="4" sid="2">
+        Beside the barbecue, there are some well-known student bands from our country are performing music through the whole night.
+       </s>
+       <s pid="4" sid="3">
+        What's more is, that there's a Latin music band coming to make the party more colourful.
+       </s>
+       <s pid="4" sid="4">
+        It plays from 10:00 to 11:00, while the students can enjoy it with dancing.
+       </s>
+       <s pid="4" sid="5">
+        The main events of the party will end up at about 12:30 in the night.
+       </s>
+       <s pid="4" sid="6">
+        As you see, what to wear is just something casual.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, in the last afternoon, we could visit the museums, markets (we have a very interesting robot-market).
+       </s>
+       <s pid="5" sid="2">
+        Basically it's a free time for the students to look round here by themselves.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope your questions re answered appropriatly.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm looking forward to seeing you on the conference.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Computer Life
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Now-a-day
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         computer
+        </i>
+       </ns>
+       can be found in almost every corner, in offices, in shops.
+       <ns type="W">
+        <i>
+         <ns type="UC">
+          <i>
+           Or even
+          </i>
+         </ns>
+         in cars and
+         <ns type="S">
+          <i>
+           washmachines
+          </i>
+         </ns>
+         there're computer chips
+        </i>
+       </ns>
+       .
+       <ns type="R">
+        <i>
+         What has
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         computer
+        </i>
+       </ns>
+       affected
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       our life?
+      </p>
+      <p>
+       First of all, the efficiency of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       society has been improved. When shopping, we don't need to wait
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         Kasse
+        </i>
+       </ns>
+       to
+       <ns type="R">
+        take every article's note
+       </ns>
+       by hand. When booking
+       <ns type="RD">
+        <i>
+         <ns type="FD">
+          <i>
+           a
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         airline
+        </i>
+       </ns>
+       , we can
+       <ns type="CL">
+        <i>
+         just simply
+        </i>
+       </ns>
+       make a
+       <ns type="RN">
+        <i>
+         phone
+        </i>
+       </ns>
+       to any agency, and get it done in one minute. Secondly, instead of
+       <ns type="RV">
+        looking up
+       </ns>
+       tons of books to get the information
+       <ns type="RA">
+        <i>
+         what
+        </i>
+       </ns>
+       we need, we can very easily search
+       <ns type="MT">
+       </ns>
+       it
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       or on the local network. It's
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very often heard
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that someone
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       who has a
+       <ns type="RJ">
+        <i>
+         special
+        </i>
+       </ns>
+       illness
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           gets
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         operations
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       a foreign
+       <ns type="AGN">
+        <i>
+         institutes
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       which he
+       <ns type="TV">
+        <i>
+         find
+        </i>
+       </ns>
+       via
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       . Moreover, with computer
+       <ns type="FN">
+        <i>
+         network
+        </i>
+       </ns>
+       , it
+       <ns type="TV">
+        <i>
+         can be
+        </i>
+       </ns>
+       possible
+       <ns type="R">
+        <i>
+         that
+        </i>
+       </ns>
+       people
+       <ns type="FV">
+        <i>
+         work
+        </i>
+       </ns>
+       from home,
+       <ns type="RV">
+        making
+       </ns>
+       projects,
+       <ns type="IV">
+        <i>
+         controling
+        </i>
+       </ns>
+       operations or
+       <ns type="RV">
+        having
+       </ns>
+       conferences. Lastly
+       <ns type="R">
+        the way of communications
+       </ns>
+       has
+       <ns type="TV">
+        <i>
+         <ns type="W">
+          <i>
+           been also
+          </i>
+         </ns>
+         changed
+        </i>
+       </ns>
+       . Instead of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         tranditional
+        </i>
+       </ns>
+       <ns type="IN">
+        <i>
+         telecommunication
+        </i>
+       </ns>
+       , we can talk
+       <ns type="MT">
+       </ns>
+       ,
+       <ns type="RV">
+        <i>
+         mail
+        </i>
+       </ns>
+       or even see each other with the help of
+       <ns type="MD">
+       </ns>
+       computer network.
+      </p>
+      <p>
+       Of course there're also some aspects in which
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       computer technology
+       <ns type="AGV">
+        <i>
+         need
+        </i>
+       </ns>
+       to be improved. For example, reading on the screen is still not as comfortable as
+       <ns type="MV">
+       </ns>
+       on
+       <ns type="CN">
+        <i>
+         papers
+        </i>
+       </ns>
+       . A very important and severe problem is
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       reliability and security.
+       <ns type="RY">
+        <i>
+         Till now
+        </i>
+       </ns>
+       ,
+       <ns type="AS">
+        <i>
+         to completely rely on
+         <ns type="FN">
+          <i>
+           computer
+          </i>
+         </ns>
+         is still somehow not safe enough
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In conclusion,
+       <ns type="AGN">
+        <i>
+         computer
+        </i>
+       </ns>
+       have become a
+       <ns type="U">
+        <i>
+         very essential
+        </i>
+       </ns>
+       necessity
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       our life, and it's still a young invention, which
+       <ns type="AGV">
+        <i>
+         need
+        </i>
+       </ns>
+       to be improved.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Computer Life
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Now-a-day computer can be found in almost every corner, in offices, in shops.
+       </s>
+       <s pid="2" sid="2">
+        Or even in cars and washmachines there're computer chips.
+       </s>
+       <s pid="2" sid="3">
+        What has computer affected to our life?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, the efficiency of the society has been improved.
+       </s>
+       <s pid="3" sid="2">
+        When shopping, we don't need to wait  the Kasse to take every article's note by hand.
+       </s>
+       <s pid="3" sid="3">
+        When booking a airline, we can just simply make a phone to any agency, and get it done in one minute.
+       </s>
+       <s pid="3" sid="4">
+        Secondly, instead of looking up tons of books to get the information what we need, we can very easily search  it from  internet or on the local network.
+       </s>
+       <s pid="3" sid="5">
+        It's a very often heard, that someone, who has a special illness, gets  operations by a foreign institutes, which he find via  internet.
+       </s>
+       <s pid="3" sid="6">
+        Moreover, with computer network, it can be possible that people work from home, making projects, controling operations or having conferences.
+       </s>
+       <s pid="3" sid="7">
+        Lastly the way of communications has been also changed.
+       </s>
+       <s pid="3" sid="8">
+        Instead of the tranditional telecommunication, we can talk , mail or even see each other with the help of  computer network.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Of course there're also some aspects in which the computer technology need to be improved.
+       </s>
+       <s pid="4" sid="2">
+        For example, reading on the screen is still not as comfortable as  on papers.
+       </s>
+       <s pid="4" sid="3">
+        A very important and severe problem is the reliability and security.
+       </s>
+       <s pid="4" sid="4">
+        Till now, to completely rely on computer is still somehow not safe enough.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In conclusion, computer have become a very essential necessity of our life, and it's still a young invention, which need to be improved.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

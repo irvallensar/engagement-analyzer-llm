@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="RP">
+        <i>
+         manager
+        </i>
+       </ns>
+       of the
+       <ns type="RP">
+        <i>
+         circle theatre
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       Two months ago I went to see your musical show. I got very angry because you are liars. It was one of the most disappointing
+       <ns type="AGN">
+        <i>
+         evening
+        </i>
+       </ns>
+       of my life.
+      </p>
+      <p>
+       The advertisement said that the actors were Danny Brook and Tina Truelove but the
+       <ns type="FN">
+        <i>
+         actor
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       different. Who
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           can
+          </i>
+         </ns>
+        </i>
+       </ns>
+       believe it? You
+       <ns type="W">
+        <i>
+         are really
+        </i>
+       </ns>
+       a funny theatre.
+      </p>
+      <p>
+       And
+       <ns type="M">
+       </ns>
+       the time
+       <ns type="MP">
+       </ns>
+       too. You wrote that at 19.30 the musical
+       <ns type="TV">
+        <i>
+         started
+        </i>
+       </ns>
+       . I was waiting for 45
+       <ns type="AGN">
+        <i>
+         minute
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       the show started at 20:15.
+      </p>
+      <p>
+       I paid
+       <ns type="R">
+        <i>
+         20 pounds
+        </i>
+       </ns>
+       without any discount. You said that some
+       <ns type="S">
+        <i>
+         discouns
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       available. Nobody
+       <ns type="RV">
+        <i>
+         took
+        </i>
+       </ns>
+       a discount.
+      </p>
+      <p>
+       When I went to the
+       <ns type="S">
+        <i>
+         reastaure
+        </i>
+       </ns>
+       I was really
+       <ns type="S">
+        <i>
+         suprised
+        </i>
+       </ns>
+       . It was closed and I
+       <ns type="SX">
+        <i>
+         steel
+        </i>
+       </ns>
+       don't know why
+       <ns type="RP">
+        <i>
+         ?
+        </i>
+       </ns>
+      </p>
+      <p>
+       In the
+       <ns type="S">
+        <i>
+         advertisemen
+        </i>
+       </ns>
+       you wrote "your perfect evening out", that's very funny. It was
+       <ns type="RP">
+        <i>
+         Just
+        </i>
+       </ns>
+       a disappointing night and I want you to return to me some of my money
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+      </p>
+      <p>
+       a very angry man
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear manager of the circle theatre,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Two months ago I went to see your musical show.
+       </s>
+       <s pid="2" sid="2">
+        I got very angry because you are liars.
+       </s>
+       <s pid="2" sid="3">
+        It was one of the most disappointing evening of my life.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The advertisement said that the actors were Danny Brook and Tina Truelove but the actor  was different.
+       </s>
+       <s pid="3" sid="2">
+        Who can believe it?
+       </s>
+       <s pid="3" sid="3">
+        You are really a funny theatre.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        And  the time too.
+       </s>
+       <s pid="4" sid="2">
+        You wrote that at 19.30 the musical started.
+       </s>
+       <s pid="4" sid="3">
+        I was waiting for 45 minute.
+       </s>
+       <s pid="4" sid="4">
+        the show started at 20:15.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I paid 20 pounds without any discount.
+       </s>
+       <s pid="5" sid="2">
+        You said that some discouns was available.
+       </s>
+       <s pid="5" sid="3">
+        Nobody took a discount.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        When I went to the reastaure I was really suprised.
+       </s>
+       <s pid="6" sid="2">
+        It was closed and I steel don't know why?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        In the advertisemen you wrote "your perfect evening out", that's very funny.
+       </s>
+       <s pid="7" sid="2">
+        It was Just a disappointing night and I want you to return to me some of my money,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        a very angry man
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="UD">
+        <i>
+         The modern
+        </i>
+       </ns>
+       technology has changed my daily life in many ways.
+       <ns type="UD">
+        <i>
+         The modern
+        </i>
+       </ns>
+       technology
+       <ns type="AGV">
+        <i>
+         help
+        </i>
+       </ns>
+       me when I do my homework
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="MC">
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       some games
+       <ns type="RP">
+        <i>
+         e.t.c.
+        </i>
+       </ns>
+      </p>
+      <p>
+       First of all
+       <ns type="MP">
+       </ns>
+       the computer. It helps me when I
+       <ns type="S">
+        <i>
+         studie
+        </i>
+       </ns>
+       . I can find many things
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       or
+       <ns type="FV">
+        <i>
+         to write
+        </i>
+       </ns>
+       my compositions on it.
+      </p>
+      <p>
+       The car has changed my daily life, like everyone
+       <ns type="MP">
+        <i>
+         else
+        </i>
+       </ns>
+       . I can go from one place to
+       <ns type="RA">
+        <i>
+         <ns type="MD">
+         </ns>
+         other
+        </i>
+       </ns>
+       very fast
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Most of the machines which
+       <ns type="RA">
+        <i>
+         you
+        </i>
+       </ns>
+       have at home help me, too. I can find cold water in the
+       <ns type="S">
+        <i>
+         refrigarator
+        </i>
+       </ns>
+       but 50 years
+       <ns type="RY">
+        <i>
+         before
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       didn't have the
+       <ns type="S">
+        <i>
+         refrigarator
+        </i>
+       </ns>
+       , so our life is easier
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       today.
+      </p>
+      <p>
+       When I stay home I can watch
+       <ns type="MN">
+       </ns>
+       or listen to the radio
+       <ns type="RP">
+        <i>
+         e.t.c.
+        </i>
+       </ns>
+       so
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       modern technology
+       <ns type="AGV">
+        <i>
+         help
+        </i>
+       </ns>
+       me to spend my free time.
+      </p>
+      <p>
+       As you have seen
+       <ns type="MP">
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       modern technology has changed my daily life a lot and I believe that it has changed it
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the better.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The modern technology has changed my daily life in many ways.
+       </s>
+       <s pid="1" sid="2">
+        The modern technology help me when I do my homework,  to  some games e.t.c.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all the computer.
+       </s>
+       <s pid="2" sid="2">
+        It helps me when I studie.
+       </s>
+       <s pid="2" sid="3">
+        I can find many things from the internet or to write my compositions on it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The car has changed my daily life, like everyone else.
+       </s>
+       <s pid="3" sid="2">
+        I can go from one place to  other very fast
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Most of the machines which you have at home help me, too.
+       </s>
+       <s pid="4" sid="2">
+        I can find cold water in the refrigarator but 50 years before the didn't have the refrigarator, so our life is easier, today.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        When I stay home I can watch  or listen to the radio e.t.c. so the modern technology help me to spend my free time.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        As you have seen the modern technology has changed my daily life a lot and I believe that it has changed it to the better.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

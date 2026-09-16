@@ -1,0 +1,450 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Division of Labor
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction:
+       <q>
+        Grammar
+       </q>
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        My girlfriend recently commented to me that she doesn't think that she "could live with a syntactician."
+       </s>
+       <s pid="1" sid="2">
+        Her reasoning?
+       </s>
+       <s pid="1" sid="3">
+        Such a person would surely be constantly correcting her "grammar."
+       </s>
+       <s pid="1" sid="4">
+        Saving discussion of my career goals and their impact on future domestic bliss for another time and place, and leaving aside the fact that my compulsion to "correctly" place prepositions is entirely independent of my choice of profession, I am still left with the inconvenient fact that the best word that available to define "syntax" is "grammar."
+       </s>
+       <s pid="1" sid="5">
+        Even knowing better, as I do, it is difficult to disassociate the "grammar" from elementary school subjects and predicates, a-sentence-is-a-group-of-words-that-expresses-a-complete-thought, subjunctives, plusqueparfaits and the like.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Chomsky distinguishes between "competence" and "performance," where the former describes "the speaker-hearer's knowledge of his language" and the latter "the actual use of language in concrete situations (1965:4)."
+       </s>
+       <s pid="2" sid="2">
+        The goal of many linguists since the "Chomskyan revolution" has been to understand and/or describe the underlying competence that allows a speaker to take limited input-other people's performance-and develop her or his knowledge of the language to the extent that she or he is able potentially to produce infinitely many grammatical sentences never before encountered and also to rule out as ungrammatical infinitely many sentences that have also never been encountered.
+       </s>
+       <s pid="2" sid="3">
+        However, the goal is still a (generative/explanatorily adequate) "grammar," different though such a grammar is from language-specific descriptive grammars and the "grammar" of "grammar school."
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        In addition to remaining saddled with the word, grammar , linguists still also run the risk of frightening off girlfriends and such with dreaded sentence trees.
+       </s>
+       <s pid="3" sid="2">
+        It may be said, though, that the trees these days are much better than the ones from grammar school.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       X-bar Theory
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        X-bar (X' henceforth) theory uses variables and distinguishes different levels of projection to capture important generalizations about the structures of various types of phrases and thus eliminate some of the redundancy of traditional phrase structure grammars, and to describe the reality of constituent structures that were unable to be represented in traditional grammars.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        X' theory acknowledges, and generalizes from, the fact that all noun phrases (NPs) contain a noun (N), all verb phrases (VPs) contain a verb (V), all prepositional phrases (PPs) contain a preposition, and so on.
+       </s>
+       <s pid="5" sid="2">
+        Furthermore, we never see an N that is not part of an NP, nor a V that is not part of a VP, nor a P that is not part of a PP, etc.
+       </s>
+       <s pid="5" sid="3">
+        The X in X' theory is a category variable used to describe the fact that all XPs, by definition, contain an X; and all Xs will, by definition, occur as part of an XP.
+       </s>
+       <s pid="5" sid="4">
+        The category X is known as the head of the XP.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Radford (1981) defines the important concept of constituent : "the native speaker intuitively recognises that sound-sequences in sentences are structured into successively larger sets or groups that we call constituents (34)."
+       </s>
+       <s pid="6" sid="2">
+        Individual lexical items, such as those that might fall into any of the categories (N, V, etc.) mentioned above, are constituents, as are phrases (NP, VP, etc.).
+       </s>
+       <s pid="6" sid="3">
+        The "bar" part of X' theory was developed in part to account for the fact that there exist groups of words that pattern as constituents but that cannot be described as a sentence, phrase or single lexical item.
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        For example, a key diagnostic criterion for determining if a group of lexical items forms a constituent is whether the group of items can "be replaced by, or serve as an antecedent of, a proform (Radford 1981:60)."
+       </s>
+       <s pid="7" sid="2">
+        In (1)(a) picture serves as the antecedent of the proform, one .
+       </s>
+       <s pid="7" sid="3">
+        A traditional phrase structure grammar would correctly predict this to be grammatical, since picture , being an individual lexical item, is a constituent.
+       </s>
+       <s pid="7" sid="4">
+        However, traditional phrase structure grammars would incorrectly predict (1)(b) to be ungrammatical because picture of my mom is only part of a noun phrase and thus not a constituent.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        (1) (a) "I like the [picture]
+       </s>
+       <s pid="8" sid="2">
+        i of my mom on the wall but not the [one]i of my dad on the table."
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        (b) "I like the [picture of my mom]i on the wall but not the [one]i on the table."
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        X' theory resolves this by positing a constituent structure intermediate between individual lexical items (X or X0) and full phrases (X").
+       </s>
+       <s pid="10" sid="2">
+        The intermediate node, X' serves as a possible point of attachment where another phrase, Y", can combine with X, the head of X", to form a constituent that is not a full X".
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       A Problem
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        Consider again the sentence in (1)(b), reproduced in (2), below.
+       </s>
+       <s pid="11" sid="2">
+        We will be concerned here with the interpretation in which the N", the picture of my mom on the wall , is understood to refer to a picture of my mom that is (hanging) ion the wall, not to a picture of my mom that shows her sitting (or standing) on a wall.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        (2) (a) "I like the [picture of my mom]i on the wall but not the [one]i on the table."
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        (b) "I like the [picture]
+       </s>
+       <s pid="13" sid="2">
+        i of my mom on the wall but not the [one]i on the table."
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        We know from (1) that the N' proform, one , can co-refer either with picture of my mom , as in (2)(a) or with picture as in (2)(b) and (1)(a).
+       </s>
+       <s pid="14" sid="2">
+        It seems that the most salient interpretation is (2)(a), but we know from (1)(a) that (2)(b) is also possible.
+       </s>
+       <s pid="14" sid="3">
+        That both picture and picture of my mom can serve as antecedents for the pro-N', one , indicates that this sentence has the syntactic representation (i.e. X' tree structure) in (3).
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        (3)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        Hornstein and Lightfoot (1981:20-21) point out that a prepositional phrase may modify either an N or an N'.
+       </s>
+       <s pid="16" sid="2">
+        In the first case the P" is a daughter of N' and sister to the head N: it is a complement to the head N.
+       </s>
+       <s pid="16" sid="3">
+        In the second case the P" is both daughter of an N' and sister to the N': it is an N' adjunct.
+       </s>
+       <s pid="16" sid="4">
+        Both of the prepositional phrases in (3) are right N' adjuncts.
+       </s>
+       <s pid="16" sid="5">
+        Thus, there is an N' node that dominates only the head N and an N' node that dominates the head, picture , as well as the adjuncted P", of my mom , available to serve as antecedents of one .
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        The problem arises when we change the order of the two prepositional phrases, as in (4).
+       </s>
+       <s pid="17" sid="2">
+        The bracketed noun phrase in (4)(a) is equivalent in meaning to the picture of my mom on the wall , which is to say we are not talking about a wall-of-my-mom (a wall with some sort of shrine to my mom?), but a picture that is (hanging) on the wall and is a picture of my mom.
+       </s>
+       <s pid="17" sid="3">
+        The X' tree structure of the noun phrase in (4)(a) is shown in (5).
+       </s>
+       <s pid="17" sid="4">
+        It is identical to the tree in (3) except that the points of attachment of the two prepositional phrases have switched.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        (4) (a) "I like [the picture on the wall of my mom]."
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        (b) "I like the picture on the wall of my mom, but not the one on the table."
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        What, though, is the co-referent of one in (4)(b)?
+       </s>
+       <s pid="20" sid="2">
+        For me, the most salient interpretation of (4)(b) is that the thing that is on the table is a picture of my mom .
+       </s>
+       <s pid="20" sid="3">
+        Other English speakers with whom I have consulted also find that, at the very least, it is ambiguous as to whether the thing on the table is a picture of my mom or just a picture ; and at least one speaker found that to interpret the thing on the table to be just a picture was nearly impossible.
+       </s>
+       <s pid="20" sid="4">
+        Also, if (4)(b) extended to explicitly of my mom a second time-… but not the one on the table of my mom-is perceived as redundant, further indicating that of my mom has already been referenced by one.
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        However, as we can see in (5), picture of my mom is not a constituent!
+       </s>
+       <s pid="21" sid="2">
+        There is no node that dominates picture and of my mom and nothing else.
+       </s>
+       <s pid="21" sid="3">
+        As a non-constituent, picture of my mom should not be able to serve as the antecedent of one and that interpretation of the sentence, which is in fact highly, if not the most, salient, should be impossible.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        (5)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       A Solution?
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        If we take for granted that the surface structure of the sentence, the one that we can hear, is the only structural representation of that sentence, then there is no way to represent the structure of (4) within the X' framework such that picture of my mom is a constituent.
+       </s>
+       <s pid="23" sid="2">
+        It is not possible to rearrange the dominance relations within the tree structure to make picture of my mom a constituent, while maintaining the precedence relations between lexical items so that the sentence still sounds the same, without violating the constraint against "crossing branches" of the tree (Radford 1981:82-3).
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        If, however, we do not assume that the surface structure of the sentence is the only structural representation it ever has, there is a possibility that this sentence can be explained within the X' framework.
+       </s>
+       <s pid="24" sid="2">
+        This possibility lies in positing an original representation, a deep structure, at which meaning is assigned that is separate from the eventual representation that is pronounced, the surface structure.
+       </s>
+       <s pid="24" sid="3">
+        Once meaning is assigned at deep structure, some movement of the constituents may be allowed before the resulting surface structure of the sentence is pronounced.
+       </s>
+       <s pid="24" sid="4">
+        This is the solution that has been proposed to explain the surface structure of, for instance, wh -questions and passives, in which the object of the verb appears in the subject position of the sentence at surface structure (see for instance Haegeman 1994: Ch. 5).
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        In the case of the missing constituent currently on hand, we could propose that the picture on the wall of my mother has the deep structure shown in (6)(a).
+       </s>
+       <s pid="25" sid="2">
+        Here, there is an N' node that exhaustively dominates picture of my mom and nothing else, leaving picture of my mom free to serve as the antecedent of one .
+       </s>
+       <s pid="25" sid="3">
+        After the meaning of the sentence has been assigned, the P", of my mom, moves to a position outside the P", on the wall , yielding a structure like that in (6)(b).
+       </s>
+       <s pid="25" sid="4">
+        Now picture of my mom is no longer a constituent, but that does not affect the meaning of the sentence, as that has already been determined.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        (6) (a) (b)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="27" sid="1">
+        Note that (6)(b) has one more N' node than (6)(a).
+       </s>
+       <s pid="27" sid="2">
+        The P" is unable to move unless there is a place for it to go, so it is necessary to posit another N' node at some level of representation.
+       </s>
+       <s pid="27" sid="3">
+        It could be that a speaker anticipates this movement and projects an extra N' node at deep structure.
+       </s>
+       <s pid="27" sid="4">
+        Another option is that the fact of the movement of the P" creates a node where it can attach.
+       </s>
+       <s pid="27" sid="5">
+        Still another possibility is that every deep structure representation of an X" projection has infinitely many empty, but potentially fillable, X' nodes that are simply ignored at surface structure if empty.
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        While a theorist would probably want the theory to have some mechanism for generating empty nodes if it is going to allow this type of movement, this mechanism would not be the theory's greatest innovation.
+       </s>
+       <s pid="28" sid="2">
+        The innovational, or revolutionary, aspect of such a theory is its positing a deeper, unobservable structure of sentences, thereby emphasizing even more speakers' remarkable competence.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Discussion
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        Having shown that it is possible to resolve the apparent problem of constituent structure within the X' theoretical framework if we allow for a specific kind of movement, that is for right N' adjuncts that are P" projections to reorder after meaning has been assigned at deep structure, the question remains if this is the best way to do so.
+       </s>
+       <s pid="29" sid="2">
+        What are the theoretical ramifications of allowing this sort of transformation?
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        The strength of X' theory lies in great part in its ability to generalize.
+       </s>
+       <s pid="30" sid="2">
+        Given that the theory is focused on attaining explanatory adequacy using general principles and parameters, a rule as specific as a P" projection that is a right N' adjunct my freely reorder with other right N' adjuncts that are also P" projections after meaning has been assigned at deep structure would seem out of place.
+       </s>
+       <s pid="30" sid="3">
+        On the other hand, a general rule allowing adjuncts in general to freely reorder after meaning has been assigned at deep structure might seem to lack constraint.
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        This begs the question: do we really want our theory of syntax to explain this phenomenon?
+       </s>
+       <s pid="31" sid="2">
+        Epstein (personal communication) has frequently pointed out the importance of avoiding redundancy in formulating such a theory.
+       </s>
+       <s pid="31" sid="3">
+        For instance, if a verb's theta-roles remaining unassigned violates of the theta-criterion, it does not also have to be a lexical property of verbs that they must assign their theta-roles.
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        Hornstein and Lightfoot (1981) and Radford (1981; 1988) spend many pages describing the structural properties of complements and adjuncts, while the most salient distinction, at least in my reading of them, between the two categories is in the strength of their semantic relationship with a head.
+       </s>
+       <s pid="32" sid="2">
+        While there is a motivation for a theory of syntax to be aware of and predict, to some extent, the semantics, as Hornstein and Lightfoot and Radford do, might it not also make sense that in cases where the semantic system is sufficient to determine the interpretation of a sentence, the interpretation need not necessarily be independently motivated by the syntax?
+       </s>
+      </p>
+      <p>
+       <s pid="33" sid="1">
+        In our infamous sentence, reproduced again in (7)(a), the meaning of the first noun phrase is almost identical to the meaning of the second noun phrase except that the locative P", on the wall has been replaced by on the table .
+       </s>
+       <s pid="33" sid="2">
+        Suppose one were to co-refer with the whole segment of the sentence bracketed in (7)(b), as indicated by the indices.
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        (7) (a) "I like the picture on the wall of my mom but not the one on the table."
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        (b) "I like the [picture on the wall of my mom]i but not the [one]i on the table."
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        That segment is legitimately an N' constituent as we have seen, and is free to serve as antecedent of one .
+       </s>
+       <s pid="36" sid="2">
+        In this way, the syntactic constraints on constituent-hood and anaphora are satisfied.
+       </s>
+       <s pid="36" sid="3">
+        It is no difficulty at all for the semantic system to recognize that a picture (in most real-world conditions) cannot be on the wall and on the table simultaneously.
+       </s>
+       <s pid="36" sid="4">
+        All that remains is to replace the location implied by one with that explicitly stated to arrive at the correct interpretation.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        By allowing for some division of labor between the syntactic and semantic systems, we arrive at a solution that is arguably simpler than the movement hypothesis described above.
+       </s>
+       <s pid="37" sid="2">
+        Additionally and perhaps more importantly, we are able to leave the syntactic theory as is.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N10298">
+       <li id="N10299">
+        Chomsky, N.  1965.  Aspects of the Theory of Syntax.  Cambridge, MA: MIT Press.
+       </li>
+       <li id="N1029B">
+        Epstein, S.  Personal Communication.
+       </li>
+       <li id="N1029D">
+        Haegeman, L.  1994.  Introduction to Government &amp; Binding Theory.  2nd Ed.  Cambridge, MA: Blackwell.
+       </li>
+       <li id="N1029F">
+        Hornstein, N. &amp; D. Lightfoot.  Introduction.  In N. Hornstein &amp; D. Lightfoot, Eds.  Explanation in Linguistics: The Logical Problem of Language Acquisition.  New York: Longman.
+       </li>
+       <li id="N102A1">
+        Radford, A.  1981.  Transformational Syntax: A Student's Guide to Chomsky's Extended Standard Theory.  New York: Cambridge University Press.
+       </li>
+       <li id="N102A3">
+        Radford, A.  1988.  Transformational Grammar: A First Course.  New York: Cambridge University Press.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

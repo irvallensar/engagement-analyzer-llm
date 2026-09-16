@@ -1,0 +1,379 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Water Utility Efficiency Assessment Using a Data Envelopment Analysis Procedure
+   </div>
+   <p>
+   </p>
+   <div class="abstract">
+    Abstract
+    <p>
+     This paper employs data envelopment analysis (DEA) of US EPA Community Water System Survey data to compare the relative efficiencies of potable water utilities. Three ownership types (private for-profit, private not-for-profit, and public) and two types of supply sources (ground and surface) are compared. Statistically significant results indicating the efficiency advantage of certain utility types were found, and clear trends towards certain utility types were identified. The findings indicate that public utilities are most efficient overall, followed by private not-for-profit utilities, with private for-profit utilities being least efficient. Except for a few cases of very large supply demands, utilities employing ground water sources were generally more efficient than those using surface water sources. A brief investigation into the marginal return on information obtained from using additional measurement variables to measure utility performance is presented. Additional ranking information can be obtained by using more discrete measurement variables, but with diminishing marginal returns. This efficiency evaluation of public water utilities should prove useful as a tool for guiding ownership policy and water source development.
+    </p>
+    <p>
+     CE Database subject headings: data envelopment analysis, groundwater sources, surface water sources, efficiency measurements, infrastructure, decision making, ownership type.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     Introduction
+    </div>
+    <p>
+     Efficiency measurements are widely used in various industries to benchmark performance, document operational improvements, and provide other managerial information (e.g.,, Arogyaswamy and Yasai-Ardekani 1997; Westphal et al. 1997). Conversely, water utilities exist in relatively non-competitive environments, with few quantifiable operational measurements being available to compel management efficiency. This paper describes a procedure by which the efficiency of water utilities can be assessed using data envelopment analysis (DEA), a procedure widely used to provide objective numerical efficiency rankings for comparable units.
+    </p>
+    <div>
+     <div class="head_2">
+      Background
+     </div>
+     <p>
+      Data envelopment analysis was first described in a landmark paper by Charnes et al. (1978), and has since experienced extensive development and growth to become a ubiquitous efficiency measurement method (Seiford 1996). DEA has been used for efficiency measurements in such industries as health care (e.g. Banker et al. 1986; Ozcan et al. 1992; Kontodimopoulos and Niakas 2005); insurance (Brockett et al. 1998); agriculture (Coelli 1995; Wadud and White 2000); food processing (Jayanthi et al. 1999); and many others. DEA has been used to measure the efficiency of engineered products (Bulla et al. 2000) and has been used to guide the selection of new technologies (Baker and Talluri 1997).
+     </p>
+     <p>
+      Of particular interest to our work in analyzing various operational challenges facing water utilities is related work analyzing units in sectors which similarly experience extensive regulatory presence and government control. For example, DEA has been used to examine changes and policies within public school systems (Bessent and Bessent 1980) and to examine the efficiency impact of government regulatory changes on units with different ownership models, such as banks (Bhattacharyya et al. 1997). In other relevant studies, researchers have used DEA to measure the relative efficiency of government-run publicly-owned forest management districts and to estimate the potential efficiency gains from different organizational alternatives (Kao and Yang 1992).
+     </p>
+     <p>
+      DEA has also been used to measure efficiencies of units within the municipal infrastructure sector. Bosch et al. (2000) used the procedure to measure the efficiency of municipal waste collection services, finding that services operating within competitive environments were more efficient than services operating within monopoly environments. Worthington and Dollery (2001) used the procedure to study the efficiency of 103 municipal waste collection units, comparing inefficiency drivers between urban and rural units and between units covering various geographical scales. These investigators estimated that inputs could be reduced by 65 percent while maintaining the same level of service if best practices were used by currently inefficient units.
+     </p>
+     <p>
+      A few DEA studies have in fact been performed on selected aspects of potable water supply systems. Akosa et al. (1995) reported on the DEA efficiency analysis of ten water and sewage infrastructures in Ghana, a low income, West African state. Pursuant to funding agency interests, the projects had six input variables (technical, financial, economic, institutional, social, and environmental) representing such things as community input, etc., and three output variables (reliability, utilization, and convenience) representing various levels of use. Despite the high ratio of variables measured to units compared, the analysis indicated that only one unit was fully efficient when all nine input and output variables were considered. Although a limited number of compared units were compared, the investigators were able to draw relevant inferences regarding future funding efforts to optimize benefits.
+     </p>
+     <p>
+      Variants on DEA-measured efficiencies have been used as input to regulatory pricing structures relevant to the work described here . The British Office of Water Services (OFWAT) regulates potable water price structures with the goal of balancing inflationary pressures and efficiency gains using DEA efficiency results as input to price evaluations. Thanassoulis, for example, has published a series of papers (2000a; 2000b; 2002) on the use of DEA calculated efficiency measures to guide the pricing structure of private water and wastewater utilities in Great Britain. In the first of these paper (2000a) a single input of operating expense was employed and five outputs were considered; i.e., number of connections, length of the mains with the distribution system, total water deliveries, measured and estimated water deliveries, and number of pipe bursts. Ten utilities combining potable water and wastewater units and 22 potable-water-only utilities were included in the study, In an earlier related study performed by OFWAT only the combined utilities (those providing both water and wastewater services) were used in defining the efficiency frontier, a fact which Thanassoulis in his paper demonstrates was a potentially a flawed premise because potable-water-only utilities tended to define the efficiency frontier. Aida et al. (1998) also performed water utility measurements using DEA to compare regional water utilities utilities, but did not evaluate the effects of ownership type. Lambert et al. (1993) used DEA to compare ownership type, but limited their study to public versus private utilities. Using a single output variable measuring total water production and four input variables measuring annual labor use, total energy use, financial value of material inputs, and total value of capital, Lambert et al. concluded that public utilities were more efficient overall. Anwandter and Ozuna (2002) concluded that neither decentralization nor the presence of an independent regulator provided any benefit in the efficiency of Mexican water utilities, and concluded that competition might have had a greater role in increasing efficiency.
+     </p>
+     <p>
+      None of the previous studies cited (Lambert et al. 1993; Aida et al. 1998; Thanassoulis 2000a) used non-discretionary type variables for connections, network length, or water delivery, thus tacitly assuming that the utility had some measure of control over these variables. The current study builds on these previous studies by using non-discretionary variable types for variables that are not controllable by the utilities, and by efficiency comparisons of utilities based on different water sources.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Study focus
+    </div>
+    <p>
+     Three main objectives underlie the study reported here. The
+     <i>
+      first objective
+     </i>
+     was to compare the relative efficiencies of different water utility ownership types calculated using different measurement variables. Three main water utility ownership types were considered; public utilities owned by local or regional government, private not-for-profit utilities operated by non-governmental agencies, and private for-profit utilities operated by private enterprise. Ancillary water utilities, those utilities run as a side operation by a larger concern, were not evaluated because of their limited financial independence.
+    </p>
+    <p>
+     The
+     <i>
+      second objective
+     </i>
+     was to compare the efficiencies of groundwater source utilities to those of surface-water source utilities using various measurement variables. Although there is clearly a geographic constraint limiting unbounded selection of water source, unbiased efficiency data could be important for evaluation of future water resources and policy regarding development.
+    </p>
+    <p>
+     The
+     <i>
+      final objective
+     </i>
+     of this paper is to discuss variable selection by presenting a brief analysis of the measurement discernment of additional variables. In this section, we assessed differences in efficiency measurements for decision-making units analyzed with increasingly discrete measurements of output components. A detailed set of variables can discern a finer resolution of the efficiency measurement than can a sparse set of variables. However, a detailed set of variables also can artificially inflate the apparent efficiency of the decision-making units and can result in an incurred cost due to the need to measure each variable.
+    </p>
+    <p>
+     A series of DEA trials, each with unique input and output variables, were performed to identify variables significant to the efficiency measurement of each utility type. US EPA Community Water System Survey Data (EPA, 2002) was used as input into a DEA model to determine the relative efficiencies of water utilities. Comparisons between utility types were checked using the Wilcoxon-Mann-Whitney comparison of ranked efficiency measurements. Two comparisons were performed using the efficiency data obtained from each trial. The first comparison examined efficiency differences between water utility categories of different ownership type and water source. Three main utility ownership types are represented by the EPA Survey Data: public, private not-for-profit, and private for-profit, while water source was either ground water or surface water. Efficiency measurements varied depending on selection of input and output variables, but major trends and variables having a significant influence on efficiency rankings were identified. The second comparison was an inter-ownership evaluation of utility efficiency within each utility category type using different selections of input and output variables. The results of this evaluation were then used to identify significant variables for each utility category.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Background of data envelopment analysis.
+    </div>
+    <p>
+     DEA provides a numerical non-arbitrary score of efficiency that can be employed to improve utility operations. Efficiency rankings can be used to guide utilities to improve operational efficiencies by providing operational targets and to identify best practices at highly efficient utilities. The DEA approach can also be used to identify treatment utilities that are efficient under their particular environmental conditions but which might not be considered efficient using traditional metrics, e.g. expenditure and treatment volume. The DEA procedure requires numerical measurement data for all appropriate input and output variables. Each utility is evaluated with respect to peer utilities using unique sets of measurement variables. The DEA approach defines an efficiency frontier consisting of all fully efficient utilities, and an efficiency score is calculated for all non-efficient utilities based on their relative distance from the efficiency frontier.
+    </p>
+    <p>
+     The efficiency score is a non-arbitrary value based on the relative amount of inputs and outputs respectively used and produced by each utility. The DEA procedure can be either input or output oriented. An input oriented DEA model assigns the most efficient DMUs an efficiency score of one, and assigns the less efficient DMUs an efficiency score between one and zero representing the fraction of their original input they could use to still produce as much output as their peer DMUs if they were as efficient as the most efficient DMUs. An output oriented DEA model assigns the most efficient DMUs an efficiency score of one and assigns all of the other DMUs efficiency scores greater than one representing the fraction increase in output they could achieve with the same input if they were as efficient as the most efficient DMUs. Mathematically, the DEA analysis is performed by optimizing a series of linear programming equations by varying the relative weights of the measurement variables. Additional background and methodology can be found in Cooper et al. (2000).
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Data source and method of analysis
+    </div>
+    <p>
+     This efficiency analysis was performed using an input-oriented non-discretionary (non- controllable) output approach. This approach was dictated by the fundamental environment of utility service requirements. Water utilities are constrained to fulfill customer requirements. They do not have the option, for instance, to reduce the number of connections within their distribution system. Since it is not reasonable to quantify water utility efficiency based on improving output for a given input, the input-oriented approach was selected.
+    </p>
+    <p>
+     In some cases it was not clear whether a variable is an input or an output parameter. In these cases, it was considered an output variable if an increase in its value required more efficient management ability in order to maintain all other variables constant. For instance, if two systems were the same in all aspects except total number of connections, the system having greater connections must be more efficient.
+    </p>
+    <div>
+     <div class="head_2">
+      Data acquisition and compilation
+     </div>
+     <p>
+      The data used in this analysis was obtained from the US EPA Community Water System Survey Data (EPA, 2002). Due to blanks entries and the presence of illogical data a significant amount of review was performed to obtain a suitable data set. Water treatment systems were removed from the set of DMUs when relevant data was missing or nonsensical. For example, systems which had either zero water delivery reported or which left this field blank were removed from the analysis.
+     </p>
+     <p>
+      In all cases, DMUs with data which were not obviously correctable were deleted from the analysis, even if other components of the specific DMU contained data which might have been useful. The result of removing such DMUs is that the DEA analysis might produce a conservative estimate of the efficiency frontier. All water systems with non-water revenues were removed from the analysis. Almost uniformly, systems which had non-water revenuepresent did not report an average residential bill, indicating that their production of water was an ancillary activity. Water quality data was not available and thus was not used as an efficiency ranking.
+     </p>
+     <p>
+      The final set of 714 utilities was comprised of 549 public, 96 private not-for-profit, and 62 private for-profit utilities, with 7 utilities either not reporting ownership information or were reported as ancillary operations without clear ownership structure. The 714 utilities were comprised of 389 utilities that used a ground water source and 325 utilities which used a surface water source.
+     </p>
+     <p>
+      The DEA analysis was performed using DEA-Solver Pro, an Excel add-in (Saitech, Inc., 2004) on a Dell Inspiron 5000.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Utility Type Efficiency Comparison: Ownership and Water Source
+    </div>
+    <p>
+     The water utilities were analyzed for efficiency differences based on ownership type and water source. The three ownership types, public, private not-for-profit, and private for-profit, and the two water sources, ground and surface, had their efficiencies calculated with DEA using several variable sets. The influence of each variable set on the efficiency ranking was then determined by comparing the relative efficiency of the utilities within each utility type to the relative efficiency of the utilities within the other utility types. Comparisons between utility types were checked using the Wilcoxon-Mann-Whitney (WMW) ranked-sum comparison of the efficiency measurements. The WMW comparison was used because the underlying distribution of DEA efficiency measurements is unknown and thus a non-parametric statistic was required.
+    </p>
+    <p>
+     Because we used the WMW rank-sum test to compare the efficiencies of the two populations, the negative t-statistic means that we can claim the first population was generally more efficient than the second population, while a positive t-statistic means that we can claim the first population was generally less efficient than the second population. The significance level of this claim is calculated from the t-statistic using the inverse of the standard normal distribution.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Method of Analysis
+    </div>
+    <p>
+     The utilities were analyzed with DEA using thirty eight different sets of output variables, as shown along the right side of Figure 1 - Public Versus Private Not-For-Profit. The three other comparisons also had figures generated for analysis but were not included due to space limitations. The output variables were selected from four main categories: age and length of distribution system and various combinations of connections and treatment volume. The age and length categories were the average age of the distribution system, and the reported length of the distribution system, respectively. For connections, the categories were total number of connections (shown as
+     <q>
+      total
+     </q>
+     on the figures), a partial separation into residential and non-residential connections (shown as
+     <q>
+      res/non-res
+     </q>
+     on the figures), and then a complete separation into residential, industrial/commercial, agriculture, and other connections (shown as
+     <q>
+      RCAO
+     </q>
+     on the figures). For volume, the categories were total flow (shown as total on the figures), a partial separation into residential and non-residential flow (shown as
+     <q>
+      res/non-res
+     </q>
+     on the figures), and then a complete separation into residential, industrial/commercial, agriculture, unaccounted for water loss, and other flow demands (shown as
+     <q>
+      RCAOU
+     </q>
+     on the figures). Each DEA efficiency analysis was performed using the entire combined set of 714 utilities of all ownership categories and used the described selection of variables to calculate an efficiency score for each utility. For each efficiency analysis, the input variables were annual expenses and average 5-year capital investments.
+    </p>
+    <p>
+     After the DEA efficiency analysis was performed for the combined set of ownership categories, the WMW comparison t-statistic was calculated between the utilities of each of the three ownership sub-categories: private not-for-profit versus private for-profit; private for-profit versus public; and public versus private not-for-profit, and the two water source categories, ground water versus surface water. In order to perform each WMW comparison, the efficiency data for the combined set of utilities was separated into the relevant sub-categories, and the efficiency data for the utilities in one of the sub-categories was then compared against the efficiency data for the utilities in another one of the subcategories. A t-statistic for the comparison was then calculated.
+    </p>
+    <div>
+     <div class="head_2">
+      Efficiency Comparison Results
+     </div>
+     <p>
+      Figure 1 shows the results of efficiency comparison for the public versus private not-for- profit ownership categories. Figures for the other comparisons: private not-for-profit versus private for-profit, private for-profit versus public, and ground water source versus surface water source are not shown. The WMW t-statistic for each set of variables was plotted from largest to smallest, with a description of the variables used for each efficiency analysis shown next to each t-statistic plot. The description of the four categories of variables used in the DEA analysis is shown as a series of columns along the right side of the plot.
+     </p>
+     <div>
+      <div class="head_3">
+       Public Utilities Versus Private Not-for-profit Utilities.
+      </div>
+      <p>
+       The ranked efficiencies of public utilities versus the private not-for-profit utilities generally showed a moderate yet statistically significant advantage of the public utilities over the private not-for-profit utilities for the majority of cases, as shown in Fig. 1. Twelve of the variable sets used for efficiency analysis indicated that private not-for-profit utilities were more efficient, while twenty-six of the variable sets used for efficiency analysis indicated that the public utilities were more efficient.
+      </p>
+      <p>
+       Only two of the variable sets used for efficiency analysis that showed greater efficiency from the private not-for-profit utilities had more than 90 percent significance. Similar to the previous comparison of private for-profit utilities versus public utilities, the variable sets which showed the least public utility efficiency were either distribution network length and average pipeline age, or length and age combined with total water volume. Both showed a statistically significant (greater than 90 percent) efficiency advantage of the private not-for-profit utilities over the public utilities. It should be noted that the variable set of distribution network length and average pipeline age used to compare the public utilities against the private not-for-profit utilities resulted in the most significant t-statistic of any of the variable sets used for any of the utility comparisons, with essentially 100 percent significance.
+      </p>
+      <p>
+       In addition, the top eight variable sets showing the greatest efficiency of the private not- for-profit utilities all used distribution network length and average pipeline age as measurement variables. In contrast, none of the top eight variable sets which indicated the greatest efficiency of the public utilities used average network length as a measurement variable and only three of the eight used average distribution network age as a measurement variable.
+      </p>
+      <p>
+       Eleven of the variable sets used for efficiency analysis which showed greater efficiency from the public utilities had more than 90 percent significance. All but one of these variable sets measured some combination of both network connections and water volume delivery. More than half of these cases used the most discrete measurement possible of both network connections and water volume delivery in the form of either residential, industrial/commercial, agriculture, andother connections, or residential, industrial/commercial, agriculture, unaccounted for water loss, and other flow demands. By comparison, none of the variable sets which showed greater efficiency from the private not-for-profit utilities used either connection data or water volume data at this level of detail. Thus, it appears that public water utilities are more efficient than private not-for-profit utilities at serving a variety of customer types, and are not as efficient at serving a single customer type.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Private Not-for-Profit Utilities Versus Private For-Profit Utilities.
+      </div>
+      <p>
+       The ranked efficiencies of private not-for-profit utilities versus the private for-profit utilities showed a moderate yet statistically significant advantage of the private not-for-profit utilities over the private for-profit utilities for almost all cases. Only six sets of output variables showed greater efficiency of the private for-profit utilities, with the largest difference in efficiency being when using residential and non-residential connections and residential and nonresidential treatment volume as output variables. The comparison when using the most pro-private for-profit utility variable set had a t-statistic of 0.39, indicating only a 30.6 percent chance of true difference between utilities measured using these variables, which is not a statistically significant difference. None of the variable sets which indicated that private for-profit utilities were more efficient used distribution system length as an output variable. This implies that the systems with the greatest distribution system length were the private not-for-profit systems and that they would use less input, in the form of capital investment and yearly expenses, to manage a distribution system of any particular length.
+      </p>
+      <p>
+       By comparison, 32 variable sets showed that the private not-for-profit utilities are more efficient than the private for-profit water utilities. The largest t-statistic showing greater private not-for-profit efficiency was -4.40, and resulted from using distribution network length and average pipeline age as output variables. This result is fairly uninteresting since water utilities are typically valued by the quantity of water they produce, measured by flow volume, and the number of customers they serve, measured by number of connections. However, the next highest t-statistic, -2.12, resulted from using distribution network length, average pipeline age, and total treatment volume as output variables, and was statistically significant with a 96.6 percent probability of difference. Three more comparisons also demonstrated that the private not-for-profit utilities are more efficient than the private for-profit water utilities with greater than 90 percent significance.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Private For-Profit Utilities Versus Public Utilities.
+      </div>
+      <p>
+       The ranked efficiencies of private for-profit utilities versus public utilities showed a strong, statistically significant advantage of the public utilities over the private for-profit utilities for all but two cases. The only variable sets used for efficiency analysis which resulted in private for-profit utilities being more efficient than public utilities were when using distribution network length and average pipeline age, either alone or combined with total water volume, with 99.6 and 67.6 percent significance respectively. Every variable set which used some measure of connections within the distribution system to measure efficiency resulted in the public utilities being evaluated as more efficient than the private for-profit utilities. There were 25 variable sets used to measure efficiency which indicated greater efficiency of public utilities over private for-profit utilities with greater then 90 percent significance. None of the top ten variable sets which showed the greatest public utility efficiency used distribution system length as a measurement variable. However, 13 of the data sets which used distribution system length still showed greater public utility efficiency with significance greater than 90 percent. It appears that using distribution system length as a measurement variable tends to moderately decrease the efficiency of private for-profit water utilities compared to public water utilities, but the effect isn't enough to completely overcome the efficiency effects of the rest of the variables. The use of completely separated connection or flow variables tended to push the efficiencies towards the public utilities.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Ground -Water Versus Surface -Water Sources.
+      </div>
+      <p>
+       The ranked efficiencies of ground water utilities versus surface water utilities generally showed a slight, yet statistically significant advantage of the ground water utilities over the surface water utilities for the majority of cases, as shown in Fig. 4. Overall, there were twelve variable sets that demonstrated an efficiency advantage to surface water utilities while there were twenty-six variables sets that showed efficiency advantage to ground water utilities. However, eight of the variable sets that showed a surface water utility advantage and nine of the variable sets that showed a ground water utility advantage had less than 50 percent significance, indicating that there was a greater than 50-50 chance that these data sets were identical.
+      </p>
+      <p>
+       Only one variable set used for efficiency measurement that demonstrated an efficiency advantage to surface water utilities had greater than 90 percent significance, while nine variables sets that showed efficiency advantage to ground water utilities had greater than 90 percent significance.
+      </p>
+      <p>
+       The only statistically significant variable set which indicated surface water utility efficiency advantage was when total water delivery was used as the sole measurement variable. Adding additional measurement variables which would account for either distribution system length, or numbers or types of customers, all caused a reduction in surface water utility efficiency and an increase in ground water utility efficiency. This implies that surface water utilities are most efficient when they have a few, high-volume, customers such as irrigation or large industrial demands.
+      </p>
+      <p>
+       However, another data trend indicates potentially contrasting results, and that is when the water delivery category was fully broken down into the component variables of residential, commercial/industrial, agricultural, other, and unaccounted for water deliveries. DEA efficiency measurements which used these variables tended to show a moderate trend towards ground water utilities compared to surface water utilities, with seven of the measurements indicating the superior efficiency of surface water utilities, and only three indicting the efficiency of ground water utilities. This result does not indicate a strong trend, since none of the results were at high levels of significance, but does indicate a mild trend towards the efficiency of surface water utilities over ground water utilities when delivering a lot of water to a wide variety of customers.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Variable Selection and Additional Information
+    </div>
+    <p>
+     Since tracking and maintaining information variables entails a cost, it is reasonable to discuss variable selection criteria. The essential question is:
+     <i>
+      What variables reasonably add new information?
+     </i>
+     As part of this study, we briefly investigated the additional information provided as a result of additional measurement variables by using an informational surrogate which measured the informational spread in efficiency ranking obtained when using additional variables. Informational spread γ was defined as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (1)
+    </p>
+    <p>
+     where a and b are the utility rankings using two sets of measurement variables A and B. Spread approximates the difference in informational content measured by two variable sets because it measures the absolute difference in efficiency ranking due to the change in measurement variables. Large changes in efficiency ranking between variable sets imply a large informational difference between the variable sets and would result in a large calculated spread. Correspondingly, small or random changes in efficiency ranking between variable sets imply a small informational difference between the variable sets and would result in a small calculated spread.
+    </p>
+    <p>
+     For this investigation, the information spread between different measurement variables was determined for a series of variable sets that were kept constant for all but one measurement category. Each variable set used for efficiency measurement consisted of distribution network length, average pipeline age, and variables from both the connection and volume categories. All the variables measuring length, age, and one of the two remaining categories were kept constant, and the base efficiency scores for the utilities were determined by excluding the remaining measurement category. The remaining variable category then was increased to a single value representing the total value for that category, then to a partial separation into the residential and non-residential values for that category, and then to a complete separation for that category. The informational spread was calculated between the basic case, which did not include the varying category, and between the more advanced cases, which did include the varying category. The informational spread was plotted against the number of new variables added for each case, as shown in Fig. 2. The legend shows the number of variables in the basic case, while the x-axis shows the number of additional variables added for each analysis. There is clearly a trend towards marginal returns as the variable categories are broken down into more discrete measurement. The only outlier is the line representing the increase in volume measurement when length, age, and RCAO connections were kept constant. This plot reveals the decreasing marginal return on information gained from using a more discrete measurement of any particular data category.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Summary
+    </div>
+    <p>
+     The work reported here reveals a distinct efficiency advantage of public utilities over private for-profit utilities. Every analysis that used some measure of number of connections within a distribution system resulted in public utilities being evaluated as more efficient than private for-profit utilities. In comparing public utilities to private not-for-profit utilities, a much more moderate yet statistically significant efficiency advantage was evident for the former in the majority of cases studied. None of the variable set cases that showed greater efficiency for private not-for-profit utilities used either connection data or water volume data in full detail. The results also indicate that while public water utilities are more efficient than private not-for-profit utilities for serving a variety of customer types, the latter are more efficient for serving a single customer type. Private not-for-profit utilities were found to have a statistically significant efficiency advantage over private for-profit utilities for almost all selections of management variables, particularly for managing larger distribution networks.
+    </p>
+    <p>
+     Comparisons of ground water source utilities versus surface water source utilities generally showed a slight, yet statistically significant, efficiency advantage for the former in the majority of cases studied. Utilities employing surface-water sources are most efficient when they serve a few, high-volume demand consumers, such as irrigation or large industrial systems, while ground-water source utilities tend to be more efficient when delivering large volumes of water to a wide variety of different types of consumers..
+    </p>
+    <p>
+     Finally, informational spread behavior as a function of measurement variables employed indicates decreasing marginal returns on information gained from using more discrete measurements of any particular data category.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Acknowledgements
+    </div>
+    <p>
+     The authors wish to acknowledge Lawrence M. Seiford, Chairman of the Department of Industrial and Operations Engineering, Warren Sutton, doctoral candidate in the Department of Industrial and Operations Engineering, and Jill Ostrowski, undergraduate in the Department of Civil and Environmental Engineering, for their critical appraisal and evaluation of the manuscript.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N101EE">
+     <li id="N101EF">
+      Aida, K., Cooper, W. W., Pastor, J. T., and Sueyoshi, T. (1998). "Evaluating water supply services in Japan with RAM: A range-adjusted measure of inefficiency." Omega-International Journal Of Management Science. 26(2), 207-232.
+     </li>
+     <li id="N101F1">
+      Akosa, G., Franceys, R., Barker, P., and Weyman-Jones, T. (1995). "Efficiency of water-supply and sanitation projects in Ghana." Journal of Infrastructure Engineering. 1(1), 56-65.
+     </li>
+     <li id="N101F3">
+      Anwandter, L., and Ozuna, T. J. (2002). "Can public sector reforms improve the efficiency of public water utilities?" Environment And Development Economics. 7, 687 700.
+     </li>
+     <li id="N101F5">
+      Arogyaswamy, K. and Yasai-Ardekani, M. (1997). "Organizational turnaround: understanding the role of cutbacks, efficiency improvements, and investment in technology." IEEE Transactions on Engineering Management, 44(1), 3-11.
+     </li>
+     <li id="N101F7">
+      Baker, R. C., and Talluri, S. (1997). "A closer look at the use of data envelopment analysis for technology selection." Computers And Industrial Engineering. 32(1), 101-108.
+     </li>
+     <li id="N101F9">
+      Banker, R., Conrad, R., and Strauss, R. P. (1986). "A comparative application of data envelopment analysis and translog methods - an illustrative study of hospital production." Management Science, 32(1), 30-44.
+     </li>
+     <li id="N101FB">
+      Bessent, A. M., and Bessent, E. W. (1980). "Determining the comparative efficiency of schools through data envelopment analysis." Educational Administration Quarterly,16(2), 57-75.
+     </li>
+     <li id="N101FD">
+      Bhattacharyya, A., Lovell, C. A. K., and Sahay, P. (1997). "DEA can be used to judge the efficiency of utilities in light of evolving regulatory policies: The impact of liberalization on the productive efficiency of Indian commercial banks." European Journal Of Operational Research. 98(2), 332-345.
+     </li>
+     <li id="N101FF">
+      Bosch, N., Pedraja, F., and Suarez-Pandiello, J. (2000). "Measuring the efficiency of Spanish municipal refuse collection services." Local Government Studies. 26(3), 71-90.
+     </li>
+     <li id="N10201">
+      Brockett, P. L., Cooper, W. W., Golden, L. L., Rousseau, J. J., and Wang, Y. (1998). "DEA evaluations of the efficiency of organizational forms and distribution systems in the US property and liability insurance industry." International Journal of Systems Science, 29(11), 1235-1247.
+     </li>
+     <li id="N10203">
+      Bulla, S., Cooper, W. W., Wilson, D., and Park, K. S. (2000), "Evaluating efficiencies of turbofan jet engines: A data, envelopment analysis approach." Journal Of Propulsion And Power. 16(3), 431 - 439 .
+     </li>
+     <li id="N10205">
+      Charnes A., Cooper W., And Rhodes, E. (1978). "Measuring efficiency of decision-making units." European Journal Of Operational Research, 2(6), 429-444.
+     </li>
+     <li id="N10207">
+      Coelli, T. J. (1995). "Recent developments in frontier modelling and efficiency measurement." Australian Journal Of Agricultural Economics. 39(3), 219-245.
+     </li>
+     <li id="N10209">
+      Cooper, W. W., Seiford, L. M., and Tone K. (2000). Data Envelopment Analysis: A Comprehensive Text With Models, Applications, References, and DEA-Solver Software. Kluwer Academic Publishers, Boston.
+     </li>
+     <li id="N1020B">
+      EPA. (2002). "Community Water System Survey: 2000." US EPA, Office of Water, EPA 815-R-02-005A.
+     </li>
+     <li id="N1020D">
+      Jayanthi, S., Kocha, B., and Sinha, K. K. (1999). "Competitive analysis of manufacturing plants: An application to the US processed food industry." European Journal Of Operational Research. 118(2), 217-234.
+     </li>
+     <li id="N1020F">
+      Kao, C., and Yang, Y. C. (1992). "Reorganization of forest districts via efficiency measurement." European Journal Of Operational Research. 58(3), 356-362.
+     </li>
+     <li id="N10211">
+      Kontodimopoulos, N., and Niakas, D. (2005). "Efficiency measurement of hemodialysis units in Greece with data envelopment analysis." Health Policy, 71(2), 195-204. Lambert, D. K., Dichev, D., and Raffiee, K. (1993). "Ownership and sources of inefficiency in the provision of water services." Water Resources Research.29, 1573-1578.
+     </li>
+     <li id="N10213">
+      Ozcan, Y. A., Luke, R. D., and Haksever, C. (1992). "Ownership and organizational performance - a comparison of technical efficiency across hospital types." Medical Care, 30(9), 781-794.
+     </li>
+     <li id="N10215">
+      Seiford, L. (1996). "Data envelopment analysis: The evolution of the state of the art (1978-1995)." Journal Of Productivity Analysis, 7(2-3), 99-137.
+     </li>
+     <li id="N10217">
+      Thanassoulis, E. (2000a). "The use of data envelopment analysis in the regulation of UK, water utilities: Water distribution." European Journal Of Operational Research. 126(2), 436-453.
+     </li>
+     <li id="N10219">
+      Thanassoulis, E. (2000b). "DEA and its use in the regulation of water companies." European Journal Of Operational Research, 127(1), 1-13.
+     </li>
+     <li id="N1021B">
+      Thanassoulis, E. (2002). "Comparative performance measurement in regulation: the case of English and Welsh sewerage services." Journal Of The Operational Research Society. 53(3), 292-302.
+     </li>
+     <li id="N1021D">
+      Wadud, A., and White, B. (2000). "Farm household efficiency in Bangladesh: a comparison of stochastic frontier and DEA methods." Applied Economics, 32(13), 1665-1673.
+     </li>
+     <li id="N1021F">
+      Westphal, J., Gulati, R., and Shortell, S. (1997). "Customization or conformity? An institutional and network perspective on the content and consequences of TQM adoption." Administrative Science Quarterly, 42 (2): 366-394.
+     </li>
+     <li id="N10221">
+      Worthington, A. C., and Dollery, B. E. (2001). "Measuring efficiency in local government: An analysis of New South Wales municipalities' domestic waste management function." Policy Studies Journal. 29(2), 232-249.
+     </li>
+    </ul>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

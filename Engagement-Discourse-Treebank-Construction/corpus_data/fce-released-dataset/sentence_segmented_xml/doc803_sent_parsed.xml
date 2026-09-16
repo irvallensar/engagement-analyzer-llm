@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam,
+      </p>
+      <p>
+       I am writing to you to complain about the musical show "Over the Rainbow".
+      </p>
+      <p>
+       I have recently been
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       London for
+       <ns type="UV">
+        <i>
+         spending
+        </i>
+       </ns>
+       a week's holiday. As I am
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         <ns type="DN">
+          <i>
+           enthusiasmic
+          </i>
+         </ns>
+        </i>
+       </ns>
+       of musicals I went to see this
+       <ns type="UJ">
+        <i>
+         musical
+        </i>
+       </ns>
+       show.
+      </p>
+      <p>
+       I am very disappointed because the things that were
+       <ns type="IV">
+        <i>
+         writen
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       were not really true.
+      </p>
+      <p>
+       It was
+       <ns type="IV">
+        <i>
+         writen
+        </i>
+       </ns>
+       that the stars would be Danny Brook and Tina Truelove. Danny Brook is one of my
+       <ns type="SA">
+        <i>
+         favorite
+        </i>
+       </ns>
+       actors and there
+       <ns type="RV">
+        <i>
+         was playing
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         another
+        </i>
+       </ns>
+       one. I felt
+       <ns type="RY">
+        <i>
+         <ns type="DY">
+          <i>
+           abosolutly
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         disapointed
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The musical should have begun at 19:30, but it started at 20:15;
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       is
+       <ns type="DJ">
+        <i>
+         inacceptable
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       It was
+       <ns type="W">
+        <i>
+         <ns type="IV">
+          <i>
+           writen
+          </i>
+         </ns>
+         <ns type="RY">
+          <i>
+           too
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that there were discounts available and I asked
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       them and they said
+       <ns type="UA">
+        <i>
+         me
+        </i>
+       </ns>
+       that they weren't
+       <ns type="TV">
+        <i>
+         allow
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       any discount. After the show me and my friends wanted to have a drink and the theatre restaurant was closed because there weren't enough drinks.
+      </p>
+      <p>
+       As you say in your
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       it was not my perfect evening out and therefore I would like to have my money back.
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+      <p>
+       Ms MARIA AROZ
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to you to complain about the musical show "Over the Rainbow".
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I have recently been in London for spending a week's holiday.
+       </s>
+       <s pid="3" sid="2">
+        As I am an enthusiasmic of musicals I went to see this musical show.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am very disappointed because the things that were writen on the advertisment were not really true.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        It was writen that the stars would be Danny Brook and Tina Truelove.
+       </s>
+       <s pid="5" sid="2">
+        Danny
+       </s>
+       <s pid="5" sid="3">
+        Brook is one of my favorite actors and there was playing another one.
+       </s>
+       <s pid="5" sid="4">
+        I felt abosolutly disapointed.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The musical should have begun at 19:30, but it started at 20:15; it is inacceptable!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        It was writen too that there were discounts available and I asked for them and they said me that they weren't allow to do any discount.
+       </s>
+       <s pid="7" sid="2">
+        After the show me and my friends wanted to have a drink and the theatre restaurant was closed because there weren't enough drinks.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        As you say in your advertisment it was not my perfect evening out and therefore I would like to have my money back.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Ms MARIA AROZ
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed our daily
+       <ns type="FN">
+        <i>
+         life
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       Modern technology has changed
+       <ns type="W">
+        <i>
+         a lot our daily
+         <ns type="FN">
+          <i>
+           life
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         On one hand
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       nowadays if we have to travel to Paris and return
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the same day you can take a plane without any problem. In the past it was impossible to go to Paris from Barcelona and come back in one day.
+      </p>
+      <p>
+       Another advantage is that if you go on an excursion and you take your mobile phone, if you get lost somebody
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       find you.
+      </p>
+      <p>
+       I think that the most important
+       <ns type="MQ">
+       </ns>
+       modern technology
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       these days is
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       . With
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       you can do whatever you want without going out
+       <ns type="UN">
+        <i>
+         home
+        </i>
+       </ns>
+       (
+       <ns type="S">
+        <i>
+         shoping
+        </i>
+       </ns>
+       , speaking with a friend, working, putting your money aside....)
+      </p>
+      <p>
+       On the other hand
+       <ns type="MP">
+       </ns>
+       the main disadvantage is that using modern machines
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       can be very difficult for
+       <ns type="S">
+        <i>
+         ederly
+        </i>
+       </ns>
+       people; it would be very
+       <ns type="S">
+        pratitable
+       </ns>
+       if the modern industries
+       <ns type="TV">
+        <i>
+         train
+        </i>
+       </ns>
+       people
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         using
+        </i>
+       </ns>
+       modern technologies.
+      </p>
+      <p>
+       To sum up
+       <ns type="MP">
+       </ns>
+       modern technology has
+       <ns type="TV">
+        <i>
+         change
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         a lot our daily
+         <ns type="AGN">
+          <i>
+           life
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and this is going to
+       <ns type="RV">
+        <i>
+         increase
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed our daily life?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Modern technology has changed a lot our daily life.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        On one hand nowadays if we have to travel to Paris and return in the same day you can take a plane without any problem.
+       </s>
+       <s pid="3" sid="2">
+        In the past it was impossible to go to Paris from Barcelona and come back in one day.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Another advantage is that if you go on an excursion and you take your mobile phone, if you get lost somebody could find you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I think that the most important  modern technology in these days is  internet.
+       </s>
+       <s pid="5" sid="2">
+        With  internet you can do whatever you want without going out home (shoping, speaking with a friend, working, putting your money aside....)
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        On the other hand the main disadvantage is that using modern machines it can be very difficult for ederly people; it would be very pratitable if the modern industries train people about using modern technologies.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        To sum up modern technology has change a lot our daily life and this is going to increase.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,1554 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      A Dynamic POS-Tagging-Learned Approach of Chinese WSD
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1.Introduction
+      </div>
+      <div>
+       <div class="head_2">
+        1.1 What is word sense disambiguation (WSD)
+       </div>
+       <p>
+        <s pid="1" sid="1">
+         Word sense tagging is essentially a word sense disambiguation (WSD) process.
+        </s>
+        <s pid="1" sid="2">
+         Its main task is to assign a proper word sense code for every word in the input sentences according to word sense tagging set and the context.
+        </s>
+        <s pid="1" sid="3">
+         This sense coding can take four forms: 1) The corresponding code of a word in a semantic domain dictionary.
+        </s>
+        <s pid="1" sid="4">
+         2) The sequence number of an explanation text for a word in an ordinary dictionary.
+        </s>
+        <s pid="1" sid="5">
+         3) The corresponding target word of a word in a translation dictionary.
+        </s>
+        <s pid="1" sid="6">
+         4) The concept definition item in a concept dictionary (e.g. the concept definition in How-Net).
+        </s>
+        <s pid="1" sid="7">
+         Word sense tagging includes two processes which are tagging assignment and tagging disambiguation.
+        </s>
+        <s pid="1" sid="8">
+         Tagging assignment is to assign a set of possible or potential word sense tagging to every word.
+        </s>
+        <s pid="1" sid="9">
+         Tagging disambiguation is to choose a proper word sense that satisfies the context.
+        </s>
+       </p>
+       <p>
+        <s pid="2" sid="1">
+         Word sense tagging is considered to be the biggest unsolved issue at word level in natural language processing.
+        </s>
+        <s pid="2" sid="2">
+         Although word sense tagging is similar to POS tagging, it is more abstract and difficult because of its focus on the aggregation relation of word meanings.
+        </s>
+        <s pid="2" sid="3">
+         As early as 1950s, people started to work on the research of WSD.
+        </s>
+        <s pid="2" sid="4">
+         A large variety of methodologies have been put forwarded.
+        </s>
+        <s pid="2" sid="5">
+         However, at present stage, most of the current systems can handle the WSD for only a very limited number of multi-sense words.
+        </s>
+        <s pid="2" sid="6">
+         There is still long way to go for WSD to reach the present level of POS tagging.
+        </s>
+        <s pid="2" sid="7">
+         In Chinese NLP research area, WSD has been a rarely touched topic and relatively little effort has been paid to this important issue.
+        </s>
+        <s pid="2" sid="8">
+         This paper is going to propose a technically feasible approach to improve the WSD of Chinese based on the relative maturity of POS tagging system.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        1.2 What is the research problem
+       </div>
+       <p>
+        <s pid="3" sid="1">
+         In order to make the computer have the same word sense discrimination ability as human, we must store in computer grammars and semantic and pragmatic rules as well.
+        </s>
+        <s pid="3" sid="2">
+         WSD methodologies can be grouped into four categories in terms of the methodologies used to acquire knowledge.
+        </s>
+       </p>
+       <p>
+        <s pid="4" sid="1">
+         1)WSD based on dictionary knowledge.
+        </s>
+        <s pid="4" sid="2">
+         Machine readable dictionaries and semantic domain dictionaries provide sufficient knowledge on word usages and word senses and therefore can be used as a resource for WSD.
+        </s>
+        <s pid="4" sid="3">
+         Machine readable dictionary has become the major knowledge resource for WSD since 80s.
+        </s>
+        <s pid="4" sid="4">
+         Typical machine readable dictionary-based methodology for WSD works this way:
+        </s>
+        <s pid="4" sid="5">
+         It first computes the coverage of each word sense for ambiguous words and the senses of words in the context and then it chooses the sense with maximum overlapping as the current word sense.
+        </s>
+       </p>
+       <p>
+        <s pid="5" sid="1">
+         Unfortunately, the correctness rate for this methodology is only 50% to 70%.
+        </s>
+        <s pid="5" sid="2">
+         There are several reasons for this comparatively low accuracy: Firstly, traditional machine readable dictionary-based methodology does not make full use of the useful information of the phrases and examples in the dictionary.
+        </s>
+        <s pid="5" sid="3">
+         Secondly, the word sense definition sentences in machine readable dictionaries are normally very short, and it is hence difficult to calculate the overlapping of those two kinds of definitions.
+        </s>
+        <s pid="5" sid="4">
+         In many cases, there are zero overlapping between the word sense definitions of the ambiguous word and context words.
+        </s>
+        <s pid="5" sid="5">
+         Thirdly, in practice, the inevitable combination explosion also greatly restricts the application of this method.
+        </s>
+        <s pid="5" sid="6">
+         Finally.
+        </s>
+        <s pid="5" sid="7">
+         the dictionary is for human use and not for machine use.
+        </s>
+        <s pid="5" sid="8">
+         In addition, there is also inconsistence in the dictionary itself , all these raise difficulty for knowledge retrieval.
+        </s>
+       </p>
+       <p>
+        <s pid="6" sid="1">
+         Knowledge in semantic domain dictionary is also widely used for WSD.
+        </s>
+        <s pid="6" sid="2">
+         Unlike the methodology used by machine readable dictionary, semantic domain dictionary organizes the words into hierarchy levels in terms of word senses, providing connections between words.
+        </s>
+        <s pid="6" sid="3">
+         WordNet (Miller 1990) and "Roget's Thesaurus" are the most famous English semantic domain dictionaries; "Chinese Thesaurus" (J.Mei,1996) and "Knowledge Net" (Z.Dong, 1999) are most commonly used Chinese semantic resources.
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         2) WSD based on rules:
+        </s>
+        <s pid="7" sid="2">
+         This methodology depends on the language knowledge of language experts.
+        </s>
+        <s pid="7" sid="3">
+         It constructs rule sets, analyzing the ambiguous words and their contexts, and chooses the word senses that satisfy the restriction rules.
+        </s>
+        <s pid="7" sid="4">
+         Generally speaking, the rules describe the elements that are licensed to modify the ambiguous words and those disallowed to modify the ambiguous words.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         3) WSD based on language corpus:
+        </s>
+        <s pid="8" sid="2">
+         The advent of this methodology marks a new age in NLP and gradually becomes indispensable for WSD research.
+        </s>
+        <s pid="8" sid="3">
+         It can be categorized into supervised and unsupervised WSD.
+        </s>
+        <s pid="8" sid="4">
+         The former collects the WSD knowledge from the processed and tagged material;
+        </s>
+        <s pid="8" sid="5">
+         The latter collects WSD knowledge from the raw and tagged material .
+        </s>
+        <s pid="8" sid="6">
+         The essence of the corpus-based WSD is to determine different meanings of words in a context by automatic or semi-automatic learning of the corpus.
+        </s>
+        <s pid="8" sid="7">
+         It can be either statistics-based or example-based.
+        </s>
+        <s pid="8" sid="8">
+         The former collects statistical context proof that support the specific sense of an ambiguous word in a certain context, and the proof is used for WSD of the new input sentences.
+        </s>
+        <s pid="8" sid="9">
+         This method usually collects statistical data of collocation between words and word senses.
+        </s>
+        <s pid="8" sid="10">
+         Example-based method uses statistics almost without turning to any language structural knowledge.
+        </s>
+        <s pid="8" sid="11">
+         What it needs is large quantity of regular parallel sentences.
+        </s>
+        <s pid="8" sid="12">
+         It's easy to implement but hard to obtain a large number of parallel sentences.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         4) WSD based on combination of different methods: After several years' efforts, more and more researchers now tend to combine multiple methods to realize WSD.
+        </s>
+        <s pid="9" sid="2">
+         The method combines a variety of methods to get better WSD performance.
+        </s>
+        <s pid="9" sid="3">
+         The combination of knowledge resources will extend the potentially useful knowledge for WSD, such as dictionary information, collocation information, domain knowledge, syntactic restriction and all of the other potential heuristic information .
+        </s>
+        <s pid="9" sid="4">
+         Based on the word sense system in "Chinese Thesaurus" , C.Huang and J.Li adopted the unsupervised learning method to process large scale corpus and constructed the "categorizing machine" for WSD use.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        1.3 Who might be interested in a proposal to improve WSD performance
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         The WSD is itself an intermediate process and hence an indispensable middle layer for most NLP tasks.
+        </s>
+        <s pid="10" sid="2">
+         Any improvement of WSD would interest people employed in the following fields:
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         1.3.1 Machine translation
+        </div>
+        <p>
+         <s pid="11" sid="1">
+          The WSD in machine translation has its own characteristics in that it uses target word to distinguish different word senses.
+         </s>
+         <s pid="11" sid="2">
+          How to find the target word in machine translation is an important issue and how the WSD is solved directly affects the quality of the translated text.
+         </s>
+         <s pid="11" sid="3">
+          For example, in the English-Chinese translation system, the word "interest" has two target words in Chinese "利益" and "利息" .
+         </s>
+         <s pid="11" sid="4">
+          When translating this word, the system should use the context to decide which to choose in a specific context.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         1.3.2 Information search and information processing
+        </div>
+        <p>
+         <s pid="12" sid="1">
+          In information search and processing, due to the multiple meanings of a word, the system sometimes would come up with the texts that containing the same word with different meaning.
+         </s>
+         <s pid="12" sid="2">
+          For example, someone may use "材料" as key word if he is searching for some reference related to a file.
+         </s>
+         <s pid="12" sid="3">
+          If the search is solely based on these characters, then it will give you all the papers containing this word most of which are related to "manufacturing material" and do not actually mean "files" .
+         </s>
+         <s pid="12" sid="4">
+          Therefore, the word sense is important in information search.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         1.3.3 Sentence analysis
+        </div>
+        <p>
+         <s pid="13" sid="1">
+          The word sense also plays a big role when analyzing the grammatical structure of sentences.
+         </s>
+         <s pid="13" sid="2">
+          Grammatical ambiguity is common in many languages and solution to the problem is to introduce word sense.
+         </s>
+         <s pid="13" sid="3">
+          For example, "参观图书馆的大厅(visiting library's hall)" and "参观图书馆的人们(the people who are visiting library)" share the POS sequence of "verb+noun+de+noun" , but they have very different sentence structures.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         1.3.4 Natural language understanding
+        </div>
+        <p>
+         <s pid="14" sid="1">
+          When defining the semantic structure of a sentence, we have to consider the word sense of every word in the sentence.
+         </s>
+         <s pid="14" sid="2">
+          The semantic structure of a sentence (e.g Case structure) can be obtained only when the word sense of every word in the sentence is known.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         1.3.5 Speech recognition and pronunciation-character transformation
+        </div>
+        <p>
+         <s pid="15" sid="1">
+          The word-based N-yuan model takes into consideration only the continuous relations between words, thus there exists sentences with no meaning connections between words in the recognition result.
+         </s>
+         <s pid="15" sid="2">
+          With the introduction of word sense, the continuous relations on the word sense level are provided; therefore it avoids this kind of error mentioned above in some sense.
+         </s>
+        </p>
+        <p>
+         <s pid="16" sid="1">
+          In summary, as an important process in NLP, the WSD research has great significance both theoretically and practically.
+         </s>
+         <s pid="16" sid="2">
+          The result of WSD research can be directly applied in many aspects of NLP.
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       2. An Overview of Chinese word sense tagging system and ambiguity distribution of Chinese words
+      </div>
+      <div>
+       <div class="head_2">
+        2.1
+        <q>
+         Chinese Thesaurus
+        </q>
+        as a popular word sense dictionary
+       </div>
+       <p>
+        <s pid="17" sid="1">
+         Like POS tagging, word sense tagging also need a tagging system which can provide a description of the word sense categorization principles.
+        </s>
+        <s pid="17" sid="2">
+         Since the dictionary is the basis of word sense definition, a perfect dictionary should be the precondition of WSD.
+        </s>
+        <s pid="17" sid="3">
+         "Chinese Thesaurus" is the only machine-readable semantic dictionary in current Chinese information processing.
+        </s>
+        <s pid="17" sid="4">
+         The compiler of "Chinese Thesaurus" defines the word categorizing rules based on characteristics of usages of Chinese words.
+        </s>
+        <s pid="17" sid="5">
+         Technically, it adopts the coding system of "The Longman Lexicon of Contemporary English" .
+        </s>
+        <s pid="17" sid="6">
+         "Thesaurus" divides word senses into large, medium, and small categories.
+        </s>
+        <s pid="17" sid="7">
+         There are 12 large categories, 94 medium categories and 1428 small categories.
+        </s>
+        <s pid="17" sid="8">
+         Uppercase letters represent large categories;
+        </s>
+        <s pid="17" sid="9">
+         Lowercase letters and numbers represent the medium and small categories respectively.
+        </s>
+        <s pid="17" sid="10">
+         The twelve large categories include: people(A), object(B), time and space(C), abstract object(D), characteristics(E), action(F), psychological activity(G), activity(H), phenomenon and state(I), connection(J), auxillaries(K) and honorific(L).
+        </s>
+        <s pid="17" sid="11">
+         It describe a word sense categorizing system from up to down, from broad concept to concrete word senses.
+        </s>
+        <s pid="17" sid="12">
+         The organization of the word sense coding system is as follows:
+        </s>
+       </p>
+       <p>
+        <s pid="18" sid="1">
+         &amp;lt;word sense coding&amp;gt;::=&amp;lt;large category&amp;gt;&amp;lt;medium category&amp;gt;&amp;lt;small category&amp;gt;
+        </s>
+       </p>
+       <p>
+        <s pid="19" sid="1">
+         &amp;lt;large category&amp;gt;::=&amp;lt;uppercase
+        </s>
+        <s pid="19" sid="2">
+         English letter&amp;gt;
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         &amp;lt;medium category&amp;gt;::=&amp;lt;lowercase
+        </s>
+        <s pid="20" sid="2">
+         English letter&amp;gt;
+        </s>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         &amp;lt;small category&amp;gt;::=&amp;lt;digit&amp;gt;&amp;lt;digit&amp;gt;
+        </s>
+       </p>
+       <p>
+        <s pid="22" sid="1">
+         In the small category, the words are further grouped into smaller word clusters synonyms.
+        </s>
+        <s pid="22" sid="2">
+         Every word cluster has a title word.
+        </s>
+        <s pid="22" sid="3">
+         There are totally 3925 title words altogether and word clusters are further represented by a two digit number.
+        </s>
+        <s pid="22" sid="4">
+         For example, the coding of the word "觉悟" is "Ga15" .
+        </s>
+        <s pid="22" sid="5">
+         It is represented in "Chinese Thesaurus" as:
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         Ga15 醒悟 懂事
+        </s>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         醒悟 觉悟 省悟 觉醒 清醒 醒 如梦初醒 大梦初醒 ……
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         懂事 记事儿 开窍 通窍
+        </s>
+       </p>
+       <p>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         There are two word clusters in "Ga15" .
+        </s>
+        <s pid="27" sid="2">
+         One is composed of the words representing "conscious" and the other is composed of words representing "know something" .
+        </s>
+        <s pid="27" sid="3">
+         Therefore, the further word sense coding for "觉悟" is "Ga1501" which can be called sub small category coding.
+        </s>
+        <s pid="27" sid="4">
+         Multi-sense words are grouped into different word clusters in terms of their word senses.
+        </s>
+        <s pid="27" sid="5">
+         For example, 材料 has three word senses in "Thesaurus" : (1) stuff that can be made into product. (2) stuff provided for the content of a work or for references. (3) a person that has talent to do something.
+        </s>
+        <s pid="27" sid="6">
+         The corresponding coding for each word senses are "Ba06" , "Dk17" and "A103" .
+        </s>
+        <s pid="27" sid="7">
+         In this article, the word sense coding in "Thesaurus" is directly used to represent word sense.
+        </s>
+        <s pid="27" sid="8">
+         Multi-sense word has multiple word sense codings and the length of the coding is 4.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.2 Chinese Word Ambiguity Degree and Distribution
+       </div>
+       <p>
+        <s pid="28" sid="1">
+         "Chinese Thesaurus" s has a vocabulary of more than 50,000 words.
+        </s>
+        <s pid="28" sid="2">
+         The following table shows the distribution of multi-sense words in Chinese:
+        </s>
+       </p>
+       <p>
+        <s pid="29" sid="1">
+         Table1.
+        </s>
+        <s pid="29" sid="2">
+         Multi-sense word distribution in "Chinese Thesaurus"
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="30" sid="1">
+         The statistics above shows that "Thesaurus" has 42724 mono-sense words and 7370 multi-sense words.
+        </s>
+        <s pid="30" sid="2">
+         Besides that, it also shows that 14.8% of the words are multi-sense words.
+        </s>
+        <s pid="30" sid="3">
+         We note also that shorter words have higher chance to be ambiguous and also tend to be more ambiguous.
+        </s>
+       </p>
+       <p>
+        <s pid="31" sid="1">
+         According to the word sense and ambiguity type of the word sense Chinese word can be categorized into mono-sense word, category ambiguous word, non-category ambiguous word and blending ambiguous word.
+        </s>
+        <s pid="31" sid="2">
+         Among these types, the WSD of the non-category ambiguous word is most difficult because it needs more contexts.
+        </s>
+        <s pid="31" sid="3">
+         The research on the distribution of these different types helps to adopt different tagging strategies to different words.
+        </s>
+        <s pid="31" sid="4">
+         In order to have a better understanding of how the words distribute with respect to word senses, we collect the statistical data on static distribution of word sense based on Chinese Thesaurus.
+        </s>
+        <s pid="31" sid="5">
+         The results are in table2 as follows:
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Table2 word distribution with respect to word sense in Chinese Thesaurus
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         Word sense distribution is in close relation with the technical principles of a dictionary and specific word sense category system.
+        </s>
+        <s pid="33" sid="2">
+         The data in Table 2 and Table 3 may not perfectly reflect the relations among POS, word sense and word distribution, we can still see clearly the following general trends: Firstly, in Chinese, most words are mono-sense words, with a dominating percentage of 81.46-87.69%.
+        </s>
+        <s pid="33" sid="3">
+         Secondly, multi-sense words, although occupying only around a quarter of the whole vocabulary, are used much more frequently than mono-sense words.
+        </s>
+        <s pid="33" sid="4">
+         More commonly used words usually have a higher degree of ambiguity.
+        </s>
+        <s pid="33" sid="5">
+         1
+        </s>
+        <s pid="33" sid="6">
+         Thirdly, multi-sense words are not evenly distributed with respect to their POS.
+        </s>
+        <s pid="33" sid="7">
+         Thirdly, the granularity of word sense categorizing has great effects on WSD.
+        </s>
+        <s pid="33" sid="8">
+         The smaller the granularity, the higher percentage of the multi-sense words, and also the bigger average word senses.
+        </s>
+        <s pid="33" sid="9">
+         On the other hand, the smaller the granularity, the higher percentage of non-category multi-sense words and the lower percentage of category multi-sense words.
+        </s>
+        <s pid="33" sid="10">
+         There is little effect on the percentage of blending multi-sense words though.
+        </s>
+        <s pid="33" sid="11">
+         In a word, word sense ambiguity becomes more serious if we adopt a comparatively smaller granularity when define the word sense tagging system.
+        </s>
+        <s pid="33" sid="12">
+         Finally, one conspicuous characteristic of Chinese word is that its POS is morphologically unmarked.
+        </s>
+        <s pid="33" sid="13">
+         And there is always the extreme claim that Chinese words do not even have POS, it only gets POS when it comes into a specific sentence( "依句辩品，离句无品" ) .
+        </s>
+        <s pid="33" sid="14">
+         This makes WSD more important and complicated for Chinese words than for English words.
+        </s>
+        <s pid="33" sid="15">
+         And this same fact leads us to believe that the approach we are proposing in this article should work much better for Chinese than for English.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       3. Our proposal
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        Compared with WSD in English, the research of WSD in Chinese has been drawn much less attention.
+       </s>
+       <s pid="35" sid="2">
+        The method we put forward here is based on the characteristic of Chinese words, we see that POS information is relatively not closely related to lexicon items in dictionary, but once recognized in a given context, brings much information which will be useful for WSD.
+       </s>
+       <s pid="35" sid="3">
+        Our basic idea is that given the high accuracy of present POS tagging system, we are going to count on the output of POS tagging of a text we are processing.
+       </s>
+       <s pid="35" sid="4">
+        And we are going to let the POS information take over the WSD task in the first place.
+       </s>
+       <s pid="35" sid="5">
+        Given the characteristics of Chinese words we discussed above, we believe it a feasible and effective way of improving the WSD of Chinese text processing.
+       </s>
+       <s pid="35" sid="6">
+        We propose the following steps of this approach.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        3.1 Text segmentation and POS tagging
+       </div>
+       <p>
+        <s pid="36" sid="1">
+         In current Chinese tagging systems, these two steps can be realized at the same time.
+        </s>
+        <s pid="36" sid="2">
+         Among currently existent systems, the one developed by the Institute of Computational Linguistics of Peking University has reached the accuracy of 96.8%.
+        </s>
+        <s pid="36" sid="3">
+         And in our final evaluation part of this paper, we are also using this system.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.2 Word sense label assignment base on
+        <q>
+         Chinese Thesaurus
+        </q>
+       </div>
+       <p>
+        <s pid="37" sid="1">
+         The label assignment of word sense is to assign a set of possible or potential word senses to each word.
+        </s>
+        <s pid="37" sid="2">
+         Since we have tagged the POS for the input sentences before word sense tagging.
+        </s>
+        <s pid="37" sid="3">
+         Therefore, the word sense label assigning process can be described as follows: Firstly, to input the word sequence with POS tagging as
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       ( w is Chinese word, p is its POS in this specific context). Secondly, to assign a set of potential word sense codings for each word in the input according to
+       <q>
+        Chinese Thesaurus
+       </q>
+       . Hence we get a tagging cluster:
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       as output.
+       <p>
+       </p>
+       <p>
+        <s pid="39" sid="1">
+         In this paper, the process of automatic label assignment is actually the process of link search and dictionary search.
+        </s>
+        <s pid="39" sid="2">
+         To facilitate the search, we put all of the words searched in the dictionary together with their word sense codings in a link.
+        </s>
+        <s pid="39" sid="3">
+         The structure of the link is as follows:
+        </s>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         Struct word{ // structure used to store the word sense codings
+        </s>
+       </p>
+       <p>
+        <s pid="41" sid="1">
+         Char cla[10];// char array to store the word sense codings
+        </s>
+       </p>
+       <p>
+        <s pid="42" sid="1">
+         Struct word *chain; // pointing to the next node
+        </s>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         };
+        </s>
+       </p>
+       <p>
+        <s pid="44" sid="1">
+         struct node{ //structure used to store words
+        </s>
+       </p>
+       <p>
+        <s pid="45" sid="1">
+         char nam[20]; //to store Chinese words
+        </s>
+       </p>
+       <p>
+        <s pid="46" sid="1">
+         struct node * link; // pointing to the next node
+        </s>
+       </p>
+       <p>
+        <s pid="47" sid="1">
+         struct word * next;//pointing to the word sense node of the word
+        </s>
+       </p>
+       <p>
+        <s pid="48" sid="1">
+         };
+        </s>
+       </p>
+       <p>
+        <s pid="49" sid="1">
+         We can further illustrate this process as follows:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="50" sid="1">
+         The technical process of this word sense label assignment is made up of three steps:
+        </s>
+       </p>
+       <p>
+        <s pid="51" sid="1">
+         1) Read in a Chinese word
+        </s>
+       </p>
+       <p>
+        <s pid="52" sid="1">
+         2) Search in the link, if information about that word is found there, then use the information do the tagging and get the output.
+        </s>
+        <s pid="52" sid="2">
+         When this is over, go back to the first step.
+        </s>
+        <s pid="52" sid="3">
+         If not found, then go to step 3.
+        </s>
+       </p>
+       <p>
+        <s pid="53" sid="1">
+         3) Search the word sense information in the machine readable dictionary &lt;quote&gt;
+        </s>
+        <s pid="53" sid="2">
+         Thesaurus &lt;/quote&gt; , if found, then assign all of its word senses at the output.
+        </s>
+        <s pid="53" sid="3">
+         If not found, set the word sense tagging to null and then go to step 1.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.2 WSD based on the dynamic corresponding information between POS and word senses
+       </div>
+       <p>
+        <s pid="54" sid="1">
+         We mentioned earlier that the twelve large upper-case letters represent twelve semantic fields that word senses may fall into.
+        </s>
+        <s pid="54" sid="2">
+         "Thesaurus" does not group words under the name of POS, but by investigating into "Thesaurus" and comparing it with "Modern Chinese Dictionary" , we can see the correspondence between word sense and POS as shown in Table 3:
+        </s>
+       </p>
+       <p>
+        <s pid="55" sid="1">
+         Table 3
+        </s>
+        <s pid="55" sid="2">
+         The correspondence between word sense and POS
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="56" sid="1">
+         We can see that there are strong relation between word sense tagging and POS tagging .
+        </s>
+        <s pid="56" sid="2">
+         For example, A, B and D in "thesaurus" are mostly noun.
+        </s>
+        <s pid="56" sid="3">
+         This correspondence relation is very useful for WSD improvement.
+        </s>
+       </p>
+       <p>
+        <s pid="57" sid="1">
+         Given the correspondence relation between the POS and word sense, the last step of your method is:
+        </s>
+        <s pid="57" sid="2">
+         Cross out all of the word senses that are not included in the correspondence list of the specific tagged POS pi of that word.
+        </s>
+        <s pid="57" sid="3">
+         And for some words, if the results are null, then just keep the original word sense tagging in order to guarantee the reliability of the final accuracy of the WSD.
+        </s>
+        <s pid="57" sid="4">
+         By this final step, we are descreasing the average sensed of the words in the text to a noticeable extent and hence improve the WSD performance.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       4. Evaluation of this approach
+      </div>
+      <p>
+       <s pid="58" sid="1">
+        We are expecting that the application of our approach at the first step of WSD will decrease the average sense numbers of the words in a given text.
+       </s>
+       <s pid="58" sid="2">
+        For the sake of time, we tested our approach manually on one news article from bbs.mit.edu.
+       </s>
+       <s pid="58" sid="3">
+        If the ambiguities are well decreased by our approach for this article, we have good reasons to believe that this approach will improve Chinese WSD to a considerable extent.
+       </s>
+       <s pid="58" sid="4">
+        And the advantage of this approach is that it is easy to apply and can be freely combined with any other WSD algorithms.
+       </s>
+       <s pid="58" sid="5">
+        We segmented and tagged the news article using segmentation and tagging system developed by the Institute of Computational Linguistics of Peking University, flowing is the output of the tagging:
+       </s>
+      </p>
+      <p>
+       <s pid="59" sid="1">
+        中国/ns 领事馆/n 放宽/v 来自/v 中国/ns 大陆/n 新/d 移民/v 的/u 护照/n 申请/v 资格/n 的/u 谣言/n ，/w 连日来/l 在/p 纽约/ns 华人/n 社区/n 传/v 得/u 沸沸扬扬/
+       </s>
+       <s pid="59" sid="2">
+        I ，/w 以讹传讹/I ，/w 连续/a 几/m 天/q 都/d 有/v 上千/m 人/n 新/d 移民/v 涌/v 向/p 位于/v 曼哈顿/ns 的/u 中国/ns 驻/v 纽约/ns 总/v 领/v 馆/Ng ，/w 在/p 中/f 领/v 馆/Ng 的/u 签证/n 组/n 门前/s 大/a 排长/n 龙/n 。/w 中/f 领/v 馆/Ng 官员/n 对外/v 声明/v ，/w 目前/t 中/f 领/v 馆/Ng 对/p 纽约/ns 地区/n 新/d 移民/v 申请/v 中国/ns 护照/n 的/u 需要/v 进行/v 最/d 新/a 的/u 意见/n 调查/v ，/w 听取/v 纽约/ns 地区/n 侨/Ng 团/v 及/c 侨胞/n 的/u 有关/p 护照/n 侨/Ng 团/v 的/u 反映/v 。/w 希望/v 作为/p 中国/ns 护照/n 申请/v 有关/vn 部门/n 的/u 研究/v 参考/v ，/w 但/d 从未/d 改变/v 护照/n 申请/v 发放/v 政策/n ，/w 希望/v 侨胞/n 们/k 不/d 要/v 轻信/v 谣言/n 。/w
+       </s>
+      </p>
+      <p>
+       <s pid="60" sid="1">
+        The following is the word sense list of the 118 words in the article according to "Chinese Thesaurus" , those with "*" after them indicate that it is crossed out after the WSD:
+       </s>
+      </p>
+      <p>
+       <s pid="61" sid="1">
+        谣言 Da19
+       </s>
+      </p>
+      <p>
+       <s pid="62" sid="1">
+        轻信 Gb14
+       </s>
+      </p>
+      <p>
+       <s pid="63" sid="1">
+        不 Ed28* Ed23* Ee19* Ee38* Ie01 Ka18
+       </s>
+      </p>
+      <p>
+       <s pid="64" sid="1">
+        要 Ag04* Dk10* Ed28* Gb04 Gc03 Hi25
+       </s>
+      </p>
+      <p>
+       <s pid="65" sid="1">
+        Jc05 Kc01* Kc08*
+       </s>
+      </p>
+      <p>
+       <s pid="66" sid="1">
+        侨胞 Ad01
+       </s>
+      </p>
+      <p>
+       <s pid="67" sid="1">
+        们____
+       </s>
+      </p>
+      <p>
+       <s pid="68" sid="1">
+        希望 Df08* Gb04
+       </s>
+      </p>
+      <p>
+       <s pid="69" sid="1">
+        政策 Di09
+       </s>
+      </p>
+      <p>
+       <s pid="70" sid="1">
+        发放 Hc07
+       </s>
+      </p>
+      <p>
+       <s pid="71" sid="1">
+        申请 Hc15
+       </s>
+      </p>
+      <p>
+       <s pid="72" sid="1">
+        护照_____
+       </s>
+      </p>
+      <p>
+       <s pid="73" sid="1">
+        改变 Ih02
+       </s>
+      </p>
+      <p>
+       <s pid="74" sid="1">
+        从未______
+       </s>
+      </p>
+      <p>
+       <s pid="75" sid="1">
+        但 Ka07 Kc03*
+       </s>
+      </p>
+      <p>
+       <s pid="76" sid="1">
+        参考 Hg12
+       </s>
+      </p>
+      <p>
+       <s pid="77" sid="1">
+        研究 Gb01 Hg14
+       </s>
+      </p>
+      <p>
+       <s pid="78" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="79" sid="1">
+        部门 Di09 Dm01
+       </s>
+      </p>
+      <p>
+       <s pid="80" sid="1">
+        有关 Je01* Kb04
+       </s>
+      </p>
+      <p>
+       <s pid="81" sid="1">
+        申请 Hc15
+       </s>
+      </p>
+      <p>
+       <s pid="82" sid="1">
+        护照 ____
+       </s>
+      </p>
+      <p>
+       <s pid="83" sid="1">
+        中国 Hc15
+       </s>
+      </p>
+      <p>
+       <s pid="84" sid="1">
+        作为 Di02 Ja01(both of these two codings are not included in the list of POS, and
+       </s>
+      </p>
+      <p>
+       <s pid="85" sid="1">
+        we keep these two)
+       </s>
+      </p>
+      <p>
+       <s pid="86" sid="1">
+        希望 Df08* Gb04
+       </s>
+      </p>
+      <p>
+       <s pid="87" sid="1">
+        反映 Hc15 Ja03
+       </s>
+      </p>
+      <p>
+       <s pid="88" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="89" sid="1">
+        团 Bb04* Br09* Di09* Di10* Dn08* Ea13* Fa34
+       </s>
+      </p>
+      <p>
+       <s pid="90" sid="1">
+        侨 Ad01
+       </s>
+      </p>
+      <p>
+       <s pid="91" sid="1">
+        护照 ____
+       </s>
+      </p>
+      <p>
+       <s pid="92" sid="1">
+        有关 Je01* Kb04
+       </s>
+      </p>
+      <p>
+       <s pid="93" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="94" sid="1">
+        侨胞 Ad01
+       </s>
+      </p>
+      <p>
+       <s pid="95" sid="1">
+        及 Je12* Kb02* Kc01
+       </s>
+      </p>
+      <p>
+       <s pid="96" sid="1">
+        侨 Ad01
+       </s>
+      </p>
+      <p>
+       <s pid="97" sid="1">
+        团 Bb04* Br09* Di09* Di10* Dn08* Ea13* Fa34
+       </s>
+      </p>
+      <p>
+       <s pid="98" sid="1">
+        地区 Cb08 (this coding is not included in the list of POS, and we keep it)
+       </s>
+      </p>
+      <p>
+       <s pid="99" sid="1">
+        纽约____
+       </s>
+      </p>
+      <p>
+       <s pid="100" sid="1">
+        听取 Fc05
+       </s>
+      </p>
+      <p>
+       <s pid="101" sid="1">
+        调查 Hc18
+       </s>
+      </p>
+      <p>
+       <s pid="102" sid="1">
+        意见 Df14
+       </s>
+      </p>
+      <p>
+       <s pid="103" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="104" sid="1">
+        新 Eb22* Eb28* Ka12
+       </s>
+      </p>
+      <p>
+       <s pid="105" sid="1">
+        最 Ka02
+       </s>
+      </p>
+      <p>
+       <s pid="106" sid="1">
+        进行 Ig03
+       </s>
+      </p>
+      <p>
+       <s pid="107" sid="1">
+        需要 Df07* Jc05
+       </s>
+      </p>
+      <p>
+       <s pid="108" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="109" sid="1">
+        护照 ____
+       </s>
+      </p>
+      <p>
+       <s pid="110" sid="1">
+        中国 Hc15
+       </s>
+      </p>
+      <p>
+       <s pid="111" sid="1">
+        申请 Hc15
+       </s>
+      </p>
+      <p>
+       <s pid="112" sid="1">
+        移民____
+       </s>
+      </p>
+      <p>
+       <s pid="113" sid="1">
+        新 Eb22* Eb28* Ka12
+       </s>
+      </p>
+      <p>
+       <s pid="114" sid="1">
+        地区 Cb08
+       </s>
+      </p>
+      <p>
+       <s pid="115" sid="1">
+        纽约 ____
+       </s>
+      </p>
+      <p>
+       <s pid="116" sid="1">
+        对 Dk17* Dn08* Eb02* Ed12* Fa26* Hc18* Hi08*
+       </s>
+       <s pid="116" sid="2">
+        Hi18* Jc02*
+       </s>
+      </p>
+      <p>
+       <s pid="117" sid="1">
+        Kb01 Kb04 Kb07
+       </s>
+      </p>
+      <p>
+       <s pid="118" sid="1">
+        领 Bk05* Bq04* Dn08* Hf04 Hi27 Je14
+       </s>
+      </p>
+      <p>
+       <s pid="119" sid="1">
+        馆 Dm05
+       </s>
+      </p>
+      <p>
+       <s pid="120" sid="1">
+        中 Aj14* Ca06* Ca08* Cb04 Cb05 Da05* Ea03* Ed06*
+       </s>
+      </p>
+      <p>
+       <s pid="121" sid="1">
+        Ed47* Ie11* Je13*
+       </s>
+      </p>
+      <p>
+       <s pid="122" sid="1">
+        目前 Ca10
+       </s>
+      </p>
+      <p>
+       <s pid="123" sid="1">
+        声明 Dk14*
+       </s>
+       <s pid="123" sid="2">
+        Hi13
+       </s>
+      </p>
+      <p>
+       <s pid="124" sid="1">
+        对外 _____
+       </s>
+      </p>
+      <p>
+       <s pid="125" sid="1">
+        官员 ____
+       </s>
+      </p>
+      <p>
+       <s pid="126" sid="1">
+        馆 Dm05
+       </s>
+      </p>
+      <p>
+       <s pid="127" sid="1">
+        领 Bk05* Bq04* Dn08* Hf04 Hi27 Je14
+       </s>
+      </p>
+      <p>
+       <s pid="128" sid="1">
+        中 Aj14* Ca06* Ca08* Cb04 Cb05 Da05* Ea03* Ed06*
+       </s>
+      </p>
+      <p>
+       <s pid="129" sid="1">
+        Ed47* Ie11* Je13*
+       </s>
+      </p>
+      <p>
+       <s pid="130" sid="1">
+        龙 Dd15 Dh03 Ed57*
+       </s>
+      </p>
+      <p>
+       <s pid="131" sid="1">
+        排长 Ae10
+       </s>
+      </p>
+      <p>
+       <s pid="132" sid="1">
+        大 Ah04* Ah05* Bf02* Dj05* Dn04* Ea03 Eb04
+       </s>
+      </p>
+      <p>
+       <s pid="133" sid="1">
+        Ec05 Ed26 Ed38 Ka01*
+       </s>
+      </p>
+      <p>
+       <s pid="134" sid="1">
+        门前 ____
+       </s>
+      </p>
+      <p>
+       <s pid="135" sid="1">
+        组 Di09 Di10
+       </s>
+      </p>
+      <p>
+       <s pid="136" sid="1">
+        签证 Hc16 (this coding is not included in the list of POS, and we keep it)
+       </s>
+      </p>
+      <p>
+       <s pid="137" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="138" sid="1">
+        馆 Dm05
+       </s>
+      </p>
+      <p>
+       <s pid="139" sid="1">
+        领 Bk05* Bq04* Dn08* Hf04 Hi27 Je14
+       </s>
+      </p>
+      <p>
+       <s pid="140" sid="1">
+        中 Aj14* Ca06* Ca08* Cb04 Cb05 Da05* Ea03* Ed06*
+       </s>
+      </p>
+      <p>
+       <s pid="141" sid="1">
+        Ed47* Ie11* Je13*
+       </s>
+      </p>
+      <p>
+      </p>
+      <p>
+       <s pid="143" sid="1">
+        在 Hj19* Ib03* Ja05* Jd01* Jd02* Ka12* Kb01
+       </s>
+      </p>
+      <p>
+       <s pid="144" sid="1">
+        馆 Dm05
+       </s>
+      </p>
+      <p>
+       <s pid="145" sid="1">
+        领 Bk05* Bq04* Dn08* Hf04 Hi27 Je14
+       </s>
+      </p>
+      <p>
+       <s pid="146" sid="1">
+        总 Ae10* Ed56* Ka11* Ka15* Ka29*(all of these codings are not
+       </s>
+      </p>
+      <p>
+       <s pid="147" sid="1">
+        included in the list of POS, and we keep them all)
+       </s>
+      </p>
+      <p>
+       <s pid="148" sid="1">
+        纽约 ____
+       </s>
+      </p>
+      <p>
+       <s pid="149" sid="1">
+        驻 Hb04
+       </s>
+      </p>
+      <p>
+       <s pid="150" sid="1">
+        中国 Di02
+       </s>
+      </p>
+      <p>
+       <s pid="151" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="152" sid="1">
+        曼哈顿 ____
+       </s>
+      </p>
+      <p>
+       <s pid="153" sid="1">
+        位于 Jd02
+       </s>
+      </p>
+      <p>
+       <s pid="154" sid="1">
+        向 Cb01* Ka10* Kb01*(all of these codings are not
+       </s>
+      </p>
+      <p>
+       <s pid="155" sid="1">
+        included in the list of POS, and we keep them all)
+       </s>
+      </p>
+      <p>
+       <s pid="156" sid="1">
+        涌 ____
+       </s>
+      </p>
+      <p>
+       <s pid="157" sid="1">
+        移民 ____
+       </s>
+      </p>
+      <p>
+       <s pid="158" sid="1">
+        新 Eb22* Eb28* Ka12
+       </s>
+      </p>
+      <p>
+       <s pid="159" sid="1">
+        人 Aa01 Ab02 Dd17 De01 Dn03
+       </s>
+      </p>
+      <p>
+       <s pid="160" sid="1">
+        上千 _____
+       </s>
+      </p>
+      <p>
+       <s pid="161" sid="1">
+        有 Eb02* Ed61* Jd01 Jd04 Jd07
+       </s>
+      </p>
+      <p>
+       <s pid="162" sid="1">
+        都 Cb25* Di03* Ka07 Ka12 Ka28
+       </s>
+      </p>
+      <p>
+       <s pid="163" sid="1">
+        天 Ca23* Cb07* Da24* Dh01* Ed51* Ed57* Bp26* Dn05
+       </s>
+      </p>
+      <p>
+       <s pid="164" sid="1">
+        Ka27
+       </s>
+      </p>
+      <p>
+       <s pid="165" sid="1">
+        几 Bp26* Dn05 Ka27*
+       </s>
+      </p>
+      <p>
+       <s pid="166" sid="1">
+        连续 Ig03* Ka11*(both of these two codings are not included in the list of POS,
+       </s>
+      </p>
+      <p>
+       <s pid="167" sid="1">
+        and we keep these two)
+       </s>
+      </p>
+      <p>
+       <s pid="168" sid="1">
+        以讹传讹 Ie01
+       </s>
+      </p>
+      <p>
+       <s pid="169" sid="1">
+        沸沸扬扬 Ef03
+       </s>
+      </p>
+      <p>
+       <s pid="170" sid="1">
+        得 Gc02* Gc03* Ie14* Jc05* Je12* Ka15* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="171" sid="1">
+        传 Dk26* Hg01 Hi15 Ie01 Je03
+       </s>
+      </p>
+      <p>
+       <s pid="172" sid="1">
+        社区 ____
+       </s>
+      </p>
+      <p>
+       <s pid="173" sid="1">
+        华人 ____
+       </s>
+      </p>
+      <p>
+       <s pid="174" sid="1">
+        纽约 ____
+       </s>
+      </p>
+      <p>
+       <s pid="175" sid="1">
+        在 Hj19* Ib03* Ja05* Jd01* Jd02* Ka12* Kb01
+       </s>
+      </p>
+      <p>
+       <s pid="176" sid="1">
+        连日来 ____
+       </s>
+      </p>
+      <p>
+       <s pid="177" sid="1">
+        谣言 Da19
+       </s>
+      </p>
+      <p>
+       <s pid="178" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="179" sid="1">
+        资格 Dd16
+       </s>
+      </p>
+      <p>
+       <s pid="180" sid="1">
+        申请 Hc15
+       </s>
+      </p>
+      <p>
+       <s pid="181" sid="1">
+        护照 ____
+       </s>
+      </p>
+      <p>
+       <s pid="182" sid="1">
+        的 Bo29* Ed01* Kd01
+       </s>
+      </p>
+      <p>
+       <s pid="183" sid="1">
+        移民 ____
+       </s>
+      </p>
+      <p>
+       <s pid="184" sid="1">
+        新 Eb22* Eb28* Ka12
+       </s>
+      </p>
+      <p>
+       <s pid="185" sid="1">
+        大陆 Be01
+       </s>
+      </p>
+      <p>
+       <s pid="186" sid="1">
+        中国 Di02
+       </s>
+      </p>
+      <p>
+       <s pid="187" sid="1">
+        来自 Ja05
+       </s>
+      </p>
+      <p>
+       <s pid="188" sid="1">
+        放宽 ____
+       </s>
+      </p>
+      <p>
+       <s pid="189" sid="1">
+        领事馆 _____
+       </s>
+      </p>
+      <p>
+       <s pid="190" sid="1">
+        中国 Di02
+       </s>
+      </p>
+      <p>
+       <s pid="191" sid="1">
+        We can see that before this dynamic POS-tagging-learned WSD, there are 118 words in the text with 225 large semantic categories represented by the 12 upper-case letters, 266 medium categories and 296 small categories.
+       </s>
+       <s pid="191" sid="2">
+        Before WSD, there are 37 mono-big-sense words, 34 mono-medium sense words and 34 mono-small-sense words .
+       </s>
+       <s pid="191" sid="3">
+        After WSD, there are 166 large semantic categories, 191 medium categories and 207 small categories.
+       </s>
+       <s pid="191" sid="4">
+        And after WSD, there are 63 mono-large-sense words, 57 mono-medium-sense words and 62 mono-small-sense words.
+       </s>
+       <s pid="191" sid="5">
+        We can see from the following table that the average sense number is greatly decreased because of the WSD.
+       </s>
+      </p>
+      <p>
+       <s pid="192" sid="1">
+        Table 4 Average Word Sense Before and After WSD
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Bibliography:
+      </div>
+      <ul id="N1038D">
+       <li id="N1038E">
+        1.Ji Donghong，Huang Changning．Sense Tagging of &lt;TongYiCiCiLin&gt; Using Itself．Laboratoryof Intelligent Technology and Systems, Tsinghua University
+       </li>
+       <li id="N10390">
+        2.D.J. Arnold, Lorna Balkan, Siety Meijer, R.Lee Humphreys and Louisa Sadler Machine Translation: an Introductory Guide, Blackwells-NCC, London, 1994, ISBN: 1855542-17x. http://clwww.essex.ac.uk/MTbook/, chapter9
+       </li>
+       <li id="N10392">
+        3.Martin Volk. 1997. Probing the lexicon in evaluating commercial MT systems. In Proc. of ACL/EACL Joint Conference, pages 112--119, Madrid. EAGLES Evaluation of Natural Language Processing Systems, http://www.ilc.pi.cnr.it/EAGLES96/browse.html#wg3
+       </li>
+       <li id="N10394">
+        4.Nancy Ide, Jean Veronis, Introduction to the Special Issue on Word Sense Disambiguation: The State of Art.
+       </li>
+       <li id="N10396">
+        5. 梅家驹，&lt;&lt;同义词词林&gt;&gt;，上海辞书出版社，1983
+       </li>
+       <li id="N10398">
+        6周强，余士汶，一个人机互助的汉语语料库多级加工处理系统，北大计算语言所学术研讨会论文
+       </li>
+       <li id="N1039A">
+       </li>
+      </ul>
+     </div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1 This trend can be clearly seen if we have a look at the word distribution in a dynamic corpus. For example, the PFR corpus of  "People's Daily"(Jan,1998) at &lt;http://www.icl.pku.edu.cn/Introduction/corpustagging.htm&gt;
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

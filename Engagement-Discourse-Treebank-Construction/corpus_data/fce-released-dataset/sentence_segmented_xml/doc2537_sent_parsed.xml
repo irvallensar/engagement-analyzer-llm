@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir, I am writing to complain about the arrangements for the musical show "Over the Rainbow". I was spending some days in London and
+       <ns type="RV">
+        <i>
+         enjoyed
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         a lot the idea of seeing this show
+        </i>
+       </ns>
+       .
+       <ns type="UQ">
+        <i>
+         All my
+        </i>
+       </ns>
+       disappointment started when we noticed that there were no discounts available for the tickets, but as we wanted to see Danny Brook's performance, we decided to buy them anyway. We got really upset when we realized he
+       <ns type="TV">
+        <i>
+         was being
+        </i>
+       </ns>
+       substituted. The show was scheduled for 19:30 but it only started at 20:15. Besides the boredom of having
+       <ns type="FV">
+        <i>
+         waited
+        </i>
+       </ns>
+       for forty-five minutes, we were not allowed to visit the restaurant after the show, since it was already closed by the time the show finished. As it was not our perfect evening out, as you
+       <ns type="RV">
+        <i>
+         suggested
+        </i>
+       </ns>
+       in your advertisement, we would like to know if it would be possible for us to get a refund. I look forward to your response. Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir, I am writing to complain about the arrangements for the musical show "Over the Rainbow".
+       </s>
+       <s pid="1" sid="2">
+        I was spending some days in London and enjoyed a lot the idea of seeing this show.
+       </s>
+       <s pid="1" sid="3">
+        All my disappointment started when we noticed that there were no discounts available for the tickets, but as we wanted to see Danny Brook's performance, we decided to buy them anyway.
+       </s>
+       <s pid="1" sid="4">
+        We got really upset when we realized he was being substituted.
+       </s>
+       <s pid="1" sid="5">
+        The show was scheduled for 19:30 but it only started at 20:15.
+       </s>
+       <s pid="1" sid="6">
+        Besides the boredom of having waited for forty-five minutes, we were not allowed to visit the restaurant after the show, since it was already closed by the time the show finished.
+       </s>
+       <s pid="1" sid="7">
+        As it was not our perfect evening out, as you suggested in your advertisement, we would like to know if it would be possible for us to get a refund.
+       </s>
+       <s pid="1" sid="8">
+        I look forward to your response.
+       </s>
+       <s pid="1" sid="9">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      5a
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Best Detective Stories of Agatha Christie
+      </p>
+      <p>
+       Dear Ted,
+      </p>
+      <p>
+       I'm writing to tell you about a great book I've just finished reading, and which I'm sure you would like to read too. Its name is "Best Detective Stories of Agatha Christie", and I really
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         impressioned
+        </i>
+       </ns>
+       with the coherence of the stories.
+      </p>
+      <p>
+       Agatha Christie presents situations that
+       <ns type="ID">
+        make us break up our minds
+       </ns>
+       . The crimes she describes seem so perfect that we
+       <ns type="RV">
+        <i>
+         brainstorm
+        </i>
+       </ns>
+       a lot trying to find out who is the criminal.
+      </p>
+      <p>
+       I thought about you while reading the book because I remembered you have booked a place
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a Detective course. I'm sure you'll find this book an interesting object of study. Agatha
+       <ns type="MP">
+        <i>
+         Christies
+        </i>
+       </ns>
+       stories are simple, but very well written, and, as I told you, very coherent. It's
+       <ns type="S">
+        <i>
+         estimulating
+        </i>
+       </ns>
+       to read them.
+      </p>
+      <p>
+       One of the stories will be read on the radio next week. I'm sure that if you listen to it you will start reading the book immediately, and find out there
+       <ns type="MV">
+       </ns>
+       many challenges
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       your new
+       <ns type="S">
+        <i>
+         carreer
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I'm looking forward to hearing from you soon.
+      </p>
+      <p>
+       Best wishes,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Best Detective Stories of Agatha Christie
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Ted,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I'm writing to tell you about a great book I've just finished reading, and which I'm sure you would like to read too.
+       </s>
+       <s pid="3" sid="2">
+        Its name is "Best Detective Stories of Agatha Christie", and I really got impressioned with the coherence of the stories.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Agatha Christie presents situations that make us break up our minds.
+       </s>
+       <s pid="4" sid="2">
+        The crimes she describes seem so perfect that we brainstorm a lot trying to find out who is the criminal.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I thought about you while reading the book because I remembered you have booked a place in a Detective course.
+       </s>
+       <s pid="5" sid="2">
+        I'm sure you'll find this book an interesting object of study.
+       </s>
+       <s pid="5" sid="3">
+        Agatha Christies stories are simple, but very well written, and, as I told you, very coherent.
+       </s>
+       <s pid="5" sid="4">
+        It's estimulating to read them.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        One of the stories will be read on the radio next week.
+       </s>
+       <s pid="6" sid="2">
+        I'm sure that if you listen to it you will start reading the book immediately, and find out there  many challenges for your new carreer.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm looking forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Best wishes,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

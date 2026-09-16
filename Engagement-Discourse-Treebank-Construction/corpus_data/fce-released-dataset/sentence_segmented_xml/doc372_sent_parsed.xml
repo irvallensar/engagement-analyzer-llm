@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam.
+      </p>
+      <p>
+       I have just
+       <ns type="S">
+        <i>
+         recieved
+        </i>
+       </ns>
+       your letter saying that I have won the competition
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I must say I was really
+       <ns type="DJ">
+        <i>
+         surprise
+        </i>
+       </ns>
+       and happy to
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         oportunity
+        </i>
+       </ns>
+       to join the Camp for two weeks.
+      </p>
+      <p>
+       I would like to travel at the end of July, because at that time
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I will be finishing a degree in
+       <ns type="FN">
+        <i>
+         Arts
+        </i>
+       </ns>
+       . I am concerned that you offer me the chance to choose two activities, while I am there
+       <ns type="RP">
+        <i>
+         , because
+        </i>
+       </ns>
+       of my studies, I will take painting
+       <ns type="MP">
+       </ns>
+       as this is the subject which I am finishing at
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         College
+        </i>
+       </ns>
+       ,
+       <ns type="CE">
+        <ns type="S">
+         <i>
+          allways
+         </i>
+        </ns>
+        with important
+        <ns type="S">
+         <i>
+          cualificaitons
+         </i>
+        </ns>
+       </ns>
+       , and photography
+       <ns type="UN">
+        <i>
+         subject
+        </i>
+       </ns>
+       which has been my hobby since I
+       <ns type="TV">
+        <i>
+         discover
+        </i>
+       </ns>
+       that I can mix
+       <ns type="MP">
+       </ns>
+       in
+       <ns type="DN">
+        <i>
+         practise
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       paint and
+       <ns type="RN">
+        <i>
+         photo
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Concernet
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         acomodation
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       I would prefer a tent since for me if I go to a camp or
+       <ns type="R">
+        <i>
+         and
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         excurcion
+        </i>
+       </ns>
+       it
+       <ns type="TV">
+        <i>
+         won't
+        </i>
+       </ns>
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       the same if I
+       <ns type="TV">
+        <i>
+         slept
+        </i>
+       </ns>
+       in a cabin.
+      </p>
+      <p>
+       Finally I would like to know if I will have any extra cash for expenses, I mean food, or will I have to bring it with me? Will I have to bring my own clothes or
+       <ns type="W">
+        <i>
+         you will
+        </i>
+       </ns>
+       give
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       to us?
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just recieved your letter saying that I have won the competition, I must say I was really surprise and happy to have the oportunity to join the Camp for two weeks.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to travel at the end of July, because at that time, I will be finishing a degree in Arts.
+       </s>
+       <s pid="3" sid="2">
+        I am concerned that you offer me the chance to choose two activities, while I am there, because of my studies, I will take painting as this is the subject which I am finishing at the College, allways with important cualificaitons, and photography subject which has been my hobby since I discover that I can mix in practise paint and photo.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Concernet to acomodation.
+       </s>
+       <s pid="4" sid="2">
+        I would prefer a tent since for me if I go to a camp or and excurcion it won't be the same if I slept in a cabin.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally
+       </s>
+       <s pid="5" sid="2">
+        I would like to know if I will have any extra cash for expenses, I mean food, or will I have to bring it with me?
+       </s>
+       <s pid="5" sid="3">
+        Will I have to bring my own clothes or you will give it to us?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable.
+      </p>
+      <p>
+       Some people
+       <ns type="AGV">
+        <i>
+         seems
+        </i>
+       </ns>
+       to enjoy going shopping and spending money
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       makes them happy
+       <ns type="MP">
+        <i>
+         but
+        </i>
+       </ns>
+       what about the
+       <ns type="S">
+        <i>
+         ques
+        </i>
+       </ns>
+       you have to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       to pay for something just to
+       <ns type="RV">
+        <i>
+         realise
+        </i>
+       </ns>
+       , when you get to the front, that they have to close
+       <ns type="RD">
+        <i>
+         that
+        </i>
+       </ns>
+       till and they ask you to move to the next till
+       <ns type="RP">
+        <i>
+         , what
+        </i>
+       </ns>
+       a
+       <ns type="RN">
+        <i>
+         waist
+        </i>
+       </ns>
+       of time.
+      </p>
+      <p>
+       It happened to me once
+       <ns type="MP">
+       </ns>
+       <ns type="UA">
+        <i>
+         that
+        </i>
+       </ns>
+       I wanted to go on
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       , so I went to the travel agency.
+       <ns type="RP">
+        <i>
+         in
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         front
+        </i>
+       </ns>
+       there were some good
+       <ns type="AGN">
+        <i>
+         advertisement
+        </i>
+       </ns>
+       about holidays which were very cheap. I really liked one of them
+       <ns type="S">
+        <i>
+         concernent
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         to
+        </i>
+       </ns>
+       Spain for 3 days with hotel and breakfast included,
+       <ns type="W">
+        <i>
+         <ns type="R">
+          <i>
+           but
+          </i>
+         </ns>
+         for
+        </i>
+       </ns>
+       £250. I went inside to
+       <ns type="FV">
+        <i>
+         asked
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       that
+       <ns type="RN">
+        <i>
+         packet
+        </i>
+       </ns>
+       but they told me that it was gone,
+       <ns type="L">
+        <i>
+         therefore
+        </i>
+       </ns>
+       , I went to many
+       <ns type="S">
+        <i>
+         shoops
+        </i>
+       </ns>
+       just to
+       <ns type="RV">
+        <i>
+         find
+        </i>
+       </ns>
+       the same answer.
+       <ns type="R">
+        <i>
+         <ns type="RP">
+          <i>
+           any
+          </i>
+         </ns>
+        </i>
+       </ns>
+       of the
+       <ns type="S">
+        <i>
+         adver.
+        </i>
+       </ns>
+       in the windows were available. However, the most important thing is when I asked them to take that
+       <ns type="S">
+        <i>
+         adver.
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       of the
+       <ns type="MN">
+       </ns>
+       <ns type="MA">
+       </ns>
+       didn't do it.
+      </p>
+      <p>
+       <ns type="R">
+        As and advise try to go shopping in the out pick hours
+       </ns>
+       , and don't
+       <ns type="SX">
+        <i>
+         waist
+        </i>
+       </ns>
+       your time asking for
+       <ns type="FN">
+        <i>
+         <ns type="S">
+          <i>
+           promosion
+          </i>
+         </ns>
+        </i>
+       </ns>
+       advertised in the windows of the shop.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Some people seems to enjoy going shopping and spending money, it makes them happy but what about the ques you have to make to pay for something just to realise, when you get to the front, that they have to close that till and they ask you to move to the next till, what a waist of time.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It happened to me once that I wanted to go on holidays, so I went to the travel agency.
+       </s>
+       <s pid="3" sid="2">
+        in the front there were some good advertisement about holidays which were very cheap.
+       </s>
+       <s pid="3" sid="3">
+        I really liked one of them concernent to Spain for 3 days with hotel and breakfast included, but for £250.
+       </s>
+       <s pid="3" sid="4">
+        I went inside to asked for that packet but they told me that it was gone, therefore, I went to many shoops just to find the same answer.
+       </s>
+       <s pid="3" sid="5">
+        any of the adver.
+       </s>
+       <s pid="3" sid="6">
+        in the windows were available.
+       </s>
+       <s pid="3" sid="7">
+        However, the most important thing is when I asked them to take that adver.
+       </s>
+       <s pid="3" sid="8">
+        of the   didn't do it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As and advise try to go shopping in the out pick hours, and don't waist your time asking for promosion advertised in the windows of the shop.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

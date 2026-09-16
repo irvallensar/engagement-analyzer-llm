@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     40.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam,
+      </p>
+      <p>
+       I am writing to complain about the musical show advertised in your latest leaflet.
+      </p>
+      <p>
+       First of all, I would like to say that it was the worst performance I had ever seen and it disappointed me very much.
+      </p>
+      <p>
+       Although your advertisement stated that the main actor would be Danny Brook, it was not him and a different man
+       <ns type="M">
+       </ns>
+       was not prepared for the role.
+      </p>
+      <p>
+       Secondly,
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       advertisement stated that the second show should start at 19:30.
+       <ns type="RA">
+        <i>
+         It
+        </i>
+       </ns>
+       was not true because the audience had to wait until 20:15.
+      </p>
+      <p>
+       Then, I did not get a discount and I had to buy a full-price ticket, although I am not
+       <ns type="MD">
+       </ns>
+       adult yet.
+      </p>
+      <p>
+       Finally, I was hungry after waiting for the show and wanted to order something to eat.
+       <ns type="RA">
+        <i>
+         It
+        </i>
+       </ns>
+       was, however, impossible because the theatre restaurant was closed for unknown reasons.
+      </p>
+      <p>
+       I would like you then to send the money back to me because I did not enjoy the show at all and the ticket
+       <ns type="IV">
+        <i>
+         costed
+        </i>
+       </ns>
+       a fortune.
+      </p>
+      <p>
+       I am looking forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about the musical show advertised in your latest leaflet.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I would like to say that it was the worst performance I had ever seen and it disappointed me very much.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Although your advertisement stated that the main actor would be Danny Brook, it was not him and a different man  was not prepared for the role.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, you advertisement stated that the second show should start at 19:30.
+       </s>
+       <s pid="5" sid="2">
+        It was not true because the audience had to wait until 20:15.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Then, I did not get a discount and I had to buy a full-price ticket, although I am not  adult yet.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Finally, I was hungry after waiting for the show and wanted to order something to eat.
+       </s>
+       <s pid="7" sid="2">
+        It was, however, impossible because the theatre restaurant was closed for unknown reasons.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I would like you then to send the money back to me because I did not enjoy the show at all and the ticket costed a fortune.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I am looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       She heard from her friend Jon that Paul, the worst pupil at school, had thrown an enormous frog inside the desk of Miss Colston, their English teacher.
+      </p>
+      <p>
+       Miss Colston was an old woman, who wanted her pupils to understand and admire English novels and poems.
+      </p>
+      <p>
+       But the children were bored during her lessons and Paul was very disappointed that she didn't read any funny stories.
+      </p>
+      <p>
+       So he decided to scare the old woman away from school. Now he thought it was stupid to tell Jon about it, as he was the best friend of Pat. "Oh, that girl will cause some problems" - he thought when Miss Colston entered the classroom. She approached the desk and wanted to open it, but suddenly Pat shouted - "Miss Colston, please, don't do that. There's a frog". The teacher stared at the whole class and calmly whispered - "Who did it?"
+      </p>
+      <p>
+       "Oh, God" - thought Paul - "the next time I will throw a frog
+       <ns type="RT">
+        <i>
+         inside
+        </i>
+       </ns>
+       Pat's rucksack."
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        She heard from her friend Jon that Paul, the worst pupil at school, had thrown an enormous frog inside the desk of Miss Colston, their English teacher.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Miss Colston was an old woman, who wanted her pupils to understand and admire English novels and poems.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But the children were bored during her lessons and Paul was very disappointed that she didn't read any funny stories.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        So he decided to scare the old woman away from school.
+       </s>
+       <s pid="5" sid="2">
+        Now he thought it was stupid to tell Jon about it, as he was the best friend of Pat.
+       </s>
+       <s pid="5" sid="3">
+        "Oh, that girl will cause some problems" - he thought when Miss Colston entered the classroom.
+       </s>
+       <s pid="5" sid="4">
+        She approached the desk and wanted to open it, but suddenly Pat shouted - "Miss Colston, please, don't do that.
+       </s>
+       <s pid="5" sid="5">
+        There's a frog".
+       </s>
+       <s pid="5" sid="6">
+        The teacher stared at the whole class and calmly whispered - "Who did it?"
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        "Oh, God" - thought Paul - "the next time I will throw a frog inside Pat's rucksack."
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

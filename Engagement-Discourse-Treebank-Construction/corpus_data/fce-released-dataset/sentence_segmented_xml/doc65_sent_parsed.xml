@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/
+       <ns type="S">
+        <i>
+         MADAME
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you because yesterday I went to the musical
+       <ns type="UN">
+        <i>
+         show
+        </i>
+       </ns>
+       "Over the Rainbow" and I had a bad evening.
+      </p>
+      <p>
+       First of all, in the advertisement
+       <ns type="MA">
+       </ns>
+       says that the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       were
+       <ns type="CE">
+        different actors, and there weren't different one, so that
+        <ns type="RP">
+         <i>
+          can not
+         </i>
+        </ns>
+        be
+       </ns>
+       .
+      </p>
+      <p>
+       Also in the advertisement
+       <ns type="MA">
+       </ns>
+       says
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that the show
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       begin at 19.30 and it started at 20.15; that
+       <ns type="TV">
+        <i>
+         mean
+        </i>
+       </ns>
+       that I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         cancelled
+        </i>
+       </ns>
+       a date that I had at 21:00, because I
+       <ns type="S">
+        <i>
+         coudn't
+        </i>
+       </ns>
+       make it. If you
+       <ns type="RV">
+        <i>
+         present
+        </i>
+       </ns>
+       a show you must be on time.
+      </p>
+      <p>
+       Another thing that
+       <ns type="R">
+        <i>
+         happened
+        </i>
+       </ns>
+       was that
+       <ns type="R">
+        <i>
+         the tickets did not have discount
+        </i>
+       </ns>
+       and the advertisement
+       <ns type="TV">
+        <i>
+         says
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       . So, how is
+       <ns type="MA">
+       </ns>
+       possible that you
+       <ns type="RV">
+        <i>
+         present
+        </i>
+       </ns>
+       an advertisement and you don't
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       what it
+       <ns type="AGV">
+        <i>
+         say
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       Finally,
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         <ns type="S">
+          <i>
+           supose
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to have the restaurant open, and it wasn't, because they didn't have electricity to cook, so they
+       <ns type="TV">
+        <i>
+         close
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       I am really
+       <ns type="SX">
+        <i>
+         made
+        </i>
+       </ns>
+       and I want my money back
+       <ns type="RP">
+        <i>
+         , please
+        </i>
+       </ns>
+       call me
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the number 23456789, I will be waiting
+       <ns type="MT">
+       </ns>
+       your call. Thank
+       <ns type="MA">
+       </ns>
+       for your time
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         your
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         sincerelly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/MADAME,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writting  you because yesterday I went to the musical show "Over the Rainbow" and I had a bad evening.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, in the advertisement  says that the starring were different actors, and there weren't different one, so that can not be.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Also in the advertisement  says, that the show will begin at 19.30 and it started at 20.15; that mean that I have to cancelled a date that I had at 21:00, because I coudn't make it.
+       </s>
+       <s pid="4" sid="2">
+        If you present a show you must be on time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Another thing that happened was that the tickets did not have discount and the advertisement says the will have.
+       </s>
+       <s pid="5" sid="2">
+        So, how is  possible that you present an advertisement and you don't make what it say?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, it supose to have the restaurant open, and it wasn't, because they didn't have electricity to cook, so they close it.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am really made and I want my money back, please call me to the number 23456789, I will be waiting  your call.
+       </s>
+       <s pid="7" sid="2">
+        Thank  for your time
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        your sincerelly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed your daily life?
+      </p>
+      <p>
+       Modern technology
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         change
+        </i>
+       </ns>
+       my daily life in many
+       <ns type="RN">
+        <i>
+         aspects
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all
+       <ns type="MP">
+       </ns>
+       at work;
+       <ns type="AGN">
+        <i>
+         computer
+        </i>
+       </ns>
+       are really amazing, you only need to turn
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       on and start to write; your work is
+       <ns type="RJ">
+        <i>
+         more clean
+        </i>
+       </ns>
+       and you work faster.
+      </p>
+      <p>
+       <ns type="M">
+        <i>
+         Also
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         change
+        </i>
+       </ns>
+       my free time
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       they
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       invented great games like play station, and you can have a really good time
+       <ns type="W">
+        <i>
+         with your friend playing
+        </i>
+       </ns>
+       . In the
+       <ns type="ID">
+        <i>
+         early day
+        </i>
+       </ns>
+       , on a
+       <ns type="DJ">
+        <i>
+         raining
+        </i>
+       </ns>
+       day you couldn't play because most
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         game
+        </i>
+       </ns>
+       were
+       <ns type="MV">
+       </ns>
+       outside the house but now with
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       technology you can
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       many things in your house.
+      </p>
+      <p>
+       Another aspect is
+       <ns type="MC">
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="U">
+        <i>
+         on the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         house artefacts
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       microwaves,
+       <ns type="DN">
+        <i>
+         laundrymachine
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       make life
+       <ns type="DJ">
+        <i>
+         easily
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In my opinion technology
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       made
+       <ns type="R">
+        <i>
+         human life
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         easily
+        </i>
+       </ns>
+       ,
+       <ns type="RJ">
+        <i>
+         <ns type="IJ">
+          <i>
+           funier
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and more comfortable.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed your daily life?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Modern technology have change my daily life in many aspects.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all at work; computer are really amazing, you only need to turn it on and start to write; your work is more clean and you work faster.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Also change my free time, they had invented great games like play station, and you can have a really good time with your friend playing.
+       </s>
+       <s pid="4" sid="2">
+        In the early day, on a raining day you couldn't play because most of game were  outside the house but now with the technology you can make many things in your house.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Another aspect is , on the house artefacts, microwaves, laundrymachine, make life easily.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In my opinion technology have made human life easily, funier and more comfortable.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

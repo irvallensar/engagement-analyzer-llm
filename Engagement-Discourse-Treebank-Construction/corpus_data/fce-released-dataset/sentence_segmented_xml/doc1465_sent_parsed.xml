@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     16.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I've just
+       <ns type="S">
+        <i>
+         recived
+        </i>
+       </ns>
+       your
+       <ns type="S">
+        <i>
+         leter
+        </i>
+       </ns>
+       , and I must say that I am so surprised
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I wasn't expecting to win it.
+      </p>
+      <p>
+       I
+       <ns type="MV">
+       </ns>
+       still
+       <ns type="IV">
+        <i>
+         studing
+        </i>
+       </ns>
+       at the moment I will finish at the end of June so I will be able to leave at the
+       <ns type="S">
+        <i>
+         begining
+        </i>
+       </ns>
+       of July.
+      </p>
+      <p>
+       <ns type="L">
+        <i>
+         About
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         acomodation
+        </i>
+       </ns>
+       , I would prefer a log cabin instead of a tent so as to get a better rest.
+       <ns type="RV">
+        <i>
+         I've got
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         some
+        </i>
+       </ns>
+       problem
+       <ns type="FV">
+        <i>
+         to sleep
+        </i>
+       </ns>
+       and a log cabin will be more peaceful than a
+       <ns type="RN">
+        <i>
+         ten
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       You are asking me to choose just 2 activities. It's quite
+       <ns type="S">
+        <i>
+         dificult
+        </i>
+       </ns>
+       for me because there are 4 of them I like a lot
+       <ns type="MP">
+       </ns>
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       are climbing, tennis, surfing and photography, but if I have to make a
+       <ns type="S">
+        <i>
+         choise
+        </i>
+       </ns>
+       , I choose climbing and surfing. I'm rather
+       <ns type="RJ">
+        <i>
+         trained
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       climbing
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I have done it once a
+       <ns type="S">
+        <i>
+         mounth
+        </i>
+       </ns>
+       since I was 17. But
+       <ns type="ID">
+        <i>
+         in the other hand
+        </i>
+       </ns>
+       , I have never
+       <ns type="RV">
+        <i>
+         done
+        </i>
+       </ns>
+       surfing
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am a
+       <ns type="DJ">
+        <i>
+         completely
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         <ns type="S">
+          <i>
+           Beginer
+          </i>
+         </ns>
+        </i>
+       </ns>
+       but I am
+       <ns type="IV">
+        <i>
+         dieing
+        </i>
+       </ns>
+       to do it.
+      </p>
+      <p>
+       I've got just one question to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I know it is all
+       <ns type="DJ">
+        <i>
+         include
+        </i>
+       </ns>
+       , but is there anything I will have to pay for? If there is, please let me know.
+      </p>
+      <p>
+       I am looking forward to hearing from you very soon, and please let me know if you need any further information.
+      </p>
+      <p>
+       Yours Faithfully:
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I've just recived your leter, and I must say that I am so surprised, I wasn't expecting to win it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I  still studing at the moment I will finish at the end of June so I will be able to leave at the begining of July.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        About the acomodation, I would prefer a log cabin instead of a tent so as to get a better rest.
+       </s>
+       <s pid="4" sid="2">
+        I've got some problem to sleep and a log cabin will be more peaceful than a ten.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        You are asking me to choose just 2 activities.
+       </s>
+       <s pid="5" sid="2">
+        It's quite dificult for me because there are 4 of them I like a lot wich are climbing, tennis, surfing and photography, but if I have to make a choise, I choose climbing and surfing.
+       </s>
+       <s pid="5" sid="3">
+        I'm rather trained in climbing, I have done it once a mounth since I was 17.
+       </s>
+       <s pid="5" sid="4">
+        But in the other hand, I have never done surfing, I am a completely Beginer but I am dieing to do it.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I've got just one question to do, I know it is all include, but is there anything I will have to pay for?
+       </s>
+       <s pid="6" sid="2">
+        If there is, please let me know.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am looking forward to hearing from you very soon, and please let me know if you need any further information.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours Faithfully:
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      1.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       First of all, I think we should have a protagonist for it. A good idea to start will be
+       <ns type="W">
+        <i>
+         a clock alarm
+        </i>
+       </ns>
+       ringing close to his bed, because that's the way everyone
+       <ns type="AGV">
+        <i>
+         get
+        </i>
+       </ns>
+       up in the morning
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       (
+       <ns type="R">
+        <i>
+         unless
+        </i>
+       </ns>
+       the people who don't do
+       <ns type="S">
+        <i>
+         anythink
+        </i>
+       </ns>
+       )
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       After that, we should have a morning
+       <ns type="RN">
+        <i>
+         view
+        </i>
+       </ns>
+       of one of the
+       <ns type="IJ">
+        <i>
+         most busiest
+        </i>
+       </ns>
+       London tube
+       <ns type="AGN">
+        <i>
+         station
+        </i>
+       </ns>
+       in order to show stressed people going in and out,
+       <ns type="R">
+        <i>
+         <ns type="RP">
+          <i>
+           Including
+          </i>
+         </ns>
+        </i>
+       </ns>
+       our protagonist
+       <ns type="RV">
+        <i>
+         going out
+        </i>
+       </ns>
+       peacefully with a couple of books
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       his hand - then the school's door, and him going in.
+      </p>
+      <p>
+       After
+       <ns type="UQ">
+        <i>
+         all
+        </i>
+       </ns>
+       this introduction,
+       <ns type="MA">
+       </ns>
+       will be
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       time to show some of the
+       <ns type="S">
+        <i>
+         acitivities
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         every one
+        </i>
+       </ns>
+       can
+       <ns type="RV">
+        <i>
+         join
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the school,
+       <ns type="R">
+        such as
+        <ns type="S">
+         <i>
+          lesons
+         </i>
+        </ns>
+        or others like the library, our protagonist having a
+        <ns type="S">
+         <i>
+          cofe
+         </i>
+        </ns>
+        with some
+        <ns type="S">
+         <i>
+          coleagues
+         </i>
+        </ns>
+        in the
+        <ns type="DN">
+         <ns type="S">
+          <i>
+           cofe
+          </i>
+         </ns>
+         bar
+        </ns>
+        , the reception service
+       </ns>
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       And finally a
+       <ns type="RN">
+        <i>
+         view
+        </i>
+       </ns>
+       of all the students leaving the school would be a nice
+       <ns type="RN">
+        <i>
+         end
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        First of all, I think we should have a protagonist for it.
+       </s>
+       <s pid="1" sid="2">
+        A good idea to start will be a clock alarm ringing close to his bed, because that's the way everyone get up in the morning, (unless the people who don't do anythink)
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        After that, we should have a morning view of one of the most busiest London tube station in order to show stressed people going in and out, Including our protagonist going out peacefully with a couple of books on his hand - then the school's door, and him going in.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        After all this introduction,  will be the time to show some of the acitivities every one can join in the school, such as lesons or others like the library, our protagonist having a cofe with some coleagues in the cofe bar, the reception service..
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        And finally a view of all the students leaving the school would be a nice end.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

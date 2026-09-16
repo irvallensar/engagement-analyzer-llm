@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     28.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       I am
+       <ns type="RV">
+        <i>
+         applying
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       your letter
+       <ns type="UY">
+        <i>
+         where
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       you asked for some information about the conference in Peterborough Regional College.
+      </p>
+      <p>
+       Your group has been booked into the Palace Hotel
+       <ns type="MP">
+       </ns>
+       which is situated in the city
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       ,
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       15
+       <ns type="MP">
+        <i>
+         minutes
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         walking
+        </i>
+       </ns>
+       from where the conference
+       <ns type="AGV">
+        <i>
+         take
+        </i>
+       </ns>
+       place
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       .
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       the next page there is a map showing you the best way to get to the conference that will be at the Regional College.
+      </p>
+      <p>
+       The conference will start at 7 p.m
+       <ns type="MP">
+       </ns>
+       ,
+       <ns type="R">
+        the same day we expect
+       </ns>
+       , the 18th of June. Our director will make a speech afterwards and there will be a party with some snacks, drinks and music. For the people
+       <ns type="M">
+       </ns>
+       interested in
+       <ns type="MA">
+       </ns>
+       , there will
+       <ns type="W">
+        <i>
+         be also
+        </i>
+       </ns>
+       <ns type="U">
+        <i>
+         an amusement
+        </i>
+       </ns>
+       karaoke.
+      </p>
+      <p>
+       Everybody should wear formal clothes, at least, a little bit formal. No jeans
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         tee-shirts
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       There
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       a lot of places you can visit in Peterborough. We have a Cathedral you can visit anytime and the
+       <ns type="RP">
+        <i>
+         river side
+        </i>
+       </ns>
+       , which is
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       best if it is a nice day, sunny
+       <ns type="SX">
+        <i>
+         an
+        </i>
+       </ns>
+       warm, for
+       <ns type="FV">
+        <i>
+         take
+        </i>
+       </ns>
+       a walk. For
+       <ns type="UQ">
+        <i>
+         any
+        </i>
+       </ns>
+       details
+       <ns type="MP">
+       </ns>
+       look
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the
+       <ns type="W">
+        <i>
+         next page map
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am applying  your letter where  you asked for some information about the conference in Peterborough Regional College.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Your group has been booked into the Palace Hotel which is situated in the city center, at 15 minutes walking from where the conference take place in.
+       </s>
+       <s pid="3" sid="2">
+        In the next page there is a map showing you the best way to get to the conference that will be at the Regional College.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The conference will start at 7 p.m, the same day we expect, the 18th of June.
+       </s>
+       <s pid="4" sid="2">
+        Our director will make a speech afterwards and there will be a party with some snacks, drinks and music.
+       </s>
+       <s pid="4" sid="3">
+        For the people  interested in , there will be also an amusement karaoke.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Everybody should wear formal clothes, at least, a little bit formal.
+       </s>
+       <s pid="5" sid="2">
+        No jeans and tee-shirts.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        There is a lot of places you can visit in Peterborough.
+       </s>
+       <s pid="6" sid="2">
+        We have a Cathedral you can visit anytime and the river side, which is the best if it is a nice day, sunny an warm, for take a walk.
+       </s>
+       <s pid="6" sid="3">
+        For any details look in the next page map.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Alice knew that is was going to be a very special day for her. She had a dream where somebody told her that that day would be special. So, she took the bus, like every morning, and she went to school. But that day was a little bit different: she had her maths exam. She had never passed
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       maths exam and she was really nervous.
+      </p>
+      <p>
+       Half an hour before the exam she went to the cafeteria to
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       a cup of tea. She sat down and
+       <ns type="MP">
+       </ns>
+       what a surprise
+       <ns type="MP">
+       </ns>
+       she found a lottery ticket. Nobody was around her, so she took the ticket
+       <ns type="RP">
+        <i>
+         . Drank
+        </i>
+       </ns>
+       her cup of tea and
+       <ns type="UA">
+        <i>
+         she
+        </i>
+       </ns>
+       went to the classroom where the exam took place. She
+       <ns type="AS">
+        <i>
+         did the exam really well
+        </i>
+       </ns>
+       , she was very surprised, and after the exam she went home.
+      </p>
+      <p>
+       She
+       <ns type="TV">
+        <i>
+         spend
+        </i>
+       </ns>
+       the rest of the day listening to music while she was thinking about the lottery ticket and waiting for the TV show at 8 o'clock. At
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       time, she turned on the TV and while the
+       <ns type="UP">
+        <i>
+         lottery's
+        </i>
+       </ns>
+       man was shouting
+       <ns type="MY">
+       </ns>
+       the winning numbers, she checked hers and what
+       <ns type="AS">
+        <i>
+         was the surprise
+        </i>
+       </ns>
+       that the last 4 numbers were the same!! She
+       <ns type="TV">
+        <i>
+         win
+        </i>
+       </ns>
+       £500!!!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Alice knew that is was going to be a very special day for her.
+       </s>
+       <s pid="1" sid="2">
+        She had a dream where somebody told her that that day would be special.
+       </s>
+       <s pid="1" sid="3">
+        So, she took the bus, like every morning, and she went to school.
+       </s>
+       <s pid="1" sid="4">
+        But that day was a little bit different: she had her maths exam.
+       </s>
+       <s pid="1" sid="5">
+        She had never passed an maths exam and she was really nervous.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Half an hour before the exam she went to the cafeteria to take a cup of tea.
+       </s>
+       <s pid="2" sid="2">
+        She sat down and what a surprise she found a lottery ticket.
+       </s>
+       <s pid="2" sid="3">
+        Nobody was around her, so she took the ticket.
+       </s>
+       <s pid="2" sid="4">
+        Drank her cup of tea and she went to the classroom where the exam took place.
+       </s>
+       <s pid="2" sid="5">
+        She did the exam really well, she was very surprised, and after the exam she went home.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        She spend the rest of the day listening to music while she was thinking about the lottery ticket and waiting for the TV show at 8 o'clock.
+       </s>
+       <s pid="3" sid="2">
+        At the time, she turned on the TV and while the lottery's man was shouting  the winning numbers, she checked hers and what was the surprise that the last 4 numbers were the same!!
+       </s>
+       <s pid="3" sid="3">
+        She win £500!!!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

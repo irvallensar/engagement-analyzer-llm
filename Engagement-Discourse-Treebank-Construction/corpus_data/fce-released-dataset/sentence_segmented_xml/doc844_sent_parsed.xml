@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       lausanne, the 17th of June 2000
+      </p>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       Last weekend, I
+       <ns type="TV">
+        <i>
+         have been
+        </i>
+       </ns>
+       in London with my friend and I saw your musical show "over the Rainbow".
+      </p>
+      <p>
+       I write this letter to you
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           explain
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         my
+        </i>
+       </ns>
+       very bad evening I have
+       <ns type="RV">
+        <i>
+         passed
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       theatre.
+       <ns type="RT">
+        <i>
+         On
+        </i>
+       </ns>
+       the paper it was
+       <ns type="TV">
+        <i>
+         <ns type="IV">
+          <i>
+           writting
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MC">
+       </ns>
+       the principal actor is "Danny Brook" but it wasn't him, it was a different actor
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       we
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       never seen,
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       heard. I think it's really not
+       <ns type="RJ">
+        <i>
+         correct
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       They
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           haven't
+          </i>
+         </ns>
+        </i>
+       </ns>
+       respect the timetable, the show
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         begun
+        </i>
+       </ns>
+       at 19:30 and
+       <ns type="RA">
+        <i>
+         he
+        </i>
+       </ns>
+       started at 20:15
+       <ns type="MP">
+        <i>
+         how
+        </i>
+       </ns>
+       can you explain this
+       <ns type="RN">
+        <i>
+         fault
+        </i>
+       </ns>
+       ?!
+      </p>
+      <p>
+       But
+       <ns type="R">
+        <i>
+         it's
+        </i>
+       </ns>
+       not
+       <ns type="TV">
+        <i>
+         finish
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       you wrote
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the paper "Discounts available" but it wasn't true
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it was
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very badly
+       <ns type="DV">
+        <i>
+         organisation
+        </i>
+       </ns>
+       . After this bad show we had
+       <ns type="TV">
+        <i>
+         want
+        </i>
+       </ns>
+       to go to the Restaurant for
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         drunk
+        </i>
+       </ns>
+       and
+       <ns type="FV">
+        <i>
+         ate
+        </i>
+       </ns>
+       something and it was closed and nobody
+       <ns type="TV">
+        <i>
+         had explained
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       us why the Restaurant wasn't open.
+      </p>
+      <p>
+       So, I'm very angry when I think about this evening, and I want to have my money back. I think it's the minimum you have to do for me.
+      </p>
+      <p>
+       Thank you in advance.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        lausanne, the 17th of June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last weekend, I have been in London with my friend and I saw your musical show "over the Rainbow".
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I write this letter to you for explain my very bad evening I have passed in  theatre.
+       </s>
+       <s pid="4" sid="2">
+        On the paper it was writting  the principal actor is "Danny Brook" but it wasn't him, it was a different actor that we have never seen, and heard.
+       </s>
+       <s pid="4" sid="3">
+        I think it's really not correct.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        They haven't respect the timetable, the show had to begun at 19:30 and he started at 20:15 how can you explain this fault?!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        But it's not finish you wrote on the paper "Discounts available" but it wasn't true, it was a very badly organisation.
+       </s>
+       <s pid="6" sid="2">
+        After this bad show we had want to go to the Restaurant for  drunk and ate something and it was closed and nobody had explained  us why the Restaurant wasn't open.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So, I'm very angry when I think about this evening, and I want to have my money back.
+       </s>
+       <s pid="7" sid="2">
+        I think it's the minimum you have to do for me.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Thank you in advance.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       SCHOOLS ENGLISH LANGUAGE MAGAZINE
+      </p>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets, this
+       <ns type="S">
+        <i>
+         sentance
+        </i>
+       </ns>
+       is very popular in our school. Pat is not an
+       <ns type="RJ">
+        angry
+       </ns>
+       girl. She is very friendly but she can't keep a secret. Last year, on a Saturday evening
+       <ns type="MP">
+       </ns>
+       my boyfriend
+       <ns type="TV">
+        <i>
+         phone
+        </i>
+       </ns>
+       me at 20 h
+       <ns type="UN">
+        <i>
+         o'clock
+        </i>
+       </ns>
+       and said
+       <ns type="MT">
+       </ns>
+       me, "Would you like to go to the cinema with me
+       <ns type="MP">
+       </ns>
+       " I asked my parents but
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       said
+       <ns type="MT">
+       </ns>
+       me
+       <ns type="MP">
+       </ns>
+       "No
+       <ns type="MP">
+       </ns>
+       you can't go to the cinema, tomorrow you have school.
+       <ns type="MP">
+       </ns>
+       Then I
+       <ns type="TV">
+        <i>
+         phone
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       Pat
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         explain
+        </i>
+       </ns>
+       my big problem. Pat said to me
+       <ns type="MP">
+       </ns>
+       "You
+       <ns type="TV">
+        <i>
+         said
+        </i>
+       </ns>
+       to your parents that you
+       <ns type="MV">
+       </ns>
+       sleep
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       me and you
+       <ns type="RV">
+        <i>
+         don't
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         go
+        </i>
+       </ns>
+       to the cinema.
+       <ns type="MP">
+       </ns>
+       I asked my parents and they said
+       <ns type="MP">
+        <i>
+         alright
+        </i>
+       </ns>
+       you can go to
+       <ns type="MP">
+        <i>
+         Pat
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         sleeping
+        </i>
+       </ns>
+       .
+       <ns type="MP">
+       </ns>
+       I was very happy, I
+       <ns type="TV">
+        <i>
+         phone
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       my boyfriend and I
+       <ns type="RV">
+        <i>
+         explained
+        </i>
+       </ns>
+       him my secret
+       <ns type="MP">
+        <i>
+         he
+        </i>
+       </ns>
+       said
+       <ns type="MP">
+        <i>
+         <ns type="S">
+          <i>
+           allright
+          </i>
+         </ns>
+        </i>
+       </ns>
+       so at nine o'clock in front of the cinema". I
+       <ns type="RV">
+        <i>
+         passed
+        </i>
+       </ns>
+       a really beautiful evening with Pat and my boyfriend in the cinema, but on Sunday my mother
+       <ns type="TV">
+        <i>
+         phone
+        </i>
+       </ns>
+       Pat's mother and Pat's mother
+       <ns type="TV">
+        <i>
+         explain
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="RJ">
+          <i>
+           all
+          </i>
+         </ns>
+         the
+        </i>
+       </ns>
+       story to my mother. If Pat
+       <ns type="S">
+        <i>
+         haden't
+        </i>
+       </ns>
+       <ns type="AS">
+        <i>
+         <ns type="RV">
+          <i>
+           say
+          </i>
+         </ns>
+         the secret to her mother
+        </i>
+       </ns>
+       I would
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="UY">
+        <i>
+         no
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       problem. Since
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       Saturday evening I
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       never
+       <ns type="TV">
+        <i>
+         speaking
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       Pat.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        SCHOOLS ENGLISH LANGUAGE MAGAZINE
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="2" sid="2">
+        Pat wasn't very good at keeping secrets, this sentance is very popular in our school.
+       </s>
+       <s pid="2" sid="3">
+        Pat is not an angry girl.
+       </s>
+       <s pid="2" sid="4">
+        She is very friendly but she can't keep a secret.
+       </s>
+       <s pid="2" sid="5">
+        Last year, on a Saturday evening my boyfriend phone me at 20 h o'clock and said  me, "Would you like to go to the cinema with me" I asked my parents but the said  me "No you can't go to the cinema, tomorrow you have school.
+       </s>
+       <s pid="2" sid="6">
+        Then I phone to Pat for explain my big problem.
+       </s>
+       <s pid="2" sid="7">
+        Pat said to me "You said to your parents that you  sleep by me and you don't go to the cinema.
+       </s>
+       <s pid="2" sid="8">
+        I asked my parents and they said alright you can go to Pat for sleeping.
+       </s>
+       <s pid="2" sid="9">
+        I was very happy, I phone to my boyfriend and I explained him my secret he said allright so at nine o'clock in front of the cinema".
+       </s>
+       <s pid="2" sid="10">
+        I passed a really beautiful evening with Pat and my boyfriend in the cinema, but on Sunday my mother phone Pat's mother and Pat's mother explain all the story to my mother.
+       </s>
+       <s pid="2" sid="11">
+        If Pat haden't say the secret to her mother I would be  have no  problem.
+       </s>
+       <s pid="2" sid="12">
+        Since this Saturday evening I had never speaking with Pat.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Madam
+      </p>
+      <p>
+       I am very happy to win this prize and I am going to give you some information
+       <ns type="W">
+        <i>
+         from me that you need
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         me
+        </i>
+       </ns>
+       have a good time at Camp California.
+      </p>
+      <p>
+       I would like to
+       <ns type="RV">
+        <i>
+         know
+        </i>
+       </ns>
+       only in July because I have
+       <ns type="RV">
+        <i>
+         set
+        </i>
+       </ns>
+       my holidays
+       <ns type="MV">
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       month since last January.
+      </p>
+      <p>
+       <ns type="W">
+        <i>
+         I want if it is possible
+        </i>
+       </ns>
+       a
+       <ns type="AGN">
+        <i>
+         log cabins
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         like
+        </i>
+       </ns>
+       accommodation because I have been suffering
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       my back since my childhood, therefore I need a
+       <ns type="S">
+        <i>
+         confortable
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         accommodation
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I will be pleased to swim and paint when I am at the camp. I selected swimming because it is a cure
+       <ns type="RT">
+        <i>
+         against
+        </i>
+       </ns>
+       my
+       <ns type="S">
+        <i>
+         backace
+        </i>
+       </ns>
+       and I have not
+       <ns type="RV">
+        <i>
+         <ns type="SA">
+          <i>
+           practiced
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       since I started my new job five years ago. I also
+       <ns type="IV">
+        <i>
+         choosed
+        </i>
+       </ns>
+       painting because I have never done
+       <ns type="MA">
+       </ns>
+       before
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I would like to learn and moreover I want to do a
+       <ns type="RJ">
+        <i>
+         calm
+        </i>
+       </ns>
+       activity.
+      </p>
+      <p>
+       <ns type="UY">
+        <i>
+         Otherwise, could
+        </i>
+       </ns>
+       you tell me approximately how much money I have to take for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       food, please?
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         sincerely
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Xavier Fournier
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Madam
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am very happy to win this prize and I am going to give you some information from me that you need to make me have a good time at Camp California.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to know only in July because I have set my holidays   this month since last January.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I want if it is possible a log cabins like accommodation because I have been suffering from my back since my childhood, therefore I need a confortable accommodation.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I will be pleased to swim and paint when I am at the camp.
+       </s>
+       <s pid="5" sid="2">
+        I selected swimming because it is a cure against my backace and I have not practiced  since I started my new job five years ago.
+       </s>
+       <s pid="5" sid="3">
+        I also choosed painting because I have never done  before, I would like to learn and moreover I want to do a calm activity.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Otherwise, could you tell me approximately how much money I have to take for the food, please?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Xavier Fournier
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       How many times have we heard people complaining about shopping? Sometimes, they are happy to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       shopping
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       but why?
+       <ns type="R">
+        Therefore,
+       </ns>
+       shopping can be enjoyable but
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       is not always the case.
+      </p>
+      <p>
+       Shopping is enjoyable when you want to
+       <ns type="RV">
+        <i>
+         offer
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         some thing
+        </i>
+       </ns>
+       to someone.
+       <ns type="R">
+        In fact
+       </ns>
+       you try to get a present to make
+       <ns type="MD">
+       </ns>
+       <ns type="DN">
+        <i>
+         receive
+        </i>
+       </ns>
+       happy.
+      </p>
+      <p>
+       Shopping is also good
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when you know what you want. For example if you want a new track suit you know that you have to go to a
+       <ns type="DJ">
+        <i>
+         sport
+        </i>
+       </ns>
+       shop but if you don't know what you want you are going to waste your time in the shops.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         In the opposite
+        </i>
+       </ns>
+       , shopping can be
+       <ns type="DJ">
+        <i>
+         disenjoyable
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Shopping is boring if you go with people
+       <ns type="M">
+       </ns>
+       too fussy. That is to say, they are never happy with what they get
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       see. They always find a problem.
+      </p>
+      <p>
+       Shopping is not enjoyable with people who just look around the shops. It is stupid
+       <ns type="RP">
+        <i>
+         , they
+        </i>
+       </ns>
+       do not have any goal. They waste their time.
+      </p>
+      <p>
+       To conclude, I agree
+       <ns type="R">
+        <i>
+         with
+        </i>
+       </ns>
+       shopping is not always enjoyable. Even if I like to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       shopping with some people and
+       <ns type="M">
+       </ns>
+       <ns type="AGN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of shops I will kill myself
+       <ns type="RC">
+        <i>
+         because
+        </i>
+       </ns>
+       I waste my time.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How many times have we heard people complaining about shopping?
+       </s>
+       <s pid="1" sid="2">
+        Sometimes, they are happy to do shopping.
+       </s>
+       <s pid="1" sid="3">
+        but why?
+       </s>
+       <s pid="1" sid="4">
+        Therefore, shopping can be enjoyable but it is not always the case.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Shopping is enjoyable when you want to offer some thing to someone.
+       </s>
+       <s pid="2" sid="2">
+        In fact you try to get a present to make  receive happy.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Shopping is also good, when you know what you want.
+       </s>
+       <s pid="3" sid="2">
+        For example if you want a new track suit you know that you have to go to a sport shop but if you don't know what you want you are going to waste your time in the shops.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In the opposite, shopping can be disenjoyable.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Shopping is boring if you go with people  too fussy.
+       </s>
+       <s pid="5" sid="2">
+        That is to say, they are never happy with what they get and see.
+       </s>
+       <s pid="5" sid="3">
+        They always find a problem.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Shopping is not enjoyable with people who just look around the shops.
+       </s>
+       <s pid="6" sid="2">
+        It is stupid, they do not have any goal.
+       </s>
+       <s pid="6" sid="3">
+        They waste their time.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        To conclude, I agree with shopping is not always enjoyable.
+       </s>
+       <s pid="7" sid="2">
+        Even if I like to do shopping with some people and  kind of shops I will kill myself because I waste my time.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

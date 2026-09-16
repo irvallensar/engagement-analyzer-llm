@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     23.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       12.12.0
+       <ns type="M">
+       </ns>
+      </p>
+      <p>
+       Dear Mr Robertson
+       <ns type="RP">
+        <i>
+         ;
+        </i>
+       </ns>
+      </p>
+      <p>
+       I am writing
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       reference to the programme for the English class
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that is going to spend three days in London. I have already read the programme, and I
+       <ns type="RV">
+        <i>
+         agree with
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       , I think that the class will like going
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Sightseeing
+        </i>
+       </ns>
+       by bus and in the afternoon going
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         River
+        </i>
+       </ns>
+       trip to Greenwich
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Also, they can visit
+       <ns type="MD">
+       </ns>
+       Science Museum, and they can
+       <ns type="FV">
+        <i>
+         going
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       shopping
+       <ns type="RP">
+        <i>
+         , on
+        </i>
+       </ns>
+       Wednesday 15 March they
+       <ns type="MV">
+       </ns>
+       going to visit
+       <ns type="RP">
+        <i>
+         The
+        </i>
+       </ns>
+       National Art Gallery, really, I think that is
+       <ns type="MD">
+       </ns>
+       good programme.
+      </p>
+      <p>
+       However, I think
+       <ns type="W">
+        <i>
+         as well
+         <ns type="UP">
+          <i>
+           ,
+          </i>
+         </ns>
+         that the class would like to visit "The London Fashion and Leisure Show"
+        </i>
+       </ns>
+       ,
+       <ns type="MA">
+       </ns>
+       is on Tuesday from 10.00
+       <ns type="RP">
+        <i>
+         AM
+        </i>
+       </ns>
+       until 19.00 pm. They don't need to pay.
+      </p>
+      <p>
+       <ns type="UY">
+        <i>
+         In addition,
+        </i>
+       </ns>
+       I think
+       <ns type="MA">
+       </ns>
+       is a good a idea, because they could go
+       <ns type="W">
+        <i>
+         <ns type="RY">
+          <i>
+           after
+          </i>
+         </ns>
+         shopping
+        </i>
+       </ns>
+       , when they have
+       <ns type="R">
+        <i>
+         a
+        </i>
+       </ns>
+       free time
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am sure about that, they will
+       <ns type="RV">
+        <i>
+         like
+        </i>
+       </ns>
+       to visit that place.
+       <ns type="UY">
+        <i>
+         However, the
+        </i>
+       </ns>
+       programme could be changed just for a few hours, it is a great opportunity for everybody.
+      </p>
+      <p>
+       Finally, I hope that you understand my personal opinion about the programme, I will understand
+       <ns type="MC">
+       </ns>
+       accept
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       personal opinion as well.
+      </p>
+      <p>
+       I look forward
+       <ns type="MT">
+       </ns>
+       hearing from you.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        12.12.0
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Mr Robertson;
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am writing in reference to the programme for the English class, that is going to spend three days in London.
+       </s>
+       <s pid="3" sid="2">
+        I have already read the programme, and I agree with that, I think that the class will like going to Sightseeing by bus and in the afternoon going to  River trip to Greenwich, Also, they can visit  Science Museum, and they can going to the shopping, on Wednesday 15 March they  going to visit The National Art Gallery, really, I think that is  good programme.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        However, I think as well, that the class would like to visit "The London Fashion and Leisure Show",  is on Tuesday from 10.00 AM until 19.00 pm.
+       </s>
+       <s pid="4" sid="2">
+        They don't need to pay.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In addition, I think  is a good a idea, because they could go after shopping, when they have a free time, I am sure about that, they will like to visit that place.
+       </s>
+       <s pid="5" sid="2">
+        However, the programme could be changed just for a few hours, it is a great opportunity for everybody.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, I hope that you understand my personal opinion about the programme, I will understand  accept you personal opinion as well.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward  hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Your faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       12.12.00
+      </p>
+      <p>
+       My personal opinion about famous people, is
+       <ns type="M">
+       </ns>
+       good in one way and bad in another way.
+      </p>
+      <p>
+       I think that they live their life like
+       <ns type="SX">
+        <i>
+         hat
+        </i>
+       </ns>
+       , because they want to live this life.
+      </p>
+      <p>
+       They
+       <ns type="TV">
+        <i>
+         doing
+        </i>
+       </ns>
+       everything just for money,
+       <ns type="MC">
+       </ns>
+       sometimes
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       they can make
+       <ns type="DI">
+        <i>
+         theirs
+        </i>
+       </ns>
+       life easier than
+       <ns type="RA">
+        <i>
+         they
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       normally
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       . It is true, they deserve to have a private life without
+       <ns type="FN">
+        <i>
+         journalist
+        </i>
+       </ns>
+       following them all the time, however this
+       <ns type="RN">
+        <i>
+         news
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           give
+          </i>
+         </ns>
+        </i>
+       </ns>
+       them money, and
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         confortable
+        </i>
+       </ns>
+       life.
+      </p>
+      <p>
+       Famous people, such as politicians and film stars,
+       <ns type="UA">
+        <i>
+         they
+        </i>
+       </ns>
+       live
+       <ns type="DY">
+        <i>
+         happy
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       because they know that
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       famous
+       <ns type="AGV">
+        <i>
+         mean
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to be
+        </i>
+       </ns>
+       rich.
+      </p>
+      <p>
+       They can travel around the world, buy everything, it is a good life, but at the same time, they must be
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very good
+       <ns type="S">
+        <i>
+         peaple
+        </i>
+       </ns>
+       , because "
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         Famous
+        </i>
+       </ns>
+       " is just for a
+       <ns type="R">
+        <i>
+         few
+        </i>
+       </ns>
+       time, nothing
+       <ns type="RV">
+        <i>
+         is
+        </i>
+       </ns>
+       forever in this world.
+      </p>
+      <p>
+       My personal opinion is that
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think they aren't really happy, and they are selfish as well.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       not really like
+       <ns type="FV">
+        <i>
+         will be
+        </i>
+       </ns>
+       a famous person, because you are not really
+       <ns type="S">
+        <i>
+         yourselfh
+        </i>
+       </ns>
+       , and for me
+       <ns type="MA">
+       </ns>
+       is the
+       <ns type="FY">
+        <i>
+         more
+        </i>
+       </ns>
+       important thing.
+      </p>
+      <p>
+       <ns type="U">
+        <i>
+         <ns type="DA">
+          <i>
+           Your
+          </i>
+         </ns>
+         faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        12.12.00
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My personal opinion about famous people, is  good in one way and bad in another way.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think that they live their life like hat, because they want to live this life.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        They doing everything just for money,  sometimes, they can make theirs life easier than they  normally do.
+       </s>
+       <s pid="4" sid="2">
+        It is true, they deserve to have a private life without journalist following them all the time, however this news give them money, and  confortable life.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Famous people, such as politicians and film stars, they live happy, because they know that the famous mean to be rich.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        They can travel around the world, buy everything, it is a good life, but at the same time, they must be a very good peaple, because "the Famous" is just for a few time, nothing is forever in this world.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        My personal opinion is that, I think they aren't really happy, and they are selfish as well.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I do not really like will be a famous person, because you are not really yourselfh, and for me  is the more important thing.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Your faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

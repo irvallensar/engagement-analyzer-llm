@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     21.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr Robertson,
+      </p>
+      <p>
+       Regarding the programme you have organised,
+       <ns type="W">
+        <i>
+         <ns type="UA">
+          <i>
+           it
+          </i>
+         </ns>
+         is
+         <ns type="MD">
+         </ns>
+         great
+         <ns type="AGN">
+          <i>
+           ideas
+          </i>
+         </ns>
+         everything that you have
+         <ns type="IV">
+          <i>
+           planed
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , but I would like to suggest
+       <ns type="U">
+        <i>
+         to you
+        </i>
+       </ns>
+       something that the students saw in an advertisement.
+      </p>
+      <p>
+       It is
+       <ns type="MD">
+       </ns>
+       good start to go on
+       <ns type="MD">
+       </ns>
+       sightseeing
+       <ns type="UT">
+        <i>
+         by
+        </i>
+       </ns>
+       bus on Monday morning,
+       <ns type="MC">
+       </ns>
+       we can
+       <ns type="S">
+        <i>
+         se
+        </i>
+       </ns>
+       all
+       <ns type="MD">
+       </ns>
+       famous buildings in a few hours.
+       <ns type="UV">
+        <i>
+         It's
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           seems
+          </i>
+         </ns>
+        </i>
+       </ns>
+       relaxing to go to Greenwich in the afternoon looking
+       <ns type="RT">
+        <i>
+         <ns type="SX">
+          <i>
+           though
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the river.
+      </p>
+      <p>
+       The idea
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       going to
+       <ns type="MD">
+       </ns>
+       science museum is fantastic
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I read about the museum,
+       <ns type="MC">
+       </ns>
+       it is really interesting
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         science history
+        </i>
+       </ns>
+       .
+       <ns type="R">
+        After all morning in the
+        <ns type="RP">
+         <i>
+          Museum
+         </i>
+        </ns>
+        , it is wonderful and on
+        <ns type="RP">
+         <i>
+          tuesday
+         </i>
+        </ns>
+        doing some
+        <ns type="RN">
+         <i>
+          shops
+         </i>
+        </ns>
+        , whereas the
+        <ns type="AGN">
+         <i>
+          student
+         </i>
+        </ns>
+        have another idea for
+        <ns type="RP">
+         <i>
+          tuesday
+         </i>
+        </ns>
+        .
+       </ns>
+      </p>
+      <p>
+       On Wednesday after
+       <ns type="M">
+       </ns>
+       <ns type="S">
+        <i>
+         viseted
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         national
+        </i>
+       </ns>
+       Art Gallery, we can have a chat about
+       <ns type="DD">
+        <i>
+         ours
+        </i>
+       </ns>
+       next holiday
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the free time in the afternoon.
+      </p>
+      <p>
+       The advertisement that
+       <ns type="MD">
+       </ns>
+       students saw is
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       a fashion show, but to go to the show you will need
+       <ns type="FV">
+        <i>
+         cancel
+        </i>
+       </ns>
+       the tour on
+       <ns type="RP">
+        <i>
+         tuesday
+        </i>
+       </ns>
+       and add the show, because the show is from 10.00 to 19.00.
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr Robertson,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Regarding the programme you have organised, it is  great ideas everything that you have planed, but I would like to suggest to you something that the students saw in an advertisement.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It is  good start to go on  sightseeing by bus on Monday morning,  we can se all  famous buildings in a few hours.
+       </s>
+       <s pid="3" sid="2">
+        It's seems relaxing to go to Greenwich in the afternoon looking though the river.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The idea about going to  science museum is fantastic, I read about the museum,  it is really interesting in science history.
+       </s>
+       <s pid="4" sid="2">
+        After all morning in the Museum, it is wonderful and on tuesday doing some shops, whereas the student have another idea for tuesday.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        On Wednesday after  viseted  national Art Gallery, we can have a chat about ours next holiday at the free time in the afternoon.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The advertisement that  students saw is about a fashion show, but to go to the show you will need cancel the tour on tuesday and add the show, because the show is from 10.00 to 19.00.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Freedom!
+      </p>
+      <p>
+       Nowadays the main
+       <ns type="S">
+        <i>
+         attroction
+        </i>
+       </ns>
+       in the newspapers and
+       <ns type="MT">
+       </ns>
+       television is
+       <ns type="MD">
+       </ns>
+       private
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       of famous people.
+      </p>
+      <p>
+       It is really interesting how people like
+       <ns type="FV">
+        <i>
+         knowing
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       famous
+       <ns type="MP">
+        <i>
+         people
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       . Without someone famous
+       <ns type="FV">
+        <i>
+         know
+        </i>
+       </ns>
+       ,
+       <ns type="RN">
+        <i>
+         photographs
+        </i>
+       </ns>
+       take pictures secretly,
+       <ns type="MC">
+       </ns>
+       try to get money
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Sometimes being famous can get
+       <ns type="DJ">
+        <i>
+         stress
+        </i>
+       </ns>
+       ,
+       <ns type="MC">
+       </ns>
+       everywhere they go there are people around them, especially journalists, trying to ask millions
+       <ns type="MT">
+       </ns>
+       questions.
+      </p>
+      <p>
+       Famous people deserve to have freedom to do whatever they want, but it is quite difficult to do
+       <ns type="AGN">
+        <i>
+         thing
+        </i>
+       </ns>
+       in
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       public places, because nobody
+       <ns type="AGV">
+        <i>
+         like
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       famous politicians or film stars without asking questions.
+      </p>
+      <p>
+       On the whole,
+       <ns type="FV">
+        <i>
+         to be
+        </i>
+       </ns>
+       rich and famous
+       <ns type="AGV">
+        <i>
+         don't
+        </i>
+       </ns>
+       always bring
+       <ns type="S">
+        <i>
+         happeness
+        </i>
+       </ns>
+       , whereas the majority of the population wish they were rich and famous.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Freedom!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Nowadays the main attroction in the newspapers and  television is  private life of famous people.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It is really interesting how people like knowing  famous people life.
+       </s>
+       <s pid="3" sid="2">
+        Without someone famous know, photographs take pictures secretly,  try to get money on it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Sometimes being famous can get stress,  everywhere they go there are people around them, especially journalists, trying to ask millions  questions.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Famous people deserve to have freedom to do whatever they want, but it is quite difficult to do thing in a public places, because nobody like  famous politicians or film stars without asking questions.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        On the whole, to be rich and famous don't always bring happeness, whereas the majority of the population wish they were rich and famous.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+    </personnel>
+    <score>
+     25.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Jane,
+      </p>
+      <p>
+       I have read the advertisement for the festival and I must say it is a great idea. I would like to
+       <ns type="RV">
+        <i>
+         tell
+        </i>
+       </ns>
+       you some suggestions.
+      </p>
+      <p>
+       The stars and
+       <ns type="FN">
+        <i>
+         artist
+        </i>
+       </ns>
+       are from only six countries, and some concerts take place in small halls. I think you should put
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       in the advertisement. Are there going to be more plays and films next year?
+      </p>
+      <p>
+       I find the reasonably-priced ticket excellent, because there
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       a lot of people who
+       <ns type="TV">
+        <i>
+         went
+        </i>
+       </ns>
+       to see only one or two events, and by paying
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="MP">
+        <i>
+         all events
+        </i>
+       </ns>
+       ticket
+       <ns type="MP">
+       </ns>
+       they might see other events and learn about something they didn't
+       <ns type="FV">
+        <i>
+         expected
+        </i>
+       </ns>
+       to find interesting. I would like you to answer my letter.
+      </p>
+      <p>
+       I'm looking forward to hearing from you,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Jane,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have read the advertisement for the festival and I must say it is a great idea.
+       </s>
+       <s pid="2" sid="2">
+        I would like to tell you some suggestions.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The stars and artist are from only six countries, and some concerts take place in small halls.
+       </s>
+       <s pid="3" sid="2">
+        I think you should put it in the advertisement.
+       </s>
+       <s pid="3" sid="3">
+        Are there going to be more plays and films next year?
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I find the reasonably-priced ticket excellent, because there is a lot of people who went to see only one or two events, and by paying  the all events ticket they might see other events and learn about something they didn't expected to find interesting.
+       </s>
+       <s pid="4" sid="2">
+        I would like you to answer my letter.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I'm looking forward to hearing from you,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear John,
+      </p>
+      <p>
+       Here in Brazil the rules at school
+       <ns type="AGV">
+        <i>
+         depends
+        </i>
+       </ns>
+       on the school. In general, the rules at private schools are much
+       <ns type="RJ">
+        <i>
+         harder
+        </i>
+       </ns>
+       than the ones at state schools. In mine, we didn't have many rules. For example, nobody said anything when we smoked in the garden or in the bathroom. We were allowed to go out if we didn't want to stay in class. But we had to
+       <ns type="RV">
+        <i>
+         use
+        </i>
+       </ns>
+       the uniform and we had to study a lot to pass the exams.
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         the
+        </i>
+       </ns>
+       rules at home are very different. I am allowed to do what I want as long as I
+       <ns type="S">
+        <i>
+         studie
+        </i>
+       </ns>
+       enough to
+       <ns type="DV">
+        aprove
+       </ns>
+       . I think that my parents let me do what I want
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       because they trust me.
+       <ns type="RP">
+        <i>
+         they
+        </i>
+       </ns>
+       know that if I go out with the car, I will not drink. It is not
+       <ns type="S">
+        <i>
+         allways
+        </i>
+       </ns>
+       easy, but there are rules in every home and you have to respect them.
+      </p>
+      <p>
+       I am looking forward to hearing from you,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear John,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Here in Brazil the rules at school depends on the school.
+       </s>
+       <s pid="2" sid="2">
+        In general, the rules at private schools are much harder than the ones at state schools.
+       </s>
+       <s pid="2" sid="3">
+        In mine, we didn't have many rules.
+       </s>
+       <s pid="2" sid="4">
+        For example, nobody said anything when we smoked in the garden or in the bathroom.
+       </s>
+       <s pid="2" sid="5">
+        We were allowed to go out if we didn't want to stay in class.
+       </s>
+       <s pid="2" sid="6">
+        But we had to use the uniform and we had to study a lot to pass the exams.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        the rules at home are very different.
+       </s>
+       <s pid="3" sid="2">
+        I am allowed to do what I want as long as I studie enough to aprove.
+       </s>
+       <s pid="3" sid="3">
+        I think that my parents let me do what I want, because they trust me.
+       </s>
+       <s pid="3" sid="4">
+        they know that if I go out with the car, I will not drink.
+       </s>
+       <s pid="3" sid="5">
+        It is not allways easy, but there are rules in every home and you have to respect them.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am looking forward to hearing from you,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

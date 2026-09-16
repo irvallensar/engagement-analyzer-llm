@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     28.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Ryan
+      </p>
+      <p>
+       I am very happy to know that I have won the first prize in your competition. Now I can realize one of my
+       <ns type="AGN">
+        <i>
+         dream
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I can give you all the information that you need. I prefer to travel in July because it is the only month I can have two
+       <ns type="MP">
+        <i>
+         weeks
+        </i>
+       </ns>
+       holiday.
+      </p>
+      <p>
+       For the accommodation I prefer to have a log cabin because I have some problems with my back and I need a bed to sleep in. I can do two activities during my stay at the camp. The first one I
+       <ns type="TV">
+        <i>
+         choose
+        </i>
+       </ns>
+       is swimming. I have a good level
+       <ns type="M">
+       </ns>
+       in swimming and I
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           have done
+          </i>
+         </ns>
+        </i>
+       </ns>
+       some competitions last year which I
+       <ns type="TV">
+        <i>
+         have won
+        </i>
+       </ns>
+       . For the second activity I
+       <ns type="TV">
+        <i>
+         choose
+        </i>
+       </ns>
+       photography. I have
+       <ns type="TV">
+        <i>
+         take
+        </i>
+       </ns>
+       a photography course
+       <ns type="MT">
+       </ns>
+       the last two years so I am able to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       some beautiful pictures.
+      </p>
+      <p>
+       One question, I just want to know what kind of clothes do I take with me? And how
+       <ns type="CQ">
+        <i>
+         many
+        </i>
+       </ns>
+       money do I need?
+      </p>
+      <p>
+       I thank you in advance.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am very happy to know that I have won the first prize in your competition.
+       </s>
+       <s pid="2" sid="2">
+        Now I can realize one of my dream.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I can give you all the information that you need.
+       </s>
+       <s pid="3" sid="2">
+        I prefer to travel in July because it is the only month I can have two weeks holiday.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        For the accommodation I prefer to have a log cabin because I have some problems with my back and I need a bed to sleep in.
+       </s>
+       <s pid="4" sid="2">
+        I can do two activities during my stay at the camp.
+       </s>
+       <s pid="4" sid="3">
+        The first one I choose is swimming.
+       </s>
+       <s pid="4" sid="4">
+        I have a good level  in swimming and I have done some competitions last year which I have won.
+       </s>
+       <s pid="4" sid="5">
+        For the second activity I choose photography.
+       </s>
+       <s pid="4" sid="6">
+        I have take a photography course  the last two years so I am able to do some beautiful pictures.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        One question, I just want to know what kind of clothes do I take with me?
+       </s>
+       <s pid="5" sid="2">
+        And how many money do I need?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I thank you in advance.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       You want to hear about my experience
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       helping at a pop concert. You can't imagine how
+       <ns type="RJ">
+        <i>
+         funny
+        </i>
+       </ns>
+       it was! You could do so many things because you received a
+       <ns type="UP">
+        <i>
+         free-pass
+        </i>
+       </ns>
+       which allowed you to go where you wanted and
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was what I
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           had prefer
+          </i>
+         </ns>
+        </i>
+       </ns>
+       about this experience.
+      </p>
+      <p>
+       I really enjoyed
+       <ns type="FV">
+        <i>
+         to serve
+        </i>
+       </ns>
+       the drinks to the pop-stars. You could speak to them and you could see that a lot were very cool and the other ones were
+       <ns type="ID">
+        still in the sky
+       </ns>
+       . And you heard the concerts too.
+      </p>
+      <p>
+       After the concert I had to clean the area and it took a long time because people
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           were
+          </i>
+         </ns>
+        </i>
+       </ns>
+       like pigs. But I was chatting and laughing with other workers.
+      </p>
+      <p>
+       One more word! If you
+       <ns type="UV">
+        <i>
+         can
+        </i>
+       </ns>
+       have the chance to do it too, do it! It was a very positive experience. I didn't regret it and I want to do it again!
+      </p>
+      <p>
+       Write
+       <ns type="MT">
+       </ns>
+       me soon.
+      </p>
+      <p>
+       Love,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        You want to hear about my experience in helping at a pop concert.
+       </s>
+       <s pid="2" sid="2">
+        You can't imagine how funny it was!
+       </s>
+       <s pid="2" sid="3">
+        You could do so many things because you received a free-pass which allowed you to go where you wanted and it was what I had prefer about this experience.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I really enjoyed to serve the drinks to the pop-stars.
+       </s>
+       <s pid="3" sid="2">
+        You could speak to them and you could see that a lot were very cool and the other ones were still in the sky.
+       </s>
+       <s pid="3" sid="3">
+        And you heard the concerts too.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After the concert I had to clean the area and it took a long time because people were like pigs.
+       </s>
+       <s pid="4" sid="2">
+        But I was chatting and laughing with other workers.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        One more word!
+       </s>
+       <s pid="5" sid="2">
+        If you can have the chance to do it too, do it!
+       </s>
+       <s pid="5" sid="3">
+        It was a very positive experience.
+       </s>
+       <s pid="5" sid="4">
+        I didn't regret it and I want to do it again!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Write  me soon.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Love,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

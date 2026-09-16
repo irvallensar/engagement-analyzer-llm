@@ -1,0 +1,329 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Polyphyly of the Old World Vultures and phylogenetic placement of
+      <i>
+       Gypohierax angolensis
+      </i>
+      (Aves: Accipitridae) inferred from mitochondrial DNA
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The palmnut vulture ( Gypohierax angolensis ) is a monotypic species found along the coast, estuaries and rivers of sub-Saharan Africa in areas where oil and raffia palms also occur.
+       </s>
+       <s pid="1" sid="2">
+        This vulture is relatively common but not abundant in Mozambique and rare in northern Zululand, Botswana and Zimbabwe; it is considered South Africa's rarest breeding bird.
+       </s>
+       <s pid="1" sid="3">
+        The diet of Gypohierax largely consists of palm fruits, but also includes many fish, crabs, snails and other small animals, as well as other birds.
+       </s>
+       <s pid="1" sid="4">
+        (Ginn et al., 1989)
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        An alternative name of Gypohierax is the vulturine fish eagle (Ginn et al., 1989), reflecting its many similarities, both dietary and morphological (especially talon structure), to the sea and fish eagles (genus Haliaeetus ).
+       </s>
+       <s pid="2" sid="2">
+        The phylogenetic placement and evolutionary history of Gypohierax is unclear.
+       </s>
+       <s pid="2" sid="3">
+        Brown and Amadon (1968) included Gypohierax as a member of a monophyletic clade of Old world vultures, but also suggested a sister relationship between the sea eagles and Gypohierax . Jollie (1977), Suschkin (1899), and Brown and Amadon (1968) note that Gypohierax resembles the Egyptian vulture ( Neophron ) and may be a member of a monophyletic clade of all Old World vultures (including Neophron ).
+       </s>
+       <s pid="2" sid="4">
+        Holdaway (1994), in a phylogenetic analysis of osteological characters, finds support for a monophyletic clade of vultures where the palmnut vulture is the earliest diverging vulture.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Several phylogenetic analyses based on mitochondrial DNA and morphological traits support paraphyly of the Old World vultures (Seibold and Helbig, 1995; Mundy et al., 1992).
+       </s>
+       <s pid="3" sid="2">
+        Two clades are identified: the Gyps-Aegypius-Necrosyrtes clade includes the genera of its name as well as Torgos , Trigonoceps , and Sarcogyps , and is sister to the Snake eagles; and, the Gypaetus-Neophron clade, is sister to Pernis apivorus , including only the two genera for which it is named.
+       </s>
+       <s pid="3" sid="3">
+        Gypohierax is not included in these analyses, but Seibold and Helbig propose that it most likely represents a third independent evolutionary line separate from the other Old World vulture clades.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        In summary, it has been proposed that Gypohierax (1) forms a clade independent from other vulture lineages, (2) is sister to the sea eagles ( Haliaeetus ), (3) is a member of a monophyletic clade of Old World vultures, and (4) is most closely related to the Egyptian vulture ( Neophron ).
+       </s>
+       <s pid="4" sid="2">
+        The Old World vultures have been proposed to be (1) a monophyletic clade, (2) two separate distinct monophyletic clades (overall polyphyly), and (3) three separate distinct monophyletic clades (overall polyphyly).
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Methods
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        DNA was extracted from tissue and feather samples using the Qiagen DNEasy Extraction kit.
+       </s>
+       <s pid="5" sid="2">
+        An addition of dithiothreitol was used for samples from feathers.
+       </s>
+       <s pid="5" sid="3">
+        Polymerase chain reaction (PCR) was carried out using two primers pairs for cytochrome B (CytB; Sorenson et al. 1999).
+       </s>
+       <s pid="5" sid="4">
+        PCR and sequencing was done following protocols in Mindell et al. (1997).
+       </s>
+       <s pid="5" sid="5">
+        Additional CytB sequences for analyses were obtained from GenBank ( Aegypius monachus , gi 1050567; Trigonoceps occipitalis , gi 1050710; Sarcogyps calvus , gi 1050699, Gypaetus barbatus , gi 1050621; and Neophron percnopterus , gi 1050666).
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Conceptually translated protein sequences were aligned by eye and this alignment was imposed on the nucleotides.
+       </s>
+       <s pid="6" sid="2">
+        Phylogenetic analyses were conducted using parsimony and maximum likelihood (ML) criteria for the dataset.
+       </s>
+       <s pid="6" sid="3">
+        For parsimony analysis, a bootstrap analysis was done using Winclada software (Nixon, 2002), 1000 replications with 100 search reps and ten starting trees per rep.
+       </s>
+       <s pid="6" sid="4">
+        A Bayesian inference (BI) approach, which is related to ML analyses, (Mau et al., 1999; Yang and Rannala) was performed with Metropolis-coupled Markov chain Monte Carlo, or (MC)3, to approximate the posterior probabilities (PP) of the trees in MrBayes 2.1 (Huelsenbeck and Ronquist).
+       </s>
+       <s pid="6" sid="5">
+        Bayesian inference has advantages over other methods of phylogenetic inference in interpretation of results, consistency (Wilcox et al.) and computational speed (Larget and Simon); however, as always, reliability of the results depends on appropriateness of the model, and some simulations have demonstrated artifactually high PP support values (Suzuki et al., 2002).
+       </s>
+       <s pid="6" sid="6">
+        Base frequencies and gamma distribution (with eight rate categories) were estimated each run.
+       </s>
+       <s pid="6" sid="7">
+        A general time reversible model was used, which includes six substitution types.
+       </s>
+       <s pid="6" sid="8">
+        The search was run twice, starting from random trees with four simultaneous Markov chains, sampling every 50 generations for 1,000,000 generations.
+       </s>
+       <s pid="6" sid="9">
+        The proportion of searches in which any given node (set of relationships) is found during the chain is an approximation of its PP, and provides an indication of support for that node based on the dataset.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Results
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        The sequence data set of 1017 nucleotides from 27 species aligned with no indels or stop codons.
+       </s>
+       <s pid="7" sid="2">
+        Of the 1017 nucleotide positions, 458 were variable and 339 were parsimony informative.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Each amino acid is coded for by up to six different codons (synonymous codons).
+       </s>
+       <s pid="8" sid="2">
+        The relative frequency of each synonymous codon should be equal to that of the its related synonymous codons if none of the codons are favored by selection or mutation.
+       </s>
+       <s pid="8" sid="3">
+        However, many organisms have been found to have biases in synonymous codon usage (Sharp et al., 1988).
+       </s>
+       <s pid="8" sid="4">
+        Codon bias was also found in this data set of Accipitridae for most amino acids (table 1).
+       </s>
+       <s pid="8" sid="5">
+        The largest biases were found in valine (V) and serine (S), where one codon was at least three times more frequent than expected.
+       </s>
+       <s pid="8" sid="6">
+        Synonymous substitutions (10815 occurrences) were observed ten times more often than nonsynonymous substitutions (1060 occurrences).
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Parsimony Analysis
+       </div>
+       <p>
+        <s pid="9" sid="1">
+         The parsimony analysis shows polyphyly of the Old World vultures based on the cyt b dataset (Figure 1).
+        </s>
+        <s pid="9" sid="2">
+         Sarcogyps , Trigonoceps and Aegypius form a sister clade to Necrosyrtes and Gyps .
+        </s>
+        <s pid="9" sid="3">
+         There is strong support for the existence of two sister clades (95 boostrap value), but weak support for the placement of species within these clades.
+        </s>
+        <s pid="9" sid="4">
+         Circaetus remains part of an unresolved polytomy not within this derived vulture clade.
+        </s>
+        <s pid="9" sid="5">
+         The remaining three vultures Neophron , Gypaetus and Gyophierax form a much earlier diverging unresolved polytomy.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Bayesian Inference
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         The Bayesian analysis shows polyphyly of the Old World vultures based on the cyt b dataset (Figure 2).
+        </s>
+        <s pid="10" sid="2">
+         Neophron , Gypaetus and Gyophierax form an early diverging monophyletic clade sister to Pernis, while the other Old World vultures form a much more derived monophyletic clade.
+        </s>
+        <s pid="10" sid="3">
+         Support for the early diverging clade of vultures is moderate (74 PP).
+        </s>
+        <s pid="10" sid="4">
+         The more derived vulture clade consists of two sister groups, one formed by Trigonoceps , Aegypius and Sarcogyps , and the other including Gyps , and Necrosyrtes .
+        </s>
+        <s pid="10" sid="5">
+         Support for the monophyly of this clade is high (95 PP), as is support for the existence of two clades within the derived vulture clade (100 PP)
+        </s>
+        <s pid="10" sid="6">
+         Circaetus is sister to the derived clade of vultures with moderate support (85 PP).
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Discussion
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        Both the Bayesian and ML analyses support polyphyly of the Old World vultures based on this cyt b dataset.
+       </s>
+       <s pid="11" sid="2">
+        The analyses agree that the more derived vultures form a monophyletic clade consisting of two sister groups as found by Seibold and Helbig (1995).
+       </s>
+       <s pid="11" sid="3">
+        The first group includes Sarcogyps as the earliest diverging species, then Trigonoceps and finally Aegypius as the most derived species in this group.
+       </s>
+       <s pid="11" sid="4">
+        The second group has Necrosyrtes as sister to the Gyps pecies.
+       </s>
+       <s pid="11" sid="5">
+        These results coincide for the most part with the anlyses done by Seibold and Helbig, however, they support a sister relationship between Necrosyrtes and Gyps not found by Seibold and Helbig.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        The Bayesian analysis suggests that Gypohierax , Neophron and Gypaetus form a monophyletic clade of early diverging vultures sister to a species long-supposed to be early diverging: Pernis .
+       </s>
+       <s pid="12" sid="2">
+        The sister relationship between Gypaetus and Neophron was supported by Seibold and Helbig's analysis and is reflected in shared morphological, embryonic development, vocalizations and feeding behavior characteristics of the two species.
+       </s>
+       <s pid="12" sid="3">
+        Although
+       </s>
+       <s pid="12" sid="4">
+        Neophron and Necrosyrtes have been considered closely related, they are best considered in terms of convergence according to this analysis (White, 1950).
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        The placement of Circaetus although unresolved in the ML analysis, is potentially sister to the derived vulture group as it is shown in the Bayesian analysis.
+       </s>
+       <s pid="13" sid="2">
+        This placement was proposed by Mundy et al. {, 1992}, although not supported by Seibold and Helbig's cyt b analysis.
+       </s>
+       <s pid="13" sid="3">
+        Mundy et al. also suggested a sister relationship for Circaetus and Terathopius .
+       </s>
+       <s pid="13" sid="4">
+        Both genera specialize on snakes as prey and have morphological adaptations for this lifestyle.
+       </s>
+       <s pid="13" sid="5">
+        Given the convergence seen between Neophron and Necrosyrtes in this analysis, it remains uncertain if Circaetus and Terathopius are sister or convergent species.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        The placement of Gypohierax is supported strongly by the Bayesian analysis, as sister to the Gypaetus--Neophron early diverging clade of vultures.
+       </s>
+       <s pid="14" sid="2">
+        A sister relationship between Gypohierax and Neophron was suggested by Brown and Amadon (1968), but has not been tested before with molecular evidence.
+       </s>
+       <s pid="14" sid="3">
+        Osteological evidence suggests a sister relationship between Gypohierax , and Aegypius , Gyps , and Necrosyrtes that was not supported with this cyt b dataset (Holdaway, 1994).
+       </s>
+       <s pid="14" sid="4">
+        If Gyophierax is truly sister to Gypaetus and Neophron , as suggested by this dataset, this relationship may help identify morphological characters that are convergent in many of the Old World vultures which have led to misplacement and confusion in previous phylogenetic analyses of vultures.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N10276">
+       <li id="N10277">
+        Brown, L. H., and D. Amadon. 1968. Eagles, hawks and falcons of the world. Country Life Books, London.
+       </li>
+       <li id="N10279">
+        Ginn, P. J., W. G. McIlleron, and P. l. S. Milstein. 1989. The complete book of Southern African birds. Struk Winchester, Cape Town.
+       </li>
+       <li id="N1027B">
+        Holdaway, R. N. 1994. An exploratory phylogenetic analysis of the genera of the Accipitridae, with notes on the biogeography of the family. In B. U. Meyburg and R. D. Chancellor (eds.), Raptor Conservation Today, pp. 601-649. World Working Group on Birds of Prey and Owls, London.
+       </li>
+       <li id="N1027D">
+        Huelsenbeck, J. P., and F. Ronquist. 2001. MRBAYES: Bayesian inference of phylogenetic trees. Bioinformatics, 17:754-755.
+       </li>
+       <li id="N1027F">
+        Jollie, M. 1977. A contribution to the morphoogy and phylogeny of the Falconiformes, part 3. Evolutionary Theory, 3:285-298.
+       </li>
+       <li id="N10281">
+        Larget, B., and D. L. Simon. 1999. Markov chain Monte Carlo algorithms for the Bayesian analysis of phylogenetic trees. Molecular Biology and Evolution, 16:750-759.
+       </li>
+       <li id="N10283">
+        Mau, B., M. A. Newton, and B. Larget. 1999. Bayesian phylogenetic inference via Markov chain Monte Carlo methods. Biometrics, 55:1-12.
+       </li>
+       <li id="N10285">
+        Mundy, P., D. Butchart, J. Ledger, and S. Piper. 1992. The vultures of Africa. Academic Press, London.
+       </li>
+       <li id="N10287">
+        Nixon, K. C. 2002. Winclada, cladistics.com.
+       </li>
+       <li id="N10289">
+        Seibold, I., and A. J. Helbig. 1995. Evolutionary history of New and Old World vultures inferred from nucleotide sequences of the mitochondrial cytochrome b gene. Philosophical Transactions of the Royal Society of London Series B-Biological Sciences, 350:163-178.
+       </li>
+       <li id="N1028B">
+        Sharp, P. M., E. Cowe, D. G. Higgins, D. Shields, K. H. Wolfe, and F. Wright. 1988. Cosdon usage patterns in Escherichia coli, Bacillus subtilis, Saccharomyces cerevisiae, Schizosaccharomyces pombe, Drosophila melanogaster, and Homo sapiens:  a review of the considerable within-species diversity. Nucleic Acid Research, 16:8207-8211.
+       </li>
+       <li id="N1028D">
+        Suschkin, P. 1899. Beitrage zur Classification der Tagraubvogel mit Zugrundelegung derosteologischen Merkmale. Zoologischer Anzeiger, 22:500-518.
+       </li>
+       <li id="N1028F">
+        Suzuki, Y., G. Glazko, and M. Nei. 2002. Overcredibility of molecular phylogenies obtained by Bayesian phylogenetics. Proceedings of the National Academy of Science, 99:16138-16143.
+       </li>
+       <li id="N10291">
+        White, C. M. N. 1950. Systematic notes on African birds. Ostrich, 21:31-32.
+       </li>
+       <li id="N10293">
+        Wilcox, T. P., D. J. Zwickl, T. A. Heath, and D. M. Hillis. 2002. Phylogenetic relationships of the dwarf boas and a comparison of Bayesian and bootstrap measures of phylogenetic support. Molecular Phylogenetics and Evolution, 25:361-371.
+       </li>
+       <li id="N10295">
+        Yang, Z. H., and B. Rannala. 1997. Bayesian phylogenetic inference using DNA sequences: A Markov Chain Monte Carlo method. Molecular Biology and Evolution, 14:717-724.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

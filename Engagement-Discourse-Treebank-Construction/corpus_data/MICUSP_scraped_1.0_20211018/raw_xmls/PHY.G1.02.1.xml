@@ -1,0 +1,703 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    ﻿Optical Lattices: A Study of Bose-Hubbard Model
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1 Introduction
+    </div>
+    <p>
+     Atomic physics has been making remarkable processes in the last two decades. It offers controllable ways to study systems at low temperatures. The controllability of inter-particle interactions has been a motivation to study condensed matter physics using optical lattices. One interesting area of research is the study of idealized bosonic and fermionic systems such as the Tonks-Girardeau gas.
+    </p>
+    <p>
+     A fundamental question in condensed matter physics is the correlation of the electrons in a lattice. The connection between systems in an optical lattice and systems in solid state physics is the Bose-Hubbard model. In this paper, we wish to focus primarily on the Bose-Hubbard model and use examples such as the Tonks gas or fermions in optical lattices to illustrate the connection.
+    </p>
+    <p>
+     In the first section of this paper, the Bose-Hubbard Hamiltonian is derived using second quantization. The second section of the paper focuses on the phase transition and the Bose-Hubbard model in 1-D optical lattice systems. In addition, we demonstrate the equivalence between the bose systems and spin-1/2 fermi systems. Finally, we give an example of how this transformation can be aided in the future studies of the interactions between bosons and fermions in an optical lattice.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2 Bose-Hubbard Hamiltonian
+    </div>
+    <p>
+     Bose Hubbard model is motivated by the Hubbard model, which describes the bandlike and localized behavior of electrons (fermions) in a lattice [1]. The Bose-Hubbard Hamiltonian includes a kinetic energy term describing the hopping of atoms among lattice sites and an interaction energy term [2]. The interaction energy term can be separated into a short-range interaction V and the long-range interaction (a periodic potential) U
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (1)
+    <p>
+    </p>
+    <p>
+     We want to write Bose-Hubbard Hamiltonian in terms of the creation and annihilation operators for the bosonic system. First we evoke second quantization on eq. (1)
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (2)
+    <p>
+    </p>
+    <p>
+     In a lattice, atoms are arranged in a periodic potential, and their interactions are controlled by an external field, for example the magnetic field [1]. Here, U can be expressed as a sum of a strong period term Vlat and a short-range, perturbative term ² at every lattice site
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (3)
+    <p>
+    </p>
+    <p>
+     Using the commutation relation between the field operators,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , the short-range interaction term becomes
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (4)
+    <p>
+    </p>
+    <p>
+     We want to use the Wannier functions
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    to express this Hamiltonian in terms of bosonic operators creation and annihilation operators,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , at the lattice sites i [3]. Using orthogonal relation
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (5)
+    <p>
+    </p>
+    <p>
+     the first term in eq. (4) becomes
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (6)
+    <p>
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the number operator. We define the interaction strenght
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    as
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (7)
+    <p>
+    </p>
+    <p>
+     The cofficient of eq. (6) is the dimension of energy. It contains the scattering length as times a coefficient, which comes from s-wave scattering (see Section 3) [3]. Similarly, we can use the orthogonal relation
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (8)
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     to transform the second term in eq. (4) to
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (9)
+    <p>
+    </p>
+    <p>
+     Finally, the periodic potential term in eq. (3) is transformed as
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (10)
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     and the kinetic energy is transformed as
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (11)
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     where
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (12)
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     3 Bose-Hubbard Model - 1D
+    </div>
+    <p>
+     The equation eq. (3) we derived from is applicable to any bosonic system with pairwise interaction in an optical lattice with an external potential. The Bose-Hubbard model assumes nearest-neighbors interactions and occupation of only the lowest vibrational energy level [3].
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (13)
+    <p>
+    </p>
+    <p>
+     The kinetic energy of the bosons is proportional to the tunnel matrix element J, which decreases exponentially with the lattice depth. In 1-D optical lattice, lattice depth is large such that particles stay only in the lowest vibrational energy and tunnel probability is exponentially small [3]. The summation in eq. (13) therefore is performed on the nearest neighbors
+    </p>
+    <p>
+     We also assume that the bosons interact through s-wave scattering. For two-body scattering, the scattering amplitude after first Born approximation is
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (14)
+    <p>
+    </p>
+    <p>
+     Assume s-wave scattering only between two particles of the same mass,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . By the definition of scattering length,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    (15)
+    <p>
+    </p>
+    <p>
+     The on-site interaction energy determines the amount of energy needed to add or remove an atom at a lattice site. The ratio that describes the hopping possibility,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is used to describe the phase transition of the system [5]. If
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , the bosons are confined to each of their lattice sites, and the system exhibits shortcoherence,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . If the lattice sites contain the same number of bosons, the system is in the Mott insulator phase. On the otherhand, if
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , the bosons can hop freely among the lattice sites. In the absence of disorder and in the presence of long-range coherence,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , the system is in the superfluid phase.
+    <p>
+    </p>
+    <p>
+     In the case of 1-D bosonic system in the Mott insulator (also known as the Tonks Girardeau regime [7]),
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is arbituarily large while the tunneling coefficient
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is small. In this limit, the bosonic system contains ideally one atom at each lattice site.
+    <p>
+    </p>
+    <div>
+     <div class="head_2">
+      3.1 Phase transition
+     </div>
+     <p>
+      The Bose-Hubbard model is widely used and studied in recent experiments [7]. The two controllable parameters are
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and the strength of the external offset. Another expression equivalent to
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is the filling factor
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , in which N is the number of atoms and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is the number of lattice sites.
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is known as the interaction energy and is proportional to
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , the chemical potential. In 1-D Tonks gas,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     has a simple expression
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .
+     <p>
+     </p>
+     <p>
+      At a fixed μ, as the interaction energy grows, the bosonic system experiences a continuous transition (no latent heat) from the Mott insulator phase to the superfluid phase. The power law that describes the divergence of the coherent length near the transition differs and depends on μ [5]. The boundary of the phase transition is similar to that of the d + 1-dimensional classical XY model. At the lobes-like transition boundary, bosons are added and removed at each of the lattice sites. As we go across the Mott insulator regime to the superfluid regime, the coherent length changes from 0 to divergent. The shape of the lobes (in terms of energy) is given by
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     where Kc is the critical point depending on μ, and K is related to the density and the compressibility by
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .  At the tip of the lobes, the power law yields a divergence that is faster than other values of μ. This can be interpreted in the following way. The bosons in the lattice have pair-like interactions that mimickes the particle-hole interaction in the solids. At the tip, the particle-hole symmetry yields a faster divergence in the coherent length of the system.
+     <p>
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     (16)
+     <p>
+     </p>
+     <p>
+      Figure 1: Mott insulator and superfluid state of bosons in a lattice [4].
+     </p>
+     <p>
+      In Tonks-Girardeau Gas, bosonic particles are loaded into a 1-D optical potential formed by two orthogonal standing waves (see Figure 3). The strong potential restricts the bosonic motion in 1-D along the axis of the rods. A third, weaker period potential is applied along this axis and is used to create the 1-D lattice. By varying the strength of this potential, the array of 1-D bosonic systems are seen to enter the Tonks-Girardeau regime [7].
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 2: Phase diagram [6].
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     4 Fermionization of Bose gases
+    </div>
+    <p>
+     The motivation of fermionization is the observation that the Hilbert space of onedimensional bose gas is isomorphic to interacting fermi gas. In Bose-Hubbard model, the on-site repulsion in 1-D bosonic systems prevents more than one boson per site. This mimicks the Pauli exclusion principle, with result that the bosonic system is effectively an interacting, spinless system of fermions [9].
+    </p>
+    <div>
+     <div class="head_2">
+      4.1 Jordan-Wigner transformation
+     </div>
+     <p>
+      The physical observables of an interacting, spinless fermionic system can be mapped to that of a noninteracting, spin-1/2 fermionic system through Jordan-Wigner transformation. The nearest neighbor interaction in the bose gas is equivalent to spin-flip in the spin-1/2 fermi gas [10].
+     </p>
+     <p>
+      An interacting, spinless fermi gas obey the following commutation relation:
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (17)
+     <p>
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+     </p>
+     <p>
+      Figure 3: Boson gas separates into isolated rods-like 1-D systems in the 2-D lattice. [8]
+     </p>
+     <p>
+      A spin-1/2 fermi gas obey the following anti-commutation relation :
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (18)
+     <p>
+     </p>
+     <p>
+      where
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     ,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     are the creation and annihilation operators. Jordan-Wigner transformation transforms the commutation relation in eq. (17) into the anti-commutation relation in eq. (18) through a unitary transformation:
+     <p>
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (19)
+     <p>
+     </p>
+     <p>
+      Using the fact that each site has an integer number of particles, eq. (19) can be rewritten as
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (20)
+     <p>
+     </p>
+     <p>
+      Based on the equations above:
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (21)
+     <p>
+     </p>
+     <p>
+      Bose-Hubbard Hamiltonian transforms as follows:
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (22)
+     <p>
+     </p>
+     <p>
+      Jordan-Wigner transformation gives rise to momentum distributions that has been a subject to numerous experimental studies [2].
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      4.2 Hubbard Chain of Fermions
+     </div>
+     <p>
+      For bosons with two internal states, Bose-Hubbard Hamiltonian after fermionization takes on the form:
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (23)
+     <p>
+     </p>
+     <p>
+      These are the basis for the studies of mixtures of bosons and fermions in optical lattices. Numerous theoretical predictions are been developed (see [11], [12], [13]) and suggest possible future experimental studies of the system.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     5 Discussion
+    </div>
+    <p>
+     In this paper, we derived Bose-Hubbard Hamiltonian using Wannier functions. We also studied the phase transition of bosons in optical lattices. Later, we showed how a bose system in a 1-D optical lattice is equivalent to a spin-1/2 fermi system. This mapping is accomplished through Jordan-Wigner transformation.
+    </p>
+    <p>
+     In addition, we studied the properties of TonksGirardeau gas as an illustrative example of how an ideal condensed matter system can be studied in a controllable way in an optical lattice. We further suggested how optical lattices can be used to study other interesting systems, such as a condensate of boson-fermion mixture.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N10245">
+     <li id="N10246">
+      [1] N. W. Ashcroft and N. D. Mermin, Solid State Physics, (Philadelphia, 1976), page 685.
+     </li>
+     <li id="N10248">
+      [2] M. Greiner, O. Mandel, T. Esslinger, T. W. Hnsch and I. Bloch, “Quantum phase transition from a superfluid to a Mott insulator in a gas of ultracold atoms,” Nature (London). 415, 39 (2002).
+     </li>
+     <li id="N1024A">
+      [3] D. Jaksch and P. Zoller, “The cold atom Hubbard toolbox,” Annals of Physics.{ 315, 52, (2005).
+     </li>
+     <li id="N1024C">
+      [4] D. G. Ferguson“The Bose-Hubbard Hamiltonian,” (UIUC, 2005).
+     </li>
+     <li id="N1024E">
+      [5] M. P. A. Fisher, P. B. Weichman, G. Grinstein and D. S.Fisher, “Boson localization and the superfluid-insulator transition,” Phys. Rev. B. 40, (1989)
+     </li>
+     <li id="N10250">
+      [6] “http : //en.wikipedia.org/wiki/Image : BoseHubbardphasediagram.jpg”
+     </li>
+     <li id="N10252">
+      [7] B. Paredes, A. Widera, V. Murg1, O. Mandel, S. Flling, I. Cirac1, G. V. Shlyapnikov, T. W.Hnsch and I. Bloch “TonksGirardeau gas of ultracold atoms in an optical lattice,” Nature (London). 429, 277 (2004).
+     </li>
+     <li id="N10254">
+      [8] “Wenn Bosonen zu Fermionen werden,” Max-Planck-Institut for Quantum Optics,May 2004.
+     </li>
+     <li id="N10256">
+      [9] S. Sachdev, Quantum Phase Transitions, (Cambridge University Press, 1999), page 206.
+     </li>
+     <li id="N10258">
+      [10] N. Nagaosa. Quantum Field Theory in Strongly Correlated Electronic Systems, (Springer, 1999), page 7-10.
+     </li>
+     <li id="N1025A">
+      [11] B. Paredes and J. I. Cirac, “From Cooper Pairs to Luttinger Liquids with Bosonic Atoms in Optical Lattices,” Phys. Rev. Lett. 90, 15 (2003).
+     </li>
+     <li id="N1025C">
+      [12] W. Hofstetter, J. I. Cirac, P. Zoller, E. Demler,1 and M. D. Lukin, “High-Temperature Superfluidity of Fermionic Atoms in Optical Lattices,” Phys. Rev. Lett. 62, 961 (2002).
+     </li>
+     <li id="N1025E">
+      [13] M. K¨ohl, H. Moritz, T. St¨oferle, K. G¨unter and T. Esslinger, “Fermionic Atoms in a Three Dimensional Optical Lattice: Observing Fermi Surfaces, Dynamics, and Interactions,” Phys. Rev. Lett. 94, (2005).
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

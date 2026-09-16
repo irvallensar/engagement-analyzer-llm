@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Ms Ryan
+      </p>
+      <p>
+       Thank you for your letter. I was so happy to hear that I have won a
+       <ns type="DJ">
+        <i>
+         two weeks
+        </i>
+       </ns>
+       holiday in the U.S.A.
+      </p>
+      <p>
+       I would like to travel in July. I am going to finish my exams in June, and I am planning to go back to China in early August. So if I could travel in July, and
+       <ns type="FV">
+        <i>
+         coming
+        </i>
+       </ns>
+       back before
+       <ns type="MD">
+       </ns>
+       6th of August, that would be great.
+      </p>
+      <p>
+       I would prefer
+       <ns type="RV">
+        <i>
+         living
+        </i>
+       </ns>
+       in tents to log cabins. I have never had any experience
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to
+         <ns type="RV">
+          <i>
+           live
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in a tent, so I would like to give it a go. I think I will enjoy myself in a tent.
+      </p>
+      <p>
+       I love swimming, but I am not any good at swimming. I really
+       <ns type="TV">
+        <i>
+         wanted
+        </i>
+       </ns>
+       to learn how to swim. I was wondering if there is a coach
+       <ns type="MA">
+       </ns>
+       could give
+       <ns type="RA">
+        <i>
+         us
+        </i>
+       </ns>
+       a lesson
+       <ns type="RT">
+        <i>
+         during
+        </i>
+       </ns>
+       the Camp. Also, I would like to join
+       <ns type="MD">
+       </ns>
+       basketball team
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I used to play basketball when I was in high school, and our high school basketball team
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       won many competitions during
+       <ns type="MD">
+       </ns>
+       last ten years in our city. I am glad I
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       taken
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       part in a few competitions, and I was so proud of our basketball team.
+      </p>
+      <p>
+       Would you tell me
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       how much money you
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       give
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       to me and
+       <ns type="R">
+        <i>
+         how
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         is the weather
+        </i>
+       </ns>
+       like in
+       <ns type="MD">
+       </ns>
+       U.S.A. Thank you for
+       <ns type="RP">
+        <i>
+         every thing
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ms Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I was so happy to hear that I have won a two weeks holiday in the U.S.A.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to travel in July.
+       </s>
+       <s pid="3" sid="2">
+        I am going to finish my exams in June, and I am planning to go back to China in early August.
+       </s>
+       <s pid="3" sid="3">
+        So if I could travel in July, and coming back before  6th of August, that would be great.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would prefer living in tents to log cabins.
+       </s>
+       <s pid="4" sid="2">
+        I have never had any experience  to live in a tent, so I would like to give it a go.
+       </s>
+       <s pid="4" sid="3">
+        I think I will enjoy myself in a tent.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I love swimming, but I am not any good at swimming.
+       </s>
+       <s pid="5" sid="2">
+        I really wanted to learn how to swim.
+       </s>
+       <s pid="5" sid="3">
+        I was wondering if there is a coach  could give us a lesson during the Camp.
+       </s>
+       <s pid="5" sid="4">
+        Also, I would like to join  basketball team, I used to play basketball when I was in high school, and our high school basketball team have won many competitions during  last ten years in our city.
+       </s>
+       <s pid="5" sid="5">
+        I am glad I had taken a part in a few competitions, and I was so proud of our basketball team.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Would you tell me that how much money you would give it to me and how is the weather like in  U.S.A.
+       </s>
+       <s pid="6" sid="2">
+        Thank you for every thing!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       It was great to hear from you, haven't seen you since last summer holiday, hope everything is fine
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your place.
+      </p>
+      <p>
+       You wanted to hear about my experience at the pop concert which I enjoyed helping
+       <ns type="MT">
+       </ns>
+       last month? I must say that was
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       great fun
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         I've
+        </i>
+       </ns>
+       never had this kind of experience before. Before the concert actually started I had to give out lots of leaflets
+       <ns type="RP">
+        <i>
+         , they
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         list
+        </i>
+       </ns>
+       of pop
+       <ns type="AGN">
+        <i>
+         band
+        </i>
+       </ns>
+       and
+       <ns type="AGN">
+        <i>
+         group
+        </i>
+       </ns>
+       which
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       appear in the concert in order, and some information about their performance and backgrounds. After that, I had to help people who had a ticket but
+       <ns type="TV">
+        <i>
+         can't
+        </i>
+       </ns>
+       find their seat. During the concert, I didn't have a lot to do, so I had
+       <ns type="MD">
+       </ns>
+       chance to see most of the performance
+       <ns type="RP">
+        <i>
+         , that
+        </i>
+       </ns>
+       was excellent. I was excited that I had a closer look at so many famous pop stars. During
+       <ns type="MD">
+       </ns>
+       break time I did give a
+       <ns type="AGN">
+        <i>
+         lots
+        </i>
+       </ns>
+       of
+       <ns type="AGN">
+        <i>
+         direction
+        </i>
+       </ns>
+       to people who
+       <ns type="TV">
+        <i>
+         can't
+        </i>
+       </ns>
+       find
+       <ns type="MD">
+       </ns>
+       toilet, and
+       <ns type="M">
+       </ns>
+       information such as where they could have a cup of coffee. That was
+       <ns type="MD">
+       </ns>
+       bit boring, but it was part of my job.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       to go.
+       <ns type="R">
+        Write to you next time
+       </ns>
+       .
+      </p>
+      <p>
+       Love
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It was great to hear from you, haven't seen you since last summer holiday, hope everything is fine in your place.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        You wanted to hear about my experience at the pop concert which I enjoyed helping  last month?
+       </s>
+       <s pid="3" sid="2">
+        I must say that was a great fun, I've never had this kind of experience before.
+       </s>
+       <s pid="3" sid="3">
+        Before the concert actually started I had to give out lots of leaflets, they are list of pop band and group which will appear in the concert in order, and some information about their performance and backgrounds.
+       </s>
+       <s pid="3" sid="4">
+        After that, I had to help people who had a ticket but can't find their seat.
+       </s>
+       <s pid="3" sid="5">
+        During the concert, I didn't have a lot to do, so I had  chance to see most of the performance, that was excellent.
+       </s>
+       <s pid="3" sid="6">
+        I was excited that I had a closer look at so many famous pop stars.
+       </s>
+       <s pid="3" sid="7">
+        During  break time I did give a lots of direction to people who can't find  toilet, and  information such as where they could have a cup of coffee.
+       </s>
+       <s pid="3" sid="8">
+        That was  bit boring, but it was part of my job.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I got to go.
+       </s>
+       <s pid="4" sid="2">
+        Write to you next time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Love
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

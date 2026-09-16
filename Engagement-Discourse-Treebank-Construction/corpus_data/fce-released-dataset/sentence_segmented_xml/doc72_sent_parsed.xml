@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Miss Ryan
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I am writing to
+       <ns type="RV">
+        <i>
+         inform
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       the further information about myself. I was very glad to hear that I
+       <ns type="TV">
+        <i>
+         won
+        </i>
+       </ns>
+       the competition.
+      </p>
+      <p>
+       First of all, I can only travel in July. I have a summer holiday from
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       the end of June to
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       the
+       <ns type="SX">
+        <i>
+         begging
+        </i>
+       </ns>
+       of September as I am a student, but I am
+       <ns type="IV">
+        <i>
+         planing
+        </i>
+       </ns>
+       to work in August
+       <ns type="RT">
+        <i>
+         as
+        </i>
+       </ns>
+       a part-time job. So that's the reason why I
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       travel in August. I prefer to stay in tents rather than log cabins
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       because I have
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       camping once and I stayed in tents. It was great to have
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       fun and also
+       <ns type="R">
+        it was very good
+        <ns type="SX">
+         <i>
+          memorise
+         </i>
+        </ns>
+       </ns>
+       . As you said I will have the opportunity to do two activities. I am quite good at singing and I have a talent
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       singing that
+       <ns type="MV">
+       </ns>
+       I can entertain people by singing. In addition I am keen on swimming but actually I am not very good at swimming because I have just started to learn
+       <ns type="FV">
+        <i>
+         swimming
+        </i>
+       </ns>
+       but I have really been enjoying it and I think it will be
+       <ns type="MD">
+       </ns>
+       good chance to improve my swimming.
+      </p>
+      <p>
+       In fact, I have some questions
+       <ns type="R">
+        <i>
+         that
+        </i>
+       </ns>
+       how much money I will need, what else I have to bring with
+       <ns type="MA">
+       </ns>
+       and
+       <ns type="CE">
+        if I have a emergency what you can do for
+       </ns>
+       .
+      </p>
+      <p>
+       Once again, I am very happy to have such a good opportunity and I hope this letter
+       <ns type="RV">
+        <i>
+         can bring
+        </i>
+       </ns>
+       what you want to know about me. Thank you for your attention.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Lee. Han
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Miss Ryan.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to inform  the further information about myself.
+       </s>
+       <s pid="2" sid="2">
+        I was very glad to hear that I won the competition.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I can only travel in July.
+       </s>
+       <s pid="3" sid="2">
+        I have a summer holiday from at the end of June to at the begging of September as I am a student, but I am planing to work in August as a part-time job.
+       </s>
+       <s pid="3" sid="3">
+        So that's the reason why I can not travel in August.
+       </s>
+       <s pid="3" sid="4">
+        I prefer to stay in tents rather than log cabins, because I have had a camping once and I stayed in tents.
+       </s>
+       <s pid="3" sid="5">
+        It was great to have a fun and also it was very good memorise.
+       </s>
+       <s pid="3" sid="6">
+        As you said I will have the opportunity to do two activities.
+       </s>
+       <s pid="3" sid="7">
+        I am quite good at singing and I have a talent about singing that  I can entertain people by singing.
+       </s>
+       <s pid="3" sid="8">
+        In addition I am keen on swimming but actually I am not very good at swimming because I have just started to learn swimming but I have really been enjoying it and I think it will be  good chance to improve my swimming.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In fact, I have some questions that how much money I will need, what else I have to bring with  and if I have a emergency what you can do for.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Once again, I am very happy to have such a good opportunity and I hope this letter can bring what you want to know about me.
+       </s>
+       <s pid="5" sid="2">
+        Thank you for your attention.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Lee.
+       </s>
+       <s pid="7" sid="2">
+        Han
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       These days, there are so many people
+       <ns type="MA">
+       </ns>
+       like shopping that it is one of the important
+       <ns type="AGN">
+        <i>
+         part
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       our life. It is not, however, always enjoyable
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       there are both advantages and disadvantages.
+      </p>
+      <p>
+       First of all, there are quite
+       <ns type="RQ">
+        <i>
+         many
+        </i>
+       </ns>
+       advantages
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       shopping
+       <ns type="MP">
+       </ns>
+       <ns type="MA">
+       </ns>
+       are that it can be the
+       <ns type="DN">
+        <i>
+         solvation
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       our stress and
+       <ns type="DN">
+        <i>
+         boring
+        </i>
+       </ns>
+       . When you are under stress or when you are bored, if you go
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       shopping, then at least it can be
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        motive
+       </ns>
+       to change your
+       <ns type="RN">
+        <i>
+         mode
+        </i>
+       </ns>
+       . Also shopping makes people happier by
+       <ns type="RV">
+        <i>
+         using
+        </i>
+       </ns>
+       a lot of money and it
+       <ns type="AGV">
+        <i>
+         <ns type="S">
+          <i>
+           influnce
+          </i>
+         </ns>
+         even
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="R">
+        economic situation more
+        <ns type="S">
+         <i>
+          flexably
+         </i>
+        </ns>
+        .
+       </ns>
+      </p>
+      <p>
+       There are, in contrast, disadvantages at the same time. When we are
+       <ns type="UV">
+        <i>
+         having
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       shopping, we often find that the place where people often go for
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       shopping is too
+       <ns type="SX">
+        <i>
+         crowed
+        </i>
+       </ns>
+       and it makes us more tired. Also there are plenty of
+       <ns type="DN">
+        <i>
+         dangerous
+        </i>
+       </ns>
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       lots of people have
+       <ns type="MD">
+       </ns>
+       wallet
+       <ns type="IV">
+        <i>
+         stollen
+        </i>
+       </ns>
+       because it is a public place and there are too many people. In addition
+       <ns type="MP">
+       </ns>
+       shop
+       <ns type="FN">
+        <i>
+         owner
+        </i>
+       </ns>
+       often cheat their customers by increasing the cost
+       <ns type="S">
+        <i>
+         secreatly
+        </i>
+       </ns>
+       . The customer can never know what price is the normal
+       <ns type="MA">
+       </ns>
+       unless they have
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       same shop or
+       <ns type="MD">
+       </ns>
+       same thing.
+      </p>
+      <p>
+       To sum up, shopping is
+       <ns type="MD">
+       </ns>
+       very important part of our life and we can have a lot of fun, however it is not always enjoyable which means we
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       find only advantages
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       it.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        These days, there are so many people  like shopping that it is one of the important part in our life.
+       </s>
+       <s pid="1" sid="2">
+        It is not, however, always enjoyable that there are both advantages and disadvantages.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all, there are quite many advantages of shopping  are that it can be the solvation of our stress and boring.
+       </s>
+       <s pid="2" sid="2">
+        When you are under stress or when you are bored, if you go to shopping, then at least it can be  motive to change your mode.
+       </s>
+       <s pid="2" sid="3">
+        Also shopping makes people happier by using a lot of money and it influnce even  economic situation more flexably.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        There are, in contrast, disadvantages at the same time.
+       </s>
+       <s pid="3" sid="2">
+        When we are having a shopping, we often find that the place where people often go for a shopping is too crowed and it makes us more tired.
+       </s>
+       <s pid="3" sid="3">
+        Also there are plenty of dangerous that lots of people have  wallet stollen because it is a public place and there are too many people.
+       </s>
+       <s pid="3" sid="4">
+        In addition shop owner often cheat their customers by increasing the cost secreatly.
+       </s>
+       <s pid="3" sid="5">
+        The customer can never know what price is the normal  unless they have a same shop or  same thing.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        To sum up, shopping is  very important part of our life and we can have a lot of fun, however it is not always enjoyable which means we can not find only advantages from it.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

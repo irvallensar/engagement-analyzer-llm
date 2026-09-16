@@ -1,0 +1,437 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Results of material properties testing for aluminum specimens
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       FOREWORD
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Grills and Grilles (GG) has recently had a number of grilles which cover fluorescent lights mysteriously fail.
+       </s>
+       <s pid="1" sid="2">
+        GG suspects the aluminum alloy used in the grilles is causing this failure, and has requested that our engineering team determine key material properties including the density, modulus, yield strength, ultimate tensile strength, elongation at fracture, and fracture toughness of samples provided to us by GG.
+       </s>
+       <s pid="1" sid="3">
+        We have successfully determined these material properties and compared them to a reference to determine if the alloy truly is 7075-T651 aluminum.
+       </s>
+       <s pid="1" sid="4">
+        The purpose of this report is to present our findings, conclusions, and supporting documentation.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       SUMMARY
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        Our team successfully determined the density, modulus, yield strength, ultimate tensile strength, and elongation at fracture of the samples GG gave us; by comparing them to reference values from Dowling [1], we have concluded the samples we received are not 7075-T651 aluminum.
+       </s>
+       <s pid="2" sid="2">
+        We attempted to calculate the fracture toughness of the samples, but none of the four tests performed satisfied conditions set forth by the ASTM E 399 [2] standard for fracture toughness testing.
+       </s>
+       <s pid="2" sid="3">
+        Calculated and reference values with their associated uncertainty for each material property are located in Table 1, below.
+       </s>
+       <s pid="2" sid="4">
+        A graphical representation of the stress versus strain behavior is available in Figure 1 on page 3, with modulus, yield strength, and ultimate tensile strength depicted.
+       </s>
+       <s pid="2" sid="5">
+        Even though we were unable to obtain the fracture toughness of the material, the stress intensity factors (KQ) we did calculate are shown in Table 1, below.
+       </s>
+       <s pid="2" sid="6">
+        Since these stress intensities are not representative of the fracture toughness of the material, they should not be used in engineering calculations.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Table 1: Calculated material properties and their uncertainties compared with reference values
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       PROCEDURE
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        To provide the requested material properties and determine if this 7075-T651 aluminum, we used the six test specimens provided by GG: a solid bar, a tensile specimen, and 4 pre-cracked specimens.
+       </s>
+       <s pid="4" sid="2">
+        Relevant dimensions of these specimens were measured with calipers; before taking any measurements, we ensured that the calipers (± 0.0005 in) were properly calibrated to zero when in the closed position.
+       </s>
+       <s pid="4" sid="3">
+        We then measured dimensions of interest: the length, width, and height of the solid bar, the diameter and length of the tensile specimen, and the thickness of each fracture specimen.
+       </s>
+       <s pid="4" sid="4">
+        The solid bar was also weighed on a digital scale, and its mass was recorded.
+       </s>
+       <s pid="4" sid="5">
+        The measurements of each length and the mass were repeated four times.
+       </s>
+       <s pid="4" sid="6">
+        We then performed a tensile test and four fracture tests.
+       </s>
+       <s pid="4" sid="7">
+        Data was collected during both of these using LabView 7.1 and plotted using Microsoft Excel 2003.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        Tensile Test:
+       </s>
+       <s pid="5" sid="2">
+        The supplied tensile specimen was placed in the grips of the 4206 Instron tensile testing setup.
+       </s>
+       <s pid="5" sid="3">
+        A 45-90 strain gauge rosette was fixed to the specimen; the middle strain gauge was directly along the longitudinal axis of the specimen, and the other two were positioned 45º on either side of it.
+       </s>
+       <s pid="5" sid="4">
+        We then began loading the specimen with the Instron’s crosshead set to move at 2.54 mm/min and continued to increase the load until the tensile specimen eventually failed after brief necking.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Fracture Test:
+       </s>
+       <s pid="6" sid="2">
+        There were four different thicknesses of fracture sample (B) provided: 0.1” (0.254 cm), 0.25” (0.635 cm), 0.3” (0.762 cm), and 0.4” (1.016 cm).
+       </s>
+       <s pid="6" sid="3">
+        Each specimen was provided with a single notch in the center, also known as a single edge notched beam (SENB), and a fatigue crack already initiated.
+       </s>
+       <s pid="6" sid="4">
+        We set up the fracture test according to the 399 standard [2] for plane-strain fracture toughness (K1c) testing; Figure 1, below, shows the standard’s specification for fracture specimen setup.
+       </s>
+       <s pid="6" sid="5">
+        A displacement gauge was attached to the specimen to measure the width of the crack.
+       </s>
+       <s pid="6" sid="6">
+        An 8516 Instron machine was used to load the specimen.
+       </s>
+       <s pid="6" sid="7">
+        We increased the load on each fracture sample until the crack propagated through most of the part.
+       </s>
+       <s pid="6" sid="8">
+        Once the crack was 2-3 mm from the edge of the SENB, it was removed from the Instron and fracture was completed by applying force by hand.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        Figure 1: ASTM E 399 [2] specification for fracture toughness test setup
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       FINDINGS
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        The stress-strain behavior of the tensile specimen is summarized in Figure 2, on page 3.
+       </s>
+       <s pid="8" sid="2">
+        Towards the end of the tensile test, one of the three strain gauges in the rosette broke off of the specimen.
+       </s>
+       <s pid="8" sid="3">
+        Strain values past this point are unreliable, but force data is still valid.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Material Properties
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        The density of the test specimen was determined to be 2.8 ± 0.4 g/cm3; Dowling [1] reported 2.7 g/cm3, which does not agree with our value.
+       </s>
+       <s pid="9" sid="2">
+        The density of this material was determined by dividing mass of the provided solid bar by its volume.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        The yield strength for the provided specimen was determined to be 546 ± 6 MPa; Dowling [1] reported 469 MPa, which does not agree with our value.
+       </s>
+       <s pid="10" sid="2">
+        Yield strength represents the stress value at which a material begins to plastically deform, typically measured as 0.2% permanent strain.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        The ultimate tensile strength (UTS) of the given specimen was determined to be 590 ± 5 MPa; Dowling [1] reported 578 MPa, which does not agree with our value.
+       </s>
+       <s pid="11" sid="2">
+        UTS represents the maximum amount of stress that a material can withstand before failure occurs.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        The elongation at fracture was determined to be 17 ± 1%; Dowling [1] reported 11%, which does not agree with our value.
+       </s>
+       <s pid="12" sid="2">
+        This was determined by dividing the displacement of the crosshead at fracture by the original length of the specimen, with crosshead displacement being 0.01440 ± 0.00003 m and original length being 0.084 ± 0.001 m.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        Figure 2: Graphical representation of true stress-strain behavior showing critical material properties, stopping at strain gauge rosette failure
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Elastic Modulus
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        We determined the elastic modulus of the test specimen to be 68 ± 2 GPa; Dowling [1] reported 71 GPa, which does not agree with our value.
+       </s>
+       <s pid="14" sid="2">
+        In the early stages of the tensile test, the linear elastic region was examined.
+       </s>
+       <s pid="14" sid="3">
+        We used Eq.1, below, to calculate nominal stress (σn) in terms of load (P) and original cross-sectional area (A0).
+       </s>
+       <s pid="14" sid="4">
+        The specimen had an original cross sectional area of 0.000129 ± 0.000001 m2.
+       </s>
+       <s pid="14" sid="5">
+        We found our calculated nominal stresses to be within ± 3% of their actual value.
+       </s>
+       <s pid="14" sid="6">
+        True stress was calculated from these nominal stresses.
+       </s>
+       <s pid="14" sid="7">
+        The true strain in the direction of tension was calculated using strain values reported by the strain gauge rosette.
+       </s>
+       <s pid="14" sid="8">
+        True stress was plotted as a function of true strain for the tensile test and the linear portion of it was analyzed.
+       </s>
+       <s pid="14" sid="9">
+        The elastic modulus was determined with the average slope of best-fit lines incorporating the uncertainty in our measurements.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        (Eq.1)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        (Eq.2)
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Fracture Toughness
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        While we were able to find KQ (stress intensity factor associated with critical load PQ) values for each individual fracture specimen, we could not find K1c (plane-strain fracture toughness) using the conditions imposed by the 399 standard [2] for K1c calculations.
+       </s>
+       <s pid="17" sid="2">
+        The values of KQ we found are 24 ± 8 MPa√m, 30 ± 2 MPa√m, 36 ± 3 MPa√m, and 36 ± 3 MPa√m for specimen thicknesses 0.1” (0.254 cm), 0.25” (0.635 cm), 0.3” (0.762 cm), and 0.4” (1.016 cm), respectively.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        The 399 standard [2] is very specific about how a test for K1c should be performed.
+       </s>
+       <s pid="18" sid="2">
+        The fracture specimen needs to be set up and loaded as shown in Figure 1 on page 2.
+       </s>
+       <s pid="18" sid="3">
+        Load (P) versus crack displacement (a) data need to be analyzed to determine if a specimen fails in Type 1, Type 2, or Type 3 fracture.
+       </s>
+       <s pid="18" sid="4">
+        The critical parameter is the load to be used in KQ calculations (PQ), and it is determined differently for each type of fracture; details on how to determine the type of failure are available in the 399 standard [2].
+       </s>
+       <s pid="18" sid="5">
+        Figure 4 on page 4 shows a sample PQ calculation for a 0.25” (0.635 cm) thick specimen.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        Figure 3: Stress intensity factor KQ does not follow e expected trend with specimen width
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        Figure 4: Sample calculation of PQ with Type 1 f fracture
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        The final parameter needed to calculate KQ is a geometric correction factor f(a/w); this parameter adjusts the KQ formula for a variety of different geometries.
+       </s>
+       <s pid="21" sid="2">
+        The formula associated with the geometry of our test specimens is shown as Eq.3, below.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        (Eq.3)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        (Eq.4)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="24" sid="1">
+        (Eq.5)
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        After PQ is determined, KQ can be calculated using Eq.4, above.
+       </s>
+       <s pid="25" sid="2">
+        KQ increases with specimen width, as shown in Figure 3, above; if KQ is K1C, the expected trend is an increase in KQ with specimen width followed by a decrease with specimen width, and then a plateau whose value represents K1C.
+       </s>
+       <s pid="25" sid="3">
+        Calculated values of KQ need to satisfy the conditions listed in Eq.5, above, in order to be the plane-strain fracture toughness.
+       </s>
+       <s pid="25" sid="4">
+        These conditions are designed to check if the part yielded excessively before fracture.
+       </s>
+       <s pid="25" sid="5">
+        If excessive yielding occurs, KQ is not the same as K1c, and cannot be used in future fracture calculations.
+       </s>
+       <s pid="25" sid="6">
+        Our team determined none of our calculated KQ values to be K1c, and our calculated KQ values should not be used in fracture calculations.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSIONS AND RECOMMENDATIONS
+      </div>
+      <p>
+       <s pid="26" sid="1">
+        Our team found values for density, elastic modulus, yield strength, ultimate tensile strength, and elongation at fracture of the samples GG provided, and since none of them agreed with reference values from Dowling [1]
+       </s>
+       <s pid="26" sid="2">
+        I concluded the specimens provided were not 7075-T651 aluminum.
+       </s>
+       <s pid="26" sid="3">
+        Our calculated material properties are displayed on Figure 2 on page 3.
+       </s>
+       <s pid="26" sid="4">
+        The elastic modulus was determined to be 68 ± 2 GPa, characterized by the slope of the linear-elastic region of the stress-strain curve.
+       </s>
+       <s pid="26" sid="5">
+        The yield strength is 546 ± 6 MPa and is shown where the curve diverges from the linear path, which indicates permanent deformation.
+       </s>
+       <s pid="26" sid="6">
+        The ultimate tensile strength of the specimen is 590 ± 5 MPa, and is the maximum stress attained in the experiment before the onset of necking.
+       </s>
+       <s pid="26" sid="7">
+        The elongation at fracture is 17 ± 1%.
+       </s>
+       <s pid="26" sid="8">
+        We were able to calculate KQ values for the four fracture specimens provided by GG, but they were determined to not be K1C.
+       </s>
+       <s pid="26" sid="9">
+        The standard specifies that the linear elastic fracture mechanics requirements (Eq.5 on page 4) be satisfied for KQ to be K1C, but they were not.
+       </s>
+       <s pid="26" sid="10">
+        I recommend that GG further investigate the material actually used to make the grilles for the fluorescent lights, and either remanufacture the grilles using 7075-T651 aluminum or analyze whether the material being different gives rise to a redesign of the grilles.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N1018C">
+       <li id="N1018D">
+        [1] Dowling, N. E., 1998, “Mechanical Behavior of Materials: Engineering Methods for Deformation, Fracture, and Fatigue”, Prentice-Hall, Upper Saddle River, pp. 90, 120, 291.
+       </li>
+       <li id="N1018F">
+        [2] ASTM E 399 [2], "Standard Test Method for Linear-Elastic Plane-Strain Fracture Toughness K1C of Metallic Materials," ASTM International.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Thai
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     19.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I have recently been to the Circle Theatre to see a musical show. It was advertised as London's Newest and best musical show. However, it
+       <ns type="TV">
+        <i>
+         had been
+        </i>
+       </ns>
+       a very
+       <ns type="S">
+        <i>
+         dissappointing
+        </i>
+       </ns>
+       evening for me.
+      </p>
+      <p>
+       Firstly, it was mentioned that there were going to be two
+       <ns type="DN">
+        <i>
+         starrings
+        </i>
+       </ns>
+       but, in fact, only
+       <ns type="RD">
+        <i>
+         an
+        </i>
+       </ns>
+       actor
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       performing
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the show.
+      </p>
+      <p>
+       Secondly, there was a delay
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the show
+       <ns type="MP">
+       </ns>
+       which
+       <ns type="TV">
+        <i>
+         supposed
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         started
+        </i>
+       </ns>
+       at 19.30 but
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it
+       <ns type="UV">
+        <i>
+         was
+        </i>
+       </ns>
+       actually started at 20:15. This really upset me as no notice
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       given before the show.
+      </p>
+      <p>
+       Thirdly, the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       said that
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       discounts were
+       <ns type="S">
+        <i>
+         avaliable
+        </i>
+       </ns>
+       but
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       the ticket seller said that there was no discount
+       <ns type="R">
+        allowing or
+       </ns>
+       <ns type="S">
+        <i>
+         avaliable
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In addition, the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       mentioned that
+       <ns type="MD">
+       </ns>
+       restaurant
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be
+       <ns type="DJ">
+        <i>
+         opened
+        </i>
+       </ns>
+       after the show but it was closed because
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="R">
+        short of cooker
+       </ns>
+       .
+      </p>
+      <p>
+       Finally, I would like to ask for
+       <ns type="MD">
+       </ns>
+       money back
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the ticket due to the
+       <ns type="S">
+        <i>
+         disapointing
+        </i>
+       </ns>
+       evening out and
+       <ns type="MD">
+       </ns>
+       <ns type="RJ">
+        <i>
+         unreliable
+        </i>
+       </ns>
+       advertisement you have
+       <ns type="RV">
+        created
+       </ns>
+       .
+      </p>
+      <p>
+       I am looking forward to hearing from you as soon as possible.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+      <p>
+       Cook Phatosub.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have recently been to the Circle Theatre to see a musical show.
+       </s>
+       <s pid="2" sid="2">
+        It was advertised as London's Newest and best musical show.
+       </s>
+       <s pid="2" sid="3">
+        However, it had been a very dissappointing evening for me.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, it was mentioned that there were going to be two starrings but, in fact, only an actor were performing on the show.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, there was a delay on the show which supposed to started at 19.30 but, it was actually started at 20:15.
+       </s>
+       <s pid="4" sid="2">
+        This really upset me as no notice were given before the show.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Thirdly, the advertisment said that the discounts were avaliable but, the ticket seller said that there was no discount allowing or avaliable.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In addition, the advertisment mentioned that  restaurant will be opened after the show but it was closed because, short of cooker.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Finally, I would like to ask for  money back for the ticket due to the disapointing evening out and  unreliable advertisement you have created.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I am looking forward to hearing from you as soon as possible.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Cook Phatosub.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="S">
+        <i>
+         Nowaday
+        </i>
+       </ns>
+       , modern technology is
+       <ns type="IV">
+        <i>
+         becomming
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         very
+        </i>
+       </ns>
+       essential to our daily life.
+       <ns type="UC">
+        <i>
+         As it
+        </i>
+       </ns>
+       is another important factor which affects our life, apart from money, health, food and
+       <ns type="RN">
+        <i>
+         house
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The reasons it is important to us are, first of all,
+       <ns type="R">
+        if you think
+        <ns type="SX">
+         <i>
+          bout
+         </i>
+        </ns>
+        life
+       </ns>
+       without computers, communication
+       <ns type="RN">
+        <i>
+         machines
+        </i>
+       </ns>
+       and transportation
+       <ns type="UN">
+        <i>
+         machines
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         . We
+        </i>
+       </ns>
+       wouldn't be able to
+       <ns type="RV">
+        <i>
+         sort out
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       and
+       <ns type="IN">
+        <i>
+         datas
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         this
+        </i>
+       </ns>
+       quickly. Secondly, no one could communicate on the phone
+       <ns type="R">
+        through countries or even through houses
+       </ns>
+       as
+       <ns type="RY">
+        <i>
+         <ns type="DY">
+          <i>
+           immediate
+          </i>
+         </ns>
+        </i>
+       </ns>
+       as nowadays. Lastly, it would take people months and months to travel to the other side of the world and also the journey would be much more dangerous than
+       <ns type="FV">
+        <i>
+         travel
+        </i>
+       </ns>
+       by plane. Without all this
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       life would
+       <ns type="S">
+        <i>
+         definately
+        </i>
+       </ns>
+       change back to
+       <ns type="R">
+        the same position as it were
+       </ns>
+       50 or more years ago.
+       <ns type="FV">
+        <i>
+         Put
+        </i>
+       </ns>
+       it in
+       <ns type="AGQ">
+        <i>
+         another
+        </i>
+       </ns>
+       words, modern technology has changed our life to became more advanced in every
+       <ns type="AGN">
+        <i>
+         ways
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       On the other hand, the
+       <ns type="DN">
+        <i>
+         affects
+        </i>
+       </ns>
+       that it has on our daily life
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       not always good as
+       <ns type="RY">
+        <i>
+         sometime
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       the technology
+       <ns type="TV">
+        <i>
+         went
+        </i>
+       </ns>
+       wrong and
+       <ns type="R">
+        out of hand of people who control it
+       </ns>
+       can cause
+       <ns type="DJ">
+        <i>
+         disaster
+        </i>
+       </ns>
+       accidents, for example: plane crashes,
+       <ns type="FN">
+        <i>
+         trains
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         crashed
+        </i>
+       </ns>
+       and
+       <ns type="MD">
+       </ns>
+       explosion of
+       <ns type="S">
+        <i>
+         nuclears
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         bomb
+        </i>
+       </ns>
+       . If this
+       <ns type="AGV">
+        <i>
+         continue
+        </i>
+       </ns>
+       to happen our life
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       be very
+       <ns type="S">
+        <i>
+         misarable
+        </i>
+       </ns>
+       as
+       <ns type="FN">
+        <i>
+         accident
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         happens
+        </i>
+       </ns>
+       all the time. Therefore, it is important to get it exactly right.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Nowaday, modern technology is becomming very essential to our daily life.
+       </s>
+       <s pid="1" sid="2">
+        As it is another important factor which affects our life, apart from money, health, food and house.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The reasons it is important to us are, first of all, if you think bout life without computers, communication machines and transportation machines.
+       </s>
+       <s pid="2" sid="2">
+        We wouldn't be able to sort out informations and datas this quickly.
+       </s>
+       <s pid="2" sid="3">
+        Secondly, no one could communicate on the phone through countries or even through houses as immediate as nowadays.
+       </s>
+       <s pid="2" sid="4">
+        Lastly, it would take people months and months to travel to the other side of the world and also the journey would be much more dangerous than travel by plane.
+       </s>
+       <s pid="2" sid="5">
+        Without all this you life would definately change back to the same position as it were 50 or more years ago.
+       </s>
+       <s pid="2" sid="6">
+        Put it in another words, modern technology has changed our life to became more advanced in every ways.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        On the other hand, the affects that it has on our daily life is not always good as sometime, the technology went wrong and out of hand of people who control it can cause disaster accidents, for example: plane crashes, trains crashed and  explosion of nuclears bomb.
+       </s>
+       <s pid="3" sid="2">
+        If this continue to happen our life would be very misarable as accident happens all the time.
+       </s>
+       <s pid="3" sid="3">
+        Therefore, it is important to get it exactly right.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

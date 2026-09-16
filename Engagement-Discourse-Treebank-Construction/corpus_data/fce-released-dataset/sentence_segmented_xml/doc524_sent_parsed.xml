@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       competition organiser (Helen Ryan)
+      </p>
+      <p>
+       I'm
+       <ns type="UT">
+        <i>
+         as
+        </i>
+       </ns>
+       happy to
+       <ns type="FV">
+        <i>
+         heard
+        </i>
+       </ns>
+       that I have won the first prize. Here is the information you want from me.  Firstly, I can only go in July
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       I'm
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       holiday
+       <ns type="MT">
+       </ns>
+       that
+       <ns type="RN">
+        <i>
+         moment
+        </i>
+       </ns>
+       . I think I would prefer
+       <ns type="R">
+        the accommodation at Camp California is in tents
+       </ns>
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       it is more
+       <ns type="DJ">
+        <i>
+         safety
+        </i>
+       </ns>
+       , and I
+       <ns type="TV">
+        <i>
+         don't
+        </i>
+       </ns>
+       like to be in the log cabins.
+      </p>
+      <p>
+       The activities are quite hard to choose really, because you have a lot of
+       <ns type="AGN">
+        <i>
+         <ns type="DN">
+          <i>
+           chose
+          </i>
+         </ns>
+        </i>
+       </ns>
+       which
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       I like. But I think I will choose Basketball and Photography, because basketball is the only sport I can play well. Photography is a very interesting
+       <ns type="S">
+        <i>
+         activitie
+        </i>
+       </ns>
+       , and is not too hard to do
+       <ns type="RY">
+        <i>
+         too
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Here
+       <ns type="MA">
+       </ns>
+       have some questions which I would like to ask
+       <ns type="RP">
+        <i>
+         , what
+        </i>
+       </ns>
+       kind of clothes
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           sould
+          </i>
+         </ns>
+        </i>
+       </ns>
+       I need? How much
+       <ns type="TV">
+        <i>
+         did
+        </i>
+       </ns>
+       I need for the Camp?
+      </p>
+      <p>
+       Finally
+       <ns type="MP">
+       </ns>
+       I hope the information I've
+       <ns type="TV">
+        <i>
+         gave
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       useful for you, and hope you can
+       <ns type="FV">
+        <i>
+         answers
+        </i>
+       </ns>
+       my questions A.S.A.P.
+      </p>
+      <p>
+       Yours Sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear the competition organiser (Helen Ryan)
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm as happy to heard that I have won the first prize.
+       </s>
+       <s pid="2" sid="2">
+        Here is the information you want from me.
+       </s>
+       <s pid="2" sid="3">
+        Firstly, I can only go in July.
+       </s>
+       <s pid="2" sid="4">
+        Because I'm in the holiday  that moment.
+       </s>
+       <s pid="2" sid="5">
+        I think I would prefer the accommodation at Camp California is in tents.
+       </s>
+       <s pid="2" sid="6">
+        Because it is more safety, and I don't like to be in the log cabins.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The activities are quite hard to choose really, because you have a lot of chose which is I like.
+       </s>
+       <s pid="3" sid="2">
+        But I think I will choose Basketball and Photography, because basketball is the only sport I can play well.
+       </s>
+       <s pid="3" sid="3">
+        Photography is a very interesting activitie, and is not too hard to do too.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Here  have some questions which I would like to ask, what kind of clothes sould I need?
+       </s>
+       <s pid="4" sid="2">
+        How much did I need for the Camp?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally I hope the information I've gave are useful for you, and hope you can answers my questions A.S.A.P.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours Sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       <ns type="AS">
+        <i>
+         Shopping, for most the people it is very important
+        </i>
+       </ns>
+       because you need to get the stuff you need or you want. For some people it may be a
+       <ns type="RN">
+        <i>
+         method
+        </i>
+       </ns>
+       to relax
+       <ns type="UA">
+        <i>
+         themselves
+        </i>
+       </ns>
+       , after you have been to work or school. So it is a thing you will enjoy most of the time, but still
+       <ns type="R">
+        have something you will not enjoy it
+       </ns>
+       . It depends on
+       <ns type="R">
+        what is the place and the aim you are shopping
+       </ns>
+       . For example
+       <ns type="MP">
+       </ns>
+       some people always
+       <ns type="TV">
+        <i>
+         shopping
+        </i>
+       </ns>
+       to get food or stuff
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       need in everyday life
+       <ns type="RP">
+        <i>
+         , they
+        </i>
+       </ns>
+       won't enjoy this kind of shopping, because it is not getting what they want. The place where you are shopping
+       <ns type="MV">
+       </ns>
+       also very important. For example
+       <ns type="MP">
+       </ns>
+       in HK
+       <ns type="R">
+        all the areas have lots of people it won't let you feel good of the noise and times when you are shopping
+       </ns>
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         have
+        </i>
+       </ns>
+       too many people it
+       <ns type="AGV">
+        <i>
+         make
+        </i>
+       </ns>
+       you want to stay home
+       <ns type="M">
+       </ns>
+       won't enjoy shopping.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         After
+        </i>
+       </ns>
+       I've written this composition, I think that you will enjoy shopping most of the time, but still
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       sometimes you won't.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Shopping, for most the people it is very important because you need to get the stuff you need or you want.
+       </s>
+       <s pid="2" sid="2">
+        For some people it may be a method to relax themselves, after you have been to work or school.
+       </s>
+       <s pid="2" sid="3">
+        So it is a thing you will enjoy most of the time, but still have something you will not enjoy it.
+       </s>
+       <s pid="2" sid="4">
+        It depends on what is the place and the aim you are shopping.
+       </s>
+       <s pid="2" sid="5">
+        For example some people always shopping to get food or stuff the need in everyday life, they won't enjoy this kind of shopping, because it is not getting what they want.
+       </s>
+       <s pid="2" sid="6">
+        The place where you are shopping  also very important.
+       </s>
+       <s pid="2" sid="7">
+        For example in HK all the areas have lots of people it won't let you feel good of the noise and times when you are shopping.
+       </s>
+       <s pid="2" sid="8">
+        Because have too many people it make you want to stay home  won't enjoy shopping.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        After I've written this composition, I think that you will enjoy shopping most of the time, but still have sometimes you won't.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

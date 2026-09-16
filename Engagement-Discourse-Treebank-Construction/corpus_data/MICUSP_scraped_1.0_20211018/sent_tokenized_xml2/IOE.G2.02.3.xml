@@ -1,0 +1,297 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Optimality of Randomized Trunk Reservation
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Feinberg and Reiman establish elegantly the optimality of randomized trunk reservation in a generalized M/M/c/N queue reward system, subject to a constraint on long-run average customers blocked.
+      </s>
+      <s pid="1" sid="2">
+       Once showing that there exists an optimal policy of the randomized trunk reservation form, they strengthen the claim by outlining a solution procedure via linear programming, and they also describe how an optimal randomized policy can be reduced to an equivalent optimal stationary policy.
+      </s>
+      <s pid="1" sid="3">
+       These reasons make their paper novel and significant.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       First, it is essential that the reader (myself included) understand the structure of a randomized trunk reservation policy.
+      </s>
+      <s pid="2" sid="2">
+       In brief, such a policy
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (where
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     represents the probability of accepting the current customer type given the current number in system) has the following characteristics:
+     <p>
+     </p>
+     <list>
+      <item>
+       i) It is stationary (i.e. decisions depend only on the current state)
+      </item>
+      <item>
+       ii)
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       , where
+       <i>
+        n
+       </i>
+       represents the number of customers in the system and 1 represents the customer type of the arrival seeing n customers in the system
+      </item>
+      <item>
+       iii)
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+      </item>
+      <item>
+       iv)
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+      </item>
+      <item>
+       v) exactly one state
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       has
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+      </item>
+     </list>
+     <p>
+      <s pid="4" sid="1">
+       If we replace the last condition by requiring that
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     for all
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , then the policy is said to be (stationary) trunk reservation.
+     <p>
+     </p>
+     <p>
+      <s pid="6" sid="1">
+       Now, a couple of notes about the model itself.
+      </s>
+      <s pid="6" sid="2">
+       The authors formulate the problem as maximizing the long-run average reward subject to rejecting no more than a certain proportion of type 1 customers.
+      </s>
+      <s pid="6" sid="3">
+       Type 1 customers are of interest because they carry a reward that is at least as large as that of any other customer type.
+      </s>
+      <s pid="6" sid="4">
+       It should be noted that the authors obtain nice properties for the transition probabilities because of their use of purely Markovian arrival and service distributions, and moreover, that the service distributions are i.i.d.
+      </s>
+      <s pid="6" sid="5">
+       Without making this assumption, the paper would become immensely more complex and would lose some intuitive value.
+      </s>
+     </p>
+     <p>
+      <s pid="7" sid="1">
+       The second section of the paper recycles an earlier paper by Feinberg to show that for every feasible such problem (i.e. the rejection criteria is not too sensitive) there exists a 1-randomized stationary optimal policy.
+      </s>
+      <s pid="7" sid="2">
+       This is the main crux of the section, but it also shows with less fanfare how to obtain the limiting probabilities for each state for a given policy.
+      </s>
+      <s pid="7" sid="3">
+       This identity is used repeatedly throughout the paper.
+      </s>
+      <s pid="7" sid="4">
+       One also finds in this section a nonlinear program whose solution yields a randomized stationary policy.
+      </s>
+      <s pid="7" sid="5">
+       This math program will be refined at a future point in the paper.
+      </s>
+     </p>
+     <p>
+      <s pid="8" sid="1">
+       The third section is the heart of the paper.
+      </s>
+      <s pid="8" sid="2">
+       In it, the authors carefully construct a proof for the optimality of randomized trunk reservation, or of the equivalence of 1-stationary randomized optimal policies and optimal randomized trunk reservation policies.
+      </s>
+      <s pid="8" sid="3">
+       To prove the main theorem, they require a secondary theorem and four lemmas.
+      </s>
+      <s pid="8" sid="4">
+       The proofs are long and intricate, and a reader who wants to truly understand the paper would do well to study them.
+      </s>
+      <s pid="8" sid="5">
+       In essence, they show that a randomized stationary optimal policy cannot optimally not have the properties of randomized trunk reservation that I outlined above.
+      </s>
+     </p>
+     <p>
+      <s pid="9" sid="1">
+       I found the fourth section to be the most interesting and impressive.
+      </s>
+      <s pid="9" sid="2">
+       Based on the conclusion from the previous section that any stationary randomized policy has the property that type 1 customers are never rejected, they are able to greatly simplify the math program set forth in section two.
+      </s>
+      <s pid="9" sid="3">
+       Better yet, they are able to reduce the NLP to an equivalent LP simply by substituting a composite
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     for the product of pn
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and converting inequalities to equalities by adding slack variables.  It turns out that by exploiting complementary slackness, the optimal solution to this primal LP yields exactly one
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , and all other
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     are either equal to 0 or pn.  Thus, by solving this LP (for which fast methods do exist since this is a finite state SMDP), a researcher can obtain an optimal randomized trunk reservation policy. It is noteworthy that none of the optimality theorems proposed in this paper conclude that all optimal solutions to the SMDP are of the form of randomized trunk reservation.  Yet, the LP in (4.7) - (4.11) gives a solution (assuming feasibility) that is exactly of the desired form, once appropriate transformations (concerning xn,j) are made. To me, this discovery is significant!
+     <p>
+     </p>
+     <p>
+      <s pid="11" sid="1">
+       Feinberg and Reiman conclude with three brief sections, the first of which handles a special case where m = 2 and the objective function is to minimize the long-run average number of type 2 customers rejected.
+      </s>
+      <s pid="11" sid="2">
+       The second proves how a 1-randomized stationary policy, which is deterministic in all states but one (say (n, j)) , can be simplified to a policy where uncertainty only exists the first time customer type j sees n customers in the system for each transition to state (
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     ).  Finally, by replacing the term
+     <q>
+      policy
+     </q>
+     with
+     <q>
+      strategy
+     </q>
+     , the authors show how to apply the results of section 6 to continuous time MDPs.  This is done by carefully specifying a threshold
+     <i>
+      T
+     </i>
+     in the epoch resulting from a transition to n customers in the system such that type
+     <i>
+      j
+     </i>
+     customers are only accepted until
+     <i>
+      T
+     </i>
+     time units have elapsed, after which time they are rejected until the next state transition.  By doing so, the policy used in the lone randomized state is not changed.  This is useful if one would rather base decisions on a
+     <q>
+      clock
+     </q>
+     than on a
+     <q>
+      count.
+     </q>
+     I think that using this threshold strategy might be helpful in writing simulation code to model the long run average reward.
+     <p>
+     </p>
+     <p>
+      <s pid="13" sid="1">
+       If I had to make any suggestions to the authors, I would have just two.
+      </s>
+      <s pid="13" sid="2">
+       First, it seems to me that the second section is quite disjoint from the rest of the paper, and its notation slightly confusing.
+      </s>
+      <s pid="13" sid="3">
+       Since it had already been published in a different paper, the authors could have cited the main results without such loss of continuity.
+      </s>
+      <s pid="13" sid="4">
+       Secondly, it is intuitively obvious, given the problem assumptions, that in an optimal policy, one would probably never reject type 1 customers.
+      </s>
+      <s pid="13" sid="5">
+       They bring the greatest reward, there is a constraint on the proportion of them rejected, and there is no discouragement (e.g. excessively long service times) from admitting them.
+      </s>
+      <s pid="13" sid="6">
+       I therefore question the choice of the constraint placing a restriction on type 1 customers.
+      </s>
+      <s pid="13" sid="7">
+       Indeed, it hardly seems a constraint!
+      </s>
+      <s pid="13" sid="8">
+       Perhaps the choice of a constraint could depend on the particular application of the SMDP presented in this paper.
+      </s>
+      <s pid="13" sid="9">
+       Nevertheless, I thought the paper was excellent.
+      </s>
+     </p>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

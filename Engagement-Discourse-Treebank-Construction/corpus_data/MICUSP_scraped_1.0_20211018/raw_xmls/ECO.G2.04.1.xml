@@ -1,0 +1,697 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Asymmetric Stock Price Response to Firms' Earnings Announcements
+   </div>
+   <div class="abstract">
+    Abstract
+    <p>
+     This paper examines the asymmetric stock price response to good news and bad news in the event of firms' earnings announcements.  A modified event study analysis of firms' earnings announcements shows the existence of asymmetry in stock price response.  The effects of industry-specific factors such as the Herfindahl index, CEO compensation, firm credit rating, and firm size on asymmetric stock price response are studied.  This paper has three results.  First, on average, the stock price responds more to bad news than to good news.  The difference in responses, although small, is statistically significant.  Second, there is large heterogeneity across different industries.  For example, some industries respond to bad news, while other industries do not respond, or even respond positively.  Third, the variance of the stock price response to the earnings announcements has a larger effect on the asymmetry in stock price response than the magnitude of the stock price change itself.  Finally, the effects of industry-specific variables on the stock price response are investigated.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1. Introduction
+    </div>
+    <p>
+     Asymmetric stock price response to earnings announcements has long been an interesting and important topic in accounting, finance and economic research.  This paper empirically investigates the existence of asymmetric stock price response to abnormal earnings both at aggregate and industry levels.  These asymmetries are identified by comparing the response of the stock price to good news to the response of the stock price to bad news.  In order to uniformly measure asymmetry in stock price response, the difference between actual earnings and analysts' mean forecasts are defined as abnormal earnings.  Positive abnormal earnings are categorized as good news and negative abnormal earnings as bad news.  This method gives an ideal measure for information about firms' earnings because it measures
+     <q>
+      quality
+     </q>
+     as well as quantity of information.  In addition, the dependence of the asymmetric stock price response on the industry that the firm belongs to is also examined.  This paper investigates if the average asymmetric stock price response in an industry is related to industry characteristics, such as the Herfindahl index, CEO (Chief Executive Officer) compensation, credit rating information, and firm size.
+    </p>
+    <p>
+     There has been few quantitative research performed at the industry level to detect the asymmetric stock price response.  This paper gives an interesting motive to investigate the reason for the different stock price responses between industries.  Quantitatively, this approach has some advantages in that asymmetric stock price response in each industry is easily detected using a simple OLS specification, and the interaction of the industry-specific variables with abnormal earnings can be analyzed to identify the effect of each industry-specific variable on the asymmetry in stock price response.  In fact, there is a large body of research on asymmetric stock price response, and an equally large one on the relationship between key industry-specific factors and voluntary disclosure or earnings management.  However, there has been little work linking these two studies.  This paper examines an empirical link between these two studies.
+    </p>
+    <p>
+     I find that there exists asymmetry in stock price response in aggregate level.  The econometric specification shows that the coefficient of good news is 0.1110 and that of bad news is -2.421.  This implies that overall bad news has a larger impact on the stock price change than good news does.  However, another econometric specification performed in industry level suggests that there is huge heterogeneity in asymmetric stock price response across industries.  These asymmetries are more likely to be related to the variance of the stock price change than to the magnitude of the stock price change itself.  The empirical link between the key industry-specific factors and stock price response is examined.  The consistency of the results with prediction of relating theories is also checked.  Most of the key industry-specific variables are likely to follow the pattern that the corresponding theory predicted.
+    </p>
+    <p>
+     The remainder of the paper proceeds as follows.  Section 2 reviews related empirical or theoretical literature.  Section 3 contains corresponding data.  Section 4 discusses the asymmetric stock price response in aggregate level.  Section 5 discusses the heterogeneity across industries.  Section 6 characterizes the sources of heterogeneity discussed in Section 5.  Section 7 concludes this paper with a discussion of some implications of the results for future research.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2. Literature Review
+    </div>
+    <p>
+     For asymmetric stock price response in earnings announcement, Kross and Schroeder (1984) provide an empirical investigation of the effect of quarterly earnings announcement timing on stock price returns.  They found that early quarterly earnings announcements contain better news and are associated with larger abnormal stock returns.  MacKinlay (1997) shows that both good news and bad news have strong impact on the cumulative abnormal return.  He shows that the absolute value of the statistics for testing the impact of news is higher for good news than bad news.
+    </p>
+    <p>
+     Asymmetric stock price response might be attributed to a few factors such as earnings management and/or voluntary disclosure occurred before earnings announcement.  First of all, what earnings management is should be clarified.  Notice that there is no consensus on defining earning management
+     <a class="fnref" href="#fn1" id="fnref_fn1">
+      1
+     </a>
+     .  Following Schipper (1989), I define earnings management as
+     <q>
+      a purposeful intervention in the external financial reporting process, with the intent of obtaining some private gain.
+     </q>
+     If earnings management is an unobservable component, it is reasonable to assume that investors and other firms in the same industry cannot unravel the effect of earnings management on reported earnings.
+    </p>
+    <p>
+     Analytical or empirical research on managers' voluntary disclosure has shown that there are three different effects on stock price according to which information managers are more likely to reveal before the quarterly earnings announcement.  First, if firms tend to voluntarily disclose more good news than bad news, the stock price response to positive abnormal earnings in actual earnings announcement is expected to be smaller than the response to negative abnormal earnings.  Lev and Penman (1990) document that earnings forecasts are used by managers of
+     <q>
+      good news
+     </q>
+     firms to screen themselves out from other firms with
+     <q>
+      bad news
+     </q>
+     in a signaling scenario.  However, they do not find that their results are consistent with the negative price reaction implication for the nondisclosing firms in the same industry.  Second, if firms are more likely to disclose bad news than good news, the stock price response to positive abnormal earnings in actual earnings announcements is larger than the response to negative abnormal earnings since quarterly earnings announcements that convey large negative earnings surprises are preempted by voluntary disclosure while other earnings announcements are preempted less(see Skinner (1994)).  Lastly, if firms are willing to disclose good news and bad news equally, the stock price response to either abnormal earnings in actual earnings announcement is same.  According to Pownall, Wasley, and Waymire (1993) forecasts are less informative than earnings announcements for their full sample and differences across forecast forms are not significant at conventional levels.  They find that voluntary disclosures are associated with a stock price response which is, on average close to zero.
+    </p>
+    <p>
+     Theoretical analysis on incentives for voluntary disclosure associated with industry-specific factors has shown that key industry-specific factors could explain a large portion of asymmetry in stock price response.  A highly concentrated industry (high Herfindal indexed industry) is expected to have large stock price response regardless of signs of abnormal earnings.  Darrough and Stoughton (1990) predict that competition in the product market encourage voluntary disclosure.  The effect of voluntary disclosure might lower the stock price response in earnings announcement.  The degree of asymmetry is, however, not yet analyzed.  In a similar study, Dontoh (1989) supports that in an N-firm oligopoly, firms have incentives to disclose unfavorable information about future outcome as well as favorable information depending on the types of firms.  Thus it is expected that an industry with a higher HHI will have lower stock price responses with almost no symmetry in earnings announcements.
+    </p>
+    <p>
+     Murphy (1998) supports that CEOs who receive relatively small bonus payments have potentially less explicit incentives to manipulate income so as to maximize bonus-based compensation.  Murphy and Zimmerman (1993) point out that the first class of discretionary behavior - reflecting the managerial horizon problem - is likely to be relatively more pronounced in firms with good corporate performance and routine retirements while the other two classes of discretionary behavior- outgoing CEOs covering-up poor performance and incoming CEOs taking a big bath- are likely to be more pronounced in firms with deteriorating economic health. The irresolvable links between performance and discretionary behavior make it difficult to disentangle the effects of poor performance from the effects of managerial discretion.  Note that earnings management is not necessarily tied with poor economic performance, but is highly correlated with deteriorating corporate performance.  Thus higher portions of bonus payments in CEO compensation leads to larger amounts of the stock price response due to higher incentives in earnings management.  While poor economic health is more likely to encourage CEOs to manage earnings.
+    </p>
+    <p>
+     By simple logic, lower earnings management is expected with higher credit rated firms since the better firm's credit rating is, the better performance of a stock and dividends are made.  So there might be a negative relation between the stock price response and firms' credit rating.  For theoretical support, Bagnoli and Watts (2000) indicate that firms may exaggerate their earnings in a world driven by multi-firm-comparisons because they expect other firms to do so.  They also find that the equilibrium amount of earnings management depends not only on the earnings management method itself but also on the proportion of long-term investors' in the firm.  This implies that firms with a higher crediting rating for long-term issuer's credit rating do less earnings management under the assumption that investors' decision is based on all the information available including the firms' credit rating.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     3. Data
+    </div>
+    <p>
+     In this section, quarterly earnings announcements are considered.  I investigate the information content of quarterly earnings announcements for the entire US firms in the COMPUSTAT® Industrial data over the 5-year period from January 1997 to December 2001.  These announcements correspond to the quarterly earnings for the last quarter of 1996 through the third quarter of 2001.  For each firm, the daily stock prices for the corresponding earnings announcement are collected from the same source.  For each firm and quarter, three pieces of information are gathered: the date of the announcement, actual announced earnings measured in earnings per share, and the analysts' mean forecasts.  A measure of the deviation of the actual announced earnings from the market's ex-ante expectation is required in order to analyze the impact of abnormal earnings on the stock prices.  I used the analysts' mean quarterly earnings forecasts from the Institutional Brokers Estimate System (I/B/E/S) to proxy for the market's expectation of earnings.  I/B/E/S compiles forecasts from analysts for a large number of firms and reports summary statistics each month.  In order to control the change in firm's economic performance and macroeconomic shock, the industry average of stock prices on the corresponding dates and the S&amp;P 500 Indices from COMPUSTAT® Industrial data are included.  All firms are classified by their industry classification codes.  From this sample 22 industries were dropped due to insufficient financial data in the regression.
+    </p>
+    <p>
+     The COMPUSTAT® Industrial CEO compensation data taking into account options granted, firms' sales data, and S&amp;P Long Term Issuer's Credit rating data as firms' credit rating information are used in another regression.  CEO compensation is comprised of the following: salary, bonus, other annual, total value of restricted stock granted, total value of stock options granted (using Black-Scholes), long-term incentive payouts, and all other total.  The quarterly average CEO compensation is calculated under the assumption that the annual average CEO compensation could be evenly spread throughout the years.  The incentive variables are defined as the ratio of incentive related compensation to total compensation.  This could measure how the CEOs' discretionary intention affects the stock price in the event of earnings announcements.  For the Herfindahl index, I computed the market share of each firm using its quarterly sales data relative to the total industry sales.  Note that the Herfindahl indices were computed in the original data set simply because the more available sales information obtained the better the results.  Information about firms' credit rating was obtained from COMPUSTAT® Industrial data after comparing this with data from Moody's Default Risk Services database.  According to the data manual in COMPUSTAT®, credit rating information is defined as a current opinion of an issuer's overall creditworthiness, apart from its ability to repay individual obligations.  The S&amp;P Long Term Issuer Credit rating was employed.  From this sample 52 industries were dropped due to insufficient observation in the regression.  Lastly, firms' quarterly sales data is used as a proxy for firm size.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     4. Asymmetric Stock Price Response in Aggregate Level
+    </div>
+    <div>
+     <div class="head_2">
+      A. Empirical Specification
+     </div>
+     <p>
+      I examine the stock price response of firms in aggregate level to the announcement of earnings in every quarter over 1997-2001.  If stock price response to positive abnormal earnings and negative abnormal earnings differ systematically, it is likely that there exists asymmetric stock price response.  To explore this, I examine the stock prices, abnormal earnings, industry average stock price and the S&amp;P 500 Index.  For example, when we observe positive or negative abnormal earnings ex-post, the corresponding stock price responses could either vary equally in both cases or represent some asymmetry.  I test whether there is asymmetric stock price response to their earnings announcement through aggregate level OLS specification.
+     </p>
+     <p>
+      In order to detect the stock price response, I use a modified event study of earnings announcements repeatedly.  The usefulness of a modified event study is that, given rationality in the marketplace, the effect of an earnings announcement will be reflected immediately in stock prices.  The event's economic impact can be measured using the stock prices observed over a relatively short time period.  The period of interest expanded to multiple days including the day before the announcement and the day after announcement.  This captures the stock price effects of announcements which occur after the stock market closes on the announcement day.  I assume that there exists no correlation between the reported earnings by firms and the mean value of analysts' forecasts.  In order to control common shock in the stock market, I use the S&amp;P 500 indices and to control industry-specific shock I include the average industry stock prices.  The equation to be estimated has the following form for each industry:
+      <a class="fnref" href="#fn2" id="fnref_fn2">
+       2
+      </a>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (1)
+     </p>
+     <p>
+      where
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : stock price for firm i at time t, earnings announcement date,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : earnings per share,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : analysts' mean forecasts,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : S&amp;P 500 indices,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : industry average stock price,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is a dummy variable which equals 1 during the positive earnings relative to the analysts' mean forecasts and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is a dummy variable which equals 1 during the negative earnings relative to the analysts' mean forecasts, and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is an error term.
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (2)
+     </p>
+     <p>
+      The model suggests that positive coefficient on the difference in reported earnings by firms and the analysts' mean forecasts would be expected when the positive abnormal earnings lead to positive impact on stock prices.  But negative or 0 coefficient on the positive abnormal earnings variable could be observed when the abnormal earnings have negative impact or zero impact on stock prices.  Note that the interesting part is not the value of the coefficients themselves but the difference between two coefficients.  The difference in coefficients of two opposite signed variables that represent asymmetry, explains the strength of asymmetric response of the stock prices.
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     measures how abnormal earnings will positively affect the increase in stock prices and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     measures how negative abnormal earnings will affect the difference in stock prices.  Thus
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     reflects the overall effect of abnormal earnings on the difference in stock prices: how asymmetric these opposite effect would be.
+     <p>
+     </p>
+     <p>
+      However, this gap reflects not only asymmetric stock price response from abnormal earnings but also other forces resulting from changes in the economic performance of the firm's industry.  This justifies including the average industry stock prices and the S&amp;P 500 indices to separate the effect of asymmetric stock price from the effect of industry-specific economic factors mentioned above.  Since the number of observations available for estimation is large enough, the use of Ordinary Least Square (OLS) is justified for each industry.  The scope of investigating abnormal earnings is constrained by the limited disclosure of information in quarterly financial announcements.
+      <a class="fnref" href="#fn4" id="fnref_fn4">
+       4
+      </a>
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      B. Results
+     </div>
+     <p>
+      A summary of the sample data for the regression is presented in Table 1.  The total number of industries collected from the data source is 393 and 366 out of 393 industries remain since 27 out of 393 industries were dropped due to insufficient observation.  Table 1 part A reports the summary statistics before the differences of the variables were made.  The sample size is 96,784, which is calculated based on the number of actual EPS observations.  Table 1 part B informs the sample statistics after the differences were made.  The sample size is 42,358.  This provides summary statistics for all the variables used in the OLS specification.  The OLS regression, performed in the aggregate level is presented in Table 2.
+     </p>
+     <p>
+      In the aggregate industry level, the results support the asymmetry in stock price response to earnings announcements.  These results also indicate that all the coefficients are statistically significant at 1-percent significance level with and without time dummies and industry dummies.  The OLS regression with dummies shows that positive abnormal earnings variable has a positive coefficient.  In other words, the stock price is more likely to rise when earnings announcements contain good news.  The magnitude of the coefficient implies that, for instance, when a firm in this industry reports positive abnormal earnings about 1 percent of the analysts' mean forecasts, the stock price one day after the earnings announcement date is expected to rise by 11 percent more than it would otherwise.  Also the fact that the coefficient of negative abnormal earnings is larger than that of positive abnormal earnings in absolute term implies that the stock price responds more to bad news than good news.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     5. Heterogeneity across Industries
+    </div>
+    <div>
+     <div class="head_2">
+      A. Empirical Specification
+     </div>
+     <p>
+      In this section, I study the stock price response of firms to the announcement of earnings in different industry level in order to see whether there is heterogeneity of stock price response across industries.  At this stage, the same econometric specification and equation as in the previous section is used.  Based on the arguments provided at the end of the previous section the following hypotheses for each industry relating to the asymmetric stock price response are tested:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      No asymmetric stock price response exists across industries.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      B. Results
+     </div>
+     <p>
+      As in the previous section, I find that there is asymmetric stock price response in aggregate level by using OLS specification.  Now I test the hypothesis that no asymmetric stock price response exists in earnings announcement in different industry levels.  If there is no asymmetry in the stock price response, those two estimated coefficients of the abnormal earnings in every industry have the same magnitudes.  Graphically, two estimated coefficients are scattered on the 45 degree line if no industry is expected to have the asymmetric effect on abnormal earnings.  As shown in Figure 1 and Figure 1-1, there exists clear asymmetric response of stock prices in many industries.  This finding supports that there is heterogeneous stock price response in different industries.  Figure 1-1 represents that the absolute magnitude of the estimated coefficients of the positive abnormal earnings is larger than that of the negative abnormal earnings overall and some points are clearly located outside of the 45 degree line.  Figure 1-1 also shows that coefficients of positive abnormal earnings are scattered broader along the axis than those of negative abnormal earnings.  Namely, many industries are more likely to have larger stock price response to good news than to bad news.  The asymmetry is related not to the magnitude of stock price change but to the variance of this change.  Summaries of the sample data for the industry level regression are presented in Table 3 and Table 4.  The number of industries that show the greater stock price response to negative abnormal earnings is 128 while 238 industries report that the stock price response to positive abnormal earnings would be larger than that to negative ones.  However, only 61 industries show that they have statistically significant asymmetric stock price response.  Results for the industry-wide OLS regression of the difference in stock prices on the abnormal earnings and the controls for rational stock market conditions are shown in Table 3.  Table 3 exhibits that 23 out of 366 industries show the asymmetric stock price response, which is statistically significant at the 1-percent level.  Up to 10-percent significance level, 61 industries out of 366 have the difference in estimated coefficients that are statistically different from 0.  The detailed information about other industries which represent asymmetric stock price response is provided in Table 4.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     6. Sources of Heterogeneity
+    </div>
+    <div>
+     <div class="head_2">
+      A. Theoretical Prediction
+     </div>
+     <p>
+      In this section, sources of heterogeneity across industries are explained by the corresponding theories of key industry-specific factors, which are provided in Section 2.
+     </p>
+     <p>
+      The evidence of including voluntary disclosure is consistent with the idea that managers have incentives to preempt the announcement of large negative earnings surprises, and they have incentives to distinguish themselves by declaring good economic performance.  This voluntary disclosure would affect the stock price immediately so that it will lead to lower impact of quarterly earnings announcement on the stock prices.  Accordingly, unfavorable voluntary disclosure will reduce the impact of negative earnings surprise in earnings announcement.  So if firms voluntarily disclose favorable information more often than they do unfavorable information, the stock price response to the negative abnormal earnings will be larger than the response to the positive abnormal earnings.  Also if firms are more likely to disclose unfavorable information than favorable information, the stock price response to the positive abnormal earnings will be larger than the response to the negative abnormal earnings.  If they disclose voluntarily both favorable and unfavorable information, the asymmetric stock price response is not expected.
+     </p>
+     <p>
+      Also, including voluntary disclosure justifies the phenomena that the stock prices could rise (fall) when we have bad news (good news).  For example, when we observe the positive abnormal earnings ex-post, the stock price one day after earnings announcement date is expected to rise without prior information about future income or any earnings management.  The stock price is, however, expected to fall with previous voluntary disclosure which already carried very favorable news about earnings and no more promising news, but note that this response could be much larger than it is in the case we observe negative abnormal earnings.  Similarly, when we observe negative abnormal earnings ex-post, the stock price one day after earnings announcement is expected to fall without prior information or any earnings management by the same magnitude when we observe positive abnormal earnings.  Also the stock price could even rise with previous voluntary disclosure to preempt the negative earnings surprise.
+     </p>
+     <p>
+      The results predicted by corresponding theories are following: A highly concentrated industry is less likely to have asymmetry in stock price due to less voluntary disclosure.  Since CEOs who receive relatively small bonus payments have potentially less explicit incentives to manage earnings
+      <a class="fnref" href="#fn5" id="fnref_fn5">
+       5
+      </a>
+      , higher portions of bonus payments in CEO compensation lead to larger amounts of the stock price response due to higher incentives in earnings management.  The amount of discretionary compensation is expected to explain the asymmetry in stock price response.  The better credit rating would be related to less incentive to manage earnings, thus less asymmetry in stock price if other conditions are the same.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      B. Empirical Specification
+     </div>
+     <p>
+      In this section, I investigate the source of heterogeneity in different industries using simple econometric method.  Once asymmetric stock price response has been detected both in aggregate and industry levels, I examine the stock price response of firms in each industry to the announcement of earnings, taking into account the interaction terms between abnormal earnings and the four industry-specific factors, such as a change in number of competitors in the market which can be represented by a Herfindahl index, a change in firm CEO compensation, a change in firms' credit rating and a change in firm size proxied by quarterly sales.  For example, I examine if an industry is more concentrated, an individual firm in this industry more likely to have large/small response in stock price.  Also I check if changes in credit rating or CEO compensation explain the degree of stock price response to earnings announcements.  Since CEO compensation includes the bonus payments and the total value of options granted, adding this variable could explain how much the asymmetry in stock price response is affected by the amount of discretionary portion of compensation.  I also estimate the effect of incentive variables defined as the discretionary portion of CEO compensation.  I assume that the previously detected the asymmetric stock price response is determined by a linear combination of some observable industry strategic factors, and also an unobserved component.  Thus asymmetric stock price response which might be explained by key industry-specific factors has the following form:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (3)
+     </p>
+     <p>
+      where
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : the overal effect of abnormal earnings in firm i at time t, HHIt : Herfindahl index in firm i's industry, CEOCOMP: the average CEO compensation including option grants, CRit : firm i's credit rating, Fsizeit : firm i's size, and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : error term.  In order to analyze how much these industry factors could explain the asymmetry in stock price response, I allow them to interact the abnormal earnings.  The resulting equation by substituting the equation (3) into the equation (1) yields the industry-wide regression equation to be estimated:
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (4)
+     </p>
+     <p>
+      where difeg12it  :
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , the disjointed sum of  abnormal earnings in firm i at time t, and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     : error term.  Similarly, both at aggregate and industry levels the following hypothesis is tested:
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      None of the industry specific factors will explain the stock price response.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      C. Results
+     </div>
+     <p>
+      Table 5 provides summary statistics for the key industry-specific variables used in the OLS specification.  Note that we are interested in studying how the interaction terms of the variables of HHI, CEO compensation, incentive variable, credit rating information and firm size with abnormal earnings would affect the difference in the stock prices.  This industry-wide regression makes an attempt to ascertain whether the key industry-specific factors could explain the difference in the stock prices through the asymmetry in the stock price response.  It repeats the industry-wide OLS regression specification with and without incentive variables.  I assume that any interaction among the key variables should be zero because each variable was measured independently and no correlation exists.  By looking at the estimated coefficients of each industry-specific variable jointed with the abnormal earnings, I test the hypothesis that none of the industry specific factors will explain the difference in stock prices.  If the difference in stock prices shows no response to any interaction terms of four industry-specific variables, this supports the hypothesis that none of the industry specific factors will affect the difference in stock prices.  Otherwise, this supports that at least one of the industry-specific factors significantly affects the difference in stock prices.
+     </p>
+     <p>
+      Table 6 shows the OLS specification, taking into account interaction terms of industry-specific variables and the abnormal earnings in the aggregate level.  It shows that the CEO compensation interaction term and the credit rating interaction term are significantly different from 0 at the 5-percent level and at the 1-percent level, respectively.  With incentive variables, only credit rating interaction term is statistically significant at 1-percent level.  For the OLS specification without including incentive variables, 75 industries show significant effect on the stock price response.  Total number of industries successfully regressed is 164, and 134 observations are statistically significant up to the 10-percent level.  The effect of each industry-specific factor on the stock price is represented in Figure 2, Figure 3, Figure 4, Figure 5, and Figure 6, respectively.  For the Herfindahl index interaction term, the less concentrated industry is more likely to have higher effect on the stock price as seen in Figure 2-1.  As theory predicts, highly concentrated industries tend to have lower stock price response in earnings announcement.  For the CEO compensation interaction term, Figure 3-1 provides that small compensation would be more related to higher response in the stock price. This result is also consistent with the theory that higher compensation CEOs have less incentive to manage earnings in the event of earnings announcement.  Figure 4, 4-1 presents the effect of incentive variables on the stock price.  The pattern is somewhat different from that in CEOs: the medium portion of discretionary compensation not the small portion of it represents higher response in the stock price.  This means that the higher portion of CEO compensation could be used as discretionary, the more likely to show higher stock price response, except top compensation notch.  For the credit rating interaction term, Figure 5 implies that neither a very good rating nor a bad rating has large effect in the stock price.  Finally, the firm size interaction reveals that small firms tend to have larger stock price response to earnings announcements.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     7. Conclusion
+    </div>
+    <p>
+     The principal result of this paper is that the asymmetric stock price response at both the aggregate and industry level has been detected and is empirically related to key strategic industry-specific factors (Herfindahl index, CEO compensation, credit rating and firm size).  My results indicate that on average, the stock price responds more to negative abnormal earnings than to positive abnormal earnings.  The difference in responses, although small, is statistically significant.  Another interesting finding is that, the asymmetry in the stock price response is more related to the variance of the stock price change than to the magnitude of the stock price change itself (Figure 1).  The effect of industry-specific variables on the stock price is consistent with what the previous theory predicts.  For instance, the stock price has a larger effect in a relatively more concentrated industry.   However, for the effect of the credit rating interaction on the stock price, further development of theory is needed.  The fact that the variance of stock price response has a larger impact on the asymmetry in stock price response will naturally lead to time series econometric specification for future research.  Furthermore, it seems worthwhile to control voluntary disclosure in this model.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <p>
+     Table 1- Descriptive Statistics for asymmetric stock price response
+    </p>
+    <p>
+     A. Before the differences are made
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Notes: All the values are mean over time period from 1997 to 2001.  The value in parenthesis represents standard deviation.  Analysts' mean forecasts are calculated by the average of different analysts' forecasts for the same forecasted period.  EPS stands for Earnings Per Share.  Industry Average Stock Price
+    </p>
+    <p>
+     B. After the differences are made
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Notes: All the differences are made between the day before and the day after the earnings announcement except abnormal earnings, which is calculated the difference between actual earnings and the forecasts.  AMF stands for the analysts' mean forecasts.
+    </p>
+    <p>
+     Table 2 - The aggregate level of OLS Specification for asymmetric stock price response
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Notes: **  denotes that the corresponding coefficients are significant at 1-percent level.  Positive abnormal earnings is the case that actual earnings is larger than the analysts' mean forecasts and Negative abnormal earnings is the opposite case.  Time dummies in 1997, 1999 are significant.
+    </p>
+    <p>
+     Table 3 - The heterogeneity of asymmetry in stock price response across industries
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Notes: Total number of industries is 393. Actual number of industries is 366 since 27 industries are dropped due to insufficient information.
+    </p>
+    <p>
+     Table 4 - Industry information representing the asymmetry in stock price response
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 5 - Descriptive statistics for industry-specific factors
+    </p>
+    <p>
+     A. Key industry specific factors
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Notes: Positive abnormal earnings mean the case that actual earnings are larger than the mean forecasts by analysts.  HHI stands for the Herfindahl indices.  Incentive variable is the ratio of option granted to total CEO compensation.  S&amp;P Long-term Issuer Credit rating is used as credit rating information.  Firm size is calculated based on the size of firm's sales.
+    </p>
+    <p>
+     B. Interaction terms with positive abnormal earnings
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Notes: The interaction terms with 5 different variables are defined as HHI* difeg1, CEO*difeg1, INC1*difeg1, CR*difeg1, and Fsize*difeg1, respectively.  The variable difeg1 denotes positive abnormal earnings provided in the previous table.
+    </p>
+    <p>
+     Table 6 - The aggregate level of OLS Specification including interaction terms with industry-specific factors
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Notes: * and  **  indicate statistically significant at 5-percent level and 1-percent level, respectively.  The interaction terms with 5 different variables are defined as HHI* difeg1, CEO*difeg1, INC1*difeg1, CR*difeg1, and Fsize*difeg1, respectively.  The variable difeg1 denotes positive abnormal earnings provided in the previous table.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1. The asymmetric stock price response on the abnormal earnings
+    </p>
+    <p>
+     Notes: _b[difeg1] and _b[difeg2] indicate the coefficients of positive abnormal earnings and the coefficients of negative abnormal earnings on the stock price change, respectively.  The coefficients in all the industries are represented.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1-1. The asymmetric stock price response (enlarged version)
+     <a class="fnref" href="#fn6" id="fnref_fn6">
+      6
+     </a>
+    </p>
+    <p>
+     Notes: _b[difeg1] and _b[difeg2] indicate the coefficients of positive abnormal earnings and the coefficients of negative abnormal earnings on the stock price change, respectively.  Some outliers have been eliminated to focus on the pattern of distribution of these two coefficients.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2. The effect of Herfindahl interaction term on stock price
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2-1. The effect of Herfindahl interaction term on stock price (enlarger version)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3. The effect of CEOcomp interaction term on stock price
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3-1. The effect of CEOcomp interaction term on stock price (enlarger version)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 4. The effect of Incentive interaction term on stock price
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 4-1. The effect of Incentive interaction term on stock price (enlarger version)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 5. The effect of Credit rating interaction term on stock price
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 5-1. The effect of Credit rating interaction term on stock price (enlarger version)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 6. The effect of Firm size interaction term on stock price
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 6-1. The effect of Firm size interaction term on stock price (enlarger version)
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     REFERENCES
+    </div>
+    <ul id="N10275">
+     <li id="N10276">
+      Bagnoli, M., and Watts, S.G. "The effect of relative performance evaluation on earnings management: A game-theoretic approach." Journal of Accounting and Public Policy, 2000, 19 (4/5), pp.377-397.
+     </li>
+     <li id="N10278">
+      Beneish, Messod D. "Earnings Management: A Perspective." Managerial Finance, 2001, 27(12), pp. 3-17.
+     </li>
+     <li id="N1027A">
+      Cavalier, Judith. "Capital Structure and Market Competition." American Economic Review, June 1995,  pp. 415-435.
+     </li>
+     <li id="N1027C">
+      Chaney, Paul K. and Lewis, Craig M. "Earnings management and firm valuation under asymmetric information." Journal of Corporate Finance, 1995, pp. 319-345.
+     </li>
+     <li id="N1027E">
+      Dechow, P.M., Sloan, R.G., and Sweeney, A.P. "Detecting Earnings Management."The Accounting Review, 1995, 70(2), pp.193-225.
+     </li>
+     <li id="N10280">
+      Dutta, Sunil and Gigler, Frank. "The Effect of Earnings Forecasts on Earnings Mangement." Journal of Accounting Research, 2002, 40(3), pp. 631-655.
+     </li>
+     <li id="N10282">
+      Healy, P.M., "The Effect of Bonus Schemes on Accounting Decisions." Journal of Accounting and Economics, 1985, 7, pp. 85-107.
+     </li>
+     <li id="N10284">
+      Healy, P.M., and Wahlen, J.M. "A Review of the Earnings Management Literature and Its Implications for Standard Setting." Accounting Horizons, December 1999, 13(4), pp365-383.
+     </li>
+     <li id="N10286">
+      Jones, J. "Earnings management during important relief investigations." Journal of Accounting Research, Autumn 1995, 29, pp.193-228.
+     </li>
+     <li id="N10288">
+      MacKinlay, A. Craig. "Event Studies in Economics and Finance." Journal of Economic Literature, March 1997, 35, pp. 13-39.
+     </li>
+     <li id="N1028A">
+      Murphy, K.J. "Executive Compensation." working paper, 1998.
+     </li>
+     <li id="N1028C">
+      Lev, Baruch and Penman, Stephen. "Voluntary Forecast Disclosure, Nondisclosure, and Stock Prices." Journal of Accounting Research, Spring 1990, 28, pp.49-76.
+     </li>
+     <li id="N1028E">
+      Schipper, K. "Earnings management." Accounting Horizons, 1989, 3 (4), pp.91-102.
+     </li>
+     <li id="N10290">
+      Skinner, Douglas J. "Why Firms Voluntarily Disclose Bad News." Journal of Accounting Research, September 1994, 32, pp. 38-60.
+     </li>
+     <li id="N10292">
+      Titman, S., and Trueman, B. "Information Quality and the Valuation of New Issues." Journal of Accounting and Economics, June 1986, pp.159-172.
+     </li>
+     <li id="N10294">
+      Watts, R.L., and Zimmerman, J.L. "Positive accounting theory: A ten year perspective." The Accounting Review, 1990, 65 (1), pp.131-156.
+     </li>
+     <li id="N10296">
+      Wells, Peter. "Earnings management surrounding CEO changes." Accounting and Finance, 2002, 42, pp169-193.
+     </li>
+    </ul>
+   </div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 According to Healey and Wahlen (1999), earnings management is defined as: "Earnings management occurs when managers use judgment in financial reporting and in structuring transactions to alter financial reports to either mislead some stockholders about the underlying economic performance of the company or to influence contractual outcomes that depend on reported accounting numbers."
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2 For the original discussion of event studies, see MacKinlay (1999)
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3 The "abnormal earnings" is defined as the difference between EPS and AMF in this paper.
+    </div>
+    <div id="fn4">
+     <a href="#fnref_fn4">
+      4.
+     </a>
+     4 Corporate voluntary disclosure practice is left for the future research. For the further discussion, see Skinner (1994)
+    </div>
+    <div id="fn5">
+     <a href="#fnref_fn5">
+      5.
+     </a>
+     5  Murphy (1998)
+    </div>
+    <div id="fn6">
+     <a href="#fnref_fn6">
+      6.
+     </a>
+     6  Another regression performed by using "rate" information instead of level one in equation (1) gives same pattern of asymmetry as Fig. 1 and Fig. 1-1.
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

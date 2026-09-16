@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     37.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam, I am writing to you to complain about the musical show I went to see last Wednesday. I was told I would have the most perfect evening in London, but it was not. When I bought my ticket I expected to be able to take advantage of those discounts you announced in the newspaper advertisement but
+       <ns type="RC">
+        <i>
+         when
+        </i>
+       </ns>
+       I had to pay the most expensive price. I went to see the
+       <ns type="W">
+        <i>
+         performance at 19:30
+        </i>
+       </ns>
+       but it did not start until 20:15! I was really angry but I wanted to see Danny Brook. My surprise was when, instead of Mr. Brook, a different actor appeared on stage. At the end of the show I decided to go to the theatre restaurant but when I arrived I realized it was closed because the
+       <ns type="UJ">
+        <i>
+         musical
+        </i>
+       </ns>
+       show had finished too late! All I am asking for is a full refund of the money I spent
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the musical. I look forward to hearing from you. Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam, I am writing to you to complain about the musical show I went to see last Wednesday.
+       </s>
+       <s pid="1" sid="2">
+        I was told I would have the most perfect evening in London, but it was not.
+       </s>
+       <s pid="1" sid="3">
+        When I bought my ticket I expected to be able to take advantage of those discounts you announced in the newspaper advertisement but when I had to pay the most expensive price.
+       </s>
+       <s pid="1" sid="4">
+        I went to see the performance at 19:30 but it did not start until 20:15!
+       </s>
+       <s pid="1" sid="5">
+        I was really angry but I wanted to see Danny Brook.
+       </s>
+       <s pid="1" sid="6">
+        My surprise was when, instead of Mr. Brook, a different actor appeared on stage.
+       </s>
+       <s pid="1" sid="7">
+        At the end of the show I decided to go to the theatre restaurant but when I arrived I realized it was closed because the musical show had finished too late!
+       </s>
+       <s pid="1" sid="8">
+        All I am asking for is a full refund of the money I spent in the musical.
+       </s>
+       <s pid="1" sid="9">
+        I look forward to hearing from you.
+       </s>
+       <s pid="1" sid="10">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. Now Marion was really angry with her.
+      </p>
+      <p>
+       Some days ago Pat met her friend Paul, the editor of the school's newspaper. Paul asked her some questions about her childhood and her toys because he was going to write an article about children. While Pat was talking she remembered playing with her dolls and
+       <ns type="RV">
+        <i>
+         spending
+        </i>
+       </ns>
+       a good time with them. Then Paul asked her if she knew something about Marion's childhood. Pat told him some unimportant things such as she learnt to swim at the age of five or that she loved ants. But, suddenly, she started to talk about Marion's toys. She told Paul she had a special toy called Max and that she slept with him. A terrible mistake!
+      </p>
+      <p>
+       In the following edition the headline was: "Why
+       <ns type="MV">
+       </ns>
+       a teenager
+       <ns type="AGV">
+        <i>
+         sleeps
+        </i>
+       </ns>
+       with a toy called Max?" Everybody
+       <ns type="IV">
+        <i>
+         laughted
+        </i>
+       </ns>
+       at her. Marion felt really embarrassed. Two weeks later everybody
+       <ns type="RV">
+        <i>
+         forbade
+        </i>
+       </ns>
+       about Marion's secret and she
+       <ns type="RV">
+        <i>
+         took into account
+        </i>
+       </ns>
+       her relationship with Pat. They became friends again. But Marion would never tell Pat a secret again!!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        Now Marion was really angry with her.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Some days ago Pat met her friend Paul, the editor of the school's newspaper.
+       </s>
+       <s pid="2" sid="2">
+        Paul asked her some questions about her childhood and her toys because he was going to write an article about children.
+       </s>
+       <s pid="2" sid="3">
+        While Pat was talking she remembered playing with her dolls and spending a good time with them.
+       </s>
+       <s pid="2" sid="4">
+        Then Paul asked her if she knew something about Marion's childhood.
+       </s>
+       <s pid="2" sid="5">
+        Pat told him some unimportant things such as she learnt to swim at the age of five or that she loved ants.
+       </s>
+       <s pid="2" sid="6">
+        But, suddenly, she started to talk about Marion's toys.
+       </s>
+       <s pid="2" sid="7">
+        She told Paul she had a special toy called Max and that she slept with him.
+       </s>
+       <s pid="2" sid="8">
+        A terrible mistake!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In the following edition the headline was: "Why  a teenager sleeps with a toy called Max?"
+       </s>
+       <s pid="3" sid="2">
+        Everybody laughted at her.
+       </s>
+       <s pid="3" sid="3">
+        Marion felt really embarrassed.
+       </s>
+       <s pid="3" sid="4">
+        Two weeks later everybody forbade about Marion's secret and she took into account her relationship with Pat.
+       </s>
+       <s pid="3" sid="5">
+        They became friends again.
+       </s>
+       <s pid="3" sid="6">
+        But Marion would never tell Pat a secret again!!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

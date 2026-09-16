@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       DEAR MRS RYAN,
+      </p>
+      <p>
+       THANK YOU VERY MUCH FOR YOUR LETTER YOU SENT ME LAST WEEK. I'M VERY PROUD TO BE THE WINNER OF YOUR COMPETITION! I HAVE NEVER BEEN
+       <ns type="RT">
+        <i>
+         IN
+        </i>
+       </ns>
+       SUCH A CAMP BEFORE AND SO I'M LOOKING
+       <ns type="S">
+        <i>
+         FORWART
+        </i>
+       </ns>
+       TO SPENDING TWO WEEKS THERE. HERE
+       <ns type="AGV">
+        <i>
+         ARE
+        </i>
+       </ns>
+       THE INFORMATION YOU ASKED FOR:
+      </p>
+      <p>
+       IT IS ONLY POSSIBLE FOR ME TO TRAVEL IN JULY BECAUSE OF MY
+       <ns type="DJ">
+        <i>
+         UNREGULAR
+        </i>
+       </ns>
+       WORK.
+       <ns type="R">
+        <i>
+         IN JULY WE HAVE GOT
+        </i>
+       </ns>
+       LOW SEASON AND IT WILL BE EASIER TO GO
+       <ns type="W">
+        <i>
+         THEN ON
+         <ns type="S">
+          <i>
+           HOLLYDAY
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . FURTHER I WOULD PREFER
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         TENTS
+        </i>
+       </ns>
+       . I
+       <ns type="TV">
+        <i>
+         HAVE BEEN
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         IN
+        </i>
+       </ns>
+       A
+       <ns type="DJ">
+        <i>
+         SPORT
+        </i>
+       </ns>
+       CAMP LAST YEAR AND IT WAS
+       <ns type="RJ">
+        <i>
+         FUNNY
+        </i>
+       </ns>
+       TO SLEEP IN TENTS.
+      </p>
+      <p>
+       FROM THE ACTIVITIES I CHOOSE TENNIS AND SURFING. I
+       <ns type="TV">
+        <i>
+         PLAY
+        </i>
+       </ns>
+       TENNIS IN A
+       <ns type="RN">
+        <i>
+         CUP
+        </i>
+       </ns>
+       FOR FIVE YEARS BUT SURFING I HAVE NEVER DONE BEFORE.
+      </p>
+      <p>
+       <ns type="MV">
+       </ns>
+       WE NEED SOME SPECIAL
+       <ns type="DJ">
+        <i>
+         SPORT
+        </i>
+       </ns>
+       CLOTHES FOR
+       <ns type="AGQ">
+        <i>
+         THIS
+        </i>
+       </ns>
+       TWO ACTIVITIES? AND
+       <ns type="R">
+        <i>
+         IS IT ALSO
+        </i>
+       </ns>
+       ALLOWED TO BRING MY DOG WITH
+       <ns type="MA">
+       </ns>
+       ? HE'S A
+       <ns type="S">
+        <i>
+         SMAL
+        </i>
+       </ns>
+       ONE!
+      </p>
+      <p>
+       I'M LOOKING
+       <ns type="S">
+        <i>
+         FORWART
+        </i>
+       </ns>
+       TO HEARING FROM YOU
+      </p>
+      <p>
+       YOURS SINCERELY
+      </p>
+      <p>
+       ESTELLE BRAUER
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        DEAR MRS RYAN,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        THANK YOU VERY MUCH FOR YOUR LETTER YOU SENT ME LAST WEEK.
+       </s>
+       <s pid="2" sid="2">
+        I'M VERY PROUD TO BE THE WINNER OF YOUR COMPETITION!
+       </s>
+       <s pid="2" sid="3">
+        I HAVE NEVER BEEN IN SUCH A CAMP BEFORE AND SO I'M LOOKING FORWART TO SPENDING TWO WEEKS THERE.
+       </s>
+       <s pid="2" sid="4">
+        HERE ARE THE INFORMATION YOU ASKED FOR:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        IT IS ONLY POSSIBLE FOR ME TO TRAVEL IN JULY BECAUSE OF MY UNREGULAR WORK.
+       </s>
+       <s pid="3" sid="2">
+        IN JULY WE HAVE GOT LOW SEASON AND IT WILL BE EASIER TO GO THEN ON HOLLYDAY.
+       </s>
+       <s pid="3" sid="3">
+        FURTHER I WOULD PREFER  TENTS.
+       </s>
+       <s pid="3" sid="4">
+        I HAVE BEEN IN A SPORT CAMP LAST YEAR AND IT WAS FUNNY TO SLEEP IN TENTS.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        FROM THE ACTIVITIES I CHOOSE TENNIS AND SURFING.
+       </s>
+       <s pid="4" sid="2">
+        I PLAY TENNIS IN A CUP FOR FIVE YEARS BUT SURFING I HAVE NEVER DONE BEFORE.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        WE NEED SOME SPECIAL SPORT CLOTHES FOR THIS TWO ACTIVITIES?
+       </s>
+       <s pid="5" sid="2">
+        AND IS IT ALSO ALLOWED TO BRING MY DOG WITH ? HE'S A SMAL ONE!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I'M LOOKING FORWART TO HEARING FROM YOU
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        YOURS SINCERELY
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        ESTELLE BRAUER
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       DEAR KIM,
+      </p>
+      <p>
+       YOU KNOW THAT I ALWAYS WANTED TO HELP AT A CONCERT. TO BE
+       <ns type="R">
+        <i>
+         IN A
+        </i>
+       </ns>
+       STAFF
+       <ns type="UN">
+        <i>
+         TEAM
+        </i>
+       </ns>
+       WOULD BE WONDERFUL, I
+       <ns type="S">
+        <i>
+         THOUGTH
+        </i>
+       </ns>
+       . AND I WAS RIGHT! BUT NOW FROM THE BEGINNING:
+      </p>
+      <p>
+       AS YOU KNOW I WROTE TO THAT ORGANISATION
+       <ns type="RA">
+        <i>
+         WHO
+        </i>
+       </ns>
+       IS ALWAYS
+       <ns type="S">
+        <i>
+         RESPONSBLE
+        </i>
+       </ns>
+       FOR BIG EVENTS. ONE WEEK LATER THEY INVITED ME TO A POP CONCERT WHICH TOOK PLACE IN ZURICH LAST MONTH.
+      </p>
+      <p>
+       WHEN I ARRIVED WE FIRST HAD A MEETING. ALL
+       <ns type="RT">
+        <i>
+         FROM
+        </i>
+       </ns>
+       THE STAFF
+       <ns type="UN">
+        <i>
+         TEAM
+        </i>
+       </ns>
+       AND THE ORGANISATION
+       <ns type="S">
+        <i>
+         SPOK
+        </i>
+       </ns>
+       ABOUT THE RULES AND HOW TO SAVE PEOPLE. AFTER THE MEETING
+       <ns type="W">
+        <i>
+         WE
+         <ns type="S">
+          <i>
+           RECIEVED
+          </i>
+         </ns>
+         ALL
+        </i>
+       </ns>
+       THE SAME CLOTHES. WE WERE A
+       <ns type="S">
+        <i>
+         GROUPE
+        </i>
+       </ns>
+       ! ONE TEAM! BEFORE THE CONCERT WE HAD A BREAK TO EAT SOMETHING AND TO TALK TO EACH OTHER. IT WAS INTERESTING TO SEE THAT ALL PEOPLE HAVE
+       <ns type="RJ">
+        <i>
+         OTHER
+        </i>
+       </ns>
+       HOBBIES AND
+       <ns type="RN">
+        <i>
+         WORK
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       THE CONCERT WAS
+       <ns type="S">
+        <i>
+         VERRY
+        </i>
+       </ns>
+       LOUD AND LONG BUT WE DIDN'T HAVE TO WORK HARD. I WAS HAPPY THAT THERE WAS NO DANGER FOR THE PEOPLE DURING THE CONCERT. AFTER A NICE CONCERT WE HAD TO CLEAN EVERYTHING AND I WAS HAPPY WHEN I ARRIVED AT HOME EARLY IN THE MORNING..!
+      </p>
+      <p>
+       <ns type="L">
+        <ns type="S">
+         <i>
+          GREATING
+         </i>
+        </ns>
+       </ns>
+       AND HOPE TO SEE YOU SOON
+      </p>
+      <p>
+       Estelle
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        DEAR KIM,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        YOU KNOW THAT I ALWAYS WANTED TO HELP AT A CONCERT.
+       </s>
+       <s pid="2" sid="2">
+        TO BE IN A STAFF TEAM WOULD BE WONDERFUL, I THOUGTH.
+       </s>
+       <s pid="2" sid="3">
+        AND I WAS RIGHT!
+       </s>
+       <s pid="2" sid="4">
+        BUT NOW FROM THE BEGINNING:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        AS YOU KNOW I WROTE TO THAT ORGANISATION WHO IS ALWAYS RESPONSBLE FOR BIG EVENTS.
+       </s>
+       <s pid="3" sid="2">
+        ONE WEEK LATER THEY INVITED ME TO A POP CONCERT WHICH TOOK PLACE IN ZURICH LAST MONTH.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        WHEN I ARRIVED WE FIRST HAD A MEETING.
+       </s>
+       <s pid="4" sid="2">
+        ALL FROM THE STAFF TEAM AND THE ORGANISATION SPOK ABOUT THE RULES AND HOW TO SAVE PEOPLE.
+       </s>
+       <s pid="4" sid="3">
+        AFTER THE MEETING WE RECIEVED ALL THE SAME CLOTHES.
+       </s>
+       <s pid="4" sid="4">
+        WE WERE A GROUPE!
+       </s>
+       <s pid="4" sid="5">
+        ONE TEAM!
+       </s>
+       <s pid="4" sid="6">
+        BEFORE THE CONCERT WE HAD A BREAK TO EAT SOMETHING AND TO TALK TO EACH OTHER.
+       </s>
+       <s pid="4" sid="7">
+        IT WAS INTERESTING TO SEE THAT ALL PEOPLE HAVE OTHER HOBBIES AND WORK.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        THE CONCERT WAS VERRY LOUD AND LONG BUT WE DIDN'T HAVE TO WORK HARD.
+       </s>
+       <s pid="5" sid="2">
+        I WAS HAPPY THAT THERE WAS NO DANGER FOR THE PEOPLE DURING THE CONCERT.
+       </s>
+       <s pid="5" sid="3">
+        AFTER A NICE CONCERT WE HAD TO CLEAN EVERYTHING AND I WAS HAPPY WHEN I ARRIVED AT HOME EARLY IN THE MORNING..!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        GREATING AND HOPE TO SEE YOU SOON
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Estelle
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

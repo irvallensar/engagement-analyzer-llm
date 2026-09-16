@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Santigo, June 17th, 2000
+      </p>
+      <p>
+       Mr. Manager of the Circle Theatre,
+      </p>
+      <p>
+       While I was staying in London, I went to see one of your musical shows, "Over The Rainbow", because I had read the
+       <ns type="SX">
+        <i>
+         add
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the newspaper, and I thought it would be an interesting experience. Let me tell you now how everything really was.
+      </p>
+      <p>
+       One of the
+       <ns type="AGN">
+        <i>
+         reason
+        </i>
+       </ns>
+       I went to see that particular show
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       was the starring actor
+       <ns type="MP">
+       </ns>
+       announced in the
+       <ns type="SX">
+        <i>
+         add
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       Danny Brook, but when the show actually started,
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         forty five
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         minutes
+        </i>
+       </ns>
+       delay, I realized that Danny Brook was not in the play. The
+       <ns type="SX">
+        <i>
+         add
+        </i>
+       </ns>
+       also mentioned discounts, but that wasn't true either. After the play, which turned out to be just as bad as I thought, I wanted to relax in the Theatre Restaurant, but it was closed, and for no reason!
+      </p>
+      <p>
+       It is for these reasons that I expect a full refund of the ticket
+       <ns type="RN">
+        <i>
+         prize
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       is my right as a paying customer to get what I have paid for. Looking forward to hearing from you.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Santigo, June 17th, 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Mr. Manager of the Circle Theatre,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        While I was staying in London, I went to see one of your musical shows, "Over The Rainbow", because I had read the add on the newspaper, and I thought it would be an interesting experience.
+       </s>
+       <s pid="3" sid="2">
+        Let me tell you now how everything really was.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        One of the reason I went to see that particular show, was the starring actor announced in the add,  Danny Brook, but when the show actually started, with forty five minutes delay, I realized that Danny Brook was not in the play.
+       </s>
+       <s pid="4" sid="2">
+        The add also mentioned discounts, but that wasn't true either.
+       </s>
+       <s pid="4" sid="3">
+        After the play, which turned out to be just as bad as I thought, I wanted to relax in the Theatre Restaurant, but it was closed, and for no reason!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        It is for these reasons that I expect a full refund of the ticket prize, it is my right as a paying customer to get what I have paid for.
+       </s>
+       <s pid="5" sid="2">
+        Looking forward to hearing from you.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      5.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       We can hardly imagine life without
+       <ns type="S">
+        <i>
+         compures
+        </i>
+       </ns>
+       ,
+       <ns type="UP">
+        <i>
+         T.V.
+        </i>
+       </ns>
+       sets, microwaves, and so many other things, and yet
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       none of these things existed seventy years ago. I think that the life we live is easier than
+       <ns type="M">
+       </ns>
+       our parents
+       <ns type="MV">
+       </ns>
+       , thanks to technology. We can do things our grandparents could only dream of.
+       <ns type="MD">
+       </ns>
+       Internet, I think, is one of the most important inventions in the history of humanity. My life has not been affected or changed by technology, because when I was born, most of the things that I use in my daily life already existed. But technology is becoming more and more complicated, and new things are invented every day, so I think that our
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       will be completely different in forty years. And, since all these new things only make our
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       easier, technology is welcome.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        We can hardly imagine life without compures, T.V. sets, microwaves, and so many other things, and yet, none of these things existed seventy years ago.
+       </s>
+       <s pid="1" sid="2">
+        I think that the life we live is easier than  our parents , thanks to technology.
+       </s>
+       <s pid="1" sid="3">
+        We can do things our grandparents could only dream of.
+       </s>
+       <s pid="1" sid="4">
+        Internet, I think, is one of the most important inventions in the history of humanity.
+       </s>
+       <s pid="1" sid="5">
+        My life has not been affected or changed by technology, because when I was born, most of the things that I use in my daily life already existed.
+       </s>
+       <s pid="1" sid="6">
+        But technology is becoming more and more complicated, and new things are invented every day, so I think that our life will be completely different in forty years.
+       </s>
+       <s pid="1" sid="7">
+        And, since all these new things only make our life easier, technology is welcome.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

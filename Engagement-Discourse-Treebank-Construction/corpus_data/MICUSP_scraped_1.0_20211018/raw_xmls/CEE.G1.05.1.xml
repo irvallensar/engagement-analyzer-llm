@@ -1,0 +1,1157 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Analysis and Design of Composite Steel-Concrete Columns
+   </div>
+   <p>
+   </p>
+   <div class="abstract">
+    Abstract
+    <p>
+     Composite design is often an economically viable construction method providing increased strength and stiffness to ordinary reinforced concrete or steel columns. Still, a unified approach for the design of composite columns has not been established. This paper addresses the current design methods based on AISC LRFD, ACI 318, and EUROCODE 4 and discusses the viability of each method based on a review of the current research. In addition, new analysis methods that have been proposed are summarized. In the appendices an analysis based on AISC an ACI requirements is performed. Further remarks discuss special concerns that arise in connections to composite columns and seismic provisions.
+    </p>
+   </div>
+   <div>
+    OUTLINE
+    <p>
+     1. Introduction to Composite Columns
+    </p>
+    <p>
+     a. Types of Composite Columns
+    </p>
+    <p>
+     i. Concrete filled steel tube sections (CFT)
+    </p>
+    <p>
+     1. Advantages and disadvantages
+    </p>
+    <p>
+     ii. Concrete encased steel columns (SRC)
+    </p>
+    <p>
+     1. Advantages and disadvantages
+    </p>
+    <p>
+     2. Analysis and Design of Composite Columns
+    </p>
+    <p>
+     a. Current design methods
+    </p>
+    <p>
+     i. AISC 13th Edition
+    </p>
+    <p>
+     1. Axial strength
+    </p>
+    <p>
+     2. Plastic analysis
+    </p>
+    <p>
+     3. Simplified method
+    </p>
+    <p>
+     4. Strain compatibility
+    </p>
+    <p>
+     ii. ACI 318-05
+    </p>
+    <p>
+     iii. EUROCODE 4
+    </p>
+    <p>
+     b. Proposed analysis methods
+    </p>
+    <p>
+     i. Superimposed strength method
+    </p>
+    <p>
+     ii. Fiber analysis method
+    </p>
+    <p>
+     3. Special Concerns
+    </p>
+    <p>
+     a. Connections to composite columns
+    </p>
+    <p>
+     i. Concrete encased steel
+    </p>
+    <p>
+     ii. Concrete filled steel column
+    </p>
+    <p>
+     b. Seismic considerations
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <p>
+    The structural engineering field is always pushing to improve the efficiency and reliability of structural design. Building owners have long demanded more economic structures. If structural engineers couple these factors with the drive for taller and taller buildings and an improved understanding of structural design they will likely find the use of composite construction. More specifically, the use of composite columns to decrease deflections in moment-resisting connections and to minimize lateral deflections from wind and seismic loads has seen increased use (1). There are two types of columns that are frequently used, encased composite columns (SRC) and filled composite columns (CFT). Encased composite columns usually are built from structural steel shapes and then concrete is poured into forms around the steel, often rebar is used for confinement. Concrete filled columns are typically made from pipe or tube sections filled with concrete. Both column types have different analysis and design consideration. In addition to the two types of columns there are several design methods that have been developed which engineers must follow. There is no unified approach to this design. The AISC 13th Edition, the ACI 318-05, and the EUROCODE 4 each have their own unique requirements for composite columns each with different results. Due to this fact the codes have seen many design updates based on research studies to improve the performance of composite columns. Finally, there are several special concerns that must be addressed including connections design and seismic design provisions. This paper serves to be an introduction to composite column design, specifically introducing the column types, explaining their design methods, and discussing special design considerations.
+   </p>
+   <div>
+    <div class="head_1">
+     Introduction to Composite Columns
+    </div>
+    <p>
+     Composite columns have been made since the 1930’s but it was not until the 1960’s when Dr. Fazlur Khan proposed the concept of composite frame systems. Until that time, concrete encased columns had been used strictly for fireproofing applications (2). According to Galamabos, composite members gain their strength though the mechanical interlock, friction, and adhesion between the steel and concrete. Composite construction is often done to maximize the efficiency of the two materials, the concrete in compression and steel in tension (3). The use of steel is also reflected in increased shear strength of the beam and is rarely a limiting condition. This increase in efficiency can be seen from the beginnings of construction. Unlike regular reinforced concrete structures composite columns allow the steel frame to be built quickly, then other trades can follow behind them to complete construction. This is just one of the many advantages of composite columns. Griffis complied a comprehensive list of the advantages below (2):
+    </p>
+    <list>
+     <item>
+      1 Smaller cross-section than required for a conventional reinforced concrete column.
+     </item>
+     <item>
+      2 Larger load carrying capacity
+     </item>
+     <item>
+      3 Ductility and toughness available for use in earthquake zones
+     </item>
+     <item>
+      4 Speed of construction when used as art of a composite frame
+     </item>
+     <item>
+      5 Fire resistance when compared to plain steel columns
+     </item>
+     <item>
+      6 Higher rigidity when part of a lateral load carrying system
+     </item>
+     <item>
+      7 Higher damping characteristics for motion perception in tall buildings when part of a lateral load carrying system
+     </item>
+     <item>
+      8 Stiffening effect for resistance against buckling of the rolled shape
+     </item>
+    </list>
+    <p>
+     There are still some special considerations that must be taken into account during design. Column shortening caused by concrete shrinkage and creep is often hard to control in tall buildings. Estimating the amount of shortening is not a trivial matter. The shortening for shrinkage and creep can cause variation in levelness of the floor slab. There are also issues with congestion effects at column to beam connections due to a large amount of steel situated in encased columns. Thus, special care must be taken when detailing connections in composite columns (2). Still, composite columns find their place regularly in many useful applications.
+    </p>
+    <div>
+     <div class="head_2">
+      Concrete Filled Columns
+     </div>
+     <p>
+      Concrete filled columns utilize a hollow structural steel (HSS) or pipe and tube sections. These columns, which can be seen detailed in Figure 1 (4), lend themselves to several applications. CFTs often act as the corner columns in innovative high-rise construction. In addition CFTs are often used for slender, high story height, columns since the concrete provides additional stiffness. As well, they can be used as the main seismic load resisting system in seismic areas (3). The dampening can be on the order of 1.5 to 2 percent in response to the dynamic seismic loads (1). The additional stiffness, toughness and strength of CFTs is extremely useful when the structural steel is to be exposed for architectural reasons (1).
+     </p>
+     <p>
+      The enhanced strength properties of CFTs come from the composite action of the steel and the concrete. Mechanics would lead us to believe and research has shown that, at early stages and small amounts of loading, there is no apparent benefit the use of the steel tube. As the stress increases the larger poissons ratio of the concrete causes expansion greater than the steel section and the confinement stress from the steel grows. This causes failure at much higher loads than what would be observed in ordinary concrete columns (5). Concrete crushing strength is much higher in triaxial compression than the typical uniaxial compression. The final axial strength is typically governed by the thickness of the steel, slenderness ratio, eccentricity and cross sectional shape. (5)
+     </p>
+     <p>
+      The bond between the steel and concrete is expected to be low, due to the smooth surface condition of the steel. Hajjar points out that there is a wide range of bond strengths that have been measured experimentally, and bond acts differently under different conditions such as flexure and pushout (6). Some studies have even shown that the bond strength is not existent; there is no adhesion between the steel and concrete. This can actually improve column performance, mitigation of the neutral axis towards the tension face of the concrete delaying tension cracking (1).
+     </p>
+     <p>
+      As well, there are some disadvantage to CFTs in that the local buckling effects of the steel section still must be considered and fireproofing effects of the concrete are not present since the steel is not enceased. If the section is a large enough fireproofing can be handled by placing enough reinforcement inside the concrete to maintain the required loads. Time dependent aspects such as creep and shrinkage play an important role in the design of the columns. Research has shown that creep and shrinkage are greatly reduced compared to plain concrete. Still, a clear understating has not been found. Some researchers feel that creep may cause some differential shortening, between the composite column and the neighboring steel columns, and shrinkage may cause initial cracking of the concrete inside the column (1). In addition connections can become more complicated since there is now a concern with the effects of confinement.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Encased Composite Columns
+     </div>
+     <p>
+      Encased Composite Columns usually consist of a rolled or built-up I-section (W shape) encased in concrete. There is a requirement for reinforcement at each corner for improved confinement of the core as well as transverse reinforcement for shear similar to reinforced concrete columns (see Figure 2) (4). SRCs have many applications and have been more widely used than CFTs. As discussed earlier, the first application for composite columns was in the use of fire protection. Now, using composite columns for fire protection in crucial areas is just one of the many uses (3). Encased composite columns are used in multistory buildings to support axially loaded members. Often in these cases the steel in column is designed to carry a certain construction load so that frame may be assembled more quickly and efficiently (1). Commonly, SRCs can be used in situations where the amount of steel reinforcement for a specific cross section would exceed that permitted by the code (3).
+     </p>
+     <p>
+      More often it is common to use encased composite columns as part of a lateral force resisting system in a composite frame system of tall buildings (1). The increased stiffness that is created when using steel encasement attributes to higher lateral stiffness and thus lowers the lateral deflection of the building. A common use of this column type in tall buildings can be found in the use of partial tube structures (1). The lateral stiffness of these buildings is provided by deep spandrel beams and large columns around a building perimeter (3). Another important use of encased composite columns is called a transition column. This type of column becomes very useful when there is a transition from concrete to steel construction. This is most commonly seen for a steel office building atop a concrete parking garage (1).
+     </p>
+     <p>
+      The stiffness of encased composite columns is controlled by the concrete encasement. This means that before cracking the contribution from the stiffness of the steel is ignored (1). After some time and load due to creep and flexure, cracking can occur which causes a decrease in the stiffness of the concrete. In this case, the addition of the stiffness of the steel can be added (1). Increased stiffness attributes to the common use of this type of column in the main seismic load resisting system (3).
+     </p>
+     <p>
+      There are some disadvantages to the use of SRCs. Like CFTs the same issues arise from creep and shrinkage. Also, bond between the steel and concrete can play a role in the strength of the column. Earlier it was discussed that there was little actual bond between concrete and the filled tube or pipe. Other studies have shown that coefficient of sliding friction can be up to 0.5 for steel and concrete (1) indicating there is a strong bond. In the case of encased columns there are two ways to ensure bonding. First, ensuring that the bond between the concrete and is an issue of maintaining the encasement. This is accomplished using reinforcement in the concrete around the steel shape. Ties help hold this section together and are a contributing factor to the transverse shear strength (see Figure 2) (1). In addition headed shear studs, channel or angels can be welded to the steel shape to improve bonding in (1). The AISC Design Guide 6 shows a detail in Figure 3. Improvement of the bond also becomes important when either the steel or concrete is externally loaded since one material will have to transfer load to the other material. Finally, composite columns face difficulties in connections. Due to the large amount of steel in the concrete, there is congestion making connection construction more difficult.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Composite Column Design
+    </div>
+    <div>
+     <div class="head_2">
+      AISC 2005 Method
+     </div>
+     <p>
+      The 13th Edition of the AISC Specification has had many changes and Chapter I the design of composite members is no exception. Leon, Kim and Hajjar state that,
+      <q>
+       The 2005 AISC Specification presents a completely new approach for the design of composite columns within the context of the U.S. load and resistance factor design
+      </q>
+      (7). This includes major changes to the design of composite columns including: new cross sectional strength models, provisions for tension and shear design, and liberalized slenderness limits for the design of HSS sections (8). There are now two distinct sections for the design of encased and filled composite columns. Attempts have been made to minimize conflict between the ACI code and the AISC Specification. AISC has left the responsibility of material specification, anchorage and other concrete provisions to ACI (8). For the design of composite columns in flexure, AISC allows two different methods and allows one simplified method to determine the strength of the beam-column.
+     </p>
+     <p>
+      One of the major steps in minimizing the conflict between AISC and ACI is the removal of a provision that requires at least 4% of the core of an encased column be steel (7). While detailing procedures are still dictated by ACI, composite columns must meet the following criteria that Leon and Griffis have drawn to attention (4):
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+     <p>
+      For CFTs the check for local buckling in composite columns is much less demanding than for non-composite columns. The width-to-thickness ratios are giving in Table 1. These values have been liberalized compared to previous editions of the AISC Specification by 40% for Circular CFT and 30% for Rectangular CFT from the previous edition (7). Circular CFT allows for more post buckling redistribution of force and thus they receive a less demanding requirement (8).
+     </p>
+     <p>
+      The design of composite columns is outlined by this procedure. First the required strength must be determined by a second-order analysis (AISC Chapter C) or an approximate second order analysis (4), such as magnified moment method. The nominal strength of the of the section must then be determined using the simplified method, plastic distribution method or strain compatibility approach. The slenderness effects are accounted for in the same way as axially loaded steel columns (4). Shear strength of the columns should be taken as the shear strength of the steel column and reinforcement of or the concrete section alone (8). If the bond between the concrete and steel is of concern (if the external force is applied directly to the steel or concrete) the use of shear stud connectors to improve bond is required.
+     </p>
+     <div>
+      <div class="head_3">
+       Composite Column Axial Strength
+      </div>
+      <p>
+       The design process for axial load only columns is detailed as follows and can be seen in the Appendices A and B. All equations are taken directly from the AISC Specification (8). This calculation accounts for the slenderness of in finding and effective EIeff based on the steel and concrete properties, a C1 and a C3 factors are used to reflect the cracked nature of the section when the stability limit is reached for SRCs and CFTs respectively. For all cases of axial compressive loading the reduction factor is taken as φ = 0.75.
+      </p>
+      <p>
+       For encased composite columns
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       with
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (I2-7) For filled composite columns (I2-14) where
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (I2-15)
+      </p>
+      <p>
+       The nominal compressive strength can then be found using the nominal compressive strength ignoring length effect and the Euler buckling strength as follows for encased composite columns using equations (I2-2 – I2-5)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       For filled composite columns only the following nominal compressive axial load changes. Where C2 equals 0.85 for rectangular sections and 0.95 for round sections. This accounts for the confinement effects observed by research.
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (I2-13) To design for uplift the design tensile strength neglects the contribution of the concrete in tension, using the load reduction factor φ = 0.90 for both SRCs and CFTs
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (I2-16)
+      </p>
+      <p>
+       The previous calculations are a sufficient for the design of and axial load only member. Since commonly composite columns are utilized in composite frame, the beam column must resist some moment. Following is an example of three methods to calculate the interaction diagram for composite beam-columns. It must be noted that tables exist for reference of the maximum axial strength of given composite columns in the AISC Manual Part 4.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Composite Column Plastic Stress Distribution Method
+      </div>
+      <p>
+       <q>
+        The plastic stress distribution method is based on the assumption of linear strain across the cross section and elasto-plastic behavior
+       </q>
+       (8). This requires that the concrete has reached crushing strain (0.003) and a stress corresponding to 0.85 fc' or 0.95 fc' . As well the steel will have reached the yield strain. This is can be used to develop an interaction curve for the system. This design can only be held true if the assumption that there is no slip between the concrete and the steel (8). If the shear strength of the steel and concrete interface too low the member must be considered
+       <q>
+        partially
+       </q>
+       composite section and design as such (8). An example of the plastic design procedure taken can be seen in the appendices.
+      </p>
+      <p>
+       The first step in using the plastic distribution method to solve the rigid plastic interaction diagram is finding the nominal axial strength of the column. Next one must find the plastic neutral axis. At this location the sum of the compression forces equals the tension forces. For SRCs, if the plastic neutral axis is located in the web the distance z can be estimated using the following equation from Viest et. al. assuming 75 percent of the concrete strength (1).
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       If the plastic neutral axis is located in the flange the following equation can be utilized,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       Similarly for CFTs , the nominal axial strength is found as the first point on the interaction diagram. The plastic neutral axis is found using the following equation,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       A schematic of the four different stress states that can be used to develop the interaction diagram and the state of the interaction diagram are shown schematically in the Figure 4 (3). In Figure 4 case (a) represents the axial load capacity, Point A on the interaction diagram, where there is only axial load only. Case (b) represents the flexural capacity, Point B on the interaction diagram where there is no net axial load. Case (c) shows the intermediate point. Point C has the same moment resistance but axial resistance is only taken in the concrete. Finally, Case (d) is the balance case where the maximum moment is found due to the neutral axis lying in the middle of the section, forming Point D on the interaction diagram (7). From the design of reinforced concrete columns it is known that a column is acceptable in design if the ultimate moment and load falls within in the interaction curve. Using the plastic design method a rapid and accurate analysis can be made. Galamabos states that most analytical studies show that the differences between an exact design approach and the simplified theory using the plastic stress blocks, which are used here, are often inconsequential (3). This has been shown in the examples in the appendices.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Composite Strain Compatibility
+      </div>
+      <p>
+       The strain compatibility approach requires that a reasonable stress-strain model be used to calculate the design on the columns. The specification states that there most be a linear distribution of strains across the section such that the concrete crushing strain is 0.003 (8). This method can be used analogously with the method in the ACI code for strength of columns in compression and flexure. This involves solving for an interaction diagram for varying linear strains. An approach for finding interaction diagrams for columns under combined axial load and bending can be found in most concrete design textbooks or other design aids. It would be reasonable in the case of composite columns to divide the steel shape into sections to develop the resultant forces. This design procedure is relevant for both SRC and CFT sections. An example of the design process can be seen in the attached appendices.
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="head_2">
+      AISC 2005 Simplified Method
+     </div>
+     <p>
+      The 2005 simplified approach gives a conservative estimate of the composite column strength. The calculation of the columns properties is expedited using this method. Chapter H and the Chapter I Commentary outlines this approach which parallels the design of wide-flange and HSS steel columns (4). This method consists of first finding the nominal axial load and then the nominal moment (flexural) capacity of the composite column. From previous editions of the specification commentary an approximate formula for the flexural capacity of a composite column is given below (3).
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      Using the appropriate load reduction factors for bending and compression, the known factored axial force and moment and the nominal axial and moment capacity of the columns the capacity of the column can be found using the following equations (H1-1a and H1-1b) from AISC Chapter H.
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      Using these equations we create a conservative bi-linear interaction diagram. The reason for the conservative nature of the of this method is a deliberate result of its simplicity (1). This conservativeness is shown in the appendices.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      ACI Method
+     </div>
+     <p>
+      The ACI method for composite column design is based on the same principals of column design specified in the ACI code, although special provisions are made to account for the stiffness of composite columns. This is a strain compatibility method that follows the same theory as the AISC procedure, with different reduction factors. The ACI 318 and AISC Specification preciously had large discrepancies for composite column design. Changes have been made to the most recent additions of the AISC Specification to alleviate many of these issues. Leon et. al. notes that differences in the basic calculations of cross sectional strength have been greatly reduced. Now the method that is specified in the AISC Specifaction is within the requirements of ACI 318, especially sections 10.2 and 10.3 (7).
+     </p>
+     <p>
+      ACI and AISC have different methods for calculation of slender columns. In AISC all columns have a reduction for slenderness while ACI does not always account for this. As well AISC still does not address issues that arise from creep and long-term deformation on the column. ACI uses a (1+βd) in the denominator of the moment of inertia in considering stability considerations. Still there are some flaws with this stiffness calculation since it does not account for the effects of extra reinforcement. One other major discrepancy is that ACI does not allow an increase in strength of concrete for confinement in circular columns (the 0.85 f c � to 0.95 f c � increase). In addition Leon et. al. has developed a table which summarizes the discrepancies in the material detailing requirements in Table 1 (7).
+     </p>
+     <p>
+      Table 1 -Comparison on ACI to AISC Material Detailing
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+     <div>
+      <div class="head_3">
+       Composite Column Nominal Strength
+      </div>
+      <p>
+       ACI 318 Chapter 10 is critical in finding the nominal axial strength of a column. The following equation is applied (9). Special care must be taken to account for the different yield strengths of steel shape and the reinforcement.
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       In accounting for slenderness effects the following equations are used
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       ACI requires a second order analysis or magnified moments if the column is slender. If the building is subject to lateral loads in addition to axial loads the interaction diagram must be developed using the strain compatibility method. Again, almost every concrete design textbook has a procedure to develop the interaction diagram establishing the nominal strength of the column under combined loading. It is still reasonable in this case to split the steel up in sections as is done in the AISC design procedure for strain compatibility. The result of the ACI analysis can be most closely compared to the conservative AISC Simplified Method. This is due to the smaller reduction factors applied to the nominal strength.
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="head_2">
+      EUROCODE 4
+     </div>
+     <p>
+      The Eurocode 4 design closely follows the design using proposals made by Roik and Bergmann. Leon and Aho state that this method is more like reinforced concrete design. Unlike the other methods the Eurocode uses partial safety, which are different for steel and concrete (10). The equations for the nominal axial load can be found using the following equations,
+     </p>
+     <p>
+      For encased composite columns:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      For concrete filled columns:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      In addition like AISC, Eurocode makes allowances for concrete confinement in concrete filled columns. If the slenderness of the concrete filled columns is low enough then the CFT equation can be used. If slenderness is too high the equation for encased columns must be used for CFTs. The � factors account for the confinement effects of the steel tube, which are functions of the slenderness and eccentricity of the load (10).
+     </p>
+     <p>
+      AISC, ACI, and Eurocode all allow design based on fully plastic theory using four or five significant points (10) coinciding with the design methods design methods discussed previously. Finally, Eurocode also makes use of reductions to the usable space in the interaction diagram based on the fact that there are imperfections in the construction of the column. This is based on the moment distribution of a member and can be seen in Figure 5.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Proposed Methods
+    </div>
+    <div>
+     <div class="head_2">
+      Superimposed Strength Method
+     </div>
+     <p>
+      The superimposed strength method is another attempt to simplify the AISC and ACI composite column design procedure. In this method and interaction diagram is calculated for the reinforced concrete section alone. Then a calculation of an interaction diagram for the steel column is found. For several different values of the eccentricity the values can be superimposed on one another. An approximate interaction diagram is found, see Figure 6. These values can often be found in published tables such as the ACI Handbook and the CRSI Handbook making this method extremely convenient. This design method often provides results that are very close to the plastic design method using the ACI reduction factor (1). This can be observed in Figure 7. The method provides a result that is reasonable but often conservative like the AISC Simplified method.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Fiber Section Anlysis
+     </div>
+     <p>
+      El-Tawil and Deierlein discouss a method called the fiber section analysis for determining the cross sectional strength and stiffness of composite columns. This numerical method removes many of the simplifying assumptions that are built into the AISC and ACI design methods. The fiber method divides the cross section into many discrete regions with constitutive relationships based on uniaxial stress strain models for both steel and concrete (see Figure 8). This can also include the effects of confinement of concrete. There are still some assumptions that must be made, plane sections remain plane and full compatibility is maintained between the steel and the concrete (11). The fiber section and the constitutive model can be seen in Figure 9. Verification of testing shows that this model matches closely with experimental results and the strain compatibility method (11).
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Special Concerns
+    </div>
+    <div>
+     <div class="head_2">
+      Connection to Columns
+     </div>
+     <div>
+      <div class="head_3">
+       Encased Composite Column Connections
+      </div>
+      <p>
+       Connections to composite columns provide some challenges that are not considered when designing typical concrete or steel buildings. As discussed, getting the required amount of reinforcement around the steel column in an SRC is often a tedious task. Viest et. al explains several other important situations where especially where the composite column is supporting steel floor framing. Figure 10 and Figure 11 show typical detailing for SRC connections for steel framing into the column for both a simple shear connection and a moment connection in a lateral force resisting system (1). The designer should be aware that the concrete encasement increases the stiffness of each connection.
+      </p>
+      <p>
+       In beam to column moment connection SRCs should be checked for two basic failure modes. Panel shear is similar to the failures seen in noncomposite sections. In panel shear failure the shear strength is calculated based on the effective width of the concrete joint. The strength of the joint can be modeled using a strut and tie method (Figure 12). Horizontal ties above and below the beam are required to resist tension forces and the compressive strut thrust. The effectiveness of this mechanism is based on geometry and material properties.
+      </p>
+      <p>
+       The other mode of failure is vertical bearing failure. This is where the rigid beam bears against the concrete. (1). These forces are due to the combined effects of moments and shears transferred from beam to column. Vertical reinforcement will help mitigate bearing failure and may include reinforcing bars, rods, steel angles or other elements directly welded to the steel beam. Other failure modes such as horizontal shear, strength of steel panels and the strength of the concrete encasement must be considered in the failure mechanism (1).
+      </p>
+      <p>
+       Therefore special detailing procedure which must be accounted for when designing SRC column connections. Horizontal ties should be provided in the column with 90-degree hooks to engage a longitudinal bar or by lap splicing meeting ACI 318. These ties are crucial in carrying the forces of the strut and tie mechanism in addition to allowing containment of the concrete. There should be at least 3 layers of horizontal reinforcement above and below the joint to resist a large enough area of confinement and shear resistance (1). In addition vertical bars should be included passing through the joint. Face bearing plates can be added to resist the horizontal shear in the concrete strut (1).
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Filled Composite Column Connections
+      </div>
+      <p>
+       The connection to CFTs poses some other challenges. Gusset plates and steel bearing plates can help accomplish the task of framing steel to the filled composite column. The vertical forces transfers shear directly though bearing on the steel shell and causes bearing on the concrete wall as seen in Figure 13 (1).
+      </p>
+      <p>
+       One must check that the local transverse pressure is small enough to account for bearing on the concrete as seen above. If this is too large a shear plate can be extended through the column such that the load will be better distributed to the concrete (1). This often works best when columns are connecting to either side. The holes develop bearing on the concrete in the columns. Still, the design causes concentrated bearing on the bottom side of the plate. The limit state of the concrete bearing on the steel with no more than 65% of the concrete strength allowed (see Figure 14) (1).
+      </p>
+      <p>
+       Moment (rigid) connections should be designed in a manner like Figure 15. This connection makes use of a ring plate for continuity of the column. The stresses on the steel tube must be mitigated to improve seismic resistance. The goal is to transfer tensile forces to the steel that may cause separation of the steel and concrete, and minimize the residual stresses from welding. These factors will decrease the amount of confinement provided by the steel. A ring plate increases the stiffness of the connection across the column (1) adding stiffeners between column webs. In addition two other connection types can be made. A Type A connection is typically a steel T shape witch is embedded with an anchor bolt (Figure 16) or some other mode of embedment (Figure 17). The Type B connection (Figure 18) is a through connection detail.
+      </p>
+      <p>
+       This detail should be the most suitable for moment connection (1). The embedment decreases the amount of forces that load the steel encasement, retaining confinement.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Seismic Design Considerations
+      </div>
+      <p>
+       To survive the large lateral forces that are present in seismic loading special provisions must be made to improve the effects caused by inelastic behavior of the structure. These members must have enough ductility and toughness to survive the cycles of seismic energy imparted on the column. According to Viest et. al. the seismic design of a structure must be able to retain strength after several load reversals at 4 to 6 times greater displacements than what would cause yielding. Composite design has a high capacity to meet these requirements (1).
+      </p>
+      <p>
+       El-Tawil and Deierlein, state that the AISC Seismic Provisions and ACI 318 Chapter 21 both have similar requirements using increased amounts of longitudinal and transverse reinforcement for encased columns in low, moderate and high regions of seismic activity. The purpose of this increased steel is to maintain enough structural integrity to the confined core after the cover has spalled off (11). Increased transverse reinforcement will help ensure that the concrete core remains intact. The codes specify a minimum reinforcement equation for seismic regions that is more stringent.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Conclusions
+    </div>
+    <p>
+     As the design of composite columns becomes more commonplace, the requirement for the code makers to develop a unified design method becomes more crucial in providing uniformity to the structural engineering community. Composite columns can come in many different forms of encased steel and filled tubes, each with their advantages and design challenges. While recent versions of the AISC Specification and research begin to focus on many of these topics. It should be the goal of future code committees to further address these issues to ensure more accurate and safer building practices. Still more research could be developed to deal with special topics such as creep, shrinkage, bond effects, connections and other issues to facilitate understanding their effects on composite column design.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1 – Typical Filled Composite Column
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2 – Typical Encased Composite Column
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3 – Typical Elevation of SRC
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 4 - Significant interaction points for plastic analysis
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 5 – EUROCODE Interaction Diagram
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 6 – Construction of Superimposed Strength Method Interaction Diagram
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 7 – Accurateness of SSM Method
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 8 – Fiber Analysis Discretization
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 9 – Fiber Analysis Constitutive Models
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 10 – Steel Beam Framing into SRC Shear Connection
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 11 – Steel Beam Framing into SRC Moment Connection
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 12 – SRC Connection Strut and Tie Model
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 13 – CFT Connection Bearing Pressures
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 14 – CFT Through Connection to Minimize Steel Bearing
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 15 – CFT Ring Plate Moment Connection
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 16 – Typa A Moment Connection with Anchor Bolt
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 17 – Type A Moment Connection With Steel T
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 18 – Type B Moment Connection with Through Beam
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     Appendix A – Analysis of SRC
+    </div>
+    <p>
+     The following example is adapted from Viest et. al. (1) for the encased column cross section given below. The columns consists of a W8x40 Steel section with A992 Gr. 50 Steel, the concrete encasement has dimensions 16 in. x 16 in. with 3500 psi concrete. The steel reinforcement is continuous and consists of 8 -#6 bars Gr. 60. The geometry and the distribution of the loads is given in Figure A1. Assume the column is 12 ft. top of floor to bottom of the next floor.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     AISC -Plastic Analysis of Cross Section Strength for SRC
+    </p>
+    <p>
+     First, calculate the axial load when there is no bending moment starting with the effective stiffness from AISC Eqs (I2-7) and (I2-6)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Now calculate the buckling force based on the effective stiffness and length (for simplicity assume K=1) from AISC (I2-5)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Next calculate the maximum axial load from AISC (I2-13)
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     Thus the nominal axial column capacity is from AISC (I2-3)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Since this is a plastic design assume the section is yielding throughout, and find the distance from the neutral axis to the force equilibrium. The plastic stress of concrete is assumed to be 75 percent of the strength
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     This puts the neutral axis in the flange, so the previous equation is incorrect. Assuming the neutral axis is in the flange we calculate z
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     This matches our assumption. Now with the know position of equilibrium of force and will be used to determine the forces acting on the composite section
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The forces and moments are calculated for the different z values in the table and the interaction diagram is plotted in Figure A3
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Strain Compatibility Method
+    </p>
+    <p>
+     The strain compatibility method is completed using a spreadsheet which calculates the P – M relationship. The steel W shape is split up into sections and the area of steel is condensed around each centroid of the broken sections (Figure A2). The strain is assumed linear across this section and the interaction diagram is solved for several strain distributions. The failure values for the interaction diagram can be seen graphically for this example (Figure A3)
+    </p>
+    <p>
+     Figure A2 - Redistribution of Steel in SRC
+    </p>
+    <p>
+     The AISC 2005 Simplified Method
+    </p>
+    <p>
+     From the previous AISC LRFD commentary we find this equation of nominal moment capacity,
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     From the earlier the axial load is
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The interaction diagram based on the follow equations is plotted in Figure B3
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     ACI Design
+    </p>
+    <p>
+     This method follows the ACI strain compatibility approach. The column is short if we assume conservatively assume
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     For the encased column r=3.92 in short such that 3.92 � 28 and from ACI Eq 10-1
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Using a spreadsheet calculate the failure cure, the Interaction diagram can be seen in Figure A3.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     This figure is plotted using all the appropriate load reduction factors specified per AISC and ACI
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Appendix B – Analysis of CFT
+    </div>
+    <p>
+     The following example is adapted from Viest et. al. (1) for the filled composite column cross section given below. The filled composite column shown in Figure B1 is a 10 in x 10 in x .25 in steel tube filled with concrete. The tube has as yield stress of 46 ksi and the concrete has strength of 8 ksi. The geometry and distribution of loads are given in Figure B1. Assume the column is 12 ft. top of floor to bottom of the next floor.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     AISC -Plastic Analysis of Cross Section Strength for SRC
+    </p>
+    <p>
+     First, calculate the axial load when there is no bending moment starting with the effective stiffness from AISC Eqs (I2-15) and (I2-14)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Now calculate the buckling force based on the effective stiffness and length (for simplicity assume K=1) from AISC (I2-5)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Next calculate the maximum axial load from AISC (I2-13)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Thus the nominal axial column capacity is from AISC (I2-2)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Since this is a plastic design assume the section is yielding throughout, and find the distance from the neutral axis to the force equilibrium. The plastic stress of concrete is assumed to be 75 percent of the strength.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     This matches our assumption. Now with the know position of equilibrium of force and will be used to determine the forces acting on the composite section
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The forces and moments are calculated for the different z values in the table
+    </p>
+    <p>
+     The interaction diagram is plotted in Figure B3
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Strain Compatibility Method
+    </p>
+    <p>
+     The strain compatibility method is completed using a spreadsheet which calculates the P – M relationship with a linear distribution of strain. The steel tube shape is split up into sections and the area of steel is condensed around each centroid of the broken sections (Figure B2). The strain is assumed linear across this section and the interaction diagram is solved for several strain distributions. The failure values for the interaction diagram can be seen below graphically for this example (Figure B3).
+    </p>
+    <p>
+     Figure B2 – Redistribution of steel in CFT
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     The AISC 2005 Simplified Method
+    </p>
+    <p>
+     From the strain compatibility design case
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     From the earlier the axial load is
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The interaction diagram based on the follow equations is plotted in Figure B3
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The following figure is plotted using the appropriate reduction factors.
+    </p>
+    <p>
+     ACI Design
+    </p>
+    <p>
+     This method follows the ACI strain compatibility approach. The column is short if we assume
+    </p>
+    <p>
+     1
+    </p>
+    <p>
+     conservatively assume
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     2
+    </p>
+    <p>
+     For the encased column r=3.7 in short such that 3.10 � 28 and from ACI Eq 10-1
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Using a spreadsheet calculate the failure curve, the interaction diagram can be seen in Figure A3.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     This figure is plotted using all the appropriate load reduction factors specified per AISC and ACI
+    </p>
+    <p>
+     Glossary of Variables
+    </p>
+    <p>
+     Ac Area of concrete
+    </p>
+    <p>
+     As Area of steel
+    </p>
+    <p>
+     Asr Area of steel reinforcement
+    </p>
+    <p>
+     Av,min Minimum shear reinforcement area
+    </p>
+    <p>
+     Aw Area of web
+    </p>
+    <p>
+     b Concrete encasement dimension
+    </p>
+    <p>
+     bs steel flange width
+    </p>
+    <p>
+     bw Length of web
+    </p>
+    <p>
+     b/t Length to thickness ratio
+    </p>
+    <p>
+     cr Thickness of concrete cover from center of bar to the edge of section in the plane of bending D / t Diameter to thickness E Modulus of elasticity EI eff Composite effective stiffness
+    </p>
+    <p>
+     f c � Concrete strength
+    </p>
+    <p>
+     Fy Steel yield stress
+    </p>
+    <p>
+     Fyr Reinforcement yield strength
+    </p>
+    <p>
+     h1 Concrete width perpendicular to bending
+    </p>
+    <p>
+     h2 Concrete thickness in the plane of bending
+    </p>
+    <p>
+     hs Web height
+    </p>
+    <p>
+     K Effective length factor
+    </p>
+    <p>
+     L Column length
+    </p>
+    <p>
+     Mn Nominal moment capacity P force on the concrete at the indicated position
+    </p>
+    <p>
+     c( i)
+    </p>
+    <p>
+     Pn Nominal load capacity Po Load capacity without slenderness effects P force on the reinforcement at the indicated position
+    </p>
+    <p>
+     r( i)
+    </p>
+    <p>
+     P force on the steel section at the indicated position
+    </p>
+    <p>
+     s( i)
+    </p>
+    <p>
+     s Reinforcement spacing tw Thickness of the web Z Plastic section modulus
+    </p>
+    <p>
+     � Strength reduction factor
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N1038C">
+     <li id="N1038D">
+      1. 	Viest, Ivan et. al. Composite Construction Design for Buildings. New York: McGraw-Hill, 1997.
+     </li>
+     <li id="N1038F">
+      2. 	Griffis, Lawernce. “AISC Design Guide 6 -Load and Resistance Factor Design of W-Shapes Encased in Concrete” Chicago: American Institute of Steel Construction, 1992.
+     </li>
+     <li id="N10391">
+      3. 	Galambos, T. Guide to Stability Design Criteria for Metal Structures. New York: John Wiley, 1998.
+     </li>
+     <li id="N10393">
+      4. 	Leon, Roberto and Griffis, Lawernce. “Composite Column Design: The 2005 AISC specification for axially loaded composite columns uses a model that closely resembles that of traditional steel columns.” Modern Steel Construction. Vol. 45, no. 8, pp. 35-36. Aug. 2005
+     </li>
+     <li id="N10395">
+      5. 	Shams, Mohammad and Saadeghvaziri, M. Ala. “State of the Art of Concrete-Filled Steel Tubular Columns.” ACI Structural Journal. Vol. 94, Issue 5, pp. 558-571. Sept. 1997.
+     </li>
+     <li id="N10397">
+      6. 	Hajjar, J F. “Concrete-filled steel tube columns under earthquake loads.” Progress in Structural Engineering Materials. Vol 2, No. 1, pp. 72-81. 2000.
+     </li>
+     <li id="N10399">
+      7. 	Leon, R.T., Kim, D. K., Hajjar, J. F., “Limit State Response of Composite Columns and Beam-Columns Part 1: Formulation of Design Provisions for the 2005 AISC Specification.” AISC Engineering Journal, 4th Quarter, pp. 341-358. Dec. 2007.
+     </li>
+     <li id="N1039B">
+      8. 	Steel Construction Manual, 13th Edition. Chicago: American Institute of Steel Construction, 2006.
+     </li>
+     <li id="N1039D">
+      9. 	ACI 318 Committee, ACI 318-05 Building Code Requirements for Structural Concrete. Farmington Hills, MI: American Concrete Institute, 2005.
+     </li>
+     <li id="N1039F">
+      10. Leon, R.T. and Aho, M.F. “Towards New Design Provisions for Composite Columns,” Composite Construction in Steel and Concrete IV, Hajjar, J.F., Hosain, M., Easterling, W.S., and Shahrooz B.M. (eds.), American Society of Civil Engineers, Reston, VA, pp. 518-527.
+     </li>
+     <li id="N103A1">
+      11. El-Tawil, Sherif and Deierlein, Gregory G. “Strength and Ductility of Concrete Encased Composite Columns.” ASCE Journal of Structural Engineering, American Society of Civil Engineering, Reston, VA, Vol. 123, No. 9, pp. 1009-1019, Sept. 1999.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

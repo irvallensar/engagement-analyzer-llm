@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Sir/Madam
+      </p>
+      <p>
+       I am Writing this letter to
+       <ns type="RV">
+        <i>
+         say
+        </i>
+       </ns>
+       my dissatisfaction
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       your
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           entertament
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Last week I was on holiday and I went to The Circle Theatre to see
+       <ns type="RP">
+        <i>
+         over the rainbow
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       musical. I was really looking forward to seeing it, because I like
+       <ns type="FN">
+        <i>
+         musical
+        </i>
+       </ns>
+       and also I like Danny Brook. However, the
+       <ns type="SX">
+        <i>
+         reading
+        </i>
+       </ns>
+       actor was not him! Of course, I was so disappointed. The actor was not famous for his acting.
+      </p>
+      <p>
+       Also the musical did not start on time
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       was
+       <ns type="W">
+        <i>
+         late thirty
+         <ns type="S">
+          <i>
+           minuts
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . We just sat on
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         seat
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         and
+        </i>
+       </ns>
+       nothing to do.
+      </p>
+      <p>
+       I was going to a restaurant with my friends after the musical, but the musical finished at ten thirty. It was too late and we could not have
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       dinner. If the musical had started on time, we could have eaten in the restaurant.
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Fathermore
+        </i>
+       </ns>
+       ,
+       <ns type="X">
+        <i>
+         discounts
+         <ns type="AGV">
+          <i>
+           was
+          </i>
+         </ns>
+         unavailable
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         . Even
+        </i>
+       </ns>
+       though we had a student card. In the advertisement they said that
+       <ns type="FN">
+        <i>
+         tickets
+        </i>
+       </ns>
+       discounts
+       <ns type="MV">
+       </ns>
+       available. I think it
+       <ns type="MV">
+       </ns>
+       a
+       <ns type="DN">
+        bombastic
+       </ns>
+       . Anyway I was so
+       <ns type="DJ">
+        <i>
+         unpleasement
+        </i>
+       </ns>
+       . It was not
+       <ns type="MD">
+       </ns>
+       marvellous evening. Could you
+       <ns type="RV">
+        <i>
+         back
+        </i>
+       </ns>
+       my money please? You have
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         responsoiblity
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the audiences.
+      </p>
+      <p>
+       I am looking forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear, Sir/Madam
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am Writing this letter to say my dissatisfaction of your entertament.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last week I was on holiday and I went to The Circle Theatre to see over the rainbow musical.
+       </s>
+       <s pid="3" sid="2">
+        I was really looking forward to seeing it, because I like musical and also I like Danny Brook.
+       </s>
+       <s pid="3" sid="3">
+        However, the reading actor was not him!
+       </s>
+       <s pid="3" sid="4">
+        Of course, I was so disappointed.
+       </s>
+       <s pid="3" sid="5">
+        The actor was not famous for his acting.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Also the musical did not start on time, it was late thirty minuts.
+       </s>
+       <s pid="4" sid="2">
+        We just sat on the seat and nothing to do.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I was going to a restaurant with my friends after the musical, but the musical finished at ten thirty.
+       </s>
+       <s pid="5" sid="2">
+        It was too late and we could not have a dinner.
+       </s>
+       <s pid="5" sid="3">
+        If the musical had started on time, we could have eaten in the restaurant.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Fathermore, discounts was unavailable.
+       </s>
+       <s pid="6" sid="2">
+        Even though we had a student card.
+       </s>
+       <s pid="6" sid="3">
+        In the advertisement they said that tickets discounts  available.
+       </s>
+       <s pid="6" sid="4">
+        I think it  a bombastic.
+       </s>
+       <s pid="6" sid="5">
+        Anyway I was so unpleasement.
+       </s>
+       <s pid="6" sid="6">
+        It was not  marvellous evening.
+       </s>
+       <s pid="6" sid="7">
+        Could you back my money please?
+       </s>
+       <s pid="6" sid="8">
+        You have  responsoiblity for the audiences.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed your daily life?
+      </p>
+      <p>
+       My life
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       been changed by technological
+       <ns type="RN">
+        <i>
+         <ns type="RN">
+          <i>
+           improving
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . Nowadays
+       <ns type="RP">
+        <i>
+         . We
+        </i>
+       </ns>
+       have so many technological things. For instance, TV, computers,
+       <ns type="FN">
+        <i>
+         telephone
+        </i>
+       </ns>
+       ,
+       <ns type="DN">
+        <i>
+         air-conditionings
+        </i>
+       </ns>
+       . These things are very
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           convinience
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       on the other hand, there
+       <ns type="MV">
+       </ns>
+       lots of
+       <ns type="DN">
+        <i>
+         disadvantage
+         <ns type="AGN">
+          <i>
+           point
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I have my own TV in my room and I enjoy watching TV
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       . However, I need balance. If I watch TV too much I might not speak to my family
+       <ns type="MY">
+       </ns>
+       often.
+       <ns type="R">
+        It will lack of communication
+       </ns>
+       . In addition, it is difficult
+       <ns type="FV">
+        <i>
+         turn
+        </i>
+       </ns>
+       it off. I think I should cut down
+       <ns type="MT">
+       </ns>
+       watching TV. Sometimes it
+       <ns type="M">
+       </ns>
+       waste of time.
+      </p>
+      <p>
+       What about computers?
+       <ns type="AGA">
+        <i>
+         It
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       very useful too. I am living in London, but my father lives in Taiwan and my mother lives in Tokyo.
+      </p>
+      <p>
+       I sometimes want to hear their voice on the telephone.
+       <ns type="S">
+        <i>
+         Unfourtunately
+        </i>
+       </ns>
+       it is not so cheap. If I use e-mail
+       <ns type="M">
+       </ns>
+       much easier and cheaper. And I can send e-mail anytime.
+      </p>
+      <p>
+       If I
+       <ns type="MV">
+       </ns>
+       addicted
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       , it
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be
+       <ns type="MD">
+       </ns>
+       problem. I do not want to spend much time
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       computers.
+      </p>
+      <p>
+       In conclusion
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       people
+       <ns type="MP">
+       </ns>
+       <ns type="FV">
+        <i>
+         include
+        </i>
+       </ns>
+       me
+       <ns type="MP">
+       </ns>
+       need balance. We must be good at using computers.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed your daily life?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My life have been changed by technological improving.
+       </s>
+       <s pid="2" sid="2">
+        Nowadays.
+       </s>
+       <s pid="2" sid="3">
+        We have so many technological things.
+       </s>
+       <s pid="2" sid="4">
+        For instance, TV, computers, telephone, air-conditionings.
+       </s>
+       <s pid="2" sid="5">
+        These things are very convinience on the other hand, there  lots of disadvantage point.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I have my own TV in my room and I enjoy watching TV everyday.
+       </s>
+       <s pid="3" sid="2">
+        However, I need balance.
+       </s>
+       <s pid="3" sid="3">
+        If I watch TV too much I might not speak to my family  often.
+       </s>
+       <s pid="3" sid="4">
+        It will lack of communication.
+       </s>
+       <s pid="3" sid="5">
+        In addition, it is difficult turn it off.
+       </s>
+       <s pid="3" sid="6">
+        I think I should cut down  watching TV.
+       </s>
+       <s pid="3" sid="7">
+        Sometimes it  waste of time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        What about computers?
+       </s>
+       <s pid="4" sid="2">
+        It is very useful too.
+       </s>
+       <s pid="4" sid="3">
+        I am living in London, but my father lives in Taiwan and my mother lives in Tokyo.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I sometimes want to hear their voice on the telephone.
+       </s>
+       <s pid="5" sid="2">
+        Unfourtunately it is not so cheap.
+       </s>
+       <s pid="5" sid="3">
+        If I use e-mail  much easier and cheaper.
+       </s>
+       <s pid="5" sid="4">
+        And I can send e-mail anytime.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        If I  addicted on  internet, it will be  problem.
+       </s>
+       <s pid="6" sid="2">
+        I do not want to spend much time with computers.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        In conclusion.
+       </s>
+       <s pid="7" sid="2">
+        people include me need balance.
+       </s>
+       <s pid="7" sid="3">
+        We must be good at using computers.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

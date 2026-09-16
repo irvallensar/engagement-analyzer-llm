@@ -1,0 +1,1771 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    ﻿Provably Stable Walking Gaits for a 3-link Robot with Point Feet
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1 Introduction
+    </div>
+    <p>
+     Walking robots have been a popular science fiction fantasy since the mid 20th century. The control community has been actively working on this problem for several decades. Various methods are used; one of the easiest to implement in practice is a robot with 4-6 legs to solve the balancing problem. Bipedal, human-like walking is much more difficult.
+    </p>
+    <p>
+     Human walking is fundamentally difficult to emulate because it is a highly dynamic process with many states and little static stability. Many existing bipedal robots get around this problem by altering the gait properties to eliminate the dynamic balancing problem; Honda’s Asimo is perhaps the most famous example. This method is termed the ”Zero Moment Point” method and is discussed in Section 2.
+    </p>
+    <p>
+     The goal of this project is to study the bipedal locomotion problem using nonlinear control techniquesin a systematic way. Stable walkinggaits correspond to stableperiodic orbitsinthe state space. Byusing a variety oftechniques, controlis appliedto createthese orbits, specific orbits are identified, and their stability can be proven. These controllers are then simulated on the full-dimensional robot model and shown to create the desired walking gait.
+    </p>
+    <p>
+     These methods have been extensively developed and applied to complicated robots [2], including hardware testing on a 5-link robot. The work presented here applies the methods of[2] to a simple 3-link walker; All theorems and methods presented here can be found in [2]. The main techniques used are Lagrangian Dynamics, Poincare maps, hybrid systems, zero dynamics, and feedback linearization.
+    </p>
+    <p>
+     The outline of this report is as follows: The robot continuous dynamics and impact map are derived. A simple walking gait is chosen. A periodic orbit is found and proved stable for two different types of controllers. The zero dynamics are studied. Finally, a more complicated, energy-efficient gait is studied.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2 Zero Moment Point Heuristic
+    </div>
+    <p>
+     The basic idea of the Zero Moment Point Heuristic is to use actuated feet with small, flat-footed steps. In this way, the robot is statically stable at all points throughout a step and the control problem is simplified. The interaction forces between the robot and the ground are lumped into a single force with no moment acting at the
+     <q>
+      zero moment point
+     </q>
+     . If one wanted to support the robot with a point force, it must act at this point.
+    </p>
+    <p>
+     By designing the controller to keep this
+     <q>
+      zero moment point
+     </q>
+     within the support polygon of the robot, the robot will be statically stable. With one foot on the ground, the support polygon is the outline of the foot in contact with the ground. With both feet on the ground, it is the area between the outlying ground contact points, the front toe and back heel. This method is graphically illustrated in Figure 1.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1: The Zero Moment Point Heuristic. The arrow shows the location of the Zero Moment Point, where the forces on the foot sum to zero moment.
+    </p>
+    <p>
+     This method is based on static stability, so it works for slow, near-static gaits. For dynamic gaits, the results break down. This method does not provide a rigorous stability proof for dynamic gaits.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2: Toe Roll and Heel Strike are points of underactuation.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     3 Motivation for Point Feet
+    </div>
+    <p>
+     During a typical walking gait, humans have large phases of underactuation as shown in Figure 2. During a typical step, the period during heel strike (start of a footfall) and toe roll (end of a footfall) consists of nearly point contact between the foot and the ground. During these phases the ankle and all other joints have no authority to impart moments between the robot and the ground. The zero moment point method cannot address this problem of point contact, and typical control methods will not work due to the unactuated degree of freedom. Therefore some sense of dynamic stability is required.
+    </p>
+    <p>
+     To explicitly address this problem, the robot studied here has point feet. This forces the controller the continuously deal with the underactuation. Once methods are developed to deal with underactuated phases, they can be applied to more complicated robots with actuated ankles.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     4 Robot Model
+    </div>
+    <p>
+     The robot model studied for this project is the three-link walker showninFigure3. The robot has two legs of length r and a torso of length L. Each leg has a lumped mass m at the leg midpoint. There is a lumped hip mass MH and a lumped torso mass MT. The angles used to define the robot geometry are absolute angles measured with respect to the inertial frame.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the angle of the stance leg,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the angle of the swing leg, and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the angle of the torso. The parameters used are shown in Table 1.
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3: The 3-link walker model.
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 1: Parameters used to model the 3-link walker
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     5 Robot Model
+    </div>
+    <p>
+     Through the course of the system analysis and design, there is significant symbolic math, even for this simple robot. While the calculations could be done by hand, most terms are evaluated using the symbolic toolbox in Matlab.
+    </p>
+    <p>
+     The robot is described by a set of generalized coordinates
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . During the stance phase, the number of coordinates N is the number of links N. During flight the robot is not constrained by the ground and there are two additional degrees of freedom representing the(x, y) coordinates of the robot, so
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . The robot dynamics are computed using the method of Lagrange. The Lagrangian is the real-valued function of total kinetic energy K minus total potential energy V,
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (1)
+    </p>
+    <p>
+     Lagrane’s equation is
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (2)
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is a vector of generalized forces and torques.  If the kinetic energy is quadratic it can be represented as
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (3)
+    </p>
+    <p>
+     and (2) takes the form
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (4)
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . From the principle of virtual work, for a force acting at a point
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ,
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (5)
+    </p>
+    <p>
+     Similarly, for a torque
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    acting at a joint,
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (6)
+    </p>
+    <p>
+     To begin, the kinetic and potential energies are calculated by hand based on the system geometry. The only other quantity that must be calculated manually is the vector of generalized forces
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , which is very simple for this problem. From this point onward, all other quantities are derived symbolically. For simplicity, the robot dynamic equations are listed here. All other quantities are derived from these basic dynamics, and will not be written out as they can be quite complicated.
+    <p>
+    </p>
+    <p>
+     First, the equations of motion are derived for the stance phase, when one leg is always in contact with the ground. These dynamics are denoted with the subscript
+     <q>
+      s
+     </q>
+     . The foot of the stance leg is motionless, so there are three degrees of freedom. The kinetic energy matrix denoted
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (7)
+    </p>
+    <p>
+     The potential energy
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (8)
+    </p>
+    <p>
+     the matrix
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is derived from
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    as previously mentioned to yield
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (9)
+    </p>
+    <p>
+     The matrix
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is derived as
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ,
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (10)
+    </p>
+    <p>
+     Finally, the vector of generalized forces is
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (11)
+    </p>
+    <p>
+     where u represents the torque applied to the two legs.
+    </p>
+    <p>
+     The stance phase dynamics of the robot are now completely described by
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (12)
+    </p>
+    <p>
+     For future use in deriving the impact model, the kinetic energy of the robot is also derived for the flight phase when there is no contact with the ground. There are now two additional degrees of freedom representing the horizontal and vertical positions of the robot, making five total degrees of freedom. The two additional states are appended to the end of the state vector q. The top left corner of the flight phase kinetic energy matrix
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is simply the stance phase matrix
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . The matrix is symmetric, so for space considerations those entries below the diagonal are omitted. This,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (13)
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     6 Impact Model
+    </div>
+    <p>
+     Now that the continuous dynamics are solved for the stance phase, an impact model must be developed to describe what happens at foot impact. The development is sketched here, the reader is invited to consult [2] for technical proofs. The fundamental assumption used here is that the forces applied to the swing foot when it hits the ground are impulsive. With a relatively hard walking surface and rigid robot, these forces are very fast in comparison to the rest of the dynamics, so this assumption is reasonable. The main result of this assumption is that these instantaneous forces can produce a step change in the velocities of the robot, but not the configuration. Therefore,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .
+    <p>
+    </p>
+    <p>
+     The first step is to augment the stance coordinates
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    with two additional states to describe the horizontal and vertical position of the robot. The dynamics under these new coordinates
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    describe the full free-body
+    <q>
+     flight
+    </q>
+    dynamics of the robot without constraints on the stance foot. In the flight coordinates, the dynamics are:
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (14)
+    </p>
+    <p>
+     By
+     <q>
+      integrating
+     </q>
+     (14) over the instantaneous impact [2], the impact event must satisfy
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (15)
+    </p>
+    <p>
+     To relate forces in the inertial frame
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    at the swing level end position
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    to the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    in the model, use the principle of virtual work. Then
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (16)
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . The condition of no slip and no rebound at foot contact can be written as
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (17)
+    </p>
+    <p>
+     These equations are simulatenously solved as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (18)
+    </p>
+    <p>
+     Solving these equations yields the velocities after the impact,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Note that this method is basically conservation of momentum about the swing leg impact point. The other change that takes place with each step is a relabeling of the coordinates to exchange the stance and swing legs, described by the coordinate change(rotation) matrix R. These changes are lumped together, and the net result is the impact, or reset, map
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    that describes the state transition from the end of one step to the start of the next step
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (19)
+    </p>
+    <div>
+     <div class="head_2">
+      6.1 Reset Surface
+     </div>
+     <p>
+      Normally, the switching surface in the state space corresponds to the swing leg foot impacting the ground. However, in a robot without knees, the swing leg will always scuff the ground when it crosses the other leg.
+     </p>
+     <p>
+      For this case, ground impact is assumed to be initiated by the controller. The swing leg is assumed to touch the ground only when allowed by the controller. One way to do this is to have the swing leg pivot slightly outward; this puts it outside of the walking plane and it can rotate forward without ground contact. The leg is brought back inline to initiate contact. Another method is to have a small portion of the leg that can
+      <q>
+       pick up
+      </q>
+      to avoid ground contact. Both methods have been shown to work in hardware versions of robots without knees.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     7 Specifying a walking motion
+    </div>
+    <p>
+     The control designer must somehow specify the type of motion the robot will walk. Rather than specify time trajectories to follow, this is done by assigning a relationship between the various body configuration variables called a
+     <q>
+      virtual constraint
+     </q>
+     . The controller then works to enforce these virtual contstraints between various joint angles. When these constraints are correctly enforced, the controlled joint states are defined, and the dynamics that remain are the
+     <q>
+      zero dynamics
+     </q>
+     .
+    </p>
+    <p>
+     To execute this method, first choose a generalized coordinate that is monotonically increasing during a step. For this robot, the angle of the stance leg
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is convenient. The other joint angles are then assigned a configuration based on
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Let the desired torso angle be described by
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and the desired swing leg angle by
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .
+    <p>
+    </p>
+    <p>
+     Now, define the output functions
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    such that zeroing the output means the constraints are enforced
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (20)
+    </p>
+    <p>
+     When the output y is zero, dynamics have only 2 states,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . All other states are defined as functions of these two states. These are the zero dynamics of the system. For this particular system, the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    dynamics are enforcing conservation of momentum about the stance foot.
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     8 Feedback Control
+    </div>
+    <p>
+     In order to enforce the virtual constraints, a feedback controller is used to drive the output y to zero. Feedback linearization and coordinate transformations are used to simplify the control problem. Several of the available stability theorems require the trajectories to be exactly on the zero dynamics manifold. Therefore a controller is required that zeros the output in finite time (within one step). In practice, a sufficiently fast exponential controller also works, so this type of controller is used as well.
+    </p>
+    <div>
+     <div class="head_2">
+      8.1 Finite-Time Controller
+     </div>
+     <p>
+      Assign the functions
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (21)
+     </p>
+     <p>
+      where
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (22)
+     </p>
+     <p>
+      and
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (23)
+     </p>
+     <p>
+      The parameters
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     are turning parameters. Now, the control input is
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (24)
+     </p>
+     <p>
+      where
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is the Lie derivative. With this controller, the output y will converge to zero in infinite time.
+     <p>
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      8.2 Exponential Controller
+     </div>
+     <p>
+      An easier controller implementation is an exponential controller for the input-output linearized system. For this method, the control input is
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (25)
+     </p>
+     <p>
+      where K1 and K2 are turning matrices.
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 4: The Zero Dynamics Manifold of a System with Impulse Effects.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     9 Simulations
+    </div>
+    <p>
+     To simulate the robot dynamics, two distinct steps are required. Starting at some initial condition, the continuous dynamics evolve according to (12) until the trajectory intersects the switching surface S. At this point, the reset/impact map
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is applied as in(19) to find a new initial condition for the continuous dynamics. When the output y is zero, the continuous dynamics evolve along the zero dynamics manifold. Note that the reset map does not necessarily map the continuous state back onto the zero dynamics manifold, but the feedback controller will drive the state back to the zero dynamics manifold after each reset. For the gaits studied with this robot, the reset map does not map the state back onto the zero dynamics manifold. This process is illustrated in Figure 4.
+    <p>
+    </p>
+    <p>
+     A very simple walking gait with a stable orbit generated by assigning the virtual constraints as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . This means the torso has constant angle and the swing leg mirrors the stance leg. The swing leg impact is chosen to occur when
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . This orbit generates a fixed point of the switching surface(which is also the Poincaré map) of
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (26)
+    </p>
+    <p>
+     and, after applying the reset map
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (27)
+    </p>
+    <p>
+     Notice that the virtual constraint
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    implies that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is zero if the constraint is enforced, as it is at the end of the step. Immediately after impact,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is non-zero and thus not on the zero dynamics manifold. The controller drives the trajectory back to the zero dynamics manifold before the end of the step. The time history of the joint angles is shown inFigure9. The convergence to a stable orbit from an initial condition is shown in Figure 14. The stable orbit is shown by the thick lines where many orbits have converged. The discontinuous jump is caused by the reset map. Note that the impact maps
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    to a nonzero value, but it is driven back to zero by the controller. The x-y plane, when
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , can be viewed as the zero dynamics manifold in this figure.
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 5: Joint angles for the stable periodic orbit with finite-time controller.
+    </p>
+    <p>
+     To study how the virtual constraints are implemented, the output function
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is plotted in Figure 7. Each peak is caused by the reset map with each step. Note that it takes a few steps to converge to the stable orbit, and that the output is driven to zero with each step because of the finite-time converging controller.
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 6: Stable Walking Gait with convergence from an initial condition for finite-time controller. The discontinuities are caused by the reset map.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 7: Output Function y = h(x).
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     10 Stability Proofs for Finite-Time Converging Controller
+    </div>
+    <p>
+     The walking dynamics of the robot can be modeled as an autonomous system with impulse effects
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (28)
+    </p>
+    <p>
+     The following hypotheses are assumed about system
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .
+    <p>
+    </p>
+    <p>
+     <b>
+      HSH1)
+     </b>
+     X is a smooth embedded submanifold of
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .
+    <p>
+    </p>
+    <p>
+     <b>
+      HSH2)
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is continuous and a solution of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    from a given initial condition is unique and depends continuously on the initial condition.
+    <p>
+    </p>
+    <p>
+     <b>
+      HSH3)
+     </b>
+     S is nonempty and there exist an open set
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and a differentiable function
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    such that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ; moreover, for every
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .
+    <p>
+    </p>
+    <p>
+     <b>
+      HSH4)
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is continuous, where S is given the subset topology from X.
+    <p>
+    </p>
+    <p>
+     <b>
+      HSH5)
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    where
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the set closure of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .
+    <p>
+    </p>
+    <p>
+     In addition, the following hypotheses are applied to an invariant submanifold of the system
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     <b>
+      HInv1)
+     </b>
+     Z is an embedded submanifold of X.
+    </p>
+    <p>
+     <b>
+      HInv2)
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is an embedded submanifold with dimension one less than the dimension of Z.
+    <p>
+    </p>
+    <p>
+     <b>
+      HInv3)
+     </b>
+     Z is a locally continuously finite-time attractive.
+    </p>
+    <p>
+     Define the restricted Poincaré map
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (29)
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the set of points in S for which the solution returns to the zero dynamics manifold before the next impact. Then, the stability of the system can be analyzed on the zero-dynamics manifold.
+    <p>
+    </p>
+    <p>
+     <b>
+      Theorem: Low-Dimensional Stability Test-I
+     </b>
+     Assume that the autonomous system
+    </p>
+    <p>
+     With impulse effects(28) satisfies the hypotheses HSH1-HSH5. Suppose furthermore that
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    satisfies Hinv1-Hinv3. Then
+    <p>
+    </p>
+    <list>
+     <item>
+      1. A periodic orbit is transversal to
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      if, and only if, it is transversal to
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .
+     </item>
+     <item>
+      2.
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      gives rise to a periodic orbit of (28) if, and only if,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .
+     </item>
+     <item>
+      3.
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      gives rise to a stable (resp., asymptotically stable) periodic orbit of (28) if, and only if, x* is a stable (resp., asymptotically stable) equilibrium point of
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .
+     </item>
+    </list>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 8: The Return Map of the Zero Dynamics. The dashed line in the top figure is the identity function
+    </p>
+    <p>
+     This theorem is used to prove the stability of the orbits described in Section 11 by checking the stability of the Poincaré return map. The main benefit of this theorem is that the stability check is carried out on the zero dynamics manifold rather than the full system dynamics. For this robot, this benefit means checking a one-dimensional system rather than the five-dimensional stability map of the full system. The zero dynamics of this model are the
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    variables, and the switching surface is defined by a constant value of stance leg angle
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . The value of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    just before the impact is varied about the fixed point (26) to study the stability of the orbit. The top plot in Figure shows the value of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    after the orbit travels through the impact map and the next step and returns to S. This is the Poincaré map (29). The dashed line is the identity function. The bottom plot shows the difference between the initial
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and the return value after one step
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . From either plot it is clear that the fixed point is stable, thus the periodic orbit is stable. The fixed point is also clearly identified at
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , as in (26).
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 9: Joint angles for the stable periodic orbit with exponential controller.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     11 Simulations with Exponential Controller
+    </div>
+    <p>
+     Next, an exponential controller is used to zero the output function h as described in Section 8.2. Using the exponential controller rather than the finite-time version means that the dynamics are no longer guaranteed to exactly converge to the zero dynamics manifold with each step. As long as the exponential controller is
+     <q>
+      fast enough
+     </q>
+     , the resulting gait is very similar to that obtained with the finite-time controller. The same figures are shown here as for the finite time controller. The output h in plotted in Figure 11 for both finite-time and exponential controllers. Note that the output h does not reach zero with each step with the exponential controller, as it does with the finite time controller. Videos for this
+     <q>
+      simple gait
+     </q>
+     are available at [1].
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     12 Stability Proofs for Exponential Controller
+    </div>
+    <p>
+     The hypotheses HS2 and HSH4 are strengthened to make the autonomous system with impulse effects (28) continuously differentiable.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 10: Stable Walking Gait with convergence from an initial condition for exponential controller. The discontinuities are caused by the reset map.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 11: Output Function
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    for the finite-time and exponential controllers.
+    <p>
+    </p>
+    <p>
+     <b>
+      HSH2’)
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is continuously differentiable.
+    <p>
+    </p>
+    <p>
+     <b>
+      HSH4’)
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is continuously differentiable.
+    <p>
+    </p>
+    <p>
+     Without explicit mathematical definitions, let TI be the time until impact from any state x. Let S˜ be the points in S that map to an x that eventually intersects the switching surface again. The following Corollary can then be used to prove stability of the system with an exponential controller.
+    </p>
+    <p>
+     <b>
+      Corollary (Method of Poincaré Sections for Differentiable Systems with Impulse Effects)
+     </b>
+     Consider Hypotheses HSH1-HSH5 and assume that HSH2 and HSH4 are strengthened to HSH2’ and HSH4’. Then
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    are continuously differentiable, and, consequently,
+    <p>
+    </p>
+    <p>
+     •
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is an exponentially stable equilibrium point of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    if, and only if, the eigenvalues of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , the jacobian linearization of P at x*, have magnitude strictly less than one.
+    <p>
+    </p>
+    <p>
+     By perturbing the initial conditions around the fixed point, the jacobian of the Poincaré map is numerically evaluated. Note that this is the jacobian on the switching surface and thus has five dimensions rather than the full six. The jacobian matrix is 5 x 5, and its eigenvalues are
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (30)
+    </p>
+    <p>
+     All the eigenvalues have magnitude less than one, so the fixed point for the exponential controller is stable. If the gains of the exponential controller are decreased, the eigenvalues become unstable, as does the orbit. This happens when the controller is no longer fast enough to bring the dynamics back to the zero dynamics manifold between steps.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     13 Zero Dynamics
+    </div>
+    <p>
+     The dynamics of the system can also be studied by restricting the dynamics to the zero dynamics manifold. The virtual constraints are assumed to be enforced exactly, making
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    functions of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . The system can then be studied using the dynamics of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . The choice of control (finite time vs. exponential) is then irrelevant as the dynamics are evolving exactly along the h(x)=0 and no corrective control action is required. The zero dynamics are exactly the conservation of angular momentum about the stance foot. There are some elegant coordinate transformations in [2] that make this fact obvious. The question then arises of how to apply the reset map for the zero dynamics. When an impact occurs, angular momentum is conserved about the swing foot. Due to the
+    <q>
+     impulse
+    </q>
+    assumption, the robot configuration does not change, but the velocities do. Conservation of angular momentum Lang takes the form of
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (31)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 12: The zero dynamics.
+    </p>
+    <p>
+     This can be reduced to a reset map that determines the velocity on the zero dynamics manifold after impact
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (32)
+    </p>
+    <p>
+     For this robot and the gaits considered here, the function
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    decreases the velocity
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    by about 20% with each impact.
+    <p>
+    </p>
+    <p>
+     The zero dynamics are simulated by making
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    explicit functions of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . There are then only two continuous states. The reset map 32 is applied to yield the system with impulse effects. The results of the low-dimensional system are shown in Figure 12. Note that the zero dynamics simulations correctly identify the fixed point at
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . A stability test was conducted, and the results are the same as shown in Figure 10. This is not surprising, as the previous result was based on the dynamics exactly converging to this manifold. The 3-D figures like Figure collapse to 2-D because the output function h is perfectly satisfied.
+    <p>
+    </p>
+    <p>
+     By studying the stable orbits of the zero dynamics, one can find orbits of the full system by searching in a lower-dimensional space. Though not repeated here, theorems are available in [2] to prove that stable orbits of the zero dynamics are stable orbits of the full system under certain conditions. Results are available both for finite-time controllers and for
+     <q>
+      fast enough
+     </q>
+     exponential controllers.
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 2: Parameters for an optimized gait
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     14 An Additional Gait
+    </div>
+    <p>
+     A more complicated gait was also simulated that is more energy efficient. This gait is defined by the virtual constraints
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    in (20) by
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (33)
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the swing leg ground contact angle and the ai are the parameters in Table 2.
+    <p>
+    </p>
+    <p>
+     The output function h in (20) is now defined by these more complicated functions. The impact/reset map does not change. The full-dimensional system is simulated with a finite-time controller, and the results are shown in Figures 13-15. Note that
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is now a function rather than a constant, so the zero dynamics manifold in Figure 14 is no longer simply
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Videos are available at [1],you may need to save the file to a local disk first.
+    <p>
+    </p>
+    <p>
+     Stable Periodic Orbit with exponential controller
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 13: Joint angles for the energy-efficient gait with finite-time controller.
+    </p>
+    <p>
+     Full Dynamics
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 14: Stable Walking Gait with convergence from an initial condition for energy efficient gait with finite-time controller. The discontinuities are caused by the reset map.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Figure 15: Output Function y = h(x).
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     15 Conclusions
+    </div>
+    <p>
+     Biped walking is a challenging problem due to complicated dynamics and large state space for all but the simplest models. A fundamental challenge is the natural underactuation that occurs with walking. A useful solution to this problem is to define walking gaits by virtual constraints rather than trajectory tracking. This yields robust, provably stable orbits of the system that correspond to walking. When these virtual constraints are satisfied, the dynamics of the system can be analyzed on the zero dynamics manifold, allowing the designer to study a lower-dimensional system.
+    </p>
+    <p>
+     In this project, a 3-link biped walker was studied. The continuous dynamics and impact map were derived. Finite-time and exponential controllers were used to control joint angles, and the stability of the periodic orbit was proven for both cases. Two walking gaits were studied, a simple version and one that is more energy efficient.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N1046D">
+     <li id="N1046E">
+      [1] http://www-personal.umich.edu/ dopila/662/.
+     </li>
+     <li id="N10470">
+      [2] E.R. Westervelt, J.W. Grizzle, C. Chevallereau, J.H Choi, and B. Morris. Feedback Control of Dynamic Bipedal Robot Locomotion. CRC Press, 2007.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

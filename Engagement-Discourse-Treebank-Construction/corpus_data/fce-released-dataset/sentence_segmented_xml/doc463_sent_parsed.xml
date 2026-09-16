@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or
+       <ns type="S">
+        <i>
+         Madame
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       I was on
+       <ns type="MD">
+       </ns>
+       week's holiday in London and I went
+       <ns type="UY">
+        <i>
+         there
+        </i>
+       </ns>
+       to the theatre to see "Over The Rainbow". I must say that your musical show was very disappointing for me.
+      </p>
+      <p>
+       "Over The Rainbow"
+       <ns type="TV">
+        <i>
+         was looking
+        </i>
+       </ns>
+       very interesting
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       your advertisement but
+       <ns type="MD">
+       </ns>
+       organisation and
+       <ns type="RN">
+        <i>
+         play
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       almost terrible.
+      </p>
+      <p>
+       First of all
+       <ns type="MP">
+       </ns>
+       I expected to see Danny Brook, but I saw
+       <ns type="MD">
+       </ns>
+       different actor and that was
+       <ns type="MD">
+       </ns>
+       big disappointment for me.
+      </p>
+      <p>
+       Secondly
+       <ns type="MP">
+       </ns>
+       the show started at quarter past eight. This is
+       <ns type="MD">
+       </ns>
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           fourty-five
+          </i>
+         </ns>
+         minutes
+        </i>
+       </ns>
+       delay.
+      </p>
+      <p>
+       Moreover
+       <ns type="MP">
+       </ns>
+       there
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       not any discounts and all of the tickets
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       the same
+       <ns type="AGN">
+        <i>
+         <ns type="RN">
+          <i>
+           prizes
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         Out
+        </i>
+       </ns>
+       the end
+       <ns type="MP">
+       </ns>
+       your theatre restaurant was closed
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       unknown reasons, but
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         an
+        </i>
+       </ns>
+       advertisement
+       <ns type="MA">
+       </ns>
+       was clearly
+       <ns type="RV">
+        <i>
+         sign
+        </i>
+       </ns>
+       :
+      </p>
+      <p>
+       "Visit our theatre restaurant after the show". That was cruel, because I was very
+       <ns type="S">
+        <i>
+         haungry
+        </i>
+       </ns>
+       after the show.
+      </p>
+      <p>
+       At the end of this letter I would like to ask if you can refund my money. I will be very pleased if
+       <ns type="M">
+       </ns>
+       so. I am looking forward to hearing from you.
+      </p>
+      <p>
+       Yours
+       <ns type="DY">
+        <i>
+         faithfuly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madame,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I was on  week's holiday in London and I went there to the theatre to see "Over The Rainbow".
+       </s>
+       <s pid="2" sid="2">
+        I must say that your musical show was very disappointing for me.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        "Over The Rainbow" was looking very interesting on your advertisement but  organisation and play was almost terrible.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First of all I expected to see Danny Brook, but I saw  different actor and that was  big disappointment for me.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly the show started at quarter past eight.
+       </s>
+       <s pid="5" sid="2">
+        This is  fourty-five minutes delay.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Moreover there was not any discounts and all of the tickets had the same prizes.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Out the end your theatre restaurant was closed from unknown reasons, but on an advertisement  was clearly sign:
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        "Visit our theatre restaurant after the show".
+       </s>
+       <s pid="8" sid="2">
+        That was cruel, because I was very haungry after the show.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        At the end of this letter I would like to ask if you can refund my money.
+       </s>
+       <s pid="9" sid="2">
+        I will be very pleased if  so.
+       </s>
+       <s pid="9" sid="3">
+        I am looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours faithfuly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="MD">
+        <i>
+         Twentieth
+        </i>
+       </ns>
+       century was a century of inventions. Some of them are big and some of
+       <ns type="SX">
+        <i>
+         theme
+        </i>
+       </ns>
+       are small, but they
+       <ns type="RV">
+        <i>
+         effect
+        </i>
+       </ns>
+       our lives in the same way. Technology
+       <ns type="TV">
+        <i>
+         <ns type="IV">
+          <i>
+           maked
+          </i>
+         </ns>
+        </i>
+       </ns>
+       our life different than
+       <ns type="MD">
+       </ns>
+       life of people
+       <ns type="MP">
+       </ns>
+       for example
+       <ns type="MP">
+       </ns>
+       living in
+       <ns type="MD">
+       </ns>
+       nineteenth century.
+      </p>
+      <p>
+       Modern technology makes our lives different, maybe better. Often people do not see how it
+       <ns type="RV">
+        <i>
+         effects
+        </i>
+       </ns>
+       our
+       <ns type="RP">
+        <i>
+         life style
+        </i>
+       </ns>
+       . Useful things like TV sets, radios, computers,
+       <ns type="UN">
+        <i>
+         Hi-Fi
+        </i>
+       </ns>
+       stereos and cars - we are dealing with them every day. They help us with daily life and make it more pleasant. Transport and communication
+       <ns type="W">
+        <i>
+         without cars, trains, planes and telephones
+         <ns type="TV">
+          <i>
+           will
+          </i>
+         </ns>
+         not exist
+        </i>
+       </ns>
+       . We know our world from TV screens and computer monitors. Without these, and newspapers of course
+       <ns type="MP">
+       </ns>
+       knowing our world could be hard.
+       <ns type="ID">
+        <i>
+         On the second hand
+        </i>
+       </ns>
+       people are suffering from modern diseases like addiction to television or computers.
+       <ns type="RY">
+        <i>
+         <ns type="RT">
+          <i>
+           On
+          </i>
+         </ns>
+         the end
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       we must mention modern medicine. It saves our lives from ancient and modern diseases.
+      </p>
+      <p>
+       To sum up
+       <ns type="MP">
+       </ns>
+       modern technology changed our daily life. Mine too. I
+       <ns type="X">
+        <i>
+         think that I could not
+        </i>
+       </ns>
+       live
+       <ns type="MD">
+       </ns>
+       normal life without these inventions. They are like
+       <ns type="MD">
+       </ns>
+       air I
+       <ns type="DV">
+        <i>
+         breath
+        </i>
+       </ns>
+       . I am
+       <ns type="RV">
+        <i>
+         questioning
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         myselfs
+        </i>
+       </ns>
+       - am I
+       <ns type="MD">
+       </ns>
+       sick man?
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Twentieth century was a century of inventions.
+       </s>
+       <s pid="1" sid="2">
+        Some of them are big and some of theme are small, but they effect our lives in the same way.
+       </s>
+       <s pid="1" sid="3">
+        Technology maked our life different than  life of people for example living in  nineteenth century.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Modern technology makes our lives different, maybe better.
+       </s>
+       <s pid="2" sid="2">
+        Often people do not see how it effects our life style.
+       </s>
+       <s pid="2" sid="3">
+        Useful things like TV sets, radios, computers, Hi-Fi stereos and cars - we are dealing with them every day.
+       </s>
+       <s pid="2" sid="4">
+        They help us with daily life and make it more pleasant.
+       </s>
+       <s pid="2" sid="5">
+        Transport and communication without cars, trains, planes and telephones will not exist.
+       </s>
+       <s pid="2" sid="6">
+        We know our world from TV screens and computer monitors.
+       </s>
+       <s pid="2" sid="7">
+        Without these, and newspapers of course knowing our world could be hard.
+       </s>
+       <s pid="2" sid="8">
+        On the second hand people are suffering from modern diseases like addiction to television or computers.
+       </s>
+       <s pid="2" sid="9">
+        On the end we must mention modern medicine.
+       </s>
+       <s pid="2" sid="10">
+        It saves our lives from ancient and modern diseases.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        To sum up modern technology changed our daily life.
+       </s>
+       <s pid="3" sid="2">
+        Mine too.
+       </s>
+       <s pid="3" sid="3">
+        I think that I could not live  normal life without these inventions.
+       </s>
+       <s pid="3" sid="4">
+        They are like  air I breath.
+       </s>
+       <s pid="3" sid="5">
+        I am questioning myselfs - am I  sick man?
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

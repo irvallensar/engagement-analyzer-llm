@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+      </p>
+      <p>
+       Thank you for your lovely letter
+       <ns type="RP">
+        <i>
+         ?
+        </i>
+       </ns>
+       I was really
+       <ns type="DJ">
+        <i>
+         surprise
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         <ns type="IV">
+          <i>
+           heared
+          </i>
+         </ns>
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       won
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       your competition.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         With pleasure I'll give
+        </i>
+       </ns>
+       all
+       <ns type="MD">
+       </ns>
+       information
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       you need.
+      </p>
+      <p>
+       I would like to book my tickets
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       the beginning of July. The 3rd of July will suit
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       me.
+      </p>
+      <p>
+       As far as I know
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       at Camp California is in tents or log cabins. I prefer log cabins. It's more
+       <ns type="S">
+        <i>
+         convinient
+        </i>
+       </ns>
+       for me.
+      </p>
+      <p>
+       I am very glad I can
+       <ns type="FV">
+        <i>
+         chose
+        </i>
+       </ns>
+       two activities while I
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       at the Camp. I am keen on basketball
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I played in my country for 7 years. I am
+       <ns type="MD">
+       </ns>
+       good
+       <ns type="S">
+        <i>
+         diffender
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I would like to choose surfing
+       <ns type="RT">
+        <i>
+         like
+        </i>
+       </ns>
+       my second
+       <ns type="AGN">
+        <i>
+         activities
+        </i>
+       </ns>
+       . I've never done it before. I'd like to get some lessons if it's possible. I've seen how people do it but I've never tried it
+       <ns type="R">
+        <i>
+         my own
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I'd like to know what temperature
+       <ns type="M">
+       </ns>
+       in July in California and
+       <ns type="SX">
+        <i>
+         <ns type="MP">
+          <i>
+           youre
+          </i>
+         </ns>
+        </i>
+       </ns>
+       advice about how much money I will need to have an
+       <ns type="DJ">
+        <i>
+         unforgetable
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         <ns type="S">
+          <i>
+           hollydays
+          </i>
+         </ns>
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         sincerely
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your lovely letter?
+       </s>
+       <s pid="2" sid="2">
+        I was really surprise to heared I have won in your competition.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        With pleasure I'll give all  information wich you need.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to book my tickets from the beginning of July.
+       </s>
+       <s pid="4" sid="2">
+        The 3rd of July will suit to me.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        As far as I know accomodation at Camp California is in tents or log cabins.
+       </s>
+       <s pid="5" sid="2">
+        I prefer log cabins.
+       </s>
+       <s pid="5" sid="3">
+        It's more convinient for me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I am very glad I can chose two activities while I will at the Camp.
+       </s>
+       <s pid="6" sid="2">
+        I am keen on basketball, I played in my country for 7 years.
+       </s>
+       <s pid="6" sid="3">
+        I am  good diffender.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I would like to choose surfing like my second activities.
+       </s>
+       <s pid="7" sid="2">
+        I've never done it before.
+       </s>
+       <s pid="7" sid="3">
+        I'd like to get some lessons if it's possible.
+       </s>
+       <s pid="7" sid="4">
+        I've seen how people do it but I've never tried it my own.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I'd like to know what temperature  in July in California and youre advice about how much money I will need to have an unforgetable hollydays!
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="W">
+        <i>
+         Is shopping
+        </i>
+       </ns>
+       not always enjoyable, is it?
+      </p>
+      <p>
+       We can't say that
+       <ns type="MA">
+       </ns>
+       is always enjoyable or
+       <ns type="MA">
+       </ns>
+       is not. Every new day is not the same. But...
+      </p>
+      <p>
+       I think that good shopping depends on
+       <ns type="RA">
+        <i>
+         <ns type="DA">
+          <i>
+           ourself
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . If we
+       <ns type="TV">
+        <i>
+         decided
+        </i>
+       </ns>
+       to
+       <ns type="SX">
+        <i>
+         by
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         somthing
+        </i>
+       </ns>
+       special and we have enough money for it we have to go and buy it. Probably, maybe not.
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         Some times
+        </i>
+       </ns>
+       we have
+       <ns type="UV">
+        <i>
+         to have
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         deal
+        </i>
+       </ns>
+       with
+       <ns type="DJ">
+        <i>
+         not good
+        </i>
+       </ns>
+       service or
+       <ns type="MP">
+       </ns>
+       for example
+       <ns type="MP">
+       </ns>
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       you imagine
+       <ns type="AS">
+        <i>
+         it on your way to
+         <ns type="MD">
+         </ns>
+         shop you have met wrong people
+        </i>
+       </ns>
+       or someone
+       <ns type="FV">
+        <i>
+         told
+        </i>
+       </ns>
+       you bad news.
+      </p>
+      <p>
+       Or
+       <ns type="M">
+       </ns>
+       quality of your new thing is not so good
+       <ns type="R">
+        <i>
+         that
+        </i>
+       </ns>
+       you
+       <ns type="UY">
+        <i>
+         really
+        </i>
+       </ns>
+       expected.
+       <ns type="MD">
+        <i>
+         Situations
+        </i>
+       </ns>
+       are
+       <ns type="DJ">
+        <i>
+         variously
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Maybe you will spend all your money
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       a new thing and a few hours later your best friend will invite you to go to
+       <ns type="MD">
+       </ns>
+       night-club but you
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       short of money. Some people will do crazy things in
+       <ns type="MD">
+       </ns>
+       situation like this. They will hate this new thing because they will miss a party.
+      </p>
+      <p>
+       But I want to wish you
+       <ns type="R">
+        <i>
+         have a good
+        </i>
+       </ns>
+       enjoyable shopping
+       <ns type="R">
+        all your way
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Is shopping not always enjoyable, is it?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        We can't say that  is always enjoyable or  is not.
+       </s>
+       <s pid="2" sid="2">
+        Every new day is not the same.
+       </s>
+       <s pid="2" sid="3">
+        But...
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think that good shopping depends on ourself.
+       </s>
+       <s pid="3" sid="2">
+        If we decided to by somthing special and we have enough money for it we have to go and buy it.
+       </s>
+       <s pid="3" sid="3">
+        Probably, maybe not.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Some times we have to have deal with not good service or for example could you imagine it on your way to  shop you have met wrong people or someone told you bad news.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Or  quality of your new thing is not so good that you really expected.
+       </s>
+       <s pid="5" sid="2">
+        Situations are variously.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Maybe you will spend all your money for a new thing and a few hours later your best friend will invite you to go to  night-club but you are short of money.
+       </s>
+       <s pid="6" sid="2">
+        Some people will do crazy things in  situation like this.
+       </s>
+       <s pid="6" sid="3">
+        They will hate this new thing because they will miss a party.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        But I want to wish you have a good enjoyable shopping all your way.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

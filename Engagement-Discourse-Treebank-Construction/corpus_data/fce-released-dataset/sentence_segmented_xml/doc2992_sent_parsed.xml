@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     27.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       I was very
+       <ns type="DJ">
+        <i>
+         please
+        </i>
+       </ns>
+       to receive your letter. It is my pleasure to help you
+       <ns type="MT">
+       </ns>
+       organising the international student conference.
+      </p>
+      <p>
+       Firstly, for your information, the group has been booked into the Palace Hotel, which is located
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the town centre. Students can take the airport bus
+       <ns type="W">
+        <i>
+         to the hotel directly
+        </i>
+       </ns>
+       when you arrive. And the best way to get from there to the conference is
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       by coach, as there are about 35
+       <ns type="DJ">
+        <i>
+         internation
+        </i>
+       </ns>
+       students,
+       <ns type="MC">
+       </ns>
+       they are all strangers here. Therefore it is no good taking a bus. I will help you to book the coach.
+      </p>
+      <p>
+       Secondly, the end-of-conference party will be held at
+       <ns type="MD">
+       </ns>
+       <ns type="MP">
+        <i>
+         college
+        </i>
+       </ns>
+       main hall,
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       8:00 pm to 11:30 pm on 20th June. There will be various kinds of food and drinks provided. Moreover, students can dance and enjoy different sorts of music, for instance, rock, jazz, pop, garage and so on. Furthermore, I suggest you and the students
+       <ns type="FV">
+        <i>
+         wearing
+        </i>
+       </ns>
+       <ns type="DN">
+        pub-wears
+       </ns>
+       to it, as
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       suitable for dancing.
+      </p>
+      <p>
+       Finally, on the last day, I suggest you
+       <ns type="UV">
+        <i>
+         could
+        </i>
+       </ns>
+       go
+       <ns type="MT">
+       </ns>
+       the market
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       town during the 3-hour gap. It is a nice place to buy
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         British style
+        </i>
+       </ns>
+       gifts
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       your family and friends. You could also enjoy the tea at the cafés nearby.
+      </p>
+      <p>
+       I would be
+       <ns type="RJ">
+        <i>
+         grateful
+        </i>
+       </ns>
+       to give any help
+       <ns type="UC">
+        <i>
+         if
+        </i>
+       </ns>
+       you need. I am looking forward to seeing you.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I was very please to receive your letter.
+       </s>
+       <s pid="2" sid="2">
+        It is my pleasure to help you  organising the international student conference.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, for your information, the group has been booked into the Palace Hotel, which is located on the town centre.
+       </s>
+       <s pid="3" sid="2">
+        Students can take the airport bus to the hotel directly when you arrive.
+       </s>
+       <s pid="3" sid="3">
+        And the best way to get from there to the conference is to by coach, as there are about 35 internation students,  they are all strangers here.
+       </s>
+       <s pid="3" sid="4">
+        Therefore it is no good taking a bus.
+       </s>
+       <s pid="3" sid="5">
+        I will help you to book the coach.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, the end-of-conference party will be held at  college main hall, at 8:00 pm to 11:30 pm on 20th June.
+       </s>
+       <s pid="4" sid="2">
+        There will be various kinds of food and drinks provided.
+       </s>
+       <s pid="4" sid="3">
+        Moreover, students can dance and enjoy different sorts of music, for instance, rock, jazz, pop, garage and so on.
+       </s>
+       <s pid="4" sid="4">
+        Furthermore, I suggest you and the students wearing pub-wears to it, as it is suitable for dancing.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, on the last day, I suggest you could go  the market at town during the 3-hour gap.
+       </s>
+       <s pid="5" sid="2">
+        It is a nice place to buy the British style gifts to your family and friends.
+       </s>
+       <s pid="5" sid="3">
+        You could also enjoy the tea at the cafés nearby.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I would be grateful to give any help if you need.
+       </s>
+       <s pid="6" sid="2">
+        I am looking forward to seeing you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       From: Genevieve Chiu
+      </p>
+      <p>
+       To:
+       <ns type="MD">
+        <i>
+         Group
+        </i>
+       </ns>
+       leader of
+       <ns type="MD">
+       </ns>
+       American students
+      </p>
+      <p>
+       Subject: Interesting building to visit in Hong Kong
+      </p>
+      <p>
+       Visiting Po Lin Temple
+      </p>
+      <p>
+       The purpose of this
+       <ns type="MN">
+       </ns>
+       is to give information to the American students
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       describing Po Lin Temple
+       <ns type="M">
+       </ns>
+       is
+       <ns type="FV">
+        <i>
+         <ns type="UP">
+          <i>
+           worth-visited
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       1. Brief history of Po Lin Temple:
+      </p>
+      <p>
+       It was
+       <ns type="TV">
+        <i>
+         found
+        </i>
+       </ns>
+       in 1910. It is a traditional type of
+       <ns type="RP">
+        <i>
+         chinese
+        </i>
+       </ns>
+       temple. Because of the 2nd World War, it was re-built in 1960. A big
+       <ns type="S">
+        <i>
+         Buhha
+        </i>
+       </ns>
+       was built in 1997 just next to the temple,
+       <ns type="R">
+        <i>
+         which
+        </i>
+       </ns>
+       is the largest outdoor
+       <ns type="S">
+        <i>
+         Buhha
+        </i>
+       </ns>
+       in the world.
+      </p>
+      <p>
+       2. Location:
+      </p>
+      <p>
+       The location of Po Lin Temple is
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       Lotus Island, which is the second biggest island in Hong Kong.
+      </p>
+      <p>
+       3. Opening and Closing time:
+      </p>
+      <p>
+       Po Lin Temple is
+       <ns type="DJ">
+        <i>
+         opened
+        </i>
+       </ns>
+       to
+       <ns type="MD">
+       </ns>
+       public from 8:00 am to 6:00 pm on Monday to Friday, and 9:00 am to 5:30 pm on Saturday and Sunday.
+      </p>
+      <p>
+       4.
+       <ns type="CN">
+        <i>
+         Transports
+        </i>
+       </ns>
+      </p>
+      <p>
+       You could take the MTR (HK underground) straight to Lotus Island or take the ferry to get there. Then you need to take the bus
+       <ns type="M">
+       </ns>
+       A110, A111 or A112
+       <ns type="MP">
+       </ns>
+       to Po Lin Temple. It is quite convenient. All the buses and
+       <ns type="MD">
+       </ns>
+       MTR have
+       <ns type="DN">
+        <i>
+         air-condition
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       5. Attractive points:
+      </p>
+      <p>
+       You could go sightseeing around the Temple and take photos. Of course, you may
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         more
+        </i>
+       </ns>
+       knowledge
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       Hong Kong, as the temple
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       been here for nearly 100 years.
+       <ns type="AS">
+        <i>
+         The
+         <ns type="RJ">
+          <i>
+           <ns type="MP">
+            <i>
+             well known
+            </i>
+           </ns>
+          </i>
+         </ns>
+         Big
+         <ns type="S">
+          <i>
+           Buhha
+          </i>
+         </ns>
+         you mustn't miss it
+        </i>
+       </ns>
+       , or you will be sorry. The temple also
+       <ns type="AGV">
+        <i>
+         provide
+        </i>
+       </ns>
+       free Chinese
+       <ns type="MP">
+        <i>
+         traditional style
+        </i>
+       </ns>
+       meals for visitors.
+      </p>
+      <p>
+       6. Conclusion:
+      </p>
+      <p>
+       To sum up, I think Po Lin Temple is a nice place to visit, especially for Americans students.
+       <ns type="M">
+        <i>
+         Easy
+        </i>
+       </ns>
+       to get there and
+       <ns type="R">
+        free
+        <ns type="S">
+         <i>
+          amittion
+         </i>
+        </ns>
+       </ns>
+       .
+       <ns type="ID">
+        On the other hand
+       </ns>
+       , Hong Kong is known as a highly
+       <ns type="S">
+        <i>
+         commerical
+        </i>
+       </ns>
+       city,
+       <ns type="RC">
+        <i>
+         but
+        </i>
+       </ns>
+       you could find something different in Po Lin Temple.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        From: Genevieve Chiu
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        To: Group leader of  American students
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Subject: Interesting building to visit in Hong Kong
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Visiting Po Lin Temple
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The purpose of this  is to give information to the American students, describing Po Lin Temple is worth-visited.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        1. Brief history of Po Lin Temple:
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        It was found in 1910.
+       </s>
+       <s pid="7" sid="2">
+        It is a traditional type of chinese temple.
+       </s>
+       <s pid="7" sid="3">
+        Because of the 2nd World War, it was re-built in 1960.
+       </s>
+       <s pid="7" sid="4">
+        A big Buhha was built in 1997 just next to the temple, which is the largest outdoor Buhha in the world.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        2. Location:
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        The location of Po Lin Temple is in Lotus Island, which is the second biggest island in Hong Kong.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        3. Opening and Closing time:
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Po Lin Temple is opened to  public from 8:00 am to 6:00 pm on Monday to Friday, and 9:00 am to 5:30 pm on Saturday and Sunday.
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        4. Transports
+       </s>
+      </p>
+      <p pid="13">
+       <s pid="13" sid="1">
+        You could take the MTR (HK underground) straight to Lotus Island or take the ferry to get there.
+       </s>
+       <s pid="13" sid="2">
+        Then you need to take the bus A110, A111 or A112 to Po Lin Temple.
+       </s>
+       <s pid="13" sid="3">
+        It is quite convenient.
+       </s>
+       <s pid="13" sid="4">
+        All the buses and  MTR have air-condition.
+       </s>
+      </p>
+      <p pid="14">
+       <s pid="14" sid="1">
+        5. Attractive points:
+       </s>
+      </p>
+      <p pid="15">
+       <s pid="15" sid="1">
+        You could go sightseeing around the Temple and take photos.
+       </s>
+       <s pid="15" sid="2">
+        Of course, you may get more knowledge about Hong Kong, as the temple have been here for nearly 100 years.
+       </s>
+       <s pid="15" sid="3">
+        The well known Big Buhha you mustn't miss it, or you will be sorry.
+       </s>
+       <s pid="15" sid="4">
+        The temple also provide free Chinese traditional style meals for visitors.
+       </s>
+      </p>
+      <p pid="16">
+       <s pid="16" sid="1">
+        6. Conclusion:
+       </s>
+      </p>
+      <p pid="17">
+       <s pid="17" sid="1">
+        To sum up, I think Po Lin Temple is a nice place to visit, especially for Americans students.
+       </s>
+       <s pid="17" sid="2">
+        Easy to get there and free amittion.
+       </s>
+       <s pid="17" sid="3">
+        On the other hand, Hong Kong is known as a highly commerical city, but you could find something different in Po Lin Temple.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

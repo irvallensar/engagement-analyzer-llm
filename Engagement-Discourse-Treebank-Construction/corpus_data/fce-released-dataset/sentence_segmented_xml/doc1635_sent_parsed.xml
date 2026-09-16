@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir, Madam,
+      </p>
+      <p>
+       I am writing to
+       <ns type="S">
+        <i>
+         complan
+        </i>
+       </ns>
+       about your service. Last Sunday I went to the Circle Theatre. I watched a musical show which
+       <ns type="MV">
+       </ns>
+       called 'Over the Rainbow'. I was very disappointed
+       <ns type="MT">
+       </ns>
+       it
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       there were other actors
+       <ns type="M">
+       </ns>
+       <ns type="RA">
+        <i>
+         which
+        </i>
+       </ns>
+       played
+       <ns type="RY">
+        <i>
+         too
+        </i>
+       </ns>
+       badly. I don't understand why you changed them. I hoped to see Danny Brook and Tina Truelove as was
+       <ns type="RV">
+        <i>
+         presented
+        </i>
+       </ns>
+       in an advertisement.
+      </p>
+      <p>
+       You
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       to start the show at 19.30 p.m. but you started
+       <ns type="RY">
+        <i>
+         too
+        </i>
+       </ns>
+       late at 20.15 p.m
+       <ns type="S">
+        <i>
+         withour
+        </i>
+       </ns>
+       any
+       <ns type="S">
+        <i>
+         ecxpenetion
+        </i>
+       </ns>
+       to
+       <ns type="RN">
+        <i>
+         people
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Why did you put
+       <ns type="RT">
+        <i>
+         into
+        </i>
+       </ns>
+       the advertisement 'Discounts Available'?
+       <ns type="AGA">
+        <i>
+         It
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         <ns type="S">
+          <i>
+           wasen't
+          </i>
+         </ns>
+        </i>
+       </ns>
+       !!!
+       <ns type="R">
+        <i>
+         Any kinds of
+        </i>
+       </ns>
+       tickets were
+       <ns type="M">
+       </ns>
+       original
+       <ns type="S">
+        <i>
+         prase
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After the show many people wanted go to your theatre restaurant, but it was closed because
+       <ns type="W">
+        <i>
+         there someone
+         <ns type="RV">
+          has fixed
+         </ns>
+         something
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I had
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       very disappointing evening so I would like to ask for
+       <ns type="UN">
+        <i>
+         return
+        </i>
+       </ns>
+       my money
+       <ns type="MY">
+       </ns>
+       . I got the ticket for £20.
+      </p>
+      <p>
+       I am
+       <ns type="W">
+        <i>
+         hearing to looking
+         <ns type="S">
+          <i>
+           fermards
+          </i>
+         </ns>
+        </i>
+       </ns>
+       from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+      <p>
+       Ilya V.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir, Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complan about your service.
+       </s>
+       <s pid="2" sid="2">
+        Last Sunday I went to the Circle Theatre.
+       </s>
+       <s pid="2" sid="3">
+        I watched a musical show which  called 'Over the Rainbow'.
+       </s>
+       <s pid="2" sid="4">
+        I was very disappointed  it.
+       </s>
+       <s pid="2" sid="5">
+        Because there were other actors  which played too badly.
+       </s>
+       <s pid="2" sid="6">
+        I don't understand why you changed them.
+       </s>
+       <s pid="2" sid="7">
+        I hoped to see Danny Brook and Tina Truelove as was presented in an advertisement.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        You had to start the show at 19.30 p.m. but you started too late at 20.15 p.m withour any ecxpenetion to people.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Why did you put into the advertisement 'Discounts Available'?
+       </s>
+       <s pid="4" sid="2">
+        It wasen't!!!
+       </s>
+       <s pid="4" sid="3">
+        Any kinds of tickets were  original prase.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        After the show many people wanted go to your theatre restaurant, but it was closed because there someone has fixed something.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I had the very disappointing evening so I would like to ask for return my money .
+       </s>
+       <s pid="6" sid="2">
+        I got the ticket for £20.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am hearing to looking fermards from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Ilya V.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. I knew that but I needed someone who could
+       <ns type="S">
+        <i>
+         understent
+        </i>
+       </ns>
+       and support me at that moment. I told
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       her about my
+       <ns type="S">
+        <i>
+         pregnency
+        </i>
+       </ns>
+       because she has
+       <ns type="MD">
+       </ns>
+       friend who works in a hospital as a doctor. I asked her for
+       <ns type="S">
+        <i>
+         hepl
+        </i>
+       </ns>
+       and she promised me
+       <ns type="MV">
+       </ns>
+       do
+       <ns type="IA">
+        <i>
+         everythings
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         what
+        </i>
+       </ns>
+       she
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       and keep my secret. Pat
+       <ns type="AS">
+        <i>
+         gave
+         <ns type="SX">
+          <i>
+           same
+          </i>
+         </ns>
+         <ns type="DN">
+          <i>
+           advise
+          </i>
+         </ns>
+         for me
+        </i>
+       </ns>
+       and I
+       <ns type="S">
+        <i>
+         disayded
+        </i>
+       </ns>
+       to have an
+       <ns type="S">
+        <i>
+         operetion
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       a week
+       <ns type="UN">
+        <i>
+         time
+        </i>
+       </ns>
+       my classmates and teachers started
+       <ns type="FV">
+        <i>
+         to
+         <ns type="S">
+          <i>
+           toking
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       me. I
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           understand
+          </i>
+         </ns>
+        </i>
+       </ns>
+       who
+       <ns type="TV">
+        <i>
+         told
+        </i>
+       </ns>
+       my secret to everyone. I got
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         big
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         dipress
+        </i>
+       </ns>
+       but my parents supported me. We had a
+       <ns type="RJ">
+        <i>
+         big
+        </i>
+       </ns>
+       conversation. They stopped me
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           to do
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         operetion
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="W">
+        <i>
+         Then I was 15 years old
+        </i>
+       </ns>
+       . Now I am 16 and I have got
+       <ns type="MD">
+       </ns>
+       nice baby boy. My family
+       <ns type="W">
+        <i>
+         very love him
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       and support us. I still go to school and I
+       <ns type="UV">
+        <i>
+         have
+        </i>
+       </ns>
+       plan
+       <ns type="W">
+        <i>
+         go to
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         a
+        </i>
+       </ns>
+       college
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       next year.
+      </p>
+      <p>
+       I would like to tell
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       everyone
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       don't be naive when you share
+       <ns type="W">
+        <i>
+         with
+         <ns type="S">
+          <i>
+           sameone
+          </i>
+         </ns>
+         your big secret or
+         <ns type="S">
+          <i>
+           promlem
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . First tell
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       your parents. I am sure it is the best way.
+       <ns type="S">
+        <i>
+         Ofcoure
+        </i>
+       </ns>
+       secrets can be different...
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        I knew that but I needed someone who could understent and support me at that moment.
+       </s>
+       <s pid="1" sid="4">
+        I told to her about my pregnency because she has  friend who works in a hospital as a doctor.
+       </s>
+       <s pid="1" sid="5">
+        I asked her for hepl and she promised me  do everythings what she can and keep my secret.
+       </s>
+       <s pid="1" sid="6">
+        Pat gave same advise for me and I disayded to have an operetion.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In a week time my classmates and teachers started to toking from me.
+       </s>
+       <s pid="2" sid="2">
+        I understand who told my secret to everyone.
+       </s>
+       <s pid="2" sid="3">
+        I got the big dipress but my parents supported me.
+       </s>
+       <s pid="2" sid="4">
+        We had a big conversation.
+       </s>
+       <s pid="2" sid="5">
+        They stopped me to do the operetion.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Then I was 15 years old.
+       </s>
+       <s pid="3" sid="2">
+        Now I am 16 and I have got  nice baby boy.
+       </s>
+       <s pid="3" sid="3">
+        My family very love him  and support us.
+       </s>
+       <s pid="3" sid="4">
+        I still go to school and I have plan go to a college on next year.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to tell to everyone, don't be naive when you share with sameone your big secret or promlem.
+       </s>
+       <s pid="4" sid="2">
+        First tell to your parents.
+       </s>
+       <s pid="4" sid="3">
+        I am sure it is the best way.
+       </s>
+       <s pid="4" sid="4">
+        Ofcoure secrets can be different...
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

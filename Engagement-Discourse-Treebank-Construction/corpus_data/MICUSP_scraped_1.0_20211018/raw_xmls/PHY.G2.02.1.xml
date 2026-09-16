@@ -1,0 +1,435 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    ﻿Search for SUSY signatures in the Dilepton Channel at CDF
+   </div>
+   <div class="abstract">
+    Abstract
+    <p>
+     One of the best channels for direct Supersymmetry searches is the dilepton channel (two high-pT leptons + 6ET ). Many of the present limits for SUSY have been set at Run I of CDF. Run II will present further opportunities for either discovery of SUSY particles or setting better limits. Presented here are outlines of some of the more promising signatures in this channel: stop quark decay into dileptons and chargino/neutralino decay into dileptons. Also presented is a model that may help explain a softness in lepton pT in the top dilepton sample at Run II of CDF using SUSY.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1 Introduction
+    </div>
+    <p>
+     Supersymmetric theories have long provided a theoretical framework which can overcome many of the shortfalls of the Standard Model. The major shortfall of Supersymmetry (SUSY), however, has been a complete lack of direct experimental measurements, to date. Many of the present limits for SUSY particles have been set by the CDF experiment, which looks at pp collisions at ps = 1.96 TeV. The CDF detector is further described here []. Many SUSY particle decay chains end in leptons. Since lepton events are relatively rare at hadron colliders, lepton signatures are a favorable channel in which to look for new phenomena.
+    </p>
+    <p>
+     The dilepton sample is also an interesting sample to search for new phenomena due to several curiosities. First, there is the number of events that was observed in the top dilepton sample at CDF during Run I. The predicted number of tt events in the dilepton channel
+     <br/>
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <br/>
+    Table 1: Expected rates of dilepton tt production versus observed rates
+    <br/>
+    in 110 pb−1 of data is 5.3 based on the measured cross-section of 6.5 pb (for the nominal theoretical cross-section of 4.7 pb the expected rate is 3.8). Also, for a top mass of 174 GeV, approximately 20 % of dilepton events from tt are expected to have a lepton with ET &gt; 100 GeV and 15% are expected to have 6ET &gt; 100 GeV. While within present statistical errors, these predicted values do vary from what was actually observed in Run I (Table 1). In fact, of the five events that were observed with ET &gt; 100 GeV or 6ET &gt; 100 GeV, only two are kinematically consistent with coming from a 174 GeV top quark. Second, there is the recently (Winter 2003) measured pT distribution for leptons in the top dilepton candidate sample. This issue will be further discussed in Section 4. For all of the scenarios discussed, only R-parity conserving SUSY models will be considered.
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2 Stop Squark Signals in the Dilepton Channel
+    </div>
+    <div>
+     <div class="head_2">
+      2.1 Production and Decay
+     </div>
+     <p>
+      The large Yukawa coupling of the top quark (due to its high mass) has the consequence that its supersymmetric partner, the stop quark, could be the lightest of the SUSY quarks. From an experimental point of view, writing the SUSY Lagrangian in terms of mass eigenstates rather than the more customary weak eigenstates (˜tL and ˜tR) is useful. A compact form of the SUSY Lagrangian containing all quadratic terms with two stops is:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      where the vector
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and Mstop is the mixing matrix, which is given by:
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      It is useful to know the possible mass ranges of the stop for its search. In the framework of mSUGRA (minimal Supergravity), we can calculate the parameters of (2) at the EWK scale and then diagonalize (2). Given the large top quark mass (mt 175 GeV) the ˜tL and ˜tR mixing leads to significant mass splitting between the two mass states (˜t1, ˜t2), allowing us to consider ˜t1 as being the lightest squark and thus the one upon which experimental searches at CDF will focus on. From hereon, ˜t1 will be referred to as ˜t.
+     </p>
+     <p>
+      Leading order calculations for the production cross sections of ˜t˜t via qq annihilation and gluon-gluon fusion are given by:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      Since elementary particles (such as quarks or gluons) are not what are collided at hadron colliders, (3) does not give a complete picture of the production cross-section. Instead, the parton distribution functions of the proton and anti-proton must be taken into account. As a result, cross section falls exponentially with the stop mass. In the mass region of interest to this search (m˜t = 80 − 140 GeV), the cross section drops from 44 pb to 1 pb. The lower limit for this region of interest is set by limits established at LEP II.
+     </p>
+     <p>
+      Assuming R-parity conserving SUSY insures the stability of the lightest supersymmetric particle (LSP). As a result, all supersymmetric particles will eventually decay into the LSP which is undetectable and thus shows up as 6ET in the detector. The ˜t ! b˜±1 (analogous to the top quark decay t ! Wb) has only a small search window remaining at the Tevatron due to the high ˜±1 mass limit from LEP2. Other possible decay modes are the flavor-changing ˜t ! c˜0, which is highly suppressed, and the 3-body decay of ˜t ! ˜lb, which is mostly closed due to the slepton mass limit placed by LEP2. A fourth decay mode of ˜t ! l˜b still remains open due to the present sneutrino mass limit of m˜  45 GeV. The sneutrino is expected to decay to e, μ and with equal branching ratios. This decay mode will yield two opposite sign leptons, and two hadronic jets (from the b-quarks) and a considerable amount of 6ET— a signal basically identical to that of dileptonic top quark decay.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      2.2 Backgrounds
+     </div>
+     <p>
+      Again, a compelling reason to use the dilepton channel for SUSY searches is their relatively low SM backgrounds:
+     </p>
+     <list>
+      <item>
+       • tt: tt decays can yield leptons from W and/or b decays. The branching ratio for this process is very small (indeed, the BR of top pairs decaying to dileptons is 5%). Isolation cuts can also help suppress this background.
+      </item>
+      <item>
+       • Heavy-flavor (bb and cc) with semi-leptonic decay: While the branching ratio for these processes is low, the high rate of heavy-flavor production at CDF is very high. Isolation cuts can help reduce this background as well.
+      </item>
+      <item>
+       • Drell-Yan production: Higher order processes can contribute hadronic jets to create a dilepton signal. This background is fairly well studied as it is a primary source of background for the top-dilepton analysis.
+      </item>
+      <item>
+       • Diboson (WW, WZ, and ZZ) production: Reconstructing mass of the leptons to the boson mass can help identify this background. Also, for any decay involving a Z, two leptons will always reconstruct to the Z mass, thus, a specific mass window corresponding to the Z is removed from the sample.
+      </item>
+      <item>
+       • Vector boson decay (such as J/  and ) to leptons: Again, reconstruction of these resonances can help identify them and specific windows are removed to help eliminate the background.
+      </item>
+      <item>
+       • Fake/misidentified leptons.
+      </item>
+     </list>
+    </div>
+    <div>
+     <div class="head_2">
+      2.3 Cuts
+     </div>
+     <p>
+      The dilepton cuts used in the stop search are as follows:
+     </p>
+     <list>
+      <item>
+       • At least one
+       <q>
+        tight
+       </q>
+       electron or muon: ET (or pT for muon)  10 GeV and ||  1.0
+      </item>
+      <item>
+       • A second
+       <q>
+        tight
+       </q>
+       electron or muon, or, a
+       <q>
+        loose
+       </q>
+       electron or muon: ET (or pT for muon)
+      </item>
+      <item>
+       • Lepton isolation: total pT of p all tracks around the lepton within a cone of R
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       ()2 + ()2  0.4 should not exceed 4 GeV.
+      </item>
+      <item>
+       • At least one jet with ||  1.0 and ET  15 GeV
+      </item>
+      <item>
+       • Jets must be separated by R  0.7 from both leptons.
+      </item>
+      <item>
+       • Require mll  12 GeV to eliminate sequential B, J/  and  decays.
+      </item>
+      <item>
+       • Exclude leptons events of 76 &lt; mll &lt; 106 GeV to eliminate Z events
+      </item>
+      <item>
+       • require 6ET  15 GeV
+      </item>
+      <item>
+       • Azimuthal angle separation: (l1, 6ET ),(l2, 6ET ),((l1, l2), 6ET ) &gt; 30 to eliminate Drell-Yan  decays.
+      </item>
+     </list>
+     <p>
+      After the above cuts are used, the remaining SM background is almost entirely tt. In the case of top decay, the leptons come from W decay and are thus very energetic. In the case of stop decay, the available energy in the decay depends on the difference in mass of the stop and the sneutrino, or, m˜t−˜. The possible signal regions are separated into small m˜t−˜ and large m˜t−˜.
+     </p>
+     <p>
+      For small m˜t−˜, the leptons and jets are soft. The energy that escapes detections is quite large, but since the sneutrinos should tend to be back-to-back, the measured 6ET is effectively reduced. Thus, we require the dilepton pT , pl1,l2 T  30 GeV and ET,jet+6ET  160 GeV, where ET,jet is the transverse energy of the most energetic jet.
+     </p>
+     <p>
+      For large m˜t−˜, the leptons should be more energetic, so we require pl1,l2 T  55 GeV while requiring the same jet ET and 6ET cut.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      2.4 Results
+     </div>
+     <p>
+      A summary of events that pass each cut is shown in Table 2. Since no events were observed, we can place a 95% C.L. limit on the mass of the stop quark of m˜t  135 GeV. A plot showing the stop and sneutrino mass plane and regions that have been excluded is shown in Figure
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     3 Chargino/Neutralino to Trilepton
+    </div>
+    <p>
+     Another promising SUSY channel to search for in the dilepton sample is a chargino (˜±1 ) and neutralino (˜02) decay to three leptons and missing energy. The specific decay chain considered in this search is:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1: Stop and neutrino mass plane showing 1 regions excluded by CDF and D0 Run I and LEP II
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 2: Summary of events that pass each cut in data, expected background, and expected stop signals. ”A” represents a small m˜t−˜ with m˜t = 100,m˜ = 75 GeV. ”B” represents a large m˜t−˜ with m˜t = 120,m˜ = 60 GeV.
+    </p>
+    <p>
+     The result would be the famous ”trilepton” signature of three isolated leptons and 6ET . The ˜01 is the LSP which would escape the detector undetected. Since the neutral particles do not come in the same direction, the 6ET spectrum is broad.
+    </p>
+    <div>
+     <div class="head_2">
+      3.1 Backgrounds and Cuts
+     </div>
+     <p>
+      The backgrounds and cuts for this search are very similar to those in the stop quark search in the dilepton channel. The presence of large 6ET in this signature makes it relatively easy to eliminate the larges background, Drell-Yan processes, which do not have significant 6ET . The signature for trileptons does not suffer from irreducible SM backgrounds. is even ”cleaner” than that for other SUSY signatures in the dilepton sample
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      3.2 Clean-Up/Further Cuts
+     </div>
+     <p>
+      For the Run II analysis (which does not have blessed results yet), a further set of cuts are madeaAfter selecting events that pass a basic dilepton trigger cut (as described in section 2) to further clean up the sample. The desire to have further ”clean-up” cuts was motivated by the lessons learned in Run I and are based off of a 100k monte carlo sample. (Table 3).
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+     <p>
+      Table 3: Clean up cuts and their influence on data (using a 100k event MC sample)
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      3.3 Results
+     </div>
+     <p>
+      After all cuts are made, no events are seen. In particular, none of the candidate events pass the 6ET cut (see Table 4). Since no events are seen, limits can be placed on the available parameter space (a particular point in parameter space is excluded if the predicted number of events exceeds the number of events expected at the 95% confidence limit given that zero events are observed).
+     </p>
+     <p>
+      The limits set by CDF for Run I are:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      A detailed breakdown of the number of events that pass each cut is shown in Table 3.3 and a plot of ·BR(˜±1 ˜02 ! 3l + X) vs. ˜±1 mass with the limits set by the search is shown in Figure 2.
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+     <p>
+      Table 4: Summary of chargino/neutralino to trilepton findings in Run I of CDF
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     4 The Top Dilepton Sample
+    </div>
+    <p>
+     In Winter 2003, analysis on the first  100 pb−1 of data was completed for CDF. A prominent channel for top quark production is the dilepton channel, where tt ! WbWb ! llllbb. It became apparent that the pT distribution for leptons in the top dilepton sample was softer than would be expected for mostly tt decay (see Figure 3). While this certainly could be due to statistical fluctuations, it is also an exciting possibility for observing non-SM physics. Certainly, within a MSSM framework, such a signature is a possibility.
+    </p>
+    <div>
+     <div class="head_2">
+      4.1 Cuts and Data Sample
+     </div>
+     <p>
+      The basic cuts used in the top dilepton sample are:
+     </p>
+     <p>
+      • At least one tight, pT &gt; 20 GeV lepton with an associated track, and a central EM object with pT &gt; 20 GeV (or two such leptons with associated tracks) with || &lt; 1.0 with at least one lepton isolated.
+     </p>
+     <p>
+      • At least two jects with ET &gt; 10 GeV and || &lt; 2.0
+     </p>
+     <p>
+      • 6ET &gt; 25 GeV
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 2: ·BR(˜±1 ˜02! 3l + X) vs. ˜±1 mass for various points in SUSY parameter space. For all points, μ = −400 GeV and tan  = 2 while m˜q/m˜g = 2.0 for(a), 1.5 for (b), 1.2 for (c), and 1.0 for (d). The solid line represents the 95% CL upper limit based on observation of zero events in all channels at CDF. The dashed line is for single a single trilepton mode limit set by D0.
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 3: pT distribution for leptons in the top dilepton sample of CDF
+     </p>
+     <p>
+      These cuts yielded a total of 10 candidate, opposite-sign, dilepton events (2 ee, 3 μμ and 5 eμ). We will look at two scenarios that would contribute to creating a soft pT distribution as seen in this data set. There are two SUSY scenarios which we will consider that could lead to such a soft lepton pT distribution [7]
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      4.2 Chargino and Neutralino decay to dileptons
+     </div>
+     <p>
+      Assuming a specific SUSY model of (M1, M2, M3, μ, tan , m˜lR , m˜lL, m˜q) = (70 GeV, 145 GeV, 300 GeV, 500 GeV, 10, 110 GeV, 300 GeV, 800 GeV) and assuming the following mass relation:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (5)
+     </p>
+     <p>
+      we find that m˜01 = 67 GeV, m˜02 = 139 GeV and m˜±1 = 138 GeV.
+     </p>
+     <p>
+      The dominant decay mode of ˜02 is ˜02 ! l˜l R ! l˜l ˜01 and for ˜+ 1 is ˜+ 1 ! W+ ˜01 ! l+ ˜01 or qq0 ˜01. Thus, production of ˜02˜±1 can result a signature nearly identical to that of tt decaying in the dilepton mode.
+     </p>
+     <p>
+      Using the above described model, a PYTHIA simulation reveals a production cross-section of pp!˜02 ˜± 1= 303fb. Gluino pair production will also contribute to this process with a cross-section of pp!˜g˜g = 273fb. The branching ratio of ˜g ! ˜02 qq is 27% and ˜g ! ˜±1 qq0 is 45%. In such decays, 66% of the leptons produced will have pT &lt; 40GeV.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      4.3 Light ˜t Revisited
+     </div>
+     <p>
+      Another scenario which could result in the soft pT distribution is that of a light stop decaying. Assuming the mass relation of:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (6)
+     </p>
+     <p>
+      The gluino will decay to a top and stop quark 100% of the time. In this case, analogously to a top quark decaying, the stop will decay to a chargino and a b-quark. The decay chain of the stop will end in a lepton and 6ET . If the ˜t1 is light, then it can be pair-produced, resulting in this decay chain:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (7)
+     </p>
+     <p>
+      Thus, the final signature is the same as that of top pair production via the dilepton channel. Again, using a specific parameter space of: (M1, M2, μ, tanf, m˜tR, m˜q, At) = (90 GeV, 133 GeV, 500, 10, 140 GeV, 800 GeV, 800) . This case gives us a superpartner mass spectrum of: (˜01, ˜02, ˜g, ˜±1 , ˜eL, ˜, ˜t1)= (88, 127, 325, 126, 124, 95, 147) GeV. Given these masses, the cross section for stop pair-production is 1.14 pb and that of gluino pair production is 0.14 pb. Again, using a PYTHIA simulation, 62% of the leptons produced have pT &lt; 40 GeV.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     5 Conclusion
+    </div>
+    <p>
+     The dilepton channel continues to be an interesting place to look for experimental evidence of supersymmetry. Certainly some of the Run I measurements that were discussed can be improved upon in Run II. Also, it will be interesting to see whether the soft pT distribution in the top dilepton sample for Run II will persist through the additional 100 pb−1 that has been collected since. Even if SUSY particles are not directly detected at the Tevatron, better limits can be placed such that discovery will be an easier task at the LHC.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N10214">
+     <li id="N10215">
+      [1] V. Barnes, D. Bortoletto, A. Pompose, S. Lammel. CDF Internal Note, CDF/ANAL/EXOTIC/CDFR/5984
+     </li>
+     <li id="N10217">
+      [2] E. Lytken, S. Worm. CDF Internal Note, CDF/ANAL/EXOTIC/PUBLIC/6187
+     </li>
+     <li id="N10219">
+      [3] D. Acosta et. al. (The CDF Collaboration), hep-ex/0302009v1
+     </li>
+     <li id="N1021B">
+      [4] J. P. Done, et. al. CDF Internal Note, CDF/ANAL/EXOTIC/CDFR/3630
+     </li>
+     <li id="N1021D">
+      [5] B. Bevenese, C. Holck, G. Houk, G. Unal, H. H. Williams, CDF Internal Note, CDF/ANAL/TOP/CDFR/5679
+     </li>
+     <li id="N1021F">
+      [6] F. Abe, et. al (The CDF Collaboration), hep-ex/9803015v1
+     </li>
+     <li id="N10221">
+      [7] G. L. Kane and T. Wang, Private communication and draft note.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

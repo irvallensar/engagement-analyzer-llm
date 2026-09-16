@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     29.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith
+      </p>
+      <p>
+       As you know
+       <ns type="MP">
+       </ns>
+       I am in charge
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         organise
+        </i>
+       </ns>
+       the conference in my college. Do not worry if Richard did not
+       <ns type="FV">
+        <i>
+         left
+        </i>
+       </ns>
+       you all the information. I am pleased to help you.
+      </p>
+      <p>
+       We looked
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       every hotel in
+       <ns type="RP">
+        <i>
+         Town
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       trying to give you the best
+       <ns type="S">
+        <i>
+         offerd
+        </i>
+       </ns>
+       . We found two good hotels
+       <ns type="RC">
+        <i>
+         but
+        </i>
+       </ns>
+       we decided
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the Palace Hotel. This has the best price that we could find.
+       <ns type="MT">
+        <i>
+         The
+        </i>
+       </ns>
+       conference day our school driver is going to pick you up
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the hotel and take you to the conference.
+      </p>
+      <p>
+       The party is going to be in a local discotheque near the college so the best way to get there is
+       <ns type="FV">
+        <i>
+         walking
+        </i>
+       </ns>
+       . You do not have to wear any special kind of clothes but in my opinion you can wear very
+       <ns type="S">
+        <i>
+         cassual
+        </i>
+       </ns>
+       <ns type="MN">
+       </ns>
+       .
+      </p>
+      <p>
+       Finally,
+       <ns type="MT">
+       </ns>
+       the last day I
+       <ns type="S">
+        <i>
+         sugget
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         to go
+        </i>
+       </ns>
+       to the mall where you can enjoy shopping and looking around.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        As you know I am in charge for organise the conference in my college.
+       </s>
+       <s pid="2" sid="2">
+        Do not worry if Richard did not left you all the information.
+       </s>
+       <s pid="2" sid="3">
+        I am pleased to help you.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        We looked in every hotel in Town trying to give you the best offerd.
+       </s>
+       <s pid="3" sid="2">
+        We found two good hotels but we decided for the Palace Hotel.
+       </s>
+       <s pid="3" sid="3">
+        This has the best price that we could find.
+       </s>
+       <s pid="3" sid="4">
+        The conference day our school driver is going to pick you up in the hotel and take you to the conference.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The party is going to be in a local discotheque near the college so the best way to get there is walking.
+       </s>
+       <s pid="4" sid="2">
+        You do not have to wear any special kind of clothes but in my opinion you can wear very cassual .
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally,  the last day I sugget you to go to the mall where you can enjoy shopping and looking around.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Introduction
+      </p>
+      <p>
+       The aim of this report is to
+       <ns type="S">
+        <i>
+         recomend
+        </i>
+       </ns>
+       you to visit the Fuerte de San Diego
+       <ns type="S">
+        <i>
+         Musseum
+        </i>
+       </ns>
+       . This is
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       historical building. I asked
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       some
+       <ns type="S">
+        <i>
+         pleople
+        </i>
+       </ns>
+       in town and this was the best place to choose.
+      </p>
+      <p>
+       History
+      </p>
+      <p>
+       The Fuerte de Sandiego
+       <ns type="S">
+        <i>
+         Musseum
+        </i>
+       </ns>
+       was
+       <ns type="TV">
+        <i>
+         build
+        </i>
+       </ns>
+       at the time when the Spanish people
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       trying to take all the lands from Mexico, one of the most important people who was at front of the Fuerte was Hernon Cortez,
+       <ns type="CE">
+        the first Spanish in have more lands
+       </ns>
+       than anyone at that time.
+      </p>
+      <p>
+       Place
+      </p>
+      <p>
+       The
+       <ns type="S">
+        <i>
+         Musseum
+        </i>
+       </ns>
+       is situated in front of the sea in the centre of Acapulco.
+       <ns type="MA">
+        <i>
+         Is
+        </i>
+       </ns>
+       situated
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the top of a little mountain in the "old" part
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the city. You are able to get there by car or
+       <ns type="R">
+        <i>
+         walking
+        </i>
+       </ns>
+       and see everything which was made at that time.
+      </p>
+      <p>
+       Conclusion
+      </p>
+      <p>
+       On the whole
+       <ns type="MP">
+       </ns>
+       this is the best building in Acapulco for
+       <ns type="AGD">
+        <i>
+         his
+        </i>
+       </ns>
+       history and reputation.
+       <ns type="MA">
+        <i>
+         Is
+        </i>
+       </ns>
+       the best place to go and
+       <ns type="MA">
+       </ns>
+       <ns type="MV">
+       </ns>
+       easy to get there.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Introduction
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The aim of this report is to recomend you to visit the Fuerte de San Diego Musseum.
+       </s>
+       <s pid="2" sid="2">
+        This is an historical building.
+       </s>
+       <s pid="2" sid="3">
+        I asked to some pleople in town and this was the best place to choose.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        History
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The Fuerte de Sandiego Musseum was build at the time when the Spanish people was trying to take all the lands from Mexico, one of the most important people who was at front of the Fuerte was Hernon Cortez, the first Spanish in have more lands than anyone at that time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Place
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The Musseum is situated in front of the sea in the centre of Acapulco.
+       </s>
+       <s pid="6" sid="2">
+        Is situated in the top of a little mountain in the "old" part on the city.
+       </s>
+       <s pid="6" sid="3">
+        You are able to get there by car or walking and see everything which was made at that time.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Conclusion
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        On the whole this is the best building in Acapulco for his history and reputation.
+       </s>
+       <s pid="8" sid="2">
+        Is the best place to go and   easy to get there.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

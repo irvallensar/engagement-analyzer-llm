@@ -1,0 +1,19 @@
+# Engagement Discourse Treebank Construction
+# Python >= 3.8
+
+# NLP pipelines
+stanza>=1.3.0
+spacy>=3.2.0
+
+# spaCy English transformer model (run after pip install spacy):
+# python -m spacy download en_core_web_trf
+
+# XML / HTML parsing
+beautifulsoup4>=4.10.0
+lxml>=4.9.0
+
+# Data manipulation
+pandas>=1.3.0
+
+# Standard library (no install needed):
+# json, csv, glob, random, re, copy, os

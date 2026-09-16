@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Molding Temperature Analysis for Liquid Rubber Supplier
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1.0 Define
+    </div>
+    <p>
+     Rubberland, Inc. is a producer of liquid rubber used in the production of molded parts.  Recently, Rubberland's customers have been complaining about their need to adjust temperature settings for each new Rubberland shipment.  These temperature adjustments are necessary to ensure that Rubberland's customers produce defect-free rubber molded parts.  The cost impact of having to adjust temperature averages is approximately $114,000 per customer per year.  As a result, Rubberland, Inc. held a brainstorming session to identify potential issues and formed a 6 sigma team to investigate possible solutions to reduce the aforementioned problem with customers.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2.0 Measure
+    </div>
+    <p>
+     In order to determine the key variables in the internal mold inspection process, the team identified all the process variables, failures, and output variables as shown in Figure 2.1.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2.1  P-Diagram of Rubberland, Inc. Process Variables
+    </p>
+    <p>
+     From the Pareto diagram in Figure 2.2, the 6 sigma team determined that 'part not curing properly' and 'scorch' failures account for about 83% of failures and should be investigated.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2.2:  Pareto of Liquid Rubber Molding Failures
+    </p>
+    <p>
+     It is assumed that out-of-spec output variables are indications of rubber failures.  Figure 2.3, shows that out-of-spec Cure Initiation Temperature accounts for 89% of the defects in the output variables of the current process.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2.3:  Pareto of observed DPM for output variables
+    </p>
+    <p>
+     A distribution ID analysis revealed that CIR data fits a lognormal distribution.  A process capability study of the sample data indicates that the current process is operating at Pp = .55, Ppk = .44, and 113 K DPM with respect to CIR.  This implies that CIR defects are a chronic problem.  The goal for this 6 sigma project is a DPM &lt; 3.4 (or Ppk &gt; 1.33).
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2.4:  Cure Initiation Temperature Process Capability Analysis
+    </p>
+    <p>
+     As shown above, the last observed data point in the sample makes the individual and moving range control charts for CIR unstable. This sample reveals that there may be a special cause of variation present due to the spike created from one of the last data points in the sample.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     3.0 Analyze
+    </div>
+    <p>
+     In order to determine which of the inputs had a significant effect on CIR defect rate, a backward stepwise multiple regression was conducted using the following input variables: supplier, amount of inhibitor, amount of crosslinker, mixing time, and % of catalyst dispensed.  Input variables with p-values &gt;= 0.15 were eliminated.  The first step of the regression eliminated all input variables except supplier and % catalyst dispensed (both of which had p-values = 0.000).  The second regression included supplier and % catalyst dispensed, and verified that these input variables correlate with CIR defects (both had p-values = 0.000 and R-Sq(adj) = 89.6%).  This determined that supplier and % catalyst dispensed affect the value of CIR.
+    </p>
+    <p>
+     It was also determined that % catalyst dispensed correlated with supplier (Figure 3.1); therefore, investigations of different scenarios for improvement were conducted and resulting DPM's were compared.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3.1: Comparative Boxplot of Catalyst Weight % vs Supplier
+    </p>
+    <p>
+     To investigate how Supplier affected CIR a comparative boxplot was constructed (Figure 3.2).
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3.2  Comparative Boxplot of CIR by Supplier
+    </p>
+    <p>
+     The boxplot above shows rubber produced from material from Supplier A had higher Cure Initiation Temperatures.  Given an acceptable CIR range by the customer of between 135 and 145, Supplier B rubber falls completely within specification and Supplier A produces several defects.  Supplier B is the better base material supplier.
+    </p>
+    <p>
+     Using CIR specification limits, multiple regression equations can be solved for the specification limits for Catalyst Weight % for each scenario: buying from only supplier B or buying from both suppliers.  Assuming only Supplier B base material is used, the regression equation is:
+    </p>
+    <p>
+     CIR = 111 + 133 catwt
+    </p>
+    <p>
+     Using only base material for Supplier B, the range for % catalyst dispensed is between 0.18% and 0.26%.
+    </p>
+    <p>
+     If Rubberland continues to buy base material from both suppliers, the regression equation becomes:
+    </p>
+    <p>
+     CIR = 98.1 + 197 catwt,
+    </p>
+    <p>
+     and the range for % catalyst dispensed is between 0.187% and 0.238%.
+    </p>
+    <p>
+     Table 3.1 gives the improved expected DPM for each scenario.
+    </p>
+    <p>
+     Table 3.1 DPMs for Improvement Scenarios
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     4.0  Improve
+    </div>
+    <p>
+     The six-sigma team recommends that Rubberland, Inc. only use base material from supplier B and add specification limits of 0.213 ± 0.025 to their % catalyst weight.  Considering the historical average of the % catalyst weight is 0.217%, this corresponds to a target mean shift of .004 % catalyst weight.  This can improve CIR to a level of 7,820 DPM, and save Rubberland's customers an average of $7,300 annually.
+    </p>
+    <p>
+     The new DPM was calculated by applying this mean shift to historical catalyst weight % and determining the new CIR distribution using the regression model.  Minitab was then used to determine the overall expected DPM.  Savings were calculated by dividing the DPM improvement in CIR by the current state observed DPM for the entire rubber molding data and multiplying this by the current cost of quality of $114,000 per customer per year.
+    </p>
+    <p>
+     Note: single-sourcing base material could positively or negatively affect Rubberland's cost for base material.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     5.0 Control
+    </div>
+    <p>
+     Implement a control system to monitor the % cat weight to 3 decimal places and ensure that it corresponds to newly established specs.  Collect data and once the process has been deemed stable, calculate new control limits and follow appropriate statistical process control procedures, selecting rational subgroups.
+    </p>
+   </div>
+  </div>
+  <div>
+   <p>
+   </p>
+  </div>
+ </div>
+</div>

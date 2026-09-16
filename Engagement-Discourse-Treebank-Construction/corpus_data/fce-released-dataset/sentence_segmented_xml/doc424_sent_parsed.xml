@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir
+      </p>
+      <p>
+       During my holidays in London I went to see your musical show.
+      </p>
+      <p>
+       It was a very
+       <ns type="S">
+        <i>
+         unpleasent
+        </i>
+       </ns>
+       evening. First of all, it had
+       <ns type="RV">
+        <i>
+         read
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement that Danny Brook was starring
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       this show. But someone else
+       <ns type="RV">
+        <i>
+         participated
+        </i>
+       </ns>
+       instead of him. The other actor was very disappointing.
+      </p>
+      <p>
+       The second problem was the start of the show. It began at 20:15 and not at 19:30! That's almost an hour later. I had read that there would be
+       <ns type="W">
+        <i>
+         available some discounts
+        </i>
+       </ns>
+       , but I
+       <ns type="RV">
+        <i>
+         became
+        </i>
+       </ns>
+       none of them.
+      </p>
+      <p>
+       The restaurant should
+       <ns type="FV">
+        <i>
+         had
+        </i>
+       </ns>
+       been
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           oppened
+          </i>
+         </ns>
+        </i>
+       </ns>
+       when I came out, but it was closed because of the
+       <ns type="RN">
+        <i>
+         hour
+        </i>
+       </ns>
+       the show finished.
+      </p>
+      <p>
+       It wasn't a perfect evening at all. I hope you can understand my disappointment and
+       <ns type="MC">
+       </ns>
+       <ns type="MA">
+       </ns>
+       ask for my money back.
+      </p>
+      <p>
+       Faithfully yours,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        During my holidays in London I went to see your musical show.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It was a very unpleasent evening.
+       </s>
+       <s pid="3" sid="2">
+        First of all, it had read on the advertisement that Danny Brook was starring at this show.
+       </s>
+       <s pid="3" sid="3">
+        But someone else participated instead of him.
+       </s>
+       <s pid="3" sid="4">
+        The other actor was very disappointing.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The second problem was the start of the show.
+       </s>
+       <s pid="4" sid="2">
+        It began at 20:15 and not at 19:30!
+       </s>
+       <s pid="4" sid="3">
+        That's almost an hour later.
+       </s>
+       <s pid="4" sid="4">
+        I had read that there would be available some discounts, but I became none of them.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The restaurant should had been oppened when I came out, but it was closed because of the hour the show finished.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        It wasn't a perfect evening at all.
+       </s>
+       <s pid="6" sid="2">
+        I hope you can understand my disappointment and   ask for my money back.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Faithfully yours,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="ID">
+        <i>
+         In our days
+        </i>
+       </ns>
+       , nobody can live without technology.
+      </p>
+      <p>
+       My day, for example, begins with a lot of noise. The
+       <ns type="RN">
+        <i>
+         timer
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       my radio wakes me up at half past six.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         stand
+        </i>
+       </ns>
+       up, go
+       <ns type="MT">
+       </ns>
+       the kitchen and prepare myself something to eat in the microwave.
+      </p>
+      <p>
+       After
+       <ns type="S">
+        <i>
+         breakfeast
+        </i>
+       </ns>
+       I have to use my car to get to school. Without my car I would always
+       <ns type="RV">
+        <i>
+         reach
+        </i>
+       </ns>
+       late. At school the computer has become an important new tool. I use it to
+       <ns type="R">
+        make compositions
+       </ns>
+       , to print some pictures or to surf
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       . After school I relax in front of the TV and talk a lot with my friends
+       <ns type="RT">
+        <i>
+         per
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       telephone.
+      </p>
+      <p>
+       Without
+       <ns type="UD">
+        <i>
+         these
+        </i>
+       </ns>
+       technology I would get
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       bored.
+      </p>
+      <p>
+       Now, I
+       <ns type="RV">
+        <i>
+         loose
+        </i>
+       </ns>
+       less
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       time and can use
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       technology to enjoy myself.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        In our days, nobody can live without technology.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My day, for example, begins with a lot of noise.
+       </s>
+       <s pid="2" sid="2">
+        The timer of my radio wakes me up at half past six.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I stand up, go  the kitchen and prepare myself something to eat in the microwave.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After breakfeast I have to use my car to get to school.
+       </s>
+       <s pid="4" sid="2">
+        Without my car I would always reach late.
+       </s>
+       <s pid="4" sid="3">
+        At school the computer has become an important new tool.
+       </s>
+       <s pid="4" sid="4">
+        I use it to make compositions, to print some pictures or to surf on the internet.
+       </s>
+       <s pid="4" sid="5">
+        After school I relax in front of the TV and talk a lot with my friends per  telephone.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Without these technology I would get realy bored.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Now, I loose less of time and can use the technology to enjoy myself.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

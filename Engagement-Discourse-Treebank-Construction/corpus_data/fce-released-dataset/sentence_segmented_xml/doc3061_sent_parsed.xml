@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Maria Smith,
+      </p>
+      <p>
+       I have just received a letter from you. I
+       <ns type="UV">
+        <i>
+         am
+        </i>
+       </ns>
+       really appreciate your
+       <ns type="DN">
+        <i>
+         interesting
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       our conference.
+      </p>
+      <p>
+       Firstly, the Palace hotel is your accommodation which you have booked. This is
+       <ns type="MD">
+       </ns>
+       very nice hotel and I am sure you will be very pleased
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       staying there.
+      </p>
+      <p>
+       Secondly, you will have no problems finding the conference. Obviously, using a taxi is the best but unfortunately it is quite expensive for
+       <ns type="MD">
+       </ns>
+       student. However, we have already
+       <ns type="RV">
+        <i>
+         prepared
+        </i>
+       </ns>
+       a mini-bus for you. The bus will be in front of your hotel at 1 p.m. and it will take you to the conference.
+      </p>
+      <p>
+       Thirdly, we will have the end-of-conference party at 6 p.m. You can have dinner with wine which is very famous in our area and also you can enjoy the semi-classical concert which we have
+       <ns type="TV">
+        <i>
+         prepared
+        </i>
+       </ns>
+       for 3 months. But I hope you will wear
+       <ns type="MD">
+       </ns>
+       formal suit and dress. You will not be allowed to enter this party unless you wear casual clothes. Lastly, you
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       not have any problem spending your extra time in Cambridge because we have a lot of
+       <ns type="AGN">
+        <i>
+         attraction
+        </i>
+       </ns>
+       . Cambridge bus tour, for example, will be very nice
+       <ns type="UN">
+        <i>
+         time
+        </i>
+       </ns>
+       for you because it is the best and the easiest way of
+       <ns type="RV">
+        <i>
+         knowing
+        </i>
+       </ns>
+       Cambridge. But if you do not like it, you can enjoy
+       <ns type="MD">
+       </ns>
+       City centre
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       walking tour and then you can enjoy going punting which is the most pleasant attraction in Cambridge.
+      </p>
+      <p>
+       I hope you will be happy with our conference and party
+       <ns type="UC">
+        <i>
+         and
+        </i>
+       </ns>
+       etc. We have
+       <ns type="TV">
+        <i>
+         prepared
+        </i>
+       </ns>
+       all of them for a long time. Please oblige us with your attendance. If you want more information, please let me know.
+      </p>
+      <p>
+       Your sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Maria Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just received a letter from you.
+       </s>
+       <s pid="2" sid="2">
+        I am really appreciate your interesting about our conference.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, the Palace hotel is your accommodation which you have booked.
+       </s>
+       <s pid="3" sid="2">
+        This is  very nice hotel and I am sure you will be very pleased with staying there.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, you will have no problems finding the conference.
+       </s>
+       <s pid="4" sid="2">
+        Obviously, using a taxi is the best but unfortunately it is quite expensive for  student.
+       </s>
+       <s pid="4" sid="3">
+        However, we have already prepared a mini-bus for you.
+       </s>
+       <s pid="4" sid="4">
+        The bus will be in front of your hotel at 1 p.m. and it will take you to the conference.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Thirdly, we will have the end-of-conference party at 6 p.m.
+       </s>
+       <s pid="5" sid="2">
+        You can have dinner with wine which is very famous in our area and also you can enjoy the semi-classical concert which we have prepared for 3 months.
+       </s>
+       <s pid="5" sid="3">
+        But I hope you will wear  formal suit and dress.
+       </s>
+       <s pid="5" sid="4">
+        You will not be allowed to enter this party unless you wear casual clothes.
+       </s>
+       <s pid="5" sid="5">
+        Lastly, you do not have any problem spending your extra time in Cambridge because we have a lot of attraction.
+       </s>
+       <s pid="5" sid="6">
+        Cambridge bus tour, for example, will be very nice time for you because it is the best and the easiest way of knowing Cambridge.
+       </s>
+       <s pid="5" sid="7">
+        But if you do not like it, you can enjoy  City centre by  walking tour and then you can enjoy going punting which is the most pleasant attraction in Cambridge.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope you will be happy with our conference and party and etc.
+       </s>
+       <s pid="6" sid="2">
+        We have prepared all of them for a long time.
+       </s>
+       <s pid="6" sid="3">
+        Please oblige us with your attendance.
+       </s>
+       <s pid="6" sid="4">
+        If you want more information, please let me know.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr or Miss,
+      </p>
+      <p>
+       Welcome to my town and I
+       <ns type="UV">
+        <i>
+         am
+        </i>
+       </ns>
+       really appreciate your visiting. I would like you to visit 'COEX' building which is located in Samsung-dong south of Seoul.
+      </p>
+      <p>
+       I will tell you some information about this building. This building consists of a world
+       <ns type="RN">
+        <i>
+         exposition
+        </i>
+       </ns>
+       centre, a multiplex cinema, a huge shopping mall, a huge food court and an aquarium. Now
+       <ns type="W">
+        <i>
+         <ns type="AS">
+          <i>
+           there is holding
+          </i>
+         </ns>
+         'the world software for Linux'
+         <ns type="RN">
+          <i>
+           exposition
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         exposition
+        </i>
+       </ns>
+       centre. If you are interested in
+       <ns type="FN">
+        <i>
+         computer
+        </i>
+       </ns>
+       , it will give you
+       <ns type="RJ">
+        <i>
+         big
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         pleasant
+        </i>
+       </ns>
+       . For a multiplex cinema, it is the biggest cinema in Asia and it has 18 screens. Therefore you can enjoy all
+       <ns type="MD">
+       </ns>
+       latest films there.
+      </p>
+      <p>
+       If you want to buy something,
+       <ns type="RY">
+        <i>
+         specially
+        </i>
+       </ns>
+       clothes,
+       <ns type="MD">
+       </ns>
+       shopping mall, which is called 'COEX mall', will be the best place: very cheap and lots of
+       <ns type="DJ">
+        <i>
+         designed
+        </i>
+       </ns>
+       clothes.
+      </p>
+      <p>
+       Also, you'd better not miss the food court. It
+       <ns type="TV">
+        <i>
+         is providing
+        </i>
+       </ns>
+       all kinds of food. Korean food, Italian food... you can enjoy them all. Lastly, I really want you to go to the aquarium. Actually I have been there three times but I still want to go there again. I am sure you will like this very much.
+      </p>
+      <p>
+       I hope you will enjoy yourself in my town. I would be very happy if you could be satisfied with my recommendation. And if you need someone to guide you, please send me
+       <ns type="MD">
+       </ns>
+       e-mail or give me a call. I look forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr or Miss,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Welcome to my town and I am really appreciate your visiting.
+       </s>
+       <s pid="2" sid="2">
+        I would like you to visit 'COEX' building which is located in Samsung-dong south of Seoul.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I will tell you some information about this building.
+       </s>
+       <s pid="3" sid="2">
+        This building consists of a world exposition centre, a multiplex cinema, a huge shopping mall, a huge food court and an aquarium.
+       </s>
+       <s pid="3" sid="3">
+        Now there is holding 'the world software for Linux' exposition in  exposition centre.
+       </s>
+       <s pid="3" sid="4">
+        If you are interested in computer, it will give you big pleasant.
+       </s>
+       <s pid="3" sid="5">
+        For a multiplex cinema, it is the biggest cinema in Asia and it has 18 screens.
+       </s>
+       <s pid="3" sid="6">
+        Therefore you can enjoy all  latest films there.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        If you want to buy something, specially clothes,  shopping mall, which is called 'COEX mall', will be the best place: very cheap and lots of designed clothes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Also, you'd better not miss the food court.
+       </s>
+       <s pid="5" sid="2">
+        It is providing all kinds of food.
+       </s>
+       <s pid="5" sid="3">
+        Korean food, Italian food... you can enjoy them all.
+       </s>
+       <s pid="5" sid="4">
+        Lastly, I really want you to go to the aquarium.
+       </s>
+       <s pid="5" sid="5">
+        Actually I have been there three times but I still want to go there again.
+       </s>
+       <s pid="5" sid="6">
+        I am sure you will like this very much.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope you will enjoy yourself in my town.
+       </s>
+       <s pid="6" sid="2">
+        I would be very happy if you could be satisfied with my recommendation.
+       </s>
+       <s pid="6" sid="3">
+        And if you need someone to guide you, please send me  e-mail or give me a call.
+       </s>
+       <s pid="6" sid="4">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

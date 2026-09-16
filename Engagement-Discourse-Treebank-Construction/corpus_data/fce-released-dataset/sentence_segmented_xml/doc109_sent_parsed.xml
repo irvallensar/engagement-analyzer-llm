@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       I feel very happy to be the winner of your competition. I would like to travel in July only
+       <ns type="MP">
+       </ns>
+       because they will need me at work in August.
+      </p>
+      <p>
+       I would prefer to sleep in a tent because I have never done it and I think it is an experience not to be missed, a very original adventure!
+      </p>
+      <p>
+       I would like to do singing and swimming.
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       the first activity, I must tell you that I am very keen on singing but that I have very
+       <ns type="CQ">
+        <i>
+         few
+        </i>
+       </ns>
+       experience in it.
+      </p>
+      <p>
+       Concerning swimming, I
+       <ns type="RV">
+        <i>
+         practise
+        </i>
+       </ns>
+       this sport once a week
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       myself, so I am just an amateur, not a great swimmer!
+      </p>
+      <p>
+       Otherwise, I would like to ask you
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       clothes I will have to take in my luggage. What is the weather like in July? Is it worth
+       <ns type="FV">
+        <i>
+         to take
+        </i>
+       </ns>
+       a raincoat? Should I take trainers?
+      </p>
+      <p>
+       Finally, how much money must I bring with me? Is it necessary to ask for Travellers' Cheques? Or is it better to take only an international credit card?
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I feel very happy to be the winner of your competition.
+       </s>
+       <s pid="1" sid="2">
+        I would like to travel in July only because they will need me at work in August.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I would prefer to sleep in a tent because I have never done it and I think it is an experience not to be missed, a very original adventure!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to do singing and swimming.
+       </s>
+       <s pid="3" sid="2">
+        For the first activity, I must tell you that I am very keen on singing but that I have very few experience in it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Concerning swimming, I practise this sport once a week on myself, so I am just an amateur, not a great swimmer!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Otherwise, I would like to ask you which clothes I will have to take in my luggage.
+       </s>
+       <s pid="5" sid="2">
+        What is the weather like in July?
+       </s>
+       <s pid="5" sid="3">
+        Is it worth to take a raincoat?
+       </s>
+       <s pid="5" sid="4">
+        Should I take trainers?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, how much money must I bring with me?
+       </s>
+       <s pid="6" sid="2">
+        Is it necessary to ask for Travellers' Cheques?
+       </s>
+       <s pid="6" sid="3">
+        Or is it better to take only an international credit card?
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Going
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       shopping is a good thing when you don't know what
+       <ns type="MY">
+       </ns>
+       to do but it
+       <ns type="W">
+        <i>
+         has also
+        </i>
+       </ns>
+       many
+       <ns type="S">
+        <i>
+         disavantages
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all, shopping is tiring because of the people who are doing the same thing as you the same day! Especially If you go shopping on a Saturday, when people are
+       <ns type="R">
+        on
+        <ns type="UP">
+         <i>
+          week-end
+         </i>
+        </ns>
+       </ns>
+       .
+       <ns type="MD">
+        <i>
+         Streets
+        </i>
+       </ns>
+       are crowded and you can't walk easily. You are
+       <ns type="RJ">
+        embarrassed with
+       </ns>
+       the people who are so close to you that you can't walk as fast as you want.
+      </p>
+      <p>
+       Secondly, shopping is stressful, especially if you
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       to find a
+       <ns type="M">
+       </ns>
+       <ns type="RN">
+        <i>
+         cloth
+        </i>
+       </ns>
+       for a
+       <ns type="RJ">
+        <i>
+         precise
+        </i>
+       </ns>
+       day
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       and nothing fits you. It can be discouraging. Or if you look for a present and you can't find it.
+      </p>
+      <p>
+       However, shopping is entertaining if you don't know what
+       <ns type="MY">
+       </ns>
+       to do. You can
+       <ns type="RV">
+        discover
+       </ns>
+       a lot of things if you are abroad and learn a lot about the life of local people. Moreover, it is
+       <ns type="RJ">
+        <i>
+         pleasant
+        </i>
+       </ns>
+       to try
+       <ns type="MT">
+       </ns>
+       many
+       <ns type="M">
+       </ns>
+       clothes and to see what you look like in various clothes, especially if you are in a foreign country. It can be
+       <ns type="RJ">
+        <i>
+         funny
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Finally, shopping can help you to feel happy if you are down in the dumps, if you feel horrible. For instance, if you try
+       <ns type="MY">
+       </ns>
+       <ns type="R">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         cloth
+        </i>
+       </ns>
+       which fits you well, it can contribute to
+       <ns type="FV">
+        <i>
+         make
+        </i>
+       </ns>
+       you feel better.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Going for shopping is a good thing when you don't know what  to do but it has also many disavantages.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all, shopping is tiring because of the people who are doing the same thing as you the same day!
+       </s>
+       <s pid="2" sid="2">
+        Especially
+       </s>
+       <s pid="2" sid="3">
+        If you go shopping on a Saturday, when people are on week-end.
+       </s>
+       <s pid="2" sid="4">
+        Streets are crowded and you can't walk easily.
+       </s>
+       <s pid="2" sid="5">
+        You are embarrassed with the people who are so close to you that you can't walk as fast as you want.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Secondly, shopping is stressful, especially if you had to find a  cloth for a precise day, and nothing fits you.
+       </s>
+       <s pid="3" sid="2">
+        It can be discouraging.
+       </s>
+       <s pid="3" sid="3">
+        Or if you look for a present and you can't find it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        However, shopping is entertaining if you don't know what  to do.
+       </s>
+       <s pid="4" sid="2">
+        You can discover a lot of things if you are abroad and learn a lot about the life of local people.
+       </s>
+       <s pid="4" sid="3">
+        Moreover, it is pleasant to try  many  clothes and to see what you look like in various clothes, especially if you are in a foreign country.
+       </s>
+       <s pid="4" sid="4">
+        It can be funny!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, shopping can help you to feel happy if you are down in the dumps, if you feel horrible.
+       </s>
+       <s pid="5" sid="2">
+        For instance, if you try  a cloth which fits you well, it can contribute to make you feel better.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

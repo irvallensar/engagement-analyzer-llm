@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     14.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I would like to complain about the show which you presented
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       last
+       <ns type="RP">
+        <i>
+         saturday
+        </i>
+       </ns>
+       . It was such
+       <ns type="MD">
+       </ns>
+       disappointing evening out with my friend during our
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       week's holiday in London. We have had a quite pleasant time except
+       <ns type="MT">
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       evening. Actually it spoiled our time. So I would like to get back our money.
+      </p>
+      <p>
+       These are some points I want
+       <ns type="FV">
+        <i>
+         mention
+        </i>
+       </ns>
+       about the
+       <ns type="IN">
+        <i>
+         differencies
+        </i>
+       </ns>
+       between
+       <ns type="MA">
+       </ns>
+       the advertisement said and the realities.
+      </p>
+      <p>
+       First, I had a great expectation to see Danny Brook
+       <ns type="FV">
+        <i>
+         plays
+        </i>
+       </ns>
+       his role, but he had never shown up that night. The main actor was an unknown actor. It was
+       <ns type="W">
+        <i>
+         a such
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         disappointing
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Second, it
+       <ns type="W">
+        <i>
+         started only
+        </i>
+       </ns>
+       at 20:15. It was 45 minutes later than it
+       <ns type="TV">
+        <i>
+         suppose
+        </i>
+       </ns>
+       to be. It was
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         such
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         boaring
+        </i>
+       </ns>
+       to wait
+       <ns type="MT">
+       </ns>
+       the show in a noisy and hot theatre.
+      </p>
+      <p>
+       Third, there was no possibility of
+       <ns type="MD">
+       </ns>
+       discount. The girl
+       <ns type="MA">
+       </ns>
+       sold the tickets was laughing at me when I
+       <ns type="TV">
+        <i>
+         mention
+        </i>
+       </ns>
+       about
+       <ns type="MY">
+       </ns>
+       the discounts availability was written in the advertisement.
+      </p>
+      <p>
+       <ns type="SX">
+        <i>
+         Forth
+        </i>
+       </ns>
+       , the theatre restaurant was closed. There was a
+       <ns type="SX">
+        <i>
+         not
+        </i>
+       </ns>
+       on the door saying that
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       painting was going on
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       weekend. How could you arrange work like that?
+      </p>
+      <p>
+       Finally
+       <ns type="MP">
+       </ns>
+       the sentence
+       <ns type="MA">
+       </ns>
+       was written
+       <ns type="U">
+        <i>
+         blow down
+        </i>
+       </ns>
+       on the advertisement was absolutely not true. It was
+       <ns type="MD">
+       </ns>
+       most imperfect evening out I ever
+       <ns type="S">
+        <i>
+         exprienced
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         wish
+        </i>
+       </ns>
+       that you can provide a better service next time, and this time you need
+       <ns type="FV">
+        <i>
+         give
+        </i>
+       </ns>
+       back the money we paid.
+      </p>
+      <p>
+       Sincerely
+      </p>
+      <p>
+       Yu Phu Tung.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I would like to complain about the show which you presented on last saturday.
+       </s>
+       <s pid="2" sid="2">
+        It was such  disappointing evening out with my friend during our a week's holiday in London.
+       </s>
+       <s pid="2" sid="3">
+        We have had a quite pleasant time except  the evening.
+       </s>
+       <s pid="2" sid="4">
+        Actually it spoiled our time.
+       </s>
+       <s pid="2" sid="5">
+        So I would like to get back our money.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        These are some points I want mention about the differencies between  the advertisement said and the realities.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First, I had a great expectation to see Danny Brook plays his role, but he had never shown up that night.
+       </s>
+       <s pid="4" sid="2">
+        The main actor was an unknown actor.
+       </s>
+       <s pid="4" sid="3">
+        It was a such disappointing.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Second, it started only at 20:15.
+       </s>
+       <s pid="5" sid="2">
+        It was 45 minutes later than it suppose to be.
+       </s>
+       <s pid="5" sid="3">
+        It was a such boaring to wait  the show in a noisy and hot theatre.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Third, there was no possibility of  discount.
+       </s>
+       <s pid="6" sid="2">
+        The girl  sold the tickets was laughing at me when I mention about  the discounts availability was written in the advertisement.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Forth, the theatre restaurant was closed.
+       </s>
+       <s pid="7" sid="2">
+        There was a not on the door saying that the painting was going on the weekend.
+       </s>
+       <s pid="7" sid="3">
+        How could you arrange work like that?
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Finally the sentence  was written blow down on the advertisement was absolutely not true.
+       </s>
+       <s pid="8" sid="2">
+        It was  most imperfect evening out I ever exprienced.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I wish that you can provide a better service next time, and this time you need give back the money we paid.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Sincerely
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Yu Phu Tung.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       Since I moved to London to study English I have had a hard time
+       <ns type="FV">
+        <i>
+         to make
+        </i>
+       </ns>
+       intimate
+       <ns type="FN">
+        <i>
+         friendship
+        </i>
+       </ns>
+       with people around me.
+      </p>
+      <p>
+       First it was because of the culture difference. It took quite
+       <ns type="MD">
+       </ns>
+       long time to adjust
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the
+       <ns type="DN">
+        multi culture
+       </ns>
+       in the language
+       <ns type="S">
+        <i>
+         institue
+        </i>
+       </ns>
+       . Secondly the language ability was another issue. Even
+       <ns type="MC">
+       </ns>
+       I could meet some friend,
+       <ns type="UC">
+        <i>
+         but
+        </i>
+       </ns>
+       I couldn't express my
+       <ns type="RN">
+        heat
+       </ns>
+       to them
+       <ns type="L">
+        <i>
+         for
+        </i>
+       </ns>
+       we have different
+       <ns type="FN">
+        <i>
+         <ns type="RP">
+          <i>
+           back ground
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and our first
+       <ns type="AGN">
+        <i>
+         language
+        </i>
+       </ns>
+       were different.
+      </p>
+      <p>
+       I really wished to have a friend
+       <ns type="M">
+       </ns>
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       share everything
+       <ns type="MA">
+       </ns>
+       is going
+       <ns type="MY">
+       </ns>
+       in our lives. Finally I met Pat. She was
+       <ns type="W">
+        <i>
+         a such
+        </i>
+       </ns>
+       wonderful person in our class. She tried to help others when they
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       difficult time at school. One day she realized that I was always
+       <ns type="UV">
+        <i>
+         been
+        </i>
+       </ns>
+       outside of
+       <ns type="MD">
+       </ns>
+       circle.
+      </p>
+      <p>
+       One day she invited me to her flat. Since then we have visited each other often and spent time together
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       weekend
+       <ns type="S">
+        <i>
+         usally
+        </i>
+       </ns>
+       . We had a fantastic time together for three
+       <ns type="S">
+        <i>
+         monthes
+        </i>
+       </ns>
+       .
+       <ns type="W">
+        <i>
+         Even we could
+        </i>
+       </ns>
+       make a trip to Paris in the school holiday! We had many common interests in music, art and books.
+      </p>
+      <p>
+       I thought that I
+       <ns type="MV">
+       </ns>
+       found a good friend in my life. So I told her everything about my life. There were some stories I never told anyone before, but I
+       <ns type="TV">
+        <i>
+         had share
+        </i>
+       </ns>
+       with her all my secrets.
+      </p>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+       <ns type="MD">
+        <i>
+         Few
+        </i>
+       </ns>
+       days
+       <ns type="RY">
+        <i>
+         later
+        </i>
+       </ns>
+       I told her about my secret love story, it became
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       top gossip among my
+       <ns type="FN">
+        <i>
+         classmate
+        </i>
+       </ns>
+       . It was a nightmare!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Since I moved to London to study English I have had a hard time to make intimate friendship with people around me.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First it was because of the culture difference.
+       </s>
+       <s pid="3" sid="2">
+        It took quite  long time to adjust in the multi culture in the language institue.
+       </s>
+       <s pid="3" sid="3">
+        Secondly the language ability was another issue.
+       </s>
+       <s pid="3" sid="4">
+        Even  I could meet some friend, but I couldn't express my heat to them for we have different back ground and our first language were different.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I really wished to have a friend  can share everything  is going  in our lives.
+       </s>
+       <s pid="4" sid="2">
+        Finally I met Pat.
+       </s>
+       <s pid="4" sid="3">
+        She was a such wonderful person in our class.
+       </s>
+       <s pid="4" sid="4">
+        She tried to help others when they have  difficult time at school.
+       </s>
+       <s pid="4" sid="5">
+        One day she realized that I was always been outside of  circle.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        One day she invited me to her flat.
+       </s>
+       <s pid="5" sid="2">
+        Since then we have visited each other often and spent time together in  weekend usally.
+       </s>
+       <s pid="5" sid="3">
+        We had a fantastic time together for three monthes.
+       </s>
+       <s pid="5" sid="4">
+        Even we could make a trip to Paris in the school holiday!
+       </s>
+       <s pid="5" sid="5">
+        We had many common interests in music, art and books.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I thought that I  found a good friend in my life.
+       </s>
+       <s pid="6" sid="2">
+        So I told her everything about my life.
+       </s>
+       <s pid="6" sid="3">
+        There were some stories I never told anyone before, but I had share with her all my secrets.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="7" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="7" sid="3">
+        Few days later I told her about my secret love story, it became a top gossip among my classmate.
+       </s>
+       <s pid="7" sid="4">
+        It was a nightmare!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,480 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Mix Proportioning and Fresh Concrete Properties
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The goal of this lab was to acquaint ourselves with the absolute volume method used to proportion Portland cement concrete mixtures and to develop a specific concrete mix design for a later project.
+       </s>
+       <s pid="1" sid="2">
+        We were involved in all the steps of calculating proportions for the mix itself.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        We also used testing procedures such as the slump test, unit weight, and amount of air entrained per unit volume.
+       </s>
+       <s pid="2" sid="2">
+        Finally we mixed our own proportions of components and created our batch of concrete to later be used in testing.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       PROCEDURE
+      </div>
+      <div>
+       <div class="head_2">
+        Proportioning of Portland Cement Concrete Mixtures
+       </div>
+       <p>
+        <s pid="3" sid="1">
+         I) Foremost, concrete design begins with a set of requirements and information dealing with the location of concrete and the conditions it must uphold to.
+        </s>
+        <s pid="3" sid="2">
+         These conditions include what type of structure is being formed, the thickness of the forms, reinforcement requirements, consolidation methods, and most importantly the compressive strength needed.
+        </s>
+        <s pid="3" sid="3">
+         Once this array of input is acquired, the mix proportioning process can begin.
+        </s>
+       </p>
+       <p>
+        <s pid="4" sid="1">
+         II) Begin by choosing the concrete's slump.
+        </s>
+        <s pid="4" sid="2">
+         This is often specified for particular jobs, however when needed Table 10.1 can be used to find an appropriate slump.
+        </s>
+        <s pid="4" sid="3">
+         It is determined according to what type of concrete structure you are poring.
+        </s>
+        <s pid="4" sid="4">
+         The table offers a range of values, often wanting to choose the lowest slump possible.
+        </s>
+        <s pid="4" sid="5">
+         In special situations, other considerations should be taken into account as well.
+        </s>
+       </p>
+       <p>
+        <s pid="5" sid="1">
+         III)
+        </s>
+        <s pid="5" sid="2">
+         Once the slump has been chosen, a maximum aggregate size is determined.
+        </s>
+        <s pid="5" sid="3">
+         Many times this is limited to the aggregate that is offered in the area or a preference to what should be used in the concrete.
+        </s>
+        <s pid="5" sid="4">
+         For design with no supply restrictions, there are three limitations to take into account:
+        </s>
+       </p>
+       <list>
+        <item>
+         i. The maximum aggregate can not exceed one-fifth of the dimension between forms
+        </item>
+        <item>
+         ii. The maximum aggregate can not exceed three-fourths of the minimum spacing between bars, or between forms and bars.
+        </item>
+        <item>
+         iii. The maximum aggregate can not exceed one-third the depth of a slab
+        </item>
+       </list>
+       <p>
+        <s pid="6" sid="1">
+         IV)
+        </s>
+        <s pid="6" sid="2">
+         Next you must estimate the amount of mixing water required as well as air content.
+        </s>
+        <s pid="6" sid="3">
+         These are found in Table 10.2 and are based on the maximum aggregate size, slump, and whether the concrete needs to be air-entrained or not.
+        </s>
+        <s pid="6" sid="4">
+         For the case of air-entrained concrete, air content can be determined based on the severity of exposure.
+        </s>
+        <s pid="6" sid="5">
+         The value found is the amount of water required and percent air needed per given volume of concrete.
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         V)
+        </s>
+        <s pid="7" sid="2">
+         Now that the amount of water is known, you determine the amount of cement required using the water/cement ratio.
+        </s>
+        <s pid="7" sid="3">
+         In the case of concrete made with Type I Portland cement, Table 10.3 can be used to give a general estimate of the amount of cement required.
+        </s>
+        <s pid="7" sid="4">
+         The water/cement ratio is based on the design strength for the concrete as well as whether it needs to be air-entrained or not.
+        </s>
+        <s pid="7" sid="5">
+         Using the ratio the amount of cement is thus calculated.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         VI)
+        </s>
+        <s pid="8" sid="2">
+         The amount of coarse aggregate to be used in the mix must now be determined.
+        </s>
+        <s pid="8" sid="3">
+         This can be done utilizing Table 10.8.
+        </s>
+        <s pid="8" sid="4">
+         Based on the maximum aggregate size and the fineness modulus of the fine aggregate, a value can be found in the table.
+        </s>
+        <s pid="8" sid="5">
+         This number is then multiplied by the dry rodded unit weight of the coarse aggregate to find the required mass to be used.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         VII)
+        </s>
+        <s pid="9" sid="2">
+         Everything is now known except the mass of fine aggregate.
+        </s>
+        <s pid="9" sid="3">
+         To do this the total mass of the concrete mix must be found.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         The known masses can be subtracted from Um to find the fine aggregate's mass.
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         VIII) Final adjusts must now be made for moisture in the aggregate.
+        </s>
+        <s pid="11" sid="2">
+         In the case of surface moisture on the aggregate, this percent of water must be calculated and subtracted from the required amount of water in the mix.
+        </s>
+        <s pid="11" sid="3">
+         However, when using OD aggregates, the absorption must be used to find the amount of water needed to fill the pores, and this must be added to the required water needed in the concrete.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Making and Curing Concrete Test Specimens
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         Once concrete has been designed and is ready to be made, follow ASTM C-192 guidelines for producing and curing concrete.
+        </s>
+        <s pid="12" sid="2">
+         Basic procedure begins by adding all coarse aggregate into the mixer with about half the water.
+        </s>
+        <s pid="12" sid="3">
+         Next add the fine aggregate, all cement, and the remaining water.
+        </s>
+        <s pid="12" sid="4">
+         Finally add the appropriate admixtures and allow it to mix for 3 minutes.
+        </s>
+        <s pid="12" sid="5">
+         Let stand for 5 minutes then continue to mix for 3 more minutes.
+        </s>
+        <s pid="12" sid="6">
+         The concrete is then thoroughly mixed and ready for testing and use.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Standard Property Tests on Fresh Concrete
+       </div>
+       <div>
+        <div class="head_3">
+         Slump Test:
+        </div>
+        <p>
+         <s pid="13" sid="1">
+          The slump test can be performed adhering to the ASTM C-143 methodology.
+         </s>
+         <s pid="13" sid="2">
+          Begin by filling the slump test cone in three layers, being sure to always have someone securing the base of the cone by standing over top.
+         </s>
+         <s pid="13" sid="3">
+          Rod each layer as you fill the cone 25 times.
+         </s>
+         <s pid="13" sid="4">
+          Once the cone is full, roll the rod over the top so as to have a smooth top.
+         </s>
+         <s pid="13" sid="5">
+          Carefully remove the cone leaving behind a pile of concrete that has deformed some amount.
+         </s>
+         <s pid="13" sid="6">
+          Set the cone next to the concrete, laying the rod across the top so as to have a distance between the rod and the top of the pile of concrete.
+         </s>
+         <s pid="13" sid="7">
+          Measure this distance and record it as your slump.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Air Content by Volumetric Method
+        </div>
+        <p>
+         <s pid="14" sid="1">
+          The air content test can be performed following the ASTM C-173 procedure.
+         </s>
+         <s pid="14" sid="2">
+          This process requires a special apparatus made up of a measuring bowl, top section, graduated neck, and a watertight cap.
+         </s>
+         <s pid="14" sid="3">
+          First the bowl is wetted and filled half-way with concrete, which is then rodded 25 times and tapped with a mallet.
+         </s>
+         <s pid="14" sid="4">
+          The bowl is then filled completely, rodded, and tapped.
+         </s>
+         <s pid="14" sid="5">
+          Excess concrete should be wiped off, and the seal of the bowl should be cleaned.
+         </s>
+         <s pid="14" sid="6">
+          The top section is then attached to the bowl and locked in place.
+         </s>
+         <s pid="14" sid="7">
+          The top must then be filled with water until it reads at the zero mark.
+         </s>
+         <s pid="14" sid="8">
+          A small portion of isopropyl alcohol is then added to the meter, and then sealed shut.
+         </s>
+         <s pid="14" sid="9">
+          The device is then inverted several times for no more than 5 seconds until the concrete is heard to be flowing freely.
+         </s>
+         <s pid="14" sid="10">
+          With the meter at a 45-degree angle, it should be rolled about a half a turn back and forth for one minute.
+         </s>
+         <s pid="14" sid="11">
+          The rolling must continue until the liquid level stabilizes.
+         </s>
+         <s pid="14" sid="12">
+          Once a stable reading can be taken, that is recorded as the percent air content in the concrete.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Unit Weight
+        </div>
+        <p>
+         <s pid="15" sid="1">
+          The unit weight of the fresh concrete can be determined following ASTM C-138.
+         </s>
+         <s pid="15" sid="2">
+          First, the weight and volume of a chosen cylinder must be recorded.
+         </s>
+         <s pid="15" sid="3">
+          The cylinder is then filled in three layers with fresh concrete, rodded 25 times and tapped each layer.
+         </s>
+         <s pid="15" sid="4">
+          Once the container is full, the excess concrete must be struck off with the rod.
+         </s>
+         <s pid="15" sid="5">
+          The filled cylinder is then weighed , and the unit weight of the concrete can thus be calculated.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Sampling Fresh Concrete
+        </div>
+        <p>
+         <s pid="16" sid="1">
+          Sampling concrete can be done according to ASTM C-172 standards.
+         </s>
+         <s pid="16" sid="2">
+          Preparing specimens can be done according to ASTM C-192.
+         </s>
+         <s pid="16" sid="3">
+          In this lab we were asked to produce three sizes of specimens: 8 small cylinders (4"x8"), 2 large cylinders (6"x12"), and 4 beams (3"x4"x12").
+         </s>
+         <s pid="16" sid="4">
+          Each mold was first greased so as to make concrete removal go smoother at a later time.
+         </s>
+         <s pid="16" sid="5">
+          The small cylinders and beams were filled in two layers, with each layer being rodded 25 times.
+         </s>
+         <s pid="16" sid="6">
+          The cylinders are to be tapped in each layer as well.
+         </s>
+         <s pid="16" sid="7">
+          The large cylinders were filled in three layers, tapped and rodded 25 times for each layer.
+         </s>
+         <s pid="16" sid="8">
+          The excess concrete was struck off the top of each mold by rolling the rod across the surface to create a clean look.
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       DATA RESULTS
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Generally following all procedure as stated above, we performed our design and mixing.
+       </s>
+       <s pid="17" sid="2">
+        Our first design is based off data from previous tests, and our second from data provided by the instructor.
+       </s>
+       <s pid="17" sid="3">
+        The first table provides the requirements and conditions of the concrete's environment.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        Above is the data found using the values of materials tested in previous labs.
+       </s>
+       <s pid="18" sid="2">
+        Metric units are provided as well as British units in parentheses.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        Above is the data found using the materials given by our instructor.
+       </s>
+       <s pid="19" sid="2">
+        Metric units are provided as well as British units in parentheses.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Actual Concrete Proportions for Mixing
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        Our concrete was mixed according to the table on the bottom of the previous page, and tests were performed according to general following of the ASTM procedures.
+       </s>
+       <s pid="20" sid="2">
+        Below is a table of our results.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       DISCUSSION
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        The water content of our mixture must be adjusted for two reasons.
+       </s>
+       <s pid="21" sid="2">
+        First, the aggregate we used is in a condition known as oven dry.
+       </s>
+       <s pid="21" sid="3">
+        This means that there is no water present on or in the aggregate.
+       </s>
+       <s pid="21" sid="4">
+        However, the stone still has pores on the interior that when in contact with water will become filled.
+       </s>
+       <s pid="21" sid="5">
+        Therefore, when the concrete is mixed, over time the aggregate will take water from the mix, leaving a lower water/cement ratio, unless this principle is corrected for.
+       </s>
+       <s pid="21" sid="6">
+        Second, the amount of water must be decreased if there is surface moisture on the aggregates.
+       </s>
+       <s pid="21" sid="7">
+        This moisture then further contributes to the water of the concrete mix and can create too large of water/cement ratio in some cases if not corrected for.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        If a very narrow gradation of aggregates was used in concrete, this would technically increase the workability of the concrete.
+       </s>
+       <s pid="22" sid="2">
+        However, making all particles uniform size will increase the amount of cement needed to fill the empty voids.
+       </s>
+       <s pid="22" sid="3">
+        The lack of a grade, or distribution of particle sizes leaves larger gaps in the concrete, which in the end will require something to fill those spaces, thus more cement.
+       </s>
+       <s pid="22" sid="4">
+        This is why there are requirements and standards for the grading of aggregates used in concrete, to provide the strongest yet most efficient concrete possible.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSIONS
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        Throughout this lab we gained experience in using the absolute volume method used to proportion Portland cement concrete mixtures.
+       </s>
+       <s pid="23" sid="2">
+        Using given data we were able to design concrete to meet specifications, and take these values into the lab.
+       </s>
+       <s pid="23" sid="3">
+        We then were capable of creating the design mix and forming our own batch of concrete mix.
+       </s>
+       <s pid="23" sid="4">
+        Furthermore we were able to properly sample the concrete, as well as perform slump test, unit weight test, and air content test.
+       </s>
+       <s pid="23" sid="5">
+        We finally gained practice in preparing molds of concrete to be later used in testing.
+       </s>
+       <s pid="23" sid="6">
+        The results of are experience were given in this lab, and represent the overall purpose of this report.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

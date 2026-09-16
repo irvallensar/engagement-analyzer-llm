@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      41-50
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr. Smith,
+      </p>
+      <p>
+       I am writing to you in order to
+       <ns type="FV">
+        <i>
+         describing
+        </i>
+       </ns>
+       my last visit
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your
+       <ns type="SA">
+        <i>
+         theater
+        </i>
+       </ns>
+       .
+       <ns type="DY">
+        <i>
+         Unfortunatly
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I am
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very disappointed about
+       <ns type="MD">
+       </ns>
+       organisation
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your company.
+      </p>
+      <p>
+       <ns type="DY">
+        <i>
+         Firsty
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       the musical show started not at 7.30 p.m. but 45 minutes later. I paid for this performance the full price
+       <ns type="MT">
+       </ns>
+       £20 because discounts were not available although
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       your advertisement
+       <ns type="RA">
+        <i>
+         there
+        </i>
+       </ns>
+       were. And the biggest disappointment for me was that the
+       <ns type="RJ">
+        <i>
+         grateful
+        </i>
+       </ns>
+       Danny Brook, the best singer in London, wasn't present and
+       <ns type="AS">
+        <i>
+         it was singing
+         <ns type="SX">
+          <i>
+           a mother
+          </i>
+         </ns>
+         unknown person
+        </i>
+       </ns>
+       . And last but not least
+       <ns type="MP">
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         recognised
+        </i>
+       </ns>
+       after the show that your theatre restaurant was closed because waiters didn't come...
+      </p>
+      <p>
+       I don't know
+       <ns type="MC">
+       </ns>
+       it is a typical situation in the Circle
+       <ns type="S">
+        <i>
+         Theatrer
+        </i>
+       </ns>
+       that
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         is promised
+        </i>
+       </ns>
+       much more then the people can get for their money, or
+       <ns type="MC">
+       </ns>
+       it was on June 7 (my visit) only, but I
+       <ns type="RV">
+        <i>
+         am
+        </i>
+       </ns>
+       not
+       <ns type="RV">
+        <i>
+         agree with
+        </i>
+       </ns>
+       such
+       <ns type="MD">
+       </ns>
+       situation and
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       ask you for my money back - my bank account number is enclosed. I am looking forward
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         answering
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr. Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to you in order to describing my last visit in your theater.
+       </s>
+       <s pid="2" sid="2">
+        Unfortunatly I am a very disappointed about  organisation in your company.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firsty the musical show started not at 7.30 p.m. but 45 minutes later.
+       </s>
+       <s pid="3" sid="2">
+        I paid for this performance the full price  £20 because discounts were not available although on your advertisement there were.
+       </s>
+       <s pid="3" sid="3">
+        And the biggest disappointment for me was that the grateful Danny Brook, the best singer in London, wasn't present and it was singing a mother unknown person.
+       </s>
+       <s pid="3" sid="4">
+        And last but not least I recognised after the show that your theatre restaurant was closed because waiters didn't come...
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I don't know  it is a typical situation in the Circle Theatrer that  is promised much more then the people can get for their money, or  it was on June 7 (my visit) only, but I am not agree with such  situation and would ask you for my money back - my bank account number is enclosed.
+       </s>
+       <s pid="4" sid="2">
+        I am looking forward for you answering.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       In my opinion
+       <ns type="MP">
+       </ns>
+       modern technology
+       <ns type="TV">
+        <i>
+         changed
+        </i>
+       </ns>
+       our daily life tremendously.
+      </p>
+      <p>
+       First of all it changed our
+       <ns type="UP">
+        <i>
+         life-style
+        </i>
+       </ns>
+       . For example
+       <ns type="MP">
+       </ns>
+       ten years ago
+       <ns type="U">
+        <i>
+         it was very common that
+        </i>
+       </ns>
+       almost all people visited cinemas and today they prefer watching films at home because they have relatively good video-recorders and
+       <ns type="FN">
+        <i>
+         TV
+        </i>
+       </ns>
+       . Because
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       people have fast and comfortable cars, they are much more
+       <ns type="S">
+        <i>
+         mobil
+        </i>
+       </ns>
+       and can spend their
+       <ns type="UP">
+        <i>
+         free-time
+        </i>
+       </ns>
+       more
+       <ns type="DY">
+        <i>
+         <ns type="S">
+          <i>
+           aktiv
+          </i>
+         </ns>
+        </i>
+       </ns>
+       - they can often visit their friends and travel much more. People today are more
+       <ns type="RJ">
+        open
+       </ns>
+       for the world.
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Secondely
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       we can do our jobs today more
+       <ns type="DY">
+        <i>
+         efficient
+        </i>
+       </ns>
+       . We have modern equipment for communication - phones, faxes, E-mail. We can communicate with our
+       <ns type="RN">
+        <i>
+         <ns type="FN">
+          <i>
+           partner
+          </i>
+         </ns>
+        </i>
+       </ns>
+       faster and better and offer them better
+       <ns type="FN">
+        <i>
+         service
+        </i>
+       </ns>
+       .
+       <ns type="UD">
+        <i>
+         The ordered
+        </i>
+       </ns>
+       goods can be
+       <ns type="TV">
+        <i>
+         deliver
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       shorter time by
+       <ns type="FN">
+        <i>
+         train
+        </i>
+       </ns>
+       , trucks and modern ships. If we are more efficient we can earn more money and spend it more
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       our daily life -
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       better clothes, furniture,
+       <ns type="R">
+        spare time
+       </ns>
+       .
+      </p>
+      <p>
+       I am a fan
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       modern technology.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        In my opinion modern technology changed our daily life tremendously.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all it changed our life-style.
+       </s>
+       <s pid="2" sid="2">
+        For example ten years ago it was very common that almost all people visited cinemas and today they prefer watching films at home because they have relatively good video-recorders and TV.
+       </s>
+       <s pid="2" sid="3">
+        Because the people have fast and comfortable cars, they are much more mobil and can spend their free-time more aktiv - they can often visit their friends and travel much more.
+       </s>
+       <s pid="2" sid="4">
+        People today are more open for the world.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Secondely we can do our jobs today more efficient.
+       </s>
+       <s pid="3" sid="2">
+        We have modern equipment for communication - phones, faxes, E-mail.
+       </s>
+       <s pid="3" sid="3">
+        We can communicate with our partner faster and better and offer them better service.
+       </s>
+       <s pid="3" sid="4">
+        The ordered goods can be deliver in  shorter time by train, trucks and modern ships.
+       </s>
+       <s pid="3" sid="5">
+        If we are more efficient we can earn more money and spend it more for our daily life - for better clothes, furniture, spare time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am a fan for modern technology.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,1194 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Effective Gauge Fields in Optical Lattices
+   </div>
+   <div class="abstract">
+    <p>
+     We discuss various techniques for the generation of effective gauge fields for neutral atoms in an optical lattice. We motivate this discussion with a brief treatment of the quantum Hall effect.
+    </p>
+   </div>
+   <div>
+    Contents
+    <p>
+     I. Introduction 1
+    </p>
+    <p>
+     II. Review of quantum Hall effect 1
+    </p>
+    <p>
+     III. Effective gauge fields 2
+    </p>
+    <p>
+     A. Rotation-induced effective fields 3
+    </p>
+    <p>
+     B. Light-induced effective fields 3
+    </p>
+    <p>
+     1. Plain vanilla 3
+    </p>
+    <p>
+     2. Spinor gauge fields 5
+    </p>
+    <p>
+     3. Non-Abelian gauge fields 6
+    </p>
+    <p>
+     IV. Conclusions 6
+    </p>
+    <p>
+     References 6
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     I. INTRODUCTION
+    </div>
+    <p>
+     The recent achievement of an ultracold fermionic gas of neutral atoms in an optical lattice (OL) has spurred a tremendous surge of interest in the proper description of this system under various experimental manipulations [1, 2]. In fact, there is a wealth of physics in such a system because of all the experimentally accessible parameters: The OL affords control of the spatial distribution of the atoms, as well as the tunneling. The average number of atoms per site loaded into the OL is well controlled, as is the population imbalance if the atomic gas comprises two different species. Even the interaction between atoms in different hyperfine states can be fully controlled by introducing an external magnetic field tuned near a Feshbach resonance, providing a crossover between real-space (BEC) and reciprocal-space (BCS) pairing.
+    </p>
+    <p>
+     A major thrust of current research is to study key models of condensed matter physics in the clean and controlled environment of ultracold atoms in an OL. Recently, there have been several papers on creating an effective magnetic field for trapped neutral atoms in order to realize analogs of the quantum Hall effect (QHE) [12, 15]. We shall focus on those proposals. In the following section, though, we first present a brief review of the QHE as a motivation for the introduction of effective gauge fields.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     FIG. 1: Typical plot of Hall resistivity versus magnetic field strength. The dotted line shows the classical expectation. (From Ref. [4])
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     II. REVIEW OF QUANTUM HALL EFFECT
+    </div>
+    <p>
+     In this section we give a heuristic, and almost correct, review of the quantum Hall effect. We have drawn heavily on Refs. [3, 4, 6].
+    </p>
+    <p>
+     Recall the classical Hall effect from elementary electrodynamics: As charges of number density n forming a current density j in the x-direction pass through a constant magnetic field pointing along the z-axis, the Lorentz force deflects the charges to the edge of the sample, creating a voltage in the y-direction. In steadystate, the force from the transverse Hall field precisely cancels the transverse Lorentz force, Ey = Bj/ne, and the sample carries current without any change in its resistivity. Another way to say this is that the resistivity tensor, defined by
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , acquires off-diagonal elements
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Thus, classically, one expects the transverse resistivity to be linear in the field strength. We shall see that the quantum corrections to this linear behavior can be quite dramatic (see Fig 1).
+    <p>
+    </p>
+    <p>
+     Considering the situation quantum mechanically, we begin, as always, with a Hamiltonian. Here we take the bare-bones model of a noninteracting, spinless electron gas in a two-dimensional rectangular sample with area Lx × Ly, subject to a constant magnetic field in the zdirection. Then
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , where
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the canonical momentum
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . We are free to choose a gauge such that A = −Byˆx. Then, noting that the magnetic field does not appear in the y-component of the canonical momentum, we make the ansatz
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    to obtain
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (1)
+    </p>
+    <p>
+     But on the right-hand side of the equation, we recognize an effective Hamiltonian for our old pal, the harmonic oscillator in y, albeit shifted by an amount which depends on the plane-wave state in x.
+    </p>
+    <p>
+     From this result we can immediately see two things. Firstly, the energy levels of the system will be of the form
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , where
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Secondly, the energy levels are massively degenerate, since the energy is independent of the quantum number k. These are called ”Landau levels.” (Although we have not taken a route which makes the circular nature of the states manifest [6], the degeneracy can be understood semi-classically in that the energy depends on the quantized cyclotron orbital frequency, but not on the position of the center of the orbit.) To determine the degeneracy of a Landau level, we impose periodic boundary conditions in x and require that the center of the shifted oscillator remain inside the sample. Then
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , m = 0, 1, 2, ...,and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , so
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    =
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Thus the maximum number of states per unit area that can be contained in a Landau level is nmax = eB/h. Equivalently, a Landau level can contain a maximum of Nmax =
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    charges, where
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the magnetic flux through the sample and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the flux quantum. The interesting point here is that the occupancy of each Landau level depends on the magnetic field, so as a function of the field strength, the Fermi energy has a staircase shape.
+    <p>
+    </p>
+    <p>
+     If the magnetic field is tuned such that the Fermi energy lies exactly at the top of a Landau level, i.e., the filling factor,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , is an integer, then our classical result becomes
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . This correctly gives the values of the Hall resistivity at the plateaus of Fig. 1, but does not yet explain why the plateaus are present. One might expect that as the magnetic field is increased from the carefully chosen values above, the Fermi energy would abruptly jump to the next Landau level and the presence of a partially filled Landau level would change the electrical transport properties of the sample. Remarkably, the presence of imperfections in a physical system prevents this from happening and gives rise to broad plateaus instead.
+    <p>
+    </p>
+    <p>
+     Roughly speaking, the disorder alters the level structure by introducing localized states in between Landau levels where a charge carrier is bound to an imperfection. As a result, the Fermi energy does not jump abruptly from level to level, but instead populates the localized states in the gaps as the magnetic field is increased. These localized states do not contribute to the transport properties of the system, so if the Fermi energy is in a gap of the clean energy level structure, as far as the conduction electrons are concerned, nothing has changed. The Landau level filling factor is still an integer and the Hall resistivity will remain constant. Thus the combination of energy quantization and disorder has led to the surprising plateaus. In this treatment, we have glossed over the fact that the presence of the localized states decreases the occupancy of the Landau levels, but one can use some slick gauge invariance arguments to show that the remaining conduction electrons in fact make up for the loss of their compatriots by increasing their own velocity [5]. The end result, then, is independent of these details.
+    </p>
+    <p>
+     We have taken the simplest scenario imaginable above. Although a detailed treatment would take us too far afield, we now mention the effect of a periodic potential on the electron gas, since the point of this section is to provide motivation and background for current proposals on accessing quantum Hall regimes with atoms in optical lattices. Briefly, the periodic potential has the effect of opening up gaps
+     <i>
+      inside
+     </i>
+     the Landau levels. By the same reasoning as for the simple case, one expects to see plateaus at the fractional fillings where the intraband gaps appear. This is in fact observed experimentally. However, although it is not obvious without a more careful inspection, the values of the Hall resistivity at the plateaus still correspond to integer multiples of h/e2.
+    </p>
+    <p>
+     Finally, what we have discussed above is the
+     <i>
+      integer
+     </i>
+     quantum Hall effect (IQHE). There is also a
+     <i>
+      fractional
+     </i>
+     quantum Hall effect (FQHE), where the Hall resistivity has plateaus at fractional multiples of h/e2 for certain fractional values of the filling factor. This is due to the electron-electron interactions opening additional energy gaps inside the Landau levels. This is a many-body effect resulting in fractionally charged, possibly anyonic, quasiparticles. Much has been made of the ramifications of such a system for condensed matter physics, quantum computation, and even high-energy physics. However, the topic lies well outside the scope of this paper. For our purposes, it is sufficient to note that the FQHE is of considerable interest and that a realization of this effect in an atomic system would have great value. Furthermore, a periodic potential has the effect of enhancing many-body interactions and increasing the intraband gaps, thereby enhancing the effect and stabilizing it against thermal fluctuations.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     III. EFFECTIVE GAUGE FIELDS
+    </div>
+    <p>
+     We have discussed in the Introduction the allure of simulating condensed matter systems with ultracold atomic systems. One can simulate the two-dimensional periodic structures of interest in condensed matter systems by confining an ultracold gas of neutral fermionic atoms in a three-dimensional magnetic trap (which we assume to be approximately harmonic) and turning on a twodimensional optical lattice (OL) in the x-y plane. The gas then is effectively two-dimensional if we assume that the trap frequency is much greater in the z-direction than in the radial direction and that the atoms are cold enough that the dynamics along the z-axis are frozen out. The type of lattice in the x-y plane can be altered by adjusting the number of lasers and their geometry. Then one can access physics such as the quantum Hall effect if one can create an effective magnetic field for the atoms.
+    </p>
+    <div>
+     <div class="head_2">
+      A. Rotation-induced effective fields
+     </div>
+     <p>
+      The simplest way to generate such a field is to get the atomic cloud rotating. This is typically done by either introducing a rotating deformation to the symmetric radial trap [8], or stirring the gas with a blue-detuned laser [9]. Then, in the rotating reference frame, the Coriolis force plays the role of the magnetic field [7]. To see this, let us consider the Hamiltonian of the rotating system, neglecting for now the lattice potential,
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . Here Hi is the single-particle Hamiltonian for the ith particle and Hint contains the atom-atom interactions. In a reference frame rotating at the same frequency
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     as the atomic gas,
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (2)
+     </p>
+     <p>
+      where
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is the radial frequency of the trap. But we recognize the first term as the Hamiltonian for a charge e in a vector potential
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , corresponding to a magnetic field
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . So, if we take
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , the centrifugal and trapping potentials in the second term cancel and the single-particle Hamiltonian is completely equivalent to that of the quantum Hall system of the previous section.
+     <p>
+     </p>
+     <p>
+      In order to study fractional quantum Hall effects, we want to incorporate a periodic potential to enhance the atom-atom interactions along with the effective magnetic field. Clearly though, if we realize the magnetic field by going to the rotating frame, the periodic potential should be stationary in the rotating frame. So we need to be able to create a rotating optical lattice in the lab frame. This can be done by either a) splitting a laser beam into three beams with a rotating mask and focusing the beams onto the atomic cloud to create a rotating interference pattern [10] as shown in Fig. 2, or b) focusing a red-detuned laser with a rotating array of microlenses [11] as shown in Fig. 3.
+     </p>
+     <p>
+      There are several technical difficulties with the procedure outlined above. First of all, the rotation frequency of the atomic cloud must be carefully tuned close to the trapping frequency so that the unwanted term in the Hamiltonian is negligible compared to the interaction energy scale. Controlling the rotation is no easy feat in itself, but aside from that, this limitation severely restricts the accessible range of effective magnetic field strengths. In order to study the FQHE, the goal is to attain the regime where all atoms are in the lowest Landau level, i.e., the number of magnetic flux quanta approaches the number of atoms. With the above limitation on the field strength, very low atomic densities on the order of
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     are required to attain this regime.
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      FIG. 2: Schematic of the rotating mask approach to creating a rotating optical lattice. The frames on the right show two mask geometries and the resulting lattices. (From Ref. [10])
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      FIG. 3: (left) A hexagonal array of microlenses. (right) The intensity distribution in the focal plane of a square array of microlenses. (From Ref. [11])
+     </p>
+     <p>
+      To make things worse, even if one could precisely control the rotation frequency, one must keep it less than the radial frequency. Otherwise, the radial trapping would be negated and the gas would rapidly expand out of the experiment due to its thermal energy and repulsive interactions. On top of that, the rotation frequency of the mask or microlens array must be matched with the rotation frequency of the gas. Frequency jitter due to mechanical vibration or optical aberrations result in heating.
+     </p>
+     <p>
+      In summary, this type of procedure works if the atomic gas is very dilute and the energy scale of the various deviations from our model Hamiltonian are small compared to the energy scale of the interactions we are trying to enhance. For weakly interacting atoms, we would do well to consider our alternatives.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      B. Light-induced effective fields
+     </div>
+     <div>
+      <div class="head_3">
+       1. Plain vanilla
+      </div>
+      <p>
+       Following Ref. [12], we now consider an atomic gas of three-level atoms in a
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      configuration with lower states |1} and |2} and an excited state |3}. We introduce a probe laser and a control laser, which we assume couple only the transitions
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , respectively. We shall see that the key to inducing an effective magnetic field is the creation of a spatially varying dark state. Recalling that the dark state occurs for
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      =
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , we will assume that this condition is always satisfied. This is the same physical setup one would need to perform stimulated rapid adiabatic passage (STIRAP). In fact, one might say that the procedure we shall outline below is a variant of STIRAP where instead of adiabatically deforming the dark state over time with temporally varying fields, one deforms the dark state as a function of position with spatially varying fields in such a way that it picks up a nonzero phase if it traverses a closed path. This way, we can simulate the effect of a magnetic field on an electron, where the phase of an electron that traverses a loop changes by the magnetic flux enclosed. But let’s be more concrete.
+      <p>
+      </p>
+      <p>
+       We shall work in the field-interaction picture,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      =
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      =
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      =
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . We assume an external potential of the form
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , which we shall leave completely general for now, but in the spirit of our previous discussion can be thought of as a pancakeshaped trapping potential plus a two-dimensional optical lattice. The single-atom Hamiltonian then has the form H = p2/2m + V (r) + Hint. Using the rotating-wave approximation, the laser-atom interaction Hamiltonian in the basis
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (3)
+      </p>
+      <p>
+       Diagonalization p yields eigenvalues
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , where
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , with corresponding semi-classical dressed eigenkets [13]
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (4)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (5)
+      </p>
+      <p>
+       Here |D) denotes the
+       <q>
+        dark state
+       </q>
+       and is completely decoupled from the other states. Note that these states are generally spatially dependent through their dependence on the fields.
+      </p>
+      <p>
+       Writing the wavefunction in terms of these semiclassical dressed states,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (6)
+      </p>
+      <p>
+       and inserting the identity for the internal degree of freedom all over the place, Schrödinger’s equation becomes
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (7)
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       FIG. 4: (top) A laser configuration with relative orbital angular momentum between the control and pump lasers interacting with a condensate of three-level atoms. (bottom) Three-level
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      atoms interacting with resonant control and pump lasers. (From Ref. [12])
+      <p>
+      </p>
+      <p>
+       (Note that the arguments are implied.) It is instructive to rewrite this in matrix form,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (8)
+      </p>
+      <p>
+       where we have defined the column vector
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and matrices
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      /&gt;.
+      <p>
+      </p>
+      <p>
+       If we now assume the atoms are initially in the dark state, c = (1, 0, 0)T , we know that they will stay there adiabatically, since the dark state is impervious to the applied fields. We can also discourage nonadiabatic excitation by taking
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      so that the energy gap between |D) and |±) is large (we shall have more to say about adiabaticity later). So the equations of motion become
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (9)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (10)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (11)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (12)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (13)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (14)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (15)
+      </p>
+      <p>
+       where we have introduced the ratio of the fields
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Thus, the effect of the lasers on the atoms in the dark state is to alter the trapping potential and to induce an effective magnetic field
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (16)
+      </p>
+      <p>
+       where
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Note that
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is proportional to the relative momentum of the applied fields and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is proportional to the vector separating the centers of the two beams [14]. Physically then, for the effective magnetic field to be nonzero, the two beams must have a nonzero relative orbital angular momentum.
+      <p>
+      </p>
+      <p>
+       Assume the atoms are tightly confined in the zdirection so that
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is essentially only a function of x. If we take the laser setup shown in Fig. 4, with the probe and control fields counter-propagating along the y-direction so that S = (kp + kc) y and with offset centers along x so that
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , the resulting effective magnetic field is strictly along z. Unlike in the rotation procedure, though, here we can control the strength and spatial dependence of the magnetic field.
+      <p>
+      </p>
+      <p>
+       Now we should be honest about what we have swept under the rug. We have, after all, neglected spontaneous emission, collisional dephasing, and thermal effects. Since we have taken a
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      level configuration, spontaneous emission can safely be ignored given that the atoms are in the dark state. Collisional dephasing can similarly be ignored if we can take the lower states to belong to the same ground state manifold. Thermal effects, on the other hand, must be carefully neglected. Because of the spatially varying laser fields, the moving atom sees a temporally varying field, and in order for our dressed states to be any good, adiabaticity must be preserved. In other words, the atoms must be slow enough that the external degrees of freedom evolve much slower than the electronic degrees of freedom. Otherwise, some of the population will be excited out of the dark state and the off-diagonal elements in Eq. (8) will couple the different states. A detailed estimate in Ref. [12] shows that we must have
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and that, including spontaneous decay of the excited state, one should expect a dark state lifetime of a few seconds for a typical BEC atomic speed of a centimeter per second. Thus, this procedure should be entirely reasonable in a typical experimental setting.
+      <p>
+      </p>
+      <p>
+       Another issue we have neglected is atom-atom interactions. If we are interested in realizing the FQHE, then the interactions are essential. Above we have pretended they were negligible. In order to treat an interacting gas, one could include two-body contact potentials for interactions between each possible pair of internal states. Then we would have a set of coupled nonlinear Gross-Pitaevskii equations instead of the uncoupled linear Schrödinger equations in Eq. (7). Presumably one could proceed as before to find some effective vector potential under the proper conditions, but it is not at all clear what the result would be. So although one should be able to observe FQHE-type physics with this procedure, the theoretical formalism to describe it quantitatively has not yet been developed.
+      </p>
+      <p>
+       Finally, recall from our review of the quantum Hall effect that besides a magnetic field, we also needed one other main ingredient: disorder. So, we should mention that one can easily generate a disordered optical potential with a speckle field [7], generated by scattering a laser off a rough surface or passing it through a diffusive element. In contrast to condensed matter systems, the amount of disorder is well controlled, providing yet another incentive to do the experiments in an atomic analog system.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       2. Spinor gauge fields
+      </div>
+      <p>
+       Let us follow Ref. [15] in extending the above formalism to encompass some interesting non-FQHE physics. In this scheme we do not take the detuning to zero in order to isolate the dark state energetically. Instead we take the detuning to be very large in order to adiabatically eliminate the upper state,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , with the purpose of treating the remaining internal degree of freedom like a spin-1/2 degree of freedom (
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ). Then if the effective magnetic field depends on the
+      <q>
+       spin
+      </q>
+      -state, we have a procedure to realize an analog of the spin Hall effect (SHE). In this effect, one observes a transverse spin current rather than a charge current in response to a longitudinal electric field.
+      <p>
+      </p>
+      <p>
+       In the case
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , we have
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (17)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (18)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (19)
+      </p>
+      <p>
+       where we have defined the mixing angle tan
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and S is the relative phase as before. Now let’s make the convenient assumption that the off-diagonal elements of A and U are much less than the
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      separating
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . That is, we again assume adiabaticity to avoid mixing our spin states. Then Eq. (8) yields the same equation of motion for the dark state amplitude c" as before. The effective vector potential for the dark state (Eq. (12)) can be rewritten in terms of the mixing angle,
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (20)
+      </p>
+      <p>
+       The new wrinkle is that we also get a similar equation for
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      with effective vector potential
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (21)
+      </p>
+      <p>
+       So we see that in this case, not only does the effective magnetic field depend on the internal state, but it acts equally and oppositely for the two states, which is particularly nice for the spin-1/2 analogy.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       3. Non-Abelian gauge fields
+      </div>
+      <p>
+       Now that we have demonstrated a technique for creating artificial magnetic fields, we can play with different spatial profiles of the lasers to obtain different spatial dependences of the magnetic field. In fact, since these magnetic fields are completely phony, we can even engineer effective fields which do not satisfy Maxwell’s equations. However, we can even do better by generalizing this procedure to obtain
+       <i>
+        non-Abelian
+       </i>
+       gauge fields [16]. We give a flavor for the main idea below.
+      </p>
+      <p>
+       Recall that ordinary Abelian gauge fields, such as real magnetic fields, stem from imposing the local U(1) phase symmetry
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      on the wavefunction. In order to define a derivative, one is led to introduce the Berry connection
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      which allows comparison of the wavefunctions at infinitesimally close positions through the covariant derivative
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . From there one can readily obtain the familiar laws of electrodynamics [17]. The resultant U(1) gauge field is called Abelian, and gauge fields stemming from any other symmetry are termed non-Abelian.
+      <p>
+      </p>
+      <p>
+       If we have a two-component spinor field, imposing the local SU (2) rotational symmetry
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      leads to a covariant derivative
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , where i = 1, 2, 3 and the
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      are the Pauli matrices. Here the non-Abelian gauge potentials Ai transform as
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . The components of the gauge field are obtained by taking the curvature of the gauge potentials, which is a little more complicated than a curl, involving commutators of different vector components of Ai. However, it is sufficient for our purposes to state that the gauge field transforms as
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . This SU (2) example is the basis of the Yangs-Mills theory for interactions between fermions and vector bosons in high-energy physics.
+      <p>
+      </p>
+      <p>
+       We have a similar situation in an atomic system if we have two degenerate dressed states (
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ) decoupled from the other dressed states but nonadiabatically coupled to each other. Then the wavefunction of the degenerate subspace can be written as a spinor,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Assuming adiabaticity so that the offdiagonal elements of Eq (8) coupling the degenerate states to the nondegenerate dressed states are small compared to the energy differences, the Schrödinger equation then becomes
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (22)
+      </p>
+      <p>
+       where the 2 × 2 matrices (of vectors)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      act on the space
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and are defined as before:
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . Since the states spanning the subspace are degenerate, the off-diagonal terms of
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      are not negligible a priori. In fact, we need those elements in order to form a non-Abelian gauge field.
+      <p>
+      </p>
+      <p>
+       Notice that since the subspace is degenerate, we could just as well choose a different basis set connected to our original basis by a local unitary transformation, G(x). But if we make the transformation
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , then one can show [16] that
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      transforms in such a way that its curvature matrix transforms as
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , i.e., exactly like a gauge field tensor. If the commutators of the various vector components of
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      are nonzero, one has a physical realization of a non-Abelian gauge field. One can also generalize the procedure sketched above by employing atoms in a configuration with several degenerate dark states to obtain non-Abelian fields corresponding to higher gauge symmetries.
+      <p>
+      </p>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     IV. CONCLUSIONS
+    </div>
+    <p>
+     In summary, we have reviewed the main ideas of the quantum Hall effect to motivate the realization of an analogous regime in an ultracold atomic gas, which is eminently more controllable than a condensed matter system. The key ingredient is the presence of a strong effective magnetic field. Such a field can be introduced via physical rotation of the gas, with a co-rotating optical lattice potential to bolster atom-atom interactions, although there are often technical difficulties with this approach. For a gas of three-level atoms, the magnetic field can also be introduced in a STIRAP-type experiment through the formation of decoupled semi-classical dressed states that evolve in an effective vector potential. We have also identified a possible avenue of future research in the inclusion of atom-atom interactions in a similar formalism. Finally, we have briefly sketched how one might create light-induced effective non-Abelian gauge fields in an atomic system.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     <ul id="N10341">
+      <li id="N10342">
+       [1] M. Kohl, H. Moritz, T. Stoferle, K. Gunter, and T. Esslinger, Fermionic Atoms in a Three Dimensional Optical Lattice: Observing Fermi Surfaces, Dynamics, and Interactions, Phys. Rev. Lett. 94, 080403 (2005); T. Stoferle, H. Moritz, K. Gunter, M. Kohl, and T. Esslinger, Molecules of Fermionic Atoms in an Optical Lattice, Phys. Rev. Lett. 96, 030401 (2006).
+      </li>
+      <li id="N10344">
+       [2] Q. Chen, J. Stajic, S. Tan, and K. Levin, BCSBEC crossover: From high temperature superconductors to ultracold superfluids, Phys. Rep. 412, 1 (2005).
+      </li>
+      <li id="N10346">
+       [3] H. Stormer, D Tsui, The Quantized Hall Effect, Science 220, 1241 (1983).
+      </li>
+      <li id="N10348">
+       [4] J.P. Eisenstein, The Quantum Hall Effect, Am. J. Phys. 61, 179 (1993).
+      </li>
+      <li id="N1034A">
+       [5] R.B. Laughlin, Quantized Hall conductivity in two dimensions, Phys. Rev. B 23, 5632 (1981).
+      </li>
+      <li id="N1034C">
+       [6] For an approach which explicitly quantizes the Hamiltonian in terms of the orbit frequencies and centers, see: A.H. MacDonald, Quantum Hall Effect: A Perspective, (Kluwer, London, 1989), Chapter 1; A. H. MacDonald, Introduction to the Physics of the Quantum Hall Regime, arXiv:cond-mat/9410047v1.
+      </li>
+      <li id="N1034E">
+       [7] M. A. Baranov, K. Osterloh, and M. Lewenstein, Fractional Quantum Hall States in Ultracold Rapidly Rotating Dipolar Fermi Gases, Phys. Rev. Lett. 94, 070404 (2005); M. Lewenstein, A. Sanpera, V. Ahufinger, B. Damski, A. Sen De, U. Sen, Ultracold atomic gases in optical lattices: Mimicking condensed matter physics and beyond, arXiv:cond-mat/0606771v1.
+      </li>
+      <li id="N10350">
+       [8] D. S. Jin, J. R. Ensher, M. R. Matthews, C. E. Wieman, and E. A. Cornell, Collective Excitations of a Bose- Einstein Condensate in a Dilute Gas, Phys. Rev. Lett. 77, 420 (1996).
+      </li>
+      <li id="N10352">
+       [9] K. W. Madison, F. Chevy, W. Wohlleben, and J. Dalibard, Vortex Formation in a Stirred Bose-Einstein Condensate, Phys. Rev. Lett. 84, 806 (2000); C. Raman, J. R. Abo-Shaeer, J. M. Vogels, K. Xu, and W. Ketterle Vortex Nucleation in a Stirred Bose-Einstein Condensate, Phys. Rev. Lett. 87, 210402 (2001).
+      </li>
+      <li id="N10354">
+       [10] S. Tung, V. Schweikhard, E. A. Cornell, Observation of Vortex Pinning in Bose-Einstein Condensates, Phys. Rev. Lett. 97, 240402 (2006).
+      </li>
+      <li id="N10356">
+       [11] G. Birkl, F.B.J Buchkremer, R. Dumke, W. Ertmer, Atom optics with microfabricated optical elements, Opt. Commun. 191, 67 (2001).
+      </li>
+      <li id="N10358">
+       [12] G. Juzeliunas, J. Ruseckas, P. Ohberg, Effective magnetic fields induced by EIT in ultra-cold atomic gases, J. Phys. B 38 4171 (2005); G. Juzelinas, P. Ohberg, J. Ruseckas, and A. Klein, Effective magnetic fields in degenerate atomic gases induced by light beams with orbital angular momenta, Phys. Rev. A 71, 053614 (2005); G. Juzelinas, J. Ruseckas, P. Ohberg, and M. Fleischhauer, Light-induced effective magnetic fields for ultracold atoms in planar geometries, Phys. Rev. A 73, 025602 (2006).
+      </li>
+      <li id="N1035A">
+       [13] P. Berman, Lecture Notes on Quantum Optics, (unpublished, 2007), Chapter 8.
+      </li>
+      <li id="N1035C">
+       [14] This is clearly true for parallel Gaussian beams with shifted centers. The last reference in [12] asserts that it is true in general.
+      </li>
+      <li id="N1035E">
+       [15] Shi-Liang Zhu, Hao Fu, C.-J. Wu, S.-C. Zhang, and L.M. Duan, Spin Hall Effects for Cold Atoms in a Light Induced Gauge Potential, Phys. Rev. Lett. 97, 240401 (2006).
+      </li>
+      <li id="N10360">
+       [16] F. Wilczek and A. Zee, Appearance of Gauge Structure in Simple Dynamical Systems, Phys. Rev. Lett. 52, 2111 (1984); J. Ruseckas, G. Juzelinas, P. Ohberg, and M. Fleischhauer, Non-Abelian Gauge Potentials for Ultracold Atoms with Degenerate Dark States, Phys. Rev. Lett. 95, 010404 (2005).
+      </li>
+      <li id="N10362">
+       [17] M.E. Peskin and D.V. Schroeder, An Introduction to Quantum Field Theory, (Westview Press, 1995), Chapter 15.
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

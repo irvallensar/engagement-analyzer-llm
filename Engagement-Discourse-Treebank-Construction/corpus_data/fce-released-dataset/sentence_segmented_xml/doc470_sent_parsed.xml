@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     27.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Ms. Ryan,
+      </p>
+      <p>
+       Thank you very much for your letter regarding my prize that I won in your competition. It was a very pleasant surprise to win a trip to California and I very much appreciate it.
+      </p>
+      <p>
+       I am writing this as a reply
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       request to provide you with some information about my
+       <ns type="IN">
+        <i>
+         preferencies
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         First off all
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         I'll
+        </i>
+       </ns>
+       prefer to travel in July, because it is the only month I have free. I'll have to
+       <ns type="RV">
+        <i>
+         pass
+        </i>
+       </ns>
+       several exams in June
+       <ns type="RP">
+        <i>
+         , in
+        </i>
+       </ns>
+       August my family
+       <ns type="TV">
+        <i>
+         going
+        </i>
+       </ns>
+       to visit our relatives in Austria.
+      </p>
+      <p>
+       I am not so keen about
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         accomotation
+        </i>
+       </ns>
+       but would rather stay in tents than cabins. It is much more fun and you can really enjoy nature and
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       company of your friends.
+      </p>
+      <p>
+       It is great I can do something I really like at the Camp. I
+       <ns type="TV">
+        <i>
+         am really enjoying
+        </i>
+       </ns>
+       swimming. We live near the
+       <ns type="RP">
+        <i>
+         sea shore
+        </i>
+       </ns>
+       and swimming is the
+       <ns type="DJ">
+        <i>
+         sport
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         activitie
+        </i>
+       </ns>
+       I am really good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       .
+       <ns type="M">
+        <i>
+         Far
+        </i>
+       </ns>
+       the best swimmer in my school. The other subject is photography. I like taking pictures and want to share my interest with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       others. I am not a photographer but my family think that my photos are more
+       <ns type="SX">
+        <i>
+         then
+        </i>
+       </ns>
+       just good.
+      </p>
+      <p>
+       Finally I want to ask you some questions. What will be
+       <ns type="FJ">
+        <i>
+         better
+        </i>
+       </ns>
+       to take with me, what
+       <ns type="W">
+        <i>
+         I'll
+        </i>
+       </ns>
+       need at Camp? How much money should I take
+       <ns type="RP">
+        <i>
+         , will
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       be any guided tours? And how many will be
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       Camp in July?
+      </p>
+      <p>
+       Hope to hear from you soon.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ms. Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for your letter regarding my prize that I won in your competition.
+       </s>
+       <s pid="2" sid="2">
+        It was a very pleasant surprise to win a trip to California and I very much appreciate it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am writing this as a reply for you request to provide you with some information about my preferencies.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First off all I'll prefer to travel in July, because it is the only month I have free.
+       </s>
+       <s pid="4" sid="2">
+        I'll have to pass several exams in June, in August my family going to visit our relatives in Austria.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am not so keen about  accomotation but would rather stay in tents than cabins.
+       </s>
+       <s pid="5" sid="2">
+        It is much more fun and you can really enjoy nature and a company of your friends.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        It is great I can do something I really like at the Camp.
+       </s>
+       <s pid="6" sid="2">
+        I am really enjoying swimming.
+       </s>
+       <s pid="6" sid="3">
+        We live near the sea shore and swimming is the sport activitie I am really good in.
+       </s>
+       <s pid="6" sid="4">
+        Far the best swimmer in my school.
+       </s>
+       <s pid="6" sid="5">
+        The other subject is photography.
+       </s>
+       <s pid="6" sid="6">
+        I like taking pictures and want to share my interest with the others.
+       </s>
+       <s pid="6" sid="7">
+        I am not a photographer but my family think that my photos are more then just good.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Finally I want to ask you some questions.
+       </s>
+       <s pid="7" sid="2">
+        What will be better to take with me, what I'll need at Camp?
+       </s>
+       <s pid="7" sid="3">
+        How much money should I take, will it be any guided tours?
+       </s>
+       <s pid="7" sid="4">
+        And how many will be in  Camp in July?
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Hope to hear from you soon.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable.
+      </p>
+      <p>
+       My best friend is crazy about shopping. She
+       <ns type="TV">
+        <i>
+         will prefer
+        </i>
+       </ns>
+       shopping to everything else. She thinks that it is the most pleasant
+       <ns type="MN">
+       </ns>
+       <ns type="W">
+        <i>
+         spending of
+        </i>
+       </ns>
+       time, when you
+       <ns type="TV">
+        <i>
+         going
+        </i>
+       </ns>
+       from one shop to another, watching other people, looking at beautiful clothes, getting some fashionable ideas.
+       <ns type="S">
+        <i>
+         Somitimes
+        </i>
+       </ns>
+       I feel very sorry for her. It seems that going shopping is a
+       <ns type="ID">
+        <i>
+         sense of living
+        </i>
+       </ns>
+       . And
+       <ns type="AGV">
+        <i>
+         <ns type="RA">
+          <i>
+           it's
+          </i>
+         </ns>
+        </i>
+       </ns>
+       so many people like her. Lots of families
+       <ns type="TV">
+        <i>
+         <ns type="IV">
+          <i>
+           planing
+          </i>
+         </ns>
+        </i>
+       </ns>
+       a day out to go to a shopping
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       , and it is a normal routine for them - to
+       <ns type="FV">
+        <i>
+         spent
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       all day just shopping. Not so many people
+       <ns type="TV">
+        <i>
+         thinking
+        </i>
+       </ns>
+       about going fishing or playing
+       <ns type="UN">
+        <i>
+         sport
+        </i>
+       </ns>
+       games with their families any more. They
+       <ns type="TV">
+        <i>
+         forgot
+        </i>
+       </ns>
+       how beautiful
+       <ns type="W">
+        <i>
+         <ns type="TV">
+          <i>
+           could
+          </i>
+         </ns>
+         be the countryside
+        </i>
+       </ns>
+       , and
+       <ns type="W">
+        <i>
+         only tourists you can meet
+        </i>
+       </ns>
+       in the castles or museums.
+      </p>
+      <p>
+       People are normally angry after shopping - because it is so easy to get
+       <ns type="RJ">
+        <i>
+         tied
+        </i>
+       </ns>
+       . People
+       <ns type="TV">
+        <i>
+         are not smiling
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       each other,
+       <ns type="TV">
+        <i>
+         not talking
+        </i>
+       </ns>
+       to each other at the shops. They look like
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         robotes
+        </i>
+       </ns>
+       who have to do their
+       <ns type="FN">
+        <i>
+         duties
+        </i>
+       </ns>
+       - to buy.
+      </p>
+      <p>
+       In my opinion shopping is just
+       <ns type="MA">
+       </ns>
+       to cover our basic needs. Shops are
+       <ns type="R">
+        not for spending our
+        <ns type="IN">
+         <i>
+          lifes
+         </i>
+        </ns>
+        in them
+       </ns>
+       . Try to give up shopping one day and try to spend your day with friends
+       <ns type="MP">
+       </ns>
+       going to
+       <ns type="RV">
+        <i>
+         play
+        </i>
+       </ns>
+       something together. It feels much
+       <ns type="UY">
+        <i>
+         more
+        </i>
+       </ns>
+       better. You'll have happy memories and
+       <ns type="M">
+       </ns>
+       a good mood.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My best friend is crazy about shopping.
+       </s>
+       <s pid="2" sid="2">
+        She will prefer shopping to everything else.
+       </s>
+       <s pid="2" sid="3">
+        She thinks that it is the most pleasant  spending of time, when you going from one shop to another, watching other people, looking at beautiful clothes, getting some fashionable ideas.
+       </s>
+       <s pid="2" sid="4">
+        Somitimes
+       </s>
+       <s pid="2" sid="5">
+        I feel very sorry for her.
+       </s>
+       <s pid="2" sid="6">
+        It seems that going shopping is a sense of living.
+       </s>
+       <s pid="2" sid="7">
+        And it's so many people like her.
+       </s>
+       <s pid="2" sid="8">
+        Lots of families planing a day out to go to a shopping center, and it is a normal routine for them - to spent the all day just shopping.
+       </s>
+       <s pid="2" sid="9">
+        Not so many people thinking about going fishing or playing sport games with their families any more.
+       </s>
+       <s pid="2" sid="10">
+        They forgot how beautiful could be the countryside, and only tourists you can meet in the castles or museums.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        People are normally angry after shopping - because it is so easy to get tied.
+       </s>
+       <s pid="3" sid="2">
+        People are not smiling to each other, not talking to each other at the shops.
+       </s>
+       <s pid="3" sid="3">
+        They look like a robotes who have to do their duties - to buy.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In my opinion shopping is just  to cover our basic needs.
+       </s>
+       <s pid="4" sid="2">
+        Shops are not for spending our lifes in them.
+       </s>
+       <s pid="4" sid="3">
+        Try to give up shopping one day and try to spend your day with friends going to play something together.
+       </s>
+       <s pid="4" sid="4">
+        It feels much more better.
+       </s>
+       <s pid="4" sid="5">
+        You'll have happy memories and  a good mood.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

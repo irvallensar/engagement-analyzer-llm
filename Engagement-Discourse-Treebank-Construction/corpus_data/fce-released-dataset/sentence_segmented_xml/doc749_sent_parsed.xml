@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     40.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Miss Ryan,
+      </p>
+      <p>
+       I'm writing to you as regards the letter you've sent me about the competition I've won.
+      </p>
+      <p>
+       I've never been to the U.S.A. before so I think it'll be an exciting trip. With regard to the date of the trip, July would be best because in June I'm going to visit my family in Mexico and in August school begins.
+      </p>
+      <p>
+       I've never been camping before, I guess I'm not an outdoor girl, but I'd like to give it a try, so I'd rather tents than cabins.
+      </p>
+      <p>
+       I'm really keen on sports, especially sailing. I've
+       <ns type="RV">
+        <i>
+         practised
+        </i>
+       </ns>
+       sailing since an early age and I
+       <ns type="W">
+        <i>
+         perfectly manage the rigging and sail
+        </i>
+       </ns>
+       . I'm also fond of tennis, I've just started my lessons and would like to continue
+       <ns type="RV">
+        <i>
+         practising
+        </i>
+       </ns>
+       during the summer. So, I think I'll do sailing and tennis.
+      </p>
+      <p>
+       I'm not really sure
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       what kind of clothes to take
+       <ns type="RP">
+        <i>
+         , could
+        </i>
+       </ns>
+       you please write to me specifying what would be suitable? I'd appreciate it a lot.
+      </p>
+      <p>
+       Sincerely,
+      </p>
+      <p>
+       Diana Delgado
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Miss Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to you as regards the letter you've sent me about the competition I've won.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I've never been to the U.S.A. before so I think it'll be an exciting trip.
+       </s>
+       <s pid="3" sid="2">
+        With regard to the date of the trip, July would be best because in June I'm going to visit my family in Mexico and in August school begins.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I've never been camping before, I guess I'm not an outdoor girl, but I'd like to give it a try, so I'd rather tents than cabins.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I'm really keen on sports, especially sailing.
+       </s>
+       <s pid="5" sid="2">
+        I've practised sailing since an early age and I perfectly manage the rigging and sail.
+       </s>
+       <s pid="5" sid="3">
+        I'm also fond of tennis, I've just started my lessons and would like to continue practising during the summer.
+       </s>
+       <s pid="5" sid="4">
+        So, I think I'll do sailing and tennis.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I'm not really sure of what kind of clothes to take, could you please write to me specifying what would be suitable?
+       </s>
+       <s pid="6" sid="2">
+        I'd appreciate it a lot.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Sincerely,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Diana Delgado
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       I'm a shopaholic, but I have to admit shopping is not always enjoyable. For instance, I spent my Spring Break with my friends in Italy
+       <ns type="RP">
+        <i>
+         , we
+        </i>
+       </ns>
+       went there to buy our dresses for our boyfriends' graduation (besides other reasons). They had invited us and we wanted them to see us
+       <ns type="MV">
+       </ns>
+       stunningly beautiful.
+      </p>
+      <p>
+       While we were in Florence my wallet was stolen, probably by a
+       <ns type="S">
+        <i>
+         gypsie
+        </i>
+       </ns>
+       . I was so annoyed! I was in the Plaza Espagna in Florence without a penny! My friends lent me some money, but it wasn't more than 120 pounds. I had to buy my dress,
+       <ns type="RP">
+        <i>
+         it's
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         accesories
+        </i>
+       </ns>
+       and
+       <ns type="R">
+        <i>
+         besides
+        </i>
+       </ns>
+       clothes and souvenirs! I couldn't really do much, so I used the money I had and bought an incredible pair of shoes and some souvenirs. I felt really bad seeing my friends buy the latest fashion while the only thing I could do was tell them how great their clothes were and of course window-shop.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm a shopaholic, but I have to admit shopping is not always enjoyable.
+       </s>
+       <s pid="2" sid="2">
+        For instance, I spent my Spring Break with my friends in Italy, we went there to buy our dresses for our boyfriends' graduation (besides other reasons).
+       </s>
+       <s pid="2" sid="3">
+        They had invited us and we wanted them to see us  stunningly beautiful.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        While we were in Florence my wallet was stolen, probably by a gypsie.
+       </s>
+       <s pid="3" sid="2">
+        I was so annoyed!
+       </s>
+       <s pid="3" sid="3">
+        I was in the Plaza Espagna in Florence without a penny!
+       </s>
+       <s pid="3" sid="4">
+        My friends lent me some money, but it wasn't more than 120 pounds.
+       </s>
+       <s pid="3" sid="5">
+        I had to buy my dress, it's accesories and besides clothes and souvenirs!
+       </s>
+       <s pid="3" sid="6">
+        I couldn't really do much, so I used the money I had and bought an incredible pair of shoes and some souvenirs.
+       </s>
+       <s pid="3" sid="7">
+        I felt really bad seeing my friends buy the latest fashion while the only thing I could do was tell them how great their clothes were and of course window-shop.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

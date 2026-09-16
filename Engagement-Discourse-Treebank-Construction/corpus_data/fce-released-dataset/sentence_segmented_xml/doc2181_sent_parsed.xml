@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="R">
+        <i>
+         Hello
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       Firstly I would like to thank you for
+       <ns type="RD">
+        <i>
+         your
+        </i>
+       </ns>
+       prize. This
+       <ns type="RN">
+        <i>
+         travel
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         enjoys
+        </i>
+       </ns>
+       me because
+       <ns type="TV">
+        <i>
+         I never go
+        </i>
+       </ns>
+       to
+       <ns type="MD">
+       </ns>
+       USA.
+      </p>
+      <p>
+       Secondly I am going to answer your questions. I can travel only
+       <ns type="MT">
+       </ns>
+       July because I study
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       an
+       <ns type="S">
+        <i>
+         ingenior's
+        </i>
+       </ns>
+       school in France and in
+       <ns type="RP">
+        <i>
+         Summer
+        </i>
+       </ns>
+       we have
+       <ns type="MD">
+       </ns>
+       holidays
+       <ns type="RT">
+        <i>
+         since
+        </i>
+       </ns>
+       July.
+      </p>
+      <p>
+       I prefer to
+       <ns type="RV">
+        <i>
+         live
+        </i>
+       </ns>
+       in tents, where it is easier to
+       <ns type="RV">
+        <i>
+         make contacts with
+        </i>
+       </ns>
+       other people than in log cabins. When I travel I don't often sleep in
+       <ns type="MD">
+       </ns>
+       hotel, I prefer tents and also I can meet people
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       who
+       <ns type="AGV">
+        <i>
+         lives
+        </i>
+       </ns>
+       in the country.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       the activities I would be very happy if I could play golf.
+       <ns type="RA">
+        <i>
+         That
+        </i>
+       </ns>
+       is a sport that
+       <ns type="TV">
+        <i>
+         I always want
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         practise
+        </i>
+       </ns>
+       but in France it is
+       <ns type="SX">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         expansive
+        </i>
+       </ns>
+       . So if I have this opportunity, I don't want to
+       <ns type="RV">
+        <i>
+         fail
+        </i>
+       </ns>
+       it. I would like to
+       <ns type="R">
+        <i>
+         photograph
+        </i>
+       </ns>
+       <ns type="MN">
+       </ns>
+       too. There are so
+       <ns type="CQ">
+        <i>
+         much
+        </i>
+       </ns>
+       monuments in California and so I will remember
+       <ns type="FN">
+        <i>
+         these holidays
+        </i>
+       </ns>
+       with my
+       <ns type="S">
+        <i>
+         photographies
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Could you send me more
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       about
+       <ns type="MQ">
+       </ns>
+       clothes to take with
+       <ns type="MA">
+       </ns>
+       ? Finally I would like to ask you
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       if I need
+       <ns type="RQ">
+        <i>
+         some
+        </i>
+       </ns>
+       money
+       <ns type="MP">
+       </ns>
+       because you say all
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       and travel costs are paid for.
+      </p>
+      <p>
+       Thank you for your answer.
+      </p>
+      <p>
+       Charles Dumaux
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hello,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Firstly
+       </s>
+       <s pid="2" sid="2">
+        I would like to thank you for your prize.
+       </s>
+       <s pid="2" sid="3">
+        This travel enjoys me because I never go to  USA.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Secondly I am going to answer your questions.
+       </s>
+       <s pid="3" sid="2">
+        I can travel only  July because I study in an ingenior's school in France and in Summer we have  holidays since July.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I prefer to live in tents, where it is easier to make contacts with other people than in log cabins.
+       </s>
+       <s pid="4" sid="2">
+        When I travel I don't often sleep in  hotel, I prefer tents and also I can meet people, who lives in the country.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For the activities I would be very happy if I could play golf.
+       </s>
+       <s pid="5" sid="2">
+        That is a sport that I always want to practise but in France it is to expansive.
+       </s>
+       <s pid="5" sid="3">
+        So if I have this opportunity, I don't want to fail it.
+       </s>
+       <s pid="5" sid="4">
+        I would like to photograph  too.
+       </s>
+       <s pid="5" sid="5">
+        There are so much monuments in California and so I will remember these holidays with my photographies.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Could you send me more informations about  clothes to take with ?
+       </s>
+       <s pid="6" sid="2">
+        Finally
+       </s>
+       <s pid="6" sid="3">
+        I would like to ask you, if I need some money because you say all accomodation and travel costs are paid for.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Thank you for your answer.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Charles Dumaux
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Hello Kim,
+      </p>
+      <p>
+       Last month, I enjoyed helping at a pop concert. It was marvellous!!!
+      </p>
+      <p>
+       I was
+       <ns type="U">
+        <i>
+         in the
+        </i>
+       </ns>
+       backstage, so I could speak with the singer before the concert. During half an hour he explained
+       <ns type="MT">
+       </ns>
+       me
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       how he
+       <ns type="AGV">
+        <i>
+         feel
+        </i>
+       </ns>
+       in France.
+      </p>
+      <p>
+       I had to serve glasses of water to the group before and during the concert, so I had a lot of contact with them. They are very
+       <ns type="RJ">
+        <i>
+         gentle
+        </i>
+       </ns>
+       . After the concert, I went to eat with them in a restaurant near the stadium
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       where they had played.
+      </p>
+      <p>
+       What I particularly liked about this experience is that I saw that famous people are like us and have the same
+       <ns type="FN">
+        <i>
+         interest
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I think that this experience is something that you have to live too. Perhaps
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the next concert we will go together. I will
+       <ns type="R">
+        <i>
+         give you news
+        </i>
+       </ns>
+       about it.
+      </p>
+      <p>
+       I hope you will answer my letter and
+       <ns type="RV">
+        <i>
+         say
+        </i>
+       </ns>
+       me if you are
+       <ns type="RJ">
+        <i>
+         interesting
+        </i>
+       </ns>
+       in my proposition.
+       <ns type="TV">
+        <i>
+         I send
+        </i>
+       </ns>
+       you with my letter a photo of the singer
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         what
+        </i>
+       </ns>
+       he
+       <ns type="TV">
+        <i>
+         give
+        </i>
+       </ns>
+       me.
+      </p>
+      <p>
+       See you later.
+      </p>
+      <p>
+       Charles
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hello Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Last month, I enjoyed helping at a pop concert.
+       </s>
+       <s pid="2" sid="2">
+        It was marvellous!!!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I was in the backstage, so I could speak with the singer before the concert.
+       </s>
+       <s pid="3" sid="2">
+        During half an hour he explained  me, how he feel in France.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I had to serve glasses of water to the group before and during the concert, so I had a lot of contact with them.
+       </s>
+       <s pid="4" sid="2">
+        They are very gentle.
+       </s>
+       <s pid="4" sid="3">
+        After the concert, I went to eat with them in a restaurant near the stadium, where they had played.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        What I particularly liked about this experience is that I saw that famous people are like us and have the same interest.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I think that this experience is something that you have to live too.
+       </s>
+       <s pid="6" sid="2">
+        Perhaps in the next concert we will go together.
+       </s>
+       <s pid="6" sid="3">
+        I will give you news about it.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I hope you will answer my letter and say me if you are interesting in my proposition.
+       </s>
+       <s pid="7" sid="2">
+        I send you with my letter a photo of the singer, what he give me.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        See you later.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Charles
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

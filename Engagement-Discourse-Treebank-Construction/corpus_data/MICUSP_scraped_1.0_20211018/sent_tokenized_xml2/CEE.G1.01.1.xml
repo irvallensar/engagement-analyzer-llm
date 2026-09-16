@@ -1,0 +1,784 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Oral Bioavailability Evaluation of Soil-Borne Chemicals Using
+      <i>
+       In Vitro
+      </i>
+      Bioavailability Tests
+     </div>
+     <div class="abstract">
+      Abstract
+      <p>
+       Current environmental laws impose site remediation goals based upon the risk to human or ecological health.  Site remediation goals utilize several risk exposure pathways. This review focuses on the soil ingestion exposure pathway, which often drives the remediation goals for many recalcitrant contaminants.  While background toxicity tests often administer highly soluble salts to test organisms, a significant fraction of soil-borne chemicals are often not bioavailable, or absorbed in the human gastrointestinal (GI) system.  The requisite extraction procedures for chemicals in soils (e.g. EPA Method 3050B) are significantly more aggressive than the GI system and are likely to overestimate the bioavailable concentrations.  Bioavailability assays have been developed to estimate the bioavailable concentration of organic chemicals, inorganic chemicals, or radionuclides in soil.  Bioavailability work has yielded numerous advances including novel remediation techniques and an enhanced understanding of the soil ingestion risk exposure pathway. This review summarizes the most common bioavailable tests, approaches to validate these tests, past research using these tests, challenges facing these tests, and potential future applications.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        This study focuses on soil-borne nonvolatile, immobile, and/or hydrophobic contaminants.
+       </s>
+       <s pid="1" sid="2">
+        For chemicals in soil to pose a potential human or ecological health risk, chemicals must be present in a specific medium, and a mechanism, or exposure pathway, must exist for chemical migration from the medium to a receptor organism.
+       </s>
+       <s pid="1" sid="3">
+        These exposure pathways are illustrated in Figure 1.
+       </s>
+       <s pid="1" sid="4">
+        One exposure pathway is inhalation of
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Figure 1: Risk Exposure Pathways for Soil (1)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        dust that may contain an organic or inorganic chemical.
+       </s>
+       <s pid="3" sid="2">
+        Organic chemicals volatilized from the soil also have the potential to be inhaled independently of dust.
+       </s>
+       <s pid="3" sid="3">
+        Soil ingestion is another exposure pathway.
+       </s>
+       <s pid="3" sid="4">
+        Inadvertently, all people ingest some small amount of dirt or dust.
+       </s>
+       <s pid="3" sid="5">
+        Children ingest roughly 50-200 mg soil/day (2,3).
+       </s>
+       <s pid="3" sid="6">
+        Soil ingestion is particularly problematic for children with pica syndrome for soil, a mental condition characterized by habitual soil consumption (4).
+       </s>
+       <s pid="3" sid="7">
+        When a person's skin is caked with mud or dirt, there is a potential for chemicals to detach from the soil matrix and be absorbed through the skin.
+       </s>
+       <s pid="3" sid="8">
+        This process is named the dermal absorption exposure pathway.
+       </s>
+       <s pid="3" sid="9">
+        Lastly, uptake of contaminated groundwater is problematic in sites where water-soluble contaminants leech into drinking water supplies.
+       </s>
+       <s pid="3" sid="10">
+        Soil ingestion is the risk exposure pathway that frequently drives site risk assessment with nonvolatile, immobile, and/or hydrophobic contaminants chemicals.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Harmful chemical influences on the human body are typically divided into carcinogenic and noncarcinogenic effects.
+       </s>
+       <s pid="4" sid="2">
+        Potential carcinogenic effects are typically expressed in terms of a hypothetical cancer risk.
+       </s>
+       <s pid="4" sid="3">
+        This value is determined for a chemical concentration that may cause one additional person to develop cancer out of one hundred thousand or one million people (1 x 10-5 or 1 x 10-6) over a person's lifetime (70 years is the typically assumed length).
+       </s>
+       <s pid="4" sid="4">
+        On the other hand, noncarcinogenic chemicals cause a deleterious effect on a system or organ, and the receptor at greatest risk is typically young children.
+       </s>
+       <s pid="4" sid="5">
+        There is a formidable level of difficulty and controversy in determining whether a compound is unacceptably dangerous at a certain concentration.
+       </s>
+       <s pid="4" sid="6">
+        Typically, epidemiological data are analyzed or studies are performed on rodents or other organisms whose digestive system most closely resemble the human gastrointestinal (GI) system.
+       </s>
+       <s pid="4" sid="7">
+        To keep the experimental populations small, incredibly high doses are given to the organisms to increase the effect size.
+       </s>
+       <s pid="4" sid="8">
+        In this testing, animals are typically fed the contaminant through a highly soluble form such as HgCl2 (5).
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        In the bioavailability literature, the terms bioavailability and bioacessibility are used to describe similar, although different, concepts.
+       </s>
+       <s pid="5" sid="2">
+        Bioaccessibility is defined as the contaminant concentration that becomes available for absorption into the central blood or lymph system.
+       </s>
+       <s pid="5" sid="3">
+        On the other hand, bioavailability is defined as the chemical concentration that actually becomes absorbed into the central blood or lymph system.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Human Gastrointestinal System Overview
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Fundamentally, the physicochemical processes that occur in the human gastrointestinal system dictate the contaminant concentration levels that become absorbed into systemic circulation through contaminated soil or sediment ingestion.
+       </s>
+       <s pid="6" sid="2">
+        An overview of this system highlights the relevant mechanisms related to contaminated soil mobilization and absorption into the blood (or lymph) stream.
+       </s>
+       <s pid="6" sid="3">
+        Soil enters the body through the oral cavity where saliva and teeth have the potential to chemically or mechanically alter the soil.
+       </s>
+       <s pid="6" sid="4">
+        Then, the soil is transported via the esophagus through the thoracic cavity, past the diaphragm, and into the stomach.
+       </s>
+       <s pid="6" sid="5">
+        In the stomach, contractions, which induce mixing and peristalsis, move the ingested soil toward the pyloric sphincter, the exit from the stomach to the small intestine.
+       </s>
+       <s pid="6" sid="6">
+        The small intestine is subdivided into three components: the duodenum, the jejunum, and the ileum.
+       </s>
+       <s pid="6" sid="7">
+        In the small intestine, the low pH solution from the stomach is neutralized through carbonate buffering.
+       </s>
+       <s pid="6" sid="8">
+        The small intestine is covered with villi, fingerlike projects that greatly increase the surface area.
+       </s>
+       <s pid="6" sid="9">
+        These villi serve an invaluable role through enhancing digestion and absorption of nutrients (or contaminants).
+       </s>
+       <s pid="6" sid="10">
+        The exocrine portion of the pancreas secretes pancreatic juice, which contains numerous digestive enzymes.
+       </s>
+       <s pid="6" sid="11">
+        Additionally, the liver produces and secretes bile, which the gallbladder then concentrates.
+       </s>
+       <s pid="6" sid="12">
+        When fat is detected in the duodenum, the intestinal mucosa secretes the hormone cholecystolkinin, which stimulates the gallbladder to contract thereby releasing concentrated bile.
+       </s>
+       <s pid="6" sid="13">
+        The bile is especially important in terms of fat absorption as a result of fat droplet emulsification.
+       </s>
+       <s pid="6" sid="14">
+        The ileocecal vale, located at the end of the ileum, connects the small intestine to the large intestine.
+       </s>
+       <s pid="6" sid="15">
+        Digestion is essentially complete upon entry into the large intestine, and the large intestine serves as the passageway to the rectum where waste is excreted from the body.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Bioavailability Tests
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        State risk assessment calculations often assume that the Environmental Protection Agency's (EPA) requisite extraction techniques provide a reasonable estimate of contaminant bioavailability.
+       </s>
+       <s pid="7" sid="2">
+        These tests were designed to extract all of the contaminants present in the soil matrix.
+       </s>
+       <s pid="7" sid="3">
+        For example, EPA Method 3050 B, the standard EPA procedure for heavy metals, is an aggressive heated extraction procedure that utilizes 6 N nitric and hydrochloric acid (6).
+       </s>
+       <s pid="7" sid="4">
+        On the other hand, Oomen et al. (7) suggests a stomach pH range between one and two for the fasted state or between two and five for the fed conditions.
+       </s>
+       <s pid="7" sid="5">
+        While these tests do provide a conservative estimate of contaminant bioavailability, there are significant concerns that these tests are overly conservative and that they are unable to accurately predict differences in contaminant bioavailability among different sites.
+       </s>
+       <s pid="7" sid="6">
+        Numerous authors have highlighted the potential bioavailability overestimation when using EPA methods (5, 8-9 10 1112).
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Substantially different human health impacts have been observed in different areas with the same measured soil chemical concentration.
+       </s>
+       <s pid="8" sid="2">
+        Steele et al. (13) found that blood levels for children in urban areas with lead concentrations of 1000 mg/kg have blood lead levels ranging from 1.1 to 7.6 (μg Pb/dL blood), while children living in mining areas with the same measured lead concentrations had blood lead levels ranging from 0 to 4.8 (μg Pb/dL blood).
+       </s>
+       <s pid="8" sid="3">
+        Dugan and Inskip (14) also often found increased blood levels in children who live in urban areas with lead levels ranging from 500-1000 mg/kg.
+       </s>
+       <s pid="8" sid="4">
+        Other studies have documented lowered lead bioavailability in mining areas as opposed to urban areas (11, 13, 15, 16).
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        Bioavailability tests have been developed to address this incongruity between the total amount of contaminant present at a site and the amount that would become available in the human gastrointestinal system,.
+       </s>
+       <s pid="9" sid="2">
+        These tests stem from earlier studies in the early 1980's that assayed iron availability in foods (e.g. 17).
+       </s>
+       <s pid="9" sid="3">
+        Due to differences in the desorption processes for organic chemicals, inorganic chemicals, and radionuclides, different but related bioavailability tests have been developed for each contaminant classification.
+       </s>
+       <s pid="9" sid="4">
+        Within these categories, different research groups have proposed in vitro tests, which are subsequently "validated" through in vivo animal experiments.
+       </s>
+       <s pid="9" sid="5">
+        The value of the in vitro test corresponds to its ability to reproduce the in vivo results.
+       </s>
+       <s pid="9" sid="6">
+        One limitation of this approach is that the correlation between in vivo results for certain animals and in vivo results from humans is unknown.
+       </s>
+       <s pid="9" sid="7">
+        It is possible then that an in vitro test could provide very accurate results in terms of the actual human bioavailability while not accurately reproducing results from a certain animal.
+       </s>
+       <s pid="9" sid="8">
+        This challenge makes determining the best bioavailability test among different physiologically reasonably tests difficult if not impossible.
+       </s>
+       <s pid="9" sid="9">
+        However, the National Research Council (18) recently recommended that the EPA allow human testing under strict scientific and ethical conditions.
+       </s>
+       <s pid="9" sid="10">
+        No tests have been conducted to date comparing human and animal or human and human bioavailability tests for soils, although human bioavailability studies have been performed using low concentrations of lead (19) and chromium (20) in soils.
+       </s>
+       <s pid="9" sid="11">
+        One possibility would be to spike soils with benign chemicals such as calcium or iron and to conduct a human in vivo study.
+       </s>
+       <s pid="9" sid="12">
+        However, the sorption and desorption mechanisms vary widely among chemicals.
+       </s>
+       <s pid="9" sid="13">
+        It may be inappropriate to extrapolate results from one chemical to other chemicals.
+       </s>
+       <s pid="9" sid="14">
+        Currently, correlating in vitro human bioavailability tests with in vivo animal experiments is the best method for evaluating in vitro tests.
+       </s>
+       <s pid="9" sid="15">
+        However, there is controversy regarding which animals, weanling pigs or weanling rats, are the most appropriate surrogate for children (21).
+       </s>
+       <s pid="9" sid="16">
+        It remains unclear which, if either, of these two surrogate animals best represents the child or adult GI system and whether either of these two animals are sufficiently accurate surrogates.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        Ruby et al. (22) developed the most commonly used bioavailability test.
+       </s>
+       <s pid="10" sid="2">
+        This test was initially used to determine the bioavailability of arsenic and lead in mines wastes.
+       </s>
+       <s pid="10" sid="3">
+        Since this study, bioavailability students have been extended to numerous additional chemicals (organic, inorganic and radionuclides) (See Table 1).
+       </s>
+       <s pid="10" sid="4">
+        This table only includes studies of soil-borne chemicals using a human bioavailability test.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        Table 1. Human Bioavailability Study Summary
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        The vast majority of bioavailability studies has focused on inorganic chemicals, and specifically lead, cadmium, and arsenic.
+       </s>
+       <s pid="12" sid="2">
+        This focus is reasonable because lead, cadmium, and arsenic are common, problematic contaminants.
+       </s>
+       <s pid="12" sid="3">
+        Only one study focused specifically on radionuclides (35), and relatively few studies have examined organic contaminants (28, 38-40, 51-53)
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        Table 2 summarizes the current inorganic bioavailability tests.
+       </s>
+       <s pid="13" sid="2">
+        This table was modified from Oomen et al. (7) to include the physiologically based extraction test (PBET) (22), the in vitro gastrointestinal (IVG) method (23), and the artificial gastric fluid extraction (26).
+       </s>
+       <s pid="13" sid="3">
+        While other bioavailability tests have been published (i.e. 33), the tests summarized in Table 2 are the most frequently cited.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        There are numerous differences among the various bioavailability tests.
+       </s>
+       <s pid="14" sid="2">
+        These differences are based predominately on the level of detail, or conversely assumptions, for a test.
+       </s>
+       <s pid="14" sid="3">
+        For example, most of the tests neglect the oral cavity and its impact on the bioavailability processes.
+       </s>
+       <s pid="14" sid="4">
+        In addition, many tests assume that absorption occurs predominately in the small intestine and that the contaminant concentration measured in the small intestine most accurately represents the bioavailable concentration.
+       </s>
+       <s pid="14" sid="5">
+        As long as the unique procedures accurately match the corresponding human physiological conditions, more detailed tests should better correlate with in vivo measurements, although the test may become more difficult to perform.
+       </s>
+       <s pid="14" sid="6">
+        Another difference among the tests is the pH of the stomach, which varies from 1.1 (RIVM Method) to 4.0 (SHIME Method) among the different tests (7).
+       </s>
+       <s pid="14" sid="7">
+        Using a significantly more acidic stomach environment would increase the bioavailability (22).
+       </s>
+       <s pid="14" sid="8">
+        Another difference among these tests is the bile type used.
+       </s>
+       <s pid="14" sid="9">
+        Oomen et al. (28) showed that the chicken bile significantly increases the measured bioaccessibility concentrations for lead and cadmium compared to ox and pig bile.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        Three major processes dictate soil ingestion bioavailability (7).
+       </s>
+       <s pid="15" sid="2">
+        First, a certain fraction of the contaminants in soil become bioaccessible through the gastrointestinal tract (FB).
+       </s>
+       <s pid="15" sid="3">
+        Second, a certain fraction of the bioaccessible contaminants are transported across the small intestinal epithelium (FA).
+       </s>
+       <s pid="15" sid="4">
+        Third, a certain fraction of these contaminants are metabolized or otherwise detoxified by the liver (FH).
+       </s>
+       <s pid="15" sid="5">
+        The following equation describes the steps in contaminant bioavailability where F indicates the bioavailable fraction (7).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        (1)
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        Many inorganic bioavailability assays ignore the third step because the enzymes in the liver are not expected to substantially detoxify or metabolize inorganic chemicals.
+       </s>
+       <s pid="17" sid="2">
+        Bioavailability tests typically assume that contaminant desorption from soils is the rate limiting step for contaminant absorption, although tests which model absorption (23) have been proposed.
+       </s>
+       <s pid="17" sid="3">
+        In other words, it is assumed that the bioavailable fraction is approximately equal to the bioaccessible fraction (i.e. FA and FH are approximately equal to one).
+       </s>
+       <s pid="17" sid="4">
+        On the other hand, enzymatic detoxification could be important for organic chemicals.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Organic bioavailability tests differ from inorganic bioavailability tests due to different desorption processes in the GI system.
+       </s>
+       <s pid="18" sid="2">
+        Ingested lipids are believed to be fundamental to the solubilization, transport, and absorption of many organic contaminants through the production of micelles (38, 23,) while the ingestion of lipids may be ignored in inorganic contaminant tests (22).
+       </s>
+       <s pid="18" sid="3">
+        Insights into the bioavailability of organic contaminants can be culled from pharmaceutical research.
+       </s>
+       <s pid="18" sid="4">
+        An excellent review of the effects of lipids, pH, and food digestion on drug absorption is Charman et al. (54).
+       </s>
+       <s pid="18" sid="5">
+        Lipid absorption and the concomitant release of bile salts have profound compound specific results, and the bile salts may increase or decrease bioavailability, which agrees with Oomen et al. (28).
+       </s>
+       <s pid="18" sid="6">
+        Stomach and/or small intestine pH is important when assessing the bioavailability of ions, weak acids, or weak bases.
+       </s>
+       <s pid="18" sid="7">
+        Norris et al. (24) review the oral absorption of microparticulates literature.
+       </s>
+       <s pid="18" sid="8">
+        They show evidence of microparticles absorption across the small intestine's cellular mucosa or through the lymphoid tissue, such as the Peyer's patches.
+       </s>
+       <s pid="18" sid="9">
+        Microparticulates are on the size range of a micrometer.
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        Organic contaminant bioavailability tests are summarized in Table 3.
+       </s>
+       <s pid="19" sid="2">
+        There are clear differences among the physiological parameter estimates among the tests (i.e. the small-intestinal times used) and among the level of detail used.
+       </s>
+       <s pid="19" sid="3">
+        There are additional test-specific manipulations not captured on this table.
+       </s>
+       <s pid="19" sid="4">
+        For example, Holman et al. (53) centrifuged and filtered their mixture prior to testing.
+       </s>
+       <s pid="19" sid="5">
+        This filtration was a unique aspect of this test and was designed to capture only the micelles, which are small enough to pass between the microvilli.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Table 3: Organic Bioavailability Tests (modified from 38)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <div>
+       <div class="head_2">
+        Bioavailability Research on Inorganic Contaminants
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         Bioavailability research on inorganic contaminants in soils or sediments has predominately focused on correlations with in vivo studies, mineralogical analyses of contaminant species in relationship to bioavailability, and assessing the influence of soil amendments on inorganic contaminant bioavailability.
+        </s>
+        <s pid="21" sid="2">
+         A thorough review of the early research focused on arsenic and lead bioavailability is available (25).
+        </s>
+       </p>
+       <p>
+        <s pid="22" sid="1">
+         Several in vitro studies have strongly correlated with in vivo animal studies.
+        </s>
+        <s pid="22" sid="2">
+         The PBET method was found to accurately correlate with lead results from a Sprague-Dawley rate model (r2=0.93) while the PBET slightly overestimated the relative bioavailability compared to in vivo studies with rabbits and Cynomolgus monkeys (22).
+        </s>
+        <s pid="22" sid="3">
+         Rodriguez et al. (23) determined that bioavailable arsenic measured using the IVG and IVG-AB methods in the stomach or small intestine component were significantly correlated (P&amp;lt;0.05) with in vivo measurements using immature swine.
+        </s>
+        <s pid="22" sid="4">
+         In addition, these methods small intestinal phase results measured using the PBET were statistically significant (P&amp;lt;0.05) with the immature swine measurements.
+        </s>
+        <s pid="22" sid="5">
+         The IVG method with or without dough amendments has also been tested against in vivo juvenile swine results for cadmium (30).
+        </s>
+        <s pid="22" sid="6">
+         Statistically significant results (P&amp;lt;0.01) were found using the IVG stomach concentration with added dough and the IVG intestinal phase concentration without added dough.
+        </s>
+        <s pid="22" sid="7">
+         Oliver et al. (45) discovered that the total dust Pb concentration had a higher correlation with Pb blood concentrations than the bioavailable Pb determined using a modified PBET procedure.
+        </s>
+        <s pid="22" sid="8">
+         Still, the PBET method yielded a statistically significant correlation (P&amp;lt;0.05) with Pb blood levels for PBET stomach pH values of 3 (r2=0.82) and 1.3 (r2=0.79).
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         A primary focus of inorganic bioavailability research has been to elucidate the relationship between inorganic contaminant mineralogy and bioavailability.
+        </s>
+        <s pid="23" sid="2">
+         Several studies have assessed differences in lead mineralogy between lead contaminated soil from mine wastes and lead contaminated urban soils and how these mineralogical differences relate to bioavailability (11, 16, 22).
+        </s>
+        <s pid="23" sid="3">
+         The lead in Butte mine waste was found to be principally composed of lead phosphates, galena (PbS), and anglesite (PbSO4), while the lead from Bartlesville, Ok was primarily composed of manganese-lead oxide, iron-lead oxide, and lead phosphate.
+        </s>
+        <s pid="23" sid="4">
+         In addition, the Pb in Butte samples was frequently encapsulated in sulfide or silicate minerals, while the Pb in Bartlesville samples was generally present in separate particles.
+        </s>
+        <s pid="23" sid="5">
+         Accordingly, the lead in the Butte samples was found to be less bioavailable.
+        </s>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         This increased understanding of bioavailability processes has fostered novel remediation techniques that capitalize on immobilizing lead through changing its specie to a less bioavailable form such as pryomorphite.
+        </s>
+        <s pid="24" sid="2">
+         The most commonly added amendment to expedite this transformation was phosphorous (21, 31, 32, 34 43, 44, 49, 50), and it was added in several different forms such as rock phosphate (31) or phosphoric acid (44).
+        </s>
+        <s pid="24" sid="3">
+         Other amendments include Portland cement (49), iron oxyhydroxides (49), biosolids (31, 32, 34, 49, 50), composted leaves (49), wood ash(34), sulfate (34), and manganese oxides (43).
+        </s>
+        <s pid="24" sid="4">
+         Field experiments using phosphorous treated soil combined with in vivo swine blood lead tests have confirmed the efficacy of phosphorous amendments to lead contaminated soils (21).
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Bioavailability Research on Organic Contaminants
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        Ruby et al. (38) conducted the only known comparison between in vivo and in vitro results for organic chemicals.
+       </s>
+       <s pid="25" sid="2">
+        This study compared in vivo results for 2,3,7,8-tetracholorodibenzo-p-dioxin (TCDD) from various animals with in vitro results from a PBET modified for organic contaminants.
+       </s>
+       <s pid="25" sid="3">
+        This study discovered that the average bioavailability for TCDD was 25% and suggested that an inverse relationship exists between bioavailability and total organic carbon (TOC).
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        Oomen et al. (51) assessed the mobilization of polychlorinated biphenyls (PCBs) and lindane in a spiked surrogate soil.
+       </s>
+       <s pid="26" sid="2">
+        They determined that 35% of PCBs and 57% of lindane were bioavailable.
+       </s>
+       <s pid="26" sid="3">
+        In addition, roughly 25% of the total PCBs and 23% of the lindane were associated with bile salts at the conclusion of the bioavailability test.
+       </s>
+       <s pid="26" sid="4">
+        This finding corroborates previous discussions of the importance of bile salts in the desorption process for hydrophobic contaminants (54).
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        Numerous studies have assayed the impact of different amendments (i.e. food stuffs) or conditions (i.e. gallbladder emptying phase) on organic contaminant bioavailability.
+       </s>
+       <s pid="27" sid="2">
+        Hack and Selenka (52) assessed differences in PAH and PCB bioavailability based upon food amendments under both gastro-intestinal and gastric models.
+       </s>
+       <s pid="27" sid="3">
+        The addition of mucine (8 g/L) or whole milk powder (56 g/L) both substantially increased the bioavailable fraction of PAHs or PCBs in the gastro-intestinal model and the gastric model, although the whole milk powder had a greater impact.
+       </s>
+       <s pid="27" sid="4">
+        Wittsiepe et al. (39) performed a similar analysis using red slag Kieselrot, a material used as a surface layer in numerous sports fields in Germany that is contaminated with polychlorinated dibenzo-p-dioxins and dibenzofurans (PCDD/F).
+       </s>
+       <s pid="27" sid="5">
+        They also determined that higher bile content and whole powder milk resulted in significantly higher bioavailability (60%) compared to low bile content and the absence of food (5%).
+       </s>
+       <s pid="27" sid="6">
+        Similarly, Holman et al. (53) discovered that the total petroleum hydrocarbon and the crude oil bioavailability increased during fat digestion as compared to the gallbladder empty phase of fasting, and total petroleum hydrocarbon were consistently more bioavailable crude oil.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Discussion
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        Past bioavailability research has yielded insights into soil-borne contaminant desorption processes in the GI system.
+       </s>
+       <s pid="28" sid="2">
+        Bioavailability tests have accurately predicted the contaminant bioavailability concentrations measured through in vivo studies.
+       </s>
+       <s pid="28" sid="3">
+        Current bioavailability work has also elucidated fundamental differences in bioavailability between organic and inorganic contaminants.
+       </s>
+       <s pid="28" sid="4">
+        Research has also stimulated novel remediation procedures with exciting potentials for in situ usage.
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        Nevertheless, many of the fundamental challenges, which initially faced the broad application of bioavailability to risk assessment, remain.
+       </s>
+       <s pid="29" sid="2">
+        As previously described, uncertainty in the correlation between in vivo studies using either weanling swine or Dawley-Sprague rats and the actual human GI system is problematic (21).
+       </s>
+       <s pid="29" sid="3">
+        In addition, correlations between bioavailability tests and in vivo studies exist for relatively few organic chemicals and radionuclides.
+       </s>
+       <s pid="29" sid="4">
+        Until more chemicals have been tested, reasonable doubts will remain concerning the applicability of a specific bioavailability assay for all chemicals and the ability of any specific test to capture the complex GI processes.
+       </s>
+       <s pid="29" sid="5">
+        Further, only a limited number of studies have compared the predicted bioavailability for specific contaminated soils among different bioavailability tests and/or in vivo experiments (7, 23).
+       </s>
+       <s pid="29" sid="6">
+        Additional critical comparisons among bioavailability tests are crucial in order to select a single (or several) bioavailability tests for risk assessment.
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        Another profound problem facing bioavailability tests is the notion that accounting for bioavailability is just a means to increase the acceptable contamination level (1).
+       </s>
+       <s pid="30" sid="2">
+        It should be realized that bioavailability is a parameter, although not always explicitly stated, in all risk assessment calculations.
+       </s>
+       <s pid="30" sid="3">
+        If not explicitly defined, the bioavailable fraction is assumed to be one hundred percent.
+       </s>
+       <s pid="30" sid="4">
+        It should also be realized that bioavailability tests have the potential to decrease, not change, or increase the acceptable soil contaminant levels at a specific site (26).
+       </s>
+       <s pid="30" sid="5">
+        Nevertheless, including bioavailability often does increase the soil cleanup level because only a fraction of the chemicals measured through aggressive extraction techniques (e.g. EPA 3050B) are typically bioavailable.
+       </s>
+       <s pid="30" sid="6">
+        Including bioavailability also improves the accuracy of the risk assessment calculations.
+       </s>
+       <s pid="30" sid="7">
+        While significant attention has been paid to bioavailability, corollary factors that would decrease the soil cleanup levels have been explored less rigorously.
+       </s>
+       <s pid="30" sid="8">
+        The potential for contaminant exposure at multiple sites (i.e. at home and at work) has the potential to yield unacceptably high intake levels even though the soil concentrations at both sites may be deemed acceptable.
+       </s>
+       <s pid="30" sid="9">
+        Some states (i.e. Massachusetts) have incorporated this possibility into their risk assessment models (27).
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        While the current bioavailability literature has yielded many exciting developments and enhanced scientific knowledge, numerous promising research directions exist.
+       </s>
+       <s pid="31" sid="2">
+        First, there is a glaring imbalance in the knowledge concerning organic contaminant bioavailability and even more so for radionuclides as compared to inorganic bioavailability.
+       </s>
+       <s pid="31" sid="3">
+        It is realized that much of the early bioavailability work focused on lead and arsenic due to their prevalence and their well-known human health impacts.
+       </s>
+       <s pid="31" sid="4">
+        Still, limited work has been conducted on organic contaminants and in vivo tests have not been conducted with many of the widespread environmental contaminants (TCE, PCE, etc.).
+       </s>
+       <s pid="31" sid="5">
+        Second, all of the past bioavailability research has been on single soil measurements.
+       </s>
+       <s pid="31" sid="6">
+        There have been attempts to tease correlations between contaminant bioavailability and soil properties, but there has not been a systematic investigation of the effects of a soil parameter (such as diagenetic age) with contaminant bioavailability.
+       </s>
+       <s pid="31" sid="7">
+        Recent research has developed a distributed reactivity model for soil sorption that has yielded insights into differences in sorption characteristics between soft and hard carbons (e.g. 28).
+       </s>
+       <s pid="31" sid="8">
+        It is expected that differences in the relative proportions of soft and hard carbons would profoundly impact organic contaminant bioavailability.
+       </s>
+       <s pid="31" sid="9">
+        Third, none of the currently developed bioavailability assays have accounted for absorption of microparticulates across the intestinal wall or through Peyer's Patches.
+       </s>
+       <s pid="31" sid="10">
+        Assessing the absorption potential of small soil particles may yield new bioavailability pathways.
+       </s>
+       <s pid="31" sid="11">
+        The finding that soil-borne chemical concentration typically increases with decreasing soil particle size augments the importance of these findings.
+       </s>
+       <s pid="31" sid="12">
+        Fourth, testing common assumptions of many bioavailability tests may lead to additional insights.
+       </s>
+       <s pid="31" sid="13">
+        Oomen et al. (7) proposes three fundamental steps for contaminants to enter blood circulation.
+       </s>
+       <s pid="31" sid="14">
+        Further exploring these steps for different classes of contaminants may help narrow the gap between the current in vivo results and the in vitro bioavailability assays.
+       </s>
+       <s pid="31" sid="15">
+        A better understanding of these steps will also reveal the accuracy of assumptions in other bioavailability tests.
+       </s>
+       <s pid="31" sid="16">
+        Some work has already been conducted regarding these steps for lead bioavailability (41).
+       </s>
+       <s pid="31" sid="17">
+        Fifth, bioavailability estimates of chemicals in soils could be assessed using human subjects for the most common, and these results could be compared to in vivo animal studies and human bioavailability tests.
+       </s>
+       <s pid="31" sid="18">
+        While the chemical concentrations used in such a study would have to be significantly below potentially harmful levels, extrapolating these results is more reasonable than extrapolations from animal studies where incredibly high dosages were used.
+       </s>
+       <s pid="31" sid="19">
+        It is also possible that rough correlations could be obtained through epidemiological analyses.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Literature Cited
+      </div>
+      <ul id="N101FA">
+       <li id="N101FB">
+        (1) National Research Council 2003.  Bioavailability of Contaminants in Soils and Sediments.  National Academy Press, Washington, D. C.  52-119, 356-413.
+       </li>
+       <li id="N101FD">
+        (2) Van Wijnen, J. H.; Clausing, P.; Brunekreef, B. Environ. Res. 1990,  51, 147-162.
+       </li>
+       <li id="N101FF">
+        (3) Davis, S.; Waller, P.; Buschbom, R.; Ballou, J.; White, P. Arch. Environ. Health 1990, 45. 112-122.
+       </li>
+       <li id="N10201">
+        (4) Calabrese, E. J.; Stanek, E. J.; James, R. C.; Roberts, S. M. J. Environ. Health 1999, 61, 18-23.
+       </li>
+       <li id="N10203">
+        (5) Schoof, R. A.; Nielsen, J. B. Risk Analysis, 1997, 17(5), 545-555.
+       </li>
+       <li id="N10205">
+        (6) United States Environmental Protection Agency. 1996. Test Methods for Evaluating Solid Waste, Physical/Chemical Methods (SW 846). Washington D.C.
+       </li>
+       <li id="N10207">
+        (7) Oomen, A. G.; Hack, A.; Minekus, M.; Zeijdner, E.; Cornelis, C.; Schoeters, G.; Verstraete, W.; Van de
+       </li>
+       <li id="N10209">
+        Wiele, T.; Wragg, J.; Rompelberg, C. J. M.; Sips, A. J. A. M.; Van Wijnene, J. H. Environ. Sci. Technol. 2002,  36, 3326-3334.
+       </li>
+       <li id="N1020B">
+        (8)  Freeman, G. B.; Dill, J. A.; Johnson, J. D.; Kurtz, P. J.; Parham, F.; Matthews, H. B.  Fund. Appl. Toxicol.  1996, 33, 109-119.
+       </li>
+       <li id="N1020D">
+        (9) Alexander, M. Environ. Sci. Tech. 1995, 29, 2713-2717.
+       </li>
+       <li id="N1020F">
+        (10) Alexander, M. Environ. Sci. Tech.  2000,  34, 4259-4265.
+       </li>
+       <li id="N10211">
+        (11) Davis, A.; Ruby, M. V.; Bergstrom, P. D. Environ. Sci. Tech. 1992, 26, 461-468.
+       </li>
+       <li id="N10213">
+        (12) Paustenbach, D. J.; Bruce, G. M.; Chrostowski, P. Risk Analysis 1997, 17(5), 533-544.
+       </li>
+       <li id="N10215">
+        (13) Steele, M. J.; Beck, B. D.; Murphy, B. L.; Strauss, H. S. Regul. Toxicol. Pharmacol. 1990, 11, 158-190.
+       </li>
+       <li id="N10217">
+        (14) Duggan, M. J.; Inskip, M. J. Public Health Rev. 1985, 13, 1-54.
+       </li>
+       <li id="N10219">
+        (15) Ruby, M. V.; Chaney, R. L.; Lovre, S. C.; Bergstrom, P. D. Fund. Appl. Toxicol. 1992, 19, 388-398.
+       </li>
+       <li id="N1021B">
+        (16) Davis, A.; Ruby, M. V.; Goad, P.; Eberle, S.; Chryssoulis, S. Environ. Sci. Tech. 1997,  31, 37-44.
+       </li>
+       <li id="N1021D">
+        (17) Schricker, B. R.; Miller, D. D.; Rasmussen, R. R.; Van Campen, D. Am. J. Clin. Nutr. 1981, 34l, 2257-2263.
+       </li>
+       <li id="N1021F">
+        (18) National Research Council 2004.  Intentional Human Dosing Studies for EPA Regulatory Purposes: Scientific and Ethical Issues.  National Academy Press: Washington, D. C. 1-16.
+       </li>
+       <li id="N10221">
+        (19) Maddaloni, M.; Lolacono, N.; Manton, W.; Blum, C.; Drexler, J.; Graziano, J. Environ. Health Perspect. 1998, 106 (Suppl. 6), 1589-1594.
+       </li>
+       <li id="N10223">
+        (20) Gargas, M. L.; Norton, R. L.; Harris, M. A.; Paustenbach, D. J.; Finley, B. L. Risk Analysis.  1994, 14(6), 1019-1024.
+       </li>
+       <li id="N10225">
+        (21) Ryan, J. A.; Scheckel, K. G.; Berti, W. R.; Casteel, S. W.; Hallfrisch, J.; Doolan, M.; Grevatt, P.; Maddaloni, M.; Mosby, D. Environ. Sci. Tech. 2004, 38, 19A-24A.
+       </li>
+       <li id="N10227">
+        (22) Ruby, M. V.; Davis, A.; Schoof, R.; Eberle, S.; Sellstone, C. M. Environ. Sci. Tech. 1996, 30. 422-430.
+       </li>
+       <li id="N10229">
+        (23) Charman, W. N., Porter, C. J. H., Mithani, S., &amp; Dressman, J. B. J. Pharm. Sci. 1997, 86(3), 269-282.
+       </li>
+       <li id="N1022B">
+        (24) Norris, D. A., Puri, N., &amp; Sinko, P. J. Adv. Drug Del. Rev. 1998, 34, 135-154.
+       </li>
+       <li id="N1022D">
+        (25) Ruby, M. V., Schoof, R., Brattin, W., Goldade, M., Post, G., Harnois, M., Mosby, D. E., Casteel, S. W., Berti, W., Carpenter, M., Edwards, D., Cragin, D., &amp; Chappell, W. Environ. Sci. Tech. 1999, 33, 3697-3705.
+       </li>
+       <li id="N1022F">
+        (26) Ehlers, L. J. &amp; Luthy, R. G. Environ. Sci. Tech. 2003, 37, 295A-302A.
+       </li>
+       <li id="N10231">
+        (27) Massachusetts Department of Environmental Protection MCP Notification and Office of Research and Standards.  http://www.state.ma.us/dep/bwsc/files/workgrps/numbers/mcpstnds.pdf. (accessed June, 2003).
+       </li>
+       <li id="N10233">
+        (28) Huang, W., &amp; Weber, W. J. Jr. Environ. Sci. Technol. 1997, 31, 2562-2569.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

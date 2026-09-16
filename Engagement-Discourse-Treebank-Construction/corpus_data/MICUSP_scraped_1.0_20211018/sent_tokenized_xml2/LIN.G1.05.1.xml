@@ -1,0 +1,806 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Stress In Hawaiian
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Statements concerning the stress pattern of Hawaiian date back to the mid 1800's, when missionaries began documenting the language in order to translate religious texts.
+       </s>
+       <s pid="1" sid="2">
+        Since that time, the conventional wisdom about stress placement was that main stress falls on the penult, with secondary stress iterating every second syllable from the main stress up to the beginning of the word; additionally, any heavy syllables always receive stress.
+       </s>
+       <s pid="1" sid="3">
+        This notion is essentially what appears in Newbrand (1951), the only comprehensive study of Hawaiian phonology.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        However, many words of five or greater syllables defy this pattern.
+       </s>
+       <s pid="2" sid="2">
+        In the case of words with five short syllables, two stress patterns are observed, one that follows the description above (main stress on penult, secondary on the second syllable from the beginning), the other with secondary stress on the initial syllable.
+       </s>
+       <s pid="2" sid="3">
+        Schütz (1981) was the first to treat this inconsistency in detail, and provides a descriptive system that works.
+       </s>
+       <s pid="2" sid="4">
+        However, the system he proposes entails that stress placement is irregular, and must be specified for each entry in the lexicon.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Given that stress is non-contrastive in Hawaiian, the stress pattern would be expected to behave with some sort of regularity.
+       </s>
+       <s pid="3" sid="2">
+        This paper seeks to find this pattern, recasting the forms formerly regarded as "irregular" as regular, with deviations from the pattern falling out from an analysis of the morphological/prosodic structure of Hawaiian words.
+       </s>
+       <s pid="3" sid="3">
+        A system is developed which correctly predicts the stress pattern of Hawaiian in a vast majority of cases, using the theoretical framework of Optimality Theory (Prince and Smolensky, 1993/2004; see Kager, 1999, for overview).
+       </s>
+       <s pid="3" sid="4">
+        This paper begins with a description of the phenomena in question, followed by a discussion of the way in which the morphological structure interacts with the prosodic structure.
+       </s>
+       <s pid="3" sid="5">
+        Finally, an OT analysis will be given, using a standard constraint set with little modification.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Description of Stress in Hawaiian
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        The description given above, that stress iterates on every other syllable starting with the penult works for words with four or fewer short syllables, and such descriptions are given in much of the older literature on Hawaiian as well as in treatments of related Polynesian languages (Hayes, 1995, Blevins, 1994).
+       </s>
+       <s pid="4" sid="2">
+        Furthermore, heavy syllables are taken to be always accented.
+       </s>
+       <s pid="4" sid="3">
+        For Schütz (1981), a syllable is counted as heavy when it has two mora.
+       </s>
+       <s pid="4" sid="4">
+        Bimoraic syllables include those with long vowels and diphthongs (both long and short diphthongs are understood to have two morae).
+       </s>
+       <s pid="4" sid="5">
+        Diphthongs are any sequence of two vowels with a fall in sonority, plus iu , a so-called "even" diphthong.
+       </s>
+       <s pid="4" sid="6">
+        Schütz' characterization of the moraic status of Hawaiian segments is adopted straightforwardly here.
+       </s>
+       <s pid="4" sid="7">
+        Also, because consonants are disallowed in coda position, there is no "length-by-position" effect in Hawaiian.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        Given these two generalizations, that accent iterates on every other syllable starting with the penult and the necessity of stress marking on heavy syllables, stress accent as in (1) is predicted and, in fact, observed. [#REF 1]
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        (1)
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        a. two light syllables máke - dead kóna - leeward
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        b. one heavy syllable pí: - stingy kó: - sugarcane
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        c. two syllables, one short diphthong kéiki - child 'áina - meal
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        d. two syllables, one long diphthong 'ái:na - land páo:ni - disagreement
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        e. three light syllables kanáka - man koáno - space
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        f. four light syllables 'ànapú'u - bumpy kà'awále - separate
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        g. six light syllables hò'okàmaláni - to spoil
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        Although the examples in (1) do not exhaust the predictive power of the system described above, they serve to demonstrate the general patterns.
+       </s>
+       <s pid="14" sid="2">
+        The analysis given here assumes that feet are universally bimoraic trochees, without giving recourse to trimoraic feet (cp. Schütz' 1999 analysis of Fijian).
+       </s>
+       <s pid="14" sid="3">
+        Instead of allowing degenerate feet, the grammar of Hawaiian will simply not foot an isolated syllable (e.g. ka(náka) ), instead of applying epenthesis, truncation, or other processes.
+       </s>
+       <s pid="14" sid="4">
+        As seen in (1g), the system as described also accounts for longer forms with an even number of light syllables.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        However, the system breaks down in words with five light syllables.
+       </s>
+       <s pid="15" sid="2">
+        The description of this type of stress pattern follows that of Schütz (1981), who also describes similar patterns in Fijian (1999) and Tongan (2001).
+       </s>
+       <s pid="15" sid="3">
+        Under the pattern assumed previous to Schütz' account of Hawaiian, exceptions to the rules are abundant.
+       </s>
+       <s pid="15" sid="4">
+        Five syllable words obeying the pattern are also observed, as shown in (2).
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        (2)
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        a. "irregular" stress pattern hòloholóna - animal pùlelehúa - butterfly lùpelupéa - pleasing èkeekému - to answer briefly
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        b. "regular" stress pattern kakà'awále - separate lelèleáka - light rain/mist kahèlaláni - shell used by chiefs ulàkoláko - supplies
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        Clearly, the challenge offered by these data is to account for the "irregular" forms, while maintaining a system that correctly predicts the "regular" forms.
+       </s>
+       <s pid="19" sid="2">
+        As it stands, the data in (2) present an outright contradiction.
+       </s>
+       <s pid="19" sid="3">
+        However, this situation may be salvageable given a different perspective on the regular pattern of stress and an understanding of the way in which morphology interacts with the prosodic structure of the word.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Informally speaking, suppose that the regular pattern of stress placement in Hawaiian is bidirectional, with main stress assigned from the right and secondary stress assigned iteratively from the left. [#REF 2]
+       </s>
+       <s pid="20" sid="2">
+        Such systems are not uncommon among the languages of the world (e.g. Garawa, Piro, Indonesian; see Kager (1999), ch. 4, for analysis).
+       </s>
+       <s pid="20" sid="3">
+        Now, the words formerly characterized as irregular may be redefined as regular.
+       </s>
+       <s pid="20" sid="4">
+        Given the strict requirements concerning foot structure and stress on heavy syllables, all of the data in (1) are still accounted for.
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        Now, of course, the data in (2b) go unexplained.
+       </s>
+       <s pid="21" sid="2">
+        A solution presents itself given certain assumptions about how morphology interacts with prosodic structure.
+       </s>
+       <s pid="21" sid="3">
+        Only in certain morphological environments, to be explained below, will the stress pattern in (2b) arise; furthermore, even words with the "regular" stress pattern sometimes have their stress not due to the default process, but also because of morphological structure.
+       </s>
+       <s pid="21" sid="4">
+        In effect, the system proposed here makes a clear prediction concerning words which have five light syllables; the stress pattern will always be as in (2a) whenever the word is composed of a single stem and nothing else.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        In the account given below, a "word" or "grammatical word" is defined as a structure composed of minimally one stem, which may optionally contain multiple stems plus affixes and reduplicated structure.
+       </s>
+       <s pid="22" sid="2">
+        Each word in this sense has one and only one main stress.
+       </s>
+       <s pid="22" sid="3">
+        Note that this definition is roughly equivalent to the traditional conception of "word."
+       </s>
+       <s pid="22" sid="4">
+        A prosodic word is defined as a freestanding stress domain, which may or may not have main stress, and may or may not be contained in a larger structure.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Morphological Structure
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        The proposal above, that Hawaiian has a bidirectional stress system, applies to all prosodic words, with the assumption that prosodic word structure may be recursive, such that the maximal prosodic word may dominate multiple, word-internal prosodic words. [#REF 3]
+       </s>
+       <s pid="23" sid="2">
+        Compound words offer the clearest example of this type of structure, although reduplication and affixes will be examined in light of this proposal as well.
+       </s>
+       <s pid="23" sid="3">
+        While an account of stress patterns based in part on morphological structure is promising, care must be taken not to construct a circular argument of the type which Schütz warns against, such that "accent defines the word."
+       </s>
+       <s pid="23" sid="4">
+        Because there is no good etymological dictionary of Hawaiian, claims about internal structure must be made with caution, although there are many clear-cut cases.
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        With these considerations in mind, two examples below demonstrate how a system that treats each member of a compound as it's own prosodic word simplifies an account of stress.
+       </s>
+       <s pid="24" sid="2">
+        In (3), two five-syllable words with different stress patterns are given.
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        (3) a. makuahine - mother (makua - parent, hine - female) [PrWd[PrWd makua][PrWd hine]] [ makùahína b. ulunahele - wilderness (ulu - to grow, nahele - forest) [PrWd[PrWd ulu][PrWd nahele] [ ùlunahéle
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        Although the examples in (3) differ in their stress patterns, their phonetic realization is expected given the assumptions about recursive prosodic structure detailed above.
+       </s>
+       <s pid="26" sid="2">
+        One outstanding problem concerns the placement of main stress versus secondary stress; this issue will be treated below.
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        Because Hawaiian grammar strictly enforces a foot structure of bimoraic trochees, stress that is assigned from the left edge of the word will go unrealized in a prosodic word of three syllables or less.
+       </s>
+       <s pid="27" sid="2">
+        In each of the cases in (3), stress is assigned from the right in all word-internal prosodic words.
+       </s>
+       <s pid="27" sid="3">
+        However, as is expected, only the rightmost accent in each grammatical word get main stress, even though right edges are always marked by a foot when possible.
+       </s>
+       <s pid="27" sid="4">
+        Put another way, the right edge of the entire word gets main stress, although the right edge of every prosodic word is footed.
+       </s>
+       <s pid="27" sid="5">
+        Although this system may seem complex, such a pattern naturally falls out of standard constraints within Optimality Theory, as shown below.
+       </s>
+       <s pid="27" sid="6">
+        Note that the two processes that mark right edges - one that foots right edges and the other that assigns main stress to right edges - guarantee that the right edge of a prosodic word will be footed whenever possible (i.e. whenever the penultimate syllable is not heavy).
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        In addition to compounds, affixes play an important role in the prosodic structure.
+       </s>
+       <s pid="28" sid="2">
+        Consider the following examples, in which reduplicated structure is treated as a prefix.
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        (4) a. 'èkeekému - to answer briefly (ekemu + reduplicated prefix) b. kò'oko'óna - to reach far out (ko'o +reduplicated prefix + suffix -na) c. ulàkoláko - supplies (lako + reduplicated prefix + prefix -u)
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        The system of stress assignment outlined will account for the varied data above given certain assumptions about the prosodic status of affixes.
+       </s>
+       <s pid="30" sid="2">
+        In the case of suffixes, such as -na in (4c), the affix appears to combine with the stem to form a prosodic word; therefore, main stress falls on the penult despite the presence of the suffix.
+       </s>
+       <s pid="30" sid="3">
+        Prefixes, including reduplicated structure, are treated differently.
+       </s>
+       <s pid="30" sid="4">
+        These combine to form a stress domain.
+       </s>
+       <s pid="30" sid="5">
+        In a case such as (4d), both "prefixes," the prefix -u and the reduplicated material, form an internal prosodic word.
+       </s>
+       <s pid="30" sid="6">
+        The same generalization holds for (4a), in which the reduplicated 'eke is treated as an internal prosodic word, although a prefix in the traditional sense is absent.
+       </s>
+       <s pid="30" sid="7">
+        In the case of (4b), the reduplicated syllable 'a may be treated as it's own prosodic word that is too small to be footed, or as adjoined to the maximal prosodic word; the difference may have import when issues of minimal words are concerned, but the distinction will not be explored here, where the later case (adjoined to the maximal prosodic word) is assumed.
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        The examples in (4) will, then, have the structures depicted in (4').
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        (4')
+       </s>
+      </p>
+      <p>
+       <s pid="33" sid="1">
+        a. 'eke'ekemu
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        b. ko'oko'ona
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        c. ulakolako
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        Having outlined the way in which morphological and prosodic structure interact, a formal account follows that strives to explain the multiple processes at play, while maintaining empirical coverage of the data.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Stress in Hawaiian, an Optimality Theoretic Account
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        The rest of this paper shows that the data above is quite amenable to the framework of Optimality Theory (OT).
+       </s>
+       <s pid="40" sid="2">
+        After examining a set of constraints that model the cases in which the structure of the prosodic word is not recursive, examples such as those in (4) will be considered.
+       </s>
+       <s pid="40" sid="3">
+        Since the constraint set postulated within OT is considered to be universal, it is a positive result that the following account only employs constraints that are standard in the literature.
+       </s>
+       <s pid="40" sid="4">
+        All of the constraints considered below are discussed in Prince and Smolensky (1993/2004) and McCarthy and Prince (1993), although many of these have antecedents in previous literature (see references above for overview).
+       </s>
+       <s pid="40" sid="5">
+        Only the domain of application of one constraint will have to be altered from the usual form in order to account for recursive prosodic words.
+       </s>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        The first constraints to be discussed account for stress patterns in non-recursive prosodic words that contain light or heavy syllables.
+       </s>
+       <s pid="41" sid="2">
+        The important observations, noted above, are the following: a bimoraic foot structure that is strictly enforced (with no truncation or epenthesis), trochaic foot structure, right edge main stress, heavy syllables always stressed, and secondary stress iterating from the left.
+       </s>
+      </p>
+      <p>
+       <s pid="42" sid="1">
+        The first constraints necessary for this account are those which enforce bimoraic foot structure and left-headedness, as well as a constraint that ensures the rightmost syllable gets main stress.
+       </s>
+       <s pid="42" sid="2">
+        The standard constraints for this account are defined below.
+       </s>
+      </p>
+      <p>
+       <s pid="43" sid="1">
+        (5) a. FT-BIN - Feet are binary under moraic or syllabic analysis.
+       </s>
+       <s pid="43" sid="2">
+        b. RH-TYPE-T - Feet have initial prominence.
+       </s>
+       <s pid="43" sid="3">
+        c. RIGHTMOST - The head foot is rightmost in PrWd. d. ALL-WD-RIGHT - Align (PrWD, Right, Ft, Right).
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        Additionally, a further constraint is needed to ensure that non-parsing of syllables is minimal.
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        (6) PARSE-SYL - Syllables are parsed by feet.
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        Since Hawaiian always enforces a trochaic structure, I take RH-TYPE-T to be undominated.
+       </s>
+       <s pid="46" sid="2">
+        Also, the data in (7) show that a constraint such as *CLASH , which militates against consecutive syllables with stress, is very low ranked.
+       </s>
+       <s pid="46" sid="3">
+        Therefore, these constraints will be omitted from the tableaux below, for ease of exposition.
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        (7) kàikáina - younger sibling lè:'ía - abundance
+       </s>
+      </p>
+      <p>
+       <s pid="48" sid="1">
+        Given that Hawaiian is well documented to strictly enforce bimoraic trochees, while also marking the right edge of the PrWd with a foot, the ranking in (7) is expected.
+       </s>
+      </p>
+      <p>
+       <s pid="49" sid="1">
+        (7) FT-BIN &amp;gt;&amp;gt; PARSE-SYL, ALL-WD-RIGHT
+       </s>
+      </p>
+      <p>
+       <s pid="50" sid="1">
+        The following tableaux bear this prediction out.
+       </s>
+      </p>
+      <p>
+       <s pid="51" sid="1">
+        (8) a.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="52" sid="1">
+        b.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="53" sid="1">
+        No ranking argument can be constructed between PASRE-SYL and ALL-WD-RIGHT .
+       </s>
+       <s pid="53" sid="2">
+        Furthermore, it is well attested that the final foot in any word gets main stress, so RIGHTMOST may be assumed to be undominated as well.
+       </s>
+       <s pid="53" sid="3">
+        A final constraint that may be assumed to be undominated appears in (9), since heavy syllables are always stressed.
+       </s>
+       <s pid="53" sid="4">
+        With the constraints discussed above accounted for, the grammar now has the ranking shown in (10), again omitting RH-TYPE-T and *CLASH .
+       </s>
+      </p>
+      <p>
+       <s pid="54" sid="1">
+        (9)
+       </s>
+      </p>
+      <p>
+       <s pid="55" sid="1">
+        WSP - Heavy syllables are stressed.
+       </s>
+      </p>
+      <p>
+       <s pid="56" sid="1">
+        (10)
+       </s>
+      </p>
+      <p>
+       <s pid="57" sid="1">
+        FT-BIN, WSP, R(IGHT)MOST &amp;gt;&amp;gt; PARSE-SYL, ALL-WD-RIGHT
+       </s>
+      </p>
+      <p>
+       <s pid="58" sid="1">
+        While the grammar in (10) correctly predicts the stress rhythm in any word with less than three syllables, a further constraint must be introduced to account for longer forms.
+       </s>
+       <s pid="58" sid="2">
+        The alignment constraint in (11) serves this purpose; note that this is a gradient constraint, for which any foot removed from the left edge will occur a violation equal to the number of syllables that separate it from the left edge.
+       </s>
+      </p>
+      <p>
+       <s pid="59" sid="1">
+        (11)
+       </s>
+      </p>
+      <p>
+       <s pid="60" sid="1">
+        ALL-FT-L(EFT) - Align (Ft, Left, PrWd, Left)
+       </s>
+      </p>
+      <p>
+       <s pid="61" sid="1">
+        This constraint determines the direction of footing in any long prosodic word, while ALL-WD-R(IGTH) only forces one foot to appear on the right edge.
+       </s>
+       <s pid="61" sid="2">
+        ALL-FT-L is dominated by ALL-WD-R , as (12) demonstrates.
+       </s>
+      </p>
+      <p>
+       <s pid="62" sid="1">
+        (12)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="63" sid="1">
+        Before continuing with longer prosodic words with recursive structure, some words are in order concerning the current state of the grammar, which appears in (13).
+       </s>
+      </p>
+      <p>
+       <s pid="64" sid="1">
+        (13)
+       </s>
+      </p>
+      <p>
+       <s pid="65" sid="1">
+        FT-BIN, WSP, RMOST &amp;gt;&amp;gt; PARSE-SYL, ALL-WD-R&amp;gt;&amp;gt;ALL-FT-L
+       </s>
+      </p>
+      <p>
+       <s pid="66" sid="1">
+        Although the interaction between these constraints and candidate forms is completely mechanic, the constraints themselves achieve targets that are "natural" and common among the world's languages.
+       </s>
+       <s pid="66" sid="2">
+        As has been said before, some of these constraints simply impose a foot system based on the bimoraic trochee.
+       </s>
+       <s pid="66" sid="3">
+        The high ranking of these constraints ensures that this foot structure is never violated for any reason.
+       </s>
+       <s pid="66" sid="4">
+        The constraints WSP and RMOST give prominence to heavy syllables and (in a trochaic system) the penult, both common properties among the world's languages.
+       </s>
+       <s pid="66" sid="5">
+        Finally, the alignment constraints enforce the demarcative and rhythmic properties of stress.
+       </s>
+       <s pid="66" sid="6">
+        While ALL-FT-L enforces a rhythmic system of stress, iterating from the left edge of a prosodic word, it is not so important in this grammar as ALL-WD-R , which demarks the right edge of the prosodic word.
+       </s>
+       <s pid="66" sid="7">
+        The tableaux in (14) show that these constraints, with the ranking assigned in (13), select the correct candidate in the cases of pùlelehúa (butterfly) and 'ài:na (land).
+       </s>
+      </p>
+      <p>
+       <s pid="67" sid="1">
+        (14)
+       </s>
+      </p>
+      <p>
+       <s pid="68" sid="1">
+        a.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="70" sid="1">
+        b.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="72" sid="1">
+        The constraints as they have been defined so far allow the grammar to globally evaluate grammatical words with recursive prosodic word structure with almost no change.
+       </s>
+       <s pid="72" sid="2">
+        Since each prosodic word in a recursive structure has exactly the same status, and since the alignment constraints refer to prosodic words as their category of application, the grammar will select the candidate with the observed foot structure as optimal.
+       </s>
+      </p>
+      <p>
+       <s pid="73" sid="1">
+        The only problem concerns the assignment of main stress.
+       </s>
+       <s pid="73" sid="2">
+        Up to this point, RMOST has ensured that the rightmost foot in the prosodic words gets main stress.
+       </s>
+       <s pid="73" sid="3">
+        Since the grammar will now be faced with words that have multiple prosodic words, something must be changed in order to assign the correct main stress.
+       </s>
+       <s pid="73" sid="4">
+        The domain of application of RMOST will have to be changed to either apply to the "maximal" prosodic word, looking at the morphological structure top down, or will have to apply to the grammatical word.
+       </s>
+       <s pid="73" sid="5">
+        Although the choice may be trivial, the second option will be pursued here.
+       </s>
+       <s pid="73" sid="6">
+        Now, instead of RMOST , the grammar will have RMOST' , which is defined as in (15).
+       </s>
+       <s pid="73" sid="7">
+        Note that the addition of RMOST' is used merely as a label for the familiar constraint for the sake of convenience; the constraint has not changed, only the domain of application.
+       </s>
+      </p>
+      <p>
+       <s pid="74" sid="1">
+        (16) RMOST' - The head foot is rightmost in grammatical word.
+       </s>
+      </p>
+      <p>
+       <s pid="75" sid="1">
+        With our modified constraint set, observed candidates are selected as optimal even for long words with complex morphology, when the assumptions concerning the relationship between morphological structure and prosodic structure are adopted.
+       </s>
+       <s pid="75" sid="2">
+        The following tableaux demonstrate this for some representative examples.
+       </s>
+       <s pid="75" sid="3">
+        In each case, the assumed morphological analysis appears above the tableaux; within the tableaux, vertical lines and spaces separate prosodic words that occur within grammatical words.
+       </s>
+      </p>
+      <p>
+       <s pid="76" sid="1">
+        (17)
+       </s>
+      </p>
+      <p>
+       <s pid="77" sid="1">
+        a. 'eke'ekemu - to answer briefly (red. from 'ekemu)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="78" sid="1">
+        b. ho'okalakupua - to do wondrous acts (from either ho'o + kalakupua or ho'o + kala + kupua - both hypothesis will be entertained)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="79" sid="1">
+        c. 'a'anapu'u - bumpy (red. 'anapu'u)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="80" sid="1">
+        The tableaux above and in (14) show that the grammar proposed in (13) accounts for a wide range of data that have superficially different stress patterns. [#REF 4]
+       </s>
+       <s pid="80" sid="2">
+        This result shows that a fuller account of Hawaiian stress can be made when taking the morphological structure of words under consideration.
+       </s>
+       <s pid="80" sid="3">
+        At the same time, the proposal above does not define morphological structure in terms of observed stress patterns, but instead relies upon fairly straightforward analyses of word structure.
+       </s>
+       <s pid="80" sid="4">
+        The critical assumption, that prefixes (including reduplicated structure) and compounds create their own prosodic words within a maximal prosodic word seems not too radical either, when one considers that grammars often use stress to mark morphological boundaries.
+       </s>
+       <s pid="80" sid="5">
+        In effect, the grammar of Hawaiian is one that emphasizes the demarcative and quantity-sensitive properties as opposed to the rhythmic property of stress.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N102D2">
+       <li id="N102D3">
+        Blevins, J.1999. The bimoraic foot in Rotuman phonology and morphology. Oceanic Linguistics 33.2:491-516.
+       </li>
+       <li id="N102D5">
+        Elbert, S. and Pukui, M. 1979 Hawaiian Grammar.  Honolulu: University Press of Hawai'i.
+       </li>
+       <li id="N102D7">
+        Hayes, B. 1995. Metrical Stress Theory: Principles and Case Studies. Chicago: University of Chicago Press.
+       </li>
+       <li id="N102D9">
+        Kager, R. 1999. Optimality Theory. Cambridge: Cambridge University Press.
+       </li>
+       <li id="N102DB">
+        Newbrand, H. 1951. A phonemic analysis in Hawaiian. M.A. Thesis, University of Hawai'i.
+       </li>
+       <li id="N102DD">
+        Prince, A. and Smolensky, P. 1993/2004. Optimality Theory: Constraint Interaction In Generative Grammar. Blackwell: Oxford.
+       </li>
+       <li id="N102DF">
+        Schütz, A. 1981. A reanalysis of the Hawaiian vowel system. Oceanic Linguistics 20.1:1-43.
+       </li>
+       <li id="N102E1">
+        Schütz, A. 1999. Fijian accent. Oceanic Linguistics 38.1:139-151.
+       </li>
+       <li id="N102E3">
+        Schütz, A. 2001. Tongan accent. Oceanic Linguistics 40.2:307-323.
+       </li>
+      </ul>
+     </div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1 In the data that appears in this paper, a colon is used to indicate vowel length (e.g. kana:ka -men.  Otherwise, all normal spelling conventions will be maintained, including the apostrophe for the glottal stop.  Elsewhere, parenthesis indicate foot structure, periods syllable structure, and other conventions normal in prosodic phonology apply.
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        2.
+       </a>
+       2 A system of this sort is suggested by Hayes (1995), but abandoned in the face of Fijian data, for which he claims that secondary stress is lexically specified.
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        3.
+       </a>
+       3 Note that the characterization of prosodic structure as 'recursive' may be trivial; the term is used here because this terminology fits well with accepted definitions of constraints within Optimality Theory.  The important point is that one 'maximal' prosodic word may contain multiple stress domains, all of which have the same status according to the phonological component of the grammar.
+      </div>
+      <div id="fn4">
+       <a href="#fnref_fn4">
+        4.
+       </a>
+       4 The only exception to this system that I have encountered is the word 'ule'uleu, for which the grammar chooses an ungrammatical candidate.  Further research is needed to explain such a form.
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

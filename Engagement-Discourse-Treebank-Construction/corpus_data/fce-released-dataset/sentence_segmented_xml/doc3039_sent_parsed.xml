@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     22.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Maria Smith
+      </p>
+      <p>
+       Thank you for your letter. It's a shame that I won't see Richard because of his illness, but I'm willing to help you as much as I can.
+       <ns type="RY">
+        <i>
+         Then
+        </i>
+       </ns>
+       I will give you some information which you asked for in your letter.
+      </p>
+      <p>
+       Firstly, about your
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       ,
+       <ns type="RD">
+        <i>
+         our
+        </i>
+       </ns>
+       college which I belong to offers
+       <ns type="FN">
+        <i>
+         visitor
+        </i>
+       </ns>
+       free
+       <ns type="FN">
+        <i>
+         <ns type="S">
+          <i>
+           accomodations
+          </i>
+         </ns>
+        </i>
+       </ns>
+       with
+       <ns type="R">
+        full of
+       </ns>
+       facilities
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       (for example
+       <ns type="MP">
+       </ns>
+       bath, car park, free internet access, etc.)
+       <ns type="MP">
+       </ns>
+       <ns type="R">
+        They also are
+       </ns>
+       located
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       our campus so you can get to the conference by
+       <ns type="FV">
+        <i>
+         walk
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Secondly, as you know
+       <ns type="MP">
+       </ns>
+       we'll have a party after the conference, which will
+       <ns type="FV">
+        <i>
+         be taken
+        </i>
+       </ns>
+       place at our student council hall
+       <ns type="R">
+        with some meals
+       </ns>
+       . This party is unlikely to be that formal, but I recommend you
+       <ns type="X">
+        <i>
+         not to wear
+        </i>
+       </ns>
+       jeans and
+       <ns type="S">
+        <i>
+         trainners
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At last
+        </i>
+       </ns>
+       , if you have
+       <ns type="MQ">
+       </ns>
+       free time
+       <ns type="U">
+        <i>
+         for
+         <ns type="MD">
+         </ns>
+         couple of
+         <ns type="SX">
+          <i>
+           ours
+          </i>
+         </ns>
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        <i>
+         you'd better
+        </i>
+       </ns>
+       visit Kamakura City, which is 30 minutes from our campus by train. That is
+       <ns type="MD">
+       </ns>
+       very traditional Japanese city where
+       <ns type="UY">
+        <i>
+         so
+        </i>
+       </ns>
+       <ns type="AS">
+        <i>
+         many
+         <ns type="AGN">
+          <i>
+           temple
+          </i>
+         </ns>
+         and
+         <ns type="RN">
+          <i>
+           <ns type="CN">
+            <i>
+             heritages
+            </i>
+           </ns>
+          </i>
+         </ns>
+         are there
+        </i>
+       </ns>
+       . I'm sure you'll enjoy it and maybe
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         familier
+        </i>
+       </ns>
+       with our culture.
+      </p>
+      <p>
+       By the way, if you have any other questions, please send me a letter again.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Maria Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter.
+       </s>
+       <s pid="2" sid="2">
+        It's a shame that I won't see Richard because of his illness, but I'm willing to help you as much as I can.
+       </s>
+       <s pid="2" sid="3">
+        Then I will give you some information which you asked for in your letter.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, about your accomodation, our college which I belong to offers visitor free accomodations with full of facilities.
+       </s>
+       <s pid="3" sid="2">
+        (for example bath, car park, free internet access, etc.)
+       </s>
+       <s pid="3" sid="3">
+        They also are located in our campus so you can get to the conference by walk.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, as you know we'll have a party after the conference, which will be taken place at our student council hall with some meals.
+       </s>
+       <s pid="4" sid="2">
+        This party is unlikely to be that formal, but I recommend you not to wear jeans and trainners.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        At last, if you have  free time for  couple of ours, you'd better visit Kamakura City, which is 30 minutes from our campus by train.
+       </s>
+       <s pid="5" sid="2">
+        That is  very traditional Japanese city where so many temple and heritages are there.
+       </s>
+       <s pid="5" sid="3">
+        I'm sure you'll enjoy it and maybe get familier with our culture.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        By the way, if you have any other questions, please send me a letter again.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Oh Baby, I can't live without you!
+      </p>
+      <p>
+       These days,
+       <ns type="TV">
+        <i>
+         we've been
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         sorrounded
+        </i>
+       </ns>
+       with so
+       <ns type="RQ">
+        <i>
+         any
+        </i>
+       </ns>
+       different kinds of products which our ancestors invented. In our daily life, however, we seldom notice how
+       <ns type="UQ">
+        <i>
+         much
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           convinient
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       life we've got
+       <ns type="MC">
+       </ns>
+       , what is more, how
+       <ns type="UQ">
+        <i>
+         much
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           inconvinient
+          </i>
+         </ns>
+        </i>
+       </ns>
+       our grandparents
+       <ns type="R">
+        <i>
+         had got
+        </i>
+       </ns>
+       . How nasty we are! Let us try to appreciate
+       <ns type="S">
+        <i>
+         thier
+        </i>
+       </ns>
+       importance again.
+      </p>
+      <p>
+       As for me, the invention which is most important to me is
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       personal computer. I have been a
+       <ns type="MP">
+        <i>
+         full time
+        </i>
+       </ns>
+       student in the university at home, and their classes all
+       <ns type="AGV">
+        <i>
+         requires
+        </i>
+       </ns>
+       us to have personal
+       <ns type="AGN">
+        <i>
+         computer
+        </i>
+       </ns>
+       and use them at
+       <ns type="AGQ">
+        <i>
+         any
+        </i>
+       </ns>
+       times. When you take the class on computer programming, you will
+       <ns type="S">
+        <i>
+         definetly
+        </i>
+       </ns>
+       need one and
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       holds true for the class on politics, because you have to study
+       <ns type="FN">
+        <i>
+         statistic
+        </i>
+       </ns>
+       on your computer
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         doing
+        </i>
+       </ns>
+       social research and some
+       <ns type="RN">
+        <ns type="S">
+         <i>
+          analysys
+         </i>
+        </ns>
+       </ns>
+       . My professor said
+       <ns type="MP">
+       </ns>
+       '
+       <ns type="RP">
+        <i>
+         go
+        </i>
+       </ns>
+       and get
+       <ns type="RJ">
+        <ns type="S">
+         <i>
+          familier
+         </i>
+        </ns>
+       </ns>
+       with your computer, otherwise you'll fail'.
+      </p>
+      <p>
+       I find it amazingly easy to forget the importance of inventions which we
+       <ns type="S">
+        <i>
+         useually
+        </i>
+       </ns>
+       use without
+       <ns type="UQ">
+        <i>
+         any
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           questione
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . That's the nature of human
+       <ns type="FN">
+        <i>
+         being
+        </i>
+       </ns>
+       . But
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think it's not only our fault but
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       evidence of how much they
+       <ns type="TV">
+        <i>
+         integrate
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       our life.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Oh Baby, I can't live without you!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        These days, we've been sorrounded with so any different kinds of products which our ancestors invented.
+       </s>
+       <s pid="2" sid="2">
+        In our daily life, however, we seldom notice how much convinient  life we've got , what is more, how much inconvinient our grandparents had got.
+       </s>
+       <s pid="2" sid="3">
+        How nasty we are!
+       </s>
+       <s pid="2" sid="4">
+        Let us try to appreciate thier importance again.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As for me, the invention which is most important to me is a personal computer.
+       </s>
+       <s pid="3" sid="2">
+        I have been a full time student in the university at home, and their classes all requires us to have personal computer and use them at any times.
+       </s>
+       <s pid="3" sid="3">
+        When you take the class on computer programming, you will definetly need one and it holds true for the class on politics, because you have to study statistic on your computer for doing social research and some analysys.
+       </s>
+       <s pid="3" sid="4">
+        My professor said 'go and get familier with your computer, otherwise you'll fail'.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I find it amazingly easy to forget the importance of inventions which we useually use without any questione.
+       </s>
+       <s pid="4" sid="2">
+        That's the nature of human being.
+       </s>
+       <s pid="4" sid="3">
+        But, I think it's not only our fault but the evidence of how much they integrate  in our life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

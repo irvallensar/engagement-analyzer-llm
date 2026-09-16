@@ -1,0 +1,311 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <p>
+      Assignment for subcellular protein localization
+     </p>
+     <p>
+      1. 	Name of chosen protein:	HWP1
+     </p>
+     <p>
+      Organism: Candida albicans
+     </p>
+     <p>
+      Locus: CAU64206
+     </p>
+     <p>
+      NCBI Nucleotide accession #: U64206
+     </p>
+     <p>
+      NCBI protein accession #: AAC96368
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       2. Predicted function: HWP1 possibly functions as an adhesin in Candida albicans.
+      </s>
+      <s pid="1" sid="2">
+       It has also been demonstrated to play a role in the morphological change (from yeast form to hyphae form) of Candida albicans.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       3.
+      </s>
+      <s pid="2" sid="2">
+       The adhesin function of HWP1 implies that it localizes to the cell wall.
+      </s>
+      <s pid="2" sid="3">
+       I did not find any data directly proving this though.
+      </s>
+      <s pid="2" sid="4">
+       In addition, I think it would be interesting to check the change of HWP1 localization during the morphological change of Candida albicans.
+      </s>
+     </p>
+     <p>
+      <s pid="3" sid="1">
+       4. Results from different protein localization:
+      </s>
+     </p>
+     <p>
+      <s pid="4" sid="1">
+       I. Target
+      </s>
+      <s pid="4" sid="2">
+       P 1.1 Server - prediction results (Technical University of Denmark)
+      </s>
+     </p>
+     <p>
+      <s pid="5" sid="1">
+       Target
+      </s>
+      <s pid="5" sid="2">
+       P 1.1 predicts the subcellular location of eukaryotic proteins.
+      </s>
+      <s pid="5" sid="3">
+       The location assignment is based on the predicted presence of any of the N-terminal presequences: chloroplast transit peptide (cTP), mitochondrial targeting peptide (mTP) or secretory pathway signal peptide (SP).
+      </s>
+     </p>
+     <p>
+      <s pid="6" sid="1">
+       ### targetp v1.1 prediction results
+      </s>
+      <s pid="6" sid="2">
+       ##################################
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       Number of query sequences:  1
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        Cleavage site predictions not included.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Using NON-PLANT networks.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       DESCRIPTION
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        In a short word, TargetP 1.1 predicts HWP1 will go through the secretory pathway, and it contains a secretory pathway signal peptide (SP).
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       II. Results of PSORTII
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       III. Results of WOLFPSORT
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        Final Results:
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        48.0 %: extracellular, including cell wall 12.0 %: cytoplasmic 12.0 %: nuclear 12.0 %: endoplasmic reticulum 8.0 %: vesicles of secretory system 4.0 %: plasma membrane 4.0 %: mitochondrial &amp;gt;&amp;gt; prediction for query
+       </s>
+       <s pid="11" sid="2">
+        Protein is exc
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        WOLFPSORT is an updated version of PSORTII.
+       </s>
+       <s pid="12" sid="2">
+        Comparing the results from two programs, we can see that they gave same/similar results in most aspects.
+       </s>
+       <s pid="12" sid="3">
+        Both programs said that HWP1 doesn't seem to have an N-terminal signal peptide.
+       </s>
+       <s pid="12" sid="4">
+        HWP1 looks more like a peripheral protein rather than an integral one, with single trans-membrane sequence near its C-terminus and its N-terminus facing inside the cell.
+       </s>
+       <s pid="12" sid="5">
+        Nonetheless, those two programs gave controversial results of HWP1 localization.
+       </s>
+       <s pid="12" sid="6">
+        PSORTII suggests that HWP1 localizes to nucleus, while WOLFPSORT predicts HWP1 localizes to extracellular space or cell wall.
+       </s>
+       <s pid="12" sid="7">
+        Given adhesion function of HWP1, the result of WOLFPSORT makes more sense.
+       </s>
+       <s pid="12" sid="8">
+        And it is consistent with the result of TargetP (Because WOLFPSORT has been updated?)
+       </s>
+       <s pid="12" sid="9">
+        However, we can not rule out the possibility that HWP1 may localize to nucleus.
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        5. HWP1 were overall predicted to be a peripheral membrane protein by all the programs.
+       </s>
+       <s pid="13" sid="2">
+        I further used iPSORT to do an AAindex Analysis, and got
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        Based on this Hydropathy Index of HWP1, I would predict a trans-membrane sequence at its N-terminus.
+       </s>
+       <s pid="14" sid="2">
+        (If I have understood the hydropathy index correctly) I don't know why both PSORTII and WOLFPSORT predict a trans-membrane sequence at the C-terminus of HWP1.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        6. Although either PSORTII or WOLFPSORT did not find any N-terminal signal peptide, iPSORT does find a signal peptide in the N-terminus of HWP1.
+       </s>
+       <s pid="15" sid="2">
+        This is consistent with and further consolidates the result of TargetP, which says HWP1 has a signal sequence and is likely a secretory protein.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       iPSORT Prediction
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Predicted as: having a signal peptide
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        7.
+       </s>
+       <s pid="16" sid="2">
+        Base on the results of prediction programs, as well as previous data in literature.
+       </s>
+       <s pid="16" sid="3">
+        I would propose that HWP1 has a low expression level in the yeast-form cells of Candida.
+       </s>
+       <s pid="16" sid="4">
+        The expression of HWP1 will be induced during Candida cells change from yeast-form to hyphae-form, and HWP1 will localize to the cell wall.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        8.
+       </s>
+       <s pid="17" sid="2">
+        Considering the expression level may affect a protein's subcellular localization, I would take the advantage of homologous recombination in Candida, and replace the endogenous gene of HWP1 with a fusion gene in which HWP1 being tagged with a fluorophore.
+       </s>
+       <s pid="17" sid="3">
+        In this case, the fusion gene will be expressed under endogenous promoter of HWP1, and hopefully has a similar expression level as HWP1.
+       </s>
+       <s pid="17" sid="4">
+        Some better-known adhesion (e.g. ALS3) will be used as cell wall marker.
+       </s>
+       <s pid="17" sid="5">
+        I expected to see dim or no fluorescence from fusion protein in yeast-form cells.
+       </s>
+       <s pid="17" sid="6">
+        After shifting conditions and cells becoming hyphae, I expect to see strong signal and the fluorescence localizes to the cells' surface.
+       </s>
+       <s pid="17" sid="7">
+        If I also tagged ALS3 with another fluorophore, I expect to see co-localization of HWP1 and ALS3.
+       </s>
+       <s pid="17" sid="8">
+        A possible problem is the fluorophore may affect the localization of HWP1.
+       </s>
+       <s pid="17" sid="9">
+        An alternative way to get around is to use HWP1 antibody (which we already have) to do immuno-staining.
+       </s>
+       <s pid="17" sid="10">
+        The down-side of this approach is non-specific binding and staining.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Both approaches may require certain amount of HWP1 to exist inside cells.
+       </s>
+       <s pid="18" sid="2">
+        If HWP1 keeps being expressed at a low level, we can make Candida cultures, do cell fractionation.
+       </s>
+       <s pid="18" sid="3">
+        Use HWP1 antibody to detect the amount of HWP1 in each fraction.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Appendix
+      </div>
+      <p>
+       Candida albicans hyphal wall protein 1 (HWP1) gene, complete cds
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

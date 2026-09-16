@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      41-50
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs. Ryan,
+      </p>
+      <p>
+       I was very pleased to learn that I had won the first prize in your competition!
+      </p>
+      <p>
+       To answer your questions, I'd like to travel only
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July, as it is the only
+       <ns type="RN">
+        <i>
+         moment
+        </i>
+       </ns>
+       when I can take my holidays.
+      </p>
+      <p>
+       I'd prefer to sleep in tents rather than log cabins: sleeping in tents seems to correspond to a "spirit of adventure" to me,
+       <ns type="RA">
+        <i>
+         what
+        </i>
+       </ns>
+       I particularly like;
+       <ns type="DY">
+        <i>
+         in the opposite
+        </i>
+       </ns>
+       , log cabins are more "traditional" and a less interesting experience.
+      </p>
+      <p>
+       I'm very interested in basketball and sailing, which are both team activities.
+      </p>
+      <p>
+       <ns type="RC">
+        <i>
+         As
+        </i>
+       </ns>
+       I was a child, I was very good at basketball,
+       <ns type="W">
+        <i>
+         even one of the best
+         <ns type="RT">
+          <i>
+           of
+          </i>
+         </ns>
+         my class
+        </i>
+       </ns>
+       . I like playing in
+       <ns type="MD">
+       </ns>
+       team and deciding quickly what to do next. These
+       <ns type="RN">
+        reasons
+       </ns>
+       are why I'd also like
+       <ns type="MV">
+       </ns>
+       sailing. Sailing means an ever renewed adventure as you cannot control the
+       <ns type="DJ">
+        <i>
+         atmospherical
+        </i>
+       </ns>
+       conditions. Please, don't forget to tell me how much money I need.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         think
+        </i>
+       </ns>
+       you very much in advance for your kind assistance.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs. Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I was very pleased to learn that I had won the first prize in your competition!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        To answer your questions, I'd like to travel only on July, as it is the only moment when I can take my holidays.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I'd prefer to sleep in tents rather than log cabins: sleeping in tents seems to correspond to a "spirit of adventure" to me, what I particularly like; in the opposite, log cabins are more "traditional" and a less interesting experience.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I'm very interested in basketball and sailing, which are both team activities.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        As I was a child, I was very good at basketball, even one of the best of my class.
+       </s>
+       <s pid="6" sid="2">
+        I like playing in  team and deciding quickly what to do next.
+       </s>
+       <s pid="6" sid="3">
+        These reasons are why I'd also like  sailing.
+       </s>
+       <s pid="6" sid="4">
+        Sailing means an ever renewed adventure as you cannot control the atmospherical conditions.
+       </s>
+       <s pid="6" sid="5">
+        Please, don't forget to tell me how much money I need.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I think you very much in advance for your kind assistance.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       The first idea about shopping is that buying something will
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       a pleasure
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the buyer and
+       <ns type="MP">
+       </ns>
+       for that reason, will be enjoyable.
+      </p>
+      <p>
+       But this is not always the case: at first, you see a very pretty item which you'd like to try
+       <ns type="MY">
+       </ns>
+       . When you ask to, the
+       <ns type="RN">
+        <i>
+         seller
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         offen
+        </i>
+       </ns>
+       answers that your size is
+       <ns type="RJ">
+        <i>
+         missing
+        </i>
+       </ns>
+       .
+       <ns type="RY">
+        <ns type="DY">
+         <i>
+          Hopeful
+         </i>
+        </ns>
+       </ns>
+       , you try to find the same thing in another shop. You ask the
+       <ns type="RN">
+        <i>
+         seller
+        </i>
+       </ns>
+       for your size. His answer is: "Everything is here, Madam!" As you understand that you won't get any help, you waste your time looking for the right size.
+      </p>
+      <p>
+       Finally, you find the right one but you don't have enough money.
+       <ns type="R">
+        <i>
+         At the time
+        </i>
+       </ns>
+       you realise
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       , you also realise that the shop is closing in five minutes.
+      </p>
+      <p>
+       So, you run to the bank but have to wait
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the queue. There is only one minute left! It's your turn and you
+       <ns type="R">
+        do
+       </ns>
+       as
+       <ns type="DY">
+        <i>
+         quick
+        </i>
+       </ns>
+       as possible. You run back to the shop and get your item. But now, you are very tired and need a good rest!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The first idea about shopping is that buying something will make a pleasure to the buyer and for that reason, will be enjoyable.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        But this is not always the case: at first, you see a very pretty item which you'd like to try .
+       </s>
+       <s pid="3" sid="2">
+        When you ask to, the seller offen answers that your size is missing.
+       </s>
+       <s pid="3" sid="3">
+        Hopeful, you try to find the same thing in another shop.
+       </s>
+       <s pid="3" sid="4">
+        You ask the seller for your size.
+       </s>
+       <s pid="3" sid="5">
+        His answer is: "Everything is here, Madam!"
+       </s>
+       <s pid="3" sid="6">
+        As you understand that you won't get any help, you waste your time looking for the right size.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Finally, you find the right one but you don't have enough money.
+       </s>
+       <s pid="4" sid="2">
+        At the time you realise it, you also realise that the shop is closing in five minutes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        So, you run to the bank but have to wait for the queue.
+       </s>
+       <s pid="5" sid="2">
+        There is only one minute left!
+       </s>
+       <s pid="5" sid="3">
+        It's your turn and you do as quick as possible.
+       </s>
+       <s pid="5" sid="4">
+        You run back to the shop and get your item.
+       </s>
+       <s pid="5" sid="5">
+        But now, you are very tired and need a good rest!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

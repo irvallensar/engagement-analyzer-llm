@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       17 June, 2000
+      </p>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I visited your theatre a couple of days ago in order to see the musical show titled 'Over The Rainbow'. I was not
+       <ns type="S">
+        <i>
+         satified
+        </i>
+       </ns>
+       with the show at all because it was very different from the
+       <ns type="RN">
+        <i>
+         information
+        </i>
+       </ns>
+       your advertisement had
+       <ns type="RV">
+        <i>
+         stated
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First, I expected to see Danny Brook but a different actor appeared without any explanation
+       <ns type="MV">
+       </ns>
+       . Secondly, although the show started at 20:15, your theatre restaurant closed at the usual time and I was not able to eat dinner. I had planned to have dinner there after the show. What is worse, the ticket price was not reduced despite the fact that I showed my student ID. Visiting your theatre should have been the most pleasant
+       <ns type="RN">
+        <i>
+         time
+        </i>
+       </ns>
+       during my holiday in London. I do hope you will understand my feelings and send
+       <ns type="M">
+        <i>
+         some
+        </i>
+       </ns>
+       money back.
+      </p>
+      <p>
+       Faithfully yours,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17 June, 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I visited your theatre a couple of days ago in order to see the musical show titled 'Over The Rainbow'.
+       </s>
+       <s pid="3" sid="2">
+        I was not satified with the show at all because it was very different from the information your advertisement had stated.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First, I expected to see Danny Brook but a different actor appeared without any explanation .
+       </s>
+       <s pid="4" sid="2">
+        Secondly, although the show started at 20:15, your theatre restaurant closed at the usual time and I was not able to eat dinner.
+       </s>
+       <s pid="4" sid="3">
+        I had planned to have dinner there after the show.
+       </s>
+       <s pid="4" sid="4">
+        What is worse, the ticket price was not reduced despite the fact that I showed my student ID.
+       </s>
+       <s pid="4" sid="5">
+        Visiting your theatre should have been the most pleasant time during my holiday in London.
+       </s>
+       <s pid="4" sid="6">
+        I do hope you will understand my feelings and send some money back.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Faithfully yours,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. I had known that but I
+       <ns type="AS">
+        <i>
+         told my secret to her
+        </i>
+       </ns>
+       , which was a big mistake.
+      </p>
+      <p>
+       It was just an
+       <ns type="RJ">
+        <i>
+         usual
+        </i>
+       </ns>
+       day. Somehow I felt like sharing my secret with her and told her that the new pop singer who was very popular among girls was my cousin. Pat was very surprised but soon she began asking me lots of questions about him. I didn't mind telling her about my cousin
+       <ns type="RP">
+        <i>
+         , actually
+        </i>
+       </ns>
+       he isn't different from other boys at all
+       <ns type="RP">
+        <i>
+         , he
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         just
+         <ns type="RV">
+          <i>
+           has
+          </i>
+         </ns>
+        </i>
+       </ns>
+       sweet-looking.
+       <ns type="MD">
+        <i>
+         Next
+        </i>
+       </ns>
+       day, I went to school as usual and
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       agog at
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       large number of girls waiting for me around my
+       <ns type="RN">
+        <i>
+         rocker
+        </i>
+       </ns>
+       . They all seemed to want to be my best friend, and only Pat seemed to be happy to be my best friend.
+      </p>
+      <p>
+       Now I'm asking my cousin either to meet my friends, or to quit being a singer right now.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        I had known that but I told my secret to her, which was a big mistake.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It was just an usual day.
+       </s>
+       <s pid="2" sid="2">
+        Somehow I felt like sharing my secret with her and told her that the new pop singer who was very popular among girls was my cousin.
+       </s>
+       <s pid="2" sid="3">
+        Pat was very surprised but soon she began asking me lots of questions about him.
+       </s>
+       <s pid="2" sid="4">
+        I didn't mind telling her about my cousin, actually he isn't different from other boys at all, he just has sweet-looking.
+       </s>
+       <s pid="2" sid="5">
+        Next day, I went to school as usual and got agog at a large number of girls waiting for me around my rocker.
+       </s>
+       <s pid="2" sid="6">
+        They all seemed to want to be my best friend, and only Pat seemed to be happy to be my best friend.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Now I'm asking my cousin either to meet my friends, or to quit being a singer right now.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

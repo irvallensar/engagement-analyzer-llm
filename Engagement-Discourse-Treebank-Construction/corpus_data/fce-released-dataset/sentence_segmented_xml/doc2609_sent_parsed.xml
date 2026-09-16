@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I am writing to complain about the musical show 'OVER THE RAINBOW' I attended three days ago.
+      </p>
+      <p>
+       I was very disappointed with the performance and apart from that there were many
+       <ns type="MQ">
+       </ns>
+       problems.
+      </p>
+      <p>
+       Firstly, the
+       <ns type="UN">
+        <i>
+         start
+        </i>
+       </ns>
+       time
+       <ns type="M">
+       </ns>
+       was
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       19.30 p.m, but the play started at 20.15 p.m. People were fed up with waiting so long and most of them
+       <ns type="MP">
+       </ns>
+       apart from me
+       <ns type="MP">
+       </ns>
+       were rather
+       <ns type="RJ">
+        <i>
+         nervous
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Secondly, the well-known star Danny Brook wasn't there, but a different actor
+       <ns type="MC">
+       </ns>
+       I had never heard
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       him. From my point of view I think he was such a very bad actor that
+       <ns type="MA">
+       </ns>
+       <ns type="RV">
+        <i>
+         was
+        </i>
+       </ns>
+       impossible to
+       <ns type="RV">
+        <i>
+         fine
+        </i>
+       </ns>
+       another with the same
+       <ns type="RN">
+        <i>
+         features
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       As far as the tickets
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           is
+          </i>
+         </ns>
+        </i>
+       </ns>
+       concerned no discounts were available, so,
+       <ns type="RY">
+        moreover
+       </ns>
+       I found it expensive.
+      </p>
+      <p>
+       After the show I went to visit the restaurant as it is
+       <ns type="RV">
+        <i>
+         said
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         it is
+        </i>
+       </ns>
+       very famous and apart from that I wanted to have a drink.
+       <ns type="RT">
+        <i>
+         At
+        </i>
+       </ns>
+       the end I had to go home as it was closed because the coffee pot did not work. What nonsense!
+      </p>
+      <p>
+       The evening was a disaster and I wonder if I have not the right to ask you
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         returning
+        </i>
+       </ns>
+       my money, as I think
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         is
+        </i>
+       </ns>
+       fair.
+      </p>
+      <p>
+       I look forward to hearing from you,
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+      <p>
+       MARIA GARDENT
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about the musical show 'OVER THE RAINBOW' I attended three days ago.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I was very disappointed with the performance and apart from that there were many  problems.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, the start time  was at 19.30 p.m, but the play started at 20.15 p.m.
+       </s>
+       <s pid="4" sid="2">
+        People were fed up with waiting so long and most of them apart from me were rather nervous.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, the well-known star Danny Brook wasn't there, but a different actor  I had never heard from him.
+       </s>
+       <s pid="5" sid="2">
+        From my point of view I think he was such a very bad actor that  was impossible to fine another with the same features.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        As far as the tickets is concerned no discounts were available, so, moreover I found it expensive.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        After the show I went to visit the restaurant as it is said it is very famous and apart from that I wanted to have a drink.
+       </s>
+       <s pid="7" sid="2">
+        At the end I had to go home as it was closed because the coffee pot did not work.
+       </s>
+       <s pid="7" sid="3">
+        What nonsense!
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        The evening was a disaster and I wonder if I have not the right to ask you for returning my money, as I think it is fair.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I look forward to hearing from you,
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        MARIA GARDENT
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       But this time things
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       gone too far.
+      </p>
+      <p>
+       I've
+       <ns type="TV">
+        <i>
+         know
+        </i>
+       </ns>
+       Pat since we were kids. Little by little we were growing up and
+       <ns type="IV">
+        <i>
+         becaming
+        </i>
+       </ns>
+       close friends. I
+       <ns type="IV">
+        <i>
+         relyied
+        </i>
+       </ns>
+       on her and our relationship was excellent. I considered her my best friend and I thought we would never drift apart but now
+       <ns type="MA">
+       </ns>
+       <ns type="W">
+        <i>
+         my mind have changed
+        </i>
+       </ns>
+       , because she has done something I can't
+       <ns type="RV">
+        <i>
+         approve
+        </i>
+       </ns>
+       . She has given
+       <ns type="MA">
+       </ns>
+       away to my mother that I told her a lie as far as the weekend was concerned.
+      </p>
+      <p>
+       Pat told her I hadn't spent those days with her, but with my boyfriend in the
+       <ns type="FN">
+        <i>
+         mountain
+        </i>
+       </ns>
+       . My mother was so
+       <ns type="RJ">
+        <i>
+         hungry
+        </i>
+       </ns>
+       and she told
+       <ns type="W">
+        <i>
+         off me
+        </i>
+       </ns>
+       so
+       <ns type="RY">
+        <i>
+         hard
+        </i>
+       </ns>
+       that I will remember it
+       <ns type="MT">
+       </ns>
+       the rest of my life.
+      </p>
+      <p>
+       Moreover I was punished
+       <ns type="RY">
+        <i>
+         hardly
+        </i>
+       </ns>
+       by my father and now we don't talk
+       <ns type="MT">
+       </ns>
+       each other.
+      </p>
+      <p>
+       Since then I haven't seen Pat anymore and she
+       <ns type="X">
+        <i>
+         seems not
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         regret
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       happened, so I'll try to forget her and carry on
+       <ns type="MT">
+       </ns>
+       my life
+       <ns type="MP">
+       </ns>
+       that's all.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        But this time things have gone too far.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I've know Pat since we were kids.
+       </s>
+       <s pid="3" sid="2">
+        Little by little we were growing up and becaming close friends.
+       </s>
+       <s pid="3" sid="3">
+        I relyied on her and our relationship was excellent.
+       </s>
+       <s pid="3" sid="4">
+        I considered her my best friend and I thought we would never drift apart but now  my mind have changed, because she has done something I can't approve.
+       </s>
+       <s pid="3" sid="5">
+        She has given  away to my mother that I told her a lie as far as the weekend was concerned.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Pat told her I hadn't spent those days with her, but with my boyfriend in the mountain.
+       </s>
+       <s pid="4" sid="2">
+        My mother was so hungry and she told off me so hard that I will remember it  the rest of my life.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Moreover
+       </s>
+       <s pid="5" sid="2">
+        I was punished hardly by my father and now we don't talk  each other.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Since then I haven't seen Pat anymore and she seems not regret that happened, so I'll try to forget her and carry on  my life that's all.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     19.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         manage
+        </i>
+       </ns>
+       of
+       <ns type="MD">
+       </ns>
+       theatre,
+      </p>
+      <p>
+       I went to the circle theatre to see a musical show, OVER THE RAINBOW. I really
+       <ns type="RV">
+        <i>
+         expected
+        </i>
+       </ns>
+       the musical show, but it was a disappointing show.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       ,
+       <ns type="DA">
+        <i>
+         you
+        </i>
+       </ns>
+       advertisement said there were Danny Brook and Tina Truelove, but it had different
+       <ns type="DN">
+        <i>
+         actor
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         disappointely
+        </i>
+       </ns>
+       . Secondly, it said the show started at 19:30, but it
+       <ns type="TV">
+        <i>
+         <ns type="S">
+          <i>
+           deleyed
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       20:15. I had to wait 45 minutes, wasting time.
+      </p>
+      <p>
+       Thirdly, tickets were £10, £15 and £20, and I knew that these were available
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       discount, following the advertisement. But it was impossible.
+      </p>
+      <p>
+       And I wanted to visit your theatre restaurant after the show but it was closed
+       <ns type="MP">
+        <i>
+         though
+        </i>
+       </ns>
+       they said it was possible to visit
+       <ns type="MD">
+       </ns>
+       theatre restaurant after the show, they didn't prepare
+       <ns type="MA">
+       </ns>
+       at all.
+       <ns type="CE">
+        Even if one of your woman officer annoyed my question, I asked that why they didn't prepare restaurant, as if they advertised like that. But she was annoyed me.
+       </ns>
+      </p>
+      <p>
+       You said it would be
+       <ns type="MD">
+       </ns>
+       perfect evening, but it wasn't. It was
+       <ns type="MD">
+       </ns>
+       <ns type="RJ">
+        <i>
+         upset
+        </i>
+       </ns>
+       evening. So I
+       <ns type="AS">
+        <i>
+         ask for money back to you
+        </i>
+       </ns>
+       . I couldn't be satisfied
+       <ns type="MT">
+       </ns>
+       your theatre. I hope you accept my suggestion.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         With
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="DN">
+        <i>
+         hopeness
+        </i>
+       </ns>
+       <ns type="MC">
+       </ns>
+       you understand me.
+      </p>
+      <p>
+       Elsy Sun.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear the manage of  theatre,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I went to the circle theatre to see a musical show, OVER THE RAINBOW.
+       </s>
+       <s pid="2" sid="2">
+        I really expected the musical show, but it was a disappointing show.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        At first, you advertisement said there were Danny Brook and Tina Truelove, but it had different actor disappointely.
+       </s>
+       <s pid="3" sid="2">
+        Secondly, it said the show started at 19:30, but it deleyed to 20:15.
+       </s>
+       <s pid="3" sid="3">
+        I had to wait 45 minutes, wasting time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Thirdly, tickets were £10, £15 and £20, and I knew that these were available to discount, following the advertisement.
+       </s>
+       <s pid="4" sid="2">
+        But it was impossible.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        And I wanted to visit your theatre restaurant after the show but it was closed though they said it was possible to visit  theatre restaurant after the show, they didn't prepare  at all.
+       </s>
+       <s pid="5" sid="2">
+        Even if one of your woman officer annoyed my question, I asked that why they didn't prepare restaurant, as if they advertised like that.
+       </s>
+       <s pid="5" sid="3">
+        But she was annoyed me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        You said it would be  perfect evening, but it wasn't.
+       </s>
+       <s pid="6" sid="2">
+        It was  upset evening.
+       </s>
+       <s pid="6" sid="3">
+        So I ask for money back to you.
+       </s>
+       <s pid="6" sid="4">
+        I couldn't be satisfied  your theatre.
+       </s>
+       <s pid="6" sid="5">
+        I hope you accept my suggestion.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        With  hopeness  you understand me.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Elsy Sun.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="S">
+        <i>
+         Unfortunely
+        </i>
+       </ns>
+       , Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       Pat
+       <ns type="RV">
+        <i>
+         talks
+        </i>
+       </ns>
+       <ns type="MP">
+        <i>
+         others
+        </i>
+       </ns>
+       secrets to everyone easily.
+      </p>
+      <p>
+       At first
+       <ns type="MP">
+       </ns>
+       when he had a girlfriend, they talked to each other
+       <ns type="S">
+        <i>
+         franckly
+        </i>
+       </ns>
+       . His
+       <ns type="RP">
+        <i>
+         girl friend
+        </i>
+       </ns>
+       talked to him
+       <ns type="MT">
+       </ns>
+       everything.
+      </p>
+      <p>
+       <ns type="M">
+        <i>
+         Because
+        </i>
+       </ns>
+       she
+       <ns type="RV">
+        <i>
+         believed
+        </i>
+       </ns>
+       him. But after they
+       <ns type="S">
+        <i>
+         seperated
+        </i>
+       </ns>
+       ,
+       <ns type="RA">
+        <i>
+         his
+        </i>
+       </ns>
+       told his friends her secrets without
+       <ns type="RV">
+        <i>
+         considering
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       And when his friend, J,
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       big problem, J asked Pat and his friend for help
+       <ns type="UA">
+        <i>
+         him
+        </i>
+       </ns>
+       . It was about his private problem, related
+       <ns type="MT">
+       </ns>
+       his
+       <ns type="FN">
+        <i>
+         friendship
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       whole school.
+      </p>
+      <p>
+       If he had told everybody, J would have been blamed by
+       <ns type="MD">
+       </ns>
+       whole school. But he forgot it and told his friends. Actually it was not on
+       <ns type="UD">
+        <i>
+         his
+        </i>
+       </ns>
+       purpose
+       <ns type="RP">
+        <i>
+         . But
+        </i>
+       </ns>
+       sometimes, Pat
+       <ns type="R">
+        mistakes to speak
+       </ns>
+       someone's secrets. Though it was not on
+       <ns type="UD">
+        <i>
+         his
+        </i>
+       </ns>
+       purpose, it makes his friends leave him. They can't
+       <ns type="RV">
+        <i>
+         believe
+        </i>
+       </ns>
+       him. Pat also regrets
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       his
+       <ns type="RV">
+        <i>
+         speaking
+        </i>
+       </ns>
+       . It could be difficult for him to change himself. It is like
+       <ns type="W">
+        <i>
+         his one of
+        </i>
+       </ns>
+       bad
+       <ns type="S">
+        <i>
+         habbits
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Poor Pat, now he is blamed by everyone such as the people
+       <ns type="W">
+        <i>
+         who he
+         <ns type="RV">
+          <i>
+           talked
+          </i>
+         </ns>
+         their secrets
+        </i>
+       </ns>
+       to everybody.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunely,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Pat talks others secrets to everyone easily.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        At first when he had a girlfriend, they talked to each other franckly.
+       </s>
+       <s pid="3" sid="2">
+        His girl friend talked to him  everything.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Because she believed him.
+       </s>
+       <s pid="4" sid="2">
+        But after they seperated, his told his friends her secrets without considering.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        And when his friend, J, got  big problem, J asked Pat and his friend for help him.
+       </s>
+       <s pid="5" sid="2">
+        It was about his private problem, related  his friendship in  whole school.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        If he had told everybody, J would have been blamed by  whole school.
+       </s>
+       <s pid="6" sid="2">
+        But he forgot it and told his friends.
+       </s>
+       <s pid="6" sid="3">
+        Actually it was not on his purpose.
+       </s>
+       <s pid="6" sid="4">
+        But sometimes, Pat mistakes to speak someone's secrets.
+       </s>
+       <s pid="6" sid="5">
+        Though it was not on his purpose, it makes his friends leave him.
+       </s>
+       <s pid="6" sid="6">
+        They can't believe him.
+       </s>
+       <s pid="6" sid="7">
+        Pat also regrets about his speaking.
+       </s>
+       <s pid="6" sid="8">
+        It could be difficult for him to change himself.
+       </s>
+       <s pid="6" sid="9">
+        It is like his one of bad habbits.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Poor Pat, now he is blamed by everyone such as the people who he talked their secrets to everybody.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

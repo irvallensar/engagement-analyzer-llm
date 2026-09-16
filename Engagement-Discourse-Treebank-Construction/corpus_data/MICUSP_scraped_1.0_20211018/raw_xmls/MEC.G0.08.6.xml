@@ -1,0 +1,511 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Investigation of a Microprocessor Chip Cooling System
+   </div>
+   <div class="abstract">
+    Abstract
+    <p>
+     As microprocessors advance, they become smaller and more powerful and require greater power dissipation which necessitates improved cooling systems. In order to create a more efficient cooling system, we studied how the resistance and heat transfer of a chip change with temperature, and how the resistance is affected when the chip is attached to a heat-sink in a wind tunnel with varying wind speed. We found that our experimental results were similar to out calculated theoretical results. From the experimental results, we were able to develop a heat transfer model which can predict the resistance of the chip to the ambient air as a function of air velocity and the maximum heat transfer to prevent chip failure.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     INTRODUCTION
+    </div>
+    <p>
+     Well-modeled heat transfer models are required to prevent microprocessor failure. To find how a microchip’s heat transfer and resistance vary with changes in temperature, we conducted experiments that simulate microprocessor heating. The purpose of this report is to find both theoretical and experimental values of the thermal coefficient of our chip, the time constant to reach steady state temperature, the chip-to-ambient resistance (and its components), and then to develop a heat transfer model to predict the resistance of a chip to ambient air as a function of air velocity and fin length. Lastly, using our data and knowledge of heat transfer, we would like to recommend different approaches to allow better cooling of the system.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     NOMENCLATURE
+    </div>
+    <p>
+     (see Appendix A on p. 4)
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     METHODS
+    </div>
+    <div>
+     <div class="head_2">
+      Experiment 1: Obtaining α with bare die sample
+     </div>
+     <p>
+      In the first experiment, we attempted to calculate the thermal coefficient of resistance of our microprocessor chip (shown in Appendix M, p. 9) by calibrating the electrical resistance of the sensor on the chip as a function of surface temperature. The chip was fixed to a hot plate using thermal grease and electrical resistance was measured using the ‘4-point probe method’. Surface temperature was measured using an Omega HHI2 thermocouple, placed on the resistor pattern by the researchers. Initial chip resistance was found after applying a voltage of VDC ~ 100 mV. The resistance was then measured at a temperature range of 30 °C to 120 °C, since we did not want to reach 150 °C, the estimated failure temperature of the chip. Because of the unsatisfactory results, we redesigned our test procedures.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Experiment 2: Obtaining α with ceramic packaging and Rchip-to-heat sink
+     </div>
+     <p>
+      Our improved test setup used an integrated circuit packaging which had mechanical support, electrical shielding, and permanent connection of leads for robustness. Appendix K on p. 9 shows a photo of the setup and equipment used. We repeated the procedure in Experiment 1with a smaller range of 22 °C and a smaller maximum temperature to avoid damaging the chip.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Experiment 3:
+     </div>
+     <p>
+      In Experiment 3, we applied voltages to the on-chip resistor pattern ranging from 5 to 25V in increments of 5V and determined the surface temperature of the chip by measuring its current draw. The heat-sink temperature was measured using our thermocouple. We collected data from three trials.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Experiment 4:
+     </div>
+     <p>
+      In the last experiment, we tested our chip with an Alpha Novatech S-1530 20W heat-sink (cut in quarters) in a model wind tunnel (Appendix J, p. 8). We measured different flow rates using an anemometer by varying the voltage, from 6V to 12V in increments of 2V, supplied to the fan and measured corresponding current. We then theoretically estimated the chip temperature,
+      <i>
+       Tchip
+      </i>
+      using results from Experiment 2 when the chip was held at voltages of 9.71, 14.55 and 19.41V. We calibrated the air velocity
+      <i>
+       V∞
+      </i>
+      as a function of power input to the cooling fan.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     RESULTS
+    </div>
+    <div>
+     <div class="head_2">
+      Obtaining α: Experiments 1 and 2
+     </div>
+     <p>
+      From Experiment 1 we assumed a proportional fractional change in resistance to the temperature change by a coefficient, α, as shown in Eq. 1.
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (Eq. 1)
+     <p>
+     </p>
+     <p>
+      Using Eq. 1 our calculated α had large errors and inconsistencies between data sets, and was considered to be skewed. The results of Experiment 1 are shown in appendix C on p. 6.
+     </p>
+     <p>
+      From Experiment 2, with the ceramic wire-bonded chip packaging, our initial resistance value was 291.78 ± 0.02 Ω at 22 °C and α was 0.00283 ± 0.00035 1/°C. Using Eq. 2, where i represents each trial and α is the mean of all the αi, we found α = 0.003437 ± 0.00085 1/°C. The plot of R vs. T is shown in Appendix D on p. 6.
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (Eq. 2)
+     <p>
+     </p>
+     <p>
+      Heat transfer and the resistance from  the chip to the heat-sink was calculated using Eqs. 3 &amp; 4.
+     </p>
+     <p>
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (Eqs. 3&amp;4)
+     <p>
+     </p>
+     <p>
+      We found Rchip-to-heat-sink was 9.986 ± 1.154 W/K. Heat transfer vs. ΔT is plotted in Appendix E on p. 7.
+     </p>
+     <p>
+      To determine the time constant for the chip to reach steady state temperature we used Eq. 5.
+     </p>
+     <p>
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (Eq. 5)
+     <p>
+     </p>
+     <p>
+     </p>
+     <p>
+      where Cpackaging is the capacitance of the ceramic (Appendix B, p. 5). Experimentally, the time constant was 4.62 ± 0.53 s, which was calculated using the experimental resistance value and the theoretical capacitance. This is close to the theoretical value of τ = 3.95 s.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Resistance: Theoretical Calculation: Experiments 3 and 4
+     </div>
+     <p>
+      Our theoretical calculation for the chip-to-ambient resistance was modeled as a sum of the resistance from the conduction in the chip (silicon) the contact resistance from the silicon to the aluminum, the resistance from the conduction in the base of the aluminum heat-sink, and the equivalent resistance of the convection from both the base top surface and the fins of the heat-sink. For the contact resistance, we used the top surface area of the chip, which was less than the heat-sink base area, and a contact resistance given in Appendix F on p. 7. For modeling the resistance of the heat-sink, we approximated the fins as cylinders because we were unable to find square geometry constants at the tested Reynolds numbers for use in calculating Nusselt number Nu using the Hilpert correlation [3]. Also, because our chip had fewer than 20 fins, we multiplied Nu by a correction factor C, as shown in Eq. 6.  The electrical circuit diagram of the system can be seen in Appendix H on p. X (all physical constants and coefficients used are given in Appendix A on p. X). Reynolds number
+      <i>
+       ReD
+      </i>
+      was calculated using Eq. 7 below.
+     </p>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     ,
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     (Eqs. 6 &amp; 7)
+     <p>
+     </p>
+     <p>
+      where uf,∞ is the maximum velocity between the fin cylinders. From Eq. 5 we were able to find conduction coefficients, the heat-sink total efficiency, and ultimately the heat-sink resistance. The resistance values are summarized in Appendix F on p. 7.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Resistance: Experimental Results: Experiments 3 and 4
+     </div>
+     <p>
+      Using our data from Experiment 4, we used the divided ΔT by QH to solve for
+      <i>
+       Rchip-to-ambient
+      </i>
+      . In Fig. 1 we plot the
+      <i>
+       Rchip-to-ambient
+      </i>
+      vs. air velocity for both our theoretical calculations and measurements from Experiment 4 at chip voltages of 9.71, 14.55 and 19.41V. The experimental data follows the same trend as the theoretical data as well as the manufacturer’s data for the resistance of the heat-sink alone [2]. For the range of tested velocities, the percent error of our experimental versus theoretical resistances never exceeded 12.5%. In our plot, uncertainty is due to error in measurements of current and voltage and to resolution and precision error in the anemometer readings.
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      <b>
+       Fig. 1: Theoretical and experimental resistances vs. velodity for three voltages. Resistance does not appear to vary significantly with voltage.
+      </b>
+     </p>
+     <p>
+      Assuming fatal failure occurs at a chip temperature Tchip = 150 °C, we calculated maximum allowable chip heat exchange for our tested velocities using Eq. 6. The results are shown in Table 1. As expected, maximum allowable chip power QHmax increases with increasing air velocity.
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (Eq. 6)
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+     <p>
+      <b>
+       Table 2: Maximum chip heat transfer for tested air speeds
+      </b>
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     DISCUSSION
+    </div>
+    <p>
+     The alpha obtained from experiment 2 was more accurate than from experiment 1 because we used a proper 4-point probe setup. This decreased the parasitic resistance, therefore lowering the initial and measured resistance. More importantly, we obtained the data without damaging the chip. In experiment 1, we scratched the surface of the resistor of the chip we were measuring, sometimes so severely that the resistance would increase dramatically between different attempts at the same temperature. The large temperature range also contributed the larger discrepancies from the linear model we were attempting to validate. We found the best alpha value for the second experiment using the normalized slope of R vs. T as it produced the smallest error.
+    </p>
+    <p>
+     The theoretical time constant, τ = 3.95 s, was smaller than the experimental value, 4.62 ± 0.53 s, possibly because the ceramic volume used to calculate ceramic resistance was estimated as that beneath the chip. The experimental resistance was also higher than the theoretical one which could contribute to the larger experimental time constant.  They were within 17% of each other, which was considered satisfactory. Our theoretical results imply a required time of ~ 20 s to reach 99% of steady state. We may not have waited this long during the experiment, which may have added error to our results.
+    </p>
+    <p>
+     We were able to develop a heat transfer model which could predict Rchip-to-ambient for a given air velocity with increasing accuracy as the velocity is increased. Our experimental and theoretical calculations for Rchip-to-ambient vs. V∞ are closely related quantitatively and in trend, showing the validity of our model. They also agree with the trend given by the manufacturer: as the air velocity is increased, so does the maximum allowable chip power. This is valid as increased velocities would increase heat dissipation from the heat sink. Also, it was not surprising that the experimental resistances were slightly higher than the theoretical calculations which could be manufacturing inconsistencies. It appears that the resistance of the total system was not dependent on the chip voltage, which makes sense physically.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     CONCLUSIONS &amp; RECOMMENDATIONS
+    </div>
+    <p>
+     The results of our experimental and theoretical calculations for the S1530 20W heat-sink have close agreement and we have calculated maximum heat transfers to prevent failure versus velocity (Table 2 on p. 4). For increased chip cooling, resistance can be lowered by increasing the fin length and/or spacing, increasing the profile area, or use of a higher conductivity fin material, such as copper or graphite [4]. Our studies show that there is a threshold length of 120 mm beyond which increasing fin length does not help (see Appendix L on p. 10). Enhanced convection from a faster or nearer fan or liquid cooling can also help. Other options include refrigeration/solid-state refrigeration if packaging space is not a limiting factor.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     APPENDICES
+    </div>
+    <p>
+     Appendix A
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 1. List of symbols used
+    </p>
+    <p>
+     Appendix B
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 2. List of constants/coefficients used
+    </p>
+    <p>
+     Appendix C
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Fig. 3: Experiment1: Thermal coefficient of resistance using bare die sample. Notice large discrepancy between slopes of two tests.
+    </p>
+    <p>
+     Appendix D
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Fig. 4: Experiment 2: Resistance vs. temperature for the on-chip resistor pattern (using ceramic packaging sample).
+    </p>
+    <p>
+     Appendix E
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Appendix F
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 3: Theoretical conduction/contact resistances and other values
+    </p>
+    <p>
+     Appendix G
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Fig. 6: The heat-sink dimensions
+    </p>
+    <p>
+     Appendix H
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Fig. 7: The equivalent resistances of the model
+    </p>
+    <p>
+     Appendix I
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ratio of solid-conduction to surface-convection resistance
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    surface-convection perimeter for each fin
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    corrected length for circular fin
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    fin efficiency
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    resistances in parallel
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    base-surface resistance,
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    fin-surface resistance,
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    maximum allowable chip power
+    <p>
+    </p>
+    <p>
+     Appendix J
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Appendix K
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Appendix L
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Appendix M
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     REFERENCES
+    </div>
+    <ul id="N10232">
+     <li id="N10233">
+      [1] Kaviany, M., Principles of Heat Transfer, New York: Wiley-Interscience, 2002, pp. X.
+     </li>
+     <li id="N10235">
+      [2] “S Series Omnidirectional Heat Sinks,” Alpha Novatech, Inc., https://www.micforg.co.jp/dxf/S.pdf, Mar. 10, 2008, p. 4.
+     </li>
+     <li id="N10237">
+      [3] Incropera, F. P., DeWitt, D. P., Bergman, T. L. and Levine A. S., Fundamentals of Heat and Mass Transfer, John Wiley: Hoboken, New Jersey, 2007, p.112, 426, 439.
+     </li>
+     <li id="N10239">
+      [4] Mahajan, R., Chiu, C., and Chrysler, G., “Cooling a Microprocessor Chip,” Proceedings of the IEEE,  Vol. 94, No. 88, Aug. 2006, pp. X-X.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

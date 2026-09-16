@@ -1,0 +1,499 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Assembly Tolerance Analysis for BBM
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1.0 Define
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Better Body Manufacturing (BBM) is a supplier of module body subassemblies to an Automotive Manufacturer.
+       </s>
+       <s pid="1" sid="2">
+        Recently, they have asked our team to perform a Six Sigma analysis to insure that their major part, the body side subassembly, is achieving Six Sigma quality levels of less than 3.4 defects per million for all critical body side subassembly dimensions.
+       </s>
+       <s pid="1" sid="3">
+        A subassembly consists of a body side assembly (BS), and two reinforcement pillar bars (A and B).
+       </s>
+       <s pid="1" sid="4">
+        BBM has asked us to reduce assembly defects by either adjusting a process setting, reducing the stamping variation, or reworking the stamping dies.
+       </s>
+       <s pid="1" sid="5">
+        BBM management would like our team to recommend an improvement strategy that minimizes the rework costs, yet achieves the desired quality objective.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2.0 Measure
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        To approach this problem in a meaningful way, we used a top-down analysis method to come up with our recommendations.
+       </s>
+       <s pid="2" sid="2">
+        Top-down analysis suggests that you start with the assembly data and identify those assembly dimensions that are not meeting BBM's goal of 3.4 DPM.
+       </s>
+       <s pid="2" sid="3">
+        After the assemblies are identified, proceed to analyze only those assemblies by looking at the assembly process and at the stamping process.
+       </s>
+       <s pid="2" sid="4">
+        A visualization of the important manufacturing processes is shown in Figure 2.1.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Figure 2.1: Relationship of Stamped Components and Assembly Outputs
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        Our statistical analyses of the 10 subassembly processes are shown in Table 2.1.
+       </s>
+       <s pid="4" sid="2">
+        Due to the large amount of data, we chose not to provide charts for each of the subassemblies but instead summarized our work.
+       </s>
+       <s pid="4" sid="3">
+        A process capability analysis provided data for the DPM for each process, as well as the process capability indices (Cp, Cpk, Pp, Ppk).
+       </s>
+       <s pid="4" sid="4">
+        All data followed a normal distribution.
+       </s>
+       <s pid="4" sid="5">
+        All measurements data are taken from gages that meet Gage R&amp;R standards.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        Table 2.1: Statistical Summary Table for 10 Subassemblies
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        As shown in Table 2.1, subassemblies 1, 2, 4, and 5 do not have quality issues.
+       </s>
+       <s pid="6" sid="2">
+        Our team, therefore, focused on subassemblies 3, 9, and 10 which had mean problems (mean shift or mean off-target) and subassemblies 6, 7, and 8 which had mean problems and high variation problems (spike or common cause).
+       </s>
+       <s pid="6" sid="3">
+        Stated earlier, the goal of our work is to achieve 3.4 DPM or less for all 10 of the subassembly processes.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       3.0 Analyze
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        A top down analysis was conducted in which assembly defects are investigated before component defects.
+       </s>
+       <s pid="7" sid="2">
+        In order to determine whether the out-of-specification assembly measurements were caused by assembly process or by incoming component defects, the correlation between the predicted stacked component measurement and the actual assembly measurement was investigated.
+       </s>
+       <s pid="7" sid="3">
+        It is assumed that if the predicted stacked component measurement is highly correlated with the actual assembly measurement, then the defects are due the incoming components; if there is little or no correlation, there is an assembly process problem.
+       </s>
+       <s pid="7" sid="4">
+        Table 3.1 shows the values for R generated from the correlation test.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Table3.1 Correlation between Predicted Stacked Components and Actual Assembly
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        Location 7 and 8 are the only two locations that have defective incoming components (R &amp;gt; .7).
+       </s>
+       <s pid="9" sid="2">
+        Locations 3, 6, 9, and 10 have assembly process problems.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Assembly Defects
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         First, the causes of defects were investigated for each location supposedly exhibiting assembly defects.
+        </s>
+        <s pid="10" sid="2">
+         An additional 24 observations were made.
+        </s>
+        <s pid="10" sid="3">
+         Three process inputs were examined using DOE - Clamp Location, Weld Density, and Pressure.
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         For location 3, none of the factors were found to be significant using DOE.
+        </s>
+        <s pid="11" sid="2">
+         From the run chart (Figure 3.1), it is observed that location 3 does have a mean deviation problem (observed mean of 0.8).
+        </s>
+       </p>
+       <p>
+        <s pid="12" sid="1">
+         Figure 3.1 Process Capability Six
+        </s>
+        <s pid="12" sid="2">
+         Pack for Location 3
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         However, there was no correlation observed between the predicted stacked component measurements and the actual assembly measurements.
+        </s>
+        <s pid="13" sid="2">
+         Because none of the assembly process factors were found to be significant, it is supposed that the lack of correlation (which suggests an assembly process problem) was due to the small standard deviation of 0.02 in the sample for A pillar components (Figure 3.2).
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         Figure 3.2 Process Capability of A pillar for Location 3
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         Component defects were further examined for Location 3 as a result of this investigation.
+        </s>
+        <s pid="15" sid="2">
+         (see below).
+        </s>
+       </p>
+       <p>
+        <s pid="16" sid="1">
+         For location 6 there were no significant factors found using DOE.
+        </s>
+        <s pid="16" sid="2">
+         From the run chart in Figure 3.3, it is observed that there is one out of control data point.
+        </s>
+        <s pid="16" sid="3">
+         This point corresponds to Die Set 8.
+        </s>
+        <s pid="16" sid="4">
+         The raw data shows that all three samples from Die Set 8 were out of spec or close to out of spec.
+        </s>
+        <s pid="16" sid="5">
+         Since the DPM for location 6 is very close to acceptable (4 DPM), it is suggested that die set 8 be further investigated if cost permits.
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         Figure 3.3 Process Capability SixPack of Assembly for Location 6
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="18" sid="1">
+         For Locations 9 and 10, Clamp Location was found to be significant with a P-value of 0.000 for each (Tables 3.2 and 3.3)
+        </s>
+       </p>
+       <p>
+        <s pid="19" sid="1">
+         Table3.2 Factorial Fit: ASM_9Y versus Clamp, Density, Weld_pr
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="20" sid="1">
+         Table 3.3 Factorial Fit: ASM_10Y versus Clamp, Density, Weld_pr
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         The response optimizer was used to find the optimal setting for the clamp location.
+        </s>
+        <s pid="21" sid="2">
+         Figure 3.4 shows a value for clamp location of 1 will cause the least number of defects.
+        </s>
+       </p>
+       <p>
+        <s pid="22" sid="1">
+         Figure 3.4 Response Optimizer Output for Locations 9 and 10
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="23" sid="1">
+         The setting of 1 corresponds to placing the clamp at Location 2 (Figure 3.5).
+        </s>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         Figure 3.5 Clamp Location Alternatives
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Component Defects
+       </div>
+       <p>
+        <s pid="25" sid="1">
+         Locations 3, 7, and 8 were found to have incoming component defects.
+        </s>
+       </p>
+       <p>
+        <s pid="26" sid="1">
+         Defects in location 3 are assumed to be the result of defects in A pillars (mean of 0.74 and standard deviation of 0.04) since assembly process inputs have no significant effect and A pillars are the thickest, and strongest components.
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         A regression analysis was conducted on location 7 investigating the following factors: press tonnage, die cushion pressure, and sheet metal material thickness.
+        </s>
+        <s pid="27" sid="2">
+         This revealed press tonnage as the only significant figure also (P-value of 0.000).
+        </s>
+        <s pid="27" sid="3">
+         Assembly measurement was plotted against tonnage.
+        </s>
+        <s pid="27" sid="4">
+         There is a clear division in tonnage values which corresponds to distinctly different assembly measurement (Figure 3.5).
+        </s>
+        <s pid="27" sid="5">
+         These two groups of data points were found to be statistically different (P-value of 0.000).
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         Figure 3.5 Assembly Measurement vs Press Tonnage for Location 3
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         If the assembly measurements for multiple locations are correlated, altering an input for one of the locations will alter the other location in a similar way.
+        </s>
+        <s pid="29" sid="2">
+         It was found that locations 7 and 8, two locations with defects due to incoming components, correlate with each other (R = 0.952).
+        </s>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         Because of this correlation, the same results hold true for location 8 as for location 7.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       4.0  Improve
+      </div>
+      <p>
+       <s pid="31" sid="1">
+        Based on the above analysis, the Six Sigma team suggests BBM make the following improvements to reach its 3.4 DPM quality goal for each of the 10 critical body side subassembly dimensions:
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        • Dimension 3
+       </div>
+       <p>
+        <s pid="32" sid="1">
+         This dimension is experiencing a mean off-target problem and has relatively small inherent variation.
+        </s>
+        <s pid="32" sid="2">
+         It is not sensitive to changes in assembly process inputs, however, its significantly off-target component dimensions are suspect…
+        </s>
+        <s pid="32" sid="3">
+         especially the associated A-pillar dimension.
+        </s>
+        <s pid="32" sid="4">
+         Although BS dimension 3 is uncorrelated to A-pillar dimension 3, there is not enough variation in the A-pillar dimension to observe correlation in the data (especially when compared to the variance of the BS dimension) even if the A-3 and BSA-3 assembly dimensions are in-fact correlated.
+        </s>
+        <s pid="32" sid="5">
+         Thus, despite the absence of correlation between the component and assembly dimension, the team believes that die rework for component A to put A-3 on target is the only remaining option, considering that the assembly process input settings have no effect.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        • Dimension 6
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         This assembly dimension almost met the 3.4 DPM quality goal with the exception of SPC data taken from a subgroup using die set #8.
+        </s>
+        <s pid="33" sid="2">
+         The BBM team recommends further investigation into the performance of die set #8 to determine if it needs to be repaired or replaced.
+        </s>
+        <s pid="33" sid="3">
+         Without die set 8, the DPM for assembly dimension 6 improves from 4.00 DPM to 0.03 DPM.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        • Dimensions 7 and 8
+       </div>
+       <p>
+        <s pid="34" sid="1">
+         These assembly dimensions have significant correlation to their corresponding component stack-up and assembly dimensions as well as to each other.
+        </s>
+        <s pid="34" sid="2">
+         Both dimensions are off-target and have excessive variation, and our regression analysis indicates that tonnage is the only significant input that has an effect on them.
+        </s>
+        <s pid="34" sid="3">
+         The plot of measurement vs. tonnage for assembly dimension 7 indicates that tonnage between 939-946 will produce measurements of dimension 7 at BBM's desired quality levels, and the team recommends that BBM conducts stamping at tonnage within this range to solve the mean and variance problems for assembly dimension 7 (and thus also for assembly dimension 8, as they are highly correlated) by improving both dimensions to 0.00 DPM.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        • Dimensions 9 and 10
+       </div>
+       <p>
+        <s pid="35" sid="1">
+         These assembly dimensions do not have significant correlation to their corresponding component stack-up and assembly dimensions; however, they are sensitive to assembly process inputs.
+        </s>
+        <s pid="35" sid="2">
+         Specifically, the team's DOE analysis indicates that clamp location 1 will make body side assemblies with dimensions 9 and 10 to spec while clamp location 2 induces a mean shift into dimensions 9 and 10, increasing DPM above 3.4.
+        </s>
+        <s pid="35" sid="3">
+         The team therefore recommends that clamp location 1 be used in the welding process.
+        </s>
+        <s pid="35" sid="4">
+         This would improve the DPM of assembly dimensions 9 and 10 to 0.00 and 0.08 DPM, respectively.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        • Dimensions 1, 2, 4, and 5
+       </div>
+       <p>
+        <s pid="36" sid="1">
+         These assembly dimensions exceeded BBM's 3.4 DPM quality target.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        • New Targets and Tolerance Adjustments
+       </div>
+       <p>
+        <s pid="37" sid="1">
+         For stamping dimensions not meeting their process capability requirements but also not affecting their final assembly, we simply recommend new target dimensions of -0.78 for BS_1, 0.2 for BS_5, 0.72 for BS_10, and -0.15 for B_10.
+        </s>
+        <s pid="37" sid="2">
+         We also recommend new tolerances of +/- 1.06 for BS_1 and +/- 0.81 for BS_10.
+        </s>
+        <s pid="37" sid="3">
+         We widened these tolerances by expanding the USL and LSL to encompass a 4.5 sigma spread (=3.4 DPM) and shifted the target to the component means to re-zero the dimensions at their observed means.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       5.0 Control
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        Based on our analysis, the BBM team recommends the following procedures in order to control the process improvements and maintain target -level efficiency.
+       </s>
+       <s pid="38" sid="2">
+        Since assembly dimensions 1, 2, 4 and 5 have been exceeding BBM target-level prior to BBM team's analysis, a successive check system should be implemented or audits should be performed periodically to assure the quality of parts has remained consistent.
+       </s>
+       <s pid="38" sid="3">
+        For dimension 3, the team would apply the 100% inspection control method to accurately identify each defect and determine the reasons for each defect.
+       </s>
+       <s pid="38" sid="4">
+        According to this data, the appropriate improvement technique can be implemented and the control procedure can be changes as necessary.
+       </s>
+       <s pid="38" sid="5">
+        Moreover for dimension 9 and 10, BBM team recommends SPC charts or audits to track the performance of the assembly process and to determine whether the improvements due to new clamp location are significant.
+       </s>
+       <s pid="38" sid="6">
+        Furthermore, to decrease the number of defective incoming parts for assembly 7 and 8, develop a plan to control the incoming material from each supplier and conduct supplier quality reviews to keep track of process efficiency.
+       </s>
+       <s pid="38" sid="7">
+        Another suggested control measure is standardizing process procedures and training operators so that a defect or out of control part is recognized at the time of occurrence to prevent redundant defects.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

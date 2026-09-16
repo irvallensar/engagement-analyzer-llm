@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs/Ms Ryan,
+      </p>
+      <p>
+       I am writing
+       <ns type="MT">
+       </ns>
+       you because I would like to
+       <ns type="RV">
+        <i>
+         answer
+        </i>
+       </ns>
+       the information that you ask for.
+      </p>
+      <p>
+       Firstly, I would like to travel there in July because it is the only month that I have free
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my job. It will be impossible
+       <ns type="MT">
+       </ns>
+       another
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           choise
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , but if you have any problem you will be able to advise me, although I prefer to go there in July because I think
+       <ns type="MA">
+       </ns>
+       is the best month to travel
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       the weather is nicer and warmer than in other seasons.
+      </p>
+      <p>
+       Secondly, my
+       <ns type="S">
+        <i>
+         choise
+        </i>
+       </ns>
+       is the accommodation in tents
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think it could be more interesting
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I could enjoy my time with other people playing, eating and talking outside
+       <ns type="RP">
+        <i>
+         , in
+        </i>
+       </ns>
+       my opinion if I choose the
+       <ns type="FN">
+        <i>
+         log cabins
+        </i>
+       </ns>
+       it will be like
+       <ns type="FV">
+        <i>
+         be
+        </i>
+       </ns>
+       at home.
+      </p>
+      <p>
+       About the two activities I need to select, I think the best
+       <ns type="AGA">
+        <i>
+         one
+        </i>
+       </ns>
+       are swimming and painting. I choose swimming because I really love doing it
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I used to swim every day in the sea a few years ago
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I felt really healthy. My other
+       <ns type="S">
+        <i>
+         choise
+        </i>
+       </ns>
+       is painting
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         paint
+        </i>
+       </ns>
+       since I was ten years old
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I used to go to special classes and I don't mind if you need me to help in the class.
+      </p>
+      <p>
+       <ns type="RQ">
+        <i>
+         A
+        </i>
+       </ns>
+       thing I would like
+       <ns type="FV">
+        <i>
+         ask
+        </i>
+       </ns>
+       is if I need special clothes
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I don't know what kind of camp I am going
+       <ns type="MT">
+       </ns>
+       . It should be a dry place, I think
+       <ns type="MP">
+       </ns>
+       but I would like to make sure
+       <ns type="U">
+        <i>
+         my guess
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         <ns type="RP">
+          <i>
+           , as well
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , I would like to know how much money I will need, because
+       <ns type="CE">
+        it is also all paid
+       </ns>
+       I don't know if there will be
+       <ns type="RQ">
+        <i>
+         some
+        </i>
+       </ns>
+       gift shops.
+      </p>
+      <p>
+       I look forward
+       <ns type="MT">
+       </ns>
+       hearing from you.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Patricia Reyes
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs/Ms Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing  you because I would like to answer the information that you ask for.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I would like to travel there in July because it is the only month that I have free in my job.
+       </s>
+       <s pid="3" sid="2">
+        It will be impossible  another choise, but if you have any problem you will be able to advise me, although I prefer to go there in July because I think  is the best month to travel, the weather is nicer and warmer than in other seasons.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, my choise is the accommodation in tents, I think it could be more interesting, I could enjoy my time with other people playing, eating and talking outside, in my opinion if I choose the log cabins it will be like be at home.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        About the two activities I need to select, I think the best one are swimming and painting.
+       </s>
+       <s pid="5" sid="2">
+        I choose swimming because I really love doing it, I used to swim every day in the sea a few years ago, I felt really healthy.
+       </s>
+       <s pid="5" sid="3">
+        My other choise is painting, I paint since I was ten years old, I used to go to special classes and I don't mind if you need me to help in the class.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        A thing I would like ask is if I need special clothes, I don't know what kind of camp I am going .
+       </s>
+       <s pid="6" sid="2">
+        It should be a dry place, I think but I would like to make sure my guess, as well, I would like to know how much money I will need, because it is also all paid I don't know if there will be some gift shops.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward  hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Patricia Reyes
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       - Shopping is not always enjoyable -
+      </p>
+      <p>
+       The most popular "sport" that
+       <ns type="R">
+        <i>
+         all the people
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         do
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         it's
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         obiously
+        </i>
+       </ns>
+       shopping. This is the thing that
+       <ns type="RV">
+        <ns type="AGV">
+         <i>
+          move
+         </i>
+        </ns>
+       </ns>
+       <ns type="FN">
+        <i>
+         hundred
+        </i>
+       </ns>
+       and hundreds of people in the world and we don't have to go to Japan
+       <ns type="MP">
+       </ns>
+       we have the
+       <ns type="CN">
+        <i>
+         evidences
+        </i>
+       </ns>
+       here in England. But the question is: Is shopping always enjoyable?
+      </p>
+      <p>
+       Some people think that going shopping can keep you away from depression. You can enjoy your time spending all the money you have, buying clothes,
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           jewells
+          </i>
+         </ns>
+        </i>
+       </ns>
+       ,
+       <ns type="CN">
+        <i>
+         furnitures
+        </i>
+       </ns>
+       , etc. and you could have a
+       <ns type="L">
+        <i>
+         real
+        </i>
+       </ns>
+       great time.
+      </p>
+      <p>
+       But other people don't think like this
+       <ns type="RP">
+        <i>
+         , for
+        </i>
+       </ns>
+       example, there is a case of a woman who was shopping with her little daughter and without
+       <ns type="S">
+        <i>
+         inttetion
+        </i>
+       </ns>
+       the girl
+       <ns type="TV">
+        <i>
+         get
+        </i>
+       </ns>
+       lost. The mother was
+       <ns type="DJ">
+        <i>
+         shock
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , she
+        </i>
+       </ns>
+       didn't know how to look for her because all the shops and streets were full of people going
+       <ns type="CL">
+        <i>
+         out and in
+        </i>
+       </ns>
+       <ns type="R">
+        the places
+       </ns>
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       was
+       <ns type="MD">
+       </ns>
+       nightmare but
+       <ns type="S">
+        <i>
+         fortunaly
+        </i>
+       </ns>
+       the police found her.
+      </p>
+      <p>
+       Sometimes going shopping can be stressful. Can you
+       <ns type="S">
+        <i>
+         imagen
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         be
+        </i>
+       </ns>
+       in Japan or China and
+       <ns type="FV">
+        <i>
+         have
+        </i>
+       </ns>
+       to go to the shops? I don't
+       <ns type="SX">
+        <i>
+         thing
+        </i>
+       </ns>
+       that
+       <ns type="TV">
+        <i>
+         I'll
+        </i>
+       </ns>
+       enjoy it, all the people
+       <ns type="S">
+        <i>
+         knicking
+        </i>
+       </ns>
+       you, you can't walk properly or buy
+       <ns type="RA">
+        <i>
+         something
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , and
+        </i>
+       </ns>
+       also there are
+       <ns type="MD">
+       </ns>
+       lot of cases which show how people can be in shops
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I mean that some people can fight to get something. Where
+       <ns type="W">
+        <i>
+         we are
+        </i>
+       </ns>
+       going!!
+      </p>
+      <p>
+       In my opinion shopping is not
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       thing that I would like to do in my free time. I think that it's too stressful,
+       <ns type="M">
+       </ns>
+       too many people in the shops, so I prefer
+       <ns type="FV">
+        <i>
+         spend
+        </i>
+       </ns>
+       my free time
+       <ns type="UV">
+        <i>
+         go
+        </i>
+       </ns>
+       swimming or painting and I go shopping
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the days
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       usually there are not too many people.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        - Shopping is not always enjoyable -
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The most popular "sport" that all the people do it's obiously shopping.
+       </s>
+       <s pid="2" sid="2">
+        This is the thing that move hundred and hundreds of people in the world and we don't have to go to Japan we have the evidences here in England.
+       </s>
+       <s pid="2" sid="3">
+        But the question is:
+       </s>
+       <s pid="2" sid="4">
+        Is shopping always enjoyable?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Some people think that going shopping can keep you away from depression.
+       </s>
+       <s pid="3" sid="2">
+        You can enjoy your time spending all the money you have, buying clothes, jewells, furnitures, etc. and you could have a real great time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But other people don't think like this, for example, there is a case of a woman who was shopping with her little daughter and without inttetion the girl get lost.
+       </s>
+       <s pid="4" sid="2">
+        The mother was shock, she didn't know how to look for her because all the shops and streets were full of people going out and in the places, it was  nightmare but fortunaly the police found her.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Sometimes going shopping can be stressful.
+       </s>
+       <s pid="5" sid="2">
+        Can you imagen be in Japan or China and have to go to the shops?
+       </s>
+       <s pid="5" sid="3">
+        I don't thing that I'll enjoy it, all the people knicking you, you can't walk properly or buy something, and also there are  lot of cases which show how people can be in shops, I mean that some people can fight to get something.
+       </s>
+       <s pid="5" sid="4">
+        Where we are going!!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In my opinion shopping is not the thing that I would like to do in my free time.
+       </s>
+       <s pid="6" sid="2">
+        I think that it's too stressful,  too many people in the shops, so I prefer spend my free time go swimming or painting and I go shopping in the days that usually there are not too many people.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

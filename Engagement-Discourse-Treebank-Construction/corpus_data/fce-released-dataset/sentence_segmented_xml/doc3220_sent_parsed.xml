@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     29.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       12 June 2001
+      </p>
+      <p>
+       Dear Mrs Smith
+      </p>
+      <p>
+       Thank you for your letter dated 8 June 2001. I hope I can give you the information you need
+       <ns type="RP">
+        <i>
+         . So
+        </i>
+       </ns>
+       the conference will be a great experience
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       you and your group.
+      </p>
+      <p>
+       Your group will stay at the Palace Hotel. The Palace Hotel is situated in the town centre next to the railway station. A free
+       <ns type="S">
+        <i>
+         <ns type="UP">
+          <i>
+           shuttel-bus
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         gets
+        </i>
+       </ns>
+       you to the
+       <ns type="SA">
+        <i>
+         <ns type="UP">
+          <i>
+           conference-center
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . The bus
+       <ns type="IV">
+        <i>
+         leavs
+        </i>
+       </ns>
+       at 8 a.m.
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the front entrance of the hotel.
+      </p>
+      <p>
+       The end-of-conference party is
+       <ns type="UV">
+        <i>
+         playing
+        </i>
+       </ns>
+       in a
+       <ns type="RN">
+        <i>
+         rent
+        </i>
+       </ns>
+       and in the
+       <ns type="FN">
+        <i>
+         <ns type="RP">
+          <i>
+           greenground
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . There will be a barbecue, a place to dance and
+       <ns type="RA">
+        <i>
+         many
+        </i>
+       </ns>
+       more. It
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       a
+       <ns type="S">
+        <i>
+         surprice
+        </i>
+       </ns>
+       ! I suggest
+       <ns type="AS">
+        <i>
+         to wear
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         leisure-clothes
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the party.
+      </p>
+      <p>
+       <ns type="MT">
+        <i>
+         The
+        </i>
+       </ns>
+       last afternoon you could go on a
+       <ns type="UP">
+        <i>
+         city-tour
+        </i>
+       </ns>
+       ,
+       <ns type="S">
+        <i>
+         visite
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         museum
+        </i>
+       </ns>
+       of Fine Arts
+       <ns type="MP">
+       </ns>
+       or enjoy the beautiful flower garden next to the
+       <ns type="RJ">
+        <i>
+         common
+        </i>
+       </ns>
+       park.
+      </p>
+      <p>
+       I hope I
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           could
+          </i>
+         </ns>
+        </i>
+       </ns>
+       give you some ideas. I look forward to seeing you.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        12 June 2001
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Mrs Smith
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Thank you for your letter dated 8 June 2001.
+       </s>
+       <s pid="3" sid="2">
+        I hope I can give you the information you need.
+       </s>
+       <s pid="3" sid="3">
+        So the conference will be a great experience to you and your group.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Your group will stay at the Palace Hotel.
+       </s>
+       <s pid="4" sid="2">
+        The Palace Hotel is situated in the town centre next to the railway station.
+       </s>
+       <s pid="4" sid="3">
+        A free shuttel-bus gets you to the conference-center.
+       </s>
+       <s pid="4" sid="4">
+        The bus leavs at 8 a.m. at the front entrance of the hotel.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The end-of-conference party is playing in a rent and in the greenground.
+       </s>
+       <s pid="5" sid="2">
+        There will be a barbecue, a place to dance and many more.
+       </s>
+       <s pid="5" sid="3">
+        It is a surprice!
+       </s>
+       <s pid="5" sid="4">
+        I suggest to wear leisure-clothes to the party.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The last afternoon you could go on a city-tour, visite the museum of Fine Arts or enjoy the beautiful flower garden next to the common park.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I hope I could give you some ideas.
+       </s>
+       <s pid="7" sid="2">
+        I look forward to seeing you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       What would life be without the phone?
+      </p>
+      <p>
+       Have you ever thought about a world without
+       <ns type="MD">
+       </ns>
+       phone?
+       <ns type="AS">
+        <i>
+         How was it
+        </i>
+       </ns>
+       in the
+       <ns type="MP">
+        <i>
+         18
+        </i>
+       </ns>
+       century with no
+       <ns type="RN">
+        <i>
+         opportunity
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to communicate
+        </i>
+       </ns>
+       by phone
+       <ns type="MP">
+       </ns>
+       and
+       <ns type="AS">
+        <i>
+         how would it be
+        </i>
+       </ns>
+       now?
+      </p>
+      <p>
+       I
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       imagine how our life would be. We
+       <ns type="TV">
+        <i>
+         are living
+        </i>
+       </ns>
+       in a busy world. In the business world you use the phone all the time to speak with your clients, to make appointments, to order an article
+       <ns type="DY">
+        <i>
+         e.c.
+        </i>
+       </ns>
+       ;
+       <ns type="RY">
+        <i>
+         then
+        </i>
+       </ns>
+       , time is money!
+      </p>
+      <p>
+       How has the phone affected my own life? I think
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that is a good question to think about. I could not call my friends from
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       city and just say "hello". It would be difficult and
+       <ns type="TV">
+        <i>
+         take
+        </i>
+       </ns>
+       more time to make an appointment.
+      </p>
+      <p>
+       So, what
+       <ns type="TV">
+        <i>
+         did the
+         <ns type="UP">
+          <i>
+           phone-revolution
+          </i>
+         </ns>
+        </i>
+       </ns>
+       for us? It saves
+       <ns type="MA">
+       </ns>
+       time.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        What would life be without the phone?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Have you ever thought about a world without  phone?
+       </s>
+       <s pid="2" sid="2">
+        How was it in the 18 century with no opportunity  to communicate by phone and how would it be now?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I can not imagine how our life would be.
+       </s>
+       <s pid="3" sid="2">
+        We are living in a busy world.
+       </s>
+       <s pid="3" sid="3">
+        In the business world you use the phone all the time to speak with your clients, to make appointments, to order an article e.c.; then, time is money!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        How has the phone affected my own life?
+       </s>
+       <s pid="4" sid="2">
+        I think, that is a good question to think about.
+       </s>
+       <s pid="4" sid="3">
+        I could not call my friends from an other city and just say "hello".
+       </s>
+       <s pid="4" sid="4">
+        It would be difficult and take more time to make an appointment.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        So, what did the phone-revolution for us?
+       </s>
+       <s pid="5" sid="2">
+        It saves  time.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

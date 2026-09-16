@@ -1,0 +1,484 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Protecting the Endangered Mount Graham Red Squirrel
+     </div>
+     <div class="abstract">
+      Abstract
+      <p>
+       The Mount Graham red squirrel is found only in the upper elevations of the Piñaleno Mountains in Arizona.  The squirrel has been threatened for decades by habitat loss and is currently on the endangered species list.  This paper examines the life history characteristics of the Mount Graham red squirrel and studies age-specific survival rates and fertility through a Leslie Matrix analysis.  It is found that the Mount Graham red squirrel’s low juvenile survival rates make it especially vulnerable to habitat loss.  Juvenile survival primarily depends on surviving through the winter, but juveniles must have access to an appropriate forest habitat for food and food storage in order to achieve this.  If they do not survive the winter, they are not able to reproduce and thus suffer a population decline.  Several management strategies could be implemented to address this problem including stricter habitat protection, “undeveloping” prior developments through land acquisition, and replanting spruce-fir and mixed conifer trees.  In addition, research regarding the genetic diversity of the Mount Graham red squirrel could help in developing an appropriate management plan.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The Mount Graham red squirrel ( Tamiasciurus hudsonicus grahamensis ) is one of twenty-five subspecies of North American red squirrels.
+       </s>
+       <s pid="1" sid="2">
+        The Mount Graham red squirrel separated from other subspecies about 10,000 years ago.
+       </s>
+       <s pid="1" sid="3">
+        Studies have shown that it is genetically different from other red squirrel subspecies in North America.
+       </s>
+       <s pid="1" sid="4">
+        The Mount Graham red squirrel is only found on the Piñaleno Mountains in southeastern Arizona.
+       </s>
+       <s pid="1" sid="5">
+        As of present, the squirrels are known to occupy mixed conifer and spruce-fir habitat zones on the mountains.
+       </s>
+       <s pid="1" sid="6">
+        More specifically, they only inhabit mountain zones from 8,700 feet and up (Mount 2006).
+       </s>
+       <s pid="1" sid="7">
+        Because of this limited habitat range, the Mount Graham red squirrel has a relatively long history of susceptibility to environmental variability.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        Figure 1. Mount Graham Red Squirrel Habitat (Mount Graham 2001)
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        The Mount Graham red squirrel has been a conservation topic for several decades.
+       </s>
+       <s pid="3" sid="2">
+        Believed to be extinct in the 1950s, it was again sighted in the 1970s and added to the Federal Endangered Species list in 1987.
+       </s>
+       <s pid="3" sid="3">
+        There is no known data regarding the population of the squirrels prior to the mid 1950s.
+       </s>
+       <s pid="3" sid="4">
+        In the late 1980s, biologists believed that the squirrel could only occupy spruce-fir habitats in high elevations on the Piñaleno Mountains (see Figure 1).
+       </s>
+       <s pid="3" sid="5">
+        The U.S. Fish and Wildlife service assigned these higher areas as Mount Graham red squirrel refugium in 1988.
+       </s>
+       <s pid="3" sid="6">
+        The refugium requires a permit for people to enter the area.
+       </s>
+       <s pid="3" sid="7">
+        More recent research has shown that the Mount Graham red squirrels also occupy slightly low elevations.
+       </s>
+       <s pid="3" sid="8">
+        This raises questions as to the effectiveness of the refugium and the need for possibly expanding its boundaries (Mount 2006).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        Figure 2. Population survey data of the Mount Graham Red Squirrel (Arizona Game 2007).
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        Currently, the Mount Graham red squirrel habitat covers approximately 6,460 hectares of Piñaleno Mountain upper elevations.
+       </s>
+       <s pid="5" sid="2">
+        Some biologists believe that competition with the introduced Abert Squirrel has resulted in some of the Mount Graham red squirrel’s population decline.
+       </s>
+       <s pid="5" sid="3">
+        In addition, the loss of habitat due to the development of a university observatory, roads and other facilities are believed to have impacted the species population as well (Arizona Game 2003).
+       </s>
+       <s pid="5" sid="4">
+        Previous logging throughout the 1800s and 1900s also contributed to substantial habitat loss (USDA Forest 2001).
+       </s>
+       <s pid="5" sid="5">
+        The 2007 Arizona Game and Fish Department survey data estimates their population at approximately 299 individuals as seen in Figure 2.
+       </s>
+       <s pid="5" sid="6">
+        Data is collected by studying the activity rate at known areas where the squirrels store their cones (also called middens).
+       </s>
+       <s pid="5" sid="7">
+        The population data collected from 1991 show a sharp rise and decline in population between 1998 and 2000.
+       </s>
+       <s pid="5" sid="8">
+        This is believed to be caused by a range of factors threatening their habitat such as drought, poor cone crops, fire, and insects.
+       </s>
+       <s pid="5" sid="9">
+        After this point, their population appears to oscillate around 250 individuals (Arizona Game 2007).
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Description of Life History Traits
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Since the population size and habitat range of the Mount Graham red squirrel is so restricted, research is somewhat limited on its life history traits.
+       </s>
+       <s pid="6" sid="2">
+        Despite this, several physical and reproductive characteristics are known (Table 1).
+       </s>
+       <s pid="6" sid="3">
+        The squirrel’s average length is 13.3 in and its average weight is 8.3 oz.
+       </s>
+       <s pid="6" sid="4">
+        Studies estimate that their breeding season lasts from January to April.
+       </s>
+       <s pid="6" sid="5">
+        Mount Graham red squirrels use leaves and twigs to build nests in snags, hollows of living trees, logs, underground, or in the branches of trees.
+       </s>
+       <s pid="6" sid="6">
+        Sometimes they may even use pre-existing tree holes built by other animals like woodpeckers.
+       </s>
+       <s pid="6" sid="7">
+        Thus, squirrel reproduction is very dependent on the presence of trees or appropriate nest habitat (USDA Forest 2001).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        A female’s first reproduction occurs after her first winter.
+       </s>
+       <s pid="7" sid="2">
+        The proportion of yearling and adult squirrels that breed is not consistent on a year by year basis, but the adult females always reproduce at higher rates than the yearlings.
+       </s>
+       <s pid="7" sid="3">
+        The squirrel’s gestation lasts from 35-40 days.
+       </s>
+       <s pid="7" sid="4">
+        It is believed that the Mount Graham red squirrels have two litters per year.
+       </s>
+       <s pid="7" sid="5">
+        Each litter usually consists of three young.
+       </s>
+       <s pid="7" sid="6">
+        Once born, the squirrels are nursed in the nest for 6-8 weeks.
+       </s>
+       <s pid="7" sid="7">
+        Only the mother gives parental care and she begins to wean the young at 7-11 weeks (USDA Forest 2001).
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        The Mount Graham red squirrels also exemplify territorial behavior.
+       </s>
+       <s pid="8" sid="2">
+        They establish territory by using piles of their meal "leftovers" (cone debris) to build middens around their nest.
+       </s>
+       <s pid="8" sid="3">
+        These middens are used for storing food.
+       </s>
+       <s pid="8" sid="4">
+        Generally, middens are located on or around trees or logs that also function as the nest and protection from predators.
+       </s>
+       <s pid="8" sid="5">
+        Middens are almost always occupied by only one squirrel.
+       </s>
+       <s pid="8" sid="6">
+        Even after breeding, the females force the males out of their midden/nest area (USDA Forest 2001).
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        The juvenile mortality for Mount Graham red squirrels is about 67%.
+       </s>
+       <s pid="9" sid="2">
+        This generally occurs due to the harsh effects of winter between weaning and first reproduction.
+       </s>
+       <s pid="9" sid="3">
+        On average, Mount Graham red squirrels only live to age two to three.
+       </s>
+       <s pid="9" sid="4">
+        Survival rates are believed to vary according to the availability of closed cones which are their winter food source (US Fish 1993).
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Methods and Results
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        Examining life history is an important part of establishing good management plans for threatened or endangered species.
+       </s>
+       <s pid="10" sid="2">
+        In order to examine the life history of the Mount Graham red squirrel, a Leslie Matrix was assembled to study age specific survival rate and fertility.
+       </s>
+       <s pid="10" sid="3">
+        Data was used from previous research determining the red squirrel’s demographic parameters (Buenau and Gerber 2003).
+       </s>
+       <s pid="10" sid="4">
+        The average age-specific survival rates and fertility for juveniles, squirrels in year two, and squirrels in year three or higher were used to construct the Leslie Matrix (Figure 3).
+       </s>
+       <s pid="10" sid="5">
+        This information was then used to develop a life-cycle diagram (Figure 4).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        Figure 3. Leslie Matrix of Red Squirrel Population
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        Figure 4. Life-Cycle Diagram of Red Squirrel Population
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        The Leslie Matrix was analyzed in Microsoft Excel through the PopTools Matrix Tools Basic Analysis.
+       </s>
+       <s pid="13" sid="2">
+        This software allowed for the calculation of valuable life history information.
+       </s>
+       <s pid="13" sid="3">
+        The largest Eigenvalue, 0.61, provided an estimation of , or the per capita geometric rate of increase.
+       </s>
+       <s pid="13" sid="4">
+        In addition, the per capita exponential growth rate, r, was calculated to equal -0.48.
+       </s>
+       <s pid="13" sid="5">
+        Thus the growth rate was negative for the red squirrels.
+       </s>
+       <s pid="13" sid="6">
+        The net reproductive rate, , was 0.18.
+       </s>
+       <s pid="13" sid="7">
+        The Eigenvector demonstrated that a stable age structure for red squirrels would consist of 38% year zero, 21% juveniles, 19% year two, and 22.4% year three and up.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Discussion
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        The analysis of the Mount Graham red squirrel life history reveals information that could help shape effective conservation management.
+       </s>
+       <s pid="14" sid="2">
+        As Figures 3 and 4 indicate, the Mount Graham red squirrels exhibit higher fertility later in life.
+       </s>
+       <s pid="14" sid="3">
+        Thus it is important for them to be able to survive past juvenile stages in order to maximize their reproduction.
+       </s>
+       <s pid="14" sid="4">
+        Unfortunately, as the figures indicate, juvenile squirrels have the lowest age-specific survival rates at 0.33 while older squirrels have a much higher survival rate, 0.73.
+       </s>
+       <s pid="14" sid="5">
+        The primary reason for this low juvenile survival rate is the impact of wintering (US Fish 1993).
+       </s>
+       <s pid="14" sid="6">
+        If juvenile squirrels have not acquired sufficient winter food storage or physical strength to withstand harsh winter weather, they may not survive the severity of the season.
+       </s>
+       <s pid="14" sid="7">
+        Thus they will not survive to reproduce later in life.
+       </s>
+       <s pid="14" sid="8">
+        Management can play a role in helping juvenile survivorship by preventing the deforestation of trees or the destruction of habitat where Mount Graham red squirrels build middens to store food for the winter.
+       </s>
+       <s pid="14" sid="9">
+        Since biologists now know that the squirrels occupy both mixed conifer and spruce fir zones on the Piñaleno Mountains, managers could enforce specific limitations in these areas.
+       </s>
+       <s pid="14" sid="10">
+        Although there are already permit restrictions in the spruce fir zones, it could be very important to expand those restrictions to mixed conifer zones within the elevation where the Mount Graham red squirrel is known to reside.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        The basic matrix analysis also provides information relevant to management.
+       </s>
+       <s pid="15" sid="2">
+        Since the per capita geometric rate of increase is less than one, it the model indicates that population is decreasing.
+       </s>
+       <s pid="15" sid="3">
+        The negative per capita exponential growth rate also suggests this.
+       </s>
+       <s pid="15" sid="4">
+        While the fact that the population is decreasing may not provide much guidance in itself to managers, it does offer evidence that protecting this subspecies should be a priority since the population is clearly decreasing.
+       </s>
+       <s pid="15" sid="5">
+        The matrix analysis also provides the net reproductive rate.
+       </s>
+       <s pid="15" sid="6">
+        This rate indicates that an estimated 0.18 daughters are born to each female.
+       </s>
+       <s pid="15" sid="7">
+        This is a very low number considering that females have an average three young per litter and also have a relatively short parental care period.
+       </s>
+       <s pid="15" sid="8">
+        This can again be attributed to habitat loss.
+       </s>
+       <s pid="15" sid="9">
+        In order for Mount Graham red squirrels to mate, they need a nesting site.
+       </s>
+       <s pid="15" sid="10">
+        If their habitat is disrupted or destroyed for development, the squirrels cannot easily create nesting sites.
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        Finally, the analysis offers a look the age distribution within a stable age structure for the Mount Graham red squirrel.
+       </s>
+       <s pid="16" sid="2">
+        The structure suggests that the highest percentage of squirrels should be from zero years to juvenile.
+       </s>
+       <s pid="16" sid="3">
+        Since a large number of these young squirrels do not survive the winter, more young squirrels are needed so enough survive to be able to reproduce in the spring.
+       </s>
+       <s pid="16" sid="4">
+        Although research sources with information regarding the Mount Graham red squirrel’s current age distribution could not be located, the stable age structure information could still be valuable to conservation managers.
+       </s>
+       <s pid="16" sid="5">
+        Knowing that a stable age structure would have more young squirrels than other ages informs managers that they need to find ways to protect young squirrels.
+       </s>
+       <s pid="16" sid="6">
+        Since the most important threat to the young is wintering, managers could ensure that plenty of closed cones (the squirrel’s winter food source) are available for young squirrels to collect and store.
+       </s>
+       <s pid="16" sid="7">
+        They could also ensure that middens, where the squirrels store their winter food source, are not disturbed by humans.
+       </s>
+       <s pid="16" sid="8">
+        In addition, managers could purchase property that has already been developed and replant the native trees that red squirrels rely on for their habitat.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Opinion
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        While it may still be possible to successfully carry out a recovery plan for the Mount Graham red squirrels, I would think the impact of such a population decline would not leave them unaffected.
+       </s>
+       <s pid="17" sid="2">
+        More specifically, it could be helpful to conduct research regarding the remaining genetic diversity within the Mount Graham red squirrel gene pool.
+       </s>
+       <s pid="17" sid="3">
+        I would imagine that much of it has been lost since their population is now down to only a few hundred squirrels.
+       </s>
+       <s pid="17" sid="4">
+        This research could also be helpful in determining if there are any genetic traits that make the Mount Graham red squirrel more vulnerable to habitat destruction than other squirrels.
+       </s>
+       <s pid="17" sid="5">
+        It might then be possible to genetically engineer these traits so as to enhance the survival of the Mount Graham red squirrel.
+       </s>
+       <s pid="17" sid="6">
+        Without accounting for genetic diversity, a recovered population of squirrels could be even more susceptible to extinction due to their genetic homogeneity.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusion
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        Habitat loss results in detrimental biodiversity threats around the world.
+       </s>
+       <s pid="18" sid="2">
+        This is no different in the case of the Mount Graham red squirrel.
+       </s>
+       <s pid="18" sid="3">
+        Because of its limited habitat range, it is very dependent on a safe and undisturbed habitat.
+       </s>
+       <s pid="18" sid="4">
+        Logging, road construction, recreation, and other human activities have stressed the squirrel’s already limited habitat.
+       </s>
+       <s pid="18" sid="5">
+        By cutting down trees and building roads, humans are removing the nesting sites, food sources, and habitat corridors that the Mount Graham red squirrel relies upon for survival.
+       </s>
+       <s pid="18" sid="6">
+        The life history of the red squirrel indicates that a suitable habitat is especially important for juvenile squirrels.
+       </s>
+       <s pid="18" sid="7">
+        They are the age group most vulnerable to wintering, and need to be able to find food and storage areas for surviving the winter.
+       </s>
+       <s pid="18" sid="8">
+        If low proportions of juveniles survive, then there will be less left to reproduce, and the population decreases.
+       </s>
+       <s pid="18" sid="9">
+        This seems to be the current situation as the population is reduced to no more than several hundred individuals.
+       </s>
+       <s pid="18" sid="10">
+        In order to prevent their ultimate extinction, strict habitat protection policies need to be enacted and enforced.
+       </s>
+       <s pid="18" sid="11">
+        In addition, research regarding the genetic diversity left in the Mount Graham red squirrel population would help develop an even better understanding of the severity of their situation.
+       </s>
+       <s pid="18" sid="12">
+        Although past habitat destruction has caused tremendous problems for the Mount Graham red squirrel, there is still hope in the species recovery.
+       </s>
+       <s pid="18" sid="13">
+        Previously thought to be extinct, the Mount Graham red squirrel has proved it has some resilience in surviving such extensive habitat damage.
+       </s>
+       <s pid="18" sid="14">
+        If managers work to protect the habitat and encourage the growth of the Mount Graham red squirrel, it may be possible for the species to recover.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Literature Cited
+      </div>
+      <ul id="N10179">
+       <li id="N1017A">
+        Arizona Game and Fish Department. 2003. Heritage Data Management System. &lt;http://www. azgfd.gov/w_c/edits/documents/Tamihugr.di.pdf&gt;. Accessed 2008 Oct. 25.
+       </li>
+       <li id="N1017C">
+        Arizona Game and Fish Department. 2007. Mount Graham Red Squirrel Fall 2007 Count Announced.  &lt;http://www.azgfd.gov/artman/publish/article_632.shtml&gt;. Accessed 2008 Oct. 25.
+       </li>
+       <li id="N1017E">
+        Buenau, K, Gerber, L. 2004.  Developing recovery and monitoring strategies for the endemic Mount Graham red squirrels.  Animal Conservation. 7: 17-22.
+       </li>
+       <li id="N10180">
+        Mount Graham Biology Program, University of Arizona. 2006. Mount Graham Red Squirrel. &lt;http://www.ag.arizona.edu/research/redsquirrel/&gt;. Accessed 2008 Oct. 25.
+       </li>
+       <li id="N10182">
+        Mount Graham Internation Observatory.  2001. The Mount Graham Red Squirrel.  &lt; http://medusa.as.arizona.edu/graham/envir.html&gt;.  Accessed 2008 Oct. 25.
+       </li>
+       <li id="N10184">
+        US Fish and Wildlife Service. 1993.  Mount Graham Red Squirrel Recovery Plan.  &lt;http://www.fws.gov/southwest/es/arizona/Documents/RecoveryPlans/MtGraham RedSquirrel.pdf&gt;. Accessed 2008 Oct. 25.
+       </li>
+       <li id="N10186">
+        USDA Forest Service. 2001. Biological Assessment.  &lt;http://www.fs.fed.us/r3/wui/ba/ba_ shell.php?list=70&gt;.  Accessed 2008 Oct. 25.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

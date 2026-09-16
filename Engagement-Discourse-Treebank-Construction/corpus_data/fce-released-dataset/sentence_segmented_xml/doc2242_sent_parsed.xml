@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Turkish
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+       <ns type="RP">
+        <i>
+         ;
+        </i>
+       </ns>
+      </p>
+      <p>
+       Yesterday I went to the
+       <ns type="UN">
+        <i>
+         theatre
+        </i>
+       </ns>
+       play called "Over the Rainbow"
+       <ns type="MP">
+       </ns>
+       <ns type="MT">
+       </ns>
+       which I saw the advertisement in
+       <ns type="MP">
+        <i>
+         todays
+        </i>
+       </ns>
+       Guardian. I want to tell you that I am very
+       <ns type="S">
+        <i>
+         dissapointed
+        </i>
+       </ns>
+       about the play.
+      </p>
+      <p>
+       In the
+       <ns type="S">
+        <i>
+         advirtisement
+        </i>
+       </ns>
+       it
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           is written
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that Danny Brook was in the starring
+       <ns type="MN">
+       </ns>
+       . However I didn't see him all
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       night. There was another actor instead of him. And also it should
+       <ns type="RV">
+        <i>
+         be
+        </i>
+       </ns>
+       started at 19.30, as I saw in the
+       <ns type="S">
+        <i>
+         advirtisement
+        </i>
+       </ns>
+       ,
+       <ns type="MC">
+       </ns>
+       <ns type="RA">
+        <i>
+         which
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         has started
+        </i>
+       </ns>
+       at 20.15! And
+       <ns type="RY">
+        so far
+       </ns>
+       there
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       any discounts available which
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           is
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         written
+        </i>
+       </ns>
+       to be "available" in the
+       <ns type="S">
+        <i>
+         advirtisement
+        </i>
+       </ns>
+       . I went to the theatre restaurant after the show but it was closed because of the
+       <ns type="UP">
+        <i>
+         re-decoration
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         progress
+        </i>
+       </ns>
+       inside. You should have written it in the
+       <ns type="S">
+        <i>
+         advirtisement
+        </i>
+       </ns>
+       . And after all
+       <ns type="MA">
+       </ns>
+       <ns type="MP">
+       </ns>
+       no one can say that I had a perfect evening out!
+       <ns type="RY">
+        Absolutely
+       </ns>
+       it was very
+       <ns type="S">
+        <i>
+         dissapointing
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       so I want my money back.
+      </p>
+      <p>
+       I hope you understand
+       <ns type="UA">
+        <i>
+         me
+        </i>
+       </ns>
+       and
+       <ns type="TV">
+        <i>
+         correct
+        </i>
+       </ns>
+       your mistakes in the next
+       <ns type="S">
+        <i>
+         advirtisement
+        </i>
+       </ns>
+       and send me my money soon!
+      </p>
+      <p>
+       Yours
+       <ns type="RP">
+        <i>
+         Faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam;
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Yesterday
+       </s>
+       <s pid="2" sid="2">
+        I went to the theatre play called "Over the Rainbow"  which I saw the advertisement in todays Guardian.
+       </s>
+       <s pid="2" sid="3">
+        I want to tell you that I am very dissapointed about the play.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In the advirtisement it is written that Danny Brook was in the starring .
+       </s>
+       <s pid="3" sid="2">
+        However I didn't see him all the night.
+       </s>
+       <s pid="3" sid="3">
+        There was another actor instead of him.
+       </s>
+       <s pid="3" sid="4">
+        And also it should be started at 19.30, as I saw in the advirtisement,  which has started at 20.15!
+       </s>
+       <s pid="3" sid="5">
+        And so far there wasn't any discounts available which is written to be "available" in the advirtisement.
+       </s>
+       <s pid="3" sid="6">
+        I went to the theatre restaurant after the show but it was closed because of the re-decoration progress inside.
+       </s>
+       <s pid="3" sid="7">
+        You should have written it in the advirtisement.
+       </s>
+       <s pid="3" sid="8">
+        And after all  no one can say that I had a perfect evening out!
+       </s>
+       <s pid="3" sid="9">
+        Absolutely it was very dissapointing.
+       </s>
+       <s pid="3" sid="10">
+        so I want my money back.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I hope you understand me and correct your mistakes in the next advirtisement and send me my money soon!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours Faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Simple Solutions
+      </p>
+      <p>
+       It is over 50 years since the
+       <ns type="RN">
+        <i>
+         production
+        </i>
+       </ns>
+       of the computer and television. Our
+       <ns type="IN">
+        <i>
+         lifes
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         changed
+        </i>
+       </ns>
+       since then
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Today
+       <ns type="W">
+        <i>
+         every 5 out of
+        </i>
+       </ns>
+       10
+       <ns type="AGN">
+        <i>
+         pupil
+        </i>
+       </ns>
+       can use
+       <ns type="MD">
+       </ns>
+       computer
+       <ns type="RY">
+        <ns type="DY">
+         <i>
+          basicly
+         </i>
+        </ns>
+       </ns>
+       . And almost everybody has a television in their homes. These 2 devices make my life easier. I can't go out all the time or be with my friends to have fun. So I watch
+       <ns type="RP">
+        <i>
+         Tv
+        </i>
+       </ns>
+       at home instead of sitting in a chair looking out of a window. I play
+       <ns type="MT">
+       </ns>
+       <ns type="MD">
+       </ns>
+       computer more than watching
+       <ns type="RP">
+        <i>
+         Tv
+        </i>
+       </ns>
+       when I get bored.
+      </p>
+      <p>
+       The
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       is the world's largest communication system
+       <ns type="U">
+        <i>
+         ever made
+        </i>
+       </ns>
+       . I can do anything I want
+       <ns type="MP">
+       </ns>
+       such as buy
+       <ns type="RP">
+        <i>
+         Cd's
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       watch
+       <ns type="MD">
+       </ns>
+       film or even buy food. It is really
+       <ns type="DJ">
+        <i>
+         enjable
+        </i>
+       </ns>
+       when I chat with
+       <ns type="RN">
+        <i>
+         pupil
+        </i>
+       </ns>
+       .
+       <ns type="MD">
+       </ns>
+       Internet
+       <ns type="TV">
+        <i>
+         brought
+        </i>
+       </ns>
+       a new
+       <ns type="RN">
+        way
+       </ns>
+       to my
+       <ns type="DN">
+        <i>
+         live
+        </i>
+       </ns>
+       since I started to use it. It is easy and very useful. I can
+       <ns type="R">
+        reach any knowledge
+       </ns>
+       that I want to.
+       <ns type="S">
+        <i>
+         Techology
+        </i>
+       </ns>
+       is also important in
+       <ns type="RQ">
+        <i>
+         one
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         subject
+        </i>
+       </ns>
+       for me. Transportation. I
+       <ns type="RV">
+        <i>
+         can't
+        </i>
+       </ns>
+       have to walk to school
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       for 8 months
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Cars,
+       <ns type="IN">
+        <i>
+         busses
+        </i>
+       </ns>
+       and trains are very useful in daily life.
+      </p>
+      <p>
+       Lots of
+       <ns type="AGN">
+        <i>
+         thing
+        </i>
+       </ns>
+       would be hard and boring in my life
+       <ns type="MC">
+       </ns>
+       I was living in a different time than now. I can easily do what I want. Technology
+       <ns type="TV">
+        <i>
+         brought
+        </i>
+       </ns>
+       simple solutions to my life.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Simple Solutions
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It is over 50 years since the production of the computer and television.
+       </s>
+       <s pid="2" sid="2">
+        Our lifes changed since then
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Today every 5 out of 10 pupil can use  computer basicly.
+       </s>
+       <s pid="3" sid="2">
+        And almost everybody has a television in their homes.
+       </s>
+       <s pid="3" sid="3">
+        These 2 devices make my life easier.
+       </s>
+       <s pid="3" sid="4">
+        I can't go out all the time or be with my friends to have fun.
+       </s>
+       <s pid="3" sid="5">
+        So I watch
+       </s>
+       <s pid="3" sid="6">
+        Tv at home instead of sitting in a chair looking out of a window.
+       </s>
+       <s pid="3" sid="7">
+        I play   computer more than watching Tv when I get bored.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The internet is the world's largest communication system ever made.
+       </s>
+       <s pid="4" sid="2">
+        I can do anything I want such as buy Cd's watch  film or even buy food.
+       </s>
+       <s pid="4" sid="3">
+        It is really enjable when I chat with pupil.
+       </s>
+       <s pid="4" sid="4">
+        Internet brought a new way to my live since I started to use it.
+       </s>
+       <s pid="4" sid="5">
+        It is easy and very useful.
+       </s>
+       <s pid="4" sid="6">
+        I can reach any knowledge that I want to.
+       </s>
+       <s pid="4" sid="7">
+        Techology is also important in one subject for me.
+       </s>
+       <s pid="4" sid="8">
+        Transportation.
+       </s>
+       <s pid="4" sid="9">
+        I can't have to walk to school everyday for 8 months, Cars, busses and trains are very useful in daily life.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Lots of thing would be hard and boring in my life  I was living in a different time than now.
+       </s>
+       <s pid="5" sid="2">
+        I can easily do what I want.
+       </s>
+       <s pid="5" sid="3">
+        Technology brought simple solutions to my life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

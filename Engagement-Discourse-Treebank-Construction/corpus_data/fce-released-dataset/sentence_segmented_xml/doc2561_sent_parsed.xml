@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan,
+      </p>
+      <p>
+       I have just seen the letter this morning and I am very happy
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         win
+        </i>
+       </ns>
+       the competition. I believe I have the appropriate
+       <ns type="FN">
+        <i>
+         qualification
+        </i>
+       </ns>
+       to stay two weeks at camp California. It
+       <ns type="RV">
+        <i>
+         could
+        </i>
+       </ns>
+       be wonderful to see you as soon as possible.
+      </p>
+      <p>
+       First of all, I will be able to travel in July
+       <ns type="MY">
+       </ns>
+       because I have not finished school.
+       <ns type="UC">
+        <i>
+         <ns type="S">
+          <i>
+           Althoug
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="R">
+        I
+        <ns type="S">
+         <i>
+          wich
+         </i>
+        </ns>
+        that my accommodation at Camp California it must be
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       . I
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       experience
+       <ns type="R">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       last summer.
+      </p>
+      <p>
+       Secondly, I am very keen
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       sports
+       <ns type="RP">
+        <i>
+         . Specially
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       sailing and swimming. Anyway I am
+       <ns type="W">
+        <i>
+         hard working for the
+         <ns type="RN">
+          <i>
+           word
+          </i>
+         </ns>
+         cup at sailing
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Finally, I would like to know how
+       <ns type="W">
+        <i>
+         is the weather
+        </i>
+       </ns>
+       in July? Because I have to prepare all my
+       <ns type="L">
+        <i>
+         <ns type="S">
+          <i>
+           staf
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and I am sure it
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       be a great experience despite
+       <ns type="R">
+        the cost of living
+       </ns>
+       .
+      </p>
+      <p>
+       I look forward to hearing
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       you.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just seen the letter this morning and I am very happy for win the competition.
+       </s>
+       <s pid="2" sid="2">
+        I believe I have the appropriate qualification to stay two weeks at camp California.
+       </s>
+       <s pid="2" sid="3">
+        It could be wonderful to see you as soon as possible.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I will be able to travel in July  because I have not finished school.
+       </s>
+       <s pid="3" sid="2">
+        Althoug I wich that my accommodation at Camp California it must be in  tents.
+       </s>
+       <s pid="3" sid="3">
+        I get experience in the last summer.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, I am very keen at sports.
+       </s>
+       <s pid="4" sid="2">
+        Specially at sailing and swimming.
+       </s>
+       <s pid="4" sid="3">
+        Anyway I am hard working for the word cup at sailing.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, I would like to know how is the weather in July?
+       </s>
+       <s pid="5" sid="2">
+        Because I have to prepare all my staf and I am sure it would be a great experience despite the cost of living.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I look forward to hearing for you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Hi, how are you? I'm fine. Thank you for my
+       <ns type="UP">
+        <i>
+         birthday's
+        </i>
+       </ns>
+       present.
+      </p>
+      <p>
+       Sorry about my last
+       <ns type="RN">
+        <i>
+         mail
+        </i>
+       </ns>
+       but I've been
+       <ns type="TV">
+        <i>
+         traveled
+        </i>
+       </ns>
+       . I didn't tell you about my last job
+       <ns type="RP">
+        <i>
+         , you
+        </i>
+       </ns>
+       remember last
+       <ns type="RN">
+        <i>
+         moth
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         I've helped
+        </i>
+       </ns>
+       at a pop concert. Anyway, it was fantastic
+       <ns type="MP">
+        <i>
+         you
+        </i>
+       </ns>
+       can't imagine
+       <ns type="R">
+        <i>
+         how
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         was the concert
+        </i>
+       </ns>
+       like?
+      </p>
+      <p>
+       <ns type="UC">
+        <i>
+         However,
+        </i>
+       </ns>
+       I was responsible for
+       <ns type="FV">
+        <i>
+         check
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         in for
+        </i>
+       </ns>
+       the entrance
+       <ns type="MP">
+       </ns>
+       then I
+       <ns type="RV">
+        <i>
+         must
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         gave
+        </i>
+       </ns>
+       a
+       <ns type="SX">
+        <i>
+         sit
+        </i>
+       </ns>
+       to everyone. Anyway I
+       <ns type="S">
+        <i>
+         enjoed
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       so much. I haven't been to a concert before so the
+       <ns type="S">
+        <i>
+         atmosphier
+        </i>
+       </ns>
+       was really good. I
+       <ns type="RV">
+        <i>
+         shouldn't
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         forgot
+        </i>
+       </ns>
+       my experience in my
+       <ns type="MJ">
+       </ns>
+       life.
+      </p>
+      <p>
+       <ns type="TV">
+        <i>
+         Did
+        </i>
+       </ns>
+       you remember the computer
+       <ns type="RN">
+        <i>
+         curse
+        </i>
+       </ns>
+       that we took together
+       <ns type="MP">
+        <i>
+         it
+        </i>
+       </ns>
+       was very useful to
+       <ns type="S">
+        <i>
+         clasifay
+        </i>
+       </ns>
+       each person
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the concert. So keep in touch.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         A lot of love
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Hi, how are you?
+       </s>
+       <s pid="2" sid="2">
+        I'm fine.
+       </s>
+       <s pid="2" sid="3">
+        Thank you for my birthday's present.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Sorry about my last mail but I've been traveled.
+       </s>
+       <s pid="3" sid="2">
+        I didn't tell you about my last job, you remember last moth I've helped at a pop concert.
+       </s>
+       <s pid="3" sid="3">
+        Anyway, it was fantastic you can't imagine how was the concert like?
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        However, I was responsible for check in for the entrance then I must gave a sit to everyone.
+       </s>
+       <s pid="4" sid="2">
+        Anyway I enjoed  so much.
+       </s>
+       <s pid="4" sid="3">
+        I haven't been to a concert before so the atmosphier was really good.
+       </s>
+       <s pid="4" sid="4">
+        I shouldn't forgot my experience in my  life.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Did you remember the computer curse that we took together it was very useful to clasifay each person in the concert.
+       </s>
+       <s pid="5" sid="2">
+        So keep in touch.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        A lot of love,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

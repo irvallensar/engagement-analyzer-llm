@@ -1,0 +1,1446 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      2D STATIC BIOMECHANICAL COMPUTATIONS
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Assumption
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The worker who is 1.9 m tall and weighs 85 kg is standing with two legs and lifting the 20 kg box with two hands.
+       </s>
+       <s pid="1" sid="2">
+        Symmetric force distribution in two arms was assumed.
+       </s>
+       <s pid="1" sid="3">
+        It was assumed that the box weight was applied at the distal end of lower arm and hand link.
+       </s>
+       <s pid="1" sid="4">
+        The worker's posture is as shown in Figure 1, the feet flat on the floor.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        Figure1.
+       </s>
+       <s pid="2" sid="2">
+        Posture of the worker lifting a box
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        For the acceleration of gravity, 9.8 m/s2 was used.
+       </s>
+       <s pid="3" sid="2">
+        The worker's body weight was 833 N (85 kg * 9.8 m/s2).
+       </s>
+       <s pid="3" sid="3">
+        The box weight was 196 N (20 kg * 9.8 m/s2), otherwise mentioned.
+       </s>
+       <s pid="3" sid="4">
+        Thus, force applied to one hand by the box is 98 N (196 N / 2).
+       </s>
+       <s pid="3" sid="5">
+        Information about each segment's length, weight, and center of mass was given in Table 1.
+       </s>
+       <s pid="3" sid="6">
+        Head weight can be calculated to be 3.7 N from the table (833 N - (461.5 + 2*(21.2 + 25.8 + 87 + 38.3 + 11.6)) N), and no extra link was assumed for the head.
+       </s>
+       <s pid="3" sid="7">
+        Erector spinae (ES) moment arm of 6.5 cm and no abdominal pressure effect were assumed.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Table 1.
+       </s>
+       <s pid="4" sid="2">
+        Link length, center of mass, and weight
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        Body weight = 85 kg * 9.8 m/s2 = 833 N
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Box weight = 20 kg * 9.8 m/s2 = 196 N
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Head weight = 833 N - (461.5 + 2*(21.2 + 25.8 + 87 + 38.3 + 11.6))
+       </s>
+       <s pid="7" sid="2">
+        N = 3.7 N
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        The NIOSH action limit, 3400 N, was used to find out the maximum box mass not exceeding the NIOSH acceptable disc compression.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Results
+      </div>
+      <div>
+       <div class="head_2">
+        1. Resultant External Forces and Moments for all the Joints
+       </div>
+       <p>
+        <s pid="9" sid="1">
+         The resultant external forces and moments for all the joints in the given linkage, i.e., elbow, shoulder, L5/S1, hip, knee, and ankle were calculated.
+        </s>
+        <s pid="9" sid="2">
+         There was no horizontal force component in this calculation, since all forces (body segment weight and box) were downward.
+        </s>
+        <s pid="9" sid="3">
+         A positive direction convention for the force and moment components was defined as follows.
+        </s>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         Positive force direction: ↑
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         Positive moment direction:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div>
+        <div class="head_3">
+         One Elbow:
+        </div>
+        <p>
+         <s pid="12" sid="1">
+          For one lower arm and hand, the force and moment diagram is as shown in Figure 2.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="13" sid="1">
+          Figure 2. Force and moment diagram for lower arm and hand.
+         </s>
+        </p>
+        <p>
+         <s pid="14" sid="1">
+          Fe = 21.2 + 98 = 119.2 (N)
+         </s>
+        </p>
+        <p>
+         <s pid="15" sid="1">
+          Me = 0.159 cos10º * 21.2 + 0.369 cos10º * 98 = 38.932 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="16" sid="1">
+          Therefore, resultant force and moment at elbow are -119.2N and - 38.932
+         </s>
+         <s pid="16" sid="2">
+          Nm, respectively.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         One Shoulder:
+        </div>
+        <p>
+         <s pid="17" sid="1">
+          For one upper arm, the force and moment diagram is as shown in Figure 3.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="18" sid="1">
+          Figure 3. Force and moment diagram for upper arm.
+         </s>
+        </p>
+        <p>
+         <s pid="19" sid="1">
+          Fs = 119.2 + 25.8 = 145 (N)
+         </s>
+        </p>
+        <p>
+         <s pid="20" sid="1">
+          Me = 0.154 cos70º * 25.8 + 0.354 cos70º * 119.2 + 38.932 = 54.723 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="21" sid="1">
+          Therefore, resultant force and moment at shoulder are -145N and - 54.723
+         </s>
+         <s pid="21" sid="2">
+          Nm, respectively.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         L5/S1:
+        </div>
+        <p>
+         <s pid="22" sid="1">
+          For L5/S1 to Shoulder, the force and moment diagram is as shown in Figure 4.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="23" sid="1">
+          Figure 4. Force and moment diagram for L5/S1 - Shoulder.
+         </s>
+        </p>
+        <p>
+         <s pid="24" sid="1">
+          Two arms were considered in calculation.
+         </s>
+        </p>
+        <p>
+         <s pid="25" sid="1">
+          Fl = 2* 145N + 3.7 + 302.2 = 595.9 (N)
+         </s>
+        </p>
+        <p>
+         <s pid="26" sid="1">
+          Ml = 0.161 cos36º * 302.2 + 0.422 cos36º * (2 * 145 + 3.7) + 54.723 * 2 = 249.079 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="27" sid="1">
+          Therefore, resultant force and moment at L5/S1 are -595.9 N and - 249.079
+         </s>
+         <s pid="27" sid="2">
+          Nm, respectively.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Hip:
+        </div>
+        <p>
+         <s pid="28" sid="1">
+          For hip to L5/S1, the force and moment diagram is as shown in Figure 5.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="29" sid="1">
+          Figure 5. Force and moment diagram for hip - L5/S1.
+         </s>
+        </p>
+        <p>
+         <s pid="30" sid="1">
+          Fh = 159.3N + 595.9 = 755.2 (N)
+         </s>
+        </p>
+        <p>
+         <s pid="31" sid="1">
+          Mh = 0.051 cos70º * 159.3 + 0.103 cos70º * 595.9 + 249.079 = 272.850 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="32" sid="1">
+          Therefore, resultant force and moment are -755.2 N and - 272.850 Nm, respectively.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         One knee:
+        </div>
+        <p>
+         <s pid="33" sid="1">
+          For hip to knee, the force and moment diagram is as shown in Figure 6.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="34" sid="1">
+          Figure 6. Force and moment diagram for hip to knee.
+         </s>
+        </p>
+        <p>
+         <s pid="35" sid="1">
+          Two legs were considered in calculation.
+         </s>
+        </p>
+        <p>
+         <s pid="36" sid="1">
+          Fk = 755.2 / 2 + 87 = 464.6 (N)
+         </s>
+        </p>
+        <p>
+         <s pid="37" sid="1">
+          Mk = 272.850 / 2 - 0.264 cos50º * 87 - 0.466 cos50º * 755.2 / 2 = 8.556 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="38" sid="1">
+          Therefore, resultant force and moment at knee are -464.6 N and -8.556 Nm, respectively.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         One ankle:
+        </div>
+        <p>
+         <s pid="39" sid="1">
+          For knee to ankle, the force and moment diagram is as shown in Figure 7.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="40" sid="1">
+          Figure 7. Force and moment diagram for knee to ankle.
+         </s>
+        </p>
+        <p>
+         <s pid="41" sid="1">
+          Fa = 464.6 + 38.3 = 502.9 (N)
+         </s>
+        </p>
+        <p>
+         <s pid="42" sid="1">
+          Ma = 0.265 cos65º * 38.3 + 0.468 cos65º * 464.6 + 8.556 = 104.736 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="43" sid="1">
+          Therefore, resultant force and moment at ankle are -502.9 N and -104.736
+         </s>
+         <s pid="43" sid="2">
+          Nm, respectively.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         * Proof:
+        </div>
+        <p>
+         <s pid="44" sid="1">
+          The following equation must be satisfied for force balance.
+         </s>
+         <s pid="44" sid="2">
+          Since two legs were considered in the calculation, (F ankle + W foot) were timed 2.
+         </s>
+        </p>
+        <p>
+         <s pid="45" sid="1">
+          (F ankle + W foot) * 2 = W body + W box
+         </s>
+        </p>
+        <p>
+         <s pid="46" sid="1">
+          (F ankle + W foot) * 2 = (502.9 + 11.6) * 2 = 1029 (N),
+         </s>
+        </p>
+        <p>
+         <s pid="47" sid="1">
+          W body + W box = 833 + 196 = 1029 (N) =&amp;gt; Correct
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        2. L5/S1 Disc Compression and Shear Forces
+       </div>
+       <p>
+        <s pid="48" sid="1">
+         The L5/S1 disc compression and shear forces were calculated in this particular posture and box weight.
+        </s>
+        <s pid="48" sid="2">
+         Note that a 6.5 cm erector spinae (ES) moment arm and no abdominal pressure effect were assumed in Assumption.
+        </s>
+        <s pid="48" sid="3">
+         The diagram with compression force, shear force, muscle force, and other external forces are as shown in Figure 8.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="49" sid="1">
+         Figure 8. L5/S1 disc force diagram
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Find b:
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="51" sid="1">
+          W upper body = - (21.2 + 25.8) * 2 + (-302.2) - 3.7 = -399.9 (N) (downward)
+         </s>
+        </p>
+        <p>
+         <s pid="52" sid="1">
+          M L5/S1-Shoulder@L5/S1 = - 302.2 * 0.161 cos36º = - 39.362 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="53" sid="1">
+          M one upper arm@L5/S1 = - 25.8 * (0.154 cos70º + 0.422cos36º) = - 10.167 (Nm)
+         </s>
+        </p>
+        <p>
+         <s pid="54" sid="1">
+          M one lower arm@L5/S1 = - 21.2 * (0.159 cos10º + 0.354cos70º + 0.422cos36º)
+         </s>
+        </p>
+        <p>
+         <s pid="55" sid="1">
+          = -13.124
+         </s>
+        </p>
+        <p>
+         <s pid="56" sid="1">
+          M head@L5/S1 = - 3.7 * 0.422cos36º = -1.263
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+       </div>
+       <div>
+        <div class="head_3">
+         Find h:
+        </div>
+        <p>
+         <s pid="57" sid="1">
+          h = 0.369cos10º + 0.354cos70º + 0.422cos36º = 0.826 (m)
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Find F muscle:
+        </div>
+        <p>
+         <s pid="58" sid="1">
+          ∑
+         </s>
+         <s pid="58" sid="2">
+          ML5/S1 = E * F muscle + M upper body@L5/S1 + M box@L5/S1 = 0
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="59" sid="1">
+          = (0.218 * 399.9 + 0.826 * 196) / 0.065 = 3831.990 (N)
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         * Another way to get F muscle:
+        </div>
+        <p>
+         <s pid="60" sid="1">
+          From the previous section (Resultant External Forces and Moments for all the Joints), Ml was calculated as - 249.079
+         </s>
+         <s pid="60" sid="2">
+          Nm with the box and upper body weight accounted for.
+         </s>
+         <s pid="60" sid="3">
+          Therefore, from the moment balance equation, F muscle is equal to - Ml divided by E.
+         </s>
+        </p>
+        <p>
+         <s pid="61" sid="1">
+          F muscle = 249.079 / 0.065 = 3831.985 (N) (almost same as above)
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Find F comp:
+        </div>
+        <p>
+         <s pid="62" sid="1">
+          F comp = F muscle - F abdominal + (W box + W upper body) * cos(90-36)º
+         </s>
+        </p>
+        <p>
+         <s pid="63" sid="1">
+          = 3831.990 + (196 + 399.9) * cos(90-36) º
+         </s>
+        </p>
+        <p>
+         <s pid="64" sid="1">
+          = 4182.251 (N) ( 36º above the horizon)
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Find F shear:
+        </div>
+        <p>
+         <s pid="65" sid="1">
+          F shear = - (W box + W upper body) * cos36º
+         </s>
+        </p>
+        <p>
+         <s pid="66" sid="1">
+          = - (196 + 399.9) * cos36º
+         </s>
+        </p>
+        <p>
+         <s pid="67" sid="1">
+          = - 482.093 (N) (482.093 N 126º above the horizon)
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         * Proof:
+        </div>
+        <p>
+         <s pid="68" sid="1">
+          ∑
+         </s>
+         <s pid="68" sid="2">
+          F =
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        = 0
+        <p>
+        </p>
+        <p>
+         <s pid="70" sid="1">
+          ∑
+         </s>
+         <s pid="70" sid="2">
+          F vertical = (F comp - F muscle)* sin36º + |F shear| * cos36º - 399.9 - 196 ≈ 0
+         </s>
+        </p>
+        <p>
+         <s pid="71" sid="1">
+          ∑
+         </s>
+         <s pid="71" sid="2">
+          F horizontal = (F comp - F muscle)* cos36º - |F shear| * sin36º ≈ 0
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        3. Center of Mass of the Body and the Box
+       </div>
+       <p>
+        <s pid="72" sid="1">
+         The position of the center of mass of the body and the box was calculated, and investigated whether this position was located over the foot.
+        </s>
+        <s pid="72" sid="2">
+         The method to calculate the center of mass of the body and the box in the horizontal axis (denoted as x in Figure 1) is as follows.
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         ∑M @ankle
+        </div>
+        <p>
+         <s pid="73" sid="1">
+          = ∑ (Weight of each link or box * distance from ankle (0, 0) to the vertical line passing the center of mass of the corresponding link or box)
+         </s>
+        </p>
+        <p>
+         <s pid="74" sid="1">
+          =
+         </s>
+         <s pid="74" sid="2">
+          Weight of the whole body and box * distance from ankle (0, 0) to the vertical line passing the center of mass of the whole body and box
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         ∑M @ankle =
+        </div>
+        <p>
+         <s pid="75" sid="1">
+          = 196 * (0.369 cos10º + 0.354 cos70º + 0.422 cos36º + 0.103 cos70º + 0.466 cos130º + 0.468 cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="76" sid="1">
+          + 2 * 21.2 * (0.159 cos10º + 0.354 cos70º + 0.422 cos36º + 0.103 cos70º + 0.466 cos130º + 0.468 cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="77" sid="1">
+          + 2 * 25.8 * (0.154 cos70º + 0.422 cos36º + 0.103 cos70º + 0.466 cos130º + 0.468 cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="78" sid="1">
+          + 3.7 * (0.422 cos36º + 0.103 cos70º + 0.466 cos130º + 0.468 cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="79" sid="1">
+          + 302.2 * (0.161 cos36º + 0.103 cos70º + 0.466 cos130º + 0.468 cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="80" sid="1">
+          + 159.3 * ((0.103-0.052) cos70º + 0.466 cos130º + 0.468 cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="81" sid="1">
+          + 2 * 87 * ((0.466-0.202) cos130º + 0.468 cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="82" sid="1">
+          + 2 * 38.3 * ((0.468-0.203) cos65º)
+         </s>
+        </p>
+        <p>
+         <s pid="83" sid="1">
+          + 2 * 11.6 * 0.124
+         </s>
+        </p>
+        <p>
+         <s pid="84" sid="1">
+          = - 212.349 (Nm) ( )
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         * Another way to calculate resultant moment at ankle:
+        </div>
+        <p>
+         <s pid="85" sid="1">
+          From the previous section (Resultant External Forces and Moments for all the Joints), Ma was calculated to be -104.736 (Nm) which accounts for the box and all the body segments except two feet.
+         </s>
+         <s pid="85" sid="2">
+          Therefore, ∑M @ankle can be calculated from the following equation.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         ∑M @ankle =
+        </div>
+        <p>
+         <s pid="86" sid="1">
+          2 * (-104.736 + M foot)
+         </s>
+        </p>
+        <p>
+         <s pid="87" sid="1">
+          = 2 * (-104.736 - 11.6 * 0.124)
+         </s>
+        </p>
+        <p>
+         <s pid="88" sid="1">
+          = - 212.349 (Nm) ( ) (same as above)
+         </s>
+        </p>
+        <p>
+         <s pid="89" sid="1">
+          With the value of ∑M @ankle calculated, distance from ankle joint to the vertical line passing the center of mass of the whole body and the box can be calculated as follows.
+         </s>
+        </p>
+        <p>
+         <s pid="90" sid="1">
+          Center of Mass x = 212.349 / (833 + 196) = 0.206 (m)
+         </s>
+        </p>
+        <p>
+         <s pid="91" sid="1">
+          The method to calculate the center of mass of the body and the box in the vertical axis (denoted as y in Figure 1) is as follows.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         ∑m∙r @ankle
+        </div>
+        <p>
+         <s pid="92" sid="1">
+          = ∑ (mass of each link or box * distance from ankle (0, 0) to the horizontal line passing the center of mass of the corresponding link or box)
+         </s>
+        </p>
+        <p>
+         <s pid="93" sid="1">
+          =
+         </s>
+         <s pid="93" sid="2">
+          Mass of the whole body and box * distance from ankle (0, 0) to the horizontal line passing the center of mass of the whole body and box
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         ∑m∙r @ankle
+        </div>
+        <p>
+         <s pid="94" sid="1">
+          = 20 * (0.369 sin-10º + 0.354 sin-70º + 0.422 sin36º + 0.103 sin 70º + 0.466 sin 130º + 0.468 sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="95" sid="1">
+          + 2 * 21.2/ 9.8 * (0.159 sin -10º + 0.354 sin -70º + 0.422 sin 36º + 0.103 sin 70º + 0.466 sin 130º + 0.468 sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="96" sid="1">
+          + 2 * 25.8/ 9.8 * (0.154 sin -70º + 0.422 sin 36º + 0.103 sin 70º + 0.466 sin 130º + 0.468 sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="97" sid="1">
+          + 3.7 / 9.8 * (0.422 sin 36º + 0.103 sin 70º + 0.466 sin 130º + 0.468 sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="98" sid="1">
+          + 302.2 / 9.8 * (0.161 sin 36º + 0.103 sin 70º + 0.466 sin 130º + 0.468 sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="99" sid="1">
+          + 159.3 / 9.8 * ((0.103-0.052) sin 70º + 0.466 sin 130º + 0.468 sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="100" sid="1">
+          + 2 * 87 / 9.8 * ((0.466-0.202) sin 130º + 0.468 sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="101" sid="1">
+          + 2 * 38.3 / 9.8 * ((0.468-0.203) sin 65º)
+         </s>
+        </p>
+        <p>
+         <s pid="102" sid="1">
+          = 79.955 (kg∙m)
+         </s>
+        </p>
+        <p>
+         <s pid="103" sid="1">
+          With the value of ∑m∙r @ankle calculated, distance from ankle joint to the horizontal line passing the center of mass of the whole body and the box can be calculated as follows.
+         </s>
+        </p>
+        <p>
+         <s pid="104" sid="1">
+          Center of Mass y = 79.955 / (85 + 20) = 0.761 (m)
+         </s>
+        </p>
+        <p>
+         <s pid="105" sid="1">
+          Therefore, supposed that the ankle joint is the origin (0, 0), the center of mass of the body and box is located in (0.206, 0.761).
+         </s>
+         <s pid="105" sid="2">
+          Since foot length is 0.289 m, center of the body mass (0.206 m from ankle) is located over the foot.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        4. 30kg Box
+       </div>
+       <p>
+        <s pid="106" sid="1">
+         The same analysis, resultant external forces and moments for all the joints, L5/S1 disc compression and shear forces, and center of mass of the body and the box, was done for the box mass of 30 kg.
+        </s>
+        <s pid="106" sid="2">
+         The calculation method was same but the weight of the box was changed to 294 N (30 kg * 9.8 m/s2).
+        </s>
+        <s pid="106" sid="3">
+         The result is shown in Table 2, Table 3, and Table 4, compared to the result for 20 kg box.
+        </s>
+        <s pid="106" sid="4">
+         It can also be calculated by adding additional weight of the box.
+        </s>
+        <s pid="106" sid="5">
+         For example, elbow external force for 30 kg is equal to that for 20 kg plus additional force divided by 2 (two hands considered); -119.2N - 98N / 2 = -168.2N.
+        </s>
+       </p>
+       <p>
+        <s pid="107" sid="1">
+         Me = -38.932 - 98/2 * 0.369 cos-10º = -56.739 (Nm)
+        </s>
+       </p>
+       <p>
+        <s pid="108" sid="1">
+         Fs = -145 - 98/2 = -194 (N)
+        </s>
+       </p>
+       <p>
+        <s pid="109" sid="1">
+         Ms = -54.723 - 98/2 * (0.369 cos-10º + 0.354 cos-70º) = -78.462 (Nm)
+        </s>
+       </p>
+       <p>
+        <s pid="110" sid="1">
+         Fl = -595.9 - 98 = -693.9 (N)
+        </s>
+       </p>
+       <p>
+        <s pid="111" sid="1">
+         Ml = -249.079 - 98 * (0.369 cos-10º + 0.354 cos-70º + 0.422 cos36º) = -330.015 (Nm)
+        </s>
+       </p>
+       <p>
+        <s pid="112" sid="1">
+         Fh = -755.2 - 98 =853.2 (N)
+        </s>
+       </p>
+       <p>
+        <s pid="113" sid="1">
+         Mh = -272.850 - 98 * (0.369 cos-10º + 0.354 cos-70º + 0.422 cos36º + 0.103 cos70º)
+        </s>
+       </p>
+       <p>
+        <s pid="114" sid="1">
+         = -357.238 (Nm)
+        </s>
+       </p>
+       <p>
+        <s pid="115" sid="1">
+         Fk = -464.6 - 98/2 = - 513.6 (N)
+        </s>
+       </p>
+       <p>
+        <s pid="116" sid="1">
+         Mk = -8.556 - 98/2 * (0.369 cos-10º + 0.354 cos-70º + 0.422 cos36º + 0.103 cos70º
+        </s>
+       </p>
+       <p>
+        <s pid="117" sid="1">
+         + 0.466 cos130º) = -36.072 (Nm)
+        </s>
+       </p>
+       <p>
+        <s pid="118" sid="1">
+         Fa = -502.9 - 98/2 = - 551.9 (N)
+        </s>
+       </p>
+       <p>
+        <s pid="119" sid="1">
+         Ma = -104.736 - 98/2 * (0.369 cos-10º + 0.354 cos-70º + 0.422 cos36º + 0.103 cos70º
+        </s>
+       </p>
+       <p>
+        <s pid="120" sid="1">
+         + 0.466 cos130º + 0.468 cos65º) = -141.944
+        </s>
+       </p>
+       <p>
+        <s pid="121" sid="1">
+         Table 2. Resultant external forces and moments at joints for 20 kg box and 30 kg box
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="122" sid="1">
+         For L5/S1 disc compression and shear forces, the lengths of h and b are same no matter what the weight of the box is.
+        </s>
+       </p>
+       <p>
+        <s pid="123" sid="1">
+         b = 0.218 m
+        </s>
+       </p>
+       <p>
+        <s pid="124" sid="1">
+         h = 0.826 m
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="125" sid="1">
+         = (0.218 * 399.9 + 0.826 * 294) / 0.065 = 5077.154 (N)
+        </s>
+       </p>
+       <p>
+        <s pid="126" sid="1">
+         *
+        </s>
+        <s pid="126" sid="2">
+         Another way to get F muscle:
+        </s>
+       </p>
+       <p>
+        <s pid="127" sid="1">
+         Ml for 30 kg was calculated as -330.015
+        </s>
+        <s pid="127" sid="2">
+         Nm with the box and upper body weight accounted for.
+        </s>
+        <s pid="127" sid="3">
+         Therefore, from the moment balance equation, F muscle is equal to - Ml divided by E.
+        </s>
+       </p>
+       <p>
+        <s pid="128" sid="1">
+         F muscle = 330.015 / 0.065 = 5077.154 (N) (same as above)
+        </s>
+       </p>
+       <p>
+        <s pid="129" sid="1">
+         Find F comp:
+        </s>
+       </p>
+       <p>
+        <s pid="130" sid="1">
+         F comp = F muscle - F abdominal + (W box + W upper body) * cos(90-36)º
+        </s>
+       </p>
+       <p>
+        <s pid="131" sid="1">
+         = 5077.154 + (294 + 399.9) * cos(90-36) º
+        </s>
+       </p>
+       <p>
+        <s pid="132" sid="1">
+         = 5485.018 (N) ( 36º above the horizon)
+        </s>
+       </p>
+       <p>
+        <s pid="133" sid="1">
+         Find F shear:
+        </s>
+       </p>
+       <p>
+        <s pid="134" sid="1">
+         F shear = - (W box + W upper body) * cos36º
+        </s>
+       </p>
+       <p>
+        <s pid="135" sid="1">
+         = - (294 + 399.9) * cos36º
+        </s>
+       </p>
+       <p>
+        <s pid="136" sid="1">
+         = - 561.377 (N) (561.377 N 126º above the horizon)
+        </s>
+       </p>
+       <p>
+        <s pid="137" sid="1">
+         Table 3. L5/S1 disc compression and shear forces for 20 kg box and 30 kg box
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="138" sid="1">
+         For center of mass of the body and the box, same equation as for 20 kg was used to determine the center of mass of the body and the box from the ankle joint (0, 0).
+        </s>
+        <s pid="138" sid="2">
+         The comparison between the case of 20 kg box and that of 30 kg box is as shown in Table 4.
+        </s>
+       </p>
+       <p>
+        <s pid="139" sid="1">
+         Table 4. Center of mass of the body and the box for 20 kg box and 30 kg box
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        5. Maximum Box Mass according to NIOSH
+       </div>
+       <p>
+        <s pid="140" sid="1">
+         The maximum box mass not exceeding the NIOSH acceptable disc compression force (in the position in the diagram) for erector spinae moment arm lengths from 4 to 7 centimeters, in 0.5 centimeter increments, was determined.
+        </s>
+        <s pid="140" sid="2">
+         Since the original posture and weight of each segment were used, the lengths of b and h did not change.
+        </s>
+        <s pid="140" sid="3">
+         From the equations used in section 2 (L5/S1 Disc Compression and Shear Forces), weight of box was described as a function of E (erector spinae moment arm) as follows.
+        </s>
+       </p>
+       <p>
+        <s pid="141" sid="1">
+         NIOSH action limit: F comp = 3400 N
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="142" sid="1">
+         F comp = F muscle - F abdominal + (W box + W upper body) * sin36º
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="143" sid="1">
+         Max Mass box = W box / (9.8 m/s2)
+        </s>
+       </p>
+       <p>
+        <s pid="144" sid="1">
+         where b = 0.218 m,
+        </s>
+       </p>
+       <p>
+        <s pid="145" sid="1">
+         h = 0.826 m
+        </s>
+       </p>
+       <p>
+        <s pid="146" sid="1">
+         W upper body = 399.9 N
+        </s>
+       </p>
+       <p>
+        <s pid="147" sid="1">
+         F comp = 3400 N
+        </s>
+       </p>
+       <p>
+        <s pid="148" sid="1">
+         The maximum box mass for each erector spinae moment arm length is as shown in Table 5 and it is plotted as in Figure 9.
+        </s>
+       </p>
+       <p>
+        <s pid="149" sid="1">
+         Table 5. Maximum box mass for erector spinae moment arm length
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="150" sid="1">
+         Figure 9. Maximum acceptable box mass for ES moment arm length
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        6. Moment of shoulder and L5/S1 when being flexed
+       </div>
+       <p>
+        <s pid="151" sid="1">
+         It was supposed that the individual was flexed his shoulder to lift their upper arm to a horizontal position (Angle S = 0) as well as the elbow extension, as the shoulder flexes, so that it was horizontal in the end posture (Angle E = 0).
+        </s>
+        <s pid="151" sid="2">
+         The relationship of the two angles was 7:1 shoulder flexion/elbow extension.
+        </s>
+        <s pid="151" sid="3">
+         The equations used for shoulder and L5/S1 moment calculation are as follows.
+        </s>
+        <s pid="151" sid="4">
+         Resultant forces at elbow and shoulder did not change as elbow and shoulder were extended or flexed.
+        </s>
+        <s pid="151" sid="5">
+         The box mass of 20 kg was assumed.
+        </s>
+       </p>
+       <p>
+        <s pid="152" sid="1">
+         Elbow moment = (length of lower arm &amp; hand * box weight / 2 + COM of lower arm &amp; hand * weight of lower arm &amp; hand) * cos(Angle E)
+        </s>
+       </p>
+       <p>
+        <s pid="153" sid="1">
+         Shoulder moment = (length of upper arm * resultant force at elbow +COM of upper arm * weight of upper arm) * cos(Angle S)+
+        </s>
+        <s pid="153" sid="2">
+         Elbow moment
+        </s>
+       </p>
+       <p>
+        <s pid="154" sid="1">
+         L5/S1 moment = {length of L5/S1to shoulder * (resultant force at shoulder * 2 + weight of head) + COM of L5/S1 to shoulder * weight of L5/S1 to shoulder} * cos36º + shoulder moment * 2
+        </s>
+       </p>
+       <p>
+        <s pid="155" sid="1">
+         Table 6 shows the values of shoulder and L5/S1 moment values calculated for 7 equally spaced intervals through the motion (i.e. at each 10 degrees of shoulder flexion), and the data is plotted in Figure 10.
+        </s>
+        <s pid="155" sid="2">
+         The box mass was assumed 29 kg.
+        </s>
+        <s pid="155" sid="3">
+         Note that the plots in Figure 10 show the absolute values of the moments, not resultant moments.
+        </s>
+        <s pid="155" sid="4">
+         (The resultant moments were all negative values of the same amount of corresponding value).
+        </s>
+       </p>
+       <p>
+        <s pid="156" sid="1">
+         Table 6. Moment of Elbow, shoulder and L5/S1 as lower arm and hand and upper arm extension / flexion
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="157" sid="1">
+         Figure 10.
+        </s>
+        <s pid="157" sid="2">
+         Moment of shoulder and L5/S1 as lower arm and hand and upper arm extension / flexion
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Discussion and Conclusions
+      </div>
+      <p>
+       <s pid="158" sid="1">
+        In calculation of moments and forces in section 1, the moment was discovered to change depending on the segment weights, segment lengths, the posture and the box weight.
+       </s>
+       <s pid="158" sid="2">
+        It was shown that not only the box weight but also the body weight affected a great amount of the force and moment for each joint and the compression and shear force at L5/S1.
+       </s>
+       <s pid="158" sid="3">
+        From the calculation of the resultant force and moment at L5/S1 in section 1, it was shown that the length and the weight of L5/S1 to shoulder resulted in the great moment at L5/S1.
+       </s>
+       <s pid="158" sid="4">
+        Also, from section 2, L5/S1 disc compression and shear forces, it was shown that the moment created by the upper body weight at L5/S1 is more than a half of that by the box, as follows.
+       </s>
+      </p>
+      <p>
+       <s pid="159" sid="1">
+        M upper body@L5/S1 =
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="160" sid="1">
+        M box@L5/S1 =
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="161" sid="1">
+        As for posture, as shown in the calculation of moments of shoulder and L5/S1 for different angles of elbow / shoulder in section 6 (Moment of Shoulder and L5/S1 when being Flexed), the posture played an important role on the moment for each joint.
+       </s>
+       <s pid="161" sid="2">
+        It implies that the posture with extremities widely spread out to the horizontal direction might cause bigger moments at joints.
+       </s>
+       <s pid="161" sid="3">
+        In the same sense, moment is expected to be smaller for the posture with body segments closer to the center of the body in the horizontal direction.
+       </s>
+       <s pid="161" sid="4">
+        Not to mention, the moment for each joint would become smaller with the box closer to the body.
+       </s>
+       <s pid="161" sid="5">
+        The moment value will vary if the box weight is applied in different position on hands or lower arm.
+       </s>
+       <s pid="161" sid="6">
+        Therefore, if it was assumed that the worker was holding the object by embracing it in his or her arm rather than holding it with the tip of the lower arm and hand link, the value of the moments at joints would be smaller than those calculated in this report.
+       </s>
+      </p>
+      <p>
+       <s pid="162" sid="1">
+        It was shown in Figure 10 that extremities and the box's larger deviation from the body caused greater moment created at joints.
+       </s>
+       <s pid="162" sid="2">
+        The shape of two curves in Figure 10 suggests a greater slop in changes of moments in the range of greater angle (-70~-50º) than in the range of smaller angle (-20~0º), which approximately follows the cosine curve.
+       </s>
+       <s pid="162" sid="3">
+        It can be explained by considering the amount of the extremities' deviation from the body in the horizontal axis, which can be described with cosine functions of the angle.
+       </s>
+       <s pid="162" sid="4">
+        From the elbow moment equation used in calculation as follows, for example, the length, the center of mass, and the weight of lower arm and hand and the box weight were constant, while Angle E was the only variable, affecting elbow moment in the cosine function.
+       </s>
+      </p>
+      <p>
+       <s pid="163" sid="1">
+        Elbow moment = (length of lower arm &amp; hand * box weight / 2 + COM of lower arm &amp; hand * weight of lower arm &amp; hand) * cos(Angle E)
+       </s>
+      </p>
+      <p>
+       <s pid="164" sid="1">
+        Overhead exertions (which are necessarily close to the body in the sagittal plane), however, are perceived as stressful, despite generating relatively lower moment values at the shoulder.
+       </s>
+       <s pid="164" sid="2">
+        It can be explained by physiological phenomena that the muscle force varies depending on the length of the muscle as well as the length of the moment arm.
+       </s>
+       <s pid="164" sid="3">
+        Even though loads handled close to the body typically produce lower joint moment values, as muscle length is not optimized, the force capacity that the muscle can produce is reduced.
+       </s>
+       <s pid="164" sid="4">
+        Since overhead exertions are likely to cause upper arm flexion and lower arm extension, their muscles are often in the situation where they are contracting or stretched, which is not in an optimized state.
+       </s>
+       <s pid="164" sid="5">
+        To produce the same amount of force (which was required with the optimized muscle length), it can be perceived as stressful.
+       </s>
+       <s pid="164" sid="6">
+        Muscle moment arm is expected to have the similar effect, too.
+       </s>
+       <s pid="164" sid="7">
+        As the moment arm becomes shorter, the greater force is required from the muscle, which can be stressful.
+       </s>
+      </p>
+      <p>
+       <s pid="165" sid="1">
+        With the same position but different mass of the box, it was shown from Table 2 and Table 3 that, with a heavier box, the force and moment for each joint and the compression and shear force at L5/S1 were greater.
+       </s>
+       <s pid="165" sid="2">
+        It implies that lifting a heavy object can load excessive compression force which can lead to an injury.
+       </s>
+       <s pid="165" sid="3">
+        In this view, NIOSH established a recommended limit of the weight of the object lifted by a person, as called as action limit, in 1991.
+       </s>
+       <s pid="165" sid="4">
+        The action limit is 3400 N of the compression force at L5/S1.
+       </s>
+       <s pid="165" sid="5">
+        The maximum box mass not exceeding the NIOSH action limit was calculated in section 5 (Maximum Box Mass according to NIOSH).
+       </s>
+       <s pid="165" sid="6">
+        As shown in Figure 9, the maximum box mass depends on the length of the erector spinae moment arm when the posture and the body segments' weights and lengths were same.
+       </s>
+       <s pid="165" sid="7">
+        The longer the erector spinae moment arm, the greater the maximum acceptable box mass, which was predicted from the equation of F muscle as a function of E, as below.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="166" sid="1">
+        To decrease F comp, F muscle is to be decreased.
+       </s>
+       <s pid="166" sid="2">
+        For F muscle to be decreased, from the following equation, E is to be increased.
+       </s>
+      </p>
+      <p>
+       <s pid="167" sid="1">
+        F comp = F muscle - F abdominal + (W box + W upper body) * cos(90-36)º
+       </s>
+      </p>
+      <p>
+       <s pid="168" sid="1">
+        With only 3 cm variation in the erector spinae moment arm, the maximum box mass varied from 4.7 to 15.8 kg.
+       </s>
+       <s pid="168" sid="2">
+        It emphasizes the importance of the effect of the length of moment arm.
+       </s>
+      </p>
+      <p>
+       <s pid="169" sid="1">
+        Also, with different box mass, the center of mass of the body and the box was located differently.
+       </s>
+       <s pid="169" sid="2">
+        As shown in Table 4, the centers of mass of the body and the box for both 20 kg box and 30 kg box were located over the foot.
+       </s>
+       <s pid="169" sid="3">
+        However, within the foot, the center of mass was located nearer to the center of the foot with 20 kg box.
+       </s>
+       <s pid="169" sid="4">
+        Therefore, it can be said that the individual could achieve a balance to stand with the box for both cases.
+       </s>
+       <s pid="169" sid="5">
+        However, since the center of mass lied more toward the toe for the case of 30 kg box, it can be said that the balance of standing was less stable with 30 kg box (or more stable with 20 kg box).
+       </s>
+       <s pid="169" sid="6">
+        Even though not calculated in this report, it is possible that, with flexing upper arm and extending lower arm, the distance from the box and arms to the body increases so that the center of mass does not lie over the foot any more.
+       </s>
+       <s pid="169" sid="7">
+        This is more likely to happen with heavier box.
+       </s>
+       <s pid="169" sid="8">
+        From the center of mass in the vertical axis, the center of mass was lower with 30 kg box.
+       </s>
+       <s pid="169" sid="9">
+        It can imply that, in case when the individual was trapped by a low bump, it would be more stable with 30 kg box (heavier box).
+       </s>
+       <s pid="169" sid="10">
+        However, it cannot be true that the heavier the box is, the more stable from being trapped, when the height at which the box is held increases more than or to the point where increasing box mass only raises the vertical position of the center of mass.
+       </s>
+      </p>
+      <p>
+       <s pid="170" sid="1">
+        Further analysis about the effect of the horizontal force component such as leaning or being supported would be interesting, because those horizontal force components would sometimes help reducing the moments at joints, and other times increase the moments at joints.
+       </s>
+      </p>
+      <p>
+       <s pid="171" sid="1">
+        Also, in this report, analysis was done in only 2D scale.
+       </s>
+       <s pid="171" sid="2">
+        Thus, no z-axis component was considered.
+       </s>
+       <s pid="171" sid="3">
+        Based on the analysis done in this 2D scale, it is expected that, the greater the width of the body (length in z-axis), the greater the moments at joints, as the greater the deviation from the body, the greater the moments at joints.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

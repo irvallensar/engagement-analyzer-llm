@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Dutch
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Ryan,
+      </p>
+      <p>
+       Thanks for your letter. I have
+       <ns type="FV">
+        <i>
+         reading
+        </i>
+       </ns>
+       the letter and I was very surprised that I have won the first prize.
+      </p>
+      <p>
+       About the time when I
+       <ns type="RV">
+        <i>
+         like
+        </i>
+       </ns>
+       to travel
+       <ns type="AS">
+        <i>
+         is only
+        </i>
+       </ns>
+       July, because in the summer
+       <ns type="W">
+        <i>
+         is it
+        </i>
+       </ns>
+       very busy at work. People
+       <ns type="SX">
+        <i>
+         where
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         working
+        </i>
+       </ns>
+       with
+       <ns type="UA">
+        <i>
+         they
+        </i>
+       </ns>
+       are going on holiday in
+       <ns type="S">
+        <i>
+         Juni
+        </i>
+       </ns>
+       and August. So
+       <ns type="SX">
+        <i>
+         hey
+        </i>
+       </ns>
+       need me at work in
+       <ns type="AGD">
+        <i>
+         that
+        </i>
+       </ns>
+       months.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         Further
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       prefer at Camp California is the log cabin
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         at first
+        </i>
+       </ns>
+       when I was a little child we
+       <ns type="TV">
+        <i>
+         were staying
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         every holiday in a small house
+        </i>
+       </ns>
+       and I like that.
+       <ns type="DY">
+        <i>
+         At second
+        </i>
+       </ns>
+       , I don't like tents and I
+       <ns type="RV">
+        <i>
+         don't
+        </i>
+       </ns>
+       get used to
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       , so I prefer log cabins.
+      </p>
+      <p>
+       About the different activities
+       <ns type="MP">
+       </ns>
+       we like them all, but If I
+       <ns type="TV">
+        <i>
+         choose
+        </i>
+       </ns>
+       two I
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       sailing and tennis. In the summer I'm sailing
+       <ns type="MT">
+       </ns>
+       races almost every weekend and I have my own sailing clothes. I'm not very good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Tennis
+        </i>
+       </ns>
+       but I can practise on my
+       <ns type="RN">
+        <i>
+         travel
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Finally, I have one question about the money.
+       <ns type="RA">
+        <i>
+         Which
+        </i>
+       </ns>
+       things
+       <ns type="W">
+        <i>
+         I must
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         paid
+        </i>
+       </ns>
+       for on my
+       <ns type="RN">
+        <i>
+         travel
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thanks for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I have reading the letter and I was very surprised that I have won the first prize.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        About the time when I like to travel is only July, because in the summer is it very busy at work.
+       </s>
+       <s pid="3" sid="2">
+        People where I working with they are going on holiday in Juni and August.
+       </s>
+       <s pid="3" sid="3">
+        So hey need me at work in that months.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Further the accomodation I  prefer at Camp California is the log cabin.
+       </s>
+       <s pid="4" sid="2">
+        Because, at first when I was a little child we were staying every holiday in a small house and I like that.
+       </s>
+       <s pid="4" sid="3">
+        At second, I don't like tents and I don't get used to it, so I prefer log cabins.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        About the different activities we like them all, but If I choose two I take sailing and tennis.
+       </s>
+       <s pid="5" sid="2">
+        In the summer I'm sailing  races almost every weekend and I have my own sailing clothes.
+       </s>
+       <s pid="5" sid="3">
+        I'm not very good in Tennis but I can practise on my travel.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, I have one question about the money.
+       </s>
+       <s pid="6" sid="2">
+        Which things I must paid for on my travel?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Thanks for your letter. How are you?
+       <ns type="W">
+        <i>
+         With me is everything fine
+        </i>
+       </ns>
+       and the pop concert was great.
+      </p>
+      <p>
+       I enjoyed helping at the
+       <ns type="RP">
+        <i>
+         popconcert
+        </i>
+       </ns>
+       , but it's very stressful work. You always walk from side to side
+       <ns type="FV">
+        <i>
+         to move
+        </i>
+       </ns>
+       things and there's no break. Some other work
+       <ns type="RA">
+        <i>
+         what
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         have done
+        </i>
+       </ns>
+       was to lead the people to
+       <ns type="SX">
+        <i>
+         there
+        </i>
+       </ns>
+       places. We
+       <ns type="TV">
+        <i>
+         have worked
+        </i>
+       </ns>
+       the whole day and luckily at least we had some food.
+      </p>
+      <p>
+       The
+       <ns type="RJ">
+        <i>
+         most beautiful
+        </i>
+       </ns>
+       things were that we saw famous singers and I spoke with Robbie Williams. He's friendly and very handsome
+       <ns type="SX">
+        <i>
+         off
+        </i>
+       </ns>
+       course. If you see the famous singers
+       <ns type="RY">
+        <i>
+         in reality
+        </i>
+       </ns>
+       they are different and
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       most singers
+       <ns type="UA">
+        <i>
+         they
+        </i>
+       </ns>
+       <ns type="ID">
+        <i>
+         haven't time for you
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Another thing I
+       <ns type="TV">
+        <i>
+         have done
+        </i>
+       </ns>
+       was the
+       <ns type="MP">
+        <i>
+         make up
+        </i>
+       </ns>
+       <ns type="MC">
+       </ns>
+       only for about fifteen minutes. That was very nice, because I didn't
+       <ns type="FV">
+        <i>
+         expected
+        </i>
+       </ns>
+       that. There were some people
+       <ns type="RA">
+        <i>
+         they
+        </i>
+       </ns>
+       gave me some
+       <ns type="DN">
+        <i>
+         advise
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to clean
+        </i>
+       </ns>
+       the face
+       <ns type="UC">
+        <i>
+         and
+        </i>
+       </ns>
+       etc.
+      </p>
+      <p>
+       Finally, it was a very nice day
+       <ns type="R">
+        <i>
+         with
+        </i>
+       </ns>
+       great experience.
+      </p>
+      <p>
+       <ns type="FN">
+        <i>
+         Loves
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thanks for your letter.
+       </s>
+       <s pid="2" sid="2">
+        How are you?
+       </s>
+       <s pid="2" sid="3">
+        With me is everything fine and the pop concert was great.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I enjoyed helping at the popconcert, but it's very stressful work.
+       </s>
+       <s pid="3" sid="2">
+        You always walk from side to side to move things and there's no break.
+       </s>
+       <s pid="3" sid="3">
+        Some other work what I have done was to lead the people to there places.
+       </s>
+       <s pid="3" sid="4">
+        We have worked the whole day and luckily at least we had some food.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The most beautiful things were that we saw famous singers and I spoke with Robbie Williams.
+       </s>
+       <s pid="4" sid="2">
+        He's friendly and very handsome off course.
+       </s>
+       <s pid="4" sid="3">
+        If you see the famous singers in reality they are different and the most singers they haven't time for you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Another thing I have done was the make up  only for about fifteen minutes.
+       </s>
+       <s pid="5" sid="2">
+        That was very nice, because I didn't expected that.
+       </s>
+       <s pid="5" sid="3">
+        There were some people they gave me some advise  to clean the face and etc.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, it was a very nice day with great experience.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Loves
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

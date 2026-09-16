@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      31-40
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I am writing to
+       <ns type="DA">
+        <i>
+         your
+        </i>
+       </ns>
+       to complain about the musical show called "Over the rainbow"
+      </p>
+      <p>
+       As a matter of fact, I
+       <ns type="RV">
+        <i>
+         waited
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         seeing
+        </i>
+       </ns>
+       Danny Brook
+       <ns type="MP">
+       </ns>
+       who I appreciate a lot and I was very disappointed that he wasn't
+       <ns type="RY">
+        <i>
+         here
+        </i>
+       </ns>
+       . Besides, the actor who filled
+       <ns type="W">
+        <i>
+         <ns type="MT">
+          <i>
+           him in
+          </i>
+         </ns>
+        </i>
+       </ns>
+       was unknown and specially boring.
+      </p>
+      <p>
+       Secondly, the show
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       to begin at 19.30 pm,
+       <ns type="R">
+        <i>
+         in fact
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         he
+        </i>
+       </ns>
+       began at 20.15 pm and that
+       <ns type="MV">
+        <i>
+         without
+        </i>
+       </ns>
+       any
+       <ns type="FN">
+        <i>
+         <ns type="S">
+          <i>
+           explainations
+          </i>
+         </ns>
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Your advertisement mentioned that discounts were available, however
+       <ns type="MP">
+       </ns>
+       when I
+       <ns type="AS">
+        <i>
+         asked for them to the staff
+        </i>
+       </ns>
+       they replied
+       <ns type="U">
+        <i>
+         to me
+        </i>
+       </ns>
+       that
+       <ns type="RA">
+        <i>
+         they
+        </i>
+       </ns>
+       weren't
+       <ns type="MQ">
+       </ns>
+       discounts!
+      </p>
+      <p>
+       After the show, I wanted to visit your restaurant and
+       <ns type="MP">
+       </ns>
+       once again, I was disappointed because it was closed.
+       <ns type="RA">
+        <i>
+         Anybody
+        </i>
+       </ns>
+       could explain to me why!
+      </p>
+      <p>
+       I can assure you that it wasn't a perfect evening out and I got very annoyed about this evening which could have been wonderful.
+      </p>
+      <p>
+       That is the reason I would like you to refund my money. I hope you
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       take notice of this complaint
+       <ns type="UY">
+        <i>
+         seriously
+        </i>
+       </ns>
+       . I am looking forward to hearing from you as soon as possible.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to your to complain about the musical show called "Over the rainbow"
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As a matter of fact, I waited for seeing Danny Brook who I appreciate a lot and I was very disappointed that he wasn't here.
+       </s>
+       <s pid="3" sid="2">
+        Besides, the actor who filled him in was unknown and specially boring.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, the show had to begin at 19.30 pm, in fact he began at 20.15 pm and that without any explainations!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Your advertisement mentioned that discounts were available, however when I asked for them to the staff they replied to me that they weren't  discounts!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        After the show, I wanted to visit your restaurant and once again, I was disappointed because it was closed.
+       </s>
+       <s pid="6" sid="2">
+        Anybody could explain to me why!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I can assure you that it wasn't a perfect evening out and I got very annoyed about this evening which could have been wonderful.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        That is the reason I would like you to refund my money.
+       </s>
+       <s pid="8" sid="2">
+        I hope you would take notice of this complaint seriously.
+       </s>
+       <s pid="8" sid="3">
+        I am looking forward to hearing from you as soon as possible.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       My daily life changed in some ways when I
+       <ns type="ID">
+        <i>
+         got the hand of
+        </i>
+       </ns>
+       using new technologies.
+      </p>
+      <p>
+       When I started work, I wrote everything I
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       on
+       <ns type="RN">
+        <i>
+         sheets
+        </i>
+       </ns>
+       and if sometimes I made mistakes, I had to cross
+       <ns type="MA">
+       </ns>
+       out and it wasn't very
+       <ns type="UP">
+        <i>
+         <ns type="RV">
+          <i>
+           well-made
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . I had to work out all my figures two times to make sure that my accounts were accurate.
+      </p>
+      <p>
+       Now, I enter
+       <ns type="IN">
+        <i>
+         datas
+        </i>
+       </ns>
+       and I don't need
+       <ns type="W">
+        <i>
+         <ns type="RP">
+          <i>
+           any more
+          </i>
+         </ns>
+         to calculate my figures
+        </i>
+       </ns>
+       , the work is
+       <ns type="W">
+        <i>
+         completely
+         <ns type="RV">
+          <i>
+           made
+          </i>
+         </ns>
+        </i>
+       </ns>
+       by
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       computer and in addition there
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       no
+       <ns type="AGN">
+        <i>
+         mistake
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       If I have to find
+       <ns type="UY">
+        <i>
+         out
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         timetables
+        </i>
+       </ns>
+       , it is very useful to have the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to see
+       <ns type="MA">
+       </ns>
+       on the Internet, besides, it is the quickest way!
+       <ns type="RT">
+        <i>
+         At
+        </i>
+       </ns>
+       the beginning, I wasted a lot of time getting some information I needed because I didn't know exactly where I had to look for
+       <ns type="MA">
+       </ns>
+       . But after a while you gain experience and you
+       <ns type="W">
+        <i>
+         get soon
+        </i>
+       </ns>
+       used to this kind of research.
+      </p>
+      <p>
+       Another thing that has changed my daily life is the
+       <ns type="S">
+        <i>
+         mobil
+        </i>
+       </ns>
+       phone. As a matter of fact, if I am stuck in my car in
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       traffic, I can call my boyfriend to tell him that I
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       be late. Once, I saw an accident and I could call the police. Sometimes the ring is annoying but
+       <ns type="MP">
+       </ns>
+       finally, the
+       <ns type="S">
+        <i>
+         mobil
+        </i>
+       </ns>
+       phone is a great
+       <ns type="MP">
+       </ns>
+       handy object.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        My daily life changed in some ways when I got the hand of using new technologies.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        When I started work, I wrote everything I made on sheets and if sometimes I made mistakes, I had to cross  out and it wasn't very well-made.
+       </s>
+       <s pid="2" sid="2">
+        I had to work out all my figures two times to make sure that my accounts were accurate.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Now, I enter datas and I don't need any more to calculate my figures, the work is completely made by the computer and in addition there is no mistake.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        If I have to find out  timetables, it is very useful to have the possibility to see  on the Internet, besides, it is the quickest way!
+       </s>
+       <s pid="4" sid="2">
+        At the beginning, I wasted a lot of time getting some information I needed because I didn't know exactly where I had to look for .
+       </s>
+       <s pid="4" sid="3">
+        But after a while you gain experience and you get soon used to this kind of research.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Another thing that has changed my daily life is the mobil phone.
+       </s>
+       <s pid="5" sid="2">
+        As a matter of fact, if I am stuck in my car in the traffic, I can call my boyfriend to tell him that I would be late.
+       </s>
+       <s pid="5" sid="3">
+        Once, I saw an accident and I could call the police.
+       </s>
+       <s pid="5" sid="4">
+        Sometimes the ring is annoying but finally, the mobil phone is a great handy object.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

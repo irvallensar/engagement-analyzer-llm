@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     19.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam The Circle Theatre manager
+      </p>
+      <p>
+       I am writing to complain about your
+       <ns type="RN">
+        <i>
+         product
+        </i>
+       </ns>
+       . I would like you to
+       <ns type="RV">
+        <i>
+         back
+        </i>
+       </ns>
+       my money because
+       <ns type="R">
+        that was not same as your advertisement
+       </ns>
+       .
+      </p>
+      <p>
+       I was planning to spend my holiday in London when I found your advertisement. In the advertisement, you mentioned actors, time,
+       <ns type="UN">
+        <i>
+         price
+        </i>
+       </ns>
+       discount and
+       <ns type="RN">
+        <i>
+         equipment
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       DANNY BROOK is one of my
+       <ns type="SA">
+        <i>
+         favorite
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         actor
+        </i>
+       </ns>
+       so I decided to buy a ticket
+       <ns type="RC">
+        <i>
+         even if
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         cancel
+        </i>
+       </ns>
+       my
+       <ns type="S">
+        <i>
+         apointment
+        </i>
+       </ns>
+       on that day at
+       <ns type="RP">
+        <i>
+         18=30
+        </i>
+       </ns>
+       and
+       <ns type="S">
+        <i>
+         aslo
+        </i>
+       </ns>
+       <ns type="R">
+        notice of price discount impressed me
+       </ns>
+       . However, when I
+       <ns type="RV">
+        <i>
+         went
+        </i>
+       </ns>
+       to the theatre, you
+       <ns type="X">
+        <i>
+         didn't anything not only
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         discount
+        </i>
+       </ns>
+       but also
+       <ns type="TV">
+        <i>
+         <ns type="S">
+          <i>
+           apporogize
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       us for
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         dalay
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       starting
+       <ns type="MD">
+       </ns>
+       musical. In addition
+       <ns type="MD">
+       </ns>
+       different actor appeared on the stage and I couldn't have dinner
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the musical because the
+       <ns type="S">
+        <i>
+         restrant
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         had been
+        </i>
+       </ns>
+       closed. It made me so
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           dissapoint
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and angry.
+      </p>
+      <p>
+       You should
+       <ns type="RV">
+        <i>
+         back
+        </i>
+       </ns>
+       my money
+       <ns type="S">
+        <i>
+         immedeastry
+        </i>
+       </ns>
+       because that night was far from
+       <ns type="S">
+        <i>
+         parfect
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I look forward to hearing from you soon.
+      </p>
+      <p>
+       Faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam
+       </s>
+       <s pid="1" sid="2">
+        The Circle
+       </s>
+       <s pid="1" sid="3">
+        Theatre manager
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about your product.
+       </s>
+       <s pid="2" sid="2">
+        I would like you to back my money because that was not same as your advertisement.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I was planning to spend my holiday in London when I found your advertisement.
+       </s>
+       <s pid="3" sid="2">
+        In the advertisement, you mentioned actors, time, price discount and equipment.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        DANNY BROOK is one of my favorite actor so I decided to buy a ticket even if I cancel my apointment on that day at 18=30 and aslo notice of price discount impressed me.
+       </s>
+       <s pid="4" sid="2">
+        However, when I went to the theatre, you didn't anything not only discount but also apporogize  us for  dalay of starting  musical.
+       </s>
+       <s pid="4" sid="3">
+        In addition  different actor appeared on the stage and I couldn't have dinner about the musical because the restrant had been closed.
+       </s>
+       <s pid="4" sid="4">
+        It made me so dissapoint and angry.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        You should back my money immedeastry because that night was far from parfect.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I look forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       He always tried to say nothing and did. But everyone always
+       <ns type="RV">
+        <i>
+         noticed
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         he had
+         <ns type="MD">
+         </ns>
+         <ns type="AGN">
+          <i>
+           secrets
+          </i>
+         </ns>
+         from his face
+        </i>
+       </ns>
+       . Whenever he has
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         secrets
+        </i>
+       </ns>
+       , his nose moves quickly. He
+       <ns type="TV">
+        <i>
+         had not liked
+        </i>
+       </ns>
+       this habit and had thought it was
+       <ns type="FJ">
+        <i>
+         <ns type="S">
+          <i>
+           wrost
+          </i>
+         </ns>
+        </i>
+       </ns>
+       of him until he solved a big crime.
+      </p>
+      <p>
+       When all
+       <ns type="MD">
+       </ns>
+       money had gone from a bank,
+       <ns type="S">
+        <i>
+         nobady
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       there except Pat.
+       <ns type="MD">
+        <i>
+         Bank
+        </i>
+       </ns>
+       robbers
+       <ns type="RV">
+        <i>
+         said
+        </i>
+       </ns>
+       him if Pat told
+       <ns type="R">
+        the fact somebody
+       </ns>
+       they
+       <ns type="TV">
+        <i>
+         killed
+        </i>
+       </ns>
+       him. So
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       Pat didn't say anything. But his nose moved quickly when
+       <ns type="MD">
+       </ns>
+       police showed
+       <ns type="MA">
+       </ns>
+       a picture of
+       <ns type="MD">
+       </ns>
+       bank robbers.
+      </p>
+      <p>
+       Then
+       <ns type="MD">
+       </ns>
+       police realized who
+       <ns type="AS">
+        <i>
+         were bank robbers
+        </i>
+       </ns>
+       and
+       <ns type="S">
+        <i>
+         arested
+        </i>
+       </ns>
+       them. Although
+       <ns type="MD">
+       </ns>
+       bank robbers complained to Pat, he
+       <ns type="X">
+        <i>
+         <ns type="TV">
+          <i>
+           said
+          </i>
+         </ns>
+         nothing to anybody
+        </i>
+       </ns>
+       . He just moved his nose!!
+      </p>
+      <p>
+       Thanks to his habit, he is still alive and all
+       <ns type="MD">
+       </ns>
+       money
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         backed
+        </i>
+       </ns>
+       to the bank. The town became
+       <ns type="DJ">
+        <i>
+         peace
+        </i>
+       </ns>
+       again.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        He always tried to say nothing and did.
+       </s>
+       <s pid="2" sid="2">
+        But everyone always noticed he had  secrets from his face.
+       </s>
+       <s pid="2" sid="3">
+        Whenever he has  secrets, his nose moves quickly.
+       </s>
+       <s pid="2" sid="4">
+        He had not liked this habit and had thought it was wrost of him until he solved a big crime.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        When all  money had gone from a bank, nobady  there except Pat.
+       </s>
+       <s pid="3" sid="2">
+        Bank robbers said him if Pat told the fact somebody they killed him.
+       </s>
+       <s pid="3" sid="3">
+        So.
+       </s>
+       <s pid="3" sid="4">
+        Pat didn't say anything.
+       </s>
+       <s pid="3" sid="5">
+        But his nose moved quickly when  police showed  a picture of  bank robbers.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Then  police realized who were bank robbers and arested them.
+       </s>
+       <s pid="4" sid="2">
+        Although  bank robbers complained to Pat, he said nothing to anybody.
+       </s>
+       <s pid="4" sid="3">
+        He just moved his nose!!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Thanks to his habit, he is still alive and all  money were backed to the bank.
+       </s>
+       <s pid="5" sid="2">
+        The town became peace again.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

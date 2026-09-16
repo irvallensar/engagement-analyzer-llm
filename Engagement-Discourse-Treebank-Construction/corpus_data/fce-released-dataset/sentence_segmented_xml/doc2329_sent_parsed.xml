@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      31-40
+     </age>
+    </personnel>
+    <score>
+     31.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I'm writing to complain about the musical show named OVER THE RAINBOW.
+       <ns type="RT">
+        <i>
+         Regarding
+        </i>
+       </ns>
+       your advertisement, it is
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       LONDON'S NEWEST AND BEST MUSICAL SHOW, but I was deeply disappointed
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       According to your advertisement, the
+       <ns type="DN">
+        <i>
+         starrings
+        </i>
+       </ns>
+       were DANNY BROOK AND TINA TRUELOVE. I decided to go to see this show because of its
+       <ns type="DN">
+        <i>
+         starrings
+        </i>
+       </ns>
+       , but
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the day I saw it, a different actor
+       <ns type="RV">
+        <i>
+         played
+        </i>
+       </ns>
+       . He was not DANNY BROOK.
+      </p>
+      <p>
+       Moreover there
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       no discount
+       <ns type="AGN">
+        <i>
+         ticket
+        </i>
+       </ns>
+       . They were all sold out. You should have said
+       <ns type="RA">
+        <i>
+         they
+        </i>
+       </ns>
+       were very few. I had to buy a £20 ticket.
+      </p>
+      <p>
+       To make matters worse, the
+       <ns type="R">
+        time that the show started was delayed
+       </ns>
+       . It started at 20:15,
+       <ns type="MP">
+        <i>
+         <ns type="S">
+          <i>
+           fourty
+          </i>
+         </ns>
+         five
+        </i>
+       </ns>
+       minutes
+       <ns type="RY">
+        <i>
+         later
+        </i>
+       </ns>
+       ! That's why I couldn't have
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       dinner at the theatre restaurant after the show. It had already closed
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when the show finished.
+      </p>
+      <p>
+       I'd like to ask for a full refund for this awful night. Could you give me a satisfactory reply as soon as possible
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to complain about the musical show named OVER THE RAINBOW.
+       </s>
+       <s pid="2" sid="2">
+        Regarding your advertisement, it is the LONDON'S NEWEST AND BEST MUSICAL SHOW, but I was deeply disappointed at it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        According to your advertisement, the starrings were DANNY BROOK AND TINA TRUELOVE.
+       </s>
+       <s pid="3" sid="2">
+        I decided to go to see this show because of its starrings, but at the day I saw it, a different actor played.
+       </s>
+       <s pid="3" sid="3">
+        He was not DANNY BROOK.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Moreover there was no discount ticket.
+       </s>
+       <s pid="4" sid="2">
+        They were all sold out.
+       </s>
+       <s pid="4" sid="3">
+        You should have said they were very few.
+       </s>
+       <s pid="4" sid="4">
+        I had to buy a £20 ticket.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        To make matters worse, the time that the show started was delayed.
+       </s>
+       <s pid="5" sid="2">
+        It started at 20:15, fourty five minutes later!
+       </s>
+       <s pid="5" sid="3">
+        That's why I couldn't have a dinner at the theatre restaurant after the show.
+       </s>
+       <s pid="5" sid="4">
+        It had already closed, when the show finished.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I'd like to ask for a full refund for this awful night.
+       </s>
+       <s pid="6" sid="2">
+        Could you give me a satisfactory reply as soon as possible.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Modern technology has changed my life.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         Especially
+        </i>
+       </ns>
+       ,
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       computer has
+       <ns type="AS">
+        <i>
+         made my daily life change
+        </i>
+       </ns>
+       dramatically.
+      </p>
+      <p>
+       It is only two or three years since I
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         have used
+        </i>
+       </ns>
+       a computer at home, but now I wonder how I
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       live without
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       . I open my
+       <ns type="DN">
+        <i>
+         e-mail box
+        </i>
+       </ns>
+       every night. When I find a new message, I'm very happy.
+      </p>
+      <p>
+       Before using e-mail, I used to write letters and
+       <ns type="RY">
+        <i>
+         sometime
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       <ns type="S">
+        <i>
+         telephon
+        </i>
+       </ns>
+       . However
+       <ns type="MP">
+       </ns>
+       I've found e-mail is better than
+       <ns type="R">
+        <i>
+         them
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       as soon as I send my message, they
+       <ns type="TV">
+        <i>
+         can receive
+        </i>
+       </ns>
+       it.
+       <ns type="R">
+        <ns type="ID">
+         <i>
+          In the other word
+         </i>
+        </ns>
+       </ns>
+       , I can also receive their reply
+       <ns type="RY">
+        <i>
+         soon
+        </i>
+       </ns>
+       . It's really useful
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when I need
+       <ns type="MD">
+       </ns>
+       quick reply.
+      </p>
+      <p>
+       <ns type="DY">
+        <i>
+         Overmore
+        </i>
+       </ns>
+       when I send e-mail, I
+       <ns type="X">
+        <i>
+         need not worry
+        </i>
+       </ns>
+       about the time. I can send them anytime I like.
+      </p>
+      <p>
+       Thanks to modern technology, I enjoy chatting with my
+       <ns type="FN">
+        <i>
+         friend
+        </i>
+       </ns>
+       in other countries and my family in Japan almost every day.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Modern technology has changed my life.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Especially, a computer has made my daily life change dramatically.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It is only two or three years since I  have used a computer at home, but now I wonder how I can live without it.
+       </s>
+       <s pid="3" sid="2">
+        I open my e-mail box every night.
+       </s>
+       <s pid="3" sid="3">
+        When I find a new message, I'm very happy.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Before using e-mail, I used to write letters and sometime  telephon.
+       </s>
+       <s pid="4" sid="2">
+        However I've found e-mail is better than them.
+       </s>
+       <s pid="4" sid="3">
+        Because as soon as I send my message, they can receive it.
+       </s>
+       <s pid="4" sid="4">
+        In the other word, I can also receive their reply soon.
+       </s>
+       <s pid="4" sid="5">
+        It's really useful, when I need  quick reply.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Overmore when I send e-mail, I need not worry about the time.
+       </s>
+       <s pid="5" sid="2">
+        I can send them anytime I like.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Thanks to modern technology, I enjoy chatting with my friend in other countries and my family in Japan almost every day.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

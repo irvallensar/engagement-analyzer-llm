@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     35.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Ryan,
+      </p>
+      <p>
+       Thank you for your letter. I am very pleased to see that I
+       <ns type="TV">
+        <i>
+         win
+        </i>
+       </ns>
+       the first prize in your competition. I am going to answer your questions.
+      </p>
+      <p>
+       Firstly, I would like to travel
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July because I have some holidays during
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       month. I am working the rest of this summer.
+      </p>
+      <p>
+       For the accommodation, I would prefer to stay in a log cabin because I think it is probably more comfortable. I think we are going to be tired so I prefer to sleep comfortably.
+      </p>
+      <p>
+       You also asked me about two activities. I choose singing because I love singing and I
+       <ns type="TV">
+        <i>
+         am
+        </i>
+       </ns>
+       in a choir for 7 years now. I also choose climbing. Unfortunately I am not so good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       it. But I would take the opportunity to improve
+       <ns type="UA">
+        <i>
+         myself
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In addition, I have some questions. I would like to know
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       sort of clothes we have to take with us and also how much money is necessary.
+      </p>
+      <p>
+       I look forward to hearing from you in the near future.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter.
+       </s>
+       <s pid="2" sid="2">
+        I am very pleased to see that I win the first prize in your competition.
+       </s>
+       <s pid="2" sid="3">
+        I am going to answer your questions.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I would like to travel on July because I have some holidays during this month.
+       </s>
+       <s pid="3" sid="2">
+        I am working the rest of this summer.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        For the accommodation, I would prefer to stay in a log cabin because I think it is probably more comfortable.
+       </s>
+       <s pid="4" sid="2">
+        I think we are going to be tired so I prefer to sleep comfortably.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        You also asked me about two activities.
+       </s>
+       <s pid="5" sid="2">
+        I choose singing because I love singing and I am in a choir for 7 years now.
+       </s>
+       <s pid="5" sid="3">
+        I also choose climbing.
+       </s>
+       <s pid="5" sid="4">
+        Unfortunately I am not so good in it.
+       </s>
+       <s pid="5" sid="5">
+        But I would take the opportunity to improve myself.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In addition, I have some questions.
+       </s>
+       <s pid="6" sid="2">
+        I would like to know which sort of clothes we have to take with us and also how much money is necessary.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you in the near future.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       Our life
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       today is
+       <ns type="R">
+        <i>
+         getting even more about
+         <ns type="DN">
+          <i>
+           consommation
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . You always find more shops and they are open even
+       <ns type="IJ">
+        <i>
+         more late
+        </i>
+       </ns>
+       . You can't live without shopping but shopping is not always enjoyable.
+      </p>
+      <p>
+       Firstly, if you try to do your shopping during the rush hour, it could be very difficult. Everybody is stressed
+       <ns type="RP">
+        <i>
+         , you
+        </i>
+       </ns>
+       have to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       the queue. It is not
+       <ns type="RJ">
+        <i>
+         comfortable
+        </i>
+       </ns>
+       at all.
+      </p>
+      <p>
+       In addition, everything is now so expensive that you have to compare the prices. You have to find which shop offers you good quality products for a good price.
+       <ns type="UC">
+        <i>
+         But sometimes
+        </i>
+       </ns>
+       some goods are expensive but of a very bad quality. And it is not an easy task if you have to complain about the quality. Most of the time the shop assistant doesn't believe you.
+      </p>
+      <p>
+       In conclusion, I can say that shopping is not the most enjoyable task you could find. Of course you also have some good aspects but most of the time it is very unpleasant. You could try to do your shopping via
+       <ns type="MD">
+       </ns>
+       Internet. Perhaps you will find
+       <ns type="MA">
+       </ns>
+       less
+       <ns type="DJ">
+        <i>
+         inconvenience
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Our life of today is getting even more about consommation.
+       </s>
+       <s pid="2" sid="2">
+        You always find more shops and they are open even more late.
+       </s>
+       <s pid="2" sid="3">
+        You can't live without shopping but shopping is not always enjoyable.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, if you try to do your shopping during the rush hour, it could be very difficult.
+       </s>
+       <s pid="3" sid="2">
+        Everybody is stressed, you have to make the queue.
+       </s>
+       <s pid="3" sid="3">
+        It is not comfortable at all.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In addition, everything is now so expensive that you have to compare the prices.
+       </s>
+       <s pid="4" sid="2">
+        You have to find which shop offers you good quality products for a good price.
+       </s>
+       <s pid="4" sid="3">
+        But sometimes some goods are expensive but of a very bad quality.
+       </s>
+       <s pid="4" sid="4">
+        And it is not an easy task if you have to complain about the quality.
+       </s>
+       <s pid="4" sid="5">
+        Most of the time the shop assistant doesn't believe you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In conclusion, I can say that shopping is not the most enjoyable task you could find.
+       </s>
+       <s pid="5" sid="2">
+        Of course you also have some good aspects but most of the time it is very unpleasant.
+       </s>
+       <s pid="5" sid="3">
+        You could try to do your shopping via  Internet.
+       </s>
+       <s pid="5" sid="4">
+        Perhaps you will find  less inconvenience.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

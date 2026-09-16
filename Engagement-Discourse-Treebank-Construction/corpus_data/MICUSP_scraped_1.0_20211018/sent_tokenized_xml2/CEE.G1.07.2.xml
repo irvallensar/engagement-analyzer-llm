@@ -1,0 +1,382 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      The State of Finite Element Modeling of Fiber Reinforced Cement Composites
+     </div>
+     <p>
+     </p>
+     <div class="abstract">
+      1.0 Abstract/Introduction:
+      <p>
+       Having been around for over 50 years, finite element analysis has grown into an important analytical tool for approximating solutions to complex problems.  Models have been developed which accurately simulate behavior throughout the elastic range, and well into in-elastic ranges for steel and other ductile materials.  For many years, research efforts have been directed towards developing such reliable models for more complex materials and composites such as reinforced concrete, and have resulted in some successes.  With the more recent evolution of fiber reinforced concrete composites which exhibit drastically improved ductilities and bond characteristics, there is considerable interest in developing a reliable framework for a model which will accurately simulate behaviors well into the inelastic ranges, even under cyclic loads.   Such a model would be instrumental in advanced research and an important tool in design.  This report endeavors to summarize many of the efforts which have been made to develop such a model.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       2.0 Modeling Stress States
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The first and perhaps most elementary material property which must be modeled is the material response to uni-axial and multi-axial stress states.
+       </s>
+       <s pid="1" sid="2">
+        The material response to compression, tension, and shear all must be adapted when fibers are included in the matrix.
+       </s>
+       <s pid="1" sid="3">
+        Several approaches have been considered by researchers to accomplish this task, each with varying successes and versatility of application.
+       </s>
+       <s pid="1" sid="4">
+        A micro-mechanics approach has been employed by Lee and Liang [16] where individual fibers were modeled as truss elements with springs used model bond interaction with the matrix when a detailed study of bond degradation was of interest.
+       </s>
+       <s pid="1" sid="5">
+        Padmarajaiah and Ramaswamy [17], among others, have found that modeling individual fibers with truss elements can help simulate interaction mechanisms such as fiber bridging action across cracks.
+       </s>
+       <s pid="1" sid="6">
+        The approach of modeling individual fibers is interesting when very specific fiber-matrix interaction behavior is of interest, but it is not very practical for larger specimens where macro behavior is of interest.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        A simplified modeling philosophy was proposed by Faulkner and Teutsch [10] where the fiber reinforced concrete is modeled as regular reinforced concrete with an equivalent steel reinforcing ratio proportional to the increase in tensile capacity due to the fibers.
+       </s>
+       <s pid="2" sid="2">
+        Barros and Figueiras [3], however, have criticized this approach as being too simplistic for most applications.
+       </s>
+       <s pid="2" sid="3">
+        There is a general consensus developing in the literature that fiber reinforced concrete should instead be modeled with the assumption that a large enough scale ensures a sufficient randomness of fiber distribution to result in a material which exhibits isotropic behavior.
+       </s>
+       <s pid="2" sid="4">
+        It is on this assumption that most of the models discussed in this paper are based.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        2.1 Modeling Compression
+       </div>
+       <p>
+        <s pid="3" sid="1">
+         With the assumption of isotropic behavior, the majority of researchers have approached modeling the compression response of FRC composites in a similar manner to conventional concrete.
+        </s>
+        <s pid="3" sid="2">
+         Han, Feenstra, and Billington [11], and Kooiman, Van Der Veen, and Walraven [13] concluded that a simple bi-linear compression model up to peak with a single linear descending branch, when calibrated correctly, is sufficient to model the compression response of these composites.
+        </s>
+        <s pid="3" sid="3">
+         Swakkiwudhipong [19] employed a non-linear pre-peak model as an alternative to the bi-linear scheme to more precisely model the behavior, and it was shown that convergence to a reasonable solution can be achieved with such a model.
+        </s>
+        <s pid="3" sid="4">
+         Ezeldin and Balaguru [9] chose to simplify the bi-linear model further by ignoring any post-peak capacity of the composite, which they decided was an adequate assumption for the modeling of rebar pullout mechanisms.
+        </s>
+        <s pid="3" sid="5">
+         This was done to avoid the non-linear convergence issues which are sometimes associated with concrete crushing patterns.
+        </s>
+       </p>
+       <p>
+        <s pid="4" sid="1">
+         These assumptions certainly simplify the model, but are not always appropriate for all applications.
+        </s>
+        <s pid="4" sid="2">
+         The vastly improved ductilities exhibited by fiber reinforced concretes are an important aspect of their behavior, and cannot be ignored for most applications.
+        </s>
+        <s pid="4" sid="3">
+         When compression failure was considered to be a viable failure mode, as in the modeling of pre-stressed fiber reinforced concrete members by Padmarajaiah and Ramaswamy [17], crushing behavior was considered.
+        </s>
+        <s pid="4" sid="4">
+         In addition to crushing patterns, their model also considered the effects of bi-axial stress interaction patterns which can sometimes significantly modify behavior.
+        </s>
+        <s pid="4" sid="5">
+         Kullaa [14] also concluded that bi-axial stress interactions are an important component of a constitutive model for FRC composites.
+        </s>
+        <s pid="4" sid="6">
+         It is apparent that every model proposed has attempted to limit the complexity of the material model while maintaining sufficient accuracy for the simulation under consideration.
+        </s>
+        <s pid="4" sid="7">
+         The implications associated with the simplifications of each model must be carefully considered when transferring any model to a different application.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.2 Modeling Tension
+       </div>
+       <p>
+        <s pid="5" sid="1">
+         A considerable amount of attention has been paid to adapting existing concrete models to account for the drastically improved ductilities exhibited by fiber reinforced composites in tension.
+        </s>
+        <s pid="5" sid="2">
+         Modeling discrete cracks, a method which has proven effective in some cases for modeling regular un-reinforced conventional concrete, has been considered by some researchers for application to fiber reinforced composites [13, 14].
+        </s>
+        <s pid="5" sid="3">
+         In general, however, the favorable multiple cracking behavior of many fiber reinforced composites does not lend itself to the discrete crack modeling approach.
+        </s>
+        <s pid="5" sid="4">
+         Instead, a smeared cracking approach, in which cracks are modeled as a localized phenomenon occurring at individual integration points, has been shown by Barros and Figueiras [2, 3] and Kwan and Billington [15], among many others, to exhibit considerable promise.
+        </s>
+        <s pid="5" sid="5">
+         This is generally considered to be the model of choice for these composites.
+        </s>
+       </p>
+       <p>
+        <s pid="6" sid="1">
+         There are generally three formulations of the smeared cracking model.
+        </s>
+        <s pid="6" sid="2">
+         Cracks forming at integration points can be formulated to be either fixed or rotating, or multiple non-orthogonal cracks can be permitted.
+        </s>
+        <s pid="6" sid="3">
+         Models developed by Ǻgǻrdh [1] and Cervenka [7], which are based on the fixed crack model, have shown success modeling conventional concrete, and Ezeldin and Balaguru [9] have successfully applied the technique to modeling fiber reinforced concrete composites.
+        </s>
+        <s pid="6" sid="4">
+         In this formulation the cracks, once formed, will permanently remain at that integration point with a constant orientation, allowing stresses to transfer across the surface as defined by the user.
+        </s>
+        <s pid="6" sid="5">
+         In the case of cyclic loading, a second crack is permitted to form, but it is constrained to only develop perpendicular to the existing crack [12].
+        </s>
+        <s pid="6" sid="6">
+         This additional constraint has been shown by Vecchio and Collins [20] to over-stiffen the model in certain circumstances.
+        </s>
+        <s pid="6" sid="7">
+         Their attempts to model the behavior of concrete shear panels with highly anisotropic reinforcement failed due to the fact that many of the cracks were observed to have changed direction as the test progressed.
+        </s>
+        <s pid="6" sid="8">
+         This over-stiffening can lead to grave miscalculations of response, especially in fiber reinforced composites which are often used in regions which are primarily dominated by reversed shears and where a multiplicity of cracks is expected to develop.
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         As a result of these difficulties, a new formulation was introduced in which cracks were permitted to "rotate" .
+        </s>
+        <s pid="7" sid="2">
+         As discussed by Hassan [12], in this formulation cracks are formed at every integration point perpendicular to the principal tension stress at each iteration step once failure criterion are met.
+        </s>
+        <s pid="7" sid="3">
+         The cracks are then erased, and at the next iteration cracks are re-formed perpendicular to the new principal tension stress when the failure criterion is again met.
+        </s>
+        <s pid="7" sid="4">
+         In this manner, the cracks are permitted to "rotate" , thus eliminating the over-stiffening effects which often result when the fixed crack formulation is employed.
+        </s>
+        <s pid="7" sid="5">
+         However, this model has been criticized by Bazant [4] and others for being a poor representation of reality.
+        </s>
+        <s pid="7" sid="6">
+         Cracks do not disappear entirely and re-form in reality, and thus many material behavioral tendencies may not be properly simulated with this model.
+        </s>
+        <s pid="7" sid="7">
+         There is concern that these limitations become particularly significant for cyclic loads where the post-cracking multi-axis stress response of the composite has a significant influence on the performance of the model.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         A third formulation in which multiple non-orthogonal cracks are allowed to form was developed by de Borst and Nauta [8], and successfully incorporated by Bolander and Wight [5, 6] to model shear wall dominant buildings.
+        </s>
+        <s pid="8" sid="2">
+         This model is considered realistic due to the permanence of the cracks, and has the advantage of not introducing unnecessary constraints which result in over-stiffened elements.
+        </s>
+        <s pid="8" sid="3">
+         This method has been shown to be successful for conventional concrete, but has not been used widely due to the significant level of computation required to track the development of multiple cracks at each integration point.
+        </s>
+        <s pid="8" sid="4">
+         Hassan [12] suggested that the computational demand is doubled or even tripled relative to the other crack models.
+        </s>
+        <s pid="8" sid="5">
+         This limitation effectively makes this model impractical for most fiber reinforced composite models, which already place a more significant computational demand on the system than conventional reinforced concrete.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         Although a consensus has developed that the smeared crack model is preferred over discrete crack modeling for most simulations, careful consideration must be taken when selecting which smeared crack formulation is appropriate for modeling various fiber reinforced composites.
+        </s>
+        <s pid="9" sid="2">
+         Kwan and Billington [13], as discussed in the following section, have shown that some of the inherent inaccuracies associated with some of these formulations can possibly be recuperated as an implicit inclusion of various shear transfer mechanisms across cracks.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.3 Modeling Shear
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         Shear stresses can be decomposed into the principal tension and compression stresses until cracking, which is primarily a tension controlled behavior.
+        </s>
+        <s pid="10" sid="2">
+         Once the crack has formed however, fiber reinforced composites exhibit significantly improved shear transfer mechanisms across the crack face when compared to conventional concrete.
+        </s>
+        <s pid="10" sid="3">
+         Aggregate interlock, which is substantially improved due to the closing force developed by the fibers bridging the crack, will have a significant effect on the shear resistance of the cracked system.
+        </s>
+        <s pid="10" sid="4">
+         While most models developed in the literature focus on flexure dominated systems and fail to explicitly consider shear transfer behavior, Padmarajaiah and Ramaswamy [17] attempted to simulate the bridging action provided by fibers by explicitly modeling truss elements representing fibers, and linking them to the solid elements representing the concrete at every node with spring elements.
+        </s>
+        <s pid="10" sid="5">
+         This method is time consuming and only practical when the orientation of the failure surface is generally known.
+        </s>
+        <s pid="10" sid="6">
+         A more generally applicable solution is sought by the majority of researchers who considered shear transfer mechanisms in their FRC composite models.
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         Hassan [12] and Kullaa [14] incorporated a shear retention friction factor to account for shear transfer across the surface of cracks in their models, which generally exhibited good results.
+        </s>
+        <s pid="11" sid="2">
+         Ezeldin and Balaguru [9] advanced this approach to consider both closed and open cracks.
+        </s>
+        <s pid="11" sid="3">
+         Closed cracks were assigned a shear retention friction factor to account for aggregate interlock, while open cracks were assumed to transfer no shear across the plane of the crack.
+        </s>
+        <s pid="11" sid="4">
+         These models exhibit some success, but required significant calibration of the friction factor and so are limited.
+        </s>
+        <s pid="11" sid="5">
+         Kwan and Billington [13] have found that the application of an insufficiently calibrated friction factor will tend to result in an over-stiffened shear response in conventional concretes.
+        </s>
+        <s pid="11" sid="6">
+         Further, Kwan and Billington [13] showed that for conventional concrete, the rotating crack formulation tends to implicitly result in an increased shear stiffness which will more closely simulate the shear transfer capacity across crack faces, negating the necessity of any friction factor.
+        </s>
+        <s pid="11" sid="7">
+         An explicit investigation of the rotating crack model’s capacity to implicitly model shear transfer across cracks in fiber reinforced composites was not found, but it stands to reason that with some calibration, this effect could be adapted to model shear retention in fiber reinforced composites.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       3.0 Conclusion/Summary
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        Considerable efforts have been put forth to develop a reliable, versatile constitutive model for fiber reinforced composites.
+       </s>
+       <s pid="12" sid="2">
+        Such a model would have significant impact on advanced research and could be an important tool in design.
+       </s>
+       <s pid="12" sid="3">
+        However, it is clear from the models considered in this study that the research community is still not prepared to propose a model which is sufficiently versatile to be effectively incorporated into a variety of applications without first being heavily calibrated to the specific task.
+       </s>
+       <s pid="12" sid="4">
+        Beyond the essential stress state responses considered in this paper, several challenges which, in the mind of the author, do not appear to have been sufficiently addressed by the research community include quantifying the improved rebar pullout behavior, improved rebar confinement from FRC composites, and modeling the cyclic response of FRC composites including crack closing/re-opening energy dissipation.
+       </s>
+       <s pid="12" sid="5">
+        Strain-rate effects considered in the model proposed by Ǻgǻrdh [1] may not even be sufficiently studied for many fiber reinforced composites to begin to develop appropriate constitutive models.
+       </s>
+       <s pid="12" sid="6">
+        At this time it appears that any finite element model simulating the behavior of fiber reinforced composites suffer from limited versatility due to a heavy reliance on careful parameter calibration and model verification with associated experimental data.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <ul id="N10156">
+       <div class="head_1">
+        References:
+       </div>
+       <li id="N10159">
+        1: Ǻgǻrdh, L..  “Fe-modeling of fiber reinforced concrete slabs subjected to blast load.”  
+  Journal De Physique IV: JP, v. 7, n. 3, Aug., 1997: 723-728.
+       </li>
+       <li id="N1015B">
+        2: Barros, J.A.O., Figueiras, J.A..  “Flexural behavior of SFRC: testing and modeling.” 
+  Journal of Materials in Civil Engineering, v. 11, n. 4, Nov., 1999: 331-338.
+       </li>
+       <li id="N1015D">
+        3: Barros, J.A.O., Figueiras, J.A..  “Model for the analysis of steel fiber reinforced 
+  concrete slabs on grade.”  Computers and Structures, v. 79, n.1, 2001: 97-106.
+       </li>
+       <li id="N1015F">
+        4: Bazant, Zdenek P.  “Comment on orthotropic models for concrete and geomaterials.”  
+  Journal of Engineering Mechanics, v. 109, n.3, Jun, 1983: 849-865.
+       </li>
+       <li id="N10161">
+        5: Bolander, John Jr., Wight, James K..  “Finite element modeling of shear wall dominant 
+  buildings.”  Journal of Structural Engineering, v. 117, n.6, Jun, 1991: 1719-1739.
+       </li>
+       <li id="N10163">
+        6: Bolander, J., and Wight, J.K. (1989).  “Towards realistic FE models for reinforced 
+  concrete shear wall dominant buildings subjected to lateral loading.”  Report NO. 
+  UMCE 89-2, Department of Civil Engineering, The University of Michigan, Ann 
+  Arbor, Mich.
+       </li>
+       <li id="N10165">
+        7: Cervenka, Vladimir.  “Constitutive model for cracked reinforced concrete.”  Journal of 
+  the American Concrete Institute, v. 82, n. 6, Nov.-Dec., 1985: 877-882.
+       </li>
+       <li id="N10167">
+        8: de Borst, R., Nauta, P..  “Non-orthogonal cracks in a smeared finite element model.”  
+  Engineering Computations, v. 2, n. 1, Mar, 1985: 35-46.
+       </li>
+       <li id="N10169">
+        9: Ezeldin, A.S., Balaguru, P.N..  “Characterization of bond between fiber concrete and 
+  reinforcing bars using nonlinear finite element analysis.”  Computers and Structures 
+  v. 37, n.4, 1990: 569-584.
+       </li>
+       <li id="N1016B">
+        10: Faulkner, H., Teutsch, M..  “Comparative investigations of plain and steel fiber 
+  reinforced industrial ground slabs.”  Institute fur Baustoffe, Massivebau und 
+  brandschutz, n. 102, 1993.
+       </li>
+       <li id="N1016D">
+        11: Han, Tong-Seok, Feenstra, Peter H., Billington, Sarah L..  “Simulation of highly 
+  ductile fiber-reinforced cement-based composite components under cyclic loading.”  
+  American Concrete Institute Structural Journal, v. 100, n.6, Nov.-Dec., 2003: 749-
+  757.
+       </li>
+       <li id="N1016F">
+        12: Hassan, Mohamed.  “Inelastic dynamic behavior and design of hybrid coupled wall 
+  systems.”  Dissertation, University of Central Florida.  2004.
+       </li>
+       <li id="N10171">
+        13: Kooiman, A.G., Van Der Veen, C., Walraven, J.C..  “Modeling the post-cracking 
+  behavior of steel fiber reinforced concrete for structural design purposes.”  Heron, v. 
+  45, n. 4, 2000: 275-307.
+       </li>
+       <li id="N10173">
+        14: Kullaa, Jyrki.  “Finite element modeling of fiber-reinforced brittle materials.”  Heron, 
+  v. 42, n. 2, 1997: 75-95.
+       </li>
+       <li id="N10175">
+        15: Kwan, W.P., Billington, Sarah L..  “Simulation of structural concrete under cyclic 
+  load.”  Journal of Structural Engineering, v. 127, n.12, Dec., 2001: 1391-1401.
+       </li>
+       <li id="N10177">
+        16: Lee, H.K., Liang, Z..  “Computational modeling of the response and damage behavior 
+  of fiber reinforced cellular concrete.”  Computers and Structures, v. 82, n. 7-8, Mar., 
+  2004: 581-592.
+       </li>
+       <li id="N10179">
+        17: Padmarajaiah, S.K., Ramaswamy, Ananth.  “A finite element assessment of flexural 
+  strength of pre-stressed concrete beams with fiber reinforcement.”  Cement and 
+  Concrete Composites, v. 24, n.2, Apr., 2002: 229-241.
+       </li>
+       <li id="N1017B">
+        18: Rashid, Yusef R..  “Analysis of axisymmetric composite structures by the finite 
+  element method.”  Nuclear Engineering and Design.  Amsterdam: North-
+  Holland Publishing Comp.  Nov. 1965: 163-182.
+       </li>
+       <li id="N1017D">
+        19: Swakkiwudhipong, S..  “Nonlinear finite element analysis of fiber reinforced concrete 
+  deep beams.”  Structural Engineering and Mechanics, v. 4, n. 4, Jul, 1996: 437-450.
+       </li>
+       <li id="N1017F">
+        20: Vecchio, Frank J., Collins, Michael P..  “Modified compression-field theory for 
+  reinforced concrete elements subjected to shear.”  Journal of the American Concrete 
+  Institute, v. 83, n. 2, Mar-Apr, 1986: 219-231.
+       </li>
+       <li id="N10181">
+        21: Wegner, Leon D., Mufti, Aftab A..  “Finite element investigation of fiber-
+  reinforced concrete deck slabs without internal steel reinforcement.”  Canadian 
+  Journal of Civil Engineering, v. 21, n. 2, 1994: 231-236.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

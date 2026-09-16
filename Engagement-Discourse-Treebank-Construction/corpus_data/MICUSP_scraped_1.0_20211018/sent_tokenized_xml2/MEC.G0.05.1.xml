@@ -1,0 +1,853 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Subject:	Design Modifications to Reduce Vibration on Electric Vehicle Drive Shaft
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       FOREWORD
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The Powertrain Division of EKA-KK Inc. has observed a low-frequency resonance on the drive shaft of the current prototype vehicle.
+       </s>
+       <s pid="1" sid="2">
+        Due to this resonance, passengers clearly sense the switching on and off of the DC motor, a major vibration problem.
+       </s>
+       <s pid="1" sid="3">
+        Thus, Systems Group has been contracted to identify the cause of the drive shaft vibration problem and to recommend four possible design modifications.
+       </s>
+       <s pid="1" sid="4">
+        Systems Group is to develop a motor/drive shaft model, perform computer simulations to validate the model, and come up with four design changes.
+       </s>
+       <s pid="1" sid="5">
+        All of the requested work has been completed, with the purpose of this report to provide results, conclusions, and supporting documentations for the drive shaft test and design alterations.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       SUMMARY
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        Our experiments have allowed us to create a mathematical model of the drive shaft and flywheel system.
+       </s>
+       <s pid="2" sid="2">
+        The cause of the vibration problem in the drive shaft was determined to be the drive shaft itself, in which initial assumptions of drive shaft rigidity were incorrect.
+       </s>
+       <s pid="2" sid="3">
+        Through sensitivity analysis we identified that the diameter of the flywheel, Dflywheel , the resistance of the motor, Rm , the motor constant, Km , and the damping of the motor, Bm , had the most significant effect on the magnitude of the resonant response.
+       </s>
+       <s pid="2" sid="4">
+        Table 1, below, shows how much each parameter needs to be changed individually to reach a 30% reduction in resonance magnitude.
+       </s>
+       <s pid="2" sid="5">
+        Additionally, there are four design options that combine changes in multiple parameters in order to reach the 30% reduction goal.
+       </s>
+       <s pid="2" sid="6">
+        We feel that proposed Design 4 will best suit your needs as it minimizes the amount of change to each variable.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Table 1: 30% Reduction in Resonance Peak is Achieved by a Variety of Design Changes
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       PROCEDURE
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        This section highlights the procedures used during testing and data collection.
+       </s>
+       <s pid="6" sid="2">
+        The test setup consisted of a drive shaft with two flywheels, Figure 1 on page 2.
+       </s>
+       <s pid="6" sid="3">
+        On the right side of the drive shaft is a DC motor (Aerotech 1000 DC Permanent Magnet), which also can operate as a tachometer, and on the left is a tachometer (Servo-Tek SA-740B-1A).
+       </s>
+       <s pid="6" sid="4">
+        Both the motor and the tachometer are connected to an oscilloscope (Hewlett Packard 54602B) and the motor was driven by a function generator (Hewlett Packard 33120A).
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Figure 1: Test Setup
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        Figure 2: Drive Shaft System Model with Corresponding Parameters Labeled [1]
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <div>
+       <div class="head_2">
+        Damping Coefficients
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         With the system given in Figure 2, above, the damping coefficients of the bearing, Bb , drive shaft, Bs , and motor, Bm , could not be obtained individually.
+        </s>
+        <s pid="13" sid="2">
+         The system was separated into components and a system of equations was used to solve for all of the coefficients simultaneously.
+        </s>
+        <s pid="13" sid="3">
+         The combined damping of the bearing and shaft was obtained by locking Flywheel 1, applying a small force to Flywheel 2 to initiate rotation, and applying Equation 5 on page 3.
+        </s>
+        <s pid="13" sid="4">
+         An oscilloscope was used to measure the output angular velocity from the tachometer which is attached just beyond Flywheel 2.
+        </s>
+        <s pid="13" sid="5">
+         To determine the combined damping of the motor and shaft, the same procedure as above was used, with the exception that Flywheel 2 was locked, a small force was applied to Flywheel 1, the oscilloscope read the voltage from the motor, and Equation 6 on page 3 was used.
+        </s>
+        <s pid="13" sid="6">
+         We found the third equation by locking Flywheel 1, restraining the drive shaft so that only half of it rotated, applying a small force to Flywheel 2, and using Equation 5 on page 3.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Frequency Response
+       </div>
+       <p>
+        <s pid="14" sid="1">
+         To measure frequency response, an amplifier (Techron 7520) attached to a function generator applied an output signal at 1Hz to the motor of the drive shaft.
+        </s>
+        <s pid="14" sid="2">
+         The amplifier gain was then increased to 4V.
+        </s>
+        <s pid="14" sid="3">
+         The frequency response was measured for input frequencies between 1 and 12Hz in intervals of 0.2Hz between 5 and 6 Hz and intervals of 1Hz everywhere else along the given range.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Motor Constant and Internal Resistance
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         The motor constant and resistance are related to each other through a function of the motor’s voltage, current, and angular velocity; see Equation 9 on page 4.
+        </s>
+        <s pid="15" sid="2">
+         To find the motor resistance, Rm, we subjected the motor to a range of high frequencies, 20 to 30 Hz, and recorded the motor’s voltage and current for each frequency.
+        </s>
+        <s pid="15" sid="3">
+         The motor constant, Km, was found by applying a steady DC voltage and recording the motor voltage, motor current, and tachometer voltage.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       FINDINGS/DISCUSSION
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        This section highlights the results of the variables calculated, the verification and improvement of the test model through the use of Bode plots, the cost function and sensitivity analysis, and the proposed design modifications to reduce the resonance peak of the drive shaft.
+       </s>
+       <s pid="16" sid="2">
+        To find an accurate mathematical model for this system, we needed to determine all of the parameters of the system’s transfer function, Equation 1 below.
+       </s>
+       <s pid="16" sid="3">
+        This model takes into account that the model components are not rigid, as previously thought; a possible reason for the drive shaft vibrations.
+       </s>
+       <s pid="16" sid="4">
+        Once the parameter values were calculated, we performed a cost function and sensitivity analysis to identify which parameters should be changed to reduce the magnitude of the transfer function by 30%.
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      Equation 1
+      <p>
+      </p>
+      <div>
+       <div class="head_2">
+        Calculation of Damping Coefficients
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         In order to determine the damping coefficients of our system, we isolated different combinations of the damping coefficients.
+        </s>
+        <s pid="19" sid="2">
+         We then used a system of equations to solve for the motor damping, Bm=9.56·10-3 ±7·10-4, shaft damping, Bs=2.06·10-3 ±6·10-4, and bearing damping, Bb=1.45·10-3 ±6·10-4, individually.
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         By drawing a free body diagram of the shaft and second flywheel we found the governing equation of motion, Equation 2 below.
+        </s>
+        <s pid="20" sid="2">
+         This can also be rewritten to include variables such as the natural frequency, ωn, and the damping ratio, ζ, as seen in Equation 3 below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 2
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 3
+       <p>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         Btr, the damping coefficient of the shaft and bearing, was calculated using ζ, which was determined from Equation 4, below.
+        </s>
+        <s pid="25" sid="2">
+         After measuring the amplitudes of two peaks, x1 and x2, as well as the period, t, between those peaks of the damped response, we calculated the value of ζ and set it equal to Equation 3 above to solve for Btr, Equation 5 below, where Jf is the moment of inertia of the flywheel, and K is the spring constant of the shaft.
+        </s>
+        <s pid="25" sid="3">
+         An example of how x1, x2, and t were measured is seen in Figure 3 below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 4
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 5
+       <p>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         Figure 3: Example of Damping Coefficient, ζ, Calculation Using Oscilloscope
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         Btl, the damping coefficient of the shaft and motor, was calculated with the same procedure as that to find Btr, with the exception that the inertia of the motor was a factor in the calculation.
+        </s>
+        <s pid="33" sid="2">
+         Thus, Btl was calculated with Equations 6-7 below, where Jm is the moment of inertia of the flywheel.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 6
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 7
+       <p>
+       </p>
+       <p>
+        <s pid="38" sid="1">
+         Finally, Btr2 was calculated by reducing the shaft length by 50% and using the same procedure as for Btr.
+        </s>
+        <s pid="38" sid="2">
+         The individual damping coefficients were calculated using a Gaussian distribution, Equation 8 below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 8
+       <p>
+       </p>
+       <p>
+        <s pid="41" sid="1">
+         Error in the damping coefficients primarily came from the precision and resolution error of reading measurements from the oscilloscope, as well as the statistical error associated with having multiple trials.
+        </s>
+       </p>
+       <p>
+        <s pid="42" sid="1">
+         Determining Motor Parameters Km and Rm
+        </s>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         To verify or possibly improve the original system model, we experimentally determined the motor parameters Rm (2.458 ±0.1 ohms) and Km (0.056 ±0.03 V/(rad/sec)) using Equation 9, below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 9
+       <p>
+       </p>
+       <p>
+        <s pid="46" sid="1">
+         When we gathered data for calculating Rm, we used the assumption that if high frequencies were applied to the system there would be a negligible amount of rotation and thus
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       =0.  From there we used the motor’s voltage and current to obtain Rm. To find Km, we used the fact that at steady state, the angular velocities of the flywheels and motor would be the same, therefore we could use the reading from the tachometer as the angular velocity of the motor. After gathering the data, we plotted
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       versus
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       , seen below in Figure 4, below. The slope of the best fit line is Km, which is 0.056 ±0.03 V/(rad/sec). The error in Rm and Km arise from the precision and resolution errors of reading the oscilloscope.
+       <p>
+       </p>
+       <p>
+        <s pid="48" sid="1">
+         Figure 4: Linear Trendline Shows that Actual Motor Constant is 0.056 ±0.03 V/(rad/sec)
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Frequency Response
+       </div>
+       <p>
+        <s pid="51" sid="1">
+         After performing all the experiments, we gathered all the parameter values associated with our mathematical model.
+        </s>
+        <s pid="51" sid="2">
+         Table 2, below, gives a value for each parameter and any error associated with it.
+        </s>
+       </p>
+       <p>
+        <s pid="52" sid="1">
+         Table 2: Final Values of Parameters in Improved Mathematical Model
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+       </p>
+       <p>
+       </p>
+       <p>
+        <s pid="57" sid="1">
+         Figure 5a, below, shows the frequency response of the system for the mathematical models and experimental data.
+        </s>
+        <s pid="57" sid="2">
+         In order to verify that we improved the original model by calculating the motor constant and internal resistance, we plotted the original model, our new model, and the experimental data together.
+        </s>
+        <s pid="57" sid="3">
+         As is shown, using the calculated values for Rm and Km shifts the improved mathematical model so that it has a better fit with our experimental data.
+        </s>
+        <s pid="57" sid="4">
+         To mathematically prove this graphical analysis, a root-mean-square analysis, as shown in Equation 10 below, was performed between the magnitudes of the experimental data and the two different mathematical models.
+        </s>
+        <s pid="57" sid="5">
+         This analysis indicates the variation, or error, between the test data and the mathematical models.
+        </s>
+        <s pid="57" sid="6">
+         From this analysis, we found the error of the original model and improved model, σ, to be ± 0.58 rad/s and ± 0.21 rad/s, respectively.
+        </s>
+        <s pid="57" sid="7">
+         The improved model effectively reduces the error between the mathematical model and test data by 36%.
+        </s>
+        <s pid="57" sid="8">
+         Additionally, the error is small enough in magnitude that we can conclude it is acceptable to use the improved mathematical model to simulate the design modifications to reduce the resonant frequency.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       Equation 10
+       <p>
+       </p>
+       <p>
+        <s pid="60" sid="1">
+         Figure 5a: Calculated Motor Parameters Improve Mathematical Model for Magnitude Frequency Response
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="61" sid="1">
+         Figure 5b: Calculated Motor Parameters Improve Mathematical Model for Phase Frequency Response
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="62" sid="1">
+         Figure 5b, above, shows a Bode phase plot to determine the phase shift present in the system at various frequencies.
+        </s>
+        <s pid="62" sid="2">
+         The phase shift in angular velocity changes from -90 º to -270º around the resonant frequency of 6.0 Hz.
+        </s>
+        <s pid="62" sid="3">
+         The original model already had strong correlation with the experimental results, to which the improved model further adds.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Cost Function and Sensitivity Analysis
+       </div>
+       <p>
+        <s pid="63" sid="1">
+         A cost function and sensitivity analysis was performed to determine which system parameters have the largest effect on the resonant peak magnitude.
+        </s>
+        <s pid="63" sid="2">
+         Calculating these parameters allows for minimal changes to the system while maximizing the reduction in the resonant peak magnitude.
+        </s>
+        <s pid="63" sid="3">
+         This was achieved by developing a cost function that measures the amount of perturbation that a parameter has on the resonant peak magnitude.
+        </s>
+        <s pid="63" sid="4">
+         Equation 11, below, shows the cost function used.
+        </s>
+        <s pid="63" sid="5">
+         This cost function looks at the area under the magnitude frequency response curve and compares it against the same curve when a parameter has been altered by ±1%.
+        </s>
+        <s pid="63" sid="6">
+         The area measured is the area under the resonant peak plus a 1Hz wide section on either side.
+        </s>
+        <s pid="63" sid="7">
+         The percentage difference in area corresponds with how sensitive the system is to that particular variable.
+        </s>
+        <s pid="63" sid="8">
+         The greater the cost function percentage, the more sensitive the system is to changes of that parameter.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="64" sid="1">
+         [2]
+        </s>
+        <s pid="64" sid="2">
+         Equation 11
+        </s>
+       </p>
+       <p>
+        <s pid="65" sid="1">
+         Using this cost function, all of the variables of the system were evaluated, shown in Table 3 below.
+        </s>
+        <s pid="65" sid="2">
+         The analysis found the diameter of the flywheel, Dflywheel, the motor resistance, Rm, motor constant, Km, and the damping coefficient of the motor, Bm, to be the most sensitive values to reduce the resonant peak.
+        </s>
+        <s pid="65" sid="3">
+         These variables will be the focus for reducing the resonant peak by 30% in later design modifications.
+        </s>
+       </p>
+       <p>
+        <s pid="66" sid="1">
+         Table 3: Sensitivity Analysis Determined Dflywheel, Rm, Km, and Bm as the Most Sensitive Variables
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Resonant Peak Magnitude Reduction Simulations
+       </div>
+       <p>
+        <s pid="69" sid="1">
+         To determine possible design changes, the four variables Dflywheel, Rm, Km, and Bm were altered to find a resonant magnitude reduction of at least 30%.
+        </s>
+        <s pid="69" sid="2">
+         These variables were chosen from the sensitivity analysis results, as they produced the largest changes in the cost function.
+        </s>
+        <s pid="69" sid="3">
+         Table 4, below, shows the percent change needed for a single variable to reduce the resonant peak by at least 30%.
+        </s>
+        <s pid="69" sid="4">
+         The percent change was calculated by finding the difference between the resonant peak magnitudes of the original and reduced curves.
+        </s>
+        <s pid="69" sid="5">
+         The reduction in resonant peak magnitude can be achieved by increasing Dflywheel and Rm, and by decreasing Km and Bm, respectively.
+        </s>
+        <s pid="69" sid="6">
+         Figure 6, page 7, shows the simulated frequency response resulting from an increased Rm of 50.5%, while Figure 7, page 7, shows the simulation for a decreased Km by 34.5%.
+        </s>
+        <s pid="69" sid="7">
+         Both of these parameters alone can reasonably provide a frequency response that reduces the resonant magnitude by greater than 30%.
+        </s>
+       </p>
+       <p>
+        <s pid="70" sid="1">
+         The cost function and sensitivity analysis was performed by analyzing the percentage change of the system output, regardless of whether there was a change in resonant peak (vertical shift), or change in resonant frequency (horizontal shift).
+        </s>
+        <s pid="70" sid="2">
+         Therefore, some variables not only reduce the magnitude of the resonant peak, but also shift the resonant frequency.
+        </s>
+        <s pid="70" sid="3">
+         This leads to a more significant change in resonant frequency than in reduction of resonant peak magnitude.
+        </s>
+        <s pid="70" sid="4">
+         This is specifically noticed with the parameters Dflywheel and Bm where a 30% reduction in the resonant peak could not be reasonably achieved by these variables alone.
+        </s>
+        <s pid="70" sid="5">
+         Furthermore, other less sensitive variables tested yielded the same results.
+        </s>
+       </p>
+       <p>
+        <s pid="71" sid="1">
+         Table 4: Single Parameters Require Significant Alteration for 30% Peak Reduction
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="74" sid="1">
+         Figure 6: Increasing Rm by 50.5% Reduces the Resonant Peak by 30.2%
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="77" sid="1">
+         Figure 7: Decreasing Km by 34.5% Reduces the Resonant Peak by 30.1%
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="78" sid="1">
+         While three of the four parameters were able to reduce the resonant peak by the desired amount, such large changes on a single variable may be costly, and impractical given the physical limitations of the components and their interactions with other parts of the system.
+        </s>
+        <s pid="78" sid="2">
+         A solution for reducing the resonant peak would be more viable as a combination of changes on two or more of the most sensitive parameters.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Proposed Solutions
+       </div>
+       <p>
+        <s pid="79" sid="1">
+         Four feasible solutions are described below that will reduce the resonant frequency magnitude by at least 30%.
+        </s>
+        <s pid="79" sid="2">
+         With these solutions, relatively smaller changes can be made to multiple parameters in order to achieve the desired reduction of resonant peak magnitude, shown in Table 5, below.
+        </s>
+       </p>
+       <p>
+        <s pid="80" sid="1">
+         Table 5: Four Possible Variable Adjustments to Reduce the Resonant Peak by 30%
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="81" sid="1">
+         The first design modification involves altering only Rm and Km; doing this reduces the resonant peak without changing the resonant frequency.
+        </s>
+        <s pid="81" sid="2">
+         This choice of modification allows for only one component of the system to be altered, the motor.
+        </s>
+        <s pid="81" sid="3">
+         This may be a costly change, however, if the motor specifications needed cannot be achieved.
+        </s>
+        <s pid="81" sid="4">
+         Alternatively, the second design modification allows for less change to the motor parameters but includes altering the damping coefficient of the motor, Bm.
+        </s>
+       </p>
+       <p>
+        <s pid="82" sid="1">
+         The third and fourth design modifications involve balancing the system alterations between all four of the sensitive parameters.
+        </s>
+        <s pid="82" sid="2">
+         Design 3 focuses on using Dflywheel and Bm to reduce the resonant peak.
+        </s>
+        <s pid="82" sid="3">
+         Design 4, however, minimizes the alteration of Bm relative to Designs 2 and 3, a difficult parameter to reduce given material constraints of the motor.
+        </s>
+        <s pid="82" sid="4">
+         Additionally, it reduces Rm and Km relative to Design 1.
+        </s>
+        <s pid="82" sid="5">
+         This minimization leads us to suggest Design 4 as our recommended solution.
+        </s>
+        <s pid="82" sid="6">
+         Minimizing design parameter alterations makes accomplishing a 30% reduction in resonance peak more feasible and less costly.
+        </s>
+        <s pid="82" sid="7">
+         Using the parameters defined in our model, the Design 4 alterations would result in a Km of 0.045 ± 0.03 V/(rad/sec), a Rm of 2.93 ±0.01 Ohms , a Dflywheel of 0.143 m, and a Bm 9.08·10-3 ±7·10-4 kg· m/sec.
+        </s>
+       </p>
+       <p>
+        <s pid="83" sid="1">
+         To demonstrate the feasibility of the Design 4 modifications, a replacement DC motor was found that meets the motor specifications.
+        </s>
+        <s pid="83" sid="2">
+         This DC motor, Model 14201S003 from Pittman as shown in Appendix A, would perform near the desired specifications, and would exceed the resonant peak magnitude reduction of 30%.
+        </s>
+        <s pid="83" sid="3">
+         Estimations show that this motor would achieve upwards of 60% reduction in resonant peak magnitude when used in conjunction with an increased Dflywheel of 5%.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSIONS AND RECOMMENDATIONS
+      </div>
+      <p>
+       <s pid="84" sid="1">
+        In analyzing the system provided, experimental data was used to create a mathematical model of the drive shaft system.
+       </s>
+       <s pid="84" sid="2">
+        The linear mathematical model used proved to be an accurate approximation of the real system, in which the bode plots generated from the linear mathematical model closely match those of the output of the system measured experimentally.
+       </s>
+       <s pid="84" sid="3">
+        The vibration problem indeed was determined to be the erroneous assumption that the drive shaft was rigid.
+       </s>
+       <s pid="84" sid="4">
+        In order to reduce the generated vibration by 30%, it is recommended that the motor constant, Km, be reduced and the motor resistance, Rm, be increased by 19.5%.
+       </s>
+       <s pid="84" sid="5">
+        Furthermore, Dflywheel must be increased 5%, with a reduction in Bm by 5%.
+       </s>
+       <s pid="84" sid="6">
+        In increasing the motor resistance, however, one also must take into account the increased energy consumption required to run the system, to which metrics such as fuel economy must be recalculated.
+       </s>
+       <s pid="84" sid="7">
+        One must also note the shift in resonant frequency from 6 Hz to 5.4
+       </s>
+       <s pid="84" sid="8">
+        Hz, to which external effects at this frequency on the system must be taken into account.
+       </s>
+       <s pid="84" sid="9">
+        Increases in the flywheel diameter must also be tested for geometric constraints of the car design as well.
+       </s>
+      </p>
+      <p>
+       <s pid="85" sid="1">
+        While the mathematical model derived from the experimental data proved sufficient for the desired objective, it is most likely not as suitable for tests of high precision.
+       </s>
+       <s pid="85" sid="2">
+        In the mathematical model, the shaft moment of inertia, winding inductance, and non-linear factors were neglected.
+       </s>
+       <s pid="85" sid="3">
+        Parameters such as damping coefficients are also susceptible to change over time, a factor not taken into consideration in the model.
+       </s>
+       <s pid="85" sid="4">
+        The influence of these parameters not taken into account is unknown, and may require the development of a different model when testing other aspects of the system.
+       </s>
+       <s pid="85" sid="5">
+        Overall the model created has proven quite accurate in modeling the system given.
+       </s>
+       <s pid="85" sid="6">
+        This model confirms the recommended changes as reducing peak vibrations by at least 30%.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N10238">
+       <li id="N10239">
+        [1] ME495 Lecture Notes “Lab 1 Handout”  https://ctools.umich.edu/access/content/group/1bfa4d7f-028a-4644-0023-ec8d828129a0/Lab%201/Lab1-handout.pdf. Accessed 9 January 2008.
+       </li>
+       <li id="N1023B">
+        [2] ME495 Lecture Notes “Lab 1 – Frequency Response Method” https://ctools.umich.edu/access/content/group/1bfa4d7f-028a-4644-0023-ec8d828129a0/Lab%201/Lab1-flexible%20shaft-week2%2008%20Student.pdf. Accessed 27 January 2008.
+       </li>
+      </ul>
+     </div>
+     <div>
+      <p>
+       APPENDIX A- Recommended Motor Specification
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       APPENDIX B- Matlab Code for Reducing Resonant Peak
+      </p>
+      <div class="gap">
+       <span>
+        Code
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

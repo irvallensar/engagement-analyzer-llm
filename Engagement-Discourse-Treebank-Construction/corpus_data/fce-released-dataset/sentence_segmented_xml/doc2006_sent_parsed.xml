@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     21.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       17th June 2000
+      </p>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I'm writing to complain about the musical show 'Over the Rainbow
+       <ns type="MP">
+       </ns>
+       '
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           I've visited
+          </i>
+         </ns>
+        </i>
+       </ns>
+       it
+       <ns type="RJ">
+        <i>
+         last
+        </i>
+       </ns>
+       evening in your 'Circle Theatre'. By the way
+       <ns type="MP">
+       </ns>
+       I would
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         enquire
+        </i>
+       </ns>
+       about
+       <ns type="MV">
+       </ns>
+       some money back.
+      </p>
+      <p>
+       I read your advertisement for the show and I decided to have a wonderful evening by
+       <ns type="RV">
+        <i>
+         visiting
+        </i>
+       </ns>
+       it. I believed in the phrase
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       which the advertisement ended: 'Your perfect evening out!' But nothing was perfect.
+      </p>
+      <p>
+       The show should
+       <ns type="MV">
+       </ns>
+       started at half past 7 pm but nothing happened. I waited and it
+       <ns type="TV">
+        <i>
+         becomes
+        </i>
+       </ns>
+       8 o'clock pm - nothing happened. At quarter past 8 pm the show started and I was looking for Danny Brook and Tina Truelove. But I saw some foreign actors I didn't know. I was very
+       <ns type="R">
+        wrong and afraid about
+       </ns>
+       it and I
+       <ns type="TV">
+        <i>
+         remember
+        </i>
+       </ns>
+       that this was the third problem
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       evening.
+       <ns type="R">
+        <i>
+         By
+        </i>
+       </ns>
+       arriving at the theatre there were no discounts available. Now I asked myself if there
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         come
+        </i>
+       </ns>
+       another problem. The problem came. The restaurant, which I decided to visit after the show
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         eating
+        </i>
+       </ns>
+       something, was closed without any
+       <ns type="S">
+        <i>
+         explaination
+        </i>
+       </ns>
+       and the perfect evening was completely
+       <ns type="DJ">
+        <i>
+         unperfect
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I think
+       <ns type="AGA">
+        <i>
+         this
+        </i>
+       </ns>
+       are reasons enough
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         enquiring
+        </i>
+       </ns>
+       about
+       <ns type="MV">
+       </ns>
+       some money back.
+      </p>
+      <p>
+       I would be
+       <ns type="DJ">
+        <i>
+         gladly
+        </i>
+       </ns>
+       to get an answer from you.
+      </p>
+      <p>
+       Faithfully,
+      </p>
+      <p>
+       Bergut Hunrtner
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17th June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I'm writing to complain about the musical show 'Over the Rainbow' I've visited it last evening in your 'Circle Theatre'.
+       </s>
+       <s pid="3" sid="2">
+        By the way I would  enquire about  some money back.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I read your advertisement for the show and I decided to have a wonderful evening by visiting it.
+       </s>
+       <s pid="4" sid="2">
+        I believed in the phrase by which the advertisement ended: 'Your perfect evening out!'
+       </s>
+       <s pid="4" sid="3">
+        But nothing was perfect.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The show should  started at half past 7 pm but nothing happened.
+       </s>
+       <s pid="5" sid="2">
+        I waited and it becomes 8 o'clock pm - nothing happened.
+       </s>
+       <s pid="5" sid="3">
+        At quarter past 8 pm the show started and I was looking for Danny Brook and Tina Truelove.
+       </s>
+       <s pid="5" sid="4">
+        But I saw some foreign actors I didn't know.
+       </s>
+       <s pid="5" sid="5">
+        I was very wrong and afraid about it and I remember that this was the third problem this evening.
+       </s>
+       <s pid="5" sid="6">
+        By arriving at the theatre there were no discounts available.
+       </s>
+       <s pid="5" sid="7">
+        Now I asked myself if there will come another problem.
+       </s>
+       <s pid="5" sid="8">
+        The problem came.
+       </s>
+       <s pid="5" sid="9">
+        The restaurant, which I decided to visit after the show for eating something, was closed without any explaination and the perfect evening was completely unperfect.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I think this are reasons enough for enquiring about  some money back.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I would be gladly to get an answer from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Faithfully,
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Bergut Hunrtner
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       What will we wear 100 years from now?
+      </p>
+      <p>
+       Fashion
+       <ns type="TV">
+        <i>
+         changed
+        </i>
+       </ns>
+       every year. Do you remember what people wore 100 years ago? And by the way
+       <ns type="MP">
+       </ns>
+       do you believe that they also thought the fashion never changed? But
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       fashion
+       <ns type="TV">
+        <i>
+         changed
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       100 years ago
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       people wore long
+       <ns type="RN">
+        clothes
+       </ns>
+       and
+       <ns type="RJ">
+        <i>
+         large
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         robes
+        </i>
+       </ns>
+       . You can say they wore a lot of clothes at one time.
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Nowaday
+        </i>
+       </ns>
+       people wear
+       <ns type="CQ">
+        <i>
+         <ns type="IQ">
+          <i>
+           lesser
+          </i>
+         </ns>
+        </i>
+       </ns>
+       clothes. Often you
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           causes
+          </i>
+         </ns>
+        </i>
+       </ns>
+       very
+       <ns type="S">
+        <i>
+         litte
+        </i>
+       </ns>
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       short
+       <ns type="RN">
+        <i>
+         robes
+        </i>
+       </ns>
+       and tops. Often you show your skin because
+       <ns type="MP">
+        <i>
+         its
+        </i>
+       </ns>
+       popular
+       <ns type="M">
+       </ns>
+       and everyone
+       <ns type="AGV">
+        <i>
+         do
+        </i>
+       </ns>
+       it. So
+       <ns type="TV">
+        <i>
+         it's
+        </i>
+       </ns>
+       possible to wear nothing in the future. A lot of
+       <ns type="SX">
+        <i>
+         thinks
+        </i>
+       </ns>
+       will be easier to do.
+      </p>
+      <p>
+       But in the winter there's still a problem
+       <ns type="UA">
+        <i>
+         which
+        </i>
+       </ns>
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       to solve. In the winter you'll freeze. But this problem is solving
+       <ns type="UT">
+        <i>
+         by
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         itselfes
+        </i>
+       </ns>
+       . The
+       <ns type="S">
+        <i>
+         sommers
+        </i>
+       </ns>
+       and winters get warmer. The
+       <ns type="RN">
+        <i>
+         season
+        </i>
+       </ns>
+       for this is
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       global warming, which is the
+       <ns type="RN">
+        <i>
+         salvation
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the problem and another reason why this idea is possible.
+      </p>
+      <p>
+       But
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       some situations you have to wear something. The clothes you'll wear will be very extraordinary because of their special
+       <ns type="RN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of
+       <ns type="DN">
+        <i>
+         producing
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       So don't laugh
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       this idea. Think about this idea and perhaps you'll understand it. It's possible.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        What will we wear 100 years from now?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Fashion changed every year.
+       </s>
+       <s pid="2" sid="2">
+        Do you remember what people wore 100 years ago?
+       </s>
+       <s pid="2" sid="3">
+        And by the way do you believe that they also thought the fashion never changed?
+       </s>
+       <s pid="2" sid="4">
+        But the fashion changed.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        100 years ago the people wore long clothes and large robes.
+       </s>
+       <s pid="3" sid="2">
+        You can say they wore a lot of clothes at one time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Nowaday people wear lesser clothes.
+       </s>
+       <s pid="4" sid="2">
+        Often you causes very litte and short robes and tops.
+       </s>
+       <s pid="4" sid="3">
+        Often you show your skin because its popular  and everyone do it.
+       </s>
+       <s pid="4" sid="4">
+        So it's possible to wear nothing in the future.
+       </s>
+       <s pid="4" sid="5">
+        A lot of thinks will be easier to do.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But in the winter there's still a problem which is to solve.
+       </s>
+       <s pid="5" sid="2">
+        In the winter you'll freeze.
+       </s>
+       <s pid="5" sid="3">
+        But this problem is solving by itselfes.
+       </s>
+       <s pid="5" sid="4">
+        The sommers and winters get warmer.
+       </s>
+       <s pid="5" sid="5">
+        The season for this is the global warming, which is the salvation of the problem and another reason why this idea is possible.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        But by some situations you have to wear something.
+       </s>
+       <s pid="6" sid="2">
+        The clothes you'll wear will be very extraordinary because of their special kind of producing.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So don't laugh about this idea.
+       </s>
+       <s pid="7" sid="2">
+        Think about this idea and perhaps you'll understand it.
+       </s>
+       <s pid="7" sid="3">
+        It's possible.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

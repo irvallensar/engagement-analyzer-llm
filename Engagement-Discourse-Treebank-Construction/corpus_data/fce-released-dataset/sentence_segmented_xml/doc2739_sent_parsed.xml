@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Jane Clark,
+      </p>
+      <p>
+       I would like to congratulate you on your wonderful "Arts Festival". You
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       a really great idea to create this sort of
+       <ns type="RP">
+        <i>
+         Festival
+        </i>
+       </ns>
+       . I had a lot of fun
+       <ns type="UV">
+        <i>
+         to go
+        </i>
+       </ns>
+       there. I
+       <ns type="UV">
+        <i>
+         would like
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         to come
+        </i>
+       </ns>
+       next year with
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       great pleasure.
+      </p>
+      <p>
+       I hope you will not
+       <ns type="MV">
+       </ns>
+       angry if I give you some advice
+       <ns type="RP">
+        <i>
+         ?
+        </i>
+       </ns>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       , I would like to talk about your section "Stars and Artists". This section is really great and
+       <ns type="AGV">
+        <i>
+         attract
+        </i>
+       </ns>
+       a lot of people. From my point of view, it will better if you have some "Stars and Artists" from only six countries
+       <ns type="UP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       the spectators will probably
+       <ns type="MV">
+       </ns>
+       more interested in your festival if they know the celebrities.
+      </p>
+      <p>
+       I also would like to talk about your concerts. The concerts are fabulous but the
+       <ns type="FN">
+        <i>
+         problems
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       the halls. They are too small for all the people. Could you do something
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       these problems?
+      </p>
+      <p>
+       All the sections of your festival were great but I think there were not a lot of "Plays and
+       <ns type="RP">
+        <i>
+         films
+        </i>
+       </ns>
+       ". I love films and
+       <ns type="RP">
+        <i>
+         Plays
+        </i>
+       </ns>
+       also, and
+       <ns type="TV">
+        <i>
+         I'll hope
+        </i>
+       </ns>
+       to have more films or
+       <ns type="RP">
+        <i>
+         Plays
+        </i>
+       </ns>
+       next year.
+      </p>
+      <p>
+       Concerning the tickets, I think your price is reasonable for this festival. It is a good idea to have reasonably-priced
+       <ns type="MN">
+       </ns>
+       for weekends.
+      </p>
+      <p>
+       I'm looking forward
+       <ns type="SX">
+        <i>
+         do
+        </i>
+       </ns>
+       hearing from you
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Jane Clark,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I would like to congratulate you on your wonderful "Arts Festival".
+       </s>
+       <s pid="2" sid="2">
+        You have a really great idea to create this sort of Festival.
+       </s>
+       <s pid="2" sid="3">
+        I had a lot of fun to go there.
+       </s>
+       <s pid="2" sid="4">
+        I would like to come next year with a great pleasure.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I hope you will not  angry if I give you some advice?
+       </s>
+       <s pid="3" sid="2">
+        At first, I would like to talk about your section "Stars and Artists".
+       </s>
+       <s pid="3" sid="3">
+        This section is really great and attract a lot of people.
+       </s>
+       <s pid="3" sid="4">
+        From my point of view, it will better if you have some "Stars and Artists" from only six countries.
+       </s>
+       <s pid="3" sid="5">
+        Because the spectators will probably  more interested in your festival if they know the celebrities.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I also would like to talk about your concerts.
+       </s>
+       <s pid="4" sid="2">
+        The concerts are fabulous but the problems are the halls.
+       </s>
+       <s pid="4" sid="3">
+        They are too small for all the people.
+       </s>
+       <s pid="4" sid="4">
+        Could you do something for these problems?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        All the sections of your festival were great but I think there were not a lot of "Plays and films".
+       </s>
+       <s pid="5" sid="2">
+        I love films and Plays also, and I'll hope to have more films or Plays next year.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Concerning the tickets, I think your price is reasonable for this festival.
+       </s>
+       <s pid="6" sid="2">
+        It is a good idea to have reasonably-priced  for weekends.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm looking forward do hearing from you,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Phil,
+      </p>
+      <p>
+       I'm really happy to receive your letter and I hope you are fine. I'm fine but I have a lot of work to do for my school. My exams start
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       next month
+       <ns type="MP">
+       </ns>
+       that's why I have a lot of work.
+      </p>
+      <p>
+       In your letter, you
+       <ns type="TV">
+        <i>
+         want
+        </i>
+       </ns>
+       to know about my school rules in France and you also
+       <ns type="TV">
+        <i>
+         want
+        </i>
+       </ns>
+       to know what I am or I am not allowed to do at home.
+      </p>
+      <p>
+       Alright, I'm going to answer your questions.
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ; . You
+        </i>
+       </ns>
+       are not allowed to smoke, drink or to take
+       <ns type="UQ">
+        <i>
+         some
+        </i>
+       </ns>
+       drugs in my school. You must
+       <ns type="FV">
+        <i>
+         to be
+        </i>
+       </ns>
+       outside during the break. You must
+       <ns type="RV">
+        sign
+       </ns>
+       your notebook to your parents every week. You are not allowed to argue with your teacher after you
+       <ns type="RV">
+        receive
+       </ns>
+       an exam. You must
+       <ns type="FV">
+        <i>
+         to be
+        </i>
+       </ns>
+       on time at school or you
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       a punishment. I have so many other rules but these are the most important.
+      </p>
+      <p>
+       At home, I'm not allowed to watch television after 8 p.m. I must do my
+       <ns type="RP">
+        <i>
+         home work
+        </i>
+       </ns>
+       when I come back
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       home. I
+       <ns type="W">
+        <i>
+         also must
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to help
+        </i>
+       </ns>
+       my parents
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       home activities
+       <ns type="RP">
+        <i>
+         . For
+        </i>
+       </ns>
+       example
+       <ns type="RP">
+        <i>
+         ;
+         <ns type="FV">
+          <i>
+           to clean
+          </i>
+         </ns>
+        </i>
+       </ns>
+       my room and the other rooms, or
+       <ns type="FV">
+        <i>
+         to cook
+        </i>
+       </ns>
+       , etc.... I
+       <ns type="RP">
+        <i>
+         Hope
+        </i>
+       </ns>
+       <ns type="AGD">
+        <i>
+         these
+        </i>
+       </ns>
+       information will help you,
+      </p>
+      <p>
+       Keep in touch
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+      </p>
+      <p>
+       Love
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Phil,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm really happy to receive your letter and I hope you are fine.
+       </s>
+       <s pid="2" sid="2">
+        I'm fine but I have a lot of work to do for my school.
+       </s>
+       <s pid="2" sid="3">
+        My exams start the next month that's why I have a lot of work.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In your letter, you want to know about my school rules in France and you also want to know what I am or I am not allowed to do at home.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Alright, I'm going to answer your questions.
+       </s>
+       <s pid="4" sid="2">
+        At first; .
+       </s>
+       <s pid="4" sid="3">
+        You are not allowed to smoke, drink or to take some drugs in my school.
+       </s>
+       <s pid="4" sid="4">
+        You must to be outside during the break.
+       </s>
+       <s pid="4" sid="5">
+        You must sign your notebook to your parents every week.
+       </s>
+       <s pid="4" sid="6">
+        You are not allowed to argue with your teacher after you receive an exam.
+       </s>
+       <s pid="4" sid="7">
+        You must to be on time at school or you have a punishment.
+       </s>
+       <s pid="4" sid="8">
+        I have so many other rules but these are the most important.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        At home, I'm not allowed to watch television after 8 p.m.
+       </s>
+       <s pid="5" sid="2">
+        I must do my home work when I come back at home.
+       </s>
+       <s pid="5" sid="3">
+        I also must to help my parents in home activities.
+       </s>
+       <s pid="5" sid="4">
+        For example; to clean my room and the other rooms, or to cook, etc....
+       </s>
+       <s pid="5" sid="5">
+        I
+       </s>
+       <s pid="5" sid="6">
+        Hope these information will help you,
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Keep in touch,
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Love.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

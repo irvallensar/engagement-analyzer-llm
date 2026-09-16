@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Maria Smith,
+      </p>
+      <p>
+       Thank you for your letter and I will try to help you. I
+       <ns type="RV">
+        <i>
+         will
+        </i>
+       </ns>
+       remind you that the international student conference will be
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       next month on the first of July.
+      </p>
+      <p>
+       The hotel that we booked
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       the Palace Hotel
+       <ns type="MP">
+       </ns>
+       which is near the bus station. When you are in the bus station you will catch
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       bus number 37
+       <ns type="MP">
+       </ns>
+       which will go to
+       <ns type="MD">
+       </ns>
+       town
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       . From there you will walk
+       <ns type="RT">
+        <i>
+         until
+        </i>
+       </ns>
+       the college because it is easier to get there
+       <ns type="M">
+       </ns>
+       than to get
+       <ns type="UT">
+        <i>
+         with
+        </i>
+       </ns>
+       another bus. Anyway the college is the first road on your right from
+       <ns type="MD">
+       </ns>
+       town
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After the conference some
+       <ns type="CL">
+        <i>
+         drink and food
+        </i>
+       </ns>
+       will be available in the
+       <ns type="SA">
+        <i>
+         <ns type="DJ">
+          <i>
+           <ns type="UP">
+            <i>
+             sport-center
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       which is well equipped for
+       <ns type="FN">
+        <i>
+         <ns type="DN">
+          <i>
+           disco-party
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . Our party has a special
+       <ns type="RN">
+        <i>
+         subject
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       'Western'. So we suggest
+       <ns type="RV">
+        <i>
+         to wear
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         western
+        </i>
+       </ns>
+       clothes.
+      </p>
+      <p>
+       On your last day you could go to the
+       <ns type="DJ">
+        <i>
+         <ns type="UP">
+          <i>
+           <ns type="S">
+            <i>
+             sport-musseum
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       which is
+       <ns type="RJ">
+        <i>
+         grateful
+        </i>
+       </ns>
+       and famous around the world
+       <ns type="MP">
+       </ns>
+       or
+       <ns type="RY">
+        <i>
+         only
+        </i>
+       </ns>
+       go for a walk around
+       <ns type="UP">
+        <i>
+         Reconvillier-Park
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I hope that I
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         answer
+        </i>
+       </ns>
+       all of your
+       <ns type="FN">
+        <i>
+         question
+        </i>
+       </ns>
+       and that the conference will be
+       <ns type="RJ">
+        <i>
+         grateful
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours sincerely.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Maria Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter and I will try to help you.
+       </s>
+       <s pid="2" sid="2">
+        I will remind you that the international student conference will be the next month on the first of July.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The hotel that we booked was the Palace Hotel which is near the bus station.
+       </s>
+       <s pid="3" sid="2">
+        When you are in the bus station you will catch the bus number 37 which will go to  town center.
+       </s>
+       <s pid="3" sid="3">
+        From there you will walk until the college because it is easier to get there  than to get with another bus.
+       </s>
+       <s pid="3" sid="4">
+        Anyway the college is the first road on your right from  town center.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After the conference some drink and food will be available in the sport-center which is well equipped for disco-party.
+       </s>
+       <s pid="4" sid="2">
+        Our party has a special subject 'Western'.
+       </s>
+       <s pid="4" sid="3">
+        So we suggest to wear western clothes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        On your last day you could go to the sport-musseum which is grateful and famous around the world or only go for a walk around Reconvillier-Park.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope that I had answer all of your question and that the conference will be grateful.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       From:
+      </p>
+      <p>
+       To: the group leader
+      </p>
+      <p>
+       Subject: old Roman School.
+      </p>
+      <p>
+       Introduction: I am writing to
+       <ns type="AS">
+        <i>
+         <ns type="RV">
+          <i>
+           explain
+          </i>
+         </ns>
+         you about the location, the architecture
+        </i>
+       </ns>
+       and
+       <ns type="MV">
+       </ns>
+       the story of the old Roman school
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       Courtelary. I hope that you will
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       there with your group because it has a lot of beautiful
+       <ns type="AGN">
+        <i>
+         thing
+        </i>
+       </ns>
+       to see. It is the
+       <ns type="RJ">
+        <i>
+         unique
+        </i>
+       </ns>
+       old Roman school in the world.
+      </p>
+      <p>
+       Location: Courtelary is situated in Switzerland and the school is on the top of the town's hill. This place is very important because it is there that an
+       <ns type="RP">
+        <i>
+         Emperor
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         had growing
+        </i>
+       </ns>
+       up.
+      </p>
+      <p>
+       Architecture: It is a typical
+       <ns type="MN">
+       </ns>
+       from this
+       <ns type="S">
+        <i>
+         epoque
+        </i>
+       </ns>
+       with beautiful
+       <ns type="RN">
+        <ns type="DN">
+         <i>
+          draw
+         </i>
+        </ns>
+       </ns>
+       on the wall and
+       <ns type="R">
+        first kind of writing
+       </ns>
+       in the
+       <ns type="DJ">
+        <i>
+         sport
+        </i>
+       </ns>
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       . The door is enormous because for them the
+       <ns type="DN">
+        <i>
+         entry
+        </i>
+       </ns>
+       was
+       <ns type="R">
+        <i>
+         the most
+        </i>
+       </ns>
+       important.
+      </p>
+      <p>
+       History:
+       <ns type="MA">
+        <i>
+         All
+        </i>
+       </ns>
+       began when Ogus Micius said that
+       <ns type="AGN">
+        <i>
+         Roman
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         need
+        </i>
+       </ns>
+       to go
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       school. They decided to build more
+       <ns type="AGN">
+        <i>
+         school
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       <ns type="RY">
+        <i>
+         specially
+        </i>
+       </ns>
+       in Switzerland because the people
+       <ns type="MY">
+       </ns>
+       were
+       <ns type="DV">
+        <i>
+         considerated
+        </i>
+       </ns>
+       clever. During the Second World War all
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         school
+        </i>
+       </ns>
+       were demolished
+       <ns type="MC">
+       </ns>
+       only
+       <ns type="DA">
+        <i>
+         our
+        </i>
+       </ns>
+       is left.
+      </p>
+      <p>
+       Conclusion: I
+       <ns type="TV">
+        <i>
+         gave
+        </i>
+       </ns>
+       you a lot of
+       <ns type="AGN">
+        <i>
+         reason
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       this building and I hope you will enjoy your trip
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my town.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        From:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        To: the group leader
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Subject: old Roman School.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Introduction: I am writing to explain you about the location, the architecture and  the story of the old Roman school from Courtelary.
+       </s>
+       <s pid="4" sid="2">
+        I hope that you will get there with your group because it has a lot of beautiful thing to see.
+       </s>
+       <s pid="4" sid="3">
+        It is the unique old Roman school in the world.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Location: Courtelary is situated in Switzerland and the school is on the top of the town's hill.
+       </s>
+       <s pid="5" sid="2">
+        This place is very important because it is there that an Emperor had growing up.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Architecture:
+       </s>
+       <s pid="6" sid="2">
+        It is a typical  from this epoque with beautiful draw on the wall and first kind of writing in the sport center.
+       </s>
+       <s pid="6" sid="3">
+        The door is enormous because for them the entry was the most important.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        History:
+       </s>
+       <s pid="7" sid="2">
+        All began when Ogus Micius said that Roman need to go at school.
+       </s>
+       <s pid="7" sid="3">
+        They decided to build more school specially in Switzerland because the people  were considerated clever.
+       </s>
+       <s pid="7" sid="4">
+        During the Second World War all  school were demolished  only our is left.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Conclusion: I gave you a lot of reason to get in this building and I hope you will enjoy your trip in my town.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan
+      </p>
+      <p>
+       In response to your letter that I received last Saturday I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to answer your questions.
+      </p>
+      <p>
+       I am very happy that I won this competition. I would like to travel as soon as possible because now I am on holiday. My holidays will finish
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         begining
+        </i>
+       </ns>
+       of September and
+       <ns type="MA">
+       </ns>
+       will be good to travel during this
+       <ns type="RN">
+        <i>
+         time
+        </i>
+       </ns>
+       . (August-September).
+      </p>
+      <p>
+       The accommodation I would prefer to stay in
+       <ns type="MV">
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       because I like adventures and also I will have more contact with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature.
+      </p>
+      <p>
+       For the time that I will spend there I would like to
+       <ns type="FV">
+        <i>
+         chose
+        </i>
+       </ns>
+       more
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       two activities but I know
+       <ns type="MA">
+       </ns>
+       is not possible so I
+       <ns type="FV">
+        <i>
+         chose
+        </i>
+       </ns>
+       swimming and singing. I
+       <ns type="DY">
+        <i>
+         usualy
+        </i>
+       </ns>
+       sing in my spare time and my friends love
+       <ns type="MA">
+       </ns>
+       when I sing and
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       swimming I was champion last year in my city. So, I am quite good.
+      </p>
+      <p>
+       I would like to ask you some questions like
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       kind of clothes
+       <ns type="MV">
+       </ns>
+       I have to
+       <ns type="RV">
+        <i>
+         go
+        </i>
+       </ns>
+       with
+       <ns type="MA">
+       </ns>
+       ?
+       <ns type="W">
+        <i>
+         Will I need to
+         <ns type="RV">
+          <i>
+           go
+          </i>
+         </ns>
+         <ns type="UT">
+          <i>
+           with
+          </i>
+         </ns>
+         how much money
+        </i>
+       </ns>
+       ?
+       <ns type="W">
+        <i>
+         <ns type="AGV">
+          <i>
+           Is
+          </i>
+         </ns>
+         <ns type="S">
+          <i>
+           necessery
+          </i>
+         </ns>
+         tablets
+        </i>
+       </ns>
+       (for
+       <ns type="S">
+        <i>
+         headach
+        </i>
+       </ns>
+       , insects)? Can I go with a friend?
+      </p>
+      <p>
+       Thank you for your attention.
+      </p>
+      <p>
+       I am looking forward to hearing from you soon.
+      </p>
+      <p>
+       yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In response to your letter that I received last Saturday I am writting to answer your questions.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am very happy that I won this competition.
+       </s>
+       <s pid="3" sid="2">
+        I would like to travel as soon as possible because now I am on holiday.
+       </s>
+       <s pid="3" sid="3">
+        My holidays will finish in the begining of September and  will be good to travel during this time.
+       </s>
+       <s pid="3" sid="4">
+        (August-September).
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The accommodation I would prefer to stay in   tents because I like adventures and also I will have more contact with the nature.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For the time that I will spend there I would like to chose more the two activities but I know  is not possible so I chose swimming and singing.
+       </s>
+       <s pid="5" sid="2">
+        I usualy sing in my spare time and my friends love  when I sing and about swimming I was champion last year in my city.
+       </s>
+       <s pid="5" sid="3">
+        So, I am quite good.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I would like to ask you some questions like which kind of clothes  I have to go with ?
+       </s>
+       <s pid="6" sid="2">
+        Will I need to go with how much money?
+       </s>
+       <s pid="6" sid="3">
+        Is necessery tablets (for headach, insects)?
+       </s>
+       <s pid="6" sid="4">
+        Can I go with a friend?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Thank you for your attention.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I am looking forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Introduction
+      </p>
+      <p>
+       This report is going to give us ideas about which lessons and other activities should be filmed
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       our daily life at school.
+      </p>
+      <p>
+       Why
+       <ns type="FV">
+        <i>
+         to film
+        </i>
+       </ns>
+       the school?
+      </p>
+      <p>
+       Firstly we should film our school to show how important it is for our
+       <ns type="RN">
+        <i>
+         growing
+        </i>
+       </ns>
+       . Secondly, parts of our life
+       <ns type="MP">
+       </ns>
+       like breaks, lunch time, spending time with friends
+       <ns type="MP">
+       </ns>
+       will be good to make the video interesting.
+      </p>
+      <p>
+       Suggesting places to film.
+      </p>
+      <p>
+       A good
+       <ns type="RN">
+        place
+       </ns>
+       <ns type="FV">
+        <i>
+         to be filmed
+        </i>
+       </ns>
+       is our Geography class. The students in this class have lots of freedom to speak and we can travel around the world in one hour and fifteen minutes.
+       <ns type="MA">
+        <i>
+         Is
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         wonderfull
+        </i>
+       </ns>
+       how
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         tecnology
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         make
+        </i>
+       </ns>
+       things so easy. Also we should film our sports class because with this we will show how important
+       <ns type="MA">
+       </ns>
+       is to be healthy nowadays.
+      </p>
+      <p>
+       Conclusion
+      </p>
+      <p>
+       To conclude we could film our
+       <ns type="MP">
+        <i>
+         teachers
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       too.
+       <ns type="MA">
+        <i>
+         Will
+        </i>
+       </ns>
+       be great because teachers are part of our life and they have to receive all our attention and friendship because
+       <ns type="ID">
+        <i>
+         if are not them
+        </i>
+       </ns>
+       we
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       never grow and learn how to live our lives more
+       <ns type="DY">
+        <i>
+         <ns type="IJ">
+          <i>
+           confidents
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and with lots of good experiences that we will never forget.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Introduction
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        This report is going to give us ideas about which lessons and other activities should be filmed in our daily life at school.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Why to film the school?
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly we should film our school to show how important it is for our growing.
+       </s>
+       <s pid="4" sid="2">
+        Secondly, parts of our life like breaks, lunch time, spending time with friends will be good to make the video interesting.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Suggesting places to film.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        A good place to be filmed is our Geography class.
+       </s>
+       <s pid="6" sid="2">
+        The students in this class have lots of freedom to speak and we can travel around the world in one hour and fifteen minutes.
+       </s>
+       <s pid="6" sid="3">
+        Is wonderfull how the tecnology make things so easy.
+       </s>
+       <s pid="6" sid="4">
+        Also we should film our sports class because with this we will show how important  is to be healthy nowadays.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Conclusion
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        To conclude we could film our teachers life too.
+       </s>
+       <s pid="8" sid="2">
+        Will be great because teachers are part of our life and they have to receive all our attention and friendship because if are not them we will never grow and learn how to live our lives more confidents and with lots of good experiences that we will never forget.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

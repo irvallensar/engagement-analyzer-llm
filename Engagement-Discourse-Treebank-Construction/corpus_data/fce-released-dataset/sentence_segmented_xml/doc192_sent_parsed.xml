@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     28.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="MJ">
+       </ns>
+       Ms Clark,
+      </p>
+      <p>
+       I am writing to you in order to give you some advice about the annual International Arts Festival.
+      </p>
+      <p>
+       Last
+       <ns type="RN">
+        season
+       </ns>
+       I spent two days at the Festival. I enjoyed myself very much, but I think that the organization of the next festival could be better.
+      </p>
+      <p>
+       First of all, as I see it the idea of an Arts Festival is great because in this way many people can
+       <ns type="RV">
+        <i>
+         know
+        </i>
+       </ns>
+       artists who
+       <ns type="AGV">
+        <i>
+         <ns type="S">
+          <i>
+           cames
+          </i>
+         </ns>
+        </i>
+       </ns>
+       from different countries. Unfortunately, in the last
+       <ns type="RN">
+        edition
+       </ns>
+       <ns type="R">
+        <i>
+         there were
+        </i>
+       </ns>
+       artists
+       <ns type="UA">
+        <i>
+         who
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         cames
+        </i>
+       </ns>
+       from only six countries, so I think you should invite artists from other countries, for example from Africa.
+      </p>
+      <p>
+       Secondly, I appreciated the fact that there were concerts
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       different
+       <ns type="FN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of music, but in this case the main problem was that some
+       <ns type="IN">
+        <i>
+         concerts hall
+        </i>
+       </ns>
+       were too small, and because of
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       I couldn't see one of the concerts
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       programme.
+      </p>
+      <p>
+       In my opinion, one of the best things
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the last Festival was that there were not only concerts
+       <ns type="MY">
+       </ns>
+       . I saw films and I played ping-pong.
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       the next
+       <ns type="RN">
+        edition
+       </ns>
+       will
+       <ns type="MY">
+       </ns>
+       be more or less
+       <ns type="M">
+       </ns>
+       ?
+       <ns type="W">
+        <i>
+         I hope more
+        </i>
+       </ns>
+       . The thing that I liked much more than
+       <ns type="R">
+        <i>
+         others
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       was that I
+       <ns type="W">
+        <i>
+         had to buy only
+        </i>
+       </ns>
+       one ticket for all
+       <ns type="MD">
+       </ns>
+       events, and it was
+       <ns type="RY">
+        <i>
+         no
+        </i>
+       </ns>
+       pricey.
+      </p>
+      <p>
+       It is clear that for me the last Festival was really great, so I have only one suggestion to give you
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think you should
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       a
+       <ns type="DN">
+        <i>
+         baby-parking
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , in
+        </i>
+       </ns>
+       fact a certain number of women couldn't see the Festival because of their
+       <ns type="RN">
+        <i>
+         sons
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Ms Clark,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to you in order to give you some advice about the annual International Arts Festival.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last season I spent two days at the Festival.
+       </s>
+       <s pid="3" sid="2">
+        I enjoyed myself very much, but I think that the organization of the next festival could be better.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First of all, as I see it the idea of an Arts Festival is great because in this way many people can know artists who cames from different countries.
+       </s>
+       <s pid="4" sid="2">
+        Unfortunately, in the last edition there were artists who cames from only six countries, so I think you should invite artists from other countries, for example from Africa.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, I appreciated the fact that there were concerts of different kind of music, but in this case the main problem was that some concerts hall were too small, and because of it I couldn't see one of the concerts in  programme.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In my opinion, one of the best things of the last Festival was that there were not only concerts .
+       </s>
+       <s pid="6" sid="2">
+        I saw films and I played ping-pong.
+       </s>
+       <s pid="6" sid="3">
+        In the next edition will  be more or less ?
+       </s>
+       <s pid="6" sid="4">
+        I hope more.
+       </s>
+       <s pid="6" sid="5">
+        The thing that I liked much more than others, was that I had to buy only one ticket for all  events, and it was no pricey.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        It is clear that for me the last Festival was really great, so I have only one suggestion to give you, I think you should do a baby-parking, in fact a certain number of women couldn't see the Festival because of their sons.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      5a
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       I like
+       <ns type="FV">
+        <i>
+         read
+        </i>
+       </ns>
+       very much, because every book that I read shows me a different world. What I
+       <ns type="TV">
+        <i>
+         try
+        </i>
+       </ns>
+       to explain is that in every book there are characters or situations
+       <ns type="M">
+       </ns>
+       really different.
+      </p>
+      <p>
+       So we can read realistic stories or fantastic
+       <ns type="MA">
+       </ns>
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       depends
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       what we prefer.
+      </p>
+      <p>
+       I always prefer
+       <ns type="FV">
+        <i>
+         read
+        </i>
+       </ns>
+       books that are
+       <ns type="DJ">
+        <i>
+         inusual
+        </i>
+       </ns>
+       in some way, because they give me the opportunity
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         escape
+        </i>
+       </ns>
+       from
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       everyday reality. One of my favourite books is without
+       <ns type="FN">
+        <i>
+         doubts
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Wuthering Heights
+       <ns type="MP">
+       </ns>
+       a famous book written by Emily Brontë. The attention of the
+       <unknown>
+       </unknown>
+       is focused on the unfortunate love
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       Heatcliff and Catherine.
+      </p>
+      <p>
+       They are the main characters of that book, and what
+       <ns type="AGV">
+        <i>
+         <ns type="S">
+          <i>
+           caracterize
+          </i>
+         </ns>
+        </i>
+       </ns>
+       them is the violence of their passions. In this book you can find only good or bad characters
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       everything is good or bad. If you look at this book like a painting you can't see
+       <ns type="DN">
+        afumature
+       </ns>
+       of colours, you see only primary colours.
+      </p>
+      <p>
+       In other words, when I read a book I want to go
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a world where I can find something different from my everyday life.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I like read very much, because every book that I read shows me a different world.
+       </s>
+       <s pid="1" sid="2">
+        What I try to explain is that in every book there are characters or situations  really different.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        So we can read realistic stories or fantastic , it depends from what we prefer.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I always prefer read books that are inusual in some way, because they give me the opportunity of escape from the everyday reality.
+       </s>
+       <s pid="3" sid="2">
+        One of my favourite books is without doubts, Wuthering Heights a famous book written by Emily Brontë.
+       </s>
+       <s pid="3" sid="3">
+        The attention of the  is focused on the unfortunate love of Heatcliff and Catherine.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        They are the main characters of that book, and what caracterize them is the violence of their passions.
+       </s>
+       <s pid="4" sid="2">
+        In this book you can find only good or bad characters, everything is good or bad.
+       </s>
+       <s pid="4" sid="3">
+        If you look at this book like a painting you can't see afumature of colours, you see only primary colours.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In other words, when I read a book I want to go in a world where I can find something different from my everyday life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

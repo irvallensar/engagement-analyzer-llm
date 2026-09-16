@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen
+      </p>
+      <p>
+       I am very surprised
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         have
+        </i>
+       </ns>
+       received your letter in which you explained to me that I have won
+       <ns type="MD">
+       </ns>
+       prize in your competition. After that, I would like to say Thanks, I
+       <ns type="W">
+        <i>
+         never have
+        </i>
+       </ns>
+       won any
+       <ns type="FN">
+        <i>
+         <ns type="RN">
+          <i>
+           price
+          </i>
+         </ns>
+        </i>
+       </ns>
+       at all.
+      </p>
+      <p>
+       Now, I will answer your
+       <ns type="RN">
+        <i>
+         requests
+        </i>
+       </ns>
+       . In reference
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the date of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       travel, I would like to travel in July because at the moment I am working at
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       University and I only have July to take my holidays.
+      </p>
+      <p>
+       As
+       <ns type="MA">
+       </ns>
+       state in your letter I have to choose the
+       <ns type="W">
+        <i>
+         accommodation type
+         <ns type="MT">
+         </ns>
+        </i>
+       </ns>
+       . I would prefer to stay in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       because since I was a child I have
+       <ns type="TV">
+        <i>
+         being
+        </i>
+       </ns>
+       using this type of accommodation. I used to go
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         campings
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       About camp activities
+       <ns type="MP">
+       </ns>
+       I would prefer to do basketball and photography. I have
+       <ns type="IV">
+        <i>
+         choosen
+        </i>
+       </ns>
+       these activities because
+       <ns type="RY">
+        <i>
+         actually
+        </i>
+       </ns>
+       I am playing
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       university team, and photography is my
+       <ns type="S">
+        <i>
+         favoorate
+        </i>
+       </ns>
+       hobby. I have recently bought a new camera.
+      </p>
+      <p>
+       Finally let me know what kind of clothes will be the most suitable at camp. Is
+       <ns type="MA">
+       </ns>
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           necesarilly
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         bring
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         to me
+        </i>
+       </ns>
+       money
+       <ns type="U">
+        <i>
+         in there
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       I look forward to hearing from you
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am very surprised for have received your letter in which you explained to me that I have won  prize in your competition.
+       </s>
+       <s pid="2" sid="2">
+        After that, I would like to say
+       </s>
+       <s pid="2" sid="3">
+        Thanks, I never have won any price at all.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Now, I will answer your requests.
+       </s>
+       <s pid="3" sid="2">
+        In reference about the date of the travel, I would like to travel in July because at the moment I am working at the University and I only have July to take my holidays.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As  state in your letter I have to choose the accommodation type .
+       </s>
+       <s pid="4" sid="2">
+        I would prefer to stay in  tents because since I was a child I have being using this type of accommodation.
+       </s>
+       <s pid="4" sid="3">
+        I used to go to campings.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        About camp activities I would prefer to do basketball and photography.
+       </s>
+       <s pid="5" sid="2">
+        I have choosen these activities because actually I am playing with  university team, and photography is my favoorate hobby.
+       </s>
+       <s pid="5" sid="3">
+        I have recently bought a new camera.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally let me know what kind of clothes will be the most suitable at camp.
+       </s>
+       <s pid="6" sid="2">
+        Is  necesarilly bring to me money in there?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to hearing from you
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim
+      </p>
+      <p>
+       I am
+       <ns type="FV">
+        <i>
+         <ns type="IV">
+          <i>
+           writen
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to you
+       <ns type="FV">
+        <i>
+         telling
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       about my experience at a pop concert.
+      </p>
+      <p>
+       It began when
+       <ns type="DD">
+        <i>
+         ours
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         common
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         friends
+        </i>
+       </ns>
+       Martha
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         ofered
+        </i>
+       </ns>
+       me
+       <ns type="M">
+       </ns>
+       to
+       <ns type="R">
+        <i>
+         be a organization member at
+        </i>
+       </ns>
+       the concert
+       <ns type="RP">
+        <i>
+         , obviously
+        </i>
+       </ns>
+       I accepted. Now I can tell you that it was an
+       <ns type="S">
+        <i>
+         amaizing
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         challange
+        </i>
+       </ns>
+       for me because I
+       <ns type="TV">
+        <i>
+         never did
+        </i>
+       </ns>
+       anything like that.
+      </p>
+      <p>
+       My duties
+       <ns type="RT">
+        <i>
+         like
+        </i>
+       </ns>
+       a
+       <ns type="RN">
+        <i>
+         organization
+        </i>
+       </ns>
+       member were
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           diferent
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , the
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         firts
+        </i>
+       </ns>
+       day I had to pick the bands up
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the airport,
+       <ns type="MC">
+       </ns>
+       for
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       I hired a van. The following day I was the person who
+       <ns type="TV">
+        <i>
+         provide
+        </i>
+       </ns>
+       the meals for all the
+       <ns type="UN">
+        <i>
+         organization
+        </i>
+       </ns>
+       staff and
+       <ns type="RY">
+        <i>
+         besides
+        </i>
+       </ns>
+       every day I was
+       <ns type="U">
+        <i>
+         at the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         back-stage
+        </i>
+       </ns>
+       supporting the catering staff.
+      </p>
+      <p>
+       <ns type="W">
+        <i>
+         Particularly I am
+        </i>
+       </ns>
+       pleased to
+       <ns type="FV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         know
+        </i>
+       </ns>
+       the most popular pop stars in the world.
+      </p>
+      <p>
+       <ns type="RV">
+        <i>
+         Hopping
+        </i>
+       </ns>
+       to hear from you
+      </p>
+      <p>
+       Best wishes
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writen to you telling  about my experience at a pop concert.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It began when ours common friends Martha, ofered me  to be a organization member at the concert, obviously I accepted.
+       </s>
+       <s pid="3" sid="2">
+        Now I can tell you that it was an amaizing challange for me because I never did anything like that.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        My duties like a organization member were diferent, the firts day I had to pick the bands up at the airport,  for it I hired a van.
+       </s>
+       <s pid="4" sid="2">
+        The following day I was the person who provide the meals for all the organization staff and besides every day I was at the back-stage supporting the catering staff.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Particularly
+       </s>
+       <s pid="5" sid="2">
+        I am pleased to had know the most popular pop stars in the world.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Hopping to hear from you
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Best wishes
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir
+      </p>
+      <p>
+       I am writing to complain about a terrible performance in your theatre. I had expected to see the fantastic musical show. However, everything was not performed as you had advertised.
+      </p>
+      <p>
+       Firstly, there was a different actor/actress
+       <ns type="AS">
+        <i>
+         who I have never heard their name
+        </i>
+       </ns>
+       before. Even though they performed their parts excellently I was very disappointed about your incorrect advertisement.
+      </p>
+      <p>
+       Secondly, the musical was not started on time. It was going to start
+       <ns type="MT">
+       </ns>
+       19.30. However, It was started 45 minutes later.
+       <ns type="ID">
+        <ns type="RP">
+         <i>
+          Afterall
+         </i>
+        </ns>
+       </ns>
+       , I
+       <ns type="RV">
+        <i>
+         lost
+        </i>
+       </ns>
+       my
+       <ns type="UV">
+        <i>
+         find
+        </i>
+       </ns>
+       return train after
+       <ns type="MD">
+       </ns>
+       show.
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         thirdly
+        </i>
+       </ns>
+       , there was no discount
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       my ticket and the theatre restaurant was closed because of being repaired.
+      </p>
+      <p>
+       Finally
+       <ns type="RP">
+        <i>
+         . It
+        </i>
+       </ns>
+       was
+       <ns type="MD">
+       </ns>
+       perfectly terrible evening out. So, I want you to
+       <ns type="AS">
+        <i>
+         give my money back to me
+        </i>
+       </ns>
+       . If you don't do that, I will tell
+       <ns type="MD">
+       </ns>
+       public
+       <ns type="R">
+        <i>
+         what
+        </i>
+       </ns>
+       you are wrong in your advertisement.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely.
+      </p>
+      <p>
+       Yeung
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about a terrible performance in your theatre.
+       </s>
+       <s pid="2" sid="2">
+        I had expected to see the fantastic musical show.
+       </s>
+       <s pid="2" sid="3">
+        However, everything was not performed as you had advertised.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, there was a different actor/actress who I have never heard their name before.
+       </s>
+       <s pid="3" sid="2">
+        Even though they performed their parts excellently I was very disappointed about your incorrect advertisement.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, the musical was not started on time.
+       </s>
+       <s pid="4" sid="2">
+        It was going to start  19.30.
+       </s>
+       <s pid="4" sid="3">
+        However,
+       </s>
+       <s pid="4" sid="4">
+        It was started 45 minutes later.
+       </s>
+       <s pid="4" sid="5">
+        Afterall, I lost my find return train after  show.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        thirdly, there was no discount about my ticket and the theatre restaurant was closed because of being repaired.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally.
+       </s>
+       <s pid="6" sid="2">
+        It was  perfectly terrible evening out.
+       </s>
+       <s pid="6" sid="3">
+        So, I want you to give my money back to me.
+       </s>
+       <s pid="6" sid="4">
+        If you don't do that, I will tell  public what you are wrong in your advertisement.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yeung
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       When I was a
+       <ns type="S">
+        <i>
+         yong
+        </i>
+       </ns>
+       child, I used to be interested in reading
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         scientific fiction
+        </i>
+       </ns>
+       . Interestingly, nowadays, I live in the scientific world which I read
+       <ns type="MT">
+       </ns>
+       in the
+       <ns type="FN">
+        <i>
+         book
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Probably, I started
+       <ns type="IV">
+        <i>
+         useing
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="UP">
+        <i>
+         mobile-phone
+        </i>
+       </ns>
+       5 years ago. Before using
+       <ns type="MD">
+       </ns>
+       mobile-phone, if someone wanted to talk to me immediately, they couldn't find
+       <ns type="UA">
+        <i>
+         me
+        </i>
+       </ns>
+       where I was. However, nowadays, it is easy to find me because of
+       <ns type="MD">
+       </ns>
+       <ns type="UP">
+        <i>
+         mobile-phone
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I used to write a letter to my friends. However,
+       <ns type="RP">
+        <i>
+         After
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="DN">
+        <i>
+         appearing
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="MD">
+       </ns>
+       Internet,
+       <ns type="TV">
+        <i>
+         I've sent
+        </i>
+       </ns>
+       e-mail to my friends. It takes just a few minutes to send e-mail to
+       <ns type="RP">
+        <i>
+         some one
+        </i>
+       </ns>
+       . I just check my e-mail before going to bed
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In conclusion,
+       <ns type="RP">
+        <i>
+         Because
+        </i>
+       </ns>
+       of modern technology, I'm very comfortable and
+       <ns type="MV">
+       </ns>
+       do something
+       <ns type="RY">
+        <i>
+         effectively
+        </i>
+       </ns>
+       with
+       <ns type="MD">
+       </ns>
+       computer and mobile phone.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        When I was a yong child, I used to be interested in reading a scientific fiction.
+       </s>
+       <s pid="1" sid="2">
+        Interestingly, nowadays, I live in the scientific world which I read  in the book.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Probably, I started useing  mobile-phone 5 years ago.
+       </s>
+       <s pid="2" sid="2">
+        Before using  mobile-phone, if someone wanted to talk to me immediately, they couldn't find me where I was.
+       </s>
+       <s pid="2" sid="3">
+        However, nowadays, it is easy to find me because of  mobile-phone.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I used to write a letter to my friends.
+       </s>
+       <s pid="3" sid="2">
+        However, After  appearing   Internet, I've sent e-mail to my friends.
+       </s>
+       <s pid="3" sid="3">
+        It takes just a few minutes to send e-mail to some one.
+       </s>
+       <s pid="3" sid="4">
+        I just check my e-mail before going to bed everyday.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In conclusion, Because of modern technology, I'm very comfortable and  do something effectively with  computer and mobile phone.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

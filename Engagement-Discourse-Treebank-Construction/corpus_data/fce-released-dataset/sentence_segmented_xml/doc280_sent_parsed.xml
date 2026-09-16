@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     20.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Madam
+      </p>
+      <p>
+       I'm very happy to have won
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       your competition.
+       <ns type="TV">
+        <i>
+         I'm never going
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the U.S.A
+       <ns type="R">
+        <i>
+         than
+        </i>
+       </ns>
+       I'm very
+       <ns type="RJ">
+        <i>
+         exciting
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         travel
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       Camp California. I can
+       <ns type="FV">
+        <i>
+         to come
+        </i>
+       </ns>
+       only
+       <ns type="MT">
+       </ns>
+       July because I have to work the other months of
+       <ns type="RP">
+        <i>
+         Summer
+        </i>
+       </ns>
+       .
+       <ns type="RT">
+        <i>
+         As
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       I'd prefer to sleep in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         becaose
+        </i>
+       </ns>
+       I like
+       <ns type="IV">
+        <i>
+         beeing
+        </i>
+       </ns>
+       outside and
+       <ns type="S">
+        <i>
+         earing
+        </i>
+       </ns>
+       the noises of the sea.
+      </p>
+      <p>
+       My two
+       <ns type="MJ">
+       </ns>
+       <ns type="UP">
+        <i>
+         activities's
+        </i>
+       </ns>
+       <ns type="UN">
+        <i>
+         choices
+        </i>
+       </ns>
+       are
+       <ns type="RP">
+        <i>
+         Climbing and Surfing
+        </i>
+       </ns>
+       . I used to climb and I want to try
+       <ns type="MA">
+       </ns>
+       <ns type="RY">
+        <i>
+         still
+        </i>
+       </ns>
+       because climbing is
+       <ns type="R">
+        <i>
+         good for the
+        </i>
+       </ns>
+       fit. I want to do surfing too because I like snowboarding and I think surfing
+       <ns type="R">
+        make similar sensations
+       </ns>
+       , but I have never
+       <ns type="RV">
+        <i>
+         practised
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         that sport
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I have one question to ask you. I have a little brother and I want to know if I could take
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       with me. He doesn't like
+       <ns type="FV">
+        <i>
+         stay
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         alone at home
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+      <p>
+       Anton Chevalier
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Madam
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm very happy to have won in your competition.
+       </s>
+       <s pid="2" sid="2">
+        I'm never going in the U.S.A than I'm very exciting to travel at Camp California.
+       </s>
+       <s pid="2" sid="3">
+        I can to come only  July because I have to work the other months of Summer.
+       </s>
+       <s pid="2" sid="4">
+        As accomodation I'd prefer to sleep in  tents becaose I like beeing outside and earing the noises of the sea.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        My two  activities's choices are Climbing and Surfing.
+       </s>
+       <s pid="3" sid="2">
+        I used to climb and I want to try  still because climbing is good for the fit.
+       </s>
+       <s pid="3" sid="3">
+        I want to do surfing too because I like snowboarding and I think surfing make similar sensations, but I have never practised that sport.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I have one question to ask you.
+       </s>
+       <s pid="4" sid="2">
+        I have a little brother and I want to know if I could take it with me.
+       </s>
+       <s pid="4" sid="3">
+        He doesn't like stay alone at home.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Anton Chevalier
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       I
+       <ns type="DV">
+        <i>
+         purpose
+        </i>
+       </ns>
+       that we should
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         filmed
+        </i>
+       </ns>
+       five
+       <ns type="RN">
+        <i>
+         topics
+        </i>
+       </ns>
+       :
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         A
+        </i>
+       </ns>
+       <ns type="SA">
+        <i>
+         math
+        </i>
+       </ns>
+       lesson, an
+       <ns type="RP">
+        <i>
+         english
+        </i>
+       </ns>
+       lesson, a
+       <ns type="R">
+        <i>
+         <ns type="S">
+          <i>
+           swimingpool
+          </i>
+         </ns>
+        </i>
+       </ns>
+       lesson, the break and the staff room.
+      </p>
+      <p>
+       -
+       <ns type="RT">
+        <i>
+         At
+        </i>
+       </ns>
+       the
+       <ns type="SA">
+        <i>
+         math
+        </i>
+       </ns>
+       lesson and the English lesson we could show how the teacher
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           learn
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       his students. We could
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         filmed
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         class room
+        </i>
+       </ns>
+       too.
+      </p>
+      <p>
+       - In the
+       <ns type="S">
+        <i>
+         swimingpool
+        </i>
+       </ns>
+       we could
+       <ns type="FV">
+        <i>
+         been
+        </i>
+       </ns>
+       in the water and
+       <ns type="R">
+        doing a party of water-polo and then Allan could done acrobatics stands
+       </ns>
+       , because he
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           make
+          </i>
+         </ns>
+        </i>
+       </ns>
+       competitions.
+      </p>
+      <p>
+       -
+       <ns type="W">
+        <i>
+         During the break we could show the activities of the students
+        </i>
+       </ns>
+       .
+       <ns type="RP">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         exemple
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       students who play football or volleyball. We could
+       <ns type="TV">
+        <i>
+         asked
+        </i>
+       </ns>
+       some students about the school.
+      </p>
+      <p>
+       - Before the end we could visit the staff room. We could
+       <ns type="R">
+        <i>
+         known how this room is
+        </i>
+       </ns>
+       and what the
+       <ns type="RP">
+        <i>
+         Teachers
+        </i>
+       </ns>
+       do in this
+       <ns type="S">
+        <i>
+         misterious
+        </i>
+       </ns>
+       room.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       the end we could
+       <ns type="RV">
+        <i>
+         show
+        </i>
+       </ns>
+       a comment
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       each student
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       our class.
+      </p>
+      <p>
+       Anton Chevalier
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I purpose that we should be filmed five topics:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        A math lesson, an english lesson, a swimingpool lesson, the break and the staff room.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        - At the math lesson and the English lesson we could show how the teacher learn at his students.
+       </s>
+       <s pid="3" sid="2">
+        We could be filmed the class room too.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        - In the swimingpool we could been in the water and doing a party of water-polo and then Allan could done acrobatics stands, because he make competitions.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        - During the break we could show the activities of the students.
+       </s>
+       <s pid="5" sid="2">
+        for exemple students who play football or volleyball.
+       </s>
+       <s pid="5" sid="3">
+        We could asked some students about the school.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        - Before the end we could visit the staff room.
+       </s>
+       <s pid="6" sid="2">
+        We could known how this room is and what the Teachers do in this misterious room.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        In the end we could show a comment of each student of our class.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Anton Chevalier
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

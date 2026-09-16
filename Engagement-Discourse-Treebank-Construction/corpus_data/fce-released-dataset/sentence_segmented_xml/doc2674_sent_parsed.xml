@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     31.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr. Smith:
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       in order to complain about the musical show "Over the rainbow".
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       , the advertisement said that the show was starring
+       <ns type="UT">
+        <i>
+         by
+        </i>
+       </ns>
+       Tina Truelove and Danny Brook
+       <ns type="RP">
+        <i>
+         , that
+        </i>
+       </ns>
+       was not true
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Danny Brook did not act in the show,
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       was a different actor and I
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       disappointed with him.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         In order to
+        </i>
+       </ns>
+       the times
+       <ns type="M">
+       </ns>
+       , the show was supposed to start at 19.30 and it started at 20.15
+       <ns type="RP">
+        <i>
+         , nobody
+        </i>
+       </ns>
+       likes to wait 45 minutes just watching empty
+       <ns type="S">
+        <i>
+         scenary
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Another thing, the tickets. The advertisement said that there were discounts available
+       <ns type="RP">
+        <i>
+         , that
+        </i>
+       </ns>
+       was false, there
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       not any kind of
+       <ns type="AGN">
+        <i>
+         discounts
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After all
+       <ns type="MA">
+       </ns>
+       I just wanted to go to the
+       <ns type="W">
+        <i>
+         restaurant of the theatre
+        </i>
+       </ns>
+       and have something to eat, but it was closed because the police had closed it. They had closed it because they had found the food in
+       <ns type="MD">
+       </ns>
+       bad
+       <ns type="AGN">
+        <i>
+         conditions
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Just to finish, the advertisement said that the show would be a perfect evening out, let me tell
+       <ns type="MA">
+       </ns>
+       that it
+       <ns type="UY">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       not. I paid
+       <ns type="MT">
+       </ns>
+       a
+       <ns type="RJ">
+        <i>
+         full
+        </i>
+       </ns>
+       ticket without
+       <ns type="FN">
+        <i>
+         discounts
+        </i>
+       </ns>
+       to wait 45 minutes, to see a musical show with a bad actor and after all
+       <ns type="MA">
+       </ns>
+       could not have a sandwich because the restaurant was closed. I think the theatre should give me my money back and I hope you do
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours faithfully.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr. Smith:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writting in order to complain about the musical show "Over the rainbow".
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        At first, the advertisement said that the show was starring by Tina Truelove and Danny Brook, that was not true, Danny Brook did not act in the show, it was a different actor and I got disappointed with him.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In order to the times , the show was supposed to start at 19.30 and it started at 20.15, nobody likes to wait 45 minutes just watching empty scenary.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Another thing, the tickets.
+       </s>
+       <s pid="5" sid="2">
+        The advertisement said that there were discounts available, that was false, there were not any kind of discounts.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        After all  I just wanted to go to the restaurant of the theatre and have something to eat, but it was closed because the police had closed it.
+       </s>
+       <s pid="6" sid="2">
+        They had closed it because they had found the food in  bad conditions.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Just to finish, the advertisement said that the show would be a perfect evening out, let me tell  that it wasn't not.
+       </s>
+       <s pid="7" sid="2">
+        I paid  a full ticket without discounts to wait 45 minutes, to see a musical show with a bad actor and after all  could not have a sandwich because the restaurant was closed.
+       </s>
+       <s pid="7" sid="3">
+        I think the theatre should give me my money back and I hope you do it.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Technology.
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The technology
+        </i>
+       </ns>
+       has changed, is changing and it will change our daily
+       <ns type="IN">
+        <i>
+         lifes
+        </i>
+       </ns>
+       . Technology is improving every day, soon everything will be done by a machine. Now we can cook in
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       easier way than ten years
+       <ns type="RY">
+        <i>
+         before
+        </i>
+       </ns>
+       , we can talk with somebody who is 10000 kilometres from us and we can know what's happening in
+       <ns type="RQ">
+        <i>
+         the other
+        </i>
+       </ns>
+       part of the world.
+      </p>
+      <p>
+       Another thing
+       <ns type="MC">
+       </ns>
+       is changing our
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       is the computer, especially
+       <ns type="MD">
+       </ns>
+       Internet. More and more people are connecting
+       <ns type="RT">
+        <i>
+         through
+        </i>
+       </ns>
+       the net. Soon we won't need to
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         out from
+        </i>
+       </ns>
+       our homes. Now we can buy everything
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       Internet, we can see what's happening
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       Wall Street, we can send mail in
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       easier way, by e-mail
+       <ns type="MP">
+       </ns>
+       and many people
+       <ns type="AGV">
+        <i>
+         has
+        </i>
+       </ns>
+       started to work at home
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       their computers.
+      </p>
+      <p>
+       Technology has changed
+       <ns type="W">
+        <i>
+         so much our daily
+         <ns type="IN">
+          <i>
+           lifes
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that we won't be able to live without it. Nobody can imagine
+       <ns type="FV">
+        <i>
+         to live
+        </i>
+       </ns>
+       without a
+       <ns type="UP">
+        <i>
+         T.V.
+        </i>
+       </ns>
+       , a computer, a microwave, a telephone.
+      </p>
+      <p>
+       There are machines for everything,
+       <ns type="FV">
+        <i>
+         to write
+        </i>
+       </ns>
+       ,
+       <ns type="FV">
+        <i>
+         to cook
+        </i>
+       </ns>
+       ,
+       <ns type="FV">
+        <i>
+         to go
+        </i>
+       </ns>
+       from one place to
+       <ns type="FA">
+        <i>
+         other
+        </i>
+       </ns>
+       ,
+       <ns type="FV">
+        <i>
+         to talk
+        </i>
+       </ns>
+       with somebody who is not with you.
+      </p>
+      <p>
+       Our
+       <ns type="IN">
+        <i>
+         lifes
+        </i>
+       </ns>
+       are very different from our
+       <ns type="RP">
+        <i>
+         grandparent's
+        </i>
+       </ns>
+       <ns type="IN">
+        <i>
+         lifes
+        </i>
+       </ns>
+       and that's because
+       <ns type="MT">
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       technology.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Technology.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The technology has changed, is changing and it will change our daily lifes.
+       </s>
+       <s pid="2" sid="2">
+        Technology is improving every day, soon everything will be done by a machine.
+       </s>
+       <s pid="2" sid="3">
+        Now we can cook in a easier way than ten years before, we can talk with somebody who is 10000 kilometres from us and we can know what's happening in the other part of the world.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Another thing  is changing our life is the computer, especially  Internet.
+       </s>
+       <s pid="3" sid="2">
+        More and more people are connecting through the net.
+       </s>
+       <s pid="3" sid="3">
+        Soon we won't need to get out from our homes.
+       </s>
+       <s pid="3" sid="4">
+        Now we can buy everything by  Internet, we can see what's happening in Wall Street, we can send mail in a easier way, by e-mail and many people has started to work at home by their computers.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Technology has changed so much our daily lifes that we won't be able to live without it.
+       </s>
+       <s pid="4" sid="2">
+        Nobody can imagine to live without a T.V., a computer, a microwave, a telephone.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        There are machines for everything, to write, to cook, to go from one place to other, to talk with somebody who is not with you.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Our lifes are very different from our grandparent's lifes and that's because  the technology.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

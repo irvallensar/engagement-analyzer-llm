@@ -1,0 +1,522 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Relative Abundance of Myotis septentrionalis and Myotis lucifugus in Three Habitats in Northern Michigan
+     </div>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       The local abundance of
+       <i>
+        Myotis septentrionalis
+       </i>
+       (Northern bat) and
+       <i>
+        Myotis lucifugus
+       </i>
+       (Little brown bat) were analyzed in three different habitats in northern Michigan: wooded, river, and lakeside.  Calls from each of nine sites (three of each habitat) were recorded using an Anabat detector, analyzed using Analyze 2.1, and identified by average frequency and end slope values.  A discriminant function analysis was used to identify intermediate calls.
+       <i>
+        Myotis lucifugus
+       </i>
+       , traditionally labeled an aerial hawking species, was found in nearly equal numbers at lakeside and river sites (34 and 33, respectively).
+       <i>
+        Myotis septentrionalis
+       </i>
+       , a specialized gleaner, preferred to forage in the more sheltered wooded sites (P = 0.029, Kruskal Wallis, x2 = 7.11).  While both species foraged the most during the early hours of night,
+       <i>
+        M. septentrionalis
+       </i>
+       activity peaked earlier than
+       <i>
+        M. lucifugus
+       </i>
+       activity (P &lt; 0.05, Kolmogorov-Smirnov, D = 0.251).  The number of calls recorded for each species was related to neither temperature (P &gt; 0.05, Kolmogorov-Smirnov, D = 0.105161) nor rainfall (Mann-Whitney,
+       <i>
+        M. lucifugus
+       </i>
+       P = 0.738 U = 1535, and
+       <i>
+        M. septentrionalis
+       </i>
+       P = 0.468 U = 1476).
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Myotis lucifugus and Myotis septentrionalis are two Vespertilionid bats that are sympatric over much of their ranges.
+       </s>
+       <s pid="1" sid="2">
+        Both occur throughout Michigan, and both are insectivorous.
+       </s>
+       <s pid="1" sid="3">
+        Morphologically these two species are very similar.
+       </s>
+       <s pid="1" sid="4">
+        However, M. septentrionalis tends to have longer ears and tragi.
+       </s>
+       <s pid="1" sid="5">
+        The tragus is more than half the length of the ear and comes to a narrow point (Kurta 1995).
+       </s>
+       <s pid="1" sid="6">
+        In M. lucifugus , the tragus is less than half the length of the ear and is rounded (Barclay &amp; Fenton 1980).
+       </s>
+       <s pid="1" sid="7">
+        These species also differ in the frequency of their echolocation calls.
+       </s>
+       <s pid="1" sid="8">
+        The calls of M. septentrionalis are of shorter duration, higher average frequency, and cover a broader range of frequencies than those of M. lucifugus (Faure et al. 1993).
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        This difference in vocalization suggests that these two species have different foraging strategies.
+       </s>
+       <s pid="2" sid="2">
+        Myotis lucifugus is traditionally labeled as an aerial hawker that feeds primarily on aerial insects (Ratcliffe &amp; Dawson 2003).
+       </s>
+       <s pid="2" sid="3">
+        The short, high frequency, broadband calls of M. septentrionalis are characteristic of gleaners (Schnitzler &amp; Kalko 2001).
+       </s>
+       <s pid="2" sid="4">
+        A shorter call prevents overlap between the call and the echo at short distances, while higher average frequency and broader frequency range provide higher resolution of small objects.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Data has been presented demonstrating that both species can both glean and hawk prey, although M. septentrionalis tends to be more specialized for gleaning (Ratcliffe &amp; Dawson 2003).
+       </s>
+       <s pid="3" sid="2">
+        Given that both M. lucifugus and M. septentrionalis exhibit behavioral flexibility in foraging technique, and considering that they are sympatric throughout much of their ranges, it is likely that these two species segregate spatially or temporally in a way that reduces interspecific competition.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        To test whether such segregation exists, we chose to study the relative abundances of the two species in three habitats: wooded, river, and lakeside.
+       </s>
+       <s pid="4" sid="2">
+        Of the three, lakeside sites are the most open, followed by the river sites and then the wooded sites.
+       </s>
+       <s pid="4" sid="3">
+        If the two species are segregating spatially, they should be found in different proportions and different relative abundances in the three habitats.
+       </s>
+       <s pid="4" sid="4">
+        Aerial insects are more abundant in open habitats.
+       </s>
+       <s pid="4" sid="5">
+        Thus, we expected to see a higher relative abundance of M. lucifugus at the lakeside sites where there were more aerial insects to hawk.
+       </s>
+       <s pid="4" sid="6">
+        Additionally, given that the calls of M. septentrionalis are more specialized for gleaning, we expected to see a higher relative abundance of this species at the wooded sites where there were more stationary insects to glean.
+       </s>
+       <s pid="4" sid="7">
+        At the river sites we expected to see roughly equal relative abundances for both species.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        We then monitored how the relative abundance of each species changes throughout the night to determine if the bats exhibited temporal avoidance and foraged at different times.
+       </s>
+       <s pid="5" sid="2">
+        We also looked at whether or not there was a correlation between the relative abundance of each species and the weather conditions (temperature and rain).
+       </s>
+       <s pid="5" sid="3">
+        Relative abundance was measured by counting the number of call sequences recorded at each site and identifying which species each belonged to.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       METHODS AND MATERIALS
+      </div>
+      <div>
+       <div class="head_2">
+        Study Areas (see attached Fig.1)
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         Nine locations in the vicinity of the University of Michigan Biological Station (Pellston, Michigan) were chosen: three lakeside habitats (L1, L2, L3), three river habitats (R1, R2, R3), and three wooded habitats (W1, W2, W3).
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         All of the lakeside sites were on Douglas Lake and within walking distance of Biological Station facilities.
+        </s>
+        <s pid="7" sid="2">
+         Site L1 (45º33.65’N, 84º40.61’W) was located on the western edge of Biological Station facilities, about one meter away from the edge of the lake.
+        </s>
+        <s pid="7" sid="3">
+         Sites L2 (45º33.74’N, 84º40.08’W) and L3 (45º33.89’N, 84º39.88’W) were located on the eastern shore of Douglas Lake.
+        </s>
+        <s pid="7" sid="4">
+         Site L2 was 1 meter above the water surface and 4.5 meters away, and L3 was 1.8 meters above the water surface and 5 meters away.
+        </s>
+        <s pid="7" sid="5">
+         Site L3 was north of L2.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         Sites R1 (45º19.74’N, 84º24.55’W) and R2 (45º32.66’N, 84º40.82’W) were located off of Hogsback Road in Reeses Swamp, along Carp Creek.
+        </s>
+        <s pid="8" sid="2">
+         Site R1 was 2.5 meters above the water surface and 11.5 meters away from the river.
+        </s>
+        <s pid="8" sid="3">
+         Site R2 was south of R1. Site R3 (45º33.47’N, 84º45.18’W) was located off of Pellston Plain Road by Maple River, 1.5 meters above the water surface and 1 meter away.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         Site W1 (45º32.30’N, 84º42.06’W) was located on a seasonal road off of West Burt Lake Road.
+        </s>
+        <s pid="9" sid="2">
+         Site W2 (45º34.13’N, 84º39.05’W) was located on a seasonal road off of Robinson Road, to the east of the Biological Station.
+        </s>
+        <s pid="9" sid="3">
+         Site W3 (45º33.86’N, 84º40.79’W) was within walking distance of the Biological Station facilities and was located on Grapevine Trail.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Recording Procedures
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         The study was conducted for eight nights from June 25, 2004 through July 4, 2004.
+        </s>
+        <s pid="10" sid="2">
+         There was no observation on the nights of June 27 and July 3.
+        </s>
+        <s pid="10" sid="3">
+         The study ran from 9:00 pm until 5:30 am on each night of observation.
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         An Anabat II detector connected to a voice activated tape recorder was left at two sites per night.
+        </s>
+        <s pid="11" sid="2">
+         The first site was visited on the hour and the second was visited on the half hour to allow for travel between sites.
+        </s>
+       </p>
+       <p>
+        <s pid="12" sid="1">
+         Temperature was measured with a mercury thermometer in degrees Fahrenheit.
+        </s>
+        <s pid="12" sid="2">
+         Wind speed was measured with an anemometer in meters per second.
+        </s>
+        <s pid="12" sid="3">
+         Also recorded were rainfall (no rain, light rain, or heavy rain), light (visible moon or no moon), and visibility (fog or no fog).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Call Identification
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         The data on each tape were recorded onto a computer using the program Anabat 5.
+        </s>
+        <s pid="13" sid="2">
+         The calls were analyzed using Analyze 2.1, which provided us with maximum frequency, average frequency, minimum frequency, curvature, duration, end slope, and start slope of each pulse in a call.
+        </s>
+        <s pid="13" sid="3">
+         Within each call, all of the pulses with a modal quality of 0.9 or greater were analyzed.
+        </s>
+        <s pid="13" sid="4">
+         If over half of the pulses had an average frequency greater than 50 KHz, the call was attributed to M. septentrionalis .
+        </s>
+        <s pid="13" sid="5">
+         If over half of the pulses had an average frequency less than 45 KHz, the call was attributed to M. lucifugus .
+        </s>
+        <s pid="13" sid="6">
+         If over half of the end slopes of the pulses were less than -10, the call was attributed to M. septentrionalis .
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         Out of a total of 334 call sequences recorded, 289 were identifiable using the above characteristics.
+        </s>
+        <s pid="14" sid="2">
+         The remaining 45 were intermediate or contained conflicting pulse values.
+        </s>
+        <s pid="14" sid="3">
+         These calls were subjected to a discriminant function analysis, which was based on 17 known M. septentrionalis and 18 known M. lucifugus calls provided by Mr. Matt Wund, University of Michigan Museum of Zoology.
+        </s>
+        <s pid="14" sid="4">
+         This procedure classified 11 of the 45 unknown calls as either M. septentrionalis or M. lucifugus with a posterior probability of 0.95 or greater.
+        </s>
+        <s pid="14" sid="5">
+         These 11 were added to the identified calls, producing a total of 300 identified call sequences.
+        </s>
+        <s pid="14" sid="6">
+         Of these, 79 were identified as M. lucifugus and 221 were identified as M. septentrionalis.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       RESULTS
+      </div>
+      <div>
+       <div class="head_2">
+        Habitat Selection
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         Myotis lucifugus and M. septentrionalis are distributed differently among the three kinds of habitats (P = 0.029, Kruskal Wallis, x2 = 7.11).
+        </s>
+        <s pid="15" sid="2">
+         The number of M. lucifugus is about equal at the lakeside and wooded sites and lowest at the river sites, while the number of M. septentrionalis is highest at the wooded sites and lowest at the lakeside sites.
+        </s>
+        <s pid="15" sid="3">
+         Myotis septentrionalis showed a greater segregation between sites than did M. lucifugus.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         Fig.
+        </s>
+        <s pid="16" sid="2">
+         2- Proportion of calls made by each species at each habitat as related to the total number of calls made by that species.
+        </s>
+        <s pid="16" sid="3">
+         The two species show spatial segregation (P = 0.029, Kruskal Wallis, x2 = 7.11, n1 = 4, n2 = 5, n3 = 6).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Temporal Differentiation
+       </div>
+       <p>
+        <s pid="17" sid="1">
+         For both species, the number of calls was highest in early evening.
+        </s>
+        <s pid="17" sid="2">
+         Myotis septentrionalis showed an earlier peak of activity than M. lucifugus (P &amp;lt; 0.05, Kolmogorov-Smirnov, D = 0.251).
+        </s>
+        <s pid="17" sid="3">
+         Myotis septentrionalis activity drops off by 1:00 am, while the number of M. lucifugus peaks again from 1:00 – 2:00 am.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="18" sid="1">
+         Fig.
+        </s>
+        <s pid="18" sid="2">
+         3- Number of calls recorded for each species over time.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         Fig.
+        </s>
+        <s pid="19" sid="2">
+         4- Proportion of calls made by each species by time as related to the total number of calls made by that species.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Weather
+       </div>
+       <p>
+        <s pid="20" sid="1">
+         For both M. lucifugus (P = 0.738, Mann-Whitney, U = 1535) and M. septentrionalis (P = 0.468, Mann-Whitney, U = 1476), the number of calls was not related to whether it was raining at the time the calls were recorded.
+        </s>
+        <s pid="20" sid="2">
+         Additionally, the relative abundance of neither species was correlated with temperature (P &amp;gt; 0.05, Kolmogorov-Smirnov, D = 0.105161).
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       DISCUSSION
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        The absence of M. septentrionalis at lakeside sites and its abundance at wooded sites confirms that this species is specialized for gleaning and prefers to forage in more enclosed habitats, as indicated by its high frequency, broadband calls.
+       </s>
+       <s pid="21" sid="2">
+        This preference serves to separate the niches of the two species and reduce competition between them.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        While M. septentrionalis prefers to forage in wooded sites, M. lucifugus showed less of a preference.
+       </s>
+       <s pid="22" sid="2">
+        The roughly equal numbers of M. lucifugus at lakeside (34) and wooded (33) sites suggest that this species is a generalist and will both hawk and glean prey.
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        However, 70% of all calls (211 of 300) were recorded at wooded habitats.
+       </s>
+       <s pid="23" sid="2">
+        The 33 M. lucifugus calls at the wooded sites made up only 16% of the total number of calls recorded at wooded sites.
+       </s>
+       <s pid="23" sid="3">
+        At the lakeside sites, the 34 M. lucifugus calls makes up 81% of the total number of calls recorded.
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        Fig.
+       </s>
+       <s pid="25" sid="2">
+        5- Relative abundance of each species at each of the three habitats.
+       </s>
+       <s pid="25" sid="3">
+        For each species, proportions are calculated as the number of calls recorded at a certain habitat as related to the total number of calls recorded at that habitat.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        Thus, the relative abundance of M. lucifugus was the highest at the lakeside sites.
+       </s>
+       <s pid="26" sid="2">
+        The unequal proportions of M. lucifugus at lakeside (.81) and wooded (.16) sites further confirms that M. septentrionalis prefers wooded sites over lakeside sites.
+       </s>
+       <s pid="26" sid="3">
+        However, it cannot be concluded from these two pieces of data that M. lucifugus prefers lakeside sites, because M. lucifugus numbers at lakeside sites were equal to those at wooded sites.
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        Both species showed the most activity during the early hours of the night.
+       </s>
+       <s pid="27" sid="2">
+        However, while M. lucifugus becomes active again at about 1:00 am, M. septentrionalis numbers steadily decline and drop off at around that time.
+       </s>
+       <s pid="27" sid="3">
+        This trend may be related to being a gleaner.
+       </s>
+       <s pid="27" sid="4">
+        Because a gleaner must snatch insects off of stationary objects, it would be helpful for them to supplement their echolocation with sight.
+       </s>
+       <s pid="27" sid="5">
+        Further, because sight depends on the availability of light, using sight would be more effective during the earlier hours of the evening.
+       </s>
+      </p>
+      <p>
+       <s pid="28" sid="1">
+        Rainfall and temperature data, neither of which was significant, nonetheless could have had an influence on the temporal data.
+       </s>
+       <s pid="28" sid="2">
+        Rainfall and temperature were recorded once an hour.
+       </s>
+       <s pid="28" sid="3">
+        Thus, calls recorded during an hour in which rainfall was observed were not necessarily recorded in the rain.
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        Another problem with the study arose from limitations of the Anabat II detector.
+       </s>
+       <s pid="29" sid="2">
+        The detector recorded only the number of calls, not the number of bats present.
+       </s>
+       <s pid="29" sid="3">
+        It is possible that multiple passes were made by a single bat.
+       </s>
+       <s pid="29" sid="4">
+        For each species, if the number of calls was evenly distributed amongst the number of bats present, then the number of calls recorded is indicative of the relative abundance of that species, and this problem should not influence our results.
+       </s>
+       <s pid="29" sid="5">
+        However, if most of the calls recorded were made by one or a few bats, then the number of calls was not evenly distributed, and this could have affected our results.
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        It would also be helpful to see if the spatial and temporal segregation we observed exists in areas where the two species are allopatric.
+       </s>
+       <s pid="30" sid="2">
+        If this is the case, then we can conclude that the segregation we observed is due to intrinsic differences between the two and that competition does not influence habitat preference.
+       </s>
+       <s pid="30" sid="3">
+        If, however, either of the species expands its foraging habitats (if either species shows no preference for any of the habitats), then the segregation we observed was due to competition.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       ACKNOWLEDGMENTS
+      </div>
+      <p>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       LITERATURE CITED
+      </div>
+      <ul id="N1026E">
+       <li id="N1026F">
+        Barclay, R. M. R. &amp; Fenton, M. B.  1980.  Myotis lucifugus.  Mammalian Species 142:1-8.
+       </li>
+       <li id="N10271">
+        Caceres, M. C. &amp; Barclay, R. M. R.  2000.  Myotis septentrionalis.  Mammalian Species 634:1-4.
+       </li>
+       <li id="N10273">
+        Faure, P. A., Fullard, J. H. &amp; Dawson, J. W.  1993.  The gleaning attacks of the northern long-eared bat, Myotis septentrionalis, are relatively inaudible to moths.  Journal of Experimental Biology 178:173-189.
+       </li>
+       <li id="N10275">
+        Kurta, A.  1995.  Mammals of the Great Lakes Region. University of Michigan Press, Ann Arbor, 66-71.
+       </li>
+       <li id="N10277">
+        Ratcliffe, J. M. &amp; Dawson, J. W.  2003.  Behavioural flexibility: the little brown bat, Myotis lucifugus, and the northern long-eared bat, M. septentrionalis, both glean and hawk prey.  Animal Behaviour 66:847-856.
+       </li>
+       <li id="N10279">
+        Schnitzler, H. U. &amp; Kalko, E. K. V.  2001.  Echolocation by insect-eating bats.  BioScience 51:557-569.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

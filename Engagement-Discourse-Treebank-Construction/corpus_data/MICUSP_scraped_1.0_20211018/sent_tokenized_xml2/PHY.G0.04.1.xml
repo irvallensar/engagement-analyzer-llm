@@ -1,0 +1,859 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Gamma Ray Spectroscopy
+     </div>
+     <p>
+     </p>
+     <div class="abstract">
+      <p>
+       Abstract: A NaI(Tl) scintillation spectrometer was used to analyze the spectra of several radionuclides.  We first took spectra for 137Cs, 60Co and 22Na to calibrate our setup and learn about gamma decay in these isotopes.  We then used gamma spectroscopy to identify the constituents of two unknown radioactive sources.  Finally, we attempted to determine the practicality of using gamma spectroscopy to detect copper.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Gamma rays are highly penetrating photons produced by positron-electron annihilation or by the decay of a radioactive nucleus.
+       </s>
+       <s pid="1" sid="2">
+        Gamma decay tends to occur following an alpha or beta decay to bring the nucleus down to ground state.
+       </s>
+       <s pid="1" sid="3">
+        These photons were first detected by Antoine Henri Becquerel in the late 1800’s.
+       </s>
+       <s pid="1" sid="4">
+        Becquerel deduced that gamma rays interact with matter like light using photographic film to detect the radiation.
+       </s>
+       <s pid="1" sid="5">
+        The detection of gamma rays using scintillation spectroscopy rests on this discovery that gamma rays are photons.
+       </s>
+       <s pid="1" sid="6">
+        Gamma rays interact with matter by three processes- the photoelectric effect, Compton scattering, and pair production.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Each of these processes transfers energy to electrons, which then lose energy by ionizing atoms as they travel through matter.
+       </s>
+       <s pid="2" sid="2">
+        In the case of the photoelectric effect, all of the energy of the gamma photon is transferred to an electron.
+       </s>
+       <s pid="2" sid="3">
+        Since the ionization energy of the atoms in the scintillator is small compared to that of a gamma ray, the electron is considered to have an energy equal to that of the incident photon.
+       </s>
+       <s pid="2" sid="4">
+        This process is dominant at gamma energies lower than 511 KeV.
+       </s>
+       <s pid="2" sid="5">
+        For a nuclear charge Z, the photoelectric cross section for a K shell electron is:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        (1)
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Compton scattering is a demonstration of the particle-like behavior of light.
+       </s>
+       <s pid="4" sid="2">
+        During this process, a photon and an electron collide elastically, producing a scattered photon of lower energy and an electron with the energy lost by the photon.
+       </s>
+       <s pid="4" sid="3">
+        The energy of the new photon is dependent on the angle of deflection.
+       </s>
+       <s pid="4" sid="4">
+        The energies of the scattered photon (Eγ’) and electron (Ee) for an incident photon of energy
+       </s>
+       <s pid="4" sid="5">
+        Eγ are:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        (2)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        (3)
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        The Klein-Nishina formula gives the differential cross section for Compton scattering:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        (4)
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        where P(Eγ,θ) is the ratio of the final photon energy to the initial photon energy, re is the classical electron radius and dΩ is the solid angle.
+       </s>
+       <s pid="9" sid="2">
+        Compton scattering is dominant for middle-energy gamma rays.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        At energies higher than the rest mass of two electrons (
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ), pair production is the principal mechanism for gamma interactions.  During this process, a photon turns into an electron and a positron.  This must occur near a nucleus in order to conserve momentum and energy.
+      <p>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        All three of these processes result in the transfer of energy from a photon to an electron.
+       </s>
+       <s pid="12" sid="2">
+        As the electron travels through matter, it ionizes atoms through a series of inelastic collisions.
+       </s>
+       <s pid="12" sid="3">
+        This ionization is measurable by a number of techniques making it useful for detecting particles.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Experimental Technique
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        As described above, gamma rays deposit their energy in matter such that a number of ionized atoms are created.
+       </s>
+       <s pid="13" sid="2">
+        In a scintillator, this ionization energy is converted into visible light.
+       </s>
+       <s pid="13" sid="3">
+        This property was first employed in 1909 by Ernest Rutherford who used a ZnS screen to detect scattered alpha particles.
+       </s>
+       <s pid="13" sid="4">
+        The visible light produced in the scintillating crystal is linearly proportional to the energy input of the crystal.
+       </s>
+       <s pid="13" sid="5">
+        In this experiment, we used sodium-iodide, an inorganic crystal, doped with thallium, which has an efficiency of 12% and produces 4×104 photons per incident MeV and has a time constant of ~200 ns.
+       </s>
+       <s pid="13" sid="6">
+        The NaI(Tl) crystal is enclosed in a sealed can and optically connected to a photomultiplier.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        We used a standard photomultiplier tube (PMT) from RCA.
+       </s>
+       <s pid="14" sid="2">
+        The PMT proportionally converts the visible light from the scintillation crystal into a small electrical pulse.
+       </s>
+       <s pid="14" sid="3">
+        The first part of a PMT is a photocathode, which converts light into electrons by the photoelectric effect.
+       </s>
+       <s pid="14" sid="4">
+        Next comes a series of dynodes made of materials with good secondary electron emission, between which a high voltage is applied.
+       </s>
+       <s pid="14" sid="5">
+        This creates a potential difference of 50 to 100V between dynode pairs.
+       </s>
+       <s pid="14" sid="6">
+        The HV source used in this experiment is an Ortec 478 HV supply at positive 1.1 kV.
+       </s>
+       <s pid="14" sid="7">
+        The electrons emitted from the photocathode are accelerated to the first dynode, which then emits a proportional number of electrons to the next dynode.
+       </s>
+       <s pid="14" sid="8">
+        This signal continues to amplify along the chain of dynodes, adding up to a total amplification of ~106.
+       </s>
+       <s pid="14" sid="9">
+        This pulse is collected at the anode, which is connected to a preamplifier.
+       </s>
+       <s pid="14" sid="10">
+        The photomultiplier sends out a negative pulse of charge with a width on the order of 6μs and amplitude of about 200 mV.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        The preamplifier converts the charge on the anode to a positive voltage signal with width of about 140μs and sends it to a pulse shaping amplifier.
+       </s>
+       <s pid="15" sid="2">
+        An ORTEC 485 amplifier was used in this experiment.
+       </s>
+       <s pid="15" sid="3">
+        The pulse shaping amplifier removes the effect of the scintillator time constant on the width of the pulse.
+       </s>
+       <s pid="15" sid="4">
+        The pulse width is now controlled by the shaping time of the amplifier.
+       </s>
+       <s pid="15" sid="5">
+        Typical pulse widths were on the order of 7μs with a height of around 25 V.
+       </s>
+       <s pid="15" sid="6">
+        The now amplified voltage signal is digitized using a Pocket Multi Channel Analyzer analog-to-digital converter.
+       </s>
+       <s pid="15" sid="7">
+        The MCA is connected to a computer in which a histogram of voltage pulse heights is plotted.
+       </s>
+       <s pid="15" sid="8">
+        This plot gives the energy spectrum of a gamma ray source, once channels are calibrated to energies.
+       </s>
+       <s pid="15" sid="9">
+        Cesium-137 was used to calibrate pulse height to photon energy (see appendix for details).
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       The 60Co Spectrum
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        The cobalt-60 gamma spectrum shows two strong gamma lines.
+       </s>
+       <s pid="16" sid="2">
+        This indicates a cascade of two gamma emissions following a beta decay.
+       </s>
+       <s pid="16" sid="3">
+        The first gamma has an energy of 1173.7 keV and the second has an energy of 1332.5 keV.
+       </s>
+       <s pid="16" sid="4">
+        As seen in the decay scheme to the right, cobalt-60 occasionally decays by a high energy beta emission followed by a single gamma decay to ground state.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        The presence of two different gamma energies means that there should be two different backscatter peaks and Compton edges.
+       </s>
+       <s pid="17" sid="2">
+        However, these features were predicted to be very close to each other and are not distinguishable on the spectrum.
+       </s>
+       <s pid="17" sid="3">
+        The backscatter peak is at approximately 251 + 20 keV, which is ~40 keV higher than expected.
+       </s>
+       <s pid="17" sid="4">
+        The Compton edge is located at about 980 + 20 keV and is in between the two expected values.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        Table 1: Expected Cobalt Spectrum Features
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        Table 2: Energy Resolution
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        Fig. 1: Decay scheme of 60Co
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        Fig. 2: Cobalt-60 spectrum
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        Table 3: Cobalt Spectrum Peaks
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       The 22Na Spectrum
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        In 89.8% of cases, 22Na decays by the emission of a positron followed by the emission of a 1277 keV gamma photon to the ground state of 22Ne.
+       </s>
+       <s pid="23" sid="2">
+        The positron annihilates with an electron, producing two gamma rays of 511 keV, the rest mass of an electron.
+       </s>
+       <s pid="23" sid="3">
+        This reflects the conversion of the masses of the positron and electron into energy by E=mc2.
+       </s>
+       <s pid="23" sid="4">
+        The other 10.2% of the time, the decay begins with electron capture in the K shell, followed by the 1277 keV gamma decay.
+       </s>
+       <s pid="23" sid="5">
+        The energy resolution of the positron-electron annihilation peak is 7.6%, compared to 4.9% for the 1277 keV gamma peak.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="24" sid="1">
+        Fig. 3: 22
+       </s>
+       <s pid="24" sid="2">
+        Na decay scheme
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        Table 4: Sodium Spectrum Peaks
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        The sodium-22 spectrum appeared as expected except for a high energy gamma peak of unknown origin.
+       </s>
+       <s pid="26" sid="2">
+        This peak occurred at an energy of 1820 keV, which is reasonably close to the combined energy of a sodium gamma and an annihilation gamma (1788 keV).
+       </s>
+       <s pid="26" sid="3">
+        We suspect that this high energy peak is the result of a 1277 keV gamma and 511 keV gamma entering the scintillation at the same time.
+       </s>
+       <s pid="26" sid="4">
+        This is possible given our experimental setup in which the source was place directly on the scintillation counter.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="27" sid="1">
+        Fig. 4: Sodium-22 spectrum
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Unknown Spectra
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        Gamma spectroscopy can be employed to determine the constituents of an unknown radioactive sample.
+       </s>
+       <s pid="28" sid="2">
+        In this experiment, we were given two unknown sources, which we attempted to identify.
+       </s>
+       <s pid="28" sid="3">
+        We did this by comparing the unknown spectrum to the gamma energies of known sources.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        Fig. 5: Unknown 1 Spectrum
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        Table 5: Identification of Peaks for unknown 1
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        This unknown was determined to be a combination of 137Cs and some kind of zinc compound.
+       </s>
+       <s pid="31" sid="2">
+        The cesium contributed Peak A, which is interpreted to be the barium x-ray peak of the spectrum, and Peak B, which is interpreted as the full energy peak.
+       </s>
+       <s pid="31" sid="3">
+        Zinc has a number of isotopes that decay with gamma energies between 1366.4 - 1560.4 ke
+       </s>
+       <s pid="31" sid="4">
+        V which may be the source of Peak C.
+       </s>
+       <s pid="31" sid="5">
+        The values are not exact because adding the two spectra together cause the peaks to shift relative to one another.
+       </s>
+       <s pid="31" sid="6">
+        Also, as seen in the above experiments, the cesium calibration does not work perfectly for other spectra, which may have affected the accuracy of the calibration of Peak C.
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        We determined the composition of unknown 2 by adding together the spectra of various sources available in the lab until we found a reasonable match.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        Fig. 6: Gamma spectrum for Unknown 2 and an example of combined spectra
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        We concluded that unknown 2 is composed of 137Cs, 60Co, 133Ba, and 109Cd.
+       </s>
+       <s pid="34" sid="2">
+        Peak A is the barium x-ray peak from cesium.
+       </s>
+       <s pid="34" sid="3">
+        Peaks B, C, and D are the result of combining the spectra of the four sources.
+       </s>
+       <s pid="34" sid="4">
+        They do not exactly line up with any single line of the sources since the Compton continuum from each source is in this energy region.
+       </s>
+       <s pid="34" sid="5">
+        Cobalt-60 is the source of the dual peaks E and F.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        Table 6: Peak Identification for unknown 2
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="36" sid="1">
+        Table 7: Known Energies
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       64Cu Production and Decay
+      </div>
+      <p>
+       <s pid="37" sid="1">
+        In this part of the experiment we tried to determine if gamma spectroscopy could be useful in detecting trace amounts of copper in a material of unknown composition.
+       </s>
+       <s pid="37" sid="2">
+        We exposed 16.037g of Copper to an active neutron source to create 64Cu.
+       </s>
+       <s pid="37" sid="3">
+        This isotope has a gamma line at 1345.84 keV and a half life of 12.7 hr.
+       </s>
+       <s pid="37" sid="4">
+        The parent isotope, 63Cu, has a relative abundance of 69.17%, making Cu a good candidate for this experiment.
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        We observed the expected peak and used the data below to calculate how many 64Cu were produced.
+       </s>
+       <s pid="38" sid="2">
+        These "back of the envelope" calculations were done under the assumption that 20% of the emitted gammas were absorbed in the detector, which has a 12% efficiency.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="39" sid="1">
+        Fig. 8: 64
+       </s>
+       <s pid="39" sid="2">
+        Cu decay scheme.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        Fig. 7: Irradiated copper spectrum
+       </s>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        The signal can be approximated by a Gaussian distribution using the method of least squares.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="42" sid="1">
+        The above equation describes a Gaussian distribution centered at Eo with variance σ2.
+       </s>
+       <s pid="42" sid="2">
+        The least squares method is used to determine the constant A, as well as the error in A.
+       </s>
+       <s pid="42" sid="3">
+        We found A to be 3427
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      175 counts.  The Gaussian distribution fits well near the center of the peak, but underestimates our data toward the limbs of the peak.  Assuming the data forms a Gaussian curve, the number of standard deviations observed in the peak is 266.4.
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="44" sid="1">
+        Fig. 9: Gaussian Fit to Copper Data
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        We can approximate the number of 64Cu nuclei produced while the copper was exposed to the neutron source using the data gathered with the scintillation counter and the properties of the isotope and its parent isotope, 63Cu.
+       </s>
+       <s pid="45" sid="2">
+        We also assumed that 20% of the emitted gammas were absorbed in the detector, which has a 12% efficiency.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="46" sid="1">
+        Table 8: 64Cu Data
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Sample Calculation
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="47" sid="1">
+        According to this calculation, there were 4.8×108 Copper-64 isotopes made while the sample was exposed to the neutron source.
+       </s>
+       <s pid="47" sid="2">
+        Even though this is a very small number compared to the total number of nuclei in the sample (
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      its presence was easily visible in the spectrum.  The number of standard deviations observed indicates that if copper was present as 1 part in 266.4 this method could produce a detectable number of radioactive isotopes.  This apparatus could therefore be used to detect trace amounts of elements with either naturally occurring radioactive isotopes, or elements that could form a radioactive isotope if it is bombarded with neutrons.
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusions
+      </div>
+      <p>
+       <s pid="49" sid="1">
+        Gamma ray spectroscopy is an excellent method of investigating the radioactive decay of certain isotopes.
+       </s>
+       <s pid="49" sid="2">
+        Our scintillation spectroscopy setup detected the two gamma decay cascade of cobalt-60, as well as the positron-electron annihilation that characterizes the sodium-22 spectrum.
+       </s>
+       <s pid="49" sid="3">
+        Scintillation spectroscopy has greatly increased our understanding of radioactive decay since spectra have been recorded for many isotopes.
+       </s>
+      </p>
+      <p>
+       <s pid="50" sid="1">
+        Since there is such a large base of knowledge, gamma spectroscopy is also useful in identifying unknown samples.
+       </s>
+       <s pid="50" sid="2">
+        As shown with our copper experiment, it may possibly be used to detect trace amounts of certain elements.
+       </s>
+       <s pid="50" sid="3">
+        This application should be further explored through more research.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N101E6">
+       <li id="N101E7">
+        Gilmore and Hemingway, Practical Gamma-Ray Spectroscopy
+       </li>
+       <li id="N101E9">
+        Knoll, Radiation Detection and Measurement
+       </li>
+       <li id="N101EB">
+        Melissinos, Experiments in Modern Physics
+       </li>
+       <li id="N101ED">
+        Table of Isotopes, &lt;http://ie.lbl.gov/toi.html&gt;
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="head_1">
+       Appendix A
+      </div>
+      <p>
+       137Cs Calibration
+      </p>
+      <p>
+       137Cs has a single gamma line at 662 keV and a barium x-ray peak at 32 keV.  The decay of 137Cs starts with the emission of an electron to an excited state of 137Ba, followed by a gamma emission in 92% of cases.  The other 8% of beta emissions bring the nucleus directly to ground state.  The x-ray results from electron capture in the K shell of barium followed by the emission of an x-ray, which occurs 10% of the time.
+      </p>
+      <p>
+       The 137Cs spectrum shows the characteristic features of a gamma spectrum.  The Compton continuum represents all the energies of 662 keV gammas that scatter in the crystal with the scattered photon escaping without depositing its full energy.  The backscatter peak shows the 662 keV gammas that scatter off something outside the detector and get sent into the crystal.  When lead was placed nearby the source and detector, the backscatter rate increased.  The Compton continuum is a continuous range of energies because gammas can scatter at any angle from 0 to π.  The highest energy of this range corresponds to the energy of the recoiling electron for a scattering angle θ=π in equation (3).  This energy is the location of the Compton edge and the energy of the scattered photon at this scattering angle is the location of the backscattering peak.
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Fig. A1: Decay scheme of 137Cs
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Fig. A2: Gamma Ray spectrum for 137Cs with coarse gain 2, fine gain 3.
+      </p>
+      <p>
+       Calibration of the channels of the MCA was done for several amplifier settings and is summarized in Table 1.  At every amplifier setting used, the features described above appeared at approximately the same energy once the channels were calibrated.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table A1: Cesium Calibration
+      </p>
+      <p>
+       Table 2 shows a statistical analysis of the barium x-ray and full energy peaks for an amplifier setting of CG 2 FG 3.  The uncertainties were determined using the peak finding software in the MCA program and converted into keV using the calibrations calculated above.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table A2: Cesium Spectrum Peaks
+      </p>
+      <p>
+       We calculated the energy resolution to be 8.2% using the full width half maximum of the full energy peak divided by the centroid of the peak.
+      </p>
+      <p>
+       Using equations (2) and (3) the expected energies of the Compton edge and backscatter peak were calculated.  Our measured energies for these features were 7.1% and 12% different from the expected values, as shown in Table 3.  However, due to the dispersed nature of these features in the spectrum, as well as calibration error, the uncertainty in the measurement was approximately 20 keV.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table A3: Cesium Spectrum Features
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Appendix B
+      </div>
+      <p>
+       Notes on Sources
+      </p>
+      <p>
+       There is usually more than one decay path for a radioactive source, which have different probabilities for occurrence.  The half lives of intermediate states may also have different half lives.  Due to these differences, the multiple gamma peaks of certain radioactive nuclides may vary in relative strength as time passes from the preparation of the source.  The following table lists the characteristics of the known sealed sources used.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table B1: Source Data
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Appendix C
+      </div>
+      <p>
+       Energy Resolution
+      </p>
+      <p>
+       The energy resolution of the scintillator is described by the fractional width of a peak in a spectrum.  The width of a peak is related to the number of counts in a peak, which is a function of the number of visible photons that are generated and detected (N).
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (5)
+      </p>
+      <p>
+       Equation (5) shows the relation between fractional width and the probability of photon production in the scintillator.  For 137Cs, the number of visible photons produced and detected (N) is estimated to be 148.  The width of a peak should therefore scale as a function of 1/√N.  From this we can calculated the expected FWHM of the Cesium gamma peak using equation (6).
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (6)
+      </p>
+      <p>
+       Using E=662 and N=148, the expected FWHM for 137Cs is 54.4 keV.  The measured value is 53.46 keV, which differs from the expected by 1.7%.
+      </p>
+      <p>
+       The fractional width should also scale linearly with
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .  The plot below shows that more data for intermediate energies is necessary to verify this relation.
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Fig. C1: Fractional width vs. 1/√E with linear trend lines.  Purple line shows trend for all gamma energies, blue line shows gamma energies for Cesium full energy, Sodium and Copper peaks.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

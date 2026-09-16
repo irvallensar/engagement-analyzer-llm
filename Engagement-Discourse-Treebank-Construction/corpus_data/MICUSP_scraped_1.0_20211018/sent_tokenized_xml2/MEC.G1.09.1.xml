@@ -1,0 +1,2944 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Water Irrigation Pump Final Report
+     </div>
+     <p>
+     </p>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       Farmers of small land holdings in Guatemala struggle to maintain income from farming during the dry season due to lack of rainfall.  There are existing pumps in the market, but they do not target countries of Latin America, such as Guatemala, and are not suitable for the physique and terrain typical of Guatemala.  Our design is based on the treadle pump and uses an up and down motion driven by the farmer to operate the piston and cylinder pumping mechanism.  Our design is better than previous designs in the market by its major components, such as the treadles and valve system, an alternative use, number of operators, and possibility for assembly kit.  A beta prototype has been manufactured and assembled and there are plans for improvements for the beta-plus prototype.  Engineering modeling and analysis was performed to optimize treadle length, cylinder length, and cylinder diameter.  Economic modeling and analysis was performed to minimize cost. The following report chronicles the design, development, and analysis process.
+      </p>
+     </div>
+     <div>
+      TABLE OF CONTENTS
+      <p>
+       1. NOMENCLATURE.......................................................................................................3-4
+      </p>
+      <p>
+       2. INTRODUCTION
+      </p>
+      <p>
+       Definition of need and design problem........................................................................................5
+      </p>
+      <p>
+       User  background...........................................................................................................................6
+      </p>
+      <p>
+       Design Requirements..................................................................................................................7
+      </p>
+      <p>
+       3. CONCEPT SELECTION PROCESS
+      </p>
+      <p>
+       Previous Design concepts ……................................................................................................8
+      </p>
+      <p>
+       Existing pumps comparison........................................................................................................11
+      </p>
+      <p>
+       Selected Concept....................................................................................................................11
+      </p>
+      <p>
+       4. PRODUCT DESCRIPTION
+      </p>
+      <p>
+       Beta prototype  .................................................................................................................15
+      </p>
+      <p>
+       Beta plus prototype..........................................................................................................15
+      </p>
+      <p>
+       5. PRODUCT ANALYSIS
+      </p>
+      <p>
+       5.1  DESIGN OPTIMIZATION......................................................................................................16
+      </p>
+      <p>
+       Selection of Design Objective..........................................................................................16-18
+      </p>
+      <p>
+       Limitations of design model...............................................................................................18-19
+      </p>
+      <p>
+       5.2  MATHEMATICAL MODEL.................................................................................................19
+      </p>
+      <p>
+       5.3  STRESS ANALYSIS ..........................................................................................................24
+      </p>
+      <p>
+       Stress analysis model ..............................................................................................................24
+      </p>
+      <p>
+       5.4  EMOTIONAL/KANSEI ANALYSIS ..................................................................................24
+      </p>
+      <p>
+       6. EMOTIONAL/AESTHETIC ANALYSIS..............................................................................26
+      </p>
+      <p>
+       7. ECONOMIC ANALYSIS
+      </p>
+      <p>
+       MICROECONOMIC ANALYSIS- SCENARIO 1...............................................................26-32
+      </p>
+      <p>
+       NPV and Breakeven Analysis Using Scenario 1.........................................................................31
+      </p>
+      <p>
+       MICROECONOMIC ANALYSIS- SCENARIO 2...............................................................32-39
+      </p>
+      <p>
+       Estimation of Demand function.............................................................................................33-34
+      </p>
+      <p>
+       Estimation of Cost function ...................................................................................................34-35
+      </p>
+      <p>
+       Microeconomic Model Analysis .................................................................................................35
+      </p>
+      <p>
+       8. MARKETING DEMAND ANALYSIS………..….....................…….....................……........37
+      </p>
+      <p>
+       9. MARKETING/INVESTMENT ANALYSIS... ……...............................................................39
+      </p>
+      <p>
+       10. NET PRESENT VALUE AND BREAKEVEN ANALYSIS…….....................…….......40-41
+      </p>
+      <p>
+       11. PRODUCT DEVELOPMENT PROCESS…….............................................…….................41
+      </p>
+      <p>
+       12. PRODUCT BROADER IMPACT…….............................................……..............................42
+      </p>
+      <p>
+       13. CONCLUSIONS…….............................................……..............................……................42-43
+      </p>
+      <p>
+       14. AKNOWLEDGEMENTS…….............................................……..............................……......43
+      </p>
+      <p>
+       15. REFERENCES…….............................................……..............................…….......................44
+      </p>
+      <p>
+       16. APPENDICES
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       NOMENCLATURE
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        In this section we discuss the definition of need and design problem, user background, and design requirements.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Definition of Need and Design Problem
+       </div>
+       <p>
+        <s pid="2" sid="1">
+         Currently, Non-Governmental Organizations (NGO’s) are focusing on providing third-world countries with the technology to improve their quality of life.
+        </s>
+        <s pid="2" sid="2">
+         While specific technology has been developed for Africa, India, and Nepal, very little attention has been given to the design and development of technology suited for the economic and environmental needs of countries in Latin America, such as Guatemala.
+        </s>
+        <s pid="2" sid="3">
+         Guatemala has one of the most unequal income distributions in the hemisphere.
+        </s>
+        <s pid="2" sid="4">
+         32% of the population lives on less than $2 a day and 13.5% on less than $1 a day [3].
+        </s>
+        <s pid="2" sid="5">
+         Low rainfall in dry season destroys 80% of the country’s annual harvest, putting at least 4000 families at risk of severe food shortage.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="3" sid="1">
+         Figure 1 and 2: Map of Guatemala and Graph of average rainfall and temperature in Guatemala City [2].
+        </s>
+       </p>
+       <p>
+        <s pid="4" sid="1">
+         While some variety of industries and employment opportunities exist, agriculture and farming are crucial elements in Guatemala’s existing economic conditions.
+        </s>
+        <s pid="4" sid="2">
+         The agricultural sector accounts for about one-fourth of the country’s Gross Domestic Product (GDP), two-fifths of the country’s exports, and half of the labor force [3].
+        </s>
+        <s pid="4" sid="3">
+         Thus, a focus on the agriculture and farming population will immediately aid a great deal of the Guatemalan population that lives below the poverty line.
+        </s>
+        <s pid="4" sid="4">
+         The majority of this farming population own small-land holdings and struggle to maintain income from farms during the dry season due to lack of rainfall.
+        </s>
+        <s pid="4" sid="5">
+         Figure 1 below, displays the average monthly rainfall in Guatemala during the year [2].
+        </s>
+       </p>
+       <p>
+        <s pid="5" sid="1">
+         As shown above, there is a major discrepancy of the average monthly rainfall between the rainy and dry season.
+        </s>
+        <s pid="5" sid="2">
+         These climatic conditions in Guatemala are not conducive to the maximum potential of agricultural productivity.
+        </s>
+        <s pid="5" sid="3">
+         The dry season does not produce an adequate amount of natural rainfall to enable farmers to sow and reap enough crops to sell and make profits.
+        </s>
+        <s pid="5" sid="4">
+         Thus, farmers must rely on migratory labor during the dry season, an unreliable source of income.
+        </s>
+       </p>
+       <p>
+        <s pid="6" sid="1">
+         An opportunity to aid a significant population of Guatemalan citizens below the poverty line would be to devise a means by which farmers of smallholdings are able to produce crops during the dry season as well.
+        </s>
+        <s pid="6" sid="2">
+         These farmers own smallholdings that are located near the highland mountains, shown in Figure 2 [11].
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         Figure 3: Highland Mountains in Guatemala [11]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="8" sid="1">
+         The photo on the previous page is a tourist photo of the city of Quetzaltenango, Guatemala.
+        </s>
+        <s pid="8" sid="2">
+         This is an area that relies heavily on agriculture and crops produced during the rainy season and loses a significant agricultural opportunity due to the barren dry season.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         One solution would have been for the government to intervene and offer support; however the government has been unwilling to offer even provisionary support for its citizens.
+        </s>
+        <s pid="9" sid="2">
+         Another solution would have been to engineer a canal system or community basins, however, this solution would prove to be too expensive for the country to afford.
+        </s>
+        <s pid="9" sid="3">
+         Lastly, there is a solution of providing individual technological aid, such as an irrigation pump.
+        </s>
+        <s pid="9" sid="4">
+         This would be the most economical solution compared to the other global solutions and with the help of Non-Governmental Organizations (NGO’s) this is a viable solution.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        User Background
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         The typical Guatemalan farmer owns a small plot of land and produces crops as a main source of income.
+        </s>
+        <s pid="10" sid="2">
+         The average annual income for farmers in Guatemala is 2800 Quetzals ($375).
+        </s>
+        <s pid="10" sid="3">
+         A significant portion of their income comes from their crops, which makes them very dependent on rainfall throughout the year.
+        </s>
+        <s pid="10" sid="4">
+         The amount of rainfall during the rainy season, which lasts 6 months, is 130 cm (~50 in) and during the dry season is 10 cm (~5 in) [2].
+        </s>
+        <s pid="10" sid="5">
+         The drastic change in rainfall from the rainy to dry season makes it difficult for farmers to sustain the necessary income.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         Figure 4: Intended User
+        </s>
+       </p>
+       <p>
+        <s pid="12" sid="1">
+         The average physical characteristics of a Guatemalan citizen are very different from the average American characteristics.
+        </s>
+        <s pid="12" sid="2">
+         The average height of males is 160 cm (5’3”) and for females is 140 cm (4’ 6”).
+        </s>
+        <s pid="12" sid="3">
+         The average weight of a Guatemalan male is 55 kg (115 lb) and female is 50 kg (110 lb) [5].
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Design Requirements
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         In order to create a water irrigation pump to aid and improve the quality of life for farmers of small-land holdings in Guatemala there are several design requirements that must be accounted for during the design and manufacturing processes.
+        </s>
+        <s pid="13" sid="2">
+         These design objectives include cost, user range, flow volume, and manufacturability.
+        </s>
+        <s pid="13" sid="3">
+         A summary of the design objectives can be found in Table 1 below.
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         It is very important that the pump be cost-effective for the farmers.
+        </s>
+        <s pid="14" sid="2">
+         Considering that the average annual income of a Guatemalan farmer is 2800 Quetzals ($370), our goal is to keep the cost of the pump under 10% of the annual income.
+        </s>
+        <s pid="14" sid="3">
+         Therefore, the design requirement for cost is 280 Quetzals ($37).
+        </s>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         One limiting factor for previous pump designs is user range.
+        </s>
+        <s pid="15" sid="2">
+         The stature of Guatemalans is generally smaller than others and therefore, the pump must be able to be operated by lighter users.
+        </s>
+        <s pid="15" sid="3">
+         Based on the average weights of Guatemalans, our design objective is to create a pump with weight requirements at least +/- 15% the average weight.
+        </s>
+        <s pid="15" sid="4">
+         Therefore, our design requirement for weight is 85 – 135 lbs.
+        </s>
+        <s pid="15" sid="5">
+         Also, because Guatemalan families typically contain 5-7 members, our goal is to allow a majority of the household to be able to use the pump.
+        </s>
+        <s pid="15" sid="6">
+         This depends on the weight requirement above and also the complexity of the design and safety.
+        </s>
+        <s pid="15" sid="7">
+         Therefore, another user range design requirement is for ages 10-50 years.
+        </s>
+       </p>
+       <p>
+        <s pid="16" sid="1">
+         A major concern during the dry season for farmers is the amount of water the pump can pull from the ground.
+        </s>
+        <s pid="16" sid="2">
+         The average rainfall in the rainy season is sufficient for farmers to maintain their crops and therefore, our goal is for the pump’s water capacity to be at least equal to the average rainfall in the rainy season.
+        </s>
+        <s pid="16" sid="3">
+         Based on the average rainfall during the rainfall and the average size of the small-land holdings, our design requirement for water capacity is 10000 liters per day.
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         Lastly, another design requirement is manufacturability.
+        </s>
+        <s pid="17" sid="2">
+         That means that all of the components must be made of materials that are locally available and cost-effective.
+        </s>
+        <s pid="17" sid="3">
+         The manufacturing processes required must also be locally available and not labor intensive.
+        </s>
+        <s pid="17" sid="4">
+         Finally, personal assembly by the farmers is a long-term goal and therefore, the manufacturing and assembly must be simple and not labor intensive.
+        </s>
+       </p>
+       <p>
+        <s pid="18" sid="1">
+         Table 1: Summary of Design Objectives
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCEPT SELECTION PROCESS:
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        This section includes research done on previous design concepts and a description of our selected design concept with discussions of the design concept process and prototypes.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Previous Design Concepts
+       </div>
+       <p>
+        <s pid="20" sid="1">
+         The three main water irrigation pumps currently available on the market are the bicycle pump, rope pump, and treadle pump.
+        </s>
+        <s pid="20" sid="2">
+         The components, mechanisms, and advantages and disadvantages for each pump are discussed below.
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Bicycle Pump
+        </div>
+        <p>
+         <s pid="21" sid="1">
+          The bicycle pump uses the rotational energy of the wheel to power the reciprocating motion of a piston pump.
+         </s>
+         <s pid="21" sid="2">
+          There exist various bicycle pump designs in the market, some with a stationary bike welded to the frame and others with a mobile bicycle that can be attached to the frame at the time of use.
+         </s>
+        </p>
+        <p>
+         <s pid="22" sid="1">
+          Components:
+         </s>
+         <s pid="22" sid="2">
+          The components of the bicycle pump include the bicycle, pump, belt, hoses, and valves.
+         </s>
+         <s pid="22" sid="3">
+          The belt connects the rear wheel and the pump wheel.
+         </s>
+         <s pid="22" sid="4">
+          Hoses run from pump input to well and from the pump output to the desired containment.
+         </s>
+         <s pid="22" sid="5">
+          The one-way valve at the source will keep the pump primed.
+         </s>
+         <s pid="22" sid="6">
+          A frame can be used to mount the bike and the pump along with the remaining hardware.
+         </s>
+         <s pid="22" sid="7">
+          A diagram of the bicycle pump is shown in Figure 3 on Page 7.
+         </s>
+        </p>
+        <p>
+         <s pid="23" sid="1">
+          How It Works:
+         </s>
+         <s pid="23" sid="2">
+          The core of the pump is a piston and cylinder paired with the crank arms and pedals from an old bicycle.
+         </s>
+         <s pid="23" sid="3">
+          The standard bicycle can fit into a universal stand and the power is taken off the wheel with a roller.
+         </s>
+         <s pid="23" sid="4">
+          The roller transmits power via a chain to crank shaft and the crank shaft powers a positive displacement pump.
+         </s>
+         <s pid="23" sid="5">
+          The piston pump oscillates by rotational energy of the bike and with each stroke, the piston pulls water up through a one-way valve, into the cylinder, and out another one-way valve.
+         </s>
+        </p>
+        <p>
+         <s pid="24" sid="1">
+          Advantages:
+         </s>
+         <s pid="24" sid="2">
+          The main advantages of the bicycle pump are that because it uses leg power instead of hand muscles, it is easier to pump and can be used for longer periods of time.
+         </s>
+         <s pid="24" sid="3">
+          There also exists an alternative use; that is, the bicycle can be detached from the pump and used as a form of transportation.
+         </s>
+         <s pid="24" sid="4">
+          The pump is a low cost option and easy to make and use.
+         </s>
+         <s pid="24" sid="5">
+          The components can be found locally and produced locally.
+         </s>
+         <s pid="24" sid="6">
+          The maintenance and repairs the bike pump requires can be done by farmers themselves.
+         </s>
+         <s pid="24" sid="7">
+          There are only a few parts attached to the bicycle, which makes the installation easier and these parts are non-corrosive, leading to easier maintenance and repairs.
+         </s>
+         <s pid="24" sid="8">
+          It is also possible to incorporate other functions like a coffee-grinder, blender, electric generator, or knife sharpener into the bicycle pump.
+         </s>
+        </p>
+        <p>
+         <s pid="25" sid="1">
+          Disadvantages:
+         </s>
+         <s pid="25" sid="2">
+          The disadvantages of the bike pump are that its power depends on the efficiency of the bicycle.
+         </s>
+         <s pid="25" sid="3">
+          For example, a 10-speed bicycle would give excellent results as compared to a normal bicycle.
+         </s>
+         <s pid="25" sid="4">
+          Also, if the bicycle is used as a form of transportation, riding over rough terrain could decrease the functional ability of the machine and shorten its lifetime.
+         </s>
+         <s pid="25" sid="5">
+          Also, the flow of water is not continuous and pumping flow is dependent on the strength of the rider.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Rope Pump
+        </div>
+        <p>
+         <s pid="26" sid="1">
+          The rope pump design was developed based on the principles of the ancient chain and washer pump.
+         </s>
+         <s pid="26" sid="2">
+          Rope pumps can be operated by human power, animal power, electric motor, and by wind power.
+         </s>
+         <s pid="26" sid="3">
+          There are close to 100,000 rope pumps in use worldwide.
+         </s>
+         <s pid="26" sid="4">
+          The most common type of rope pump used for rural areas is the hand rope pump.
+         </s>
+        </p>
+        <p>
+         <s pid="27" sid="1">
+          Components:
+         </s>
+         <s pid="27" sid="2">
+          The components of the rope pump include the wheel, handle, main raising tube, outlet tube, rope, pistons, and guide box.
+         </s>
+         <s pid="27" sid="3">
+          These components are shown on the rope pump diagram in Figure 3 on Page 7.
+         </s>
+         <s pid="27" sid="4">
+          The wheel and handle can be made of galvanized tube and the spokes on the wheel form a pulley system.
+         </s>
+         <s pid="27" sid="5">
+          The main raising and outlet tubes can be made of PVC tubing.
+         </s>
+         <s pid="27" sid="6">
+          The rope makes a continuous loop around the wheel, into the water source, and up through the main raising tube.
+         </s>
+         <s pid="27" sid="7">
+          The pistons are attached periodically on the rope and can be made from rubber car tires or plastic and fit with a small clearance in the raising main tube.
+         </s>
+         <s pid="27" sid="8">
+          The guide box is located at the bottom of the well and allows the rope and pistons to turn smoothly.
+         </s>
+        </p>
+        <p>
+         <s pid="28" sid="1">
+          How It Works:
+         </s>
+         <s pid="28" sid="2">
+          As the handle is turned, the wheel begins to rotate and the spokes on the wheel cause the rope make a loop.
+         </s>
+         <s pid="28" sid="3">
+          As the rope enters the main raising tube, water is trapped between two pistons and brought to the surface.
+         </s>
+         <s pid="28" sid="4">
+          The water is emptied from the main raising tube through the outlet tube.
+         </s>
+         <s pid="28" sid="5">
+          The periodic spacing of the pistons allow for there to be a continuous flow of water.
+         </s>
+        </p>
+        <p>
+         <s pid="29" sid="1">
+          Advantages:
+         </s>
+         <s pid="29" sid="2">
+          The main advantages of the rope pump is that it is a low cost option and easy to make and use.
+         </s>
+         <s pid="29" sid="3">
+          The components can be found locally and produced locally.
+         </s>
+         <s pid="29" sid="4">
+          The pump tubes can be made from light-weight, cheap PVC tubing because the pressures in the pump tube remain low.
+         </s>
+         <s pid="29" sid="5">
+          The maintenance and repairs the rope pump requires can be done by farmers themselves.
+         </s>
+         <s pid="29" sid="6">
+          There are only a few parts located at the bottom of the well, which makes the installation easier and these parts are non-corrosive, leading to easier maintenance and repairs.
+         </s>
+         <s pid="29" sid="7">
+          The rope pump supplies a continuous flow of water as compared with intermittent flow created by pressure pumps.
+         </s>
+        </p>
+        <p>
+         <s pid="30" sid="1">
+          Disadvantages:
+         </s>
+         <s pid="30" sid="2">
+          The disadvantages of the rope pump are that it does not have as much lift as a pressure pump.
+         </s>
+         <s pid="30" sid="3">
+          The maximum lift is determined by the height of the wheel axle and to obtain a higher lift, an additional wheel is needed.
+         </s>
+         <s pid="30" sid="4">
+          Another disadvantage is that it takes some time before the rope pump starts pumping.
+         </s>
+         <s pid="30" sid="5">
+          When not in use, the water level in the pump falls back to the water level in the well.
+         </s>
+         <s pid="30" sid="6">
+          Another disadvantage of the rope pump is that the required motion involves only select muscles and does not take advantage of body weight and gravity.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Treadle Pump
+        </div>
+        <p>
+         <s pid="31" sid="1">
+          Components:
+         </s>
+         <s pid="31" sid="2">
+          The pump consists of foot pedals attached to the piston portion of a piston cylinder mechanism.
+         </s>
+         <s pid="31" sid="3">
+          A pulley system, attached to the handles of the pump, offers the foot pedals a stair-stepping motion.
+         </s>
+         <s pid="31" sid="4">
+          A diagram of these components is shown in Figure 3 on Page 7.
+         </s>
+         <s pid="31" sid="5">
+          Existing pumps have been manufactured from wood, steel, and even bamboo.
+         </s>
+        </p>
+        <p>
+         <s pid="32" sid="1">
+          How It Works:
+         </s>
+         <s pid="32" sid="2">
+          The treadle pump operates by using manual foot power in lieu of a motor as found with most pumps.
+         </s>
+         <s pid="32" sid="3">
+          The user stands on the foot pedal, which moves down when the weight of the user is greater than the upward force of the piston-cylinder.
+         </s>
+         <s pid="32" sid="4">
+          The pulley system attached to the handlebars allows the user to easily alternate the stepping motion between both legs.
+         </s>
+         <s pid="32" sid="5">
+          This up and down motion of the foot pedals are attached to piston cylinders (1-2 depending on the particular treadle pump design.)
+         </s>
+         <s pid="32" sid="6">
+          The pump operator uses the foot pedals to pump the piston cylinder, similar to the way a syringe works, in a suction mechanism drawing water from below the ground by creating a vacuum.
+         </s>
+         <s pid="32" sid="7">
+          Depending on the particular design of the pump, there may either be a tap and hose attached to the cylinder to offer a sprinkler system from which the accumulated water can be released to water crops.
+         </s>
+         <s pid="32" sid="8">
+          There is also an alternative possibility of removable cylinders to transport the drawn water to farther parts of the farming field.
+         </s>
+        </p>
+        <p>
+         <s pid="33" sid="1">
+          Advantages:
+         </s>
+         <s pid="33" sid="2">
+          The main advantages of this type of pump are the simple mechanism, which make it easy to manufacture and assemble.
+         </s>
+         <s pid="33" sid="3">
+          The treadle pump has a larger water capacity, meaning the pump can draw more water during a single use.
+         </s>
+         <s pid="33" sid="4">
+          The pump also utilizes body weight and gravity and does not depend on strength of the user.
+         </s>
+        </p>
+        <p>
+         <s pid="34" sid="1">
+          Disadvantages:
+         </s>
+         <s pid="34" sid="2">
+          The main disadvantages of this pump have been the weight dependency.
+         </s>
+         <s pid="34" sid="3">
+          Existing pumps, such as the Kickstart [6] pump were manufactured from materials that are not currently readily available, affordable, and possible to manufacture in Guatemala.
+         </s>
+         <s pid="34" sid="4">
+          Additionally, current designs are not appropriate for the body types of the villagers where these pumps are marketed.
+         </s>
+         <s pid="34" sid="5">
+          There is currently no pump that has been manufactured using available materials and considering the available nutrition that corresponds to the body statures (height and weight) of the inhabitants of Latin America (namely Guatemala).
+         </s>
+         <s pid="34" sid="6">
+          Another disadvantage is that the treadle pump does not utilize continuous flow.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Existing Pump Comparison
+       </div>
+       <p>
+        <s pid="35" sid="1">
+         Based on the design requirements and advantages and disadvantages discussed above, the comparison of the three pumps focuses on the following categories: cost, user range, local and personal assembly, and alternative uses.
+        </s>
+        <s pid="35" sid="2">
+         A summary of the comparison of the three main existing pumps is summarized in Figure 5 below.
+        </s>
+       </p>
+       <p>
+        <s pid="36" sid="1">
+         Figure 5: Summary of Existing Pump Design Comparison
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="37" sid="1">
+         The pump with the lowest cost is the treadle pump at $30, followed by the rope pump at $60, and lastly the bicycle pump at $90.
+        </s>
+        <s pid="37" sid="2">
+         Each of the pumps had a limited user range.
+        </s>
+        <s pid="37" sid="3">
+         The bicycle pump was limited by height, the rope pump limited by upper body strength, and the treadle pump limited by body weight.
+        </s>
+        <s pid="37" sid="4">
+         All of the pumps could be produced locally, meaning that the materials needed for assembly could be found locally.
+        </s>
+        <s pid="37" sid="5">
+         Both the treadle and bicycle pump could also be assembled personally, meaning that the farmer would have the necessary resources to manufacture and assemble the pump themselves.
+        </s>
+        <s pid="37" sid="6">
+         Currently, the bicycle pump is the only one that has an alternative use, which is transportation.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Selected Design Concept
+       </div>
+       <div>
+        <div class="head_3">
+         Concept Generation
+        </div>
+        <p>
+         <s pid="38" sid="1">
+          Based on the comparison of previous designs, we concluded that because of the type of motion, cost, ease of manufacturing, and possibility for alternative uses that our design would be based on the treadle pump.
+         </s>
+         <s pid="38" sid="2">
+          The basic concept is that the farmer would drive the up and down motion of the treadles, which would power the piston and cylinder component and draw water from underground.
+         </s>
+         <s pid="38" sid="3">
+          Figure 6 shows the 3-D drawing of our design.
+         </s>
+         <s pid="38" sid="4">
+          As the user drives the treadle upwards, the piston moves up in the cylinder and creates suction, drawing water up through the intake hose and into the cylinder.
+         </s>
+         <s pid="38" sid="5">
+          Then, as the user drives the treadle downwards, the piston moves down in the cylinder and pushes the water through the connecting hose, into the water chamber, and out through the outlet hose.
+         </s>
+         <s pid="38" sid="6">
+          Each treadle is connected to a separate piston and cylinder and therefore, as one piston is pulling water up, the other is pushing water out.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       PRODUCT DESCRIPTION:
+      </div>
+      <p>
+       <s pid="39" sid="1">
+        This section discusses the differences between our design concept and existing designs, the manufacturing of our beta prototype, and the plan for our beta-plus prototype.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Differences between Our Design Concept and Previous Designs
+       </div>
+       <p>
+        <s pid="40" sid="1">
+         The major differences between our design and previous designs are the design of components, including the treadles and one-way valves, a filter system as an alternative use, the option for multiple operators, and the possibility to create a kit, which would include components and instructions.
+        </s>
+       </p>
+       <p>
+        <s pid="41" sid="1">
+         Components: A major component of our design that differs from previous designs is the treadle.
+        </s>
+        <s pid="41" sid="2">
+         One of the major concerns with previous pumps was whether a person with the stature of an average Guatemalan would be able to easily power the pump.
+        </s>
+        <s pid="41" sid="3">
+         To address this issue, we made the treadles of the pump longer and designed the pump so that the user would stand at the end of the treadle.
+        </s>
+        <s pid="41" sid="4">
+         Therefore, it would be easier for a lighter person to operate the pump.
+        </s>
+       </p>
+       <p>
+        <s pid="42" sid="1">
+         Another important component of our design that differs from previous designs is the one-way valves.
+        </s>
+        <s pid="42" sid="2">
+         Figure 7 shows a one-way valve from a previous design.
+        </s>
+        <s pid="42" sid="3">
+         As can be seen, there are many intricate pieces that are difficult to find, hard to make, or expensive.
+        </s>
+        <s pid="42" sid="4">
+         The delrin ball is a specific part and the accessibility to areas in Guatemala is uncertain.
+        </s>
+        <s pid="42" sid="5">
+         Many of the other pieces are hand-made and involve melting PVC and forming into specific shapes.
+        </s>
+        <s pid="42" sid="6">
+         This process would be very time consuming and labor intensive and could be costly.
+        </s>
+        <s pid="42" sid="7">
+         To make our design cheaper and easier to manufacture, we created one-way valves using PVC caps and PVC or rubber flaps.
+        </s>
+        <s pid="42" sid="8">
+         An example of a one-way valve we used in our Beta Prototype is shown in Figure 8.
+        </s>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         Figure 7: One-Way Valve from Previous Design
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="44" sid="1">
+         Figure 8: One-Way Valve from our Beta Prototype
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="45" sid="1">
+         This design uses the push and pull created by the piston to open and close the flap and keeps water flowing through the proper tubes and in the proper directions.
+        </s>
+        <s pid="45" sid="2">
+         A schematic diagram of the valve system is shown in Figure 9 on the next page.
+        </s>
+        <s pid="45" sid="3">
+         As piston A is pulled upwards, flap A is pulled up away from the hole and water is suctioned up into piston A.
+        </s>
+        <s pid="45" sid="4">
+         Then, as piston A is pushed downward, flap A is pushed against the inlet hole to seal it and water is pushed out of the open hole.
+        </s>
+        <s pid="45" sid="5">
+         As the water is pushed through the open hole in piston A, the left side of flap C is pushed open and the water is pushed into the water chamber.
+        </s>
+        <s pid="45" sid="6">
+         Flap C is pulled tight to seal the left inlet hole as piston A pulls upwards, which keeps the water from being pulled back out of the water chamber.
+        </s>
+        <s pid="45" sid="7">
+         Once the water chamber is full, as the pistons push water into the water chamber, water is pushed out of the outlet hole and through the outlet pipe.
+        </s>
+        <s pid="45" sid="8">
+         Piston B acts in the same way on the right side of the system.
+        </s>
+        <s pid="45" sid="9">
+         Therefore, piston A opens and closes flap A and the left side of flap C and piston B opens and closes flap B and the right side of flap C.
+        </s>
+        <s pid="45" sid="10">
+         The pistons act in alternating motions, so as piston A is pulling water in, piston B is pushing water out and vice versa.
+        </s>
+       </p>
+       <p>
+        <s pid="46" sid="1">
+         Figure 9: Schematic Diagram of Valve System
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="47" sid="1">
+         Alternative Use:
+        </s>
+        <s pid="47" sid="2">
+         The previous designs for treadle pumps did not have alternative uses.
+        </s>
+        <s pid="47" sid="3">
+         Many of the areas of Guatemala that we are targeting have limited income and therefore, our goal is to make the pump worth the money they are going to spend and allow them to get the most out of the pump.
+        </s>
+        <s pid="47" sid="4">
+         Therefore, we felt adding an alternative use would increase the value of the pump to our target users.
+        </s>
+        <s pid="47" sid="5">
+         We decided to add a water filtration system to our pump design as an alternative use.
+        </s>
+        <s pid="47" sid="6">
+         This would allow the users to acquire clean and healthy drinking water, while at the same time pumping water for their crops.
+        </s>
+        <s pid="47" sid="7">
+         The water filtration system would attach on the outlet pipe of our system.
+        </s>
+        <s pid="47" sid="8">
+         Depending on the exact design and setup of the water filtration system, there may be a switch which can turn on and off the water filter or there may be a separate hose with a valve that can switch the water between the filter hose and the non-filter hose.
+        </s>
+        <s pid="47" sid="9">
+         This alternative use would make the pump more valuable and increase the health and lifestyle of the user.
+        </s>
+       </p>
+       <p>
+        <s pid="48" sid="1">
+         Number of Operators:
+        </s>
+        <s pid="48" sid="2">
+         As weight is a limiting factor for operating the pump over a period of time, we designed our pump so that it would be possible for two people to power the pump at the same time.
+        </s>
+        <s pid="48" sid="3">
+         The length of the treadle allows sufficient space for one operator on each side of the handle.
+        </s>
+        <s pid="48" sid="4">
+         The length of the handle bar also provides adequate stability for each user.
+        </s>
+       </p>
+       <p>
+        <s pid="49" sid="1">
+         Possibility of Assembly Kit: A major design objective is to make the pump easy to manufacture.
+        </s>
+        <s pid="49" sid="2">
+         This requires that the components can be found, made, and assembled locally.
+        </s>
+        <s pid="49" sid="3">
+         Even though our initial goal is to provide a design for NGOs to use, for the future we would like our pumps to be able to be assembled by the farmers themselves.
+        </s>
+        <s pid="49" sid="4">
+         Since the components of our design are simple, easy to manufacture, and easy to assemble, there is a great possibility to put together kits, including the basic components and instructions that the farmers could follow during assembly.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Beta Prototype
+       </div>
+       <p>
+        <s pid="50" sid="1">
+         After the initial design concept was created, we started on the manufacturing of the Beta Prototype.
+        </s>
+        <s pid="50" sid="2">
+         Figure 10 shows a picture of our Beta Prototype.
+        </s>
+        <s pid="50" sid="3">
+         The main components are made of wood and PVC; there are also some metal and miscellaneous components.
+        </s>
+        <s pid="50" sid="4">
+         Initial testing of our Beta Prototype was performed to test the piston and cylinder operation, the one-way valve system, and the depth from which our pump could pull water.
+        </s>
+        <s pid="50" sid="5">
+         The piston and cylinder system does in fact work; however, some changes are going to be made to the pistons to make them more efficient.
+        </s>
+        <s pid="50" sid="6">
+         The one-way valve system worked properly, as it kept water flowing through the proper pipes and in the proper directions.
+        </s>
+        <s pid="50" sid="7">
+         The Beta Prototype was tested from a deck height of 5 feet and it was determined that the suction produced by the pistons was adequate to pull water from that height.
+        </s>
+        <s pid="50" sid="8">
+         Changes to the pistons, valves, and connections should improve the suction and therefore allow us to pump from further depths.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="51" sid="1">
+         Figure 10: Picture of the Beta
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Beta Plus Prototype
+       </div>
+       <p>
+        <s pid="52" sid="1">
+         The Beta-Plus Prototype was developed based on improvements to the Beta Prototype.
+        </s>
+        <s pid="52" sid="2">
+         These improvements were aimed to improve operating conditions based on the performance of the Beta Prototype.
+        </s>
+        <s pid="52" sid="3">
+         The improvements included changes to the pistons, valves, and the addition of an alternative use.
+        </s>
+       </p>
+       <p>
+        <s pid="53" sid="1">
+         Figure 11 below shows the piston that was used in the Beta Prototype.
+        </s>
+        <s pid="53" sid="2">
+         Two more discs (white pieces in the figure) were added to the center of the piston for stability.
+        </s>
+        <s pid="53" sid="3">
+         During testing of the Beta Prototype, it was found that the piston was tilting in the cylinder and this decreased the amount of suction.
+        </s>
+        <s pid="53" sid="4">
+         Increasing the thickness of the piston helped the piston remain vertical and improved suction in the Beta-Plus Prototype.
+        </s>
+       </p>
+       <p>
+        <s pid="54" sid="1">
+         During testing of the Beta Prototype, there were small amounts of water leaking at the connection of the PVC caps to the PVC elbows.
+        </s>
+        <s pid="54" sid="2">
+         Three such connections are shown in the figure below.
+        </s>
+        <s pid="54" sid="3">
+         To improve this performance and keep the caps from leaking, PVC primer and glue was added around the outside of these seals.
+        </s>
+       </p>
+       <p>
+        <s pid="55" sid="1">
+         In addition to providing water for crops, we also wanted to provide clean drinking water for the farmers and their families.
+        </s>
+        <s pid="55" sid="2">
+         By adding a water filter, such as the one shown below, that can be added to the end of the hose.
+        </s>
+        <s pid="55" sid="3">
+         This filter has an on / off option so the farmer can alternate between natural water for the crops and purified water for drinking.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="56" sid="1">
+         Figure 11: Components altered or added for the Beta-Plus Prototype including the piston (on the left), valve cap and connections (center), and water filter (on the right)
+        </s>
+       </p>
+       <p>
+        <s pid="57" sid="1">
+         Once these alterations and additions were complete, the Beta-Prototype was tested to determine its optimal operating conditions.
+        </s>
+        <s pid="57" sid="2">
+         There were some limitations encountered during testing.
+        </s>
+        <s pid="57" sid="3">
+         Some of these limitations include the availability of users of various weight, the maximum height available at the testing location, and the amount of testing that could be performed due to time and weather.
+        </s>
+        <s pid="57" sid="4">
+         The testing results are shown below in Table 2.
+        </s>
+       </p>
+       <p>
+        <s pid="58" sid="1">
+         Table 2: Summary of Beta-Plus Prototype Testing Results
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       PRODUCT ANALYSIS
+      </div>
+      <div>
+       <div class="head_2">
+        Design Optimization
+       </div>
+       <div>
+        <div class="head_3">
+         Selection of design objective:
+        </div>
+        <p>
+         <s pid="59" sid="1">
+          To optimize the design of a treadle pump, there are many design conditions that need to be optimized such as –
+         </s>
+        </p>
+        <list>
+         <item>
+          1. Efficiency (in terms of pressure head, discharge and priming time )
+         </item>
+         <item>
+          2. Durability ( life time of pump )
+         </item>
+         <item>
+          3. Portability (the weight of the pump )
+         </item>
+         <item>
+          4. Ease of use (operator force required to pump water)
+         </item>
+         <item>
+          5. Adaptability over a range of users  ( age groups and weights of different users by taking into account mechanical advantage)
+         </item>
+         <item>
+          6. High discharge rate ( amount of fluid pumped/sec)
+         </item>
+         <item>
+          7. Easy to install, maintain and start (priming time etc.)
+         </item>
+         <item>
+          8. Cost
+         </item>
+        </list>
+        <p>
+         <s pid="60" sid="1">
+          For the purpose of the engineering analysis of the pump, we narrow down our design criteria to its hydraulic performance (pressure and discharge), time it takes before water starts flowing (priming time) and adaptability over a range of users along with ease of use –
+         </s>
+        </p>
+        <p>
+         <s pid="61" sid="1">
+          Ease of Pumping:
+         </s>
+         <s pid="61" sid="2">
+          This can be judged by the following factors.
+         </s>
+        </p>
+        <list>
+         <item>
+          I. Force required by the operator –
+          <br/>
+          The comfortable range is from 150-450 N of force (*suggested by Stickney et al 1985.) Considering the operator’s posture and the absence of any holding force ( reaction from handles is negligible for a long period of time) , the force is taken to be about 75-80 % of body weight. So, if body weight is 50 kg, then a force of 425 N seems reasonable.
+         </item>
+         <item>
+          II. Movement of feet while pumping  – The foot stroke distance(Vertical distance between two treadle, when one is in the upper most position and the other in the lower most position) decides the piston stroke distance through the mechanical advantage. If this is too small ,leg muscles get tired and if it’s too large, then leg muscles will have to strain to reach it. The ideal range is between 100-350 mm.
+         </item>
+         <item>
+          III. Frequency /pump speed-
+          <br/>
+          This is inversely proportional to the foot stroke length and should be below 60 strokes/ minute.(Studies by Astrand and Rodahl (1970) show that the greatest mechanical efficiency occur at pedaling frequencies between 40 and 50 revolutions per minute.)
+         </item>
+         <item>
+          IV. How long it is possible to keep treadling at the required rate- This is given by the power consumption which tells us how long people can work before tiring The mechanical energy required for pumping, is the product of piston force and the piston stroke length. Since, the power depends on how quickly the piston moves down. If the operator works at a frequency of n cycles/minute, the power is 2En/60 for a two- cylinder pump. This power is usually around 75 watts. Though it  can be as high as 150 W (Wilkie,1960)and as low as 40 W (Dibbits,1993) for a rural farmer in a developing country.
+         </item>
+         <item>
+          V. Ability to change the position of the operator along the length of treadles to increase mechanical advantage. The pump is designed keeping in mind that the operators can adjust their position along the treadles, and change the force acting on the pistons and the swept volume of the piston. This movement means that each operator can find his/ her suitable (less tiring) pumping position.
+         </item>
+        </list>
+        <p>
+         <s pid="62" sid="1">
+          So a child would find it easier to pump standing as far as possible from pivot point and a heavy person would find it convenient to stand close to the pivot point.
+         </s>
+        </p>
+        <p>
+         <s pid="63" sid="1">
+          From the above criterion, we can conclude that the treadles have to operate between movements between 100 and 350 mm ,frequency limited up to 50 cycles/ min with a treadle force not exceeding 450 Newton and the power requirement not exceeding 40 to 50 Watts.
+         </s>
+        </p>
+        <p>
+         <s pid="64" sid="1">
+          Head of water:
+         </s>
+         <s pid="64" sid="2">
+          The head of water can be split into suction head and delivery head.
+         </s>
+        </p>
+        <p>
+         <s pid="65" sid="1">
+          - Suction lift :
+         </s>
+        </p>
+        <p>
+         <s pid="66" sid="1">
+          This is the difference in height between the water surface and the pump.
+         </s>
+         <s pid="66" sid="2">
+          The pump sucks out the air from the suction tube, creating a vacuum.
+         </s>
+         <s pid="66" sid="3">
+          The atmospheric pressure (= 10 meters head of water at sea level) pushes down on the water surface and forces water up the suction tube.
+         </s>
+         <s pid="66" sid="4">
+          If we take into account friction losses in the pum , the depth of water can be approximately brought down to 7 meters.
+         </s>
+         <s pid="66" sid="5">
+          To use these pumps at high altitudes (Quetzaltenango in Guatemala is located in a mountain valley at an altitude of 2,333 meters (7,655 feet) above sea level.), the depth through which water can be pumped is even less than 7 meter of water.
+         </s>
+        </p>
+        <p>
+         <s pid="67" sid="1">
+          - Delivery head :
+         </s>
+        </p>
+        <p>
+         <s pid="68" sid="1">
+          This is the pressure measured between pump and point of water delivery.
+         </s>
+        </p>
+        <p>
+         <s pid="69" sid="1">
+          Total pumping head is given by the sum of suction lift and delivery head.
+         </s>
+         <s pid="69" sid="2">
+          If for a total pumping head of 10 meters of water, the suction lift reduces from 5 to 4 meters of water, then the delivery pressure increases from 5 to 6 meters of water.
+         </s>
+        </p>
+        <p>
+         <s pid="70" sid="1">
+          Flow rate:
+         </s>
+         <s pid="70" sid="2">
+          The flow rate can be calculated by multiplying the swept volume of the cylinder (= area of piston * piston stroke length) with the frequency of pumping (number of steps/minute).
+         </s>
+        </p>
+        <p>
+         <s pid="71" sid="1">
+          Priming time:
+         </s>
+         <s pid="71" sid="2">
+          This is the time it takes before the water to actually start flowing.
+         </s>
+         <s pid="71" sid="3">
+          It is equal to the number of strokes before water actually starts flowing/ frequency of strokes taken by the operator.
+         </s>
+         <s pid="71" sid="4">
+          The number of strokes before the water starts flowing is taken as a function of the volume of the cylinder as larger the volume of cylinder, higher is the volume of air trapped in the cylinder which needs to be pumped out before water flows.
+         </s>
+        </p>
+        <p>
+         <s pid="72" sid="1">
+          Limitations of design model
+         </s>
+        </p>
+        <p>
+         <s pid="73" sid="1">
+          In treadle pump design, we have to deal with the fact that the operator effort would vary with the weight and strength of operator and would also change over a period of time.
+         </s>
+         <s pid="73" sid="2">
+          This imposes a limitation while calculating the efficiency of the pump as it cannot be standardized.
+         </s>
+         <s pid="73" sid="3">
+          It also limits comparisons between pumps in the market as the performance output of each pump would depend on field conditions, operator strength, weight, pumping speed etc.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Mathematical Model -
+       </div>
+       <div>
+        <div class="head_3">
+         Foot Pedal Length Optimization
+        </div>
+        <p>
+         <s pid="74" sid="1">
+          Another objective is to optimize the design for maximum foot pedal length.
+         </s>
+         <s pid="74" sid="2">
+          The Excel Solver was utilized to find the optimal foot pedal length by varying the length of the piston cylinder to the pivot point (L_n) and the length of the pulley to the pivot point (L_p).
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Nomenclature
+        </div>
+        <p>
+         <s pid="75" sid="1">
+          Table 3: Nomenclature for Foot Pedal Length Optimization
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+        <div>
+         <div class="head_4">
+          Constants and Parameters
+         </div>
+         <p>
+          <s pid="76" sid="1">
+           The gravitational acceleration g is set at the constant 10 m/s^2.
+          </s>
+          <s pid="76" sid="2">
+           The range of mass of the user that will be to operate the pump is a parameter of the design function and is between 40-60 kg; however, we are setting the mass (m) to 40kg because we would like the maximum foot pedal length at the minimal amount of weight force exerted by the user to operate the pump.
+          </s>
+          <s pid="76" sid="3">
+           Once this is found, any greater weight force will be able to operate the pump.
+          </s>
+          <s pid="76" sid="4">
+           Additionally, the stroke length (S) is the length a user will be stepping.
+          </s>
+          <s pid="76" sid="5">
+           The stroke length (S) is set as a constant at 0.25m in order for the user to take a comfortable step.
+          </s>
+          <s pid="76" sid="6">
+           The stroke, however, length is dependent on an angle (
+          </s>
+         </p>
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         ) created between the ground and the foot pedal length (L1) at the pivot point. The angle
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         is set at 15 which is also a comfortable angle for the user to step. The force of the piston rod F_N (explained below) is set at 350N as not to exceed the user downward weight force.
+         <p>
+         </p>
+        </div>
+        <div>
+         <div class="head_4">
+          Variables and Constraints
+         </div>
+         <p>
+          <s pid="78" sid="1">
+           The figure below shows the variables with respect to the prototype.
+          </s>
+         </p>
+         <div class="gap">
+          <span>
+           Figure
+          </span>
+          here
+         </div>
+         <p>
+          <s pid="79" sid="1">
+           Figure 12: Prototype Schematic with indicated Variables
+          </s>
+         </p>
+         <p>
+          <s pid="80" sid="1">
+           F1 represents the downward weight force from the user acting at a distance L_1 from the pivot point.
+          </s>
+          <s pid="80" sid="2">
+           Because the user is placed at the end of the foot pedal, opposite the pivot, L_1 also represents the length of the entire foot pedal and is considered our optimization objective to maximize.
+          </s>
+          <s pid="80" sid="3">
+           We need to maximize L_1 in order to have the minimum amount of user weight force necessary to operate the pump.
+          </s>
+          <s pid="80" sid="4">
+           The object F_p is the upward reaction force of the pulley on the foot pedal reacting at a distance L_P from the pivot point.
+          </s>
+          <s pid="80" sid="5">
+           F_N is the downward reaction force of the piston rod.
+          </s>
+          <s pid="80" sid="6">
+           This force is the reaction force to the upward piston normal force and it acts at a distance L_N from the pivot exerted by the piston rod on the foot pedal.
+          </s>
+          <s pid="80" sid="7">
+           We will be varying L_p and L_N in order to maximize L_1.
+          </s>
+          <s pid="80" sid="8">
+           The constraint for the F_N force and the stroke lengths are given by the following inequalities on the next page:
+          </s>
+         </p>
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         <p>
+          <s pid="81" sid="1">
+           Refer to Appendix C for the derivations of each of these inequalities.
+          </s>
+          <s pid="81" sid="2">
+           Thus, the noted constants and parameters g, m, , S, and F_n are inserted into the Excel "Solver" .
+          </s>
+          <s pid="81" sid="3">
+           Likewise the inequalities from above (Eq. 1 and 2) are also inserted into the Excel "Solver" as constraints.
+          </s>
+          <s pid="81" sid="4">
+           Please view Appendix C for the solver spreadsheet for the treadle pump engineering model.
+          </s>
+          <s pid="81" sid="5">
+           Once the solver is run it is found that the maximum length of the foot pedal, L_1 is 1.35m and this occurs when the variables L_p and L_N are at 0.39m and 0.43m respectively.
+          </s>
+          <s pid="81" sid="6">
+           A maximum foot pedal length of 1.35m enables a user as small as 40 kg in mass to overcome the upward reaction forces of the pulley and piston and operate the pump.
+          </s>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        FLUID MODEL:
+       </div>
+       <div>
+        <div class="head_3">
+         Nomenclature
+        </div>
+        <p>
+         <s pid="82" sid="1">
+          Design objective function
+         </s>
+        </p>
+        <p>
+         <s pid="83" sid="1">
+          Q : Flow rate of water
+         </s>
+        </p>
+        <p>
+         <s pid="84" sid="1">
+          Design variables
+         </s>
+        </p>
+        <p>
+         <s pid="85" sid="1">
+          dp : piston diameter
+         </s>
+        </p>
+        <p>
+         <s pid="86" sid="1">
+          hp : piston stroke length
+         </s>
+        </p>
+        <p>
+         <s pid="87" sid="1">
+          Lop : distance between operator and pivot point
+         </s>
+        </p>
+        <p>
+         <s pid="88" sid="1">
+          Lpp : distance between pivot and piston point
+         </s>
+        </p>
+        <p>
+        </p>
+        <p>
+         <s pid="90" sid="1">
+          Design parameters:
+         </s>
+        </p>
+        <p>
+         <s pid="91" sid="1">
+          Wop : Operator weight
+         </s>
+        </p>
+        <p>
+         <s pid="92" sid="1">
+          Fop : Operator force
+         </s>
+        </p>
+        <p>
+         <s pid="93" sid="1">
+          n : frequency/number of strokes of piston
+         </s>
+        </p>
+        <p>
+         <s pid="94" sid="1">
+          Xpipe : Pipe losses
+         </s>
+        </p>
+        <p>
+         <s pid="95" sid="1">
+          Xvalve : Valve losses
+         </s>
+        </p>
+        <p>
+         <s pid="96" sid="1">
+          Xseal : Seal losses
+         </s>
+        </p>
+        <p>
+        </p>
+        <p>
+         <s pid="98" sid="1">
+          Design constants:
+         </s>
+        </p>
+        <p>
+         <s pid="99" sid="1">
+          ρ : density of water
+         </s>
+        </p>
+        <p>
+         <s pid="100" sid="1">
+          g : acceleration due to gravity
+         </s>
+        </p>
+        <p>
+         <s pid="101" sid="1">
+          ρg : specific weight of water
+         </s>
+        </p>
+        <p>
+         <s pid="102" sid="1">
+          Π : Pi
+         </s>
+        </p>
+        <p>
+        </p>
+        <p>
+         <s pid="104" sid="1">
+          Design equations
+         </s>
+        </p>
+        <p>
+         <s pid="105" sid="1">
+          A : area of piston
+         </s>
+        </p>
+        <p>
+         <s pid="106" sid="1">
+          P : Pressure
+         </s>
+        </p>
+        <p>
+         <s pid="107" sid="1">
+          H : Head of water
+         </s>
+        </p>
+        <p>
+         <s pid="108" sid="1">
+          V : Volume of cylinder
+         </s>
+        </p>
+        <p>
+         <s pid="109" sid="1">
+          Fp : Piston force
+         </s>
+        </p>
+        <p>
+         <s pid="110" sid="1">
+          MA : Mechanical advantage
+         </s>
+        </p>
+        <p>
+         <s pid="111" sid="1">
+          hf : foot stroke length
+         </s>
+        </p>
+        <p>
+         <s pid="112" sid="1">
+          NS : number of strokes before water starts flowing
+         </s>
+        </p>
+        <p>
+         <s pid="113" sid="1">
+          tp : priming time
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Design variables and parameters
+        </div>
+        <p>
+         <s pid="114" sid="1">
+          Design variables:
+         </s>
+        </p>
+        <p>
+         <s pid="115" sid="1">
+          1. Piston diameter (dp )–
+         </s>
+         <s pid="115" sid="2">
+          This is usually kept between 75 mm to 150 mm
+         </s>
+        </p>
+        <p>
+         <s pid="116" sid="1">
+          2. Piston stroke length (hp)–
+         </s>
+         <s pid="116" sid="2">
+          This is the distance through which the piston moves while pumping.
+         </s>
+         <s pid="116" sid="3">
+          It is governed by the foot stroke length and is given by foot stroke length/ mechanical advantage
+         </s>
+        </p>
+        <p>
+         <s pid="117" sid="1">
+          3. Distance between operator and pivot point (Lop)
+         </s>
+        </p>
+        <p>
+         <s pid="118" sid="1">
+          4. Distance between pivot and piston point (Lpp)
+         </s>
+        </p>
+        <p>
+         <s pid="119" sid="1">
+          Design parameters:
+         </s>
+        </p>
+        <p>
+         <s pid="120" sid="1">
+          1. Operator weight (Wop)-
+         </s>
+        </p>
+        <p>
+         <s pid="121" sid="1">
+          The model is designed so that it can be used over a wide range of weight groups (85 pounds -135 pounds).
+         </s>
+         <s pid="121" sid="2">
+          We test the model using minimum weight criteria of 85 pounds i.e. 42.5 kg.
+         </s>
+         <s pid="121" sid="3">
+          This is approximately equal to 430 Newton.
+         </s>
+        </p>
+        <p>
+         <s pid="122" sid="1">
+          2. Operator force (Fop) –
+         </s>
+         <s pid="122" sid="2">
+          The operator force depends on the operator weight (Operator weight *g).
+         </s>
+         <s pid="122" sid="3">
+          Assuming an efficiency of 50 % of a person’s body weight we take operator force to be 200 Newton
+         </s>
+        </p>
+        <p>
+         <s pid="123" sid="1">
+          3. Frequency (n) - This is the number of piston strokes made /minute and helps us in calculating the discharge of water/minute.
+         </s>
+         <s pid="123" sid="2">
+          This is also equal to the speed of pumping i.e. the number of steps taken by the operator.
+         </s>
+         <s pid="123" sid="3">
+          It has an inverse relation with foot stroke length (A longer stroke length would indicate a low pumping frequency) and the weight, physique and stamina of the operator ( A heavy operator would be able to pump at a higher speed than a person with a low body weight).
+         </s>
+         <s pid="123" sid="4">
+          For simplification purposes, we assume n to be 30 strokes/minute.
+         </s>
+         <s pid="123" sid="5">
+          (for comfortable pumping action by an operator of weight 85 pounds)
+         </s>
+        </p>
+        <p>
+         <s pid="124" sid="1">
+          4. Pipe losses (XPipe) –
+         </s>
+         <s pid="124" sid="2">
+          The pressure loss depends on the flow rate, which is small enough to ignore in the case of treadle pumps.
+         </s>
+         <s pid="124" sid="3">
+          We set this value to 0 KN/m^2.
+         </s>
+        </p>
+        <p>
+         <s pid="125" sid="1">
+          5. Valve losses (Xvalve)-
+         </s>
+         <s pid="125" sid="2">
+          These are the losses that are incurred due to the valve.
+         </s>
+         <s pid="125" sid="3">
+          These are assumed to be about 1 m head of water
+         </s>
+        </p>
+        <p>
+         <s pid="126" sid="1">
+          6. Seal losses (Xseal) -
+         </s>
+         <s pid="126" sid="2">
+          These are assumed to be about 1 m head of water.
+         </s>
+        </p>
+        <p>
+        </p>
+        <p>
+         <s pid="128" sid="1">
+          Design constants:
+         </s>
+        </p>
+        <p>
+         <s pid="129" sid="1">
+          1. ρ for water – 1000kg/ m^3
+         </s>
+        </p>
+        <p>
+         <s pid="130" sid="1">
+          2. g- acceleration due to gravity – 9.8 m^2 /second= approximately 10 m^2/sec
+         </s>
+        </p>
+        <p>
+         <s pid="131" sid="1">
+          3. specific weight of water – ρ* g = approximately 10 kilo Newton/m3
+         </s>
+        </p>
+        <p>
+         <s pid="132" sid="1">
+          4. Pi- 3.14
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Objective function and constraints
+        </div>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+       </div>
+       <div>
+        <div class="head_3">
+         Model analysis
+        </div>
+        <p>
+         <s pid="133" sid="1">
+          Excel solver was chosen as the optimization software for this problem.
+         </s>
+         <s pid="133" sid="2">
+          The head of water was found to be an active constraint which significantly affects the flow rate.
+         </s>
+         <s pid="133" sid="3">
+          The flow rate was then optimized by testing different heads of water ranging from 7 meters to 15 meters.
+         </s>
+         <s pid="133" sid="4">
+          For a particular case where head of water is 10 meters, the flow rate was obtained as 40 liters per minute for the following optimized values of design variables-
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="134" sid="1">
+          The different test cases can found in Appendix XX
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Stress Analysis:
+        </div>
+        <p>
+         <s pid="135" sid="1">
+          For the purpose of conducting stress analysis, we used our CAD model to conduct Finite element analysis using Solid works software.
+         </s>
+         <s pid="135" sid="2">
+          We applied a maximum force of 5000 Newton at the end of treadles (due to operator weight) and also, calculate the hoop stress for the two cylinders.
+         </s>
+         <s pid="135" sid="3">
+          Our stress model showed stress to be well within the yield strength of the materials and the displacement proved to be well within e-2 inches.
+         </s>
+         <s pid="135" sid="4">
+          We thus, conclude that our prototype will be able to withstand the stresses produced in the model.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="136" sid="1">
+          It is to be noted that this model has many simplifying assumptions which might not be true in real case.
+         </s>
+         <s pid="136" sid="2">
+          But for the purpose of preliminary analysis, it is sufficient.
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       EMOTIONAL / AESTHETIC ANALYSIS
+      </div>
+      <p>
+       <s pid="137" sid="1">
+        Because of unique conditions of our users, it is less important for us to design a pump that is visually appealing.
+       </s>
+       <s pid="137" sid="2">
+        Instead, we figured that the most important perception that our pump should have is the intuitiveness and sturdiness of the pump itself.
+       </s>
+       <s pid="137" sid="3">
+        The aesthetics of our pump should speak itself as a pure mechanical device that its mechanism is clearly shown and understood.
+       </s>
+       <s pid="137" sid="4">
+        Although we understand that in today’s design world, we need to consider other aspects than pure engineering, such as aesthetics, our aesthetics lies in the expression of the pure engineering.
+       </s>
+       <s pid="137" sid="5">
+        It should be intuitive enough that a farmer should be able to operate it even without instruction.
+       </s>
+       <s pid="137" sid="6">
+        It should be simple enough that a farmer should be able to maintain it without any difficulties.
+       </s>
+       <s pid="137" sid="7">
+        Once the pump is handed over to a farmer, it should be thoroughly sustainable that he/she should be able to operate and maintain without external help.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       MICROECONOMIC ANALYSIS – I
+      </div>
+      <p>
+       <s pid="138" sid="1">
+        Our economic model was done using two different assumptions.
+       </s>
+      </p>
+      <p>
+       <s pid="139" sid="1">
+        Scenario
+       </s>
+       <s pid="139" sid="2">
+        One –
+       </s>
+      </p>
+      <p>
+       <s pid="140" sid="1">
+        This model is an optimistic one from the point of view of producer and makes the assumption that our users would consider the impact of our product on their income and standard of living while purchasing the product.
+       </s>
+       <s pid="140" sid="2">
+        Case studies from treadle pump sales in countries like Bangladesh, India, Zambia, Zimbabwe etc. have suggested that this device is capable of increasing the crop quality, crop cycle and annual income of an agricultural family by threefold within a year.
+       </s>
+       <s pid="140" sid="3">
+        Considering this, the farmers of small –holdings are often willing to take the risk of paying a higher price for the product.
+       </s>
+       <s pid="140" sid="4">
+        If we set the price of the product in this scenario, our NGO’s are able to get a better return on their investment and make a higher profit.
+       </s>
+      </p>
+      <p>
+       <s pid="141" sid="1">
+        Scenario two-
+       </s>
+      </p>
+      <p>
+       <s pid="142" sid="1">
+        This model has been made using more realistic assumptions.
+       </s>
+       <s pid="142" sid="2">
+        In this case, the price of our product compares well with the price of already existing pump manufacturers in the market.
+       </s>
+       <s pid="142" sid="3">
+        Thus, we are able to account for the future entry of competitors in the Guatemala treadle pump market.
+       </s>
+       <s pid="142" sid="4">
+        Also, the product is able to meet our design requirement of affordability.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        SCENARIO- I
+       </div>
+       <div>
+        <div class="head_3">
+         Simple Microeconomics Model
+        </div>
+        <p>
+         <s pid="143" sid="1">
+          As a water pump producer in Guatemala, foot-driven treadle pump incredibly simple, effective irrigation system is literally bringing life to Guatemala residents and to the thousands of families who rely on it.
+         </s>
+         <s pid="143" sid="2">
+          Therefore, our project is to design an affordable and efficient treadle pump and sale it in Guatemala.
+         </s>
+         <s pid="143" sid="3">
+          Also, our objective is to maximize our profit.
+         </s>
+         <s pid="143" sid="4">
+          Adding some design attributes in the Microeconomics Model seems a good way to bring more profits.
+         </s>
+         <s pid="143" sid="5">
+          Therefore, we try to figure out Simple Microeconomics Model and Refined Microeconomics Model to show how the design decisions will affect sales, price, and cost.
+         </s>
+         <s pid="143" sid="6">
+          At the beginning, we will show the Simple Microeconomics Model, and then the Refined Microeconomics Model.
+         </s>
+         <s pid="143" sid="7">
+          Besides, in order to estimate our demand function and cost function, we did some research on Guatemala which estimated population was 13.6 million.
+         </s>
+         <s pid="143" sid="8">
+          Fifty percent of the population engages in some form of agriculture.
+         </s>
+         <s pid="143" sid="9">
+          In addition, we assume that 1 year is the time period for our economics model.
+         </s>
+         <s pid="143" sid="10">
+          Based on the time period and the research result, we build up our simple microeconomics model as shown below Eq. (1) (2) (3):
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Objective Function
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="144" sid="1">
+          Eq. (1)
+         </s>
+        </p>
+        <p>
+         <s pid="145" sid="1">
+          The objective function shows that our objective is to maximize our profit.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Revenue Function
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="146" sid="1">
+          Eq. (2)
+         </s>
+        </p>
+        <p>
+         <s pid="147" sid="1">
+          In order to derive the revenue function we need to figure out the demand function of water pump in Guatemala.
+         </s>
+         <s pid="147" sid="2">
+          At first, we assume the demand function is linear and independent to simplify the
+         </s>
+        </p>
+        <p>
+         <s pid="148" sid="1">
+          microeconomics model as follow:
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Demand Function
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="149" sid="1">
+          Eq. (3)
+         </s>
+        </p>
+        <p>
+         <s pid="150" sid="1">
+          We use price as independent variable in the demand function where Q is the demand
+         </s>
+        </p>
+        <p>
+         <s pid="151" sid="1">
+          of water pump in Guatemala, P is the price of water pump, andλp is the sensitivity of price which definition is how many the demand of water pump will change if we change the price
+         </s>
+        </p>
+        <p>
+         <s pid="152" sid="1">
+          of water pump.
+         </s>
+         <s pid="152" sid="2">
+          Also, θ means that if water pump is free, there are θ demands in water pump.
+         </s>
+        </p>
+        <p>
+         <s pid="153" sid="1">
+          After understanding the demand function, we try to estimateθ, λp. Based on our research, labor
+         </s>
+        </p>
+        <p>
+         <s pid="154" sid="1">
+          force in Guatemala is 2,500,000 and 57.0% of labor force engage in agriculture which means total agricultural workers are 1,425,000.
+         </s>
+         <s pid="154" sid="2">
+          According to our research, the average number of a household in Guatemala is 8 members and half of them can engage in irrigation.
+         </s>
+         <s pid="154" sid="3">
+          So we can infer if our pump is free, there are 356,250 (1,425,000/4) demands on our water pump under the assumptions each household only needs one water pump to irrigate.
+         </s>
+         <s pid="154" sid="4">
+          Therefore, we used the 356,250 as our θ.
+         </s>
+         <s pid="154" sid="5">
+          Besides, we find out there are 4,140 agricultural tractors in use in Guatemala.
+         </s>
+         <s pid="154" sid="6">
+          And the average agricultural tracker price is about USD 5,660.
+         </s>
+         <s pid="154" sid="7">
+          We can assume that people in Guatemala who afford a tracker are willing and able to buy a water pump.
+         </s>
+         <s pid="154" sid="8">
+          Therefore, we assume they have the same sensitivity of price.
+         </s>
+         <s pid="154" sid="9">
+          Also, if the tracker is free, there will be 356,250 demands on the tracker under the same assumption above.
+         </s>
+         <s pid="154" sid="10">
+          We can solve the tracker demand function.
+         </s>
+         <s pid="154" sid="11">
+          4,140=356,250＋λp×5,660 in order to get the value of λp .
+         </s>
+         <s pid="154" sid="12">
+          As a result we get that estimated λp is .
+         </s>
+         <s pid="154" sid="13">
+          Therefore, our estimated demand function is as follow Eq. (4) and Figure (1):
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="155" sid="1">
+          Eq. (4)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="156" sid="1">
+          Figure (1) Estimated Demand Curve
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Refined Microeconomics Model
+        </div>
+        <p>
+         <s pid="157" sid="1">
+          After conducting simple microeconomics model, the next step is to re-build the demand
+         </s>
+        </p>
+        <p>
+         <s pid="158" sid="1">
+          function in terms of design attributes to optimize profit.
+         </s>
+         <s pid="158" sid="2">
+          Our design attributes are flow rate
+         </s>
+        </p>
+        <p>
+         <s pid="159" sid="1">
+          (αf ) and priming time (αt).
+         </s>
+         <s pid="159" sid="2">
+          Flow rate is the function of our design variables treadle length (T), the length of cylinder (L), and the diameter of cylinder (D) which is the most important attribute to our treadle pump;
+         </s>
+         <s pid="159" sid="3">
+          Priming time is assumed as a constant about 30 seconds in order to simplify the microeconomics model.
+         </s>
+         <s pid="159" sid="4">
+          Additionally, each of the design attributes is also assigned sensitivity: λf, λt. to show how the demand in our treadle pump will change if we change our design attributes.
+         </s>
+         <s pid="159" sid="5">
+          However, it seems very hard to estimate the value of λf and λt without any precise data.
+         </s>
+         <s pid="159" sid="6">
+          In this part, we had conducted more specified survey and take it further with discrete choice and conjoint analysis to address the problem.
+         </s>
+         <s pid="159" sid="7">
+          At first, we need to establish a market size for our treadle pump.
+         </s>
+         <s pid="159" sid="8">
+          The most appropriate target market would be total agricultural workers in Guatemala with market size 1,425,000.
+         </s>
+         <s pid="159" sid="9">
+          However, there are different types of water pump in Guatemala which depend on the preference of consumer.
+         </s>
+         <s pid="159" sid="10">
+          In order to simplify the problem, some critical assumptions should be highlighted as shown below:
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Assumptions
+        </div>
+        <list>
+         <item>
+          1. The premium market of our treadle pump will aim at 30% of the total market based  on facility and compactness characteristics.
+         </item>
+         <item>
+          2. The preference of treadle pump is coherent throughout consumers and users. This might be the most arguable assumption we made. But the assumption is usually used in microeconomics model.
+         </item>
+         <item>
+          3.  The sensitivity of price of treadle pump is the same as the sensitivity of price of all  kinds of water pump which means λp still equals to －62.22 under the assumption we made in simple economics model.
+         </item>
+         <item>
+          4.  There are only a few competitors in the treadle pump market in Guatemala.
+         </item>
+        </list>
+        <p>
+         <s pid="160" sid="1">
+          According to the assumptions and the results of our survey consistent of choice based on Conjoint (CBC), the values of λf is estimated 350 which means a change in one unit of flow rate would increase 350 demands in our treadle pump and the estimated value of λt is 150.
+         </s>
+         <s pid="160" sid="2">
+          However, the market share had been changed by 30% which means we would use the differentθ compared to the simple economics model which is estimated by 106,875 about 30% of the original θ.
+         </s>
+        </p>
+        <p>
+         <s pid="161" sid="1">
+          Therefore, the refined demand function is shown as below Eq.(5).
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Marketing Demand Function
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="162" sid="1">
+          Eq. (5)
+         </s>
+        </p>
+        <p>
+         <s pid="163" sid="1">
+          Where design attributes αf = F((L, D, T); αt is chosen by 30 seconds as a base design.
+         </s>
+        </p>
+        <p>
+         <s pid="164" sid="1">
+          To determine profit and optimize for the maximum profit, the cost function is needed.
+         </s>
+         <s pid="164" sid="2">
+          The cost of our treadle pump can be broken down into fixed cost and variable cost shown as Eq.(6).
+         </s>
+         <s pid="164" sid="3">
+          The breakdown of all the cost components is given in Table (1).
+         </s>
+         <s pid="164" sid="4">
+          The part costs were estimated by using the cost breakdowns of similar objects on the market.
+         </s>
+         <s pid="164" sid="5">
+          At the same time, all other fixed costs were approximated by the estimation from comparable business.
+         </s>
+         <s pid="164" sid="6">
+          Thus, the total cost can be given as a function of the variable costs (Cv) which is also a function of our design variable: the length of cylinder (L), the diameter of cylinder (D), and treadle length (T) multiplied by the number sold (Q) and the fixed cost (Cf) shown as below Table(1), Eq. (6), Eq.(7).
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="165" sid="1">
+          Table (1) Breakdown of Variable and Fixed Cost
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Cost Function
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="166" sid="1">
+          Eq. (6)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="167" sid="1">
+          Eq. (7)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="168" sid="1">
+          Eq.(8)
+         </s>
+        </p>
+        <p>
+         <s pid="169" sid="1">
+          Once we change the size of our design variables, the cost will change at the same time shown as
+         </s>
+        </p>
+        <p>
+         <s pid="170" sid="1">
+          Eq. (7) and then our profit will change.
+         </s>
+         <s pid="170" sid="2">
+          In order to maximum our profits we try to get theoptimal
+         </s>
+        </p>
+        <p>
+         <s pid="171" sid="1">
+          size of design variables and price by running a profit maximization in excel solver with the
+         </s>
+        </p>
+        <p>
+         <s pid="172" sid="1">
+          engineering constraints included in the engineering model as well.
+         </s>
+         <s pid="172" sid="2">
+          According to the report of Excel solver, the maximum profit will be $ 179,900 at price $ 158 with a flow rate of 8 gallons and priming time of 30 seconds.
+         </s>
+         <s pid="172" sid="3">
+          Figure 2 below shows the refined microeconomics model.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="173" sid="1">
+          Figure (2) Refined Microeconomics Model
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Business plan: Breakeven and Net Present Value (NPV) Analysis
+        </div>
+        <p>
+         <s pid="174" sid="1">
+          After refining the microeconomics model with the results of marketing survey, our final step is to generate a business plan for developing our product.
+         </s>
+         <s pid="174" sid="2">
+          At first, the total net present value NPV)at the end of each year is illustrated below.
+         </s>
+         <s pid="174" sid="3">
+          In order to predict the profits in the future, we make some assumptions based on our research and judgment.
+         </s>
+         <s pid="174" sid="4">
+          We assume the estimated market share will be achieved in six years with an annual sales increase of 35%.
+         </s>
+         <s pid="174" sid="5">
+          Besides, there are 3,900treadle pumps sold in the first year which is about 50% calculated by the marketing demand function.
+         </s>
+         <s pid="174" sid="6">
+          The rate of tax is 40%, and the interest rate is only 1% because of the global recession this year.
+         </s>
+         <s pid="174" sid="7">
+          And we assume that it needs more than 6 years to revive.
+         </s>
+         <s pid="174" sid="8">
+          Table (2) shows the financial data for 6 years and the calculation of NPV.
+         </s>
+         <s pid="174" sid="9">
+          Figure (3) shows that the difference between Net Profit and Net Present Value over 6 years.
+         </s>
+         <s pid="174" sid="10">
+          Also, according to our breakeven analysis shows that the initial investment of $785,850 including Investment and Cost shown in Table (2) would start generating a profit after the end of the second year of operation, and there would be NPV $ 1,142,572 profit after six years.
+         </s>
+         <s pid="174" sid="11">
+          The breakeven analysis is shown in Figure (4)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="175" sid="1">
+          Table (2) Financial Breakdown and Net Present Value over the first6 years
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="176" sid="1">
+          Figure (3) Net Present Value V.S. Net Profit over the first 6 years
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="177" sid="1">
+          Figure (4) Breakeven analysis over the first 6 years
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       MICROECONOMIC ANALYSIS – SCENARIO TWO
+      </div>
+      <div>
+       <div class="head_3">
+        Microeconomic Objective Function
+       </div>
+       <p>
+        <s pid="178" sid="1">
+         Using the economic objective function, we tried to maximum profit calculated over one year.
+        </s>
+       </p>
+       <p>
+        <s pid="179" sid="1">
+         The profit function is as follows:
+        </s>
+       </p>
+       <p>
+        <s pid="180" sid="1">
+         π = R − C, where R is revenue and C is the total cost.
+        </s>
+       </p>
+       <p>
+        <s pid="181" sid="1">
+         Revenue is the amount of income generated from the sales of our product, while cost is the amount of money used in production.
+        </s>
+        <s pid="181" sid="2">
+         The equation for revenue is simply the price of the product multiplied by the quantity sold, or the demand.
+        </s>
+        <s pid="181" sid="3">
+         In order to determine the revenue, a demand function must first be formulated.
+        </s>
+        <s pid="181" sid="4">
+         The revenue equation and demand function are shown below:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       MARKET DEMAND MODELING
+      </div>
+      <p>
+       <s pid="182" sid="1">
+        To model the demand for our product, we made use of discrete choice analysis.
+       </s>
+       <s pid="182" sid="2">
+        It was assumed that the utility of our product is a function of various product characteristics like flow rate and priming time along with the price.
+       </s>
+       <s pid="182" sid="3">
+        Then, each characteristic was then divided into discrete levels and based on this a survey was conducted to determine the customer trade-offs for these characteristics (Appendix M) .
+       </s>
+       <s pid="182" sid="4">
+        The survey was designed based on conjoint analysis theory using Sawtooth© software and several sets of choice options were created to determine the part worths.
+       </s>
+       <s pid="182" sid="5">
+        23 responses were collected.
+       </s>
+       <s pid="182" sid="6">
+        Refer to Appendix M for further details regarding the survey.
+       </s>
+      </p>
+      <p>
+       <s pid="183" sid="1">
+        Table 4: Summary of attributes and levels placed in survey
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="184" sid="1">
+        By applying the Logit model of choice probabilities and the maximum likelihood formula through the saw tooth data analysis software, we were able to calculate the part-worths (beta) for each level and plot them against the product characteristics .
+       </s>
+       <s pid="184" sid="2">
+        Then, we plot the spline curves associated with the part worths for each variable ( Price, flow rate and priming time ).
+       </s>
+       <s pid="184" sid="3">
+        We then used these part woths in a product optimization.
+       </s>
+      </p>
+      <p>
+       <s pid="185" sid="1">
+        From our survey results, we gathered that the customers were most concerned about the flow rate and were indifferent to the priming time of the product.
+       </s>
+       <s pid="185" sid="2">
+        They preferred a pump which would give the highest flow rate at the lowest price.
+       </s>
+       <s pid="185" sid="3">
+        So, it was re-affirmed that they would prefer the least expensive product.
+       </s>
+       <s pid="185" sid="4">
+        For the continuous characteristics, we used the spline plugin function in Excel to interpolate the part worth of any characteristic lying in between the discrete levels tested in the survey.
+       </s>
+       <s pid="185" sid="5">
+        We were now able to establish the product utility as
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="186" sid="1">
+        We then applied the logit model once again on the product utility function to determine the choice probability of our product versus the no choice option.
+       </s>
+       <s pid="186" sid="2">
+        By doing so, we are assuming that there are no competing products in the market as we are assuming that we will be able to maintain a monopolist treadle pump market in Guatemala .
+       </s>
+       <s pid="186" sid="3">
+        Finally, the choice probability is multiplied by the market size to give us demand function
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="187" sid="1">
+        Figure 16, 17, &amp; 18: Part worths vs Design attributes and price
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       DEMAND AND PROFIT MAXIMIZATION
+      </div>
+      <p>
+       <s pid="188" sid="1">
+        With the help of excel solver, we ran three cases with different objective functions.
+       </s>
+      </p>
+      <list>
+       <item>
+        1) We first tried to maximize the demand of our product. This is more in line with the marketing point of view
+       </item>
+       <item>
+        2) We then tried to maximize the profit of our product irrespective of whether our engineering constraints were being met or not.
+       </item>
+       <item>
+        3) In the final case, the profit of the product was maximized keeping the engineering constraints in mind.
+       </item>
+      </list>
+     </div>
+     <div>
+      <div class="head_1">
+       COMPARISON OF LINKED MODELS:
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="189" sid="1">
+        Table 5: Summary of linked models
+       </s>
+      </p>
+      <p>
+       <s pid="190" sid="1">
+        From Table 5, above, it can be seen that we need to price our product at $ 40, with the design variables seen in the third tab.
+       </s>
+       <s pid="190" sid="2">
+        In this case, we are able to make a profit of $ 294,350 in the first year.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       MARKETING/INVESTMENT ANALYSIS
+      </div>
+      <p>
+       <s pid="191" sid="1">
+        The following section discusses the established market size, market share, and the investment analysis over a 5-year period.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Market Size
+       </div>
+       <p>
+        <s pid="192" sid="1">
+         Refer to Appendix
+        </s>
+        <s pid="192" sid="2">
+         A for detailed information on establishing the market size.
+        </s>
+        <s pid="192" sid="3">
+         Our target end users are farmers of small-holdings in Quetzaltenango, Guatemala.
+        </s>
+        <s pid="192" sid="4">
+         We anticipate a high market potential due to the high population density of our target city and the assumption that the majority of the population is rural.
+        </s>
+        <s pid="192" sid="5">
+         Our market share, 85%, is a predicted assumption knowing that there are no competitors in our target location.
+        </s>
+        <s pid="192" sid="6">
+         Lastly, we estimate of 5% increase in market size.
+        </s>
+        <s pid="192" sid="7">
+         Figure 16, below, is a plot of our market share in comparison with the entire market over a 5-year period.
+        </s>
+        <s pid="192" sid="8">
+         We assume that there are 5 individuals per household and the need is for only 1 pump per household.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="193" sid="1">
+         Figure 16: Target Market in comparison to entire market size
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Pro-Forma Income and Cost Projections
+       </div>
+       <p>
+        <s pid="194" sid="1">
+         From the above market analysis (pg. 33), the yearly demand is found over a 5-year period.
+        </s>
+        <s pid="194" sid="2">
+         During this time, the price is set at $100.00 and the cost is $66.00.
+        </s>
+        <s pid="194" sid="3">
+         Fixed cost remains constant during this 5-year period at $46,000.
+        </s>
+        <s pid="194" sid="4">
+         The rate of tax is found to be 40%.
+        </s>
+        <s pid="194" sid="5">
+         The table below summarizes the yearly profit.
+        </s>
+        <s pid="194" sid="6">
+         The initial development cost is $2300.00.
+        </s>
+        <s pid="194" sid="7">
+         This figure incorporates the rental, insurance, and other start-up costs in USD in Guatemala.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="195" sid="1">
+         Table 6: Table with estimated profit values before and after 40% tax rate
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        NPV and Break-Even Analysis
+       </div>
+       <p>
+        <s pid="196" sid="1">
+         The present value is initially calculated as a function of the profit over a 5-year period with a 6% interest.
+        </s>
+        <s pid="196" sid="2">
+         From this value, the Net Present Value (NPV) is calculated over five years (Table 7, pg.41.)
+        </s>
+        <s pid="196" sid="3">
+         Figure 17 (pg.41) , below, is a plot of the NPV and Profit over the chosen 5-year period.
+        </s>
+        <s pid="196" sid="4">
+         It is found that the net NPV is $416,000 over 5 years.
+        </s>
+        <s pid="196" sid="5">
+         The break-even point, the point at which NPV=0, will occur at some point between Year 0 and Year 1.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="197" sid="1">
+         Table 7: Table of NPV Values of 5-year Period
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="198" sid="1">
+         Figure 17: Plot of NPV and Profit over 5-year period (NPV is the left bar)
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       PRODUCT DEVELOPMENT PROCESS
+      </div>
+      <p>
+       <s pid="199" sid="1">
+        An outline of our design process is illustrated in Appendix F. Each step, starting with the Product Identification and ending with the Business Plan built upon the previous step.
+       </s>
+       <s pid="199" sid="2">
+        To develop our initial design concept, we used a Pugh Chart to analyze existing pumps.
+       </s>
+       <s pid="199" sid="3">
+        The Pugh Chart is shown in Appendix G.
+       </s>
+       <s pid="199" sid="4">
+        At this stage, we found the benefits of using a treadle pump design overwhelming.
+       </s>
+       <s pid="199" sid="5">
+        From our initial design concept, we used information discovered during reverse engineering of a foot-operated bicycle pump to develop the details of our design.
+       </s>
+       <s pid="199" sid="6">
+        After each level of prototyping, the design was tested, analyzed, and re-evaluated until we established our final design concept.
+       </s>
+       <s pid="199" sid="7">
+        Our basic design was demonstrated through our alpha prototype.
+       </s>
+       <s pid="199" sid="8">
+        There were major changes to our design between the Alpha and Beta Prototypes after analyzing the design and customer requirements.
+       </s>
+       <s pid="199" sid="9">
+        Part of this analysis was based on the Quality Function Deployment (QFD), which is shown in Appendix H.
+       </s>
+       <s pid="199" sid="10">
+        This diagram helped us evaluate the relation between customer and design requirements, and ensure that we focused on the most significant specifications.
+       </s>
+       <s pid="199" sid="11">
+        There were only minor changes and additions between the Beta and Beta-Plus Prototype to improve the operating conditions.
+       </s>
+       <s pid="199" sid="12">
+        Most of these changes stemmed from observations during testing.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       PRODUCT BROADER IMPACT
+      </div>
+      <p>
+       <s pid="200" sid="1">
+        When we started our research on our users, small holding farmers in Guatemala, we were immediately struck by the realities they had to face every day.
+       </s>
+       <s pid="200" sid="2">
+        The harsh conditions they are facing were beyond our imagination especially for people like ourselves who have not confronted such survival issues.
+       </s>
+       <s pid="200" sid="3">
+        We quickly realized that this project was going to and need to have an immediate impact not only on their farming but also on their quality of their lives.
+       </s>
+      </p>
+      <p>
+       <s pid="201" sid="1">
+        Having realized the possible impact, we turned our design process to user centered design rather than designer centered.
+       </s>
+       <s pid="201" sid="2">
+        The most important goal was to make it permeate through their troubling circumstances.
+       </s>
+      </p>
+      <p>
+       <s pid="202" sid="1">
+        However, while we were designing our pump at first, we noticed that we often focused on achieving technical complexity overlooking the most important goal.
+       </s>
+       <s pid="202" sid="2">
+        From then on we began to ask ourselves why we want to have certain features in our pump.
+       </s>
+       <s pid="202" sid="3">
+        We had to establish a long term plan and set the goals our design so that we do not forget our ultimate goal and do takes accordingly.
+       </s>
+      </p>
+      <p>
+       <s pid="203" sid="1">
+        During out initial research on existing pipes, we found most of them seemed to be helpful.
+       </s>
+       <s pid="203" sid="2">
+        Most of them that were designed for underdeveloped country had unique features to it to help the people in those countries.
+       </s>
+       <s pid="203" sid="3">
+        We break down those features and tried to weight each one from the perspective of a small-holding farmer in Guatemala.
+       </s>
+       <s pid="203" sid="4">
+        Then we began to shape our design based on necessary features for Guatemalan farmers not general farmers in the world.
+       </s>
+       <s pid="203" sid="5">
+        However we also asked ourselves what other features might be needed that are not found in other pumps.
+       </s>
+       <s pid="203" sid="6">
+        Water is not only used for farming but also a vital element in human survival.
+       </s>
+       <s pid="203" sid="7">
+        Because of the extended period of the dry season in Guatemala, we decided to add a device that can provide drinkable water.
+       </s>
+      </p>
+      <p>
+       <s pid="204" sid="1">
+        We have learned social responsibilities as we design this product.
+       </s>
+       <s pid="204" sid="2">
+        A designer’s job is not only limited to produce a profitable product but also to enhance the quality of life.
+       </s>
+       <s pid="204" sid="3">
+        A water pump might be a small installment for their life but we hope that our pump can bring broader positive impacts as we intend so as designers.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSION
+      </div>
+      <p>
+       <s pid="205" sid="1">
+        Our water irrigation pump, with the newly designed one-way valve system, enables users to pump water efficiently during the dry season.
+       </s>
+       <s pid="205" sid="2">
+        The pump is cost-effective and enables users to manufacture the pump using local materials.
+       </s>
+       <s pid="205" sid="3">
+        Through our engineering analysis, the dimensions of the pump were chosen to optimize flow rate at 40 L/min and a pedal length of 1.3 m to offer a pump with maximum flow rate for a wide range of users.
+       </s>
+       <s pid="205" sid="4">
+        Through a survey analysis, our results were as expected for the customer sensitivities to price, flow rate, and priming time.
+       </s>
+       <s pid="205" sid="5">
+        Our customers have a high sensitivity to price and flow rate, and a low sensitivity to priming time.
+       </s>
+      </p>
+      <p>
+       <s pid="206" sid="1">
+        Through an investment analysis of our target city, it is found that the i.W.I.P. will break-even between year 0 and year 1.
+       </s>
+       <s pid="206" sid="2">
+        At the end of 5-years the NPV of the i.W.I.P. is $416,000.
+       </s>
+       <s pid="206" sid="3">
+        Thus, we conclude the i.W.I.P. could be a profitable product in Guatemala.
+       </s>
+       <s pid="206" sid="4">
+        The i.W.I.P. will hopefully enable farmers to produce crops during the dry season, thereby increasing their overall annual income.
+       </s>
+       <s pid="206" sid="5">
+        Furthermore, this increase in income could enable farmers to employ others thus decreasing the unemployment rate and enabling farmers and their employers to make a steady income throughout the year.
+       </s>
+       <s pid="206" sid="6">
+        Additionally, this increase in employment and income will enable the majority of the population in our target city to pull themselves out of poverty and potentially start their own businesses and consequently aid in an economic boost.
+       </s>
+      </p>
+      <p>
+       <s pid="207" sid="1">
+        More research will be done by BLUE Lab and NGO's for alternative materials other than PVC to minimize the environmental impact of PVC.
+       </s>
+       <s pid="207" sid="2">
+        Further testing will also be done to fully understand the depth at which the i.W.I.P. is able to pump water.
+       </s>
+       <s pid="207" sid="3">
+        The NGO's will also test the pump with users from our target market to find out further improvements that could be made of the pump to meet the specific needs of our target user.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       ACKNOWLEDGEMENTS
+      </div>
+      <p>
+       <s pid="208" sid="1">
+        Special thanks to Professor Papalambros, Bart Frischknecht, and Tahira Reid.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES-
+      </div>
+      <ul id="N104D0">
+       <li id="N104D1">
+        [1]  Bikes Not Bombs (BNB), &lt; http://www.bikesnotbombs.org/files/images/forpages/water%20pump%20schematic.jpg&gt;
+       </li>
+       <li id="N104D3">
+        [2]  Guatemala Climate, 2008,  &lt;http://www.studentsoftheworld.info/pageinfo_pays.php3?Pays=GTM&amp;Opt=climate&gt;
+       </li>
+       <li id="N104D5">
+        [3]  Guatemala Economy 2008, &lt; http://www.theodora.com/wfbcurrent/guatemala/guatemala_economy.html&gt;
+       </li>
+       <li id="N104D7">
+        [3]  IDEA, Treadle Pump, &lt; http://www.ide-india.org/ide/treadlepump.html&gt;
+       </li>
+       <li id="N104D9">
+        [4]  International Fund for Agricultural Development (IFADD), &lt;http://www.ifad.org&gt;
+       </li>
+       <li id="N104DB">
+        [5]  John M. Weeks, The Anthropology of Highland Guatemala, University of Northern Colorado, Dept. of Anthropology, 1998
+       </li>
+       <li id="N104DD">
+        [6]  KickStart, &lt;http://www.kickstart.org/tech/technologies/micro-irrigation.html&gt;
+       </li>
+       <li id="N104DF">
+        [7]  Kirkinactie, Rope Pumps, &lt;http://ropepumps.org&gt;
+       </li>
+       <li id="N104E1">
+        [8]  Lester Schmidt, The Role of Migratory Labor in the Economic Development of Guatemala, University of Wisconsin, Land Tenure Center, 1967
+       </li>
+       <li id="N104E3">
+        [9]  RDI, Building Projects: Rope Pump, &lt; http://www.rdic.org/ropepumppage.html&gt;
+       </li>
+       <li id="N104E5">
+        [10]  Stanford Institute of Design, Entrepreneurial Design for Extreme Affordability, &lt;http://extreme.stanford.edu/projects/deep_lift_pump.html&gt;
+       </li>
+       <li id="N104E7">
+        [11]  Travelers Point, The Great Crops, 
+  &lt;http://www.travellerspoint.com/photos/stream/size/L/photoID/277099/tags/hills/&gt;
+       </li>
+       <li id="N104E9">
+        [12]  Treadle Pump, Build Your Own Treadle Pump, 
+         &lt;http://treadle.pump.googlepages.com/buildyourowntreadlepump&gt;
+       </li>
+       <li id="N104EB">
+        [13]   U.S. Department of State
+          &lt;www.state.gov/g/drl/rls/hrrpt/2006/78893.htm&gt;
+       </li>
+       <li id="N104ED">
+        [14]  Quetzaltenango (Xela), Guatemala
+&lt;http://www.streetschool.net/xela.htm&gt;
+       </li>
+       <li id="N104EF">
+        [15] Structural Adjustment and Access to Land in Guatemala
+&lt;http://www.landaction.org/display.php?article=335 &gt;
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I'm writing to complain
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the musical show "Over the Rainbow".
+       <ns type="TV">
+        <i>
+         I've been recently seeing
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       in your theatre during my week's holiday in London
+       <ns type="MC">
+       </ns>
+       I must say I had a very disappointing evening! I was sure this was
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       London's newest and best musical show
+       <ns type="MP">
+       </ns>
+       <ns type="M">
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       <ns type="TV">
+        <i>
+         had ever seen
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       because of the good publicity you
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       in your advertisement, but I thought completely wrong!
+      </p>
+      <p>
+       Firstly, the play started nearly an hour later
+       <ns type="RC">
+        <i>
+         as
+        </i>
+       </ns>
+       I expected! If the
+       <ns type="RN">
+        <i>
+         spectacle
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         has
+        </i>
+       </ns>
+       been beautiful, I would have been quite
+       <ns type="RJ">
+        <i>
+         pleased
+        </i>
+       </ns>
+       to wait. Then, I had read that there would
+       <ns type="FV">
+        <i>
+         have been
+        </i>
+       </ns>
+       discounts available, but
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       wasn't true!
+       <ns type="UC">
+        <i>
+         So it's
+        </i>
+       </ns>
+       better not to write anything if
+       <ns type="U">
+        <i>
+         you don't make
+        </i>
+       </ns>
+       it
+       <ns type="MV">
+       </ns>
+       true
+       <ns type="UC">
+        <i>
+         then
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Finally, I hoped that, after these incidents, I would enjoy myself, but there was another change
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       programme:
+       <ns type="MD">
+       </ns>
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       ! The main actor, Danny Brook, was changed and the one who played his part wasn't as good as I expected.
+       <ns type="R">
+        <i>
+         Finished
+        </i>
+       </ns>
+       the show, I went to your theatre restaurant, but it was closed and this
+       <ns type="TV">
+        <i>
+         hasn't
+        </i>
+       </ns>
+       been said before. Moreover, I was shocked by the reason for which it
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       closed: the chef
+       <ns type="RV">
+        <i>
+         went away
+        </i>
+       </ns>
+       after he received a phone call!
+      </p>
+      <p>
+       For all these
+       <ns type="AGN">
+        <i>
+         reason
+        </i>
+       </ns>
+       , I want to ask for my money back and I hope to hear from you soon!
+      </p>
+      <p>
+       A suggestion?
+       <ns type="SA">
+        <i>
+         Organize
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         better your shows
+        </i>
+       </ns>
+       and do not
+       <ns type="S">
+        <i>
+         exagerate
+        </i>
+       </ns>
+       with publicity!
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to complain for the musical show "Over the Rainbow".
+       </s>
+       <s pid="2" sid="2">
+        I've been recently seeing  in your theatre during my week's holiday in London  I must say I had a very disappointing evening!
+       </s>
+       <s pid="2" sid="3">
+        I was sure this was the London's newest and best musical show  I  had ever seen because of the good publicity you made  in your advertisement, but I thought completely wrong!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, the play started nearly an hour later as I expected!
+       </s>
+       <s pid="3" sid="2">
+        If the spectacle has been beautiful, I would have been quite pleased to wait.
+       </s>
+       <s pid="3" sid="3">
+        Then, I had read that there would have been discounts available, but it wasn't true!
+       </s>
+       <s pid="3" sid="4">
+        So it's better not to write anything if you don't make it  true then.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Finally, I hoped that, after these incidents, I would enjoy myself, but there was another change of  programme:  starring!
+       </s>
+       <s pid="4" sid="2">
+        The main actor, Danny Brook, was changed and the one who played his part wasn't as good as I expected.
+       </s>
+       <s pid="4" sid="3">
+        Finished the show, I went to your theatre restaurant, but it was closed and this hasn't been said before.
+       </s>
+       <s pid="4" sid="4">
+        Moreover, I was shocked by the reason for which it was closed: the chef went away after he received a phone call!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For all these reason, I want to ask for my money back and I hope to hear from you soon!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        A suggestion?
+       </s>
+       <s pid="6" sid="2">
+        Organize better your shows and do not exagerate with publicity!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       There
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       be many things to say about
+       <ns type="MA">
+       </ns>
+       . Technology is a wide field which
+       <ns type="RV">
+        <i>
+         increases
+        </i>
+       </ns>
+       very quickly. It's creating an artificial world, where everything is electronic and fast. I'm not sure if I
+       <ns type="RV">
+        <i>
+         must
+        </i>
+       </ns>
+       say
+       <ns type="MC">
+       </ns>
+       technology has changed our life in
+       <ns type="MD">
+       </ns>
+       positive
+       <ns type="MN">
+       </ns>
+       or not. Certainly, thanks to it, we can do things today that were impossible a few centuries ago. Nowadays, we
+       <ns type="MV">
+       </ns>
+       make a phone call with an
+       <ns type="DJ">
+        <i>
+         astonish
+        </i>
+       </ns>
+       rapidity,
+       <ns type="R">
+        <i>
+         instead
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       my grandparents' time it took one month or more to
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       contact with people abroad, because the only means of communication was the post and its service was very slow! When
+       <ns type="W">
+        <i>
+         appeared the first car
+        </i>
+       </ns>
+       , it was already a great success. Before that, people travelled by horse or worse. Fortunately today everyone can take an aeroplane and go to America, Australia or wherever else
+       <ns type="AGA">
+        <i>
+         he
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         wants
+        </i>
+       </ns>
+       ! What can I say about
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       television? It allows us to
+       <ns type="RV">
+        <i>
+         keep
+        </i>
+       </ns>
+       connections with the other states of the world, improves our knowledge, offers us news, advises us about events which
+       <ns type="TV">
+        <i>
+         happened
+        </i>
+       </ns>
+       or will happen. In
+       <ns type="MP">
+       </ns>
+       the not very
+       <ns type="RJ">
+        <i>
+         far
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       1914,
+       <ns type="AGN">
+        <i>
+         parent
+        </i>
+       </ns>
+       sent their sons
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       war and it was very difficult to know if they were still alive or dead! It's terrible!
+      </p>
+      <p>
+       Despite this, I'm convinced all this progress
+       <ns type="TV">
+        <i>
+         caused
+        </i>
+       </ns>
+       some
+       <ns type="CN">
+        <i>
+         damages
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the community, not only
+       <ns type="S">
+        <i>
+         phisically
+        </i>
+       </ns>
+       . We pay less attention to our life, to those things which give us happiness, that aren't money, success, power.
+      </p>
+      <p>
+       We
+       <ns type="TV">
+        <i>
+         became
+        </i>
+       </ns>
+       passive people, we follow the same routine every day and we live in a society where rules are strongly fixed. I think everyone should live his own life how he wants to live it and make
+       <ns type="RA">
+        <i>
+         him
+        </i>
+       </ns>
+       known for who he is, not for his money, but for his abilities, his good habits, his personality.
+      </p>
+      <p>
+       Finally, everyone should
+       <ns type="RV">
+        <i>
+         decrease
+        </i>
+       </ns>
+       his own life's
+       <ns type="S">
+        <i>
+         rythm
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        There would be many things to say about .
+       </s>
+       <s pid="1" sid="2">
+        Technology is a wide field which increases very quickly.
+       </s>
+       <s pid="1" sid="3">
+        It's creating an artificial world, where everything is electronic and fast.
+       </s>
+       <s pid="1" sid="4">
+        I'm not sure if I must say  technology has changed our life in  positive  or not.
+       </s>
+       <s pid="1" sid="5">
+        Certainly, thanks to it, we can do things today that were impossible a few centuries ago.
+       </s>
+       <s pid="1" sid="6">
+        Nowadays, we  make a phone call with an astonish rapidity, instead at my grandparents' time it took one month or more to have  contact with people abroad, because the only means of communication was the post and its service was very slow!
+       </s>
+       <s pid="1" sid="7">
+        When appeared the first car, it was already a great success.
+       </s>
+       <s pid="1" sid="8">
+        Before that, people travelled by horse or worse.
+       </s>
+       <s pid="1" sid="9">
+        Fortunately today everyone can take an aeroplane and go to America, Australia or wherever else he wants!
+       </s>
+       <s pid="1" sid="10">
+        What can I say about the television?
+       </s>
+       <s pid="1" sid="11">
+        It allows us to keep connections with the other states of the world, improves our knowledge, offers us news, advises us about events which happened or will happen.
+       </s>
+       <s pid="1" sid="12">
+        In the not very far 1914, parent sent their sons in war and it was very difficult to know if they were still alive or dead!
+       </s>
+       <s pid="1" sid="13">
+        It's terrible!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Despite this, I'm convinced all this progress caused some damages at the community, not only phisically.
+       </s>
+       <s pid="2" sid="2">
+        We pay less attention to our life, to those things which give us happiness, that aren't money, success, power.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        We became passive people, we follow the same routine every day and we live in a society where rules are strongly fixed.
+       </s>
+       <s pid="3" sid="2">
+        I think everyone should live his own life how he wants to live it and make him known for who he is, not for his money, but for his abilities, his good habits, his personality.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Finally, everyone should decrease his own life's rythm.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

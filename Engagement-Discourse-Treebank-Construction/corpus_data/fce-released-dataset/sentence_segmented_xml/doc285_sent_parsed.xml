@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear sir or madam,
+      </p>
+      <p>
+       My name is Molly Menbrook. I have seen your new musical, 'Over the rainbow'. I am sorry but I must admit it was a bit disappointing.
+      </p>
+      <p>
+       I bought the ticket for the evening performance to end the day with a nice musical. But the time wasn't kept. I had to wait 45mins to get in! So in order to keep myself occupied for a while, I went to the restaurant
+       <ns type="R">
+        <i>
+         except
+        </i>
+       </ns>
+       it wasn't open. I couldn't see anyone inside either. No one.
+      </p>
+      <p>
+       The show
+       <ns type="RP">
+        <i>
+         it self
+        </i>
+       </ns>
+       was quite disappointing. The show was OK though I suggest you hire different actors. I think Danny Brook doesn't suit the role he plays in this musical...
+      </p>
+      <p>
+       Also you mentioned a discount. For tickets. Well no, I didn't get a discount! And the tickets were pretty expensive...
+      </p>
+      <p>
+       Anyway, after watching the musical, I felt a bit peckish so I went to the restaurant again with
+       <ns type="MD">
+       </ns>
+       hope that it might be open, but still, nobody was in. Then a person appeared, walking towards the door to the kitchen, I guessed. I asked him why the restaurant was closed. He said it was because the
+       <ns type="RN">
+        <i>
+         runner
+        </i>
+       </ns>
+       of the restaurant had gone out to arrange the food supply for the next day. They had been closed for 3 days according to him.
+      </p>
+      <p>
+       So you see my point. It wasn't very pleasant. So I am going to ask for a refund... I hope this isn't
+       <ns type="S">
+        <i>
+         affending
+        </i>
+       </ns>
+       you too much... Or asking you for too much.
+      </p>
+      <p>
+       Reply as soon as possible,
+      </p>
+      <p>
+       best regards,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear sir or madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My name is Molly Menbrook.
+       </s>
+       <s pid="2" sid="2">
+        I have seen your new musical, 'Over the rainbow'.
+       </s>
+       <s pid="2" sid="3">
+        I am sorry but I must admit it was a bit disappointing.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I bought the ticket for the evening performance to end the day with a nice musical.
+       </s>
+       <s pid="3" sid="2">
+        But the time wasn't kept.
+       </s>
+       <s pid="3" sid="3">
+        I had to wait 45mins to get in!
+       </s>
+       <s pid="3" sid="4">
+        So in order to keep myself occupied for a while, I went to the restaurant except it wasn't open.
+       </s>
+       <s pid="3" sid="5">
+        I couldn't see anyone inside either.
+       </s>
+       <s pid="3" sid="6">
+        No one.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The show it self was quite disappointing.
+       </s>
+       <s pid="4" sid="2">
+        The show was OK though I suggest you hire different actors.
+       </s>
+       <s pid="4" sid="3">
+        I think Danny Brook doesn't suit the role he plays in this musical...
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Also you mentioned a discount.
+       </s>
+       <s pid="5" sid="2">
+        For tickets.
+       </s>
+       <s pid="5" sid="3">
+        Well no, I didn't get a discount!
+       </s>
+       <s pid="5" sid="4">
+        And the tickets were pretty expensive...
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Anyway, after watching the musical, I felt a bit peckish so I went to the restaurant again with  hope that it might be open, but still, nobody was in.
+       </s>
+       <s pid="6" sid="2">
+        Then a person appeared, walking towards the door to the kitchen, I guessed.
+       </s>
+       <s pid="6" sid="3">
+        I asked him why the restaurant was closed.
+       </s>
+       <s pid="6" sid="4">
+        He said it was because the runner of the restaurant had gone out to arrange the food supply for the next day.
+       </s>
+       <s pid="6" sid="5">
+        They had been closed for 3 days according to him.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So you see my point.
+       </s>
+       <s pid="7" sid="2">
+        It wasn't very pleasant.
+       </s>
+       <s pid="7" sid="3">
+        So I am going to ask for a refund...
+       </s>
+       <s pid="7" sid="4">
+        I hope this isn't affending you too much...
+       </s>
+       <s pid="7" sid="5">
+        Or asking you for too much.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Reply as soon as possible,
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        best regards,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       I think the clothes in future will be similar in shape as the clothes that exist now. Just like sweaters, shoes, t-shirts etc... But maybe not.
+      </p>
+      <p>
+       When it comes down to
+       <ns type="SA">
+        <i>
+         color
+        </i>
+       </ns>
+       , I think it'll be much brighter and maybe glittery. Like shiny and plastic
+       <ns type="R">
+        kind
+       </ns>
+       . Maybe silver and gold, glittery red, purple and blue. As well as bright yellow, orange and green. All suitable for discos!
+      </p>
+      <p>
+       Shoes will be high heeled and modern.
+       <ns type="SA">
+        <i>
+         Colors
+        </i>
+       </ns>
+       to match the clothes. Still, comfortable. I think they'll be based on some kind of space theme and aliens.
+      </p>
+      <p>
+       But I think I prefer the clothes now. I'll stick to baggy t-shirts, jeans, baseball caps and trainers. They'll do for me instead of all the silvers and golds. Al the spacy theme. I think I'll be fine in the clothes we have now... I mean, I won't get sick
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       them!
+      </p>
+      <p>
+       Though some people may fancy the glitter and the spacy feel, I don't like it and I hope it really isn't the style for the future. It's just not my cup of tea...
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I think the clothes in future will be similar in shape as the clothes that exist now.
+       </s>
+       <s pid="1" sid="2">
+        Just like sweaters, shoes, t-shirts etc...
+       </s>
+       <s pid="1" sid="3">
+        But maybe not.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        When it comes down to color, I think it'll be much brighter and maybe glittery.
+       </s>
+       <s pid="2" sid="2">
+        Like shiny and plastic kind.
+       </s>
+       <s pid="2" sid="3">
+        Maybe silver and gold, glittery red, purple and blue.
+       </s>
+       <s pid="2" sid="4">
+        As well as bright yellow, orange and green.
+       </s>
+       <s pid="2" sid="5">
+        All suitable for discos!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Shoes will be high heeled and modern.
+       </s>
+       <s pid="3" sid="2">
+        Colors to match the clothes.
+       </s>
+       <s pid="3" sid="3">
+        Still, comfortable.
+       </s>
+       <s pid="3" sid="4">
+        I think they'll be based on some kind of space theme and aliens.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But I think I prefer the clothes now.
+       </s>
+       <s pid="4" sid="2">
+        I'll stick to baggy t-shirts, jeans, baseball caps and trainers.
+       </s>
+       <s pid="4" sid="3">
+        They'll do for me instead of all the silvers and golds.
+       </s>
+       <s pid="4" sid="4">
+        Al the spacy theme.
+       </s>
+       <s pid="4" sid="5">
+        I think I'll be fine in the clothes we have now...
+       </s>
+       <s pid="4" sid="6">
+        I mean, I won't get sick in them!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Though some people may fancy the glitter and the spacy feel, I don't like it and I hope it really isn't the style for the future.
+       </s>
+       <s pid="5" sid="2">
+        It's just not my cup of tea...
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

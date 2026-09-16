@@ -1,0 +1,1332 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿SOIL IMPROVEMENT:
+DESIGNING WITH TENSAR
+ GEOGRIDS
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       Geogrid reinforced soils exhibit many improved engineering properties compared to untreated soils. Geogrid reinforcement is a popular technique for improving weak natural soils. Physical and mechanical properties of Tensar geogrid are discussed to provide the reader with a background on geogrid reinforcement mechanisms. This paper attempts to outline state-of-thepractice design procedures for geogrid reinforced soils. Geogrids are commonly used to improve performance in primarily three applications: for road subgrades, for slopes and retaining walls, and for shallow foundations. Brief case studies are reviewed for each geogrid application to exemplify real design projects. Design procedures for each of the three applications are outlined. The recently published Giroud-Han Design Method for geogrid reinforced unpaved roads is explained in detail. Secondly, the design procedure for reinforced slopes and retaining wall is illustrated by presenting previously published charts based on limit analysis. Finally, the typical design guidelines for bearing capacity improvement, measured in terms of bearing capacity ratio (BCR) for geogrid reinforced foundations (GRF), are presented. This paper focuses on design methods and research applicable to Tensar geogrids. A geogrid reinforced gravel parking lot is designed as a hypothetical example to illustrate the Giroud-Han design method for unpaved roads.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Geosynthetics are man-made synthetic polymer products (i.e. plastics) that can be incorporated into natural soils.
+       </s>
+       <s pid="1" sid="2">
+        The use of geosynthetics in geotechnical engineering design is a relatively recent phenomenon.
+       </s>
+       <s pid="1" sid="3">
+        Geosynthetics first came into use in the 1970's and have enjoyed widespread use since the 1990's (Koerner 1997).
+       </s>
+       <s pid="1" sid="4">
+        Geosynthetics have many beneficial uses, and can be classified based on their function.
+       </s>
+       <s pid="1" sid="5">
+        Fluet (1988) describes five uses for geosynthetics: reinforcement, separation, cushioning, filtration, transmission, and isolation.
+       </s>
+       <s pid="1" sid="6">
+        This paper focuses on a type of geosynthetics, geogrids, which function primarily as reinforcement.
+       </s>
+       <s pid="1" sid="7">
+        Just as structural engineers use steel reinforcing bars in reinforced concrete to create a composite material with improved engineering properties, geotechnical engineers are now using geogrids as soil reinforcement to improve the engineering properties of natural soils.
+       </s>
+       <s pid="1" sid="8">
+        In general, geogrids can be used to improve both paved and unpaved road subgrades, to improve the stability and constructability of built slopes and retaining walls, and to increase bearing capacity and reduced settlement for shallow foundations.
+       </s>
+       <s pid="1" sid="9">
+        The use of geogrids to improve road subgrades is the primary focus of this paper, and discussion of geogrids design to improve slopes and foundations will be presented more generally.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Koerner (1997) defines geogrids as, "a geosynthetic material consisting of connected parallel sets of tensile ribs with apertures of sufficient size to allow strike-through of surrounding soil, stone, or other geotechnical material."
+       </s>
+       <s pid="2" sid="2">
+        Geogrids were first manufactured commercially by Netlon, Ltd. in the United Kingdom.
+       </s>
+       <s pid="2" sid="3">
+        In 1982 Tensar Corporation (now known as Tensar International Corporation) introduced geogrids to the United States (Koerner 1997).
+       </s>
+       <s pid="2" sid="4">
+        Tensar geogrids are manufactured from heavy gage sheets of either high-density polyethylene or polypropylene.
+       </s>
+       <s pid="2" sid="5">
+        Tensar uniaxial geogrids (UX) are made from high-density polyethylene (HDPE).
+       </s>
+       <s pid="2" sid="6">
+        Tensar biaxial geogrids (BX) are made from select grades of polypropylene or copolymers (Contech 2007).
+       </s>
+       <s pid="2" sid="7">
+        Four to six millimeter thick sheets are punched with circular holes for uniaxial geogrids or with square hole for biaxial geogrids.
+       </s>
+       <s pid="2" sid="8">
+        Next, these pre-punched sheets are fed over a series of rollers that induce longitudinal stress through a controlled stretching process.
+       </s>
+       <s pid="2" sid="9">
+        This manufacturing process is referred to as cold worked because the polymer sheets are formed by stretching at room temperature.
+       </s>
+       <s pid="2" sid="10">
+        The rollers stretch the sheets because each roller in the series rotates faster than the one before it.
+       </s>
+       <s pid="2" sid="11">
+        As the sheet is stretched into a grid by the series of roller, the ribs and apertures become more defined.
+       </s>
+       <s pid="2" sid="12">
+        Apertures are the open spaces between the ribs of the geogrid.
+       </s>
+       <s pid="2" sid="13">
+        Biaxial geogrids are stretched longitudinally with the rollers and then stretched transversely with a stretcher to form square or rectangular apertures.
+       </s>
+       <s pid="2" sid="14">
+        Whereas, in the uniaxial geogrids the circular punched hole becomes an elongated ellipse after stretching in one direction (Koerner 1997).
+       </s>
+       <s pid="2" sid="15">
+        The manufacturing process of cold-worked punched and drawn geogrids, such as Tensar, is responsible for the beneficial engineering design properties of the finished product.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Engineering Properties of Geogrids
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Not all geogrids are created equal.
+       </s>
+       <s pid="3" sid="2">
+        There are a number of competing geogrid products on the market.
+       </s>
+       <s pid="3" sid="3">
+        Because a general earthwork contractor would most likely purchase the most economical geogrid available based on cost, the geotechnical engineers must specify the minimum acceptable design properties.
+       </s>
+       <s pid="3" sid="4">
+        Specifications should focus on the relevant physical and material properties required for the geogrid to be used on the given design.
+       </s>
+       <s pid="3" sid="5">
+        Moreover, competent geotechnical engineers should always specify the required engineering properties of the geogrid to be used for a given design or on particular project
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Physical Properties
+       </div>
+       <p>
+        <s pid="4" sid="1">
+         Physical properties of a geogrid describe its size and shape.
+        </s>
+        <s pid="4" sid="2">
+         Physical properties of geogrid include: type of structure, junction type, aperture size, thickness, mass per unit area, and percent open area.
+        </s>
+        <s pid="4" sid="3">
+         The type of structure of a geogrid refers to whether the geogrid is made of a homogeneous material or, such as polyethylene or polypropylene in the case of the cold-worked punched and drawn Tensar geogrids described previously or made of a non-homogeneous material (Koerner 1997).
+        </s>
+       </p>
+       <p>
+        <s pid="5" sid="1">
+         Figure 1. Picture of uniaxial and biaxial geogrids [Tensar 2007]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         The junction type refers to the connection between perpendicular ribs in the case of a biaxial geogrid.
+        </s>
+        <s pid="6" sid="2">
+         In Tensar geogrids constructed from a homogeneous polymer material, the junction is intimately connected to the ribs.
+        </s>
+        <s pid="6" sid="3">
+         However, in woven non-homogenous geogrids the junction can be connected in different manner.
+        </s>
+        <s pid="6" sid="4">
+         The aperture size is the opening space of the geogrid.
+        </s>
+        <s pid="6" sid="5">
+         The aperture size allows for different soil particle and aggregate sizes to fit between the reinforcing ribs of the geogrid.
+        </s>
+        <s pid="6" sid="6">
+         Thickness is a geogrid physical property that can be easily measured.
+        </s>
+        <s pid="6" sid="7">
+         Typical geogrid rib thickness ranges from 0.76 mm for a BX1100 geogrid to 1.79 millimeters for a BX1500 geogrid (Tensar 2007).
+        </s>
+        <s pid="6" sid="8">
+         Other physical properties of geogrid include mass per unit area which ranges from 200 to 1000 grams per cubic meter for various geogrids (Koerner 1997).
+        </s>
+        <s pid="6" sid="9">
+         Geogrids can also be categorized in terms of percent open area which can range from 40 to 95 percent (Koerner 1997).
+        </s>
+        <s pid="6" sid="10">
+         Table 1 lists measured physical and material properties specifications for the Tensar BX1100 geogrid.
+        </s>
+        <s pid="6" sid="11">
+         The column labeled MD represents results from testing the product in the Machine Direction; whereas, the column labeled XMD represents results from testing the product in the Cross-Machine (Transverse) Direction (Tensar 2007).
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         Table 1. Tensar BX1100 Product Properties [Tensar 2007]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Material Properties
+       </div>
+       <p>
+        <s pid="8" sid="1">
+         The material properties of geogrid quantify its response to stresses.
+        </s>
+        <s pid="8" sid="2">
+         Geogrid material properties include: tensile strength, junction efficiency, flexural stiffness, aperture stability, shear strength, and tensile creep.
+        </s>
+        <s pid="8" sid="3">
+         Because geogrids are a new material, standard testing procedures are not available for all material properties.
+        </s>
+        <s pid="8" sid="4">
+         Tensile strength can measured using a modified version of ASTM D4595 (Koerner 1997) or ASTM D6637 (Tensar 2007).
+        </s>
+        <s pid="8" sid="5">
+         Tensile strength is an important property because geogrids are primarily used for reinforcement.
+        </s>
+        <s pid="8" sid="6">
+         Tensile strength may be measured at failure or at a specified percent strain.
+        </s>
+        <s pid="8" sid="7">
+         Junction efficiency is measured by a new standard test developed by the Geosynthetic Research Institute at Drexel University.
+        </s>
+        <s pid="8" sid="8">
+         Junction efficiency measures the load transfer capabilities and is expressed as a percentage of ultimate tensile strength, where the load transfer capability is determined in accordance with GRI-GG2-05 (Tensar 2007).
+        </s>
+        <s pid="8" sid="9">
+         Flexural stiffness of geogrids can be measured either ASTM D1388 or ASTM D5732.
+        </s>
+        <s pid="8" sid="10">
+         The units for flexural stiffness are milligram-centimeters, and geogrids can be classified as stiff if they have a flexural rigidity greater than 1000 g-cm (Koerner 1997).
+        </s>
+        <s pid="8" sid="11">
+         Aperture stability measures resistance of a geogrid to in-plane rotational movement.
+        </s>
+        <s pid="8" sid="12">
+         Aperture stability lacks a uniform standard test; however, Tensar references the U.S. Army Corps of Engineers Methodology for measuring torsional rigidity by applying a 20 kg-cm (2 m-N) moment to the central junction of a 9 inch x 9 inch specimen restrained at its perimeter.
+        </s>
+        <s pid="8" sid="13">
+         Soil geogrid shear strength is measured by adapting the traditional direct shear test in ASTM D5321 (Koerner 1997).
+        </s>
+        <s pid="8" sid="14">
+         Finally, long term creep of geogrids is measured by ASTM D5262 (Koerner 1997).
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         The long term material properties of geogrids are generally resistant to loss of strength (i.e. degradation).
+        </s>
+        <s pid="9" sid="2">
+         Sunlight causes degradation in all organic material, including geogrid polymers (Koerner 1997).
+        </s>
+        <s pid="9" sid="3">
+         Geosynthetic exposure to direct sunlight should be limit to a maximum exposure of 30 days.
+        </s>
+        <s pid="9" sid="4">
+         While temperature has no serious effects of geogrids, oxidation degradation occurs in polypropylene and polyethylene (Koerner 1997).
+        </s>
+        <s pid="9" sid="5">
+         Hydrolysis degradation affects primarily polyesters, especially when immersed in a liquid with high alkalinity.
+        </s>
+        <s pid="9" sid="6">
+         Biological degradation does not significant affect geosynthetic design strength.
+        </s>
+        <s pid="9" sid="7">
+         Koerner (1997) present the following equation that takes into account strength reduction of geogrids due to various types of degradation,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         (1)
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         where RFID is the reduction factor for installation damage, RFCR is the reduction factor for avoiding creep over the duration of the structures lifetime, RFCD is the reduction factor to account for chemical degradation, and RFBD is the reduction factor against biological degradation.
+        </s>
+        <s pid="11" sid="2">
+         Table 2 lists typical values to account for these various types of degradation in design.
+        </s>
+       </p>
+       <p>
+        <s pid="12" sid="1">
+         Table 2. Recommended Reduction-Factor Values for Determining Allowable Tensile Strength for Geogrids [Koerner 1997 Table 3.3 pg 335]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Case Studies
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        It is typical for geotechnical engineers to approach new design procedures for relatively new product with some caution because in the case of litigation on a failed design application, methods with proven history are highly valued.
+       </s>
+       <s pid="13" sid="2">
+        To counter the tendency of some geotechnical engineers to produce overly conservative designs, Tensar International Corp. and material suppliers such as Contech Construction Products Inc. focus on educating geotechnical engineers.
+       </s>
+       <s pid="13" sid="3">
+        To that end, the following case studies highlight projects where geogrid reinforced soils provided a successful and cost effective design solution (Priest and Stahl 2007).
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Detroit Intermodal Freight System
+       </div>
+       <p>
+        <s pid="14" sid="1">
+         In this project, the Canadian Pacific Railway utilized geogrids to renovate its facility in Detroit, Michigan.
+        </s>
+        <s pid="14" sid="2">
+         This project highlights that geogrids can be used to stabilize railway subgrades, which carry much greater loads than road subgrades.
+        </s>
+        <s pid="14" sid="3">
+         A layer of Tensar BX1300 geogrid was placed at the interface between the sub-ballast and the ballast.
+        </s>
+        <s pid="14" sid="4">
+         Use of the BX 1300 geogrid reduced the thickness of the ballast from 34 inches unreinforced to 27 inches with reinforcement.
+        </s>
+        <s pid="14" sid="5">
+         The project was completed in 1987 and over 72,000 square yards of geogrid were used.
+        </s>
+        <s pid="14" sid="6">
+         Use of geogrid on this project saved the owner, Canadian Pacific Railway, material cost while and decreased construction time (Tensar 2007).
+        </s>
+       </p>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Sierra Slope in Indiana Provides Green Alternative
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         In 1999, Tensar geogrids were used to create a wider road embankment to replace an old wooden bridge railroad crossing on County Road 475 in Wheeler, Porter County, Indiana.
+        </s>
+        <s pid="16" sid="2">
+         On this project a steep 1:1 (horizontal: vertical) slope was required because the right of way was bound on both end by private property.
+        </s>
+        <s pid="16" sid="3">
+         Tensar's Sierra Slope Retention system was utilized for aesthetic reasons.
+        </s>
+        <s pid="16" sid="4">
+         The final design incorporated both uniaxial and biaxial Tensar geogrids.
+        </s>
+        <s pid="16" sid="5">
+         Uniaxial geogrids were used for primary reinforcement to improve the global stability of the slope and biaxial geogrids were utilized as secondary reinforcement to prevent shallow slope failures.
+        </s>
+        <s pid="16" sid="6">
+         This case study illustrates how geogrids tensile strength of geogrid reinforcement enables previously unbuildable slopes to be safely constructed (Tensar 1999).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Wall Mart Site outside of San Diego, California
+       </div>
+       <p>
+        <s pid="17" sid="1">
+         In 1996, Wall Mart planned to construct a new store in the Broadway Plaza Shopping Center in Chula Vista, California.
+        </s>
+        <s pid="17" sid="2">
+         However, subsurface soils were poor, consisting of river deposited sediment coupled with a high water table.
+        </s>
+        <s pid="17" sid="3">
+         The initial geotechnical foundation design called for a deep foundation system of either stone columns or driven piles.
+        </s>
+        <s pid="17" sid="4">
+         However, in an effort to reduce foundation costs Tensar geogrids were used.
+        </s>
+        <s pid="17" sid="5">
+         The unsuitable soils were removed and five layers of geogrids were used to support continuous wall and spread footing loads.
+        </s>
+        <s pid="17" sid="6">
+         Suitable structural fill soil was compacted between the geogrid layers.
+        </s>
+        <s pid="17" sid="7">
+         Moreover, an additional geogrid layers was employed throughout the site to support concrete slab on grade floor.
+        </s>
+        <s pid="17" sid="8">
+         Tensar's Dimension Foundation Improvement System was used to design and optimize the geogrid layout.
+        </s>
+        <s pid="17" sid="9">
+         Compared to the initial deep foundation alternatives, the use of geogrids on this project saved Wall Mart over one million dollars (Tensar 1996).
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Geogrid Design Methods
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        Design methods for geogrid reinforced soils are conceptually straight forward.
+       </s>
+       <s pid="18" sid="2">
+        As the case studies demonstrate, geogrid reinforced soils are cost effective and practical to construct.
+       </s>
+       <s pid="18" sid="3">
+        However, just as in reinforced concrete design, the design methods that describe this composite material are semiempirical in nature.
+       </s>
+       <s pid="18" sid="4">
+        That is, the design methods for geogrid reinforced soils tend to be based on both classic geotechnical theory and analysis, and then calibrated empirically based on available test results.
+       </s>
+       <s pid="18" sid="5">
+        Thus, the development of design methods for geogrid reinforced soils is a complicated process.
+       </s>
+       <s pid="18" sid="6">
+        Due to the empirical calibration approach applied in the following design methods, the geotechnical design engineer must take care to apply the following design methods only where the are applicable.
+       </s>
+       <s pid="18" sid="7">
+        The following design methods are generally applicable to cold-worked punched and drawn geogrids manufactured by Tensar.
+       </s>
+       <s pid="18" sid="8">
+        The following design methods are also applicable to other geosynthetics only as noted below.
+       </s>
+       <s pid="18" sid="9">
+        The hypothetical scenario section will apply geogrid design methods for a specific geogrid, Tensar BX1100.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Design Method for Unpaved Roads
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         Traditionally unpaved roads and trafficked areas on soft soil have been improved by adding a layer of gravel to form a base course.
+        </s>
+        <s pid="19" sid="2">
+         Gravel base courses are effective because they distribute the wheel loads over a greater area than thus reduce the stress on the soft soil subgrades.
+        </s>
+        <s pid="19" sid="3">
+         Since coming on the scene in the 1970's, geosynthetics, initially geotextiles and then geogrids, have been utilized to reinforce and stabilize unpaved roads and trafficked areas.
+        </s>
+        <s pid="19" sid="4">
+         Geogrids have been used to reduce the required gravel base course thickness.
+        </s>
+        <s pid="19" sid="5">
+         Design methods by J.P. Giroud and others have elevated the design of unpaved roads from a try-and-see approach to a calibrated theory-based approach.
+        </s>
+        <s pid="19" sid="6">
+         Examples of unpaved roads and unpaved trafficked areas include: gravel parking lots, old rural roads, new roads in rural areas with low traffic demands, construction haul roads, logging roads, and U.S. Forest Service roads.
+        </s>
+        <s pid="19" sid="7">
+         Unpaved roads built on soft subgrades fail due to excessive rutting.
+        </s>
+        <s pid="19" sid="8">
+         An example of excessive rutting is when a truck hauling fill soil from a project site gets stuck on a construction road.
+        </s>
+        <s pid="19" sid="9">
+         Excessive rutting is serviceability failure criteria for unpaved access roads.
+        </s>
+        <s pid="19" sid="10">
+         The design method discussed in this section is based on an acceptable maximum rut depth of 75 millimeters.
+        </s>
+        <s pid="19" sid="11">
+         In the case of unpaved roads, rutting is caused by a combination of bearing capacity failures, consolidation, and lateral displacement unpaved road gravel base course or soil subgrade Because geotextiles were commonly used prior to the development of geogrids, design methods for geogrids tend to build upon the earlier methods for geotextiles.
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         Giroud and Noiray (1981) developed a widely used method for quantifying the benefit of geotextile reinforced for unpaved roads based on empirical data from available field test data from Hammitt (1970).
+        </s>
+        <s pid="20" sid="2">
+         A subsequent study by Giroud focused on geogrids, Giroud et al (1985) developed a method to quantify geogrid and base course interlock.
+        </s>
+        <s pid="20" sid="3">
+         However, this study lacked empirical data to calibrate and verify the method (Giroud and Han 2004).
+        </s>
+        <s pid="20" sid="4">
+         More recent work by Giroud has refined methods to quantify the benefit of geogrid and geotextile reinforcement on unpaved roads.
+        </s>
+        <s pid="20" sid="5">
+         In 2004, Giroud and Han developed a new theoretically-based and experimentally calibrated gravel base course design method for unpaved roads, commonly referred to as the Giroud-Han Method.
+        </s>
+        <s pid="20" sid="6">
+         Giroud and Han published two journal articles in the August 2004 issue of the Journal of Geotechnical and Geoenvironmental Engineering .
+        </s>
+        <s pid="20" sid="7">
+         The first article deals with development of design method and the second deals with calibration and application.
+        </s>
+        <s pid="20" sid="8">
+         Throughout this paper both articles will be referred to simply as Giroud and Han (2004).
+        </s>
+        <s pid="20" sid="9">
+         In Giroud and Han's design equation, gravel base course thickness is a function of the distribution of stress, strength of the base course material, interlock between geosynthetic and base course material, geosynthetic in-place stiffness (aperture stability), traffic volume, wheel loads, tire pressure, subgrade strength, rut depth, and the influence of a geosynthetic on the failure mode (Giroud and Han 2004).
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Geogrid Reinforcement Mechanism on Base Course and Subgrade
+        </div>
+        <p>
+         <s pid="21" sid="1">
+          Geogrid reinforced of unpaved roads have two major benefits: 1) the geogrid reduces the rutting due to bearing capacity failure of either the gravel base or the subgrade, and 2) the geogrid resists lateral movement of the gravel base course or subgrade.
+         </s>
+         <s pid="21" sid="2">
+          Geogrid reinforcement works to improve the properties of the base course by confining the base course aggregate with the geogrid ribs.
+         </s>
+         <s pid="21" sid="3">
+          Sarsby (1982) studied the efficiency of geogrid reinforcement as aperture size and particle sizes varied.
+         </s>
+         <s pid="21" sid="4">
+          Sarsby concluded that,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="22" sid="1">
+          (2)
+         </s>
+        </p>
+        <p>
+         <s pid="23" sid="1">
+          where BGG equals the minimum geogrid aperture and d50 is the median base course grain size by weight found from a particle-size distribution curve.
+         </s>
+         <s pid="23" sid="2">
+          Thus, it is important for a geotechnical engineer to specify a geogrid with an appropriate aperture size for the gravel aggregate.
+         </s>
+         <s pid="23" sid="3">
+          The two major benefits of geogrid will be divided between how the geogrid improves the base course and how the geogrid improves the subgrade.
+         </s>
+        </p>
+        <p>
+         <s pid="24" sid="1">
+          Giroud and Han (2004) discuss a total of eight benefits of geogrid to the base course for unpaved roads.
+         </s>
+         <s pid="24" sid="2">
+          Four benefits of geogrid to the base course confinement in asphalt paved roads were discussed by Perkins (1999).
+         </s>
+         <s pid="24" sid="3">
+          These benefits are also applicable to unpaved roads.
+         </s>
+         <s pid="24" sid="4">
+          Giroud and Han (2004) summarized the benefits discussed by Perkins as: 1) prevention of lateral movement, 2) increase in stiffness in the base course material such that vertical strains in the base course are reduced, 3) improvement of flexural stiffness of the base course such that the traffic loads are better distributed, and 4) reduction of shear stresses passed from the base course to the subgrade.
+         </s>
+         <s pid="24" sid="5">
+          Moreover, Giroud and Han suggest four additional benefits that are only applicable to unpaved roads.
+         </s>
+         <s pid="24" sid="6">
+          These benefits include: 5) prevention of shear failure in the base course, 6) support of the wheel loads directly by the geogrid in cases where rutting and loss of base course material has occurred, 7) prevention of tension cracking on the bottom of the base course, and 8) separation of base course aggregates from the subgrade.
+         </s>
+        </p>
+        <p>
+         <s pid="25" sid="1">
+          The second major benefit of geogrid is its influence on the subgrade soil.
+         </s>
+         <s pid="25" sid="2">
+          Geogrids improve the performance of subgrades through four mechanisms according to Giroud and Han (2004).
+         </s>
+         <s pid="25" sid="3">
+          The four ways that geogrids improve the subgrade soil include: 9) the prevention of local shearing of the subgrade, 10) improve the load distribution, 11) reduction or reorientation of the shear stresses, and 12) the tensioned membrane effect (Giroud and Han 2004).
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Giroud-Han Design Equation
+        </div>
+        <p>
+         <s pid="26" sid="1">
+          Analysis for this method begins by finding an equivalent tire contact area which is assumed to be circular.
+         </s>
+         <s pid="26" sid="2">
+          The relationship between the wheel load, P, and the tire contact pressure, p, is expressed as,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="27" sid="1">
+          (3)
+         </s>
+        </p>
+        <p>
+         <s pid="28" sid="1">
+          where P = wheel load (kN), A = tire contact area (m2) which is
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        for an assumed circular equivalent tire contact area, p = tire contact pressure (kPa), and r = radius of equivalent contact area. Moreover, when solving Eq. 3 for the radius it equals,
+        <p>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="30" sid="1">
+          (4)
+         </s>
+        </p>
+        <p>
+         <s pid="31" sid="1">
+          where all variables are defined the same as in Eq. 3. Giroud and Noiray (1981) previously correlated the undrained cohesion as a function of the California bearing ratio of the subgrade (CBRsg) as,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="32" sid="1">
+          (5)
+         </s>
+        </p>
+        <p>
+         <s pid="33" sid="1">
+          where fC is a factor equal to 30kPa.
+         </s>
+         <s pid="33" sid="2">
+          The Giroud-Han design equation solves for the required thickness of gravel base course (h).
+         </s>
+         <s pid="33" sid="3">
+          Giroud and Han (2004) formulated the equation that follows,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="34" sid="1">
+          (6)
+         </s>
+        </p>
+        <p>
+         <s pid="35" sid="1">
+          where fE is the modulus ratio factor which will be defined by Eq. 7 and m is the bearing capacity mobilization factor which will be defined by Eq. 9.
+         </s>
+         <s pid="35" sid="2">
+          Other variables in Eq. 6 include: h = required base course thickness (m), J = geogrid aperture stability modulus (mN/deg), N = number of axle passages, P = wheel load (kN), r = radius of the equivalent tire contact area (m), Nc = bearing capacity factor, fC = factor equal to 30k
+         </s>
+         <s pid="35" sid="3">
+          Pa, and CBRsg = CBR of the subgrade soil.
+         </s>
+         <s pid="35" sid="4">
+          Note that the term
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is equal to the tire contact pressure which is approximately equal to and typically approximated simply by the tire pressure. Giroud and Han (2004) define the modulus ratio factor as,
+        <p>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="37" sid="1">
+          (7)
+         </s>
+        </p>
+        <p>
+         <s pid="38" sid="1">
+          where RE is the limited modulus ratio.
+         </s>
+         <s pid="38" sid="2">
+          The limited modulus ratio is the ratio of the resilient modulus of the base course (Ebc) divided by the resilient modulus of the subgrade (Esg) limited to a maximum ratio of 5.0.
+         </s>
+         <s pid="38" sid="3">
+          The modulus ratio is limited to 5.0 because this was the maximum found in a study of unreinforced base course to subgrade soil section (Heukelom and Klomp 1962).
+         </s>
+         <s pid="38" sid="4">
+          Giroud and Han (2004) draw on the work of Burmister (1958) because they are dealing with a two layer medium.
+         </s>
+         <s pid="38" sid="5">
+          Giroud and Han (2004) actually estimate the resilient modulus based on a correlation of resilient modulus to CBR that was also developed by Heukelom and Klomp (1962).
+         </s>
+         <s pid="38" sid="6">
+          Use of the limited modulus ratio correlated to CBR allows the geotechnical design engineer to use this method based on only CBR.
+         </s>
+         <s pid="38" sid="7">
+          The limited modulus ratio expressed mathematically is,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="39" sid="1">
+          (8)
+         </s>
+        </p>
+        <p>
+         <s pid="40" sid="1">
+          where
+         </s>
+         <s pid="40" sid="2">
+          Ebc = resilient modulus of the base course, Esg = resilient modulus subgrade, CBRbc = CBR of the base course, and CBRsg = CBR of the subgrade.
+         </s>
+         <s pid="40" sid="3">
+          The bearing capacity mobilization factor, m, deals with the fact that geogrids reduce the local shear and punching shear that develop before the ultimate bearing capacity is reached.
+         </s>
+         <s pid="40" sid="4">
+          Giroud and Han (2004) assume the subgrade soil bearing capacity is completely mobilized when the rut depth serviceability criteria of 75mm is reached.
+         </s>
+         <s pid="40" sid="5">
+          Thus, the when the rut depth is 75 mm the bearing capacity mobilization factor equals 1.0 for a subgrade without gravel base course reinforcement.
+         </s>
+         <s pid="40" sid="6">
+          Giroud and Han (2004) formulated that the bearing capacity mobilization factor, m, is defined as,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="41" sid="1">
+          (9)
+         </s>
+        </p>
+        <p>
+         <s pid="42" sid="1">
+          where s = rut depth (mm) with the range limited to 50 to 100 mm, fS = factor equal to 75 mm for max allowable rut depth,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        = 0.9,
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        = 1.0, and n=1.0. Initially,
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        ,
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        , and n were unknown constants that were solved for in the calibration process (Giroud and Han 2004).
+        <p>
+        </p>
+        <p>
+         <s pid="44" sid="1">
+          The Giroud and Han (2004) design equation can be used to calculate the rut depth for an unreinforced unpaved road, geotextile reinforced road, or a geogrid reinforced road.
+         </s>
+         <s pid="44" sid="2">
+          Table 3 below shows typical values for the bearing capacity factor and the aperture stability.
+         </s>
+        </p>
+        <p>
+         <s pid="45" sid="1">
+          Table 3. Recommended Values for Use in Design [Giroud and Han 2004]
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="46" sid="1">
+          The geotechnical design engineer must select the other appropriate values based on the expected traffic.
+         </s>
+         <s pid="46" sid="2">
+          Because the required base course thickness, h, appears on both sides of the equation, an iterative procedure is required to determine h.
+         </s>
+         <s pid="46" sid="3">
+          One limitation of this design equation is that the subgrade CBR less than or equal to 5.0 because the relationship between resilient modulus and CBR as express by the limited modulus ratio equation is only valid in this range.
+         </s>
+         <s pid="46" sid="4">
+          Also the rut depth, s, should range between 50 and 100 mm.
+         </s>
+         <s pid="46" sid="5">
+          The design procedure outlined by Giroud and Han (2004) has three steps.
+         </s>
+         <s pid="46" sid="6">
+          First, calculate the radius of the equivalent contact area using Eq. 4, select the allowable rut depth, and calculate the undrained cohesion from the CBR correlation (Eq. 5) or directly from laboratory tests.
+         </s>
+         <s pid="46" sid="7">
+          Second, check whether the subgrade soil itself has enough bearing capacity to support the wheel load without reinforcement.
+         </s>
+         <s pid="46" sid="8">
+          If the wheel load, P, is less than the bearing capacity of the soil then no reinforcement is need.
+         </s>
+         <s pid="46" sid="9">
+          If the wheel load is greater than the bearing capacity of the soil, then proceed to step three.
+         </s>
+         <s pid="46" sid="10">
+          Step three consists of solving for the required base course thickness from Eq. 6 using an iterative approach.
+         </s>
+         <s pid="46" sid="11">
+          Due to the empirical method utilized to developing the Giroud-Han design equation, the authors recommend that the minimum base course thickness, h, be limit to 0.1 m for all case to improve drivability of the unpaved road.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Design Method for Constructed Slopes
+       </div>
+       <p>
+        <s pid="47" sid="1">
+         The design method for geogrid reinforced slopes is identical to the design method used for geotextile reinforced slopes.
+        </s>
+        <s pid="47" sid="2">
+         The industry trend; however, is to utilize geogrids for reinforced slopes and retaining walls because of geogrid's superior tensile strength properties.
+        </s>
+        <s pid="47" sid="3">
+         Koerner (1997) expresses the allowable factor of safety as,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="48" sid="1">
+         (10)
+        </s>
+       </p>
+       <p>
+        <s pid="49" sid="1">
+         where MR = moments resisting failure due to the soil's shear strength; MD = moments causing failure due to gravity, seepage, seismic, dead, and live loads;
+        </s>
+        <s pid="49" sid="2">
+         Ti = allowable reinforcement strength providing forces resisting failure as defined in Eq. 1; yi = appropriate moment arm; and n = number of separate reinforcing layers.
+        </s>
+        <s pid="49" sid="3">
+         For a non-reinforced slope the factor of safety is simply the moments resisting (MR) divided by the moments causing failure (MD).
+        </s>
+        <s pid="49" sid="4">
+         Typically the design factor of safety is specified depending on the project, and a factor of safety of 1.3 is generally the minimum design factor of safety for constructed slopes.
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Design Charts for Reinforced Slope Stability
+        </div>
+        <p>
+         <s pid="50" sid="1">
+          In order to determine the required length and location of reinforcement spacing along a constructed slope, slope stability methods utilizing computer modeling have been used to formulate design charts (Koerner 1997 pg 347).
+         </s>
+         <s pid="50" sid="2">
+          These design charts have been formulated using limit equilibrium methods.
+         </s>
+         <s pid="50" sid="3">
+          Commonly, used design charts have been developed by Jewell (1991), Michalowski (1997), Schmertmann et al (1987), and others.
+         </s>
+        </p>
+        <p>
+         <s pid="51" sid="1">
+          The design charts developed by Michalowski (1997) are reproduced on the next pages as Figs. 2, 3, and 4 to illustrate this geogrid reinforced slope design method.
+         </s>
+         <s pid="51" sid="2">
+          Fig. 2 is used to find the required geogrid spacing, Sv; where
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is the slope angle measured in degrees,
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is the internal friction angle needed to maintain limit equilibrium, kt is the tensile strength of reinforcement per unit area of reinforced soil mass, and H is the height of the slope. The term
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is the dimensionless required reinforcement strength which is solve for using limit analysis. Geogrid vertical spacing, Sv, is given by the equation (Michalowski 1997 and Koerner 1997),
+        <p>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="53" sid="1">
+          (11)
+         </s>
+        </p>
+        <p>
+         <s pid="54" sid="1">
+          where Tdesign is the allowable geogrid tensile strength (Tallow) given by Eq. 1 divided by a factor of safety.
+         </s>
+         <s pid="54" sid="2">
+          If the geogrid is uniformly spaced then the required number of geogrid layers, n, is given by Eq. 12 (Koemer 1997),
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="55" sid="1">
+          (12)
+         </s>
+        </p>
+        <p>
+         <s pid="56" sid="1">
+          where H is the slope height and Sv is the geogrid spacing defined by Eq. 11.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="57" sid="1">
+          Figure 2. Required Strength of Uniformly Distributed Reinforcement in Slopes; Design Charts for: a) ru = 0, b) ru = 0.25, and c) ru = 0.50 [Michalowski 1997]
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="58" sid="1">
+          Figure 3. Reinforcement Lengths, Overall (Pullout and Rupture) Failure; Design Charts for Six Layers with Uniform Spacing: a) ru = 0, b) ru = 0.25, and c) ru = 0.50 [Michalowski 1997]
+         </s>
+        </p>
+        <p>
+         <s pid="59" sid="1">
+          Fig. 3 and 4 are used to find the minimum required length of geogrid.
+         </s>
+         <s pid="59" sid="2">
+          Fig. 3 is generated from the limit analysis log-spiral assumed failure surface for overall stability; whereas, Fig. 4 is used to find the required length of geogrid based on a direct sliding mechanism.
+         </s>
+         <s pid="59" sid="3">
+          From Figs. 3 and 4 the geogrid reinforcement length to slope height ratio is determined L/H is determined, and the greater of the two ratios should be multiplied by the slope height to give the required constant length for reinforcement throughout the constructed slope.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="60" sid="1">
+          Figure 4. Reinforcement Length for Slopes, Direct Sliding; Design Charts for Six Layers with Uniform Spacing: a) ru = 0, b) ru = 0.25, and c) ru = 0.50 [Michalowski 1997]
+         </s>
+        </p>
+        <p>
+         <s pid="61" sid="1">
+          As pore water pressure can significantly affect the design of most geotechnical projects, design charts are given as for different pore water pressure coefficients.
+         </s>
+         <s pid="61" sid="2">
+          According to Michalowski (1997) the pore pressure coefficient is given by the following equation,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="62" sid="1">
+          (13)
+         </s>
+        </p>
+        <p>
+         <s pid="63" sid="1">
+          where u is the pore water pressure,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is the unit weight of the soil, z is the depth below the top of the of the slope. While the development of design charts for geogrid reinforcement is very complex, use of the design charts is relatively simple. Moreover, the tensile strength actually utilized in the design of reinforced slopes and retaining walls is substantially less than the ultimate tensile strength (i.e.
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        ) of the geogrid due to degradation addressed by Eq. 1 and an additional factor of safety. Typically, uniaxial geogrids are used for these slope stability applications because the principal direction of stress is known, and uniaxial geogrids are designed to have greater ultimate tensile strengths.
+        <p>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Overview of the Design of Geogrid Reinforced Foundations
+       </div>
+       <p>
+        <s pid="65" sid="1">
+         Shallow foundations constructed on geogrid-reinforced soil are typically referred to as geogridreinforced foundations (GRF).
+        </s>
+        <s pid="65" sid="2">
+         In general, GRF are significantly less expensive than constructing deep foundations.
+        </s>
+        <s pid="65" sid="3">
+         Design guidelines for GRF have been formulated based on the results of both laboratory and field scale load tests.
+        </s>
+        <s pid="65" sid="4">
+         Field scale load tests can be While deep foundation bypass unsuitable near surface soils, GRF improve the unsuitable soils such that shallow foundation can be built.
+        </s>
+        <s pid="65" sid="5">
+         The improvement in bearing capacity of a GRF is referred to in most literature as the bearing capacity ratio (BCR) (Wayne et al 1998).
+        </s>
+        <s pid="65" sid="6">
+         The bearing capacity ratio is defined as,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="66" sid="1">
+         (14)
+        </s>
+       </p>
+       <p>
+        <s pid="67" sid="1">
+         where qULT(Reinforced) is the ultimate bearing capacity of the GRF and qULT(Unreinforced) is the ultimate bearing capacity of the unreinforced soil.
+        </s>
+        <s pid="67" sid="2">
+         The BCR allows geotechnical engineers to quantify the improvement provided by a GFR.
+        </s>
+        <s pid="67" sid="3">
+         However, bearing capacity failures are more complex in GRF.
+        </s>
+        <s pid="67" sid="4">
+         Wayne et al (1998) describe four failure modes that have been observed with GFR: shallow bearing capacity failure above topmost reinforcement (a), failure between reinforcement layer (b), deep punching failure (c), and punching shear through the reinforced zone, and punching shear along the reinforced zone (d).
+        </s>
+        <s pid="67" sid="5">
+         Figure 5 is reproduced from Wayne et al (1998) to illustrate these failure modes.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="68" sid="1">
+         Figure 5. Possible Failure Modes in Geogrid-Reinforced Foundations
+        </s>
+        <s pid="68" sid="2">
+         [Wayne et al 1998]
+        </s>
+       </p>
+       <p>
+        <s pid="69" sid="1">
+         GFR have different variables used to represent the configuration of the geogrid.
+        </s>
+        <s pid="69" sid="2">
+         The following variables are used in the design of GRF: u represents the distance from the bottom of the footing to the uppermost reinforcement layer, s represent the spacing between geogrid layers, z is the depth of the reinforced soil zone, b is the width of the reinforcement, a is the distance from the lowest geogrid to the bottom of the reinforced fill,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       is the length of geogrid extended beyond the end of each strip footing,
+       <i>
+        N
+       </i>
+       is the number of geogrid layer, and B is the width of the footing. Wayne et al (1998) conducted an extensive review of GRF literature and have developed commercially available software, Dimension Solution Software, for the Tensar International Corporation. This software is currently available for cost of $49 (Tensar 2007). However, the typical design parameters listed in Table 4 can be used to design a geogrid reinforced foundation with a bearing capacity ratio in the range of 1.5 to 2.5 for typical stip footings ranging from 0.6 to 1.0 meter wide and for square footings ranging from 1.5 to 1.8 meters.
+       <p>
+       </p>
+       <p>
+        <s pid="71" sid="1">
+         Table 4. Typical Values for Geogrid Layout in GRF [Wayne et al 1998]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="72" sid="1">
+         Although only typical design guidelines have been presented, these rules of thumb allow the geotechnical design engineers to get an initial check on the feasibility of geogrid reinforced foundations.
+        </s>
+        <s pid="72" sid="2">
+         Thus, if the expected design loads are less than three times the unreinforced ultimate bearing capacity, a GRF be an economical alternative design to either deep foundation piles or intermediate foundation geopiers.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Hypothetical Scenario
+      </div>
+      <p>
+       <s pid="73" sid="1">
+        The University of Michigan has decided to develop some of its wilderness area in northeast Ann Arbor.
+       </s>
+       <s pid="73" sid="2">
+        The proposed development will consist of an unpaved parking lot to accommodate additional parking and for the Northeast Medical Center just to the east of Earhart Road.
+       </s>
+       <s pid="73" sid="3">
+        Additionally, the University plans to store other heavy duty salt trucks and other maintenance vehicles in this unpaved parking lot.
+       </s>
+       <s pid="73" sid="4">
+        The preliminary geotechnical investigation revealed that the in-situ soils had an average CBR of 1.5 percent across the 100m by 100m project site.
+       </s>
+       <s pid="73" sid="5">
+        Preliminary calculations showed that the soil had insufficient bearing capacity compared to the design wheel loads.
+       </s>
+       <s pid="73" sid="6">
+        Tensar BX1100 geogrid was evaluated using the Giroud-Han design equation.
+       </s>
+       <s pid="73" sid="7">
+        Hand calculations and design assumptions are listed on page 18 in Appendix A. Nine iterations were required to converge to a solution of 0.304 meters based on assuming the minimum required base course of 0.1 meters.
+       </s>
+       <s pid="73" sid="8">
+        A Microsoft Excel Spreadsheet, shown on page 19 in Appendix A, was used to simply the iterative approach.
+       </s>
+       <s pid="73" sid="9">
+        Furthermore, Tensar's Spectra
+       </s>
+       <s pid="73" sid="10">
+        Pave3 software was used to check the results (Tensar 2007).
+       </s>
+       <s pid="73" sid="11">
+        It is interesting to note that the default BX1100 in SpectraPave3 returned a value of .281meters; whereas, when I used the same properties as a BX1100 geogrid a "Other Geogrid" SpectraPave3 returned a value of 0.310 meters.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusion
+      </div>
+      <p>
+       <s pid="74" sid="1">
+        The development of Tensar geogrid design procedures for paved and unpaved roads, for slopes and retaining walls, and for shallow foundations allows geotechnical engineers to design more innovative and cost effective project solutions.
+       </s>
+       <s pid="74" sid="2">
+        While the Giroud-Han design equation was specifically designed for unpaved roads, a majority of the same reinforcement mechanism are at work in a paved road.
+       </s>
+       <s pid="74" sid="3">
+        Moreover, asphalt pavement design methods can also be improved with the addition of geogrid.
+       </s>
+       <s pid="74" sid="4">
+        One of the main advantages of geogrid reinforced soils is the simplicity of construction and the immediate improvement.
+       </s>
+       <s pid="74" sid="5">
+        However, geogrid reinforced soil, specifically for foundation applications may only be constructible and cost effective in the case of moderate loads that would normally require deep or intermediate foundations.
+       </s>
+       <s pid="74" sid="6">
+        Nevertheless, geogrid reinforced soils are a proven soil improvement solutions for many project sites.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N1026C">
+       <li id="N1026D">
+        Adams, A. T. and J. G. Collins., 1997. Large Model Spread Footing Load Tests on Geosynthetic Reinforced Soil Foundations. Journal of Geotechnical and Geoenvironmental Engineering 123 (1), 66-72.
+       </li>
+       <li id="N1026F">
+        Burmister, D. M., 1958. Evaluation of Pavement Systems of the WASHO Road Test by Layered Systems Method. Bulletin 177, Highway Research Board, 26-54. {as cited in Giroud and Han 2004} Unable to verify reference.
+       </li>
+       <li id="N10271">
+        Contech Construction Products Inc., 2007. http://www.contech-cpi.com
+       </li>
+       <li id="N10273">
+        Contech Construction Products Inc., 2006. SPECTRA_BRO_7.06 Available at &lt; http://www.contechcpi.com/media/assets/asset/file_name/1102/SPECTRA_BRO_7.06.pdf&gt;, West Chester, Ohio.
+       </li>
+       <li id="N10275">
+        Koerner, R. M., B. Hwu, and M. H. Wayne., 1987. Soft Soil Stabilization Designs Using Geosynthetics. Geotextiles and Geomembranes. 6, 33-51.
+       </li>
+       <li id="N10277">
+        Koerner, R. M., 1997. Designing With Geosynthetics,4th Ed., Prentice Hall, Upper Saddle River, NJ.
+       </li>
+       <li id="N10279">
+        Kumar, A. and S. Saran., 2003. Closely Spaced Footings on Geogrid-Reinforced Sand. Journal of Geotechnical and Geoenvironmental Engineering. 129 (7), 660-664.
+       </li>
+       <li id="N1027B">
+        Fluet, J. E., 1988. Geosynthetics for Soil Improvement: A General Report and Keynote Address. Geosynthetics for Soil Improvement: Geotechnical Special Publication No. 18. Ed. R. D. Holtz., American Society of Civil Engineers, New York, NY.
+       </li>
+       <li id="N1027D">
+        Giroud, J.P. and J. Han., 2004. Design Method for Geogrid-Reinforced Unpaved Roads. I. Development of Design Method. Journal of Geotechnical and Geoenvironmental Engineering 130 (8), 775-786.
+       </li>
+       <li id="N1027F">
+        ---., 2004. Design Method for Geogrid-Reinforced Unpaved Roads. II. Calibration and Applications. Journal of Geotechnical and Geoenvironmental Engineering 130 (8), 787-797.
+       </li>
+       <li id="N10281">
+        Giroud, J.P., C. Ah-Line, and R. Bonaparte., 1985. Design of Unpaved Roads and Trafficked Areas with Geogrids. Polymer Grid Reinforcement, Thomas Telford Limited, London, 116-127. {as cited in Giroud and Han 2004} Unable to verify reference.
+       </li>
+       <li id="N10283">
+        Giroud, J. P. and L. Noiray., 1981. Geotextile-reinforced unpaved road design. Journal of Geotechnical Engineering 107 (9),1233-1254. {as cited in Giroud and Han 2004} Unable to verify reference.
+       </li>
+       <li id="N10285">
+        Hammitt, G. M. 1970., Thickness Requirement for Unsurfaced Roads and Airfields, Bare Base Support, Project 3782-65. Technical Rep. S-70-5, U.S. Army Engineer Waterways Experiment Station, CE, Vicksburg, Mississippi. {as cited in Giroud and Han 2004} Unable to verify reference.
+       </li>
+       <li id="N10287">
+        Heukelom, W. and A. J. G. Klomp., 1962. Dynamic Testing As a Means of Controlling Pavements During and After Construction. Proc., 1st Int. Conf. on Structural Design of Asphalt Pavements, University of Michigan, 667-679. {as cited in Giroud and Han 2004} Unable to verify reference.
+       </li>
+       <li id="N10289">
+        Jewell, R. A., 1991. Application of Revised Design Charts for Steep Reinforced Slopes. Journal of Geotextiles and Geomembranes. 3 (1), 203-233. {as cited in Koerner 1997} Unable to verify reference.
+       </li>
+       <li id="N1028B">
+        Michalowski, R. L., 1997. Stability of Uniformly Reinforced Slopes. Journal of Geotechnical and Geoenvironmental Engineering 123 (6), 546-556.
+       </li>
+       <li id="N1028D">
+        Perkins, S. W., 1999. Geosynthetic Reinforcement of Flexible Pavements: Laboratory Based Pavement Test Section. Final Rep., FHWA/MT-99-001/8138, pg 140. {as cited in Giroud and Han 2004} Unable to verify reference.
+       </li>
+       <li id="N1028F">
+        Priest, D. J. and L. E. Stahl., 2007. Tensar Geogrid Lunch Seminar at FMSM Engineers Inc. on February 12, 2007. Contech Construction Products Inc., Sharonville, Ohio.
+       </li>
+       <li id="N10291">
+        Sarsby, R. W., 1985. The Influence of Aperture Size/Particle Size on the Efficiency of Geogrid Reinforcement. Proc 2nd Canadian Symp. Geotextiles and Geomembranes. The Geotechnical Society of Edmonton, Edmonton, Canada. {as cited in Koerner 1997} Unable to verify reference.
+       </li>
+       <li id="N10293">
+        Schmertmann, G. R., V. E. Chourey-Curtis, R. D. Johnson, and R. Bonaparte., 1987. Design Charts for Geogrid-Reinforced Soil Slopes. Proc. Geosynthetics '87, St. Paul, MN: IFAI, pp. 108-120. {as cited in Koerner 1997} Unable to verify reference.
+       </li>
+       <li id="N10295">
+        Tensar International Corporation., 2007. &lt;http://www.tensarcorp.com&gt;, Atlanta, GA.
+       </li>
+       <li id="N10297">
+        Tensar International Corporation., 2007. SPECTRA_MPDS_BX_10.07, Available at: &lt; http://www.tensarcorp.com/uploadedFiles/SPECTRA_MPDS_BX_10.07.pdf&gt;, Atlanta, GA.
+       </li>
+       <li id="N10299">
+        Tensar International Corporation., 2007. SpectraPave3: Software for Subgrade Improvement and Base Course Reinforcement Version 1.0, Atlanta, GA.
+       </li>
+       <li id="N1029B">
+        Tensar International Corporation., 2007. SPECTRA_CS_RDETROIT_6.07. Available at &lt;http://www.tensarcorp.com/uploadedFiles/SPECTRA_CS_RDETROIT_6.07.pdf&gt; Atlanta, GA.
+       </li>
+       <li id="N1029D">
+        Tensar International Corporation., 2004. SPECTRA_SLIDERULE_12.04, Atlanta, GA.
+       </li>
+       <li id="N1029F">
+        Tensar International Corporation., 1996. Dimension System Saves Developer over $1,000,000. Geotalk Online Issue 6-1 Available at: &lt;http://www.tensarcorp.com/body_page3.asp?geotalkFolder=6_1&amp;geoTalkID=85&amp;isLinkModule=1&amp;contID=378&gt;, Atlanta, GA.
+       </li>
+       <li id="N102A1">
+        Tensar International Corporation., 1999. Sierra Slope in Indiana Provides Green Alternative. Geotalk Online Issue 10-1. Available at: &lt;http://www.tensarcorp.com/body_page.asp?geotalkFolder=10_1&amp;geoTalkID=78&amp;isLinkModule=1&amp;contID=342&gt;, Atlanta, GA.
+       </li>
+       <li id="N102A3">
+        Wayne, M. H., J. Han, and K. Akins., 1998. The Design of Geosynthetic Reinforced Foundations. Geotechnical Special Publication No. 76. American Society of Civil Engineers, New York, NY.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

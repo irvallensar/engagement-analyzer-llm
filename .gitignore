@@ -1,0 +1,51 @@
+# 1. Model Weights & SpaCy Training Outputs (Massive files)
+models/
+*.safetensors
+*.bin
+*.pt
+*.msgpack
+*.whl
+*_model/
+*_final/
+*_optimized/
+*_backup/
+adapters/
+adapters_run*/
+Qwen2.5-32B-bf16/
+
+# 2. Datasets & Corpora
+data/*.spacy
+data/*.jsonl
+data/*.csv
+data/*.txt
+data/*.iob
+data/5_fold_exp/
+*.jsonl
+gold_texts.txt
+
+# 3. Virtual Environments
+venv/
+eguchi_env/
+eguchi-env/
+env/
+.env
+
+# 4. Training Logs & Results
+*.log
+*_log.txt
+training_log*.txt
+nohup.out
+logs/*.json
+logs/*.csv
+*_results.txt
+threshold_tuning.txt
+
+# 5. Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# 6. OS & System Files
+.DS_Store
+Thumbs.db
+engagement-analyzer-demo/

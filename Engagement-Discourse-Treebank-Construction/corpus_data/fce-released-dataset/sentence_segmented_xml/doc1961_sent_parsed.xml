@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     37.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       My name is ***. Recently I spent a week's holiday in London.
+       <ns type="MA">
+        <i>
+         read
+        </i>
+       </ns>
+       the advertisement and I found it interesting so I
+       <ns type="SX">
+        <i>
+         though
+        </i>
+       </ns>
+       that it would be nice to
+       <ns type="FV">
+        <i>
+         spent
+        </i>
+       </ns>
+       one of the nights I had in London at your musical show.
+      </p>
+      <p>
+       But I was completely wrong. It was an awful experience. I
+       <ns type="TV">
+        <i>
+         had
+         <ns type="RV">
+          <i>
+           come
+          </i>
+         </ns>
+        </i>
+       </ns>
+       with two friends on the 21st
+       <ns type="MT">
+       </ns>
+       August, and one of the reasons was that we
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       big fans of Danny Brook and we were looking forward to
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           watch
+          </i>
+         </ns>
+        </i>
+       </ns>
+       his show. You can imagine
+       <ns type="MY">
+       </ns>
+       disappointing
+       <ns type="MA">
+       </ns>
+       was to find out that he was replaced by another actor
+       <ns type="MA">
+       </ns>
+       <ns type="MV">
+       </ns>
+       not so popular.
+      </p>
+      <p>
+       We were there at 19:15
+       <ns type="MP">
+       </ns>
+       as the show was starting at 19:30
+       <ns type="MP">
+       </ns>
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         getting
+        </i>
+       </ns>
+       our tickets. We asked for the discounts you
+       <ns type="TV">
+        <i>
+         were
+         <ns type="RV">
+          <i>
+           <ns type="IV">
+            <i>
+             refering
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       your advertisement but
+       <ns type="MT">
+       </ns>
+       the counter
+       <ns type="MA">
+       </ns>
+       told us that they were not available because it was Sunday.
+      </p>
+      <p>
+       That was terrible but we didn't want to
+       <ns type="L">
+        <i>
+         make a big deal of it
+        </i>
+       </ns>
+       so we went inside and
+       <ns type="TV">
+        <i>
+         waiting
+        </i>
+       </ns>
+       . The show started forty-five minutes later. We got really bored waiting.
+      </p>
+      <p>
+       After the show
+       <ns type="TV">
+        <i>
+         had finished
+        </i>
+       </ns>
+       we went for dinner at the theatre restaurant but it was closed because the owner was ill.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         From
+        </i>
+       </ns>
+       all these reasons you can understand how unpleasant our evening
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       was
+       <ns type="MP">
+       </ns>
+       We are asking you to return our money.
+       <ns type="MA">
+        <i>
+         Hope
+        </i>
+       </ns>
+       you'll understand
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My name is ***.
+       </s>
+       <s pid="2" sid="2">
+        Recently I spent a week's holiday in London.
+       </s>
+       <s pid="2" sid="3">
+        read the advertisement and I found it interesting so I though that it would be nice to spent one of the nights I had in London at your musical show.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        But I was completely wrong.
+       </s>
+       <s pid="3" sid="2">
+        It was an awful experience.
+       </s>
+       <s pid="3" sid="3">
+        I had come with two friends on the 21st  August, and one of the reasons was that we were big fans of Danny Brook and we were looking forward to watch his show.
+       </s>
+       <s pid="3" sid="4">
+        You can imagine  disappointing  was to find out that he was replaced by another actor   not so popular.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        We were there at 19:15 as the show was starting at 19:30 for getting our tickets.
+       </s>
+       <s pid="4" sid="2">
+        We asked for the discounts you were refering at your advertisement but  the counter  told us that they were not available because it was Sunday.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        That was terrible but we didn't want to make a big deal of it so we went inside and waiting.
+       </s>
+       <s pid="5" sid="2">
+        The show started forty-five minutes later.
+       </s>
+       <s pid="5" sid="3">
+        We got really bored waiting.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        After the show had finished we went for dinner at the theatre restaurant but it was closed because the owner was ill.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        From all these reasons you can understand how unpleasant our evening.
+       </s>
+       <s pid="7" sid="2">
+        was
+       </s>
+       <s pid="7" sid="3">
+        We are asking you to return our money.
+       </s>
+       <s pid="7" sid="4">
+        Hope you'll understand
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. From the time she was a child she couldn't keep anything
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       herself, she always shared her thoughts with other people
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       She was about sixteen years old when she moved to another city with her family. She went to a new school and she had no friends. She was not very sociable and she could not
+       <ns type="RV">
+        <i>
+         create
+        </i>
+       </ns>
+       relationships very easily.
+       <ns type="RT">
+        <i>
+         By
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       time she became close
+       <ns type="FN">
+        <i>
+         friend
+        </i>
+       </ns>
+       with Kim, who was really strange to
+       <ns type="MD">
+       </ns>
+       other students
+       <ns type="MP">
+        <i>
+         <ns type="UC">
+          <i>
+           and
+          </i>
+         </ns>
+         everybody
+        </i>
+       </ns>
+       disliked her.
+      </p>
+      <p>
+       Pat was wondering why and one day she found out. Kim explained
+       <ns type="MT">
+       </ns>
+       her that she kept
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       distance from the other students because her father was in prison and
+       <ns type="MA">
+       </ns>
+       <ns type="X">
+        <i>
+         didn't want no one
+        </i>
+       </ns>
+       to find out.
+      </p>
+      <p>
+       Pat
+       <ns type="RP">
+        <i>
+         Kept
+        </i>
+       </ns>
+       this a secret for two months but one day
+       <ns type="RV">
+        <i>
+         told
+        </i>
+       </ns>
+       it by accident to a boy
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       her class. In a few days all
+       <ns type="MD">
+       </ns>
+       school
+       <ns type="RV">
+        <i>
+         was familiar with
+        </i>
+       </ns>
+       Kim's story. Kim was
+       <ns type="RJ">
+        terrified
+       </ns>
+       because everyone was making fun
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       her and
+       <ns type="MA">
+       </ns>
+       <ns type="MV">
+       </ns>
+       very angry with Pat.
+      </p>
+      <p>
+       Pat had to make
+       <ns type="MA">
+       </ns>
+       up
+       <ns type="M">
+       </ns>
+       . She had to find a way to make Kim forgive her.
+      </p>
+      <p>
+       She
+       <ns type="TV">
+        <i>
+         had found
+        </i>
+       </ns>
+       the perfect way. She
+       <ns type="TV">
+        <i>
+         stand
+        </i>
+       </ns>
+       up
+       <ns type="RP">
+        <i>
+         infront
+        </i>
+       </ns>
+       of the whole
+       <ns type="RN">
+        <i>
+         classroom
+        </i>
+       </ns>
+       and explained that Kim's
+       <ns type="MP">
+        <i>
+         father
+        </i>
+       </ns>
+       actions didn't
+       <ns type="RV">
+        influence
+       </ns>
+       Kim
+       <ns type="RP">
+        <i>
+         . That
+        </i>
+       </ns>
+       she was a great friend to her and if someone
+       <ns type="RV">
+        <i>
+         owed
+        </i>
+       </ns>
+       to be punished
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       was her. Kim forgave her and all the students
+       <ns type="TV">
+        <i>
+         understand
+        </i>
+       </ns>
+       how wrong they
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       and were very sorry. They
+       <ns type="MV">
+       </ns>
+       all
+       <ns type="FV">
+        <i>
+         got
+        </i>
+       </ns>
+       to know the real Kim
+       <ns type="SX">
+        <i>
+         know
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        From the time she was a child she couldn't keep anything for herself, she always shared her thoughts with other people
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        She was about sixteen years old when she moved to another city with her family.
+       </s>
+       <s pid="2" sid="2">
+        She went to a new school and she had no friends.
+       </s>
+       <s pid="2" sid="3">
+        She was not very sociable and she could not create relationships very easily.
+       </s>
+       <s pid="2" sid="4">
+        By the time she became close friend with Kim, who was really strange to  other students and everybody disliked her.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Pat was wondering why and one day she found out.
+       </s>
+       <s pid="3" sid="2">
+        Kim explained  her that she kept the distance from the other students because her father was in prison and  didn't want no one to find out.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Pat Kept this a secret for two months but one day told it by accident to a boy from her class.
+       </s>
+       <s pid="4" sid="2">
+        In a few days all  school was familiar with Kim's story.
+       </s>
+       <s pid="4" sid="3">
+        Kim was terrified because everyone was making fun on her and   very angry with Pat.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Pat had to make  up .
+       </s>
+       <s pid="5" sid="2">
+        She had to find a way to make Kim forgive her.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        She had found the perfect way.
+       </s>
+       <s pid="6" sid="2">
+        She stand up infront of the whole classroom and explained that Kim's father actions didn't influence Kim.
+       </s>
+       <s pid="6" sid="3">
+        That she was a great friend to her and if someone owed to be punished that was her.
+       </s>
+       <s pid="6" sid="4">
+        Kim forgave her and all the students understand how wrong they were and were very sorry.
+       </s>
+       <s pid="6" sid="5">
+        They  all got to know the real Kim know.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

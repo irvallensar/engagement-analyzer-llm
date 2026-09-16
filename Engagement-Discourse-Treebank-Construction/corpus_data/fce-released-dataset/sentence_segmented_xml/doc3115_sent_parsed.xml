@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs
+       <ns type="UN">
+        <i>
+         Maria
+        </i>
+       </ns>
+       Smith
+       <ns type="RP">
+        <i>
+         :
+        </i>
+       </ns>
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to give you the information that you asked me for.
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         the
+        </i>
+       </ns>
+       group has been booked into the Harris hotel.
+       <ns type="RP">
+        <i>
+         this
+        </i>
+       </ns>
+       hotel is very
+       <ns type="R">
+        <i>
+         good
+        </i>
+       </ns>
+       placed. From there you can get a taxi, catch the
+       <ns type="MN">
+       </ns>
+       <ns type="W">
+        <i>
+         buses seven and eleven
+        </i>
+       </ns>
+       ,
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       both
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       you very close to the conference
+       <ns type="RN">
+        <i>
+         place
+        </i>
+       </ns>
+       , and also you can go by underground to get there.
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         the
+        </i>
+       </ns>
+       conference starts at 5:30 pm and it finishes at
+       <ns type="RP">
+        <i>
+         8:00PM
+        </i>
+       </ns>
+       . Then, after the Conference, there will be a formal party at the group's hotel,
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       starts at 9:00
+       <ns type="RP">
+        <i>
+         PM
+        </i>
+       </ns>
+       and finishes at 12:00
+       <ns type="R">
+        <i>
+         AM
+        </i>
+       </ns>
+       .
+       <ns type="RP">
+        <i>
+         this
+        </i>
+       </ns>
+       party is a formal one, so you should
+       <ns type="MY">
+       </ns>
+       be
+       <ns type="DY">
+        <i>
+         casual
+        </i>
+       </ns>
+       dressed.
+      </p>
+      <p>
+       In this area you
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       visit the central park. It is very beautiful and a very good place to relax. Another place that would be interesting to visit is the old cathedral of the city.
+      </p>
+      <p>
+       I hope
+       <ns type="AGD">
+        <i>
+         these
+        </i>
+       </ns>
+       information
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           could
+          </i>
+         </ns>
+        </i>
+       </ns>
+       be useful for you.
+      </p>
+      <p>
+       Yours
+       <ns type="RP">
+        <i>
+         <ns type="DY">
+          <i>
+           Sincerelly
+          </i>
+         </ns>
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Maria Smith:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writting to give you the information that you asked me for.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        the group has been booked into the Harris hotel.
+       </s>
+       <s pid="3" sid="2">
+        this hotel is very good placed.
+       </s>
+       <s pid="3" sid="3">
+        From there you can get a taxi, catch the  buses seven and eleven, wich both have you very close to the conference place, and also you can go by underground to get there.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        the conference starts at 5:30 pm and it finishes at 8:00PM.
+       </s>
+       <s pid="4" sid="2">
+        Then, after the Conference, there will be a formal party at the group's hotel, wich starts at 9:00 PM and finishes at 12:00 AM.
+       </s>
+       <s pid="4" sid="3">
+        this party is a formal one, so you should  be casual dressed.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In this area you could visit the central park.
+       </s>
+       <s pid="5" sid="2">
+        It is very beautiful and a very good place to relax.
+       </s>
+       <s pid="5" sid="3">
+        Another place that would be interesting to visit is the old cathedral of the city.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope these information could be useful for you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours Sincerelly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Hampton Court Palace
+      </p>
+      <p>
+       Introduction:
+      </p>
+      <p>
+       I have been asked for information on an interesting building to visit. I went to Hampton Court last year, and I think it is a great place to visit.
+      </p>
+      <p>
+       Location:
+      </p>
+      <p>
+       Hampton Court
+       <ns type="RP">
+        <i>
+         palace
+        </i>
+       </ns>
+       is
+       <ns type="DV">
+        <i>
+         localizated
+        </i>
+       </ns>
+       in Hampton Court.
+       <ns type="U">
+        <i>
+         In addition to that,
+        </i>
+       </ns>
+       I think this town is wonderful and it has a magical beauty.
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         transport
+        </i>
+       </ns>
+       :
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         to
+        </i>
+       </ns>
+       get to Hampton Court
+       <ns type="RP">
+        <i>
+         palace
+        </i>
+       </ns>
+       , you need to take a train from Waterloo train station. From there
+       <ns type="MP">
+       </ns>
+       <ns type="W">
+        <i>
+         depart the trains to Hampton Court
+        </i>
+       </ns>
+       . Moreover, I think
+       <ns type="MV">
+       </ns>
+       by train is the best way to get there, because Hampton Court train station is very close to Hampton Court
+       <ns type="RP">
+        <i>
+         palace
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Price:
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         there
+        </i>
+       </ns>
+       is a
+       <ns type="RJ">
+        great
+       </ns>
+       price for children, students, adults and families.
+       <ns type="R">
+        <i>
+         They
+        </i>
+       </ns>
+       are between three and six pounds each.
+      </p>
+      <p>
+       Conclusion:
+      </p>
+      <p>
+       Hampton Court Palace is a building with lots of history and interesting things to see. And also
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       would be an excellent chance for this group of American students to see it.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hampton Court Palace
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Introduction:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I have been asked for information on an interesting building to visit.
+       </s>
+       <s pid="3" sid="2">
+        I went to Hampton Court last year, and I think it is a great place to visit.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Location:
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Hampton Court palace is localizated in Hampton Court.
+       </s>
+       <s pid="5" sid="2">
+        In addition to that, I think this town is wonderful and it has a magical beauty.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        transport:
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        to get to Hampton Court palace, you need to take a train from Waterloo train station.
+       </s>
+       <s pid="7" sid="2">
+        From there depart the trains to Hampton Court.
+       </s>
+       <s pid="7" sid="3">
+        Moreover, I think  by train is the best way to get there, because Hampton Court train station is very close to Hampton Court palace.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Price:
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        there is a great price for children, students, adults and families.
+       </s>
+       <s pid="9" sid="2">
+        They are between three and six pounds each.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Conclusion:
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Hampton Court Palace is a building with lots of history and interesting things to see.
+       </s>
+       <s pid="11" sid="2">
+        And also it would be an excellent chance for this group of American students to see it.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

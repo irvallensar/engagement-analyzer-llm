@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Miss Helen
+      </p>
+      <p>
+       I have just
+       <ns type="S">
+        <i>
+         recived
+        </i>
+       </ns>
+       your letter and I'm very happy
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       it, especially
+       <ns type="S">
+        <i>
+         becouse
+        </i>
+       </ns>
+       the competition was so hard.
+      </p>
+      <p>
+       Being at Camp California was one of
+       <ns type="MD">
+       </ns>
+       dreams of my life and now I can
+       <ns type="FV">
+        <i>
+         <ns type="S">
+          <i>
+           relaized
+          </i>
+         </ns>
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       Firstly, I could
+       <ns type="FV">
+        <i>
+         <ns type="RV">
+          <i>
+           to pass
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="AGQ">
+        <i>
+         this
+        </i>
+       </ns>
+       two weeks during next July only, because, before and after it, I have to
+       <ns type="FV">
+        <i>
+         working
+        </i>
+       </ns>
+       as a waiter here in my town.
+      </p>
+      <p>
+       However, about accommodation, I'd prefer a log cabin,
+       <ns type="S">
+        <i>
+         becouse
+        </i>
+       </ns>
+       it is more
+       <ns type="S">
+        <i>
+         confortable
+        </i>
+       </ns>
+       than
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       tent. All the activities indicated in your letter are great for me but I prefer tennis and surfing, because I'm used to playing tennis
+       <ns type="UT">
+        <i>
+         during
+        </i>
+       </ns>
+       every
+       <ns type="AGN">
+        <i>
+         weekends
+        </i>
+       </ns>
+       and I'm very keen
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       surfing. I'm a good tennis player and a big surfer too.
+      </p>
+      <p>
+       Lastly, I'm interested
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         law's
+        </i>
+       </ns>
+       schools in California
+       <ns type="RP">
+        <i>
+         , they
+        </i>
+       </ns>
+       are very famous here.
+      </p>
+      <p>
+       I would like to know if I will visit at least one of them.
+      </p>
+      <p>
+       I look forward to seeing you soon.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Miss Helen
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just recived your letter and I'm very happy for it, especially becouse the competition was so hard.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Being at Camp California was one of  dreams of my life and now I can relaized it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, I could to pass this two weeks during next July only, because, before and after it, I have to working as a waiter here in my town.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        However, about accommodation, I'd prefer a log cabin, becouse it is more confortable than the tent.
+       </s>
+       <s pid="5" sid="2">
+        All the activities indicated in your letter are great for me but I prefer tennis and surfing, because I'm used to playing tennis during every weekends and I'm very keen to surfing.
+       </s>
+       <s pid="5" sid="3">
+        I'm a good tennis player and a big surfer too.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Lastly, I'm interested about the law's schools in California, they are very famous here.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I would like to know if I will visit at least one of them.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I look forward to seeing you soon.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim
+      </p>
+      <p>
+       This is a
+       <ns type="RJ">
+        precise
+       </ns>
+       letter that I write
+       <ns type="MT">
+       </ns>
+       you now. I'm very happy and lazy at the same time.
+      </p>
+      <p>
+       Last month I visited Tom, another old friend, and he told me
+       <ns type="R">
+        <i>
+         if I had
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         worked
+        </i>
+       </ns>
+       with him
+       <ns type="RT">
+        <i>
+         like
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       musician at the XZY pop concert. "This is extraordinary", I said.
+      </p>
+      <p>
+       Firstly, I was very
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           embaracing
+          </i>
+         </ns>
+        </i>
+       </ns>
+       during the concert, but all the staff were very
+       <ns type="L">
+        <i>
+         kindly
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       me and Tom too. This
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       the most important experience in my life, I knew all the people, in
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       particular the famous singer "Kos". He is funny and
+       <ns type="RP">
+        <i>
+         easy-going
+        </i>
+       </ns>
+       . During the concert, I was near the
+       <unknown>
+       </unknown>
+       and opposite there was "Pipe" the biggest
+       <unknown>
+       </unknown>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the world. It's very difficult describing all
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         emotion
+        </i>
+       </ns>
+       I felt. I can only tell
+       <ns type="MA">
+       </ns>
+       that
+       <ns type="MA">
+       </ns>
+       had been an important experience for me and for my new songs. Excuse me Kim, but I'm so nervous that I
+       <ns type="S">
+        <i>
+         obn't
+        </i>
+       </ns>
+       be able to write
+       <ns type="S">
+        <i>
+         oben
+        </i>
+       </ns>
+       this letter
+       <ns type="UY">
+        <i>
+         yet
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I hope to
+       <ns type="FV">
+        <i>
+         hearing
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you soon
+      </p>
+      <p>
+       Your best friend
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        This is a precise letter that I write  you now.
+       </s>
+       <s pid="2" sid="2">
+        I'm very happy and lazy at the same time.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last month I visited Tom, another old friend, and he told me if I had worked with him like  musician at the XZY pop concert.
+       </s>
+       <s pid="3" sid="2">
+        "This is extraordinary", I said.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, I was very embaracing during the concert, but all the staff were very kindly with me and Tom too.
+       </s>
+       <s pid="4" sid="2">
+        This is the most important experience in my life, I knew all the people, in a particular the famous singer "Kos".
+       </s>
+       <s pid="4" sid="3">
+        He is funny and easy-going.
+       </s>
+       <s pid="4" sid="4">
+        During the concert, I was near the  and opposite there was "Pipe" the biggest  of the world.
+       </s>
+       <s pid="4" sid="5">
+        It's very difficult describing all  emotion I felt.
+       </s>
+       <s pid="4" sid="6">
+        I can only tell  that  had been an important experience for me and for my new songs.
+       </s>
+       <s pid="4" sid="7">
+        Excuse me Kim, but I'm so nervous that I obn't be able to write oben this letter yet.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope to hearing  you soon
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Your best friend
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

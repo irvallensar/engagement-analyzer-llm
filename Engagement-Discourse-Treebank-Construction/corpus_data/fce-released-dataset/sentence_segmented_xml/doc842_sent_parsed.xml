@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     17.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to inform
+       <ns type="M">
+       </ns>
+       some problems we had. I
+       <ns type="RV">
+        <i>
+         want
+        </i>
+       </ns>
+       to the theatre to see "
+       <ns type="RP">
+        <i>
+         over the rainbow
+        </i>
+       </ns>
+       "
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       17th June.
+      </p>
+      <p>
+       First of all, we went to
+       <ns type="MD">
+       </ns>
+       ticket office to get the tickets. I thought we
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       buy discounts tickets
+       <ns type="RT">
+        <i>
+         according to
+        </i>
+       </ns>
+       the advertisement. However, we couldn't
+       <ns type="R">
+        buy them the price
+       </ns>
+       .
+       <ns type="RP">
+        <i>
+         eventually
+        </i>
+       </ns>
+       , we got the tickets,
+       <ns type="RP">
+        <i>
+         Because
+        </i>
+       </ns>
+       we
+       <ns type="TV">
+        <i>
+         would
+         <ns type="RV">
+          <i>
+           like
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to see the musical and Danny Brook.
+       <ns type="R">
+        <i>
+         After
+        </i>
+       </ns>
+       we
+       <ns type="TV">
+        <i>
+         arrive
+        </i>
+       </ns>
+       at the theatre,
+       <ns type="RP">
+        <i>
+         We
+        </i>
+       </ns>
+       were very disappointed
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       different actor
+       <ns type="RV">
+        <i>
+         played
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       the musical that day. In addition,
+       <ns type="RP">
+        <i>
+         It
+        </i>
+       </ns>
+       started
+       <ns type="MT">
+       </ns>
+       20:15. We had to wait over 40
+       <ns type="S">
+        <i>
+         minitues
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       and we couldn't enjoy dinner at
+       <ns type="MD">
+       </ns>
+       theatre restaurant after the show.
+      </p>
+      <p>
+       I think if the musical
+       <ns type="AGV">
+        <i>
+         start
+        </i>
+       </ns>
+       late
+       <ns type="UN">
+        <i>
+         time
+        </i>
+       </ns>
+       , you should
+       <ns type="RV">
+        open
+       </ns>
+       the restaurant
+       <ns type="UT">
+        <i>
+         until
+        </i>
+       </ns>
+       late
+       <ns type="UN">
+        <i>
+         time
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       To tell the truth, we couldn't enjoy our evening. Would it be possible for me to
+       <ns type="RV">
+        back
+       </ns>
+       <ns type="MD">
+       </ns>
+       money for
+       <ns type="MD">
+       </ns>
+       tickets
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I am looking forward to hearing
+       <ns type="MT">
+       </ns>
+       you.
+      </p>
+      <p>
+       Yours faithfully.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writting to inform  some problems we had.
+       </s>
+       <s pid="2" sid="2">
+        I want to the theatre to see "over the rainbow" at 17th June.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, we went to  ticket office to get the tickets.
+       </s>
+       <s pid="3" sid="2">
+        I thought we can buy discounts tickets according to the advertisement.
+       </s>
+       <s pid="3" sid="3">
+        However, we couldn't buy them the price.
+       </s>
+       <s pid="3" sid="4">
+        eventually, we got the tickets, Because we would like to see the musical and Danny Brook.
+       </s>
+       <s pid="3" sid="5">
+        After we arrive at the theatre, We were very disappointed.
+       </s>
+       <s pid="3" sid="6">
+        Because the different actor played  the musical that day.
+       </s>
+       <s pid="3" sid="7">
+        In addition, It started  20:15.
+       </s>
+       <s pid="3" sid="8">
+        We had to wait over 40 minitues.
+       </s>
+       <s pid="3" sid="9">
+        and we couldn't enjoy dinner at  theatre restaurant after the show.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think if the musical start late time, you should open the restaurant until late time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        To tell the truth, we couldn't enjoy our evening.
+       </s>
+       <s pid="5" sid="2">
+        Would it be possible for me to back  money for  tickets.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I am looking forward to hearing  you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      1.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       We had a secret. After we
+       <ns type="TV">
+        <i>
+         finish
+        </i>
+       </ns>
+       school, we usually gathered
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       place. Where do you think
+       <ns type="M">
+       </ns>
+       ?
+      </p>
+      <p>
+       It was ship!! There was
+       <ns type="MD">
+       </ns>
+       beach
+       <ns type="MT">
+       </ns>
+       our town. One day, Freddie found it there.
+       <ns type="RP">
+        <i>
+         it
+        </i>
+       </ns>
+       was old and
+       <ns type="MD">
+       </ns>
+       little
+       <ns type="RJ">
+        <i>
+         broken
+        </i>
+       </ns>
+       . But it was
+       <ns type="MD">
+       </ns>
+       most important place in the world. We always played there and it was
+       <ns type="MD">
+       </ns>
+       adventure for us.
+      </p>
+      <p>
+       One day,
+       <ns type="RP">
+        <i>
+         Suddenly
+        </i>
+       </ns>
+       ,
+       <ns type="MD">
+       </ns>
+       heavy storm came
+       <ns type="MT">
+       </ns>
+       our town. I went to the
+       <ns type="RN">
+        <i>
+         sea
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         see
+        </i>
+       </ns>
+       our ship. My friends had
+       <ns type="RV">
+        <i>
+         come
+        </i>
+       </ns>
+       there, too. We worried about it and we
+       <ns type="IV">
+        <i>
+         tryed
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        pull
+       </ns>
+       it. It seemed to
+       <ns type="FV">
+        <i>
+         sank
+        </i>
+       </ns>
+       into the sea, but
+       <ns type="S">
+        <i>
+         fourtunately
+        </i>
+       </ns>
+       ,
+       <ns type="MD">
+       </ns>
+       storm
+       <ns type="W">
+        <i>
+         went
+         <ns type="MY">
+         </ns>
+         soon
+        </i>
+       </ns>
+       . Our ship
+       <ns type="TV">
+        <i>
+         left
+        </i>
+       </ns>
+       on the beach. And our parents and teachers
+       <ns type="M">
+       </ns>
+       , too
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       Pat
+       <ns type="TV">
+        <i>
+         called
+        </i>
+       </ns>
+       them. Of course we couldn't play there after that.
+      </p>
+      <p>
+       But now
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am thinking about
+       <ns type="W">
+        <i>
+         new secret our place
+        </i>
+       </ns>
+       . Where do you think
+       <ns type="M">
+       </ns>
+       ?
+      </p>
+      <p>
+       It is a secret!!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        We had a secret.
+       </s>
+       <s pid="2" sid="2">
+        After we finish school, we usually gathered the place.
+       </s>
+       <s pid="2" sid="3">
+        Where do you think ?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It was ship!!
+       </s>
+       <s pid="3" sid="2">
+        There was  beach  our town.
+       </s>
+       <s pid="3" sid="3">
+        One day, Freddie found it there.
+       </s>
+       <s pid="3" sid="4">
+        it was old and  little broken.
+       </s>
+       <s pid="3" sid="5">
+        But it was  most important place in the world.
+       </s>
+       <s pid="3" sid="6">
+        We always played there and it was  adventure for us.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        One day, Suddenly,  heavy storm came  our town.
+       </s>
+       <s pid="4" sid="2">
+        I went to the sea to see our ship.
+       </s>
+       <s pid="4" sid="3">
+        My friends had come there, too.
+       </s>
+       <s pid="4" sid="4">
+        We worried about it and we tryed to pull it.
+       </s>
+       <s pid="4" sid="5">
+        It seemed to sank into the sea, but fourtunately,  storm went  soon.
+       </s>
+       <s pid="4" sid="6">
+        Our ship left on the beach.
+       </s>
+       <s pid="4" sid="7">
+        And our parents and teachers , too.
+       </s>
+       <s pid="4" sid="8">
+        Because
+       </s>
+       <s pid="4" sid="9">
+        Pat called them.
+       </s>
+       <s pid="4" sid="10">
+        Of course we couldn't play there after that.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But now, I am thinking about new secret our place.
+       </s>
+       <s pid="5" sid="2">
+        Where do you think ?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        It is a secret!!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

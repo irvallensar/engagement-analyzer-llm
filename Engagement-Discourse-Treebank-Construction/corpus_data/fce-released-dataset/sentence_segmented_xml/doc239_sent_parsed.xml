@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr Robertson,
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       , thank you for your programme. It is very
+       <ns type="RJ">
+        <i>
+         various
+        </i>
+       </ns>
+       and interesting. We all
+       <ns type="RV">
+        <i>
+         enjoy
+        </i>
+       </ns>
+       it. But last week we
+       <ns type="TV">
+        <i>
+         have seen
+        </i>
+       </ns>
+       an advertisement for the London Fashion and Leisure Show. This presentation will show the latest fashions and
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       leisure and sports wear. We would be very
+       <ns type="RJ">
+        <i>
+         interesting
+        </i>
+       </ns>
+       in seeing
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         english
+        </i>
+       </ns>
+       fashion. At this show we could see different new
+       <ns type="M">
+       </ns>
+       <ns type="MP">
+        <i>
+         make up
+        </i>
+       </ns>
+       and hairstyles.
+      </p>
+      <p>
+       The event is a great opportunity because it is on the 14th of March and it is free for students. For
+       <ns type="S">
+        <i>
+         pratical
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       , this show
+       <ns type="AGV">
+        <i>
+         start
+        </i>
+       </ns>
+       at 10.00 and
+       <ns type="AGV">
+        <i>
+         close
+        </i>
+       </ns>
+       at 19.00. It will
+       <ns type="RV">
+        <i>
+         stay
+        </i>
+       </ns>
+       in the Central Exhibition Hall in London. It is not too far and the
+       <ns type="S">
+        <i>
+         openning
+        </i>
+       </ns>
+       hours
+       <ns type="RV">
+        <i>
+         fit
+        </i>
+       </ns>
+       us.
+      </p>
+      <p>
+       About the programme, we suggest
+       <ns type="FV">
+        <i>
+         to see
+        </i>
+       </ns>
+       the show on the Tuesday morning and
+       <ns type="RY">
+        <i>
+         after
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to
+         <ns type="RV">
+          <i>
+           do
+          </i>
+         </ns>
+        </i>
+       </ns>
+       shopping. As far as we are concerned
+       <ns type="MP">
+       </ns>
+       we prefer
+       <ns type="FV">
+        <i>
+         seeing
+        </i>
+       </ns>
+       the Science Museum rather than the National Art Gallery. We also suggest
+       <ns type="FV">
+        <i>
+         to visit
+        </i>
+       </ns>
+       the Science Museum
+       <ns type="SX">
+        <i>
+         or
+        </i>
+       </ns>
+       Wednesday morning and
+       <ns type="MT">
+       </ns>
+       the afternoon, if some
+       <ns type="UD">
+        <i>
+         one
+        </i>
+       </ns>
+       of us
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         intersted
+        </i>
+       </ns>
+       , we could see the National Art Gallery.
+      </p>
+      <p>
+       I hope you won't be too angry
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       this
+       <ns type="DN">
+        <i>
+         changing
+        </i>
+       </ns>
+       but we would all like to go to the show.
+      </p>
+      <p>
+       Waiting for your answer,
+       <ns type="L">
+        receive our greetings.
+       </ns>
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       the class
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr Robertson,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        At first, thank you for your programme.
+       </s>
+       <s pid="2" sid="2">
+        It is very various and interesting.
+       </s>
+       <s pid="2" sid="3">
+        We all enjoy it.
+       </s>
+       <s pid="2" sid="4">
+        But last week we have seen an advertisement for the London Fashion and Leisure Show.
+       </s>
+       <s pid="2" sid="5">
+        This presentation will show the latest fashions and the leisure and sports wear.
+       </s>
+       <s pid="2" sid="6">
+        We would be very interesting in seeing the english fashion.
+       </s>
+       <s pid="2" sid="7">
+        At this show we could see different new  make up and hairstyles.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The event is a great opportunity because it is on the 14th of March and it is free for students.
+       </s>
+       <s pid="3" sid="2">
+        For pratical informations, this show start at 10.00 and close at 19.00.
+       </s>
+       <s pid="3" sid="3">
+        It will stay in the Central Exhibition Hall in London.
+       </s>
+       <s pid="3" sid="4">
+        It is not too far and the openning hours fit us.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        About the programme, we suggest to see the show on the Tuesday morning and after to do shopping.
+       </s>
+       <s pid="4" sid="2">
+        As far as we are concerned we prefer seeing the Science Museum rather than the National Art Gallery.
+       </s>
+       <s pid="4" sid="3">
+        We also suggest to visit the Science Museum or Wednesday morning and  the afternoon, if some one of us is intersted, we could see the National Art Gallery.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope you won't be too angry for this changing but we would all like to go to the show.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Waiting for your answer, receive our greetings.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        For the class
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="DY">
+        <i>
+         General
+        </i>
+       </ns>
+       speaking, homes will change considerably. They will become less dark and more
+       <ns type="S">
+        <i>
+         confortable
+        </i>
+       </ns>
+       than today.  People's homes will
+       <ns type="TV">
+        <i>
+         build
+        </i>
+       </ns>
+       more economically by using natural
+       <ns type="CN">
+        <i>
+         energies
+        </i>
+       </ns>
+       like solar or wind energy.
+       <ns type="AGD">
+        <i>
+         This
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         improvments
+        </i>
+       </ns>
+       will be
+       <ns type="RV">
+        involved
+       </ns>
+       by the lack of petrol and
+       <ns type="DJ">
+        <i>
+         unrecycling
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         energies
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       About the size of
+       <ns type="FN">
+        <i>
+         <ns type="S">
+          <i>
+           hous
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , I think that in cities houses will be more and more
+       <ns type="RJ">
+        <i>
+         little
+        </i>
+       </ns>
+       because of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         over population
+        </i>
+       </ns>
+       . We
+       <ns type="W">
+        <i>
+         also will
+        </i>
+       </ns>
+       see very
+       <ns type="RJ">
+        <i>
+         high
+        </i>
+       </ns>
+       buildings which
+       <ns type="AGV">
+        <i>
+         contains
+        </i>
+       </ns>
+       a lot of narrow flats.
+      </p>
+      <p>
+       <ns type="DY">
+        <i>
+         In opposite
+        </i>
+       </ns>
+       , in the
+       <ns type="FN">
+        <i>
+         suburb
+        </i>
+       </ns>
+       or in the
+       <ns type="RN">
+        <i>
+         land
+        </i>
+       </ns>
+       , more and more rich people will build big houses. Homes like this will be
+       <ns type="TV">
+        <i>
+         build
+        </i>
+       </ns>
+       with the latest technologies and
+       <ns type="MV">
+       </ns>
+       very luxurious.
+      </p>
+      <p>
+       But about
+       <ns type="MD">
+       </ns>
+       differences between
+       <ns type="MD">
+       </ns>
+       <ns type="W">
+        <i>
+         rich's and poor's homes
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       <ns type="MA">
+       </ns>
+       will be the same in the
+       <ns type="S">
+        <i>
+         futur
+        </i>
+       </ns>
+       . New technologies and facilities won't improve the relationship between people. I think that people will be as alone and
+       <ns type="S">
+        <i>
+         julous
+        </i>
+       </ns>
+       as today.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        General speaking, homes will change considerably.
+       </s>
+       <s pid="1" sid="2">
+        They will become less dark and more confortable than today.
+       </s>
+       <s pid="1" sid="3">
+        People's homes will build more economically by using natural energies like solar or wind energy.
+       </s>
+       <s pid="1" sid="4">
+        This improvments will be involved by the lack of petrol and unrecycling energies.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        About the size of hous, I think that in cities houses will be more and more little because of the over population.
+       </s>
+       <s pid="2" sid="2">
+        We also will see very high buildings which contains a lot of narrow flats.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In opposite, in the suburb or in the land, more and more rich people will build big houses.
+       </s>
+       <s pid="3" sid="2">
+        Homes like this will be build with the latest technologies and  very luxurious.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But about  differences between  rich's and poor's homes  will be the same in the futur.
+       </s>
+       <s pid="4" sid="2">
+        New technologies and facilities won't improve the relationship between people.
+       </s>
+       <s pid="4" sid="3">
+        I think that people will be as alone and julous as today.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

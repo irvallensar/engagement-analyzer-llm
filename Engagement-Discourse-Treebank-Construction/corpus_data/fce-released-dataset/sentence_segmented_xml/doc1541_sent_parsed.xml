@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     27.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I am writing to complain about the musical show, which
+       <ns type="R">
+        gave me
+       </ns>
+       a very disappointing evening, while I was staying in London.
+      </p>
+      <p>
+       Firstly, there was a different actor instead of the famous actor
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Danny Brook. That
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       me so disappointed. Secondly, I
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           suppose
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the show
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       start at 19:30, but it started
+       <ns type="S">
+        <i>
+         t
+        </i>
+       </ns>
+       20:15. It caused me
+       <ns type="FV">
+        <i>
+         missed
+        </i>
+       </ns>
+       the train and I went back to the hotel
+       <ns type="M">
+       </ns>
+       nearly
+       <ns type="U">
+        <i>
+         in the
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         mid-night
+        </i>
+       </ns>
+       . Another problem is
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         realised
+        </i>
+       </ns>
+       that
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       discounts were available. However, there wasn't any discount. Additionally, the advertisement said I
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       visit the
+       <ns type="S">
+        <i>
+         threatre
+        </i>
+       </ns>
+       restaurant after the show. When I arrived, it was closed.
+       <ns type="RA">
+        <i>
+         That
+        </i>
+       </ns>
+       is so annoying that everything
+       <ns type="TV">
+        <i>
+         had been
+        </i>
+       </ns>
+       changed without any notice.
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         expected
+        </i>
+       </ns>
+       to receive
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       money back within
+       <ns type="UD">
+        <i>
+         these
+        </i>
+       </ns>
+       two days. Otherwise I
+       <ns type="R">
+        would like
+       </ns>
+       to take
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         other
+        </i>
+       </ns>
+       action.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully,
+      </p>
+      <p>
+       Silvie.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about the musical show, which gave me a very disappointing evening, while I was staying in London.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, there was a different actor instead of the famous actor, Danny Brook.
+       </s>
+       <s pid="3" sid="2">
+        That made me so disappointed.
+       </s>
+       <s pid="3" sid="3">
+        Secondly, I suppose the show will start at 19:30, but it started t 20:15.
+       </s>
+       <s pid="3" sid="4">
+        It caused me missed the train and I went back to the hotel  nearly in the mid-night.
+       </s>
+       <s pid="3" sid="5">
+        Another problem is, I realised that the discounts were available.
+       </s>
+       <s pid="3" sid="6">
+        However, there wasn't any discount.
+       </s>
+       <s pid="3" sid="7">
+        Additionally, the advertisement said I can visit the threatre restaurant after the show.
+       </s>
+       <s pid="3" sid="8">
+        When I arrived, it was closed.
+       </s>
+       <s pid="3" sid="9">
+        That is so annoying that everything had been changed without any notice.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I expected to receive the money back within these two days.
+       </s>
+       <s pid="4" sid="2">
+        Otherwise I would like to take the other action.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Your faithfully,
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Silvie.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping
+       <ns type="S">
+        <i>
+         secrects
+        </i>
+       </ns>
+       . I told Pat everything even my
+       <ns type="S">
+        <i>
+         secrects
+        </i>
+       </ns>
+       when we were still friendly. However, we are not friends anymore because of a
+       <ns type="S">
+        <i>
+         secrect
+        </i>
+       </ns>
+       <ns type="R">
+        in the past
+       </ns>
+       .
+      </p>
+      <p>
+       It
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       a very long time since I was in Year 7. I told Pat that my father and mother were going to
+       <ns type="S">
+        <i>
+         seperate
+        </i>
+       </ns>
+       . I told her because I wanted somebody to share my
+       <ns type="FN">
+        <i>
+         feeling
+        </i>
+       </ns>
+       .
+       <ns type="RP">
+        <i>
+         May be
+        </i>
+       </ns>
+       it was
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       wrong decision to tell her
+       <ns type="RP">
+        <i>
+         , she
+        </i>
+       </ns>
+       began to
+       <ns type="RV">
+        <i>
+         spread
+        </i>
+       </ns>
+       that
+       <ns type="S">
+        <i>
+         secrect
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       everybody
+       <ns type="MP">
+       </ns>
+       including the teachers. They tried to contact
+       <ns type="UT">
+        <i>
+         with
+        </i>
+       </ns>
+       my parents. My parents were very angry when they realised what
+       <ns type="TV">
+        <i>
+         happened
+        </i>
+       </ns>
+       . All my friends were trying to
+       <ns type="FV">
+        <i>
+         kept
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       distance
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       me. That was all because of Pat.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At last
+        </i>
+       </ns>
+       , I decided to go to
+       <ns type="RQ">
+        <i>
+         the other
+        </i>
+       </ns>
+       school and I will not tell any
+       <ns type="S">
+        <i>
+         secrect
+        </i>
+       </ns>
+       to
+       <ns type="RA">
+        <i>
+         the others
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrects.
+       </s>
+       <s pid="1" sid="3">
+        I told Pat everything even my secrects when we were still friendly.
+       </s>
+       <s pid="1" sid="4">
+        However, we are not friends anymore because of a secrect in the past.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It was a very long time since I was in Year 7.
+       </s>
+       <s pid="2" sid="2">
+        I told Pat that my father and mother were going to seperate.
+       </s>
+       <s pid="2" sid="3">
+        I told her because I wanted somebody to share my feeling.
+       </s>
+       <s pid="2" sid="4">
+        May be it was a wrong decision to tell her, she began to spread that secrect to everybody including the teachers.
+       </s>
+       <s pid="2" sid="5">
+        They tried to contact with my parents.
+       </s>
+       <s pid="2" sid="6">
+        My parents were very angry when they realised what happened.
+       </s>
+       <s pid="2" sid="7">
+        All my friends were trying to kept a distance with me.
+       </s>
+       <s pid="2" sid="8">
+        That was all because of Pat.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        At last, I decided to go to the other school and I will not tell any secrect to the others.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

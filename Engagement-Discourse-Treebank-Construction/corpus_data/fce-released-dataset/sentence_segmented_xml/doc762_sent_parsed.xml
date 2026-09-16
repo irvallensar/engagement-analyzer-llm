@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Manager,
+      </p>
+      <p>
+       With this letter I want to
+       <ns type="RV">
+        <i>
+         show
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you some problems I had last week
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your theatre with your show. First of all, I want to introduce myself. I'm Francesco Schein, I'm 18 years old and I went last week to see your musical show "Over the Rainbow". I was very upset because the show had many problems.
+      </p>
+      <p>
+       First the actor was changed and his
+       <ns type="MN">
+       </ns>
+       performance was very poor and disappointing. Then, the show began 45 minutes
+       <ns type="FY">
+        <i>
+         later
+        </i>
+       </ns>
+       , so we had to wait
+       <ns type="MD">
+       </ns>
+       very long
+       <ns type="MN">
+       </ns>
+       . The advertisement said there were discounts available, which were not
+       <ns type="MJ">
+       </ns>
+       .
+       <ns type="RY">
+        <i>
+         At the end
+        </i>
+       </ns>
+       you said
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         will be
+        </i>
+       </ns>
+       a Restaurant, but it was closed, so we couldn't eat anything
+       <ns type="S">
+        <i>
+         untill
+        </i>
+       </ns>
+       we got home.
+      </p>
+      <p>
+       I hope you understand your
+       <ns type="RN">
+        <i>
+         faults
+        </i>
+       </ns>
+       and I'm asking you for
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       money back.
+      </p>
+      <p>
+       Faithfully Yours
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Manager,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        With this letter I want to show  you some problems I had last week in your theatre with your show.
+       </s>
+       <s pid="2" sid="2">
+        First of all, I want to introduce myself.
+       </s>
+       <s pid="2" sid="3">
+        I'm Francesco Schein, I'm 18 years old and I went last week to see your musical show "Over the Rainbow".
+       </s>
+       <s pid="2" sid="4">
+        I was very upset because the show had many problems.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First the actor was changed and his  performance was very poor and disappointing.
+       </s>
+       <s pid="3" sid="2">
+        Then, the show began 45 minutes later, so we had to wait  very long .
+       </s>
+       <s pid="3" sid="3">
+        The advertisement said there were discounts available, which were not .
+       </s>
+       <s pid="3" sid="4">
+        At the end you said it will be a Restaurant, but it was closed, so we couldn't eat anything untill we got home.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I hope you understand your faults and I'm asking you for the money back.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Faithfully Yours
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       I don't know if technology has totally changed my life, because I was born with it and I have learned
+       <ns type="MT">
+       </ns>
+       it since I was a little boy. For example, I was born knowing
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       man has
+       <ns type="RV">
+        <i>
+         stepped
+        </i>
+       </ns>
+       on the moon.
+      </p>
+      <p>
+       There are some machines which have helped in my development, and others which help me to make my life easier. The computer for example makes communication much easier and faster
+       <ns type="SX">
+        <i>
+         then
+        </i>
+       </ns>
+       in
+       <ns type="ID">
+        <i>
+         past time
+        </i>
+       </ns>
+       , when everything was
+       <ns type="TV">
+        <i>
+         send
+        </i>
+       </ns>
+       by
+       <ns type="RJ">
+        <i>
+         common
+        </i>
+       </ns>
+       mail, and it
+       <ns type="RV">
+        <i>
+         took
+        </i>
+       </ns>
+       weeks till it got
+       <ns type="MT">
+       </ns>
+       the right place.
+      </p>
+      <p>
+       There are other machines which are bad for the environment. Many industries throw their contaminated air away, without cleaning it
+       <ns type="RY">
+        <i>
+         before
+        </i>
+       </ns>
+       . Technology has to move further so it can solve problems
+       <ns type="MQ">
+       </ns>
+       as pollution, so we can live better and longer.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I don't know if technology has totally changed my life, because I was born with it and I have learned  it since I was a little boy.
+       </s>
+       <s pid="1" sid="2">
+        For example, I was born knowing the man has stepped on the moon.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        There are some machines which have helped in my development, and others which help me to make my life easier.
+       </s>
+       <s pid="2" sid="2">
+        The computer for example makes communication much easier and faster then in past time, when everything was send by common mail, and it took weeks till it got  the right place.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        There are other machines which are bad for the environment.
+       </s>
+       <s pid="3" sid="2">
+        Many industries throw their contaminated air away, without cleaning it before.
+       </s>
+       <s pid="3" sid="3">
+        Technology has to move further so it can solve problems  as pollution, so we can live better and longer.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

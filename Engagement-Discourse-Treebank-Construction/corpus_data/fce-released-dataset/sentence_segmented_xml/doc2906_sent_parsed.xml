@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       I am writing to reply to your letter and to give answers to your questions.
+      </p>
+      <p>
+       The group has been booked into the Palace Hotel, a five star hotel, which offers many facilities. It is famous for its friendly staff and comfortable rooms. The students can get there
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       the No 35 bus. They must get on the bus from the city centre and get off after five
+       <ns type="RN">
+        <i>
+         stations
+        </i>
+       </ns>
+       at Palace Station. The hotel is opposite the station.
+      </p>
+      <p>
+       At the
+       <ns type="DN">
+        <i>
+         end-of-conference
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       the college, in which the conference will be held, gives a party for all the students.
+       <ns type="AGA">
+        <i>
+         It
+        </i>
+       </ns>
+       will be offered light food, like sandwiches, pommes frites, chips, sweets and different drinks - no alcohol. There will be
+       <ns type="DJ">
+        <i>
+         life
+        </i>
+       </ns>
+       music and the students can dance and enjoy themselves. It would be better to wear casual clothes, because they are more comfortable and are liked by students.
+      </p>
+      <p>
+       On the last day, the students can enjoy a sightseeing tour around the city, which can be arranged if the students want to. The group can also visit the zoo, the opera or stay and relax
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the college's enormous garden and enjoy the
+       <ns type="RN">
+        <i>
+         settings
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Do not hesitate to contact me if you require further information. I am looking forward to seeing you.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to reply to your letter and to give answers to your questions.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The group has been booked into the Palace Hotel, a five star hotel, which offers many facilities.
+       </s>
+       <s pid="3" sid="2">
+        It is famous for its friendly staff and comfortable rooms.
+       </s>
+       <s pid="3" sid="3">
+        The students can get there with the No 35 bus.
+       </s>
+       <s pid="3" sid="4">
+        They must get on the bus from the city centre and get off after five stations at Palace Station.
+       </s>
+       <s pid="3" sid="5">
+        The hotel is opposite the station.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        At the end-of-conference the college, in which the conference will be held, gives a party for all the students.
+       </s>
+       <s pid="4" sid="2">
+        It will be offered light food, like sandwiches, pommes frites, chips, sweets and different drinks - no alcohol.
+       </s>
+       <s pid="4" sid="3">
+        There will be life music and the students can dance and enjoy themselves.
+       </s>
+       <s pid="4" sid="4">
+        It would be better to wear casual clothes, because they are more comfortable and are liked by students.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        On the last day, the students can enjoy a sightseeing tour around the city, which can be arranged if the students want to.
+       </s>
+       <s pid="5" sid="2">
+        The group can also visit the zoo, the opera or stay and relax at the college's enormous garden and enjoy the settings.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Do not hesitate to contact me if you require further information.
+       </s>
+       <s pid="6" sid="2">
+        I am looking forward to seeing you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       To: Group Leader of American students
+      </p>
+      <p>
+       From:
+      </p>
+      <p>
+       Subject: An interesting building to visit
+      </p>
+      <p>
+       Here is information about the Castle in Nyremberg
+      </p>
+      <p>
+       Location: The castle is in the city centre
+       <ns type="RJ">
+        <i>
+         nearby
+        </i>
+       </ns>
+       an enormous church.
+       <ns type="RA">
+        <i>
+         Someone
+        </i>
+       </ns>
+       can get to the city centre
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       the No.456 bus and then
+       <ns type="MV">
+       </ns>
+       on foot to the castle.
+      </p>
+      <p>
+       Service: It is over 100 years old but it is kept in
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       good condition by the local people, who are
+       <ns type="S">
+        <i>
+         proude
+        </i>
+       </ns>
+       of this castle.
+      </p>
+      <p>
+       Activities: At
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       time of the year
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       you will visit Nyremberg,
+       <ns type="W">
+        <i>
+         <ns type="RT">
+          <i>
+           on
+          </i>
+         </ns>
+         the castle are
+         <ns type="TV">
+          <i>
+           taken
+          </i>
+         </ns>
+         place many theatrical plays or concerts
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       View: From the castle you can have a wonderful view of
+       <ns type="RQ">
+        <i>
+         all the
+        </i>
+       </ns>
+       town, especially at night when all the lights are on. It is a different
+       <ns type="S">
+        <i>
+         expirience
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       History: At the castle
+       <ns type="MA">
+       </ns>
+       are always
+       <ns type="MD">
+       </ns>
+       few guides, who will show someone around and tell him about the history of the castle (when it was built, by whom and why), which makes everyone
+       <ns type="S">
+        <i>
+         enthousistic
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       RECOMMENDATION
+      </p>
+      <p>
+       I
+       <ns type="S">
+        <i>
+         recomment
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to visit
+        </i>
+       </ns>
+       this castle, because it is interesting,
+       <ns type="SA">
+        <i>
+         marvelous
+        </i>
+       </ns>
+       and something different. It is the favourite place of all the tourists who visit Nyremberg. Nyremberg is also famous for this castle and the students will have a different
+       <ns type="S">
+        <i>
+         expirience
+        </i>
+       </ns>
+       and a lesson too. By the way
+       <ns type="MP">
+       </ns>
+       you can visit the
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To: Group Leader of American students
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        From:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Subject:
+       </s>
+       <s pid="3" sid="2">
+        An interesting building to visit
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Here is information about the Castle in Nyremberg
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Location:
+       </s>
+       <s pid="5" sid="2">
+        The castle is in the city centre nearby an enormous church.
+       </s>
+       <s pid="5" sid="3">
+        Someone can get to the city centre with the No.456 bus and then  on foot to the castle.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Service:
+       </s>
+       <s pid="6" sid="2">
+        It is over 100 years old but it is kept in a good condition by the local people, who are proude of this castle.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Activities:
+       </s>
+       <s pid="7" sid="2">
+        At this time of the year, you will visit Nyremberg, on the castle are taken place many theatrical plays or concerts.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        View: From the castle you can have a wonderful view of all the town, especially at night when all the lights are on.
+       </s>
+       <s pid="8" sid="2">
+        It is a different expirience.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        History:
+       </s>
+       <s pid="9" sid="2">
+        At the castle  are always  few guides, who will show someone around and tell him about the history of the castle (when it was built, by whom and why), which makes everyone enthousistic.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        RECOMMENDATION
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        I recomment to visit this castle, because it is interesting, marvelous and something different.
+       </s>
+       <s pid="11" sid="2">
+        It is the favourite place of all the tourists who visit Nyremberg.
+       </s>
+       <s pid="11" sid="3">
+        Nyremberg is also famous for this castle and the students will have a different expirience and a lesson too.
+       </s>
+       <s pid="11" sid="4">
+        By the way you can visit the
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     21.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam!
+      </p>
+      <p>
+       I'm a student from St. Petersburg, and I'm
+       <ns type="IV">
+        <i>
+         studing
+        </i>
+       </ns>
+       in a
+       <ns type="RN">
+        <i>
+         theatre
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         acodimy
+        </i>
+       </ns>
+       . My
+       <ns type="S">
+        <i>
+         freind
+        </i>
+       </ns>
+       &amp; came to London for an excursion. We were lucky to get tickets to the ,,Over the rainbow" show in your theatre.
+      </p>
+      <p>
+       Danny Brook is my
+       <ns type="S">
+        <i>
+         favorit
+        </i>
+       </ns>
+       actor &amp; to see him was my dream
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       my childhood! It was a
+       <ns type="S">
+        <i>
+         suprise
+        </i>
+       </ns>
+       when we were told there
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be another actor. Also
+       <ns type="MP">
+       </ns>
+       we expected to get a
+       <ns type="AGN">
+        <i>
+         discounts
+        </i>
+       </ns>
+       as
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       students, but international students cards are not
+       <ns type="RJ">
+        <i>
+         available
+        </i>
+       </ns>
+       in your
+       <ns type="SA">
+        <i>
+         theater
+        </i>
+       </ns>
+       (that is very strange - even your
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       has
+       <ns type="UD">
+        <i>
+         an
+        </i>
+       </ns>
+       information about discounts). Another problem - we were very hungry that evening because the show was
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           postpone
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       45 minutes!
+       <ns type="RP">
+        <i>
+         so
+        </i>
+       </ns>
+       we were late
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       our supper in the hotel and
+       <ns type="MD">
+       </ns>
+       theatre restaurant was also closed without any
+       <ns type="S">
+        <i>
+         risons
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       .
+      </p>
+      <p>
+       In the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       <ns type="AS">
+        <i>
+         it was written
+        </i>
+       </ns>
+       ,,your perfect evening out!" , but it wasn't. And I think,
+       <ns type="AS">
+        <i>
+         I
+         <ns type="IV">
+          <i>
+           prooved
+          </i>
+         </ns>
+         you this
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I'm waiting for your
+       <ns type="S">
+        <i>
+         anser
+        </i>
+       </ns>
+       and hope I can get my money back!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm a student from St. Petersburg, and I'm studing in a theatre acodimy.
+       </s>
+       <s pid="2" sid="2">
+        My freind &amp; came to London for an excursion.
+       </s>
+       <s pid="2" sid="3">
+        We were lucky to get tickets to the ,,Over the rainbow" show in your theatre.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Danny
+       </s>
+       <s pid="3" sid="2">
+        Brook is my favorit actor &amp; to see him was my dream from my childhood!
+       </s>
+       <s pid="3" sid="3">
+        It was a suprise when we were told there will be another actor.
+       </s>
+       <s pid="3" sid="4">
+        Also we expected to get a discounts as a students, but international students cards are not available in your theater (that is very strange - even your advertisment has an information about discounts).
+       </s>
+       <s pid="3" sid="5">
+        Another problem - we were very hungry that evening because the show was postpone  45 minutes!
+       </s>
+       <s pid="3" sid="6">
+        so we were late to our supper in the hotel and  theatre restaurant was also closed without any risons .
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In the advertisment it was written ,,your perfect evening out!" , but it wasn't.
+       </s>
+       <s pid="4" sid="2">
+        And I think, I prooved you this.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I'm waiting for your anser and hope I can get my money back!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed (your) my daily life?
+       <ns type="W">
+        <i>
+         Our days I would call
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       days of great
+       <ns type="S">
+        <i>
+         technologycal
+        </i>
+       </ns>
+       progress. You can find changes everywhere.
+       <ns type="R">
+        Industrial
+        <ns type="S">
+         <i>
+          weel
+         </i>
+        </ns>
+        going faster and faster.
+       </ns>
+      </p>
+      <p>
+       <ns type="MP">
+        <i>
+         Im
+        </i>
+       </ns>
+       dealing with
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       mobile communication - mobile phones and
+       <ns type="RN">
+        papers
+       </ns>
+       . I can see how different firms
+       <ns type="AGV">
+        <i>
+         produces
+        </i>
+       </ns>
+       more &amp; more new mobile
+       <ns type="AGN">
+        <i>
+         phone
+        </i>
+       </ns>
+       . They
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       more
+       <ns type="S">
+        <i>
+         differet
+        </i>
+       </ns>
+       functions and
+       <ns type="AGN">
+        <i>
+         form
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       It is very
+       <ns type="S">
+        <i>
+         intresting
+        </i>
+       </ns>
+       for me
+       <ns type="R">
+        how new works
+       </ns>
+       ,
+       <ns type="SX">
+        <i>
+         there
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         possiblyties
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       My job, I think is a good way to
+       <ns type="RV">
+        <i>
+         become
+        </i>
+       </ns>
+       a
+       <ns type="S">
+        <i>
+         profesion
+        </i>
+       </ns>
+       in the future. And I hope to find a
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       good job in a good company.
+       <ns type="MD">
+        <i>
+         Communication
+        </i>
+       </ns>
+       business is
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very progressive. More and more people
+       <ns type="TV">
+        <i>
+         <ns type="IV">
+          <i>
+           buing
+          </i>
+         </ns>
+        </i>
+       </ns>
+       mobile phones, because
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       very
+       <ns type="DJ">
+        <i>
+         usefull
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        you get a lot of
+        <ns type="S">
+         <i>
+          possiblyties
+         </i>
+        </ns>
+       </ns>
+       like:
+       <ns type="FV">
+        <i>
+         use
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         an
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       ,
+       <ns type="FV">
+        <i>
+         buy
+        </i>
+       </ns>
+       different goods,
+       <ns type="FV">
+        <i>
+         book
+        </i>
+       </ns>
+       tickets,
+       <ns type="R">
+        <ns type="FV">
+         <i>
+          control
+         </i>
+        </ns>
+        your home
+        <ns type="DN">
+         technic
+        </ns>
+       </ns>
+       and many
+       <ns type="S">
+        <i>
+         authers
+        </i>
+       </ns>
+       . Mobile communication is a key to
+       <ns type="S">
+        <i>
+         sucsess
+        </i>
+       </ns>
+       in all professions that we have!
+      </p>
+      <p>
+       And I think that I made
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       right choice
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       profession - it is
+       <ns type="MD">
+       </ns>
+       perfect combination:
+       <ns type="MD">
+       </ns>
+       very
+       <ns type="S">
+        <i>
+         progressiv
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         way
+        </i>
+       </ns>
+       of
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       modern technology, and the most important thing - it is
+       <ns type="DY">
+        <i>
+         extremly
+        </i>
+       </ns>
+       interesting
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       me!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed (your) my daily life?
+       </s>
+       <s pid="1" sid="2">
+        Our days I would call a days of great technologycal progress.
+       </s>
+       <s pid="1" sid="3">
+        You can find changes everywhere.
+       </s>
+       <s pid="1" sid="4">
+        Industrial weel going faster and faster.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Im dealing with a mobile communication - mobile phones and papers.
+       </s>
+       <s pid="2" sid="2">
+        I can see how different firms produces more &amp; more new mobile phone.
+       </s>
+       <s pid="2" sid="3">
+        They got more differet functions and form.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        It is very intresting for me how new works, there possiblyties.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        My job, I think is a good way to become a profesion in the future.
+       </s>
+       <s pid="4" sid="2">
+        And I hope to find a realy good job in a good company.
+       </s>
+       <s pid="4" sid="3">
+        Communication business is a very progressive.
+       </s>
+       <s pid="4" sid="4">
+        More and more people buing mobile phones, because it is very usefull, you get a lot of possiblyties like: use an internet, buy different goods, book tickets, control your home technic and many authers.
+       </s>
+       <s pid="4" sid="5">
+        Mobile communication is a key to sucsess in all professions that we have!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        And I think that I made a right choice in the profession - it is  perfect combination:  very progressiv way of a modern technology, and the most important thing - it is extremly interesting for me!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

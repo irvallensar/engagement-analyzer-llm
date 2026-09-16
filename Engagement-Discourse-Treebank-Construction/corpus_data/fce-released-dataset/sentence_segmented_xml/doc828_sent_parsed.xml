@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam
+      </p>
+      <p>
+       I am writing to complain about the problems
+       <ns type="M">
+       </ns>
+       <ns type="U">
+        <i>
+         were exist
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       musical show.
+      </p>
+      <p>
+       First of all you said that the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       would be Danny Brook but
+       <ns type="RA">
+        <i>
+         there
+        </i>
+       </ns>
+       was not. Another actor took his place.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         After that
+        </i>
+       </ns>
+       , the time that the show
+       <ns type="TV">
+        <i>
+         should start
+        </i>
+       </ns>
+       was 19:30 but it started
+       <ns type="RP">
+        <i>
+         fortyfive
+        </i>
+       </ns>
+       minutes later. People
+       <ns type="UV">
+        <i>
+         have been
+        </i>
+       </ns>
+       started to complain.
+      </p>
+      <p>
+       What about the
+       <ns type="UJ">
+        <i>
+         available
+        </i>
+       </ns>
+       discounts
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       They
+       <ns type="RV">
+        <i>
+         were
+        </i>
+       </ns>
+       not exist.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         Except
+         <ns type="RT">
+          <i>
+           of
+          </i>
+         </ns>
+        </i>
+       </ns>
+       this
+       <ns type="MP">
+       </ns>
+       there
+       <ns type="MV">
+       </ns>
+       more. After the show I went to the theatre restaurant but it was closed
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       because the chef of the restaurant was ill. This is not an excuse.
+      </p>
+      <p>
+       You have to excuse me
+       <ns type="MP">
+       </ns>
+       but this was a very disappointing evening. I would like
+       <ns type="MA">
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         return
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       me my money back.
+      </p>
+      <p>
+       I am very disappointed with you. I did not expect these problems from you. I am waiting
+       <ns type="MV">
+       </ns>
+       your answer as soon as possible.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about the problems  were exist on the musical show.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all you said that the starring would be Danny Brook but there was not.
+       </s>
+       <s pid="3" sid="2">
+        Another actor took his place.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After that, the time that the show should start was 19:30 but it started fortyfive minutes later.
+       </s>
+       <s pid="4" sid="2">
+        People have been started to complain.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        What about the available discounts.
+       </s>
+       <s pid="5" sid="2">
+        They were not exist.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Except of this there  more.
+       </s>
+       <s pid="6" sid="2">
+        After the show I went to the theatre restaurant but it was closed, because the chef of the restaurant was ill.
+       </s>
+       <s pid="6" sid="3">
+        This is not an excuse.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        You have to excuse me but this was a very disappointing evening.
+       </s>
+       <s pid="7" sid="2">
+        I would like  to return to me my money back.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I am very disappointed with you.
+       </s>
+       <s pid="8" sid="2">
+        I did not expect these problems from you.
+       </s>
+       <s pid="8" sid="3">
+        I am waiting  your answer as soon as possible.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. One day Brian,
+       <ns type="W">
+        <i>
+         the best friend of Pat
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       told him a secret.
+       <ns type="M">
+        <i>
+         An
+        </i>
+       </ns>
+       important secret for Brian. He told him
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that he was in love with Jane, a girl in their class. Jane was a very good girl and she liked Brian. Pat told this secret to Beth
+       <ns type="MP">
+       </ns>
+       <ns type="W">
+        <i>
+         the best friend of Jane
+        </i>
+       </ns>
+       . He didn't
+       <ns type="FV">
+        <i>
+         told
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       the secret because he wanted to
+       <ns type="SX">
+        <i>
+         heard
+        </i>
+       </ns>
+       Brian but because he wanted to help him. Brian was very
+       <ns type="RJ">
+        <i>
+         <ns type="DJ">
+          <i>
+           shame
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to ask Jane
+       <ns type="MY">
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       date.
+      </p>
+      <p>
+       So, Beth
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       asked Jane if she
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       in love with Brian and she said that she was.
+      </p>
+      <p>
+       When Pat
+       <ns type="IV">
+        <i>
+         heart
+        </i>
+       </ns>
+       the good news he told
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       Brian to
+       <ns type="FV">
+        <i>
+         asked
+        </i>
+       </ns>
+       her
+       <ns type="MY">
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       date and he knew that she
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         accepted
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Brian
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           <ns type="S">
+            <i>
+             learm
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       what
+       <ns type="RV">
+        <i>
+         was
+        </i>
+       </ns>
+       happened and at first he was angry with Pat but then he thanked him. Jane and Brian were very happy.
+      </p>
+      <p>
+       Brian and Pat had a lot of arguments about this because Pat wasn't very good at keeping secrets.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        One day Brian, the best friend of Pat told him a secret.
+       </s>
+       <s pid="1" sid="4">
+        An important secret for Brian.
+       </s>
+       <s pid="1" sid="5">
+        He told him, that he was in love with Jane, a girl in their class.
+       </s>
+       <s pid="1" sid="6">
+        Jane was a very good girl and she liked Brian.
+       </s>
+       <s pid="1" sid="7">
+        Pat told this secret to Beth the best friend of Jane.
+       </s>
+       <s pid="1" sid="8">
+        He didn't told  the secret because he wanted to heard Brian but because he wanted to help him.
+       </s>
+       <s pid="1" sid="9">
+        Brian was very shame to ask Jane  in  date.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        So, Beth, asked Jane if she is in love with Brian and she said that she was.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        When Pat heart the good news he told to Brian to asked her  in  date and he knew that she will accepted.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Brian learm what was happened and at first he was angry with Pat but then he thanked him.
+       </s>
+       <s pid="4" sid="2">
+        Jane and Brian were very happy.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Brian and Pat had a lot of arguments about this because Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

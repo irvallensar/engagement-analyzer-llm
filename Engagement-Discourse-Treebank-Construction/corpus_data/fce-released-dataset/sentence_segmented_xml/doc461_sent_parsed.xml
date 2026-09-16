@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Clark,
+      </p>
+      <p>
+       I am writing to
+       <ns type="RV">
+        <i>
+         express
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         my
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         enjoyment
+        </i>
+       </ns>
+       that I had at the International Arts Festival
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         next
+        </i>
+       </ns>
+       week.
+      </p>
+      <p>
+       Firstly, I want to say that this festival is really good and I hope it will
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       every year. Furthermore, the
+       <ns type="AS">
+        <i>
+         <ns type="RN">
+          <i>
+           attractions
+          </i>
+         </ns>
+         were beautiful such as shows, exhibitions and concerts
+        </i>
+       </ns>
+       . I liked all the different
+       <ns type="AGN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of atmosphere.
+      </p>
+      <p>
+       Also, for all these attractions, the price was low and
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       is important for
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       big family.
+      </p>
+      <p>
+       Secondly, the plays and movies were marvellous. However, I was disappointed by the number of
+       <ns type="AGA">
+        <i>
+         that
+        </i>
+       </ns>
+       . It
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be great if there were
+       <ns type="UV">
+        <i>
+         would have
+        </i>
+       </ns>
+       more choice
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       next year. I would like to give you a suggestion about the
+       <ns type="RN">
+        <i>
+         space
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the concert rooms. Considering the
+       <ns type="DN">
+        <i>
+         crowded
+        </i>
+       </ns>
+       ,
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       should
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       more rooms. Finally, I
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be interested in
+       <ns type="FV">
+        <i>
+         meet
+        </i>
+       </ns>
+       artists from everywhere in the world not only
+       <ns type="S">
+        <i>
+         Europeen
+        </i>
+       </ns>
+       artists.
+      </p>
+      <p>
+       In conclusion, I had an
+       <ns type="DJ">
+        <i>
+         unforgetable
+        </i>
+       </ns>
+       time. I would like to eat some different kind of
+       <ns type="FN">
+        <i>
+         foods
+        </i>
+       </ns>
+       , if
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       is possible.
+      </p>
+      <p>
+       I am looking forward to hearing from you.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Clark,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to express my enjoyment that I had at the International Arts Festival the next week.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I want to say that this festival is really good and I hope it will have every year.
+       </s>
+       <s pid="3" sid="2">
+        Furthermore, the attractions were beautiful such as shows, exhibitions and concerts.
+       </s>
+       <s pid="3" sid="3">
+        I liked all the different kind of atmosphere.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Also, for all these attractions, the price was low and it is important for the big family.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, the plays and movies were marvellous.
+       </s>
+       <s pid="5" sid="2">
+        However, I was disappointed by the number of that.
+       </s>
+       <s pid="5" sid="3">
+        It will be great if there were would have more choice the next year.
+       </s>
+       <s pid="5" sid="4">
+        I would like to give you a suggestion about the space in the concert rooms.
+       </s>
+       <s pid="5" sid="5">
+        Considering the crowded, it should have more rooms.
+       </s>
+       <s pid="5" sid="6">
+        Finally, I will be interested in meet artists from everywhere in the world not only Europeen artists.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In conclusion, I had an unforgetable time.
+       </s>
+       <s pid="6" sid="2">
+        I would like to eat some different kind of foods, if it is possible.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Your sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Monique,
+      </p>
+      <p>
+       Thank you very much for your letter
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I'm very happy to receive some news
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       you. I'm going to reply
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       your question.
+      </p>
+      <p>
+       <ns type="RY">
+        In fact
+       </ns>
+       , at school we haven't so many rules.
+       <ns type="RY">
+        So
+       </ns>
+       , we aren't allowed to smoke inside -
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       eat in the classroom. We have to wash the board when it's our turn. Of course, we must respect the teacher and do what he says.
+      </p>
+      <p>
+       What about the rules at home? I can't remember, because now I'm 19,
+       <ns type="RY">
+        <i>
+         then
+        </i>
+       </ns>
+       I can do what I want. I know that I had to ask
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       my Mum or Dad
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       going
+       <ns type="MY">
+       </ns>
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       my friend after
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         lessons
+        </i>
+       </ns>
+       . They wanted
+       <ns type="R">
+        <i>
+         that I
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         did
+        </i>
+       </ns>
+       my homework before
+       <ns type="M">
+       </ns>
+       to play. Also, I had to come back
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       home on time
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       was very important for my parents. I
+       <ns type="X">
+        <i>
+         want to change nothing
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I was happy.
+      </p>
+      <p>
+       Anyway, it was a great time when I was a child.
+       <ns type="RA">
+        <i>
+         It's
+        </i>
+       </ns>
+       all for now.
+      </p>
+      <p>
+       See you soon, bye
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Monique,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for your letter, I'm very happy to receive some news about you.
+       </s>
+       <s pid="2" sid="2">
+        I'm going to reply at your question.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In fact, at school we haven't so many rules.
+       </s>
+       <s pid="3" sid="2">
+        So, we aren't allowed to smoke inside - and eat in the classroom.
+       </s>
+       <s pid="3" sid="3">
+        We have to wash the board when it's our turn.
+       </s>
+       <s pid="3" sid="4">
+        Of course, we must respect the teacher and do what he says.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        What about the rules at home?
+       </s>
+       <s pid="4" sid="2">
+        I can't remember, because now I'm 19, then I can do what I want.
+       </s>
+       <s pid="4" sid="3">
+        I know that I had to ask at my Mum or Dad for going  by my friend after the lessons.
+       </s>
+       <s pid="4" sid="4">
+        They wanted that I did my homework before  to play.
+       </s>
+       <s pid="4" sid="5">
+        Also, I had to come back at home on time, it was very important for my parents.
+       </s>
+       <s pid="4" sid="6">
+        I want to change nothing, I was happy.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Anyway, it was a great time when I was a child.
+       </s>
+       <s pid="5" sid="2">
+        It's all for now.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        See you soon, bye
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

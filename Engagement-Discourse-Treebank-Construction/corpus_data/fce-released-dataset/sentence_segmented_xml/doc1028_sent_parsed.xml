@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      31-40
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mister
+      </p>
+      <p>
+       I'm writing to you to complain about the musical show you
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           present
+          </i>
+         </ns>
+        </i>
+       </ns>
+       at the moment: "Over the Rainbow".
+      </p>
+      <p>
+       As my husband is a native and we live in Switzerland, we
+       <ns type="S">
+        <i>
+         apreciate
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         <ns type="RV">
+          <i>
+           to pass
+          </i>
+         </ns>
+        </i>
+       </ns>
+       a week in London every year. We are keen on theatre and musical
+       <ns type="AGN">
+        <i>
+         show
+        </i>
+       </ns>
+       . Your theatre is known to
+       <ns type="RV">
+        <i>
+         present
+        </i>
+       </ns>
+       excellent
+       <ns type="RN">
+        <i>
+         spectacles
+        </i>
+       </ns>
+       . We were never disappointed
+       <ns type="RY">
+        <i>
+         so far
+        </i>
+       </ns>
+       and especially enjoyed "The Drama" you presented last year.
+      </p>
+      <p>
+       Anyway we had a very disappointing evening.
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       , we couldn't get
+       <ns type="RD">
+        <i>
+         any
+        </i>
+       </ns>
+       discount, although you mention it
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       your
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       . And the only tickets left were
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       £20. Then the
+       <ns type="RN">
+        <i>
+         spectacle
+        </i>
+       </ns>
+       began 45 minutes later than
+       <ns type="RV">
+        <i>
+         mentioned
+        </i>
+       </ns>
+       . Last but not least, Danny Brook was replaced by a different actor, whose name I probably forgot because of his poor performance.
+       <ns type="UY">
+        <i>
+         Afterwards we
+        </i>
+       </ns>
+       are used to
+       <ns type="FV">
+        <i>
+         eat
+        </i>
+       </ns>
+       at your restaurant which is not only well known for it's good
+       <ns type="UN">
+        <i>
+         price
+        </i>
+       </ns>
+       value but also for it's original
+       <ns type="RN">
+        <i>
+         decoration
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Therefore I ask you to give
+       <ns type="SX">
+        <i>
+         use
+        </i>
+       </ns>
+       £20 back, because the two tickets were not
+       <ns type="W">
+        <i>
+         more worth
+        </i>
+       </ns>
+       . I'm looking forward to hearing
+       <ns type="W">
+        <i>
+         soon from you
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mister
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to you to complain about the musical show you present at the moment: "Over the Rainbow".
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As my husband is a native and we live in Switzerland, we apreciate to pass a week in London every year.
+       </s>
+       <s pid="3" sid="2">
+        We are keen on theatre and musical show.
+       </s>
+       <s pid="3" sid="3">
+        Your theatre is known to present excellent spectacles.
+       </s>
+       <s pid="3" sid="4">
+        We were never disappointed so far and especially enjoyed "The Drama" you presented last year.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Anyway we had a very disappointing evening.
+       </s>
+       <s pid="4" sid="2">
+        At first, we couldn't get any discount, although you mention it on your advertisment.
+       </s>
+       <s pid="4" sid="3">
+        And the only tickets left were at £20.
+       </s>
+       <s pid="4" sid="4">
+        Then the spectacle began 45 minutes later than mentioned.
+       </s>
+       <s pid="4" sid="5">
+        Last but not least, Danny Brook was replaced by a different actor, whose name I probably forgot because of his poor performance.
+       </s>
+       <s pid="4" sid="6">
+        Afterwards we are used to eat at your restaurant which is not only well known for it's good price value but also for it's original decoration.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Therefore I ask you to give use £20 back, because the two tickets were not more worth.
+       </s>
+       <s pid="5" sid="2">
+        I'm looking forward to hearing soon from you.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't really good at keeping secrets. The following story will prove it. I left the office at six o'clock. I was free as the air. My husband was
+       <ns type="RV">
+        <i>
+         following
+        </i>
+       </ns>
+       a course all
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       week in Berne. The kids were
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       their grandmother, who
+       <ns type="AGV">
+        <i>
+         take
+        </i>
+       </ns>
+       care of them.
+      </p>
+      <p>
+       I drove to Ouchy where I
+       <ns type="RV">
+        <i>
+         took
+        </i>
+       </ns>
+       a drink. It was so hot, I decided to go for a swim in tutry, although I hadn't
+       <ns type="RD">
+        <i>
+         any
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         swimming-clothes
+        </i>
+       </ns>
+       . I knew a good place. I parked the car and
+       <ns type="RV">
+        <i>
+         went
+        </i>
+       </ns>
+       ten
+       <ns type="S">
+        <i>
+         minuts
+        </i>
+       </ns>
+       . As I had
+       <ns type="IV">
+        <i>
+         planed
+        </i>
+       </ns>
+       , the place was deserted. I took my clothes
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       and swam
+       <ns type="MT">
+       </ns>
+       twenty minutes in the lake. Coming back, I noticed that my clothes were missing. I walked back, hoping I wouldn't come
+       <ns type="S">
+        <i>
+         accross
+        </i>
+       </ns>
+       anyone and be able to drive back home. The car was missing too.
+      </p>
+      <p>
+       Unfortunately a police car drove by and the policeman saw me standing there nude. They drove me to their office after having given me
+       <ns type="R">
+        <i>
+         use of their
+        </i>
+       </ns>
+       shirt. There I called Pat who picked me up. I felt so miserable that Pat laughed
+       <ns type="FV">
+        <i>
+         seeing
+        </i>
+       </ns>
+       me. Of course she told everything to my husband. If only Pat could keep secrets!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't really good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        The following story will prove it.
+       </s>
+       <s pid="1" sid="4">
+        I left the office at six o'clock.
+       </s>
+       <s pid="1" sid="5">
+        I was free as the air.
+       </s>
+       <s pid="1" sid="6">
+        My husband was following a course all the week in Berne.
+       </s>
+       <s pid="1" sid="7">
+        The kids were by their grandmother, who take care of them.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I drove to Ouchy where I took a drink.
+       </s>
+       <s pid="2" sid="2">
+        It was so hot, I decided to go for a swim in tutry, although I hadn't any swimming-clothes.
+       </s>
+       <s pid="2" sid="3">
+        I knew a good place.
+       </s>
+       <s pid="2" sid="4">
+        I parked the car and went ten minuts.
+       </s>
+       <s pid="2" sid="5">
+        As I had planed, the place was deserted.
+       </s>
+       <s pid="2" sid="6">
+        I took my clothes of and swam  twenty minutes in the lake.
+       </s>
+       <s pid="2" sid="7">
+        Coming back, I noticed that my clothes were missing.
+       </s>
+       <s pid="2" sid="8">
+        I walked back, hoping I wouldn't come accross anyone and be able to drive back home.
+       </s>
+       <s pid="2" sid="9">
+        The car was missing too.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Unfortunately a police car drove by and the policeman saw me standing there nude.
+       </s>
+       <s pid="3" sid="2">
+        They drove me to their office after having given me use of their shirt.
+       </s>
+       <s pid="3" sid="3">
+        There I called Pat who picked me up.
+       </s>
+       <s pid="3" sid="4">
+        I felt so miserable that Pat laughed seeing me.
+       </s>
+       <s pid="3" sid="5">
+        Of course she told everything to my husband.
+       </s>
+       <s pid="3" sid="6">
+        If only Pat could keep secrets!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

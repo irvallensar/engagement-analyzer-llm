@@ -1,0 +1,1583 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <p>
+      SEISMIC DESIGN FOR TUNNELS AND UNDERGROUND INFRASTRUCTURE
+     </p>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       Safe development of civil engineering infrastructure has widespread impact on many aspects society. The vast majority of civil engineering infrastructure developments improve the general population's quality of life. Tunnels can function either as transportation infrastructure or transmission infrastructure. Tunnel design is a highly specialized area of engineering practice. Moreover, tunnel design presents a sizeable engineering challenge for both geotechnical and structural engineers. Even with an extensive geotechnical site exploration, unexpected conditions may arise. Seismic design of tunnels adds another layer of complexity to the static design procedure.
+      </p>
+      <p>
+       The historic performance of tunnels in California, Japan and Taiwan due to recent earthquakes emphasizes the importance of including seismic design considerations in all tunnels and underground constructed facilities. This paper will summarize the current state-of-the-practice of seismic design for tunnels and other underground structures. While both analytical and numerical methods have been used in seismic design, this paper focuses on analytical closed-form solutions that can be used to provide an order of magnitude estimate for more detailed numerical design. A case study outlining the seismic design for the proposed Alaskan Way Viaduct tunnel in Seattle, Washington highlights practical use of the presented seismic design procedures. As an original contribution, analytical procedures to calculate ovaling of a circular tunnel due to transverse shear waves will be compared to a simple numerical finite element model using ABAQUS.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Tunnels and associated underground facilities represent a critical piece of the overall infrastructure of any developed region.
+       </s>
+       <s pid="1" sid="2">
+        Tunnels can function for either transportation or transmission purposes.
+       </s>
+       <s pid="1" sid="3">
+        Subways, railroad tunnels, and highway tunnels exemplify tunnels whose function is to provide transportation for trains, trams, trucks, and personal vehicles.
+       </s>
+       <s pid="1" sid="4">
+        Sometimes overlooked, water and sewage tunnels, exemplify tunnels whose purpose is to transmit water or liquid waste.
+       </s>
+       <s pid="1" sid="5">
+        For this report, large diameter sewer pipelines greater that 10-feet in diameter are grouped as tunnels.
+       </s>
+       <s pid="1" sid="6">
+        Tunnels are used extensively throughout the world in both seismically active and seismically inactive regions.
+       </s>
+       <s pid="1" sid="7">
+        Overall, tunnels and underground structures have performed moderately well when subjected to earthquakes ground motions.
+       </s>
+       <s pid="1" sid="8">
+        Moreover, tunnels and underground facilities had experienced less structural damage due to earthquake ground motions when compared to surface structures.
+       </s>
+       <s pid="1" sid="9">
+        However, as society becomes more and more dependent on tunnels and underground facilities to perform everyday task, the consequences of failure tend to appreciate an order of magnitude.
+       </s>
+       <s pid="1" sid="10">
+        Some tunnels and large diameter pipelines are designated lifeline structures because they serve critical functions.
+       </s>
+       <s pid="1" sid="11">
+        For example, when one building is damaged in an earthquake only the direct tenants and neighboring structures may be affected.
+       </s>
+       <s pid="1" sid="12">
+        On the other hand, if a critical tunnel is damaged in an earthquake millions of commuters may be isolated from their homes and emergency vehicles may not be able to access injured people on the other side of the damaged tunnel.
+       </s>
+       <s pid="1" sid="13">
+        This paper summarizes the current state-of-the-practice for seismic design of tunnels and other underground structures.
+       </s>
+       <s pid="1" sid="14">
+        Current seismic design procedures for tunnels grew out of both quantative and qualitative observations of tunnel performance in historic earthquakes.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Tunnel design presents a sizeable engineering challenge for both geotechnical and structural engineers.
+       </s>
+       <s pid="2" sid="2">
+        Design for tunnels, and their associated underground facilities, is a highly specialized area of engineering practice.
+       </s>
+       <s pid="2" sid="3">
+        Because of the variable and uncertain engineering properties of geologic materials, tunnel design requires an iterative procedure where initial design assumptions must be reevaluated based observed field conditions throughout construction.
+       </s>
+       <s pid="2" sid="4">
+        Many times geologic conditions will vary substantially along a proposed tunnel corridor.
+       </s>
+       <s pid="2" sid="5">
+        Seismic design of tunnels adds another layer of uncertainty to the design procedure.
+       </s>
+       <s pid="2" sid="6">
+        Seismic uncertainty is typically quantified and designed for by using both a maximum design earthquake (MDE) and an operating design earthquake (ODE).
+       </s>
+       <s pid="2" sid="7">
+        Tunnel deformations modes, due to either design earthquake, can be analyzed using both simple solutions that neglect dynamic soil structure interaction and complex solutions from numerical computer simulations.
+       </s>
+       <s pid="2" sid="8">
+        However, both analytical and numerical approaches need to be validated and analyzed in light of historical performance of tunnels during earthquakes.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Performance of Tunnels during Earthquakes
+      </div>
+      <div>
+       <div class="head_2">
+        Overview of Tunnels
+       </div>
+       <p>
+        <s pid="3" sid="1">
+         Tunnels and underground structures are different than surface structures (i.e. building) due to their long length and complete enclosure in either a soil or rock.
+        </s>
+        <s pid="3" sid="2">
+         For this reason, seismic design for tunnels and underground structures also differs from seismic design for surface structures.
+        </s>
+        <s pid="3" sid="3">
+         Tunnels, like beams, have a length that is much greater than their cross-sectional dimensions.
+        </s>
+        <s pid="3" sid="4">
+         Seismic performance of tunnels tends to vary based on the general type of tunnel.
+        </s>
+        <s pid="3" sid="5">
+         The three general types of tunnels are: bored-or-mined tunnels, cut-and-cover tunnels, and immersed tube tunnels (Powers et al 1996).
+        </s>
+        <s pid="3" sid="6">
+         Bored-or-mined tunnels are typically constructed with large tunnel boring machines (TBM) in order to remove soil or rock and advance the tunnel.
+        </s>
+        <s pid="3" sid="7">
+         Different types of TBM are used based on the underground conditions.
+        </s>
+        <s pid="3" sid="8">
+         Under hard ground conditions, TBM cutterheads must be designed to adequately drill through dense soil and rock.
+        </s>
+        <s pid="3" sid="9">
+         Under saturated soft ground tunneling conditions, either an Earth Pressure Balance TBM (EPBM) or a Slurry TBM are used for tunnel construction.
+        </s>
+        <s pid="3" sid="10">
+         Bored-or-mined tunnels are typically circular because TBM are circular.
+        </s>
+        <s pid="3" sid="11">
+         Moreover, circular boredor-mined tunnels tend to be a more efficient use of material because the circular shape redistributes the soil pressures.
+        </s>
+        <s pid="3" sid="12">
+         Bored-or-mined tunnels are used on projects where the vertical tunnel alignment is too deep for an open cut to be feasible.
+        </s>
+        <s pid="3" sid="13">
+         Additionally, bored-or-mined tunnels are used on projects where the existence of overlying surface structures makes and open cut unfeasible (Hashash et al 2001).
+        </s>
+        <s pid="3" sid="14">
+         Cut-and-cover tunnel structures is an efficient method of constructing relatively shallow tunnels where the existing soil is removed by making an open cut, the tunnels structure is constructed within this cut, and then soil is backfilled on top of the structure.
+        </s>
+        <s pid="3" sid="15">
+         Many subways and highway tunnels use the cut-and-cover tunnel construction method.
+        </s>
+        <s pid="3" sid="16">
+         Cut-and-cover tunnels tend to be rectangular because the tunnel structure is usually built within a nearly vertical open cut that typically utilizes a temporary earth support system, such as a soldier pile and lagging wall.
+        </s>
+        <s pid="3" sid="17">
+         Immersed tube tunnels are the third commonly used tunnel method.
+        </s>
+        <s pid="3" sid="18">
+         Immersed tube tunnels sections are constructed when a tunnel passes through a body of water.
+        </s>
+        <s pid="3" sid="19">
+         The first immersed tube tunnel was constructed for a railway crossing of the Detroit River in 1906 (Liao 1991).
+        </s>
+        <s pid="3" sid="20">
+         Hashash et al (2001) summarizes the immersed tube tunnel construction method stating that, &lt;quote&gt; this method involves constructing sections of the structure in a dry dock, then moving these sections, sinking them into position, and ballasting or anchoring the tube into place.
+        </s>
+        <s pid="3" sid="21">
+         &lt;/quote&gt;
+        </s>
+        <s pid="3" sid="22">
+         Immersed tube tunnels rest on the seafloor with minimal soil cover.
+        </s>
+        <s pid="3" sid="23">
+         Immersed tube tunnels tend to be the most vulnerable type of tunnel due to the lack of soil or rock confinement.
+        </s>
+        <s pid="3" sid="24">
+         Moreover, immersed tube tunnels must be seismically designed to remain watertight after an earthquake.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Seismic Performance
+       </div>
+       <p>
+        <s pid="4" sid="1">
+         Overall, the engineering understanding and methods of how to design earthquake-resistant surface structures (i.e. buildings) is more advanced and refined than how to construct earthquake-resistant tunnels and other underground structures.
+        </s>
+        <s pid="4" sid="2">
+         St. John and Zarah (1987) state that, "Early understanding of how to construct earthquake-resistant structures was based purely on qualitative observation.
+        </s>
+        <s pid="4" sid="3">
+         More recently, measurement and analysis have been used as the basis for development of improved design procedures.
+        </s>
+        <s pid="4" sid="4">
+         A similar developmental process is occurring for underground structures, but the process is far from complete at present."
+        </s>
+        <s pid="4" sid="5">
+         However, more data on the response of underground construction due to earthquakes has advanced the state-of-the-practice since 1987.
+        </s>
+        <s pid="4" sid="6">
+         The work of Hashash et al. (2001) updates the work of St. John and Zarah (1987).
+        </s>
+        <s pid="4" sid="7">
+         For example, Hashash et al. (2001) conducted an extensive literature review of documented studies of earthquake damage to tunnels and underground structures.
+        </s>
+        <s pid="4" sid="8">
+         This literature review consisted of over 400 documented cases taken from published reports published from 1959 to 2000.
+        </s>
+        <s pid="4" sid="9">
+         Hashash et al. cites the following studies: ASCE (1974), JSCE (1998), Duke and Leeds (1959), Stevens (1977), Dowding and Rozen (1978), Owen and Scholl (1981), Sharma and Judd (1991), Power et al. (1998), and Kaneshiro et al. (2000).
+        </s>
+        <s pid="4" sid="10">
+         Hashash et al. (2001) makes ten general observations regarding the performance of tunnels and underground facilities in earthquakes.
+        </s>
+        <s pid="4" sid="11">
+         The ten general observations regarding the performance of underground facilities in earthquakes are:
+        </s>
+       </p>
+       <list>
+        <item>
+         1. Underground structures suffer appreciably less damage than surface structures.
+        </item>
+        <item>
+         2. Reported damage decreases with increasing overburden depth. Deep tunnels seem to be safer than shallow tunnels.
+        </item>
+        <item>
+         3. Underground facilities constructed in soils can be expected to suffer more damage compared to openings constructed in competent rock.
+        </item>
+        <item>
+         4. Lined and grouted tunnels are safer than unlined tunnels in rock. Shaking damage can be reduced by stabilizing the ground around the tunnel and by improving the contact between the lining and the surrounding ground through grouting.
+        </item>
+        <item>
+         5. Tunnels are more stable under a symmetric load.
+        </item>
+        <item>
+         6. Damage may be related to peak ground acceleration and velocity based on the magnitude and epicentral distance of the affecting earthquake.
+        </item>
+        <item>
+         7. Duration of strong-motion shaking during earthquakes is of utmost importance because it may cause fatigue failure and therefore, large deformations
+        </item>
+        <item>
+         8. High frequency motions may explain the local spalling of rock or concrete along planes of weakness. These frequencies, which rapidly attenuate with distance, may be expected mainly at small distances from the causative fault.
+        </item>
+        <item>
+         9. Ground motion may be amplified upon incidence with a tunnel if wavelengths are between one and four times the tunnel diameter.
+        </item>
+        <item>
+         10. Damage at and near tunnel portals may be significant due to slope stability. [Hashash et al. 2001]
+        </item>
+       </list>
+       <p>
+        <s pid="5" sid="1">
+         Some of these general observations are very intuitive, such items 6 and 7.
+        </s>
+        <s pid="5" sid="2">
+         However, it is important to recognize the similarities and differences of earthquake damage to both underground and above ground structures.
+        </s>
+        <s pid="5" sid="3">
+         Moreover, it is important to note that these are general observations and given that, site specific geologic conditions and faulting mechanism for a specific project may or may not follow all of these observed trends.
+        </s>
+        <s pid="5" sid="4">
+         The next sections present brief summaries of the seismic response of tunnels and underground infrastructure.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Bay Area Rapid Transit System (BART) - 1989 Loma Prieta Earthquake
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         The performance of the Bay Area Rapid Transit System (BART) is a modern engineering project success story.
+        </s>
+        <s pid="6" sid="2">
+         BART was one of the first tunnel systems to incorporate seismic design when it was built the late 1960's.
+        </s>
+        <s pid="6" sid="3">
+         Dunn et al. (2001) state that, "BART's survival of the Loma Prieta earthquake is largely attributable to the seismic design criteria developed in the 1960's and applied throughout the system on both elevated and subway structures."
+        </s>
+        <s pid="6" sid="4">
+         BART did not sustain any damage during the 1989 Loma Prieta Earthquake and was able to operate as scheduled the day after the earthquake (Hashash et al. 2001).
+        </s>
+        <s pid="6" sid="5">
+         The BART System includes a Transbay Tube is a steel shell immersed tube structure that carries traffic from San Francisco to Oakland.
+        </s>
+        <s pid="6" sid="6">
+         Joints in the steel were made continuous by welding (Laio 1991).
+        </s>
+        <s pid="6" sid="7">
+         In addition, two special seismic joints were designed on the San Francisco side and one special seismic joint was placed on the Oakland side.
+        </s>
+        <s pid="6" sid="8">
+         These joints were able to accommodate differential movement that occur at the ventilation buildings due to different mass and stiffness parameters than the rest of the immersed tube tunnel (Liao 1991).
+        </s>
+        <s pid="6" sid="9">
+         Earthquake inspections of BART's Oakland seismic joints after the 1989 Loma Prieta Earthquake revealed scratch marks indicating that the joint had moved about one inch during and then back to it original position during the Loma Prieta Earthquake.
+        </s>
+        <s pid="6" sid="10">
+         Thus, BART's 1960's era seismic design procedures were able to withstand one a rare severe earthquake.
+        </s>
+        <s pid="6" sid="11">
+         Nevertheless, engineers in California continue to set high standards for their infrastructure.
+        </s>
+        <s pid="6" sid="12">
+         Because BART is such a critical piece of infrastructure, it has recently reanalyzed and retrofitted based on the current seismic design codes' maximum design earthquake (MDE) (Dunn 2001).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Daikai Subway Station - 1995 Kobe Earthquake
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         The Daikai Subway Station, located in Kobe, Japan, did not perform well in the 1995 Kobe Earthquake (also known as the Hyogoken-Nambu or the Great Hanshin Earthquake).
+        </s>
+        <s pid="7" sid="2">
+         The 1995 Kobe Earthquake (M=6.9) killed more 5,500 people and injured over 26,000 people (UW 2007).
+        </s>
+        <s pid="7" sid="3">
+         Built in 1962 without consideration for earthquake loadings, the Daikai Subway station represents the first modern underground structure to fail during an earthquake.
+        </s>
+        <s pid="7" sid="4">
+         The Daikai Subway was a cutand- cover tunnel structure with a roof slab supported by center reinforced concrete columns.
+        </s>
+        <s pid="7" sid="5">
+         Some of the center columns in the station completely collapsed and the ceiling slab settled about 2.5 meters (Hashash et al. 2001).
+        </s>
+        <s pid="7" sid="6">
+         Less damage occurred at some of the center columns that were designed with greater transverse shear reinforcement.
+        </s>
+        <s pid="7" sid="7">
+         Failure analysis experts also observed and hypothesized that inadequate compaction of the backfill between the cut-and-cover tunnel wall and the construction sheet-pile wall lead to an inability for the structure to fully mobilize passive earth pressures during the earthquake (Hashash et al. 2001).
+        </s>
+        <s pid="7" sid="8">
+         Both Parra-Montesinos et al. (2006) and Huo et al. (2005) performed nonlinear finite element modeling to evaluate the soil-structure interaction of the Daikia Subway during the 1995 Kobe Earthquake.
+        </s>
+        <s pid="7" sid="9">
+         Moreover, both Parra-Montesinos et al.(2006) and Huo et al. (2005) emphasized that design for earthquake-induced displacements should include both the relative stiffness between the underground structure and the degraded surrounding ground; and the frictional characteristics of the interface between the structure and the ground.
+        </s>
+        <s pid="7" sid="10">
+         Thus, analytical methods, which neglect the soil structure interaction, may be limited.
+        </s>
+        <s pid="7" sid="11">
+         Parra-Montesinos et al. (2006) and Huo et al. (2005) recommend that underground structures be designed with adequate ductility.
+        </s>
+        <s pid="7" sid="12">
+         Overall, the 1995 Kobe Earthquake was one of the most devastating earthquakes ever to hit Japan.
+        </s>
+        <s pid="7" sid="13">
+         The earthquakes proximity and rupture propagation with respect to the highly populated Kobe resulted in widespread loss of life and infrastructure destruction (UW 2007).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Los Angeles Metro - 1994 Northridge Earthquake
+       </div>
+       <p>
+        <s pid="8" sid="1">
+         Construction on the Los Angeles County Metropolitan Transportation Authority's heavy rail subway first broke ground in 1982.
+        </s>
+        <s pid="8" sid="2">
+         This subway system was constructed in phases from 1982 to 1998.
+        </s>
+        <s pid="8" sid="3">
+         The L.A. Metro has project has had to overcome construction and operation in areas with hazardous subsurface gas, earthquakes, changing design criteria, and evaporating funding (Monsees and Elioff 1999).
+        </s>
+        <s pid="8" sid="4">
+         The Los Angeles Metro passed its first test during the 1994 Northridge Earthquake (MW 6.7).
+        </s>
+        <s pid="8" sid="5">
+         Seismic design conducted in the 1980 utilized a deterministic seismic hazard analysis to account for a MW 6.7 maximum design earthquake that was expected to create maximum fault displacements of 4.7 feet at the Santa Monica and Hollywood Fault (Monsees and Merritt 1984).
+        </s>
+        <s pid="8" sid="6">
+         Hashash et al. (2001) states that, "While there was damage to water pipelines, highway bridges, and buildings, the earthquake caused no damage to the Metro system."
+        </s>
+        <s pid="8" sid="7">
+         However, seismic studies carried out in 1996 and 1997 found a new active fault, Coyote Pass, in the area east of downtown Los Angeles.
+        </s>
+        <s pid="8" sid="8">
+         The final portions of the L.A. Metro used a new design criteria based on a probabilistic seismic hazard analysis (Monsees and Elioff 1999).
+        </s>
+        <s pid="8" sid="9">
+         Overall, the L.A. Metro shows the importance of incorporating seismic design procedures for underground construction.
+        </s>
+        <s pid="8" sid="10">
+         Moreover, this project also shows the evolution of seismic design criteria over the past thirty years.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Taiwan - 1999 Chi Chi Earthquake
+       </div>
+       <p>
+        <s pid="9" sid="1">
+         The Chi Chi Earthquake (ML 7.3) shook central Taiwan on September 21, 1999.
+        </s>
+        <s pid="9" sid="2">
+         A majority of the damage to tunnels and underground facilities occurred due to slope failures at tunnel portals.
+        </s>
+        <s pid="9" sid="3">
+         Minor cracking and spalling was also observed.
+        </s>
+        <s pid="9" sid="4">
+         Movement on the Chelungpu fault of about 4 meters resulted in the closure of one tunnel.
+        </s>
+        <s pid="9" sid="5">
+         On the other hand, the Taipei subway was located about 100 km from the earthquake source and no damage was reported (Hashash et al. 2001).
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Earthquake Hazard and Seismic Design Procedures
+      </div>
+      <div>
+       <div class="head_2">
+        General
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         Design of tunnels in seismic regions has three main steps.
+        </s>
+        <s pid="10" sid="2">
+         First, as with all seismic design, the seismic environment must be defined through a seismic hazard analysis.
+        </s>
+        <s pid="10" sid="3">
+         Either a deterministic or probabilistic seismic hazard analysis may be performed.
+        </s>
+        <s pid="10" sid="4">
+         However, probabilistic seismic hazard analyses are typically specified on new projects.
+        </s>
+        <s pid="10" sid="5">
+         Both a maximum design earthquake and an operating design earthquake are typically specified to be analyzed in the design of tunnels because tunnels are considered to be critical lifelines.
+        </s>
+        <s pid="10" sid="6">
+         The ground motion parameters are then evaluated.
+        </s>
+        <s pid="10" sid="7">
+         The second main step is to evaluate the ground response to shaking.
+        </s>
+        <s pid="10" sid="8">
+         This involves determining if large displacements will occur due to liquefaction, slope instability, or fault displacement.
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         Assuming small displacements occur, the tunnels should be analyzed for longitudinal extension and compression, longitudinal bending, and racking or Ovaling.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        MDE and ODE
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         After performing a seismic hazard analysis, a design earthquake must be specified.
+        </s>
+        <s pid="12" sid="2">
+         Hashash et al. (2001) notes that current practice is to use two design level earthquakes, a maximum design earthquake (MDE) and an Operating Design Earthquake (ODE) for seismic design of tunnels and underground structures.
+        </s>
+        <s pid="12" sid="3">
+         For a probabilistic seismic hazard analysis, the MDE is used is an event with 3 to 5 percent probability of exceedence during the design lifespan of the facility.
+        </s>
+        <s pid="12" sid="4">
+         The purpose of designing for such an extreme event is to have the tunnel maintain structural stability during and after the MDE.
+        </s>
+        <s pid="12" sid="5">
+         The motivation of using an MDE is to ensure public safety by preventing a catastrophic collapse of a tunnel or underground structure.
+        </s>
+        <s pid="12" sid="6">
+         On the other hand, the ODE is an earthquake that is expected to occur at least once during the structure's design life (Hashash et al. 2001).
+        </s>
+        <s pid="12" sid="7">
+         An ODE is typically taken as an event with a 40 to 50 percent probability of exceedence in a probabilistic seismic hazard analysis.
+        </s>
+        <s pid="12" sid="8">
+         The purpose of designing for an ODE is to have the tunnel to sustain minimal damage so that normal operation is not affected by the ODE.
+        </s>
+        <s pid="12" sid="9">
+         The behavior of the tunnel components should be designed to be within the linear elastic range.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Ground Failure (Large Deformations)
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         Tunnels tend to sustain damage from earthquakes based on either ground failure (large deformations) or ground shaking (small deformations).
+        </s>
+        <s pid="13" sid="2">
+         Examples of ground failure include liquefaction, slope instability, and fault displacement.
+        </s>
+        <s pid="13" sid="3">
+         Tunnels that are situated below the ground water table in loose, liquefiable cohesionless soil deposits are at greatest risk.
+        </s>
+        <s pid="13" sid="4">
+         In the case of liquefaction, increased lateral pressure combined with a loss of passive resistance could cause a tunnel section to float or sink.
+        </s>
+        <s pid="13" sid="5">
+         Lateral displacement of the tunnel could also occur due to lateral spreading during liquefaction.
+        </s>
+        <s pid="13" sid="6">
+         Soil improvement techniques may be used to improve the structural capacity of the soil surrounding the tunnel prior to, during, or after the tunnel is constructed.
+        </s>
+        <s pid="13" sid="7">
+         Slope stability problems can impact a tunnels section if a tunnel intersects the slope failure surface or is contained failed soil mass.
+        </s>
+        <s pid="13" sid="8">
+         The entrance to a tunnel through a mountain or hillside many times occurs at steep slope.
+        </s>
+        <s pid="13" sid="9">
+         Landslide damage was prevalent at tunnel entrances during the 1999 Chi Chi earthquake (Hashash et al. 2001).
+        </s>
+        <s pid="13" sid="10">
+         Fault displacement across a tunnels section is not desirable.
+        </s>
+        <s pid="13" sid="11">
+         All faults need to be identified and designed for appropriately.
+        </s>
+        <s pid="13" sid="12">
+         Tunnels that cross multiple active faults may not be economically feasible.
+        </s>
+        <s pid="13" sid="13">
+         In summary, tunnel projects where large deformation ground failure is expected require special design methods.
+        </s>
+        <s pid="13" sid="14">
+         For example, the L.A. metro project required special design to accommodate an expected maximum fault displacement from the MDE of 4.7 feet at the Santa Monica and Hollywood Fault (Monsees and Merritt 1984).
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         Conversely, small deformation ground shaking can be designed for directly by comparing capacity to demand of the load factor combinations on the tunnel or underground structure.
+        </s>
+        <s pid="14" sid="2">
+         The deformations modes of compression-extension, longitudinal-bending, and Ovaling / racking are commonly analyzed analytically based on the free field deformation assumption.
+        </s>
+        <s pid="14" sid="3">
+         Using some engineering judgment and assumptions, closed-form analytical solutions can be used to analyze common modes of tunnel deformation.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Ground Shaking (Small Deformations)
+       </div>
+       <div>
+        <div class="head_3">
+         Design Loading Criteria for Maximum Design Earthquake (MDE)
+        </div>
+        <p>
+         <s pid="15" sid="1">
+          Seismic design loading criteria for tunnels and underground structures quantifies the effect of ground shaking and deformation due to strong ground motions.
+         </s>
+         <s pid="15" sid="2">
+          As is typical in structural analysis, different load combinations are analyzed using load factors.
+         </s>
+         <s pid="15" sid="3">
+          For cut-and-cover tunnel structures, the required structural strength capacity is determined from the following equation:
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="16" sid="1">
+          (Eq. 1)
+         </s>
+        </p>
+        <p>
+         <s pid="17" sid="1">
+          where U is the required structural capacity, D is dead load of the structure, L is the live loads, E1 is the vertical load due to soil and pore water pressure, E2 is the horizontal load due to soil and pore water pressure, and EQ is the design earthquake load.
+         </s>
+         <s pid="17" sid="2">
+          The load factors to determine the required structural strength capacity for a circular bored-and-mined tunnel are given in the following equation.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="18" sid="1">
+          (Eq. 2)
+         </s>
+        </p>
+        <p>
+         <s pid="19" sid="1">
+          where EX is the static load due to excavation and H is the load due to hydrostatic water pressure.
+         </s>
+         <s pid="19" sid="2">
+          U, D, L, and EQ have the same definition.
+         </s>
+         <s pid="19" sid="3">
+          The EQ term in underground structures is governed by the imposed deformation of the surrounding soil rather than inertial force induced stresses as in surface structures (Hashash et al 2001).
+         </s>
+        </p>
+        <p>
+         <s pid="20" sid="1">
+          Seismic analysis consists of the following steps.
+         </s>
+         <s pid="20" sid="2">
+          First, the tunnels or underground structure is initially designed to have adequate strength under static, gravity loads.
+         </s>
+         <s pid="20" sid="3">
+          Second, the tunnel's allowable deformation should be compared to the maximum deformation imposed by the earthquake.
+         </s>
+         <s pid="20" sid="4">
+          This is also referred to as the tunnel's ductility.
+         </s>
+         <s pid="20" sid="5">
+          Third, the structural capacity is computed by utilizing the load factor design procedure.
+         </s>
+         <s pid="20" sid="6">
+          This is where the EQ in Eq. 1 and 2 comes into play.
+         </s>
+         <s pid="20" sid="7">
+          The internal moments and forces due to the maximum design earthquake (MDE) loading are calculated from the lining deformations of the surrounds soil.
+         </s>
+         <s pid="20" sid="8">
+          If the structural capacity of the tunnel is satisfied based Eq. 1 or Eq. 2, then no further analysis is required when designing for the maximum design earthquake (MDE).
+         </s>
+         <s pid="20" sid="9">
+          However, if the structural capacity or flexural strength is insufficient under MDE ground motions, then further calculations are required.
+         </s>
+         <s pid="20" sid="10">
+          One option is to redesign the tunnel section with greater ductility.
+         </s>
+         <s pid="20" sid="11">
+          Greater ductility will allow the tunnel accommodate the deformations imposed by the MDE.
+         </s>
+         <s pid="20" sid="12">
+          The redesigned tunnel section with greater ductility will generally experience a reduction in earthquake forces.
+         </s>
+         <s pid="20" sid="13">
+          A good rule of thumb is that the reduction (force reduction factor) of the EQ forces is equal to the ductility factor (Hashash et al 2001).
+         </s>
+         <s pid="20" sid="14">
+          An acceptable design satisfies structural capacity expressed in Eq. 1 and 2.
+         </s>
+         <s pid="20" sid="15">
+          An alternative analysis procedure is based on an iterative analysis of plastic hinges which will cause moment redistribution in the tunnel structure.
+         </s>
+         <s pid="20" sid="16">
+          Areas identified as plastic hinges need to be redesigned to accommodate the earthquake imposed forces and deflections.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Design Loading Criteria for Operating Design Earthquake (ODE)
+        </div>
+        <p>
+         <s pid="21" sid="1">
+          To analyze a cut-and-cover tunnel for the ODE, Hashash recommends the following equation,
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="22" sid="1">
+          (Eq. 3)
+         </s>
+        </p>
+        <p>
+         <s pid="23" sid="1">
+          where
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is 1.05 for extreme loads are assumed for E1 and E2 with little uncertainty otherwise
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        for all other loads. For a bored or mined circular tunnel the following equation is recommended,
+        <p>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="25" sid="1">
+          (Eq. 4)
+         </s>
+        </p>
+        <p>
+         <s pid="26" sid="1">
+          where D, L, EX, EQ, and U are the same as before.
+         </s>
+         <s pid="26" sid="2">
+          The load factor
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is typically taken to be equal to 1.05 in the case where extreme loads are used, otherwise use
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        equal to 1.3. The motivation behind reducing the load factors
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        and
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        in the case where extreme loads are assumed is to avoid an ultra-conservative design.
+        <p>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Free Field Deformation Approach
+        </div>
+        <p>
+         <s pid="28" sid="1">
+          The behavior of a tunnel is sometimes approximated as an elastic beam that is subjected to the earthquake ground deformations.
+         </s>
+         <s pid="28" sid="2">
+          Figure 1 depicts common tunnel deformation modes as originally illustrated by Owen and Scholl (1981).
+         </s>
+         <s pid="28" sid="3">
+          Assuming tunnel deformations are equivalent to free field deformations is a common simplifying assumption that is used to analyze compression-extension, longitudinal bending, and ovaling / racking.
+         </s>
+         <s pid="28" sid="4">
+          Free field deformations are the strains that are created in the soil or rock that neglect the deformations.
+         </s>
+         <s pid="28" sid="5">
+          The free field deformations assumption ignores the effect of soilstructure interaction.
+         </s>
+         <s pid="28" sid="6">
+          Hashash et al. (2001) stresses that the free field assumption can provide a first order estimate of the anticipated deformation of the structure.
+         </s>
+         <s pid="28" sid="7">
+          Assuming free field deformations, closed-form elastic solutions have been developed to estimate tunnel strains and deformations.
+         </s>
+         <s pid="28" sid="8">
+          These solutions further assume that the seismic waves are plane constant amplitude waves at all tunnel locations (Hashash et al. 2001).
+         </s>
+         <s pid="28" sid="9">
+          Thus, these methods do not account for the real effects of complex three-dimensional wave propagation.
+         </s>
+         <s pid="28" sid="10">
+          Newmark (1967) proposed a simplified method for calculating free field strains based on a harmonic wave propagating in a homogeneous, isotropic, elastic soil medium.
+         </s>
+         <s pid="28" sid="11">
+          Newmark's approach was applied by Wang (1993) to seismic design of tunnels, and it is shown below as Figure 2.
+         </s>
+         <s pid="28" sid="12">
+          The angle
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is an assumed angle of incidence of the simplified earthquake wave with respect to the axis of the tunnel. The most critical angle of incidence that yields the maximum strain is typically used in design due to the large uncertainties in simplified method (Hashash et al. 2008). St. John and Zahrah (1987) theoretically derived equations for free-field longitudinal strain, normal strain, shear strain, and curvature for P-waves (compression), S-waves (shear), and both the shear and compressional component of Rayleigh waves. These equations are shown on the next two pages as Eq. 5 through Eq. 19. Furthermore, St. John and Zarah (1987) also derived equations for maximum normal and maximum shear stress by treating the tunnel as a linear elastic material (Eq. 20 through Eq. 23).
+        <p>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="30" sid="1">
+          Figure 1. Tunnel Deformation Modes [Hashash et al. 2001 (after Owen and Scholl 1981)]
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="31" sid="1">
+          Figure 2. Simple Harmonic Wave and Tunnel [Hashash et al. 2001 (based on Wang (1993)]
+         </s>
+        </p>
+        <p>
+         <s pid="32" sid="1">
+          Longitudinal Strain
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="33" sid="1">
+          (P-Wave) (Eq. 5)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="34" sid="1">
+          (S-Wave) (Eq. 6)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="35" sid="1">
+          (Eq. 7)
+         </s>
+        </p>
+        <p>
+         <s pid="36" sid="1">
+          Normal Strain
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="37" sid="1">
+          (P-Wave) (Eq. 8)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="38" sid="1">
+          (S-Wave) (Eq. 9)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="39" sid="1">
+          (Rayleigh Wave Compressional Component) (Eq. 10)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="40" sid="1">
+          (Rayleigh Wave Shear Component) (Eq. 11)
+         </s>
+        </p>
+        <p>
+         <s pid="41" sid="1">
+          Shear Strain
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="42" sid="1">
+          (P-Wave) (Eq. 12)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="43" sid="1">
+          (S-Wave) (Eq. 13)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="44" sid="1">
+          (Rayleigh Wave Compressional Component) (Eq. 14)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="45" sid="1">
+          (Rayleigh Wave Shear Component) (Eq. 15)
+         </s>
+        </p>
+        <p>
+         <s pid="46" sid="1">
+          Curvature
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="47" sid="1">
+          (P-Wave) (Eq. 16)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="48" sid="1">
+          (S-Wave) (Eq. 17)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="49" sid="1">
+          (Rayleigh Wave Compressional Component) (Eq. 18)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="50" sid="1">
+          (Rayleigh Wave Shear Component) (Eq. 19)
+         </s>
+        </p>
+        <p>
+         <s pid="51" sid="1">
+          Maximum Normal Stress
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="52" sid="1">
+          (P-Wave for _=45 degrees) (Eq. 20)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="53" sid="1">
+          (S-Wave for _=45 degrees) (Eq. 21)
+         </s>
+        </p>
+        <p>
+         <s pid="54" sid="1">
+          Maximum Shear Stress
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="55" sid="1">
+          (P-Wave for _=0 degrees) (Eq. 22)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="56" sid="1">
+          (S-Wave for _=0 degrees) (Eq. 23)
+         </s>
+        </p>
+        <p>
+         <s pid="57" sid="1">
+          The variables in Eq. 5 through 23 are defined as the following:
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is the angle of incidence, aP is the peak particle acceleration associated with P-Wave, aS is the peak particle acceleration associated with S-Wave, aR is the peak particle acceleration associated with the Rayleigh wave,
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is Poisson's ratio of the tunnel lining material, VP is the peak particle velocity associated with the P-Wave, cP is the apparent velocity of P-Wave propagation, VS is the peak particle velocity of the S-Wave, cS is the apparent velocity of S-Wave propagation, VR is the peak particle velocity associated with the Rayleigh wave, and cR is the apparent velocity of the Rayleigh wave propagation (Hashash et al. 2001). Also, apparent (average) S-wave velocity typically ranges from 2-4 km/s; whereas, typical P-wave velocities range from 4-8 km/s (Power et al. 1996). Note that theoretical development of Eq. 5 through
+        <p>
+        </p>
+        <p>
+         <s pid="59" sid="1">
+          23 is beyond the scope of this paper, and the interested reader is referred to St. John and Zarah (1987).
+         </s>
+        </p>
+        <p>
+         <s pid="60" sid="1">
+          Ovaling deformations develop when an earthquake wave propagates perpendicular to the longitudinal axis of the tunnel.
+         </s>
+         <s pid="60" sid="2">
+          Ovaling deformations can be designed for under twodimensional plane-strain conditions.
+         </s>
+         <s pid="60" sid="3">
+          According to Wang (1993), studies show that vertically propagating shear waves are the predominant form of earthquake loading that causes ovalling deformations.
+         </s>
+         <s pid="60" sid="4">
+          Ground shear distortions can be defined in terms of the non-perforated ground or the perforated ground.
+         </s>
+         <s pid="60" sid="5">
+          Eq. 24 and 25 define the maximum diametric strain (ground distortions) as a function of the maximum free-field shear strain (Hashash et al. 2001).
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="61" sid="1">
+          Figure 3. Ovaling of Circular Tunnel Considering Free-Field Strain [Hashash et al. 2001 (based on Wang (1993)]
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="62" sid="1">
+          (Eq. 24)
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="63" sid="1">
+          (Eq. 25)
+         </s>
+        </p>
+        <p>
+         <s pid="64" sid="1">
+          Eq. 24 and 25 are defined with
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        as the maximum free-field strain,
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is Poissons ratio of the medium,
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        is the diametric deflection, and d is the diameter of the tunnel. Because Eq. 24 and 25 neglect the effect of the tunnel stiffness, they yield greater distortions than a lined tunnel. Thus, they can be used as a conservative design approach to design for ovaling. Rectangular racking will occur when a rectangular cut-and-cover tunnel is subjected to shear distortions. Racking deformations can be computed from the free-field shear strains in Eq. 12 through Eq. 15 (Hashash et al. 2001).
+        <p>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Case Study: Alaskan Way Viaduct Tunnel Option
+      </div>
+      <div>
+       <div class="head_2">
+        Project Background
+       </div>
+       <p>
+        <s pid="66" sid="1">
+         The Alaskan Way Viaduct (AWV) is a 2.1-mile double deck elevated highway structure that carries North-South traffic on Washington State Route 99 through downtown Seattle, Washington along the waterfront.
+        </s>
+        <s pid="66" sid="2">
+         Carrying approximately 110,000 vehicles a day, which is equivalent to about 25 percent of all north-south traffic through Seattle; the AWV is a vital part of the region's transportation infrastructure (Kirandag et al 2007).
+        </s>
+        <s pid="66" sid="3">
+         On February 28, 2001 a magnitude 6.8 subduction zone earthquake, struck the Pacific Northwest.
+        </s>
+        <s pid="66" sid="4">
+         According to the University of Washington Seismology Laboratory, the earthquake had a depth of 52 km and a hypocenter about 17.8 km NE of Olympia, Washington and approximately 56 km SW of Seattle, Washington (NEC 2008).
+        </s>
+        <s pid="66" sid="5">
+         The earthquake's hypocenter was located in the unpopulated Nisqually Wildlife Refuge; consequently, this earthquake is commonly referred to as the Nisqually Earthquake of 2001.
+        </s>
+       </p>
+       <p>
+        <s pid="67" sid="1">
+         The AWV sustained significant structural damage from the Nisqually Earthquake that included spalling concrete, cracking, exposed rebar, weakening column connection, and liquefaction induced settlement (Kirandag et al 2007).
+        </s>
+        <s pid="67" sid="2">
+         Prior to the Nisqually Earthquake, WSDOT had already been working with structural and seismic design experts to evaluate the feasibility of seismically retrofitting the 1952 era cast-in-place reinforced concrete structure (Kirandag et al 2007).
+        </s>
+        <s pid="67" sid="3">
+         Following the Nisqually Earthquake, the AWV was closed for months to revaluate its structural capacity in light of cracking, and moderate liquefaction induced settlement of portions of the foundation system.
+        </s>
+        <s pid="67" sid="4">
+         In order to repair and maintain such an important piece of transportation infrastructure, the
+        </s>
+       </p>
+       <p>
+        <s pid="68" sid="1">
+         Washington State Department of Transportation (WSDOT) performed 3.5 million dollar worth of seismic repairs to the AWV in March of 2001 (WSDOT 2008).
+        </s>
+        <s pid="68" sid="2">
+         Currently the AWV is monitored at least semiannually by WSDOT.
+        </s>
+        <s pid="68" sid="3">
+         These and other ad hoc repairs resulting from the semiannual inspections of the structure to closely monitor cracks, structural movement and foundation integrity have kept the viaduct relatively safe and functional under gravity and normal traffic loads.
+        </s>
+        <s pid="68" sid="4">
+         However, a permanent transportation solution is still needed to replace the battered structure.
+        </s>
+        <s pid="68" sid="5">
+         Due to the anticipated project cost on the order of 2 to 3 billion dollars, the project has become a political hot potato and consensus has not been reached by federal, state and city government officials.
+        </s>
+        <s pid="68" sid="6">
+         The three options currently being discussed are a replacement double deck viaduct structure, attempting to reroute SR 99 onto an expanded surface route through downtown Seattle, or a replacing the viaduct with a cutand cover-tunnel with expanded transportation capacity.
+        </s>
+        <s pid="68" sid="7">
+         The cut and cover tunnel option will also require replacement of an aging Seattle Seawall that stabilizes fill soil placed in the in phases between 1906 and 1934.
+        </s>
+        <s pid="68" sid="8">
+         The stability of the Seattle Seawall was called into question after the part of the surface street, Alaskan Way, settled following the Nisqually Earthquake (Kirandag et al 2007).
+        </s>
+        <s pid="68" sid="9">
+         Currently, the City of Seattle favors the more expensive the cut-and-cover tunnel option; whereas, the State of Washington has favored a smaller tunnel or a replacement viaduct structure.
+        </s>
+        <s pid="68" sid="10">
+         Recently, Washington Governor Christine Gregoire set the execution date for the aging AWV.
+        </s>
+        <s pid="68" sid="11">
+         The existing AWV is planned to be demolished in 2012 despite the lack of a consensus by federal, state, and local government officials of how to reroute the traffic (McGann 2008).
+        </s>
+        <s pid="68" sid="12">
+         However, engineering services have begun preliminary geotechnical, structural and seismic analyses for the cut-and-cover tunnel option.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="69" sid="1">
+         Figure 4. View of Alaskan Way Viaduct Looking North [WSDOT 2008]
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Proposed Development
+       </div>
+       <p>
+        <s pid="70" sid="1">
+         The Washington State Department of Transportation contracted with Parsons Brinckerhoff to do an Environmental Impact Study and to perform conceptual and preliminary engineering for the proposed Alaskan Way Tunnel (Kirandag 2007).
+        </s>
+        <s pid="70" sid="2">
+         A 1-mile cut-and-cover tunnel, representing the most favored option by the City of Seattle, has been analyzed by the team lead by Parson's Brinckerhoff.
+        </s>
+        <s pid="70" sid="3">
+         Figure 5 shows an existing cross section of the AWV.
+        </s>
+        <s pid="70" sid="4">
+         Figures 6 and 7 show two typical sections of the proposed Alaskan Way tunnel (Kirandag et al 2007).
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="71" sid="1">
+         Figure 5. Typical Cross-Section of AWV and Seattle Seawall [Kirandag et al. 2007]
+        </s>
+       </p>
+       <p>
+        <s pid="72" sid="1">
+         The typical cross section involves a double stacked box section cut-and-cover tunnel.
+        </s>
+        <s pid="72" sid="2">
+         The tunnel would transitions to a side by side at grade highway just south of the existing AWV.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="73" sid="1">
+         Figure 6. Typical Section of Proposed Stacked Alaskan Way Tunnel [Kirandag et al. 2007]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="74" sid="1">
+         Figure 7. Tunnel Cross Section at Transition Near University St. [Kirandag et al. 2007]
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Seismic Design
+       </div>
+       <p>
+        <s pid="75" sid="1">
+         The seismic design for the project considers a MDE corresponding to 3 percent probability of exceedence in 75 years (return period of 108 years) and an ODE corresponding to a 50 percent probability of exceedence in 75 years (return period of 2475 years).
+        </s>
+        <s pid="75" sid="2">
+         The design life of the structure is 75 years (Kirandag et al. 2007).
+        </s>
+        <s pid="75" sid="3">
+         A probabilistic seismic hazard analysis has been performed by Shannon and Wilson Inc.
+        </s>
+        <s pid="75" sid="4">
+         Seismic design of the tunnel for 2,500-year ground motions indicated that the primary contributor to seismic hazard for this level of risk is the nearby Seattle Fault Zone rather than the Cascadia Subduction Zones (Kirandag et al. 2007).
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Geotechnical Analysis and Modeling
+        </div>
+        <p>
+         <s pid="76" sid="1">
+          Over 150 soil borings and monitoring wells were used to characterize the engineering properties of the existing project site.
+         </s>
+         <s pid="76" sid="2">
+          Liquefaction was found to be a major concern because the average N values was around 10 blows per foot in the loose to medium dense fill.
+         </s>
+         <s pid="76" sid="3">
+          The geotechnical investigation data was used as input parameters to developing site specific ground motions that included liquefaction, non-linear soil response and fault directivity effects.
+         </s>
+         <s pid="76" sid="4">
+          The finite difference program FLAC was used to model the soil-structure interaction of the proposed design.
+         </s>
+         <s pid="76" sid="5">
+          This project illustrates the importance of performing site specific design and advanced computer modeling for underground tunnels in a highly active seismic region.
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Original Contribution
+      </div>
+      <p>
+       <s pid="77" sid="1">
+        My original contribution to this project is to compare analytical and numerical solutions the ovaling deformation mode.
+       </s>
+       <s pid="77" sid="2">
+        A simplified finite element analysis of an unlined circular tunnel was performed using ABAQUS.
+       </s>
+       <s pid="77" sid="3">
+        Figure 8 shows the model inputs.
+       </s>
+       <s pid="77" sid="4">
+        Model input parameters included the following:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      =1,922 kg/m3, soil modulus of elasticity= 861.8 MPa, and Poisson’s Ratio= 0.3. The soil was modeled as fixed in both the directions on the right side and supported on rollers on the bottom. A gravity load was applied over the 100 m by 200 m soil mesh. A 940kPa earthquake inertial load corresponds to peak ground acceleration on the order of 0.25g.
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="79" sid="1">
+        Figure 8. FE Model Parameters
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="80" sid="1">
+        Figure 9. Shear Stress Contours in Ovaling Tunnel Section
+       </s>
+      </p>
+      <p>
+       <s pid="81" sid="1">
+        Figure 9 shows that the shear stress gradient.
+       </s>
+       <s pid="81" sid="2">
+        The maximum shear stress from the finite element model was on the order of 1,022 kPa. Moreover, I used Eq. 13 and Eq. 23 to compute the maximum shear stress.
+       </s>
+       <s pid="81" sid="3">
+        Calculations are shown in Appendix A.
+       </s>
+       <s pid="81" sid="4">
+        I found that the analytical free-field solution was 2,884 kPa.
+       </s>
+       <s pid="81" sid="5">
+        Further analysis is required to compare analytical and numerical finite element solutions.
+       </s>
+       <s pid="81" sid="6">
+        However, this example shows that both solutions were on the same order of magnitude.
+       </s>
+       <s pid="81" sid="7">
+        Moreover, the free-field analytical solution was greater than the numerical solution as would be expected.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusion
+      </div>
+      <p>
+       <s pid="82" sid="1">
+        In summary, this paper presented analytically developed equations to analyze tunnels and underground structures under strong ground motions.
+       </s>
+       <s pid="82" sid="2">
+        Seismic design of tunnels should aim to create ductile structures that are able to move with the subsurface soil under small deformation ground shaking.
+       </s>
+       <s pid="82" sid="3">
+        The historic performance of tunnels in California, Japan and Taiwan showed the importance of including seismic design considerations in all tunnels and underground constructed facilities.
+       </s>
+       <s pid="82" sid="4">
+        The Alaskan Way Viduct case study showed the importance of performing a site specific numerical analysis for significant projects in highly seismic regions.
+       </s>
+       <s pid="82" sid="5">
+        The vast majority of tunnels underground structures improve the general population's quality of life.
+       </s>
+       <s pid="82" sid="6">
+        Geotechnical earthquake engineers play an important role to designing safe underground infrastructure for the future.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N102B8">
+       <li id="N102B9">
+        ABAQUS Inc., 2007. Getting Started with Abaqus Interactive Edition Version 6.7.
+       </li>
+       <li id="N102BB">
+        Anastasopoulos, Ioannis et al., 2007. "Nonlinear Response of Deep Immersed Tunnel to Strong Seismic Shaking." Journal of Geotechnical and Geoenvironmental Engineering 133 (9), 1067-1090.
+       </li>
+       <li id="N102BD">
+        ASCE., 1974. "Earthquake damage evaluation and design considerations for underground structures." February. American Society of Civil Engineers, Los Angeles Section. {as cited in Hashash, et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102BF">
+        Cook, Robert D. et al. 2002. Concepts and Applications of Finite Element Analysis, Fourth Edition. John Wiley &amp; Sons, Inc., Hoboken, NJ.
+       </li>
+       <li id="N102C1">
+        Dowding, C.H., Rozen, A., 1978. "Damage to rock tunnels from earthquake shaking." Journal of the Geotechnical Engineering Division., ASCE 104 (GT2), 175-191. {as cited in Hashash, et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102C3">
+        Duke, C.M., Leeds, D.J., 1959. "Effects of Earthquakes on Tunnels." Paper Presented at the RAND Second Protective Construction Symposium, March 24_26. {as cited in Hashash, et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102C5">
+        Dunn, James et al. 2001. "Raising the Bar on BART." Civil Engineering 12, 60-65
+       </li>
+       <li id="N102C7">
+        Fu, P.C.; G. Wang; and J. M. Zhang., 2004. "Analytical Approaches for Underground Structures Subjected to Longitudinally Propagating Shear Waves." Proceedings Volume 1: The 11th International Conference on Soil Dynamics and Earthquake Engineering / The 3rd International Conference on Earthquake Geotechnical Engineering, 264-271.
+       </li>
+       <li id="N102C9">
+        Hashash, Youssef M. A. et al., 2005. "Ovaling deformations of circular tunnels under seismic loading, an update on seismic design and analysis of underground structures. Tunnelling and Underground Space Technology 20, 435-441.
+       </li>
+       <li id="N102CB">
+        Hashash, Youssef M. A. et al., 2001. "Seismic Design and Analysis of Underground Structures." Tunnelling and Underground Space Technology 16, 247-293.
+       </li>
+       <li id="N102CD">
+        Hashash, Youssef M. A. et al. 1998. "Seismic Soil-Structure Interaction Analysis for Immersed Tube Tunnels Retrofit." Geotechnical Earthquake Engineering and Soil Dynamics III. ASCE Geotechnical Special Publication No. 75, 1380-1391.
+       </li>
+       <li id="N102CF">
+        Helwany, Sam., 2007. Applied Soil Mechanics: with ABAQUS Applications. John Wiley and Sons, Inc., Hoboken, NJ.
+       </li>
+       <li id="N102D1">
+        Huo, H. et al., 2005. "Load Transfer Mechanisms between Underground Structure and Surrounding Ground: Evaluation of the Failure of the Daikai Station." Journal of Geotechnical and Geoenvironmental Engineering 131 (12), 1522-1533.
+       </li>
+       <li id="N102D3">
+        JSCE, 1988. "Earthquake Resistant Design for Civil Engineering Structures in Japan." Japanese Society of Civil Engineers, Tokyo. {as cited in Hashash, et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102D5">
+        Kaneshiro, J.Y., Power, M., Rosidi, D., 2000. "Empirical correlations of tunnel performance during earthquakes and aseismic aspects of tunnel design." Proceedings of the Conference on Lessons Learned From Recent Earthquakes - On Earthquakes in Turkey 1999,November 8-11. {as cited in Hashash, et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102D7">
+        Kirandag, Celal; James R. Struthers; and Gordon T. Clark., 2007. "Designing the Alaskan Way Tunnel to Withstand a 2,500-Year Earthquake." Proceedings of Rapid Excavation and Tunneling Conference, Society for Mining, Metallurgy, and Exploration, Inc., 496-506.
+       </li>
+       <li id="N102D9">
+        Kramer, Steven L., 1996. Geotechnical Earthquake Engineering. Prentice Hall, Upper Saddle River, NJ. Liao, Sam S. C., 1991. "Seismic Design Issues for Immersed Tube Tunnels." Preparing for Construction in the 21st Century: Proceedings of Construction Congress '91. ASCE New York, NY, 584-589.
+       </li>
+       <li id="N102DB">
+        McGann, Chris. 2008. "Gregoire: 'Watch me' tear down the viaduct." Seattle Post-Intelligencer. Availabe at &lt;http://seattlepi.nwsources.com/transportation/346052_gregoire04.html&gt;.
+       </li>
+       <li id="N102DD">
+        Monsees, J. E. and J. L. Merritt., 1984. "Seismic Design of Underground Structures Southern California Metro Rail Project. Lifeline Earthquake Engineering: Performance, Design &amp; Construction, 52-66.
+       </li>
+       <li id="N102DF">
+        Monsees, J. E. and Amada Elioff., 1999. "Sealing the Subway." Civil Engineering 69 (12), 44-47.
+       </li>
+       <li id="N102E1">
+        Newmark, N.M., 1967. "Problems in wave propagation in soil and rock." Proceedings of the International Symposium on Wave Propagation and Dynamic Properties of Earth Materials. New Mexico: University of New Mexico Press. {as cited in St. John and Zahrah 1987} Unable to verify reference.
+       </li>
+       <li id="N102E3">
+        Nisqually Earthquake Clearinghouse (NEC)., 2008. Available at &lt;http://www.ce.washington.edu /~nisqually/index.html&gt;.
+       </li>
+       <li id="N102E5">
+        Owen, G.N., Scholl, R.E., 1981. "Earthquake engineering of large underground structures." Report no. FHWA_RD 80_195. Federal Highway Administration and National Science Foundation. {as cited in Hashash, et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102E7">
+        Pakbaz, Mohammad C. and Akbar Yareevand., 2005. "2-D Analysis of Circular Tunnel against Earthquake Loading." Tunnelling and Underground Space Technology. 20, 411-417.
+       </li>
+       <li id="N102E9">
+        Parra-Montesinos G. J. et al., 2006. "Evaluation of Soil-Structure Interaction and Structural Collapse in Daikai Subway Station During Kobe Earthquake." ACI Structural Journal 103, 113-122.
+       </li>
+       <li id="N102EB">
+        Power, M.S., D. Rosidi, and J. Kaneshiro., 1996. Vol. III Strawman: screening, evaluation, and retrofit design of tunnels. Report Draft. National Center of Earthquake Engineering Research. Buffalo, NY. {as cited in Hashash, et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102ED">
+        Power, M., D. Rosidi, and J. Kaneshiro., 1998. "Seismic Vulnerability of Tunnels-Revisited". Proceedings of the North American Tunneling Conference. Elsevier, Long Beach, CA. {as cited in Hashash et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102EF">
+        Seattle Department of Transportation (SDOT)., 2008. "Alaskan Way Viaduct Emergency Traffic Management and Closure Plan. Available at&lt;http://www.seattle.gov/transportation /viaductemergencyclosure.htm&gt;.
+       </li>
+       <li id="N102F1">
+        St. John, C. M. and T. F. Zahrah. 1987. "Aseismic Design of Underground Structures." Tunnelling and Underground Space Technology 2(2), 165-197.
+       </li>
+       <li id="N102F3">
+        Sharma, S., Judd, W.R., 1991. "Underground opening damage from earthquakes." Eng. Geol. 30, 263-276. {as cited in Hashash et al. 2001} Unable to verify reference.
+       </li>
+       <li id="N102F5">
+        Stevens, P.R., 1977. "A review of the effects of earthquakes on underground mines." United States Geological Survey Open File Report 77_313. US Energy Research and Development Administration, Reston, VA. {as cited in Hashash et al. 2001} Unable to verify reference
+       </li>
+       <li id="N102F7">
+        University of Washington (UW)., 2007. "1995 Kobe Earthquake, Japan" Available at &lt;http://www.ce.washington.edu/~liquefaction/html/quakes/kobe/kobe.html&gt;.
+       </li>
+       <li id="N102F9">
+        Wang, J. N., 1993. "Seismic Design of Tunnels: A State-of-the-Art Approach." Monograph, monograph 7.
+       </li>
+       <li id="N102FB">
+        Parsons, Brinckerhoff, Quade and Douglass Inc., New York, NY. {as cited in Hashash et al. 2001} Unable to verify reference
+       </li>
+       <li id="N102FD">
+        Washington State Department of Transportation (WSDOT), 2008. Available at &lt;http://www.wsdot.wa.gov/projects/viaduct&gt;
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="head_1">
+       Appendix A: Calculations
+      </div>
+      <p>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

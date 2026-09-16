@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Tuesday, 13nd June 2000
+      </p>
+      <p>
+       Dear Ms Ryan,
+      </p>
+      <p>
+       I've just received the letter telling me that I've won first prize in your competition. I guess you can imagine how happy and excited I am
+       <ns type="R">
+        <i>
+         at this time
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Here
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       the
+       <ns type="CQ">
+        few
+       </ns>
+       information about my stay at Camp California
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that you asked
+       <ns type="DA">
+        <i>
+         my
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         complete
+        </i>
+       </ns>
+       :
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         For
+        </i>
+       </ns>
+       the
+       <ns type="R">
+        <i>
+         date of the travel
+        </i>
+       </ns>
+       , I wonder if it would be possible
+       <ns type="MV">
+       </ns>
+       in July because I'm going to
+       <ns type="RV">
+        <i>
+         pass
+        </i>
+       </ns>
+       a very important exam at the end of June. Two weeks in the USA would be a great
+       <ns type="RN">
+        <i>
+         occasion
+        </i>
+       </ns>
+       for me to relax after that.
+      </p>
+      <p>
+       You asked
+       <ns type="DA">
+        <i>
+         my
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         chose
+        </i>
+       </ns>
+       my accommodation
+       <ns type="RT">
+        <i>
+         between
+        </i>
+       </ns>
+       <ns type="MQ">
+       </ns>
+       tents
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       cabins. I prefer sleeping in a log cabin (I
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       a very bad experience with tents while I was camping with friends last year)
+      </p>
+      <p>
+       The activities listed in your letter
+       <ns type="W">
+        <i>
+         <ns type="IV">
+          <i>
+           seemded
+          </i>
+         </ns>
+         to be all interesting
+        </i>
+       </ns>
+       . I
+       <ns type="IV">
+        <i>
+         choosed
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         baskelball
+        </i>
+       </ns>
+       (I play in a club,
+       <ns type="R">
+        <i>
+         I have a good level
+        </i>
+       </ns>
+       ) and
+       <ns type="MV">
+       </ns>
+       photography (there must be beautiful pictures to take in California).
+      </p>
+      <p>
+       Talking about California, I suppose that the weather is hot there in
+       <ns type="RP">
+        <i>
+         Summer
+        </i>
+       </ns>
+       . Could you please tell me if I have to take
+       <ns type="MQ">
+       </ns>
+       special clothes with me
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       If it's not
+       <ns type="SX">
+        <i>
+         two
+        </i>
+       </ns>
+       much to ask, could you also tell me how much money I should take with me for food or evening activities at the camp
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       <ns type="CE">
+        Looking for you to receive
+        <ns type="CD">
+         those
+        </ns>
+        information
+       </ns>
+       ,
+      </p>
+      <p>
+       Dominique
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Tuesday, 13nd June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Ms Ryan,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I've just received the letter telling me that I've won first prize in your competition.
+       </s>
+       <s pid="3" sid="2">
+        I guess you can imagine how happy and excited I am at this time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Here are the few information about my stay at Camp California, that you asked my to complete:
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For the date of the travel, I wonder if it would be possible  in July because I'm going to pass a very important exam at the end of June.
+       </s>
+       <s pid="5" sid="2">
+        Two weeks in the USA would be a great occasion for me to relax after that.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        You asked my to chose my accommodation between  tents and cabins.
+       </s>
+       <s pid="6" sid="2">
+        I prefer sleeping in a log cabin (I made a very bad experience with tents while I was camping with friends last year)
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        The activities listed in your letter seemded to be all interesting.
+       </s>
+       <s pid="7" sid="2">
+        I choosed to do baskelball (I play in a club, I have a good level) and  photography (there must be beautiful pictures to take in California).
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Talking about California, I suppose that the weather is hot there in Summer.
+       </s>
+       <s pid="8" sid="2">
+        Could you please tell me if I have to take  special clothes with me.
+       </s>
+       <s pid="8" sid="3">
+        If it's not two much to ask, could you also tell me how much money I should take with me for food or evening activities at the camp
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Looking for you to receive those information,
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Dominique
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Last week I had planned to change my old basketball shoes. So I took the train to Lausanne (I live in Lavaux and it's impossible to find
+       <ns type="RJ">
+        <i>
+         a
+         <ns type="S">
+          <i>
+           corect
+          </i>
+         </ns>
+        </i>
+       </ns>
+       pair of sneakers in
+       <ns type="L">
+        this whole damned city
+       </ns>
+       !) to buy a new pair to play
+       <ns type="DY">
+        <i>
+         outdoor
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       this summer.
+      </p>
+      <p>
+       After having
+       <ns type="RV">
+        <i>
+         visited
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       shops
+       <ns type="RT">
+        <i>
+         during
+        </i>
+       </ns>
+       10 hours and tried at least 2,000 shoes, I finally found what I was looking for
+       <ns type="RP">
+        <i>
+         . The
+        </i>
+       </ns>
+       shoes of my dreams (well designed and not too expensive)
+       <ns type="MP">
+       </ns>
+       So I went back to the station, very proud of
+       <ns type="RA">
+        <i>
+         me
+        </i>
+       </ns>
+       with my sneakers in a white plastic bag and a great smile on my face.
+      </p>
+      <p>
+       I stayed
+       <ns type="UA">
+        <i>
+         that
+        </i>
+       </ns>
+       happy during the
+       <ns type="RN">
+        <i>
+         travel
+        </i>
+       </ns>
+       , thinking of how cool I would look
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the playground with my
+       <ns type="MP">
+        <i>
+         brand new
+        </i>
+       </ns>
+       shoes on.
+      </p>
+      <p>
+       As I jumped off the train, I met a friend of mine. I immediately wanted to show him what I had bought to make him jealous. I took the white plastic bag and... Oh my god! There was no more plastic bag
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I had
+       <ns type="RV">
+        <i>
+         forgotten
+        </i>
+       </ns>
+       it
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the train!
+      </p>
+      <p>
+       How stupid I am! It seems like I will have to play
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       old shoes for one more summer...
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Last week I had planned to change my old basketball shoes.
+       </s>
+       <s pid="1" sid="2">
+        So I took the train to Lausanne (I live in Lavaux and it's impossible to find a corect pair of sneakers in this whole damned city!) to buy a new pair to play outdoor  this summer.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        After having visited  shops during 10 hours and tried at least 2,000 shoes, I finally found what I was looking for.
+       </s>
+       <s pid="2" sid="2">
+        The shoes of my dreams (well designed and not too expensive)
+       </s>
+       <s pid="2" sid="3">
+        So I went back to the station, very proud of me with my sneakers in a white plastic bag and a great smile on my face.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I stayed that happy during the travel, thinking of how cool I would look on the playground with my brand new shoes on.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As I jumped off the train, I met a friend of mine.
+       </s>
+       <s pid="4" sid="2">
+        I immediately wanted to show him what I had bought to make him jealous.
+       </s>
+       <s pid="4" sid="3">
+        I took the white plastic bag and...
+       </s>
+       <s pid="4" sid="4">
+        Oh my god!
+       </s>
+       <s pid="4" sid="5">
+        There was no more plastic bag, I had forgotten it in the train!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        How stupid I am!
+       </s>
+       <s pid="5" sid="2">
+        It seems like I will have to play with old shoes for one more summer...
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

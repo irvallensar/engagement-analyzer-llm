@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       <ns type="TV">
+        <i>
+         I've recently visited
+        </i>
+       </ns>
+       London
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       and during my stay I went to your theatre to see the musical show "Over the Rainbow". I am really sorry to say that I
+       <ns type="TV">
+        <i>
+         am
+        </i>
+       </ns>
+       very disappointed
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the whole organisation of the musical, starting
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       the advertisement. Firstly, in the advertisement it says that the main actor was supposed to be Danny Brook
+       <ns type="RP">
+        <i>
+         . An
+        </i>
+       </ns>
+       actor that I admire and I wanted to see
+       <ns type="UA">
+        <i>
+         him
+        </i>
+       </ns>
+       performing. Unfortunately
+       <ns type="MP">
+       </ns>
+       instead of Brook I saw another actor, totally
+       <ns type="R">
+        <i>
+         stranger
+        </i>
+       </ns>
+       to me. Secondly
+       <ns type="MP">
+       </ns>
+       in the advertisement
+       <ns type="MP">
+       </ns>
+       the starting time of the musical was said to be
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       19:30, but the
+       <ns type="RN">
+        <i>
+         theatre
+        </i>
+       </ns>
+       started at 20:15. I don't want to be rude, but this is not
+       <ns type="S">
+        <i>
+         proffessional
+        </i>
+       </ns>
+       at all. Another thing I would like to mention is the discount that we were supposed to have on the tickets.
+      </p>
+      <p>
+       There wasn't any discount. Lastly I would like to inform you that I wanted to have dinner at
+       <ns type="S">
+        <i>
+         yor
+        </i>
+       </ns>
+       restaurant but they told me it was closed because it usually closes at 11:00 o'clock
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       and the musical finished at 11:30.
+       <ns type="RC">
+        <i>
+         And
+        </i>
+       </ns>
+       I am asking you:
+       <ns type="RP">
+        <i>
+         Why
+        </i>
+       </ns>
+       do you
+       <ns type="S">
+        <i>
+         adverstise
+        </i>
+       </ns>
+       it if is not going to be available
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the audience?
+      </p>
+      <p>
+       I am closing this letter by
+       <ns type="RV">
+        <i>
+         saying
+        </i>
+       </ns>
+       you that that night was the most terrible night of my holidays and that I would like to have my money back
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       please
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       I hope you will reply to my letter.
+      </p>
+      <p>
+       <ns type="L">
+        <i>
+         Regards
+        </i>
+       </ns>
+      </p>
+      <p>
+       XX
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I've recently visited London for holidays and during my stay I went to your theatre to see the musical show "Over the Rainbow".
+       </s>
+       <s pid="2" sid="2">
+        I am really sorry to say that I am very disappointed about the whole organisation of the musical, starting from the advertisement.
+       </s>
+       <s pid="2" sid="3">
+        Firstly, in the advertisement it says that the main actor was supposed to be Danny Brook.
+       </s>
+       <s pid="2" sid="4">
+        An actor that I admire and I wanted to see him performing.
+       </s>
+       <s pid="2" sid="5">
+        Unfortunately instead of Brook I saw another actor, totally stranger to me.
+       </s>
+       <s pid="2" sid="6">
+        Secondly in the advertisement the starting time of the musical was said to be at 19:30, but the theatre started at 20:15.
+       </s>
+       <s pid="2" sid="7">
+        I don't want to be rude, but this is not proffessional at all.
+       </s>
+       <s pid="2" sid="8">
+        Another thing I would like to mention is the discount that we were supposed to have on the tickets.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        There wasn't any discount.
+       </s>
+       <s pid="3" sid="2">
+        Lastly I would like to inform you that I wanted to have dinner at yor restaurant but they told me it was closed because it usually closes at 11:00 o'clock.
+       </s>
+       <s pid="3" sid="3">
+        and the musical finished at 11:30.
+       </s>
+       <s pid="3" sid="4">
+        And I am asking you:
+       </s>
+       <s pid="3" sid="5">
+        Why do you adverstise it if is not going to be available for the audience?
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am closing this letter by saying you that that night was the most terrible night of my holidays and that I would like to have my money back, please
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope you will reply to my letter.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Regards
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        XX
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed your daily life
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       We are living in the 21st century
+       <ns type="RC">
+        <i>
+         where
+        </i>
+       </ns>
+       everybody is surrounded by advanced
+       <ns type="RN">
+        <i>
+         technological methods
+        </i>
+       </ns>
+       . As a result of all
+       <ns type="AGD">
+        <i>
+         these
+        </i>
+       </ns>
+       advanced
+       <ns type="RN">
+        <i>
+         technological methods
+        </i>
+       </ns>
+       , I became one of the daily users of modern technology. Of course using modern technology has both advantages and disadvantages.
+      </p>
+      <p>
+       The first thing that came to my life and changed it completely is the computer. I spend most of my time in front of the computer, either working or playing. Of course this
+       <ns type="W">
+        <i>
+         sometimes is
+        </i>
+       </ns>
+       an advantage, when for example the computer helps me to do my job
+       <ns type="FY">
+        <i>
+         easier
+        </i>
+       </ns>
+       , but some other times it is a great disadvantage because it keeps me away from my friends. But unfortunately I cannot live without a computer. The first thing I do in the morning is start up my computer, check if I have any new e-mails, check my electronic calendar and then go to work, where I always work with a computer.
+       <ns type="MV">
+        <i>
+         The
+        </i>
+       </ns>
+       computer has become
+       <ns type="UD">
+        <i>
+         my
+        </i>
+       </ns>
+       second nature.
+      </p>
+      <p>
+       And
+       <ns type="M">
+       </ns>
+       not only the computer.
+       <ns type="RP">
+        <i>
+         Everyday
+        </i>
+       </ns>
+       I use the microwave for heating my food and of course
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       I always carry with me my mobile phone.
+       <ns type="M">
+        <i>
+         One
+        </i>
+       </ns>
+       of the greatest technological achievements and I am afraid to say that I cannot live without my mobile phone.
+      </p>
+      <p>
+       In conclusion I would like to say that modern technology
+       <ns type="TV">
+        <i>
+         is offering
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       humanity
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       many things, some of them are good and some others are not so good. It's up to us if we
+       <ns type="UV">
+        <i>
+         can
+        </i>
+       </ns>
+       use those technological achievements in the right way, and make our lives easier. The only thing I really
+       <ns type="RV">
+        support
+       </ns>
+       is that if you know how to use technology
+       <ns type="MP">
+       </ns>
+       <ns type="MA">
+       </ns>
+       is a benefit
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       you. If you don't
+       <ns type="MP">
+       </ns>
+       <ns type="MA">
+       </ns>
+       is going to destroy you.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed your daily life.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        We are living in the 21st century where everybody is surrounded by advanced technological methods.
+       </s>
+       <s pid="2" sid="2">
+        As a result of all these advanced technological methods, I became one of the daily users of modern technology.
+       </s>
+       <s pid="2" sid="3">
+        Of course using modern technology has both advantages and disadvantages.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The first thing that came to my life and changed it completely is the computer.
+       </s>
+       <s pid="3" sid="2">
+        I spend most of my time in front of the computer, either working or playing.
+       </s>
+       <s pid="3" sid="3">
+        Of course this sometimes is an advantage, when for example the computer helps me to do my job easier, but some other times it is a great disadvantage because it keeps me away from my friends.
+       </s>
+       <s pid="3" sid="4">
+        But unfortunately I cannot live without a computer.
+       </s>
+       <s pid="3" sid="5">
+        The first thing I do in the morning is start up my computer, check if I have any new e-mails, check my electronic calendar and then go to work, where I always work with a computer.
+       </s>
+       <s pid="3" sid="6">
+        The computer has become my second nature.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        And  not only the computer.
+       </s>
+       <s pid="4" sid="2">
+        Everyday I use the microwave for heating my food and of course.
+       </s>
+       <s pid="4" sid="3">
+        I always carry with me my mobile phone.
+       </s>
+       <s pid="4" sid="4">
+        One of the greatest technological achievements and I am afraid to say that I cannot live without my mobile phone.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In conclusion I would like to say that modern technology is offering to the humanity to many things, some of them are good and some others are not so good.
+       </s>
+       <s pid="5" sid="2">
+        It's up to us if we can use those technological achievements in the right way, and make our lives easier.
+       </s>
+       <s pid="5" sid="3">
+        The only thing I really support is that if you know how to use technology  is a benefit for you.
+       </s>
+       <s pid="5" sid="4">
+        If you don't  is going to destroy you.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

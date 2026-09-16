@@ -1,0 +1,1136 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Energy Harvesting Using an Embedded Piezoelectric in a Bicycle Tire: Proof of Concept
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1 Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Piezoelectricity is a special property possessed by some materials that allows either an electrical signal to produce a material strain, or a material strain to produce an electrical signal; the two are reciprocal properties.
+       </s>
+       <s pid="1" sid="2">
+        The former property has been used to facilitate actuation of many devices.
+       </s>
+       <s pid="1" sid="3">
+        High frequency applications, such as ultra-sound medical devices, have seen a particularly important benefit from these materials due to their extraordinary signal response time.
+       </s>
+       <s pid="1" sid="4">
+        The latter property can be found in applications such as accelerometers, thermal sensors and dynamical signal sensors.
+       </s>
+       <s pid="1" sid="5">
+        However, this ability to convert a mechanical strain into an electrical signal can also be used to derive energy from vibrating systems for a potentially unlimited renewable power source.
+       </s>
+       <s pid="1" sid="6">
+        Because of this energy harvesting capability, several researchers have investigated aspects of this process.
+       </s>
+       <s pid="1" sid="7">
+        This includes determining the available energy from a system, mechanical modeling of the piezoelectric element, developing energy conversion circuits, and energy storage methods.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Traditional mechanically vibrated systems have been analyzed to determine how much energy can be harvested from them (Vujic 2002).
+       </s>
+       <s pid="2" sid="2">
+        However, significant interest has also been shown in determining the amount of energy that humans exert during daily life that could be parasitically harvested for use in wearable electronics.
+       </s>
+       <s pid="2" sid="3">
+        Starner (Starner 1996) has calculated that nearly 67 W of power is wasted through the process of walking.
+       </s>
+       <s pid="2" sid="4">
+        He also conjectures that .33 W of energy could be harvested by integrating piezoelectrics within the joints of clothing; here, the process of bending would cause strain, and thus, energy generation.
+       </s>
+       <s pid="2" sid="5">
+        Several investigators have conducted studies regarding the use of piezoelectrics within shoes to scavenge power.
+       </s>
+       <s pid="2" sid="6">
+        Shenk (Shenk 1999) has worked on developing a working prototype of a military boot equipped with a power harvesting bimorph composed of piezoelectric elements known as THUNDER; this boot was capable of producing approximately 80 mW at its peak and averaged 2 mW.
+       </s>
+       <s pid="2" sid="7">
+        Paradiso’s (Paradiso 2001) work is closely tied to Shenk’s and, using a PVDF piezoelectric element within a shoe, has shown the ability to generate a peak power of 20 mW with an average of 1 mW.
+       </s>
+       <s pid="2" sid="8">
+        This work has proven the ability of power harvesting systems to generate low amounts of power for electrical systems.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        The use of piezoelectrics as sensors and actuators has provided the groundwork for the development of energy harvesting systems that utilize them.
+       </s>
+       <s pid="3" sid="2">
+        IEEE standards (1987) exist that provide details on the constitutive equations that relate the mechanical strain and stress to electrical displacement and field.
+       </s>
+       <s pid="3" sid="3">
+        Two important relations that incorporate these four properties are:
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (1)
+      <p>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (2)
+      <p>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        where S is strain, s is modulus of elasticity, g is a piezoelectric constant, and D is electrical displacement, E is electric field, T is stress, and g and β are piezoelectric constants.
+       </s>
+       <s pid="8" sid="2">
+        From this, (Michael J. Ramsay 2001) derived power equations for a piezoelectric element excited in its 33-direction, which means that the application of load coincides with the direction of poling, and in the 31-direciton, which means that the application of load is in a direction (the 1-direction) that is perpendicular to the direction of poling.
+       </s>
+       <s pid="8" sid="3">
+        These 33 and 31 power equations are shown in equations 3 and 4, respectively:
+       </s>
+      </p>
+      <p>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (3)
+      <p>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      (4)
+      <p>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        where, P is power, d is a piezoelectric constant, t is material thickness, b is material width, l is material length and f is the frequency of excitation.
+       </s>
+       <s pid="14" sid="2">
+        Mechanical models that describe energy harvesting systems can readily be developed based on these equations.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        Energy conversion and storage within a medium is another important aspect of energy harvesting that has received detailed investigation from several researchers.
+       </s>
+       <s pid="15" sid="2">
+        Most power harvesting circuits use a rectifier that ensures that all electricity entering the circuitry is positive, thereby protecting the downstream components.
+       </s>
+       <s pid="15" sid="3">
+        Beyond this, detailed work has been completed that involves conditioning this power and utilizing it to transmit signals via RF transmitters after a threshold voltage has been generated (Paradiso 2001).
+       </s>
+       <s pid="15" sid="4">
+        Ottman and Lesieutre (Geffrey K. Ottman 2003) have developed a power harvesting circuit that is continuously optimized, through the use of an adaptive controller and a DC/DC converter, to provide the greatest amount of power possible to the storage medium.
+       </s>
+       <s pid="15" sid="5">
+        They claim that their harvesting circuit improves direct charging of a storage medium by nearly 400%.
+       </s>
+       <s pid="15" sid="6">
+        Researchers use either capacitors or chemical batteries as an energy storage medium.
+       </s>
+       <s pid="15" sid="7">
+        While capacitors can be effective in powering systems that only require intermittent power--for instance, to transmit an information signal--they lack the ability to store large amounts of power, and they have fast discharge rates, thus limiting their utility (H.A. Sodano 2004).
+       </s>
+       <s pid="15" sid="8">
+        Therefore, to power a greater variety of electronic devices, power storage in batteries is required and is being investigated by research groups (Henry A. Sodano 2004).
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        The basic science behind power harvesting has been developed and there are several applications where a renewable power source is required, or would drastically improve current technologies.
+       </s>
+       <s pid="16" sid="2">
+        For example, health monitoring systems for building structures could utilize power harvesting to transmit signals from embedded sensors to a central processor.
+       </s>
+       <s pid="16" sid="3">
+        Or, RF tags used to track the migration habits of endangered animals could be powered through energy harvesting means, thus eliminating the need to capture the animals for battery replacement, as is currently done (Sodano 2004).
+       </s>
+       <s pid="16" sid="4">
+        Beyond this, everyday systems also show the possibility of benefiting from power harvesting.
+       </s>
+       <s pid="16" sid="5">
+        Tires, on automobiles and bicycles, deform significantly during their rotation and operate at frequencies that make them prime candidates for energy harvesting in order to provide energy to low power systems.
+       </s>
+       <s pid="16" sid="6">
+        For example, safety lights for bicycles are already available, but they require batteries, and can be expensive, and bulky.
+       </s>
+       <s pid="16" sid="7">
+        By comparison, an integrated power harvesting system used to power safety lights could be integrated into the tire, thus reducing the bulkiness and weight associated with traditional batteries.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        This paper describes a case study in which the ability to install a power harvesting system on a bicycle tire is proven.
+       </s>
+       <s pid="17" sid="2">
+        Theoretical calculations used to determine the output power of the bicycle are described along with a comparison to actual results.
+       </s>
+       <s pid="17" sid="3">
+        The electrical circuitry of this power harvesting system is described along with improvements to enhance its ability to convert and utilize the deformation energy of the tire.
+       </s>
+      </p>
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2 Static Model of Piezoelectric and Tire Interface
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        In this section, a static model of the piezoelectric-element, its bonding layer, and the material of the tire will be established, and a method of predicting the output voltage of the piezoelectric-element will be discussed and modeled.
+       </s>
+       <s pid="19" sid="2">
+        The results of this model will later be used in a comparison with experimental results.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        2.1 Strain in the piezoelectric-element
+       </div>
+       <p>
+        <s pid="20" sid="1">
+         In order to calculate the voltage produced by the PVDF, the amount of strain encountered during a single wheel revolution, or the tire loading, must be known.
+        </s>
+        <s pid="20" sid="2">
+         This paper investigates the former scenario.
+        </s>
+        <s pid="20" sid="3">
+         It is assumed that the bicycle tire is completely flattened when in contact with the ground, and that it reverts to the natural curvature of the bicycle wheel when not in contact.
+        </s>
+        <s pid="20" sid="4">
+         It is also assumed that the neutral axis is at the centroid of the bending section, because the thickness of the tire, piezoelectric-element, and bonding layer is sufficiently small in comparison to the wheel curvature.
+        </s>
+        <s pid="20" sid="5">
+         It has been noted that if the radius of curvature is more than eight times the depth of the bending element, then the error encountered in making this assumption is less than 5% (Young 1989).
+        </s>
+        <s pid="20" sid="6">
+         In this case, the radius of the bicycle wheel is 570 times the thickness of the bending element, and standard beam theory can therefore be used to calculate the strain while maintaining model validity.
+        </s>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         From (Brei 2004) the strain encountered from a piezoelectric sensor can be found from the following:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (5)
+       <p>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         where is the distance from the piezoelectric-element to the neutral axis.
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         The second term on the right hand side of Equation 5 is simply the curvature of the bent shape of the piezoelectric-element, which in this case is the curvature of the bicycle wheel.
+        </s>
+        <s pid="25" sid="2">
+         Assuming that the wheel is a circle, in Cartesian coordinates, the vertical distance along the perimeter is related to the horizontal difference and radius by Equation 6:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (6)
+       <p>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         where is the wheel radius.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.2 Calculating Z
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         In order to properly calculate the distance from the piezoelectric-element to the neutral axis, it is necessary to appreciate that there are essentially four layers bonded to one another: the tire substrate, the Kevlar reinforcing in the tire, the bonding layer, and the piezoelectric-element.
+        </s>
+        <s pid="29" sid="2">
+         Figure 1 shows these four layers, the neutral axis (or centroid), and the respective distances from the top edge of each element to the neutral axis (C1, C2, C3, and C4).
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Figure 1: A cross sectional view of the three bending layers.
+        </s>
+        <s pid="32" sid="2">
+         C1, C2, C3 and C4 are the distances from the outer edge of the tire, Kevlar, bonding layer, and piezo-element, respectively, to the neutral axis.
+        </s>
+       </p>
+       <p>
+       </p>
+       <p>
+        <s pid="34" sid="1">
+         The distance from the top edge of all four layers to the neutral axis, C4, is also equal to .
+        </s>
+        <s pid="34" sid="2">
+         To find this distance, it is first noted that for each layer the distance from the individual central axis to the laminates neutral axis is as follows:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (7)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (8)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (9)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (10)
+       <p>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         where
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       ,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       ,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       and
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       are the distances from the center of each layer to the neutral axis.  , , and are the thicknesses of each layer.  Next, knowing that from a summation of forces (Roy R. Craig 2000):
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (11)
+       <p>
+       </p>
+       <p>
+        <s pid="47" sid="1">
+         where ,E1, E2, E 3, and E4 are the Young’s moduli for each layer, C4 can be solved, since everything on the right hand side of Equation 11 is known.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (12)
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.3 Predicting Output Voltage
+       </div>
+       <p>
+        <s pid="50" sid="1">
+         With the ability to calculate strain, the output voltage of the piezoelectric-element can now be calculated.
+        </s>
+        <s pid="50" sid="2">
+         From (Brei 2004) it has been shown that, assuming that there is no applied electric field, voltage is related to strain through Equation 13:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (13)
+       <p>
+       </p>
+       <p>
+        <s pid="53" sid="1">
+         where C is capacitance, V is voltage, A is area, and e is a piezoelectric constant.
+        </s>
+        <s pid="53" sid="2">
+         The following relationships between the given constants are known:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (14)
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (15)
+       <p>
+       </p>
+       <p>
+        <s pid="58" sid="1">
+         where k2 is the electrical coupling factor, c is elastic stiffness and g is a piezoelectric constant.
+        </s>
+       </p>
+       <p>
+        <s pid="59" sid="1">
+         Combining Equations 14 and 15 with Equation 13 the output voltage can be written in integral form:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (16)
+       <p>
+       </p>
+       <p>
+        <s pid="62" sid="1">
+         The capacitive value,, from Equation 16 is:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (17)
+       <p>
+       </p>
+       <p>
+        <s pid="65" sid="1">
+         where is a known constant for the permittivity of the PVDF, and , , and are the length, width, and thickness of the PVDF, respectively.
+        </s>
+       </p>
+       <p>
+        <s pid="66" sid="1">
+         Integrating Equation 16 over a constant width while maintaining as constant, the voltage formulation becomes the same as for a cantilever beam:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (18)
+       <p>
+       </p>
+       <p>
+        <s pid="69" sid="1">
+         In this case, the flattening of the bicycle tire can be viewed as two cantilever beams anchored at their abutting edges (Figure 2).
+        </s>
+        <s pid="69" sid="2">
+         This is true because of the inherent symmetry of the bending element.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="72" sid="1">
+         Figure 2: A diagram of the bicycle tire in contact with the ground.
+        </s>
+        <s pid="72" sid="2">
+         Each side can be viewed as a single cantilever beams anchored at a similar edge.
+        </s>
+       </p>
+       <p>
+       </p>
+       <p>
+        <s pid="74" sid="1">
+         Therefore, Equation 18 is evaluated over two sections of half the length of the flattened section of the tire.
+        </s>
+        <s pid="74" sid="2">
+         Equation 6 can now be differentiated and inserted into Equation 18.
+        </s>
+        <s pid="74" sid="3">
+         The resulting equation is the total voltage produced by the flattening of a section of the bicycle tire:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (19)
+       <p>
+       </p>
+       <p>
+        <s pid="77" sid="1">
+         Table 1 shows the constants assumed in calculating the voltage produced by the PVDF.
+        </s>
+       </p>
+       <p>
+        <s pid="78" sid="1">
+         Table 1: Constants used to calculate voltage produced by the PVDF (Graham 1992; Brei 2004)
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        2.4 Determining the Footprint of the Tire
+       </div>
+       <p>
+        <s pid="79" sid="1">
+         In order to determine the voltage from Equation 19, it is necessary to find the length of the footprint (or the flat area in contact with the ground).
+        </s>
+        <s pid="79" sid="2">
+         Assuming that the weight of the bicycle rider is evenly distributed between the front and back wheels, the length of the footprint is as follows, assuming that the width (tread width) is known:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (20)
+       <p>
+       </p>
+       <p>
+        <s pid="82" sid="1">
+         where F is the half the weight of the rider, P is the tire pressure, l is the length of the footprint, and b is the width.
+        </s>
+        <s pid="82" sid="2">
+         Assuming that the width and length of the PVDF are from Table 1, that the tire is inflated to 100 psi, and that the rider weight is 100 lbs, then the amount of voltage recovered by the energy harvesting unit is equal to 10.1 V.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       3 Validating the Model
+      </div>
+      <p>
+       <s pid="83" sid="1">
+        With a working model developed, and a prediction for the output voltage in hand, the process of validating the model can now be discussed.
+       </s>
+       <s pid="83" sid="2">
+        Since the PVDF was prepared, mounted, and installed in the tire prior to model development, all of the values and conditions assumed in the model discussed in Section 2 were obtained either by direct measurement, outside sources, or by reasonable approximation.
+       </s>
+       <s pid="83" sid="3">
+        For example, all of the dimensions of the tire, Kevlar reinforcement, and PVDF were directly measured with digital calipers.
+       </s>
+       <s pid="83" sid="4">
+        The thickness of the bonding layer could not be measured, but it was assumed that it was approximately the same thickness as the PVDF since a very small amount of epoxy was applied over a relatively large area and great care was taken in making the layer as thin as possible.
+       </s>
+       <s pid="83" sid="5">
+        The material properties of each layer were found from outside sources (Graham 1992; Brei 2004).
+       </s>
+      </p>
+      <p>
+      </p>
+      <div>
+       <div class="head_2">
+        3.1 Experimental Setup
+       </div>
+       <p>
+        <s pid="85" sid="1">
+         A small piece of PVDF was prepared for this experiment by etching the electrode with acetone and then cutting the desired shape.
+        </s>
+        <s pid="85" sid="2">
+         This was done to eliminate the possibility of electrical arching.
+        </s>
+        <s pid="85" sid="3">
+         An IRC High Pressure Bicycle
+        </s>
+        <s pid="85" sid="4">
+         Tire was obtained for the experiment, and the bicycle wheel and inner-tube were removed.
+        </s>
+        <s pid="85" sid="5">
+         A small area was prepared on the inside Kevlar reinforcement of the tire, and the PVDF was then bonded to the Kevlar with 3M Scotch-Weld DP110 epoxy adhesive.
+        </s>
+        <s pid="85" sid="6">
+         It was determined from the 3M Company that this particular adhesive would work well in bonding the PVDF to the tires Kevlar inner lining.
+        </s>
+       </p>
+       <p>
+        <s pid="86" sid="1">
+         Along with the PVDF bonded to the inner Kevlar lining, some foam spacers were inserted to protect the outside surface of the PVDF from marring by the inner-tube.
+        </s>
+        <s pid="86" sid="2">
+         This was done from experience as an initial trial was rendered inoperable after it was damaged by the inner-tube in direct contact with the PVDF.
+        </s>
+        <s pid="86" sid="3">
+         The bicycle inner-tube was then inserted into the tire, and the tire was remounted on the rim of the bicycle wheel.
+        </s>
+        <s pid="86" sid="4">
+         Finally, the tire was inflated to 100 psi, and left to set overnight.
+        </s>
+       </p>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.2 Initial Tests
+       </div>
+       <p>
+        <s pid="88" sid="1">
+         In order to test the model developed in Section 2, the two leads from the piezoelectric-element within the bicycle wheel were attached to an oscilloscope as shown in Figure 3.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="91" sid="1">
+         Figure 3: Bicycle
+        </s>
+        <s pid="91" sid="2">
+         Tire with Oscilloscope.
+        </s>
+        <s pid="91" sid="3">
+         The two leads of the PVDF were attached to the oscilloscope, and the output was monitored as a load was applied to the tire.
+        </s>
+       </p>
+       <p>
+        <s pid="92" sid="1">
+         With the oscilloscope set to trigger-mode, the bicycle tire was loaded by applying a force by hand and shocking the area where the PVDF was located along the perimeter of the wheel.
+        </s>
+        <s pid="92" sid="2">
+         It was noted, that while peaks as high as 20 volts were noted when the wheel was heavily shocked, most of the peaks occurred in the range of 10 to volts.
+        </s>
+        <s pid="92" sid="3">
+         Figure 4 shows a typical peak resulting from our test method.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="95" sid="1">
+         Figure 4: Oscilloscope readout of resulting from shocking the PVDF.
+        </s>
+        <s pid="95" sid="2">
+         While this peak shows a maximum voltage of approximately 17 volts; most peaks occurred around 10 volts.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.3 Results
+       </div>
+       <p>
+        <s pid="96" sid="1">
+         The testing of the bicycle wheel assembly showed that our model results of 10.1 Volts were not only on the same order of magnitude as predicted, but also fairly close to the theoretical voltage prediction.
+        </s>
+        <s pid="96" sid="2">
+         It is estimated that the tire was exposed to a shock force of roughly 50 pounds, but the necessary equipment to accurately produce this force on a repetitive basis was simply to expensive and difficult to obtain.
+        </s>
+        <s pid="96" sid="3">
+         However, from an order of magnitude standpoint, this model correlated with experimental data, and if this project were to be further pursued, the model could be used to optimize the amount of voltage produced by the PVDF patch.
+        </s>
+       </p>
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.4    Energy Calculation
+       </div>
+       <p>
+        <s pid="98" sid="1">
+         The energy of a single impact cycle, including impact and recovery, was calculated by observing the voltage signal across a known resistor of 100K on an oscilloscope.
+        </s>
+        <s pid="98" sid="2">
+         .It was found that a single impact yielded two approximately equivalent but opposite peaks, one from initial impact, and one from recovery.
+        </s>
+        <s pid="98" sid="3">
+         This voltage would become entirely positive if it were passed through a rectifier circuit.
+        </s>
+        <s pid="98" sid="4">
+         These impacts were approximated as triangular waves.
+        </s>
+        <s pid="98" sid="5">
+         Energy was then calculated from the waveform by integrating the instantaneous power over time:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (21)
+       <p>
+       </p>
+       <p>
+        <s pid="101" sid="1">
+         where represents triangular relationship between voltage and time (which is an approximation of the actual signal):
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (22)
+       <p>
+       </p>
+       <p>
+        <s pid="104" sid="1">
+         and resistance R=100 K
+        </s>
+       </p>
+       <p>
+        <s pid="105" sid="1">
+         Analytically, the total energy from impact and recovery resolves to:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (23)
+       <p>
+       </p>
+       <p>
+        <s pid="108" sid="1">
+         in this case the maximum voltage . and t = 8.5 ms, is the time duration of a single peak.
+        </s>
+       </p>
+       <p>
+        <s pid="109" sid="1">
+         The total impact energy can then be calculated to be 9.9nJ.
+        </s>
+        <s pid="109" sid="2">
+         Then, assuming that 6 patches could be placed on a 187 diameter tire, a rider could produce 740 aJ over a 3 hr ride.
+        </s>
+        <s pid="109" sid="3">
+         Average power can be calculated by dividing the energy of an impact/recovery cycle by the total period of the cycle, here 35ms based on measured data.
+        </s>
+        <s pid="109" sid="4">
+         This yields an average power of 0.283 .W.
+        </s>
+        <s pid="109" sid="5">
+         The average current produced by deformation of the PVDF can be calculated from the average power and the sense resistance:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (24)
+       <p>
+       </p>
+       <p>
+        <s pid="112" sid="1">
+         whereis the average power.
+        </s>
+       </p>
+       <p>
+        <s pid="113" sid="1">
+         The average current for an impact cycle through a 100K resistor is then calculated to be 1.7 A.
+        </s>
+        <s pid="113" sid="2">
+         It should be noted that this average current is specific to the 100KI resistor, and it would change depending on different resistance values used.
+        </s>
+        <s pid="113" sid="3">
+         However, the power output will not change with difference resistor values.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       4 Product Design and Manufacture
+      </div>
+      <p>
+       <s pid="114" sid="1">
+        Knowing that the PVDF patch is capable of delivering voltages on the order of 10 volts, the possibilities of harvesting and storing this electrical energy could next be considered.
+       </s>
+       <s pid="114" sid="2">
+        In this section, the work done to design a functioning product will be presented.
+       </s>
+       <s pid="114" sid="3">
+        First, a short discussion of the importance of properly sizing the PVDF will be given.
+       </s>
+       <s pid="114" sid="4">
+        Next, a voltage rectifier circuit will be presented followed by a discussion of the circuit’s ability to charge a capacitor.
+       </s>
+       <s pid="114" sid="5">
+        Efforts to develop a circuit that could automatically discharge this capacitor will then be discussed.
+       </s>
+       <s pid="114" sid="6">
+        Lastly, several potential applications for the energy harvesting PVDF and circuit will be given.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        4.1 Dimensions of the Piezoelectric
+       </div>
+       <p>
+        <s pid="115" sid="1">
+         During initial experimentation, it was found that a large strip of PVDF, deformed in a small area, would suffer from a significant capacitive effect – the inactive PVDF stores charge generated by the active region, and therefore reduces the voltage present between the two electrodes.
+        </s>
+        <s pid="115" sid="2">
+         In response to these findings, both the modeling and experimental studies (section 2 and 3 of this report) were modified in order to reduce the size of the PVDF strip to dimensions more comparable to that of the tire’s contact surface.
+        </s>
+        <s pid="115" sid="3">
+         As a result, voltages of around 10V were capable of being generated.
+        </s>
+        <s pid="115" sid="4">
+         In order to properly design an energy harvesting element, it is consequently crucial to size the PVDF to suit both the harvesting circuit, and the bicycle tire in which the piezoelectric-element is situated.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.2 Voltage Rectifier Circuit
+       </div>
+       <p>
+        <s pid="116" sid="1">
+         Since the output of the PVDF is an alternating signal, it was necessary to produce a voltage rectifier circuit that would make use of both the positive and negative pulses.
+        </s>
+        <s pid="116" sid="2">
+         Four diodes, as seen in Figure 5, comprise the rectifier and a capacitor is placed across the output leads.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="117" sid="1">
+         Figure 5: A voltage rectifier circuit, capable of charging a capacitor.
+        </s>
+        <s pid="117" sid="2">
+         The input of the circuit on the left and side is a time-varying signal produced by the PVDF imbedded in the bicycle tire.
+        </s>
+       </p>
+       <p>
+       </p>
+       <p>
+        <s pid="119" sid="1">
+         By bouncing the bicycle tire on a hard floor, it was possible to charge a capacitor to a sufficient voltage to power an LED.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.3 Automatically Discharging the Capacitor
+       </div>
+       <p>
+        <s pid="120" sid="1">
+         With a rectifying circuit built and successfully tested, various circuits, capable of automatically draining the capacitor through an LED once a given voltage was reached during the charging of the capacitor, were next investigated.
+        </s>
+        <s pid="120" sid="2">
+         This proved to be a more difficult task than anticipated, since the circuits sought had to be self-sufficient.
+        </s>
+        <s pid="120" sid="3">
+         For example, a promising circuit made use of a thyristor, which behaves like a transistor but remains "on" until there is zero current running through it after it is initially switched "on" .
+        </s>
+        <s pid="120" sid="4">
+         In order for the thyristor to activate, its base lead was connected to the capacitor, since a thyristor will turn on when the base reaches a threshold voltage.
+        </s>
+        <s pid="120" sid="5">
+         Unfortunately, the base also draws a very small amount of current – enough in this application to keep the capacitor from charging to the desired level.
+        </s>
+       </p>
+       <p>
+        <s pid="121" sid="1">
+         Efforts in designing an autonomous circuit have been purely investigative, but a more thorough study, possibly involving an electronics expert, should be able to produce a working device.
+        </s>
+        <s pid="121" sid="2">
+         However, in this case such a study is beyond the scope of the project.
+        </s>
+        <s pid="121" sid="3">
+         Additionally, if a design did not require self-sufficiency, there are many externally powered electrical components such as comparators, which would be able to produce the needed switching function.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.4 Potential Applications
+       </div>
+       <p>
+        <s pid="122" sid="1">
+         While this project and report are intended to primarily serve as a proof of concept, there still are several potential applications, should this work be used to create an actual working product.
+        </s>
+        <s pid="122" sid="2">
+         From this investigation, a capacitor was able to be charged by the repeated shocking of a bicycle tire.
+        </s>
+        <s pid="122" sid="3">
+         Once the capacitor was charged above 3 volts, an LED was placed across the capacitor leads and a flash of light was observed.
+        </s>
+        <s pid="122" sid="4">
+         Clearly this shows that an LED could be periodically flashed if a controlling circuit were built, and products relating to safety lighting could easily be developed and marketed.
+        </s>
+       </p>
+       <p>
+        <s pid="123" sid="1">
+         It was thought that the output of the PVDF could be used to charge a small battery after passing through the rectifier circuit, but as seen in the energy calculations in section 3.4, the output is quite small.
+        </s>
+        <s pid="123" sid="2">
+         It is still possible, however to charge a very small battery, or to increase the overall energy output by adding more PVDF elements in the bicycle tire.
+        </s>
+        <s pid="123" sid="3">
+         There also low-powered electrical accessories that are powered by small batteries, such as cyclometers used to measure speed and trip distance.
+        </s>
+        <s pid="123" sid="4">
+         Most of these electrical systems are on only when the bicycle is in use, and if an electrical circuit were designed to trickle charge the small batteries powering the systems, the batteries would only need to be replaced every few years (assuming a NIMH battery with the capacity for 1,000 charges (Energizer)).
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       5 Conclusions and Further Recommendations
+      </div>
+      <p>
+       <s pid="124" sid="1">
+        This paper has shown that it is indeed possible to harvest electrical energy with a PVDF in the specific application of a bicycle tire.
+       </s>
+       <s pid="124" sid="2">
+        The underlying physics of the application were discussed, and a model was developed to predict the output signal of the PVDF embedded in the bicycle tire (accounting for four different layers bonded together).
+       </s>
+       <s pid="124" sid="3">
+        A discussion of experimental results was then provided, and it was concluded that the model verifiably predicts output voltage to a reasonable degree of accuracy.
+       </s>
+       <s pid="124" sid="4">
+        It was then shown that it is possible to transfer electrical energy to a storage medium for later use.
+       </s>
+       <s pid="124" sid="5">
+        While measurements of this energy show that the output of the PVDF is too low to charge conventional batteries, there are small capacity batteries that can still be charged with this power input.
+       </s>
+       <s pid="124" sid="6">
+        For higher power applications, it is recommended that a different piezoelectric is used, since the findings of this report show that a PVDF would be inadequate.
+       </s>
+       <s pid="124" sid="7">
+        If certain applications require that a PVDF be used (i.e. large strains that might fracture a brittle piezoceramic) it is suggested that a laminated PVDF be tested in a similar manner as this report.
+       </s>
+       <s pid="124" sid="8">
+        Once the laminate is fully characterized, decisions regarding its role in an application can be made.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       6 References
+      </div>
+      <li id="N1027E">
+       (1987). "IEEE Standard on Piezoelectricity." Institute of Electrical and Electronics Engineers, Inc.
+      </li>
+      <li id="N10280">
+       Brei, D. (2004). Smart Materials Class Lecture Notes. Ann Arbor.
+      </li>
+      <li id="N10282">
+       Energizer, I.
+      </li>
+      <li id="N10284">
+       Geffrey K. Ottman, H. F. H., George A. Lesieutre (2003). "Optimized Piezoelectric Energy Harvesting Circuit Using Step-Down Converter in Discoutinuous Conduction Mode." IEEE 18(2).
+      </li>
+      <li id="N10286">
+       Graham, C. J. M. a. C. D. (1992). Introduction to Engineering Materials: The bicycle and the walkman.
+      </li>
+      <li id="N10288">
+       H.A. Sodano, G. P., and D.J. Inman (2004). "Estimation of Electric Charge Output for Piezoelectric Energy Harvesting." Strain 40: 49-58.
+      </li>
+      <li id="N1028A">
+       Henry A. Sodano, D. J. I. a. G. P. (2004). "A Review of Power Harvesting from Vibration using Piezoelectric Materials." Shock and Vibration Digest: p. 197-205.
+      </li>
+      <li id="N1028C">
+       Michael J. Ramsay, W. W. C. (2001). Piezoelectric Energy Harvesting for Bio MEMS Applications. Proceedings of SPIE.
+      </li>
+      <li id="N1028E">
+       Paradiso, N. S. S. a. J. A. (2001). "Energy Scavenging With Shoe-Mounted Piezoelectric." IEEE: 30-41.
+      </li>
+      <li id="N10290">
+       Roy R. Craig, J. (2000). Mechanics of Materials. New York, John Wiley and Sons.
+      </li>
+      <li id="N10292">
+       Shenk, N. S. (1999). "Demonstration of Useful Electric Energy Generation from Piezoceramics in a Shoe, in Mechanical Engineering." MIT: p. 137.
+      </li>
+      <li id="N10294">
+       Starner, T. (1996). "Human-Powered Wearable Computing." IBM Systems Journal 35(3-4): 618-628.
+      </li>
+      <li id="N10296">
+       Vujic, N. D. H. L., Donald J.; Lindner, Douglas K. (2002). Power flow analysis for amplifier design and energy harvesting. SPIE - The International Society for Optical Engineering.
+      </li>
+      <li id="N10298">
+       Young, W. C. (1989). Roark's Formulas for Stress and Strain. New York, McGraw-Hill, Inc.
+      </li>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

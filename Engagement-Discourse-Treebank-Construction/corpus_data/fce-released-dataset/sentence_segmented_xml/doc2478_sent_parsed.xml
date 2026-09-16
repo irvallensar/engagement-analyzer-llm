@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     28.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       . I would like to travel only
+       <ns type="MT">
+       </ns>
+       July because I would be
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         schools
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         holydays
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       and the weather is hot and the sea's temperature is less cold than in winter. I would like to travel in July to be sure it would not rain during the trip
+       <ns type="MP">
+       </ns>
+       which
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         boring
+        </i>
+       </ns>
+       ?! And when the sun is shining you are
+       <ns type="DJ">
+        <i>
+         relax
+        </i>
+       </ns>
+       and you feel good.
+      </p>
+      <p>
+       . I would prefer
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       to sleep
+       <ns type="MT">
+       </ns>
+       at Camp California because it is fun to sleep in tents
+       <ns type="MC">
+       </ns>
+       to compare
+       <ns type="MA">
+       </ns>
+       <ns type="M">
+       </ns>
+       in a house. You are in communication with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature and you can hear the insects. And we only need to sleep and not to cook or watch T.V... It is very nice to stay in tents
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       are strong and
+       <ns type="S">
+        <i>
+         confortable
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       . From the list below, the two activities I will choose are
+       <ns type="RP">
+        <i>
+         Tennis
+        </i>
+       </ns>
+       and sailing. Tennis because I play
+       <ns type="RP">
+        <i>
+         Tennis
+        </i>
+       </ns>
+       and I am classed 15-5. I like
+       <ns type="W">
+        <i>
+         very much
+         <ns type="RP">
+          <i>
+           Tennis
+          </i>
+         </ns>
+        </i>
+       </ns>
+       because it is
+       <ns type="R">
+        a technical
+       </ns>
+       and physical sport. And you need
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         strategie
+        </i>
+       </ns>
+       to win the match. It is nice to play tennis outside
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the court when the weather is hot. But you can't play if there is too much wind,
+       <ns type="MC">
+       </ns>
+       the ball becomes
+       <ns type="S">
+        <i>
+         incontrolable
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       <ns type="M">
+       </ns>
+       Windsurfing because I
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           <ns type="S">
+            <i>
+             pratise
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       it for a long time. You can do it alone. I like windsurfing because it is a sport of speed and
+       <ns type="RN">
+        slide
+       </ns>
+       like skiing
+       <ns type="R">
+        <i>
+         ,
+        </i>
+       </ns>
+       surfing.
+       <ns type="RP">
+        <i>
+         you
+        </i>
+       </ns>
+       need
+       <ns type="S">
+        <i>
+         technics
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         move
+        </i>
+       </ns>
+       the
+       <ns type="R">
+        <i>
+         windsurf
+        </i>
+       </ns>
+       . You must know how to use the wind and
+       <ns type="R">
+        you have great sensations
+       </ns>
+       !
+      </p>
+      <p>
+       I would like to ask you questions:
+       <ns type="RP">
+        <i>
+         Must
+        </i>
+       </ns>
+       I take
+       <ns type="R">
+        <ns type="W">
+         <i>
+          with me my clothes
+         </i>
+        </ns>
+       </ns>
+       ?
+      </p>
+      <p>
+       Is there a washing machine at Camp California?
+      </p>
+      <p>
+       Do I need some money to pay
+       <ns type="MT">
+       </ns>
+       the meals!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        .
+       </s>
+       <s pid="1" sid="2">
+        I would like to travel only  July because I would be in schools holydays  and the weather is hot and the sea's temperature is less cold than in winter.
+       </s>
+       <s pid="1" sid="3">
+        I would like to travel in July to be sure it would not rain during the trip which is boring?!
+       </s>
+       <s pid="1" sid="4">
+        And when the sun is shining you are relax and you feel good.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        .
+       </s>
+       <s pid="2" sid="2">
+        I would prefer  tents to sleep  at Camp California because it is fun to sleep in tents  to compare   in a house.
+       </s>
+       <s pid="2" sid="3">
+        You are in communication with the nature and you can hear the insects.
+       </s>
+       <s pid="2" sid="4">
+        And we only need to sleep and not to cook or watch T.V...
+       </s>
+       <s pid="2" sid="5">
+        It is very nice to stay in tents wich are strong and confortable.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        .
+       </s>
+       <s pid="3" sid="2">
+        From the list below, the two activities I will choose are Tennis and sailing.
+       </s>
+       <s pid="3" sid="3">
+        Tennis because I play Tennis and I am classed 15-5.
+       </s>
+       <s pid="3" sid="4">
+        I like very much Tennis because it is a technical and physical sport.
+       </s>
+       <s pid="3" sid="5">
+        And you need  strategie to win the match.
+       </s>
+       <s pid="3" sid="6">
+        It is nice to play tennis outside in the court when the weather is hot.
+       </s>
+       <s pid="3" sid="7">
+        But you can't play if there is too much wind,  the ball becomes incontrolable!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Windsurfing because I pratise it for a long time.
+       </s>
+       <s pid="4" sid="2">
+        You can do it alone.
+       </s>
+       <s pid="4" sid="3">
+        I like windsurfing because it is a sport of speed and slide like skiing, surfing.
+       </s>
+       <s pid="4" sid="4">
+        you need technics to move the windsurf.
+       </s>
+       <s pid="4" sid="5">
+        You must know how to use the wind and you have great sensations!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I would like to ask you questions:
+       </s>
+       <s pid="5" sid="2">
+        Must I take with me my clothes?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Is there a washing machine at Camp California?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Do I need some money to pay  the meals!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="RP">
+        <i>
+         you
+        </i>
+       </ns>
+       have recently had a class discussion about shopping. Now your
+       <ns type="RP">
+        <i>
+         english
+        </i>
+       </ns>
+       teacher has asked you to write a composition
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       giving your opinions on
+       <ns type="M">
+       </ns>
+       : "shopping is not always enjoyable"
+      </p>
+      <p>
+       In fact, shopping is not always enjoyable because sometimes you want to buy
+       <ns type="RN">
+        <i>
+         articles
+        </i>
+       </ns>
+       but you don't have enough money!
+      </p>
+      <p>
+       You don't find anything interesting in the shop.
+      </p>
+      <p>
+       You can hesitate
+       <ns type="MY">
+       </ns>
+       <ns type="FV">
+        <i>
+         to choose
+        </i>
+       </ns>
+       an
+       <ns type="L">
+        <i>
+         article
+        </i>
+       </ns>
+       . Which is the best
+       <ns type="RN">
+        <i>
+         article
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       ? The
+       <ns type="RN">
+        <i>
+         seller
+        </i>
+       </ns>
+       can be not very nice and watch you all the time. You don't find
+       <ns type="W">
+        <i>
+         your size or the
+         <ns type="RJ">
+          <i>
+           good
+          </i>
+         </ns>
+         color in the
+         <ns type="RN">
+          <i>
+           article
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . The
+       <ns type="RN">
+        <i>
+         article
+        </i>
+       </ns>
+       can be too expensive.
+      </p>
+      <p>
+       It looks
+       <ns type="S">
+        <i>
+         fragil
+        </i>
+       </ns>
+       and it could break easily.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       must
+       <ns type="RV">
+        <i>
+         test
+        </i>
+       </ns>
+       several shops and compare the price
+       <ns type="R">
+        <i>
+         ,
+        </i>
+       </ns>
+       the quality of the
+       <ns type="RN">
+        <i>
+         articles
+        </i>
+       </ns>
+       . So you must walk all
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       day or go by car. And the weather must be fine if you walk in
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       town.
+      </p>
+      <p>
+       Shopping is not always enjoyable if there
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       a lot of people in the shops because you can't move
+       <ns type="RC">
+        <i>
+         and
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         choose
+        </i>
+       </ns>
+       the
+       <ns type="R">
+        article
+       </ns>
+       and
+       <ns type="RV">
+        <i>
+         be
+        </i>
+       </ns>
+       cool!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        you have recently had a class discussion about shopping.
+       </s>
+       <s pid="1" sid="2">
+        Now your english teacher has asked you to write a composition, giving your opinions on : "shopping is not always enjoyable"
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In fact, shopping is not always enjoyable because sometimes you want to buy articles but you don't have enough money!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        You don't find anything interesting in the shop.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        You can hesitate  to choose an article.
+       </s>
+       <s pid="4" sid="2">
+        Which is the best article to take?
+       </s>
+       <s pid="4" sid="3">
+        The seller can be not very nice and watch you all the time.
+       </s>
+       <s pid="4" sid="4">
+        You don't find your size or the good color in the article.
+       </s>
+       <s pid="4" sid="5">
+        The article can be too expensive.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        It looks fragil and it could break easily.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Your must test several shops and compare the price, the quality of the articles.
+       </s>
+       <s pid="6" sid="2">
+        So you must walk all the day or go by car.
+       </s>
+       <s pid="6" sid="3">
+        And the weather must be fine if you walk in the town.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Shopping is not always enjoyable if there is a lot of people in the shops because you can't move and choose the article and be cool!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

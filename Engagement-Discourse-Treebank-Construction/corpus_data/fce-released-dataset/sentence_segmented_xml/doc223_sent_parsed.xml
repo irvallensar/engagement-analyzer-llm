@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I am writing to complain about a musical show, which I
+       <ns type="TV">
+        <i>
+         have seen
+        </i>
+       </ns>
+       in your theatre
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       in London during my holiday.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         According to
+        </i>
+       </ns>
+       the advertisement, which appeared in one of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       London's newspapers, I would like to present you
+       <ns type="MT">
+       </ns>
+       some of my
+       <ns type="S">
+        <i>
+         complaines
+        </i>
+       </ns>
+       about your musical spectacle. Firstly, I would like to say that the cast, which you "
+       <ns type="RV">
+        <i>
+         offered
+        </i>
+       </ns>
+       "
+       <ns type="MP">
+       </ns>
+       has been changed. The man who played the main male role was
+       <ns type="R">
+        <i>
+         different than this one,
+        </i>
+       </ns>
+       who was mentioned in the advertisement. Secondly, the time when your musical should start
+       <ns type="TV">
+        <i>
+         has been
+        </i>
+       </ns>
+       changed,
+       <ns type="RV">
+        <i>
+         making your show delayed
+        </i>
+       </ns>
+       for
+       <ns type="DY">
+        <i>
+         nearlly
+        </i>
+       </ns>
+       one hour! In your
+       <ns type="RN">
+        <i>
+         offer
+        </i>
+       </ns>
+       I noticed
+       <ns type="CQ">
+        <i>
+         an
+        </i>
+       </ns>
+       information about discounts which were supposed to be available - no, they were not! Another "defect" in the advertisement was an "invitation" to the restaurant after the show. For unknown
+       <ns type="U">
+        <i>
+         for me
+        </i>
+       </ns>
+       reasons, I found the restaurant closed (there was no information
+       <ns type="RV">
+        <i>
+         telling
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       a
+       <ns type="RN">
+        <i>
+         cause
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       closing it). Finally, you guaranteed "a perfect evening out", but for me it was the worst visit
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       theatre in two years
+       <ns type="UN">
+        <i>
+         time
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       To sum up, I am very disappointed about the musical in your theatre. Neither
+       <ns type="MD">
+       </ns>
+       beautiful
+       <ns type="S">
+        <i>
+         surranding
+        </i>
+       </ns>
+       near your theatre nor
+       <ns type="MD">
+       </ns>
+       comfortable
+       <ns type="DN">
+        <i>
+         sits
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         will
+         <ns type="UT">
+          <i>
+           not
+          </i>
+         </ns>
+         <ns type="S">
+          <i>
+           recompansate
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       my horrible evening. Therefore, I would like you to send my money back, because I think I deserve it as a
+       <ns type="RN">
+        <i>
+         viewer
+        </i>
+       </ns>
+       . I look forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about a musical show, which I have seen in your theatre, in London during my holiday.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        According to the advertisement, which appeared in one of the London's newspapers, I would like to present you  some of my complaines about your musical spectacle.
+       </s>
+       <s pid="3" sid="2">
+        Firstly, I would like to say that the cast, which you "offered" has been changed.
+       </s>
+       <s pid="3" sid="3">
+        The man who played the main male role was different than this one, who was mentioned in the advertisement.
+       </s>
+       <s pid="3" sid="4">
+        Secondly, the time when your musical should start has been changed, making your show delayed for nearlly one hour!
+       </s>
+       <s pid="3" sid="5">
+        In your offer I noticed an information about discounts which were supposed to be available - no, they were not!
+       </s>
+       <s pid="3" sid="6">
+        Another "defect" in the advertisement was an "invitation" to the restaurant after the show.
+       </s>
+       <s pid="3" sid="7">
+        For unknown for me reasons, I found the restaurant closed (there was no information telling about a cause of closing it).
+       </s>
+       <s pid="3" sid="8">
+        Finally, you guaranteed "a perfect evening out", but for me it was the worst visit in  theatre in two years time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        To sum up, I am very disappointed about the musical in your theatre.
+       </s>
+       <s pid="4" sid="2">
+        Neither  beautiful surranding near your theatre nor  comfortable sits will not recompansate  my horrible evening.
+       </s>
+       <s pid="4" sid="3">
+        Therefore, I would like you to send my money back, because I think I deserve it as a viewer.
+       </s>
+       <s pid="4" sid="4">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Technology is very important in our life. Mainly, because it makes it easier and more comfortable. Nevertheless
+       <ns type="MP">
+       </ns>
+       it has some advantages and drawbacks.
+      </p>
+      <p>
+       In my opinion
+       <ns type="MP">
+       </ns>
+       my daily life is full of modern technology. I meet
+       <ns type="AGA">
+        <i>
+         her
+        </i>
+       </ns>
+       "at every corner": at home, at school, in the backyard and so on. It also changed my
+       <ns type="UP">
+        <i>
+         life-style
+        </i>
+       </ns>
+       for
+       <ns type="MD">
+       </ns>
+       better - I think. Every morning I use a toaster to have my sandwiches done,
+       <ns type="MD">
+       </ns>
+       washing machine which makes my clothes clean again.
+       <ns type="RY">
+        <i>
+         Recently
+        </i>
+       </ns>
+       , modern technology means: mobile phones, computers,
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       , super-fast cars etc. These improvements
+       <ns type="AGV">
+        <i>
+         helps
+        </i>
+       </ns>
+       me with my ordinary
+       <ns type="RN">
+        <i>
+         <ns type="IN">
+          <i>
+           dutes
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . I can do my homework on
+       <ns type="MD">
+       </ns>
+       computer, prepare for the class test by searching
+       <ns type="MT">
+       </ns>
+       information
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       Internet and use a mobile phone every time
+       <ns type="UC">
+        <i>
+         when
+        </i>
+       </ns>
+       I want to
+       <ns type="RV">
+        <i>
+         connect
+        </i>
+       </ns>
+       with one of my parents.
+      </p>
+      <p>
+       However, technology has a bad influence on us
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       generally on our
+       <ns type="S">
+        <i>
+         healf
+        </i>
+       </ns>
+       .
+       <ns type="MD">
+        <i>
+         Couple
+        </i>
+       </ns>
+       of months ago, some foreign scientists noticed that mobile phones
+       <ns type="R">
+        make a possibility of getting sick with cancer
+       </ns>
+       . Also fast and
+       <ns type="DJ">
+        <i>
+         well-improved
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         car
+        </i>
+       </ns>
+       increase
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         risk
+        </i>
+       </ns>
+       of pollution
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       our air and mainly lead to very dangerous accidents.
+      </p>
+      <p>
+       In conclusion
+       <ns type="MP">
+       </ns>
+       I think that modern technology makes our life easier
+       <ns type="RP">
+        <i>
+         , nevertheless
+        </i>
+       </ns>
+       , we should avoid any possible risks connected with these improvements. Then we will be able to say that technology is something we should be proud of.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Technology is very important in our life.
+       </s>
+       <s pid="1" sid="2">
+        Mainly, because it makes it easier and more comfortable.
+       </s>
+       <s pid="1" sid="3">
+        Nevertheless it has some advantages and drawbacks.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In my opinion my daily life is full of modern technology.
+       </s>
+       <s pid="2" sid="2">
+        I meet her "at every corner": at home, at school, in the backyard and so on.
+       </s>
+       <s pid="2" sid="3">
+        It also changed my life-style for  better - I think.
+       </s>
+       <s pid="2" sid="4">
+        Every morning I use a toaster to have my sandwiches done,  washing machine which makes my clothes clean again.
+       </s>
+       <s pid="2" sid="5">
+        Recently, modern technology means: mobile phones, computers,  internet, super-fast cars etc.
+       </s>
+       <s pid="2" sid="6">
+        These improvements helps me with my ordinary dutes.
+       </s>
+       <s pid="2" sid="7">
+        I can do my homework on  computer, prepare for the class test by searching  information in  Internet and use a mobile phone every time when I want to connect with one of my parents.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        However, technology has a bad influence on us, generally on our healf.
+       </s>
+       <s pid="3" sid="2">
+        Couple of months ago, some foreign scientists noticed that mobile phones make a possibility of getting sick with cancer.
+       </s>
+       <s pid="3" sid="3">
+        Also fast and well-improved car increase a risk of pollution of our air and mainly lead to very dangerous accidents.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In conclusion I think that modern technology makes our life easier, nevertheless, we should avoid any possible risks connected with these improvements.
+       </s>
+       <s pid="4" sid="2">
+        Then we will be able to say that technology is something we should be proud of.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

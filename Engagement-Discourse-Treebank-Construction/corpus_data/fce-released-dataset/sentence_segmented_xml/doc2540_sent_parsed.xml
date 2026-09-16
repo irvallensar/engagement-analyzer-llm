@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Thai
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     28.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       Thank you very much for the prize. I am writing this letter to inform you that I have
+       <ns type="S">
+        <i>
+         recieved
+        </i>
+       </ns>
+       your letters and I am going
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the trip.
+      </p>
+      <p>
+       I would like to go
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the trip in July because my school, which is Berkeley International School, is going to arrange the end of term break both for staff and students.
+       <ns type="MD">
+        <i>
+         Other
+        </i>
+       </ns>
+       reason is
+       <ns type="MP">
+       </ns>
+       I think in July the weather is not so cold. The weather
+       <ns type="FN">
+        <i>
+         condition
+        </i>
+       </ns>
+       will be suitable for camping. I prefer to
+       <ns type="RV">
+        <i>
+         live
+        </i>
+       </ns>
+       in tents
+       <ns type="R">
+        <i>
+         to
+        </i>
+       </ns>
+       log cabin because sleeping in
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       tent makes me more comfortable and I can get closer to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature. Every night I would like to
+       <ns type="RV">
+        <i>
+         come
+        </i>
+       </ns>
+       out of the small tent
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the nice
+       <ns type="S">
+        <i>
+         enviroment
+        </i>
+       </ns>
+       outside the tent.
+       <ns type="R">
+        <i>
+         Although
+        </i>
+       </ns>
+       ,
+       <ns type="RV">
+        <i>
+         living
+        </i>
+       </ns>
+       in
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       tent is more comfortable. I'll have to be
+       <ns type="RJ">
+        <i>
+         aware
+        </i>
+       </ns>
+       about insects so I've bought so many
+       <ns type="FN">
+        <i>
+         insects
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         repellant
+        </i>
+       </ns>
+       . I can choose to do 2 activities so I would like to play tennis and
+       <ns type="MV">
+       </ns>
+       swimming. When I was in
+       <ns type="MD">
+       </ns>
+       fourth form, I got the first prize in
+       <ns type="MD">
+       </ns>
+       swimming competition and third prize in tennis. I was a bit
+       <ns type="S">
+        <i>
+         disapotted
+        </i>
+       </ns>
+       with the result because I was expected to win the first prize or
+       <ns type="S">
+        <i>
+         secound
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         price
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Lastly, I would like to ask you
+       <ns type="MQ">
+       </ns>
+       questions. First, how many clothes do I have to bring? And do I have to bring some money
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       It
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be very kind of you
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       if you
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       answer my questions.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely,
+      </p>
+      <p>
+       Seua Thanapol.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much for the prize.
+       </s>
+       <s pid="2" sid="2">
+        I am writing this letter to inform you that I have recieved your letters and I am going to the trip.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to go to the trip in July because my school, which is Berkeley International School, is going to arrange the end of term break both for staff and students.
+       </s>
+       <s pid="3" sid="2">
+        Other reason is I think in July the weather is not so cold.
+       </s>
+       <s pid="3" sid="3">
+        The weather condition will be suitable for camping.
+       </s>
+       <s pid="3" sid="4">
+        I prefer to live in tents to log cabin because sleeping in the tent makes me more comfortable and I can get closer to the nature.
+       </s>
+       <s pid="3" sid="5">
+        Every night I would like to come out of the small tent to the nice enviroment outside the tent.
+       </s>
+       <s pid="3" sid="6">
+        Although, living in the tent is more comfortable.
+       </s>
+       <s pid="3" sid="7">
+        I'll have to be aware about insects so I've bought so many insects repellant.
+       </s>
+       <s pid="3" sid="8">
+        I can choose to do 2 activities so I would like to play tennis and  swimming.
+       </s>
+       <s pid="3" sid="9">
+        When I was in  fourth form, I got the first prize in  swimming competition and third prize in tennis.
+       </s>
+       <s pid="3" sid="10">
+        I was a bit disapotted with the result because I was expected to win the first prize or secound price.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Lastly, I would like to ask you  questions.
+       </s>
+       <s pid="4" sid="2">
+        First, how many clothes do I have to bring?
+       </s>
+       <s pid="4" sid="3">
+        And do I have to bring some money.
+       </s>
+       <s pid="4" sid="4">
+        It will be very kind of you, if you can answer my questions.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Your sincerely,
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Seua Thanapol.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Hi! How are you
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       I am fine and I hope you're fine too. I have an interesting story to tell you. I've been asked to
+       <ns type="R">
+        help by
+       </ns>
+       the
+       <ns type="MP">
+        <i>
+         well known
+        </i>
+       </ns>
+       band
+       <ns type="UV">
+        <i>
+         called
+        </i>
+       </ns>
+       Westlife. At first I was surprised but
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       a few
+       <ns type="AGN">
+        <i>
+         <ns type="S">
+          <i>
+           secound
+          </i>
+         </ns>
+        </i>
+       </ns>
+       later, when I
+       <ns type="S">
+        <i>
+         relised
+        </i>
+       </ns>
+       that
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         didn't allow
+        </i>
+       </ns>
+       to go, I tried to persuade my teacher to let me go.
+       <ns type="RY">
+        <i>
+         At last
+        </i>
+       </ns>
+       , she allowed me
+       <ns type="MV">
+       </ns>
+       .
+      </p>
+      <p>
+       I had to help them behind the
+       <ns type="RN">
+        <i>
+         state
+        </i>
+       </ns>
+       , while they were
+       <ns type="FV">
+        <i>
+         get
+        </i>
+       </ns>
+       dressed. I had to keep things in place and
+       <ns type="S">
+        <i>
+         cheakd
+        </i>
+       </ns>
+       that the microphones
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       working properly. Although the work was not
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           heavey
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , I gained a lot of experience. They gave me their
+       <ns type="FN">
+        <i>
+         <ns type="RN">
+          <i>
+           signature
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and when the concert started, they told me to come up on the
+       <ns type="RN">
+        <i>
+         state
+        </i>
+       </ns>
+       and dance with them. I was really
+       <ns type="S">
+        <i>
+         embarassed
+        </i>
+       </ns>
+       because I had to dance in front of a lot of people but that
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       the very
+       <ns type="FJ">
+        <i>
+         good
+        </i>
+       </ns>
+       experience I have ever had. I
+       <ns type="UV">
+        <i>
+         was
+        </i>
+       </ns>
+       really
+       <ns type="TV">
+        <i>
+         enjoy
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       the concert.
+       <ns type="MD">
+        <i>
+         Thing
+        </i>
+       </ns>
+       that I particularly
+       <ns type="TV">
+        <i>
+         like
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the concert
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       I got a free ticket from Westlife to go to the A1 concert
+       <ns type="MP">
+       </ns>
+       which is another
+       <ns type="MP">
+        <i>
+         well known
+        </i>
+       </ns>
+       band. I really want to have that experience again.
+      </p>
+      <p>
+       That is my story. Tell me
+       <ns type="S">
+        <i>
+         yoors
+        </i>
+       </ns>
+       . I want to know what
+       <ns type="FN">
+        <i>
+         experience
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         you've had
+        </i>
+       </ns>
+       when you were in England.
+      </p>
+      <p>
+       Best wishes,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Hi!
+       </s>
+       <s pid="2" sid="2">
+        How are you.
+       </s>
+       <s pid="2" sid="3">
+        I am fine and I hope you're fine too.
+       </s>
+       <s pid="2" sid="4">
+        I have an interesting story to tell you.
+       </s>
+       <s pid="2" sid="5">
+        I've been asked to help by the well known band called Westlife.
+       </s>
+       <s pid="2" sid="6">
+        At first I was surprised but in a few secound later, when I relised that, I didn't allow to go, I tried to persuade my teacher to let me go.
+       </s>
+       <s pid="2" sid="7">
+        At last, she allowed me .
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I had to help them behind the state, while they were get dressed.
+       </s>
+       <s pid="3" sid="2">
+        I had to keep things in place and cheakd that the microphones was working properly.
+       </s>
+       <s pid="3" sid="3">
+        Although the work was not heavey, I gained a lot of experience.
+       </s>
+       <s pid="3" sid="4">
+        They gave me their signature and when the concert started, they told me to come up on the state and dance with them.
+       </s>
+       <s pid="3" sid="5">
+        I was really embarassed because I had to dance in front of a lot of people but that is the very good experience I have ever had.
+       </s>
+       <s pid="3" sid="6">
+        I was really enjoy at the concert.
+       </s>
+       <s pid="3" sid="7">
+        Thing that I particularly like in the concert is I got a free ticket from Westlife to go to the A1 concert which is another well known band.
+       </s>
+       <s pid="3" sid="8">
+        I really want to have that experience again.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        That is my story.
+       </s>
+       <s pid="4" sid="2">
+        Tell me yoors.
+       </s>
+       <s pid="4" sid="3">
+        I want to know what experience you've had when you were in England.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Best wishes,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

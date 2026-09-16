@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr Smith,
+      </p>
+      <p>
+       I went to London last week for business and
+       <ns type="MP">
+       </ns>
+       loving
+       <ns type="W">
+        <i>
+         very much theatre
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I had promised my friend to
+       <ns type="RV">
+        <i>
+         offer
+        </i>
+       </ns>
+       her, after work, a very good evening
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       your musical show: "Over the Rainbow".
+      </p>
+      <p>
+       I had read
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         it that
+        </i>
+       </ns>
+       was a very enjoyable show! What a surprise!
+      </p>
+      <p>
+       Your advertisement was a quite lie and I have to tell you
+       <ns type="MT">
+       </ns>
+       my disappointment. Every
+       <ns type="RN">
+        <i>
+         point
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       wrong. (I wondered if it was a fake!)
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       ,
+       <ns type="UT">
+        <i>
+         from
+        </i>
+       </ns>
+       your advert
+       <ns type="M">
+       </ns>
+       Danny Brook (who is a very good singer I appreciate very much)
+       <ns type="M">
+       </ns>
+       was not
+       <ns type="RY">
+        <i>
+         here
+        </i>
+       </ns>
+       . An unknown
+       <ns type="RN">
+        <i>
+         man
+        </i>
+       </ns>
+       was singing, not in
+       <ns type="RN">
+        <i>
+         tone
+        </i>
+       </ns>
+       - awful for my ears - (poor Tina Truelove! such a professional singer with a beginner!)
+      </p>
+      <p>
+       <ns type="UT">
+        <i>
+         At second
+        </i>
+       </ns>
+       , to go on
+       <ns type="R">
+        <i>
+         with
+        </i>
+       </ns>
+       the beginning, your show started not at 19.30 but nearly one hour later (20.15 to be more precise!)
+      </p>
+      <p>
+       And for the third point, I
+       <ns type="UV">
+        <i>
+         would
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         hope
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         offer
+        </i>
+       </ns>
+       a good
+       <ns type="RN">
+        <i>
+         diner
+        </i>
+       </ns>
+       to my friend because I knew your restaurant
+       <ns type="R">
+        <i>
+         as
+        </i>
+       </ns>
+       a famous place but I was
+       <ns type="RY">
+        <i>
+         still
+        </i>
+       </ns>
+       disappointed. It was closed for
+       <ns type="UQ">
+        <i>
+         some
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         improvements
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       I hope you will understand
+       <ns type="MY">
+       </ns>
+       my evening was detestable and you will give me back my money.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         join
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       this letter my two tickets.
+      </p>
+      <p>
+       I am looking forward to hearing from you
+      </p>
+      <p>
+       Best wishes
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I went to London last week for business and loving very much theatre I had promised my friend to offer her, after work, a very good evening with your musical show: "Over the Rainbow".
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I had read about it that was a very enjoyable show!
+       </s>
+       <s pid="3" sid="2">
+        What a surprise!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Your advertisement was a quite lie and I have to tell you  my disappointment.
+       </s>
+       <s pid="4" sid="2">
+        Every point were wrong.
+       </s>
+       <s pid="4" sid="3">
+        (I wondered if it was a fake!)
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        At first, from your advert  Danny Brook (who is a very good singer I appreciate very much)  was not here.
+       </s>
+       <s pid="5" sid="2">
+        An unknown man was singing, not in tone - awful for my ears - (poor Tina Truelove!
+       </s>
+       <s pid="5" sid="3">
+        such a professional singer with a beginner!)
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        At second, to go on with the beginning, your show started not at 19.30 but nearly one hour later (20.15 to be more precise!)
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        And for the third point, I would hope to offer a good diner to my friend because I knew your restaurant as a famous place but I was still disappointed.
+       </s>
+       <s pid="7" sid="2">
+        It was closed for some improvements!
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I hope you will understand  my evening was detestable and you will give me back my money.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I join  this letter my two tickets.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I am looking forward to hearing from you
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Best wishes
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets!
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         Poor of I
+        </i>
+       </ns>
+       , I thought it was nice to have a friend and to be able to share lots of things!
+      </p>
+      <p>
+       I was very young when this story happened but though it was a child's adventure I remember it
+       <ns type="RY">
+        <i>
+         yet
+        </i>
+       </ns>
+       . I was just thirteen years old!
+      </p>
+      <p>
+       I had read a very good book about pirates and I know I
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       a very creative imagination.
+       <ns type="R">
+        To make to profit my ideas
+       </ns>
+       my parents lived in a small village near
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       wonderful
+       <ns type="RN">
+        <i>
+         country
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Like my
+       <ns type="IN">
+        <i>
+         heros
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I would
+       <ns type="TV">
+        <i>
+         like
+        </i>
+       </ns>
+       to live in a ship and decided to build something in a tree. The highest tree near a river I have ever seen.
+       <ns type="MD">
+        <i>
+         Peaceful
+        </i>
+       </ns>
+       place
+       <ns type="R">
+        <i>
+         and
+        </i>
+       </ns>
+       wonderful view.
+      </p>
+      <p>
+       With my friend Pat (
+       <ns type="ID">
+        <i>
+         I put him in the confidence
+        </i>
+       </ns>
+       ) I started to work and my idea became real.
+      </p>
+      <p>
+       It was our fortress and every day we could improve it. The tree was our ship and the river the sea. We could play
+       <ns type="MT">
+       </ns>
+       hours and hours without seeing an adult or
+       <ns type="MQ">
+       </ns>
+       other children from the village. I
+       <ns type="RV">
+        <i>
+         <ns type="IV">
+          <i>
+           prefered
+          </i>
+         </ns>
+        </i>
+       </ns>
+       it. It was our secret
+       <ns type="MP">
+       </ns>
+       Pat and I.
+       <ns type="MD">
+        <i>
+         Child's
+        </i>
+       </ns>
+       secret.
+      </p>
+      <p>
+       But Pat could not keep it
+       <ns type="RY">
+        <i>
+         too
+        </i>
+       </ns>
+       long. He had a fault: he talked a lot and told
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       friend our
+       <ns type="RN">
+        <i>
+         story
+        </i>
+       </ns>
+       . What a
+       <ns type="S">
+        <i>
+         catestrophee
+        </i>
+       </ns>
+       ! All
+       <ns type="MD">
+       </ns>
+       children
+       <ns type="RV">
+        <i>
+         went
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         from
+        </i>
+       </ns>
+       the village and wanted to play with us. I accepted them but I was very angry
+       <ns type="RT">
+        <i>
+         against
+        </i>
+       </ns>
+       Pat. Our
+       <ns type="RN">
+        <i>
+         quietness
+        </i>
+       </ns>
+       disappeared and very
+       <ns type="RY">
+        <i>
+         fast
+        </i>
+       </ns>
+       everybody wanted to command my ship. A
+       <ns type="S">
+        <i>
+         desaster
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       There
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       lots of fights between us and we were naughty like
+       <ns type="AGN">
+        <i>
+         child
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       be with other
+       <ns type="AGN">
+        <i>
+         child
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The result was my ship was destroyed and never
+       <ns type="RY">
+        <i>
+         more
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         I could
+        </i>
+       </ns>
+       trust in any friend!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Poor of I, I thought it was nice to have a friend and to be able to share lots of things!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I was very young when this story happened but though it was a child's adventure I remember it yet.
+       </s>
+       <s pid="3" sid="2">
+        I was just thirteen years old!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I had read a very good book about pirates and I know I got a very creative imagination.
+       </s>
+       <s pid="4" sid="2">
+        To make to profit my ideas my parents lived in a small village near a wonderful country.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Like my heros I would like to live in a ship and decided to build something in a tree.
+       </s>
+       <s pid="5" sid="2">
+        The highest tree near a river I have ever seen.
+       </s>
+       <s pid="5" sid="3">
+        Peaceful place and wonderful view.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        With my friend Pat (I put him in the confidence) I started to work and my idea became real.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        It was our fortress and every day we could improve it.
+       </s>
+       <s pid="7" sid="2">
+        The tree was our ship and the river the sea.
+       </s>
+       <s pid="7" sid="3">
+        We could play  hours and hours without seeing an adult or  other children from the village.
+       </s>
+       <s pid="7" sid="4">
+        I prefered it.
+       </s>
+       <s pid="7" sid="5">
+        It was our secret Pat and I. Child's secret.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        But Pat could not keep it too long.
+       </s>
+       <s pid="8" sid="2">
+        He had a fault: he talked a lot and told an other friend our story.
+       </s>
+       <s pid="8" sid="3">
+        What a catestrophee!
+       </s>
+       <s pid="8" sid="4">
+        All  children went from the village and wanted to play with us.
+       </s>
+       <s pid="8" sid="5">
+        I accepted them but I was very angry against Pat.
+       </s>
+       <s pid="8" sid="6">
+        Our quietness disappeared and very fast everybody wanted to command my ship.
+       </s>
+       <s pid="8" sid="7">
+        A desaster!
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        There was lots of fights between us and we were naughty like child could be with other child.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        The result was my ship was destroyed and never more I could trust in any friend!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

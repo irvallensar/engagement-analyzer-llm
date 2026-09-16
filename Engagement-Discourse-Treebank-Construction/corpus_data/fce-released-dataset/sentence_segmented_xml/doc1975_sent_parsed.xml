@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="RP">
+        <i>
+         sir
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       I am writing to express my dissatisfaction with the musical show which the Circle
+       <ns type="S">
+        <i>
+         Threatre
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         has
+         <ns type="RV">
+          <i>
+           presented
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . I recently had a week's holiday in London and during my stay I
+       <ns type="RV">
+        <i>
+         came
+        </i>
+       </ns>
+       to your
+       <ns type="S">
+        <i>
+         threatre
+        </i>
+       </ns>
+       to see
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       "Over the Rainbow". My evening was very disappointing.
+      </p>
+      <p>
+       In the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       , I had read that Danny Brook was starring but
+       <ns type="RA">
+        <i>
+         she
+        </i>
+       </ns>
+       was not. A different actor was
+       <ns type="RV">
+        <i>
+         playing
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         <ns type="S">
+          <i>
+           durring
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the musical and he was very disappointing.
+      </p>
+      <p>
+       The play should
+       <ns type="TV">
+        <i>
+         start
+        </i>
+       </ns>
+       at 19.30 but it started forty-five minutes later, we were
+       <ns type="IV">
+        <i>
+         waitting
+        </i>
+       </ns>
+       <ns type="UY">
+        <i>
+         over
+        </i>
+       </ns>
+       there
+       <ns type="RP">
+        <i>
+         with out
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="FV">
+          <i>
+           doing
+          </i>
+         </ns>
+         anything
+        </i>
+       </ns>
+       . We got very bored and tired.
+      </p>
+      <p>
+       After the show had finished
+       <ns type="MP">
+       </ns>
+       I went to the theatre
+       <ns type="S">
+        <i>
+         restaurand
+        </i>
+       </ns>
+       to
+       <ns type="S">
+        <i>
+         hav
+        </i>
+       </ns>
+       something to drink and
+       <ns type="UV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         relaxed
+        </i>
+       </ns>
+       but it was closed because the
+       <ns type="RN">
+        <i>
+         stuff
+        </i>
+       </ns>
+       was on holiday.
+      </p>
+      <p>
+       Moreover the discounts were not available as you
+       <ns type="TV">
+        <i>
+         say
+        </i>
+       </ns>
+       in the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       and I paid £20.
+      </p>
+      <p>
+       I would like
+       <ns type="R">
+        <i>
+         some
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         refand
+        </i>
+       </ns>
+       because
+       <ns type="RP">
+        <i>
+         It
+        </i>
+       </ns>
+       was one of the worst evenings
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my life
+       <ns type="MP">
+        <i>
+         <ns type="UA">
+          <i>
+           it
+          </i>
+         </ns>
+         if
+        </i>
+       </ns>
+       this matter
+       <ns type="RV">
+        <i>
+         does
+        </i>
+       </ns>
+       not
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           solve
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I will
+       <ns type="RV">
+        <i>
+         go
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       further. I hope that it will be
+       <ns type="RV">
+        <i>
+         solved
+        </i>
+       </ns>
+       properly
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to express my dissatisfaction with the musical show which the Circle Threatre has presented.
+       </s>
+       <s pid="2" sid="2">
+        I recently had a week's holiday in London and during my stay I came to your threatre to see the "Over the Rainbow".
+       </s>
+       <s pid="2" sid="3">
+        My evening was very disappointing.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In the advertisment, I had read that Danny Brook was starring but she was not.
+       </s>
+       <s pid="3" sid="2">
+        A different actor was playing durring the musical and he was very disappointing.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The play should start at 19.30 but it started forty-five minutes later, we were waitting over there with out doing anything.
+       </s>
+       <s pid="4" sid="2">
+        We got very bored and tired.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        After the show had finished I went to the theatre restaurand to hav something to drink and get relaxed but it was closed because the stuff was on holiday.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Moreover the discounts were not available as you say in the advertisment and I paid £20.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I would like some refand because
+       </s>
+       <s pid="7" sid="2">
+        It was one of the worst evenings in my life it if this matter does not solve  I will go  further.
+       </s>
+       <s pid="7" sid="3">
+        I hope that it will be solved properly
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat was not very good at keeping secrets. He and his friends got
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       trouble because of this habit
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       last week.
+      </p>
+      <p>
+       As they were watching
+       <ns type="UP">
+        <i>
+         T.V
+        </i>
+       </ns>
+       at Nick's house last Sunday, Sally noticed that their
+       <ns type="RN">
+        <i>
+         cut
+        </i>
+       </ns>
+       Curly was hurt,
+       <ns type="MC">
+       </ns>
+       she could not walk. The children were very unhappy and
+       <ns type="MV">
+       </ns>
+       sorry
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the pet. "Somebody
+       <ns type="TV">
+        <i>
+         had hurt
+        </i>
+       </ns>
+       her and
+       <ns type="TV">
+        <i>
+         had
+         <ns type="RV">
+          <i>
+           let
+          </i>
+         </ns>
+        </i>
+       </ns>
+       her without help"
+       <ns type="MP">
+       </ns>
+       Mourk said angrily. "We have to find him and make him pay for his action"
+       <ns type="MP">
+       </ns>
+       Sally told them.
+       <ns type="S">
+        <i>
+         Everybod
+        </i>
+       </ns>
+       agreed with her.
+      </p>
+      <p>
+       Suddenly Pat cried: "Oh my Lord, Bad Jon
+       <ns type="TV">
+        <i>
+         had done
+        </i>
+       </ns>
+       this. Yesterday
+       <ns type="MP">
+       </ns>
+       as I was arriving home
+       <ns type="MP">
+       </ns>
+       I saw him in your yard
+       <ns type="MP">
+       </ns>
+       Mack
+       <ns type="RP">
+        <i>
+         , he
+        </i>
+       </ns>
+       looked very satisfied, Curly was
+       <ns type="RV">
+        <i>
+         laying
+        </i>
+       </ns>
+       on the grass and..." "Yes,
+       <ns type="RP">
+        <i>
+         Oh
+        </i>
+       </ns>
+       Lord he did it because we
+       <ns type="RV">
+        <i>
+         won
+        </i>
+       </ns>
+       his team at football"
+       <ns type="MP">
+       </ns>
+       Nick said. "He is so bad. We will make him pay. Hey
+       <ns type="MP">
+       </ns>
+       <ns type="RP">
+        <i>
+         Listen
+        </i>
+       </ns>
+       guys
+       <ns type="MP">
+       </ns>
+       we will take his dog which
+       <ns type="MA">
+       </ns>
+       <ns type="AGV">
+        <i>
+         love
+        </i>
+       </ns>
+       very much and we will sell it to Sally who wants one. We will pay Curly's
+       <ns type="RN">
+        <i>
+         doctor
+        </i>
+       </ns>
+       with
+       <ns type="RD">
+        <i>
+         <ns type="AGD">
+          <i>
+           these
+          </i>
+         </ns>
+        </i>
+       </ns>
+       money that we
+       <ns type="TV">
+        <i>
+         will
+         <ns type="RN">
+          <i>
+           earn
+          </i>
+         </ns>
+        </i>
+       </ns>
+       "
+       <ns type="MP">
+       </ns>
+       Pat said.
+      </p>
+      <p>
+       Next morning
+       <ns type="MP">
+       </ns>
+       as Pat was going to school
+       <ns type="MP">
+       </ns>
+       <ns type="MA">
+       </ns>
+       met Bad Jon
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       and
+       <ns type="RV">
+        <i>
+         told
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       him
+       <ns type="MP">
+       </ns>
+       "Hey, you. We know what you have done and your dog will be sold". Bad Jon understood and talked immediately to his father
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       who was the school
+       <ns type="RN">
+        minister
+       </ns>
+       about the
+       <ns type="RP">
+        <i>
+         children'
+        </i>
+       </ns>
+       plan. Of course they were punished.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat was not very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        He and his friends got in trouble because of this habit, last week.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        As they were watching T.V at Nick's house last Sunday, Sally noticed that their cut Curly was hurt,  she could not walk.
+       </s>
+       <s pid="2" sid="2">
+        The children were very unhappy and  sorry about the pet.
+       </s>
+       <s pid="2" sid="3">
+        "Somebody had hurt her and had let her without help" Mourk said angrily.
+       </s>
+       <s pid="2" sid="4">
+        "We have to find him and make him pay for his action" Sally told them.
+       </s>
+       <s pid="2" sid="5">
+        Everybod agreed with her.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Suddenly
+       </s>
+       <s pid="3" sid="2">
+        Pat cried: "Oh my Lord, Bad Jon had done this.
+       </s>
+       <s pid="3" sid="3">
+        Yesterday as I was arriving home I saw him in your yard Mack, he looked very satisfied, Curly was laying on the grass and..."
+       </s>
+       <s pid="3" sid="4">
+        "Yes, Oh Lord he did it because we won his team at football" Nick said.
+       </s>
+       <s pid="3" sid="5">
+        "He is so bad.
+       </s>
+       <s pid="3" sid="6">
+        We will make him pay.
+       </s>
+       <s pid="3" sid="7">
+        Hey Listen guys we will take his dog which  love very much and we will sell it to Sally who wants one.
+       </s>
+       <s pid="3" sid="8">
+        We will pay Curly's doctor with these money that we will earn"
+       </s>
+       <s pid="3" sid="9">
+        Pat said.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Next morning as Pat was going to school  met Bad Jon. and told  him "Hey, you.
+       </s>
+       <s pid="4" sid="2">
+        We know what you have done and your dog will be sold".
+       </s>
+       <s pid="4" sid="3">
+        Bad Jon understood and talked immediately to his father.
+       </s>
+       <s pid="4" sid="4">
+        who was the school minister about the children' plan.
+       </s>
+       <s pid="4" sid="5">
+        Of course they were punished.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

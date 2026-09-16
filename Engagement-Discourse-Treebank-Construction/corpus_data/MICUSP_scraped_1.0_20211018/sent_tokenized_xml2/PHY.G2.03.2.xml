@@ -1,0 +1,294 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Teleportation with Trapped Ions
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Teleportation is the transfer of the complete quantum state of one quantum bit (qubit) to another.
+       </s>
+       <s pid="1" sid="2">
+        In principle, it could take an infinite number of classical bits to describe a single qubit.
+       </s>
+       <s pid="1" sid="3">
+        Consider, for instance, the single qubit state:
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Since
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is an irrational number, it would take an infinite number of classical bits to describe this state. Thus, the transfer of all of this information is incredible.
+      <a class="fnref" href="#fn1" id="fnref_fn1">
+       1
+      </a>
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Teleportation
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Here we discuss the experimental of implementation of quantum teleportation with trapped ions, as accomplished by the University of Innsbruck (M. Riebe, et. al.
+       </s>
+       <s pid="6" sid="2">
+        "Deterministic quantum teleportation with atoms."
+       </s>
+       <s pid="6" sid="3">
+        Nature 429, 734-737 (17 June 2004).) and NIST (M.D. Barrett, et. al.
+       </s>
+       <s pid="6" sid="4">
+        "Deterministic quantum teleportation of atomic qubits."
+       </s>
+       <s pid="6" sid="5">
+        Nature 429, 737-739 (17 June 2004).)
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        In its most basic form, teleportation can be accomplished with three qubits.
+       </s>
+       <s pid="7" sid="2">
+        The steps to accomplishing teleportation are:
+       </s>
+      </p>
+      <list>
+       <item>
+        1. Obtain three qubits
+       </item>
+       <item>
+        2. Entangle qubits 2 and 3 in a maximally entangled Bell state
+       </item>
+       <item>
+        3. Qubits 2 and 3 may then be seperated (Alice keeps qubits 1 and 2, sends qubit 3 to Bob)
+       </item>
+       <item>
+        4. Perform a measurement in the Bell basis on qubits 1 and 2
+       </item>
+       <item>
+        5. Using two bits of classical information, Alice tells Bob what she measured
+       </item>
+       <item>
+        6. Perform single bit unitary operation on qubit 3 conditional on the measurement outcome of qubits 1 and 2 to complete the teleportation of the state
+       </item>
+      </list>
+      <p>
+       <s pid="8" sid="1">
+        The groups at the University of Innsbruck and NIST both followed the procedure above very closely.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Critique
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        In a 1995 Physical Review Letters paper, S. Massar and S. Popescu demonstrated that after performing a single measurement, one could guess the direction of spin polarization of a quantum state with a maximum probability of: [#REF 2]
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        The above equation states that it is possible to determine the state of a single qubit with a probability of 23 , or 66.7%.
+       </s>
+       <s pid="10" sid="2">
+        Hence, any experiment that aims to exhibit the effects of entanglement must have a fidelity greater than 66.7%.
+       </s>
+       <s pid="10" sid="3">
+        In addition, it has been shown that local hidden variables theories can only be excluded for fidelities exceeding 87%. [#REF 3]
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        The teleportation experiments accomplished by NIST and the University of Innsbruck state fidelities of 78% and 75% respectively.
+       </s>
+       <s pid="11" sid="2">
+        Thus, both groups have demonstrated the influence of entanglement on their measurements.
+       </s>
+       <s pid="11" sid="3">
+        However, neither of these experiments is able to exclude local hidden variables theories.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        Several other aspects of both teleportation experiments need to be addressed as well.
+       </s>
+       <s pid="12" sid="2">
+        First of all, the primary goal of a teleportation experiment is to demonstrate the nonlocality of quantum mechanics; Einstein's often quoted "spooky action at a distance."
+       </s>
+       <s pid="12" sid="3">
+        Let us determine the fundamental distance in question.
+       </s>
+       <s pid="12" sid="4">
+        We can get a rough idea of the spatial extent of the wavefunction of the ion using the Heisenberg Uncertainty Principle.
+       </s>
+       <s pid="12" sid="5">
+        Assuming the particle has been cooled to the ground state of motion (as done by both NIST and the University of Innsbruck), then the motional energy of an ion in a 1.2 MHz trap (the trap frequency quoted by the Innsbruck group) is simply the zero-point energy of a harmonic oscillator:
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       The Uncertainty Principle tells us
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        So, given the assumptions above, this means,
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        The Innsbruck group states an inter-ion seperation of
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      μm. The calculation above shows this to be about 1000 times larger than the spatial extent of a single ion’s wavefunction. Thus, it would appear that one can classify teleportation (even between ions in a single trap) as a nonlocal effect.
+      <p>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        In the experiment at NIST, they took this one step further by actually seperating the ions and shuttling them to different zones in the trap.
+       </s>
+       <s pid="20" sid="2">
+        By doing so, the NIST experiment increased the distance between the ions by more than 2 orders of magnitude.
+       </s>
+       <s pid="20" sid="3">
+        While this was indeed the final configuration, during certain steps in the middle of the experiment, all three ions were in the same trapping region.
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        Both teleportation experiments perform operations on all three ions in the same trap in the midst of the experiment.
+       </s>
+       <s pid="21" sid="2">
+        One could argue that such an arrangement allows for the possible exchange of a phonon or photon between the source and target qubits, which may account for the correlation of quantum states, instead of true teleportation of the quantum state.
+       </s>
+       <s pid="21" sid="3">
+        Thus, both experiments could more conclusively demonstrate the nonlocality of quantum mechanics if, after the initial entanglement step between ions 2 and 3, these ions were kept in seperate traps for the duration of the experiment.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusion
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        In summary, the experimental implementation of deterministic quantum teleportation with trapped ions was a major accomplishment.
+       </s>
+       <s pid="22" sid="2">
+        As stated in the articles by both Innsbruck and NIST, it was a step above previous probabilistic teleportation experiments (which required post-selection of the data).
+       </s>
+       <s pid="22" sid="3">
+        However, even the most recent experiments could be improved further.
+       </s>
+       <s pid="22" sid="4">
+        Increasing the fidelity of the experiment would eliminate the possibility of a hidden variables theory, and keeping the source and target qubits completely seperated after the initial entanglement would alleviate any concerns regarding "talking" between ions in the same trap.
+       </s>
+       <s pid="22" sid="5">
+        Hopefully, future experiments will properly address these issues.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1On the other hand, the only way one could ever extract the number
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       from the above state would be to repeatedly measure such a state an infinite number of times. In that sense, we should not view this enormous amount of quantum information as always being as useful as the same amount of classical information.
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        2.
+       </a>
+       2  Massar, M. &amp; Popescu, S. Optimal extraction of information from finite quantum ensembles. PRL 74, 1259-1263 (1995).
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        3.
+       </a>
+       3 Gisin, N. Nonlocality criteria for quantum teleportation. Phys. Lett. A 210, 157-159 (1996).
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

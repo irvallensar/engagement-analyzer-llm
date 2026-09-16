@@ -1,0 +1,319 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Quantum Mechanical Solutions to Problems with the Solar Model
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <p>
+    One of the classic problems in astrophysics is the question,
+    <q>
+     What energy source powers the Sun?
+    </q>
+    In addition to having obvious astrophysical interest, this problem and its solution should interest any student of quantum mechanics, because quantum mechanics is necessary to solve some of the problems presented by the accepted model of solar energy production. Study of the solar model gives insight into quantum mechanical problems discussed in class and shows that quantum mechanics is such a basic part of nature that the Sun would not shine without it.
+   </p>
+   <p>
+    Once astronomers measured the flux of the Sun and the distance to the Sun (from solar parallax), they were able to determine the luminosity.  The modern accepted value is 3.826 × 1033 ergs s-1 (Carroll &amp; Ostlie 1996), which equals 3.826 × 1026 Joules s-1.  From radioactive dating, the estimated age of some Moon rocks exceeds 4 × 109 years (Carroll &amp; Ostlie 1996).  Planetary formation theory suggests that the Sun is older than the Moon, so the Sun is at least 4 × 109 years old.  If we assume the Sun's luminosity has been constant over the Sun's life (which is observed to be a good approximation for main sequence stars), it follows that the Sun has emitted over 4.8 × 1043 Joules in its lifetime!  This is an enormous amount of energy, and any energy production theory for the Sun must be able to account for it all.
+   </p>
+   <p>
+    Lord Kelvin suggested that gravitational contraction accounted for the Sun's luminosity.  His theory, Kelvin contraction, was favored by many astronomers of his day.  Though Kelvin contraction was the Sun's energy source in the early stages of the Sun's formation, it is not sufficient to account for all the energy radiated by the Sun in its lifetime.  If we assume that the Sun was originally much larger than its current radius, the gravitational energy radiated by the Sun its life so far is, from Carroll &amp; Ostlie (1996),
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (1)
+   </p>
+   <p>
+    where M and R are the Sun's mass and radius, respectively.  If we assume the Sun's luminosity has been constant throughout its life, as above, the energy in Equation (1) corresponds to a lifetime of 107 years.  This is much less than the age of the Moon rocks described above
+    <a class="fnref" href="#fn1" id="fnref_fn1">
+     1
+    </a>
+    , so it is unlikely that gravitational contraction has provided the Sun's luminosity throughout its life.
+   </p>
+   <p>
+    Another possible energy source for the Sun is chemical reactions, such as ordinary combustion.  However, this would not provide enough energy.  To see this, assume that the Sun is composed entirely of hydrogen and that each atom in the Sun can release 10 eV through chemical reactions (Carroll &amp; Ostlie 1996).  From Newton's form of Kepler's Third Law, we determine that the mass of the Sun is 1.99 x 1030 kg.  Thus the energy released through chemical reactions is
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (2)
+   </p>
+   <p>
+    If we once again assume constant luminosity, the energy from Equation (2) corresponds to 160 thousand years, which is extremely less than the age of the Moon rocks.  Therefore chemical reactions are not a sufficient energy source for the Sun.
+   </p>
+   <p>
+    The final, currently accepted model for solar energy production is thermonuclear fusion.  Assume that the Sun was originally 100% hydrogen and that 10% of the hydrogen is converted to helium through fusion.  The mass of four hydrogen atoms exceeds the mass of a helium atom by 0.7% of the mass of hydrogen, so 0.7% of the hydrogen atoms' mass will be converted into energy in solar fusion (Carroll &amp; Ostlie 1996).  Then the energy released by fusion is
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (3)
+   </p>
+   <p>
+    where c is the speed of light.  The energy in Equation (3) is sufficient to power the Sun (at its current luminosity) for 11 billion years, which is longer than the age of the Moon rocks.  Therefore fusion is a possible energy source for the Sun.
+   </p>
+   <p>
+    This theory is not without problems, however.  One problem involves the Coulomb repulsion between two nuclei.  In order for fusion to occur, nuclei must be brought within approximately 1 fm (10-11 m) of each other.  At this distance, the strong force overcomes the Coulomb force and the nuclei fuse.  If we assume that the thermal energy overcomes the Coulomb barrier, classical thermodynamics gives
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (4)
+   </p>
+   <p>
+    where k is Boltzmann's constant, Z1 and Z2 are the number of protons in each nucleus, e is the charge of the electron, and r is the nuclear separation(1 fm).  We rearrange and substitute values to get
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (5)
+   </p>
+   <p>
+    for a collision between two protons.  However, from observation, the central temperature of the Sun is only 1.58 x 107 K (Carroll &amp; Ostlie 1996), much less than the energy required to overcome the Coulomb barrier.  Therefore, according to classical theory, thermonuclear solution cannot occur in the Sun.
+   </p>
+   <p>
+    We need not discard our solar model, however, because George Gamow used quantum mechanics to solve the temperature problem.  Recall that a particle in an infinite square well will never be found in classically forbidden regions, i.e., where the potential is infinite.  A particle in a finite square well, however, penetrates the barrier, i.e., it is found in regions where the potential is higher than the particle's energy.  This is referred to as tunneling.  The wave function is an exponential in the classically forbidden regions, so it falls off rapidly, but it is by no means negligible.  Instead, quantum tunneling is essential to the Universe, as it is the reason that fusion can occur in the Sun.
+   </p>
+   <p>
+    In order to determine the quantum mechanical temperature necessary to penetrate the Coulomb barrier, we first write the kinetic energy in terms of the momentum,
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (6)
+   </p>
+   <p>
+    where μ is the reduced mass of the particle, υ is the relative velocity, and p is the momentum.  We assume that the particles are separated by one de Broglie wavelength, λ, substitute in p = h/λ, and set Equation (6) equal to the Coulomb potential.  This yields
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (7)
+   </p>
+   <p>
+    Solving for λ and substituting it in for r in Equation (5) yields the quantum mechanical temperature,
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (8)
+   </p>
+   <p>
+    For two protons, μ = mp/2, and Z1 = Z2 = 1, so
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (9)
+   </p>
+   <p>
+    which is easily reached within the Sun.  Therefore, fusion can occur at solar temperatures because of quantum tunneling.
+   </p>
+   <p>
+    Not all is well, though, because another problem arises with the thermonuclear fusion model once we consider the actual reactions that take place.  Though they are too complex to be discussed in detail here, we will briefly consider these reactions.  The first is the first proton-proton chain (PP I) (Carroll &amp; Ostlie 1996).  A summary of this chain of reactions is
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (10)
+   </p>
+   <p>
+    where e+ is a positron, νe is an electron neutrino, and γ is a gamma ray. There are two other proton-proton chains, PP II and PP III, that involve different intermediate steps and have slightly different results.  However, the PP I chain dominates, so we will not discuss the others here.  The one aspect I will note is that all the p-p chains create two electron neutrinos for each helium atom created.
+   </p>
+   <p>
+    Another reaction that occurs in the Sun independently of the p-p chain is the CNO cycle.  This cycle uses carbon, nitrogen, and oxygen
+    <a class="fnref" href="#fn2" id="fnref_fn2">
+     2
+    </a>
+    as catalysts (Carroll &amp; Ostlie 1996), and it, like the p-p chains, creates two electron neutrinos for each helium atom created.
+   </p>
+   <p>
+    Other fusion processes create heavier elements.  For example the triple alpha process converts three helium atoms to a carbon atom.  However, the dominant process in the Sun is hydrogen burning, and it is only necessary that the reader understand that lots of electron neutrinos are created in the fusion process that take place in the Sun.
+   </p>
+   <p>
+    There exists a standard solar model which is based on the discussion above.  Thermonuclear fusion occurs within the core
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   . This is surrounded by a radiative region
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   .  The outermost region
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   is convective.  The mass fraction of hydrogen has decreased from 0.71 to 0.34 over the Sun's lifetime, and the mass fraction of helium has increased accordingly, i.e., from 0.27 to 0.64 (Carroll &amp; Ostlie 1996).  Stellar structure equations exist that give a very precise model for the Sun (e.g., Bachall &amp; Peña-Garay 2004), and they predict many observations correctly.  However, one crucial problem still exists: the solar neutrino problem.
+   <p>
+   </p>
+   <p>
+    Recall that many electron neutrinos are produced in the p-p chains.  Thus we should detect a neutrino flux from the Sun.  Raymond Davis was the first person to try to measure this flux (Davis 1964).  He made a detector almost one mile underground in the Homestake Gold Mine in Lead, South Dakota.  The detector was a container of 100,000 gallons of the cleaning fluid perchloroethylene (C2Cl4).  Solar neutrinos interact with the
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   isotope of chlorine in the reaction
+   <p>
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   <p>
+    (11)
+   </p>
+   <p>
+    This reaction is sensitive to the PP III chain alone, which is very rare, so Davis required a lot of cleaning fluid and a lot of time.  Bachall (1964) used the standard solar model discussed above to calculate the expected neutrino flux; he expected 7.9 SNU.
+    <a class="fnref" href="#fn3" id="fnref_fn3">
+     3
+    </a>
+    However, Davis only observed 2.23 ± 0.26 SNU, which is a factor of three lower than the expectation.  Further experiments, such as Kamiokande II, confirmed the deficit.  This indicated a problem either with the solar model or with the current understanding of neutrino physics.
+   </p>
+   <p>
+    Once again, quantum theory provided an answer, though it is still being confirmed observationally.  The solution to the solar neutrino problem is much more complicated than that of the Coulomb barrier, so it will only be discussed qualitatively here.  For the full physics, see, for example, Kuo &amp; Pantaleone (1986), Shi &amp; Schramm (1992), and Gluza &amp; Zralek (2001).
+   </p>
+   <p>
+    The solution, referred to as the Mikheyev-Smirnov-Wolfenstein (MSW) matter mixing effect (Wolfenstein 1978; Mikheyev &amp; Smirnov 1985), is essentially a mixing of eigenstates.  There are three types of neutrinos: electron, muon, and tau, denoted νe,  νμ, and ντ.  A crucial assumption is that there are three mass eigenstates with different associated masses.  Theoretical considerations (the see-saw model) suggest this is true and
+   </p>
+   <div class="gap">
+    <span>
+     Formula
+    </span>
+    here
+   </div>
+   (Shi &amp; Schramm 1992).  The mass eigenstates do not directly correspond to the flavor eigenstates, however; mixing occurs when neutrinos propagate in matter.  This means that neutrinos propagating through matter can change flavor, even when vacuum mixing is small (Kuo &amp; Pantaleone 1986).  A spectrum obtained by plotting the mass eigenstates as a function of the matter-induced νe mass shows two resonances, which correspond to regions of parameter space where an electron neutrino is most likely to change flavor. These resonances occur when the matter-induced mass of the electron neutrino is near that of one of the heavier neutrinos (Kuo &amp; Pantaleone 1986).
+   <p>
+   </p>
+   <p>
+    This neutrino oscillation may solve the solar neutrino problem, because Homestake and Kamiokande II only detect electron neutrinos.  If two-thirds of the electron neutrinos emitted by the Sun change flavors before they are detected, there is no solar neutrino deficit.  The problem is not yet totally solved, however, because it is necessary to pin down parameters such as the mixing angle and the neutrino masses. For a discussion of the parameter space, see Gluza &amp; Zralek (2001).
+   </p>
+   <p>
+    Experiments underway in the U.S., Canada, Italy, Japan, and Russian are trying to better understand neutrino oscillations and measure neutrino masses (Bachall 2000).  Once experiments are able to detect all three flavors of neutrinos, we will know if our prediction for the solar neutrino flux is correct.  If it is, astrophysicist will breathe a collective sigh of relief, but some will be secretly disappointed.  If our model turns out to be wrong, there will be lots of new physics to investigate and discover.
+   </p>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N101AE">
+     <li id="N101AF">
+      [1] Bachall, J. N., 1964, Phys. Rev. Lett., 12, 300
+     </li>
+     <li id="N101B1">
+      [2] Bachall, J. N., 1989, Neutrino Astrophysics, Cambridge: Cambridge University Press
+     </li>
+     <li id="N101B3">
+      [3] Bachall, J. N., 2000, Nobel e-Museum, astro-ph/0009259
+     </li>
+     <li id="N101B5">
+      [4] Bachall, J. N., &amp; Peña-Garay, C., 2004, preprint, hep-ph/0404061
+     </li>
+     <li id="N101B7">
+      [5] Burchfield, J. D., 1990, Lord Kelvin and the Age of the Earth, Chicago: University of Chicago Press
+     </li>
+     <li id="N101B9">
+      [6] Carroll, B. W., &amp; Ostlie, D. A., 1996, An Introduction to Modern Astrophysics, Reading, MA: Addison-Wesley Publishing Company
+     </li>
+     <li id="N101BB">
+      [7] Davis, R. Jr., 1964, Phys. Rev. Lett., 12, 302
+     </li>
+     <li id="N101BD">
+      [8] Gluza, J., &amp; Zralek, M., 2001, Phys. Lett. B., 517, 158
+     </li>
+     <li id="N101BF">
+      [9] Kuo, T. K., &amp; Pantaleone, J., 1986, Phys. Rev. Lett., 57, 1805
+     </li>
+     <li id="N101C1">
+      [10] Mikhevey, S. P., &amp; Smirnov, A. Y., 1985, Sov. J. Nuc. Phys., 42, 913
+     </li>
+     <li id="N101C3">
+      [11] Shi, X., &amp; Schramm, D. N., 1992, Phys. Lett. B, 283, 305
+     </li>
+     <li id="N101C5">
+      [12] Wolfenstein, L., 1978, Phys. Rev. D, 17, 2369
+     </li>
+    </ul>
+   </div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 Radioactive dating was not available in Kelvin's time, so he believed that the Sun really was 10 million years old. It is interesting to note that he used this argument to discredit Charles Darwin's theory of evolution, because Kelvin felt that 10 million years was not sufficient for the vast diversity of life observed on Earth to evolve (Burchfield 1999).
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2 These elements are present in stars because they are created by basic fusion processes or are present when the stars form.
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3 A SNU is a solar neutrino unit. 1 SNU = 1036 reactions per target atom per second (Carroll &amp; Ostlie 1996).
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     21.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Ms Helen Ryan!
+      </p>
+      <p>
+       I was pleased to
+       <ns type="S">
+        <i>
+         recieve
+        </i>
+       </ns>
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       letter
+       <ns type="S">
+        <i>
+         ricently
+        </i>
+       </ns>
+       . I feel very happy with my results, and I can't wait to go to California.
+      </p>
+      <p>
+       Now I'm going to give you some information
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       you
+       <ns type="S">
+        <i>
+         asted
+        </i>
+       </ns>
+       about.
+      </p>
+      <p>
+       I'm
+       <ns type="S">
+        <i>
+         sory
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         tell
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       , but the only time I will be able to take this trip
+       <ns type="MV">
+       </ns>
+       in July, according to our team's
+       <ns type="S">
+        <i>
+         shudule
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The next thing - I would prefer to spend all
+       <ns type="MD">
+       </ns>
+       nights in
+       <ns type="MD">
+       </ns>
+       tent, so I can move it to the place
+       <ns type="MA">
+       </ns>
+       will
+       <ns type="W">
+        <i>
+         <ns type="FY">
+          <i>
+           better
+          </i>
+         </ns>
+         <ns type="SX">
+          <i>
+           suite
+          </i>
+         </ns>
+         me
+        </i>
+       </ns>
+       .
+       <ns type="UP">
+        <i>
+         -
+        </i>
+       </ns>
+       I like to wake up with a view
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       mountains,
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         remind
+        </i>
+       </ns>
+       me
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       my 5
+       <ns type="MP">
+        <i>
+         years
+        </i>
+       </ns>
+       experience
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       climbing.
+      </p>
+      <p>
+       Also I enjoy walking and photography. I
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           made
+          </i>
+         </ns>
+        </i>
+       </ns>
+       two albums
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       birds and flowers
+       <ns type="UN">
+        <i>
+         life
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       So, is it
+       <ns type="S">
+        <i>
+         posible
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I would like to continue doing my
+       <ns type="SA">
+        <i>
+         favorite
+        </i>
+       </ns>
+       hobbies in the Camp.
+      </p>
+      <p>
+       And the last question I have -
+      </p>
+      <p>
+       Do I need to bring any special clothes or
+       <ns type="DN">
+        gize
+       </ns>
+       ? And how much money should I take?
+      </p>
+      <p>
+       Thank you,
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Elina
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ms Helen Ryan!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I was pleased to recieve you letter ricently.
+       </s>
+       <s pid="2" sid="2">
+        I feel very happy with my results, and I can't wait to go to California.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Now I'm going to give you some information, you asted about.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I'm sory to tell that, but the only time I will be able to take this trip  in July, according to our team's shudule.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The next thing - I would prefer to spend all  nights in  tent, so I can move it to the place  will better suite me.
+       </s>
+       <s pid="5" sid="2">
+        - I like to wake up with a view to mountains, wich remind me about my 5 years experience in climbing.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Also I enjoy walking and photography.
+       </s>
+       <s pid="6" sid="2">
+        I made two albums about birds and flowers life.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So, is it posible, I would like to continue doing my favorite hobbies in the Camp.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        And the last question I have -
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Do I need to bring any special clothes or gize?
+       </s>
+       <s pid="9" sid="2">
+        And how much money should I take?
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Thank you,
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Elina
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="IV">
+        <i>
+         Shoping
+        </i>
+       </ns>
+       is not always enjoyable
+      </p>
+      <p>
+       If you need something you have a choice
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to borrow
+        </i>
+       </ns>
+       it from friends or
+       <ns type="MD">
+       </ns>
+       library, or
+       <ns type="FV">
+        <i>
+         to
+         <ns type="SX">
+          <i>
+           bye
+          </i>
+         </ns>
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       Let's
+       <ns type="RV">
+        <i>
+         speak
+        </i>
+       </ns>
+       about
+       <ns type="IV">
+        <i>
+         shoping
+        </i>
+       </ns>
+       . As
+       <ns type="R">
+        <i>
+         in all
+        </i>
+       </ns>
+       there are some advantages and disadvantages.
+      </p>
+      <p>
+       Do you think it's
+       <ns type="MD">
+       </ns>
+       enjoyable
+       <ns type="MN">
+       </ns>
+       <ns type="FV">
+        <i>
+         spending
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       time?
+      </p>
+      <p>
+       If you
+       <ns type="TV">
+        <i>
+         would ask
+        </i>
+       </ns>
+       me, I prefer my friends to do all
+       <ns type="MD">
+       </ns>
+       <ns type="DN">
+        <i>
+         shoping
+        </i>
+       </ns>
+       for me
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       aware of
+       <ns type="MD">
+       </ns>
+       big
+       <ns type="RN">
+        <i>
+         lines
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         <ns type="RP">
+          <i>
+           check point
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , crowds of people, noise... And
+       <ns type="UP">
+        <i>
+         of'course
+        </i>
+       </ns>
+       not all shops have good
+       <ns type="DN">
+        <i>
+         conditionering
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In my opinion the
+       <ns type="FJ">
+        <i>
+         better
+        </i>
+       </ns>
+       time for
+       <ns type="IV">
+        <i>
+         shoping
+        </i>
+       </ns>
+       is weekdays, preferably in the morning.
+      </p>
+      <p>
+       Otherwise, you
+       <ns type="W">
+        <i>
+         either will
+        </i>
+       </ns>
+       not find what you are looking for, or you will, and spend the rest of the day in
+       <ns type="MD">
+       </ns>
+       bad mood, because of
+       <ns type="MD">
+       </ns>
+       bad
+       <ns type="S">
+        <i>
+         maners
+        </i>
+       </ns>
+       of sales people,
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       <ns type="AS">
+        <i>
+         not every time you ask can give you
+         <ns type="UQ">
+          <i>
+           any
+          </i>
+         </ns>
+         advice
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       It can be boring, it can be
+       <ns type="R">
+        <i>
+         not
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="FV">
+        <i>
+         <ns type="S">
+          <i>
+           Summerise
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         all
+        </i>
+       </ns>
+       , I
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         recomend
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to spend
+        </i>
+       </ns>
+       less time indoors, shopping during the
+       <ns type="S">
+        <i>
+         weakdays
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shoping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        If you need something you have a choice  to borrow it from friends or  library, or to bye it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Let's speak about shoping.
+       </s>
+       <s pid="3" sid="2">
+        As in all there are some advantages and disadvantages.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Do you think it's  enjoyable  spending of time?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        If you would ask me, I prefer my friends to do all  shoping for me.
+       </s>
+       <s pid="5" sid="2">
+        Because I  aware of  big lines to  check point, crowds of people, noise...
+       </s>
+       <s pid="5" sid="3">
+        And of'course not all shops have good conditionering.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In my opinion the better time for shoping is weekdays, preferably in the morning.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Otherwise, you either will not find what you are looking for, or you will, and spend the rest of the day in  bad mood, because of  bad maners of sales people, that not every time you ask can give you any advice.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        It can be boring, it can be not.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Summerise all, I will recomend to spend less time indoors, shopping during the weakdays.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

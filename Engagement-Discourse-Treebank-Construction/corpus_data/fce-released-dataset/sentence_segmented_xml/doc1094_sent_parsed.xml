@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan,
+      </p>
+      <p>
+       Thank you for the letter you wrote to me to inform me about the prize I won. I was so happy! I couldn't believe it.
+      </p>
+      <p>
+       If it is possible I would like to travel in July because school is finishing on the 28th June and I have already
+       <ns type="SX">
+        <i>
+         excepted
+        </i>
+       </ns>
+       a job
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       August.
+      </p>
+      <p>
+       I think it would be fun to stay in a tent those two weeks
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I have never done that before,
+       <ns type="R">
+        <i>
+         by
+        </i>
+       </ns>
+       my friends told me that I would enjoy it.
+      </p>
+      <p>
+       As you offer many activities it was hard to choose which ones I want to do, but I
+       <ns type="S">
+        <i>
+         dicided
+        </i>
+       </ns>
+       to take swimming and photography, because I am very good at swimming and because
+       <ns type="W">
+        <i>
+         currently I am
+        </i>
+       </ns>
+       attending a photography course in Vienna. I am not very experienced but I think that I will find a lot of beautiful
+       <ns type="RN">
+        motives
+       </ns>
+       in the USA.
+      </p>
+      <p>
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       would be very kind if you could inform me about how much money I have to take with me and
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       clothes I will need.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for the letter you wrote to me to inform me about the prize I won.
+       </s>
+       <s pid="2" sid="2">
+        I was so happy!
+       </s>
+       <s pid="2" sid="3">
+        I couldn't believe it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        If it is possible I would like to travel in July because school is finishing on the 28th June and I have already excepted a job in August.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think it would be fun to stay in a tent those two weeks, I have never done that before, by my friends told me that I would enjoy it.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        As you offer many activities it was hard to choose which ones I want to do, but I dicided to take swimming and photography, because I am very good at swimming and because currently I am attending a photography course in Vienna.
+       </s>
+       <s pid="5" sid="2">
+        I am not very experienced but I think that I will find a lot of beautiful motives in the USA.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I would be very kind if you could inform me about how much money I have to take with me and which clothes I will need.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Thank you for the card you wrote to me
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I hope you enjoyed your holidays.
+      </p>
+      <p>
+       I spent some great days in Vienna where I had the chance to help at the
+       <ns type="W">
+        <i>
+         concert of
+         <ns type="RP">
+          <i>
+           "pearl jam"
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The first thing I did
+       <ns type="W">
+        <i>
+         was to
+         <ns type="RV">
+          <i>
+           <ns type="S">
+            <i>
+             controll
+            </i>
+           </ns>
+          </i>
+         </ns>
+         the tickets of the fans who
+         <ns type="RV">
+          <i>
+           visited
+          </i>
+         </ns>
+         <ns type="MT">
+         </ns>
+         the concert together with a friend of mine
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       There
+       <ns type="W">
+        <i>
+         always was
+        </i>
+       </ns>
+       a lot of security stuff around us to make sure
+       <ns type="RP">
+        <i>
+         every thing
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ok
+        </i>
+       </ns>
+       , because there really were
+       <ns type="S">
+        <i>
+         thousends
+        </i>
+       </ns>
+       of
+       <ns type="L">
+        <i>
+         persons
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Then we had time to listen to the music.
+      </p>
+      <p>
+       The other thing I had to do was to make some sandwiches and drinks just before they returned
+       <ns type="R">
+        <i>
+         behind the stage
+        </i>
+       </ns>
+       to rest a little bit before they continued playing. It was amazing to be in the same room they were
+       <ns type="MT">
+       </ns>
+       . Edi Vedder even talked to me about their
+       <ns type="RN">
+        <ns type="S">
+         <i>
+          programms
+         </i>
+        </ns>
+       </ns>
+       !
+      </p>
+      <p>
+       I think that I will never see them again
+       <ns type="RY">
+        <i>
+         personally
+        </i>
+       </ns>
+       , but I will never forget those two days - being so close to them, unbelievable!
+      </p>
+      <p>
+       Hope to see you soon !
+      </p>
+      <p>
+       Yours
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for the card you wrote to me, I hope you enjoyed your holidays.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I spent some great days in Vienna where I had the chance to help at the concert of "pearl jam".
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The first thing I didwas to controll the tickets of the fans who visited  the concert together with a friend of mine.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        There always was a lot of security stuff around us to make sure every thing is ok, because there really were thousends of persons.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Then we had time to listen to the music.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        The other thing I had to do was to make some sandwiches and drinks just before they returned behind the stage to rest a little bit before they continued playing.
+       </s>
+       <s pid="7" sid="2">
+        It was amazing to be in the same room they were .
+       </s>
+       <s pid="7" sid="3">
+        Edi Vedder even talked to me about their programms!
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I think that I will never see them again personally, but I will never forget those two days - being so close to them, unbelievable!
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Hope to see you soon !
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen Ryan,
+      </p>
+      <p>
+       I am writing to answer all the questions that you
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       me in your last letter.
+      </p>
+      <p>
+       First of all, I wanted to thank you for giving me the first prize in your competition. It is very important for me, because I
+       <ns type="MV">
+       </ns>
+       always wanted to travel to the U.S.A.
+      </p>
+      <p>
+       I would be able to travel only in July because it is the only month when I don't have to go to school.
+      </p>
+      <p>
+       I would prefer to stay in a tent because
+       <ns type="MP">
+       </ns>
+       as I
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       never slept in a tent, it would be a new experience for me.
+      </p>
+      <p>
+       The two activities that I choose are: basketball and climbing. I am a very good basketball player because I have been playing basketball since I was six years old.
+       <ns type="ID">
+        <i>
+         By the other side
+        </i>
+       </ns>
+       , I have never climbed a mountain but I always wanted to do it.
+      </p>
+      <p>
+       I wondered
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       kind of clothes I should take to the camp and I wanted to know how much money I should take.
+      </p>
+      <p>
+       I look forward to knowing the
+       <ns type="FN">
+        <i>
+         date
+        </i>
+       </ns>
+       of the camp.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to answer all the questions that you made me in your last letter.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I wanted to thank you for giving me the first prize in your competition.
+       </s>
+       <s pid="3" sid="2">
+        It is very important for me, because I  always wanted to travel to the U.S.A.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would be able to travel only in July because it is the only month when I don't have to go to school.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I would prefer to stay in a tent because as I had never slept in a tent, it would be a new experience for me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The two activities that I choose are: basketball and climbing.
+       </s>
+       <s pid="6" sid="2">
+        I am a very good basketball player because I have been playing basketball since I was six years old.
+       </s>
+       <s pid="6" sid="3">
+        By the other side, I have never climbed a mountain but I always wanted to do it.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I wondered which kind of clothes I should take to the camp and I wanted to know how much money I should take.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I look forward to knowing the date of the camp.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Thank you for your last letter. It was very interesting and I enjoyed reading it.
+      </p>
+      <p>
+       As you know, I enjoyed helping at a pop concert last month. It was a very good experience and I am going to tell you all about it.
+      </p>
+      <p>
+       First of all, I had to sell tickets for the concert in the street. As I sold all the tickets that the organisers gave me, I won a prize of ten pounds. Don't ask me how the concert was! Because during the concert I was working in the kitchen of the stadium bar, preparing sandwiches. I am angry because I couldn't watch the artists performing their songs.
+      </p>
+      <p>
+       When the concert was finished, some friends and I went for a drink.
+      </p>
+      <p>
+       It was a very important experience for me because I learnt all about the organisation of a pop concert.
+      </p>
+      <p>
+       Looking forward to hearing from you.
+      </p>
+      <p>
+       Yours,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your last letter.
+       </s>
+       <s pid="2" sid="2">
+        It was very interesting and I enjoyed reading it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As you know, I enjoyed helping at a pop concert last month.
+       </s>
+       <s pid="3" sid="2">
+        It was a very good experience and I am going to tell you all about it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First of all, I had to sell tickets for the concert in the street.
+       </s>
+       <s pid="4" sid="2">
+        As I sold all the tickets that the organisers gave me, I won a prize of ten pounds.
+       </s>
+       <s pid="4" sid="3">
+        Don't ask me how the concert was!
+       </s>
+       <s pid="4" sid="4">
+        Because during the concert I was working in the kitchen of the stadium bar, preparing sandwiches.
+       </s>
+       <s pid="4" sid="5">
+        I am angry because I couldn't watch the artists performing their songs.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        When the concert was finished, some friends and I went for a drink.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        It was a very important experience for me because I learnt all about the organisation of a pop concert.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

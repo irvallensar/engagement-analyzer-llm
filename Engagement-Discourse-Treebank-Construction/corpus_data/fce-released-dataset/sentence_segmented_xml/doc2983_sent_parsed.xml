@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     39.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith
+      </p>
+      <p>
+       It was such a pleasure to receive your letter, and we will be extremely glad to see you at the conference
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       we have been organising. Let me give you some further information concerning the event.
+      </p>
+      <p>
+       Firstly I would like to inform you about the hotel we have already booked for you.
+       <ns type="MA">
+        <i>
+         Is
+        </i>
+       </ns>
+       called
+       <ns type="MD">
+       </ns>
+       Palace Hotel, and we hope that
+       <ns type="MA">
+       </ns>
+       is going to
+       <ns type="RV">
+        <i>
+         satisfy
+        </i>
+       </ns>
+       your
+       <ns type="S">
+        <i>
+         expectetions
+        </i>
+       </ns>
+       . The conference is not too far from your hotel. I strongly
+       <ns type="S">
+        <i>
+         reccommend
+        </i>
+       </ns>
+       you to use
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       public
+       <ns type="RN">
+        <i>
+         transportation
+        </i>
+       </ns>
+       in order to get there,
+       <ns type="SX">
+        <i>
+         cause
+        </i>
+       </ns>
+       you may
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       find other types of transportation quite expensive.
+      </p>
+      <p>
+       Moreover, you must be aware of the fact that the conference is going to last two hours,
+       <ns type="S">
+        <i>
+         untill
+        </i>
+       </ns>
+       10:00 pm. After that our college has organised a
+       <ns type="S">
+        <i>
+         barbequiou
+        </i>
+       </ns>
+       night, with traditional local music that you must not miss. You don't need to wear formal clothes
+       <ns type="RP">
+        <i>
+         . Just
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         every day
+        </i>
+       </ns>
+       clothes.
+      </p>
+      <p>
+       Finally, I am aware of the fact that
+       <ns type="MT">
+       </ns>
+       the last day you have some hours free before you catch your plane. Don't miss the chance to visit our famous tourist attractions. There is also
+       <ns type="MD">
+       </ns>
+       huge
+       <ns type="DN">
+        <i>
+         shop centre
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       where you can buy some souvenirs or taste some of our traditional food.
+      </p>
+      <p>
+       I hope that you will find my information
+       <ns type="DJ">
+        <i>
+         helpfull
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       <ns type="UP">
+        <i>
+         I'am
+        </i>
+       </ns>
+       looking forward to seeing you
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Sincerely
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        It was such a pleasure to receive your letter, and we will be extremely glad to see you at the conference, we have been organising.
+       </s>
+       <s pid="2" sid="2">
+        Let me give you some further information concerning the event.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly
+       </s>
+       <s pid="3" sid="2">
+        I would like to inform you about the hotel we have already booked for you.
+       </s>
+       <s pid="3" sid="3">
+        Is called  Palace Hotel, and we hope that  is going to satisfy your expectetions.
+       </s>
+       <s pid="3" sid="4">
+        The conference is not too far from your hotel.
+       </s>
+       <s pid="3" sid="5">
+        I strongly reccommend you to use the public transportation in order to get there, cause you may be find other types of transportation quite expensive.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Moreover, you must be aware of the fact that the conference is going to last two hours, untill 10:00 pm.
+       </s>
+       <s pid="4" sid="2">
+        After that our college has organised a barbequiou night, with traditional local music that you must not miss.
+       </s>
+       <s pid="4" sid="3">
+        You don't need to wear formal clothes.
+       </s>
+       <s pid="4" sid="4">
+        Just every day clothes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, I am aware of the fact that  the last day you have some hours free before you catch your plane.
+       </s>
+       <s pid="5" sid="2">
+        Don't miss the chance to visit our famous tourist attractions.
+       </s>
+       <s pid="5" sid="3">
+        There is also  huge shop centre, where you can buy some souvenirs or taste some of our traditional food.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope that you will find my information helpfull
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'am looking forward to seeing you
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Your Sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       THE
+       <ns type="S">
+        <i>
+         HYSTORICAL
+        </i>
+       </ns>
+       MUSEUM
+      </p>
+      <p>
+       Welcome to Athens!! Without any doubt,
+       <ns type="MA">
+       </ns>
+       <ns type="MV">
+       </ns>
+       a
+       <ns type="S">
+        <i>
+         hystorical
+        </i>
+       </ns>
+       place which provides
+       <ns type="UP">
+        <i>
+         it's
+        </i>
+       </ns>
+       visitors with the opportunity to discover different aspects of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         greek
+        </i>
+       </ns>
+       history
+       <ns type="M">
+       </ns>
+       during the passing of
+       <ns type="MD">
+       </ns>
+       centuries.
+      </p>
+      <p>
+       Don't miss the chance to visit the
+       <ns type="S">
+        <i>
+         hystorical
+        </i>
+       </ns>
+       museum, located in the heart of the capital city. A traditional building which was built at the beginning of the century
+       <ns type="RP">
+        <i>
+         . The
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         hystorical
+        </i>
+       </ns>
+       museum is simply a symbol, a
+       <ns type="RN">
+        proof
+       </ns>
+       of what
+       <ns type="MD">
+       </ns>
+       <ns type="FN">
+        <i>
+         <ns type="RP">
+          <i>
+           greek
+          </i>
+         </ns>
+        </i>
+       </ns>
+       have always considered as
+       <ns type="MD">
+       </ns>
+       <ns type="RJ">
+        <i>
+         main
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         principal
+        </i>
+       </ns>
+       : their freedom. There are five
+       <ns type="S">
+        <i>
+         diffrent
+        </i>
+       </ns>
+       floors, each of them presents a
+       <ns type="S">
+        <i>
+         diffrent
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         chronical
+        </i>
+       </ns>
+       period of
+       <ns type="RP">
+        <i>
+         greek
+        </i>
+       </ns>
+       history, starting from the period before the birth of
+       <ns type="S">
+        <i>
+         Juisus
+        </i>
+       </ns>
+       and concluding
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the revolution of 1967. The museum provides the visitor with the opportunity to see original pieces of writing, famous paintings having as
+       <ns type="MD">
+       </ns>
+       main subject the revolution of 1821, and aspects of the
+       <ns type="RP">
+        <i>
+         greek
+        </i>
+       </ns>
+       religion that
+       <ns type="AGV">
+        <i>
+         has
+        </i>
+       </ns>
+       always
+       <ns type="MV">
+       </ns>
+       considered to be
+       <ns type="MD">
+       </ns>
+       vital part of
+       <ns type="RP">
+        <i>
+         greek
+        </i>
+       </ns>
+       history. There is a small
+       <ns type="R">
+        <i>
+         amount of money that visitors should pay for entry
+        </i>
+       </ns>
+       . Inside the museum there is
+       <ns type="MD">
+       </ns>
+       bookshop
+       <ns type="R">
+        <i>
+         having
+        </i>
+       </ns>
+       a large variety of
+       <ns type="S">
+        <i>
+         hystorical
+        </i>
+       </ns>
+       books, maps etc.
+      </p>
+      <p>
+       If you really want to discover what
+       <ns type="RP">
+        <i>
+         greek
+        </i>
+       </ns>
+       history
+       <ns type="RV">
+        means
+       </ns>
+       , we strongly recommend you to visit the
+       <ns type="S">
+        <i>
+         hystorical
+        </i>
+       </ns>
+       museum!!!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        THE HYSTORICAL MUSEUM
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Welcome to Athens!!
+       </s>
+       <s pid="2" sid="2">
+        Without any doubt,   a hystorical place which provides it's visitors with the opportunity to discover different aspects of the greek history  during the passing of  centuries.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Don't miss the chance to visit the hystorical museum, located in the heart of the capital city.
+       </s>
+       <s pid="3" sid="2">
+        A traditional building which was built at the beginning of the century.
+       </s>
+       <s pid="3" sid="3">
+        The hystorical museum is simply a symbol, a proof of what  greek have always considered as  main principal: their freedom.
+       </s>
+       <s pid="3" sid="4">
+        There are five diffrent floors, each of them presents a diffrent chronical period of greek history, starting from the period before the birth of Juisus and concluding to the revolution of 1967.
+       </s>
+       <s pid="3" sid="5">
+        The museum provides the visitor with the opportunity to see original pieces of writing, famous paintings having as  main subject the revolution of 1821, and aspects of the greek religion that has always  considered to be  vital part of greek history.
+       </s>
+       <s pid="3" sid="6">
+        There is a small amount of money that visitors should pay for entry.
+       </s>
+       <s pid="3" sid="7">
+        Inside the museum there is  bookshop having a large variety of hystorical books, maps etc.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        If you really want to discover what greek history means, we strongly recommend you to visit the hystorical museum!!!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,886 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Identification of Best Damping Material for Impact Vibrations through Solid Wood Flooring Using MEMS Accelerometer
+     </div>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       The purpose of the project is to study impact vibrations in residential wood flooring as a result of footsteps and dropped objects through the use of a MEMS accelerometer, and relate these vibrations to sound radiation.  A replication flooring system was used with various kinds of padding/damping material and an impact force was applied to the flooring and recorded using a MEMS accelerometer and oscilloscope.  The graphs recorded were then analyzed to find the wave magnitudes and period needed to calculate the damping ratio.  It was found that by increasing the damping ratio the vibrations could be reduced. From the results it was determined that fleece on top of blue foam is the best damping material for wood flooring.  However, after careful consideration it was determined that the damping ratio for fleece alone was sufficient and that fleece is a better option due to thinness, cost and durability.  The findings verify that if a damping material is used properly it will reduce the impact vibrations through the wood flooring set-up, which directly correlates to a damping of sound vibrations.
+      </p>
+      <p>
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Current padding systems used for wood flooring are insufficient to dampen the impact vibrations and sound vibrations that carry through the floor to the room below.
+       </s>
+       <s pid="1" sid="2">
+        Sound vibrations in homes cause sleep loss, emotional and physical response, annoyance and activity disturbance.
+       </s>
+       <s pid="1" sid="3">
+        Sound vibrations have been studied using sound equipment; however, this is expensive.
+       </s>
+       <s pid="1" sid="4">
+        The equipment is large and bulky and has a limited dB level.
+       </s>
+       <s pid="1" sid="5">
+        Impact vibrations data collection and analysis is less costly and requires a simpler technique.
+       </s>
+       <s pid="1" sid="6">
+        Damping these vibrations leads to a better quality of life.
+       </s>
+       <s pid="1" sid="7">
+        It is the objective of this project to record impact vibrations using a Precision ±1.7 g Single-/Dual-Axis i MEMS® Accelerometer ADXL103/ADXL203, analyze the data, conduct evaluations of damping material based on the data collected and determine the best damping material, and relate impact vibration damping to sound vibration damping.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       NOMENCLATURE
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        A: Total absorption a: Absorption coefficient B: Cross sectional area of beam (m2) d: Floorboard thickness (m) EI: stiffness of joist beam (modulus of elasticity E x moment of inertia I) F1: Object drop force (N) g: Gravitational constant (m/s2)
+       </s>
+       <s pid="2" sid="2">
+        Ia: Absorbed sound intensity (W/m2)
+       </s>
+       <s pid="2" sid="3">
+        Ii: Incident (impact) sound intensity (W/m2) K: Floorboard spring constant k: Boundary conditions factor of beam L: Length span of joist structure (m) LN2: Impact sound level of lower room (dB) M: Floorboard mass (kg) P: Static load on joist structure (N) p1: Sound pressure of upper room (Pa) p2: Sound pressure of lower room (Pa) R1,2: Upper/lower room constant r: Peak-to-peak ratio S: Surface area of room through which sound waves pass (m2) s: Floorboard cross-sectional area (m2) T: Period of vibration response (s) v: Sound wave velocity (m/s) W1: Radiated sound power from floor to room above (W) Wi: Effective radiated sound power (W) x(t):
+       </s>
+       <s pid="2" sid="4">
+        Displacement as a function of time (m) α1: Sound radiation constant λi: Boundary conditions factor of beam Δ: Midspan deflection of joist structure (m) ξ: Damping ratio η: Energy loss factor ρ: Mass density of joist beam (kg/m3) ρf: Mass density of floorboard (kg/m3) ρc: Acoustic impedance (Ω) σrad: Radiation coefficient of floor τ: Transmittivity constant φ: Theoretical model phase shift (radians) φε: Strain phase shift (radians) φσ: Stress phase shift (radians) ωn: Natural frequency of vibration response (Hz) ωd: Damped circular frequency (Hz) ωn,f : Fundamental natural frequency of vibration response (Hz)
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       METHODS
+      </div>
+      <div>
+       <div class="head_2">
+        Experimental Setup
+       </div>
+       <p>
+        <s pid="3" sid="1">
+         In order to simulate an actual residential environment, a particle board and joist system was constructed to replicate a flooring platform.
+        </s>
+        <s pid="3" sid="2">
+         A tough and groove wood flooring that was constructed using Brazilian cherry wood was clamped to the platform.
+        </s>
+        <s pid="3" sid="3">
+         The model MEMS accelerometer was attached using tape on the top surface of the wood flooring at the far end of the platform.
+        </s>
+        <s pid="3" sid="4">
+         A basketball was then dropped from a prescribed height of 0.762 m on to the center of the platform.
+        </s>
+        <s pid="3" sid="5">
+         This experiment setup is shown in Appendix A. Output voltages from the MEMS accelerometer were then collected using an oscilloscope, shown in Appendix B. Trials were repeated placing various damping materials between the platform and wood flooring.
+        </s>
+        <s pid="3" sid="6">
+         Five trials were conducted for each damping material.
+        </s>
+        <s pid="3" sid="7">
+         The experiment was then repeated using a softball as the impact object from a height of 0.864 m.
+        </s>
+        <s pid="3" sid="8">
+         Data was then collected with the MEMS accelerometer positioned on the underside of the platform as shown in Appendix C. Six different damping material configurations were analyzed in the experiment: no damping material, polystyrene, blue PVC vinyl foam, white vinyl foam (current industry standard), fleece and a combination of fleece and the blue PVC.
+        </s>
+        <s pid="3" sid="9">
+         The damping materials are illustrated in Appendix E.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Theoretical Model
+       </div>
+       <p>
+        <s pid="4" sid="1">
+         The flooring system can be modeled as a mass/spring/damper theoretical model setup and is pictured in Appendix D.
+        </s>
+        <s pid="4" sid="2">
+         It is assumed that the platform is a rigid body, the Brazilian cherry wood acts as a mass and spring and the material acts as a damping system.
+        </s>
+        <s pid="4" sid="3">
+         By using this theoretical model’s vibration dynamic equations in Equations 1 and 2 below, we can find the dynamic response.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs.1, 2)
+       <p>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         The material properties for the Brazilian cherry wood are outlined below in Table 1.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         Table 1: Material Properties for Brazilian Cherry Wood floorboard
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         These material properties can be used in Equation 3 to calculate the spring constant.
+        </s>
+        <s pid="11" sid="2">
+         This spring constant along with the mass of the wood is used to calculate the natural frequency in Equation 4.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs.3, 4)
+       <p>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         A sample impact vibration recorded by the oscilloscope is shown in Appendix F.
+        </s>
+        <s pid="14" sid="2">
+         The magnitude of the first wave length X1, the magnitude of the consecutive wave length X2 and the period were collected from each test trial.
+        </s>
+        <s pid="14" sid="3">
+         This data was then used to calculate the peak to peak ratio in Equation 5 and finally the damping ratio in Equation 6 for each trial, shown below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs.5, 6)
+       <p>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         The average damping ratio was calculated for four cases: a basketball dropped with the MEMS accelerometer on the top of the floorboard system; a softball dropped, MEMS accelerometer on top; a basketball dropped, MEMS accelerometer on bottom; and a softball dropped, MEMS accelerometer on bottom.
+        </s>
+        <s pid="17" sid="2">
+         Each case study varied the configurations of the damping materials when measuring the oscilloscope voltage output from the MEMS accelerometer.
+        </s>
+        <s pid="17" sid="3">
+         From the four cases, an average damping ratio was then calculated for each damping material.
+        </s>
+        <s pid="17" sid="4">
+         The uncertainty was calculated by taking two times the standard deviation.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       RESULTS
+      </div>
+      <p>
+       <s pid="18" sid="1">
+        Table 2 on page 6 gives the averaged results of each damping material for the four case studies and their corresponding five damping material test trials we performed.
+       </s>
+       <s pid="18" sid="2">
+        Because the resolution error of the equipment was small, the error in the damping ratio was calculated from its precision error for each of the five tests trials we ran in a case.
+       </s>
+       <s pid="18" sid="3">
+        As a result of the high noise and inconsistent peaks in the data (sample graphs shown in Appendix F and E), X1 and X2 were difficult to measure and accounted for the majority of damping ratio error.
+       </s>
+       <s pid="18" sid="4">
+        In particular, the data using the fleece configuration damped in a very short time and left very few peaks to choose suitable measurement values for X1 and X2, which is why its error is so high.
+       </s>
+       <s pid="18" sid="5">
+        Table 3 shown on page 6, was created to show an overall summary of all of our trials and is an average of Table 2 values.
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        Table 2: Average damping ratio for experiments with error
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        Table 3: Averaged damping ratio and error for experiments combined
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       DISCUSSION
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        The MEMS accelerometer test data shows that the vibrations in the floor board are those of a damped harmonic oscillator.
+       </s>
+       <s pid="21" sid="2">
+        The initial research on the subject of vibrations and floor boards led to the conclusion that there should be some coefficient β, shown in Equation 21 on page 11, which relates radiated sound power to the peak vibration.
+       </s>
+       <s pid="21" sid="3">
+        Using this argument the highest damping value for the vibrations was tested for, since this will logically produce the least sound.
+       </s>
+       <s pid="21" sid="4">
+        From Table 2 an overall trend can be observed: damping ratio is higher for a bottom accelerometer position rather than for a top one.
+       </s>
+       <s pid="21" sid="5">
+        This occurs because the surface vibrations are more reliant on the material properties of the wood to damp most of the vibration, and the bottom vibrations have the additional damping of the test material and the joist.
+       </s>
+       <s pid="21" sid="6">
+        The difference in damping values could also be resulting from the difference in location of the MEMS accelerometer on the floorboard plane.
+       </s>
+       <s pid="21" sid="7">
+        The top position is located at the far end of the floor board as shown in Appendix A.
+       </s>
+       <s pid="21" sid="8">
+        The bottom position is located directly under the impact area secured between the cross wood supports, as shown in Appendix C, which allowed for easier attachment.
+       </s>
+       <s pid="21" sid="9">
+        The individual damping ratio values were averaged to determine the best material overall in all sound insulating conditions simulated.
+       </s>
+       <s pid="21" sid="10">
+        From Table 3, the PVC blue foam – fleece combination had the highest value at 15.15x10-5±6.66x10-5.
+       </s>
+       <s pid="21" sid="11">
+        The order for combination (either blue foam on fleece, or fleece on blue foam) did not matter for damping value with in error.
+       </s>
+       <s pid="21" sid="12">
+        Tests with combinations of materials showed an increase in damping values; however, laboratory time did not permit further testing of all configurations of current damping materials.
+       </s>
+       <s pid="21" sid="13">
+        To experiment with achieving a higher damping value, a vibration test for the combination of polystyrene and fleece should be conducted.
+       </s>
+       <s pid="21" sid="14">
+        The best individual insulating configuration is the fleece with a damping ratio of 14.28x10-5±12.8x10-5.
+       </s>
+       <s pid="21" sid="15">
+        The high error of the damping ratio is attributed to the inconsistency of the impact force.
+       </s>
+       <s pid="21" sid="16">
+        Shifting of the position of the accelerometer and its tape during impact contributed to additional error.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       CONCLUSIONS AND RECOMMENDATIONS
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        Noises in households are created from vibrations propagating through the floors and walls.
+       </s>
+       <s pid="22" sid="2">
+        It is possible to use MEMS accelerometers to determine the damping coefficient of wooden floor boards.
+       </s>
+       <s pid="22" sid="3">
+        The vibrations are identical to the case of damped harmonic oscillators, where higher damping ratio equals less vibration.
+       </s>
+       <s pid="22" sid="4">
+        We were able to determine the damping ratio for our test floor that was padded with sound insulating damping material.
+       </s>
+       <s pid="22" sid="5">
+        The damping ratio had unusually high error, which is attributed to the inconsistency with the impact method and accelerometer placement.
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        The test material with the highest damping ratio was the combination of blue foam on top of fleece.
+       </s>
+       <s pid="23" sid="2">
+        The best choice for commercial use would be the fleece only for several reasons.
+       </s>
+       <s pid="23" sid="3">
+        This material had the second highest damping ratio, is inexpensive, thin, and has limited deterioration over time.
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        More tests need to be done in the future to reduce experimental uncertainty and find better methods of reducing the propagation of sound waves from impacts.
+       </s>
+       <s pid="24" sid="2">
+        We could use a standard tapping machine for constant input vibrations to prevent human error in the drop force.
+       </s>
+       <s pid="24" sid="3">
+        Additional test trials can also be done with more materials such as composites, cork, foam rubber, and so on, to find the best insulator make-up.
+       </s>
+       <s pid="24" sid="4">
+        The effect of geometry on the insulating volume sound muffling abilities should be examined.
+       </s>
+       <s pid="24" sid="5">
+        For large-scale damping, we would like to investigate the effects of using vibration reduction devices, such as a shock absorber or tuned mass damper systems.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       FUTURE WORK
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        We would like to conduct further testing to determine if reducing the time and amplitudes of upper room impact vibrations using materials with increased damping constants, in fact, reduces the noise levels transferred to rooms below.
+       </s>
+       <s pid="25" sid="2">
+        We can also test the vibration response of the joist-setup to determine the system’s natural frequency and model a differential equation (and its solution) describing the impact vibration response.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Force Input Method [1]
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         In order to reduce the error in the damping ratio that we found by dropping a basketball or softball, a more consistent force input method is required and was formulated.
+        </s>
+        <s pid="26" sid="2">
+         Appendix H shows the proposed force vibration experiment set-up.
+        </s>
+        <s pid="26" sid="3">
+         The test procedure is as follows: the DC motor rotates a mass connected to the floorboard at its midpoint; a linear variable differential transducer (LVDT) measures the vibration response; the resulting signal demonstrating floorboard deflection versus time is captured by an oscilloscope; the motor speed is then to be increased until the LVDT measures a local maximum in the deflection data; at this speed, the vibration dynamic period can be procured from the time for 10 cycles to pass at steady-state.
+        </s>
+        <s pid="26" sid="4">
+         The fundamental natural frequency of the floorboard in bending would occur at this maximum displacement, and is calculated as follows in Equation 7:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eq.7)
+       <p>
+       </p>
+       <p>
+        <s pid="29" sid="1">
+         However, error can occur when assuming that this maximum displacement is completely a result of bending, as torsion could be identified incorrectly as bending by the LVDT.
+        </s>
+        <s pid="29" sid="2">
+         Our earlier force input method of dropping a basketball or softball could be used to simulate free vibration and verify the LVDT set-up’s determination of the fundamental natural frequency, helping to reduce uncertainty about the bending mode of the floorboard.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Floorboard Stiffness [2]
+       </div>
+       <p>
+        <s pid="30" sid="1">
+         Floorboard stiffness is a material property of the wood, and has been found to greatly influence the impact vibration response.
+        </s>
+        <s pid="30" sid="2">
+         There is much variation in the material structure of Brazilian cherry wood from piece to piece, so to find our floorboard set-up’s stiffness, we would conduct static load testing by placing a point load at the middle position of the joist making sure the load was distributed uniformly across its width.
+        </s>
+        <s pid="30" sid="3">
+         The deflection would then be measured using a dial indicator.
+        </s>
+        <s pid="30" sid="4">
+         The stiffness is calculated from load and deflection information shown in Equation 8 below.
+        </s>
+        <s pid="30" sid="5">
+         It can be validated by Equation 9 using the fundamental natural frequency found from the above test set-up.
+        </s>
+        <s pid="30" sid="6">
+         The boundary condition parameter, k, can be found from previous experimental data for our joist (a pin-pin support structure) to be 2.46.
+        </s>
+        <s pid="30" sid="7">
+         Finally, we can find the natural frequency for the floorboard bending mode, shown in Equation 10.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs. 8, 9, 10)
+       <p>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         Finding the damping ratio by the method found in Equation 6 on page 5 from the voltage output versus time graph, we can construct a characteristic equation for each damping material tested.
+        </s>
+        <s pid="33" sid="2">
+         This equation should be used to check if the behavior of the system is under-, critically, or over-damped.
+        </s>
+        <s pid="33" sid="3">
+         From our previous data, all of the vibration system responses exhibited under-damped responses (ξ &amp;lt; 1), oscillating at the damped natural frequency.
+        </s>
+        <s pid="33" sid="4">
+         Configurations demonstrating damping ratios closer to that of one critically damped (ξ = 1) shortened the time of vibration, lessening the sensation of impact noise.
+        </s>
+       </p>
+       <p>
+        <s pid="34" sid="1">
+         The damping response behaves viscously – that is, where the damping force is proportional to the displacement and velocity of the floorboard vibrating.
+        </s>
+        <s pid="34" sid="2">
+         Therefore, a modification representing energy loss’ contribution to the vibration response can be included in our predictive equations.
+        </s>
+        <s pid="34" sid="3">
+         Using strain gauges and force transducers, the strain and stress of the system can be recorded in the LVDT set-up.
+        </s>
+        <s pid="34" sid="4">
+         The loss factor, or the ratio of average sound energy loss per radian to the peak strain energy in harmonic oscillation, can be calculated.
+        </s>
+        <s pid="34" sid="5">
+         The loss factor is related to the tangent of the ratio of phase shifts between the stress and strain, shown in Equation 11 below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eq. 11)
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Theoretical Vibration Dynamic Response [3]
+       </div>
+       <p>
+        <s pid="37" sid="1">
+         Given that we displace our mass (the floorboard) and let it vibrate freely at is damped natural frequency (Equation 12), according to our characteristic equation (Equation 2 on Page 4), its homogeneous solution to is displacement as a function of time is shown in Equation 13.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs. 12, 13)
+       <p>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         With this equation, the initial conditions, and the experimentally determined natural frequency and damping ratio, we can know the under-damped vibration as a function of time, and, thus, the exact behavior of the floorboard.
+        </s>
+        <s pid="40" sid="2">
+         Using the loss factor of the floorboard, we can get the values for A and φ, as shown in Equations 14 and 15.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs. 14, 15)
+       <p>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         We can then put forth this relation using different damping materials to find out how quickly the vibration energy dampens out to a convergent value.
+        </s>
+        <s pid="43" sid="2">
+         Appendix I shows a sample under-damped response to be calculated from damping test trials.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Sound Intensity Measurements [1]
+       </div>
+       <p>
+        <s pid="44" sid="1">
+         To determine if increasing the damping ratio in the floorboard set-up actually reduces the noise level in the lower room, when there is impact vibration in the upper room (or vice versa), we can conduct an experiment comparing sound intensity.
+        </s>
+        <s pid="44" sid="2">
+         Sample experimental set-ups are shown in Appendix J.
+        </s>
+       </p>
+       <p>
+        <s pid="45" sid="1">
+         Using a sound intensity probe and a portable analyzer, we can measure
+        </s>
+        <s pid="45" sid="2">
+         Ia and Ii of the source room, which is the origin of the sound.
+        </s>
+        <s pid="45" sid="3">
+         We can gather data about the source and receiving rooms’ sound qualities (absorption coefficient, total absorption, and source room constant) using Equations 16 to 18, shown below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs.16, 17, 18)
+       <p>
+       </p>
+       <p>
+        <s pid="48" sid="1">
+         Using a microphone and sound intensity probe, we can measure sound pressure and wave velocity, and, thus, the acoustic impedance of Brazilian cherry wood, as shown in Equation 19 below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eq. 19)
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Impact Sound Levels and Sound Power
+       </div>
+       <p>
+        <s pid="51" sid="1">
+         In order to validate our hypothesis that states that with less, more damped vibration there is less radiated sound, we must first relate the drop force to sound power radiated in Watts from the impact, shown in Equation 20 on page 11 and in Appendix K.
+        </s>
+       </p>
+       <p>
+        <s pid="52" sid="1">
+         We can also find the effective radiated sound power, or the power experienced through a certain surface area, using Equation 21 on page 11.
+        </s>
+        <s pid="52" sid="2">
+         This can be related to our MEMS accelerometer voltage output levels, by multiplying the amplitudes by some coefficient, β.
+        </s>
+        <s pid="52" sid="3">
+         This value can be found by using the amplitude at the highest peak of the oscilloscope output to describe the initially loudest stage of an impact, where sound measurements are taken.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eqs. 20, 21)
+       <p>
+       </p>
+       <p>
+        <s pid="55" sid="1">
+         Given all of this information, we can find the transmittivity constant, which tells us the ratio of sound power experienced in the source room to that of the receiving room, shown in Equation 22.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eq.22)
+       <p>
+       </p>
+       <p>
+        <s pid="58" sid="1">
+         The impact sound level (in dB) can then be found from Equation 23 below.
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       (Eq. 23)
+       <p>
+       </p>
+       <p>
+        <s pid="61" sid="1">
+         This value should be shown to decrease from Room 1 (upper source) to Room 2 (lower receiving) as more damping material is added.
+        </s>
+        <s pid="61" sid="2">
+         Using this equation, we can relate the oscilloscope output voltage from the MEMS accelerometer readings, and relate it to the impact sound level transferred from the upper source to the lower receiving room.
+        </s>
+        <s pid="61" sid="3">
+         This will to provide information on the effect of adding specific damping materials on reducing impact vibrations and noise levels in separate rooms of households.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       ACKNOWLEDGMENTS
+      </div>
+      <p>
+      </p>
+     </div>
+    </div>
+    <div>
+     <p>
+      APPENDIX A: Sample graphs from experimental tests with accelerometer placed on top
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      APPENDIX B, C: Experimental lab setup and bottom view of floor board
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      APPENDIX D: Theoretical model of mass spring damper with impact force
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      APPENDIX E: Materials used from left to right, white vinyl foam, fleece, polystyrene, and blue PVC foam
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      APPENDIX F: Sample graphs from experimental tests with accelerometer placed on top
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      APPENDIX G: Sample graphs from experimental tests with accelerometer placed on bottom
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div>
+      <p>
+       APPENDIX H: More consistent force input method for vibration response [1]
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       APPENDIX I: Under-damped Vibration Response
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       APPENDIX J: Sample experimental set-ups of sound intensity measurement
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       APPENDIX K: Upper (Source) and lower (receiving) experimental set-up
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N1028E">
+       <li id="N1028F">
+        [1] Wang, Xiping, Robert J. Ross, Michael O. Hunt, and John R. Erickson. "LOW FREQUENCY VIBRATION APPROACH FOR ASSESSING." WOOD AND FIBER SCIENCE. 37 (3)(2005): 372-378.
+       </li>
+       <li id="N10291">
+        [2] Iwashige, H., and M. Ohta. "A THEORY ON IMPACT NOISE EVALUATION OF A WOOD JOIST FLOOR." ARCHIVES OF ACOUSTICS 26(2001): 245-254.
+       </li>
+       <li id="N10293">
+        [3] Varanasi, Kripa. "MODEL OF DAMPED SYSTEMS." MIT Lecture (2006) 32-46. &lt;http://www.mit.edu:8001/people/kripa/ADV/hybrid_damping/chapter3.pdf&gt;.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

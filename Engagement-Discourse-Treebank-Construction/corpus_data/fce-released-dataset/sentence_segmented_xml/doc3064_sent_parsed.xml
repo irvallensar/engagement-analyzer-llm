@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     34.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       Thank you for your letter.
+       <ns type="RY">
+        <i>
+         Surely
+        </i>
+       </ns>
+       I'll try to help you as
+       <ns type="DY">
+        <i>
+         good
+        </i>
+       </ns>
+       as I can.
+      </p>
+      <p>
+       First, I
+       <ns type="MV">
+       </ns>
+       tell you the name of the hotel
+       <ns type="RP">
+        <i>
+         , it's
+        </i>
+       </ns>
+       the Palace Hotel. Fortunately, it is not far from our college.
+       <ns type="UT">
+        <i>
+         For
+         <ns type="FV">
+          <i>
+           getting
+          </i>
+         </ns>
+        </i>
+       </ns>
+       from the hotel to the conference, you only have to take bus no.7 and get off at St. James College, where the conference will take place.
+      </p>
+      <p>
+       About the end-of-conference party I can only say that a band will be playing the whole night, and a special guest
+       <ns type="MP">
+       </ns>
+       I still don't know
+       <ns type="MA">
+       </ns>
+       <ns type="MP">
+       </ns>
+       will be expected. I suggest
+       <ns type="FV">
+        <i>
+         to wear
+        </i>
+       </ns>
+       casual clothes
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think there's no need
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       school uniforms.
+      </p>
+      <p>
+       To answer your last question, I would propose you
+       <ns type="FV">
+        <i>
+         to attend
+        </i>
+       </ns>
+       the local zoo, because many baby animals
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       born in the past few days.
+      </p>
+      <p>
+       Dear Mrs Smith, I hope the
+       <ns type="W">
+        <i>
+         given information
+        </i>
+       </ns>
+       is useful for you. I'm looking forward to seeing you at the conference.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter.
+       </s>
+       <s pid="2" sid="2">
+        Surely I'll try to help you as good as I can.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First, I  tell you the name of the hotel, it's the Palace Hotel.
+       </s>
+       <s pid="3" sid="2">
+        Fortunately, it is not far from our college.
+       </s>
+       <s pid="3" sid="3">
+        For getting from the hotel to the conference, you only have to take bus no.7 and get off at St. James College, where the conference will take place.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        About the end-of-conference party I can only say that a band will be playing the whole night, and a special guest I still don't know  will be expected.
+       </s>
+       <s pid="4" sid="2">
+        I suggest to wear casual clothes, I think there's no need of school uniforms.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        To answer your last question, I would propose you to attend the local zoo, because many baby animals were born in the past few days.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Dear Mrs Smith, I hope the given information is useful for you.
+       </s>
+       <s pid="6" sid="2">
+        I'm looking forward to seeing you at the conference.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       The telephone
+      </p>
+      <p>
+       Could you imagine
+       <ns type="U">
+        <i>
+         there's
+        </i>
+       </ns>
+       no telephone ringing in
+       <ns type="RD">
+        <i>
+         an
+        </i>
+       </ns>
+       office? Or
+       <ns type="FV">
+        <i>
+         to live
+        </i>
+       </ns>
+       your
+       <ns type="DN">
+        <i>
+         live
+        </i>
+       </ns>
+       without chatting for hours with your best friend? Could you? I
+       <ns type="TV">
+        <i>
+         can't
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       The telephone was invented by Alexander Graham Bell
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the end of the 19th century.
+       <ns type="AS">
+        <i>
+         It was an invention nobody
+         <ns type="RV">
+          <i>
+           thought
+          </i>
+         </ns>
+         how important and how widespread it
+        </i>
+       </ns>
+       would be in
+       <ns type="MD">
+       </ns>
+       future. Nowadays almost every household in the western world owns a telephone, and calling
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       relatives or friends spread all over the world is no strange thing. People need the telephone not only for chatting, but also for exchanging information in a very
+       <ns type="RJ">
+        <i>
+         short
+        </i>
+       </ns>
+       and direct way with the possibility
+       <ns type="R">
+        <i>
+         to
+        </i>
+       </ns>
+       answer immediately.
+      </p>
+      <p>
+       When I was a child, we had no telephone at home, and I always had to go to a phone box in the centre of our village. Now I have my own flat, and the first
+       <ns type="RN">
+        piece of furniture
+       </ns>
+       <ns type="TV">
+        <i>
+         I've bought
+        </i>
+       </ns>
+       was the telephone. I'll never
+       <ns type="RV">
+        <i>
+         take it away
+        </i>
+       </ns>
+       from my home.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The telephone
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Could you imagine there's no telephone ringing in an office?
+       </s>
+       <s pid="2" sid="2">
+        Or to live your live without chatting for hours with your best friend?
+       </s>
+       <s pid="2" sid="3">
+        Could you?
+       </s>
+       <s pid="2" sid="4">
+        I can't!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The telephone was invented by Alexander Graham Bell in the end of the 19th century.
+       </s>
+       <s pid="3" sid="2">
+        It was an invention nobody thought how important and how widespread it would be in  future.
+       </s>
+       <s pid="3" sid="3">
+        Nowadays almost every household in the western world owns a telephone, and calling to relatives or friends spread all over the world is no strange thing.
+       </s>
+       <s pid="3" sid="4">
+        People need the telephone not only for chatting, but also for exchanging information in a very short and direct way with the possibility to answer immediately.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        When I was a child, we had no telephone at home, and I always had to go to a phone box in the centre of our village.
+       </s>
+       <s pid="4" sid="2">
+        Now I have my own flat, and the first piece of furniture I've bought was the telephone.
+       </s>
+       <s pid="4" sid="3">
+        I'll never take it away from my home.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

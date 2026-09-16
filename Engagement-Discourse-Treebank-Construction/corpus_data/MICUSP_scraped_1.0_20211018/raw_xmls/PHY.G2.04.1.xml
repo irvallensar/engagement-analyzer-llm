@@ -1,0 +1,735 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    ﻿Tripod-STIRAP
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     What can tripod-STIRAP do for you?
+    </div>
+    <p>
+     Our group is examining stimulated Raman adiabatic passage (STIRAP), its applications, and its variants. STIRAP is an effective method of population transfer; it depends on the existence of a dark state, one that cannot radiatively decay. In a three-level system, where state 2 can decay to states 1 and 3, STIRAP uses a counter-intuitive pulse ordering to transfer the population from an initially populated state 1 into a target state 3. State 2 is surprisingly never populated, and therefore allows efficient transfer when the decay properties of state 2 would otherwise prohibit transfer. STIRAP has many applications including coherent control in molecular reactions and quantum information.
+    </p>
+    <p>
+     While rapid and complete population transfer is useful in an of itself, we may also want to create coherent superpositions of states for use in quantum information systems. Techniques such as the _-pulse method do allow us to create these superpositions; however it requires precise knowledge of the transition moment and exact control of the pulse area. Tripod-STIRAP allows us to create coherent populations in a much more robust matter, one that is relatively insensitive to fluctuations in the pulse amplitude and one that does not depend on previous knowledge of the transition dipole. Like STIRAP, its four-level variant also does not depend on the decay characteristics of the excited state.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Tripod-STIRAP: In Theory
+    </div>
+    <p>
+     The underlying theory behind tripod-STIRAP is that of a simple four-level system: three degenerate energy levels, and a fourth, excited energy level. Three laser pulses separately couple each one of the degenerate atomic states to the excited state, as shown in Figure 1. This section follows the work of Unanyan et al. and recreates their results for a given pulse sequence [3]. Starting with a system in its ground state, we desire to find a pulse sequence such that we end up in an arbitrary superposition of states given by a mixing angle
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and a relative phase
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    :
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1: Energy levels for tripod-STIRAP, from [3].
+    </p>
+    <p>
+     Ideally, we would also be able to reverse the process as well, such that we could measure the coherence of the superposition. When we first consider the bare atomic states, the evolution is governed by the Schrodinger equation: where C(t) is a column vector containing the probability amplitudes, andW(t) is an evolution matrix, where P(t),Q(t) and S(t) are the pump, control and Stokes Rabi frequencies:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     As we can see from the evolution matrix, the lasers provide the only coupling between any of the atomic states, and we ignore the radiative decay from state 2. This simplification is valid for tripod-STIRAP sequences since, throughout the interaction, the population of the excited state is negligible. For a given pulse sequence, we numerically solve these differential equations to determine the final populations of the atomic states, where the population in state n is given by |Cn|2. By varying the delay of the control pulse, we can create an arbitrary superposition of states 1 and 3.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2: The recreated pulse sequence and the resulting atomic populations given in Figure 3 of [3]. The pulses are of the form
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , and the parameters here are AP = AQ = 20,AS = 6, TP = 10, TS = TQ = 20 and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    Q = 40. The dashed line indicates the population of state 2.
+    <p>
+    </p>
+    <p>
+     Much as in the standard STIRAP scheme, we can form a new basis of dressed states from these atomic states. In the tripod scheme, however, we will have two dark states that are immune to radiative decay; that is, they contain no portion of the atomic state 2.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     where the angles are given in relation to the applied pulses:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The two dark states,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    1 and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    2, are both degenerate in energy, while states
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    3 and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    4 have energies of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    where
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     The Schrodinger equation transforms in this basis to:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the transformed evolution matrix:
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     We can see from this new evolution matrix that the dark states couple to each other. When we consider only the dark states, we can find the general solution to be:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     To calculate the mixing angle, we simply need to calculate
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . For the pulse sequence in Figure 2,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    = −0.7409.
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3: Energy levels for the adiabatic states, from [3]. The dotted lines show nonadiabatic coupling between non-degenerate states and the dashed line shows coupling between the dark states.
+    </p>
+    <p>
+     Unanyan et al. show that the mixing angle is insensitive to the amplitude of the control pulse, and they claim that similar insensitivity holds for the pump and Stokes pulses as well [3], which I show in Figure 4.
+    </p>
+    <p>
+     a)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    b)
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     Figure 4: Plots showing the sensitivity of a) the pump pulse and b) the Stokes pulse to amplitude variations. The black line shows the variation of the mixing angle as you vary
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    . The red line is for a 20% decrease in pulse amplitude and the blue line is for a 20% increase in pulse amplitude.
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Tripod-STIRAP: In Practice
+    </div>
+    <p>
+     Even when techniques work well in theory, it can still be difficult to put them into practice. In the case of tripod-STIRAP, one first needs to find an atom with suitable energy levels. Three states should be metastable and degenerate (or nearly so), with an excited state that can easily and individually couple to each of the ground states. Vewinger et al. chose 20Ne; the couplings between the 3P0,1,2 levels fit the criteria well, as shown in Figure 5 [5]. This section considers their experimental tripod-STIRAP scheme, and briefly discusses how they measured the superposition they created.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 5: a) Coupling scheme for tripod-STIRAP. b) Levels on 20Ne used in the experiment. Dashed lines represent spon-taneous emission used in the detection [5].
+    </p>
+    <p>
+     Since the tripod-STIRAP scheme is so robust and insensitive to small variations in many of the parameters, this scheme can be used with atomic beams passing through transverse laser beams. The velocity distribution in the atomic beam will only result in a rescaling of the time axis, which does not affect the mixing angle [3].
+    </p>
+    <p>
+     In Vewinger et al.’s experiment, the
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    sublevels of the 3P2 state are coupled to the 3P1 state with
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    light. To simplify it experimentally, however, they chose to combine the two circularly polarized beams into one linearly polarized beam, which they label the Stokes laser. The polarization is rotated at an angle
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    compared to the x-axis. This removes a degree of freedom in choosing the pulse sequence, but tripod-STIRAP can still be achieved when two of the pulses are identical in time. The pump laser is along the x-axis, at right angles to both the Stokes laser and the atomic beam. It is geometrically positioned such that you can vary the spatial overlap between it and the Stokes laser. The collimated atomic beam is initially prepared in the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    level, with states being labeled in the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    notation. However, unlike the previous theory section where the initial state is in the final superposition, here the experiment aims to create a superposition of the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    states. The dark states of this system will then be described by:
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 6: The geometry of the experiment [5].
+    </p>
+    <p>
+     Due to the different pulses needed to create the superposition between the
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    states,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    are redefined by
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , where the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    's are the Rabi frequencies of the coupling lasers. With this setup, where the pump field is delayed, the atoms evolve to the final state:
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is an arbitrary phase, which could be caused by a magnetic field, for instance.
+    <p>
+    </p>
+    <p>
+     In practice, however, it does little good to create this coherent superposition of states without a way to measure it. To that end, after the beam is prepared in the superposition, it travels through a filter laser that is polarized at an angle
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    with respect to the x-axis. This laser optically pumps the population out of the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    states, and, in a rotated basis, the system ends up in the state 3P2, ordered from
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    to
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    :
+    <p>
+    </p>
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . A magnetic field causes a uniform distribution of the population over the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    states, and a detection laser excites those atoms that are in the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    state from the 3P2 level into the 3D2 state. From there, the atoms fluoresce and produce a signal dependent on the phase
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    :
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     For a coherent superposition, we see a modulation of the signal as we vary
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , as shown in Figure 7. The modulation is not 100% here due to small magnetic fields and spontaneous emission during the detection process. If the superposition were incoherent, however, averaging over the phase
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    would cause the modulation to vanish. We can see in Figure 8 that this system is quite good at measuring the preset phase.
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 7: The population,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    as a function of the polarization angle of the filter laser. The fit is a cos2 fit to retrieve the phase of the superposition [5].
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 8: The preset phase (controlled by the angle
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ) compared the measured phase. The line is a fit with a slope of unity [5].
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Applications
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 9: Time evolution of the pulse sequences and the ground state populations for two different tripod-STIRAP processes [1]. In the second sequence, the phase of the third pulse is shifted by
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , which prevents the system from returning to its original state. Instead, the qubit is rotated by an angle of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    about a given unit vector.
+    <p>
+    </p>
+    <p>
+     The ability to create and measure a coherent superposition has clear applications in quantum information, especially in areas where the precise coupling strength isn’t known and the
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    -pulse method would lead to intolerable inaccuracies. Kis and Renzoni, for instance, use multiple tripod-STIRAP processes to rotate atomic qubit systems [1]. Their process for rotating a qubit in an arbitrary initial superposition consists of two tripod-STIRAP processes. The first pulse process maps the original superposition onto perpendicular states, the bright and dark states. From here, the portion in the bright state is transferred to an auxiliary state. The second tripod-STIRAP process projects the auxiliary state back into the bright state with a phase shift. The final state is the original qubit with a rotation determined solely by the pulse sequence. Kis and Renzoni also show that these tripod-STIRAP processes can, in theory, be used for quantum logic operations.
+    <p>
+    </p>
+    <p>
+     However, quantum information is not the only application. Theuer et al. demonstrated a method to use tripod-STIRAP to act as an atomic beam splitter [2]. They use an experimental setup very similar to that of Vewinger et al., and they also use an atomic beam of 20Ne [5]. In this setup, however, the
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    + and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    − pulses remain independent and they propagate in opposite directions. These Stokes pulses can be spatially varied to change the time ordering of the pulse sequence. The beam splitter depends on the momentum gained from interaction with the laser fields, and the split beam will have a difference in transverse momentum of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    Stokes. As the time-ordering of the Stokes pulses are reversed, the superposition between the
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    states shifts, which is demonstrated in the beam-splitting data seen in Figure 10.
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 10: The results from using tripod-STIRAP as an atomic beam splitter, as depicted in [2]. The two peaks correspond to the M = ±1 states, and the multiple graphs show the variation in the peaks as the
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    + and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    − pulse reverse their time ordering.
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Conclusion
+    </div>
+    <p>
+     As I have demonstrated, tripod-STIRAP is a useful scheme for creating an arbitrary coherent superposition of states in a four-level system. It has been demonstrated experimentally with 20Ne, and techniques for measuring the superposition have also been shown. This technique is quite robust and insensitive to slight variations in the pulse parameters. Since it also does not depend on precise knowledge of the transition dipoles, it can be used in applications where the couplings are unknown and the
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    -pulse method is not feasible. Tripod-STIRAP is also useful in a host of applications, from creating and rotating qubits, with a potential extension to other quantum logic. It can also be used as an atomic beam splitter.
+    <p>
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N10248">
+     <li id="N10249">
+      [1] Z. Kis and F. Renzoni. Qubit rotation by stimulated raman adiabatic passage. Phys. Rev. A, 65(3):032318, Feb 2002.
+     </li>
+     <li id="N1024B">
+      [2] H. Theuer, R. Unanyan, C. Habscheid, K. Klein, and K. Bergmann. Novel laser controlled variable matter wave beamsplitter. Optics Express, 4:77–83, 1999.
+     </li>
+     <li id="N1024D">
+      [3] R. Unanyan, M. Fleishhauer, B. Shore, and K. Bergmann. Robust creation and phase-sensitive probing of superposition states via stimulated raman adiabatic passage (stirap) with degenerate dark states. Optics Communications, 155:144–154, October 1998.
+     </li>
+     <li id="N1024F">
+      [4] R. G. Unanyan, B. W. Shore, and K. Bergmann. Laser-driven population transfer in four-level atoms: Consequences of non-abelian geometrical adiabatic phase factors. Phys. Rev. A, 59(4):2910–2919, Apr 1999.
+     </li>
+     <li id="N10251">
+      [5] Frank Vewinger, Manfred Heinz, Ruth Garcia Fernandez, Nikolay V. Vitanov, and Klaas Bergmann. Creation and measurement of a coherent superposition of quantum states. Phys. Rev. Lett., 91(21):213001, Nov 2003.
+     </li>
+     <li id="N10253">
+      [6] N. Vitanov, T. Halfmann, B. Shore, and K. Bergmann. Laser-induced population transfer by adiabatic passage techniques. Ann. Rev. Phys. Chem., 2001.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

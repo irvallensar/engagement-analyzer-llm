@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Madam,
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         At first
+        </i>
+       </ns>
+       , I want to say how
+       <ns type="W">
+        <i>
+         I am happy
+        </i>
+       </ns>
+       to have won this prize and I want to thank you.
+      </p>
+      <p>
+       Concerning the information you want
+       <ns type="MP">
+       </ns>
+       I will give
+       <ns type="AGA">
+        <i>
+         them
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I would like to travel
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July because this is the only month
+       <ns type="MY">
+       </ns>
+       given to me by my employer. I would prefer to have a log cabin because I
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       sleep in a tent (it is too hot and the floor is too hard for my back). Concerning the two activities I have to choose, I would prefer to swim and play tennis (I have a good level
+       <ns type="M">
+       </ns>
+       in each
+       <ns type="AGN">
+        <i>
+         sports
+        </i>
+       </ns>
+       ).
+      </p>
+      <p>
+       Finally I would like to know how much money I have to
+       <ns type="RV">
+        <i>
+         prepare
+        </i>
+       </ns>
+       and
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       sorts of clothes are usually
+       <ns type="IV">
+        <i>
+         weared
+        </i>
+       </ns>
+       in California.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+      <p>
+       Pablo Fernandez
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        At first, I want to say how I am happy to have won this prize and I want to thank you.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Concerning the information you want I will give them.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to travel on July because this is the only month  given to me by my employer.
+       </s>
+       <s pid="4" sid="2">
+        I would prefer to have a log cabin because I can not sleep in a tent (it is too hot and the floor is too hard for my back).
+       </s>
+       <s pid="4" sid="3">
+        Concerning the two activities I have to choose, I would prefer to swim and play tennis (I have a good level  in each sports).
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally
+       </s>
+       <s pid="5" sid="2">
+        I would like to know how much money I have to prepare and which sorts of clothes are usually weared in California.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Pablo Fernandez
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Many classes and activities are important in our school
+       <ns type="MP">
+       </ns>
+       But I have to make a choice in order to select
+       <ns type="M">
+       </ns>
+       them
+       <ns type="MP">
+       </ns>
+       The
+       <ns type="W">
+        <i>
+         class of
+         <ns type="RN">
+          <i>
+           <ns type="S">
+            <i>
+             mecanics
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         seem
+        </i>
+       </ns>
+       to be the
+       <ns type="R">
+        <i>
+         more
+        </i>
+       </ns>
+       important lesson. It
+       <ns type="AGV">
+        <i>
+         use
+        </i>
+       </ns>
+       a lot of
+       <ns type="S">
+        <i>
+         technics
+        </i>
+       </ns>
+       that we learn in other classes. It gives us
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       knowledge
+       <ns type="DJ">
+        <i>
+         usefull
+        </i>
+       </ns>
+       for many school
+       <ns type="AGN">
+        <i>
+         club
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       like the "marathon shell" club or the
+       <ns type="S">
+        <i>
+         robotich
+        </i>
+       </ns>
+       club. Besides it
+       <ns type="RV">
+        gives
+       </ns>
+       all the areas covered by a
+       <ns type="DN">
+        <i>
+         mecanic ingenier
+        </i>
+       </ns>
+       and it is very important in a school where you will probably become a
+       <ns type="DN">
+        <i>
+         mecanic ingenier
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       It lets us
+       <ns type="RV">
+        <i>
+         specify
+        </i>
+       </ns>
+       our abilities
+       <ns type="R">
+        <i>
+         in
+        </i>
+       </ns>
+       the part of
+       <ns type="S">
+        <i>
+         mecanics
+        </i>
+       </ns>
+       that we prefer. But there are other
+       <ns type="W">
+        <i>
+         lessons very important
+        </i>
+       </ns>
+       (like English of course!) Actually, I have a regret
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       there is no
+       <ns type="FN">
+        <i>
+         ethic
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         lessons
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       It would show us how
+       <ns type="FV">
+        <i>
+         use
+        </i>
+       </ns>
+       our knowledge.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Many classes and activities are important in our school
+       </s>
+       <s pid="1" sid="2">
+        But I have to make a choice in order to select  them
+       </s>
+       <s pid="1" sid="3">
+        The class of mecanics seem to be the more important lesson.
+       </s>
+       <s pid="1" sid="4">
+        It use a lot of technics that we learn in other classes.
+       </s>
+       <s pid="1" sid="5">
+        It gives us the knowledge  usefull for many school club like the "marathon shell" club or the robotich club.
+       </s>
+       <s pid="1" sid="6">
+        Besides it gives all the areas covered by a mecanic ingenier and it is very important in a school where you will probably become a mecanic ingenier
+       </s>
+       <s pid="1" sid="7">
+        It lets us specify our abilities in the part of mecanics that we prefer.
+       </s>
+       <s pid="1" sid="8">
+        But there are other lessons very important (like English of course!)
+       </s>
+       <s pid="1" sid="9">
+        Actually, I have a regret, there is no ethic lessons,
+       </s>
+       <s pid="1" sid="10">
+        It would show us how use our knowledge.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

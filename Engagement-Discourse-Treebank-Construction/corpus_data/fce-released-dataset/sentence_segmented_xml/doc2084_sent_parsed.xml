@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="RN">
+        <i>
+         Ms
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       I have just received your letter which
+       <ns type="AGV">
+        <i>
+         inform
+        </i>
+       </ns>
+       me that I have won two weeks at Camp California in the USA.
+      </p>
+      <p>
+       In this letter you ask me
+       <ns type="MT">
+       </ns>
+       some further information
+       <ns type="R">
+        for my
+        <ns type="S">
+         <i>
+          conveniance
+         </i>
+        </ns>
+        for this trip
+       </ns>
+       . Firstly, I can take my holiday only
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="W">
+        <i>
+         two first
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         week
+        </i>
+       </ns>
+       of
+       <ns type="RP">
+        <i>
+         july
+        </i>
+       </ns>
+       because of my work.
+      </p>
+      <p>
+       Secondly, I would prefer
+       <ns type="FV">
+        <i>
+         sleep
+        </i>
+       </ns>
+       in a tent. I
+       <ns type="TV">
+        <i>
+         am going
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         every year camping
+        </i>
+       </ns>
+       in the countryside of France. The activities that I have chosen are sailing and climbing. I have never sailed but I am a
+       <ns type="RJ">
+        <i>
+         well
+        </i>
+       </ns>
+       swimmer. Last summer I took a
+       <ns type="W">
+        <i>
+         course
+         <ns type="RT">
+          <i>
+           of
+          </i>
+         </ns>
+         one week in Switzerland
+         <ns type="UT">
+          <i>
+           of
+          </i>
+         </ns>
+         climbing
+        </i>
+       </ns>
+       so I
+       <ns type="R">
+        <i>
+         have good knowledge of
+        </i>
+       </ns>
+       this sport.
+      </p>
+      <p>
+       Finally could you please tell me
+       <ns type="RQ">
+        <i>
+         <ns type="S">
+          <i>
+           wich
+          </i>
+         </ns>
+        </i>
+       </ns>
+       kind of clothes
+       <ns type="TV">
+        <i>
+         shall
+        </i>
+       </ns>
+       I take with me and if the camping
+       <ns type="RN">
+        <i>
+         <ns type="CN">
+          <i>
+           furnitures
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       provided
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       also wondering
+       <ns type="UA">
+        <i>
+         me
+        </i>
+       </ns>
+       how much money I need and if there is a safe place where I can put my money and passport.
+      </p>
+      <p>
+       I look forward to
+       <ns type="S">
+        <i>
+         earing
+        </i>
+       </ns>
+       from you soon and if you could send me a brochure of this holiday I would be grateful.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Laura Demoriane
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Ms,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just received your letter which inform me that I have won two weeks at Camp California in the USA.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In this letter you ask me  some further information for my conveniance for this trip.
+       </s>
+       <s pid="3" sid="2">
+        Firstly, I can take my holiday only  the two first week of july because of my work.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, I would prefer sleep in a tent.
+       </s>
+       <s pid="4" sid="2">
+        I am going every year camping in the countryside of France.
+       </s>
+       <s pid="4" sid="3">
+        The activities that I have chosen are sailing and climbing.
+       </s>
+       <s pid="4" sid="4">
+        I have never sailed but I am a well swimmer.
+       </s>
+       <s pid="4" sid="5">
+        Last summer I took a course of one week in Switzerland of climbing so I have good knowledge of this sport.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally could you please tell me wich kind of clothes shall I take with me and if the camping furnitures are provided.
+       </s>
+       <s pid="5" sid="2">
+        I  also wondering me how much money I need and if there is a safe place where I can put my money and passport.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I look forward to earing from you soon and if you could send me a brochure of this holiday I would be grateful.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Laura Demoriane
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       A lot of people like shopping and everybody goes on
+       <ns type="RP">
+        <i>
+         saturday
+        </i>
+       </ns>
+       because
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       lots of people
+       <ns type="UA">
+        <i>
+         they
+        </i>
+       </ns>
+       don't go to work
+       <ns type="MY">
+       </ns>
+       and
+       <ns type="MA">
+       </ns>
+       is the only day off
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the majority of people. If you don't get up
+       <ns type="W">
+        <i>
+         enough early
+        </i>
+       </ns>
+       you can't find a parking
+       <ns type="MN">
+       </ns>
+       in the town centre
+       <ns type="RP">
+        <i>
+         , all
+        </i>
+       </ns>
+       of them are full
+       <ns type="RT">
+        <i>
+         before
+        </i>
+       </ns>
+       11 am.
+       <ns type="UT">
+        <i>
+         In the
+        </i>
+       </ns>
+       street is so crowded that you can't walk like
+       <ns type="R">
+        <i>
+         usually
+        </i>
+       </ns>
+       and if you go with some friends you can be sure that you will
+       <ns type="TV">
+        <i>
+         lost
+        </i>
+       </ns>
+       them.
+      </p>
+      <p>
+       <ns type="CE">
+        In the shops is worth
+       </ns>
+       , if you are lucky and you find
+       <ns type="RQ">
+        <i>
+         a
+        </i>
+       </ns>
+       clothes
+       <ns type="R">
+        <i>
+         with your
+        </i>
+       </ns>
+       right size you will wait 20
+       <ns type="L">
+        <i>
+         min.
+        </i>
+       </ns>
+       at the fitting room and after that 20
+       <ns type="L">
+        <i>
+         min
+        </i>
+       </ns>
+       more at the cash desk. In the supermarket
+       <ns type="MA">
+       </ns>
+       is the same. When you buy food or drink they give you
+       <ns type="MD">
+       </ns>
+       plastic bag
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         carry
+        </i>
+       </ns>
+       it
+       <ns type="MT">
+       </ns>
+       and
+       <ns type="AGQ">
+        <i>
+         this
+        </i>
+       </ns>
+       bags
+       <ns type="TV">
+        <i>
+         broke
+        </i>
+       </ns>
+       every time.
+      </p>
+      <p>
+       At the end of the month when your husband will receive the bill
+       <ns type="W">
+        <i>
+         from
+         <ns type="DD">
+          <i>
+           you
+          </i>
+         </ns>
+         visa card
+        </i>
+       </ns>
+       he will have
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         heart-attack
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Why not
+       <ns type="RV">
+        <i>
+         buy
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       or if you have a nice mother at home
+       <ns type="R">
+        enjoy this time
+       </ns>
+       because shopping is like
+       <ns type="FV">
+        <i>
+         go
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the jungle.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        A lot of people like shopping and everybody goes on saturday because for lots of people they don't go to work  and  is the only day off of the majority of people.
+       </s>
+       <s pid="2" sid="2">
+        If you don't get up enough early you can't find a parking  in the town centre, all of them are full before 11 am.
+       </s>
+       <s pid="2" sid="3">
+        In the street is so crowded that you can't walk like usually and if you go with some friends you can be sure that you will lost them.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In the shops is worth, if you are lucky and you find a clothes with your right size you will wait 20 min.
+       </s>
+       <s pid="3" sid="2">
+        at the fitting room and after that 20 min more at the cash desk.
+       </s>
+       <s pid="3" sid="3">
+        In the supermarket  is the same.
+       </s>
+       <s pid="3" sid="4">
+        When you buy food or drink they give you  plastic bag for carry it  and this bags broke every time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        At the end of the month when your husband will receive the bill from you visa card he will have an heart-attack!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Why not buy with  internet or if you have a nice mother at home enjoy this time because shopping is like go in the jungle.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,858 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿A CVX theory of Dutch Syllable Structure
+     </div>
+     <div class="abstract">
+      <p>
+       This paper investigates the extent to which the syllable structure of Dutch conforms to CVX theory as stated by Duanmu (2002) and Borowksy (1989). One challenging aspect of the project stems from the difference in quality between the Dutch non-high long vowels and short vowels. Two theories are considered regarding this issue: Working under the assumption that the difference in quality is based on a distinction of tenseness and not length, I will be considering whether standard Dutch conforms to CVX syllable structure for non-final syllabic positions, as has been shown for English. This will be accomplished through a restriction of the data set which treats the vowel distinction as tense lax -variants of the same vowel, and through the exclusion of potential violators on independently motivated grounds. Diphthongs remain a contentious issue.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1. Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The goal of this investigation is to provide evidence towards a universal theory of syllable structure as formulated by Duanmu (2002) following Borowksy (1989).
+       </s>
+       <s pid="1" sid="2">
+        The proposal that medial position syllabic rime is restricted to two slots maximally was demonstrated to be a tenable view in Borowsky (1989).
+       </s>
+       <s pid="1" sid="3">
+        In a departure from the more traditional viewpoint that onset clusters are constrained by principles of sonority, Dunamu (2002) proposes that complex onset clusters in English and Chinese are composed of one slot.
+       </s>
+       <s pid="1" sid="4">
+        Together, the two theories posit a CVX structure for syllable structure.
+       </s>
+       <s pid="1" sid="5">
+        The question remains as to whether this claim can be shown to hold for languages other than English and Chinese.
+       </s>
+       <s pid="1" sid="6">
+        This paper investigates the extent to which standard Dutch con be shown to conform to CVX theory.
+       </s>
+       <s pid="1" sid="7">
+        In section 2, I introduce VX theory as formulated by Borowsky (1989).
+       </s>
+       <s pid="1" sid="8">
+        In section 3, I introduce Dunamu (2002) and the extension of the theory to CVX.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        In section 4, I present both sides of the tense/lax versus length vowel debate for Dutch, a pertinent issue in the consideration of our theories application.
+       </s>
+       <s pid="2" sid="2">
+        In section 5, I detail the methodology used in this study.
+       </s>
+       <s pid="2" sid="3">
+        Finally in section 6, I present concluding remarks.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2. V(X) theory
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Borowsky (1989) considers the composition of the syllable rime in English, noting that there exists an asymetrical distribution between rimes consisting of two slots and rimes consisting of more than two slots.
+       </s>
+       <s pid="3" sid="2">
+        This asymmetry can be explained, following Siegel (1974), by positing the existence of two levels of morphological affixation, level 1 and level 2.
+       </s>
+       <s pid="3" sid="3">
+        Under the Level Ordering Hypothesis, class 1 affixes, which trigger and undergo phonological processes, undergo affixation at level 1and can attach to free as well as bound morphemes.
+       </s>
+       <s pid="3" sid="4">
+        This type of affixation occurs first.
+       </s>
+       <s pid="3" sid="5">
+        Class 2 affixes, which are phonologically inert, undergo affixation at level 2 and thus can only attach to free morphemes (derived or un-derived words).
+       </s>
+       <s pid="3" sid="6">
+        Below are examples of English affixes classified accordingly (Spencer 1991):
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        1) Examples of English Affix Classification:
+       </s>
+      </p>
+      <list>
+       <item>
+        Class I suffixes: +ion, +ity, +y, +al, +ic, +ate, +ous, +ive
+       </item>
+       <item>
+        Class I prefixes: re+, con+, de+, sub+, pre+, in+, en+, be+
+       </item>
+       <item>
+        Class II suffixes: #ness, #less, #hood, #ful, #ly, #y, #like
+       </item>
+       <item>
+        Class II prefixes: re#, sub#, un#, non#, de#, semi#, anti#
+       </item>
+      </list>
+      <p>
+       <s pid="5" sid="1">
+        Medial syllables of the form VVC and VCC in un-derived mono-morphemic words and before the attachment of level 1 affixes are very rare.
+       </s>
+       <s pid="5" sid="2">
+        Borowsky proposes that those with more than two slots are limited to word edges, indicating a strict constraint on the syllable rime structure in English at level 1.
+       </s>
+       <s pid="5" sid="3">
+        The strongest evidence in support of this theory is that in English, vowels in medial positions shorten at level 1:
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        2) /min/ +/t/ ///mɛnt/ mean meant
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        This observation assumes that long vowels take up two slots in English, which, as is discussed below, will not be the assumption made in this investigation of Dutch.
+       </s>
+       <s pid="7" sid="2">
+        The important principle we are testing is that, regardless of what parameter a language takes in defining what constitutes a filled slot, the number of available slots remains universal and constantly V(X), with V being a vowel and X being a variable consonant or vowel.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Borowsky (1989) states the Principle of Structure Preservation:
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        3) Structure Preservation: language-particular structural constraints holding for underlying representation hold also for derived representation, and vice versa.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        This enforces conformity with the Coda Condition.
+       </s>
+       <s pid="10" sid="2">
+        After Level 1 Structure preservation is inactive and syllable structure less restrictive, allowing longer codas and making vowel shortening unnecessary.
+       </s>
+       <s pid="10" sid="3">
+        Thus, only the phonology of level 1 is to be taken as structure preserving.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       3. Extending V(X) to CVX
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        (Dunamu 2002) extends the Borosky (1989) analysis of medial rime constraints though an investigation of the possible constituents of onset clusters.
+       </s>
+       <s pid="11" sid="2">
+        Traditional accounts of onset clusters are reliant upon the sonority scale.
+       </s>
+       <s pid="11" sid="3">
+        Duanmu notes the following problems with such an account (for English):
+       </s>
+       <s pid="11" sid="4">
+        Clusters which appear to violate the MSD are allowed in English i.e. [lj], English allows clusters composed of sounds in the same place of articulation i.e. [tr] [dr], and many sounds that satisfy the MSD don’t appear in English.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        Duanmu posits a single slot analysis of onset clusters in which occurring clusters are complex single sounds.
+       </s>
+       <s pid="12" sid="2">
+        Necessary to this are two assumptions: first that words around a syllable need not be a proper part of it (extra-metricality), and second that if a cluster is a single sound it is a good sound, and single sounds must adhere to the No Contour Principle (Duanmu 1994) stated in (4):
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        4)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        5) schraalhans [sxra:l][h
+       </s>
+       <s pid="15" sid="2">
+        Ans] (meaning unknown) from the Dutch lemma
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <br/>
+      represented as: [schr][aa][l].hanns or [s][chr][aa][l].hanns
+      <p>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        Example (4) demonstrates that for a complex sound to be a good sound no singlearticulator can simultaneously produce opposing values of the same feature.
+       </s>
+       <s pid="17" sid="2">
+        In (5), [schr], or [chr] with extrasyllabic [s], is treated as a complex onset occupying one slot only, [aa] is (crucially, for this study) treated as a single slot in the nucleus, and [l] is the coda.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Building on Borowsky’s V(X) model, Duanmu thus proposes an articulator based feature theory of syllable structure in which non-final syllables are maximally of the form CVX.
+       </s>
+      </p>
+      <p>
+       <s pid="19" sid="1">
+        The question remains as to whether such a theory can be proven to hold universally, which is the underlying goal of this study.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       4. The representation of vowels: a debate
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        As noted above, in order for CVX theory to hold for Dutch, we must have some account of how vowels are to be represented moraically.
+       </s>
+       <s pid="20" sid="2">
+        Discussion of this matter has polarized in two directions.
+       </s>
+       <s pid="20" sid="3">
+        The first supports the view that they are to be represented in terms of tenseness and the second that they are to be represented in terms of length.
+       </s>
+       <s pid="20" sid="4">
+        Both views are discussed below, but for the purpose of this investigation, the tense/lax view is assumed to be correct.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        3.1 The tense/lax approach
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         In Standard Dutch, phonetic length coincides with phonetic tenseness to a large degree.
+        </s>
+        <s pid="21" sid="2">
+         It has been a issue of debate as to whether the distinction that both seemingly describe is to be attributed to the feature [+tense] or to length as represented by a geminate moraic structure.
+        </s>
+        <s pid="21" sid="3">
+         Van Oostendorp (2000) and Swets (2004) claim that laxness is the phonological feature underlying the contrast between phonetically long tense and short lax vowels.
+        </s>
+        <s pid="21" sid="4">
+         The most persuasive argument for this account relies upon the distribution of stress in the Dutch stress system.
+        </s>
+        <s pid="21" sid="5">
+         a length based analysis incorrectly allows CVV syllables to remain light while CVC are counted as heavy, which is in contrast to a widely held belief that when there exists a heavy light contrast, CVV counts as heavy.
+        </s>
+       </p>
+       <p>
+        <s pid="22" sid="1">
+         Van Oostendorp (2000) concludes that a branching rime must be headed by a lax vowel.
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         Lax vowels do not occur syllable finally, as the vowel would then occur in a nonbranching rime.
+        </s>
+        <s pid="23" sid="2">
+         A branching rime can never be headed b a tense vowel, thus we never see a tense vowel in a CVC - closed rime:
+        </s>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         6)
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        3.2 The length approach
+       </div>
+       <p>
+        <s pid="25" sid="1">
+         Booij (1995, 2002) holds that systematic opposition between short and long vowels in
+        </s>
+       </p>
+       <p>
+        <s pid="26" sid="1">
+         Dutch (except for high vowels) can be represented in structural terms rather than via binary feature (such as [+tense]).
+        </s>
+        <s pid="26" sid="2">
+         In a syllable, short vowels can be followed by at most 2 Cs i.e. V(short)CC, and after long vowels only one C can occur i.e. V(long)C (VVC).
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         Syllable structure is thus held to be more consonant with a theory of phonological length.
+        </s>
+        <s pid="27" sid="2">
+         Under this account, the binary nature of the rime, which consists of exactly two positions, accounts for the distribution of vowels in Dutch.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         7)
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <br/>
+       d􀀀mp [d􀀀mp] possible syllable
+       <br/>
+       d􀀀􀀀mp [damp] not possible
+       <p>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         Example (7) demonstrates that in accordance with an exactly two-slot restriction in the rime a long/tense vowel cannot be followed by CC in its coda as this would necessarily result in three slots.
+        </s>
+        <s pid="30" sid="2">
+         Booij proposes that vowel length is not a purely phonetic property and that long vowels are represented as sequences of two identical [-consonant] segments/phonological units/moras.
+        </s>
+        <s pid="30" sid="3">
+         A long vowel, under this analysis, is a single feature bundle linked to two similar abstract representations.
+        </s>
+       </p>
+       <p>
+        <s pid="31" sid="1">
+         With strong supporting evidence for both theories, we may conclude that at worst, the issue leans favorably towards both sides and is unresolved, and at best it is clearly in favor of there being one vowel representation, which occupies one slot and which varies in the [+tense] feature.
+        </s>
+        <s pid="31" sid="2">
+         On these grounds we can take the important step of justifying the removal of all VV occurrences in the lemma which are non-diphthongal and do not precede a CC+.
+        </s>
+        <s pid="31" sid="3">
+         Both of these qualifications can be taken up for consideration in the final stages of the study.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       5. Methodology
+      </div>
+      <div>
+       <div class="head_2">
+        5.1 The Dutch lemma
+       </div>
+       <p>
+        <s pid="32" sid="1">
+         The corpus used in this investigation into the conformity of Dutch to CVX theory was a lemma obtained from the CELEX online database of standard Dutch.
+        </s>
+        <s pid="32" sid="2">
+         The lemma represents headwords in non-reducible forms.
+        </s>
+        <s pid="32" sid="3">
+         As stated in the release notes:
+        </s>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         "The Dutch database, version N3.1, was released in March 1990 and contains information on 381,292 present-day Dutch word forms, corresponding to 124,136 lemmata.
+        </s>
+        <s pid="33" sid="2">
+         Apart from orthographic features, the CELEX database comprises representations of the phonological, morphological, syntactic and frequency properties of lemmata.
+        </s>
+        <s pid="33" sid="3">
+         For Dutch and English lemma homographs, frequencies have been disambiguated on the basis of the 42.4 m. Dutch INL and the 17.9 m. English Collins/COBUILD text corpora." (CELEX 1990)
+        </s>
+       </p>
+       <p>
+        <s pid="34" sid="1">
+         The following categories (Table 1) were utilized in informing the reduction of apparent CVX violations:
+        </s>
+       </p>
+       <p>
+        <s pid="35" sid="1">
+         Table 5.1.1 Starting categories by column
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="36" sid="1">
+         The original 124,136 items in the lemma were then broken down into workable files and lines missing information were identified and labeled as "no sound."
+        </s>
+       </p>
+       <p>
+        <s pid="37" sid="1">
+         Table 5.1.2 Starting statistics
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        5.2 Removal of compounds and no sounds
+       </div>
+       <p>
+        <s pid="38" sid="1">
+         Compound words may be excluded from analysis.
+        </s>
+        <s pid="38" sid="2">
+         The composition of the lemma is such that it lists, in theory, every non-productive word in the Dutch language.
+        </s>
+        <s pid="38" sid="3">
+         Thus, we may expect that if a word is identified as a compound its compositional parts have been accounted for already.
+        </s>
+        <s pid="38" sid="4">
+         CELEX identifies compounds though the use of both hyphens (-) and word boundaries (#) in their transcriptions.
+        </s>
+        <s pid="38" sid="5">
+         Compound words that somehow escaped CELEX identification require manual identification and removal, with the assumption that their composite parts have also been accounted for in a the lemma.
+        </s>
+       </p>
+       <p>
+        <s pid="39" sid="1">
+         In addition, there were 2,934 items for which no description existed in the lemma.
+        </s>
+        <s pid="39" sid="2">
+         These were excluded from analysis as no-sounds items, though they deserve further examination.
+        </s>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         Working with the entire unreduced lemma, all no sounds and CELEX identified compounds were removed; compounds being identified as an occurrence of + or # in the phonological transcription.
+        </s>
+        <s pid="40" sid="2">
+         After removal of these items 63,152 items remain in the lemma.
+        </s>
+       </p>
+       <p>
+        <s pid="41" sid="1">
+         Table 5.2.1 Compound and no sound items removed
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        5.3 The identification of apparent counterexamples/CVX violations
+       </div>
+       <p>
+        <s pid="42" sid="1">
+         The next important step is to identify all potential violators of CVX theory, manifested as all possible combinations of VXX super-heavy syllables in column: PhonStCVBr (stem CV).
+        </s>
+        <s pid="42" sid="2">
+         All instances of VXX are indicated in table 5.3.1, however many of these occurred within the same word.
+        </s>
+        <s pid="42" sid="3">
+         Total lines or items containing at least one CVX violation are listed in Table 5.3.2.
+        </s>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         Table 5.3.1 Based on H, identify VXX occurences
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="44" sid="1">
+         Table 5.3.2 Identify VXX by item
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        5.4 The determination of true CVX violations
+       </div>
+       <p>
+        <s pid="45" sid="1">
+         Within the 18, 471 potential violators of CVX theory we will be able to exclude many on certain grounds.
+        </s>
+        <s pid="45" sid="2">
+         For native speaker judgments, I enlisted the assistance of two native Dutch Speakers, currently residing in Amsterdam.
+        </s>
+        <s pid="45" sid="3">
+         The speakers were David Lingerak, age 35 and Martine Brinksma, age 33.
+        </s>
+        <s pid="45" sid="4">
+         Both were raised in West-Friesland (Noord- Holland) and are unaware of their particular dialect.
+        </s>
+        <s pid="45" sid="5">
+         the reduction proceeded as follows:
+        </s>
+       </p>
+       <p>
+        <s pid="46" sid="1">
+         Hyphenated words are removed, ass shown in Table 5.4.1, as they represent non-CELEX identified compounds.
+        </s>
+        <s pid="46" sid="2">
+         17, 936 words remain.
+        </s>
+       </p>
+       <p>
+        <s pid="47" sid="1">
+         Table 5.4.1 Remove Hyphenated words
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="48" sid="1">
+         Level 2 affixes may be excluded, as they are phonologically inert and do not represent free morphemes.
+        </s>
+        <s pid="48" sid="2">
+         A potential confound may be the inappropriate removal of words with level one affixes.
+        </s>
+        <s pid="48" sid="3">
+         The classification of levels is certainly different in Dutch than in English and has not been examined in this essay.
+        </s>
+        <s pid="48" sid="4">
+         However, I believe the majority will be appropriate by the same reasoning as was applied to compounds.
+        </s>
+        <s pid="48" sid="5">
+         In my first reduction attempt I utilized a list of affixes derived from Booij (2002).
+        </s>
+        <s pid="48" sid="6">
+         This proved useful only in assessing a hypothetical number as I had to rely on statistics due to the error rate during my removal process.
+        </s>
+        <s pid="48" sid="7">
+         The method was abandoned in favor of one that yielded more concrete and tenable results.
+        </s>
+        <s pid="48" sid="8">
+         Searching re-occurring strings of five and six letters at the word edges we are able to reduce the lemma in a conservative yet productive way.
+        </s>
+        <s pid="48" sid="9">
+         Table 5.4.2 shows that after affix removal, only 1,151 words remain as potential violations of CVX theory.
+        </s>
+       </p>
+       <p>
+        <s pid="49" sid="1">
+         Table 5.4.2 Affix removal
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="50" sid="1">
+         By the same reasoning detailed above, compounds that were not CELEX identified, but were identified by the native speakers are removed.
+        </s>
+       </p>
+       <p>
+        <s pid="51" sid="1">
+         Foreign words borrowed by Dutch may, in many cases be excluded, as their composition is purportedly not reducible in Dutch in the same way as in the original source language.
+        </s>
+        <s pid="51" sid="2">
+         for example, item 4008 /airconditioning/ is not reducible to /air/ and /conditioning/ in Dutch.
+        </s>
+        <s pid="51" sid="3">
+         I must acknowledge some degree of error in this removal as it is dangerous to assume that all borrowings are of such a nature and that there may well be overlap in simplest morphologically-free forms.
+        </s>
+       </p>
+       <p>
+        <s pid="52" sid="1">
+         Borowksy attributes counterexamples found in proper names to the fact that they constitute a deviant subsystem with respect to many phonological phenomena.
+        </s>
+        <s pid="52" sid="2">
+         Assuming that most of them appear to be compounds or foreign, we can deem them derivations of the level 2 variety and exclude them from our list of CVX violators.
+        </s>
+       </p>
+       <p>
+        <s pid="53" sid="1">
+         Table 5.4 3 Removed speaker identified compounds, names, and borrowed words
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="54" sid="1">
+         Of the remaining 413 words in the lemma, 278 were identified as containing long vowels or diphthongs.
+        </s>
+       </p>
+       <p>
+        <s pid="55" sid="1">
+         Table 5.4.4 Instances of Diphthongs (identification, not removal)
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="56" sid="1">
+         These were marked for closer scrutiny, turning first to the case of long vowels.
+        </s>
+        <s pid="56" sid="2">
+         Assuming that differences in length can be explained by a tense/lax account, we extract all VV that are non-Diphthongal and that do not constitute any further violation of the rime (Non VVCC][ or VVCCC][ (marked with an X)).
+        </s>
+        <s pid="56" sid="3">
+         VV that meet these two criteria are removable under a theory which assumes long vowels to actually be identical to short with the exception of the feature [+tense].
+        </s>
+       </p>
+       <p>
+        <s pid="57" sid="1">
+         Table 5.4.5
+        </s>
+        <s pid="57" sid="2">
+         Remove non-diphthongal and non-VVCC+][ VVs
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="58" sid="1">
+         Table 5.4.6 Instances of Diphthongs (all left in lemma)
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="59" sid="1">
+         Under Dunamu (2002) we can eliminate non-word initial diphthongs, yet word onset diphthongs may still present a problem as there is no way of attributing the initial vowel sound to a complex onset.
+        </s>
+        <s pid="59" sid="2">
+         An example from Chinese follows below:
+        </s>
+       </p>
+       <p>
+        <s pid="60" sid="1">
+         8)
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="61" sid="1">
+         Following this theory, all non-violating diphthongs are now removed (where a violation consists of non-initial diphthongs and VVCC+ violations) , as shown in Table 5.4.7.
+        </s>
+       </p>
+       <p>
+        <s pid="62" sid="1">
+         Table 5.4.7
+        </s>
+        <s pid="62" sid="2">
+         Remove non-violating (non initial diphthongs and YY marked (double VV and VV without VVCC+ violations )
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="63" sid="1">
+         For the remaining 76 words, a manual lookup was conducted to determine if any further reduction to the lemma could be made.
+        </s>
+        <s pid="63" sid="2">
+         From this 30 words were determined to be compounds, 13 had homorganic nasals which could be taken to constitute a long V and thus together with the vowel only one slot.
+        </s>
+        <s pid="63" sid="3">
+         Finally, 18 were excluded for various reasons examples of which are given below:
+        </s>
+       </p>
+       <p>
+        <s pid="64" sid="1">
+         9) 70798 ontkleed un-clad [VCC][CCVVC]
+        </s>
+        <s pid="64" sid="2">
+         [Ont][kle:t]
+        </s>
+       </p>
+       <p>
+        <s pid="65" sid="1">
+         10) 27891 exclameren undefined [VCC][CCVV][CVV][CV][Eks][kla:][me:][r@]
+        </s>
+       </p>
+       <p>
+        <s pid="66" sid="1">
+         11) 15617 breeduit undefined [CCVVC][VVC] [bre:d][
+        </s>
+        <s pid="66" sid="2">
+         UIt]
+        </s>
+       </p>
+       <p>
+        <s pid="67" sid="1">
+         Exclusions similar to example (9) are excluded on the grounds that they contains homorganic nasals: a nasal followed by a consonant at the same place of articulation, in this case alveolar.
+        </s>
+        <s pid="67" sid="2">
+         In this case, the nasal can thus be assimilated into the vowel sound leaving the second slot in the rime for /t/.
+        </s>
+        <s pid="67" sid="3">
+         Example (10) illustrates a group of words that were extracted on the basis that /ex-/ constitutes a prefix.
+        </s>
+        <s pid="67" sid="4">
+         This may be a slightly contentious point, however it is assumed to hold here.
+        </s>
+        <s pid="67" sid="5">
+         Example (11) represents a class of words that we can exclude if we re-syllabify so that the offending C is relocated to the onset of the final syllable i.e. [bre:d][UIt] [bre:][d
+        </s>
+        <s pid="67" sid="6">
+         UIt], thus removing the problem of a diphthongal rime (VV).
+        </s>
+        <s pid="67" sid="7">
+         Fifteen violating words now remain, presented in table 5.4.8.
+        </s>
+       </p>
+       <p>
+        <s pid="68" sid="1">
+         Table 5.4.8 Remaining VXX
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="69" sid="1">
+         Of the remaining 15 some [VNC] rhymes that could be analyzed as [V~C].
+        </s>
+        <s pid="69" sid="2">
+         &lt;quote&gt; einsel &lt;/quote&gt; and punctum' may be homorganic, though the /n/ in punctum is not velar and einsel would continue to have a diphthong in its rime with no complex onset to attach to.
+        </s>
+        <s pid="69" sid="3">
+         'Rucksichtslos' is probably 'reckless', but it has not been confirmed by my speakers.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       5. Conclusion
+      </div>
+      <p>
+       <s pid="70" sid="1">
+        Aside from a few unresolved exceptions, this study has shown that, if we assume a tense/lax and not length distinction, Dutch conforms to CVX theory.
+       </s>
+       <s pid="70" sid="2">
+        Many of these exceptions could most likely be shown to be legitimate exclusions though given current resources I have left them in as violations.
+       </s>
+       <s pid="70" sid="3">
+        The results would also be drastically different, and could be said to not hold true under a different account of vowel length.
+       </s>
+       <s pid="70" sid="4">
+        there would in fact be an additional 275 words to account for.
+       </s>
+       <s pid="70" sid="5">
+        However, given the unresolved state of the data, we have been just as justified in choosing the tense/lax account for the investigation.
+       </s>
+       <s pid="70" sid="6">
+        What remains to be proved is that the same holds true for other, less related languages than those for which similar studies have been conducted.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       6. References
+      </div>
+      <li id="N10222">
+       Booij, G. 1995. The Phonology of Dutch. Oxford: Clarendon Press.
+      </li>
+      <li id="N10224">
+       Booij , G. 2002. The Morphology of Dutch. Oxford: Oxford University Press.
+      </li>
+      <li id="N10226">
+       Borowsky, Toni. 1989. Structure preservation and the syllable coda in English. Natural Language and Linguistic Theory. 7: 145-166.
+      </li>
+      <li id="N10228">
+       Cauberghe, J (ed.) 1949. Kramer’s Woordenboek Engels. Turnhout: Brepols
+      </li>
+      <li id="N1022A">
+       CELEX Dutch database (Release N31) [On-line]. (1990). Available: Nijmegen: Centre for Lexical Information [Producer and Distributor].
+      </li>
+      <li id="N1022C">
+       Donaldson, B. 1997. Dutch, a Comprehensive Grammar. London and NewYork: Routledge
+      </li>
+      <li id="N1022E">
+       Duanmu, San. 2002. Two Theories of Onset Clusters. Journal of Chinese Phonology 11: 97-120.
+      </li>
+      <li id="N10230">
+       Kager, R. 1989. A Metrical Theory of Stress and Destressing in Dutch and English. Dordrecht: Foris Publications.
+      </li>
+      <li id="N10232">
+       Swets, F. 2004. The Phonological Word in Tilburg Dutch Government Phonology and a city dialect of Dutch. Utrecht: LOT 3512 JK
+      </li>
+      <li id="N10234">
+       Spencer, A. 1991. Morphological Theory. Cambridge, Mass. and Oxford, UK: Blackwell dictionarys
+      </li>
+      <li id="N10236">
+       Veen, P. A. F. van (ed.) 1990. Etymologisch Woordenboek. Utrecht/Antwerpen: Van
+Dale Lexicografie.
+      </li>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

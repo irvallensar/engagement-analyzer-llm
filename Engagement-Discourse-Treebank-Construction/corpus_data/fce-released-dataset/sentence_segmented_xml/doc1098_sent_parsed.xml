@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     20.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear manager,
+      </p>
+      <p>
+       I recently had a week's holiday in London. During my stay I went to your theatre to see a musical show
+       <ns type="MP">
+       </ns>
+       which was OVER THE RAINBOW
+       <ns type="RP">
+        <i>
+         , however
+        </i>
+       </ns>
+       , I had a very disappointing evening.
+      </p>
+      <p>
+       There are a lot of differences between the details of the musical show
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement and
+       <ns type="R">
+        the ones it actually was
+       </ns>
+       . Firstly the
+       <ns type="AGN">
+        <i>
+         <ns type="RN">
+          <i>
+           starring
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement were Danny Brook and Tina Truelove, while there were different actors
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the musical show. Secondly
+       <ns type="R">
+        time starts
+       </ns>
+       at 19:30 on the
+       <ns type="S">
+        <i>
+         leafet
+        </i>
+       </ns>
+       but it actually started at 20:15. Thirdly it said there were discounts available
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement
+       <ns type="RP">
+        <i>
+         , however
+        </i>
+       </ns>
+       , there
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       not any at all. Finally it said we could visit your theatre restaurant after the show but it was
+       <ns type="S">
+        <i>
+         colsed
+        </i>
+       </ns>
+       because
+       <ns type="R">
+        your excuse of being used at that moment
+       </ns>
+       .
+      </p>
+      <p>
+       It said
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         leafet
+        </i>
+       </ns>
+       that
+       <ns type="R">
+        <i>
+         your
+        </i>
+       </ns>
+       perfect evening out, while it was not
+       <ns type="MA">
+       </ns>
+       at all. I felt very
+       <ns type="RJ">
+        <i>
+         disappointing
+        </i>
+       </ns>
+       after seeing the music show in your theatre.
+       <ns type="R">
+        As I said the reasons above
+       </ns>
+       , I want to ask for
+       <ns type="MD">
+       </ns>
+       money back! I look forwards to hearing from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear manager,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I recently had a week's holiday in London.
+       </s>
+       <s pid="2" sid="2">
+        During my stay I went to your theatre to see a musical show which was OVER THE RAINBOW, however, I had a very disappointing evening.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        There are a lot of differences between the details of the musical show on the advertisement and the ones it actually was.
+       </s>
+       <s pid="3" sid="2">
+        Firstly the starring on the advertisement were Danny Brook and Tina Truelove, while there were different actors on the musical show.
+       </s>
+       <s pid="3" sid="3">
+        Secondly time starts at 19:30 on the leafet but it actually started at 20:15.
+       </s>
+       <s pid="3" sid="4">
+        Thirdly it said there were discounts available on the advertisement, however, there was not any at all.
+       </s>
+       <s pid="3" sid="5">
+        Finally it said we could visit your theatre restaurant after the show but it was colsed because your excuse of being used at that moment.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        It said on the leafet that your perfect evening out, while it was not  at all.
+       </s>
+       <s pid="4" sid="2">
+        I felt very disappointing after seeing the music show in your theatre.
+       </s>
+       <s pid="4" sid="3">
+        As I said the reasons above, I want to ask for  money back!
+       </s>
+       <s pid="4" sid="4">
+        I look forwards to hearing from you.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. He was so kind that
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       couldn't
+       <ns type="RV">
+        <i>
+         stop
+        </i>
+       </ns>
+       telling Janet that she was going to be killed by Mr Brown
+       <ns type="MP">
+       </ns>
+       After
+       <ns type="RV">
+        <i>
+         finishing
+        </i>
+       </ns>
+       that
+       <ns type="MP">
+       </ns>
+       Pat left
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       room. Janet was so nervous that she couldn't stop her heart
+       <ns type="RV">
+        <i>
+         throbbing
+        </i>
+       </ns>
+       quickly. She went
+       <ns type="W">
+        <i>
+         quietly
+         <ns type="S">
+          <i>
+           downstair
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and closed the door as soon as she went into her room. At that moment a lot of things appeared in her mind
+       <ns type="MP">
+       </ns>
+       which seemed
+       <ns type="RT">
+        <i>
+         as
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         just happened
+        </i>
+       </ns>
+       yesterday. "Why did Mr Brown want to kill me?"
+       <ns type="RP">
+        <i>
+         She
+        </i>
+       </ns>
+       said to herself
+       <ns type="MP">
+       </ns>
+       "I am just a servant in this castle
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="AGV">
+        <i>
+         loves
+        </i>
+       </ns>
+       him so much and I don't want anything from him although he is the owner of this castle."
+       <ns type="UC">
+        <i>
+         <ns type="RP">
+          <i>
+           while
+          </i>
+         </ns>
+         it
+        </i>
+       </ns>
+       seemed as
+       <ns type="MC">
+       </ns>
+       a shadow came in
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       the window and disappeared quickly. Everything in the room
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       quiet except the sound of the clock
+       <ns type="MP">
+       </ns>
+       as if everything
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       going to die. She was so
+       <ns type="DJ">
+        <i>
+         frighten
+        </i>
+       </ns>
+       and sad that she had no
+       <ns type="S">
+        <i>
+         energry
+        </i>
+       </ns>
+       . She fell
+       <ns type="UY">
+        <i>
+         down
+        </i>
+       </ns>
+       onto the floor and wept, while nobody could help her.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        He was so kind that the couldn't stop telling Janet that she was going to be killed by Mr Brown After finishing that Pat left this room.
+       </s>
+       <s pid="1" sid="4">
+        Janet was so nervous that she couldn't stop her heart throbbing quickly.
+       </s>
+       <s pid="1" sid="5">
+        She went quietly downstair and closed the door as soon as she went into her room.
+       </s>
+       <s pid="1" sid="6">
+        At that moment a lot of things appeared in her mind which seemed as  just happened yesterday.
+       </s>
+       <s pid="1" sid="7">
+        "Why did Mr Brown want to kill me?"
+       </s>
+       <s pid="1" sid="8">
+        She said to herself "I am just a servant in this castle, I loves him so much and I don't want anything from him although he is the owner of this castle." while it seemed as  a shadow came in from the window and disappeared quickly.
+       </s>
+       <s pid="1" sid="9">
+        Everything in the room is quiet except the sound of the clock as if everything is going to die.
+       </s>
+       <s pid="1" sid="10">
+        She was so frighten and sad that she had no energry.
+       </s>
+       <s pid="1" sid="11">
+        She fell down onto the floor and wept, while nobody could help her.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

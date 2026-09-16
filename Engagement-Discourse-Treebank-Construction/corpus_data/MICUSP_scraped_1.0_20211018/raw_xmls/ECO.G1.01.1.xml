@@ -1,0 +1,1711 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Pooled Signals: The Effect of Competitive Admissions Processes on College Choice
+   </div>
+   <div class="abstract">
+    Abstract
+    <p>
+     This paper looks at the problem of college choice in an environment with heterogenous agents, competitive admissions processes, and post-graduation wages dependent on college reputation. It is demonstrated that under certain regularity conditions, a separating equilibrium where all the top agents attend the college with the good reputation while weaker agents attend the lesser college exists and is unique. This result is incorporated in a simple dynamic model, which shows that initially identical institutions may become endogenously differentiated over time, and that this may be hard to reverse. Finally, the model is applied to race-based admissions policies, and used to analyze the distributional effects of such policies.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1 Introduction
+    </div>
+    <p>
+     It is well known that high school graduates may attend college to signal their ability to potential employers, regardless of any benefits intrinsic to the educational process itself. Spence's classic paper on job market signalling demonstrated that agents of inferior quality may choose to acquire high levels of education in order to join the pool of college graduates, and gain high wages [1]. But colleges themselves are heterogenous: Western Michigan is not Yale, and employers know this. Choosing which college to attend is thus a matter of choosing which signal to send, and it is a problem that is complicated by competitive admissions processes.
+    </p>
+    <p>
+     Students and their families across the United States face this problem every year. Getting into the good schools is tough, but clearly would provide a head start in the job market. Students know their own attributes, but are uncertain about how the schools weight them. In the face of application costs in the form of both time and money, how high should one aim? The admissions process forces agents to self-select the appropriate range of schools to apply to. It is this feature that makes the college attended a sensible screening device for firms hiring new graduates.
+    </p>
+    <p>
+     This is similar to the ideas in Arrow's paper,
+     <q>
+      Higher Education as a Filter
+     </q>
+     [2]. He considers the impact of college admissions processes in the simpler case where colleges are completely homogenous. In his formulation, higher education filters students in two ways: through admissions, and through the graduation process. Provided that the skills required to perform well in college are positively correlated with the revenue product of labor (the
+     <q>
+      positive screening assumption
+     </q>
+     ), firms know that students that have successfully negotiated these two obstacles are, on average, of greater value to the firm. Hence, in a competitive labor market, college graduates are paid higher wages.
+    </p>
+    <p>
+     His concern is with the social value of higher education. In a one-factor world, where all labor is homogenous, and where higher education does not actually add to productivity, higher education is simply a drain on societal resources. In contrast, if one extends the model to allows for multiple factors of production (say
+     <q>
+      skilled
+     </q>
+     and
+     <q>
+      unskilled
+     </q>
+     labor), higher education may allow firms to screen their workers and deduce which type of job they are best suited to. This may increase allocative efficiency and thus be good for society.
+    </p>
+    <p>
+     In this paper, our focus is on the filtering and screening properties of higher education in the case where colleges are heterogenous. We analyze in detail the effect of allowing students to apply to only one of two colleges with different reputations. In deciding which school to apply to, agents must weigh the future benefits of a diploma from the top college against the risks of not getting in, and thus not attending college at all.
+    </p>
+    <p>
+     We may view this as a process whereby agents choose which pooled signal they would like to try to send. An agent that graduates from Harvard can expect to be paid more than his peers at other institutions, because attending Harvard sends a signal to potential employers that the agent has high ability. Joining the top pool (top school) pays off in the job market. It is clear that all agents would like to attend the top school, and free-ride off the school's reputation. It is thus crucial that their college choice is mediated by a competitive admissions process. Agents must balance the increased payoff of getting in to the better school against the increased risk of not getting in to college at all.
+    </p>
+    <p>
+     It is this institutional feature that distinguishes this model from the approach taken in Spence's original paper. In his model, low ability agents could mimic high ability agents (acquire the same amount of education as them) provided that they were willing to bear the costs of acquiring that level of education (and their costs were higher than those of the high-ability agents). Here this is not possible. Weaker agents may try to apply to the top school, but the admissions process means that they have very low odds of getting in and mimicking the top agents. We argue that it is this feature that forces a type of separating equilibrium where all the top agents apply to the top schools, and lower ability agents do not try to mimic them.
+    </p>
+    <p>
+     The importance of institutions that allow agents to pool has recently received attention in the literature. Pradeep Dubey and John Geanakoplos have shown that quantity limits on contributions to insurance pools can guarantee the existence of equilibria in insurance markets [3]. This existence occurs because high-risk agents, who wish to hold a large amount of insurance, have to join pools with high quantity limits and thus declare their type. Something similar occurs with college admissions, where a limit on the admitted class size forces low ability agents to apply to less competitive schools, and thus declare their type.
+    </p>
+    <p>
+     Other pooled institutions include sporting tournaments and academic journals. In the case of golf tournaments, for example, professionals often have to choose which tournament to attend on a given weekend. One may offer greater reward, but is bound to be more competitive. Similarly, in submitting a paper for publication, authors must assess the quality of their paper in order to decide whether to submit it to a top journal. If they aim too high at first, they are likely to face delays in getting their paper published.
+    </p>
+    <p>
+     The model presented here is focused on college choice, looking at the case where there are only two colleges. The basic model of college choice is presented in Section 2, and the resulting equilibrium is analyzed. Section 3 introduces some dynamics and examines how educational institutions may endogenously become differentiated over time. Section 4 applies the model to race-based admissions, and Section 5 concludes.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2 The Static Model
+    </div>
+    <div>
+     <div class="head_2">
+      2.1 Agent Behavior
+     </div>
+     <p>
+      We assume that agents may choose between only two colleges, college 1 and college 2. For the moment, we abstract away from the wage generation process of firms (examined in the subsection below) and assume that the wages paid to graduates are given exogenously as w1 and w2 . Let college 1 be the top school, so that w1 &gt; w2 . Agents that get into college receive payoffs of w1 and w2 respectively; while those that don't are assumed to receive a wage of 0, for simplicity
+      <a class="fnref" href="#fn1" id="fnref_fn1">
+       1
+      </a>
+     </p>
+     <p>
+      There are a continuum of agents, indexed by their ability level θ, where θ has positive (possibly unbounded) support, has a finite mean, and a continuous cumulative distribution function F (θ). Each college computes a score for every agent applying to that college S . This is given by
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      where ε has support ( −∞, ∞), continuous cumulative distribution function G(ε) and E[ε] = 0. Assume that the error distribution G is independent of the ability distribution F . The colleges are assumed to have a capacity of measure Ci ≥ 0, i = 1, 2. After ranking the applicants by score, the top Ci students are offered places. Agents may apply to only one college.
+      <a class="fnref" href="#fn2" id="fnref_fn2">
+       2
+      </a>
+     </p>
+     <p>
+      <b>
+       Proposition 1
+      </b>
+      <i>
+       Define a Nash equilibrium in this setting as separating if there exists an ability level
+      </i>
+     </p>
+     <div class="gap">
+      <i>
+       <span>
+        Formula
+       </span>
+       here
+      </i>
+     </div>
+     <i>
+      such that all agents with
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      apply to college 1, and those with
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      apply to college 2.
+     </i>
+     <p>
+     </p>
+     <p>
+      <i>
+       (i) If C1 + C2 ≥ 1 (i.e. total college capacity is sufficient for the college-going population) then a separating equilibrium exists and is almost everywhere unique.
+      </i>
+     </p>
+     <p>
+      <i>
+       (ii) Define
+      </i>
+     </p>
+     <div class="gap">
+      <i>
+       <span>
+        Formula
+       </span>
+       here
+      </i>
+     </div>
+     <i>
+      as the probability that an agent of ability θ will be accepted at college i given that agent behavior is as specified in the separating equilibrium defined by
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      . If C1 + C2 &lt; 1 then a separating equilibrium will exist provided that the likelihood ratio
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is increasing in
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , where θ solves C1 /(1 − F (θ)) = 1. This equilibrium may not be unique.
+     </i>
+     <p>
+     </p>
+     <p>
+      While the proof of this result is surprisingly lengthy
+      <a class="fnref" href="#fn3" id="fnref_fn3">
+       3
+      </a>
+      , the intuition behind it is not. Consider the first claim. In this case, because the total college capacity is sufficient to accommodate the agent population, in equilibrium those applying to the unattractive college, college 2, are guaranteed a place. As a result, only agents that are sufficiently likely to get in to college 1 are willing to take the risk of not being accepted, in return for the wage premium w1 − w2 . There is precisely one point at which an agent is indifferent; this point is
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .
+     <p>
+     </p>
+     <p>
+      In the second case, the agents face aggregate risk, since the total number of places at college is insufficient for the population. One might imagine that in this case, some of the
+      <q>
+       good
+      </q>
+      agents would choose to apply to college 2 to make sure of their acceptance to college. But given that behavior, some agents of lesser ability may take a chance on college 1, since
+      <q>
+       good
+      </q>
+      agents are applying to both colleges and getting in will be difficult in any case. Thus, in this case, we would not have a separating equilibrium. The theorem makes clear the circumstances under which this intuition fails. Where a marginal increase in ability always enhances the agent's proportional odds of getting in to the top college relative to the bottom one, good agents always find it preferable to take advantage of this and apply to the top college. Similarly, weaker agents have an incentive to apply to the bottom college, and a separating equilibrium obtains.
+     </p>
+     <p>
+      This result proves formally that the college applications process acts as an effective screening device in a setting where agents choose between colleges. Due to the separation, the eventual outcome of this game is a set of graduates from each college that are markedly different in ability level. Firms may use information about which college an individual attended to improve their estimate of agent ability. Thus in this model screening is obtained endogenously as a result of strategic agent behavior, within the given institutional framework. Notice that the admissions process itself plays a minor role in the screening, although on average the better applicants tend to be accepted. Rather, it is the presence of a fairly reliable testing mechanism that induces agents to reveal their type through their own college selection.
+     </p>
+     <p>
+      It is also clear from the proposition that, in general, the screening properties of college admissions will be enhanced when the size of the college-going population is less than the available number of places. This seems likely in two scenarios. Firstly, in countries where tertiary institutions have some freedom in setting tuition fees (as in the United States), we would expect the
+      <q>
+       price
+      </q>
+      of tuition to be such that the market clears. This suggests that the supply of college places will be roughly equal to demand. Furthermore, in reality colleges tend to admit more applicants than they actually expect will accept their offers. This necessitates them having excess capacity to cope with years when they have high acceptance rates. These facts would support the contention that college capacity is indeed sufficient for the college going population and the conditions of the proposition hold.
+     </p>
+     <p>
+      Secondly, in countries where the government regulates tuition fees or waives them completely, it is often necessary to pass a standardized test to be allowed to apply to any of the colleges at all. For example, in South Africa, one requires a certain number of points in the matriculation examinations to be eligible for college. Governments may use this type of policy to equate the size of the population applying for places and the number of places. Thus it seems that the requirements for the existence of a separating equilibrium are not unduly restrictive.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      2.2 Firm Behavior
+     </div>
+     <p>
+      In this section, we tackle the question of how firms behave. For simplicity, we assume that the labor market is perfectly competitive. In this model, we assume that college serves only one educational purpose: to provide a diploma and a set of skills that allow the graduate to enter into the
+      <q>
+       skilled
+      </q>
+      sector. Education does not add value, in the sense that it does not increase the workers' ability level. Unskilled workers are indistinguishable, and are paid a reservation wage r, which, without loss of generality, may be normalized to 0. In contrast, firms looking to hire skilled workers receive information about which college the prospective employee has attended. Based on this limited information Ω, they pay some function of the expected ability of the agent, w = w(E(θ|Ω)) &gt; 0.
+     </p>
+     <p>
+      It is clear that this simple model misses important aspects of the wage generation process. Firstly, the role of education here is somewhat at odds with the human capital literature, where education actually increases the agent's existing ability, rather than simply providing a skill-set. In section 3 below, I explicitly consider this modification to the model. More importantly, firms observe far more information about the agent than simply a college dummy variable. A typical resum ́e of a college graduate might include his or her grades, ma jor fields, extracurricular accomplishments, and summer job experience. These are all individual signals. Clearly, this will reduce the effect of the pooled college signal. This model should therefore be viewed as an extreme case.
+     </p>
+     <p>
+      Notice immediately that with the firm behavior as given above, we may apply the results of proposition 1 to deduce agent behavior. Thus it is now possible to analyze the game that results when firms set wages endogenously after observing college outcomes.
+     </p>
+     <p>
+      <b>
+       Proposition 2
+      </b>
+      <i>
+       Suppose that the likelihood ratio
+      </i>
+     </p>
+     <div class="gap">
+      <i>
+       <span>
+        Formula
+       </span>
+       here
+      </i>
+     </div>
+     <i>
+      is increasing in
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , where θ is defined as in proposition 1 above. Then at least one subgame perfect separating Nash equilibrium exists.
+     </i>
+     <a class="fnref" href="#fn4" id="fnref_fn4">
+      4
+     </a>
+     <p>
+     </p>
+     <p>
+      This result is in some ways trivial. Consider the case where the cut-off level,
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is arbitrarily close to zero, so that almost everyone is going to college 1. Firms will set wages close to zero for graduates of college 2 (since only agents with ability close to zero are attending it in equilibrium), and higher wages for graduates of college 1. No one will wish to deviate and we have successfully constructed an equilibrium.
+     <p>
+     </p>
+     <p>
+      Unfortunately, this may be the only such equilibrium. To see this, note that for an agent of ability
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     to be indifferent between attending college 1 and college 2 (where, once again, college 1 is the high wage college) his expected payoff for applying to each must be equal. Re-arranging, we obtain
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      where we are using the fact that firm's optimal wage offers depend endogenously only on θ∗ (as well as exogenously specified distributions). But notice that the L.H.S. is monotone increasing in
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , bounded below by p1 (0, 0) ≥ 0 and is possibly unbounded above (depending on the support of F). By contrast, the R.H.S. has lower bound w2 (0)/w1 (0) = 0 and attains a value of E(θ) as
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . These functions may not intersect on (0, ∞).
+     <p>
+     </p>
+     <p>
+      This may indicate that important aspects of the model have been left out. For example, if one included the possibility that education added to human capital and that colleges with small enrollments were better able to provide such education, agents may choose the low-wage college in order to benefit from a smaller enrollment. The payoffs may then be adjusted in such a way that an interior solution for
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is obtained.
+     <p>
+     </p>
+     <p>
+      It also seems reasonable to say, however, that this result is in some sense a product of the solution concept. Firms are assumed here to know the structure of the model, and in equilibrium to successfully guess the separating point
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . Even more implausibly, agents have rational expectations, and expect that the wage offers generated by firms are outcomes of the equilibrium they themselves will generate by their college choice (which in turn depends on those expectations). In the next section, we impose restrictions on both consumer beliefs and the firm wage generating process to obtain a more sensible dynamic model.
+     <p>
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     3 A Simple Dynamic Model
+    </div>
+    <div>
+     <div class="head_2">
+      3.1 Assumptions and Setup
+     </div>
+     <p>
+      Suppose that agents believe that the firm's wage generation process is, on average, static: that is, their best guess of this period's wage offer is last period's. This seems like a plausible behavioral assumption, in light of the fact that each generation of agents plays the college admission game only once, and must look to the past for indications of how firms might behave. In this case, agents will have wage expectations given by last period's wages w1(t −1) and w2(t−1) , and behave as in proposition 1. In particular, provided that the requirements given in proposition 1 are met, the unique equilibrium will be a separating equilibrium.
+     </p>
+     <p>
+      Suppose also that one year after hiring them, firms observe some imprecise measure of the true productivity of their new hires. Hence when making their wage offers, their only new information (as compared to last period) is how last period's hires from each college did. For simplicity, assume that firms thus set their wage offers as a moving average of the observed productivities of graduates of each college over the last 5 years. That is,
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      where pit is the observed productivity of college i students graduating in year t. Again, this represents a sensible strategy for firms, since the observed productivity signal is not entirely accurate, and thus averaging over the past five years reduces error while still responding to new information. We now make things more concrete by considering a specific case.
+     </p>
+     <p>
+      <b>
+       Proposition 3
+      </b>
+      <i>
+       Suppose that the agent distribution F is uniform on [0, 1] and that the error distribution G is uniform on [-a, a]. Then the likelihood ratio property required by proposition 1 holds, and a unique separating equilibrium exists. Further, provided that
+      </i>
+     </p>
+     <div class="gap">
+      <i>
+       <span>
+        Formula
+       </span>
+       here
+      </i>
+     </div>
+     <i>
+      and
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , the separating point
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is given by
+     </i>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      Given this explicit formula, it is easy to do comparative statics and show how the exogenous parameters affect the separating point. Notice that
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . This conforms to our intuition. Higher wages from college 1 generate a lower separating point (the indifferent agent is now of lower ability), while the reverse is true of the wages offered by college 2. Further, as the measure of variance in the application process a increases, more people apply to college 1. This is in line with the idea that less able agents will take a chance on getting admitted if the admissions process is very imprecise.
+     <p>
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      3.2 Simulation Results
+     </div>
+     <p>
+      We use the framework above to simulate the evolution of wage offers to graduates of different colleges in an economy. Of necessity, we consider a situation with a finite number of agents (in this case 1000), and assume that they behave as if there were a continuum of them. We use admissions error bounds given by a = 0.1, capacity at each school of 0.5 (half the population) and errors in firm's observations of true productivity drawn from a uniform distribution on [ −b, b], where we set b = 0.2. These may also be thought of as macroeconomic productivity shocks. These parameters conform to the requirements of proposition 3 above for the range of wage offers generated. In order to generate initial wage offers, we create a history of the last 5 period's productivity levels, where college 1 has been better over those 5 periods. The differences are rigged to be very slight (on average, productivity in college 1 is around 0.005 higher than that of college 2). Notice that in all other respects, the colleges are identical.
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 1: A Typical Wage Series
+     </p>
+     <p>
+      The simulated wage path shown in figure one above demonstrates a key result: initially almost identical colleges can endogenously become differentiated over time as a result of random initial fluctuations in productivity. This is a striking example of
+      <q>
+       tipping
+      </q>
+      . In this case, agents seeking to profit from a small initial wage differential cause a separating equilibrium. Firms notice the difference in productivity levels across the colleges, and change their wage offers accordingly. Suddenly, the small wage differential becomes large, and one college attracts the best students. College 1 emerges with a reputation for producing top quality graduates while the other college languishes behind. One should note that firms cannot tell whether this is because of the separating effect argued for here, or because college 1 really does provide a better education. Thus even if Yale were to provide exactly the same education as Western Michigan, firms and society at large might incorrectly attribute the difference in productivity between Yale and Western Michigan graduates to differences in education, and conclude that Yale was a better school.
+     </p>
+     <p>
+      This model seems apt for looking at students' choice of graduate school. In this environment, the pooled signal conveyed by the college that students graduate from is, in general, regarded as very important by potential employers. The academic job market for positions in top-ranked schools tends to be closed to graduates of schools with weaker reputations. Furthermore, since graduate students are often either not assigned grades, or the grades are seen as unimportant, this pooled signal is one of the few
+      <q>
+       objective
+      </q>
+      (easily measured) signals available to potential employers.
+     </p>
+     <p>
+      Turning to potential students, we notice that students take the rankings of graduate schools in publications such as US News and World Report surprisingly seriously. The prestige of the school is also very important. This model suggests a potential reason for this. Essentially, these factors act as coordinating devices much in the same way as wages do in the model we presented, and allow agents of similar ability to group themselves together, and thus maximize the value of their graduate experience. The model predicts that some schools will attract the top students year after year, since these agents will self-select the top schools.
+     </p>
+     <p>
+      This result is not surprising. It is interesting, however, that the model shows how hard it may be to reverse the trend. Small initial fluctuations result in large differences between colleges, once students self-select and separate. Now imagine that the weaker college, college 2, hires superb new faculty, and in fact this means that graduates of college 2 emerge with higher productivity than they started with. College 1 continues to give no value added. Yet, unless the value added by college 2 is very large, this will not change the outcome. College 1's reputation attracts the top students, and these students will remain the top students despite college 2's best efforts. They will get the top jobs, and college 1's reputation as the better school will remain intact, and the top students will continue to go there. The logic is relentless.
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 2: College 2 adds value
+     </p>
+     <p>
+      Figure 2 shows this scenario. After period 51, college 2 graduates are assumed to receive a bonus of 0.25 to their productivity (which is, on average, doubling it). Despite this, they simply aren't as good as those of college 1, and college 1 remains the top college. What might one do to try and catch up? Part of the answer is to reduce the size of the incoming class, and thus make admissions more competitive. The quality of the admitted students thus improves. The effects of this adjustment are shown in figure 3, where college 2 is assumed to cut its enrollment from 0.5 to 0.2 in period 51.
+     </p>
+     <p>
+      Notice that this has almost as much of an effect as the quality improvement depicted in figure 2. Together, these strategies can work to reverse the trend. Specifically, suppose that college 2 has access to a fixed endowment, and that the exiting productivity of students is a function of the amount spent on each student. For example, dropping the enrollment from 50% of the population to 20%, and raising per capita spending accordingly may perhaps allow college 2 to add a productivity bonus of 0.3. The result is that college2 is able to catch up and then surpass college 1, as is shown in Figure 4.
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 3: College 2 cuts enrollment
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <p>
+      Figure 4: College 2 cuts enrollment and raises spending
+     </p>
+     <p>
+      In fact, this suggests that temporary increases in spending combined with selective admissions can have a permanent effect on a college's reputation. The time-scale required to effect such a change depends on how quickly wages (or school rankings) rise to reflect the better quality of college 2's graduates. Once wages have fully responded, college 2 will start attracting the best applicants and may reduce spending to earlier levels.
+     </p>
+     <p>
+      This sort of strategy is not, in general, viable. The schools with access to large endowments tend to be the top schools, and are, in general, far more likely to be able to provide a high quality of education. Furthermore, while wages may respond to an increase in value added by college 2 fairly quickly, it is not clear whether intangibles such as prestige will respond at all (how do you dispel the Ivy League mystique?). Finally, this sort of approach entirely neglects the strategic aspect of this
+      <q>
+       reputation game
+      </q>
+      ; one would expect college 1 to match college 2 in spending, knowing full well that a temporary increase now will pay off by cementing its reputation for the long term.
+     </p>
+     <p>
+      An alternate strategy may be to target individual students, acting on preferences not captured in the model by offering them fellowships or access to better facilities. But the model shows that the additional incentives offered will need to be large to counter reputational effects. It is perhaps, therefore, unsurprising that in most disciplines the top schools remain relatively constant.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     4 Application: Race-Based Admissions
+    </div>
+    <p>
+     The question of race-based admissions policies has recently come under legal scrutiny. The U.S. Supreme Court decision in
+     <i>
+      University of California Regents v Bakke
+     </i>
+     ruled that racial quotas were inequitable and should not be permitted, but that other forms of admissions that take race into account may be allowed in the interests of diversity. The University of Michigan's admissions policies are currently under legal challenge, with the Bush Administration, amongst others, arguing that the university's points system for admissions constitutes a
+     <i>
+      de facto
+     </i>
+     quota. It is with this in mind that we apply the model developed above to analyze a simple quota system.
+    </p>
+    <p>
+     We set up the model as follows. Suppose that a minority group (hereafter to be termed
+     <q>
+      Blacks
+     </q>
+     ) constitutes 20% of the overall population. However, not all members of the total population are eligible to go to college. In particular, suppose that the college-going population is comprised of only 10% Blacks and 90% Whites. This may be true for a variety of reasons, a lower percentage of Blacks completing high school, a failure to pass standardized eligibility tests of the type mentioned earlier, or access to credit. All members of the college going population are otherwise identical.
+    </p>
+    <p>
+     Now, suppose that in the interests of diversity, all colleges adopt a policy whereby they reserve 20% of their capacity for Blacks (i.e. their percentage in the general population). Notice that this means that the capacity available for Black students vastly exceeds the college-going Black population. This constitutes a quota system. But the outcome would be similar in any case where there was an admissions process that virtually guaranteed entry to Black applicants with certain qualifications
+     <a class="fnref" href="#fn6" id="fnref_fn6">
+      6
+     </a>
+     .
+    </p>
+    <p>
+     For the simulation, we set the capacities as C1 = C2 = 0.5, as before, which means that the quota of 20% at each college is 0.1. This is a particularly simple version of the model, where the college-going Black population is also of measure 0.1and thus all of them will apply to college 1 and get in. Thus the resulting capacity for white applicants at college 1 is C1=0.4. Choosing parameters a=0.1, b=0.2 and using 1000 agents (900 White, 100 Black), we may run the simulation as before.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 5: Quota System
+    </p>
+    <p>
+     The figure above shows the wages earned by the graduates of college 1 and 2 by race. Notice that since all Blacks apply and get into college 1, we have no wage series for Black graduates of college 2. The wages paid reflect the fact that race is observable to potential employers. Thus the wages paid to Blacks are on average 0.5, since the admissions process yields no information about ability (it is neither separating nor selective). Wages paid to Whites are higher than they would be usually, since with a quota system, getting into either college is more difficult. Clearly though, this is not necessarily beneficial to the average white student, since his odds of getting in are reduced.
+    </p>
+    <p>
+     This deserves more explicit analysis. Suppose that socioeconomic status and race are highly correlated, so that it is possible to enforce the quota system by basing it on socioeconomic factors rather than race. Since socioeconomic factors may be unobservable to potential employers, under this system the employers may not be able to determine whether the job applicant got in to college 1 on merit or through a quota
+     <a class="fnref" href="#fn7" id="fnref_fn7">
+      7
+     </a>
+     . Then we have three possible policy alternatives: no quota, a race-based quota, and socioeconomic quota. The key difference between the latter two is that with a race-based (
+     <q>
+      observable
+     </q>
+     ) quota, the employer, who may easily observe the race of the applicant, may use this information in deducing the appropriate wage offer; whereas with a socioeconomic (
+     <q>
+      unobservable
+     </q>
+     ) quota, this may not be possible
+     <a class="fnref" href="#fn8" id="fnref_fn8">
+      8
+     </a>
+     .
+    </p>
+    <p>
+     In the table below we report the average wage of both white and black graduates from college 1 (where they differ) and the
+     <i>
+      a priori
+     </i>
+     expected wage of a white applicants with ability 0, 0.25, 0.5 and 0.75 respectively under each of the three systems
+     <a class="fnref" href="#fn9" id="fnref_fn9">
+      9
+     </a>
+     . In all cases, measurements are taken from the steady-state.
+    </p>
+    <p>
+     It is interesting that for the given parameters of the simulation a quota seems almost Pareto-improving. Yet there are definite winners and losers. Consider first the college going Black population. If the quota is unobservable, the effects are unambiguously positive (average wage goes from 0.5 to 0.769). But if the quota is observable (which is almost always the case), then the quota has no effect on the
+     <i>
+      average
+     </i>
+     Black student, as firms can extract no information from the college signal. In particular, above average Black students are hurt by the quota (since they could have attended college 1 and earned on average 0.769), while less able students are advantaged (since they would have gone to college 2 and got 0.252).
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     The effects on the college going White population are more complicated. For the observed quota system, both college 1 and college 2 become more competitive. This is reflected in the higher average wage for graduates of college 1 (0.801). Further, the white student of ability 0.5 actually does better, since he now finds it preferable to apply to college 2, and since college 2 is more competitive than before, he ends up with a higher wage. But there are two main groups of losers. The first are the students of ability around 0.6 (not shown in the table), who used to be almost certain of getting in to college 1, and are now borderline applicants. Their
+     <i>
+      ex ante
+     </i>
+     expected wage will fall. One may argue that in a more realistic model, with many colleges and the possibility of multiple applications to limit risk, this change will be small. Fair enough. But the second group to lose out are the White students of low ability (θ = 0 in the table). There the changes are dramatic. Suddenly a certain place in college 2 has become uncertain, as better White applicants now apply to college 2 because of the quota system. The
+     <i>
+      ex ante
+     </i>
+     expected wage falls from 0.252 to 0.048. Moreover, the effects on this group are unlikely to be mitigated in a more complicated model - there is simply no space for them in the college system anymore.
+    </p>
+    <p>
+     Turning to the unobserved quota case, the results are similar. Now college 1 White students are on average paid less than their ability, since the firms are less able to determine ability from the pooled college signal. Furthermore, this system is in fact even worse for the bottom White applicants, as the lower wages in college 1 (relative to the observed quota case) mean that more people apply to college 2, further diminishing their chances of getting in.
+    </p>
+    <p>
+     The major effects of a race-based admissions policy are captured in this simple model. In particular, if the quota system is based on easily observable characteristics, it has little effect on average wage outcomes since employers can and will discount the credentials of the favored group. Furthermore, in this case it is actually prejudicial to the top minority applicants, although benefiting weaker applicants. The model identifies the main losers from a quota system in college admissions as the members of the college going majority group that used to barely get in to college, and now cannot. It is interesting that these are almost never the people showcased as the victims of these policies. Rather, it is the students that fail to get in to top colleges (like the University of Michigan) who are seen as the victims. This is because the impact on the weaker White students is
+     <i>
+      indirect
+     </i>
+     : it is the resulting change in the behavior of their White peers that actually knocks them out of the system, rather than the quota system itself. Overall, this suggests that the overriding concern of policymakers worried about the effects of any preferential admissions system should be the weakest applicants of the group that does not receive this preferential treatment.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     5 Conclusion
+    </div>
+    <p>
+     Pooled signals matter. The reputation of the college a student attends will almost certainly affect his post-graduation wage. In this context, it is critical to understand how agents may behave when confronted with colleges that they see as heterogenous in terms of reputation. This model makes a start in this respect, establishing the circumstances under which a simple separating equilibrium will exist. It also explains why colleges that are similar in most respects can still attract vastly different calibers of students if they differ in reputation. The key is to recognize that both firms and students are making decisions based on signals: students choose the school with the better reputation in order to signal that they are of high ability, while firms pay more for the graduates of the top school based on their pooled signal. Admissions processes are important in ensuring that low ability agents do not try to mimic high ability agents in attending the top school, and thus perform a valuable screening function.
+    </p>
+    <p>
+     The analysis of a race-based quota system shows how important it is to look at the overall picture when attempting to analyze these policies. It was shown that the people who are hurt by a race-based policy are the most able of the minority group and the least able of the majority. This is in contrast to the perception that it is the students that get shut out of top schools due to the quota that are most damaged by the policy.
+    </p>
+    <p>
+     Looking forward, it seems clear that this model has wide applicability. Institutional structures where agents compete for some prize (or to send some signal that yields a prize) are all around us. From sporting tournaments to academic journals, agents must repeatedly make choices about which pool they should attempt to join. Future work could include looking at the effect of having more than two such pools, the possibility of multiple applications, and attempts to characterize the solution in the case where the number of applicants exceeds the number of places, and the likelihood ratio condition fails.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     6 Appendix
+    </div>
+    <p>
+     In order to prove proposition 1, we first prove two lemmas.
+    </p>
+    <p>
+     <b>
+      Lemma 1
+     </b>
+     <i>
+      Suppose
+     </i>
+    </p>
+    <div class="gap">
+     <i>
+      <span>
+       Formula
+      </span>
+      here
+     </i>
+    </div>
+    <i>
+     is strictly in the interior of the support of F and let
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     be the probability that an agent of ability level θ is accepted by college 1 when competing against an applicant pool consisting entirely of agents with
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . Similarly let
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     be the probability that an agent is accepted by college 2 when competing against applicants with
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . Then both
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     are continuous.
+    </i>
+    <p>
+    </p>
+    <p>
+     <i>
+      Proof:
+     </i>
+    </p>
+    <p>
+     For a given
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , we may define the cumulative distribution function of applicants to college 1, and college 2 respectively by
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (4)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (5)
+    </p>
+    <p>
+     where the continuity of F1 (t) and F2 (t) follows from the continuity of F. These are well defined since
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Define also
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    as the measures of the set of applicants to be accepted. If
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    then this implies all applicants to college i are accepted, and thus
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , which is clearly continuous in θ. So suppose
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Define the cumulative distribution function of applicant's scores as
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , which is continuous since both Fi and G are continuous. Further, since H is non-decreasing, it has a continuous inverse on (0, 1). Then an agent applying to college i needs a score
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    to get in. It follows that
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (6)
+    </p>
+    <p>
+     Note that G is continuous,
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is continuous in
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and θ is clearly continuous in itself. Thus we may appeal to the continuity of the composition of continuous functions to derive the result.
+    <p>
+    </p>
+    <p>
+     <b>
+      Lemma 2
+     </b>
+     <i>
+      Define
+     </i>
+    </p>
+    <div class="gap">
+     <i>
+      <span>
+       Formula
+      </span>
+      here
+     </i>
+    </div>
+    <i>
+     as the solution to
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     . Then:
+    </i>
+    <p>
+    </p>
+    <p>
+     <i>
+      (i) The likelihood ratio
+     </i>
+    </p>
+    <div class="gap">
+     <i>
+      <span>
+       Formula
+      </span>
+      here
+     </i>
+    </div>
+    <i>
+     is strictly increasing in
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .
+    </i>
+    <p>
+    </p>
+    <p>
+     <i>
+      (ii) If in addition
+     </i>
+    </p>
+    <div class="gap">
+     <i>
+      <span>
+       Formula
+      </span>
+      here
+     </i>
+    </div>
+    <i>
+     is increasing in
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .
+    </i>
+    <p>
+    </p>
+    <p>
+     <i>
+      Proof:
+     </i>
+    </p>
+    <p>
+     We prove that
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is increasing in
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is decreasing in
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and hence obtain the result. First note that by assumption, F and G are absolutely continuous with respect to Lebesgue measure, and hence their Radon-Nikodym derivatives f and g exist. It follows that H has density h. Define
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Now,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , where the superscript j denotes a partial with respect to the jth argument. Further,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    since H is non-decreasing in its first argument. Also
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , since
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and H is non-decreasing in its second argument. Thus
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Finally, since G is increasing,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and thus
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . It may similarly be proved that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is decreasing in
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , and result (i) follows.
+    <p>
+    </p>
+    <p>
+     For result (ii), note that since
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , on the range where
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    we have n1 &lt; 1 which implies n2 = 1. Hence
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Further, note that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    since g is a density. It follows that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is increasing in θ.
+    <p>
+    </p>
+    <p>
+     We are now in a position to prove proposition 1. We will use the notation developed in the lemmas above.
+    </p>
+    <p>
+     <i>
+      Proof of Proposition 1
+     </i>
+    </p>
+    <p>
+     We first prove the existence result given in parts (i) and (ii), and then the uniqueness result of (i).
+    </p>
+    <p>
+     <i>
+      Existence.
+     </i>
+     Consider firstly the case where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Then even though everyone is applying to college one, the agent of ability level 0 has a higher expected wage from applying to college 1 as well. Further, for
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    we may use lemma 2(ii), and note that p1 (θ, 0) is increasing in θ. So all agents have higher expected wages from applying to college 1. We have an (uninteresting) equilibrium, where everyone applies to college 1 (i.e.
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    ). So suppose that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Let
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    denote the ability level of an agent indifferent between choosing college 1 and college 2, and consider the separating equilibrium defined by the point
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Note that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    since an agent of ability
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is certain to get into college 1, and would thus choose college 1.
+    <p>
+    </p>
+    <p>
+     Now, indifference requires that:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (7)
+    </p>
+    <p>
+     where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+    <p>
+     By assumption
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Also
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , since the numerator is 1 and the denominator is ≤ 1. By lemma 1,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is continuous. Hence by the intermediate value theorem, such a
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    exists. We now establish that no agent wants to deviate. Either by Lemma 2, part(ii) (for the proof of part (i) of the proposition) or by assumption (for part (ii)),
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is increasing. Thus all agents with
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    have
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and will choose college 1. Similarly, those agents with
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    have
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and will choose college 2. This completes the proof of existence.
+    <p>
+    </p>
+    <p>
+     <i>
+      Uniqueness.
+     </i>
+     Towards a contradiction, suppose that we have another equilibrium that differs on a set of positive measure. First we may rule out the case that there are multiple equilibria characterized by a separating point
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . To see this, note that by Lemma 2, part(i), the likelihood ratio
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is strictly increasing in
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , and thus there is only one point at which it is equal to w2 /w1 . So consider equilibria where the agents are not separated. Let θH be the top applicant to school 2, and let θL be the bottom applicant to school 1. It must be the case that θH &gt; θL (otherwise we would have a separating equilibrium). Let the distribution of applicants to college 1 be
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and that to college 2 be
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Using familiar notation, define
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    as the probability of an agent of ability θ getting in to college i when facing applicants given by
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .
+    <p>
+    </p>
+    <p>
+     Now since college 1 offers higher wages, it must be that the measure of the set of applicants to college 1 must exceed its capacity (i.e. n1 &lt; 1). But then since
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , all applicants to college 2 must be accepted (i.e. n2 = 1). Hence in any equilibrium,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Thus note that for agent θH , no deviation requires that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , while for agent θL, we need
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . We deduce that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    But this is a contradiction, since the nature of the competitive process dictates that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    must be increasing in its first argument, θ. Hence this cannot be an equilibrium.
+    <p>
+    </p>
+    <p>
+     <i>
+      Proof of Proposition 2
+     </i>
+    </p>
+    <p>
+     We construct an equilibrium of the form discussed in the text. Set
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Then agents always maximize their expected payoff by applying to college 1, so all agents applying to college 1 is an equilibrium. Now consider the firms. Since no one ever goes to college 2 in equilibrium, we may set w2 = 0 without affecting the equilibrium. Firms should pay
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    where
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is the expected cutoff score to get in to college 1 and ε is the testing error. Since
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    we have have verified that in the proposed equilibrium, no one wants to deviate.
+    <p>
+    </p>
+    <p>
+     <i>
+      Proof of Proposition 3
+     </i>
+    </p>
+    <p>
+     First we must show that the likelihood ratio property holds for the case with uniform errors i.e.
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is increasing in
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    Let
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    be given. Define
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    as
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    as
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    Then for
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    we have
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , and for
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    we have
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Now, for
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . It follows that the agent's success depends on the testing error (instead of just his ability), and thus the density
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is positive on this range for θ. Note that
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (8)
+    </p>
+    <p>
+     Further, since G is uniform, g(.) is either zero or one, and thus
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Finally,
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , and hence the entire expression is &gt; 0. Hence
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    is increasing on
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and thus on the entire range.
+    <p>
+    </p>
+    <p>
+     Second, we show that the separating point is given by
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Assume that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Then by calculating
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    for a fixed
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and solving
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    we will get
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Assume also that
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Then the distribution of scores of applicants to college 1, H1 , has density
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     It may be verified that the cutoff value k1 for getting in to college 1 falls in
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    and is given by
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (9)
+    </p>
+    <p>
+     It follows that
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (10)
+    </p>
+    <p>
+     Solving
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    yields the result
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    Substituting for
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    in the two assumptions used yields the restrictions stated in the proposition.
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N1044D">
+     <li id="N1044E">
+      [1] Spence, M., "Job Market Signalling", Quarterly Journal of Economics, 87(3), 1973, 355-374
+     </li>
+     <li id="N10450">
+      [2] Arrow, K., "Higher Education as a Filter", Journal of Public Economics, 2, 1973, 193-216
+     </li>
+     <li id="N10452">
+      [3] Dubey, P. and Geanakoplos, J., "Competitive Pooling: Rothschild-Stiglitz reconsidered", Quarterly Journal of Economics, 117(4), 2002, 1529-1570
+     </li>
+    </ul>
+   </div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 It is easy to allow for colleges with different tuition fees. One may simply adjust the payoffs appropriately.
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2  It is possible to extend the model to allow for multiple applications, but this will not change the basic results. It may affect the welfare conclusions, however. This is noted when discussing the impact of race-based admissions in Section 4 below.
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3 All proofs are contained in the appendix.
+    </div>
+    <div id="fn4">
+     <a href="#fnref_fn4">
+      4.
+     </a>
+     4  In fact, equilibria come in pairs. Due to the symmetry of the colleges, any equilibrium with college 1 as the high-wage college is matched by an identical equilibrium with college 2 as the high-wage college.
+    </div>
+    <div id="fn5">
+     <a href="#fnref_fn5">
+      5.
+     </a>
+     5 This is proved in Lemma 2 in the appendix.
+    </div>
+    <div id="fn6">
+     <a href="#fnref_fn6">
+      6.
+     </a>
+     6 This is the charge levelled against the University of Michigan's admissions policy in the brief filed by Theodore Olsen, the Solicitor General, on behalf of the Bush Administration.
+    </div>
+    <div id="fn7">
+     <a href="#fnref_fn7">
+      7.
+     </a>
+     7 Of course, if race and socioeconomic status were highly correlated enough to make a system based only on socioeconomic status viable in achieving diversity, then employers could use race as a proxy for socioeconomic status in making their wage offers. We would be back to the case where employers know whether an applicant's college signal is due to merit or quota. . It is nonetheless illustrative to look at the three extreme cases considered above.
+    </div>
+    <div id="fn8">
+     <a href="#fnref_fn8">
+      8.
+     </a>
+     8 We are abstracting away from all the potential legal issues involved in offering different wages to seemingly identical applicants based on their race.
+    </div>
+    <div id="fn9">
+     <a href="#fnref_fn9">
+      9.
+     </a>
+     9  Black applicants will always get in due to the quota and receive the average wage reported. This is not true for white applicants
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

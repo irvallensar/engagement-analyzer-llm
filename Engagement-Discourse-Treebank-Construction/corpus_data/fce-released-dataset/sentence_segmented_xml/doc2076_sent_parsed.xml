@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Mr Jon Stevens,
+      </p>
+      <p>
+       Last month I
+       <ns type="TV">
+        <i>
+         have been
+        </i>
+       </ns>
+       in London for a week to visit your wonderful city and with the intention of seeing
+       <ns type="W">
+        <i>
+         at your
+         <ns type="S">
+          <i>
+           Thetre
+          </i>
+         </ns>
+         the famous musical show Over the rainbow
+        </i>
+       </ns>
+       but in all my life I have never had such a disappointing evening.
+      </p>
+      <p>
+       First of all
+       <ns type="MP">
+       </ns>
+       my cousin, who lives there, had had many problems with the tickets. The
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         changed
+        </i>
+       </ns>
+       and
+       <ns type="RA">
+        <i>
+         this
+        </i>
+       </ns>
+       was the worst surprise I could have
+       <ns type="MV">
+       </ns>
+       . My greatest wish was
+       <ns type="FV">
+        <i>
+         seeing
+        </i>
+       </ns>
+       Danny Brook's performance; you know
+       <ns type="RA">
+        <i>
+         it's
+        </i>
+       </ns>
+       the best singer. But instead of him there was
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       unknown young actor. What a pity, I thought.
+      </p>
+      <p>
+       I arrived there
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       time, 19:15
+       <ns type="MP">
+       </ns>
+       in fact you wrote that the show would be starting at 19:30, but I had to wait until 20.15. What an absurd thing, don't you think so? The quality of the show wasn't as high as I expected. I hadn't
+       <ns type="S">
+        <i>
+         tought
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       a restaurant to go to after the show, because if the advertisement had been right, there should
+       <ns type="FV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         to be
+        </i>
+       </ns>
+       a luxury restaurant where I could eat. But it was closed because it was under construction.
+      </p>
+      <p>
+       Because of the quality of the evening I
+       <ns type="RV">
+        <i>
+         spent
+        </i>
+       </ns>
+       , the only thing you can do is
+       <ns type="FV">
+        <i>
+         giving
+        </i>
+       </ns>
+       me back at least the half of the cost of
+       <ns type="MD">
+       </ns>
+       ticket. To apologise and give the impression of being a serious theatre. I'd rather I had been at home
+       <ns type="RV">
+        <i>
+         seeing
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         TV my
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       Italy!
+      </p>
+      <p>
+       I hope that my
+       <ns type="RN">
+        <i>
+         wish
+        </i>
+       </ns>
+       is
+       <ns type="TV">
+        <i>
+         being accepted
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         Sinceraly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Mr Jon Stevens,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Last month I have been in London for a week to visit your wonderful city and with the intention of seeing at your
+       </s>
+       <s pid="2" sid="2">
+        Thetre the famous musical show Over the rainbow but in all my life I have never had such a disappointing evening.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all my cousin, who lives there, had had many problems with the tickets.
+       </s>
+       <s pid="3" sid="2">
+        The starring changed and this was the worst surprise I could have .
+       </s>
+       <s pid="3" sid="3">
+        My greatest wish was seeing Danny Brook's performance; you know it's the best singer.
+       </s>
+       <s pid="3" sid="4">
+        But instead of him there was a unknown young actor.
+       </s>
+       <s pid="3" sid="5">
+        What a pity, I thought.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I arrived there in time, 19:15 in fact you wrote that the show would be starting at 19:30, but I had to wait until 20.15.
+       </s>
+       <s pid="4" sid="2">
+        What an absurd thing, don't you think so?
+       </s>
+       <s pid="4" sid="3">
+        The quality of the show wasn't as high as I expected.
+       </s>
+       <s pid="4" sid="4">
+        I hadn't tought for a restaurant to go to after the show, because if the advertisement had been right, there should had to be a luxury restaurant where I could eat.
+       </s>
+       <s pid="4" sid="5">
+        But it was closed because it was under construction.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Because of the quality of the evening I spent, the only thing you can do is giving me back at least the half of the cost of  ticket.
+       </s>
+       <s pid="5" sid="2">
+        To apologise and give the impression of being a serious theatre.
+       </s>
+       <s pid="5" sid="3">
+        I'd rather I had been at home seeing on TV my  Italy!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope that my wish is being accepted.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your Sinceraly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       We are in the
+       <ns type="FN">
+        <i>
+         ages
+        </i>
+       </ns>
+       of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         technologic
+        </i>
+       </ns>
+       development
+       <ns type="MP">
+       </ns>
+       <ns type="M">
+       </ns>
+       <ns type="ID">
+        <i>
+         it's out of doubt
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       What
+       <ns type="W">
+        <i>
+         could be out of control of technology
+        </i>
+       </ns>
+       ? Since the scientific revolution and the Industrial Revolution, between
+       <ns type="MD">
+       </ns>
+       17th and 18th
+       <ns type="AGN">
+        <i>
+         century
+        </i>
+       </ns>
+       there have been sudden changes in our daily
+       <ns type="ID">
+        <i>
+         way of living
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Nowadays
+       <ns type="MP">
+       </ns>
+       especially in the
+       <ns type="RJ">
+        <i>
+         west
+        </i>
+       </ns>
+       area of the world
+       <ns type="MP">
+       </ns>
+       science and technology have
+       <ns type="RV">
+        <i>
+         done
+        </i>
+       </ns>
+       great, enormous steps in
+       <ns type="W">
+        <i>
+         <ns type="FN">
+          <i>
+           directions
+          </i>
+         </ns>
+         of the
+        </i>
+       </ns>
+       progress. Not only for the great nations, but also for
+       <ns type="RQ">
+        <i>
+         every
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       their inhabitants.
+      </p>
+      <p>
+       Today it's absurd not
+       <ns type="FV">
+        <i>
+         knowing
+        </i>
+       </ns>
+       how a computer works, or how to use
+       <ns type="MD">
+       </ns>
+       Internet
+      </p>
+      <p>
+       I can buy, today, a book
+       <ns type="MY">
+       </ns>
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         being
+        </i>
+       </ns>
+       comfortable at home, can communicate with other friends faster than before. I
+       <ns type="AS">
+        <i>
+         can have my
+         <ns type="CN">
+          <i>
+           homeworks
+          </i>
+         </ns>
+         done by a calculator
+        </i>
+       </ns>
+       etc. In
+       <ns type="MD">
+       </ns>
+       future I
+       <ns type="RV">
+        <i>
+         wish
+        </i>
+       </ns>
+       I could fly on my own!
+      </p>
+      <p>
+       For me it's very important
+       <ns type="AS">
+        <i>
+         to have my mobile and computer never broken
+        </i>
+       </ns>
+       . I think I
+       <ns type="RV">
+        <i>
+         should
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         become
+        </i>
+       </ns>
+       crazy without them, not only me but the majority of us.
+      </p>
+      <p>
+       But sometimes I'd rather
+       <ns type="FV">
+        <i>
+         to switch
+        </i>
+       </ns>
+       them off and think of what I
+       <ns type="RV">
+        <i>
+         could
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         waste
+        </i>
+       </ns>
+       , like love and friendship. I wish all the world would do the same.
+      </p>
+      <p>
+       Vico says that progress
+       <ns type="RV">
+        <i>
+         gives up
+        </i>
+       </ns>
+       when Man
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       noticed that he
+       <ns type="AGV">
+        <i>
+         have
+        </i>
+       </ns>
+       been wasting those values.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        We are in the ages of the technologic development  it's out of doubt.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        What could be out of control of technology?
+       </s>
+       <s pid="2" sid="2">
+        Since the scientific revolution and the Industrial Revolution, between  17th and 18th century there have been sudden changes in our daily way of living.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Nowadays especially in the west area of the world science and technology have done great, enormous steps in directions of the progress.
+       </s>
+       <s pid="3" sid="2">
+        Not only for the great nations, but also for every  their inhabitants.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Today it's absurd not knowing how a computer works, or how to use  Internet
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I can buy, today, a book   being comfortable at home, can communicate with other friends faster than before.
+       </s>
+       <s pid="5" sid="2">
+        I can have my homeworks done by a calculator etc.
+       </s>
+       <s pid="5" sid="3">
+        In  future I wish I could fly on my own!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        For me it's very important to have my mobile and computer never broken.
+       </s>
+       <s pid="6" sid="2">
+        I think I should become crazy without them, not only me but the majority of us.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        But sometimes I'd rather to switch them off and think of what I could waste, like love and friendship.
+       </s>
+       <s pid="7" sid="2">
+        I wish all the world would do the same.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Vico says that progress gives up when Man have noticed that he have been wasting those values.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

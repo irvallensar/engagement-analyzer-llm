@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear manager I am writing
+       <ns type="MT">
+       </ns>
+       you because of your new musical show "Over The Rainbow''. I
+       <ns type="TV">
+        <i>
+         have spent
+        </i>
+       </ns>
+       my holiday in London recently and
+       <ns type="MP">
+       </ns>
+       it is like a tradition, we went to a musical. After reading your programme I was very impressed and I was looking forward to
+       <ns type="FV">
+        <i>
+         see
+        </i>
+       </ns>
+       it. But firstly when we bought our tickets, we didn't get any discount, we had to pay the full price. And then the show started at 20:15 p.m., although it was supposed to start at 19:30 p.m., so
+       <ns type="TV">
+        <i>
+         we've had
+        </i>
+       </ns>
+       to wait quite long in
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       crowded room. And when the show finally started, I realized that it was not Danny Brook acting, instead there was an unknown, not very talented actor. After the show we wanted to go to your theatre restaurant, because we were very hungry, but then we saw that it was closed, because of staff illness. I would like to ask you to give us our money back, because it
+       <ns type="TV">
+        <i>
+         has been
+        </i>
+       </ns>
+       a very disappointing evening for us. Yours sincerely, Sara Schmidt
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear manager I am writing  you because of your new musical show "Over The Rainbow''.
+       </s>
+       <s pid="1" sid="2">
+        I have spent my holiday in London recently and it is like a tradition, we went to a musical.
+       </s>
+       <s pid="1" sid="3">
+        After reading your programme I was very impressed and I was looking forward to see it.
+       </s>
+       <s pid="1" sid="4">
+        But firstly when we bought our tickets, we didn't get any discount, we had to pay the full price.
+       </s>
+       <s pid="1" sid="5">
+        And then the show started at 20:15 p.m., although it was supposed to start at 19:30 p.m., so we've had to wait quite long in this crowded room.
+       </s>
+       <s pid="1" sid="6">
+        And when the show finally started, I realized that it was not Danny Brook acting, instead there was an unknown, not very talented actor.
+       </s>
+       <s pid="1" sid="7">
+        After the show we wanted to go to your theatre restaurant, because we were very hungry, but then we saw that it was closed, because of staff illness.
+       </s>
+       <s pid="1" sid="8">
+        I would like to ask you to give us our money back, because it has been a very disappointing evening for us.
+       </s>
+       <s pid="1" sid="9">
+        Yours sincerely, Sara Schmidt
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. We sometimes tried to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       surprise parties, but it never worked because of him.
+      </p>
+      <p>
+       Two weeks before his birthday he started asking us what we were
+       <ns type="SX">
+        <i>
+         gong
+        </i>
+       </ns>
+       to do. That annoyed us so much
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that we started making something up. We told Pat we couldn't have a party on his birthday, because everyone except me had something to do. Of course, that wasn't
+       <ns type="MJ">
+       </ns>
+       , we had actually organised a party for him with all his friends
+       <ns type="UY">
+        <i>
+         since
+        </i>
+       </ns>
+       a long time
+       <ns type="SX">
+        <i>
+         go
+        </i>
+       </ns>
+       , but he wasn't supposed to know that.
+      </p>
+      <p>
+       On his birthday all our friends were at my place, waiting for Pat. I had invited him to
+       <ns type="RV">
+        <i>
+         opened
+        </i>
+       </ns>
+       the evening with me. But half an hour before he should have been there he phoned me and said he was too tired to come. I couldn't change his mind although
+       <ns type="TV">
+        <i>
+         I've tried
+        </i>
+       </ns>
+       everything. In the end I just told him the truth. He was very sorry that he had not
+       <ns type="TV">
+        <i>
+         want
+        </i>
+       </ns>
+       to come and arrived quite soon then.
+      </p>
+      <p>
+       But I know now
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that it is always better not to lie even if it
+       <ns type="TV">
+        <i>
+         should be
+        </i>
+       </ns>
+       for
+       <ns type="MD">
+       </ns>
+       good
+       <ns type="MN">
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        We sometimes tried to make surprise parties, but it never worked because of him.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Two weeks before his birthday he started asking us what we were gong to do.
+       </s>
+       <s pid="2" sid="2">
+        That annoyed us so much, that we started making something up.
+       </s>
+       <s pid="2" sid="3">
+        We told Pat we couldn't have a party on his birthday, because everyone except me had something to do.
+       </s>
+       <s pid="2" sid="4">
+        Of course, that wasn't , we had actually organised a party for him with all his friends since a long time go, but he wasn't supposed to know that.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        On his birthday all our friends were at my place, waiting for Pat.
+       </s>
+       <s pid="3" sid="2">
+        I had invited him to opened the evening with me.
+       </s>
+       <s pid="3" sid="3">
+        But half an hour before he should have been there he phoned me and said he was too tired to come.
+       </s>
+       <s pid="3" sid="4">
+        I couldn't change his mind although I've tried everything.
+       </s>
+       <s pid="3" sid="5">
+        In the end I just told him the truth.
+       </s>
+       <s pid="3" sid="6">
+        He was very sorry that he had not want to come and arrived quite soon then.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But I know now, that it is always better not to lie even if it should be for  good .
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

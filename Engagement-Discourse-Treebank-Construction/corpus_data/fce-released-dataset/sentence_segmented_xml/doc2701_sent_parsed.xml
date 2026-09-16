@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Mr Smith,
+      </p>
+      <p>
+       Spending a week in London
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       last week, I
+       <ns type="TV">
+        <i>
+         had decided
+        </i>
+       </ns>
+       to go to the theatre in order to see your wonderful musical show. Unfortunately, I had a really
+       <ns type="RJ">
+        <i>
+         disappointed
+        </i>
+       </ns>
+       evening! Indeed,
+       <ns type="RY">
+        <i>
+         firstly
+        </i>
+       </ns>
+       , the
+       <ns type="RN">
+        <i>
+         play
+        </i>
+       </ns>
+       didn't start at 19:30 as it was
+       <ns type="RV">
+        <i>
+         planned
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement but 45 minutes later (20:15).
+      </p>
+      <p>
+       Then, the actors (Danny Brook and Tina Truelove) who were mentioned
+       <ns type="M">
+       </ns>
+       and
+       <ns type="TV">
+        <i>
+         supposed
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         play
+        </i>
+       </ns>
+       weren't present. There were different actors who took
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         role
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Thus, the musical show wasn't as good as it should have been. I was very disappointed because D. Brook and T. Truelove are
+       <ns type="R">
+        <i>
+         so
+        </i>
+       </ns>
+       great actors and I was very excited
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to see
+        </i>
+       </ns>
+       them.
+      </p>
+      <p>
+       Furthermore,
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement I got,
+       <ns type="MA">
+       </ns>
+       was written that the theatre restaurant was
+       <ns type="DJ">
+        <i>
+         opened
+        </i>
+       </ns>
+       . I told myself, I could eat over there and maybe
+       <ns type="RV">
+        <i>
+         spend
+        </i>
+       </ns>
+       a better evening than
+       <ns type="M">
+       </ns>
+       at the
+       <ns type="S">
+        <i>
+         begining
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       but I wasn't lucky because the restaurant was closed! The customers weren't told why they couldn't have a meal. No reasons were
+       <ns type="RV">
+        <i>
+         indicated
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       As you can
+       <ns type="RV">
+        <i>
+         notice
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        <i>
+         my
+        </i>
+       </ns>
+       perfect evening I had
+       <ns type="RV">
+        <i>
+         supposed
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       was a nightmare; that's why I would
+       <ns type="TV">
+        <i>
+         please
+        </i>
+       </ns>
+       <ns type="MC">
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         to give
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       my money back because I cannot tolerate such a thing!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Mr Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Spending a week in London for holidays last week, I had decided to go to the theatre in order to see your wonderful musical show.
+       </s>
+       <s pid="2" sid="2">
+        Unfortunately, I had a really disappointed evening!
+       </s>
+       <s pid="2" sid="3">
+        Indeed, firstly, the play didn't start at 19:30 as it was planned on the advertisement but 45 minutes later (20:15).
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Then, the actors (Danny Brook and Tina Truelove) who were mentioned  and supposed to play weren't present.
+       </s>
+       <s pid="3" sid="2">
+        There were different actors who took the role.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Thus, the musical show wasn't as good as it should have been.
+       </s>
+       <s pid="4" sid="2">
+        I was very disappointed because D. Brook and T. Truelove are so great actors and I was very excited  to see them.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Furthermore, on the advertisement I got,  was written that the theatre restaurant was opened.
+       </s>
+       <s pid="5" sid="2">
+        I told myself, I could eat over there and maybe spend a better evening than  at the begining  but I wasn't lucky because the restaurant was closed!
+       </s>
+       <s pid="5" sid="3">
+        The customers weren't told why they couldn't have a meal.
+       </s>
+       <s pid="5" sid="4">
+        No reasons were indicated.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        As you can notice, my perfect evening I had supposed, was a nightmare; that's why I would please  you to give  my money back because I cannot tolerate such a thing!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       From the
+       <ns type="S">
+        <i>
+         begining
+        </i>
+       </ns>
+       of the century to now, modern technology has changed and has made our daily life easier.
+      </p>
+      <p>
+       Indeed,
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         modernism
+        </i>
+       </ns>
+       helps us to lead a
+       <ns type="FJ">
+        <i>
+         <ns type="S">
+          <i>
+           confortable
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and better life than before. For example, cars
+       <ns type="R">
+        <i>
+         ,
+        </i>
+       </ns>
+       planes are
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       wonderful
+       <ns type="AGN">
+        <i>
+         invention
+        </i>
+       </ns>
+       ! A few centuries ago, it took many hours (even several days) to go
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="RQ">
+        <i>
+         a
+        </i>
+       </ns>
+       city to
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         one
+        </i>
+       </ns>
+       or to travel abroad. People couldn't
+       <ns type="RV">
+        think
+       </ns>
+       of such innovation in our world and yet, it was created.
+       <ns type="RN">
+        <i>
+         Human being
+        </i>
+       </ns>
+       became more and more clever and built
+       <ns type="S">
+        <i>
+         wonerful
+        </i>
+       </ns>
+       things thanks to his thoughts and his hands.
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The communication
+        </i>
+       </ns>
+       has made many
+       <ns type="RN">
+        <i>
+         progresses
+        </i>
+       </ns>
+       too. Everyone
+       <ns type="RV">
+        <i>
+         gets
+        </i>
+       </ns>
+       a television at home. "A machine which talks and shows pictures!" It's a revolution, something which was unbelievable a few centuries ago. Although there are new machines etc,
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         health
+        </i>
+       </ns>
+       makes many
+       <ns type="DN">
+        <i>
+         discoverts
+        </i>
+       </ns>
+       thanks to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         searching
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       different diseases in order to make the population
+       <ns type="TV">
+        <i>
+         lived
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         older
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Thus,
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       modern technology seems to be a positive way
+       <ns type="U">
+        <i>
+         in order
+        </i>
+       </ns>
+       to improve our daily life.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        From the begining of the century to now, modern technology has changed and has made our daily life easier.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Indeed, the modernism helps us to lead a confortable and better life than before.
+       </s>
+       <s pid="2" sid="2">
+        For example, cars, planes are a wonderful invention!
+       </s>
+       <s pid="2" sid="3">
+        A few centuries ago, it took many hours (even several days) to go to a city to an other one or to travel abroad.
+       </s>
+       <s pid="2" sid="4">
+        People couldn't think of such innovation in our world and yet, it was created.
+       </s>
+       <s pid="2" sid="5">
+        Human being became more and more clever and built wonerful things thanks to his thoughts and his hands.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The communication has made many progresses too.
+       </s>
+       <s pid="3" sid="2">
+        Everyone gets a television at home.
+       </s>
+       <s pid="3" sid="3">
+        "A machine which talks and shows pictures!"
+       </s>
+       <s pid="3" sid="4">
+        It's a revolution, something which was unbelievable a few centuries ago.
+       </s>
+       <s pid="3" sid="5">
+        Although there are new machines etc, the health makes many discoverts thanks to the searching on different diseases in order to make the population lived older.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Thus, the modern technology seems to be a positive way in order to improve our daily life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

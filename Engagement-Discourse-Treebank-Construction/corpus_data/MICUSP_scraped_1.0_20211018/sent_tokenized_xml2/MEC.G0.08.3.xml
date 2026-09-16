@@ -1,0 +1,711 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Project 4, Problem 3
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        For project 4, our team must evaluate the patented design suggested by TYR for their swimsuits.
+       </s>
+       <s pid="1" sid="2">
+        For part a, we had to calculate the natural flow without tripping around the sphere using Fluent.
+       </s>
+       <s pid="1" sid="3">
+        We than had to calculate the natural flow of the same flow tripped prematurely into turbulence.
+       </s>
+       <s pid="1" sid="4">
+        We evaluated the results of laminar and turbulent flow.
+       </s>
+       <s pid="1" sid="5">
+        For part b, we had to do the same as part a except model the whole body of the swimmer, rather than just the head.
+       </s>
+       <s pid="1" sid="6">
+        Next, we commented on the claims made by TYR’s website and suggested some improvements on their design.
+       </s>
+       <s pid="1" sid="7">
+        The parameters used to find the speed of the Olympic swimmer and properties of the water are shown in table 1 below.
+       </s>
+       <s pid="1" sid="8">
+        For the laminar cases, we found that using steady or unsteady time resulted in similar data.
+       </s>
+       <s pid="1" sid="9">
+        Unsteady vortex shedding occurred for both laminar and turbulent cases.
+       </s>
+       <s pid="1" sid="10">
+        For the turbulent sphere case, unsteady 2nd order implicit time was used and for the turbulent body case, steady time was used because it resulted in the most accurate data.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        Table 1: Parameters used in Fluent for tests
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Gambit
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Using Gambit, we created the mesh as was described in the problem statement.
+       </s>
+       <s pid="3" sid="2">
+        For part a, the mesh is shown in figure 1.
+       </s>
+       <s pid="3" sid="3">
+        We modeled a person’s head as a sphere with a diameter shown in table 2.
+       </s>
+       <s pid="3" sid="4">
+        For part b, the mesh is shown in figure 2, and we modeled the whole person’s body using body dimensions for the average human being also shown in table 2.
+       </s>
+       <s pid="3" sid="5">
+        For both parts, we used a tri pave face mesh and a tetrahedral/hybrid TGrid volume mesh.
+       </s>
+       <s pid="3" sid="6">
+        This mesh seemed to work best especially when we modeled the whole body of the swimmer due to the varying dimensions.
+       </s>
+       <s pid="3" sid="7">
+        For the mesh around the sphere/body we modeled it similar to project 2, only revolved it 180° and labeled the flat plane as a symmetry boundary condition.
+       </s>
+       <s pid="3" sid="8">
+        The total height and length from the sphere for part a was 10*diameter of the sphere, and 20*length of the sphere.
+       </s>
+       <s pid="3" sid="9">
+        For part b, a height of 7.5*chest diameter and length of 30*chest diameter was used.
+       </s>
+       <s pid="3" sid="10">
+        The meshes were then imported into Fluent where the calculations began.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        Table 2: Body dimensions for the average human used in Gambit
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Figure 1: Mesh for sphere to model human head Figure 2: Nominals facing out for body in TGrid
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       TGrid
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        Once the mesh was created in Gambit, we added the boundary layer thickness in TGrid for the second parts of a and b when turbulence was being tested.
+       </s>
+       <s pid="8" sid="2">
+        We found the location of the first grid point and boundary layer by using equations 1-5.
+       </s>
+       <s pid="8" sid="3">
+        L is the distance of the arc length of the top left quadrant of the sphere for the sphere, or half the total length of the body for the body, is the kinematic viscosity, Cf is the skin coefficient, is the friction velocity, and is the dynamic viscosity.
+       </s>
+       <s pid="8" sid="4">
+        Using prisms and the nominals pointing outward from the sphere/body (see figure 2) we set the first heights (BL/10 shown in table 3) with 10 layers, a constant growth method, uniform offset method, and weight of 1.
+       </s>
+       <s pid="8" sid="5">
+        New domains were made for the tri mesh, with the exception of the sphere/body, and then auto meshed.
+       </s>
+       <s pid="8" sid="6">
+        No boundary layer was created for the laminar cases.
+       </s>
+       <s pid="8" sid="7">
+        The boundary layer conditions can also be seen in figure 3.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        (Eq. 1)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        (Eq. 2)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        (Eq. 3)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        (Eq. 4)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        (Eq. 5)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        Table 3: Boundary Layer thickness for turbulent flow
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        Figure 3: Boundary layer conditions for sphere to model human head
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Sphere with Laminar Flow
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        Once the sphere was created and meshed in Gambit, we began by running tests in Fluent with fluid speeds equal to that of an Olympic swimmer with a Reynolds number approximately 403,000.
+       </s>
+       <s pid="16" sid="2">
+        By comparing our case with the coefficient of drag against Reynolds number for a sphere, as shown in figure 4, we concluded that due to the flat laminar region, we could run the trial at a lower Reynolds number and get the same coefficient of drag with more accurate results.
+       </s>
+       <s pid="16" sid="3">
+        We used a Re of 1584 and found the velocity to be 0.008 m/s; which was then inputted in Fluent to find the drag coefficient.
+       </s>
+       <s pid="16" sid="4">
+        In Fluent, the residuals were changed to 1E-4 to increase the accuracy of our results.
+       </s>
+       <s pid="16" sid="5">
+        The trial was initialized with zero initial conditions and the material and boundary conditions stated above were used.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure'
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Figure 4: Variation of drag coefficient with Reynolds number for a circular disk (dashed line) and a sphere (full line) [1]
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        The equation used to find the Drag coefficient is shown in equation 6.
+       </s>
+       <s pid="18" sid="2">
+        The frontal area used is half the cross-sectional area of the sphere since the mesh was created as a half sphere, πr2/2 with symmetry conditions.
+       </s>
+       <s pid="18" sid="3">
+        FDrag is the drag force obtained in Fluent (N), ρ is the density (kg/m3), u is the flow stream velocity (m/s), and A is the frontal area (m2).
+       </s>
+       <s pid="18" sid="4">
+        The total force, along with the breakdown of the pressure and viscous forces, and calculated Cd is shown in table 4 below.
+       </s>
+       <s pid="18" sid="5">
+        Pressure drag accounts for 69.6% and viscous drag accounts for 31.4% of the total Cd. According to [1], the Cd is approximately 0.4 for the Re that we ran it at, therefore, our results match fairly well with the reference.
+       </s>
+       <s pid="18" sid="6">
+        The velocity field, contour plot of pressure, and contour plot of streamlines are shown in figure 5, figure 6, and figure 7 respectively for Re equal to 1584 for laminar flow around the sphere.
+       </s>
+       <s pid="18" sid="7">
+        One can see that backflow occurs in the near wake region for the sphere in laminar flow.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        (Eqn. 6)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="20" sid="1">
+        Table 4: Force values for laminar flow around sphere
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        Figure 5: Velocity field for Re=1584 around the sphere in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        Figure 6: Contour plots of pressure for Re=1584 around the sphere in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        Figure 7: Contour plots of streamlines for Re=1584 around the sphere in the near weak region
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Sphere with Turbulent Flow
+      </div>
+      <p>
+       <s pid="24" sid="1">
+        For the sphere in turbulent flow, we used the same mesh as the one for laminar flow except we added a boundary layer thickness.
+       </s>
+       <s pid="24" sid="2">
+        We used a Re equal to 403,000 which was calculated using the average velocity of an Olympic swimmer using equation 1, where L is the diameter of the head.
+       </s>
+       <s pid="24" sid="3">
+        We made sure there was at least 10 grid points within the boundary layer when we doubled the mesh.
+       </s>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        Using the parameters in table 1 above, the tests were run in Fluent.
+       </s>
+       <s pid="25" sid="2">
+        The k-epsilon model under viscous model was used with the default model constants.
+       </s>
+       <s pid="25" sid="3">
+        Realizable and non-equilibrium wall functions were used because we found from Project 3 that using those options gave us the most accurate results.
+       </s>
+       <s pid="25" sid="4">
+        The residuals were changed to 1E-4 for all to increase the accuracy of our results.
+       </s>
+       <s pid="25" sid="5">
+        The boundary condition of the velocity inlet was set to 2.0408 m/s and the model was initialized with zero initial conditions.
+       </s>
+       <s pid="25" sid="6">
+        We ran the tests in Fluent using a Hydraulic Diameter of 0.1783 m which is the diameter of the swimmer’s head.
+       </s>
+       <s pid="25" sid="7">
+        We used 0.1% for the turbulence intensity.
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        Using equation 6, we found Cd for this model.
+       </s>
+       <s pid="26" sid="2">
+        Pressure drag accounts for 77.3% and viscous drag accounts for 22.7% of the total Cd. According to [1], the Cd is .08 for the Re that we ran it at, therefore, our results match fairly well with the reference.
+       </s>
+       <s pid="26" sid="3">
+        The velocity field, contour plot of pressure, and contour plot of streamlines are shown in figure 8, figure 9, and figure 10 respectively for Re equal to 403,000 for turbulent flow around the sphere.
+       </s>
+       <s pid="26" sid="4">
+        The amount of backflow and the Cd was greatly reduced from the laminar to the turbulent case for the sphere.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="27" sid="1">
+        Table 5: Force values for turbulent flow around sphere
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        Figure 8: Velocity field for Re=403,000 around the sphere in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        Figure 9: Contour plots of pressure for Re=403,000 around the sphere in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        Figure 10: Contour plots of streamlines for Re=403,000 around the sphere in the near weak region
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Body with Laminar Flow
+      </div>
+      <p>
+       <s pid="31" sid="1">
+        Shown in figure 11 below is the mesh used for the body in laminar flow.
+       </s>
+       <s pid="31" sid="2">
+        The same velocity used for the laminar sphere was used for the body with laminar flow.
+       </s>
+       <s pid="31" sid="3">
+        The total force, along with the breakdown of the pressure and viscous forces, and the calculated Cd is shown in table 6 below.
+       </s>
+       <s pid="31" sid="4">
+        Pressure drag accounts for 33.7% and viscous drag accounts for 65.6% of the total Cd. Our
+       </s>
+       <s pid="31" sid="5">
+        Cd for the body was similar to that of the sphere according to [1].
+       </s>
+       <s pid="31" sid="6">
+        The velocity field, contour plot of pressure, and contour plot of streamlines are shown in figure 12, figure 13, and figure 14 respectively for Re equal to 1584 for laminar flow around the body.
+       </s>
+       <s pid="31" sid="7">
+        One can see that backflow occurs in the near wake region for the body in laminar flow.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="32" sid="1">
+        Figure 11: Mesh for body to model human body for laminar flow
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        Table 6: Force values for laminar flow around body
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        Figure 12: Velocity field for Re=1584 around the body in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        Figure 13: Contour plots of pressure for Re=1584 around the body in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="36" sid="1">
+        Figure 14: Contour plots of streamlines for Re=1584 around the body in the near weak region
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Body with Turbulent Flow
+      </div>
+      <p>
+       <s pid="37" sid="1">
+        The total force, along with the breakdown of the pressure and viscous forces, and the calculated Cd is shown in table 7 below.
+       </s>
+       <s pid="37" sid="2">
+        Pressure drag accounts for 70.6% and viscous drag accounts for 29.4% of the total Cd.
+       </s>
+       <s pid="37" sid="3">
+        The velocity field, contour plot of pressure, and contour plot of streamlines are shown in figure 15, figure 16, and figure 17 respectively for Re equal to 403000 for turbulent flow around the body.
+       </s>
+       <s pid="37" sid="4">
+        When the flow is prematurely tripped into turbulence, the amount of backflow and Cd is greatly reduced as expected.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        Table 7: Force values for turbulent flow around body
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="39" sid="1">
+        Figure 15: Velocity field for Re=403,000 around the body in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        Figure 16: Contour plots of pressure for Re=403,000 around the body in the near weak region
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="41" sid="1">
+        Figure 17: Contour plots of streamlines for Re=403,000 around the body in the near weak region
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Recommendations and Conclusions
+      </div>
+      <p>
+       <s pid="42" sid="1">
+        In order to help reduce the drag, we would recommend that TYR try a few additional techniques.
+       </s>
+       <s pid="42" sid="2">
+        Similar to the trip wire causing the flow to switch from laminar to turbulent, we would also recommend that the suit becomes porous.
+       </s>
+       <s pid="42" sid="3">
+        By becoming porous, it would increase the surface roughness and enhance turbulence.
+       </s>
+       <s pid="42" sid="4">
+        In addition to this, having a porous material may enhance the wall suction/blowing while the swimmer is moving.
+       </s>
+       <s pid="42" sid="5">
+        As the fluid particles get close to the wall (the suit), they lose their kinetic energy near the separation point.
+       </s>
+       <s pid="42" sid="6">
+        By replacing these particles with ones with higher energy, either by sucking them into the suit and allowing those with high kinetic energy to move down, or by pushing higher energy particles out of the suit, turbulence can be tripped.
+       </s>
+       <s pid="42" sid="7">
+        Another suggestion would be to decrease the friction between the water and the swimsuit by making the surface slippery.
+       </s>
+       <s pid="42" sid="8">
+        This could be done by applying a slippery liquid to the suit by either having it rubbed on before a race, or by adding a chemical when washing the suit.
+       </s>
+      </p>
+      <p>
+       <s pid="43" sid="1">
+        Another suggestion would be to change the entire shape and thickness of the swimsuit.
+       </s>
+       <s pid="43" sid="2">
+        Looking at figures 13 and 16, one can see that the pressure around the swimmer's shoulders is relatively high.
+       </s>
+       <s pid="43" sid="3">
+        This is due to the fact that there is a sharp transition in shape from the swimmer's neck to their body.
+       </s>
+       <s pid="43" sid="4">
+        Separation arises from adverse pressure gradients.
+       </s>
+       <s pid="43" sid="5">
+        These must be removed or decreased if one wishes to decrease the drag coefficient.
+       </s>
+       <s pid="43" sid="6">
+        One way to decrease the drag coefficient and to decrease the pressure around the shoulders is to make the transition from the neck to the shoulders smoother.
+       </s>
+       <s pid="43" sid="7">
+        This can be done by using pads just above the shoulders or around the neck assuming it does not interfere with the motion of the swimmer.
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        In conclusion we found that our drag coefficient results for the sphere were similar to that of other studies [1].
+       </s>
+       <s pid="44" sid="2">
+        It followed the trend that by tripping the flow from laminar to turbulent, the overall drag coefficient could be reduced.
+       </s>
+       <s pid="44" sid="3">
+        There was a significant loss of separation in the backflow region behind the sphere in our results as well as those claimed by TYR [2], figure 18 below.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="45" sid="1">
+        Figure 18: TYR laminar and turbulent flow for sphere
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        TYR claims to be able to decrease their pressure drag by 18% [3].
+       </s>
+       <s pid="46" sid="2">
+        According to our results, an accurate conclusion based on this claim cannot be made.
+       </s>
+       <s pid="46" sid="3">
+        We feel the geometry of the body greatly influences the separation formation.
+       </s>
+       <s pid="46" sid="4">
+        This in turn will affect the pressure forces that are exerted on the body.
+       </s>
+       <s pid="46" sid="5">
+        We do feel however that the decrease in Cd from laminar to turbulent is significant enough to justify the suit.
+       </s>
+       <s pid="46" sid="6">
+        Also, this proves that our results are accurate, just not in the sense of pressure and viscous forces.
+       </s>
+       <s pid="46" sid="7">
+        As shown in figure 18 from TYR, the flow separation region is greatly reduced in the turbulent case; the same is true with our laminar and turbulent models, shown in figures 5 and 8 respectively.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N101D8">
+       <li id="N101D9">
+        [1] http://www.fen.bris.ac.uk/faculty/handbook/dragcurve.pdf
+       </li>
+       <li id="N101DB">
+        [2] http://TYR.com/science.php
+       </li>
+       <li id="N101DD">
+        [3] http://TYR.com/aquashift_overview.php
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

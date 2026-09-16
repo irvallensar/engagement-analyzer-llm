@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen,
+      </p>
+      <p>
+       I received your letter the other day,
+       <ns type="MC">
+       </ns>
+       I was very happy to find out that I
+       <ns type="TV">
+        <i>
+         won
+        </i>
+       </ns>
+       two weeks at Camp California. Well, to answer
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       your questions, I would prefer to attend
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       this camp during the month of July because it is the only time when I can
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         vacations
+        </i>
+       </ns>
+       .
+       <ns type="RA">
+        <i>
+         It
+        </i>
+       </ns>
+       is because I am an apprentice, so they
+       <ns type="W">
+        <i>
+         let me have my vacations only in July
+        </i>
+       </ns>
+       !!
+      </p>
+      <p>
+       Well,
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       at Camp California I would prefer staying in a tent. I think it is more fun sleeping in a tent than in a log cabin. It is more like
+       <ns type="MD">
+       </ns>
+       adventure being in a tent, and you are closer to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature, and the animals!
+      </p>
+      <p>
+       For
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       activities I think I will choose swimming because I love swimming and being in the water. And I am really good at it
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I used to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       <ns type="UQ">
+        <i>
+         some
+        </i>
+       </ns>
+       competitions when I was younger. And for the other
+       <ns type="MN">
+       </ns>
+       I will
+       <ns type="TV">
+        <i>
+         chose
+        </i>
+       </ns>
+       tennis
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I really enjoy this sport
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am not really a good player but I like to
+       <ns type="RV">
+        <i>
+         <ns type="DV">
+          <i>
+           practice
+          </i>
+         </ns>
+        </i>
+       </ns>
+       tennis
+       <ns type="RT">
+        <i>
+         during
+        </i>
+       </ns>
+       my free time! Since I'm coming
+       <ns type="RT">
+        <i>
+         during
+        </i>
+       </ns>
+       the month of July what kind of clothes should I take with me
+       <ns type="RP">
+        <i>
+         , and
+        </i>
+       </ns>
+       I have another question
+       <ns type="RP">
+        <i>
+         , it's
+        </i>
+       </ns>
+       about money. How much should I take? And is it better to have
+       <ns type="RN">
+        <i>
+         change
+        </i>
+       </ns>
+       or
+       <ns type="RN">
+        <i>
+         checks
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       Best
+       <ns type="RP">
+        <i>
+         Regards
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       Helen
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I received your letter the other day,  I was very happy to find out that I won two weeks at Camp California.
+       </s>
+       <s pid="2" sid="2">
+        Well, to answer to your questions, I would prefer to attend at this camp during the month of July because it is the only time when I can get vacations.
+       </s>
+       <s pid="2" sid="3">
+        It is because I am an apprentice, so they let me have my vacations only in July!!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Well, for the accomodation at Camp California I would prefer staying in a tent.
+       </s>
+       <s pid="3" sid="2">
+        I think it is more fun sleeping in a tent than in a log cabin.
+       </s>
+       <s pid="3" sid="3">
+        It is more like  adventure being in a tent, and you are closer to the nature, and the animals!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        For the activities I think I will choose swimming because I love swimming and being in the water.
+       </s>
+       <s pid="4" sid="2">
+        And I am really good at it, I used to do some competitions when I was younger.
+       </s>
+       <s pid="4" sid="3">
+        And for the other  I will chose tennis, I really enjoy this sport, I am not really a good player but I like to practice tennis during my free time!
+       </s>
+       <s pid="4" sid="4">
+        Since I'm coming during the month of July what kind of clothes should I take with me, and I have another question, it's about money.
+       </s>
+       <s pid="4" sid="5">
+        How much should I take?
+       </s>
+       <s pid="4" sid="6">
+        And is it better to have change or checks?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Best Regards,
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Helen
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+      </p>
+      <p>
+       Well this is
+       <ns type="DY">
+        <i>
+         abosolutly
+        </i>
+       </ns>
+       true,
+       <ns type="S">
+        <i>
+         espacially
+        </i>
+       </ns>
+       when you go shopping on Saturday. Everyone goes shopping on Saturday so the mall is always
+       <ns type="SX">
+        <i>
+         crowed
+        </i>
+       </ns>
+       , and most of the people are stressed
+       <ns type="RP">
+        <i>
+         , it's
+        </i>
+       </ns>
+       crazy. For
+       <ns type="S">
+        <i>
+         exemple
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       you go into a
+       <ns type="RN">
+        <i>
+         cloth
+        </i>
+       </ns>
+       shop, you see all those women running around trying to find the shirt that
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         fit
+        </i>
+       </ns>
+       their new skirt, so they are looking
+       <ns type="RP">
+        <i>
+         every where
+        </i>
+       </ns>
+       , pushing you because they think that you will take the shirt that they want. And then they have
+       <ns type="MA">
+       </ns>
+       and you have to wait to try on the pants or the skirt you
+       <ns type="TV">
+        <i>
+         choose
+        </i>
+       </ns>
+       . And you have to wait after
+       <ns type="MA">
+       </ns>
+       to buy it, so finally you
+       <ns type="TV">
+        <i>
+         waited
+        </i>
+       </ns>
+       so long that you
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           are getting
+          </i>
+         </ns>
+        </i>
+       </ns>
+       late, so you get stressed
+       <ns type="SX">
+        <i>
+         to
+        </i>
+       </ns>
+       . So it's really not enjoyable to go shopping. Plus
+       <ns type="MP">
+       </ns>
+       most of the time, you see all those mothers looking after their kids, and yelling their
+       <ns type="W">
+        <i>
+         name's kids
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         into
+        </i>
+       </ns>
+       the shopping mall because they
+       <ns type="TV">
+        <i>
+         lost
+        </i>
+       </ns>
+       them. So you
+       <ns type="TV">
+        <i>
+         are getting
+        </i>
+       </ns>
+       a headache because you hear the kids crying, the mothers yelling
+       <ns type="RP">
+        <i>
+         , if
+        </i>
+       </ns>
+       I can give you
+       <ns type="R">
+        <i>
+         an
+        </i>
+       </ns>
+       advice: DON'T GO SHOPPING ON SATURDAY!! You get headaches, you get stressed, and finally you get
+       <ns type="S">
+        <i>
+         bruses
+        </i>
+       </ns>
+       because of the woman
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       pushed you to get the pretty skirt before you!!!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Well this is abosolutly true, espacially when you go shopping on Saturday.
+       </s>
+       <s pid="2" sid="2">
+        Everyone goes shopping on Saturday so the mall is always crowed, and most of the people are stressed, it's crazy.
+       </s>
+       <s pid="2" sid="3">
+        For exemple you go into a cloth shop, you see all those women running around trying to find the shirt that would fit their new skirt, so they are looking every where, pushing you because they think that you will take the shirt that they want.
+       </s>
+       <s pid="2" sid="4">
+        And then they have  and you have to wait to try on the pants or the skirt you choose.
+       </s>
+       <s pid="2" sid="5">
+        And you have to wait after  to buy it, so finally you waited so long that you are getting late, so you get stressed to.
+       </s>
+       <s pid="2" sid="6">
+        So it's really not enjoyable to go shopping.
+       </s>
+       <s pid="2" sid="7">
+        Plus most of the time, you see all those mothers looking after their kids, and yelling their name's kids into the shopping mall because they lost them.
+       </s>
+       <s pid="2" sid="8">
+        So you are getting a headache because you hear the kids crying, the mothers yelling, if I can give you an advice: DON'T GO SHOPPING ON SATURDAY!!
+       </s>
+       <s pid="2" sid="9">
+        You get headaches, you get stressed, and finally you get bruses because of the woman that pushed you to get the pretty skirt before you!!!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

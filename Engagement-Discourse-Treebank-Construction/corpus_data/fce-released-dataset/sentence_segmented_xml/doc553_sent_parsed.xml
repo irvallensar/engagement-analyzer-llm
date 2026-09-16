@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     23.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr Robertson,
+      </p>
+      <p>
+       On behalf of our class I would like to give you some information about the London Fashion and Leisure show
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that we saw advertised and we are interested
+       <ns type="MT">
+       </ns>
+       <ns type="UY">
+        <i>
+         indeed
+        </i>
+       </ns>
+       . In addition we would like to thank you
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the programme.
+      </p>
+      <p>
+       Firstly, I would like to give you some details about this show. It will take place in
+       <ns type="MD">
+       </ns>
+       Central Exhibition Hall, in London, on Tuesday
+       <ns type="MD">
+       </ns>
+       14th of March and
+       <ns type="R">
+        the suitable time
+       </ns>
+       will be 10.00 - 19.00
+      </p>
+      <p>
+       I would like to mention that
+       <ns type="MT">
+       </ns>
+       this day we are going to visit the Science Museum in the morning and after we are going
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       shopping, so I believe it will be a good
+       <ns type="RN">
+        <i>
+         change
+        </i>
+       </ns>
+       for all of us to attend this show as it is free for students! The most important thing is that the time that the show starts is perfect and is
+       <ns type="RJ">
+        <i>
+         suitable
+        </i>
+       </ns>
+       as well with our programme because
+       <ns type="RT">
+        <i>
+         until
+        </i>
+       </ns>
+       19:00 I think that everyone will have finished their shopping.
+      </p>
+      <p>
+       Secondly, I would like to give you more details about the show and particularly
+       <ns type="MT">
+       </ns>
+       what
+       <ns type="UV">
+        <i>
+         does
+        </i>
+       </ns>
+       it
+       <ns type="AGV">
+        <i>
+         include
+        </i>
+       </ns>
+       . The latest
+       <ns type="FN">
+        <i>
+         fashion
+        </i>
+       </ns>
+       will be on show and also the Leisure and sports wear. Really interesting! Moreover
+       <ns type="R">
+        all about the make up and the hairstyles
+       </ns>
+       . I think that
+       <ns type="AS">
+        <i>
+         it will be a great opportunity to all of us to be on this show
+        </i>
+       </ns>
+       while we are
+       <ns type="UV">
+        <i>
+         going to be
+        </i>
+       </ns>
+       in London. But
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       if there is a problem
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       the show is on Tuesday afternoon, the same
+       <ns type="RN">
+        <i>
+         hour
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="M">
+        <i>
+         shopping
+        </i>
+       </ns>
+       , I suggest
+       <ns type="RV">
+        <i>
+         having
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       shopping on Wednesday afternoon
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       we will not have anything to do!
+      </p>
+      <p>
+       I look forward to your reply,
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr Robertson,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        On behalf of our class I would like to give you some information about the London Fashion and Leisure show, that we saw advertised and we are interested  indeed.
+       </s>
+       <s pid="2" sid="2">
+        In addition we would like to thank you about the programme.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I would like to give you some details about this show.
+       </s>
+       <s pid="3" sid="2">
+        It will take place in  Central Exhibition Hall, in London, on Tuesday  14th of March and the suitable time will be 10.00 - 19.00
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to mention that  this day we are going to visit the Science Museum in the morning and after we are going for shopping, so I believe it will be a good change for all of us to attend this show as it is free for students!
+       </s>
+       <s pid="4" sid="2">
+        The most important thing is that the time that the show starts is perfect and is suitable as well with our programme because until 19:00 I think that everyone will have finished their shopping.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, I would like to give you more details about the show and particularly  what does it include.
+       </s>
+       <s pid="5" sid="2">
+        The latest fashion will be on show and also the Leisure and sports wear.
+       </s>
+       <s pid="5" sid="3">
+        Really interesting!
+       </s>
+       <s pid="5" sid="4">
+        Moreover all about the make up and the hairstyles.
+       </s>
+       <s pid="5" sid="5">
+        I think that it will be a great opportunity to all of us to be on this show while we are going to be in London.
+       </s>
+       <s pid="5" sid="6">
+        But, if there is a problem that the show is on Tuesday afternoon, the same hour with shopping, I suggest having the shopping on Wednesday afternoon that we will not have anything to do!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I look forward to your reply,
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Some people think that
+       <ns type="FV">
+        <i>
+         to be
+        </i>
+       </ns>
+       a famous person is
+       <ns type="MD">
+       </ns>
+       very
+       <ns type="S">
+        <i>
+         excuiting
+        </i>
+       </ns>
+       thing, that all the time this makes you feel
+       <ns type="DJ">
+        <i>
+         completely
+        </i>
+       </ns>
+       and also they think that if you are famous you are special as well.
+      </p>
+      <p>
+       I believe
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that if somebody wants
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       fame and
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       glory
+       <ns type="MA">
+       </ns>
+       must be
+       <ns type="S">
+        <i>
+         tottally
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         sure
+        </i>
+       </ns>
+       about the results. For example,
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       politicians
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       have
+       <ns type="IV">
+        <i>
+         choosed
+        </i>
+       </ns>
+       their careers
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       they must know that
+       <ns type="R">
+        they are going to involved with everything that it has to do with publicity and their country
+       </ns>
+       and the most important
+       <ns type="MN">
+       </ns>
+       is that they have to realize that they should be extremely careful
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       their movements or else they are going to have
+       <ns type="MD">
+       </ns>
+       bad reputation, and they will
+       <ns type="W">
+        <i>
+         be not
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       trustworthy.
+      </p>
+      <p>
+       <ns type="R">
+        Another
+        <ns type="S">
+         <i>
+          succesfull
+         </i>
+        </ns>
+        <ns type="S">
+         <i>
+          carreer
+         </i>
+        </ns>
+        such as, film stars must also be balanced
+       </ns>
+       . If somebody is a film star this
+       <ns type="AGV">
+        <i>
+         mean
+        </i>
+       </ns>
+       that
+       <ns type="MA">
+       </ns>
+       has got a different kind of life,
+       <ns type="MD">
+       </ns>
+       more comfortable, more interesting
+       <ns type="MN">
+       </ns>
+       but it doesn't mean that he or she can't be like normal people even if he or she is a star.
+      </p>
+      <p>
+       If somebody wants to be famous of
+       <ns type="S">
+        <i>
+         cource
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       must be
+       <ns type="DJ">
+        on the top
+       </ns>
+       and the mass media will be following him or her. But I think that
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       are limits. Everybody
+       <ns type="AGV">
+        <i>
+         deserve
+        </i>
+       </ns>
+       to have a private life even if he is a plumber or even if she is a famous singer. It doesn't matter what kind of
+       <ns type="S">
+        <i>
+         carreer
+        </i>
+       </ns>
+       or job you
+       <ns type="RV">
+        <i>
+         are
+         <ns type="FV">
+          <i>
+           follow
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . You must control your behaviour and try not
+       <ns type="FV">
+        <ns type="DV">
+         implove
+        </ns>
+       </ns>
+       so much yourself. And finally the journalists
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       should know how to respect the private
+       <ns type="FN">
+        <i>
+         life
+        </i>
+       </ns>
+       of everyone and not
+       <ns type="FV">
+        <i>
+         trying
+        </i>
+       </ns>
+       to make money
+       <ns type="U">
+        <i>
+         for a living
+        </i>
+       </ns>
+       by using the reputation of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       famous people.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Some people think that to be a famous person is  very excuiting thing, that all the time this makes you feel completely and also they think that if you are famous you are special as well.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I believe, that if somebody wants the fame and the glory  must be tottally sure about the results.
+       </s>
+       <s pid="2" sid="2">
+        For example, the politicians the have choosed their careers, they must know that they are going to involved with everything that it has to do with publicity and their country and the most important  is that they have to realize that they should be extremely careful of their movements or else they are going to have  bad reputation, and they will be not  trustworthy.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Another succesfull carreer such as, film stars must also be balanced.
+       </s>
+       <s pid="3" sid="2">
+        If somebody is a film star this mean that  has got a different kind of life,  more comfortable, more interesting  but it doesn't mean that he or she can't be like normal people even if he or she is a star.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        If somebody wants to be famous of cource  must be on the top and the mass media will be following him or her.
+       </s>
+       <s pid="4" sid="2">
+        But I think that the are limits.
+       </s>
+       <s pid="4" sid="3">
+        Everybody deserve to have a private life even if he is a plumber or even if she is a famous singer.
+       </s>
+       <s pid="4" sid="4">
+        It doesn't matter what kind of carreer or job you are follow.
+       </s>
+       <s pid="4" sid="5">
+        You must control your behaviour and try not implove so much yourself.
+       </s>
+       <s pid="4" sid="6">
+        And finally the journalists the should know how to respect the private life of everyone and not trying to make money for a living by using the reputation of the famous people.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     34.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs. Smith,
+      </p>
+      <p>
+       In reply to your letter, I would like to answer your questions and give you more information.
+      </p>
+      <p>
+       Firstly, the hotel in which the group is going to stay is
+       <ns type="MD">
+       </ns>
+       'Palace Hotel'. Secondly, the easiest way to travel from the hotel to the conference is by a local bus. There is a bus stop in front of the hotel and
+       <ns type="MD">
+       </ns>
+       no.31 or 3 will take you directly to the conference. Thirdly, the end-of-conference party
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       be a small disco, with a variety of drinks and food provided. Therefore, you
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       wear something quite casual.
+      </p>
+      <p>
+       Lastly, on the last day, I would suggest you
+       <ns type="FV">
+        <i>
+         to visit
+        </i>
+       </ns>
+       the Edinburgh Castle and the National Scottish Museum, as both of them are very interesting and have
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       student discount.
+      </p>
+      <p>
+       I hope this letter
+       <ns type="RV">
+        <i>
+         should
+        </i>
+       </ns>
+       help you with enough information.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs. Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In reply to your letter, I would like to answer your questions and give you more information.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, the hotel in which the group is going to stay is  'Palace Hotel'.
+       </s>
+       <s pid="3" sid="2">
+        Secondly, the easiest way to travel from the hotel to the conference is by a local bus.
+       </s>
+       <s pid="3" sid="3">
+        There is a bus stop in front of the hotel and  no.31 or 3 will take you directly to the conference.
+       </s>
+       <s pid="3" sid="4">
+        Thirdly, the end-of-conference party would be a small disco, with a variety of drinks and food provided.
+       </s>
+       <s pid="3" sid="5">
+        Therefore, you could wear something quite casual.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Lastly, on the last day, I would suggest you to visit the Edinburgh Castle and the National Scottish Museum, as both of them are very interesting and have the student discount.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope this letter should help you with enough information.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Could modern people live without a light bulb? Well, I don't think so.
+       <ns type="MD">
+        <i>
+         Only
+        </i>
+       </ns>
+       people who could live without
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         must
+        </i>
+       </ns>
+       be extremely weird or
+       <ns type="UA">
+        <i>
+         somebody
+        </i>
+       </ns>
+       in a very difficult situation!
+      </p>
+      <p>
+       We are nearly always surrounded by
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       'man-made' light. With it, we read, study, walk, and so on. In the past people relied on the sunlight, moonlight and the light from fire. These were, however, very unreliable when the weather was bad and when the fuel ran out. They had to read, study and walk in the dark. Today, this kind of thing hardly
+       <ns type="MY">
+       </ns>
+       happens! Well, unless there
+       <ns type="X">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         anything
+        </i>
+       </ns>
+       wrong with the power supply.
+      </p>
+      <p>
+       I remember when I was about 5, I visited a museum with my family. While I was in
+       <ns type="MD">
+       </ns>
+       toilet, all the
+       <ns type="AGN">
+        <i>
+         light
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         was turned
+        </i>
+       </ns>
+       off! I screamed and cried since I'd never experienced being in
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       complete darkness before. When the light was turned on again, I realised how important even a single light bulb
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       be, and I was sure I
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       never, ever live without
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Could modern people live without a light bulb?
+       </s>
+       <s pid="1" sid="2">
+        Well, I don't think so.
+       </s>
+       <s pid="1" sid="3">
+        Only people who could live without it, must be extremely weird or somebody in a very difficult situation!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        We are nearly always surrounded by the 'man-made' light.
+       </s>
+       <s pid="2" sid="2">
+        With it, we read, study, walk, and so on.
+       </s>
+       <s pid="2" sid="3">
+        In the past people relied on the sunlight, moonlight and the light from fire.
+       </s>
+       <s pid="2" sid="4">
+        These were, however, very unreliable when the weather was bad and when the fuel ran out.
+       </s>
+       <s pid="2" sid="5">
+        They had to read, study and walk in the dark.
+       </s>
+       <s pid="2" sid="6">
+        Today, this kind of thing hardly  happens!
+       </s>
+       <s pid="2" sid="7">
+        Well, unless there wasn't anything wrong with the power supply.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I remember when I was about 5, I visited a museum with my family.
+       </s>
+       <s pid="3" sid="2">
+        While I was in  toilet, all the light was turned off!
+       </s>
+       <s pid="3" sid="3">
+        I screamed and cried since I'd never experienced being in a complete darkness before.
+       </s>
+       <s pid="3" sid="4">
+        When the light was turned on again, I realised how important even a single light bulb would be, and I was sure I can never, ever live without it.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

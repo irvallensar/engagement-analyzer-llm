@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam:
+      </p>
+      <p>
+       Thank you for telling me that I have won the first prize and now I am writing to
+       <ns type="RV">
+        <i>
+         tell
+        </i>
+       </ns>
+       you the information you have requested.
+      </p>
+      <p>
+       First of all, I think I would like to travel in July, which will be the only month
+       <ns type="R">
+        <i>
+         for me
+        </i>
+       </ns>
+       to go
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       my course won't finish until the end of June, and I will have to stay in the college to get ready for the new term.
+      </p>
+      <p>
+       Then I'd like to choose the tents for my accommodation when at Camp California. I think sleeping in a tent is
+       <ns type="RJ">
+        <i>
+         funnier
+        </i>
+       </ns>
+       than
+       <ns type="IQ">
+        <i>
+         others
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       .
+       <ns type="RY">
+        <i>
+         However
+        </i>
+       </ns>
+       , during my stay at Camp, there are two activities I can choose
+       <ns type="RP">
+        <i>
+         ,
+         <ns type="MT">
+         </ns>
+        </i>
+       </ns>
+       one of them I will choose Basketball because it is the sport I play most
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I and my friend used to win the first
+       <ns type="RN">
+        place
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       <ns type="DJ">
+        school-wide
+       </ns>
+       match when we
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       school. And
+       <ns type="MT">
+       </ns>
+       the other one, I think painting will be a good idea;
+       <ns type="RP">
+        <i>
+         Painting
+        </i>
+       </ns>
+       is one of my hobbies and I've been
+       <ns type="RV">
+        <i>
+         learning
+        </i>
+       </ns>
+       it since I was 5 years old and now I'm still doing it
+       <ns type="R">
+        <i>
+         once
+        </i>
+       </ns>
+       I have
+       <ns type="MQ">
+       </ns>
+       free time.
+      </p>
+      <p>
+       Above
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       all the information you asked
+       <ns type="MT">
+       </ns>
+       <ns type="RP">
+        <i>
+         , however
+        </i>
+       </ns>
+       ,
+       <ns type="RA">
+        <i>
+         here
+        </i>
+       </ns>
+       are
+       <ns type="AGN">
+        <i>
+         <ns type="RP">
+          <i>
+           something
+          </i>
+         </ns>
+        </i>
+       </ns>
+       I'd like to know;
+       <ns type="MD">
+       </ns>
+       first is about the clothes
+       <ns type="RP">
+        <i>
+         , what
+        </i>
+       </ns>
+       kind of clothes
+       <ns type="MV">
+       </ns>
+       I need to take with
+       <ns type="MA">
+       </ns>
+       ? And another question is what
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       the prices of things like
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       there,
+       <ns type="M">
+       </ns>
+       so that I can make a better
+       <ns type="S">
+        <i>
+         buget
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       my trip.
+      </p>
+      <p>
+       <ns type="MA">
+        <i>
+         Look
+        </i>
+       </ns>
+       forward to hearing from you.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for telling me that I have won the first prize and now I am writing to tell you the information you have requested.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I think I would like to travel in July, which will be the only month for me to go.
+       </s>
+       <s pid="3" sid="2">
+        Because my course won't finish until the end of June, and I will have to stay in the college to get ready for the new term.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Then I'd like to choose the tents for my accommodation when at Camp California.
+       </s>
+       <s pid="4" sid="2">
+        I think sleeping in a tent is funnier than others .
+       </s>
+       <s pid="4" sid="3">
+        However, during my stay at Camp, there are two activities I can choose,  one of them I will choose Basketball because it is the sport I play most, I and my friend used to win the first place in  school-wide match when we was in school.
+       </s>
+       <s pid="4" sid="4">
+        And  the other one, I think painting will be a good idea; Painting is one of my hobbies and I've been learning it since I was 5 years old and now I'm still doing it once I have  free time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Above are all the information you asked , however, here are something I'd like to know;  first is about the clothes, what kind of clothes  I need to take with ?
+       </s>
+       <s pid="5" sid="2">
+        And another question is what is the prices of things like in there,  so that I can make a better buget of my trip.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim:
+      </p>
+      <p>
+       Thanks for your last letter; I knew you would
+       <ns type="MV">
+       </ns>
+       interested
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       my experience of helping
+       <ns type="MT">
+       </ns>
+       the pop concert
+       <ns type="R">
+        last time
+       </ns>
+       <ns type="RP">
+        <i>
+         , now
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         tell
+        </i>
+       </ns>
+       you about it.
+      </p>
+      <p>
+       The place
+       <ns type="MY">
+       </ns>
+       we worked was a football pitch; we spent 3 days
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       setting up the stage, the
+       <ns type="S">
+        <i>
+         equitment
+        </i>
+       </ns>
+       , and the lights. In fact, there
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       nothing very important I did, because we
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       not the right people to do it. I only put the speakers in the right places, or
+       <ns type="TV">
+        <i>
+         helping
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         engieners
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         tested
+        </i>
+       </ns>
+       the lights.
+      </p>
+      <p>
+       But
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         brakes
+        </i>
+       </ns>
+       and after work, I had a chance to talk with the
+       <ns type="S">
+        <i>
+         engieners
+        </i>
+       </ns>
+       , and I
+       <ns type="RV">
+        <i>
+         leant
+        </i>
+       </ns>
+       something about setting up the
+       <ns type="S">
+        <i>
+         equitment
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The fourth day, the singers and the
+       <ns type="RN">
+        <i>
+         players
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         have been
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       there to
+       <ns type="RV">
+        test
+       </ns>
+       . Then I had a chance to speak with them. From that, I learnt more about
+       <ns type="MD">
+       </ns>
+       instruments.
+      </p>
+      <p>
+       Finally, the
+       <ns type="RN">
+        <i>
+         date
+        </i>
+       </ns>
+       of
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         concer
+        </i>
+       </ns>
+       came. After the
+       <ns type="S">
+        <i>
+         concer
+        </i>
+       </ns>
+       finished successfully, I was happier than ever because the
+       <ns type="DN">
+        <i>
+         succeed
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         inclueded
+        </i>
+       </ns>
+       my work and that was the most enjoyable moment in my life.
+      </p>
+      <p>
+       Anyway, now I have to stop to finish my homework. I'm looking forward to receiving your letter again.
+      </p>
+      <p>
+       Best wishes.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thanks for your last letter; I knew you would  interested at my experience of helping  the pop concert last time, now I tell you about it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The place  we worked was a football pitch; we spent 3 days on setting up the stage, the equitment, and the lights.
+       </s>
+       <s pid="3" sid="2">
+        In fact, there is nothing very important I did, because we are not the right people to do it.
+       </s>
+       <s pid="3" sid="3">
+        I only put the speakers in the right places, or helping  engieners tested the lights.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        But at the brakes and after work, I had a chance to talk with the engieners, and I leant something about setting up the equitment.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The fourth day, the singers and the players have been to there to test.
+       </s>
+       <s pid="5" sid="2">
+        Then I had a chance to speak with them.
+       </s>
+       <s pid="5" sid="3">
+        From that, I learnt more about  instruments.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Finally, the date of  concer came.
+       </s>
+       <s pid="6" sid="2">
+        After the concer finished successfully, I was happier than ever because the succeed inclueded my work and that was the most enjoyable moment in my life.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Anyway, now I have to stop to finish my homework.
+       </s>
+       <s pid="7" sid="2">
+        I'm looking forward to receiving your letter again.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Best wishes.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

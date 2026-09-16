@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Dutch
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Helen Ryan,
+      </p>
+      <p>
+       I am writing to you to give you some further information about the competition I won. I am very pleased that I won your competition.
+      </p>
+      <p>
+       First of all I would like to travel in July because I
+       <ns type="TV">
+        <i>
+         already made
+        </i>
+       </ns>
+       an arrangement with my boss about my free days.
+      </p>
+      <p>
+       I would prefer to sleep in
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       log cabin. I am not
+       <ns type="SX">
+        <i>
+         just
+        </i>
+       </ns>
+       to sleeping in
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       tent and I think it
+       <ns type="RV">
+        <i>
+         <ns type="SX">
+          <i>
+           <ns type="S">
+            <i>
+             mabey
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         ruen
+        </i>
+       </ns>
+       my holiday. I hope it's possible to sleep in a log cabin but if it's not, you can also put me in
+       <ns type="FD">
+        <i>
+         an
+        </i>
+       </ns>
+       tent.
+      </p>
+      <p>
+       The two activities I would like to choose are
+       <ns type="UP">
+        <i>
+         :
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Photography
+        </i>
+       </ns>
+       and
+       <ns type="RP">
+        <i>
+         Surfing
+        </i>
+       </ns>
+       .
+       <ns type="W">
+        <i>
+         Photography I never
+         <ns type="DY">
+          <i>
+           realy
+          </i>
+         </ns>
+         <ns type="RV">
+          <i>
+           took
+          </i>
+         </ns>
+         <ns type="MQ">
+         </ns>
+         <ns type="S">
+          <i>
+           pratice
+          </i>
+         </ns>
+         in
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , yes
+        </i>
+       </ns>
+       I have
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       some holiday pictures but I would like to learn more about this. So I am not very good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Photography
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Surfing is my passion. I live
+       <ns type="RJ">
+        <i>
+         nearby
+        </i>
+       </ns>
+       a beach and whenever I have the time I
+       <ns type="SX">
+        <i>
+         grape
+        </i>
+       </ns>
+       my
+       <ns type="S">
+        <i>
+         bord
+        </i>
+       </ns>
+       and go surfing. I would like to have a surfing contest with other surfing nerds, if it's possible. I would like to know if I have to bring my own wetsuit for surfing and how much money do you think I need?
+      </p>
+      <p>
+       I am
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       looking forward to this holiday. I hope I have
+       <ns type="RV">
+        <i>
+         informed
+        </i>
+       </ns>
+       you enough.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to you to give you some further information about the competition I won.
+       </s>
+       <s pid="2" sid="2">
+        I am very pleased that I won your competition.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all I would like to travel in July because I already made an arrangement with my boss about my free days.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would prefer to sleep in an log cabin.
+       </s>
+       <s pid="4" sid="2">
+        I am not just to sleeping in an tent and I think it mabey ruen my holiday.
+       </s>
+       <s pid="4" sid="3">
+        I hope it's possible to sleep in a log cabin but if it's not, you can also put me in an tent.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The two activities I would like to choose are: Photography and Surfing.
+       </s>
+       <s pid="5" sid="2">
+        Photography I never realy took  pratice in, yes I have made some holiday pictures but I would like to learn more about this.
+       </s>
+       <s pid="5" sid="3">
+        So I am not very good in Photography.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Surfing is my passion.
+       </s>
+       <s pid="6" sid="2">
+        I live nearby a beach and whenever I have the time I grape my bord and go surfing.
+       </s>
+       <s pid="6" sid="3">
+        I would like to have a surfing contest with other surfing nerds, if it's possible.
+       </s>
+       <s pid="6" sid="4">
+        I would like to know if I have to bring my own wetsuit for surfing and how much money do you think I need?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am realy looking forward to this holiday.
+       </s>
+       <s pid="7" sid="2">
+        I hope I have informed you enough.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       How are you? I'm doing great
+       <ns type="UY">
+        <i>
+         <ns type="S">
+          <i>
+           esspecially
+          </i>
+         </ns>
+        </i>
+       </ns>
+       after my experience
+       <ns type="UT">
+        <i>
+         with
+        </i>
+       </ns>
+       helping at
+       <ns type="MD">
+       </ns>
+       pop concert. It was fantastic. You also would have liked
+       <ns type="MA">
+       </ns>
+       very much.
+      </p>
+      <p>
+       I had to help
+       <ns type="CN">
+        <i>
+         <ns type="RP">
+          <i>
+           back stages
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . I had to
+       <ns type="RV">
+        <i>
+         take care of
+        </i>
+       </ns>
+       that every artist went in the right dressing room and not in someone
+       <ns type="MP">
+        <i>
+         elses
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Every artist could scream at me whenever they wanted. The
+       <ns type="RJ">
+        <ns type="DJ">
+         <i>
+          realy
+         </i>
+        </ns>
+       </ns>
+       thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on
+       <ns type="FN">
+        <i>
+         stages
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         . What
+        </i>
+       </ns>
+       kind of clothes they
+       <ns type="RV">
+        <i>
+         shoot
+        </i>
+       </ns>
+       wear. I also had to give them drinks and food and help them to relax whenever they were nervous.
+      </p>
+      <p>
+       The thing I
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       liked
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       was helping the artists and talking to them.
+       <ns type="RY">
+        <ns type="S">
+         <i>
+          Oke
+         </i>
+        </ns>
+       </ns>
+       , they screamed at me all the time because they were nervous and excited about their concert.
+      </p>
+      <p>
+       Afterwards they
+       <ns type="TV">
+        <i>
+         talk
+        </i>
+       </ns>
+       to me and
+       <ns type="TV">
+        <i>
+         thanking
+        </i>
+       </ns>
+       me for helping them in those exciting moments. I
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       got to know them after the concert. They also took me to
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         after hour
+        </i>
+       </ns>
+       party and they asked me if
+       <ns type="MA">
+       </ns>
+       would like to do this again. And of course I immediately said
+       <ns type="RP">
+        <i>
+         Yes
+        </i>
+       </ns>
+       !!
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Mabey
+        </i>
+       </ns>
+       next time you can come with me
+       <ns type="MP">
+        <i>
+         that
+        </i>
+       </ns>
+       would be a lot of fun.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         The
+        </i>
+       </ns>
+       will call me next week, so I
+       <ns type="TV">
+        <i>
+         write
+        </i>
+       </ns>
+       when I
+       <ns type="TV">
+        <i>
+         talk
+        </i>
+       </ns>
+       to them.
+      </p>
+      <p>
+       Talk to you soon.
+      </p>
+      <p>
+       love
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        How are you?
+       </s>
+       <s pid="2" sid="2">
+        I'm doing great esspecially after my experience with helping at  pop concert.
+       </s>
+       <s pid="2" sid="3">
+        It was fantastic.
+       </s>
+       <s pid="2" sid="4">
+        You also would have liked  very much.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I had to help back stages.
+       </s>
+       <s pid="3" sid="2">
+        I had to take care of that every artist went in the right dressing room and not in someone elses.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Every artist could scream at me whenever they wanted.
+       </s>
+       <s pid="4" sid="2">
+        The realy thing was that I had to look after them because without me they would have been lost.
+       </s>
+       <s pid="4" sid="3">
+        That was a good feeling for me.
+       </s>
+       <s pid="4" sid="4">
+        I had to tell them when they had to go on stages.
+       </s>
+       <s pid="4" sid="5">
+        What kind of clothes they shoot wear.
+       </s>
+       <s pid="4" sid="6">
+        I also had to give them drinks and food and help them to relax whenever they were nervous.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The thing I realy liked, was helping the artists and talking to them.
+       </s>
+       <s pid="5" sid="2">
+        Oke, they screamed at me all the time because they were nervous and excited about their concert.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Afterwards they talk to me and thanking me for helping them in those exciting moments.
+       </s>
+       <s pid="6" sid="2">
+        I realy got to know them after the concert.
+       </s>
+       <s pid="6" sid="3">
+        They also took me to a after hour party and they asked me if  would like to do this again.
+       </s>
+       <s pid="6" sid="4">
+        And of course I immediately said Yes!!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Mabey next time you can come with me that would be a lot of fun.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        The will call me next week, so I write when I talk to them.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Talk to you soon.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        love
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

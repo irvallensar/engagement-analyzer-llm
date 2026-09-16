@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Turkish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I saw your advertisement yesterday. I have visited the
+       <ns type="RP">
+        <i>
+         circle theatre
+        </i>
+       </ns>
+       . I would like to say that I am not satisfied
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       it.
+      </p>
+      <p>
+       First of all, there were
+       <ns type="UQ">
+        <i>
+         any
+        </i>
+       </ns>
+       different
+       <ns type="AGN">
+        <i>
+         actor
+        </i>
+       </ns>
+       . I was disappointed. The other point is that the organization was very bad. For example, it
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       said the show
+       <ns type="TV">
+        <i>
+         starts
+        </i>
+       </ns>
+       at 19.30 but it started at 20:15. I
+       <ns type="TV">
+        <i>
+         have waited
+        </i>
+       </ns>
+       around one hour. Now I have a cold because it was so cold
+       <ns type="MD">
+       </ns>
+       evening. Thirdly, I would like to enquire
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       about the tickets. Firstly, twenty pounds
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       a lot of money for such a
+       <ns type="RN">
+        organization
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="ID">
+        <i>
+         on the other hand
+        </i>
+       </ns>
+       it
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       said that
+       <ns type="MD">
+       </ns>
+       discount
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       available. It
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         false
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         have paid
+        </i>
+       </ns>
+       twenty pounds.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         What other
+        </i>
+       </ns>
+       I would like
+       <ns type="FV">
+        <i>
+         ask
+        </i>
+       </ns>
+       is
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       why it is said this is
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       London's newest and best musical show. I can
+       <ns type="RV">
+        <i>
+         mention
+        </i>
+       </ns>
+       it is the worst musical show. And I was invited to visit the theatre restaurant after the show. But it was closed because there
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       not anything to drink or to eat. Finally it was not the perfect evening out.
+      </p>
+      <p>
+       In conclusion, I really did not like it. I want to ask if it is possible to give me
+       <ns type="MD">
+       </ns>
+       money back.
+      </p>
+      <p>
+       I look forward to your letter.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I saw your advertisement yesterday.
+       </s>
+       <s pid="2" sid="2">
+        I have visited the circle theatre.
+       </s>
+       <s pid="2" sid="3">
+        I would like to say that I am not satisfied of it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, there were any different actor.
+       </s>
+       <s pid="3" sid="2">
+        I was disappointed.
+       </s>
+       <s pid="3" sid="3">
+        The other point is that the organization was very bad.
+       </s>
+       <s pid="3" sid="4">
+        For example, it is said the show starts at 19.30 but it started at 20:15.
+       </s>
+       <s pid="3" sid="5">
+        I have waited around one hour.
+       </s>
+       <s pid="3" sid="6">
+        Now I have a cold because it was so cold  evening.
+       </s>
+       <s pid="3" sid="7">
+        Thirdly, I would like to enquire is about the tickets.
+       </s>
+       <s pid="3" sid="8">
+        Firstly, twenty pounds are a lot of money for such a organization, on the other hand it is said that  discount is available.
+       </s>
+       <s pid="3" sid="9">
+        It is false, I have paid twenty pounds.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        What other I would like ask is that why it is said this is the London's newest and best musical show.
+       </s>
+       <s pid="4" sid="2">
+        I can mention it is the worst musical show.
+       </s>
+       <s pid="4" sid="3">
+        And I was invited to visit the theatre restaurant after the show.
+       </s>
+       <s pid="4" sid="4">
+        But it was closed because there were not anything to drink or to eat.
+       </s>
+       <s pid="4" sid="5">
+        Finally it was not the perfect evening out.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In conclusion, I really did not like it.
+       </s>
+       <s pid="5" sid="2">
+        I want to ask if it is possible to give me  money back.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I look forward to your letter.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Modern technology has changed my daily life very much. At
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       present,
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       technology develops rapidly. In my opinion,
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         World
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       do without it.
+      </p>
+      <p>
+       Firstly, I would like to mention
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       that in our daily life we always use some technological
+       <ns type="RN">
+        <i>
+         machines
+        </i>
+       </ns>
+       . For instance,
+       <ns type="MD">
+       </ns>
+       TV-set, stereo, microwave oven and others. Another point is that with the help of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       technology we can communicate with the whole world. Without doubt,
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         discovering
+        </i>
+       </ns>
+       of the computer is the most important technological event. It is very useful. Almost everything is
+       <ns type="RJ">
+        <i>
+         connected to
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       computers
+       <ns type="RP">
+        <i>
+         . For
+        </i>
+       </ns>
+       example, education,
+       <ns type="RN">
+        <i>
+         researching
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         Universe
+        </i>
+       </ns>
+       and
+       <ns type="R">
+        <i>
+         others
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Another thing I would like to say is that modern technology
+       <ns type="AGV">
+        <i>
+         help
+        </i>
+       </ns>
+       us to
+       <ns type="RV">
+        <i>
+         go
+        </i>
+       </ns>
+       anywhere
+       <ns type="M">
+       </ns>
+       rapidly. The most
+       <ns type="R">
+        suitable examples
+       </ns>
+       are
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       planes.
+       <ns type="R">
+        <i>
+         What
+        </i>
+       </ns>
+       other
+       <ns type="MN">
+       </ns>
+       I would like to mention
+       <ns type="MT">
+       </ns>
+       how important
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       modern technology is
+       <ns type="M">
+       </ns>
+       <ns type="UP">
+        <i>
+         . We
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         research
+        </i>
+       </ns>
+       our
+       <ns type="RN">
+        <i>
+         plant
+        </i>
+       </ns>
+       , other planets and many other things with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         help of it
+        </i>
+       </ns>
+       . Finally I think that at
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       present
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       life is more comfortable
+       <ns type="M">
+       </ns>
+       .
+      </p>
+      <p>
+       In my opinion, no one can do without modern technology. It
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           go
+          </i>
+         </ns>
+         on
+        </i>
+       </ns>
+       to develop and always will be the most
+       <ns type="S">
+        <i>
+         importand
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         think
+        </i>
+       </ns>
+       in our life.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Modern technology has changed my daily life very much.
+       </s>
+       <s pid="1" sid="2">
+        At the present, the technology develops rapidly.
+       </s>
+       <s pid="1" sid="3">
+        In my opinion,  World can not do without it.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Firstly, I would like to mention is that in our daily life we always use some technological machines.
+       </s>
+       <s pid="2" sid="2">
+        For instance,  TV-set, stereo, microwave oven and others.
+       </s>
+       <s pid="2" sid="3">
+        Another point is that with the help of the technology we can communicate with the whole world.
+       </s>
+       <s pid="2" sid="4">
+        Without doubt,  discovering of the computer is the most important technological event.
+       </s>
+       <s pid="2" sid="5">
+        It is very useful.
+       </s>
+       <s pid="2" sid="6">
+        Almost everything is connected to the computers.
+       </s>
+       <s pid="2" sid="7">
+        For example, education, researching of the Universe and others.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Another thing I would like to say is that modern technology help us to go anywhere  rapidly.
+       </s>
+       <s pid="3" sid="2">
+        The most suitable examples are the planes.
+       </s>
+       <s pid="3" sid="3">
+        What other  I would like to mention  how important the modern technology is .
+       </s>
+       <s pid="3" sid="4">
+        We research our plant, other planets and many other things with the help of it.
+       </s>
+       <s pid="3" sid="5">
+        Finally I think that at the present the life is more comfortable .
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In my opinion, no one can do without modern technology.
+       </s>
+       <s pid="4" sid="2">
+        It go on to develop and always will be the most importand think in our life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

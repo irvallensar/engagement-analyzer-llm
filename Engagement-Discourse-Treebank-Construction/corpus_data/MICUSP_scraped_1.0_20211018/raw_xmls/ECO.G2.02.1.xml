@@ -1,0 +1,467 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    EVASION TECHNOLOGIES AND OPTIMAL AUDITS
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1. Introduction
+    </div>
+    <p>
+     The potential for tax evasion poses a difficult problem for tax authorities. The tax authority relies on reports of income, and typically agents have better information about their income than does that tax authority. Since the transfer depends on the reported income, the agent has an incentive to misrepresent his true income. To reduce this incentive, tax authorities may, at a potentially high cost, audit some reports.
+    </p>
+    <p>
+     This paper attempts to characterize the optimal audit mechanism when taxpayers can privately invest in costly evasion technologies. The evasion costs are wasteful, and so any equilibrium in which agents use a positive amount of evasion is inefficient. The natural question to ask then is if truthful revelation of incomes can be implemented when agents have the ability and incentive to evade? One might ask what role costly evasion technologies would play in an incentive compatible mechanism. Though when truthfully reporting an agent may not employ evasion technologies, the option will increase the incentive to do so, and subsequently raise the information rents paid to high-income types. That is, higher income agents have a greater incentive to misreport income downwards, and need to be paid information rents to induce truthtelling. In the optimal mechanism, there is a tradeoff between information rents paid and costly evasion technology employed.
+    </p>
+    <p>
+     The potential contributions of this paper are twofold. From a more practical perspective, there is a good reason to think taxpayers do in fact employ accountants and lawyers to (credibly?) misreport tax liabilities. The allocation of real resources to such activities is socially wasteful. Also, the optimal mechanism with evasion technologies is less vertically equitable than in the baseline model since larger information rents are paid to high-income types in equilibrium. These results will help inform the vertically optimal tax schedule in the face of evasion possibilites. From a theoretical perspective, the model introduces a costly state verification model with costly state
+     <i>
+      falsification
+     </i>
+     (i.e. hidden actions). Such a model, and corresponding optimal audit schedule has not been characterized in the literature.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2. Related Literature
+    </div>
+    <p>
+     This work follows a rich literature on costly state verification and principal-agent models. The seminal article by Townsend [Tow79] considers a risk neutral investor who cannot observe which of a finite number of possible returns are realized by the firm managed by a risk averse entrepreneur with whom he contracts. The entrepreneur reports (not necesarily truthfully) the return of the firm, and the investor can then choose to audit the firm. The optimal contact in that setting is for the investor to choose a cutoff return level below which to audit the firm. The model considers only deterministic audits, however. Extensions of the Townsend model, such as Scotchmer [Sco87] and Macho-Stadler and Perez-Castrillo [Mac97] consider richer strategy spaces and stochastic audits, and multiple income sources, respectively, but still find cutoff rules.
+    </p>
+    <p>
+     Border and Sobel [Bor87] consider a similar costly audit mechanism where the principal can employ a stochastic audit rule but can never make a net payment to the agent. They find that optimal mechanism includes pre-audit payments and audit probabilities that are decreasing in reported wealth. This paper differs in at least two respects. First, Border and Sobel consider the ob jective of maximizing net of audit cost revenues, whereas here we consider minimizing audit costs subject to a revenue requirement. Second, and more important, is that in Border and Sobel the agents cannot take hidden actions as they can here. Other somewhat related models include Krasa and Villamil [Kra00] which considers imperfect commitment on the part of the principal, and Sanchez and Sobel [San93] consider explicitly theb delegation of enforcement as a commitment mechanism. Mookherjee and Png  [Moo89] consider the distributional properties of audit mechanisms.
+    </p>
+    <p>
+     The most related papers are Crocker and Slemrod [Cro04] and Crocker and Morgan [CM98]. Crocker and Slemrod consider a model of a firm (principal) and its CFO (agent). The CFO has private information about the legal tax deductions of the firm and can take costly actions to overstate the deductions. The firm benefits directly from the overstatement, but also incurs expected costs due to evasion. Crocker and Slemrod characterize the optimal contract between the firm and the CFO. From the tax authority's perspective, given optimal contracting between the firm and CFO, punishing the CFO is more effective in combating evasion than punishing the firm. Nevertheless, the focus of the paper is the agency within the tax unit, and not between the tax authority and the taxpayer. The key distinctions are two. First, the principal may benefit from misstatement, whereas in this paper the principal will never benefit. Second, Crocker and Slemrod consider a reduced form of the expected costs from misstatement whereas in this paper the focus is on explicitly modeling the structure of optimal audit probabilities and expected costs of misstatement. Crocker and Morgan consider a model of falsification in an insurance framework. While the agent can take a costly action to misreport his private information, the principal can not take a costly action to verify the claim.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     3. Model Setup
+    </div>
+    <p>
+     A tax authority seeks to minimize the costs of auditing, sub ject to a revenue requirement on income tax monies collected. Individuals incomes i are privately observed, but they are known to be drawn from F (i) with support [0, I ]. I assume that F(i) is continuous with density function f (i) ≡ F  (i) &gt; 0 ∀i ∈ [0, I ]. Let r denote a reported income.
+    </p>
+    <div>
+     <div class="head_2">
+      3.1. Tax Authority.
+     </div>
+     <p>
+      The tax authority will choose a function a : [0, I ] → [0, 1] which maps reported incomes into audit probabilities and a function t : [0, I ] → [0, I ] which maps reported incomes into tax liabilities. Assuming audits costs are proportional to the number of audits conducted, the tax authority seeks to minimize expected audit costs. Therefore, it solves
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      (1)
+     </p>
+     <p>
+      subject to an expected revenue requirement
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+    </div>
+    <div>
+     <div class="head_2">
+      3.2. Individuals.
+     </div>
+     <p>
+      Available to them is a costly evasion technology e that can reduce the probability an audit is successful, but cannot change the probability of an audit. Assume that if an individual were facing an audit with probability a, the probability the audit detects a false report is
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      e can reasonably be thought of as being bounded above by the highest income I. Assume that g(0) = 1, 1 ≥ g(e) &gt; 0, g (e) &lt; 0 and g(e) &lt; 1 ∀ e.
+     </p>
+     <p>
+      With probability (1 − a(r)g(e)) the individual will not be successfully audited. In this case, his expected wealth is his income i less the income tax remitted on the reported income t(r) less e, the resources spent on evasion technology. With probability a(r) the individual is audited, but when evasion technology e is employed, the probability the audit becomes successful is a(r)g(e). In this case, his wealth becomes his income i less the taxes remitted on the reported income t(r) less a penalty for the falsification c(i − r) less the resources spent on evasion.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      3.3. Implementation.
+     </div>
+     <p>
+      Following Myerson [Mye79] and Crocker and Morgan [CM98], the revelation principle implies that we can focus on direct mechanisms.
+     </p>
+     <div>
+      <div class="head_3">
+       Definition 1.
+      </div>
+      <p>
+       An audit mechanism {a(r), t(r)} is
+       <i>
+        incentive compatible
+       </i>
+       if
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_3">
+       Definition 2.
+      </div>
+      <p>
+       An audit function a(r) is
+       <i>
+        implementable
+       </i>
+       if there exists t(r) such that  {a(r), t(r)} satisfies incentive compatability ∀ r ∈ [0, I ].
+      </p>
+      <p>
+       We will proceed by replacing the incentive constraint with its first order condition. Differentiating the incentive compatability condition and evaluating at r = i yields
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       The envelope theorem implies that at an optimum
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       But totally differentiating the value function with respect to i yields
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       or that
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       Imposing the incentive compatability constraints implies that
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+    <div>
+     <div class="head_2">
+      3.4. Characterizing the Optimal Audit Schedule.
+     </div>
+     <div>
+      <div class="head_3">
+       Lemma 1.
+      </div>
+      <p>
+       <i>
+        An audit rule is implementable if and only if
+       </i>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <i>
+        Proof.
+       </i>
+       (Sketch) This condition is closely related to the Spence-Mirrlees single crossing property. The second order condition for the maximization is
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       But since incentive compatability requires
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      , totally differentiating this implies
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       This, however, implies that
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       But this is equivalent to the audit rule being monotone in reports.
+      </p>
+      <p>
+       The optimal audit schedule solves
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (2)
+      </p>
+      <p>
+       subject to
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (IC)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (PC)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (R)
+      </p>
+      <p>
+       From this we can form the Hamiltonian for this control problem.
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (3)
+      </p>
+      <p>
+       In this control problem, r is the control variable, φ is the costate variable for the incentive constraint, λ is a Lagrangian multiplier on the participation constraint, and μ is a Lagrangian multiplier on the revenue constraint.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       Theorem 1
+      </div>
+      <p>
+       (Optimal Audit Schedule).
+       <i>
+        The optimal audit schedule is characterized by
+       </i>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (i)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (ii)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (iii)
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       (iv)
+      </p>
+      <p>
+       <i>
+        Proof.
+       </i>
+       The Pontryagin conditions for (3) are
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      and Hr= 0, with the transversality condition indicating no distortion at the top φ(I ) = 0. Static maximization implies
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      .
+      <p>
+      </p>
+      <p>
+       It may at first be surprising that the outside option and revenue requirement do not show up in the characterization of the optimal schedule. However, the conditions represent partial differential equations, the solution to which imposes the outside option and revenue requirement as boundary conditions. Alternatively, one could think of the tax schedule as having a lump-sum component chosen precisely to make the revenue requirement bind.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     4. Evasion Technologies
+    </div>
+    <p>
+     We can now use the characterization of the optimal audit schedule to investigate its properties. Suppose the audit and tax functions are twice differentiable in reports. Facing an audit mechanism a(r), t(r)the individual maximizes expected utility of after-tax wealth
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (4)
+    </p>
+    <p>
+     This is yet to be completed...
+    </p>
+    <div>
+     <div class="head_3">
+      Lemma 2.
+     </div>
+     <p>
+      <i>
+       Conjecture: If audits are costless for the agent, then e = 0 in any optimal mechanism if and only if the agent is risk neutral.
+      </i>
+     </p>
+     <p>
+      <i>
+       Proof.
+      </i>
+      of Lemma 2 (Sketch) Suppose the agent is risk neutral. The benefit of evasion technology in any truthtelling equilibrium is nonpositive. The costs of employing such technology are by assumption nonnegative. Therefore the agent will not employ evasion technology. Suppose instead that the agent is risk averse. Then since the agent has strictly convex preferences over the audit and non-audit states, he will prefer some small, positive amount risk.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     5. Conclusions and Extensions
+    </div>
+    <p>
+     In this paper, the optimal audit schedule for agents with private information who take hidden actions is characterized. Audit probabilities are found to be decreasing in reported income. As in Crocker and Morgan [CM98] no evasion technology is employed if, and only if, the agent is risk neutral. The paper also considers how the optimal audit schedule changes if the process of being audited imposes a fixed cost on the agent, and shows that the revenue requirement can be met with lower audit costs in this case. Finally, the paper considers the optimal audit schedule when net revenue (revenue less audit costs) is the ob jective to be maximized, and when the wasteful resources devoted to evasion are included in the ob jective function to be minimized by the tax authority. The most logical extension is to consider the equity properties of the optimal schedule. As mentioned before since the evasion possibilities increase the information rents paid to high-income types, evasion technologies make the effective tax structure less progressive. The optimal tax schedule in the presence of evasion technologies may necessitate positive falsification and the efficiency losses associated therewith.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N1021E">
+     <li id="N1021F">
+      [Bor87] Border, Kim C. and Sobel, Joel. Samurai Accountant: A Theory of Auditing and Plunder. The Review of Economic Studies, 54(4), 1987.
+     </li>
+     <li id="N10221">
+      [CM98] Crocker, Keith J. and John Morgan. Is Honesty the Best Policy? Curtailing Insurance Fraud Through Optimal Incentive Contracts. Journal of Political Economy, 106(2), April 1998.
+     </li>
+     <li id="N10223">
+      [Cro04] Crocker, Keith J. and Slemrod, Joel. Corporate Tax Evasion with Agency Costs. NBER Working Paper No. 10690, 2004.
+     </li>
+     <li id="N10225">
+      [Cro07] Crocker, Keith J. and Slemrod, Joel. The Economics of Earnings Manipulation and Managerial Compensation. RAND Journal of Economics, 2007. Forthcoming.
+     </li>
+     <li id="N10227">
+      [Kra00] Krasa, Stefan and Villamil, Anne P. Optimal Contracts When Enforcement is a Decision Variable. Econometrica, 68(1), 2000.
+     </li>
+     <li id="N10229">
+      [Mac97] Macho-Stadler, Ines and Perez-Castrillo, J. David. Optimal Auditing with Heterogeneous Income Sources. International Economic Review, 38(4), Nov. 1997.
+     </li>
+     <li id="N1022B">
+      [Moo89] Mookherjee, Dilip and Png, Ivan. Optimal Auditing, Insurance, and Redistribution. The Quarterly Journal of Economics, 104(2), 1989.
+     </li>
+     <li id="N1022D">
+      [Mye79] Myerson, Roger. Incentive Compatability and the Bargaining Problem. Econometrica, 47, January 1979.
+     </li>
+     <li id="N1022F">
+      [San93] Sanchez, Isabel and Sobel, Joel. Hierarchical Design and Enforcement of Income Tax Policies. Journal of Public Economics, 50(3), 1993.
+     </li>
+     <li id="N10231">
+      [Sco87] Scotchmer, Suzanne. Audit Classes and Tax Enforcement Policy. The American Economic Review: Papers and Proceedings of the Ninety-Ninth Annual Meeting of the American Economic Association, 77(2), May 1987. Symposium on the Economics of Organization.
+     </li>
+     <li id="N10233">
+      [Tow79] Townsend, Robert. Optimal Contracts and Competitive Markets with Costly State Verification. Journal of Economic Theory, 21(2), 1979.
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>

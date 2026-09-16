@@ -1,0 +1,1457 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Energy Minimization, Molecular Mechanics and Chemistry
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction/Theory
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Chemistry is intrinsically concerned with the structure of molecules and the reactivity of molecular systems.
+       </s>
+       <s pid="1" sid="2">
+        One of the principal concerns of chemistry is to find the energetically accessible confirmations and/or equilibrium structure of a given chemical system.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        In general, the potential energy surface (PES) of a molecule is a 3N-6 dimensional surface, where the coordinates are the 3N-6 internal coordinates obtained when translational and rotational degrees of freedom are annihilated.
+       </s>
+       <s pid="2" sid="2">
+        In theory, one can calculate the PES for any system by solving the time-independent electronic Schrodinger equation for every possible position of every atom, however, such ab initio calculations are too expensive to be considered.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Many force fields used in practice today are empirical force fields (AMBER, CHARMM, etc.) that can model the PES of a large variety of chemical systems.
+       </s>
+       <s pid="3" sid="2">
+        Such empirical force fields are based on theory, experiment, and also intuition.
+       </s>
+       <s pid="3" sid="3">
+        Therefore, in practice, the PES is almost always defined through the choice of an empirical force field that describes the inter-atomic interactions in a molecule.
+       </s>
+       <s pid="3" sid="4">
+        This is basically choosing the "correct" functional form and the parameters which combined, will describe all inter-atomic interactions.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        In considering chemical systems, the PES is a 3N-6 multidimensional function.
+       </s>
+       <s pid="4" sid="2">
+        From basic multivariable calculus, one knows that at a minimum, the first derivative of the potential with respect to each individual variable vanishes (that is) and that the second derivative of the potential with respect to each variable must be greater than zero.
+       </s>
+       <s pid="4" sid="3">
+        For a chemical system, finding the minima on the PES corresponds to finding the stable points of the system and thus, finding the geometry of the molecular system.
+       </s>
+       <s pid="4" sid="4">
+        Finding the global minimum corresponds to finding the conformation of a system with the least energy, the equilibrium conformation.
+       </s>
+       <s pid="4" sid="5">
+        Transition states that connect minima on the PES are defined as saddle points, that is a point on the PES where the PES is at a maximum with respect to one coordinate and a minimum with respect to all other coordinates.
+       </s>
+       <s pid="4" sid="6">
+        The transition mode, which will describe the motion in going from one minimum to the next, is described by the single coordinate that is at a maximum at the saddle point.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        In this laboratory exercise, we will focus on the Newton-Raphson method and steepest descent methods to find minima of a potential energy surface.
+       </s>
+       <s pid="5" sid="2">
+        Both of these methods are based on the Taylor expansion of the PES:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Note that the Newton-Raphson method, which uses up to second derivative information, assumes that the PES is a harmonic potential.
+       </s>
+       <s pid="6" sid="2">
+        For a simple quadratic function, the Newton-Raphson method can find the minimum in one step, but for more complex systems, it will take several iterations.
+       </s>
+       <s pid="6" sid="3">
+        For the Taylor expansion above, the first derivative of V(x) is:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        If the function is purely quadratic, which is assumed in a harmonic potential, the second derivative is the same everywhere, that is:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        At the minimum point x=x*:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        Therfore the minimum point is:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        This can be extended to a chemical system if one makes each variable x and V a matrix of 3N-dimensions, where N is the number of atoms in the system and V is defined by some empirical or ab initio force field.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        Note that this is computationally expensive since it requires inversion of the Hessian matrix.
+       </s>
+       <s pid="11" sid="2">
+        Therefore, in most quantum chemistry programs (Gaussian, Q-Chem, Jaguar), quasi -Newton-Raphson steps are used to find a minimum.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Exploration 1
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        In exploration 1, we will be using the steepest descents method which uses only first derivative information to find a minimum of a PES.
+       </s>
+       <s pid="12" sid="2">
+        In this method, the "ball" on the potential energy surface will move in the direction exactly parallel to the net force.
+       </s>
+       <s pid="12" sid="3">
+        For 3N coordinates, this direction is conveniently represented by the negative of the unit vector of the gradient of the PES, that is:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        The step size that one takes in moving along this PES is defined in the programs that we use in this exploration.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        The function given to our group was:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        A contour plot and a surface plot of this function are shown below:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        Figure 1: Contour plot and surface plot of
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Note that there are two local minima on this surface.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        For this exploration, we tried using several step sizes, initial positions and tolerances.
+       </s>
+       <s pid="18" sid="2">
+        Below are the results of these explorations.
+       </s>
+       <s pid="18" sid="3">
+        First consider changing only the initial guess:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        Table 1: Results of varying initial guess when minimizing function
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Note:
+       </s>
+       <s pid="20" sid="2">
+        For these trials, the tolerance was held constant at 0.0001 and step size was held constant at 0.001.
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        When the initial guess was changed and all other parameters such as step size and tolerance were held constant, we see that the minimum that is found in a given optimization is dependent on the initial guess.
+       </s>
+       <s pid="21" sid="2">
+        This is because the steepest descent will always tend to push the "ball" on the PES in the direction of the steepest negative slope.
+       </s>
+       <s pid="21" sid="3">
+        Therefore, sometimes it will push it all the way to the global minimum and sometimes it will push it to the local minimum.
+       </s>
+       <s pid="21" sid="4">
+        Once the "ball" reaches any minimum point on the surface, it is no longer subject to a force since the gradient of the potential is zero at any minimum.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        Below are plots of minimization tracks for various initial guesses:
+       </s>
+      </p>
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+       <s pid="25" sid="1">
+        Figure 2: Minimization track for initial guess of (5,5) with a step size of 0.001 and a tolerance of 0.0001.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="26" sid="1">
+        Figure 3: Minimization track for initial guess of (200,-200) with a step size of 0.001 and a tolerance of 0.0001
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="27" sid="1">
+        Figure 4: Minimization track for initial guess of (200,200) with a step size of 0.001 and a tolerance of 0.0001
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        Figure 5: Minimization track for initial guess of (-200,200) with a step size of 0.001 and a tolerance of 0.0001
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        Consider changing the tolerance:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        Table 2: Results of varying tolerance when minimizing function
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        Note: Initial guess was held constant at (-200,200) and step size was held constant at 0.001.
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        When the tolerance was changed and all other parameters such as initial guess and step size were held constant, we tended to arrive near the same minimum point, but not exactly.
+       </s>
+       <s pid="32" sid="2">
+        The tolerance indicates the maximum value for which a gradient is considered zero by the algorithm.
+       </s>
+       <s pid="32" sid="3">
+        Thus, for a larger tolerance, there is a larger space around the exact minimum point which will be considered to have a gradient of zero.
+       </s>
+       <s pid="32" sid="4">
+        We see that at low tolerances such as 0.0001, we reach a fairly accurate point but as we increase the tolerance by orders of magnitude, the minimum tends to shift away from this point.
+       </s>
+       <s pid="32" sid="5">
+        Once the "ball" reaches the cusp of the space where the gradient is considered zero, it will stop because there is no force acting on the ball.
+       </s>
+       <s pid="32" sid="6">
+        Thus, at higher tolerances, we will actually reach a less accurate minimum point.
+       </s>
+       <s pid="32" sid="7">
+        In order to have acceptable values, the tolerance should be less than or equal to 0.0001, however, one should always try to use the lowest tolerance possible to attain accurate results.
+       </s>
+      </p>
+      <p>
+       <s pid="33" sid="1">
+        Consider changing the step size:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        Table 3: Results of varying step size when minimizing function
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        Note: Initial guess was held constant at (-200,200) and tolerance was held constant at 0.0001.
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        When the step size was changed, we tended to find drastically different minima.
+       </s>
+       <s pid="36" sid="2">
+        When the step size was increased by one order of magnitude from 0.001 to 0.01, the minimum point found differs slightly.
+       </s>
+       <s pid="36" sid="3">
+        When the step size is too large, such that moving along the steepest gradient with a given step size will move to a point that is not defined by the function (f(x,y)=0), the steepest descent method essentially stops.
+       </s>
+       <s pid="36" sid="4">
+        This is because moving to a point that is not defined by the surface then has a value of f(x,y)=0, which has a derivative with respect to all coordinates which is also zero.
+       </s>
+       <s pid="36" sid="5">
+        Thus, no further movements will be made toward a minimum.
+       </s>
+       <s pid="36" sid="6">
+        When the step size is increased by two orders of magnitude from 0.001 to 0.1, we find that the large step size causes the steepest descent vector to move to an "undefined" point very quickly in the minimization routine.
+       </s>
+       <s pid="36" sid="7">
+        This is why the minimum point found is so drastically different compared to the results for the other two step sizes.
+       </s>
+       <s pid="36" sid="8">
+        In order to be accurate, one should use a step size which is less than or equal to 0.01 for qualitative results which are accurate to the tenths place.
+       </s>
+       <s pid="36" sid="9">
+        However, to get quantitative results, the step size should be less than or equal to 0.001.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        Note that in the above exploration, we have located all minima of the surface that is described by the function
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .  The global minimum is the point (x,y) and the local minimum is the point (,).
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Exploration 2
+      </div>
+      <div>
+       <div class="head_2">
+        Theory:
+       </div>
+       <p>
+        <s pid="39" sid="1">
+         For exploration 2, we will be using the Lennard-Jones 12-6 potential to model the van der Waals interactions which hold the two and three atom clusters together which we will be studying.
+        </s>
+        <s pid="39" sid="2">
+         The Lennard-Jones 12-6 potential is of the form:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="40" sid="1">
+         This potential is empirical and has been derived from experiment, but it has firm theortical grounding.
+        </s>
+        <s pid="40" sid="2">
+         It is important to note that the Lennard-Jones 12-6 potential only models pairwise interactions, however, for many systems, this proves to be a fairly good approximation.
+        </s>
+        <s pid="40" sid="3">
+         The first term,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       models the strong repulsive interactions between two atoms or molecules as they approach each other at close distances.  The second term
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       models the attractive potential.  Note that dipole-dipole, dipole-induced dipole, and London dispersion forces all have a
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       dependence on separation.  The parameter σ defines the distance r where the repulsive forces begin to dominate over the attractive forces.
+       <p>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Exploration 2a:
+       </div>
+       <p>
+        <s pid="42" sid="1">
+         For explorations two through four, we will be using the following parameters given to our group:
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       X=Ar; ε/kB=111.84K; σ=362.3pm
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Y=Kr; ε/kB=154.87K; σ=389.5pm
+      </div>
+      <p>
+       <s pid="43" sid="1">
+        For exploration 2a, we produced a contour plot and a surface plot of the constant angle potential for the three atom van der Waals molecule, Ar-Kr-Ar.
+       </s>
+       <s pid="43" sid="2">
+        This constant angle potential corresponds to the angle indicated being held constant and the other two internal coordinates, r1 and r2, are free to vary.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="44" sid="1">
+        Figure 6: Diagram of the positions of atoms in X-Y-X van der Waals cluster
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        Below is the equation which is used to calculate the LJ-potential in the polar coordinates which will make it easy to develop a constant angle potential.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="46" sid="1">
+        Below is the surface plot and contour plot of the constant angle Lennard-Jones 12-6 potential when the angle θ is held constant at 70.777° as calculated by Mathcad after geometry optimization in Cartesian coordinates.
+       </s>
+       <s pid="46" sid="2">
+        Below is the calculated cluster geometry after energy has been minimized.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="47" sid="1">
+        Figure 6: Snapshot of equilibrium cluster geometry.
+       </s>
+       <s pid="47" sid="2">
+        Blue is krypton and red is argon.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="48" sid="1">
+        Figure 6: Surface plot and contour plot of constant angle potential of two atom van der Waals cluster consisting of Ar-Kr.
+       </s>
+       <s pid="48" sid="2">
+        Note that n refers to the index along the axis and that the starting value along each axis is 240 pm, not zero as the tick marks show.
+       </s>
+      </p>
+      <p>
+       <s pid="49" sid="1">
+        Note that we reach a minimum at a certain distance, but that at inter-atomic distances closer than the equilibrium distance, the potential goes to infinity, representing the repulsion of the atoms at close distances.
+       </s>
+       <s pid="49" sid="2">
+        This is modeled by the (1/r)12 part of the potential.
+       </s>
+       <s pid="49" sid="3">
+        Also note that the potential is symmetrical since the pairwise interactions between krypton and each of the two argons are exactly the same.
+       </s>
+       <s pid="49" sid="4">
+        Also, at distances which are greater than the equilibrium distance, the potential rises up out of the minimum (modeled by (1/r)6 part of LJ potential), but at a slower rate than when the inter-atomic distances are less than the equilibrium distance.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Exploration 2b:
+       </div>
+       <p>
+        <s pid="50" sid="1">
+         For exploration 2b, we set out to construct a Lennard-Jones 12-6 potential for the van der Waals cluster Ar-Kr-Ar where the bond length between the two argon atoms remains constant while the other two parameters vary.
+        </s>
+        <s pid="50" sid="2">
+         For this case, it will be easier to use Cartesian coordinates to construct the potential.
+        </s>
+       </p>
+       <p>
+        <s pid="51" sid="1">
+         Note that when the interactions are between Kr and Ar, we take the averages of the ε and σ parameters of the two atoms to describe the interactions.
+        </s>
+        <s pid="51" sid="2">
+         When it is the Ar-Ar interaction, we only use the ε and σ values for argon to describe the pairwise interaction.
+        </s>
+        <s pid="51" sid="3">
+         Using this information, we calculate the Lennard-Jones potential for the Ar-Kr-Ar van der Waals cluster when the Ar-Ar bond length is held constant:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="52" sid="1">
+         Where x1 is the distance from the argon to argon along y=0, y2 is the y-axis projection of the vector connecting the Ar atom to the Kr atom, and x2 is the x-axis projection of the vector connecting the Ar atom to the Kr atom.
+        </s>
+        <s pid="52" sid="2">
+         Also note that as stated above, ε12 and σ12 are defined as:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="53" sid="1">
+         Mathcad minimizes this Lennard-Jones potential to give an equilibrium geometry.
+        </s>
+        <s pid="53" sid="2">
+         The equilibrium geometry is as pictured below with the coordinates indicated:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="54" sid="1">
+         Figure 9: Calculated minimum energy for the van der Waals cluster where Ar-Ar bond length is held constant.
+        </s>
+       </p>
+       <p>
+        <s pid="55" sid="1">
+         Below is a surface plot of the Lennard-Jones potential where the Ar-Ar bond length is held constant at 406.672pm as determined by the Mathcad minimize function.
+        </s>
+        <s pid="55" sid="2">
+         Note that the minimum energy state has energy of -3.148*103 J/mol.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="56" sid="1">
+         Figure 10: Surface plot of the Lennard-Jones potential of the van der Waals cluster Ar-Kr-Ar when the Ar-Ar bond length is held constant.
+        </s>
+        <s pid="56" sid="2">
+         Note that n refers to the index along the axes.
+        </s>
+       </p>
+       <p>
+        <s pid="57" sid="1">
+         Note that in this plot, there are two global minima, but several local minima which kind of surround the global minima.
+        </s>
+        <s pid="57" sid="2">
+         There are two global minima due to the inherent symmetry of the system.
+        </s>
+        <s pid="57" sid="3">
+         That is to say that the values of r2 and r3 in figure 9 may exchange such that r2=______and r3=_________.
+        </s>
+        <s pid="57" sid="4">
+         Therefore, we reach a symmetrically equivalent molecule with the same energy.
+        </s>
+        <s pid="57" sid="5">
+         Also note that at distance closer than the minima (local or global), the potential tends to infinity as expected.
+        </s>
+        <s pid="57" sid="6">
+         This of course is dictated by the repulsive nature of atoms at close distances which is governed by the (1/r)12 term in the LJ potential.
+        </s>
+        <s pid="57" sid="7">
+         Also note that the global minima has energy which correspond to the calculated minimum energy above.
+        </s>
+        <s pid="57" sid="8">
+         As the atoms move farther away, that is, when interatomic distances become large in either direction, the energy increases with respect to the minima, but not nearly as fast as when the interatomic distances become very small.
+        </s>
+        <s pid="57" sid="9">
+         This is because as the atoms move far apart, they are largely governed by the (1/r)6 term rather than the (1/r)12 term.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Exploration 3
+      </div>
+      <p>
+       <s pid="58" sid="1">
+        In exploration 3, we constructed a program to perform a steepest descent minimization of the van der Waals cluster consisting of Ar-Kr-Ar.
+       </s>
+       <s pid="58" sid="2">
+        The potential is still described by the Lennard-Jones 12-6 potential, but this time, no parameters are held fixed as in exploration 2.
+       </s>
+       <s pid="58" sid="3">
+        We have calculated the equilibrium geometry and energy of the van der Waals cluster for five different initial starting geometries to test the robustness of this steepest descent minimization.
+       </s>
+       <s pid="58" sid="4">
+        Below is a table summarizing our results.
+       </s>
+       <s pid="58" sid="5">
+        The program which was used to run the steepst descent algorithm is attached in the appendix.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="59" sid="1">
+        Table 2: Results of steepest descent minimization of Ar-Kr-Ar van der Waals cluster described by LJ 12-6 potential
+       </s>
+      </p>
+      <p>
+       <s pid="60" sid="1">
+        From these results, it appears that the steepest descent minimization routine is not robust as it tends to lead us to different equilibrium geometries based on the initial guess.
+       </s>
+       <s pid="60" sid="2">
+        For the fourth trial where the initial guess has all the atoms aligned in the x1-x2 plane, it converges to another geometry which is also planar.
+       </s>
+       <s pid="60" sid="3">
+        Since y2=0, the first derivative of V(x1,x2,y2) with respect to y2 is always zero.
+       </s>
+       <s pid="60" sid="4">
+        This implies that the force in the y2-direction is always zero, therefore, the atoms will never be pushed out of the x1-x2 plane.
+       </s>
+       <s pid="60" sid="5">
+        For the last guess, which involves an initial guess where the atoms are absurdly far apart, it appears that the geometry only shifts in the x1 direction.
+       </s>
+       <s pid="60" sid="6">
+        This indicates that at very far distances for x2 and y2, the potential has the following characeteristics:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="61" sid="1">
+        However, it appears that the steepest descents method takes us to the correct place for x1, which indicates that there is a significant gradient with respect to x1 at x1=1000 to push us down into the minimum.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Exploration 4
+      </div>
+      <p>
+       <s pid="62" sid="1">
+        In exploration 4, we will be looking at a van der Waals cluster of Ar5Kr whose minimization is governed by the minimization routine in Mathcad.
+       </s>
+       <s pid="62" sid="2">
+        According to valence shell electron pair repulsion theory (VSEPR), the equilibrium geometry of such a 6 atom cluster should be a trigonal bipyramid.
+       </s>
+       <s pid="62" sid="3">
+        For the first few starting geometries, we chose the trigonal bipyramid geometry to be sure that nothing was incredible wrong with the minimization routine.
+       </s>
+       <s pid="62" sid="4">
+        Below is a summary of our results, which includes starting geometries, bond lengths between all Ar-Kr atoms and energy at equilibrium geometry.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Trial 1:
+       </div>
+       <p>
+        <s pid="63" sid="1">
+         Starting geometry given in Cartesian coordinates (x,y,z) for each atom.
+        </s>
+        <s pid="63" sid="2">
+         Note the the last row is the krypton atom, while the other rows represent the argon atoms.
+        </s>
+        <s pid="63" sid="3">
+         The diagram to the right indicates graphically what the q matrix looks like in space.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="64" sid="1">
+         Table 3: Results of trial 1 for exploration 4
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Trial 2:
+       </div>
+       <p>
+        <s pid="65" sid="1">
+         Starting initial geometry is given in the same matrix as in trial 1 and a diagram is included once again to indicate graphically what the q matrix looks like in space.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="66" sid="1">
+         Table 4: Results of trial 2 for exploration 4
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Trial 3:
+       </div>
+       <p>
+        <s pid="67" sid="1">
+         Starting initial geometry is given in the same matrix as in trial 1 and a diagram is included once again to indicate graphically what the q matrix looks like in space.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="68" sid="1">
+         Table 5: Results of trial 3 for exploration 4
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Trial 4:
+       </div>
+       <p>
+        <s pid="69" sid="1">
+         This time we start with all the atoms in a plane.
+        </s>
+        <s pid="69" sid="2">
+         Starting initial geometry is given in the same matrix as in trial 1 and a diagram is included once again to indicate graphically what the q matrix looks like in space.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="70" sid="1">
+         Table 6: Results of trial 4 for exploration 4
+        </s>
+       </p>
+       <p>
+        <s pid="71" sid="1">
+         According to our results, we have found four different energy minima which indicates that this energy minimization routine is not robust .
+        </s>
+        <s pid="71" sid="2">
+         Furthermore, each initial guess appears to converge to a different geometry, most notably the case where the atoms all start in a plane (trial 4).
+        </s>
+        <s pid="71" sid="3">
+         It appears that this minimization routine must somehow use a steepest descent method because the optimized geometry also has a planar geometry.
+        </s>
+        <s pid="71" sid="4">
+         As discussed before, if the z-component of every atom is always zero, then the partial derivative of the potential with respect to z will always be zero, which indicates that there is no force to push the atoms out of the z=0 plane.
+        </s>
+       </p>
+       <p>
+        <s pid="72" sid="1">
+         Below is a figure comparing the energies of the various confirmations of the local and global minima that were located.
+        </s>
+        <s pid="72" sid="2">
+         It appears that the first equilibrium confirmation is the global minimum and according to chemical intuition, this should be the global minimum since six atom clusters should tend to a trigonal bipyramidal structure.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="73" sid="1">
+         Figure 12: Plot of the energies of the various confirmation of the local and global minima that were located.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Exploration 5
+      </div>
+      <div>
+       <div class="head_2">
+        Theory:
+       </div>
+       <p>
+        <s pid="74" sid="1">
+         In this exploration, we will be using the Lennard-Jones potential to calculate vibrational frequencies of a Ar-Kr-Ar cluster (part a) and a Kr-Ar-Kr cluster (part b).
+        </s>
+        <s pid="74" sid="2">
+         To calculate the vibrational frequencies, we expand the potential in a Taylor series and eliminate all anharmonic terms so that we work in the harmonic approximation:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="75" sid="1">
+         We choose V(0)=0 out of convenience and note that at local minima, the second term will vanish.
+        </s>
+        <s pid="75" sid="2">
+         Thus, we are left with a potential of the form:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="76" sid="1">
+         If we use Hooke’s law to describe the restoring force, then this potential becomes:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="77" sid="1">
+         Now we can describe this motion by Newton’s second law:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="78" sid="1">
+         This is a second order linear differential equation which may be easily solved, however, it is not done here.
+        </s>
+        <s pid="78" sid="2">
+         For more complex systems involving more degrees of freedom, the challenge of calculating vibrational modes is rather complicated because the relation between the PES and the vibrations is inherently more complex.
+        </s>
+        <s pid="78" sid="3">
+         Note that for a system of N particles, there are 3N-6 vibrational degrees of freedom since there will be 3 rotational degrees of freedom and 3 translational degrees of freedom.
+        </s>
+       </p>
+       <p>
+        <s pid="79" sid="1">
+         We may derive the equation of motion for this system which involves taking the 3N coupled differential equations in Cartesian coordinates and doing a unity transform to the 3N- uncoupled differential equations of the normal modes.
+        </s>
+        <s pid="79" sid="2">
+         By following this procedure, each vibrational spatial coordinate, qi is described by the following differential equation:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="80" sid="1">
+         The solution to this differential equation yields:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="81" sid="1">
+         Therefore, one may reconstruct the differential equation above as:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="82" sid="1">
+         And this may be written in terms of matrices and vectors which will give us a "prescription" to find its result:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="83" sid="1">
+         The non-trivial solution of this equation occurs when the coordinates qi are not zero.
+        </s>
+        <s pid="83" sid="2">
+         Thus, the normal mode motions are described by the eigenvectors of B, also known as the mass-weighted Hessian or mass-weighted "force constant" matrix.
+        </s>
+        <s pid="83" sid="3">
+         Its eigenvalues will give us the corresponding vibrational frequencies for each vibrational motion.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Exploration 5a:
+       </div>
+       <p>
+        <s pid="84" sid="1">
+         Below is a sketch of the vibration coordinates of each of the Ar-Kr-Ar vibrations:
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         1.  Symmetric stretch: νsymm=27.714 wavenumbers
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="85" sid="1">
+          Figure xx: Sketch of the symmetrical vibration coordinate for Ar-Kr-Ar van der Waals cluster
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         2. Antisymmetric stretch: νanti-ymm=18.854 wavenumbers
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="86" sid="1">
+          Figure xx: Sketch of the antisymmetrical vibration coordinate for Ar-Kr-Ar van der Waals cluster
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         3. Bending vibration: νbend=19.672 wavenumbers
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="87" sid="1">
+          Figure xx: Sketch of the bending vibration coordinate for Kr-Ar-Kr van der Waals cluster
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Exploration 5b:
+       </div>
+       <p>
+        <s pid="88" sid="1">
+         Below is a sketch of the vibrational coordinates of each of the Kr-Ar-Kr vibrations:
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         1. Symmetric stretch: νsymm=25.279 wavenumbers
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="89" sid="1">
+          Figure xx: Sketch of the symmetrical vibration coordinate for Kr-Ar-Kr van der Waals cluster
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         2. Antisymmetric stretch: νanti-ymm=16.894 wavenumbers
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="90" sid="1">
+          Figure xx: Sketch of the antisymmetrical vibration coordinate for Kr-Ar-Kr van der Waals cluster
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         3. Bending vibration: νbend=17.915 wavenumbers
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="91" sid="1">
+          Figure xx: Sketch of the bending vibration coordinate for Kr-Ar-Kr van der Waals cluster
+         </s>
+        </p>
+        <p>
+         <s pid="92" sid="1">
+          The vibrational coordinates of the Ar-Kr-Ar cluster and the Kr-Ar-Kr cluster differ slightly.
+         </s>
+         <s pid="92" sid="2">
+          This is due to the increased weight of the Kr atoms with respect to the Ar atoms.
+         </s>
+         <s pid="92" sid="3">
+          By having a heavier system, this will slow down the vibrations, as seen by the reduced frequencies in part b of this exploration.
+         </s>
+         <s pid="92" sid="4">
+          Thus, one witnesses that the eigenvalues of the Hessian matrix are larger in part b where the mass weighting slows down the vibrations since having two Kr’s versus two Ar’s will slow down the vibration.
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Exploration 6
+      </div>
+      <p>
+       <s pid="93" sid="1">
+        In exploration 6, we use Spartan ’04 (Windows edition) to explore the robustness of various molecular mechanics force fields, especially the Merck Molecular Force Field (MMFF).
+       </s>
+       <s pid="93" sid="2">
+        In this exploration, we will be running experiments on hydroxyamphetamine (a derivative of methamphetamine, a popular street drug):
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="94" sid="1">
+        Figure xx: Hydroxyamphetamine
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Exploration 6a
+       </div>
+       <p>
+        <s pid="95" sid="1">
+         In this exploration, we will try different starting geometries to see if using the molecular mechanics method with the MMFF parameters finds the same minimum.
+        </s>
+        <s pid="95" sid="2">
+         The starting geometries were varied by rotating around the single bonds in the floppy alkyl group of the molecule.
+        </s>
+        <s pid="95" sid="3">
+         Below is a summary of results and diagrams of the optimized geometries for trials 1 and 3:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="96" sid="1">
+         Figure xx: Optimized geometry of trial 1
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="97" sid="1">
+         Figure xx: Optimized geometry of trial 3
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="98" sid="1">
+         Table xx: Summary of results for exploration 6a
+        </s>
+       </p>
+       <p>
+        <s pid="99" sid="1">
+         It should be noted that the optimized molecular geometry of trial 3 differed greatly from the optimized molecular geometries of trials 1 and 2, whose optimized geometries looked relatively similar.
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Discussion:
+        </div>
+        <p>
+         <s pid="100" sid="1">
+          The calculated minimum energy confirmation is dependent upon the input of the geometry.
+         </s>
+         <s pid="100" sid="2">
+          This is because once the minimization routine finds any minimum, local or global, the gradient of the potential with respect to all coordinates is zero which implies that there is no force to push the structure toward a lower energy.
+         </s>
+         <s pid="100" sid="3">
+          Thus, for trials 1-2, the minimization routine found a different minimum point on the PES than for trial 3.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Exploration 6b
+       </div>
+       <p>
+        <s pid="101" sid="1">
+         For exploration 6b, we used a Monte Carlo search method to find the conformational distribution of our molecule in a particular starting geometry.
+        </s>
+        <s pid="101" sid="2">
+         We used the input geometry for trial 3 as our initial guess.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="102" sid="1">
+         Figure xx: Diagram of geometry used for conformational search in exploration 6b
+        </s>
+       </p>
+       <p>
+        <s pid="103" sid="1">
+         This Monte Carlo algorithm employed here does a Monte Carlo search with a path that biases low energy conformers.
+        </s>
+        <s pid="103" sid="2">
+         Although we might not find the global minimum, Spartan finds the conformers that one keeps constitutes a Boltzmann distribution. [#REF 1]
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Discussion:
+        </div>
+        <p>
+         <s pid="104" sid="1">
+          For the given starting geometry, the Monte Carlo conformational search found 18 different minima.
+         </s>
+         <s pid="104" sid="2">
+          The lowest energy confirmation has an energy of 17.3791 Hartrees and its geometry is plotted below.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="105" sid="1">
+          Figure xx: Diagram of minimum energy confirmation found by Monte Carlo search using initial configuration in fig.
+         </s>
+         <s pid="105" sid="2">
+          xx
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Exploration 6c
+       </div>
+       <p>
+        <s pid="106" sid="1">
+         In exploration 6c, we rotated around one of the flexible bonds in our molecule to develop an energy profile for rotation about this bond.
+        </s>
+        <s pid="106" sid="2">
+         Below is an image of the molecule which indicates the bond about which the molecule rotated and the confirmation that corresponds to the zero degree mark.
+        </s>
+       </p>
+       <p>
+        <s pid="107" sid="1">
+         For this exploration, we have used two different force fields, MMFF and SYBYL, to calculate an energy profile.
+        </s>
+        <s pid="107" sid="2">
+         Below are plots of the results:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="108" sid="1">
+         Figure xx: Energy profile using MMFF
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="109" sid="1">
+         Figure xx: Energy profile using SYBYL
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         Discussion
+        </div>
+        <p>
+         <s pid="110" sid="1">
+          The results of this exploration indicate that using different force fields will give different results.
+         </s>
+         <s pid="110" sid="2">
+          This is because different force fields correspond to different functionals which may have been subject to different target sets.
+         </s>
+         <s pid="110" sid="3">
+          MMFF has been "specifically parameterized to reproduce geometries and conformations of organic molecules and biomolecules" while SYBYL is parameterized for the entire periodic table.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Exploration 6d
+       </div>
+       <p>
+        <s pid="111" sid="1">
+         Below are hand-drawn sketches of three vibrational modes of hydroxyamphetamine in its minimum energy state found in part c.
+        </s>
+        <s pid="111" sid="2">
+         All of these vibrations will be seen in the IR spectrum (which is plotted below).
+        </s>
+        <s pid="111" sid="3">
+         This is because the overall dipole moment of the molecule changes upon excitations at these specific frequencies.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="112" sid="1">
+         Figure xx: IR spectrum of hydroxyamphetamine
+        </s>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1 This information is from the Spartan User’s Manual
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

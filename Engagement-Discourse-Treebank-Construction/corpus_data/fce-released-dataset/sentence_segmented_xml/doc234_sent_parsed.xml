@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     14.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I am writing to
+       <ns type="FV">
+        <i>
+         giving
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       information about myself.
+      </p>
+      <p>
+       Even though I would like to travel, I am only
+       <ns type="MJ">
+       </ns>
+       in July, because I am a high school student. Thus I have not got
+       <ns type="MD">
+       </ns>
+       long holiday. I just have one month
+       <ns type="UJ">
+        <i>
+         left
+        </i>
+       </ns>
+       . Personally, I would rather stay in log cabins than in tents. On
+       <ns type="S">
+        <i>
+         accound
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       <ns type="FV">
+        <i>
+         to stay
+        </i>
+       </ns>
+       in log cabins
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         as
+        </i>
+       </ns>
+       much more interesting than
+       <ns type="MV">
+       </ns>
+       in tents. As far as two activities are concerned
+       <ns type="MP">
+       </ns>
+       I would choose singing and photography. I used to win a number of competitions in singing. I can sing
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       plenty of songs
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       which include
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         english
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         song
+        </i>
+       </ns>
+       and the
+       <ns type="RP">
+        <i>
+         <ns type="S">
+          <i>
+           japenese
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         song
+        </i>
+       </ns>
+       , and I have
+       <ns type="MD">
+       </ns>
+       part-time job
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         sining
+        </i>
+       </ns>
+       at
+       <ns type="MD">
+       </ns>
+       restaurant. Although
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       photography is not as good as
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       singing, I am very interested in it. I have been
+       <ns type="RV">
+        <i>
+         learning
+        </i>
+       </ns>
+       <ns type="MN">
+       </ns>
+       since I was 15
+       <ns type="AGN">
+        <i>
+         year
+        </i>
+       </ns>
+       old. I got third prize in
+       <ns type="R">
+        <i>
+         it
+        </i>
+       </ns>
+       competition last year and
+       <ns type="DD">
+        <i>
+         I
+        </i>
+       </ns>
+       level is professional now.
+       <ns type="S">
+        <i>
+         Futermore
+        </i>
+       </ns>
+       , I am going to
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       competition next year.
+      </p>
+      <p>
+       I would like to
+       <ns type="FV">
+        <i>
+         asking
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       some information about
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       what kind of clothes I have to
+       <ns type="FV">
+        <i>
+         wearing
+        </i>
+       </ns>
+       and how
+       <ns type="RQ">
+        <i>
+         many
+        </i>
+       </ns>
+       <ns type="DA">
+        <i>
+         your
+        </i>
+       </ns>
+       <ns type="UV">
+        <i>
+         are
+        </i>
+       </ns>
+       charge.
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       Yours faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to giving  information about myself.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Even though I would like to travel, I am only  in July, because I am a high school student.
+       </s>
+       <s pid="3" sid="2">
+        Thus I have not got  long holiday.
+       </s>
+       <s pid="3" sid="3">
+        I just have one month left.
+       </s>
+       <s pid="3" sid="4">
+        Personally, I would rather stay in log cabins than in tents.
+       </s>
+       <s pid="3" sid="5">
+        On accound  to stay in log cabins are as much more interesting than  in tents.
+       </s>
+       <s pid="3" sid="6">
+        As far as two activities are concerned I would choose singing and photography.
+       </s>
+       <s pid="3" sid="7">
+        I used to win a number of competitions in singing.
+       </s>
+       <s pid="3" sid="8">
+        I can sing a plenty of songs.
+       </s>
+       <s pid="3" sid="9">
+        which include the english song and the japenese song, and I have  part-time job for sining at  restaurant.
+       </s>
+       <s pid="3" sid="10">
+        Although the photography is not as good as the singing, I am very interested in it.
+       </s>
+       <s pid="3" sid="11">
+        I have been learning  since I was 15 year old.
+       </s>
+       <s pid="3" sid="12">
+        I got third prize in it competition last year and I level is professional now.
+       </s>
+       <s pid="3" sid="13">
+        Futermore, I am going to have  competition next year.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to asking  some information about that what kind of clothes I have to wearing and how many your are charge.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      1.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Shopping is not always enjoyable
+       <ns type="RP">
+        <i>
+         , sometimes
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         have
+        </i>
+       </ns>
+       a long
+       <ns type="S">
+        <i>
+         quare
+        </i>
+       </ns>
+       or a
+       <ns type="S">
+        <i>
+         mechine
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       broken. A lot of
+       <ns type="S">
+        <i>
+         circumsenses
+        </i>
+       </ns>
+       will
+       <ns type="RV">
+        <i>
+         have been happening
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RJ">
+        <i>
+         unpleased
+        </i>
+       </ns>
+       experience. It was
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         lunch time
+        </i>
+       </ns>
+       . Everybody
+       <ns type="UV">
+        <i>
+         <ns type="AGV">
+          <i>
+           were
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         went
+        </i>
+       </ns>
+       to
+       <ns type="SX">
+        <i>
+         by
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         luch
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       supermarket
+       <ns type="RP">
+        <i>
+         , in
+        </i>
+       </ns>
+       fact, nobody
+       <ns type="TV">
+        <i>
+         liked
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         crowe
+        </i>
+       </ns>
+       and
+       <ns type="S">
+        <i>
+         quare
+        </i>
+       </ns>
+       ,
+       <ns type="S">
+        <i>
+         expecially
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       in the
+       <ns type="RP">
+        <i>
+         summer time
+        </i>
+       </ns>
+       . I was
+       <ns type="FV">
+        <i>
+         <ns type="S">
+          <i>
+           quare
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="R">
+        in the middle of row
+       </ns>
+       . I
+       <ns type="TV">
+        <i>
+         choose
+        </i>
+       </ns>
+       this
+       <ns type="RN">
+        <i>
+         row
+        </i>
+       </ns>
+       because I
+       <ns type="SX">
+        <i>
+         though
+        </i>
+       </ns>
+       it was quicker than
+       <ns type="MD">
+       </ns>
+       <ns type="FA">
+        <i>
+         other
+        </i>
+       </ns>
+       .
+       <ns type="CE">
+        Although there were finished two people, next was me, something was happened
+       </ns>
+       . Suddenly the customer
+       <ns type="SX">
+        <i>
+         though
+        </i>
+       </ns>
+       the receipt was not
+       <ns type="RJ">
+        <i>
+         <ns type="DJ">
+          <i>
+           truth
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , she
+        </i>
+       </ns>
+       did not buy a lot of things but the shop assistant did not make
+       <ns type="MD">
+       </ns>
+       mistake
+       <ns type="RP">
+        <i>
+         , they
+        </i>
+       </ns>
+       argued about this thing. The shop manager
+       <ns type="TV">
+        <i>
+         was coming
+        </i>
+       </ns>
+       <ns type="DV">
+        <i>
+         solution
+        </i>
+       </ns>
+       it.
+       <ns type="S">
+        <i>
+         Abviously
+        </i>
+       </ns>
+       , I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         chance
+        </i>
+       </ns>
+       <ns type="RQ">
+        <i>
+         other
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         row
+        </i>
+       </ns>
+       .
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       was
+       <ns type="FJ">
+        <i>
+         long
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         quare
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I have
+       <ns type="RY">
+        <i>
+         never
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         had
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Shopping
+       <ns type="TV">
+        <i>
+         would be
+        </i>
+       </ns>
+       enjoyable, if you
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       <ns type="UJ">
+        <i>
+         good
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         luck
+        </i>
+       </ns>
+       . Even though I think
+       <ns type="W">
+        <i>
+         it most of time
+        </i>
+       </ns>
+       is very interesting, sometimes
+       <ns type="MA">
+       </ns>
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           make
+          </i>
+         </ns>
+        </i>
+       </ns>
+       people
+       <ns type="S">
+        <i>
+         upsent
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shopping is not always enjoyable, sometimes have a long quare or a mechine was broken.
+       </s>
+       <s pid="1" sid="2">
+        A lot of circumsenses will have been happening.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have  unpleased experience.
+       </s>
+       <s pid="2" sid="2">
+        It was in lunch time.
+       </s>
+       <s pid="2" sid="3">
+        Everybody were went to by luch in  supermarket, in fact, nobody liked crowe and quare, expecially  in the summer time.
+       </s>
+       <s pid="2" sid="4">
+        I was quare in the middle of row.
+       </s>
+       <s pid="2" sid="5">
+        I choose this row because I though it was quicker than  other.
+       </s>
+       <s pid="2" sid="6">
+        Although there were finished two people, next was me, something was happened.
+       </s>
+       <s pid="2" sid="7">
+        Suddenly the customer though the receipt was not truth, she did not buy a lot of things but the shop assistant did not make  mistake, they argued about this thing.
+       </s>
+       <s pid="2" sid="8">
+        The shop manager was coming solution it.
+       </s>
+       <s pid="2" sid="9">
+        Abviously, I have to chance other row.
+       </s>
+       <s pid="2" sid="10">
+        I was long quare, I have never had.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Shopping would be enjoyable, if you were good luck.
+       </s>
+       <s pid="3" sid="2">
+        Even though I think it most of time is very interesting, sometimes  make people upsent.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

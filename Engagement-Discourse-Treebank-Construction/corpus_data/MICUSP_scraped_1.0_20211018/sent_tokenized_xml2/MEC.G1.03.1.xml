@@ -1,0 +1,1202 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Detection and Avoidance of Pedestrians
+      <br/>
+      Project Summary and Review of Existing Literature
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       The Need for Pedestrian Safety: Facts and Figures
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        In the United States in 2006 4,784 pedestrians were killed in traffic accidents.
+       </s>
+       <s pid="1" sid="2">
+        Because a larger percentage of Americans use private vehicles than walk or use public transportation compared to people in many countries in the European Union and around the world, less attention is given in the U.S. to pedestrian safety than in these more pedestrian-friendly countries.
+       </s>
+       <s pid="1" sid="3">
+        In addition, though numerous efforts have been made to improve vehicle passenger safety (air bags, crumple zones, et cetera), no similar effort to protect pedestrians has been initiated.
+       </s>
+       <s pid="1" sid="4">
+        While pedestrians were involved in just over 1% of all traffic accidents in 2006, these vulnerable road users accounted for over 12% of all traffic fatalities.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Most of the accidents in which pedestrians were involved took place at night in urban areas under normal weather conditions.
+       </s>
+       <s pid="2" sid="2">
+        In almost half of all fatal pedestrian crashes alcohol was involved, usually on the part of the pedestrian. [1]
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Motor vehicle collisions are the leading cause of fatal accidents and one of the leading causes of non-fatal (but still damage or injury causing) accidents in the Army.
+       </s>
+       <s pid="3" sid="2">
+        Although the Army is making a decided effort to decrease the number of fatalities from traffic mishaps 65% of fatalities were still from driving accidents in 2006.
+       </s>
+       <s pid="3" sid="3">
+        Under the assumption that the same percentage of these accidents involves pedestrians as in civilian statistics, increased pedestrian safety would greatly benefit the Army and save the lives of many soldiers. [2]
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        A much larger percentage of traffic accidents in Europe and other nations involve pedestrians than in the United States.
+       </s>
+       <s pid="4" sid="2">
+        This is unsurprising given the greater percentage of pedestrians in many other countries, especially low income countries, compared to most of the US.
+       </s>
+       <s pid="4" sid="3">
+        The World Bank reports that globally, more than 0.76 million pedestrians are killed in traffic accidents each year, 35% of which are children. [3]
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        These statistics show the dire need to increase pedestrian safety but also point the specific scenarios (e.g. at night in urban areas) where targeted pedestrian safety improvements would benefit the most people.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Project Summary
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        The purpose of this project is to design and implement a pedestrian detection and avoidance system for use in civilian and military applications.
+       </s>
+       <s pid="6" sid="2">
+        The proposed system will function in both structured environments, such as road lanes, and unstructured environments, such as fields and empty parking lots.
+       </s>
+       <s pid="6" sid="3">
+        Both of these environments are encountered by civilians and military personnel and a system versatile enough for both functions would be preferable to one with a more limited range of use.
+       </s>
+       <s pid="6" sid="4">
+        Due to the statistics mentioned above, the system will be optimized for nighttime driving in urban areas under normal weather conditions, as this situation is the most dangerous for pedestrians.
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Based on the literature surveyed, a sensor suite consisting of a far infrared camera, a visible light (CCD) camera and a scanning laser range finder appear to be the most reliable and accurate choice of sensors for the cost.
+       </s>
+       <s pid="7" sid="2">
+        Sensor fusion performed between these devices will lead to robust detection and tracking under most weather conditions.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Pedestrians, stationary and dynamic obstacles, and road markings will be detected by the sensor suite and tracked via a Kalman filter.
+       </s>
+       <s pid="8" sid="2">
+        The system will respond to the presence of obstacles by appropriately altering the vehicle’s velocity in a structured environment and planning a path to avoid obstacles when in an unstructured environment.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Previous Comprehensive Projects
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        From 2000 until 2005, the European Union partnered with industry to fund vulnerable road user (VRU) protection projects.
+       </s>
+       <s pid="9" sid="2">
+        The first project, Preventive Safety for Unprotected Road Users (PROTECTOR), took place from 2000 until 2003.
+       </s>
+       <s pid="9" sid="3">
+        The focus of this project was to develop visible light based pedestrian detection systems that could asses risk and, if necessary, alert the driver.
+       </s>
+       <s pid="9" sid="4">
+        The project used a system based approach to locate and identify pedestrians, track them and determine the risk of a collision.
+       </s>
+       <s pid="9" sid="5">
+        One notable aspect of this project was the use of over forty minutes of real-world traffic video to test the algorithms.
+       </s>
+       <s pid="9" sid="6">
+        While the researches admit that considerably more work needs to be done on the system, they did make many technological gains. [4]
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        PROTECTOR’s successor, Sensors and System Architecture for Vulnerable Road Users Protection (SAVE-U) 2002-2005, built on some of the research from PROTECTOR but greatly enhanced the pedestrian detection and tracking system by adding a network of radar sensors and an infrared camera to the visible light sensor.
+       </s>
+       <s pid="10" sid="2">
+        The SAVE -U system uses multi-level sensor fusion in order to initially reduce the amount of image processing necessary by identifying regions of interest (ROIs) with the radar and, later the sensor fusion produces data to positively identify VRUs for tracking and characteristic determination. [5]
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        Finally, the DARPA sponsored Grand and Urban Challenges have spurred the production of a number of practical tools for autonomous vehicle navigation and control.
+       </s>
+       <s pid="11" sid="2">
+        The Urban Challenge, in particular, required the development of autonomous vehicles that could follow traffic laws, interact safely and correctly with other vehicles and navigate in an urban environment in the same manner that a human would.
+       </s>
+       <s pid="11" sid="3">
+        While this challenge did not directly involve any sort of pedestrian protection, the technology that was developed is a very good compliment to a pedestrian protection system. [6]
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Pedestrian Detection and Classification
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        Researchers have developed an astonishing number of methods for pedestrian detection that use different sensors (or sets of sensors) with varying degrees of success.
+       </s>
+       <s pid="12" sid="2">
+        The most common methods use either visible or infrared light sensors – alone or in stereo pairs– or they pair light sensors with a range finder, such as RADAR, sonar or a laser scanner.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Visible Light
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         Visible light appears to be a logical method for pedestrian detection.
+        </s>
+        <s pid="13" sid="2">
+         Such cameras are common, relatively inexpensive and visible light is the means by which a human driver would detect and avoid pedestrians.
+        </s>
+        <s pid="13" sid="3">
+         However, extracting information from the images can be a complex, time consuming and inexact task and although many methods for detecting pedestrians have been developed, no single method stands out as superior in all conditions.
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         Locating pedestrians based on the unique shape or features of a human is widespread method of pedestrian detection.
+        </s>
+        <s pid="14" sid="2">
+         Papageorgiou and Poggio [7] use Haar wavelet features classified via a Support Vector Machine (SVM) to locate faces, people and cars in visible light images.
+        </s>
+        <s pid="14" sid="3">
+         Their system was integrated with a stereo obstacle detection system for use with the DaimlerChrysler Urban Traffic Assistant (UTA).
+        </s>
+        <s pid="14" sid="4">
+         Havasi et al [8] use the symmetry of human legs to locate humans in an image, while Abramson and Steux [9] use the diagonal orientation of human legs to find people in a single image, albeit with a higher rate of false positives.
+        </s>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         Another common technique is to use the stereo disparity in the visible light images from two cameras to locate pedestrians.
+        </s>
+        <s pid="15" sid="2">
+         Gandhi and Trivedi [10] use a pair of omni directional cameras to locate obstacle in front of and to the side of a vehicle.
+        </s>
+        <s pid="15" sid="3">
+         Grubb et al [11] use stereo vision to locate obstacles and then obstacle size and SVMs to classify the obstacles as pedestrians.
+        </s>
+        <s pid="15" sid="4">
+         This technique can also be used for preprocessing to locate ROIs.
+        </s>
+       </p>
+       <p>
+        <s pid="16" sid="1">
+         Finally, some researches have used the periodic motion of a pedestrians gait to identify the pedestrian.
+        </s>
+        <s pid="16" sid="2">
+         Niyogi and Adelson [12] look for a characteristic "braided" pattern from the movement of humans, from this they can identify individuals based on their distinctive gait.
+        </s>
+        <s pid="16" sid="3">
+         Cutler and Davis [13] use periodic motion to classify moving objects from both static and moving cameras.
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         Once a potential pedestrian is located in an image, most researches use additional algorithms to verify the nature of the potential pedestrians.
+        </s>
+        <s pid="17" sid="2">
+         Munder and Gavrila [14] looked at multiple feature-classifier combinations; comparing Haar Wavelets and local receptive fields (LRF) as well Support Vector Machines (SVMs), feed-forward networks and k-nearest neighbor classifiers to find combinations of classifiers that reliably detect pedestrians.
+        </s>
+        <s pid="17" sid="3">
+         They determined that a combination of SVMs with LRF worked best, though a boosted cascade of Haar Wavelets produced competitive results at a much lower computational cost.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Infrared
+       </div>
+       <p>
+        <s pid="18" sid="1">
+         Both near and far infrared (NIR and FIR) sensors have been used for pedestrian detection and classification.
+        </s>
+        <s pid="18" sid="2">
+         Infrared sensors, especially FIR, reduce much of the complexity of visible light images as they separate warm objects from neutral temperature background clutter.
+        </s>
+        <s pid="18" sid="3">
+         Humans and the engine blocks of moving vehicles are usually the warmest objects in any environment likely to be encountered by vehicles.
+        </s>
+        <s pid="18" sid="4">
+         However, under extremely warm conditions, infrared sensors can lose some to all of their sensing capability as there is little difference between a human’s body heat and the background temperature.
+        </s>
+       </p>
+       <p>
+        <s pid="19" sid="1">
+         Infrared sensors are a significant improvement to visible light cameras at night.
+        </s>
+        <s pid="19" sid="2">
+         FIR requires no illumination and the generally cooler nighttime temperatures increase the contrast between a warm human and the background environment.
+        </s>
+        <s pid="19" sid="3">
+         FIR also does not get "dazzled" or washed out by approaching head lights or other sudden change in lighting the way human eyes or visible light cameras do.
+        </s>
+        <s pid="19" sid="4">
+         While infrared cameras are usually more expensive then visible light cameras the cost has decreased considerably over the years, to the point that some luxury vehicles are starting to offer FIR imaging. [15]
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         One common method of pedestrian detection with infrared cameras is by human shape recognition.
+        </s>
+        <s pid="20" sid="2">
+         Broggi et al [16] use a single frame from an infrared camera to locate pedestrians by looking for symmetric, warm shapes with certain aspect ratios.
+        </s>
+        <s pid="20" sid="3">
+         Xu et al [17] use SVM to locate pedestrians in the images from a single night vision camera.
+        </s>
+        <s pid="20" sid="4">
+         They then track the pedestrian using mean shift tracking and Kalmen filter prediction.
+        </s>
+        <s pid="20" sid="5">
+         Meis et al [18] use simple pixel classification for head detection in addition to body classification in order to improve precision.
+        </s>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         Another method that is becoming more common is to detect pedestrians in infrared videos by locating motion that is inconsistent with the background.
+        </s>
+        <s pid="21" sid="2">
+         Liu and Fujimura [19] use stereo infrared cameras to detect obstacles and then examine motion that is independent from the background in order to classify obstacles as pedestrians; this method could be combined with the more traditional shape/texture based detection.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Sensor Fusion
+       </div>
+       <p>
+        <s pid="22" sid="1">
+         Sensor fusion has been used frequently and with a great deal of success.
+        </s>
+        <s pid="22" sid="2">
+         The combination of sensors that collect data from different spectrums is often able to locate pedestrians more consistently, accurately and with significantly less computational cost then a single type of sensor.
+        </s>
+        <s pid="22" sid="3">
+         The combinations of sensors increase the equipment cost but greatly enhance that reliability of a system.
+        </s>
+        <s pid="22" sid="4">
+         Almost every autonomous vehicle that has been developed to the point of life-like testing has utilized multiple sensors and sensor fusion for navigation [6].
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         As previously mentioned, a frequent paring of sensors is a range sensor with a light sensor.
+        </s>
+        <s pid="23" sid="2">
+         The range sensor is used to detect obstacles, the locations of which are then mapped to the light based images as regions of interest (ROIs).
+        </s>
+        <s pid="23" sid="3">
+         By focusing on the ROIs, the amount of image processing needed for pedestrian detection is greatly reduced and the system can respond more quickly and with greater accuracy.
+        </s>
+        <s pid="23" sid="4">
+         Range sensors can also be used to calibrate pedestrian size when pedestrian detection is done via shape recognition.
+        </s>
+        <s pid="23" sid="5">
+         Milch and Behrens [20] use RADAR and vision to identify potential pedestrians and verify their nature using statistical shape models.
+        </s>
+        <s pid="23" sid="6">
+         Fang et al [21] use visible light and FIR to find and inspect ROIs and also suggest new features for segmentation which take advantage of the distinctive properties of FIR.
+        </s>
+        <s pid="23" sid="7">
+         Scheunert et al [22] use a laser scanner for ROI identification in an infrared image.
+        </s>
+        <s pid="23" sid="8">
+         They then combine the sensor information via parallel Kalman filters in order to sense and track multiple objects.
+        </s>
+        <s pid="23" sid="9">
+         LIDAR was used by Szarvas et al [23] to find ROIs in visible light images which were then analyzed with convolution neural networks to classify images of pedestrians.
+        </s>
+       </p>
+       <p>
+        <s pid="24" sid="1">
+         Other researchers have used a combination of infrared and visible sensors.
+        </s>
+        <s pid="24" sid="2">
+         This combination creates a system that is reliable in a larger range of environments.
+        </s>
+        <s pid="24" sid="3">
+         Information can be collected from both sensors under normal conditions while in low light conditions the infrared camera provides the majority of the information and in extreme weather environments the visible light camera would be the main source of data.
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         Han and Bhanu [24] use color and infrared video to extract human silhouettes from a scene using image registration; silhouette extraction is often a precursor step to human recognition via gait identification.
+        </s>
+        <s pid="25" sid="2">
+         While the infrared video generally provides better human silhouettes, it was occasionally unreliable because the temperature of parts of the human body became close to that of the surrounding environment.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Pedestrian Motion Prediction
+      </div>
+      <p>
+       <s pid="26" sid="1">
+        Predicting the motion of a pedestrian or another obstacle can be a challenging task.
+       </s>
+       <s pid="26" sid="2">
+        Methods for predicting pedestrian behavior are dependent upon the intended application scenario.
+       </s>
+       <s pid="26" sid="3">
+        For instance, a control system for a quickly moving vehicle on a straight road would only have the option to slow or stop the vehicle to avoid pedestrians and would thus only require a simple description about the projected path of the pedestrian – if the path was projected into the road and when.
+       </s>
+       <s pid="26" sid="4">
+        However, a control system for a robot navigating around a less structured environment, such as a parking lot, might need to plan a path around multiple moving people and would thus need to make more detailed and long term predictions about the future motion of the people.
+       </s>
+       <s pid="26" sid="5">
+        However, given that a large percentage of pedestrians involved in accidents are inebriated, one wonders about the accuracy of detailed models presumably based on sober subjects.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Linear Estimation
+       </div>
+       <p>
+        <s pid="27" sid="1">
+         Linear estimators track an obstacle for a few sensor cycles to determine the obstacle’s velocity.
+        </s>
+        <s pid="27" sid="2">
+         Future movement is predicted to continue at the same speed and direction as the previously recorded motion.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         Tsuji et al [25] estimate the relative movement vector, between the pedestrian and the vehicle, based on principle component analysis.
+        </s>
+        <s pid="28" sid="2">
+         As the vehicle is, in this case, confined to a road lane where motion planning will consist only of speed changes along the road, elaborate motion prediction models for the vehicle to navigate around are not necessary.
+        </s>
+        <s pid="28" sid="3">
+         In addition, for vehicles traveling at high speeds the time between identification of a pedestrian and a possible collision are not usually long enough for the pedestrian to significantly change his or her speed or direction.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Modeling or Clustering
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         Modeling or clustering methods are two stage learning techniques.
+        </s>
+        <s pid="29" sid="2">
+         Motion patterns are learned during the first, observational, stage – this stage can be performed once and the results used repeatedly during operation.
+        </s>
+        <s pid="29" sid="3">
+         Later the motion of new obstacles is predicted based on which pattern it resembles.
+        </s>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         Large et al [26] use a two stage motion predictor; the first stage monitors moving obstacles in a predefined environment and classifies the results into clusters of typical motion patterns.
+        </s>
+        <s pid="30" sid="2">
+         The second stage estimates the future motion of new obstacles based on the cluster with the maximum likelihood of the obstacle’s initial movements.
+        </s>
+       </p>
+       <p>
+        <s pid="31" sid="1">
+         Bennewitz et al [27] learn typical motion patterns of people using an EM-algorithm to cluster trajectories.
+        </s>
+        <s pid="31" sid="2">
+         Kalman filtering is used to track each person in the environment.
+        </s>
+        <s pid="31" sid="3">
+         They then weight an occupancy grid, with the probability of each cell being occupied, and use A* to plan a path.
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Zhu [28] uses Hidden Markov Models to computational classify the motion of moving obstacles as constant velocity, random motion or intentional motion.
+        </s>
+        <s pid="32" sid="2">
+         Wakim et al [29] also use a Hidden Markov Model but with the four motion states: run, jog, walk and static.
+        </s>
+        <s pid="32" sid="3">
+         They use the current state to estimate future movement and changes in state.
+        </s>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         Schulz et al [30] track multiple moving obstacles using motion models and sample-based Joint Probabilistic Data Association Filters, which do not require a Gaussian distribution, to associate detected features with tracked obstacles.
+        </s>
+       </p>
+       <p>
+        <s pid="34" sid="1">
+         Shimizu and Poggio [31] use Haar wavelet features from sequences of images of walking people walking to train SVMs to estimate the walking direction of people.
+        </s>
+        <s pid="34" sid="2">
+         The actual estimation of walking direction can be performed with a single image.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Discrete Choice
+       </div>
+       <p>
+        <s pid="35" sid="1">
+         Antonini et al [32] propose a discrete choice model to predict a pedestrian’s future speed and direction based on data gathered from video of actual pedestrians.
+        </s>
+        <s pid="35" sid="2">
+         This model assumes that most pedestrians move directly toward their destination with predictable changes in speed or direction.
+        </s>
+        <s pid="35" sid="3">
+         Antonini and Bierlaire [33] later update their model to take pedestrian interaction into consideration.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Stationary Obstacle Avoidance/ Path Planning
+      </div>
+      <p>
+       <s pid="36" sid="1">
+        There are two main types of configuration space path planers, topological and metric.
+       </s>
+       <s pid="36" sid="2">
+        Topological path planning uses landmarks to direct a vehicle.
+       </s>
+       <s pid="36" sid="3">
+        As the environment assumed for this project is not well enough know for the vehicle to navigate via landmarks, this review will focus on metric path planning, which can easily be broken down into sub goals for short term path planning.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        There are numerous types of metric path planners, the most common of these, that are applicable for pedestrian avoidance with limited knowledge of the environment, are roadmap, cell decomposition and artificial potential field methods.
+       </s>
+       <s pid="37" sid="2">
+        Roadmap and cell decomposition path planners generally consist of two stages, representing the environment in configuration space and then an algorithm to determine the best path or roadmap through that space.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Roadmap Methods
+       </div>
+       <p>
+        <s pid="38" sid="1">
+         There are several commonly used roadmap representation methods.
+        </s>
+        <s pid="38" sid="2">
+         Using the generalized Voronoi diagram, points are found that are equidistant from nearby obstacles.
+        </s>
+        <s pid="38" sid="3">
+         A path along these points, directed towards the goal location, is an extremely conservative means of obstacle avoidance.
+        </s>
+        <s pid="38" sid="4">
+         Ó’Dúnlaing and Yap [34] described the method of retracting free space into a Voronoi diagram where the vehicle is a disc.
+        </s>
+        <s pid="38" sid="5">
+         Latombe [35] gives a good general description of the Voronoi diagram algorithm and possible variations.
+        </s>
+        <s pid="38" sid="6">
+         Choset and Burdick [36] define the hierarchical generalized Voronoi diagram and show how it can be used for exploration of an unknown environment.
+        </s>
+       </p>
+       <p>
+        <s pid="39" sid="1">
+         Unlike that Voronoi diagram which maximizes the path’s distance from obstacles, a Visibility graph (or shortest-path roadmap) creates a path that hugs the vertices of obstacles in order to find the shortest path from the starting location to the goal.
+        </s>
+        <s pid="39" sid="2">
+         As the name alludes, a Visibility graph creates path segments from a vertex of an obstacle to all other obstacle vertices that are visible from the initial vertex.
+        </s>
+        <s pid="39" sid="3">
+         The path planning algorithm will then select the shortest set of segments to reach the goal.
+        </s>
+        <s pid="39" sid="4">
+         Nilsson first introduced this idea in 1969 [37].
+        </s>
+        <s pid="39" sid="5">
+         Both Edelsbrunner [38] and Latombe [35] provide a through description.
+        </s>
+        <s pid="39" sid="6">
+         Oommen et al [39] use visibility graphs for robot navigation in an unexplored environment.
+        </s>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         After the roadmap is created using one of either these methods, or the countless other methods mentioned in literature, a variety of algorithms exist to find the best route along the roadmap to the goal.
+        </s>
+        <s pid="40" sid="2">
+         The choice of these algorithms depends greatly on the amount and reliability of the information available to the path planner.
+        </s>
+        <s pid="40" sid="3">
+         Dijkstra’s algorithm works by finding the lowest cost path from the initial stare to a signal state, assuming that all path costs are non negative.
+        </s>
+        <s pid="40" sid="4">
+         This algorithm does not require a heuristic function to predict the cost from future states to the goal state.
+        </s>
+        <s pid="40" sid="5">
+         Urdiales et al [40] use Dijkstra’s algorithm to find the shortest path within a multi-level path planning algorithm.
+        </s>
+        <s pid="40" sid="6">
+         Qin et al [41] use a particle swarm optimization algorithm after Dijkstra’s algorithm to find an optimal path.
+        </s>
+       </p>
+       <p>
+        <s pid="41" sid="1">
+         A*, which is an extension of Dijkstra’s algorithm, is often considered one of the best general planners.
+        </s>
+        <s pid="41" sid="2">
+         However to use A*, the path planner must have an admissible heuristic function to estimate (without overestimating) the cost to move from every state to the goal state.
+        </s>
+        <s pid="41" sid="3">
+         As the heuristic function is often not available for unexplored territory, this algorithm, while powerful, is limited in its application and can often only be used for path planning in the local region of an unknown environment.
+        </s>
+        <s pid="41" sid="4">
+         Alexopoulos and Griffin [42] use a variation of A* to find a collision free path among moving obstacles.
+        </s>
+        <s pid="41" sid="5">
+         Oriolo et al [43] use iterative applications of A* to generate local paths in an unknown environment.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Cell Decomposition
+       </div>
+       <p>
+        <s pid="42" sid="1">
+         The environment can be also be broken down, via cell decomposition, into a grid of either regular or irregular grid elements.
+        </s>
+        <s pid="42" sid="2">
+         Depending on the technique used to create the grid, this method can be referred to as fixed, adaptive, approximate variable-cell or Quadtree cell decomposition, certainty grids or occupancy grids.
+        </s>
+        <s pid="42" sid="3">
+         For basic fixed cell decomposition, a Cartesian grid is superimposed on the environment.
+        </s>
+        <s pid="42" sid="4">
+         Grid elements are considered occupied if an obstacle resides in any part of the grid element; the path planning algorithm finds a path through unoccupied cells.
+        </s>
+        <s pid="42" sid="5">
+         Lozano-Perez [44] use cell decomposition for automatic planning of manipulator movement.
+        </s>
+        <s pid="42" sid="6">
+         Moravec and Elfes [45] use wide angle sonar to map an area and classify regions as empty, occupied or unknown.
+        </s>
+        <s pid="42" sid="7">
+         Thrun [46] uses data from multiple robots to create a three-dimensional map using occupancy grids.
+        </s>
+        <s pid="42" sid="8">
+         Jigong et al [47] use cell decomposition along with LGODAM to plan a path while avoiding obstacle traps.
+        </s>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         For irregular grids, if an obstacle falls in part of a grid element, that element is divided up into smaller and smaller segments until each segment is either fully occupied by an obstacle or completely free.
+        </s>
+        <s pid="43" sid="2">
+         Zhu and Latombe [48] use constraint reformulation with hierarchical approximate cell decomposition to reduce the amount of area that contains a mix of occupied and unoccupied space.
+        </s>
+        <s pid="43" sid="3">
+         They also modify the planner to take advantage of information about previously made mistakes.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Artificial Potential Field Methods
+       </div>
+       <p>
+        <s pid="44" sid="1">
+         Potential Field planners create a field or a gradient throughout the environment based on an attractive force exerted by the goal location and a localized repulsive force created by obstacles that should be avoided.
+        </s>
+        <s pid="44" sid="2">
+         The robot is then treated as a point under the influence of this field and is smoothly guided to the goal.
+        </s>
+        <s pid="44" sid="3">
+         O. Khatib [49] first introduce the artificial potential field concept and use it to control a manipulator in a complex environment.
+        </s>
+        <s pid="44" sid="4">
+         Borenstein and Koren [50] produce a virtual force field by combining certainty grids with an artificial potential field.
+        </s>
+        <s pid="44" sid="5">
+         Hwang and Ahuja [51] create a path by searching a graph created from the local minima of a potential field.
+        </s>
+        <s pid="44" sid="6">
+         Montano and Asensio [52] create an artificial potential field using a 3D laser range rotating sensor and show its usefulness on basic tasks such as avoiding obstacles or following walls.
+        </s>
+        <s pid="44" sid="7">
+         Batavia and Nourbakhsh [53] use a global potential field to perform the planning and navigation of a personal robot.
+        </s>
+       </p>
+       <p>
+        <s pid="45" sid="1">
+         M. Khatib et al [54] introduce the rotation and task potential fields, which they refer to as the extended potential field.
+        </s>
+        <s pid="45" sid="2">
+         The rotation potential field takes the vehicles orientation into account when calculating an obstacle’s repulsive field, in this was a vehicles traveling parallel to an obstacle would not suffer from the same repulsion as a vehicle directly approaching an obstacle.
+        </s>
+        <s pid="45" sid="3">
+         The task potential field allows the vehicle to ignore the repulsive fields of obstacle that it will not be approaching while completing its tasks.
+        </s>
+       </p>
+       <p>
+        <s pid="46" sid="1">
+         Borenstein and Koren [55] introduce a variation on the artificial potential field method and the occupancy grid method; the Vector Field Histogram.
+        </s>
+        <s pid="46" sid="2">
+         The vector field histogram uses polar coordinates to prevent the vehicle from assuming trajectories that will approach obstacles while directing it to the goal.
+        </s>
+        <s pid="46" sid="3">
+         This method allows vehicles to be directed down narrow corridors or between close obstacles, when this is the shortest path, a path that is usually avoided with traditional potential field methods.
+        </s>
+        <s pid="46" sid="4">
+         Later, Ulrich and Borenstein introduce VHF+ [56], to improve reliability and smooth the robot trajectories, and VHF* [57], a combination of VHF+ and A*, to deal with traps that arise from typical short term planning methods.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Collision Prediction and Dynamic Obstacle Avoidance
+      </div>
+      <p>
+       <s pid="47" sid="1">
+        The ability to avoid moving obstacles is a necessary for robots that must perform tasks in environments that contain vehicles, people or other non-stationary objects.
+       </s>
+       <s pid="47" sid="2">
+        Dynamic obstacle avoidance, while navigating to a goal, is a rapidly growing field due to the increasing number of situations where mobile robots or other autonomous systems are present.
+       </s>
+       <s pid="47" sid="3">
+        Numerous papers and a few books have been published on this subject; however no single method appears to be universally preferred, perhaps due in part to the wide variety of environments and applications for which autonomous or semi-autonomous robots are being used.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Adapted Static Obstacle Avoidance
+       </div>
+       <div>
+        <div class="head_3">
+         Velocity Control
+        </div>
+        <p>
+         <s pid="48" sid="1">
+          One of the simplest forms of motion planning in a dynamic environment involves generating a path among any static obstacles using traditional path planning algorithms (see previous section on static path planning) and then modifying the robot’s velocity along that path, in real-time, to avoid dynamic obstacles.
+         </s>
+         <s pid="48" sid="2">
+          While this method is often successful at reaching the goal without encountering an obstacle, it cannot be guaranteed to find a time optimal path and in certain situations proves unable to avoid the dynamic obstacles.
+         </s>
+         <s pid="48" sid="3">
+          It does however reduce the computational time needed to determine a path for the robot as dynamic obstacles that do not intersect the pre-planned path can be ignored and obstacles that do interest the path need only be located a short time in advance and considered only in terms of speed adjustment.
+         </s>
+        </p>
+        <p>
+         <s pid="49" sid="1">
+          Kant and Zucker [58 present this method and use modified velocity profiles along an original static path which was generated via a visibility graph approach.
+         </s>
+         <s pid="49" sid="2">
+          Lee and Lee [59], and Fujimura and Samet [60] also use a combination of velocity control along a visibility graph generated path.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Re-planning
+        </div>
+        <p>
+         <s pid="50" sid="1">
+          Another method that uses static obstacles involves planning a path, using a very fast algorithm, around static obstacles and the present location of dynamic obstacle (treating them as static).
+         </s>
+         <s pid="50" sid="2">
+          As time progresses new paths are planned to take into account any change in the environment.
+         </s>
+         <s pid="50" sid="3">
+          While these paths are not always optimal, due to the continuous re-planning, they are well suited for environments where dynamic obstacles move infrequently or only small distances, such as an office where a chair may be shifted or a draw opened.
+         </s>
+         <s pid="50" sid="4">
+          Konolige [61] uses a gradient field to locally evaluate paths and determine if they are obstacle free.
+         </s>
+         <s pid="50" sid="5">
+          Oriolo et al [62] generate local paths within an explored area and terminate robot motion for unexpected (usually dynamic) obstacles.
+         </s>
+         <s pid="50" sid="6">
+          Fujimori et al [63] use adaptive navigation to detect and avoid obstacles in real time while respecting the dynamic limitations of the robot.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Obstacle Avoidance
+        </div>
+        <p>
+         <s pid="51" sid="1">
+          Zhuang et al [64] use a path planner with a Visibility graph-like obstacle avoidance scheme to follow a very direct path to a goal.
+         </s>
+         <s pid="51" sid="2">
+          A robot, under this algorithm, follows a straight path to a goal (without any static obstacle pre-planning).
+         </s>
+         <s pid="51" sid="3">
+          When the algorithm detects an object within the current planning window the algorithm determines if it is a static or dynamic obstacle.
+         </s>
+         <s pid="51" sid="4">
+          If the obstacle is static, the algorithm plots sub-goal(s) to allow the robot to efficiently circumnavigate the obstacle and return to its original path.
+         </s>
+         <s pid="51" sid="5">
+          If the obstacle is dynamic then the algorithm uses auto-regression to predict the obstacles future position and the robot circumnavigates that position, updating its path in real time.
+         </s>
+        </p>
+        <p>
+         <s pid="52" sid="1">
+          While this method does not always find a time or distance optimal path, no global knowledge is required which drastically reduces computation time.
+         </s>
+         <s pid="52" sid="2">
+          The short-term planning limit also makes the path planner more flexible for unknown and poorly know obstacle dynamics.
+         </s>
+         <s pid="52" sid="3">
+          However, modifications would have to be made to adapt the planner for uncertainty in the location of immediate obstacles.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Dynamic Obstacle Avoidance
+       </div>
+       <div>
+        <div class="head_3">
+         Path Planning with a Time Dimension
+        </div>
+        <p>
+         <s pid="53" sid="1">
+          Fraichard [65] presents a way to plan trajectories in a dynamic workspace which he entitles the "state-time space" approach.
+         </s>
+         <s pid="53" sid="2">
+          If the current position of all static and dynamic obstacles and the velocity and acceleration of all dynamic obstacles is fully know before navigation, three dimensional path planners can plot an obstacle free path through "state-time space," in which the environment at each time step is treated as a two dimensional plane with time as a third dimension.
+         </s>
+         <s pid="53" sid="3">
+          Depending on the path planning algorithm used with this method, an optimal path to the goal (if one exists) can be guaranteed to be found.
+         </s>
+        </p>
+        <p>
+         <s pid="54" sid="1">
+          However, the limitations on this method make it difficult to apply to real-world scenarios.
+         </s>
+         <s pid="54" sid="2">
+          While, as previously mentioned, methods exits to predict future (specifically) human movement none of these methods has nearly the certainty of performance that would be needed in order to use the "state-time space" approach with its fullest advantage.
+         </s>
+         <s pid="54" sid="3">
+          In addition, the cost is prohibitive to completely up-date the path as changes in the velocity of obstacles are detected in the three-dimensional world.
+         </s>
+        </p>
+        <p>
+         <s pid="55" sid="1">
+          Kindel et al [66] apply kinematic and dynamic constraints to the robot space-time planning and apply their results to an experimental robot with an overhead vision system.
+         </s>
+        </p>
+        <p>
+         <s pid="56" sid="1">
+          Yu and Su [67] use a variation of "state-time space" planning but limit the region of planning by focusing on "observation space," the area that the robot can sense, and "work space" the obstacles that are close to the robot.
+         </s>
+         <s pid="56" sid="2">
+          They also make extensive use of path repair algorithms to deal with dynamic obstacles and the inability to completely predict their future movement.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Genetic and Evolutionary Algorithms
+        </div>
+        <p>
+         <s pid="57" sid="1">
+          Wang et al [68] use genetic algorithms to generate a path around static obstacles and the predicted collision points of dynamic obstacles based on a polygon representation of the obstacles.
+         </s>
+         <s pid="57" sid="2">
+          They reduce the calculation time needed for off-line planning and path re-calculation by considering only the vertices of obstacles using vertex++.
+         </s>
+        </p>
+        <p>
+         <s pid="58" sid="1">
+          Xiao et al [69,70] develop and revise the Evolutionary Planner/ Navigator (EP/N).
+         </s>
+         <s pid="58" sid="2">
+          This planner/navigator can utilize specific environment knowledge to enhance its path planning performance.
+         </s>
+        </p>
+        <p>
+         <s pid="59" sid="1">
+          Han et al [71] use genetic search algorithms to generate a goal directed dynamic path.
+         </s>
+         <s pid="59" sid="2">
+          Sugihara and Smith [72] use a genetic algorithm for path and trajectory planning.
+         </s>
+         <s pid="59" sid="3">
+          Their method is suitable for pre-planning as well as real-time motion planning.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Potential Field
+        </div>
+        <p>
+         <s pid="60" sid="1">
+          The potential field method of obstacle avoidance, described by Borenstein and Koren [50] in the previous section on static obstacle avoidance, can be adapted for dynamic obstacle avoidance.
+         </s>
+         <s pid="60" sid="2">
+          O. Khatib [49]in his initial artificial potential field paper, surmises that a combination of high level (global) path planning with low level (local goal) planning could allow a manipulator to avoid moving obstacles.
+         </s>
+        </p>
+        <p>
+         <s pid="61" sid="1">
+          Malik [73], on the other hand, develops the concept of the Extrapolated Potential Field, which predicts an obstacle’s path and uses a time and distance weighting scheme to generate a path, for the robot to the goal, that avoids all obstacles.
+         </s>
+         <s pid="61" sid="2">
+          Similar to the static potential field planners, this method is usually quite fast at generating a path but will often miss potentially shorter routes between obstacles that are close together.
+         </s>
+         <s pid="61" sid="3">
+          As Borenstein and Koren mentioned for the static case, this type of planner is also subject to oscillation and can run into problems with local minimum when confronted with a combination of static and dynamic obstacles.
+         </s>
+        </p>
+        <p>
+         <s pid="62" sid="1">
+          The Linear Programming Navigation gradient method (LPN) was originally developed for static obstacles by Konolige [61], but Farinelli and Iocchi [74] modify this method for environments with dynamic obstacles.
+         </s>
+         <s pid="62" sid="2">
+          The LPN method uses numerical artificial potential fields that take both intrinsic (situational) and adjacency (movement) costs into account to compute a gradient using a generalization of the wavefront algorithm.
+         </s>
+         <s pid="62" sid="3">
+          The dynamic variation (LPN-DE) computes the projected motion of the obstacle and increases the weight of the region where the obstacle is predicted to travel to account for future movement.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Velocity Obstacles
+        </div>
+        <p>
+         <s pid="63" sid="1">
+          Fiorini and Shiller[75] develop and Fiorini and Shiller [76]and Shiller et al [77] expand upon the notion of the velocity obstacle.
+         </s>
+         <s pid="63" sid="2">
+          Velocity obstacles are a first-order method of motion planning that use robot and obstacle velocities directly to avoid collisions in time-varying environments.
+         </s>
+         <s pid="63" sid="3">
+          This method computes a collision cone of robot velocities that will lead to probable collisions with an obstacle, based on the obstacle’s current (and in later works) projected velocity.
+         </s>
+         <s pid="63" sid="4">
+          The velocity obstacle method takes the dynamic constraints of the robot into consideration to narrow down the field of potential robot velocities.
+         </s>
+        </p>
+        <p>
+         <s pid="64" sid="1">
+          In later papers, Large et al [78] adapt the velocity obstacle concept to account for risk and long obstacles (such as hallway walls).
+         </s>
+        </p>
+        <p>
+         <s pid="65" sid="1">
+          Yamamoto et al [79] apply the velocity obstacle concept to situations more likely to be encountered in the real world including obstacles that change velocity during sensor cycles and they also introduce the idea of a collision distance index to prioritize the avoidance of obstacles that are closer (and thus pose a more imminent threat) to the robot.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         Dynamic Window/ Curvature Velocity Method
+        </div>
+        <p>
+         <s pid="66" sid="1">
+          The dynamic window approach, which can also been used as a simplifying adaptation on other algorithms, reduces the complexity of path planning by only considering velocities that the robot can reach safely with in a short time interval.
+         </s>
+         <s pid="66" sid="2">
+          Using this method, all of the safe and reachable velocities of the robot make up the dynamic window, which is represented in velocity space.
+         </s>
+         <s pid="66" sid="3">
+          On its own, the Dynamic Window Method is best suited for static environments or environments that have few, slowly moving dynamic obstacles.
+         </s>
+         <s pid="66" sid="4">
+          However, it can be a very powerful tool when combined with other algorithms.
+         </s>
+        </p>
+        <p>
+         <s pid="67" sid="1">
+          Fox et al [80] use the dynamic window approach to account for the robot’s dynamic constraints and applied the algorithm to their robot RHINO.
+         </s>
+         <s pid="67" sid="2">
+          Brock and O. Khatib [81] propose the global dynamic window approach to combine path planning with real-time obstacle avoidance in order safely navigate in a dynamic environment while approaching a goal.
+         </s>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Bibliography
+      </div>
+      <ul id="N10231">
+       <li id="N10232">
+        1. “Traffic Safety Facts: 2006 Data, Pedestrians.” NHTSA’s National Center for Statistics and  Analysis. 2007. 12 March 2008    &lt;http://www.nhtsa.dot.gov/portal/site/nhtsa/menuitem.dfedd570f698cabbbf30811060008a0c&gt;
+       </li>
+       <li id="N10234">
+        2. Army News Services. “Army Sees 20-Percent Reduction in Accident Fatalities.” Veteran News and Information Services. 16 Jan. 2006. 12 March 2008 &lt;http://www.vnis.com/story.cfm?textnewsid=2244&gt;
+       </li>
+       <li id="N10236">
+        3. [Online]. Available: http://www.worldbank.org/html/fpd/transport/roads/safety.htm
+       </li>
+       <li id="N10238">
+        4. Gavrila, D.M.; Giebel, J., Munder, S., "Vision-based pedestrian detection: the PROTECTOR system," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 13-18 June 2004
+       </li>
+       <li id="N1023A">
+        5. Töns, M., Doerfler, R., Meinecke, M., Obojski, M.A., “Radar Sensors and Sensor Platform used for Pedestrian Protection in the EC-funded project SAVE-U,” Intelligent Vehicles Symposium, 2004 IEEE vol., no., pp. 813-818, June 2004
+       </li>
+       <li id="N1023C">
+        6. [Online]. Available: http://www.darpa.mil/GRANDCHALLENGE
+       </li>
+       <li id="N1023E">
+        7. Papageorgiou, C. and Poggio, T., “A trainable system for object detection,” International Journal on Computer Vision, vol. 38, pp. 15, 2000.
+       </li>
+       <li id="N10240">
+        8. Havasi, L., Szlávik, Z., and Szirányi T.,“Pedestrian detection using derived third-order symmetry of legs,” Proceedings of the  International Conference Computer Vision Graph., 2004.
+       </li>
+       <li id="N10242">
+        9. Abramson, Y.; Steux, B., "Hardware-friendly pedestrian detection and impact prediction," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 590-595, 14-17 June 2004
+       </li>
+       <li id="N10244">
+        10. Gandhi, T.; Trivedi, M.M., "Vehicle mounted wide FOV stereo for traffic and pedestrian detection," Image Processing, 2005. ICIP 2005. IEEE International Conference on , vol.2, no., pp. II-121-4, 11-14 Sept. 2005
+       </li>
+       <li id="N10246">
+        11. Grubb, G.; Zelinsky, A.; Nilsson, L.; Rilbe, M., "3D vision sensing for improved pedestrian safety," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 19-24, 14-17 June 2004
+       </li>
+       <li id="N10248">
+        12. Niyogi, S.A.; Adelson, E.H., "Analyzing and recognizing walking figures in XYT," Computer Vision and Pattern Recognition, 1994. Proceedings CVPR '94., 1994 IEEE Computer Society Conference on , vol., no., pp.469-474, 21-23 Jun 1994
+       </li>
+       <li id="N1024A">
+        13. Cutler, R.; Davis, L.S., "Robust real-time periodic motion detection, analysis, and applications," Pattern Analysis and Machine Intelligence, IEEE Transactions on , vol.22, no.8, pp.781-796, Aug 2000
+       </li>
+       <li id="N1024C">
+        14. Munder, S.; Gavrila, D.M., "An Experimental Study on Pedestrian Classification," Pattern Analysis and Machine Intelligence, IEEE Transactions on , vol.28, no.11, pp.1863-1868, Nov. 2006
+       </li>
+       <li id="N1024E">
+        15. [Online]. Available: http://www.bmwusa.com/Standard/Content/Vehicles/2008/5/535xiSedan/Features_and_Specs/535xiSedanPkgsandOptions.aspx
+       </li>
+       <li id="N10250">
+        16. Broggi, A.; Fascioli, A.; Carletti, M.; Graf, T.; Meinecke, M., "A multi-resolution approach for infrared vision-based pedestrian detection," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 7-12, 14-17 June 2004
+       </li>
+       <li id="N10252">
+        17. Xu, F.; Liu X.; Fujimura, K., "Pedestrian detection and tracking with night vision," Intelligent Transportation Systems, IEEE Transactions on , vol.6, no.1, pp. 63-71, March 2005
+       </li>
+       <li id="N10254">
+        18. Meis, U.; Oberlander, M.; Ritter, W., "Reinforcing the reliability of pedestrian detection in far-infrared sensing," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 779-783, 14-17 June 2004
+       </li>
+       <li id="N10256">
+        19. Liu, X.; Fujimura, K., "Pedestrian detection using stereo night vision," Vehicular Technology, IEEE Transactions on , vol.53, no.6, pp. 1657-1665, Nov. 2004
+       </li>
+       <li id="N10258">
+        20. Milch, S.; Behrens, M., Pedestrian Detection With Radar and Computer Vision [online] Available: http://www.smart-microwave-sensors.de/Pedestrian_Detection.pdf.
+       </li>
+       <li id="N1025A">
+        21. Fang, Y.; Yamada, K.; Ninomiya, Y.; Horn, B.; Masaki, I., "Comparison between infrared-image-based and visible-image-based approaches for pedestrian detection," Intelligent Vehicles Symposium, 2003. Proceedings. IEEE , vol., no., pp. 505-510, 9-11 June 2003
+       </li>
+       <li id="N1025C">
+        22. Scheunert, U.; Cramer, H.; Fardi, B.; Wanielik, G., "Multi sensor based tracking of pedestrians: a survey of suitable movement models," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 774-778, 14-17 June 2004
+       </li>
+       <li id="N1025E">
+        23. Szarvas, M.; Yoshizawa, A.; Yamamoto, M.; Ogata, J., "Pedestrian detection with convolutional neural networks," Intelligent Vehicles Symposium, 2005. Proceedings. IEEE , vol., no., pp. 224-229, 6-8 June 2005
+       </li>
+       <li id="N10260">
+        24. Han, J., Bhanu, B., “Detecting Moving Humans Using Color and Infrared Video,” IEEE Conference on Multisensor Fusion and Integration for Intelligent Systems, 2003.
+       </li>
+       <li id="N10262">
+        25. Tsuji, T.; Hattori, H.; Watanabe, M.; Nagaoka, N., "Development of night-vision system," Intelligent Transportation Systems, IEEE Transactions on , vol.3, no.3, pp. 203-209, Sep 2002
+       </li>
+       <li id="N10264">
+        26. Large, F.; Vasquez, D.; Fraichard, T.; Laugier, C., "Avoiding cars and pedestrians using velocity obstacles and motion prediction," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 375-379, 14-17 June 2004
+       </li>
+       <li id="N10266">
+        27. Bennewitz, M.; Burgard, W.; Thrun, S., "Adapting navigation strategies using motions patterns of people," Robotics and Automation, 2003. Proceedings. ICRA '03. IEEE International Conference on , vol.2, no., pp. 2000-2005 vol.2, 14-19 Sept. 2003
+       </li>
+       <li id="N10268">
+        28. Zhu, Q., "Hidden Markov model for dynamic obstacle avoidance of mobile robot navigation," Robotics and Automation, IEEE Transactions on , vol.7, no.3, pp.390-397, Jun 1991
+       </li>
+       <li id="N1026A">
+        29. Wakim, C.F.; Capperon, S.; Oksman, J., "A Markovian model of pedestrian behavior," Systems, Man and Cybernetics, 2004 IEEE International Conference on , vol.4, no., pp. 4028-4033 vol.4, 10-13 Oct. 2004
+       </li>
+       <li id="N1026C">
+        30. Schulz, D.; Burgard, W.; Fox, D.; Cremers, A.B., "Tracking multiple moving objects with a mobile robot," Computer Vision and Pattern Recognition, 2001. CVPR 2001. Proceedings of the 2001 IEEE Computer Society Conference on , vol.1, no., pp. I-371-I-377 vol.1, 2001
+       </li>
+       <li id="N1026E">
+        31. Shimizu, H.; Poggio, T., "Direction estimation of pedestrian from multiple still images," Intelligent Vehicles Symposium, 2004 IEEE , vol., no., pp. 596-600, 14-17 June 2004
+       </li>
+       <li id="N10270">
+        32. Antonini, G.; Venegas, S.; Thiran, J.P.; Bierlaire, M., “A discrete choice pedestrian behavior model for pedestrian detection in visual tracking systems,” Proceedings on Advanced Concepts in Intelligent Vision Systems. Brussels, Belgium, Sep. 2004
+       </li>
+       <li id="N10272">
+        33. Antonini, G.; Bierlaire, M “Capturing interactions in pedestrian walking behavior in a discrete choice framework,” Transportation Research, Part B, vol. 40, pp. 667, 2006.
+       </li>
+       <li id="N10274">
+        34. O’D´unlaing, C. and Yap, C. K. (1982). A retraction method for planning the motion of a disc. Journal of Algorithms, 6, 104–111.
+       </li>
+       <li id="N10276">
+        35. Latombe, J. C., Robot Motion Planning Boston: Kluwer, 1991.
+       </li>
+       <li id="N10278">
+        36. Choset, H.; Burdick, J., “Sensor-based exploration: The hierarchical generalized Voronoi graph,” International Journal of Robotics Research, vol. 19, no. 2, pp. 96-125, 2000
+       </li>
+       <li id="N1027A">
+        37. Nilsson, N.J, “A mobile automaton: an application of artificial intelligence techniques,” Proceedings IJCAI-I, Washington, DC, 1969.
+       </li>
+       <li id="N1027C">
+        38. Edelsbrunner, H., Algorithms in Combinatorial Geometry. Springer-Verlag, Berlin, Heidelberg, New York, London, Paris, Tokyo, 1988. Berlin, Heidelberg, New York, London, Paris, Tokyo, 1988.
+       </li>
+       <li id="N1027E">
+        39. Oommen, B.; Iyengar, S.; Rao, N.; Kashyap, R., "Robot navigation in unknown terrains using learned visibility graphs. Part I: The disjoint convex obstacle case," Robotics and Automation, IEEE Journal of [legacy, pre - 1988] , vol.3, no.6, pp. 672-681, Dec 1987
+       </li>
+       <li id="N10280">
+        40. Urdiales, C.; Bandera, A.; Arrebola, F.; Sandoval, F., "Multi-level path planning algorithm for autonomous robots," Electronics Letters , vol.34, no.2, pp.223-224, 22 Jan 1998
+       </li>
+       <li id="N10282">
+        41. Qin, Y.; Sun, D.; Li, N.; CenY., "Path planning for mobile robot using the particle swarm optimization with mutation operator," Machine Learning and Cybernetics, 2004. Proceedings of 2004 International Conference on , vol.4, no., pp. 2473-2478 vol.4, 26-29 Aug. 2004
+       </li>
+       <li id="N10284">
+        42. Alexopoulos, C.; Griffin, P.M., "Path planning for a mobile robot," Systems, Man and Cybernetics, IEEE Transactions on , vol.22, no.2, pp.318-322, Mar/Apr 1992
+       </li>
+       <li id="N10286">
+        43. Oriolo, G.; Ulivi, G.; Vendittelli, M., "Real-time map building and navigation for autonomous robots in unknown environments," Systems, Man, and Cybernetics, Part B, IEEE Transactions on,  vol.28, no.3, pp.316-333, Jun 1998
+       </li>
+       <li id="N10288">
+        44. Lozano-Perez, T., “Automatic planning of manipulator transfer movements,” Systems, Man and Cybernetics, IEEE Transactions on, vol. 11, pp. 681-698, 1981.
+       </li>
+       <li id="N1028A">
+        45. Moravec, H.; Elfes, A., "High resolution maps from wide angle sonar," Robotics and Automation. Proceedings. 1985 IEEE International Conference on , vol.2, no., pp. 116-121, Mar 1985
+       </li>
+       <li id="N1028C">
+        46. Thrun, S., “A probabilistic online mapping algorithm for teams of mobile robots,” International Journal of Robotics Research, 20(5): 335-363, 2001.
+       </li>
+       <li id="N1028E">
+        47. Li Jigong,; Yiwei, Feng; Chaoqun, Zhu, "A Novel Path Planning Method Based on Certainty Grids Map For Mobile Robot," Control Conference, 2007. CCC 2007. Chinese , vol., no., pp.185-188, July 26 2007-June 31 2007
+       </li>
+       <li id="N10290">
+        48. Zhu, D.J.; Latombe, J.-C., "New heuristic algorithms for efficient hierarchical path planning ," Robotics and Automation, IEEE Transactions on , vol.7, no.1, pp.9-20, Feb 1991
+       </li>
+       <li id="N10292">
+        49. Khatib, O., "Real-time obstacle avoidance for manipulators and mobile robots," Robotics and Automation. Proceedings. 1985 IEEE International Conference on , vol.2, no., pp. 500-505, Mar 1985
+       </li>
+       <li id="N10294">
+        50. Borenstein, J.; Koren, Y., "Real-time obstacle avoidance for fact mobile robots," Systems, Man and Cybernetics, IEEE Transactions on , vol.19, no.5, pp.1179-1187, Sep/Oct 1989
+       </li>
+       <li id="N10296">
+        51. Hwang, Y.K.; Ahuja, N., "A potential field approach to path planning," Robotics and Automation, IEEE Transactions on , vol.8, no.1, pp.23-32, Feb 1992
+       </li>
+       <li id="N10298">
+        52. Montano, L.; Asensio, J.R., "Real-time robot navigation in unstructured environments using a 3D laser rangefinder," Intelligent Robots and Systems, 1997. IROS '97., Proceedings of the 1997 IEEE/RSJ International Conference on , vol.2, no., pp.526-532 vol.2, 7-11 Sep 1997
+       </li>
+       <li id="N1029A">
+        53. Batavia, P.; Nourbakhsh, I., "Path Planning for the Cye Robot," Proceedings of IROS 2000, Vol. 1, October, 2000, pp. 15 - 20.
+       </li>
+       <li id="N1029C">
+        54. Khatib, M., Jaouni, H., Chatila, R., Laumod, J.P., "Dynamic Path Modification for Car-Like Nonholonomic Mobile Robots," IEEE Int. Conf. on Robotics and Automation, Albuquerque, USA, 1997.
+       </li>
+       <li id="N1029E">
+        55. Borenstein, J.; Koren, Y., "The vector field histogram-fast obstacle avoidance for mobile robots," Robotics and Automation, IEEE Transactions on , vol.7, no.3, pp.278-288, Jun 1991
+       </li>
+       <li id="N102A0">
+        56. Ulrich, I.; Borenstein, J., "VFH+: reliable obstacle avoidance for fast mobile robots," Robotics and Automation, 1998. Proceedings. 1998 IEEE International Conference on , vol.2, no., pp.1572-1577 vol.2, 16-20 May 1998
+       </li>
+       <li id="N102A2">
+        57. Ulrich, I.; Borenstein, J., "VFH*: local obstacle avoidance with look-ahead verification," Robotics and Automation, 2000. Proceedings. ICRA '00. IEEE International Conference on , vol.3, no., pp.2505-2511 vol.3, 2000
+       </li>
+       <li id="N102A4">
+        58. Kant, K. and Zucker, S. W. (1986). “Toward efficient trajectory planning: The path-velocity decomposition,” International Journal of Robotics Research, 5(3): 72-89.
+       </li>
+       <li id="N102A6">
+        59. Lee, B., and Lee, C. 1987. “Collision-free motion planning of two robots,” Systems, Man and Cybernetics, IEEE Transactions on 17(1):21-32.
+       </li>
+       <li id="N102A8">
+        60. Fujimura, K., and Samet, H. 1993. “Planning a time-minimal motion among moving obstacles,” Algorithmica 10:41-63.
+       </li>
+       <li id="N102AA">
+        61. Konolige, K., "A gradient method for real time robot control," Intelligent Robots and Systems, 2000. (IROS 2000). Proceedings. 2000 IEEE/RSJ International Conference on , vol.1, no., pp.639-646 vol.1, 2000
+       </li>
+       <li id="N102AC">
+        62. Oriolo, G.; Ulivi, G.; Vendittelli, M., "Real-time map building and navigation for autonomous robots in unknown environments," Systems, Man, and Cybernetics, Part B, IEEE Transactions on, vol.28, no.3, pp.316-333, Jun 1998
+       </li>
+       <li id="N102AE">
+        63. Fujimori, A.; Nikiforuk, P.N.; Gupta, M.M., "Adaptive navigation of mobile robots with obstacle avoidance," Robotics and Automation, IEEE Transactions on , vol.13, no.4, pp.596-601, Aug 1997
+       </li>
+       <li id="N102B0">
+        64. Zhuang, H.; Li, H.; Du S., "Real-time Path Planning of Mobile Robots in Dynamic Uncertain Environment," Intelligent Control and Automation, 2006. WCICA 2006. The Sixth World Congress on, vol.2, no., pp. 8886-8891, 21-23 June 2006
+       </li>
+       <li id="N102B2">
+        65. Fraichard, T., “Trajectory Planning Amidst Moving Obstacles: Path-Velocity Decomposition Revisited,” Journal of the Brazilian Computer Society [online]. 1998, vol. 4, no. 3 [cited 2008-03-13].
+       </li>
+       <li id="N102B4">
+        66. Kindel, R.; Hsu, D.; Latombe, J.-C.; Rock, S., "Kinodynamic motion planning amidst moving obstacles," Robotics and Automation, 2000. Proceedings. ICRA '00. IEEE International Conference on , vol.1, no., pp.537-543 vol.1, 2000
+       </li>
+       <li id="N102B6">
+        67. Yu, H.; Su, T., "A destination driven navigator with dynamic obstacle motion prediction," Robotics and Automation, 2001. Proceedings 2001 ICRA. IEEE International Conference on , vol.3, no., pp. 2692-2697 vol.3, 2001
+       </li>
+       <li id="N102B8">
+        68. Wang Y.; Sillitoe, I.P.W.; Mulvaney, D.J., "Mobile Robot Path Planning in Dynamic Environments," Robotics and Automation, 2007 IEEE International Conference on , vol., no., pp.71-76, 10-14 April 2007
+       </li>
+       <li id="N102BA">
+        69. Xiao, J., “Evolutionary planner/navigator in a mobile robot environment,” Handbook of Evolutionary Computation, , New York: Oxford Univ. Press and Institute of Physics, 1997
+       </li>
+       <li id="N102BC">
+        70. Xiao, J.; Michalewicz, Z.; Zhang, L., “Evolutionary planner/navigator: Operator performance and self-tuning,” Proceedings 3rd IEEE International Conference Evolutionary Computation Nagoya, Japan, pp. 366-371, May 1996.
+       </li>
+       <li id="N102BE">
+        71. Han, W.; Baek, S.; Kuc, T,, "Genetic algorithm based path planning and dynamic obstacle avoidance of mobile robots," Systems, Man, and Cybernetics, 1997. 'Computational Cybernetics and Simulation'., 1997 IEEE International Conference on , vol.3, no., pp.2747-2751 vol.3, 12-15 Oct 1997
+       </li>
+       <li id="N102C0">
+        72. Sugihara, K.; Smith, J., ``Genetic Algorithms for Adaptive Planning of Path and Trajectory of a Mobile Robot in 2D terrains'', IEICE Transactions Information and  Systems, vol. E82-D, no. 1, pp. 309--316, Jan. 1999.
+       </li>
+       <li id="N102C2">
+        73. Malik, W., “Motion planning of mobile robot in dynamic environment using potential field and roadmap based planner,” Electronic Thesis [online] Available: http://txspace.tamu.edu/handle/1969.1/338?mode=full Texas A&amp;M University, August 2003
+       </li>
+       <li id="N102C4">
+        74. Farinelli, A.; Iocchi, L., “Planning trajectories in dynamic environments using a gradient method.” In Proceedings of RoboCup Symposium (Padua, Italy, 2003).
+       </li>
+       <li id="N102C6">
+        75. Fiorini, P.; Shiller, Z., "Motion planning in dynamic environments using the relative velocity paradigm," Robotics and Automation, 1993. Proceedings., 1993 IEEE International Conference on , vol., no., pp.560-565 vol.1, 2-6 May 1993
+       </li>
+       <li id="N102C8">
+        76. Fiorini, P.;Shiller, Z., “Motion planning in dynamic environments using velocity obstacles. International Journal of Robotics Research, 17(7):760-772, July 1998
+       </li>
+       <li id="N102CA">
+        77. Shiller, Z.; Large, F.; Sekhavat, S., "Motion planning in dynamic environments: obstacles moving along arbitrary trajectories," Robotics and Automation, 2001. Proceedings 2001 ICRA. IEEE International Conference on , vol.4, no., pp. 3716-3721 vol.4, 2001
+       </li>
+       <li id="N102CC">
+        78. Large, F.; Sekhavat, S.; Shiller, Z.; Laugier, C., "Towards real-time global motion planning in a dynamic environment using the NLVO concept," Intelligent Robots and System, 2002. IEEE/RSJ International Conference on , vol.1, no., pp. 607-612 vol.1, 2002
+       </li>
+       <li id="N102CE">
+        79. Yamamoto, M.; Shimada, M.; Mohri, A., "Online navigation of mobile robot under the existence of dynamically moving multiple obstacles," Assembly and Task Planning, 2001, Proceedings of the IEEE International Symposium on , vol., no., pp.13-18, 2001
+       </li>
+       <li id="N102D0">
+        80. Fox, D.; Burgard, W.; Thrun, S., "The dynamic window approach to collision avoidance," Robotics &amp; Automation Magazine, IEEE , vol.4, no.1, pp.23-33, Mar 1997
+       </li>
+       <li id="N102D2">
+        81. Brock, O.; Khatib, O., "High-speed navigation using the global dynamic window approach," Robotics and Automation, 1999. Proceedings. 1999 IEEE International Conference on , vol.1, no., pp.341-346 vol.1, 1999
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

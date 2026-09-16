@@ -1,0 +1,1272 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Supplemental Orders Analysis for Materiel Services Center
+     </div>
+     <p>
+     </p>
+     <div>
+      Table of Contents
+      <p>
+       ACKNOWLEDGEMENTS	4
+      </p>
+      <p>
+       EXECUTIVE SUMMARY	5
+      </p>
+      <p>
+       INTRODUCTION AND BACKGROUND	7
+      </p>
+      <p>
+       GOALS AND OBJECTIVES	7
+      </p>
+      <p>
+       CURRENT STATE	7
+      </p>
+      <p>
+       METHODOLOGICAL DETAILS	7
+      </p>
+      <p>
+       QUANTITATIVE ANALYSIS	8
+      </p>
+      <p>
+       OBSERVATIONS	18
+      </p>
+      <p>
+       RECOMMENDATIONS	20
+      </p>
+      <p>
+       List of Tables
+      </p>
+      <p>
+       TABLE 1. CATEGORIES OF TAXONOMY OF MATERIEL SERVICES CENTER'S SUPPLEMENTAL ORDER REASONS	18
+      </p>
+      <p>
+       TABLE 2. COMPLETE TAXONOMY OF MATERIEL SERVICES CENTER'S SUPPLEMENTAL ORDER REASONS WITH CAUSES	18
+      </p>
+      <p>
+       List of Figures
+      </p>
+      <p>
+       FIGURE 1. TOP 10 MSC CUSTOMERS BY LINES BETWEEN 11/1/05 AND 10/31/06	9
+      </p>
+      <p>
+       FIGURE 2. TOP 25 SUPPLEMENTAL ITEMS ORDERED BY QUANTITY AND TOTAL COST BETWEEN 11/01/05 AND 10/31/06	10
+      </p>
+      <p>
+       FIGURE 3. TOTAL LINES BY MONTH BETWEEN 11/1/05 AND 10/31/06	11
+      </p>
+      <p>
+       FIGURE 4. LINES BY DAY OF WEEK BETWEEN 11/1/05 AND 10/31/06	12
+      </p>
+      <p>
+       FIGURE 6. UMH 5DS (SURGICAL ICU) TOP ITEMS BY LINES ORDERED BETWEEN 8/1/06 AND 10/31/06	14
+      </p>
+      <p>
+       FIGURE 7. MOTT POD B/C (PEDIATRIC ICU) TOP 20 ITEMS BY LINES ORDERED BETWEEN 8/1/06 AND 10/31/06	15
+      </p>
+      <p>
+       FIGURE 8. ILLUSTRATION OF NORMAL CURVE DISTRIBUTION FOR DEMAND	F-51
+      </p>
+      <p>
+      </p>
+      <p>
+       List of Equations
+      </p>
+      <p>
+       EQUATION 1. CURRENT PAR LEVEL CALCULATION EQUATION	16
+      </p>
+      <p>
+       EQUATION 2. OPTIMAL ORDER UP-TO QUANTITY UNDER ASSUMPTION OF NORMAL DEMAND	17
+      </p>
+      <p>
+       EQUATION 3. EQUATION FOR ESTIMATING SIGMA	17
+      </p>
+      <p>
+       EQUATION 4. NEW PAR LEVEL EQUATION	17
+      </p>
+      <p>
+       Appendices
+      </p>
+      <p>
+       APPENDIX A. LIST OF CUSTOMERS EXCLUDED FROM THE DATA SET	A-2
+      </p>
+      <p>
+       APPENDIX B. PROCESS FLOW CHART OF SUPPLEMENTAL ORDERS PROCESS	B-3
+      </p>
+      <p>
+       APPENDIX C. PROCESS FLOW CHART OF PAR STOCKING PROCESS	C-4
+      </p>
+      <p>
+       APPENDIX D. CAUSE AND EFFECT DIAGRAM	D-5
+      </p>
+      <p>
+       APPENDIX E. SUPPLEMENTAL ORDER BILLING DATA	E-6
+      </p>
+      <p>
+       APPENDIX F. PAR LEVEL EQUATION ANALYSIS	F-51
+      </p>
+      <p>
+       APPENDIX G. NEW PAR LEVELS FOR MOST FREQUENTLY STOCKED OUT ITEMS	G-52
+      </p>
+     </div>
+     <div class="abstract">
+      Executive Summary
+      <p>
+       Introduction and Background
+      </p>
+      <p>
+       Materiel Services Center provides periodic automatic replenishment (PAR) stocking services to approximately 210 customers within the University of Michigan Hospital and Health Centers (UMHHC).  Units are PAR stocked daily on days they are open and operational.  In addition to PAR stocking services, Materiel Services Center also fills supplemental order requests for any item the warehouse carries that units have either depleted from their inventory or are not routinely PAR stocked.  Materiel Services Center has noticed a large percentage of their supplemental orders are being run to a small number of consistent customers.  Materiel Services Center would like to improve their customer service by ensuring their customers have adequate supplies delivered during PAR stocking and reduce the number of supplemental orders.
+      </p>
+      <p>
+       Goals and Objectives
+      </p>
+      <p>
+       The objective of this project is to determine the root causes for MSC supplemental orders from units that are PAR stocked daily and to make recommendations for reducing the number of supplemental orders and improving overall PAR levels.
+      </p>
+      <p>
+       Current State
+      </p>
+      <p>
+       Materiel Services Center currently employs sixty-nine stockkeepers and runners who are responsible for PAR stocking services and filling supplemental and custom requisition orders.  All carts are PAR stocked daily during first or second shift.  The supplemental is that supplemental orders process requires that orders are delivered within 60 minutes of being requested 24 hours a day.  If an ordered is placed stat, it is delivered within 15 minutes.  Based on supplemental order data from 11/1/05 to 10/31/06, MSC fills between 67 and 576 lines per day, a daily average of 172 lines.
+      </p>
+      <p>
+       Methodological Details
+      </p>
+      <list>
+       <item>
+        • A literature search to determine if similar studies had been conducted.
+       </item>
+       <item>
+        • Interviewed management and staff in MSC to gain an understanding of the current state.
+       </item>
+       <item>
+        • Developed an inventory re-stocking formula (re-order quantity/PAR level).
+       </item>
+       <item>
+        • Stratified supplemental data.
+       </item>
+       <item>
+        • Analyzed PAR stocking and supplemental order processes and data to determine root causes.
+       </item>
+       <item>
+        • Validated anecdotal observations.
+       </item>
+       <item>
+        • Summarized results and findings followed by development of recommendations for reducing supplemental orders.
+       </item>
+      </list>
+      <p>
+       Observations
+      </p>
+      <p>
+       Through observational studies and interviews, several categories of reasons for supplemental orders were identified.  A taxonomy consisting of these categories was created.
+      </p>
+      <p>
+       Recommendations
+      </p>
+      <list>
+       <item>
+        1. Change CSR data entry process for customer identification: Work with MAIS to implement a system which forces users to select from a predefined list of delivery locations and have the corresponding department ID automatically populate.
+       </item>
+       <item>
+        2. Develop a standardized list of item nomenclature for all items in MSC warehouse
+       </item>
+       <item>
+        3. Create a more detailed description for each item in the online catalog
+       </item>
+       <item>
+        4. Label supplemental items being delivered with recipient's name
+       </item>
+       <item>
+        5. Develop system of notifying units of warehouse stockouts during PAR stocking process
+       </item>
+       <item>
+        6. Encourage communication between unit and stockkeeper
+       </item>
+       <item>
+        7. Generate a PAR list review trigger
+       </item>
+       <item>
+        8. Educate MSC customers about services offered
+       </item>
+       <item>
+        9. Adjust PAR levels as needed: Reduce the probability of stockouts using a more precise formula.
+       </item>
+      </list>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       INTRODUCTION AND BACKGROUND
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Materiel Services Center (MSC) plays a pivotal role in the University of Michigan Hospitals and Health Centers' (UMHHC) mission to provide excellence in patient care by meeting the medical and surgical supply needs of the clinical staff.
+       </s>
+       <s pid="1" sid="2">
+        MSC manages a 9,000 square foot warehouse where an inventory value of approximately $1.35 million is maintained and represents an inventory turnover of 24 times per year.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Materiel Services Center's periodic automatic replenishment (PAR) stocking services are utilized by approximately 210 customers within University Hospital (UH), Taubman Center (TC), Comprehensive Cancer Center (CCC) and C. S. Mott Children's and Women's Hospitals.
+       </s>
+       <s pid="2" sid="2">
+        With the imminent closing of M-Stores and the opening of the Rachel Upjohn Building, Cardiovascular Center, and the new Mott Children's Hospital and Women's Hospital, Materiel Services Center would like to re-evaluate their PAR stocking formula to ensure adequate stocking levels.
+       </s>
+       <s pid="2" sid="3">
+        Every customer is stocked on a daily basis by a Materiel Services Center stockkeeper from the warehouse on Level B2 of UH.
+       </s>
+       <s pid="2" sid="4">
+        Despite being stocked daily, some units are placing a high number of calls to MSC for depleted items.
+       </s>
+       <s pid="2" sid="5">
+        MSC responds by creating a Materiel Service Requisition (MSR) or supplemental order.
+       </s>
+       <s pid="2" sid="6">
+        An evaluation of the PAR stocking levels has been requested to reduce supplemental order requests in an effort to improve MSC efficiency and customer service.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Goals and Objectives
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        The objective of this project is to determine the root causes for MSC's supplemental orders from units that are PAR stocked daily and to make recommendations for reducing the number of supplemental orders and improving overall PAR levels.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Current State
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        Materiel Services
+       </s>
+       <s pid="4" sid="2">
+        Center currently employs sixty-nine stockkeepers and runners who are responsible for PAR stocking services and filling supplemental and custom requisition orders.
+       </s>
+       <s pid="4" sid="3">
+        All carts are PAR stocked daily during first or second shift.
+       </s>
+       <s pid="4" sid="4">
+        The supplemental is that supplemental orders process requires that orders are delivered within 60 minutes of being requested 24 hours a day.
+       </s>
+       <s pid="4" sid="5">
+        If an ordered is placed stat, it is delivered within 15 minutes.
+       </s>
+       <s pid="4" sid="6">
+        Based on supplemental order data from 11/1/05 to 10/31/06, MSC fills between 67 and 576 lines per day, a daily average of 172 lines.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Methodological Details
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        The methodology used to conduct this study was the following:
+       </s>
+      </p>
+      <list>
+       <item>
+        • A literature search to determine if similar studies had been conducted.
+       </item>
+       <item>
+        • Interviewed management and staff in MSC to gain an understanding of the current state.
+       </item>
+       <item>
+        • Developed an inventory re-stocking formula (re-order quantity/PAR level).
+       </item>
+       <item>
+        • Stratified supplemental data.
+       </item>
+       <item>
+        • Analyzed PAR stocking and supplemental order processes and data to determine root causes.
+       </item>
+       <item>
+        • Validated anecdotal observations.
+       </item>
+       <item>
+        • Summarized results and findings followed by development of recommendations for reducing supplemental orders.
+       </item>
+      </list>
+      <div>
+       <div class="head_2">
+        1. Definitions and Scope
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         Includes:
+        </s>
+       </p>
+       <list>
+        <item>
+         • Customers PAR stocked on-site defined as: University Hospital, Taubman Center, Comprehensive Cancer Center, Mott Children's Hospital and Women's Hospital
+        </item>
+        <item>
+         • Items routinely stocked in the Materiel Services warehouse
+        </item>
+       </list>
+       <p>
+        <s pid="7" sid="1">
+         Excludes:
+        </s>
+       </p>
+       <list>
+        <item>
+         • All off site locations and select onsite units (please see a complete list in Appendix A)
+        </item>
+        <item>
+         • Custom requisitions
+        </item>
+        <item>
+         • Custom items not ordered through Materiel Services Center
+        </item>
+       </list>
+      </div>
+      <div>
+       <div class="head_2">
+        2. Understanding current process
+       </div>
+       <p>
+        <s pid="8" sid="1">
+         Interviews were conducted with MSC management and staff to gain an understanding of the current state of their operations.
+        </s>
+        <s pid="8" sid="2">
+         Process flow maps of the supplemental order process and PAR stocking process were created and validated by Materiel Services Center's employees and management (Appendix B and C).
+        </s>
+        <s pid="8" sid="3">
+         Interviews were also conducted on the receiving end of the supplemental order process with select units to validate anecdotal stories as well as to understand potential causes for supplemental orders.
+        </s>
+        <s pid="8" sid="4">
+         A fishbone diagram illustrating these causes may be reviewed in Appendix D.
+        </s>
+        <s pid="8" sid="5">
+         The fishbone diagram led to the creation of a taxonomy of supplemental order root causes, which subsequently became the basis for further observational study and data analysis.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3. Stratification and analysis of PAR quantities and supplemental data
+       </div>
+       <p>
+        <s pid="9" sid="1">
+         Supplemental data from M-Pathways' Financial Operational Data Store (FinODS) was analyzed over the time period November 1, 2005 to October 31, 2006.
+        </s>
+        <s pid="9" sid="2">
+         The conclusions drawn from the data stratification led to process studies of Materiel Services Center's customer service representatives (MSC CSR) and to meetings with MSC top supplemental order customers.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4. Analysis of existing PAR level equation
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         A statistical analysis of the current PAR level equation was conducted to determine if it provides a sufficient level of stock to meet the demands of each unit.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Quantitative Analysis
+      </div>
+      <div>
+       <div class="head_2">
+        1. Stratification of Supplemental Data
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         All supplemental data was taken from M-Pathways FinODS for the time period 11/1/05 through 10/31/06.
+        </s>
+       </p>
+       <p>
+        <s pid="12" sid="1">
+         The top 10 MSR customers by lines remained consistently the same when data was evaluated on a quarterly basis.
+        </s>
+        <s pid="12" sid="2">
+         The graph below summarizes the top 10 MSR customers by lines.
+        </s>
+        <s pid="12" sid="3">
+         (Lines are defined as the number of times an item is ordered by a unit regardless of the item quantity.)
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         Top 10 MSR Customers by Lines between 11/1/05 and 10/31/06
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="16" sid="1">
+         Figure 1. Top 10 MSC Customers by Lines between 11/1/05 and 10/31/06
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         The graph below illustrates the top 25 items requested from MSC through supplemental orders by quantity and their corresponding total cost.
+        </s>
+       </p>
+       <p>
+        <s pid="18" sid="1">
+         Top MSC Supplemental Items by Quantity and Cost between 11/1/05 and 10/31/06
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         Figure 2. Top 25 Supplemental Items Ordered by Quantity and Total Cost between 11/01/05 and 10/31/06
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         The following three graphs show the total number of lines shipped by month, day of week, and hour of day all for the same time period, 11/1/05 through 10/31/06.
+        </s>
+        <s pid="20" sid="2">
+         Lines by month showed only slight variation and supplemental orders peak on Tuesday.
+        </s>
+        <s pid="20" sid="3">
+         Approximately 55% of all supplemental orders are placed between the hours of 8:00 AM and 2:00 P.M.
+        </s>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         Total Number of Lines by Month between 11/1/05 and 11/31/06
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="22" sid="1">
+         Figure 3. Total Lines by Month between 11/1/05 and 10/31/06
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         Total Number of Lines by Day of Week between 11/1/05 and 11/31/06
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="24" sid="1">
+         Figure 4. Lines by Day of Week between 11/1/05 and 10/31/06
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         Total Number of Lines by Hour of Day between 11/1/05 and 10/31/06
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         Figure 5. Lines by Hour of Day between 11/1/05 and 10/31/06
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         Further analysis of two of Materiel Services Center's highest supplemental callers, UMH 5DS (a surgical intensive care unit) and Mott Pod B/C (a pediatric intensive care unit), yielded the following:
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         UMH 5DS Top Supplemental Items by Lines Ordered between 8/1/06 and 10/31/06
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         Figure 6. UMH 5DS (Surgical ICU)
+        </s>
+        <s pid="29" sid="2">
+         Top Items by Lines ordered between 8/1/06 and 10/31/06
+        </s>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         Mott Pod B/C Top Supplemental Items by Lines Ordered between 8/1/06 and 10/31/06
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="31" sid="1">
+         Figure 7. Mott Pod B/C (Pediatric ICU)
+        </s>
+        <s pid="31" sid="2">
+         Top 20 Items by Lines ordered between 8/1/06 and 10/31/06
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Only three months of data was used when examining supplemental orders for each unit.
+        </s>
+        <s pid="32" sid="2">
+         Interviews with nursing staff from these units revealed that any unusual item usage prior to this time frame resulted in lack of recollection for any anomalies in the data.
+        </s>
+        <s pid="32" sid="3">
+         An interesting distinction between UMH 5DS and Mott Pod B/C is that Mott Pod B/C employs an "equipment technician" , whose job responsibilities include reviewing the stock levels of the nutrition room and supply room for any stockouts and calling MSC as supplemental items are needed.
+        </s>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         Nurses from both units commented that they were not sure what some of these items were based on the descriptions listed above.
+        </s>
+        <s pid="33" sid="2">
+         Another shared comment between these two units was that many of their supplemental orders were due to their highly variant patient populations and that they were requesting items to meet a particular patient's needs that they do not normally stock in their unit.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2. Billing inaccuracies
+       </div>
+       <p>
+        <s pid="34" sid="1">
+         After a review of the supplemental order data in FinODS, a report was created detailing where supplemental orders were delivered and which department was charged.
+        </s>
+        <s pid="34" sid="2">
+         As a result of the manual process used by MSC CSR, billing errors became evident and they have been quantified at approximately $50,000 or 30% in of the lines in the billing report over the 12 month period between 11/1/05 and 10/31/06.
+        </s>
+        <s pid="34" sid="3">
+         The delivery location ( "ShipCust" in the raw data set) and the six digit department ID number billed ( "DistType" ) are both manually entered into FinODS which allows for typos and other errors.
+        </s>
+        <s pid="34" sid="4">
+         Appendix E provides a detailed report of the billing that occurred during this time frame.
+        </s>
+        <s pid="34" sid="5">
+         Journal entries to correct these billing errors are time consuming and costly as well as another manual process.
+        </s>
+        <s pid="34" sid="6">
+         All further analysis using this data set assumed the delivery location ( "ShipCust" ) to be the most accurate field, as advised by the warehouse manager in Materiel Services Center.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3. PAR Level Equation
+       </div>
+       <p>
+        <s pid="35" sid="1">
+         The PAR level equation was assessed to validate whether or not it is generating a sufficient stock level for each (unit, item) combination.
+        </s>
+        <s pid="35" sid="2">
+         The current equation M-Pathways uses to generate PAR is:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="36" sid="1">
+         Equation 1. Current PAR Level Calculation Equation
+        </s>
+       </p>
+       <p>
+        <s pid="37" sid="1">
+         where Average is the average monthly demand, Divisor is a factor corresponding to the number of times per week that the unit is stocked, and the 1.4 constant creates a safety stock of 40%.
+        </s>
+        <s pid="37" sid="2">
+         The average monthly demand is calculated as the summation of daily quantity received for an item over a year divided by twelve.
+        </s>
+        <s pid="37" sid="3">
+         Daily quantity is defined as the total amount stocked by the stockkeeper and any additional volume brought to the unit via supplemental orders.
+        </s>
+        <s pid="37" sid="4">
+         However, credits issued to a unit are not taken into consideration in this calculation, which could result in slightly inflated PAR levels.
+        </s>
+        <s pid="37" sid="5">
+         This will be rectified in early 2007, when Materiel Picking Feedback (MPF) will be introduced into the PAR calculation software by MAIS.
+        </s>
+        <s pid="37" sid="6">
+         This update will take credits into account when calculating PAR level for a (unit, item) combination.
+        </s>
+       </p>
+       <p>
+        <s pid="38" sid="1">
+         To reduce the likelihood of stockouts, the variance of the item's daily demand should be taken into account in the PAR level equation.
+        </s>
+        <s pid="38" sid="2">
+         However, the equation currently does not do so and sets all (unit, item) combination PAR levels to be 1.4μ, where μ is the item's average daily demand ( Average/Divisor ).
+        </s>
+        <s pid="38" sid="3">
+         This results in a different stockout probability for each (unit, item) combination that can be approximated by using supplemental order data.
+        </s>
+        <s pid="38" sid="4">
+         A proxy for the stockout probability
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       can be found by dividing the number of days during a time period that a supplemental order was placed for a (unit, item) combination by the number of days in the time period.  If a unit did not call for an item, the probability of stockout is zero.
+       <p>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         By examining the PAR stocking and supplemental order data, the assumption that daily demand is normally distributed with mean, μ. Under this assumption, the optimal stocking level for a (unit, item) combination should satisfy the equation:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="41" sid="1">
+         Equation 2. Optimal Order up-to Quantity under Assumption of Normal Demand
+        </s>
+       </p>
+       <p>
+        <s pid="42" sid="1">
+         where μ is the item's mean demand, σ is the standard deviation of item demand, and z(α) denotes the one-sided z-statistic of the standard normal distribution corresponding to the probability of not stocking out of the item, α.
+        </s>
+       </p>
+       <p>
+        <s pid="43" sid="1">
+         Since both Equation 1 and 2 calculate an item's daily PAR level, they can be set equal to each other.
+        </s>
+        <s pid="43" sid="2">
+         Solving for σ yields
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="44" sid="1">
+         Equation 3. Equation for Estimating Sigma
+        </s>
+       </p>
+       <p>
+        <s pid="45" sid="1">
+         Substituting Equation 3 into Equation 2 for σ results in
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="46" sid="1">
+         Equation 4. New PAR Level Equation
+        </s>
+       </p>
+       <p>
+        <s pid="47" sid="1">
+         Since it is very hard to place an exact value on the cost of stocking out, a common alternative is to use a service level in its place.
+        </s>
+        <s pid="47" sid="2">
+         Therefore, MSC can choose a Type 1 service level, the probability of not stocking out of a (unit, item) combination, that they want to achieve.
+        </s>
+        <s pid="47" sid="3">
+         When setting their service level, MSC should consider the cost of the item versus the labor cost required to deliver the item if ordered as a supplement, the cost of obsolescence if the item is left sitting on the cart, and the opportunity cost of the space that each additional item would consume.
+        </s>
+        <s pid="47" sid="4">
+         This Type 1 service level is equal to α and can be substituted into Equation 4.
+        </s>
+        <s pid="47" sid="5">
+         For example, if MSC decided upon a 99% service level, the PAR Equation would look like
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="48" sid="1">
+         This new equation will increase the PAR level for those items that have stocked out the most, causing both the number of stockouts and supplemental orders to decrease.
+        </s>
+        <s pid="48" sid="2">
+         This calculation is shown in detail in Appendix F.
+        </s>
+       </p>
+       <p>
+        <s pid="49" sid="1">
+         Fortunately, out of the over 22,000 (unit, item) combinations, less than 500 have a probability of stock-out of 4% or greater.
+        </s>
+        <s pid="49" sid="2">
+         Please refer to Appendix G for a sample of 534 (unit, item) combinations that were stocked out at least 14 times (or 3.84% of the time) during the three-month period selected.
+        </s>
+        <s pid="49" sid="3">
+         New PAR levels for these (unit, item) combinations have been calculated.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Observations
+      </div>
+      <p>
+       <s pid="50" sid="1">
+        Through observational studies and interviews, several categories of reasons for supplemental orders were identified.
+       </s>
+       <s pid="50" sid="2">
+        A taxonomy consisting of these categories was created as illustrated in Table 1.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="51" sid="1">
+        Table 1. Categories of Taxonomy of Materiel Services Center's Supplemental Order Reasons
+       </s>
+      </p>
+      <p>
+       <s pid="52" sid="1">
+        Table 2 summarizes potential explanations for why a supplemental order was placed into one of the categories in Table 1.
+       </s>
+       <s pid="52" sid="2">
+        This information was collected via observations and interviews with stockkeepers, runners and nurses.
+       </s>
+      </p>
+      <p>
+       <s pid="53" sid="1">
+        Table 2. Complete Taxonomy of Materiel Services Center's Supplemental Order Reasons with Causes
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Item Out of Stock on Cart:
+       </div>
+       <p>
+        <s pid="54" sid="1">
+         This category explores why an item could not be found on the cart.
+        </s>
+       </p>
+       <p>
+        <s pid="55" sid="1">
+         While a few of the "whys" are stochastic random variables and out of MSC control, many are within their capacity to influence.
+        </s>
+        <s pid="55" sid="2">
+         A preliminary study of the degree to which the stockkeppers accurately inventory and stock the units was undertaken using a randomly selected nursing unit and PAR stocking order data from FinODS.
+        </s>
+        <s pid="55" sid="3">
+         However, due to the limited resources available for this project, these potential causes were not investigated long enough for any sound conclusions to be drawn.
+        </s>
+        <s pid="55" sid="4">
+         Nevertheless, by reviewing the five 'w's - who, what, when, where, - and how of the PAR stocking process, MSC management can determine if this is truly a contributor to the supplemental order problem.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Nurse cannot find item:
+       </div>
+       <p>
+        <s pid="56" sid="1">
+         This reason looks at why a nurse cannot find the item on his/her cart, despite the item actually being there, or after the supplemental order arrives to their unit.
+        </s>
+       </p>
+       <p>
+        <s pid="57" sid="1">
+         After interviewing several nursing units, the reoccurring theme among all of them was the difference in nomenclature between Materiel Services Center and Nursing.
+        </s>
+        <s pid="57" sid="2">
+         Attached to each cart is a PAR list containing each item's quantity and location.
+        </s>
+        <s pid="57" sid="3">
+         However, this document lists the items by what MSC calls the item and not how the item is referred to by nursing staff.
+        </s>
+        <s pid="57" sid="4">
+         For example, the item nursing staff refers to as a cotton swab is called an "applicator, cotton tip 6in nonsterile" by Materiel Services Center.
+        </s>
+       </p>
+       <p>
+        <s pid="58" sid="1">
+         Additionally, nursing staff have confirmed calling for supplemental items without looking in the stock room first or after taking only a cursory look.
+        </s>
+        <s pid="58" sid="2">
+         Also, clerks do not always know who ordered a supplemental item and therefore it never reaches the person who requested the item.
+        </s>
+        <s pid="58" sid="3">
+         Consequently, this often generates further supplemental calls until the item is received by the person who ordered it.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        PAR Level Issues:
+       </div>
+       <p>
+        <s pid="59" sid="1">
+         This dimension addresses supplemental orders that are a result of problems related to the pre-determined item inventory level on a cart.
+        </s>
+       </p>
+       <p>
+        <s pid="60" sid="1">
+         PAR levels are only recalculated on an as requested basis by the PAR Maintenance Staff in Materiel Services.
+        </s>
+        <s pid="60" sid="2">
+         As discussed in Section 3 above, the current equation used to calculate an item's PAR level is:
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        Not on PAR List:
+       </div>
+       <p>
+        <s pid="61" sid="1">
+         This category investigates why a nurse manager may not keep items stocked in MSC warehouse on their carts.
+        </s>
+       </p>
+       <p>
+        <s pid="62" sid="1">
+         Although stocked by MSC, nurse managers are responsible for the items and quantities stocked on their carts.
+        </s>
+        <s pid="62" sid="2">
+         Nurse managers must take the initiative to adjust PAR levels due to an increase in an item's usage or to add a new item to their PAR list.
+        </s>
+        <s pid="62" sid="3">
+         Consequently, the "whys" of this dimension are generally outside MSC's span of influence.
+        </s>
+       </p>
+       <p>
+        <s pid="63" sid="1">
+         Non-Stock Item:
+        </s>
+        <s pid="63" sid="2">
+         This classification focuses on why orders are placed for items that are not stocked in the MSC warehouse.
+        </s>
+       </p>
+       <p>
+        <s pid="64" sid="1">
+         Supplemental calls for non-stock items are unavoidable as these low volume and/or high cost items are not kept in stock in the MSC warehouse.
+        </s>
+        <s pid="64" sid="2">
+         Unless the cost-benefit of these items rises to a justifiable level for adding them as regularly stocked warehouse items, this dimension does not require further investigation.
+        </s>
+       </p>
+       <p>
+        <s pid="65" sid="1">
+         Other observed causes for preventable supplemental calls:
+        </s>
+       </p>
+       <list>
+        <item>
+         • Lack of notification to units when the warehouse is stocked out of an item and the stockkeeper is unable to fill unit to PAR.  Units will place supplemental calls for these items.
+        </item>
+        <item>
+         • Quantity requested during supplement call was not filled completely.  Subsequent orders placed to attain originally requested quantity.
+        </item>
+        <item>
+         • Nurses create unnecessary orders due to lack of information available from item descriptions posted in the MSC catalog.
+        </item>
+       </list>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Recommendations
+      </div>
+      <p>
+       <s pid="66" sid="1">
+        Utilizing the taxonomy framework and the quantitative analysis results, the following recommendations are made to MSC management in their efforts to reduce supplemental order volume.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        1. Change CSR data entry process for customer identification
+       </div>
+       <p>
+        <s pid="67" sid="1">
+         Work with MAIS to implement a system which forces users to select from a predefined list of delivery locations and have the corresponding department ID automatically populate.
+        </s>
+        <s pid="67" sid="2">
+         This will eliminate the need for having the CSR manually enter department IDs and reduce the potential for error.
+        </s>
+        <s pid="67" sid="3">
+         An option to override will be made available for use when necessary.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2. Develop a standardized list of item nomenclature for all items in MSC warehouse
+       </div>
+       <p>
+        <s pid="68" sid="1">
+         Create a committee of nursing staff and MSC staff to produce a directory of items, alphabetized by the nomenclature used by nurses that can be merged with the current PAR list on the carts.
+        </s>
+        <s pid="68" sid="2">
+         This will allow nurses to easily locate items in the stockroom.
+        </s>
+        <s pid="68" sid="3">
+         Since each stockroom layout is unique, this change will be particularly beneficial for nursing staff that float between units.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3. Create a more detailed description for each item in the online catalog
+       </div>
+       <p>
+        <s pid="69" sid="1">
+         Providing more details about each item will facilitate nurses ordering the correct item the first time.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4. Label items being delivered with recipient's name
+       </div>
+       <p>
+        <s pid="70" sid="1">
+         Items often end up in the stockroom when a clerk receives a supplemental order and does not know who the intended recipient is.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        5. Develop system of notifying units of warehouse stockouts during PAR stocking process
+       </div>
+       <p>
+        <s pid="71" sid="1">
+         This will reduce the number of unnecessary supplemental orders for stocked out items.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        6. Encourage communication between unit and stockkeeper
+       </div>
+       <p>
+        <s pid="72" sid="1">
+         Establish communication between stockkeepers and units.
+        </s>
+        <s pid="72" sid="2">
+         Nurse managers (or equipment technicians) can notify their stockkeeper of any unusual needs due to their patient population that day.
+        </s>
+        <s pid="72" sid="3">
+         This will result in saving their staff time later as they will no longer need to place a supplemental order.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        7. Generate a PAR list review trigger
+       </div>
+       <p>
+        <s pid="73" sid="1">
+         a.
+        </s>
+        <s pid="73" sid="2">
+         Generate a trigger to notify MSC when a supplemental order is placed more than three times for a non-PAR item.
+        </s>
+       </p>
+       <p>
+        <s pid="74" sid="1">
+         b.
+        </s>
+        <s pid="74" sid="2">
+         Generate quarterly reports of supplemental orders to determine top customers.
+        </s>
+        <s pid="74" sid="3">
+         Review reports to detect trends and abnormalities and adjust PAR as necessary.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        8. Educate MSC customers about services offered
+       </div>
+       <p>
+        <s pid="75" sid="1">
+         Work with Public Relations and Marketing Communications (PRMC) to develop a brochure to educate units on services offered by MSC (e.g. ability to substock to an alternative location or bill an alternative org code) and on how to use MSC's services more effectively (communication about unit needs, encouraging nurse managers to review and update their PAR levels when necessary).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        9. Adjust PAR levels as needed
+       </div>
+       <p>
+        <s pid="76" sid="1">
+         After reviewing the current PAR level equation and supplemental and PAR stocking data, it is recommended that the PAR levels are to be revised on a quarterly basis, based on the previous quarter's data.
+        </s>
+        <s pid="76" sid="2">
+         This new equation takes into account the variance of demand as well as allowing MSC to adjust the probability of stockout based on item cost or other factors such as holding or obsolescence cost.
+        </s>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       Appendices
+      </div>
+      <p>
+       Appendix A.  List of Customers excluded from the data set
+      </p>
+      <p>
+       The following "Ship to" customers were removed from the data set:
+      </p>
+      <p>
+       400NIB1221
+      </p>
+      <p>
+       BOCPMR
+      </p>
+      <p>
+       All  BHC (Brighton Health Center)
+      </p>
+      <p>
+       All Briarwoods
+      </p>
+      <p>
+       All CHC (Canton Health Center)
+      </p>
+      <p>
+       All Chelsea
+      </p>
+      <p>
+       All Domino's Farms
+      </p>
+      <p>
+       All EAA (East Ann Arbor)
+      </p>
+      <p>
+       All MPU (Medical Procedures Unit)
+      </p>
+      <p>
+       All Eisenhower Parkway
+      </p>
+      <p>
+       All Helipad
+      </p>
+      <p>
+       All Kellogg
+      </p>
+      <p>
+       All Livonia
+      </p>
+      <p>
+       GCG 1170
+      </p>
+      <p>
+       KHRI
+      </p>
+      <p>
+       Kresge
+      </p>
+      <p>
+       MedSci
+      </p>
+      <p>
+       MFit
+      </p>
+      <p>
+       Reichart
+      </p>
+      <p>
+       Mott F1527
+      </p>
+      <p>
+       UMHB2F319
+      </p>
+      <p>
+       UMH1G403
+      </p>
+      <p>
+       UMHB1F423
+      </p>
+      <p>
+       UMHFB2408
+      </p>
+      <p>
+       MSCPICKUP
+      </p>
+      <p>
+       MSCDELIVERTO
+      </p>
+      <p>
+       UPJOHN
+      </p>
+      <p>
+       UMHB1F244YSB
+      </p>
+      <p>
+       UMBB1F244YNS
+      </p>
+      <p>
+       All distribution types listed as "NONHOSP" were also removed.
+      </p>
+      <p>
+       Appendix B.
+      </p>
+      <p>
+       Process Flow Chart of Supplemental Orders Process
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix C.
+      </p>
+      <p>
+       Process Flow Chart of PAR Stocking Process
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix D.
+      </p>
+      <p>
+       Cause and Effect Diagram
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix E.
+      </p>
+      <p>
+       Supplemental Order Billing Data
+      </p>
+      <p>
+       Billing Summary for MSR Orders between 11/1/05 and 10/30/06
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Appendix F.
+      </p>
+      <p>
+       PAR Level Equation Analysis
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Equation 1. Current PAR Level Calculation Equation
+      </p>
+      <p>
+       where Average is the average monthly demand, Divisor is a factor corresponding to the number of times per week that the unit is stocked, and the 1.4 constant creates a safety stock of 40%. The average monthly demand is calculated as the summation of daily quantity received for an item over a year divided by twelve.  Daily quantity is defined as the total amount stocked by the stockkeeper and any additional volume brought to the unit via supplemental orders.  As noted previously, credits are not currently taken into consideration when calculating demand.
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure 8. Illustration of Normal Curve Distribution for Demand
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Appendix F.
+      </p>
+      <p>
+       Appendix G.   New PAR Levels for Most Frequently Stocked Out Items
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       13th June 2000
+      </p>
+      <p>
+       Dear Helen Ryan
+      </p>
+      <p>
+       I was
+       <ns type="S">
+        <i>
+         greatful
+        </i>
+       </ns>
+       to
+       <ns type="FV">
+        <i>
+         hearing
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       I have won first prize in
+       <ns type="MD">
+       </ns>
+       competition.
+      </p>
+      <p>
+       I would like to tell you
+       <ns type="CE">
+        which are some further information you given to me.
+       </ns>
+      </p>
+      <p>
+       I would like to join the camp in July because I
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       get
+       <ns type="MD">
+       </ns>
+       holiday from my company from 1th July to 28th July. Secondly, I would prefer to stay in tents.
+       <ns type="ID">
+        In my experience,
+       </ns>
+       I've never tried to stay in tents during the holiday. That's why I'd like to feel
+       <ns type="DJ">
+        <i>
+         adventurally
+        </i>
+       </ns>
+       . It could be
+       <ns type="MD">
+       </ns>
+       good
+       <ns type="MP">
+       </ns>
+       memorable thing for me. And I am interested in swimming and singing. When I was 17 years old, I
+       <ns type="UV">
+        <i>
+         could be able to
+        </i>
+       </ns>
+       won
+       <ns type="MD">
+       </ns>
+       swimming competition which
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       held in
+       <ns type="MD">
+       </ns>
+       local stadium. I
+       <ns type="TV">
+        <i>
+         had won
+        </i>
+       </ns>
+       second prize. And also, I have
+       <ns type="TV">
+        <i>
+         been joining
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="UN">
+        <i>
+         music
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         bend
+        </i>
+       </ns>
+       in my school. I'm responsible for lead
+       <ns type="IN">
+        <i>
+         vocal
+        </i>
+       </ns>
+       . Every Monday
+       <ns type="TV">
+        <i>
+         we're having
+        </i>
+       </ns>
+       a practice time.
+      </p>
+      <p>
+       What I would like to know about
+       <ns type="MV">
+       </ns>
+       what kinds of clothes
+       <ns type="UV">
+        <i>
+         are
+        </i>
+       </ns>
+       suit the season in the U.S.A and how much money
+       <ns type="UV">
+        <i>
+         do
+        </i>
+       </ns>
+       I should bring
+       <ns type="MT">
+       </ns>
+       the camp.
+      </p>
+      <p>
+       I look forward to joining the camp. I've
+       <ns type="TV">
+        <i>
+         been always wanting
+        </i>
+       </ns>
+       to go
+       <ns type="MT">
+       </ns>
+       <ns type="MD">
+       </ns>
+       U.S.A. It must be
+       <ns type="MD">
+       </ns>
+       good chance to join the camp. Thanks for accepting.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Ae-Sook Pak
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        13th June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Helen Ryan
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I was greatful to hearing about I have won first prize in  competition.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to tell you which are some further information you given to me.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I would like to join the camp in July because I could get  holiday from my company from 1th July to 28th July.
+       </s>
+       <s pid="5" sid="2">
+        Secondly, I would prefer to stay in tents.
+       </s>
+       <s pid="5" sid="3">
+        In my experience, I've never tried to stay in tents during the holiday.
+       </s>
+       <s pid="5" sid="4">
+        That's why I'd like to feel adventurally.
+       </s>
+       <s pid="5" sid="5">
+        It could be  good memorable thing for me.
+       </s>
+       <s pid="5" sid="6">
+        And I am interested in swimming and singing.
+       </s>
+       <s pid="5" sid="7">
+        When I was 17 years old, I could be able to won  swimming competition which is held in  local stadium.
+       </s>
+       <s pid="5" sid="8">
+        I had won second prize.
+       </s>
+       <s pid="5" sid="9">
+        And also, I have been joining  music bend in my school.
+       </s>
+       <s pid="5" sid="10">
+        I'm responsible for lead vocal.
+       </s>
+       <s pid="5" sid="11">
+        Every Monday we're having a practice time.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        What I would like to know about  what kinds of clothes are suit the season in the U.S.A and how much money do I should bring  the camp.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to joining the camp.
+       </s>
+       <s pid="7" sid="2">
+        I've been always wanting to go   U.S.A.
+       </s>
+       <s pid="7" sid="3">
+        It must be  good chance to join the camp.
+       </s>
+       <s pid="7" sid="4">
+        Thanks for accepting.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Ae-Sook Pak
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       To. Director of
+       <ns type="FN">
+        <i>
+         teacher
+        </i>
+       </ns>
+      </p>
+      <p>
+       From. Ae-Sook Pak
+      </p>
+      <p>
+       Subject. Some
+       <ns type="FN">
+        <i>
+         suggestion
+        </i>
+       </ns>
+       to make a video about daily life at our school.
+      </p>
+      <p>
+       INTRODUCTION
+      </p>
+      <p>
+       The aim of this report is
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         suggesting
+        </i>
+       </ns>
+       which lessons and other activities should be filmed and why
+       <ns type="MA">
+       </ns>
+       are suitable to make a film
+       <ns type="MT">
+       </ns>
+       .
+      </p>
+      <p>
+       EXPLAIN
+      </p>
+      <p>
+       According to
+       <ns type="MD">
+       </ns>
+       reactions of students. Most of the students are taking a morning class for 3 hours, and
+       <ns type="MT">
+       </ns>
+       <ns type="MD">
+       </ns>
+       middle of the lesson they're having a break time. After morning class they have a lunch time for 1 hour and continue to study for afternoon class. It's the most common daily life at our school. And according to the interviews, the most interesting class is the "upper
+       <ns type="S">
+        <i>
+         intermidiate
+        </i>
+       </ns>
+       " class.
+       <ns type="R">
+        They are joined with different countries and with
+        <ns type="MD">
+        </ns>
+        good teacher.
+       </ns>
+      </p>
+      <p>
+       SUGGESTION
+      </p>
+      <p>
+       The point of "upper
+       <ns type="S">
+        <i>
+         intermidiate
+        </i>
+       </ns>
+       class". They are having
+       <ns type="MD">
+       </ns>
+       special time. Every Friday, they enjoy a special game
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         check
+        </i>
+       </ns>
+       vocabulary. And they
+       <ns type="TV">
+        <i>
+         are always doing
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         best their
+         <ns type="CN">
+          <i>
+           homeworks
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       CONCLUSION
+      </p>
+      <p>
+       I strongly recommend
+       <ns type="UA">
+        <i>
+         that
+        </i>
+       </ns>
+       making a video about "Upper intermidiate" class.
+       <ns type="CE">
+        They must be shown the most well-class in our school.
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To. Director of teacher
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        From. Ae-Sook Pak
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Subject.
+       </s>
+       <s pid="3" sid="2">
+        Some suggestion to make a video about daily life at our school.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        INTRODUCTION
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The aim of this report is about suggesting which lessons and other activities should be filmed and why  are suitable to make a film .
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        EXPLAIN
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        According to  reactions of students.
+       </s>
+       <s pid="7" sid="2">
+        Most of the students are taking a morning class for 3 hours, and   middle of the lesson they're having a break time.
+       </s>
+       <s pid="7" sid="3">
+        After morning class they have a lunch time for 1 hour and continue to study for afternoon class.
+       </s>
+       <s pid="7" sid="4">
+        It's the most common daily life at our school.
+       </s>
+       <s pid="7" sid="5">
+        And according to the interviews, the most interesting class is the "upper intermidiate" class.
+       </s>
+       <s pid="7" sid="6">
+        They are joined with different countries and with  good teacher.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        SUGGESTION
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        The point of "upper intermidiate class".
+       </s>
+       <s pid="9" sid="2">
+        They are having  special time.
+       </s>
+       <s pid="9" sid="3">
+        Every Friday, they enjoy a special game for check vocabulary.
+       </s>
+       <s pid="9" sid="4">
+        And they are always doing best their homeworks.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        CONCLUSION
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        I strongly recommend that making a video about "Upper intermidiate" class.
+       </s>
+       <s pid="11" sid="2">
+        They must be shown the most well-class in our school.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

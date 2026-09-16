@@ -1,0 +1,1755 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿ME 513 Mini-Project Report
+     </div>
+     <p>
+     </p>
+     <div>
+      Table of Contents
+      <p>
+       Overview 1
+      </p>
+      <p>
+       Structural Interpretation of Customer Needs	1
+      </p>
+      <p>
+       Table 1:  Structural Interpretation of Vehicle Qualities with Regards to the Customer	1
+      </p>
+      <p>
+       Design Concept	1
+      </p>
+      <p>
+       Structural Strategy	2
+      </p>
+      <p>
+       Figure 1:  Design Sketch and Structural Strategy (Vehicle is Symmetrical)	2
+      </p>
+      <p>
+       Packaging Analysis and Major Structure Sizing	3
+      </p>
+      <p>
+       Table 2:  Appendices for Package Overlays and Sizing	3
+      </p>
+      <p>
+       Top Plan View	3
+      </p>
+      <p>
+       Beam and Panel Side Plan Views	4
+      </p>
+      <p>
+       Preliminary Mass Analysis	4
+      </p>
+      <p>
+       Table 2:  Preliminary Mass Analysis of Mid-Size Luxury Sedan	5
+      </p>
+      <p>
+       Development of Structural Requirements	5
+      </p>
+      <p>
+       Vehicle Bending Moment Diagrams	5
+      </p>
+      <p>
+       Figure 2:  The Concept Vehicle’s Bending Moment Diagrams	6
+      </p>
+      <p>
+       Bending Strength and Stiffness	6
+      </p>
+      <p>
+       Twist Ditch Torque and Torsional Stiffness	6
+      </p>
+      <p>
+       Front Impact	7
+      </p>
+      <p>
+       Side Impact	7
+      </p>
+      <p>
+       Roof Crush	8
+      </p>
+      <p>
+       Sizing the Major Structures through Requirement Analysis	8
+      </p>
+      <p>
+       Side Frame Sized from Bending Requirements	8
+      </p>
+      <p>
+       Bending Stiffness Analysis	8
+      </p>
+      <p>
+       Bending Performance	9
+      </p>
+      <p>
+       Cabin Shear Panels Sized from Torsion Requirements	9
+      </p>
+      <p>
+       Torsion Strength Analysis	9
+      </p>
+      <p>
+       Torsion Stiffness Analysis	10
+      </p>
+      <p>
+       Longitudinal Rails Sized From Front Impact Requirements	11
+      </p>
+      <p>
+       Figure 3:  Small Angle Approximation for Mid-Rail Analysis	11
+      </p>
+      <p>
+       Motor Compartment Crushable Rail Sizing	11
+      </p>
+      <p>
+       Cabin Cross Member Sizing	12
+      </p>
+      <p>
+       Figure 4:  Free Body Diagrams for Sizing of Cabin Cross Members	12
+      </p>
+      <p>
+       Figure 5:  AISI CARS 2005: Axial Capacity Trend for 100mm by 100mm Section	13
+      </p>
+      <p>
+       Manufacturing Considerations	13
+      </p>
+      <p>
+       Figure 5:  Examples Manufacturing Effects on a Section	14
+      </p>
+      <p>
+       Final Structure Mass Analysis	14
+      </p>
+      <p>
+       Table 3:  Mass Estimation for Sized and Un-Sized Steel Structure	14
+      </p>
+      <p>
+       Recommendations	15
+      </p>
+      <p>
+       Acknowledgements	15
+      </p>
+      <p>
+       Appendices	17
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Overview
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Our design group was asked to develop a conceptual structural model for either a mid-size or small vehicle.
+       </s>
+       <s pid="1" sid="2">
+        We have completed this task using a mid-size monocoque vehicle.
+       </s>
+       <s pid="1" sid="3">
+        The following report presents our target customer description, the structural interpretation of the customer’s expectations, an in-depth analysis of some important structural requirements, and our recommendations for modification of our structure in subsequent design steps.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Structural Interpretation of Customer Needs
+      </div>
+      <p>
+       <s pid="2" sid="1">
+        A retired elderly couple was the target customer of our mid-size vehicle.
+       </s>
+       <s pid="2" sid="2">
+        They have a secure income and are looking for a comfortable vehicle to travel between their primary home and winter home in Florida.
+       </s>
+       <s pid="2" sid="3">
+        Their target price range is approximately $30,000.
+       </s>
+       <s pid="2" sid="4">
+        Using this customer description, we decided that a mid-size luxury vehicle was the target concept.
+       </s>
+       <s pid="2" sid="5">
+        We generated some general vehicle qualities that may be important to our customer.
+       </s>
+       <s pid="2" sid="6">
+        Table 1 below shows our breakdown of these qualities, their importance with respect to our customer, and the structural portions of the vehicles that may affect the qualities.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        Table 1: Structural Interpretation of Vehicle Qualities with Regards to the Customer
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Design Concept
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        We completed our rough design concepts based on packaging, first order analysis, and customer requirements.
+       </s>
+       <s pid="4" sid="2">
+        First, we introduce the general strategy behind our structure and how we achieved the desired characteristics.
+       </s>
+       <s pid="4" sid="3">
+        Then, we will provide general overlays of our structure onto the vehicle plan views and the sizing of major elements.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Structural Strategy
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        Our design sketch is shown in Figure 1 below.
+       </s>
+       <s pid="5" sid="2">
+        Please consider vehicle symmetry while viewing the sketch.
+       </s>
+       <s pid="5" sid="3">
+        We also summarized the structural strategy behind our design concept as shown in the figure as well.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Figure 1: Design Sketch and Structural Strategy (Vehicle is Symmetrical)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        Our design is based off a monocoque structure and attempts to satisfy the expectations of our target customer.
+       </s>
+       <s pid="7" sid="2">
+        The material choice for the components was steel because it is highly durable and fatigue resistant.
+       </s>
+       <s pid="7" sid="3">
+        This coincides with our customer requirements for the expectations of high durability for this vehicle, considering its $30,000 price tag.
+       </s>
+       <s pid="7" sid="4">
+        Thus, we concentrated on enhancing the robustness of traditional steel designs.
+       </s>
+       <s pid="7" sid="5">
+        The mass of our concept structure as shown in this report is estimated to be 448 kg.
+       </s>
+       <s pid="7" sid="6">
+        However, there are many minor structural components we did not consider and thus, this value should only be considered a rough estimation.
+       </s>
+       <s pid="7" sid="7">
+        In any case, we found this mass to be larger than we required and we discuss how to address this later.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        We addressed the needs of comfortable ride by attempting to make the body extremely stiff with respect to any suspension that may be added.
+       </s>
+       <s pid="8" sid="2">
+        We included 4 under-floor cabin cross members which can serve as attachment points for the seats and other passenger compartment structures.
+       </s>
+       <s pid="8" sid="3">
+        The front 2 cabin cross members are much larger in comparison to the rear.
+       </s>
+       <s pid="8" sid="4">
+        They have relatively large section sizes to 1) support the longitudinal rails during front impact and 2) react side impact loads.
+       </s>
+       <s pid="8" sid="5">
+        The 2 rear cabin cross members are designed to react side impact loads.
+       </s>
+       <s pid="8" sid="6">
+        All the cross members add bending and torsional rigidity to stiffen the structure which makes it robust to noise and vibrations.
+       </s>
+       <s pid="8" sid="7">
+        This NVH robustness was considered an important expectation.
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        We also facilitated ingress/egress and step over height by lowering the height of the rocker and increasing its thickness.
+       </s>
+       <s pid="9" sid="2">
+        This lead to a relatively large rocker section, but it was a compromise we were willing to make to cater to our customer’s needs.
+       </s>
+       <s pid="9" sid="3">
+        However, we feel that lowering the rocker may compromise side impact safety, as the rocker may be too low to contact the barrier.
+       </s>
+       <s pid="9" sid="4">
+        We also tried to make the roof rail and B-pillar as thin as possible to create an even larger ingress/egress space.
+       </s>
+       <s pid="9" sid="5">
+        Our goal was to seat the retired couple with as little bending over as possible – just in case their bodies are as limber as they used to be when they were younger.
+       </s>
+       <s pid="9" sid="6">
+        We intended to design the cabin to be spacious by disallowing any structural intrusions into the passenger compartment and by slightly crowning the roof panel to allow for ample head room.
+       </s>
+       <s pid="9" sid="7">
+        The goal was to make the cabin feel more like a living room than the interior of a car, hence adding to the luxury aspect.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        We considered cabin safety very seriously and designed for robust energy dissipation in case of front or side impact.
+       </s>
+       <s pid="10" sid="2">
+        The cabin cross members serve as added load paths for side impact crashes and thereby increase the safety of the vehicle in the event of a side impact.
+       </s>
+       <s pid="10" sid="3">
+        We included dual motor compartment crushable rails on each side of the vehicle to react frontal impacts.
+       </s>
+       <s pid="10" sid="4">
+        All 4 rails have crush initiators to facilitate crush during a frontal crash.
+       </s>
+       <s pid="10" sid="5">
+        The 2 longitudinal rails extend from the cabin’s 2 front cross members.
+       </s>
+       <s pid="10" sid="6">
+        The 2 outer rails extend from the rocker section and help react loads with the upper structure.
+       </s>
+       <s pid="10" sid="7">
+        Since our rocker was very large, we decided to make use of it as an additional load path for crash loads because it was roughly the same size as our longitudinals.
+       </s>
+       <s pid="10" sid="8">
+        This design provides 4 load paths for a full frontal collision and at least 2 load paths for an offset collision.
+       </s>
+       <s pid="10" sid="9">
+        Our design also indirectly increases safety by providing the driver with an increased range of visibility made possible through a thin A-pillar and upper B-pillar.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Packaging Analysis and Major Structure Sizing
+      </div>
+      <p>
+       <s pid="11" sid="1">
+        For ease of viewing, please refer to the appendices listed in Table 2 for packaging overlay views and for the major structural element dimensions in conjunction with the following discussion.
+       </s>
+       <s pid="11" sid="2">
+        The overlays primarily show the beams and panels that we sized for this initial concept.
+       </s>
+       <s pid="11" sid="3">
+        Also, the drawings reflect actual scaled dimensions for all beams and panels.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        Table 2: Appendices for Package Overlays and Sizing
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Top Plan View
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        We laid our underbody structure on the top plan view as seen in Appendix A.
+       </s>
+       <s pid="13" sid="2">
+        The scaled structure appears to fit within the plan view from a packaging perspective.
+       </s>
+       <s pid="13" sid="3">
+        However, we want to note that any routing under the floor pan may require holes in the cross members and this may pose a manufacturing problem.
+       </s>
+       <s pid="13" sid="4">
+        The possible sub-systems affected are exhaust, HVAC, and fuel systems.
+       </s>
+       <s pid="13" sid="5">
+        We want to make note of the continuous section size we utilized along the motor compartment rails, the longitudinal rails, and the cabin cross members.
+       </s>
+       <s pid="13" sid="6">
+        In Appendix C, notice that all 3 rails have the same cross section but different thicknesses.
+       </s>
+       <s pid="13" sid="7">
+        This design facilitates a smooth load path along the entire perimeter of each section, which is advantageous in crash and other loading situations.
+       </s>
+       <s pid="13" sid="8">
+        This is another way we designed durability and robustness into the structure.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Beam and Panel Side Plan Views
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        We also laid our beam structure on the side plan view as seen in the first figure in Appendix B. Again, we observe that the structure does fit with regards to packaging.
+       </s>
+       <s pid="14" sid="2">
+        However, it seems there may be a packaging problem with the mid-rail extending from the rocker.
+       </s>
+       <s pid="14" sid="3">
+        It may interfere with the shock tower and/or wheel hub.
+       </s>
+       <s pid="14" sid="4">
+        Additionally, we point out that the rocker is located on the low side of the suggested rocker position of the plan view.
+       </s>
+       <s pid="14" sid="5">
+        This was the result of a direct attempt to lower step-over height for easy ingress/egress for our customer.
+       </s>
+       <s pid="14" sid="6">
+        The relatively thinner A and B-Pillars show that visibility can be increased within the package constraints.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        The second figure in Appendix C shows the major cabin panels (roof, dash, seat back, and floor) and their locations in the package.
+       </s>
+       <s pid="15" sid="2">
+        These appear to fit within the package and are relatively thin compared to the rest of the structure.
+       </s>
+       <s pid="15" sid="3">
+        Their final shape is highly dependent on routings, holes, curves, and manufacturing capability but we approximated them as flat panels for our initial assessment.
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        Thus, our final design sketch and concept package seem to fulfill many of our customer requirements and fit into the package space.
+       </s>
+       <s pid="16" sid="2">
+        A detailed analysis of how we arrived at our design requirements, section sizes, and final mass follows.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Preliminary Mass Analysis
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Prior to creating a structure, we performed a mass analysis to approximately determine the total vehicle mass.
+       </s>
+       <s pid="17" sid="2">
+        First, we determined the plan view area of the target vehicle, 9.42 m2.
+       </s>
+       <s pid="17" sid="3">
+        Then, we used a historical graph to estimate the nominal total weight of our vehicle.
+       </s>
+       <s pid="17" sid="4">
+        This graph of Vehicle Mass to Plan-View Area can be found in Appendix D on page 19.
+       </s>
+       <s pid="17" sid="5">
+        We determined the nominal mass to be 1620kg.
+       </s>
+       <s pid="17" sid="6">
+        Next, we split the vehicle into major subsystems and used typical subsystem masses for mid-size vehicles to estimate each subsystem’s contribution to the nominal mass.
+       </s>
+       <s pid="17" sid="7">
+        However, we tailored the vehicle’s mass to our target customer.
+       </s>
+       <s pid="17" sid="8">
+        This was done using a spreadsheet which incorporated subsystem mass iterations.
+       </s>
+       <s pid="17" sid="9">
+        When we changed the mass of one subsystem, these iterations helped adjust the masses of the other subsystems using historical data to calculate the interaction between subsystems’ masses.
+       </s>
+       <s pid="17" sid="10">
+        In Table 2 on the following page, we outline our initial mass estimates for the subsystems, show the reasons for changing the mass of a particular subsystem, and provide the new subsystem’s mass after interaction effects are calculated.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Table 2: Preliminary Mass Analysis of Mid-Size Luxury Sedan
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Development of Structural Requirements
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        After finding our concept’s final mass estimate, we determined typical structural requirements for the vehicle.
+       </s>
+       <s pid="19" sid="2">
+        These included the vehicle’s bending moment diagrams, bending strength, bending stiffness, twist ditch torque, torsional stiffness, front and side impact parameters, and roof crush.
+       </s>
+       <s pid="19" sid="3">
+        For many of these requirements we mention a test mass, which we estimated as 2035kg.
+       </s>
+       <s pid="19" sid="4">
+        We discuss the development of the requirements below.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Vehicle Bending Moment Diagrams
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        We determined the vehicle bending moment diagrams from a free body diagram of the vehicle as a simply supported beam with its typical loads at the gross vehicle mass condition.
+       </s>
+       <s pid="21" sid="2">
+        This free body diagram is shown in Appendix E, on pages 20 and 21.
+       </s>
+       <s pid="21" sid="3">
+        We included the dynamic bending moment diagram, assumed to be twice that of the static diagram.
+       </s>
+       <s pid="21" sid="4">
+        In addition, we considered front and rear towing conditions.
+       </s>
+       <s pid="21" sid="5">
+        All these bending moment diagrams are shown in Figure 2 below.
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        Figure 2: The Concept Vehicle’s Bending Moment Diagrams
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Bending Strength and Stiffness
+      </div>
+      <p>
+       <s pid="23" sid="1">
+        We determined that our structure should be strong enough to withstand an 11,000N force in an H-point bending test without permanent deformation.
+       </s>
+       <s pid="23" sid="2">
+        We arrived at this value by considering the maximum bending moment from Figure 2.
+       </s>
+       <s pid="23" sid="3">
+        Modeling the vehicle as a simply supported beam, we determined that an 11,000N force applied equidistant from the front and rear suspensions would yield an equivalent maximum moment of approximately 7,100,000 N-mm when it is the only force acting on the beam.
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        We determined the required bending stiffness of the vehicle to be 7700 N/mm.
+       </s>
+       <s pid="24" sid="2">
+        We derived this from a first order estimation of bending frequency.
+       </s>
+       <s pid="24" sid="3">
+        Historically, the desirable range for primary vehicle modes is 22-25 Hz.
+       </s>
+       <s pid="24" sid="4">
+        We decided to design our structure to a 23
+       </s>
+       <s pid="24" sid="5">
+        Hz primary bending mode.
+       </s>
+       <s pid="24" sid="6">
+        We used Equation 1 below to determine the necessary bending stiffness, k.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        Equation 1
+       </s>
+      </p>
+      <p>
+       <s pid="26" sid="1">
+        The other variables are as follows: fn is the bending frequency, l is the wheelbase, L is the overall length of the vehicle, and M is the rigidly mounted mass, which we estimated to be approximately 40% of the curb mass.
+       </s>
+       <s pid="26" sid="2">
+        Hence, we set these bending requirements as our targets.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Twist Ditch Torque and Torsional Stiffness
+      </div>
+      <p>
+       <s pid="27" sid="1">
+        We determined the twist ditch torque requirement to be 8,200,000 N-mm.
+       </s>
+       <s pid="27" sid="2">
+        This was determined using Equation 2 on the following page, where t is the track of our vehicle (1560mm) and WAxle is the maximum value of the front or rear suspension reactions.
+       </s>
+       <s pid="27" sid="3">
+        In our case the front suspension was the largest reaction force at 10,500N.
+       </s>
+       <s pid="27" sid="4">
+        The free body diagram of Appendix F on page 22 helped us find these reactions.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        Equation 2
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        We determined the torsional stiffness requirement of the vehicle to be 14,000 N-m/°.
+       </s>
+       <s pid="29" sid="2">
+        We arrived at this value by examining the torsional stiffnesses of benchmarked vehicles.
+       </s>
+       <s pid="29" sid="3">
+        The nominal value for a typical mid-size sedan was approximately 12,000 N-m/°.
+       </s>
+       <s pid="29" sid="4">
+        However, we want our vehicle’s structure to be stiffer so that it is more robust to noise and vibrations.
+       </s>
+       <s pid="29" sid="5">
+        Thus, we decided to pursue a higher torsional stiffness.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Front Impact
+      </div>
+      <p>
+       <s pid="30" sid="1">
+        We determined the amount of available crush space to be 550mm in the case of a frontal impact.
+       </s>
+       <s pid="30" sid="2">
+        We used the plan view of the vehicle to get a rough estimate of this value.
+       </s>
+       <s pid="30" sid="3">
+        Please refer to Appendix G on page 23 for the calculation and the plan view.
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        Additionally, we required the average front barrier crush force to be 335,000N.
+       </s>
+       <s pid="31" sid="2">
+        Using judgment and target retired couple, we determined that the deceleration during a crash must be better than most typical vehicles, which range from 20g to 30g.
+       </s>
+       <s pid="31" sid="3">
+        The deceleration must also be low enough to compensate for the anatomy of an older couple whose bodies are not as robust to acceleration as they once were.
+       </s>
+       <s pid="31" sid="4">
+        Thus, we required a maximum crash deceleration of 23g during the mandated FMVSS 208 30mph frontal crash.
+       </s>
+       <s pid="31" sid="5">
+        Using Equation 3 below, we determined that the structural efficiency needed to attain a 23g deceleration is 73%.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="32" sid="1">
+        Equation 3
+       </s>
+      </p>
+      <p>
+       <s pid="33" sid="1">
+        Here, Δ is the available crush space, η is the crush efficiency, v is the velocity prior to crash, and amax is the maximum deceleration desired.
+       </s>
+       <s pid="33" sid="2">
+        We believe this is practical because historically, structures range from 65-80% efficient in 30mph frontal crashes.
+       </s>
+       <s pid="33" sid="3">
+        Finally, the relationship defining the crush efficiency is shown in Equation 4 below, where Favg is the average crush barrier force, and Fmax is the maximum crush barrier force.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        Equation 4
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Side Impact
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        For side barrier collisions, we require that crush load for the vehicle side is approximately 200,000N.
+       </s>
+       <s pid="35" sid="2">
+        We know historically and from first order analysis that a large side crush load will decelerate the barrier quicker, which will result in lesser acceleration being imparted to the occupant.
+       </s>
+       <s pid="35" sid="3">
+        Also, the available side crush available in our package is about 300mm.
+       </s>
+       <s pid="35" sid="4">
+        There is 120mm from the outer portion of the door to the inner portion, and there is 180mm from the inner door to the occupant.
+       </s>
+       <s pid="35" sid="5">
+        We used a spreadsheet that utilized a first order analysis of side impact to determine the effects of the crush space on the occupant and to determine whether a package change may be necessary.
+       </s>
+       <s pid="35" sid="6">
+        Please refer to Appendix E for a detailed analysis which utilizes the FMVSS 214 standard for side crash.
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        In short, we found that at the current dimensions of the side of the vehicle and with a 200000N side crush force, the impact would result in about 57g being imparted to the occupant.
+       </s>
+       <s pid="36" sid="2">
+        If we simply flip the door dimension to 180mm and instead have the distance to the occupant as 120mm, then the impact would impart 38g to the occupant.
+       </s>
+       <s pid="36" sid="3">
+        This is a reduction of 33% by simply reducing shoulder room by 6cm.
+       </s>
+       <s pid="36" sid="4">
+        Although interior room may be diminished, the survivability chances of the occupant are much higher.
+       </s>
+       <s pid="36" sid="5">
+        Thus, a package change should be considered.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Roof Crush
+      </div>
+      <p>
+       <s pid="37" sid="1">
+        We determined that the roof must not deflect more than 5 inches under a 30,000N static load.
+       </s>
+       <s pid="37" sid="2">
+        This was determined by FMVSS 216 which states that the static load applied during the roof crush test is 1.5 times the vehicle weight.
+       </s>
+       <s pid="37" sid="3">
+        During the test, the roof must not deform more than 5 inches.
+       </s>
+       <s pid="37" sid="4">
+        Thus, our roof crush load was determined to be 30,000N using the test mass of our vehicle.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Sizing the Major Structures through Requirement Analysis
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        This section aims to describe how we achieved the final sizes of the major structures shown previously.
+       </s>
+       <s pid="38" sid="2">
+        These include the side frame, the cabin shear resistant panels, motor compartment crushable rails, under-floor longitudinal rails, and cabin cross members.
+       </s>
+       <s pid="38" sid="3">
+        We will summarily describe the steps we took and the first-order methods we implemented to determine the dimensions for these major structures.
+       </s>
+       <s pid="38" sid="4">
+        We begin with the side frame.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Side Frame Sized from Bending Requirements
+      </div>
+      <p>
+       <s pid="39" sid="1">
+        We determined the side frame beam dimensions mainly from the bending stiffness requirement and also from our customer description.
+       </s>
+       <s pid="39" sid="2">
+        Historically, the bending stiffness requirement is one of the harder requirements to meet.
+       </s>
+       <s pid="39" sid="3">
+        First, we analyzed the plan views of the vehicle and roughly determined the maximum allowable dimension for each of the 8 identifiable side frame beams: the A-pillar, hinge pillar, lower B-pillar, upper B-pillar, lower C-pillar, upper C-pillar, roof rail, and rocker.
+       </s>
+       <s pid="39" sid="4">
+        Next, we obtained a simple first order FEA modeler to perform an H-point bending test analysis.
+       </s>
+       <s pid="39" sid="5">
+        The modeler assumes rectangular sections and our dimensions are reported as such.
+       </s>
+       <s pid="39" sid="6">
+        Using the modeler, we applied the 11,000N load from our bending strength requirement to the lower middle of the side frame and began our analysis.
+       </s>
+       <s pid="39" sid="7">
+        We estimated the bending stiffness as the ratio of the 11,000N load to the vertical deflection of the application point.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Bending Stiffness Analysis
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        We began the analysis by assuming typical joint stiffness values.
+       </s>
+       <s pid="40" sid="2">
+        In the first run, we included all the beams at their largest perimeter dimensions to determine the maximum bending stiffness attainable from our side frame at worst case for packaging.
+       </s>
+       <s pid="40" sid="3">
+        Having surpassed the requirement of 7700N/mm with this first run, we began to reduce the dimensions of the beams.
+       </s>
+       <s pid="40" sid="4">
+        Our first priority was to ensure that our target customers would have ample room for ingress and egress.
+       </s>
+       <s pid="40" sid="5">
+        Thus, we attempted to reduce the section heights of the rocker, the upper and lower B-pillars, the hinge pillar, the A-pillar and the roof rail.
+       </s>
+       <s pid="40" sid="6">
+        This would enlarge the driver and passenger openings in the side frame to facilitate entry and exit.
+       </s>
+       <s pid="40" sid="7">
+        As a bonus, the thinner A and B-pillars would also help increase visibility.
+       </s>
+       <s pid="40" sid="8">
+        However, at the same time, we monitored the beams with the highest strain energy – the rocker and roof rail.
+       </s>
+       <s pid="40" sid="9">
+        We tried to change them as well since they would affect the overall stiffness the most, but we still wanted to facilitate easy ingress/egress.
+       </s>
+       <s pid="40" sid="10">
+        We reduced the section sizes and altering thicknesses until we met our bending requirement.
+       </s>
+       <s pid="40" sid="11">
+        A screenshot of our final side frame from the FEA modeler is shown in Appendix H on page 24.
+       </s>
+       <s pid="40" sid="12">
+        Please see Appendix C on page 18 for dimensions of each individual beam and its relative sizing.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Bending Performance
+      </div>
+      <p>
+       <s pid="41" sid="1">
+        Our final concept side frame has a total bending stiffness of 7750 N/mm according to our FEA modeler.
+       </s>
+       <s pid="41" sid="2">
+        Its total weight is 83.4kg and the deflection at the loading point was 2.84mm.
+       </s>
+       <s pid="41" sid="3">
+        Thus, we can make the observation that the structure meets the bending stiffness requirement.
+       </s>
+       <s pid="41" sid="4">
+        Additionally, the maximum observed stress in the structure was 95MPa in the roof rail.
+       </s>
+       <s pid="41" sid="5">
+        Recalling the yield strength of typical automotive steel as 207 MPa, we note that there was no yielding in the structure.
+       </s>
+       <s pid="41" sid="6">
+        Also, the width-to-thickness ratio, or "b/t," for the roof is less than 60, and therefore, we can conclude that it will fail by yielding, not buckling.
+       </s>
+       <s pid="41" sid="7">
+        Thus, we can conclude that the structure met the bending strength requirement as well.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Cabin Shear Panels Sized from Torsion Requirements
+      </div>
+      <p>
+       <s pid="42" sid="1">
+        We performed a torsion strength and stiffness analysis on the entire cabin.
+       </s>
+       <s pid="42" sid="2">
+        The cabin included both side frames, the seat back, the dash panel, the floor, the roof, the windshield frame, and the backlite frame.
+       </s>
+       <s pid="42" sid="3">
+        Our initial assumptions were that the shear resistant panels of the cabin (floor, dash, roof, and seat back) were all 1mm thick, flat, steel panels.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Torsion Strength Analysis
+      </div>
+      <p>
+       <s pid="43" sid="1">
+        We determined that the 1mm shear resistant panels buckled under the twist ditch torque and resizing was necessary.
+       </s>
+       <s pid="43" sid="2">
+        Applying the twist ditch torque to the dash panel, we performed an in-depth load path analysis on the cabin structure to get the shear loads on each edge.
+       </s>
+       <s pid="43" sid="3">
+        Please refer to Appendix I on page 25 for specific details.
+       </s>
+       <s pid="43" sid="4">
+        This allowed us to analyze each of the 4 flat panels in shear.
+       </s>
+       <s pid="43" sid="5">
+        We noted that at 1mm, the width-to-thickness ratio "b/t" was greater than 60 for each panel.
+       </s>
+       <s pid="43" sid="6">
+        Thus, they would fail by buckling rather than yield.
+       </s>
+       <s pid="43" sid="7">
+        Therefore, we determined the critical buckling stress (σcr,Shear) and load (Fcr,Shear) for each of the 4 panels.
+       </s>
+       <s pid="43" sid="8">
+        Assuming the panels were simply supported, the following Equations 5, 6, and 7 applied.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="44" sid="1">
+        Equation 5
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="45" sid="1">
+        Equation 6
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="46" sid="1">
+        Equation 7
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        Here, E is the elastic modulus, t is the thickness, μ is Poisson’s ratio, b is the short dimension of the panel, K is the boundary condition factor, and a is the long dimension of the panel.
+       </s>
+       <s pid="47" sid="2">
+        Thus, if the shear loads on any side of the panels exceed Fcr,Shear, then the panel will buckle.
+       </s>
+      </p>
+      <p>
+       <s pid="48" sid="1">
+        As previously stated, we determined that all 4 of the 1mm panels failed by buckling.
+       </s>
+       <s pid="48" sid="2">
+        Therefore, we iterated through the previous 3 equations varying the thickness until Fcr,Shear was less than the shear load found through the load path analysis.
+       </s>
+       <s pid="48" sid="3">
+        Please refer to Appendix I on page 26 for specific calculated values.
+       </s>
+       <s pid="48" sid="4">
+        The final panel thicknesses were: 1.4mm for the seat back and dash panel, 1.5mm for the roof, and 1.75mm for the floor.
+       </s>
+      </p>
+      <p>
+       <s pid="49" sid="1">
+        In addition, we observed that the maximum stress in the side frame under the twist ditch torque was 115 MPa in the upper B-pillar.
+       </s>
+       <s pid="49" sid="2">
+        This stress is less than yield strength of steel and since the b/t value for this pillar is less than 60, we can conclude that it will fail by yielding, not buckling.
+       </s>
+       <s pid="49" sid="3">
+        Thus, the side frame met twist ditch/torsion strength requirement.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Torsion Stiffness Analysis
+      </div>
+      <p>
+       <s pid="50" sid="1">
+        We estimated the torsional stiffness of the cabin to be 9,000 N-m/° without the front and rear windshields installed.
+       </s>
+       <s pid="50" sid="2">
+        We determined this by considering the twist ditch torque and the entire cabin in torsion once again.
+       </s>
+       <s pid="50" sid="3">
+        We utilized a spreadsheet to find the torsion stiffness whose basis was a first order equation for cabin stiffness shown below as Equation 8.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="51" sid="1">
+        Equation 8
+       </s>
+      </p>
+      <p>
+       <s pid="52" sid="1">
+        Here, q is the shear flow on an edge, T is the twist ditch torque, A is the area, G is the shear modulus, and t is the thickness of the panel, and i is the number of panels.
+       </s>
+       <s pid="52" sid="2">
+        Our load path analysis and the cabin itself told us everything except the effective shear stiffness (Gt)eff.
+       </s>
+      </p>
+      <p>
+       <s pid="53" sid="1">
+        For the shear resistant flat panels, we determined the (Gt)eff by using the shear modulus and the panel thickness.
+       </s>
+       <s pid="53" sid="2">
+        However, the (Gt)eff of the windshield frames and the side frame had to be determined separately.
+       </s>
+       <s pid="53" sid="3">
+        We found (Gt)eff of the windshield and backlite frames by analyzing the deflection of a flexible frame under a shear force.
+       </s>
+       <s pid="53" sid="4">
+        We assumed small angles and equal angular deflections for all joints.
+       </s>
+       <s pid="53" sid="5">
+        We utilized the relevant joint stiffness used in our side frame FEA modeler.
+       </s>
+       <s pid="53" sid="6">
+        Thus, equating strain energy to work done by the shearing force, we developed Equation 9, which we used to calculate the effective shear stiffness of the windshield and backlite frames.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="54" sid="1">
+        Equation 9
+       </s>
+      </p>
+      <p>
+       <s pid="55" sid="1">
+        Here,
+       </s>
+       <s pid="55" sid="2">
+        Kjoint is the joint stiffness, A is the flexible panel area, and i is the number of the joint.
+       </s>
+       <s pid="55" sid="3">
+        Thus, we determined from our model that (Gt)eff of the windshield frame was 380 N/mm and that of the backlight was 252 N/mm.
+       </s>
+       <s pid="55" sid="4">
+        Finally, we found the (Gt)eff of the side frame by using the FEA modeler mentioned earlier to determine the fore-aft deflection caused by the shear force on the side frame.
+       </s>
+       <s pid="55" sid="5">
+        We determined the (Gt)eff of the side frame to be 244 N/mm.
+       </s>
+      </p>
+      <p>
+       <s pid="56" sid="1">
+        Additionally, we determined the torsion stiffness of the cabin with the windshield and backlite glass installed.
+       </s>
+       <s pid="56" sid="2">
+        Assuming the glass to be rigid and the frame to be very flexible, we used the typical (Gt)eff of the adhesive to determine that the effective stiffness of the windshield and backlite frames was about 4500N/mm.
+       </s>
+       <s pid="56" sid="3">
+        Thus, the total cabin stiffness became 11,700N.
+       </s>
+       <s pid="56" sid="4">
+        We note that in either case, the structure does not meet our 14,000 N-m/° torsion stiffness requirement.
+       </s>
+       <s pid="56" sid="5">
+        We will address this further in the Recommendations section on page 14.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Longitudinal Rails Sized From Front Impact Requirements
+      </div>
+      <p>
+       <s pid="57" sid="1">
+        We sized the 2 longitudinal rails using a limit analysis with plastic joints, the maximum expected barrier crush force, and an assumption of square, steel sections.
+       </s>
+       <s pid="57" sid="2">
+        To clarify, we only consider the rails which extend from the cabin cross members, not the secondary rails extending from the rocker.
+       </s>
+       <s pid="57" sid="3">
+        We used a first order limit analysis on the rails to determine their size.
+       </s>
+       <s pid="57" sid="4">
+        Below, Figure 3 shows the equations and a brief sketch of the analysis.
+       </s>
+       <s pid="57" sid="5">
+        We assumed that joints 1 and 2 had equivalent fully plastic moments, Mp. Also, we assumed small translational and rotational deflections.
+       </s>
+       <s pid="57" sid="6">
+        In the following equations, the angle θ was taken from our side package overlay as 55º, L1 was 300mm, and L2 was 200mm.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="58" sid="1">
+        Figure 3: Small Angle Approximation for Mid-Rail Analysis
+       </s>
+      </p>
+      <p>
+       <s pid="59" sid="1">
+        Typically, 50% of the crash force is absorbed through the lower-middle structure.
+       </s>
+       <s pid="59" sid="2">
+        Our structure included 2 longitudinal rails and therefore, we needed each rail to react at least 25% of the maximum expected barrier force.
+       </s>
+       <s pid="59" sid="3">
+        The max crush force expected is approximately 460,000N during a 23g crash at our test mass of 2035kg.
+       </s>
+       <s pid="59" sid="4">
+        Thus, each rail needed to react 115,000N.
+       </s>
+       <s pid="59" sid="5">
+        Each rail was determined to be a steel section that is 100mm by 100mm and 4mm thick.
+       </s>
+       <s pid="59" sid="6">
+        The b/t ratio for these sections is 25 which indicates that they will fail by yielding.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Motor Compartment Crushable Rail Sizing
+      </div>
+      <p>
+       <s pid="60" sid="1">
+        We determined the size of our 4 crushable rails from the plan view, the average front barrier crush force, and empirical equations for axial crush of steel, square sections.
+       </s>
+       <s pid="60" sid="2">
+        Using judgment, we decided to use square sections of 100mm because this dimension would flow smoothly from the longitudinal rails thereby creating a smooth and robust load path.
+       </s>
+       <s pid="60" sid="3">
+        Typically, 50% of the average crush force is directed through the lower middle structure and 20% is directed through the upper structure.
+       </s>
+       <s pid="60" sid="4">
+        Thus, we sized the 2 lower rails to crush at 25% of the 335,000N load, which is 93750N.
+       </s>
+       <s pid="60" sid="5">
+        We sized the 2 upper rails to crush as 10% of the load, 35,000N.
+       </s>
+       <s pid="60" sid="6">
+        The empirical relations for steel square sections, Equations 9 and 10, were provided by SAE.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="61" sid="1">
+        Equation 9
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="62" sid="1">
+        Equation 10
+       </s>
+      </p>
+      <p>
+       <s pid="63" sid="1">
+        We set Pmax = 93750N and 35,000N, respectively, to indicate crippling and the formation of the first fold at this force.
+       </s>
+       <s pid="63" sid="2">
+        For the lower rails, we determined that a square section should be 100mm per side and 1.5mm thick.
+       </s>
+       <s pid="63" sid="3">
+        For the upper rails, we determined that a square section should be 60mm per side and 0.92mm thick.
+       </s>
+       <s pid="63" sid="4">
+        The b/t value for both sets of rails is greater than 60 which constitutes failure by buckling.
+       </s>
+       <s pid="63" sid="5">
+        This is the desirable failure mode for these crushable members.
+       </s>
+       <s pid="63" sid="6">
+        We could further initiate crush of these members by adding large radius ribs on the sides that act as crowned panels, which buckle more easily under loading.
+       </s>
+      </p>
+      <p>
+       <s pid="64" sid="1">
+        We want to note that the sizing and packaging of the upper crushable rails must be checked so that they do not interfere with the shock tower or any other subsystem.
+       </s>
+       <s pid="64" sid="2">
+        The next design team may consider removing them, but we urge them to find an alternate method for enhanced energy absorption, as the safety of the occupant is of high importance.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Cabin Cross Member Sizing
+      </div>
+      <p>
+       <s pid="65" sid="1">
+        Next, we sized the 4 cabin cross members under the floor.
+       </s>
+       <s pid="65" sid="2">
+        To do this, we considered only the worst case loading condition for one of the cross members.
+       </s>
+       <s pid="65" sid="3">
+        This worst case is shown in Figure 4.
+       </s>
+       <s pid="65" sid="4">
+        The front 2 cross members will be loaded in a front collision or a side collision.
+       </s>
+       <s pid="65" sid="5">
+        So we sized these beams for both impacts and chose the more conservative as the final set of dimensions for each cross member.
+       </s>
+       <s pid="65" sid="6">
+        We sized the rear 2 cross members for side crash only.
+       </s>
+       <s pid="65" sid="7">
+        To size the front 2, we iterated through first order buckling and yield.
+       </s>
+       <s pid="65" sid="8">
+        We recall the longitudinal rails react 115,000N during front impact.
+       </s>
+       <s pid="65" sid="9">
+        However, there are 2 cross members that can share this load from each longitudinal rail.
+       </s>
+       <s pid="65" sid="10">
+        So thus, only 57,500N would be reacted by one cross member.
+       </s>
+       <s pid="65" sid="11">
+        Also, the side impact should have a strength of 200,000N per our requirement.
+       </s>
+       <s pid="65" sid="12">
+        During this analysis, we only consider 100mm square sections because we want to fit within the package, and more importantly, the sections would flow smoothly from the 100mm square longitudinal sections to create a smooth load path.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="66" sid="1">
+        Figure 4: Free Body Diagrams for Sizing of Cabin Cross Members
+       </s>
+      </p>
+      <p>
+       <s pid="67" sid="1">
+        The maximum moment exerted on the beam during frontal impact is about 22,000,000N-mm.
+       </s>
+       <s pid="67" sid="2">
+        Thus, we use Equation 11 to calculate the bending stress in the beam and also Equation 12 to consider buckling.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="68" sid="1">
+        Equation 11
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="69" sid="1">
+        Equation 12
+       </s>
+      </p>
+      <p>
+       <s pid="70" sid="1">
+        For Equation 11, σ is the bending stress, M is the moment applied to the beam, y is the maximum distance from the neutral axis, and I is the moment of inertia.
+       </s>
+       <s pid="70" sid="2">
+        The parameters of Equation 12 have been described earlier.
+       </s>
+       <s pid="70" sid="3">
+        Iterations through first order beam analysis, lead us to dimensions of 100mm by 100mm and 18mm thick to react the frontal crash condition.
+       </s>
+       <s pid="70" sid="4">
+        With these dimensions, the largest stress in the beam is 194MPa – almost the yield of steel at 207MPa.
+       </s>
+       <s pid="70" sid="5">
+        Obviously, the b/t ratio for these beams is small and they will fail by yield.
+       </s>
+       <s pid="70" sid="6">
+        This strength will help ensure the passenger compartment remains relatively un-deformed during a frontal crash.
+       </s>
+      </p>
+      <p>
+       <s pid="71" sid="1">
+        Considering side impact, we utilized AISI CARS 2005: Geometrical Analysis of Sections program provided by AISI.
+       </s>
+       <s pid="71" sid="2">
+        We performed an axial capacity trend analysis on a 100mm by 100mm section.
+       </s>
+       <s pid="71" sid="3">
+        The results are in the following plot in Figure 5.
+       </s>
+       <s pid="71" sid="4">
+        We note that a thickness of 2.2mm can react approximately 200000N.
+       </s>
+       <s pid="71" sid="5">
+        Thus, the rear 2 cabin cross members should be 100mm by 100mm and 2.2mm thick.
+       </s>
+      </p>
+      <p>
+       <s pid="72" sid="1">
+        Figure 5: AISI CARS 2005: Axial Capacity Trend for 100mm by 100mm Section
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="73" sid="1">
+        We observe that the frontal crash condition is far more detrimental to the beam that side impact because it is transversely loaded.
+       </s>
+       <s pid="73" sid="2">
+        However, the main function of the front 2 cross members is to keep the longitudinal rail rigid as it plastically deforms to protect the cabin.
+       </s>
+       <s pid="73" sid="3">
+        Thus, the stress in the beam is much higher in than in the axially loaded case.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Manufacturing Considerations
+      </div>
+      <p>
+       <s pid="74" sid="1">
+        After sizing the major structural members, we need to acknowledge manufacturing considerations with respect to our sections.
+       </s>
+       <s pid="74" sid="2">
+        The generic sections shown in Appendix C on page 18 are very generic and do not consider manufacturing.
+       </s>
+       <s pid="74" sid="3">
+        For example, none of the thin sections shown in Appendix C have any flanges for welding.
+       </s>
+       <s pid="74" sid="4">
+        So for instance, the motor compartment crushable rails could take on a somewhat different form, as in Figure 5 on the next page.
+       </s>
+       <s pid="74" sid="5">
+        The flanges may add enough length or width that the member may interfere with the packaging and or the aesthetics of the structure.
+       </s>
+       <s pid="74" sid="6">
+        Also, the positioning of the flanges affects the strength of the section as well.
+       </s>
+      </p>
+      <p>
+       <s pid="75" sid="1">
+        Figure 5: Examples Manufacturing Effects on a Section
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="76" sid="1">
+        There are ample other examples like this.
+       </s>
+       <s pid="76" sid="2">
+        However, we can also increase strength and stiffness of any of these sections if they are manufactured properly.
+       </s>
+       <s pid="76" sid="3">
+        For example, we can increase the plastic moment of the longitudinal rail by carefully welding another section within it.
+       </s>
+       <s pid="76" sid="4">
+        This would allow it to react a higher crash load we than expected.
+       </s>
+       <s pid="76" sid="5">
+        Thus, we could introduce higher safety factors into our section designs by reinforcing our sections.
+       </s>
+       <s pid="76" sid="6">
+        In Appendix J on page 27, we readjust some of our sections to account for packaging, manufacturing considerations, strength, or aesthetics.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Final Structure Mass Analysis
+      </div>
+      <p>
+       <s pid="77" sid="1">
+        We estimated the final mass of our structure to be 448kg.
+       </s>
+       <s pid="77" sid="2">
+        After finding all the section sizes, we estimated the total mass of the sized structures and then we simply estimated the masses of the structures that we did not explicitly size.
+       </s>
+       <s pid="77" sid="3">
+        Hence, we could compare it to our preliminary mass analysis.
+       </s>
+       <s pid="77" sid="4">
+        This allowed us to make design recommendations based on the any remaining mass available and based on any lack of robustness in the structure.
+       </s>
+       <s pid="77" sid="5">
+        Thus, having found all the section sizes for the beams, we determined their lengths by analyzing our plan views.
+       </s>
+       <s pid="77" sid="6">
+        Below, Table 3 lists the estimated masses of all the structures in our concepts.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="78" sid="1">
+        Table 3: Mass Estimation for Sized and Un-Sized Steel Structure
+       </s>
+      </p>
+      <p>
+       <s pid="79" sid="1">
+        The estimated total mass of our structure is about 448kg.
+       </s>
+       <s pid="79" sid="2">
+        This is well above the 418.7kg we approximated for the structural mass during our preliminary mass analysis.
+       </s>
+       <s pid="79" sid="3">
+        Thus, we need to make some changes and improvements to more efficiently make use of the mass.
+       </s>
+       <s pid="79" sid="4">
+        Primarily, we need to focus on reducing the mass of the front cabin cross members which account for 37% of our current structures mass.
+       </s>
+       <s pid="79" sid="5">
+        With this in mind, we pass the following recommendations along to the detail design team.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Recommendations
+      </div>
+      <p>
+       <s pid="80" sid="1">
+        The structure we analyzed was a very simple one and there are many areas for improvement.
+       </s>
+       <s pid="80" sid="2">
+        For example, the current structure is not robust enough in torsion according to our first order model.
+       </s>
+       <s pid="80" sid="3">
+        We recommend testing be performed to obtain a more accurate torsion model.
+       </s>
+       <s pid="80" sid="4">
+        We were unable to model the effects of our cross body torsion members using first order analysis.
+       </s>
+       <s pid="80" sid="5">
+        High torsional rigidly is a high priority to stiffen the body and also to make it robust to vibrations.
+       </s>
+      </p>
+      <p>
+       <s pid="81" sid="1">
+        Also, we recommend looking into using doublers or bulkheads for the high stress or high cycle joints.
+       </s>
+       <s pid="81" sid="2">
+        This would not only enhance the rigidity of the structure by increasing joint efficiency, but also it was increase the durability of the high stress and high cycle joints.
+       </s>
+       <s pid="81" sid="3">
+        Also, adding ribs to sides of beams and joints subject to buckling would help inhibit buckling by reducing the effective width of the section.
+       </s>
+      </p>
+      <p>
+       <s pid="82" sid="1">
+        We recommend adding crush initiators to the front crush members.
+       </s>
+       <s pid="82" sid="2">
+        This will help initiate crush to dissipate crash energy and reduce the maximum deceleration of the vehicle resulting in less injury to the occupants.
+       </s>
+       <s pid="82" sid="3">
+        Along the same lines, the packaging around our upper crush members must be verified to ensure proper clearance from the shock tower and feasibility of design.
+       </s>
+       <s pid="82" sid="4">
+        The packaging of the secondary mid-rail extending from the rocker must also be verified to make sure it clears the wheel well.
+       </s>
+      </p>
+      <p>
+       <s pid="83" sid="1">
+        Also, our sections are very generic as rectangles and squares.
+       </s>
+       <s pid="83" sid="2">
+        The finer details of styling the sections should be carried out, and then, the strength and stiffness of the sections should be reevaluated to maintain structural rigidity and integrity.
+       </s>
+       <s pid="83" sid="3">
+        We also recommend reinforcing the larger sections such as the rocker and mid-rails.
+       </s>
+       <s pid="83" sid="4">
+        This can be done by welding smaller sections within them to increase the stiffness and strength.
+       </s>
+      </p>
+      <p>
+       <s pid="84" sid="1">
+        We feel that the rear of our structure is not as structurally robust as the front.
+       </s>
+       <s pid="84" sid="2">
+        Therefore, we recommend the addition of cross members or other reinforcing structures to stiffen the rear of the body.
+       </s>
+       <s pid="84" sid="3">
+        Also, the addition of rear crush members for rear impact should be considered as well.
+       </s>
+      </p>
+      <p>
+       <s pid="85" sid="1">
+        Finally, the mass of our structure exceeds the requirements set forth in our preliminary mass analysis.
+       </s>
+       <s pid="85" sid="2">
+        This is mainly because our front cross members must react large crash forces in their transverse directions.
+       </s>
+       <s pid="85" sid="3">
+        We recommending investigating other possible load paths to lessen the transverse load applied to those beams.
+       </s>
+       <s pid="85" sid="4">
+        Thus, their size and mass can be significantly reduced.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <p>
+      Acknowledgements
+     </p>
+     <p>
+      Professor Donald E. Malen
+     </p>
+     <p>
+      Professor Noboru Kikuchi
+     </p>
+     <div>
+      <div class="head_1">
+       Appendices
+      </div>
+      <p>
+       Appendix A:  Scaled View of Underbody Package Overlay
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix B:  Scaled Side View of Package Overlay for Beams and Panels
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Side View of Idealized Beam Layout
+      </p>
+      <p>
+       Side View of Idealized Panel Layout and Cabin Shear Resistant Panel Sizing
+      </p>
+      <p>
+       NOTE:  Relative size of panels exaggerated for easy viewing.
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix C:  Generic Sizing of Major Steel Structural Elements [all units in mm]
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Appendix D:  Benchmark Plot of Curb Mass Versus Plan View Area
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix E:   First Order Side Impact Analysis – Using Standard FMVSS 214
+      </p>
+      <p>
+       -Initial Door Package Results in 57g Deceleration of the Occupant
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       -Proposed Door Package Results in 38g Deceleration of the Occupant  -- 33% Improvement
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix F:  Free Body Diagram of Vehicle Used to Determine Bending Moments based on
+      </p>
+      <p>
+       Gross Vehicle Mass
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix G:  Determination of Crush Space from Plan View
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       -  Total Crushable Space = 550 mm
+      </p>
+      <p>
+       Appendix H:  Final Side Frame Concept Structure from FEA Modeler
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix I:	Load Path Analysis for Passenger Cabin
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       -  For our concept design, we determined the following values for Qi
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix J:  Generic Sections Readjusted for Manufacturing Considerations and Packaging
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

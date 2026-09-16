@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Thank you for your answer. I'm happy I can join you at Camp California in the U.S.A.
+      </p>
+      <p>
+       I'm sorry to say that I can attend your camp only
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July because I just started my new job and I
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       one month of
+       <ns type="UD">
+        <i>
+         my
+        </i>
+       </ns>
+       holiday, which
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       July.
+      </p>
+      <p>
+       You wrote to me that I can
+       <ns type="DV">
+        <i>
+         choice
+        </i>
+       </ns>
+       my accommodation. I would prefer
+       <ns type="FV">
+        <i>
+         stay
+        </i>
+       </ns>
+       in log cabins because I have a problem with my back
+       <ns type="MP">
+        <i>
+         it
+        </i>
+       </ns>
+       is
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       reason that I can't lie on the ground. Beside that
+       <ns type="MP">
+       </ns>
+       I'm
+       <ns type="S">
+        <i>
+         alergic
+        </i>
+       </ns>
+       ,
+       <ns type="MC">
+       </ns>
+       that
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           make
+          </i>
+         </ns>
+        </i>
+       </ns>
+       me
+       <ns type="FN">
+        <i>
+         problem
+        </i>
+       </ns>
+       when I'm close to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature.
+      </p>
+      <p>
+       You wrote to me that I have a chance to do two activities, which I can
+       <ns type="DV">
+        <i>
+         choice
+        </i>
+       </ns>
+       . I'm quite good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         paiting
+        </i>
+       </ns>
+       and I play tennis. I'll be very happy
+       <ns type="RC">
+        <i>
+         when
+        </i>
+       </ns>
+       you can give me a chance to use the camp's art studio and you'll be able to prepare some
+       <ns type="UP">
+        <i>
+         <ns type="S">
+          <i>
+           paiting's
+          </i>
+         </ns>
+        </i>
+       </ns>
+       materials like oil paints
+       <ns type="MP">
+       </ns>
+       canvas and
+       <ns type="S">
+        <i>
+         bruches
+        </i>
+       </ns>
+       for me. The size of the canvas isn't so important.
+      </p>
+      <p>
+       I have my own sports equipment to play tennis. I hope I'll have
+       <ns type="MD">
+       </ns>
+       possibility to improve my ability in it. I'm champion of my town, so I think I can find a
+       <ns type="RJ">
+        <i>
+         right
+        </i>
+       </ns>
+       person who can play with me.
+      </p>
+      <p>
+       Could you write to me, because I don't know how much money I need and what type of weather
+       <ns type="UV">
+        <i>
+         do
+        </i>
+       </ns>
+       you have
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       this time of the year.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         sincerelly
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Thank you for your answer.
+       </s>
+       <s pid="1" sid="2">
+        I'm happy I can join you at Camp California in the U.S.A.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm sorry to say that I can attend your camp only on July because I just started my new job and I got one month of my holiday, which are on July.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        You wrote to me that I can choice my accommodation.
+       </s>
+       <s pid="3" sid="2">
+        I would prefer stay in log cabins because I have a problem with my back it is a reason that I can't lie on the ground.
+       </s>
+       <s pid="3" sid="3">
+        Beside that I'm alergic,  that make me problem when I'm close to the nature.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        You wrote to me that I have a chance to do two activities, which I can choice.
+       </s>
+       <s pid="4" sid="2">
+        I'm quite good in paiting and I play tennis.
+       </s>
+       <s pid="4" sid="3">
+        I'll be very happy when you can give me a chance to use the camp's art studio and you'll be able to prepare some paiting's materials like oil paints canvas and bruches for me.
+       </s>
+       <s pid="4" sid="4">
+        The size of the canvas isn't so important.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I have my own sports equipment to play tennis.
+       </s>
+       <s pid="5" sid="2">
+        I hope I'll have  possibility to improve my ability in it.
+       </s>
+       <s pid="5" sid="3">
+        I'm champion of my town, so I think I can find a right person who can play with me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Could you write to me, because I don't know how much money I need and what type of weather do you have in this time of the year.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerelly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim!
+      </p>
+      <p>
+       Last month we had the pop concert of our favourite
+       <ns type="RP">
+        <i>
+         polish
+        </i>
+       </ns>
+       group "THE CULT" in Warshaw. I had the chance to help at the concert. You can't imagine how happy I was. I got money for that job and I enjoyed the work a lot. You know I'm good
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         mace-up
+        </i>
+       </ns>
+       and I have done
+       <ns type="W">
+        <i>
+         many times scenography
+        </i>
+       </ns>
+       . They were pleased that I can do two of
+       <ns type="AGD">
+        <i>
+         this
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         job
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       that's why I got the
+       <ns type="RN">
+        <i>
+         work
+        </i>
+       </ns>
+       . I was working like crazy but I enjoyed
+       <ns type="MA">
+       </ns>
+       a lot. I didn't sleep two nights because I was preparing the stage where they
+       <ns type="RV">
+        <i>
+         made
+        </i>
+       </ns>
+       the concert.
+      </p>
+      <p>
+       Could you imagine that they asked me to make the summer scenography. I heard, the atmosphere of their concerts is very hot but I didn't know they like to create this even by scenography.
+      </p>
+      <p>
+       Could you believe that two nights I was cutting
+       <ns type="UP">
+        <i>
+         paper's
+        </i>
+       </ns>
+       flowers, grass, the sun and thousands of birds. I didn't have many people who
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       helping me
+       <ns type="MP">
+       </ns>
+       that's why I was working 48 hours without stopping.
+      </p>
+      <p>
+       I think the result of that action was
+       <ns type="SA">
+        <i>
+         marvelous
+        </i>
+       </ns>
+       . Everybody was very
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           suprise
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that you can create such amazing things, using
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         sizors
+        </i>
+       </ns>
+       and
+       <ns type="CN">
+        <i>
+         papers
+        </i>
+       </ns>
+       . I
+       <ns type="TV">
+        <i>
+         like
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         a lot the mountains which I made
+        </i>
+       </ns>
+       . From
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       distance they looked very real. I just
+       <ns type="DV">
+        rulled
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       paper and I painted
+       <ns type="R">
+        a little white colours
+       </ns>
+       on the top. In front of the stage I put the grass and a lot of flowers. The light on the stage was very bright and very warm
+       <ns type="R">
+        <i>
+         what's
+        </i>
+       </ns>
+       made the scenery very
+       <ns type="S">
+        <i>
+         pleasent
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After that I prepared the group. I
+       <ns type="TV">
+        <i>
+         done
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         mace-up
+        </i>
+       </ns>
+       for them. I was very happy because
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       this time I had a chance
+       <ns type="FV">
+        <i>
+         talking
+        </i>
+       </ns>
+       to them and to
+       <ns type="RV">
+        <i>
+         know
+        </i>
+       </ns>
+       more about them. They are very nice people
+       <ns type="MP">
+        <i>
+         even
+        </i>
+       </ns>
+       Audrey who seems very stupid. She is very intelligent. I really don't know why she
+       <ns type="AGV">
+        <i>
+         behave
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         herself
+        </i>
+       </ns>
+       so badly during her interview. I got their address so we can visit them one day.
+      </p>
+      <p>
+       I told them about you and they said we are very welcome any time. I told them you are full of
+       <ns type="DN">
+        <i>
+         live
+        </i>
+       </ns>
+       and they are
+       <ns type="DD">
+        <i>
+         yours
+        </i>
+       </ns>
+       favourite
+       <ns type="RP">
+        <i>
+         polish
+        </i>
+       </ns>
+       group. They
+       <ns type="MV">
+       </ns>
+       like to know you a lot. We'll speak about it when I come to see you.
+      </p>
+      <p>
+       I hope to see you soon.
+      </p>
+      <p>
+       A lot of kisses.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Last month we had the pop concert of our favourite polish group "THE CULT" in Warshaw.
+       </s>
+       <s pid="2" sid="2">
+        I had the chance to help at the concert.
+       </s>
+       <s pid="2" sid="3">
+        You can't imagine how happy I was.
+       </s>
+       <s pid="2" sid="4">
+        I got money for that job and I enjoyed the work a lot.
+       </s>
+       <s pid="2" sid="5">
+        You know I'm good in mace-up and I have done many times scenography.
+       </s>
+       <s pid="2" sid="6">
+        They were pleased that I can do two of this job that's why I got the work.
+       </s>
+       <s pid="2" sid="7">
+        I was working like crazy but I enjoyed  a lot.
+       </s>
+       <s pid="2" sid="8">
+        I didn't sleep two nights because I was preparing the stage where they made the concert.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Could you imagine that they asked me to make the summer scenography.
+       </s>
+       <s pid="3" sid="2">
+        I heard, the atmosphere of their concerts is very hot but I didn't know they like to create this even by scenography.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Could you believe that two nights I was cutting paper's flowers, grass, the sun and thousands of birds.
+       </s>
+       <s pid="4" sid="2">
+        I didn't have many people who was helping me that's why I was working 48 hours without stopping.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I think the result of that action was marvelous.
+       </s>
+       <s pid="5" sid="2">
+        Everybody was very suprise that you can create such amazing things, using a sizors and papers.
+       </s>
+       <s pid="5" sid="3">
+        I like a lot the mountains which I made.
+       </s>
+       <s pid="5" sid="4">
+        From the distance they looked very real.
+       </s>
+       <s pid="5" sid="5">
+        I just rulled a paper and I painted a little white colours on the top.
+       </s>
+       <s pid="5" sid="6">
+        In front of the stage I put the grass and a lot of flowers.
+       </s>
+       <s pid="5" sid="7">
+        The light on the stage was very bright and very warm what's made the scenery very pleasent.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        After that I prepared the group.
+       </s>
+       <s pid="6" sid="2">
+        I done  mace-up for them.
+       </s>
+       <s pid="6" sid="3">
+        I was very happy because on this time I had a chance talking to them and to know more about them.
+       </s>
+       <s pid="6" sid="4">
+        They are very nice people even Audrey who seems very stupid.
+       </s>
+       <s pid="6" sid="5">
+        She is very intelligent.
+       </s>
+       <s pid="6" sid="6">
+        I really don't know why she behave herself so badly during her interview.
+       </s>
+       <s pid="6" sid="7">
+        I got their address so we can visit them one day.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I told them about you and they said we are very welcome any time.
+       </s>
+       <s pid="7" sid="2">
+        I told them you are full of live and they are yours favourite polish group.
+       </s>
+       <s pid="7" sid="3">
+        They  like to know you a lot.
+       </s>
+       <s pid="7" sid="4">
+        We'll speak about it when I come to see you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I hope to see you soon.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        A lot of kisses.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

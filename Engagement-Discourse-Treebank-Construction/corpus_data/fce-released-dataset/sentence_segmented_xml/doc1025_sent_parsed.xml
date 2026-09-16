@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam,
+      </p>
+      <p>
+       I am writing with reference to the musical show I saw last week in your theatre. I hoped that it would be the most
+       <ns type="RJ">
+        <i>
+         excited
+        </i>
+       </ns>
+       evening during my week's holiday in London. Unfortunately it wasn't.
+      </p>
+      <p>
+       I wouldn't like to be unkind but I must say that the advertisement for the show included a lot of false information. First of all, when I
+       <ns type="TV">
+        <i>
+         had bought
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         ticets
+        </i>
+       </ns>
+       it appeared that there
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       no discount available. Secondly, I must complain that the musical show started almost an hour
+       <ns type="FY">
+        <i>
+         later
+        </i>
+       </ns>
+       and in addition to this
+       <ns type="X">
+        <i>
+         anyone didn't
+         <ns type="RV">
+          <i>
+           excuse
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . Moreover
+       <ns type="MP">
+       </ns>
+       I would like to ask why Danny Brook,
+       <ns type="AGA">
+        <i>
+         which
+        </i>
+       </ns>
+       is my favourite actor, didn't
+       <ns type="RV">
+        <i>
+         play
+        </i>
+       </ns>
+       in the show. Furthermore
+       <ns type="MP">
+       </ns>
+       I would like to enquire why the theatre restaurant was closed.
+      </p>
+      <p>
+       Finally, I must say that I had a very disappointing evening and I would like to get my money back.
+      </p>
+      <p>
+       I look forward to hearing from you.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing with reference to the musical show I saw last week in your theatre.
+       </s>
+       <s pid="2" sid="2">
+        I hoped that it would be the most excited evening during my week's holiday in London.
+       </s>
+       <s pid="2" sid="3">
+        Unfortunately it wasn't.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I wouldn't like to be unkind but I must say that the advertisement for the show included a lot of false information.
+       </s>
+       <s pid="3" sid="2">
+        First of all, when I had bought the ticets it appeared that there is no discount available.
+       </s>
+       <s pid="3" sid="3">
+        Secondly, I must complain that the musical show started almost an hour later and in addition to this anyone didn't excuse.
+       </s>
+       <s pid="3" sid="4">
+        Moreover I would like to ask why Danny Brook, which is my favourite actor, didn't play in the show.
+       </s>
+       <s pid="3" sid="5">
+        Furthermore
+       </s>
+       <s pid="3" sid="6">
+        I would like to enquire why the theatre restaurant was closed.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Finally, I must say that I had a very disappointing evening and I would like to get my money back.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I look forward to hearing from you.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Your faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. I wish I had
+       <ns type="TV">
+        <i>
+         know
+        </i>
+       </ns>
+       it two days ago...
+       <ns type="UY">
+        <i>
+         <ns type="S">
+          <i>
+           Exacly
+          </i>
+         </ns>
+         on
+        </i>
+       </ns>
+       15th June we were at the birthday party. Dora wanted me to come with Pat because she was in love with him. I really like Dora and Pat and I just wanted to help them to be together, but it wasn't such a good idea.
+      </p>
+      <p>
+       I thought that if I said something specific about her he would look at her in a different way. Well, I forgot that it's just a boy! I shouldn't have told him that she was a virgin. It was awful when he started to laugh and everybody was
+       <ns type="S">
+        <i>
+         stearing
+        </i>
+       </ns>
+       at us. Yesterday
+       <ns type="MP">
+       </ns>
+       I discovered that he told everything to Marl and Tony. I really regret that I was so foolish.
+      </p>
+      <p>
+       The most horrible
+       <ns type="MN">
+       </ns>
+       is the fact that my friendship with Dora seems to be on the rocks and I don't know what I have to do to overcome the difficulties.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        I wish I had know it two days ago...
+       </s>
+       <s pid="1" sid="4">
+        Exacly on 15th June we were at the birthday party.
+       </s>
+       <s pid="1" sid="5">
+        Dora wanted me to come with Pat because she was in love with him.
+       </s>
+       <s pid="1" sid="6">
+        I really like Dora and Pat and I just wanted to help them to be together, but it wasn't such a good idea.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I thought that if I said something specific about her he would look at her in a different way.
+       </s>
+       <s pid="2" sid="2">
+        Well, I forgot that it's just a boy!
+       </s>
+       <s pid="2" sid="3">
+        I shouldn't have told him that she was a virgin.
+       </s>
+       <s pid="2" sid="4">
+        It was awful when he started to laugh and everybody was stearing at us.
+       </s>
+       <s pid="2" sid="5">
+        Yesterday I discovered that he told everything to Marl and Tony.
+       </s>
+       <s pid="2" sid="6">
+        I really regret that I was so foolish.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The most horrible  is the fact that my friendship with Dora seems to be on the rocks and I don't know what I have to do to overcome the difficulties.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

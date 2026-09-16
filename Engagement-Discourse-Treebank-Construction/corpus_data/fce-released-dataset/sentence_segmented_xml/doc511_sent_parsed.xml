@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Ryan,
+      </p>
+      <p>
+       Thank you
+       <ns type="R">
+        <i>
+         a lot
+        </i>
+       </ns>
+       for your letter
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am very happy
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       having won the competition. I have several
+       <ns type="RN">
+        <i>
+         precisions
+        </i>
+       </ns>
+       to tell you and some questions about the camp.
+      </p>
+      <p>
+       First, I would like to travel in July because it is the only free month I have in the summer. I have exams in June and a
+       <ns type="RN">
+        <i>
+         work
+        </i>
+       </ns>
+       in August. Then, about accommodation, I would prefer a tent because I am used to
+       <ns type="MA">
+       </ns>
+       . I have already been
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         different
+        </i>
+       </ns>
+       summer camps and I always choose this accommodation
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I find it more
+       <ns type="RJ">
+        <i>
+         friendly
+        </i>
+       </ns>
+       than a log cabin.
+      </p>
+      <p>
+       I have chosen
+       <ns type="RT">
+        <i>
+         between
+        </i>
+       </ns>
+       the activities
+       <ns type="RJ">
+        <i>
+         proposed
+        </i>
+       </ns>
+       to do photography
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I have already been
+       <ns type="RN">
+        <i>
+         part
+        </i>
+       </ns>
+       of a photography club so I am experienced. I also would like to
+       <ns type="RV">
+        <i>
+         <ns type="DV">
+          <i>
+           practice
+          </i>
+         </ns>
+        </i>
+       </ns>
+       climbing but I have never done it before.
+      </p>
+      <p>
+       Finally, I would like to know what sort of clothes do
+       <ns type="MA">
+       </ns>
+       advise me to bring to be
+       <ns type="RJ">
+        <i>
+         at ease
+        </i>
+       </ns>
+       during my activities and
+       <ns type="MP">
+       </ns>
+       as nearly everything is already paid
+       <ns type="MT">
+       </ns>
+       , do I need to take a lot of money with me?
+      </p>
+      <p>
+       Thank you
+       <ns type="R">
+        <i>
+         a lot
+        </i>
+       </ns>
+       for all these details.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Jasmine Martin
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you a lot for your letter, I am very happy of having won the competition.
+       </s>
+       <s pid="2" sid="2">
+        I have several precisions to tell you and some questions about the camp.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First, I would like to travel in July because it is the only free month I have in the summer.
+       </s>
+       <s pid="3" sid="2">
+        I have exams in June and a work in August.
+       </s>
+       <s pid="3" sid="3">
+        Then, about accommodation, I would prefer a tent because I am used to .
+       </s>
+       <s pid="3" sid="4">
+        I have already been in different summer camps and I always choose this accommodation, I find it more friendly than a log cabin.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I have chosen between the activities proposed to do photography, I have already been part of a photography club so I am experienced.
+       </s>
+       <s pid="4" sid="2">
+        I also would like to practice climbing but I have never done it before.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, I would like to know what sort of clothes do  advise me to bring to be at ease during my activities and as nearly everything is already paid , do I need to take a lot of money with me?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Thank you a lot for all these details.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Jasmine Martin
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       I have a lot of different things to tell you about what happened at the concert. It was really an amazing experience.
+      </p>
+      <p>
+       First, I had to spend all
+       <ns type="MT">
+       </ns>
+       the day before the concert in the field where it
+       <ns type="TV">
+        <i>
+         took
+        </i>
+       </ns>
+       place
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I had to prepare
+       <ns type="W">
+        <i>
+         a little the stage
+        </i>
+       </ns>
+       but
+       <ns type="MP">
+       </ns>
+       as I was not a profesional, I did not do much with the instruments. I tried to play the drums but I was
+       <ns type="RV">
+        <i>
+         expelled
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         from
+        </i>
+       </ns>
+       the stage by a member of the group who was in a bad mood.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         prepared
+        </i>
+       </ns>
+       sandwiches for all the staff
+       <ns type="RT">
+        <i>
+         during
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       major part of the afternoon and then I sold tickets to the
+       <ns type="RN">
+        <i>
+         viewers
+        </i>
+       </ns>
+       all
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       evening. I was very tired but when the concert began I felt excited because there were so many people dancing and singing in front of the stage.
+      </p>
+      <p>
+       As I was a volunteer I did not have to pay to
+       <ns type="RV">
+        <i>
+         look
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       the concert and after it I spent the rest of the night with the members of the group. That was the best.
+      </p>
+      <p>
+       Looking forward to hearing from you.
+      </p>
+      <p>
+       Yours,
+      </p>
+      <p>
+       Brenda
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have a lot of different things to tell you about what happened at the concert.
+       </s>
+       <s pid="2" sid="2">
+        It was really an amazing experience.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First, I had to spend all  the day before the concert in the field where it took place, I had to prepare a little the stage but as I was not a profesional, I did not do much with the instruments.
+       </s>
+       <s pid="3" sid="2">
+        I tried to play the drums but I was expelled from the stage by a member of the group who was in a bad mood.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I prepared sandwiches for all the staff during the major part of the afternoon and then I sold tickets to the viewers all the evening.
+       </s>
+       <s pid="4" sid="2">
+        I was very tired but when the concert began I felt excited because there were so many people dancing and singing in front of the stage.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        As I was a volunteer I did not have to pay to look at the concert and after it I spent the rest of the night with the members of the group.
+       </s>
+       <s pid="5" sid="2">
+        That was the best.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Looking forward to hearing from you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Brenda
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

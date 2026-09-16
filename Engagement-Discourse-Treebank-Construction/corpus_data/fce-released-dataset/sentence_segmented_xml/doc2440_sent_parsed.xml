@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     21.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Thank you for my prize! I
+       <ns type="MV">
+       </ns>
+       never been
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the USA and I should be glad to spend two weeks at Camp California.
+      </p>
+      <p>
+       I can only have some
+       <ns type="FN">
+        <i>
+         holidays
+        </i>
+       </ns>
+       in July from the 3rd to the 17th with my husband at the same time
+       <ns type="RP">
+        <i>
+         , that
+        </i>
+       </ns>
+       is why I would like to travel during those two weeks.
+      </p>
+      <p>
+       For the accommodation I would prefer to have
+       <ns type="MD">
+       </ns>
+       <ns type="FN">
+        <i>
+         tents
+        </i>
+       </ns>
+       because I
+       <ns type="RV">
+        <i>
+         used
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           travel
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Campsites
+        </i>
+       </ns>
+       and I love it during summer,
+       <ns type="ID">
+        just to change the customs
+       </ns>
+       !!
+      </p>
+      <p>
+       Concerning
+       <ns type="R">
+        <i>
+         those
+        </i>
+       </ns>
+       activities
+       <ns type="MP">
+       </ns>
+       I have
+       <ns type="IV">
+        <i>
+         choosen
+        </i>
+       </ns>
+       two of them. I enjoy swimming and
+       <ns type="RP">
+        <i>
+         anytime
+        </i>
+       </ns>
+       I have
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         opportunities
+        </i>
+       </ns>
+       to swim I go. My second activity is painting because I love art and art history and I think that
+       <ns type="MA">
+       </ns>
+       is better to
+       <ns type="RV">
+        <i>
+         join
+        </i>
+       </ns>
+       one sport and one
+       <ns type="ID">
+        "soft leisure"
+       </ns>
+       and I do not really want to involve myself in a new activity that I
+       <ns type="R">
+        <i>
+         don't know
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       my holidays.
+      </p>
+      <p>
+       Please could you tell me about the weather
+       <ns type="MP">
+       </ns>
+       if I need special clothes and about
+       <ns type="R">
+        <i>
+         the money for the change
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       if you don't mind
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       See you soon!
+      </p>
+      <p>
+       Yours
+       <ns type="RP">
+        <i>
+         Sincerely
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for my prize!
+       </s>
+       <s pid="2" sid="2">
+        I  never been in the USA and I should be glad to spend two weeks at Camp California.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I can only have some holidays in July from the 3rd to the 17th with my husband at the same time, that is why I would like to travel during those two weeks.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        For the accommodation I would prefer to have  tents because I used to travel in Campsites and I love it during summer, just to change the customs!!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Concerning those activities I have choosen two of them.
+       </s>
+       <s pid="5" sid="2">
+        I enjoy swimming and anytime I have  opportunities to swim I go.
+       </s>
+       <s pid="5" sid="3">
+        My second activity is painting because I love art and art history and I think that  is better to join one sport and one "soft leisure" and I do not really want to involve myself in a new activity that I don't know for my holidays.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Please could you tell me about the weather if I need special clothes and about the money for the change if you don't mind.
+       </s>
+       <s pid="6" sid="2">
+        See you soon!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours Sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       "Shopping is not always enjoyable" "Shopping today!"
+       <ns type="MC">
+       </ns>
+       <ns type="RP">
+        <i>
+         You
+        </i>
+       </ns>
+       decide
+       <ns type="CE">
+        to go in town or during holidays to move in a "shopping destination"
+       </ns>
+       , that
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         mean
+        </i>
+       </ns>
+       that you need something special for
+       <ns type="RA">
+        <i>
+         you
+        </i>
+       </ns>
+       or someone else. You have the money and the time
+       <ns type="R">
+        <i>
+         as
+        </i>
+       </ns>
+       you want. That's why it should be a great day! Save some money to go
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       shopping in Paris or Roma and see how
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       the French or Italian fashion
+       <ns type="MV">
+       </ns>
+       on
+       <ns type="RA">
+        <i>
+         yourself
+        </i>
+       </ns>
+       !
+       <ns type="RP">
+        <i>
+         and
+        </i>
+       </ns>
+       after that you can
+       <ns type="R">
+        <i>
+         make a stop in
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         Duty-free
+        </i>
+       </ns>
+       <ns type="MN">
+       </ns>
+       and buy some
+       <ns type="RJ">
+        <i>
+         chipper
+        </i>
+       </ns>
+       souvenirs. Singapoor and many places in Asia are famous for the shopping, and it is really nice to go there with
+       <ns type="MQ">
+       </ns>
+       money to buy
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       you always wanted to. But even if shopping
+       <ns type="CE">
+        can means dream
+       </ns>
+       it can be boring sometimes. If you have no money and a friend
+       <ns type="AGV">
+        <i>
+         ask
+        </i>
+       </ns>
+       you to
+       <ns type="RV">
+        <i>
+         come
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       shopping, it should be boring!
+       <ns type="RP">
+        <i>
+         and
+        </i>
+       </ns>
+       you
+       <ns type="MV">
+       </ns>
+       become jealous
+       <ns type="RT">
+        <i>
+         against
+        </i>
+       </ns>
+       him and want him to do
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       quickly!
+       <ns type="RP">
+        <i>
+         or
+        </i>
+       </ns>
+       you
+       <ns type="MV">
+       </ns>
+       <ns type="UV">
+        <i>
+         are going to
+        </i>
+       </ns>
+       get
+       <ns type="RJ">
+        <i>
+         nervous
+        </i>
+       </ns>
+       ! And you can find
+       <ns type="M">
+       </ns>
+       too
+       <ns type="CQ">
+        <i>
+         much
+        </i>
+       </ns>
+       people in
+       <ns type="MD">
+       </ns>
+       shops, it is too hot or you
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         your
+        </i>
+       </ns>
+       right size or the right colour or flavour -- - then you get angry!
+       <ns type="RP">
+        <i>
+         or
+        </i>
+       </ns>
+       you decide
+       <ns type="X">
+        <i>
+         to not spend
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       money
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       shopping today, but
+       <ns type="R">
+        in front of the shop
+       </ns>
+       . What is going on??
+      </p>
+      <p>
+       So, you'd better
+       <ns type="FV">
+        <i>
+         to stay
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       home today...
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        "Shopping is not always enjoyable" "Shopping today!"
+       </s>
+       <s pid="1" sid="2">
+        You decide to go in town or during holidays to move in a "shopping destination", that is mean that you need something special for you or someone else.
+       </s>
+       <s pid="1" sid="3">
+        You have the money and the time as you want.
+       </s>
+       <s pid="1" sid="4">
+        That's why it should be a great day!
+       </s>
+       <s pid="1" sid="5">
+        Save some money to go for shopping in Paris or Roma and see how is the French or Italian fashion  on yourself!
+       </s>
+       <s pid="1" sid="6">
+        and after that you can make a stop in the Duty-free  and buy some chipper souvenirs.
+       </s>
+       <s pid="1" sid="7">
+        Singapoor and many places in Asia are famous for the shopping, and it is really nice to go there with  money to buy that you always wanted to.
+       </s>
+       <s pid="1" sid="8">
+        But even if shopping can means dream it can be boring sometimes.
+       </s>
+       <s pid="1" sid="9">
+        If you have no money and a friend ask you to come for shopping, it should be boring!
+       </s>
+       <s pid="1" sid="10">
+        and you  become jealous against him and want him to do that quickly!
+       </s>
+       <s pid="1" sid="11">
+        or you  are going to get nervous!
+       </s>
+       <s pid="1" sid="12">
+        And you can find  too much people in  shops, it is too hot or you can not have your right size or the right colour or flavour -- - then you get angry!
+       </s>
+       <s pid="1" sid="13">
+        or you decide to not spend  money in shopping today, but in front of the shop.
+       </s>
+       <s pid="1" sid="14">
+        What is going on??
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        So, you'd better to stay  home today...
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     27.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Saturday, 17th June, 2000
+      </p>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you in order to
+       <ns type="RV">
+        <i>
+         obtain
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         you
+        </i>
+       </ns>
+       my money back,
+       <ns type="R">
+        concerning
+       </ns>
+       the musical show: OVER THE RAINBOW. I live in France and I recently spent a week's holiday in London. I decided to go to
+       <ns type="MD">
+       </ns>
+       theatre to have a nice evening. I saw your advertisement in a newspaper. It seemed to be very
+       <ns type="RJ">
+        <i>
+         attractive
+        </i>
+       </ns>
+       . But in fact it is not!
+      </p>
+      <p>
+       I had a very disappointing evening. First of all:
+       <ns type="MD">
+       </ns>
+       actors
+       <ns type="MA">
+       </ns>
+       were
+       <ns type="IV">
+        <i>
+         mentionned
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       are not the same
+       <ns type="MC">
+       </ns>
+       <ns type="M">
+       </ns>
+       . I
+       <ns type="TV">
+        <i>
+         supposed
+        </i>
+       </ns>
+       to see the famous Danny Brook, and what a surprise it was
+       <ns type="M">
+       </ns>
+       not him. I was very disappointed.
+      </p>
+      <p>
+       Secondly the show
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         <ns type="RV">
+          <i>
+           go
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       19.30 pm. In fact it started at 20.15 pm without any
+       <ns type="FN">
+        <i>
+         explanations
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Thirdly
+       <ns type="R">
+        <i>
+         it
+        </i>
+       </ns>
+       said
+       <ns type="UC">
+        <i>
+         that
+        </i>
+       </ns>
+       "discounts available". This is not the truth.
+      </p>
+      <p>
+       After that it
+       <ns type="TV">
+        <i>
+         suggested
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       <ns type="FV">
+        <i>
+         to visit
+        </i>
+       </ns>
+       your theatre restaurant, but the restaurant was closed! It
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       a shame.
+      </p>
+      <p>
+       And you
+       <ns type="TV">
+        <i>
+         write
+        </i>
+       </ns>
+       , I quote
+       <ns type="M">
+       </ns>
+       "your perfect evening out", excuse me
+       <ns type="MP">
+       </ns>
+       but I do not agree with you. It was awful, the worst evening
+       <ns type="UT">
+        <i>
+         out
+        </i>
+       </ns>
+       of my life.
+      </p>
+      <p>
+       So please, it would be fair
+       <ns type="R">
+        <i>
+         , that
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         give
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       my money back.
+      </p>
+      <p>
+       I am looking forward to hearing from you in
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       near future.
+      </p>
+      <p>
+       Yours faithfully.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Saturday, 17th June, 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am writting  you in order to obtain you my money back, concerning the musical show: OVER THE RAINBOW.
+       </s>
+       <s pid="3" sid="2">
+        I live in France and I recently spent a week's holiday in London.
+       </s>
+       <s pid="3" sid="3">
+        I decided to go to  theatre to have a nice evening.
+       </s>
+       <s pid="3" sid="4">
+        I saw your advertisement in a newspaper.
+       </s>
+       <s pid="3" sid="5">
+        It seemed to be very attractive.
+       </s>
+       <s pid="3" sid="6">
+        But in fact it is not!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I had a very disappointing evening.
+       </s>
+       <s pid="4" sid="2">
+        First of all:  actors  were mentionned  are not the same  .
+       </s>
+       <s pid="4" sid="3">
+        I supposed to see the famous Danny Brook, and what a surprise it was  not him.
+       </s>
+       <s pid="4" sid="4">
+        I was very disappointed.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly the show had go on 19.30 pm.
+       </s>
+       <s pid="5" sid="2">
+        In fact it started at 20.15 pm without any explanations.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Thirdly it said that "discounts available".
+       </s>
+       <s pid="6" sid="2">
+        This is not the truth.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        After that it suggested  to visit your theatre restaurant, but the restaurant was closed!
+       </s>
+       <s pid="7" sid="2">
+        It is a shame.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        And you write, I quote  "your perfect evening out", excuse me but I do not agree with you.
+       </s>
+       <s pid="8" sid="2">
+        It was awful, the worst evening out of my life.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        So please, it would be fair, that you give  my money back.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I am looking forward to hearing from you in a near future.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Yours faithfully.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       "What will clothes be like 100 years from now?"
+      </p>
+      <p>
+       In my opinion, clothes will not change so much, because fashion is an eternal cycle. You will
+       <ns type="W">
+        <i>
+         find always
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       basic clothes, but I think that it will be the materials which will change.
+      </p>
+      <p>
+       We will find the same kind of clothes with gadgets included. For example: a short
+       <ns type="MP">
+       </ns>
+       very classical
+       <ns type="MN">
+       </ns>
+       <ns type="MC">
+       </ns>
+       inside
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       it could be included a mobile phone, or we could find
+       <ns type="W">
+        <i>
+         too some buttons
+        </i>
+       </ns>
+       , to
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       .. fresh air, why not? Or special flying shoes, and maybe
+       <ns type="W">
+        <i>
+         on your watch you would have a screen
+        </i>
+       </ns>
+       to watch your
+       <ns type="SA">
+        <i>
+         favorite
+        </i>
+       </ns>
+       soap operas.
+      </p>
+      <p>
+       Everything is possible, but it would be fun to see this type of
+       <ns type="AGN">
+        <i>
+         gadgets
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       old clothes, like a dress
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         middle-Age
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Do not worry about this, it will not happen! Fashion is always the same!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        "What will clothes be like 100 years from now?"
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In my opinion, clothes will not change so much, because fashion is an eternal cycle.
+       </s>
+       <s pid="2" sid="2">
+        You will find always  basic clothes, but I think that it will be the materials which will change.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        We will find the same kind of clothes with gadgets included.
+       </s>
+       <s pid="3" sid="2">
+        For example: a short very classical   inside of it could be included a mobile phone, or we could find too some buttons, to have.. fresh air, why not?
+       </s>
+       <s pid="3" sid="3">
+        Or special flying shoes, and maybe on your watch you would have a screen to watch your favorite soap operas.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Everything is possible, but it would be fun to see this type of gadgets with old clothes, like a dress of the middle-Age.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Do not worry about this, it will not happen!
+       </s>
+       <s pid="5" sid="2">
+        Fashion is always the same!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

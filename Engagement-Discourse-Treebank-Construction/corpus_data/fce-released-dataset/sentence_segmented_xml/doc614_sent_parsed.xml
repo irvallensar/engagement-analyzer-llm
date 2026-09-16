@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       17/06/2000
+      </p>
+      <p>
+       Mr Smith,
+      </p>
+      <p>
+       I write
+       <ns type="MT">
+       </ns>
+       you because last
+       <ns type="RP">
+        <i>
+         friday
+        </i>
+       </ns>
+       I had a very disappointing evening
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your theatre. I went there because I had read a
+       <ns type="RN">
+        banner
+       </ns>
+       about the musical show "Over the rainbow", but
+       <ns type="RQ">
+        <i>
+         many
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         were
+        </i>
+       </ns>
+       wrong.
+      </p>
+      <p>
+       Last week I was in London with my friends and we decided to go to the theatre to see
+       <ns type="UY">
+        <i>
+         how
+        </i>
+       </ns>
+       the famous Danny Brook act.
+      </p>
+      <p>
+       But when we arrived at 2.00 pm to see the
+       <ns type="W">
+        <i>
+         show of 2.30 p.m.
+        </i>
+       </ns>
+       , we couldn't enter
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       the theatre because the discounts weren't available. So we returned in the evening and we waited 45 minutes
+       <ns type="RT">
+        <i>
+         until
+        </i>
+       </ns>
+       the beginning of the show!
+       <ns type="RY">
+        <i>
+         No
+        </i>
+       </ns>
+       only
+       <ns type="MA">
+       </ns>
+       : we had the bad surprise that Brook had been
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           substituded
+          </i>
+         </ns>
+        </i>
+       </ns>
+       by another actor!
+      </p>
+      <p>
+       I ask you if
+       <ns type="W">
+        <i>
+         is it
+        </i>
+       </ns>
+       possible to have my money back, please, because I want to
+       <ns type="TV">
+        <i>
+         forgot
+        </i>
+       </ns>
+       that expense. Thank you.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17/06/2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Mr Smith,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I write  you because last friday I had a very disappointing evening in your theatre.
+       </s>
+       <s pid="3" sid="2">
+        I went there because I had read a banner about the musical show "Over the rainbow", but many informations were wrong.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Last week I was in London with my friends and we decided to go to the theatre to see how the famous Danny Brook act.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But when we arrived at 2.00 pm to see the show of 2.30 p.m., we couldn't enter in the theatre because the discounts weren't available.
+       </s>
+       <s pid="5" sid="2">
+        So we returned in the evening and we waited 45 minutes until the beginning of the show!
+       </s>
+       <s pid="5" sid="3">
+        No only : we had the bad surprise that Brook had been substituded by another actor!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I ask you if is it possible to have my money back, please, because I want to forgot that expense.
+       </s>
+       <s pid="6" sid="2">
+        Thank you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Modern technology can't not
+       <ns type="S">
+        <i>
+         transforme
+        </i>
+       </ns>
+       our daily life.
+      </p>
+      <p>
+       The inventions of the
+       <ns type="SA">
+        <i>
+         airplane
+        </i>
+       </ns>
+       , of the train and of the car, have reduced the distances of the world, so we can go to the other side of the world in half a day. It means that daily life is faster and busier because I'm able to go to school in the morning and then to play soccer in the afternoon, and
+       <ns type="RT">
+        <i>
+         after
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       few minutes I can
+       <ns type="RV">
+        <i>
+         stay
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the other side of Lecce to play piano with my
+       <ns type="UJ">
+        <i>
+         musical
+        </i>
+       </ns>
+       band, then I can go back home when I want, listening
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         notices
+        </i>
+       </ns>
+       about what
+       <ns type="TV">
+        <i>
+         happens
+        </i>
+       </ns>
+       around the world
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         the radio of my car
+        </i>
+       </ns>
+       . So I have
+       <ns type="R">
+        <i>
+         must
+        </i>
+       </ns>
+       more
+       <ns type="IJ">
+        <i>
+         interestings
+        </i>
+       </ns>
+       things to do in my life.
+      </p>
+      <p>
+       But the most important innovation
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         technology
+        </i>
+       </ns>
+       development is the computer.
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         everytime
+        </i>
+       </ns>
+       of the day I can communicate with people of all
+       <ns type="AGN">
+        <i>
+         nationality
+        </i>
+       </ns>
+       of the world, I can
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       about everything, I can buy something which I can't find in the shops
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       my town, so I can do anything just
+       <ns type="MT">
+       </ns>
+       clicking on the mouse!
+      </p>
+      <p>
+       Sadly, there is also a negative aspect. Sometimes,
+       <ns type="MD">
+       </ns>
+       computer
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           substitudes
+          </i>
+         </ns>
+        </i>
+       </ns>
+       real relationships between people. In fact, many boys
+       <ns type="RV">
+        <i>
+         pass
+        </i>
+       </ns>
+       several hours in front of their computer and
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         forgive
+        </i>
+       </ns>
+       that out of their houses there are their friends....
+      </p>
+      <p>
+       In conclusion, I think that modern technology
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           get
+          </i>
+         </ns>
+        </i>
+       </ns>
+       my life more interesting, but I prefer to
+       <ns type="RV">
+        <i>
+         stay
+        </i>
+       </ns>
+       with my friends and with my girlfriend
+       <ns type="SX">
+        <i>
+         then
+        </i>
+       </ns>
+       in front of a computer!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Modern technology can't not transforme our daily life.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The inventions of the airplane, of the train and of the car, have reduced the distances of the world, so we can go to the other side of the world in half a day.
+       </s>
+       <s pid="2" sid="2">
+        It means that daily life is faster and busier because I'm able to go to school in the morning and then to play soccer in the afternoon, and after  few minutes I can stay in the other side of Lecce to play piano with my musical band, then I can go back home when I want, listening  the notices about what happens around the world with the radio of my car.
+       </s>
+       <s pid="2" sid="3">
+        So I have must more interestings things to do in my life.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        But the most important innovation of technology development is the computer.
+       </s>
+       <s pid="3" sid="2">
+        In everytime of the day I can communicate with people of all nationality of the world, I can have informations about everything, I can buy something which I can't find in the shops of my town, so I can do anything just  clicking on the mouse!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Sadly, there is also a negative aspect.
+       </s>
+       <s pid="4" sid="2">
+        Sometimes,  computer substitudes real relationships between people.
+       </s>
+       <s pid="4" sid="3">
+        In fact, many boys pass several hours in front of their computer and the forgive that out of their houses there are their friends....
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In conclusion, I think that modern technology get my life more interesting, but I prefer to stay with my friends and with my girlfriend then in front of a computer!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

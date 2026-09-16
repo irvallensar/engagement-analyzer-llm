@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam:
+      </p>
+      <p>
+       I am writing to complain about the show that I saw the other day
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your theatre.
+      </p>
+      <p>
+       I am afraid
+       <ns type="RC">
+        <i>
+         but
+        </i>
+       </ns>
+       I think that the show was not as good as I expected: the
+       <ns type="AGN">
+        <i>
+         reason
+        </i>
+       </ns>
+       were many.
+      </p>
+      <p>
+       - Danny brook did not
+       <ns type="RV">
+        <i>
+         play
+        </i>
+       </ns>
+       and I wanted to see him.
+      </p>
+      <p>
+       - the show started at 20:15 and not at 19.30. Please check your times because many people had to leave
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the middle of the show.
+      </p>
+      <p>
+       - When the musical finished I was
+       <ns type="DY">
+        <i>
+         terrible
+        </i>
+       </ns>
+       hungry so I decided to have something to eat but the restaurant was closed and the
+       <ns type="S">
+        <i>
+         advertisiment
+        </i>
+       </ns>
+       said that it would be open.
+      </p>
+      <p>
+       In conclusion
+       <ns type="MP">
+       </ns>
+       that evening was not "my perfect evening out" so I want you to refund
+       <ns type="R">
+        <i>
+         me the
+        </i>
+       </ns>
+       money.
+      </p>
+      <p>
+       I look forward to your reply.
+      </p>
+      <p>
+       Yours Faithfully,
+      </p>
+      <p>
+       Manuel Juan Sargo
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to complain about the show that I saw the other day in your theatre.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am afraid but I think that the show was not as good as I expected: the reason were many.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        - Danny brook did not play and I wanted to see him.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        - the show started at 20:15 and not at 19.30.
+       </s>
+       <s pid="5" sid="2">
+        Please check your times because many people had to leave at the middle of the show.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        - When the musical finished I was terrible hungry so I decided to have something to eat but the restaurant was closed and the advertisiment said that it would be open.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        In conclusion that evening was not "my perfect evening out" so I want you to refund me the money.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I look forward to your reply.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours Faithfully,
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Manuel Juan Sargo
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="UD">
+        <i>
+         The modern
+        </i>
+       </ns>
+       technology has changed my life in many
+       <ns type="S">
+        <i>
+         difents
+        </i>
+       </ns>
+       ways: But this "modern technology" has advantages and disadvantages.
+       <ns type="ID">
+        <i>
+         In on hand
+        </i>
+       </ns>
+       we have the advantages
+       <ns type="MP">
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       new technology
+       <ns type="RV">
+        <i>
+         permits
+        </i>
+       </ns>
+       you
+       <ns type="MV">
+       </ns>
+       many things like
+       <ns type="FV">
+        <i>
+         fly
+        </i>
+       </ns>
+       ,
+       <ns type="FV">
+        <i>
+         see
+        </i>
+       </ns>
+       in the dark, or
+       <ns type="M">
+       </ns>
+       even save your life when you are almost dead. But
+       <ns type="ID">
+        <i>
+         in the other hand
+        </i>
+       </ns>
+       we have the disadvantages.
+       <ns type="UD">
+        <i>
+         The technology
+        </i>
+       </ns>
+       makes your life easier but
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         until when
+        </i>
+       </ns>
+       ? For example, the car was developed
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       modern technology
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       makes your life easier but also
+       <ns type="MY">
+       </ns>
+       "dangerous". Why? Because too many cars
+       <ns type="AGV">
+        <i>
+         mean
+        </i>
+       </ns>
+       too much CO2 in the air. And
+       <ns type="R">
+        <i>
+         all people
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         know
+        </i>
+       </ns>
+       that CO2 is a very dangerous gas for all
+       <ns type="AGN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of animals. To summarize, the modern technologies give
+       <ns type="MA">
+       </ns>
+       and
+       <ns type="RV">
+        <i>
+         permit
+        </i>
+       </ns>
+       you
+       <ns type="MV">
+       </ns>
+       <ns type="R">
+        <i>
+         may
+        </i>
+       </ns>
+       things
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       would be impossible in
+       <ns type="R">
+        <i>
+         other times
+        </i>
+       </ns>
+       but also
+       <ns type="RV">
+        <i>
+         gives
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         you
+        </i>
+       </ns>
+       many problems.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The modern technology has changed my life in many difents ways: But this "modern technology" has advantages and disadvantages.
+       </s>
+       <s pid="1" sid="2">
+        In on hand we have the advantages the new technology permits you  many things like fly, see in the dark, or  even save your life when you are almost dead.
+       </s>
+       <s pid="1" sid="3">
+        But in the other hand we have the disadvantages.
+       </s>
+       <s pid="1" sid="4">
+        The technology makes your life easier but, until when?
+       </s>
+       <s pid="1" sid="5">
+        For example, the car was developed by the modern technology, it makes your life easier but also  "dangerous".
+       </s>
+       <s pid="1" sid="6">
+        Why?
+       </s>
+       <s pid="1" sid="7">
+        Because too many cars mean too much CO2 in the air.
+       </s>
+       <s pid="1" sid="8">
+        And all people know that CO2 is a very dangerous gas for all kind of animals.
+       </s>
+       <s pid="1" sid="9">
+        To summarize, the modern technologies give  and permit you  may things wich would be impossible in other times but also gives you many problems.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

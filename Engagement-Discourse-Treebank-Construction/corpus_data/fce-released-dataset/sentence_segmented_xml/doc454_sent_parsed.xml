@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     22.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="UP">
+        <i>
+         :
+        </i>
+       </ns>
+       Jane Clark
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         had been
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       your annual international art festival. Most of the events I went to were good, but I feel that the festival could be even better next year. So, I
+       <ns type="AS">
+        <i>
+         <ns type="TV">
+          <i>
+           write
+          </i>
+         </ns>
+         some of my
+         <ns type="S">
+          <i>
+           opionions
+          </i>
+         </ns>
+         and suggestions to you
+        </i>
+       </ns>
+       . I hope
+       <ns type="UV">
+        <i>
+         it's
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         may
+        </i>
+       </ns>
+       help
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       next year's festival.
+      </p>
+      <p>
+       The idea of
+       <ns type="MD">
+       </ns>
+       "International Art Festival" was great. But I feel the word
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       "International" was not really
+       <ns type="DJ">
+        <i>
+         suit
+        </i>
+       </ns>
+       ; because you
+       <ns type="UY">
+        <i>
+         just
+        </i>
+       </ns>
+       only
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       six
+       <ns type="RP">
+        <i>
+         countrie's
+        </i>
+       </ns>
+       stars and artists
+       <ns type="UV">
+        <i>
+         came
+        </i>
+       </ns>
+       . I think you should invite more than ten countries. The other problem was
+       <ns type="R">
+        choosing space
+       </ns>
+       <ns type="RP">
+        <i>
+         .
+         <ns type="RT">
+          <i>
+           Like
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the hall of
+       <ns type="MD">
+       </ns>
+       classical concert was too small and crowded. Next year, you should
+       <ns type="S">
+        <i>
+         calulate
+        </i>
+       </ns>
+       or
+       <ns type="RV">
+        examine
+       </ns>
+       how many people
+       <ns type="TV">
+        <i>
+         come
+        </i>
+       </ns>
+       before you choose a hall,
+       <ns type="CE">
+        which I feel very good was plays and films. It can show more for next year's festival. The Dance Shows as well
+       </ns>
+       . And the offer of
+       <ns type="MD">
+       </ns>
+       "
+       <ns type="S">
+        <i>
+         weedend
+        </i>
+       </ns>
+       ticket" was an excellent idea
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       <ns type="R">
+        the price was cheaper than
+        <ns type="FV">
+         <i>
+          buy
+         </i>
+        </ns>
+        it
+        <ns type="DY">
+         <i>
+          <ns type="S">
+           <i>
+            sperate
+           </i>
+          </ns>
+         </i>
+        </ns>
+        and more
+        <ns type="DJ">
+         <i>
+          <ns type="S">
+           <i>
+            convience
+           </i>
+          </ns>
+         </i>
+        </ns>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="FV">
+        <i>
+         Look
+        </i>
+       </ns>
+       forward
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       next year's festival.
+      </p>
+      <p>
+       Yours
+       <ns type="S">
+        <i>
+         Sinicerely
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear: Jane Clark
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I had been  your annual international art festival.
+       </s>
+       <s pid="2" sid="2">
+        Most of the events I went to were good, but I feel that the festival could be even better next year.
+       </s>
+       <s pid="2" sid="3">
+        So, I write some of my opionions and suggestions to you.
+       </s>
+       <s pid="2" sid="4">
+        I hope it's may help for next year's festival.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The idea of  "International Art Festival" was great.
+       </s>
+       <s pid="3" sid="2">
+        But I feel the word of "International" was not really suit; because you just only got six countrie's stars and artists came.
+       </s>
+       <s pid="3" sid="3">
+        I think you should invite more than ten countries.
+       </s>
+       <s pid="3" sid="4">
+        The other problem was choosing space.
+       </s>
+       <s pid="3" sid="5">
+        Like the hall of  classical concert was too small and crowded.
+       </s>
+       <s pid="3" sid="6">
+        Next year, you should calulate or examine how many people come before you choose a hall, which I feel very good was plays and films.
+       </s>
+       <s pid="3" sid="7">
+        It can show more for next year's festival.
+       </s>
+       <s pid="3" sid="8">
+        The Dance Shows as well.
+       </s>
+       <s pid="3" sid="9">
+        And the offer of  "weedend ticket" was an excellent idea.
+       </s>
+       <s pid="3" sid="10">
+        Because the price was cheaper than buy it sperate and more convience.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Look forward for next year's festival.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Yours Sinicerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       One day, a little
+       <ns type="AGN">
+        <i>
+         girls
+        </i>
+       </ns>
+       called Sara
+       <ns type="U">
+        <i>
+         . She
+        </i>
+       </ns>
+       was walking over a bridge. Suddenly, she
+       <ns type="IV">
+        <i>
+         heart
+        </i>
+       </ns>
+       a
+       <ns type="MP">
+        <i>
+         <ns type="AGN">
+          <i>
+           men
+          </i>
+         </ns>
+        </i>
+       </ns>
+       voice
+       <ns type="FV">
+        <i>
+         called
+        </i>
+       </ns>
+       her
+       <ns type="MP">
+       </ns>
+       "Sara...Sara.. look down to the river." Then Sara looked
+       <ns type="RT">
+        <i>
+         down
+        </i>
+       </ns>
+       the river. She was very scared
+       <ns type="RP">
+        <i>
+         . Because
+        </i>
+       </ns>
+       she saw a golden fish
+       <ns type="MA">
+       </ns>
+       was smiling at her and talking to her. After a few
+       <ns type="AGN">
+        <i>
+         second
+        </i>
+       </ns>
+       , Sara felt that
+       <ns type="MD">
+       </ns>
+       golden fish was lovely. She
+       <ns type="TV">
+        <i>
+         never seen
+        </i>
+       </ns>
+       any fish
+       <ns type="MA">
+       </ns>
+       had that wonderful colour and
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       talk with her. Because Sara
+       <ns type="RV">
+        <i>
+         hasn't got
+        </i>
+       </ns>
+       any
+       <ns type="FN">
+        <i>
+         <ns type="RN">
+          <i>
+           bother
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and
+       <ns type="FN">
+        <i>
+         sister
+        </i>
+       </ns>
+       , and her
+       <ns type="S">
+        <i>
+         Mon
+        </i>
+       </ns>
+       and Dad
+       <ns type="TV">
+        <i>
+         need
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         work
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       ,
+       <ns type="UY">
+        <i>
+         so
+        </i>
+       </ns>
+       she was very lonely.
+      </p>
+      <p>
+       Therefore, she came
+       <ns type="M">
+       </ns>
+       river
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       and
+       <ns type="TV">
+        <i>
+         talk
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       everything
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the golden fish. They were very close
+       <ns type="AGN">
+        <i>
+         friend
+        </i>
+       </ns>
+       . After half
+       <ns type="MD">
+       </ns>
+       year,
+       <ns type="MD">
+       </ns>
+       golden fish suddenly
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           disappear
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . Sara was very sad. She sat and
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           cry
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the river. Then somebody called her name
+       <ns type="MP">
+       </ns>
+       "Sara... Sara..
+       <ns type="MP">
+       </ns>
+       look at me..
+       <ns type="MP">
+       </ns>
+       I'm
+       <ns type="FV">
+        <i>
+         stand
+        </i>
+       </ns>
+       on your
+       <ns type="MP">
+        <i>
+         left hand
+        </i>
+       </ns>
+       side.
+       <ns type="MP">
+       </ns>
+       Sara remembered the
+       <ns type="UV">
+        <i>
+         was
+        </i>
+       </ns>
+       golden fish.
+       <ns type="RA">
+        <i>
+         She
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         suddenly
+         <ns type="AGV">
+          <i>
+           become
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       human, a little boy. After a few
+       <ns type="AGN">
+        <i>
+         day
+        </i>
+       </ns>
+       they got married.
+       <ns type="AS">
+        <i>
+         Both together had their wonderful life
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       This story happened a long time ago.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        One day, a little girls called Sara.
+       </s>
+       <s pid="1" sid="2">
+        She was walking over a bridge.
+       </s>
+       <s pid="1" sid="3">
+        Suddenly, she heart a men voice called her "Sara...Sara.. look down to the river."
+       </s>
+       <s pid="1" sid="4">
+        Then Sara looked down the river.
+       </s>
+       <s pid="1" sid="5">
+        She was very scared.
+       </s>
+       <s pid="1" sid="6">
+        Because she saw a golden fish  was smiling at her and talking to her.
+       </s>
+       <s pid="1" sid="7">
+        After a few second, Sara felt that  golden fish was lovely.
+       </s>
+       <s pid="1" sid="8">
+        She never seen any fish  had that wonderful colour and can talk with her.
+       </s>
+       <s pid="1" sid="9">
+        Because Sara hasn't got any bother and sister, and her Mon and Dad need work everyday, so she was very lonely.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Therefore, she came  river everyday and talk  everything to the golden fish.
+       </s>
+       <s pid="2" sid="2">
+        They were very close friend.
+       </s>
+       <s pid="2" sid="3">
+        After half  year,  golden fish suddenly disappear.
+       </s>
+       <s pid="2" sid="4">
+        Sara was very sad.
+       </s>
+       <s pid="2" sid="5">
+        She sat and cry on the river.
+       </s>
+       <s pid="2" sid="6">
+        Then somebody called her name "Sara... Sara.. look at me..
+       </s>
+       <s pid="2" sid="7">
+        I'm stand on your left hand side.
+       </s>
+       <s pid="2" sid="8">
+        Sara remembered the was golden fish.
+       </s>
+       <s pid="2" sid="9">
+        She suddenly become a human, a little boy.
+       </s>
+       <s pid="2" sid="10">
+        After a few day they got married.
+       </s>
+       <s pid="2" sid="11">
+        Both together had their wonderful life.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        This story happened a long time ago.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

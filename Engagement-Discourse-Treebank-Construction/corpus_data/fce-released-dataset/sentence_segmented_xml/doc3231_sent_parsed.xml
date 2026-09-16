@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     40.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Smith,
+      </p>
+      <p>
+       I'm writing in response to the letter we have received from you, in order to let you know all the information you have asked for.
+      </p>
+      <p>
+       First of all, your group has been booked into the Palace Hotel,
+       <ns type="W">
+        <i>
+         <ns type="UP">
+          <i>
+           Main-Road
+          </i>
+         </ns>
+         21
+        </i>
+       </ns>
+       , which is situated not far from our college. I'd suggest you
+       <ns type="FV">
+        <i>
+         to walk
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       will only take you about seven minutes. Just follow
+       <ns type="UP">
+        <i>
+         Main-Road
+        </i>
+       </ns>
+       until
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         to reach
+        </i>
+       </ns>
+       a junction, where you turn right and then walk along Denl-a-Lion Road. The college is a huge, yellow building - you can't miss it.
+      </p>
+      <p>
+       Secondly, you have
+       <ns type="RV">
+        <i>
+         required
+        </i>
+       </ns>
+       information about the end-of-conference party. It will begin at 6 o'clock p.m. and last until midnight. All the students will be provided with sacks and we have managed to book a band as well. The location of the party isn't fixed yet, but we will let you know after your arrival.
+      </p>
+      <p>
+       There is no need
+       <ns type="FV">
+        <i>
+         putting
+        </i>
+       </ns>
+       on special clothes for the party
+       <ns type="RP">
+        <i>
+         , casual
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         ones
+        </i>
+       </ns>
+       should do
+       <ns type="R">
+        <i>
+         it
+        </i>
+       </ns>
+       as well,
+       <ns type="L">
+        <i>
+         for
+        </i>
+       </ns>
+       we want everyone to feel comfortable.
+      </p>
+      <p>
+       Last but not least I will give you some ideas
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       where to spend your free afternoon. I'd suggest you
+       <ns type="FV">
+        <i>
+         to visit
+        </i>
+       </ns>
+       our local museum, as there is a marvellous exhibition there at the moment. Provided the weather is fine, you could also go swimming or make a tour
+       <ns type="RT">
+        <i>
+         through
+        </i>
+       </ns>
+       our beautiful town. (I could book a guide for you if you're interested
+       <ns type="MP">
+       </ns>
+       )
+      </p>
+      <p>
+       Please write back or call me if there is any more information you need.
+      </p>
+      <p>
+       I'm looking forward to meeting you and wish you all the best.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing in response to the letter we have received from you, in order to let you know all the information you have asked for.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, your group has been booked into the Palace Hotel, Main-Road 21, which is situated not far from our college.
+       </s>
+       <s pid="3" sid="2">
+        I'd suggest you to walk, it will only take you about seven minutes.
+       </s>
+       <s pid="3" sid="3">
+        Just follow Main-Road until  to reach a junction, where you turn right and then walk along Denl-a-Lion Road.
+       </s>
+       <s pid="3" sid="4">
+        The college is a huge, yellow building - you can't miss it.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, you have required information about the end-of-conference party.
+       </s>
+       <s pid="4" sid="2">
+        It will begin at 6 o'clock p.m. and last until midnight.
+       </s>
+       <s pid="4" sid="3">
+        All the students will be provided with sacks and we have managed to book a band as well.
+       </s>
+       <s pid="4" sid="4">
+        The location of the party isn't fixed yet, but we will let you know after your arrival.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        There is no need putting on special clothes for the party, casual ones should do it as well, for we want everyone to feel comfortable.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Last but not least I will give you some ideas of where to spend your free afternoon.
+       </s>
+       <s pid="6" sid="2">
+        I'd suggest you to visit our local museum, as there is a marvellous exhibition there at the moment.
+       </s>
+       <s pid="6" sid="3">
+        Provided the weather is fine, you could also go swimming or make a tour through our beautiful town.
+       </s>
+       <s pid="6" sid="4">
+        (I could book a guide for you if you're interested)
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Please write back or call me if there is any more information you need.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I'm looking forward to meeting you and wish you all the best.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      5.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       The telephone, a blessing.
+      </p>
+      <p>
+       Who of you could imagine life without the telephone? Not being able to call your friend and ask if you can pop
+       <ns type="RY">
+        <i>
+         in
+        </i>
+       </ns>
+       for a moment? Not being able to lie to your mother-in-law and pretend you can't attend her garden party because of an illness, without having to look her in the eye? When Alexander Graham Bell first invented the telephone, he had no idea
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       how popular it would be one day. Its first
+       <ns type="RN">
+        <i>
+         appliance
+        </i>
+       </ns>
+       was
+       <ns type="R">
+        in order
+       </ns>
+       to listen to a concert if you were not able to attend it in person. Nowadays, however, the whole world is connected by a telephone system and no one
+       <ns type="TV">
+        <i>
+         could
+        </i>
+       </ns>
+       imagine life without it.
+      </p>
+      <p>
+       Take me, for example, I use it whenever there is a problem and I need some advice, or when I have to call off a meeting for any reason. I cannot always walk to the person and say "Sorry, I must cancel our meeting", because then it's too late anyway, isn't it?
+      </p>
+      <p>
+       Life definitely wouldn't be the same without the invention of the telephone. We use it daily in order to get information or to pass it on.
+      </p>
+      <p>
+       Just try to spend one week without using a telephone at all, and you will see that it is impossible to do so. So don't take the telephone for granted, but keep in mind that our modern way of life is mainly due to its invention.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The telephone, a blessing.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Who of you could imagine life without the telephone?
+       </s>
+       <s pid="2" sid="2">
+        Not being able to call your friend and ask if you can pop in for a moment?
+       </s>
+       <s pid="2" sid="3">
+        Not being able to lie to your mother-in-law and pretend you can't attend her garden party because of an illness, without having to look her in the eye?
+       </s>
+       <s pid="2" sid="4">
+        When Alexander Graham Bell first invented the telephone, he had no idea of how popular it would be one day.
+       </s>
+       <s pid="2" sid="5">
+        Its first appliance was in order to listen to a concert if you were not able to attend it in person.
+       </s>
+       <s pid="2" sid="6">
+        Nowadays, however, the whole world is connected by a telephone system and no one could imagine life without it.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Take me, for example, I use it whenever there is a problem and I need some advice, or when I have to call off a meeting for any reason.
+       </s>
+       <s pid="3" sid="2">
+        I cannot always walk to the person and say "Sorry, I must cancel our meeting", because then it's too late anyway, isn't it?
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Life definitely wouldn't be the same without the invention of the telephone.
+       </s>
+       <s pid="4" sid="2">
+        We use it daily in order to get information or to pass it on.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Just try to spend one week without using a telephone at all, and you will see that it is impossible to do so.
+       </s>
+       <s pid="5" sid="2">
+        So don't take the telephone for granted, but keep in mind that our modern way of life is mainly due to its invention.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

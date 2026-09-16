@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     27.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Helen Ryan,
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         as
+        </i>
+       </ns>
+       reply
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       your letter
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I am glad to have won the first prize in your competition for two weeks at Camp California in the USA.
+      </p>
+      <p>
+       About the information that you need, I must tell you that I will be able to travel only in July
+       <ns type="S">
+        <i>
+         becase
+        </i>
+       </ns>
+       I
+       <ns type="MV">
+       </ns>
+       got a new job and I can't ask for more than one month
+       <ns type="MT">
+       </ns>
+       holidays each year and
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the other months I will be very busy
+       <ns type="S">
+        <i>
+         becase
+        </i>
+       </ns>
+       my workmates will take holidays
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       these months.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         With
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       , I would
+       <ns type="TV">
+        <i>
+         <ns type="IV">
+          <i>
+           prefered
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         becase
+        </i>
+       </ns>
+       it is more
+       <ns type="R">
+        <i>
+         according
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       a camp. And
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       the activities
+       <ns type="MP">
+       </ns>
+       I must
+       <ns type="TV">
+        <i>
+         chose
+        </i>
+       </ns>
+       Photography and Painting
+       <ns type="S">
+        <i>
+         becase
+        </i>
+       </ns>
+       I am not very good
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       sports and I think I
+       <ns type="TV">
+        <i>
+         am doing
+        </i>
+       </ns>
+       well
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       these things.
+      </p>
+      <p>
+       Finally I just
+       <ns type="MV">
+       </ns>
+       <ns type="FV">
+        <i>
+         ask
+        </i>
+       </ns>
+       you
+       <ns type="RP">
+        <i>
+         What
+        </i>
+       </ns>
+       kind of clothes
+       <ns type="UV">
+        <i>
+         do
+        </i>
+       </ns>
+       I have to bring with me, and
+       <ns type="R">
+        <i>
+         around
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         How
+        </i>
+       </ns>
+       much money do you think I will need
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       Thank you very much for everything.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       Sincerely
+      </p>
+      <p>
+       Juanita Fabiola Martin
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Helen Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I was writting as reply of your letter, I am glad to have won the first prize in your competition for two weeks at Camp California in the USA.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        About the information that you need, I must tell you that I will be able to travel only in July becase I  got a new job and I can't ask for more than one month  holidays each year and on the other months I will be very busy becase my workmates will take holidays on these months.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        With the accomodation, I would prefered  tents becase it is more according with a camp.
+       </s>
+       <s pid="4" sid="2">
+        And with the activities I must chose Photography and Painting becase I am not very good for sports and I think I am doing well in these things.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally I just  ask you What kind of clothes do I have to bring with me, and around
+       </s>
+       <s pid="5" sid="2">
+        How much money do you think I will need.
+       </s>
+       <s pid="5" sid="3">
+        Thank you very much for everything.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Your Sincerely
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Juanita Fabiola Martin
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       31 Sea old State
+      </p>
+      <p>
+       Valles Co. Cornel
+      </p>
+      <p>
+       Wales
+      </p>
+      <p>
+       13th June, 2000
+      </p>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Here I am,
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you to tell
+       <ns type="MA">
+       </ns>
+       everything about my wonderful experience at the concert. You can't imagine
+       <ns type="RP">
+        <i>
+         How
+        </i>
+       </ns>
+       much
+       <ns type="UV">
+        <i>
+         did
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         enjoy
+        </i>
+       </ns>
+       that
+       <ns type="RN">
+        journey
+       </ns>
+       .
+      </p>
+      <p>
+       I started early in the morning
+       <ns type="MP">
+       </ns>
+       helping to carry
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       stuff from the trucks to the place where the band played
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         help
+        </i>
+       </ns>
+       with the
+       <ns type="DJ">
+        <i>
+         music
+        </i>
+       </ns>
+       stuff like speakers, mics, lights, sound
+       <ns type="MN">
+       </ns>
+       , etc. And later the band arrived and played two or three times before the concert started. And I
+       <ns type="TV">
+        <i>
+         was helping
+        </i>
+       </ns>
+       them
+       <ns type="FV">
+        <i>
+         fixing
+        </i>
+       </ns>
+       the last details.
+      </p>
+      <p>
+       When the concert started
+       <ns type="MP">
+       </ns>
+       I was preparing some drinks for the band because
+       <ns type="R">
+        <i>
+         when the concert finished
+        </i>
+       </ns>
+       they
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       very tired and
+       <ns type="S">
+        <i>
+         tersty
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After the concert I only
+       <ns type="TV">
+        <i>
+         help
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         with
+        </i>
+       </ns>
+       tidy up the place and made sure that everything was under control and clean. Later the band was talking to me, I could get their new album free, and some other souvenirs from the band.
+      </p>
+      <p>
+       But the thing that
+       <ns type="AS">
+        <i>
+         particulary liked me
+        </i>
+       </ns>
+       was that I could do all
+       <ns type="FN">
+        <i>
+         kind
+        </i>
+       </ns>
+       of things just in one day and I could feel different emotions.
+      </p>
+      <p>
+       So, that's everything that I can tell you
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         enjoy
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       a lot and I hope to have another experience like this.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        31 Sea old State
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Valles Co. Cornel
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Wales
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        13th June, 2000
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Here I am, writting  you to tell  everything about my wonderful experience at the concert.
+       </s>
+       <s pid="6" sid="2">
+        You can't imagine
+       </s>
+       <s pid="6" sid="3">
+        How much did I enjoy that journey.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I started early in the morning helping to carry the stuff from the trucks to the place where the band played, I help with the music stuff like speakers, mics, lights, sound , etc.
+       </s>
+       <s pid="7" sid="2">
+        And later the band arrived and played two or three times before the concert started.
+       </s>
+       <s pid="7" sid="3">
+        And I was helping them fixing the last details.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        When the concert started I was preparing some drinks for the band because when the concert finished they were very tired and tersty.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        After the concert I only help with tidy up the place and made sure that everything was under control and clean.
+       </s>
+       <s pid="9" sid="2">
+        Later the band was talking to me, I could get their new album free, and some other souvenirs from the band.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        But the thing that particulary liked me was that I could do all kind of things just in one day and I could feel different emotions.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        So, that's everything that I can tell you, I enjoy  a lot and I hope to have another experience like this.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Russian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     38.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear J. Clark,
+      </p>
+      <p>
+       I'm writing in response to your advertisement about the annual international arts festival. I really think it was a great idea to organize such a festival in our city as there are lots of people fond of art over here. I'm sure they are all very grateful to you now.
+      </p>
+      <p>
+       I've already been to the festival and I think it's really important to let people see artists from all over the world. It would be wonderful if there were stars from more than six countries next year, the festival would be even more interesting then.
+      </p>
+      <p>
+       I also think the places you have chosen for the classical concerts were not good sometimes, some of the halls seemed to be too small. But your idea about the weekend ticket is just excellent, people from the whole country get the opportunity to visit your festival and see all the events you are offering.
+      </p>
+      <p>
+       I've got just one more suggestion for next year's festival. You could probably show a
+       <ns type="RQ">
+        <i>
+         little bit
+        </i>
+       </ns>
+       more films and interviews with the most interesting artists. I'm sure it would attract lots of young people.
+      </p>
+      <p>
+       Well, thank you very much for this festival, my friends and I have enjoyed it a lot.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear J. Clark,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing in response to your advertisement about the annual international arts festival.
+       </s>
+       <s pid="2" sid="2">
+        I really think it was a great idea to organize such a festival in our city as there are lots of people fond of art over here.
+       </s>
+       <s pid="2" sid="3">
+        I'm sure they are all very grateful to you now.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I've already been to the festival and I think it's really important to let people see artists from all over the world.
+       </s>
+       <s pid="3" sid="2">
+        It would be wonderful if there were stars from more than six countries next year, the festival would be even more interesting then.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I also think the places you have chosen for the classical concerts were not good sometimes, some of the halls seemed to be too small.
+       </s>
+       <s pid="4" sid="2">
+        But your idea about the weekend ticket is just excellent, people from the whole country get the opportunity to visit your festival and see all the events you are offering.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I've got just one more suggestion for next year's festival.
+       </s>
+       <s pid="5" sid="2">
+        You could probably show a little bit more films and interviews with the most interesting artists.
+       </s>
+       <s pid="5" sid="3">
+        I'm sure it would attract lots of young people.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Well, thank you very much for this festival, my friends and I have enjoyed it a lot.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Dave,
+      </p>
+      <p>
+       Thank you so much for your lovely letter, it's always great to get something from you.
+       <ns type="S">
+        <i>
+         Howe
+        </i>
+       </ns>
+       are things going over there? It's quite difficult to talk
+       <ns type="SX">
+        <i>
+         bout
+        </i>
+       </ns>
+       our school rules actually, but I'll try to help you somehow. Hope it will be interesting for you.
+       <ns type="S">
+        <i>
+         Bu
+        </i>
+       </ns>
+       the way, are you allowed to smoke in the school? Our
+       <ns type="SX">
+        <i>
+         teaches
+        </i>
+       </ns>
+       don't let us smoke
+       <ns type="MP">
+       </ns>
+       of course, but you can always see some students smoking outside, so it's not that strict to be honest. We're not allowed to drink alcohol as well and quarrel with any of the
+       <ns type="SX">
+        <i>
+         teaches
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       As for our rules at home, it's always different and
+       <ns type="W">
+        <i>
+         depends just
+        </i>
+       </ns>
+       on your family.
+      </p>
+      <p>
+       My parents are not very strict
+       <ns type="MP">
+       </ns>
+       as you know
+       <ns type="MP">
+       </ns>
+       and I appreciate them for giving me freedom. They understand that I can make my own decisions, but I know they will never leave me and they will help me and my brother
+       <ns type="SX">
+        <i>
+         nay
+        </i>
+       </ns>
+       time we need it. I think the only rule in my house is to care
+       <ns type="SX">
+        <i>
+         bout
+        </i>
+       </ns>
+       each other.
+      </p>
+      <p>
+       I hope to hear from you soon
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Dave,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you so much for your lovely letter, it's always great to get something from you.
+       </s>
+       <s pid="2" sid="2">
+        Howe are things going over there?
+       </s>
+       <s pid="2" sid="3">
+        It's quite difficult to talk bout our school rules actually, but I'll try to help you somehow.
+       </s>
+       <s pid="2" sid="4">
+        Hope it will be interesting for you.
+       </s>
+       <s pid="2" sid="5">
+        Bu the way, are you allowed to smoke in the school?
+       </s>
+       <s pid="2" sid="6">
+        Our teaches don't let us smoke of course, but you can always see some students smoking outside, so it's not that strict to be honest.
+       </s>
+       <s pid="2" sid="7">
+        We're not allowed to drink alcohol as well and quarrel with any of the teaches.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As for our rules at home, it's always different and depends just on your family.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        My parents are not very strict as you know and I appreciate them for giving me freedom.
+       </s>
+       <s pid="4" sid="2">
+        They understand that I can make my own decisions, but I know they will never leave me and they will help me and my brother nay time we need it.
+       </s>
+       <s pid="4" sid="3">
+        I think the only rule in my house is to care bout each other.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I hope to hear from you soon
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

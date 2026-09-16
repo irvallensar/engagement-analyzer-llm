@@ -1,0 +1,412 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      <p>
+      </p>
+     </div>
+     <div class="dynacloud">
+      <div>
+       <div class="head_1">
+        1 Introduction
+       </div>
+       <p>
+        <s pid="1" sid="1">
+         Much recent work suggests that the design of an optimal tax system must include a model of tax evasion and avoidance behavior.
+        </s>
+        <s pid="1" sid="2">
+         A key aspect of any such model the strategic interaction between the holders of information and the tax authority.
+        </s>
+        <s pid="1" sid="3">
+         Often times, taxes can be collected with much less avoidance if the incentives for the parties involved are designed so as to extract tax-relevant information from those parties from whom it is cheapest to do so.
+        </s>
+        <s pid="1" sid="4">
+         This paper presents a particular model with one ﬁrm and one worker, where both the ﬁrm and the worker have incentives to misreport the wage at which the two transacted.
+        </s>
+        <s pid="1" sid="5">
+         Like some suggestions in earlier literature, because the ﬁrm wants to overstate the wage and the worker wants to understate it, we expect misreporting to decrease.
+        </s>
+        <s pid="1" sid="6">
+         However, we do ﬁnd that some misreporting still persists due to the fact that the interests of the ﬁrm and the worker are not as misaligned as they might seem.
+        </s>
+       </p>
+       <div>
+        <div class="head_2">
+         2 Background
+        </div>
+        <p>
+         <s pid="2" sid="1">
+          The problem of collecting taxes is an information problem.
+         </s>
+         <s pid="2" sid="2">
+          It is costlier for the tax authority to observe taxable income than it is for the tax payer.
+         </s>
+         <s pid="2" sid="3">
+          Because the tax payer would rather not pay taxes, the tax authority must provide incentives to the tax payer to report truthfully.
+         </s>
+         <s pid="2" sid="4">
+          In this situation the interests of the tax authority and the owner of the relevant information are misaligned and thus the costs of inducing truthful reporting are relatively high.
+         </s>
+         <s pid="2" sid="5">
+          However it is not always the case that the information holder must be at odds with the tax collector.
+         </s>
+         <s pid="2" sid="6">
+          Often, relevant information is observed by a third party whose incentives diﬀer from both those of the collector and the tax payer.
+         </s>
+         <s pid="2" sid="7">
+          Including this third party in the information retrieval may prove to be cheaper than extracting the information from the tax payer only.
+         </s>
+        </p>
+        <p>
+         <s pid="3" sid="1">
+          An example is the value added tax.
+         </s>
+         <s pid="3" sid="2">
+          The tax authority does not observe the price at which an intermediate good was transacted.
+         </s>
+         <s pid="3" sid="3">
+          The seller of the good wants to understate the price and the buyer of the good wants to overstate the price.
+         </s>
+         <s pid="3" sid="4">
+          By eliciting information from both parties simultaneously, the tax authority can in essence allow the buyer and seller to compete away their information rents.
+         </s>
+        </p>
+        <p>
+         <s pid="4" sid="1">
+          As another example, consider individuals reporting income to the IRS.
+         </s>
+         <s pid="4" sid="2">
+          It is estimated that the reporting of wages and salaries on form W-2 is 99% compliant while self-employed income is less than 50% compliant.
+         </s>
+         <s pid="4" sid="3">
+          One reason may be that while the individual reporter is the only holder of information regarding self-employed income, wages and salaries are observed both by the individual reporter and by her employer.
+         </s>
+         <s pid="4" sid="4">
+          Since the employer may have less reason to understate the worker’s income (and in fact may have incentives to overstate it), also eliciting this information from the employer makes the overall cost of information retrieval cheaper.
+         </s>
+        </p>
+        <p>
+         <s pid="5" sid="1">
+          The second example is of particular interest because the employer’s and worker’s incentives when reporting the transacted wage are not necessarily completely opposed.
+         </s>
+         <s pid="5" sid="2">
+          On the one hand, a change in the wage increases the tax liability of one party and reduces the tax liability of the other.
+         </s>
+         <s pid="5" sid="3">
+          On the other hand, if a worker decreases her tax burden, she requires lower compensation in wages.
+         </s>
+         <s pid="5" sid="4">
+          In this sense, the employer wants the worker to be able to underreport her taxes.
+         </s>
+         <s pid="5" sid="5">
+          Understanding that the incentives to cheat do not necessarily "cancel out" in such cases is important in designing tax systems.
+         </s>
+        </p>
+        <p>
+         <s pid="6" sid="1">
+          This paper presents a model similar to the second example.
+         </s>
+         <s pid="6" sid="2">
+          Both the ﬁrm and the worker report the transacted wage, and then the tax authority makes a decision on whether or not to audit.
+         </s>
+         <s pid="6" sid="3">
+          This decision is based on the discrepancy of the two reports.
+         </s>
+         <s pid="6" sid="4">
+          An audit will lead to the tax authority discovering the true wage and exacting a ﬁne proportionate to the dollar amount of cheating from possibly both the ﬁrm and the worker.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_1">
+        3 The Model
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         We describe behavior by the tax authority, the ﬁrm, and the agent.
+        </s>
+        <s pid="7" sid="2">
+         The game has four stages.
+        </s>
+        <s pid="7" sid="3">
+         In stage one, the ﬁrm observes the worker’s type and makes a take it or leave wage oﬀer w.
+        </s>
+        <s pid="7" sid="4">
+         In stage two, the worker decides whether or not to accept the wage w.
+        </s>
+        <s pid="7" sid="5">
+         In stage three, the worker and ﬁrm make simultaneous wage reports wa and wf to the tax authority.
+        </s>
+        <s pid="7" sid="6">
+         In stage four, the tax authority observes the two reports and decides whether or not to audit based on the diﬀerence wf − wa.
+        </s>
+        <s pid="7" sid="7">
+         The outcome of the audit decision determines ﬁnal payoﬀs.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         The worker’s type θ is drawn from a uniform distribution on [0,M].
+        </s>
+        <s pid="8" sid="2">
+         Both the worker and ﬁrm observe θ.
+        </s>
+        <s pid="8" sid="3">
+         The worker has utility function u(x − θ) over money when he works, where u(0) = 0,u&amp;gt; 0,u&amp;lt; 0.
+        </s>
+        <s pid="8" sid="4">
+         The worker’s reservation utility from not working is zero.
+        </s>
+        <s pid="8" sid="5">
+         It is weakly dominant for the worker to accept when w ≥ θ [#REF 1] .
+        </s>
+        <s pid="8" sid="6">
+         The ﬁrm receives revenue R&amp;gt;
+        </s>
+        <s pid="8" sid="7">
+         M from hiring the worker regardless of the type and zero otherwise.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         Both the worker and the ﬁrm are liable for taxes.
+        </s>
+        <s pid="9" sid="2">
+         The marginal tax rate for the worker is ta and for the ﬁrm is tf .
+        </s>
+        <s pid="9" sid="3">
+         When there is no audit, payments are made based on own reporting so the total tax payments are tawa and tf (R−wf ) respectively.
+        </s>
+        <s pid="9" sid="4">
+         If there is an audit, the parties pay tax on the whole amount w and R −w respectively plus an additional penalty on the dollar value concealed.
+        </s>
+        <s pid="9" sid="5">
+         The tax payments conditional on audit are taw + γta(w − wa) for the worker and tf (R − w)+ δtf (wf − w) for the ﬁrm, where γ,δ &amp;gt; 0 are exogenous and represent the severity of punishment per dollar concealed.
+        </s>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         The tax authority follows an audit strategy G, so that the probability of an audit conditional on observed reports is G(wa,wf ).
+        </s>
+       </p>
+       <p>
+        <s pid="11" sid="1">
+         While this paper does not actually solve for the equilibrium or prove its existence, it outlines the approach to doing this.
+        </s>
+        <s pid="11" sid="2">
+         In particular, it will be enough of a challenge to ﬁx the tax authority’s strategy G and solve for an equilibrium between the ﬁrm and worker [#REF 2] .
+        </s>
+        <s pid="11" sid="3">
+         We will look for a Subgame Perfect Nash equilibrium of this game by backward induction, ﬁrst characterizing an equilibrium in the reporting stage and then solving for the optimal wage oﬀer for the ﬁrm in stage one.
+        </s>
+       </p>
+       <p>
+        <s pid="12" sid="1">
+         Let G(wa,wf ) be a cdf G(|wf − wa|), where G(0) = 0,G� ≥ 0, supG(x) = 1. G is by construction a mixed strategy.
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         In stage three, ﬁxing G and wf , it is dominated for the worker to choose any wa &amp;gt;wf .
+        </s>
+        <s pid="13" sid="2">
+         Thus, we can drop the absolute values on the arguments of G when the worker solves:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         where g is the pdf of G.
+        </s>
+        <s pid="20" sid="2">
+         The FOC represents the worker’s tradeoﬀ between increasing expected utility through lower reporting (ﬁrst term) and increasing the probability of audit (the second term).
+        </s>
+        <s pid="20" sid="3">
+         An interesting exercise is to examine the special case of honest reporting where wf = wa = w.
+        </s>
+        <s pid="20" sid="4">
+         Here the worker will not have incentive to under-report on the margin whenever tau+≤ g(u+ − u−) holds.
+        </s>
+        <s pid="20" sid="5">
+         This is the standard ﬁnding from the economics of crime literature in the following sense.
+        </s>
+        <s pid="20" sid="6">
+         If the tax authority has control of either G or γ, then setting γ suﬃciently high will allow us to set G = 0 if audits are costly.
+        </s>
+        <s pid="20" sid="7">
+         In this model, we assume that γ is a parameter that is exogenously set and focus on G as the strategy.
+        </s>
+       </p>
+       <p>
+        <s pid="21" sid="1">
+         The ﬁrm solves the following problem:
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="26" sid="1">
+         The interpretation of this FOC is identical to the one above, save for the fact that the ﬁrm is risk neutral.
+        </s>
+        <s pid="26" sid="2">
+         Actually solving for w and w is hard and beyond the scope of this paper.
+        </s>
+        <s pid="26" sid="3">
+         However, we can try to develop some intuition.
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         One question of interest is whether the ﬁrm has incentive to make it easier for the worker to underreport in order to reduce the wage oﬀer.
+        </s>
+        <s pid="27" sid="2">
+         Another way to view this is how much must the ﬁrm decrease wf in order to decrease w.
+        </s>
+        <s pid="27" sid="3">
+         I conjecture that for any ﬁxed δ, γ there exists a unique α such that
+        </s>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         In words, when the ﬁrm is deciding on the tradeoﬀ between allowing the worker to under-report or over-reporting itself, the choice will be a corner solution.
+        </s>
+        <s pid="32" sid="2">
+         The reason is because the marginal cost of increasing the probability of audit is constant via either method, so the ﬁrm will choose the cheaper one.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_1">
+        4 Discussion
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         The model above is an attempt to give structure to the strategic interaction of ﬁrms and workers in choosing how to cheat the tax authority.
+        </s>
+        <s pid="33" sid="2">
+         Here the ﬁrm is in charge and collects all rents from cheating, either by cheating directly itself or by extracting the cheating surplus from the worker with a lower wage.
+        </s>
+        <s pid="33" sid="3">
+         The key is that the ﬁrm sees the worker’s cheating as a tradeoﬀ.
+        </s>
+        <s pid="33" sid="4">
+         In other words, assuming that the ﬁrm would not allow any cheating because every dollar under-reported by the worker adds to the ﬁrm’s tax base is incorrect.
+        </s>
+        <s pid="33" sid="5">
+         In general, this simple example suggests that it is important to specify the relationship between the owners of tax-relevant information, and that even if these owners do not explicitly collude with one another, in equilibrium cheating behavior is still possible.
+        </s>
+       </p>
+       <p>
+        <s pid="34" sid="1">
+         One addition I would like to add to the model (after actually solving the model I have speciﬁed of course) is uncertainty.
+        </s>
+        <s pid="34" sid="2">
+         Some of the story that is missed here is the idea that there is more than one worker in a ﬁrm, and that while a ﬁrm does report on behalf of its workers, making the report detailed probably comes at a cost.
+        </s>
+        <s pid="34" sid="3">
+         At the same time, the less detailed the report, the more opportunity for the workers to cheat, the less the ﬁrm must pay the workers in wages.
+        </s>
+        <s pid="34" sid="4">
+         Allowing this level of detail to be a choice variable for the ﬁrm might derive some interesting results.
+        </s>
+        <s pid="34" sid="5">
+         The tax authority, in choosing the socially optimal way to collect taxes, might consider the tradeoﬀ between increasing the tax rate or, for instance, increasing the level of detail of reporting by ﬁrms.
+        </s>
+        <s pid="34" sid="6">
+         I believe the model presented above is a good starting point towards developing a framework to answer these questions.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="footnotes">
+       <div id="fn1">
+        <a href="#fnref_fn1">
+         1.
+        </a>
+        1The worker always has the opportunity to report truthfully in stage three and lock in the wage w
+       </div>
+       <div id="fn2">
+        <a href="#fnref_fn2">
+         2.
+        </a>
+        2It is important to realize that G is a mixed strategy, which implies that in equilibrium the tax authority is indiﬀerent between auditing and not auditing at every information set. This can only occur if the ﬁrm and worker are also using mixed strategies.
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

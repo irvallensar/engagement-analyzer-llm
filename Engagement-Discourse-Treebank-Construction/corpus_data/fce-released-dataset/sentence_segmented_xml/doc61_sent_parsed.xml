@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     18.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/
+       <ns type="S">
+        <i>
+         Madame
+        </i>
+       </ns>
+       ,
+      </p>
+      <p>
+       Today
+       <ns type="R">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         recived
+        </i>
+       </ns>
+       your letter
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       is the most wonderful news I
+       <ns type="TV">
+        <i>
+         <ns type="SX">
+          <i>
+           here
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in a long time. I am so
+       <ns type="DJ">
+        <i>
+         please
+        </i>
+       </ns>
+       that I won this prize
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that I
+       <ns type="RP">
+        <i>
+         can not
+        </i>
+       </ns>
+       explain how
+       <ns type="S">
+        <i>
+         greateful
+        </i>
+       </ns>
+       I am. I
+       <ns type="S">
+        <i>
+         wasen't
+        </i>
+       </ns>
+       expecting this prize because
+       <ns type="MA">
+       </ns>
+       <ns type="TV">
+        <i>
+         was
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         to
+        </i>
+       </ns>
+       good to be true. My family
+       <ns type="CE">
+        decide to visit my grandmother in Orlando, because she got some problems with the
+        <ns type="S">
+         <i>
+          swiming-pool
+         </i>
+        </ns>
+        <ns type="RP">
+         <i>
+          , she
+         </i>
+        </ns>
+        ask my parents to help her in a new swiming pool building
+       </ns>
+       .
+      </p>
+      <p>
+       Because
+       <ns type="MT">
+       </ns>
+       this situation I
+       <ns type="MV">
+       </ns>
+       be very busy
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the first week of
+       <ns type="RP">
+        <i>
+         july
+        </i>
+       </ns>
+       , and I
+       <ns type="MV">
+       </ns>
+       <ns type="S">
+        <i>
+         apreciate
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       if you
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       give me the
+       <ns type="RN">
+        <i>
+         choice
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         start
+        </i>
+       </ns>
+       my "Camp California"
+       <ns type="MN">
+       </ns>
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       July 10th. About the
+       <ns type="S">
+        <i>
+         Accomodation
+        </i>
+       </ns>
+       I would prefer to sleep
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       , because I
+       <ns type="TV">
+        <i>
+         never been
+        </i>
+       </ns>
+       in one, and it is a lot more fun than log cabins.
+      </p>
+      <p>
+       Because I
+       <ns type="TV">
+        <i>
+         seen
+        </i>
+       </ns>
+       my father playing golf since I was a child I am very
+       <ns type="RJ">
+        <i>
+         kind
+        </i>
+       </ns>
+       on this sport, and also I love photography because I
+       <ns type="MV">
+        <i>
+         got
+        </i>
+       </ns>
+       a great
+       <ns type="S">
+        <i>
+         Camara
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I am really looking forward to
+       <ns type="FV">
+        <i>
+         see
+        </i>
+       </ns>
+       you soon.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/ Madame,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Today a recived your letter, it is the most wonderful news I here in a long time.
+       </s>
+       <s pid="2" sid="2">
+        I am so please that I won this prize, that I can not explain how greateful I am.
+       </s>
+       <s pid="2" sid="3">
+        I wasen't expecting this prize because  was to good to be true.
+       </s>
+       <s pid="2" sid="4">
+        My family decide to visit my grandmother in Orlando, because she got some problems with the swiming-pool, she ask my parents to help her in a new swiming pool building.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Because  this situation I  be very busy on the first week of july, and I  apreciate  if you can give me the choice to start my "Camp California"  from July 10th.
+       </s>
+       <s pid="3" sid="2">
+        About the Accomodation I would prefer to sleep on the tents, because I never been in one, and it is a lot more fun than log cabins.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Because I seen my father playing golf since I was a child I am very kind on this sport, and also I love photography because I got a great Camara.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am really looking forward to see you soon.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       When I was a child I never
+       <ns type="TV">
+        <i>
+         like
+        </i>
+       </ns>
+       to go shopping because my Mum
+       <ns type="TV">
+        <i>
+         spend
+        </i>
+       </ns>
+       so much time
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the shops that I remember
+       <ns type="MC">
+       </ns>
+       going shopping with her
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       was a
+       <ns type="S">
+        <i>
+         nigthmare
+        </i>
+       </ns>
+       . It is
+       <ns type="S">
+        <i>
+         ameaising
+        </i>
+       </ns>
+       how people change
+       <ns type="ID">
+        <i>
+         during the years
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , for example
+        </i>
+       </ns>
+       now shopping for me is one of the most entertaining things, and every week I have to buy something. I enjoy
+       <ns type="W">
+        <i>
+         so much fashion
+        </i>
+       </ns>
+       that my life
+       <ns type="TV">
+        <i>
+         change
+        </i>
+       </ns>
+       completely since I
+       <ns type="TV">
+        <i>
+         start
+        </i>
+       </ns>
+       to study
+       <ns type="DN">
+        <i>
+         clothes designer
+        </i>
+       </ns>
+       and I
+       <ns type="TV">
+        <i>
+         discover
+        </i>
+       </ns>
+       that fabrics,
+       <ns type="MC">
+       </ns>
+       colors, are really enjoyable. But
+       <ns type="ID">
+        <i>
+         in this days
+        </i>
+       </ns>
+       shopping is not always enjoyable, because if you decide to buy a very expensive designer
+       <ns type="MN">
+       </ns>
+       and you pay
+       <ns type="MD">
+       </ns>
+       full price,
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the end of the season it is half price
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I find
+       <ns type="MA">
+       </ns>
+       very
+       <ns type="S">
+        <i>
+         anfair
+        </i>
+       </ns>
+       for people who pay a lot of money
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       their clothes. Anyway, shopping is
+       <ns type="S">
+        <i>
+         allways
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         <ns type="S">
+          <i>
+           satisfation
+          </i>
+         </ns>
+        </i>
+       </ns>
+       for rich people, because they can
+       <ns type="FV">
+        <i>
+         afforded
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       and they don't
+       <ns type="SX">
+        <i>
+         main
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to
+         <ns type="RV">
+          <i>
+           spend
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       full price
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       their clothes.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        When I was a child I never like to go shopping because my Mum spend so much time on the shops that I remember  going shopping with her, was a nigthmare.
+       </s>
+       <s pid="1" sid="2">
+        It is ameaising how people change during the years, for example now shopping for me is one of the most entertaining things, and every week I have to buy something.
+       </s>
+       <s pid="1" sid="3">
+        I enjoy so much fashion that my life change completely since I start to study clothes designer and I discover that fabrics,  colors, are really enjoyable.
+       </s>
+       <s pid="1" sid="4">
+        But in this days shopping is not always enjoyable, because if you decide to buy a very expensive designer  and you pay  full price, on the end of the season it is half price, I find  very anfair for people who pay a lot of money on their clothes.
+       </s>
+       <s pid="1" sid="5">
+        Anyway, shopping is allways a satisfation for rich people, because they can afforded  and they don't main to spend  full price on their clothes.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

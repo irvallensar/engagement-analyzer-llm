@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    ﻿Attitude control Algorithms selection
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     Background:
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Attitude and Control:
+    </div>
+    <p>
+     Orientation of the satellite in space is called its attitude. Attitude control is required to point the instrument or antenna to the desired directions.
+    </p>
+    <p>
+     The difference of desired orientation and measured orientation is called attitude error. This can be represented either by three successive rotations (Roll, Yaw, Pitch) or by Quaternion
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     ADACS functions:
+    </div>
+    <p>
+     Attitude determination using Attitude sensor (3-axis magnetometer)
+    </p>
+    <p>
+     Rotation matrix computation (Attitude error computation between actual and desired orientation)
+    </p>
+    <p>
+     Attitude control using actuator (Magnetic torque coils)
+    </p>
+    <p>
+     The scope of this document is to propose control algorithms for Nadir and inertial pointing applications after analyzing different cubesat control algorithms. The list of small satellites which use Magnetic torquers or torque coils as actuators are listed in Appendix-A Compilation of control algorithms used is also included in the appendix along with ADACS hardware components used.
+    </p>
+    <p>
+     Picosat is equipped with three mutually perpendicular magnetic torque coils as shown in the figure-1a, coil size is shown in the figure-1b. Torque coils are the only attitude control actuators of the picosat. This selection is made as a trade of between weight, power consumption and available power.
+    </p>
+    <p>
+     Using Magnetic torque coils as actuators, it is possible to control only 2-axes at a time, this is because of the torque produced by the interaction of the Earth magnetic field and the coil magnetic field. The generated torque is always perpendicular to the earth magnetic field. Thus one axis will always be parallel to the geomagnetic field and hence it is not controllable. The variation of the earth magnetic field over one orbit can be used in the design of the controller to achieve the third axis control. Mathematical modeling of this requires better understanding of Kinematics and Dynamics.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Attitude control:
+    </div>
+    <p>
+     This requires knowledge of Kinematics and dynamics. Dynamics relates the torques acting on the satellite’s angular velocity in the inertial co-ordinate system. The kinematics is expressed as the integration of the angular velocity. Linearization of dynamic and kinematic equations of motion should be done for two different points One for nadir and another for inertial pointing.
+    </p>
+    <p>
+     The sequence of stabilization after launch or in situations when satellite lost AD control is Rate detumbling, angle detumbling and stabilization. Different control systems are considered and carried out research of the suitability to the picosat. The following two algorithms found to be best fit for the Picosat.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Detumbling – B-dot controller:
+    </div>
+    <p>
+     The detumbling controller should slow down the satellite after its release from the launch vehicle. This is based on the rate measurements of the local magnetic field by the magnetometer. B-dot controller minimizes the satellite angular rate change in relation to the local geomagnetic field.
+    </p>
+    <p>
+     This controller only requires the derivative of the magnetic field as input hence it can function even when all other orbital information is not available.
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     The B-dot algorithm was found to be very robust and could handle many types of failure with little drop in performance. The system still settled even in with the simultaneous introduction of high magnetometer noise, large tip-off velocities, and an inoperative torquer. It was also found that the system has a large range of stable gains which give some leeway for incorrect moment of inertia determination and decreases in available power. Very simple, popular algorithm all the small satellites use this control system algorithm for detumbling purpose.
+    </p>
+    <p>
+     Nadir pointing &amp; 3-axis stabilization – Linear Quadratic controller
+    </p>
+    <p>
+     In Magnetic actuated satellites only two axes can be controllable at any given position in the orbit. The variation of the earth magnetic field over one orbit can be used in the design of the controller to achieve the third axis control. Periodic nature of earth magnetic field variation brings the constraint that the control algorithms should be Time varying periodic linear control systems.
+    </p>
+    <p>
+     Traditionally Linear Quadratic controllers has been used on magnetic actuated satellites because of their reliability and robustness. The Linear Quadratic strategy is based on linearizing the systems dynamics, defining an object function which shall be minimized and generate a gain matrix which is used for feedback.
+    </p>
+    <p>
+     Nadir pointing: system is stable only with integral action (If offset in the principle axes)
+    </p>
+    <p>
+     Table-1 shows the comparison of two control systems namely Constant Gain Controller &amp; Linear Matrix Inequality (LMI). Lowlights and Highlights of both these control systems are listed in the table.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Summary:
+    </div>
+    <p>
+     Survey of different satellites control algorithms and reviewing test results, it is recommended to use B-dot controller for Detumbling and Constant Gain Controller with integrator action for nadir pointing and 3-axis stabilization.
+    </p>
+    <p>
+     Constant Gain controller with integral action is the suitable algorithm for PicoSat. It converges from the initial disturbed state to the reference and stays at the reference with small errors.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Recommendations:
+    </div>
+    <p>
+     Simulate B-dot controller and Constant gain controller with integration action and the evaluate the performance of each controller. Convergence to the reference point and stability at the converged point are the two major criteria for the final selection.
+    </p>
+    <p>
+     Norway’s NCUBE, AAU cubesat  , GURWIN-techsat satellites are Some of the previous satellites which used above control systems, use as reference
+    </p>
+   </div>
+  </div>
+  <div>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <div class="gap">
+    <span>
+     Figure
+    </span>
+    here
+   </div>
+   <p>
+    Table-1: Nadir Pointing &amp; 3-axis stabilization control systems comparison
+   </p>
+   <div class="gap">
+    <span>
+     Table
+    </span>
+    here
+   </div>
+   <div>
+    <div class="head_1">
+     Appendix-A:  List of Cubesat Missions using Magnetorquers or Torque Coils
+    </div>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+    </p>
+   </div>
+  </div>
+ </div>
+</div>

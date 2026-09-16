@@ -1,0 +1,763 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Achieving 100% Renewable Electricity: A University of Michigan Case Study
+     </div>
+     <p>
+     </p>
+     <div class="abstract">
+      ABSTRACT
+      <p>
+       A possible strategy to provide the electricity requirements for University of Michigan (UM) from only renewable resources is discussed. The overarching aim is to show that renewable energy can provide both base load as well as peak power for variable load requirements throughout an entire year; meeting both summer and winter peak demands. Wind, Solar and Biomass are the major resources considered, although there exists limited potential for hydro and landfill gas in the vicinity of Ann Arbor. Resource availability data was used to generate a model for the optimum mix of renewable energy systems needed for a 100% mapping scenario. Analysis revealed that this could only be accomplished with long-term energy storage from winter to summer.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1.  INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The aim of this project is to evaluate the feasibility of providing UM with one hundred percent (100%) renewable energy for its electricity demand.
+       </s>
+       <s pid="1" sid="2">
+        It intends to demonstrate an instantaneous matching of the energy produced from renewable resources with the corresponding electricity demand.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        There is a growing realization that renewable energy resources must be afforded a deeper penetration to meet growing global energy demand.
+       </s>
+       <s pid="2" sid="2">
+        The most important driver for this is the scepter of climate change.
+       </s>
+       <s pid="2" sid="3">
+        Increase in atmospheric CO2 and other GHG emissions are providing impetus to the climate change phenomena.
+       </s>
+       <s pid="2" sid="4">
+        However, conventional power plants such as coal and natural gas which contribute significantly to CO2 continue to be built and developed.
+       </s>
+       <s pid="2" sid="5">
+        While the arguments for continuing with the status quo are compelling, it still remains that fossil fuel sources are rapidly diminishing and their supply cannot be taken for granted anymore.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Fig 1. UM’s Energy Generation Mix
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Thus, it is essential that advances be made in the development and implementation of renewable energy as a base load source.
+       </s>
+       <s pid="4" sid="2">
+        Annually, Ann Arbor’s electricity consumption approximates to about 1.6 billion kWh [#REF 1] . UM, with its annual consumption of 550 million kWh [1], puts a staggering 450 thousand Tonnes of CO2 emissions in the atmosphere.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        Any effort to offset this situation towards renewable will result in considerable reduction in CO2 emissions (fig. 2).
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Fig2. Life Cycle CO2 Emission Generation
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Source: International Energy Agency; Benign Energy,
+       </s>
+       <s pid="7" sid="2">
+        The Environmental Implications of Renewables, 1998
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Inspiration for this endeavor came from a similar study conducted by the University of Kassel, Germany [2].
+       </s>
+       <s pid="8" sid="2">
+        Their study showed that a combination of different renewable sources (wind, solar, biomass) and some pumped storage could consistently provide 100% of the City of Kassel's electrical energy needs.
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        The major hindrance in exploiting renewable energy resources for base load electricity has been their intermittent nature &amp; uncertainty in resource availability.
+       </s>
+       <s pid="9" sid="2">
+        Distributed power generation, coupled with a robust energy storage system is therefore the key to harnessing renewable energy resources to their full potential.
+       </s>
+       <s pid="9" sid="3">
+        Our effort comprised of an evaluation of renewable resources in Michigan and strategic siting of energy generation systems to be able to meet the electricity demand of UM.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2. DATA RESOURCES AND METHODS
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        This section discusses in detail, materials and methods used in this study.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        2.1 Electricity Demand
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         This study was initially intended to model allocation of renewable energy resources for the city of Ann Arbor.
+        </s>
+        <s pid="11" sid="2">
+         However, suitable data for the city’s electricity demand could not be obtained from DTE, the utility provider for south-east Michigan.
+        </s>
+        <s pid="11" sid="3">
+         The control volume was therefore scaled down to encompass UM’s demand.
+        </s>
+        <s pid="11" sid="4">
+         Hourly demand data for UM central and medical campus buildings monitored at the Central Power Plant was used to generate load curve for the entire university.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.2 Distributed Generation
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         Distributed generation (DG) is the term used to describe a mode of power generation characterized by a decentralization of the energy systems.
+        </s>
+        <s pid="12" sid="2">
+         Small-scale units, usually in sizes up to 50 MW, are located on the distribution system close to point of consumption.
+        </s>
+        <s pid="12" sid="3">
+         It is a particularly effective way to manage different renewable energy utilities as per their availability to meet a certain demand.
+        </s>
+        <s pid="12" sid="4">
+         The underlying premise of distributed generation in this context is that when conditions are unfavorable for power generation at a particular site, at another site they would be favorable, hence allowing the system to meet given demand.
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         Preliminary research of the available renewable energy resources in and around Ann Arbor did not reveal an optimistic picture.
+        </s>
+        <s pid="13" sid="2">
+         Washtenaw County falls in Class 2 wind region with marginal power generation potential [3].
+        </s>
+        <s pid="13" sid="3">
+         Michigan’s annual average solar radiation is 3-4 KWh/m2/day.
+        </s>
+        <s pid="13" sid="4">
+         However, it goes down to 0-2 KWh/m2/day for an extended period from December to March [4].
+        </s>
+        <s pid="13" sid="5">
+         Washtenaw County has the potential to provide 150-200 Tonnes of fuel to a Biomass plant annually, sufficient for only 20MW power generation [5].
+        </s>
+        <s pid="13" sid="6">
+         Hydro and landfill account for less than 8% of the city’s electricity demand, with limited potential of further development [#REF 2] .
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         This makes it evident that no one resource has the capacity to sustain UM’s demand round the year.
+        </s>
+        <s pid="14" sid="2">
+         The way forward to utilize renewable energies is to find the optimum, cost-effective combination of all of these resources to power UM.
+        </s>
+        <s pid="14" sid="3">
+         With such resources being available in abundance not too far from Ann Arbor, it can also prove rewarding to consider renewable options outside the city’s limits.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.3 Renewable Energy Potential in Michigan
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         A brief assessment of each of the renewable energies done is provided below.
+        </s>
+        <s pid="15" sid="2">
+         The modeling approach to optimize siting and sizing follows next
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         2.3.1 Wind
+        </div>
+        <p>
+         <s pid="16" sid="1">
+          A distribution generation network is most effective when power generation units are not far removed from the site of power consumption.
+         </s>
+         <s pid="16" sid="2">
+          For this reason, the NREL wind maps were explored within 100-120 mile radius of Ann Arbor.
+         </s>
+         <s pid="16" sid="3">
+          Central and southern Michigan lie in Class 2 wind regions, with scattered pockets of Class 3 winds.
+         </s>
+         <s pid="16" sid="4">
+          Five sites were geographically dispersed in these high wind density pockets to suppress the inherent variability.
+         </s>
+         <s pid="16" sid="5">
+          The transient wind speed data at four of the five chosen sites - Carsonville, Deerfield, Twinning and Hudsonville, had been recorded at a height of 30m [6], while the data at Chrysler Proving Grounds in Chelsea was at 80m [#REF 3] .
+         </s>
+         <s pid="16" sid="6">
+          The One-seventh power law [#REF 4] [7] was used to condition the wind speeds to a height of 50m and 100m.
+         </s>
+        </p>
+        <p>
+         <s pid="17" sid="1">
+          Three turbines with different power ratings were chosen for analysis – Bonus 300, Nordex S77/1500k
+         </s>
+         <s pid="17" sid="2">
+          W and Nordex N100/2500kW [#REF 5] .
+         </s>
+         <s pid="17" sid="3">
+          The performance of these turbines was evaluated at each of the selected sites to maximize power output with least capital investment.
+         </s>
+        </p>
+        <p>
+         <s pid="18" sid="1">
+          Offshore wind potential along the great lakes offers an extremely potent solution to Michigan’s power demand.
+         </s>
+         <s pid="18" sid="2">
+          However the limited wind speed data and complexity of transmission and technology involved in such an analysis put it outside the scope of present study.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         2.3.2 Solar
+        </div>
+        <p>
+         <s pid="19" sid="1">
+          Building large-scale solar PV farms requires buying big blocks of land – an additional cost over and above the cost of buying and installing solar PV arrays.
+         </s>
+         <s pid="19" sid="2">
+          The roof-tops of University buildings provide a massive flat area to tap solar insolation.
+         </s>
+         <s pid="19" sid="3">
+          Roof area in Ann Arbor is estimated [#REF 6] at 85,800,000 ft2.
+         </s>
+         <s pid="19" sid="4">
+          We assumed 25% of this was for UM buildings and further, a maximum of 25% of that would be available for PV installations [#REF 7] .
+         </s>
+         <s pid="19" sid="5">
+          The availability of vacant/waste-lands for solar farms was also considered.
+         </s>
+        </p>
+        <p>
+         <s pid="20" sid="1">
+          Due to weather patterns, solar insolation intensity at ground level can vary substantially in a matter of just a few miles.
+         </s>
+         <s pid="20" sid="2">
+          Reliable data for solar insolation in Ann Arbor was found only for one site [8].
+         </s>
+         <s pid="20" sid="3">
+          To increase the fidelity of the system towards small scale weather changes within Ann Arbor, data was taken from 3 more sites close to Ann Arbor - Detroit Airport in East, Jackson in West, and Howell in North.
+         </s>
+         <s pid="20" sid="4">
+          To simplify the case, it was further assumed that the UM buildings in Ann Arbor are distributed evenly in North, South, East and West regions.
+         </s>
+         <s pid="20" sid="5">
+          This approach makes it possible to maintain proximity of power generation sites, while improving system fidelity.
+         </s>
+        </p>
+        <p>
+         <s pid="21" sid="1">
+          Most solar PV panels available in market today operate in the range of 10-14% efficiency.
+         </s>
+         <s pid="21" sid="2">
+          However, practical-use multi-crystalline silicon solar cells have recently been made available, with efficiency of 18.6% [9] and efficiency as high as 40% have been achieved in laboratories [10].
+         </s>
+         <s pid="21" sid="3">
+          With a projected time period of transition to 100% renewable energies of 30-50 years, it can be safely assumed that solar panels deployed for electricity generation will have an average efficiency of 18.6%.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         2.3.3 Biomass
+        </div>
+        <p>
+         <s pid="22" sid="1">
+          Both Wind and Solar power are beyond human control.
+         </s>
+         <s pid="22" sid="2">
+          Therefore, it is imperative that biomass power generation plants with low response time be available.
+         </s>
+        </p>
+        <p>
+         <s pid="23" sid="1">
+          Appendix
+         </s>
+         <s pid="23" sid="2">
+          A shows the map of Michigan with a circle of 50 mile radius drawn around Ann Arbor.
+         </s>
+         <s pid="23" sid="3">
+          A comparison with the NREL Biomass availability map [11] revealed that Washtenaw, Wayne, Lenawee and Hillsdale Counties have a combined biomass potential of 900,000 Tonnes – enough to sustain a 100MW Biomass plant.
+         </s>
+         <s pid="23" sid="4">
+          These counties do not cater to any major Biomass plant as of now [12].
+         </s>
+        </p>
+        <p>
+         <s pid="24" sid="1">
+          Ann Arbor is located in a strategically good location to accrue biomass from all 4 counties.
+         </s>
+         <s pid="24" sid="2">
+          Moreover, a Biomass plant here can be easily coupled with UM’s transmission system, thus eliminating transmission cost.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         2.3.4 Other Resources (landfill, hydro)
+        </div>
+        <p>
+         <s pid="25" sid="1">
+          Barton and Superior Dams located on Huron River, running at 60%-80% of their maximum potential, are able to generate only 8.5 million KWh.
+         </s>
+         <s pid="25" sid="2">
+          The city’s landfill power generation facility is nearing the end of its service-life, with no immediate plans to replace it [#REF 3] .
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        2.4 Storage
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         Modeling of renewable resources against university demand showed that 37% of the time during the year, all renewable energies put together could not match university demand.
+        </s>
+        <s pid="26" sid="2">
+         In the period from late July to early October, the electricity demand peaks (Fig 4).
+        </s>
+        <s pid="26" sid="3">
+         This coincides with the time when average wind power is at its minimum and solar power generation is falling from peak.
+        </s>
+        <s pid="26" sid="4">
+         Ramping up biomass capacity is not able to compensate for the increase in demand.
+        </s>
+        <s pid="26" sid="5">
+         Therefore, it is extremely important to develop a long term energy storage facility that can store the excess electricity generated during winter months and discharge that during the summer to meet peak demand.
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         A short term energy storage capacity with extremely low response time is also required to compensate for peak-shaving.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         Several energy storage technologies were considered [13].
+        </s>
+        <s pid="28" sid="2">
+         Compressed Air Energy Storage (CAES) and Pumped Hydro Electricity Storage (PHES) technologies provide the option of energy storage over required period time.
+        </s>
+        <s pid="28" sid="3">
+         However, current CAES facilities utilize combustion of natural gas to boost efficiency of the system, which sets a drawback to the initial goal of going 100% renewable.
+        </s>
+        <s pid="28" sid="4">
+         The option of utilizing Biogas instead of natural gas was considered, but found to have impractical efficiency.
+        </s>
+        <s pid="28" sid="5">
+         The Ludington PHES located on Lake Michigan has the capability of storing 1.9GWh energy [14].
+        </s>
+        <s pid="28" sid="6">
+         A similar facility can fulfill UM’s long-term storage requirement.
+        </s>
+        <s pid="28" sid="7">
+         The technology has a conversion efficiency of 65-80%.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       3. RESOURCE MODELING AND RESULTS
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        An optimization algorithm (Appendix II) was developed, and MATLAB script was written to systematically analyze various combinations of renewable energies (APPENDIX B).
+       </s>
+       <s pid="29" sid="2">
+        Several strategies were considered in the study to arrive at an optimized allocation of resources.
+       </s>
+       <s pid="29" sid="3">
+        One strategy dealt with large Wind farms with relatively small investment in Solar, while another focused on optimizing long-term storage requirement of the system.
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        For simplicity of the model only one storage system was considered, which could cater to both long and short term storage requirements.
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        Site selection for Wind farms and Biomass plant allocation was based on detailed evaluation of renewable resources in vicinity of Ann Arbor (siting shown in Appendix A).
+       </s>
+       <s pid="31" sid="2">
+        The Twinning location was found to be unsuitable for wind-power generation in cost effective manner and was dropped from the model.
+       </s>
+       <s pid="31" sid="3">
+        The MATLAB results showed that total wind power potential dropped 60% during the summer months.
+       </s>
+       <s pid="31" sid="4">
+        Increased solar insolation in summer was able to partially compensate for this drop.
+       </s>
+       <s pid="31" sid="5">
+        The size of total solar installations was iteratively optimized to 200,000m2 – ~11% of total University roof-tops.
+       </s>
+       <s pid="31" sid="6">
+        The remaining electricity demand was fulfilled through a 55MW biomass plant and large pumped storage.
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        Several iterations were done to evaluate these resources and the following combination was found to be most cost effective
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        Table 1: Summation of the Energy sources
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="34" sid="1">
+        Fig.3.
+       </s>
+       <s pid="34" sid="2">
+        Renewable Energy Contribution to UM’s power demand on (a) typical peak summer day (b) typical winter day
+       </s>
+      </p>
+      <p>
+       <s pid="35" sid="1">
+        Blue: Wind Power, Yellow: Solar PV, Green: Biomass, Red: Energy from Storage
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="36" sid="1">
+        Figure 4.
+       </s>
+       <s pid="36" sid="2">
+        Renewable Energy Contribution to Total Consumption during each day (24 hour periods) over the year
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       4. DISCUSSION
+      </div>
+      <p>
+       <s pid="37" sid="1">
+        Our findings reveal that a combination of renewable energy resources strategically distributed in the state of Michigan together with energy storage can provide UM’s electricity demand around the clock.
+       </s>
+       <s pid="37" sid="2">
+        However, this comes with a few caveats.
+       </s>
+       <s pid="37" sid="3">
+        A considerable quantity of energy needs to be stored.
+       </s>
+       <s pid="37" sid="4">
+        During the winter months when electricity consumption is relatively low, renewables are able to meet UM’s demand and store excess electricity generated.
+       </s>
+       <s pid="37" sid="5">
+        In the summer, when consumption peaks, a significant proportion is met by the energy coming from storage facility and operating the biomass power plant at maximum capacity.
+       </s>
+       <s pid="37" sid="6">
+        Thus the importance of energy conservation and efficiency in reducing peak demand (and therefore, dependence on storage) cannot be overemphasized.
+       </s>
+      </p>
+      <p>
+       <s pid="38" sid="1">
+        For solar PV, only a fraction of the available roof areas were considered for deployment in the current model.
+       </s>
+       <s pid="38" sid="2">
+        This is primarily due to the low efficiency of PV panels presently available.
+       </s>
+       <s pid="38" sid="3">
+        However, with 40% efficiency being achieved in laboratory experiments, higher emphasis on solar power generation can be expected.
+       </s>
+       <s pid="38" sid="4">
+        Also, preliminary assessment of UM north campus parking lot area totaled to 135,000m2 – sufficient to provide 35% of North Campus’ power.
+       </s>
+       <s pid="38" sid="5">
+        Utilizing these parking lots instead of building roof-tops for solar PV can provide a good cost-benefit.
+       </s>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        Four sites were considered for wind-farm development in this study.
+       </s>
+       <s pid="39" sid="2">
+        It was found that Washtenaw and Deerfield have good wind speeds at 80m and 100m heights.
+       </s>
+       <s pid="39" sid="3">
+        Therefore, as per availability of land, it can be beneficial to only setup wind turbines in these 2 locations and reduce transmission costs.
+       </s>
+      </p>
+      <p>
+       <s pid="40" sid="1">
+        Even though large investments have been made in wind power development, very limited transient data is available for wind speeds across Michigan.
+       </s>
+       <s pid="40" sid="2">
+        As was found in this study, even though Washtenaw falls in class 2 wind region, the wind speeds at Chrysler Proving Grounds qualify for class 3 regime, suitable for power generation.
+       </s>
+       <s pid="40" sid="3">
+        Many such potential micro-sites can exist scattered all over Michigan.
+       </s>
+       <s pid="40" sid="4">
+        It is therefore very important that wind speeds be monitored and recorded to ease integrated planning.
+       </s>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        Due to sparse data, offshore winds along the Great Lakes were not considered in this study.
+       </s>
+       <s pid="41" sid="2">
+        However, these offshore winds are in class 5 and 6 regimes and hold a high potential.
+       </s>
+      </p>
+      <p>
+       <s pid="42" sid="1">
+        Since Biomass power plants can be accessed on demand, they remain a key source for reliable renewable energy.
+       </s>
+       <s pid="42" sid="2">
+        Sustainable supply of biomass feedstock had been a problem for many years and a disadvantage to biomass implementation.
+       </s>
+       <s pid="42" sid="3">
+        However, new sources, such as Switchgrass and Reed Canary Grass are much easier to grow, are found in closer proximity to Ann Arbor and have higher energy content than previous biomass constituents.
+       </s>
+       <s pid="42" sid="4">
+        Biomass in the control volume considered needs a more thorough analysis.
+       </s>
+       <s pid="42" sid="5">
+        Additional Biomass production capability can be generated by dedicating Ann Arbor Green Belt to high-yield feedstock production.
+       </s>
+      </p>
+      <p>
+       <s pid="43" sid="1">
+        To introduce robustness in the system, it can prove useful to build two small Biomass Power plants – one within Ann Arbor, and one in the middle of a biomass-rich zone, as against one large biomass plant.
+       </s>
+       <s pid="43" sid="2">
+        This way, even if one of the plants needs to shut-down for maintenance and repair, the other plant can come on-line to meet required demand.
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        Pumped hydro was found to be most suitable for UM’s energy storage requirements.
+       </s>
+       <s pid="44" sid="2">
+        However, a particular potential site for such storage could not be identified.
+       </s>
+       <s pid="44" sid="3">
+        The abandoned salt-mines along Lake Huron can be developed for Compressed-air storage, to be used in tandem with biogas instead of natural gas.
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        Throughout this study, it has been observed time and again, that the summer peak demand is a major hindrance in eliminating fossil fuel based power; it puts excessive load on the storage system.
+       </s>
+       <s pid="45" sid="2">
+        Efforts to achieve 100% renewable can only materialize through aggressive energy efficiency programs.
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        Finally, resources outside the bounds of Ann Arbor were explored and tapped to a limited extent in this model.
+       </s>
+       <s pid="46" sid="2">
+        Therefore, an integrated model for the entire state of Michigan, exploiting state-wide renewable resources should prove much more effective.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <ul id="N101E4">
+       <div class="head_1">
+        5. REFERENCES
+       </div>
+       <li id="N101E7">
+        [1] Annual Utility Billing Report, University of Michigan https://po-ns-ebsweb.bf.umich.edu/umich/
+       </li>
+       <li id="N101E9">
+        [2] Technical summary of The Combined Power Plant – Renewable Energy Agency, Germany http://www.kombikraftwerk.de/index.php?id=27
+       </li>
+       <li id="N101EB">
+        [3] Map, Michigan 50 M Wind Power, Department of Energy (DOE) and National Renewable Energy Laboratory (NREL), 9/30/2004
+       </li>
+       <li id="N101ED">
+        [4] Map, Michigan 50 M Wind Power, Department of Energy (DOE) and National Renewable Energy Laboratory (NREL), 9/30/2004
+       </li>
+       <li id="N101EF">
+        [5] Map, Biomass Resources Available in the United States, Department of Energy (DOE) and National Renewable Energy Laboratory (NREL), 9/2004
+       </li>
+       <li id="N101F1">
+        [6]  http://web1.msue.msu.edu/wind/
+       </li>
+       <li id="N101F3">
+        [7] Renewable and Efficient Electric Power Systems, Gilbert Masters, 2001
+       </li>
+       <li id="N101F5">
+        [8]  http://rredc.nrel.gov/solar/old_data/nsrdb/ 1991-2005/tmy3/by_state_and_city.html
+       </li>
+       <li id="N101F7">
+        [9] Mitsubishi electric develops practical-use multi-crystalline silicon solar cell with world’s highest conversion efficiency rate of 18.6%, Product Inquiries: Marketing Department, Nakatsugawa Works Public Relations Division, Mitsubishi Electric Corporation, 3/19/2008
+       </li>
+       <li id="N101F9">
+        [10] New World Record Achieved in Solar Cell Technology: New Solar Cell Breaks the "40 Percent Efficient" Sunlight-to-Electricity Barrier http://www.energy.gov/news/4503.htm
+       </li>
+       <li id="N101FB">
+        [11] Map, Biomass Resources Available in the United States, Department of Energy (DOE) and National Renewable Energy Laboratory (NREL), 9/2004
+       </li>
+       <li id="N101FD">
+        [12] National Electric Energy System (NEEDS) Database for Integrated Planning Model (IPM) 2004 http://www.epa.gov/AIRMARKET/progsregs/epa-ipm/docs/needs_2004.xls
+       </li>
+       <li id="N101FF">
+        [13] Energy Storage Systems-Characteristics and Comparisons, H. Ibrahim, A. Ilinca, J. Perron, 1/5/2007
+       </li>
+       <li id="N10201">
+        [14] ttp://www.consumersenergy.com/apps/pdf/LudingtonPumpedStorage.pdf
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="head_1">
+       APPENDIX A
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Green Pins – Existing Biomass Plants near AA;Yellow Pins – Locations for Solar PV;
+      </p>
+      <p>
+       Blue Pins – Sites for Wind farms; Green Circle – 50 mile radius around AA for Biomass supply
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       APPENDIX B
+      </div>
+      <p>
+       Optimization Algorithm developed for Wind Farm sizing and Resource optimization
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+     </div>
+     <div class="footnotes">
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        1.
+       </a>
+       1 Energy Office, City of Ann Arbor
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        2.
+       </a>
+       2 Power generation data, Barton and Superior Dams, Energy Office – City of Ann Arbor
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        3.
+       </a>
+       3 At the time of this study, data for only 6 months was available from this site. Wind speed data recorded at Atmospheric and Oceanic and Space Sciences building at UM was used to extend this data set for remaining 6 months.
+      </div>
+      <div id="fn4">
+       <a href="#fnref_fn4">
+        4.
+       </a>
+       4 One-seventh power law -
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       where
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       for neutral stability conditions
+      </div>
+      <div id="fn5">
+       <a href="#fnref_fn5">
+        5.
+       </a>
+       5 Detailed power-curve data for GE and VESTAS turbines were not available for comparison
+      </div>
+      <div id="fn6">
+       <a href="#fnref_fn6">
+        6.
+       </a>
+       6 Energy Office, City of Ann Arbor
+      </div>
+      <div id="fn7">
+       <a href="#fnref_fn7">
+        7.
+       </a>
+       7 Total University area of 12.85 km2 as against 71 km2 for City of Ann Arbor
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      41-50
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sirs,
+      </p>
+      <p>
+       Thank you,
+       <ns type="TV">
+        <i>
+         it's
+        </i>
+       </ns>
+       great to hear
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       about my
+       <ns type="R">
+        <i>
+         winning
+        </i>
+       </ns>
+       . You ask me for some
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       - here
+       <ns type="AGA">
+        <i>
+         they
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First I can
+       <ns type="U">
+        <i>
+         do the
+        </i>
+       </ns>
+       travel only in July, because I can't get
+       <ns type="MQ">
+       </ns>
+       <ns type="RP">
+        <i>
+         freetime
+        </i>
+       </ns>
+       in any other month. The next thing is
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that I would prefer a log
+       <ns type="S">
+        <i>
+         cabine
+        </i>
+       </ns>
+       . I don't want to sleep in a tent, because I'm afraid of snakes and similar animals.
+      </p>
+      <p>
+       About the activities
+       <ns type="RT">
+        <i>
+         during
+        </i>
+       </ns>
+       the
+       <ns type="RP">
+        <i>
+         Camp
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I can tell you
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that I like to play
+       <ns type="RP">
+        <i>
+         Tennis
+        </i>
+       </ns>
+       and I
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       it very
+       <ns type="DY">
+        <i>
+         good
+        </i>
+       </ns>
+       . Another thing I want to try, if possible, is to play
+       <ns type="RP">
+        <i>
+         Golf
+        </i>
+       </ns>
+       . It's a very
+       <ns type="RJ">
+        <i>
+         favourite
+        </i>
+       </ns>
+       sport
+       <ns type="W">
+        <i>
+         also in our region (area)
+        </i>
+       </ns>
+       , but I
+       <ns type="RV">
+        <i>
+         did
+        </i>
+       </ns>
+       never found time to do it. I'm a beginner
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Golf
+        </i>
+       </ns>
+       you have to know.
+      </p>
+      <p>
+       Now a question from me to you:
+       <ns type="RP">
+        <i>
+         Is
+        </i>
+       </ns>
+       it possible to pay
+       <ns type="MT">
+       </ns>
+       the different things
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         credit-card
+        </i>
+       </ns>
+       ? Another question - what
+       <ns type="FN">
+        <i>
+         sorts
+        </i>
+       </ns>
+       of clothes shall I bring with me? Is July a hot and dry month or
+       <ns type="RV">
+        <i>
+         is
+        </i>
+       </ns>
+       it
+       <ns type="FV">
+        <i>
+         raining
+        </i>
+       </ns>
+       sometimes?
+      </p>
+      <p>
+       I think
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       this will be all I want to know. If there
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       any other
+       <ns type="AGN">
+        <i>
+         question
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       your part, please call me or write again.
+      </p>
+      <p>
+       I'm looking forward to
+       <ns type="FV">
+        <i>
+         hear
+        </i>
+       </ns>
+       from you,
+      </p>
+      <p>
+       yours
+       <ns type="RY">
+        <i>
+         sincerely
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sirs,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you, it's great to hear for about my winning.
+       </s>
+       <s pid="2" sid="2">
+        You ask me for some informations - here they are.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First I can do the travel only in July, because I can't get  freetime in any other month.
+       </s>
+       <s pid="3" sid="2">
+        The next thing is, that I would prefer a log cabine.
+       </s>
+       <s pid="3" sid="3">
+        I don't want to sleep in a tent, because I'm afraid of snakes and similar animals.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        About the activities during the Camp I can tell you, that I like to play Tennis and I do it very good.
+       </s>
+       <s pid="4" sid="2">
+        Another thing I want to try, if possible, is to play Golf.
+       </s>
+       <s pid="4" sid="3">
+        It's a very favourite sport also in our region (area), but I did never found time to do it.
+       </s>
+       <s pid="4" sid="4">
+        I'm a beginner in Golf you have to know.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Now a question from me to you:
+       </s>
+       <s pid="5" sid="2">
+        Is it possible to pay  the different things with credit-card?
+       </s>
+       <s pid="5" sid="3">
+        Another question - what sorts of clothes shall I bring with me?
+       </s>
+       <s pid="5" sid="4">
+        Is July a hot and dry month or is it raining sometimes?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I think, this will be all I want to know.
+       </s>
+       <s pid="6" sid="2">
+        If there is any other question from your part, please call me or write again.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm looking forward to hear from you,
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Hi Kim,
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         sorry
+        </i>
+       </ns>
+       , I'm late I know, but now I will tell you something about my experience last month.
+      </p>
+      <p>
+       The concert started on the 15th of
+       <ns type="RP">
+        <i>
+         may
+        </i>
+       </ns>
+       and it was a
+       <ns type="L">
+        <i>
+         real
+        </i>
+       </ns>
+       great session in our valley. I was so happy when they
+       <ns type="RV">
+        <i>
+         told
+        </i>
+       </ns>
+       me to help them with the organisation. I was responsible
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         advertisments
+        </i>
+       </ns>
+       and I
+       <ns type="W">
+        <i>
+         had also
+        </i>
+       </ns>
+       to invite the "important
+       <ns type="L">
+        <i>
+         persons
+        </i>
+       </ns>
+       " from our
+       <ns type="S">
+        <i>
+         governement
+        </i>
+       </ns>
+       . It was
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       a new job for me, but I think
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         have done
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         good
+        </i>
+       </ns>
+       . I've learned a lot about management and especially
+       <ns type="UP">
+        <i>
+         -
+        </i>
+       </ns>
+       how stars
+       <ns type="TV">
+        <i>
+         are living
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       One evening we
+       <ns type="W">
+        <i>
+         went all
+        </i>
+       </ns>
+       <ns type="UY">
+        <i>
+         together
+        </i>
+       </ns>
+       out for
+       <ns type="RN">
+        <i>
+         diner
+        </i>
+       </ns>
+       and after we
+       <ns type="RV">
+        <i>
+         visited
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="R">
+        <i>
+         our
+        </i>
+       </ns>
+       new disco. We arrived at home early in the morning - it was great.
+      </p>
+      <p>
+       Now Kim, I will finish my letter but I promise
+       <ns type="UA">
+        <i>
+         you
+        </i>
+       </ns>
+       to write again as soon as possible
+       <ns type="RP">
+        <i>
+         , maybe
+        </i>
+       </ns>
+       if I've developed the photos of the concert and the stars and the ....
+      </p>
+      <p>
+       A good idea
+       <ns type="R">
+        at least
+       </ns>
+       - you come here and I
+       <ns type="TV">
+        <i>
+         tell
+        </i>
+       </ns>
+       you some other
+       <ns type="IN">
+        <i>
+         story's
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         In the meanwhile
+        </i>
+       </ns>
+       enjoy your life -
+      </p>
+      <p>
+       love
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hi Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        sorry, I'm late I know, but now I will tell you something about my experience last month.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The concert started on the 15th of may and it was a real great session in our valley.
+       </s>
+       <s pid="3" sid="2">
+        I was so happy when they told me to help them with the organisation.
+       </s>
+       <s pid="3" sid="3">
+        I was responsible to the advertisments and I had also to invite the "important persons" from our governement.
+       </s>
+       <s pid="3" sid="4">
+        It was realy a new job for me, but I think, I have done good.
+       </s>
+       <s pid="3" sid="5">
+        I've learned a lot about management and especially - how stars are living.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        One evening we went all together out for diner and after we visited  our new disco.
+       </s>
+       <s pid="4" sid="2">
+        We arrived at home early in the morning - it was great.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Now Kim, I will finish my letter but I promise you to write again as soon as possible, maybe if I've developed the photos of the concert and the stars and the ....
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        A good idea at least - you come here and I tell you some other story's.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        In the meanwhile enjoy your life -
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        love
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,343 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Conservation Strategies for the Survival of the Snow Leopard
+     </div>
+     <div class="abstract">
+      Abstract
+      <p>
+       The snow leopard is an endangered species whose populations have been declining in recent years. This paper seeks to answer how snow leopard populations naturally change over time, and how conservation programs can be used to protect these populations and preserve the biodiversity of the planet. Snow leopards are K-selected species, so they live relatively long lives and have few offspring. A life history diagram and population models can be used to understand the life history of the animal, and this life history must be taken into account when designing a conservation plan. Based on population models, cubs and floaters that have not established territories have the lowest rates of survival. Therefore, conservation strategies that focus on increasing the survival of cubs and floaters must be implemented. These strategies can include connecting fragmented habitats, limiting livestock grazing in snow leopard habitat, stocking snow leopard habitat with new prey populations, and cracking down on the illegal trade in black market goods. These strategies can be implemented through government regulations and public awareness campaigns.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        The snow leopard, Panthera uncia or Uncia uncia , is native to the mountains of Central Asia.
+       </s>
+       <s pid="1" sid="2">
+        There are currently an estimated 4,000-6,500 individuals surviving in the wild, however that number has been declining in recent generations, and the species is considered endangered by the IUCN (2008).
+       </s>
+       <s pid="1" sid="3">
+        Current threats to the survival of the snow leopard are loss of habitat, loss of prey species, and poaching.
+       </s>
+       <s pid="1" sid="4">
+        The blue sheep and ibex are the primary natural prey species of the snow leopard, but over-stocking of natural grasslands with livestock has caused the populations of these wild species to decline.
+       </s>
+       <s pid="1" sid="5">
+        Human use of natural grasslands for grazing has also fragmented the natural habitat of the snow leopard, which has forced individuals to stray closer and closer to human-occupied areas.
+       </s>
+       <s pid="1" sid="6">
+        This in turn has increased the chance that herders tending their livestock will kill snow leopards found too close to their animals (IUCN, 2008).
+       </s>
+       <s pid="1" sid="7">
+        Snow leopards are also commonly hunted for their fur and other body parts that are used in traditional medicines and sold on the black market (Snow Leopard Trust, 2008).
+       </s>
+       <s pid="1" sid="8">
+        A conservation plan must be developed to keep the snow leopard from becoming extinct due to human activities.
+       </s>
+       <s pid="1" sid="9">
+        In order to develop such a plan, the life history characteristics of the snow leopard must be taken into account (see Table 1 below).
+       </s>
+       <s pid="1" sid="10">
+        By building a life history diagram, one can better understand how to manage the snow leopard populations to ensure that they will increase or remain constant in the future.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        Table 1: Life history characteristics of the snow leopard
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Data sources: IUCN, 2008, Toriello, 2002 and AnAge database, 2008
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Methods
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        By looking at the life history characteristics above, one can see that the snow leopard is a K-selected species.
+       </s>
+       <s pid="4" sid="2">
+        This means that they live in relatively stable environmental conditions, so they have a small number of offspring, provide a lot of parental care, and reproduce at a later stage in life.
+       </s>
+       <s pid="4" sid="3">
+        To build a life history diagram for this species, we would need to conduct field studies to determine the age-specific survival rate, which is the proportion of individuals surviving from one age class to the next, and the fecundity, which is the number of offspring an individual in each class would produce, for each age class.
+       </s>
+       <s pid="4" sid="4">
+        Chapron and Legendre (2002) estimated the age-specific survival rates of different age groups of the snow leopard based on the survival rates of other large cats such as the tiger and cougar.
+       </s>
+       <s pid="4" sid="5">
+        The different age groups were classified as cubs (0-12 months old), juveniles (12-24 months old), floaters (&amp;gt;24 months old), and breeders (&amp;gt;36 months old).
+       </s>
+       <s pid="4" sid="6">
+        Cubs and juveniles were given a fecundity of 0 because they are too young to breed.
+       </s>
+       <s pid="4" sid="7">
+        Floaters are individuals that have not established a territory, so they do not breed, even though they may be old enough to reproduce.
+       </s>
+       <s pid="4" sid="8">
+        Therefore, they also have a fecundity of 0.
+       </s>
+       <s pid="4" sid="9">
+        Breeders were given a mean litter size, or fecundity of 1.25.
+       </s>
+       <s pid="4" sid="10">
+        Using this data, we can calculate the fertility of each age class by multiplying the age-specific survival by the fecundity of each age class.
+       </s>
+       <s pid="4" sid="11">
+        We can then use this data to make a life history diagram.
+       </s>
+       <s pid="4" sid="12">
+        If we know the number of snow leopards in each age group in the present, we can also put this data into a Leslie matrix that can be used to determine the number of individuals in each age class in the next time step.
+       </s>
+       <s pid="4" sid="13">
+        If the proportion of individuals in each age class remains the same over time, the population is stable.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Results and Discussion
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        Chapron and Legendre calculated the age-specific survival rates of snow leopards under four different scenarios, S0-S3, from pessimistic to optimistic chances for survival.
+       </s>
+       <s pid="5" sid="2">
+        In Table 2 below, I have given the age-specific survival rates calculated based on the S2 scenario, which might reflect how snow leopard populations would react to moderate conservation efforts.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Table 2: Life cycle table for the snow leopard
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        The data in the table above can also be made into a life cycle diagram, as shown in Figure 1.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        Figure 1: Life cycle diagram for the snow leopard
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        As can be seen from the data above, snow leopards have relatively high survival rates under optimistic circumstances.
+       </s>
+       <s pid="9" sid="2">
+        Cubs, however, have the lowest survival rate.
+       </s>
+       <s pid="9" sid="3">
+        According to Chapron and Legendre, only a little more than half of the cubs born survive, and the rest die due to starvation, diseases, and predators.
+       </s>
+       <s pid="9" sid="4">
+        The floater population also has a lower survival rate due to its need to travel through unknown areas to establish a territory.
+       </s>
+       <s pid="9" sid="5">
+        According to the authors, these floaters are unfamiliar with prey distribution and often fall victim to human poaching and retaliatory killings.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        Because cubs and floaters have the lowest survival rates among snow leopard age groups, effective conservation efforts should focus on increasing the chances for survival of these groups.
+       </s>
+       <s pid="10" sid="2">
+        As stated in the introduction, habitat loss is one of the main factors affecting the survival of the snow leopard, and it directly ties in to the survival of cubs and floaters.
+       </s>
+       <s pid="10" sid="3">
+        Because habitats are being increasingly fragmented by human activities, such as the grazing of livestock, floaters are forced to venture into these fragmented zones in search of a new territory.
+       </s>
+       <s pid="10" sid="4">
+        Because fragmentation also negatively affects the populations of the snow leopards’ prey species, a floater may find itself going hungry as it searches for its new territory and its natural prey.
+       </s>
+       <s pid="10" sid="5">
+        If it happens on a herd of cattle, it will more than likely kill the livestock for food, causing herders to kill the leopard in retaliation.
+       </s>
+       <s pid="10" sid="6">
+        In order to end this cycle, a conservation strategy must focus on ending the practice of over-grazing livestock in areas where the snow leopard is known to live.
+       </s>
+       <s pid="10" sid="7">
+        This would have the double benefit of allowing populations of the snow leopard’s prey species to rebound, and it would also limit the interactions between humans and floater leopards.
+       </s>
+       <s pid="10" sid="8">
+        Floaters would be less likely to kill livestock animals that are not put out to graze in their territory, and herders would less likely to kill floaters.
+       </s>
+       <s pid="10" sid="9">
+        Limiting grazing in snow leopard habitat may also allow fragmented habitat areas to reconnect, which may decrease the number of leopards that are killed by poaching.
+       </s>
+       <s pid="10" sid="10">
+        Livestock grazing areas may be the entry points into the heart of snow leopard habitat for poachers.
+       </s>
+       <s pid="10" sid="11">
+        If the natural wilderness was allowed to re-join fragmented areas of habitat, the snow leopards would have a central habitat where they could withdraw to be protected from illegal poaching.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        The survival of cubs can also be increased by limiting the grazing of livestock within snow leopard habitat.
+       </s>
+       <s pid="11" sid="2">
+        Since starvation is one of the main causes of cub mortality, increasing the natural prey of the snow leopards will also help to increase the cubs’ chances for survival.
+       </s>
+       <s pid="11" sid="3">
+        This can be done through removing livestock from native grasslands, and it can also possibly be done by stocking grasslands with the snow leopards’ natural prey species.
+       </s>
+       <s pid="11" sid="4">
+        This may prove to be only a short-term solution, however, if grazing pressure by livestock is not decreased.
+       </s>
+       <s pid="11" sid="5">
+        Cubs may also be protected from starvation if the survival of the older leopards that care for them is increased.
+       </s>
+       <s pid="11" sid="6">
+        These older leopards may be more susceptible to being killed by poachers, so properly enforcing anti-poaching laws would ensure their increased survival, which would ensure that more cubs would be properly fed and cared for.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        The results of Chaperon and Legendre’s analysis showed that snow leopard populations can have a growth rate of up to 16% if the initial population is large enough.
+       </s>
+       <s pid="12" sid="2">
+        Figure 2 shows a graph of the probability of extinction based on different population sizes of the snow leopard.
+       </s>
+       <s pid="12" sid="3">
+        Under each scenario except the most pessimistic one, the larger a population is, the less likely it is to become extinct.
+       </s>
+       <s pid="12" sid="4">
+        Unfortunately, the snow leopards may currently be living under the most pessimistic scenario because their populations have been declining in recent years and the species is considered to be in danger of extinction.
+       </s>
+       <s pid="12" sid="5">
+        Chaperon and Legendre’s analysis also revealed that the survival of the breeders was the most important factor in determining population growth rate.
+       </s>
+       <s pid="12" sid="6">
+        Breeders have a fairly high survival rate, but if the survival rate of cubs and floaters is increased, even more breeders can be added to the existing population in future time steps.
+       </s>
+       <s pid="12" sid="7">
+        This would ensure the future growth of the population.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        Figure 2: Probability of extinction of the snow leopard based on population size under differing scenarios
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Conclusions
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        In order to successfully conserve snow leopard habitat, the survival rates of cubs and floaters must be increased.
+       </s>
+       <s pid="14" sid="2">
+        This may be done through a number of different strategies.
+       </s>
+       <s pid="14" sid="3">
+        The first would be to limit the grazing of livestock in snow leopard habitat, thereby allowing fragmented habitats to reconnect and natural prey populations to increase.
+       </s>
+       <s pid="14" sid="4">
+        This may be done through government regulations, in which certain areas are allowed to be used for grazing, and others are blocked off as protected habitat.
+       </s>
+       <s pid="14" sid="5">
+        In the areas where grazing is allowed, the government may also put restrictions on the number of animals that may be put out to graze.
+       </s>
+       <s pid="14" sid="6">
+        If the resulting area is not large enough to allow citizens to effectively graze all their livestock, the government might also consider establishing new grazing grounds outside of the snow leopard’s habitat.
+       </s>
+       <s pid="14" sid="7">
+        Another method by which grazing pressure may be reduced is through public awareness campaigns.
+       </s>
+       <s pid="14" sid="8">
+        Educating local farmers about the negative effects overgrazing can have on snow leopard populations may be enough to cause them to voluntarily move their livestock somewhere else.
+       </s>
+       <s pid="14" sid="9">
+        Another strategy than can lead to an increase in snow leopard populations is for local law enforcement to crack down on the black market in which goods made from snow leopard pelts and other body parts are sold.
+       </s>
+       <s pid="14" sid="10">
+        If poachers face real consequences for illegally killing and selling products made from the snow leopard, the threat of poaching on leopard populations may be diminished.
+       </s>
+       <s pid="14" sid="11">
+        Public awareness campaigns can also be used in this sense to inform the public about the illegal trade in goods made from endangered species.
+       </s>
+       <s pid="14" sid="12">
+        Knowing the negative effect poaching has on snow leopard populations may cause the community to decrease their demand for the goods.
+       </s>
+       <s pid="14" sid="13">
+        Public education may be the most effective way overall to communicate the importance of conserving snow leopard habitat and protecting snow leopard populations.
+       </s>
+       <s pid="14" sid="14">
+        Local governments would need the cooperation of citizens in any conservation program they might chose to implement.
+       </s>
+       <s pid="14" sid="15">
+        However, it is clear that a strategy must be put into place soon before snow leopard populations become so degraded that they cannot re-establish themselves.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N10169">
+       <li id="N1016A">
+        AnAge database. 2008. AnAge entry for Uncia uncia. AnAge database online. Accessed October 26, 2008 at http://genomics.senescence.info/species/entry.php?species=Uncia_uncia.
+       </li>
+       <li id="N1016C">
+        Chapron, G. and S. Legendre. 2002.Some insights into snow leopard (Uncia uncia) demography using stage-structured population models. Conference proceeding. Accessed October 27, 2008 at http://www.snowleopardnetwork.org/bibliography/cgsi02.pdf.
+       </li>
+       <li id="N1016E">
+        IUCN 2008. Panthera uncia. 2008 IUCN Red List of Threatened Species. Accessed October 26, 2008 at http://www.iucnredlist.org/details/22732.
+       </li>
+       <li id="N10170">
+        Snow Leopard Trust. 2008. Threats. Snow Leopard Trust online. Accessed October 26, 2008 at http://www.snowleopard.org/catfactsclassroom/catfacts/threats/document_view.
+       </li>
+       <li id="N10172">
+        Toriello, K. 2002. "Uncia uncia" (On-line), Animal Diversity Web. Accessed October 26, 2008 at http://animaldiversity.ummz.umich.edu/site/accounts/information/Uncia_uncia.html.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

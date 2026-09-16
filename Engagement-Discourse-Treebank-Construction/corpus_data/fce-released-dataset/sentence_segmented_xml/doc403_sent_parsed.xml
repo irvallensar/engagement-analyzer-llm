@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     38.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       13.06.2000
+      </p>
+      <p>
+       Dear Mrs. Ryan,
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         thank
+        </i>
+       </ns>
+       you very much for your letter. I am happy that I won the first prize and I am looking forward to travelling to California.
+      </p>
+      <p>
+       You
+       <ns type="TV">
+        <i>
+         have had
+        </i>
+       </ns>
+       some questions which I would like to answer now:
+      </p>
+      <p>
+       - Time of travelling:
+       <ns type="R">
+        <i>
+         <ns type="RP">
+          <i>
+           According to
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the vacations and school holidays in Germany I am only able to travel in July. Due to this fact I hope you can arrange it for me.
+      </p>
+      <p>
+       -
+       <ns type="S">
+        <i>
+         Accomodation
+        </i>
+       </ns>
+       :
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         <ns type="RP">
+          <i>
+           Log cabins
+          </i>
+         </ns>
+        </i>
+       </ns>
+       would be nice for me to stay in when I am in California. You
+       <ns type="SX">
+        <i>
+         now
+        </i>
+       </ns>
+       that we are not used to living in such high temperatures in Germany as
+       <ns type="R">
+        <i>
+         it will be then
+        </i>
+       </ns>
+       in California. I suppose I will have more fun if there is a cabin which is air conditioned. If there are only tents available at this time it will not be a problem for me
+       <ns type="RY">
+        <i>
+         , too
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       - Activities:
+       <ns type="RP">
+        <i>
+         During
+        </i>
+       </ns>
+       my stay I would like to do swimming and surfing. I know it will be hot there and California is famous for its beaches. I am a good swimmer and hope to improve my swimming style, too.
+       <ns type="ID">
+        <i>
+         On the other side
+        </i>
+       </ns>
+       I have no experience
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       surfing
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       - I am an absolute beginner with high motivation.
+      </p>
+      <p>
+       - Additional question:
+       <ns type="RP">
+        <i>
+         Could
+        </i>
+       </ns>
+       you tell me how much extra money is usually needed for a
+       <ns type="RP">
+        <i>
+         two week
+        </i>
+       </ns>
+       camping
+       <ns type="MN">
+       </ns>
+       ?
+      </p>
+      <p>
+       I am looking forward to getting further information from you.
+       <ns type="L">
+        Greetings
+       </ns>
+       from Germany!
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Bruno Aachen
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        13.06.2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Mrs. Ryan,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        thank you very much for your letter.
+       </s>
+       <s pid="3" sid="2">
+        I am happy that I won the first prize and I am looking forward to travelling to California.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        You have had some questions which I would like to answer now:
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        - Time of travelling:
+       </s>
+       <s pid="5" sid="2">
+        According to the vacations and school holidays in Germany I am only able to travel in July.
+       </s>
+       <s pid="5" sid="3">
+        Due to this fact I hope you can arrange it for me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        - Accomodation:
+       </s>
+       <s pid="6" sid="2">
+        Log cabins would be nice for me to stay in when I am in California.
+       </s>
+       <s pid="6" sid="3">
+        You now that we are not used to living in such high temperatures in Germany as it will be then in California.
+       </s>
+       <s pid="6" sid="4">
+        I suppose I will have more fun if there is a cabin which is air conditioned.
+       </s>
+       <s pid="6" sid="5">
+        If there are only tents available at this time it will not be a problem for me , too.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        - Activities:
+       </s>
+       <s pid="7" sid="2">
+        During my stay I would like to do swimming and surfing.
+       </s>
+       <s pid="7" sid="3">
+        I know it will be hot there and California is famous for its beaches.
+       </s>
+       <s pid="7" sid="4">
+        I am a good swimmer and hope to improve my swimming style, too.
+       </s>
+       <s pid="7" sid="5">
+        On the other side I have no experience in surfing, - I am an absolute beginner with high motivation.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        - Additional question:
+       </s>
+       <s pid="8" sid="2">
+        Could you tell me how much extra money is usually needed for a two week camping ?
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I am looking forward to getting further information from you.
+       </s>
+       <s pid="9" sid="2">
+        Greetings from Germany!
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Bruno Aachen
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       "Shopping is not always enjoyable".
+      </p>
+      <p>
+       Before we can give our opinions on this
+       <ns type="S">
+        <i>
+         statemant
+        </i>
+       </ns>
+       we have to make sure that everyone knows what we are discussing
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       'Shopping'
+       <ns type="RV">
+        <i>
+         stands for
+        </i>
+       </ns>
+       buying goods for your daily requirements, e.g. food, clothes. We do not speak here about
+       <ns type="S">
+        <i>
+         luxuary
+        </i>
+       </ns>
+       goods.
+      </p>
+      <p>
+       In this
+       <ns type="RN">
+        <i>
+         contest
+        </i>
+       </ns>
+       , shopping means a compulsory exercise you have to do regularly and frequently. It is not enjoyable if you look
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       it as a duty. But if you realize how important
+       <ns type="UT">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         is for your health what you buy
+        </i>
+       </ns>
+       you will go shopping with
+       <ns type="R">
+        <i>
+         much more
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         consiousness
+        </i>
+       </ns>
+       and
+       <ns type="MQ">
+       </ns>
+       joy than before. 'Shopping' could be annoying if you look
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       it as a waste of time because you do it every day. Reorganize your
+       <ns type="RN">
+        <i>
+         behaviour of
+        </i>
+       </ns>
+       shopping and plan to keep food in stock! Try the
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       and use e-business and
+       <ns type="RP">
+        <i>
+         online-shopping
+        </i>
+       </ns>
+       to order your pants for example.
+      </p>
+      <p>
+       This is even
+       <ns type="RJ">
+        <i>
+         an appropriate
+        </i>
+       </ns>
+       way to get around
+       <ns type="MD">
+       </ns>
+       unfriendly service you get to know if you have to buy something in a shop right before closing time. Choose your clothes at home
+       <ns type="RT">
+        <i>
+         after
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         have ordered
+        </i>
+       </ns>
+       them by e-mail! Another
+       <ns type="RN">
+        <i>
+         solution
+        </i>
+       </ns>
+       to get a friendlier service is of course to go to another shop.
+      </p>
+      <p>
+       You have been presented
+       <ns type="MT">
+       </ns>
+       some
+       <ns type="RN">
+        <i>
+         causes
+        </i>
+       </ns>
+       why shopping is not always enjoyable. There are ways of
+       <ns type="R">
+        <i>
+         behaviour to make more fun of it
+        </i>
+       </ns>
+       . It depends on every individual to change your mind and
+       <ns type="RV">
+        <i>
+         act
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         as
+        </i>
+       </ns>
+       a 'smart' shopper.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        "Shopping is not always enjoyable".
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Before we can give our opinions on this statemant we have to make sure that everyone knows what we are discussing about.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        'Shopping' stands for buying goods for your daily requirements, e.g. food, clothes.
+       </s>
+       <s pid="3" sid="2">
+        We do not speak here about luxuary goods.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In this contest, shopping means a compulsory exercise you have to do regularly and frequently.
+       </s>
+       <s pid="4" sid="2">
+        It is not enjoyable if you look at it as a duty.
+       </s>
+       <s pid="4" sid="3">
+        But if you realize how important it is for your health what you buy you will go shopping with much more consiousness and  joy than before.
+       </s>
+       <s pid="4" sid="4">
+        'Shopping' could be annoying if you look at it as a waste of time because you do it every day.
+       </s>
+       <s pid="4" sid="5">
+        Reorganize your behaviour of shopping and plan to keep food in stock!
+       </s>
+       <s pid="4" sid="6">
+        Try the internet and use e-business and online-shopping to order your pants for example.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        This is even an appropriate way to get around  unfriendly service you get to know if you have to buy something in a shop right before closing time.
+       </s>
+       <s pid="5" sid="2">
+        Choose your clothes at home after you have ordered them by e-mail!
+       </s>
+       <s pid="5" sid="3">
+        Another solution to get a friendlier service is of course to go to another shop.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        You have been presented  some causes why shopping is not always enjoyable.
+       </s>
+       <s pid="6" sid="2">
+        There are ways of behaviour to make more fun of it.
+       </s>
+       <s pid="6" sid="3">
+        It depends on every individual to change your mind and act as a 'smart' shopper.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

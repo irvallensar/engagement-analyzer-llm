@@ -1,0 +1,472 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    A Model of the Discrepancy between Corporate Income Tax Report and Output Announcements
+   </div>
+   <div class="abstract">
+    Abstract
+    <p>
+     This paper investigates how marginal tax rates and monetary incentive affect a CEO's decision to (i) understate taxable income; and (ii) overstate output in the context of principal-agent model. Under the rational expectations, the market should correctly conjecture the levels of falsification when the gap between these two choices of the falsification incurs costs. A calibration exercise shows that while higher marginal tax rates cause CEOs to understate taxable income
+     <i>
+      more
+     </i>
+     and overstate the output
+     <i>
+      less
+     </i>
+     , stronger monetary incentives cause CEOs to understate taxable income
+     <i>
+      less
+     </i>
+     and overstate the output
+     <i>
+      more
+     </i>
+     .
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     1. Introduction
+    </div>
+    <p>
+     There has been a large body of research regarding underreporting real outputs to the IRS to evade or to avoid corporate tax. There have been also large amount of research on the relationship between the overstatement of the reported output and management compensation. While we have plenty of works done for either of the falsifications, however, it is relatively in recent years that both falsifications are dealt as an agent's simultaneous decision problem under information asymmetry, or in principal-agent problem context.
+    </p>
+    <p>
+     Erickson, Hanlon, and Maydew (2002) examined the extent, if any, to which firms pay additional income taxes on allegedly fraudulent earnings. They found that firms are willing to sacrifice substantial cash to inflate their accounting earnings, which is not assumed in pure tax evasion problem. Desai and Dharmapala (2004) also analyzed the relationship between the compensation and tax sheltering, and concluded that the increases in incentive compensation tend to reduce the level of tax sheltering. Crocker and Slemrod (2003), adopting the optimal insurance model developed by Crocker and Morgan (1998), suggested the optimal contract for the CFO under information asymmetry between the CFO and shareholders and the possibility of falsification of taxable income report.
+    </p>
+    <p>
+     In many cases, both the overstatement of output to the market and understatement of taxable income to the IRS must be decided at the same time. In addition, and one incentive acts in the opposite direction to the other one. In this paper, adopting the implication of an embellishment under rational expectation from Kwon and Yeo (2005), I analyzed a relationship between the level of both reports - tax and output - under different marginal tax rate, intensity of compensation, and the level of output by calibration.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     2. Model
+    </div>
+    <p>
+     An agent (e.g. CEO) is risk-neutral and is assumed to have private information regarding the level of non-negative effort a and that of non-negative manipulation ma. The real output of the company y is determined by
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (1)
+    </p>
+    <p>
+     where ε is an unobservable state noise such that E(ε) = 0.
+    </p>
+    <p>
+     After the real output is observed by the agent, she announces the reported output for her firm to the public. The announced output, which is public, is the sum of the extent of manipulation and real output as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (2)
+    </p>
+    <p>
+     Now, there is a risk-neutral principal (e.g. a representative shareholder) and he wants to make a contract with the agent. The distribution of the real output y is known to the principal, but he only knows the reported output. The support of y is assumed as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    .While the principal does not know the amount of manipulation ma, under rational expectation, he is able to guess the level of manipulation μ based on the reported output ya.
+    <p>
+    </p>
+    <p>
+     Finally, the company has to pay corporate income tax, which depends on the level of income. Note the reported income in this case is not necessarily the same as that released as output announcement. The company report different level of income yt = y + mt to IRS, and the corporate income tax rate t is determined as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (3)
+    </p>
+    <p>
+     where τ is the marginal corporate tax rate and r is a constant.
+    </p>
+    <p>
+     The timing of this model is as following: First, the agent chooses her level of effort a. Second, after the real output y is revealed, she decides the level of manipulation ma and mt. Third, the output is announced as ya, and separately report the income yt to the IRS, and, based on it, marginal tax rate t is determined. Fourth, stock return for the firm ys is determined by the market, based on the reported output ya minus the level of market conjecture on the level of manipulation μ and the income tax rate
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , as
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . Fifth, compensation is given to the agent as α + β(ys) according to a linear compensation contract (α, β), where α means fixed salary and β means the strength of the incentive.
+    <p>
+    </p>
+    <p>
+     The agent's expected utility is the following function of effort, manipulation, tax, and market-conjectured level of manipulation as:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (4)
+    </p>
+    <p>
+     Under risk neutral utility assumption we can rewrite this equation as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (5)
+    </p>
+    <p>
+     where c(a, ma, mt) means cost of effort and manipulation. We assume that c(a, ma, mt) can be separable into c(a), c(ma), c(mt),and c(ma - mt), which are convex (i.e. c' &gt; 0 and c" &gt; 0) and satisfy c'(0) = 0 and c'(∞) = ∞. These assumptions about cost functions of the agent imply that costs of putting effort or manipulation costs increase with respect to the size of overstatement. In addition, we assume that the wider the gap between the overstatement and the understatement is, the higher the cost is. For simplicity, we assume quadratic form of cost functions as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (6)
+    </p>
+    <p>
+     where km and kd are exogenous constants.
+    </p>
+    <p>
+     The principal's payoff Π(a, ma, mt | y) is based on the anticipated real output ys. Stock returns are also determined based on it. After the returns are determined, the agent gets paid proportional to them and shareholders will receive the rest of them as:
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (7)
+    </p>
+    <p>
+     We solve any multi-stage game backward. At the end of the game, with the realized output y after choosing the optimal effort a*, the agent's problem is
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (8)
+    </p>
+    <p>
+     In other words, the agent's problem at the final stage is to choose the optimal level of manipulation for the market and the IRS, respectively. The first order condition is
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (9')
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (9")
+    </p>
+    <p>
+     To simplify, let r = 0. It makes sense because the corporate tax rate is zero when the reported income level is the least. Now the equations (9') and (9") can be rewritten as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (10')
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (10")
+    </p>
+    <p>
+     From Kwon and Yeo (2005), under rational expectation, ma* should be equal to μ*, and from the equation (2) and (3), we can derive dma = dya, and dmt = dyt. The equation (10') and (10") would be written as
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (11')
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (11")
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     The analytical solution of the equation (11') is
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (12)
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     From (11"), we can derive the optimal level of misreport on tax as
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (13)
+    </p>
+    <p>
+     Under assumption that the support of y is
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    , the level of market-conjectured manipulation on the output ma and tax manipulation mt should be zero if real output y = 0, or y = ya = 0. So, the value of A is determined as
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . We know that ma* should be equal to μ* under rational expectation, and the equation (12) can be rewritten as
+    <p>
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (14')
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     and the equation (13) can be rewritten as
+    </div>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     (14")
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     3. Results
+    </div>
+    <p>
+     With two unknown variables ma and mt, and two equations (14') and (14"), we can find the optimal levels of manipulations. Unfortunately, however, an analytical solution does not exist. I did calibration for different level of marginal tax rate τ, the strength of incentive β, and real output y to see the cross relationship between these factors and optimal levels of the understatement of taxable income and overstatement or output. Followings are three findings from the calibration.
+    </p>
+    <p>
+     First, the level of overstatement on output ma decreases with respect to marginal tax rate τ. Beyond one point of marginal tax rate, the announced output is even lower than the real output. On the contrary, the level of understatement of taxable income mt increases with respect to marginal tax rate.
+     <a class="fnref" href="#fn1" id="fnref_fn1">
+      1
+     </a>
+     Second, the amount of falsification for both the understatement of taxable income and the overstatement of output gets higher with respect to the strength of incentive β. Third, as the real output y goes higher, the level of overstatement on output goes lower while the level of understatement on taxable income goes higher. Detailed results of calibration following are attached as tables and graphs.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     4. Conclusion
+    </div>
+    <p>
+     This paper investigates the effects of the marginal tax rates and the strength of monetary incentives of CEOs, and the level of realized output on the two optimal levels of falsifications; the understatement of taxable income and overstatement of output in the context of principal-agent model. While the calibration results show very intuitive ones, several future works are worth pursuing. First, I need to investigate the effect of those factors on the optimal level of effort a, or the amount of labor to get better idea on the optimal progressivity of corporate income taxes. Second, stronger theoretical results are necessary. Even though analytical solution is not achievable, more rigorous calibration and comparative statics are needed to generalize the model. Third, detailed analysis of the calibration is necessary to derive policy implications. Especially, it is necessary to quantize the marginal changes in the level of falsification and that of effort with respect to the changes in the marginal tax rates, the strength of monetary incentives, and the true level of output, respectively. Finally, an empirical model to test the results from Desai and Dharmapala (2004) will be worthwhile. These future works would make this paper have more general and concrete results.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N101DC">
+     <li id="N101DD">
+      Crocker, Keith J. and John Morgan (1998), "Is Honesty the Best Policy? Curtailing Insurance Fraud through Optimal Incentive Contracts." Journal of Political Economy 106, pp. 355-375.
+     </li>
+     <li id="N101DF">
+      Crocker, Keith J. and Joel Slemrod (2003), "Corporate Tax Evasion with Agency Costs." Working paper, University of Michigan.
+     </li>
+     <li id="N101E1">
+      Desai, Mihir A. and Dhammika Dharmapala (2004), "Corporate Tax Avoidance and High Powered Incentives", NBER Working Paper 10471, http://www.nber.org/papers/w10471
+     </li>
+     <li id="N101E3">
+      Erickson, Merle, Michelle Hanlon and Edward L. Maydew, (2002), "How Much Will Firms Pay for Earnings That Do Not Exist? Evidence of Taxes Paid on Allegedly Fraudulent Earnings", http://ssrn.com/abstract=347420
+     </li>
+     <li id="N101E5">
+      Kwon, Illoong and Eunjung Yeo, (2005), "Falsification of State under Rational Expectations", University of Michigan, mimeo.
+     </li>
+    </ul>
+   </div>
+   <div>
+    <div class="head_1">
+     Appendix - Graphs and Tables
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 1 km = kd = 0.5, y = 1.5
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 2 km = kd = 0.5, y = 1.5
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 3 km = kd = 0.5, y = 2
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 4 km = kd = 0.5, y = 2
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 5 km = kd = 0.5, y = 2.5
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Figure 6 km = kd = 0.5, y = 2.5
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 1. km = kd = 0.5, y = 1.5
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 2. km = kd = 0.5, y = 2.0
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     Table 3. km = kd = 0.5, y = 2.5
+     <a class="fnref" href="#fn2" id="fnref_fn2">
+      2
+     </a>
+    </p>
+   </div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 mt gets lower if the amount of underreport gets higher.
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2 I used Mathematica for calibration. It did not give a robust answer for this case.
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      41-50
+     </age>
+    </personnel>
+    <score>
+     29.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       To: Mrs. Smith
+      </p>
+      <p>
+       Thank you for your letter, which arrived on
+       <ns type="MD">
+       </ns>
+       second
+       <ns type="R">
+        <i>
+         .
+        </i>
+       </ns>
+       June. I am very pleased to help to organize this Conference in our College, which will
+       <ns type="TV">
+        <i>
+         hold
+        </i>
+       </ns>
+       at
+       <ns type="MD">
+       </ns>
+       Conference Centre at Bromley College starting on 20th June for 3 days.
+       <ns type="RP">
+        <i>
+         please
+        </i>
+       </ns>
+       find
+       <ns type="MD">
+       </ns>
+       information
+       <ns type="DA">
+        <i>
+         your
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         required
+        </i>
+       </ns>
+       <ns type="RY">
+        as follows
+       </ns>
+       :
+      </p>
+      <p>
+       We have booked the hotel for the group.
+       <ns type="R">
+        <i>
+         Called
+        </i>
+       </ns>
+       "
+       <ns type="RP">
+        <i>
+         palace
+        </i>
+       </ns>
+       Hotel"
+       <ns type="MP">
+       </ns>
+       which is about 10 miles away from our College
+       <ns type="RP">
+        <i>
+         , the
+        </i>
+       </ns>
+       hotel will have a coach to pick the group up from the airport on
+       <ns type="MD">
+       </ns>
+       19th of June and then take the group to
+       <ns type="MD">
+       </ns>
+       Conference and return to
+       <ns type="MD">
+       </ns>
+       hotel every day.
+      </p>
+      <p>
+       Regarding
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       the end-of-conference party
+       <ns type="RP">
+        <i>
+         . We
+        </i>
+       </ns>
+       have
+       <ns type="IV">
+        <i>
+         planed
+        </i>
+       </ns>
+       a barbecue
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       5 oo pm
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       on our most idyllic
+       <ns type="RN">
+        <i>
+         play
+        </i>
+       </ns>
+       field
+       <ns type="MP">
+       </ns>
+       which
+       <ns type="TV">
+        <i>
+         is
+         <ns type="RP">
+          <i>
+           over looking
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the endless Countryside and farms. At 7:00pm
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       we can move to our student hall to
+       <ns type="R">
+        have a
+        <ns type="RN">
+         <i>
+          disc
+         </i>
+        </ns>
+        dance
+       </ns>
+       until 10:00pm.
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         On
+        </i>
+       </ns>
+       the last day, we have arranged a small party in the hotel
+       <ns type="RP">
+        <i>
+         , then
+        </i>
+       </ns>
+       we all set
+       <ns type="RY">
+        <i>
+         up
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       a sightseeing
+       <ns type="M">
+       </ns>
+       Bromley town
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       for about two hours before you leave for
+       <ns type="MD">
+       </ns>
+       airport. Bromley town
+       <ns type="SA">
+        <i>
+         center
+        </i>
+       </ns>
+       is the most beautiful shopping centre in South East London. There are many
+       <ns type="RJ">
+        <i>
+         historical
+        </i>
+       </ns>
+       buildings
+       <ns type="UV">
+        <i>
+         remain
+        </i>
+       </ns>
+       . I think the students will enjoy this sightseeing
+       <ns type="MN">
+       </ns>
+       .
+      </p>
+      <p>
+       If
+       <ns type="R">
+        any further discussion
+       </ns>
+       , please let me know.
+      </p>
+      <p>
+       Yours
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+       sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To: Mrs. Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for your letter, which arrived on  second.
+       </s>
+       <s pid="2" sid="2">
+        June.
+       </s>
+       <s pid="2" sid="3">
+        I am very pleased to help to organize this Conference in our College, which will hold at  Conference Centre at Bromley College starting on 20th June for 3 days.
+       </s>
+       <s pid="2" sid="4">
+        please find  information your required as follows:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        We have booked the hotel for the group.
+       </s>
+       <s pid="3" sid="2">
+        Called "palace Hotel" which is about 10 miles away from our College, the hotel will have a coach to pick the group up from the airport on  19th of June and then take the group to  Conference and return to  hotel every day.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Regarding to the end-of-conference party.
+       </s>
+       <s pid="4" sid="2">
+        We have planed a barbecue at 5 oo pm. on our most idyllic play field which is over looking the endless Countryside and farms.
+       </s>
+       <s pid="4" sid="3">
+        At 7:00pm.
+       </s>
+       <s pid="4" sid="4">
+        we can move to our student hall to have a disc dance until 10:00pm.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        On the last day, we have arranged a small party in the hotel, then we all set up to have a sightseeing  Bromley town center for about two hours before you leave for  airport.
+       </s>
+       <s pid="5" sid="2">
+        Bromley town center is the most beautiful shopping centre in South East London.
+       </s>
+       <s pid="5" sid="3">
+        There are many historical buildings remain.
+       </s>
+       <s pid="5" sid="4">
+        I think the students will enjoy this sightseeing .
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        If any further discussion, please let me know.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours.
+       </s>
+       <s pid="7" sid="2">
+        sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="R">
+        How wonderful "light"
+       </ns>
+      </p>
+      <p>
+       We need light every day, not just
+       <ns type="MT">
+       </ns>
+       <ns type="RP">
+        <i>
+         night time
+        </i>
+       </ns>
+       . We need
+       <ns type="RN">
+        <ns type="RP">
+         <i>
+          lamp light
+         </i>
+        </ns>
+       </ns>
+       in offices
+       <ns type="RC">
+        <i>
+         or
+        </i>
+       </ns>
+       schools
+       <ns type="RC">
+        <i>
+         or
+        </i>
+       </ns>
+       <ns type="RQ">
+        <i>
+         some
+        </i>
+       </ns>
+       places during the
+       <ns type="RP">
+        <i>
+         day time
+        </i>
+       </ns>
+       . How
+       <ns type="AS">
+        <i>
+         is the wonderful life
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         after
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       invention
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="MJ">
+       </ns>
+       light. Here we
+       <ns type="TV">
+        <i>
+         just talk
+        </i>
+       </ns>
+       about
+       <ns type="R">
+        the light we invented
+       </ns>
+       apart from
+       <ns type="DJ">
+        <i>
+         nature
+        </i>
+       </ns>
+       light.
+      </p>
+      <p>
+       When I was small, we lived in
+       <ns type="R">
+        country yard
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         remembered
+        </i>
+       </ns>
+       , we used to have oil lamps which
+       <ns type="R">
+        used a cotton string dipping in the oil in the small bottle and made it burned the tip of the cotton string
+       </ns>
+       to give us light during the
+       <ns type="RN">
+        <i>
+         <ns type="RP">
+          <i>
+           night time
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         was
+        </i>
+       </ns>
+       very little light
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       , and
+       <ns type="M">
+       </ns>
+       many things we couldn't do
+       <ns type="RT">
+        <i>
+         under
+        </i>
+       </ns>
+       the
+       <ns type="M">
+       </ns>
+       oil lamps because the light
+       <ns type="R">
+        range was very small
+       </ns>
+       . There was
+       <ns type="RY">
+        <i>
+         no
+        </i>
+       </ns>
+       any light outside our house,
+       <ns type="MC">
+       </ns>
+       no light on the road or field either. I was always very scared
+       <ns type="RY">
+        whenever
+       </ns>
+       or wherever
+       <ns type="M">
+       </ns>
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       because most places
+       <ns type="R">
+        <ns type="UP">
+         <i>
+          . Covered
+         </i>
+        </ns>
+        by dark, dark and dark
+       </ns>
+       . This
+       <ns type="DJ">
+        <i>
+         scaring
+        </i>
+       </ns>
+       dark is still affecting my life now. I never
+       <ns type="TV">
+        <i>
+         stayed
+        </i>
+       </ns>
+       out after dark today except
+       <ns type="R">
+        accompanying by
+       </ns>
+       my family.
+      </p>
+      <p>
+       What a
+       <ns type="FJ">
+        <i>
+         biggest
+        </i>
+       </ns>
+       person
+       <ns type="U">
+        <i>
+         on the earth
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         , who invented the light, Einstein was
+        </i>
+       </ns>
+       . He created another
+       <ns type="RN">
+        <i>
+         <ns type="RP">
+          <i>
+           day time
+          </i>
+         </ns>
+        </i>
+       </ns>
+       after sunset
+       <ns type="RP">
+        <i>
+         , people
+        </i>
+       </ns>
+       use it to do anything they want to do
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       We believe we can't live without light today,
+       <ns type="RY">
+        <i>
+         specially
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       city
+       <ns type="UN">
+        <i>
+         life
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , we
+        </i>
+       </ns>
+       have a long time to spend
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       activities after
+       <ns type="MD">
+       </ns>
+       Sun
+       <ns type="TV">
+        <i>
+         going
+        </i>
+       </ns>
+       to bed.
+       <ns type="UA">
+        <i>
+         Which we
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         definately
+        </i>
+       </ns>
+       need light to
+       <ns type="RV">
+        keep on
+       </ns>
+       .
+       <ns type="ID">
+        <i>
+         I dare to say
+        </i>
+       </ns>
+       , without light, our life
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       go into a dark, dark hell.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How wonderful "light"
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        We need light every day, not just  night time.
+       </s>
+       <s pid="2" sid="2">
+        We need lamp light in offices or schools or some places during the day time.
+       </s>
+       <s pid="2" sid="3">
+        How is the wonderful life after  invention the  light.
+       </s>
+       <s pid="2" sid="4">
+        Here we just talk about the light we invented apart from nature light.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        When I was small, we lived in country yard, I remembered, we used to have oil lamps which used a cotton string dipping in the oil in the small bottle and made it burned the tip of the cotton string to give us light during the night time, it was very little light on, and  many things we couldn't do under the  oil lamps because the light range was very small.
+       </s>
+       <s pid="3" sid="2">
+        There was no any light outside our house,  no light on the road or field either.
+       </s>
+       <s pid="3" sid="3">
+        I was always very scared whenever or wherever . because most places.
+       </s>
+       <s pid="3" sid="4">
+        Covered by dark, dark and dark.
+       </s>
+       <s pid="3" sid="5">
+        This scaring dark is still affecting my life now.
+       </s>
+       <s pid="3" sid="6">
+        I never stayed out after dark today except accompanying by my family.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        What a biggest person on the earth, who invented the light, Einstein was.
+       </s>
+       <s pid="4" sid="2">
+        He created another day time after sunset, people use it to do anything they want to do, We believe we can't live without light today, specially in  city life, we have a long time to spend for the activities after  Sun going to bed.
+       </s>
+       <s pid="4" sid="3">
+        Which we definately need light to keep on.
+       </s>
+       <s pid="4" sid="4">
+        I dare to say, without light, our life will go into a dark, dark hell.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

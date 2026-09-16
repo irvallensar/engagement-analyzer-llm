@@ -1,0 +1,761 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    The problem of necessary/
+    <i>
+     a posteriori
+    </i>
+    and contingent /
+    <i>
+     a priori
+    </i>
+    truths
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     Introduction
+    </div>
+    <p>
+     In
+     <i>
+      Naming &amp; Necessity
+     </i>
+     [1980] Kripke claims that there are truths that are both contingent and known
+     <i>
+      a priori
+     </i>
+     , and others that are both necessary and
+     <i>
+      a posteriori
+     </i>
+     . In this paper I aim at two goals: (1) to study the cases of necessary/
+     <i>
+      a posteriori
+     </i>
+     and contingent/
+     <i>
+      a priori
+     </i>
+     truths using Stalnaker's two dimensional apparatus; and, given the results of such evaluation, (2) defend that there is a puzzle here, a genuine philosophical befuddlement that should be properly solved.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     The apparatus
+    </div>
+    <p>
+     Stalnaker's two dimensional apparatus is a technical device that is meant to be useful for understanding a particular kind of speech act, that of
+     <i>
+      assertion
+     </i>
+     . It works mainly by accounting for the different things (e.g. propositions) that might be said by (i.e. expressed as the content of) different assertive utterances of any particular sentence.
+    </p>
+    <p>
+     Assertions are the speech acts by which we communicate truths. It is my goal to find out whether certain particular statements express truths that are both necessary and
+     <i>
+      a posteriori
+     </i>
+     . Thus if there are such truths we could, at least in principle, assert them. I will focus on the
+     <i>
+      content determination
+     </i>
+     feature of Stalnaker's apparatus in order to explore whether there are any assertions that may communicate something that is both necessary and
+     <i>
+      a posteriori
+     </i>
+     .
+     <a class="fnref" href="#fn1" id="fnref_fn1">
+      1
+     </a>
+     That is why the two dimensional apparatus is relevant for the discussion. So, let us see how the apparatus works.
+    </p>
+    <p>
+     Some definitions are important to bear in mind:
+    </p>
+    <list>
+     <item>
+      <b>
+       (W)
+      </b>
+      A possible world (w from now on) is a complete way in which the world might be.
+     </item>
+     <item>
+      <b>
+       (P)
+      </b>
+      : A proposition (P from now on) is a representation of the world as being in a certain way (more formally, it is a function from w's to truth values).
+     </item>
+     <item>
+      <b>
+       (PC)
+      </b>
+      A propositional concept (PC from now on) is a function from ordered pairs of w's into truth values.
+     </item>
+     <item>
+      <b>
+       (SP)
+      </b>
+      A speaker presupposition SP is a proposition the truth of which is taken as a background assumption for the conversation.
+     </item>
+     <item>
+      <b>
+       (CS)
+      </b>
+      A context set CS is the set of all w's which are compatible with all SP's.
+     </item>
+    </list>
+    <p>
+     Stalnaker's apparatus has the following tenets:
+    </p>
+    <list>
+     <item>
+      <b>
+       (i)
+      </b>
+      An utterance U of a sentence S expresses a proposition P.
+     </item>
+     <item>
+      <b>
+       (ii)
+      </b>
+      A proposition P is determined by the set of w's which it represents.
+     </item>
+     <item>
+      <b>
+       (iii)
+      </b>
+      A proposition P is determined by the set of w's in which S is uttered.
+     </item>
+     <item>
+      <b>
+       (iv)
+      </b>
+      The main goal of assertion is to reduce CS as to eliminate all w's incompatible with what is said.
+     </item>
+    </list>
+    <p>
+     <b>
+      (i)
+     </b>
+     is an assumption that a good number of philosophers share nowadays. I will not comment on that in this paper, although I think it might be a problematic tenet. What about
+     <b>
+      (ii)
+     </b>
+     and
+     <b>
+      (iii)
+     </b>
+     ? According to
+     <b>
+      (P)
+     </b>
+     , for every P there is a set of w's which are represented by P and which share that particular way of being. But not only, it is also true that for every set of w's that share a particular way of being there is a P which represents that. Thus, there is, as Stalnaker puts it, a one on one correspondence between P's and sets of w's.  The proposition will be true in all the w's of that set and false in all others. That is why it makes sense to understand propositions as functions from w's to truth values; and also why
+     <b>
+      (ii)
+     </b>
+     is part of the tenets of the apparatus.
+    </p>
+    <p>
+     But the content of S is not only determined by the set of w's which it represents but also by the set of w's in which S is asserted. The content of an utterance (e.g. the assertion of P) is determined by the facts of the world in which it is asserted. The world plays a determining role as the context of utterance. This is another sense in which a set of w's determines a proposition, and which is implicit in
+     <b>
+      (iii)
+     </b>
+     .
+    </p>
+    <p>
+     As for
+     <b>
+      (iv)
+     </b>
+     , suffice it to say that when a speaker asserts something it is her intention to get the hearer to believe in what is asserted (e.g. a proposition) and thus, to take the actual world as being in that way. In order to do this it is necessary to reduce the set of possible situations compatible with what is said so that, at the end of the day, there will be one P taken to be said and one w taken to be the actual. If this were not true, then asserting would stop being useful, and perhaps end up being among the endeavors that humans take just for fun. No wonder why Stalnaker takes CS and SP to be central notions for the characterization of speech contexts.
+    </p>
+    <p>
+     To be fair to the ways in which the content of an assertion is determined one must take an ordered pair of w's and P's, such that for every w we get a P. Suppose that I assert (1),
+    </p>
+    <p>
+     <q>
+      (1) The standard meter is one meter long.
+     </q>
+    </p>
+    <p>
+     and let us take it as an example of a stipulation. Now, evaluate it according to the following different worlds: where the standard meter is one meter long (w1), where it is two meters long (w2), and where it is three meters long (w3). This is supposed to be a case of a statement that expresses a contingent a priori truth; let's assume, if only for a brief moment, that by
+     <q>
+      truths
+     </q>
+     we mean
+     <q>
+      what is said
+     </q>
+     by the utterance of the sentence (i.e. in this case a proposition).
+     <b>
+      A
+     </b>
+     will be the propositional concept of (1), where the horizontal lines represent
+     <i>
+      what is said
+     </i>
+     by utterances of (1) in different w's taken as contexts.
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     We can see that there are only contingent propositions represented in
+     <b>
+      A
+     </b>
+     . This seems a little bit awkward. At a first glance, if I stipulate the length of a meter by asserting that
+     <i>
+      The standard meter is one meter long
+     </i>
+     , what I say is something that is true in every world where I make the assertion (i.e. in every world where I make the stipulation), and, thus, should somehow have true evaluations in every world.  Put in other words, there is certainly a sense in which I cannot be mistaken about the truth of my assertion, a sense in which it is necessarily true. This being such because in every world
+     <i>
+      where I assert
+     </i>
+     (1) I know
+     <i>
+      a priori
+     </i>
+     (i.e. thanks to my stipulation) what the length of the standard meter is.
+     <a class="fnref" href="#fn2" id="fnref_fn2">
+      2
+     </a>
+    </p>
+    <p>
+     This has to be among the things that I could say by an assertion of (1); i.e. it is at least among the information that could be imparted by it. However, there is no horizontal representation of such a proposition in
+     <b>
+      A
+     </b>
+     . Nonetheless, such necessary proposition is in fact represented
+     <i>
+      diagonally
+     </i>
+     from left to right and from top to bottom in
+     <b>
+      A
+     </b>
+     . Since there is only one such proposition, we can call this the
+     <i>
+      diagonal proposition
+     </i>
+     of
+     <b>
+      A
+     </b>
+     .  We can make use of a two dimensional operator (i.e. one that a PC and makes it into a PC) called
+     <i>
+      dagger
+     </i>
+     operator, such that it takes the so called
+     <i>
+      diagonal
+     </i>
+     proposition of a PC and projects it into a PC.
+     <b>
+      dagA
+     </b>
+     is the PC which results from applying the dagger operator into
+     <b>
+      A
+     </b>
+     .
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     <b>
+      dagA
+     </b>
+     accounts for the possibility of my expressing a truth in every w as a context by  asserting (1).  Let us then take
+     <b>
+      A
+     </b>
+     and
+     <b>
+      dagA
+     </b>
+     as offering the set of propositions that a speaker may convey by asserting (1); which, as
+     <b>
+      (iv)
+     </b>
+     says, will be ideally reduced to up to one line, such that both speaker and hearers will know
+     <i>
+      what
+     </i>
+     is asserted.
+    </p>
+    <p>
+     This is enough about the two dimensional apparatus for our purposes. With it we are able to see which propositions can be expressed by the assertion of a particular statement. These propositions are the contents (truths and/or falsehoods, according to our assumption) that a speaker gets to assert. Now we are up to see whether this standpoint helps us finding out if there are contingent
+     <i>
+      a priori
+     </i>
+     truths and/or necessary
+     <i>
+      a posteriori
+     </i>
+     .
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Which truth?
+    </div>
+    <p>
+     At this point you might wonder whether I still need to say something in order to show that there is a truth that is contingent
+     <i>
+      a priori
+     </i>
+     . You might even think that I am too stubborn in aiming at this same spot once again. And you might be right, but not for the proper reasons. Yes,
+     <b>
+      A
+     </b>
+     clearly has propositions that are contingent. And, yes, thanks to the device of the diagonal proposition, it is also clear that there is a proposition that is
+     <i>
+      a priori
+     </i>
+     . But, no, up to now we have no clue as to
+     <i>
+      which one
+     </i>
+     is the truth that is
+     <i>
+      both
+     </i>
+     contingent and
+     <i>
+      a priori
+     </i>
+     . I am sad to say that (given our assumptions) no such clue will be offered, or so I will argue.
+    </p>
+    <p>
+     We can see here that a particular relation holds between the diagonal proposition and the (
+     <i>
+      a priori
+     </i>
+     /
+     <i>
+      a posteriori
+     </i>
+     ) type of knowledge that the speaker has of the proposition asserted according to the context. Which relation this might be is not clear at all. Stalnaker puts it this way
+    </p>
+    <p>
+     <q>
+      An a priori truth is a statement that, while perhaps not expressing a necessary proposition, expresses a truth in every context. This will be the case if and only if the diagonal proposition is necessary.
+     </q>
+     [Stalnaker, 1978, p.83].
+    </p>
+    <p>
+     If we take Stalnaker's claim to be merely about sentences - i.e. about things like
+     <q>
+      The standard meter is one meter long
+     </q>
+     - then it is trivially true that there is a truth which is both contingent and
+     <i>
+      a priori
+     </i>
+     . But this just means that the sentence can express contingent and a priori contents. Whatever is contingent and whatever is
+     <i>
+      a priori
+     </i>
+     would not be the truth (i.e. the sentence) but the content of the truth (whatever that means). You might then argue that it is not the sentence but the whole of
+     <b>
+      A
+     </b>
+     which is contingent and
+     <i>
+      a priori
+     </i>
+     . This cannot be the truth in question, for several reasons. First, according to tenet
+     <b>
+      (i)
+     </b>
+     when uttering (1) I expressed some content or other among the ones that
+     <b>
+      A
+     </b>
+     has,
+     <i>
+      but not all
+     </i>
+     of them. What I expressed is a proposition, not five, or ten, or a thousand of them. Second, according to tenet
+     <b>
+      (iv)
+     </b>
+     , if I were to do this (i.e. assert
+     <b>
+      A
+     </b>
+     and not just one proposition among the set) then my assertion would be useless. I would not be able to reduce CS and, hence, to communicate something at all. My assertion would not help to carve logical space in a way that it helps us locating the actual world. Propositions seem to be a good candidate for whatever is expressed in our utterances.
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+     Why not take propositions to be the truth in question?
+    </p>
+    <p>
+     This option, however, is also problematic. We should be careful not to mistake Stalnaker's claim above. It might be taken to say that the diagonal proposition is that which constitutes the a priori truth. But this is a mistake, since the diagonal proposition is necessary and the
+     <i>
+      a priori
+     </i>
+     truth - at least in our case - is contingent. It seems that we should take claim that the proposition that constitutes an a priori truth is not a necessary proposition,
+     <i>
+      but
+     </i>
+     that in order for it to be
+     <i>
+      a priori
+     </i>
+     , the diagonal proposition of the PC in which such proposition is represented must be a necessary one
+     <i>
+      although not the one which constitutes the a priori truth
+     </i>
+     . This seems like a nice interpretation, but it is not.
+    </p>
+    <p>
+     We have to ask now
+     <i>
+      which
+     </i>
+     proposition is the a priori truth. As we have seen, it cannot be the diagonal one, but it cannot be either any of the horizontal propositions for one main reason: none of these propositions expresses a truth in
+     <i>
+      every context
+     </i>
+     , as Stalnaker thinks the a priori truth does. Of course, if we take all the horizontal propositions together we could say that there is at least one truth expressed in every context. But then we would, again, be conflicting with
+     <b>
+      (iv)
+     </b>
+     . You can see why I think there is a problem here.
+    </p>
+    <p>
+     You might wonder whether my argument is flawed. I did myself, but I don't now. I have a way to solve this particular disagreement about my argument. Why not take a look at the other interesting case, that of necessary and a posteriori truths? According to Kripke, statement (2) can express such a truth.
+    </p>
+    <p>
+     <q>
+      (2) Gold has atomic number 79.
+     </q>
+    </p>
+    <p>
+     If, say, a famous chemist in the 1950's, asserted (2) while talking to one of her colleagues - she just found out about the chemical structure of gold - she would have uttered (if a truth) a necessary truth for two reasons. One, she would have used a rigid designator, a natural kind term such as
+     <q>
+      gold
+     </q>
+     that would refer to all and only the instances of gold in every possible world where such natural kind has instances. Two, she would have ascribed an essential property:
+     <i>
+      having atomic number 79
+     </i>
+     . Hence, a property that (if true) is true of an object in every possible world where such object exists. So, our chemist would have uttered something true of gold here and true of gold in every possible world. She would have uttered a necessary truth. But, of course, as I said above, she found that out (presumably after many years of tough empirical research). So, what she claims to know she knows it a posteriori.
+    </p>
+    <p>
+     Now, let's run the two dimensional apparatus for these w's: w1 (the actual world where the natural kind
+     <i>
+      Gold
+     </i>
+     is the kind of elements that have atomic number 79), w2 (a counterfactual world where the tokens of
+     <i>
+      Gold
+     </i>
+     have atomic number 15 and where the element with the atomic number 79 does exist), and w3 (a counterfactual world where Gold is not a basic element and where there is no element having atomic number 79). Accordingly, the PC of (2) is given by
+     <b>
+      B
+     </b>
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     In
+     <b>
+      B
+     </b>
+     we find either necessary truths or necessary falsehoods (or impossibilities if you want), but nothing that might look as a contingency. However, there is a sense in which what our famous chemist uttered in 1950 could have been false. After all, that's what she found out after some research, perhaps she messed up some stuff and came out with a mistaken result. Who knows? The point is that it seems to be true that it is not necessary that she came out with those results and knowing what she knows. So what she knows - which allegedly is what she asserted - is something contingent. This, as we have seen in the former case, is not a problem. There is, at least Stalnaker thinks so, some contingent proposition represented in
+     <b>
+      B
+     </b>
+     . That is the so called diagonal proposition.
+    </p>
+    <p>
+     We said that the truth expressed was a priori if and only if the diagonal proposition was a necessary truth.
+     <i>
+      Mutatis mutandis
+     </i>
+     we can say that the truth expressed is a posteriori if and only if the diagonal proposition is contingent. We may ask now, which one is the necessary and
+     <i>
+      a posteriori
+     </i>
+     truth - taking truths as propositions, not as sentences. This should be easy for there is only one necessary proposition in
+     <b>
+      B
+     </b>
+     . Is that our proposition? Well, it depends. If our proposition could be false, as it seems it could, given the fact that it is a posteriori, then this is not our proposition. Well, then, the proposition must be the diagonal one. That one certainly could be false for different w's, it is actually false for different w's.  Is it? Well, its not. Our proposition is not only
+     <i>
+      a posteriori
+     </i>
+     , it is also necessary and the diagonal proposition is not.
+    </p>
+    <p>
+     There seems to be some incompatibility between a proposition being necessary and its being known
+     <i>
+      a posteriori
+     </i>
+     ,
+     <i>
+      mutatis mutandis
+     </i>
+     for the other case. We come to a point where one must stop looking for such a proposition, at least within our two dimensional apparatus. This however is no satisfactory conclusion, for one main reason: the knowledge of the famous chemist who asserted (2)
+     <i>
+      was in fact
+     </i>
+     false for different w's as context, as much as my knowledge of what I assert with (1)
+     <i>
+      is in fact
+     </i>
+     true in every w as context. Presumably what she and I know is just what she and I respectively asserted. But what she asserted is just necessary (i.e. true in every w) and what I asserted is just contingent (i.e. true in some w's and false in others). If you feel like there is some sort of problem here you have the proper feelings (if not, you should read back again).
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Some points of relevance
+    </div>
+    <p>
+     You might still think that this does not prove Kripke to be mistaken. I agree. We must try to make sense of this somehow, but we should be careful not to do it in the wrong way. I think there is a bit of a problem here for philosophers to solve. This is because, as I shall argue, Kripke is not only correct in claiming that there are necessary
+     <i>
+      a posteriori
+     </i>
+     truths. Even more, Kripke
+     <i>
+      must
+     </i>
+     be correct if our commonsensical view that empirical scientific knowledge is possible is to be correct.
+    </p>
+    <p>
+     Our problem goes like this: there is this peculiar set of truths which we can know
+     <i>
+      a priori
+     </i>
+     regardless of their being contingent (
+     <i>
+      mutatis mutandis
+     </i>
+     for the necessary
+     <i>
+      a posteriori
+     </i>
+     ); however, there is no such proposition which is at the same time contingent and a priori (…). Nevertheless, it seems clear that what is expressed by a sentence, understood and known by the speaker who understands the
+     <i>
+      content
+     </i>
+     of a utterance,
+     <i>
+      is
+     </i>
+     a proposition.
+    </p>
+    <p>
+     One way to eliminate this problem would be to claim that nothing can be, at the same time, contingently true and known
+     <i>
+      a priori
+     </i>
+     (the same for the necessary
+     <i>
+      a posteriori
+     </i>
+     ). Knowledge and truth go together in only one way, if it is necessary it must be
+     <i>
+      a priori
+     </i>
+     , if it is
+     <i>
+      a posteriori
+     </i>
+     it must be contingent. So, actually, there is no problem here. There was just confusion to begin with.
+    </p>
+    <p>
+     There are some reasons why we should avoid this strategy. First of all, it will force us to accept either one of these two really bad claims. If we accept that
+     <i>
+      a posteriori
+     </i>
+     truths are only contingent - assuming the necessary ones are
+     <i>
+      a priori
+     </i>
+     - and claim that we can know what the world
+     <i>
+      is
+     </i>
+     <a class="fnref" href="#fn4" id="fnref_fn4">
+      4
+     </a>
+     about only by
+     <i>
+      a posteriori
+     </i>
+     means then the bad claim follows: (a) there is no such thing as knowledge of the nature of the empirical world, no matter how good our scientific resources can be, there is no way we can now how things are made up. Why? Easy, because if you could know what, say, gold
+     <i>
+      is
+     </i>
+     you would know something essential (i.e. necessary) about gold. This is what scientific knowledge is supposed to be.
+    </p>
+    <p>
+     Perhaps we don't want this conclusion, but still claim that only
+     <i>
+      a priori
+     </i>
+     truths are necessary and the rest are contingent, so we choose the second
+     <i>
+      bad
+     </i>
+     option. If we accept the former, and defend that, nevertheless, we can know what the world
+     <emph>
+      is
+     </emph>
+     about by
+     <i>
+      a priori
+     </i>
+     means, then: (b) we can know about the nature of the empirical world without even looking at it, we just need to engage in some
+     <i>
+      a priori
+     </i>
+     reflections and we are set, we will know everything there is to be known about the nature of things.
+    </p>
+    <p>
+     These two claims are equally bad and for the same sin: they are both too polarized. The first one seems to be some extreme realism of the form
+     <i>
+      you can't
+     </i>
+     - where
+     <q>
+      can
+     </q>
+     has a metaphysical strength -
+     <i>
+      really know what things are made of
+     </i>
+     . The second one seems to be some extreme idealism of the form
+     <i>
+      it's all in your mind, you can know everything by just deploying the proper concepts
+     </i>
+     .  The first one demands too much about our epistemic apparatus; the second one demands too little about it. We should avoid both as much as possible.
+    </p>
+    <p>
+     Another strategy is perhaps to
+     <i>
+      avoid the problem
+     </i>
+     . This would be possible if we just decide not to talk about a priori and a posteriori truths, for instance. We might be content if we just talk about the necessity or contingency of what is asserted or known. But this does not seem to solve the problem We can still raise the problem by claiming that there are necessary truths that are known by doing
+     <i>
+      empirical research
+     </i>
+     ; and we still have to explain how this is possible. I think this is just a cheap way out and, as many have said, there are no free lunches in philosophy.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Conclusion
+    </div>
+    <p>
+     So, if we don't want to end up getting nothing (i.e. no solution) for too little (e.g. avoid talking about
+     <i>
+      a posteriori
+     </i>
+     /
+     <i>
+      a priori
+     </i>
+     ), or asking too much (i.e. extreme realism) or too little (i.e. extreme idealism), we should look for a
+     <i>
+      solution
+     </i>
+     . Something, that is, which might explain how a truth can be contingent and known
+     <i>
+      a priori
+     </i>
+     , and
+     <i>
+      even more importantly
+     </i>
+     , how scientific truths are
+     <i>
+      a posteriori
+     </i>
+     and nevertheless necessary.  I guess there are many different strategies to follow from this point. I think, however, that the most promising one is to revise our assumptions, particularly tenet (i) according to which
+     <i>
+      what is said
+     </i>
+     ,
+     <i>
+      expressed
+     </i>
+     and
+     <i>
+      known
+     </i>
+     is identified with one and the same single proposition. We might need to make some complex distinctions within the
+     <i>
+      content
+     </i>
+     in order to solve this, perhaps distinguishing - as Evans [1979] suggests - between that part of the content which has the modal properties and that which is known, believed, desired, etc.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N10363">
+     <li id="N10364">
+      - Evans, Gareth, [1979], "Reference and Contingency" in Collected Papers, OUP
+     </li>
+     <li id="N10366">
+      - Kripke, Saul, [1980] Naming and Necessity, Harvard University Press
+     </li>
+     <li id="N10368">
+      - Stalnaker, Robert, [1978], "Assertion" in Context and Content, OUP
+     </li>
+    </ul>
+   </div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 Throughout this paper it will be important to keep in mind that this apparatus offers a pragmatic as opposed to a semantic understanding of the speech act. That means, among other things, that it is not going to tell us what the meaning of a sentence, say 'Gold has atomic number 79', is but only what can be communicated by different utterances of such sentence. This, however, should not affect my argument since the semantic content of a statement certainly is among the information conveyed by an assertion of it. If Kripke is correct and a statement such as 'Gold has atomic number 79' can express (here semantically) a necessary and a posteriori truth, then some or other assertion should be able to communicate (here pragmatically) such a truth. Finding that out is the task of this paper.
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2 Of course this only works for the worlds taken as contexts because that is as far as my stipulation can get me to know something. Remember, the stipulation is about the reference of 'one meter' - which will be the same for every w as argument, once we fix the w as the context of assertion - not about the length of the standard meter - which by assumption varies within the w's. If, however, I want to know what the length of the standard meter is under certain circumstances that apply to counterfactual worlds I need to do some empirical research.
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3 I am aware that Lina Jansson tries to defend an idea somewhat similar. I am unaware, however, of her arguments. Thus, nothing of what I here say should be taken to address her position.
+    </div>
+    <div id="fn4">
+     <a href="#fnref_fn4">
+      4.
+     </a>
+     4 In a personal discussion Shen-yi Liao pointed out a distinction between knowing how the actual world is and knowing how counterfactual worlds are. We can have the first knowledge empirically and the second one by a priori means; thus, having contingent truths in the first one and necessary ones in the second one. I think that Liao's distinction is misleading. I believe that if a subject has knowledge (perhaps, scientific knowledge) of x then that subject knows what x is. Here 'is' is taken with a metaphysical strength such that what is known to be true of x is what determines the identity of x. If such thing holds, then having scientific knowledge of x is tantamount to know what it takes to be x in the actual and counterfactual worlds where there are x's. Liao thinks scientific knowledge doesn't provide us with that information (I don´t recall his argument for this) and my fear is that he might be posing an unmotivated metaphysical hindrance to scientific knowledge (whatever that might mean). At least, it is not motivated by the problems posed by necessary a posteriori truths.
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

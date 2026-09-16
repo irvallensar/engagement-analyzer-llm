@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     34.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       A few days ago, as I was having a week's holiday in London, I read your advertisement
+       <ns type="MP">
+       </ns>
+       which convinced me to go to see your show: Over The Rainbow. I must tell you that this show was the worst one I had ever been to.
+      </p>
+      <p>
+       First of all, I was very disappointed by the fact that the actors who
+       <ns type="RV">
+        <i>
+         played
+        </i>
+       </ns>
+       were not the ones who were supposed to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       I was all the more angry as the show started at 20:15 instead of 19:30
+       <ns type="MP">
+       </ns>
+       as
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       was written in your ad! Another problem: there was no discount available!
+      </p>
+      <p>
+       Finally, at the end of this very disappointing evening, I decided to go to the theatre restaurant - which was also mentioned in your ad - but I was told that this
+       <ns type="UA">
+        <i>
+         latter
+        </i>
+       </ns>
+       was closed
+       <ns type="R">
+        <i>
+         because of
+        </i>
+       </ns>
+       a private party!
+      </p>
+      <p>
+       To put it in a nutshell, contrary to what was
+       <ns type="RV">
+        <i>
+         explained
+        </i>
+       </ns>
+       in the advertisement, it was not my perfect evening out and that is why I would like to get my money back.
+      </p>
+      <p>
+       I look forwards to hearing from you
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        A few days ago, as I was having a week's holiday in London, I read your advertisement which convinced me to go to see your show: Over The Rainbow.
+       </s>
+       <s pid="2" sid="2">
+        I must tell you that this show was the worst one I had ever been to.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I was very disappointed by the fact that the actors who played were not the ones who were supposed to do it!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I was all the more angry as the show started at 20:15 instead of 19:30 as it was written in your ad!
+       </s>
+       <s pid="4" sid="2">
+        Another problem: there was no discount available!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally, at the end of this very disappointing evening, I decided to go to the theatre restaurant - which was also mentioned in your ad - but I was told that this latter was closed because of a private party!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        To put it in a nutshell, contrary to what was explained in the advertisement, it was not my perfect evening out and that is why I would like to get my money back.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forwards to hearing from you
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. When you told her something important, she could not help telling it to someone else so as not to be the only one to know it. Actually, even though she was seventeen, she still behaved like a
+       <ns type="MP">
+        <i>
+         ten year old
+        </i>
+       </ns>
+       child and it was very difficult for her to know that she could not do or tell something - like a secret
+       <ns type="MP">
+       </ns>
+       for example. Thus when Sally explained
+       <ns type="MT">
+       </ns>
+       her that she had fallen in love with Kevin, Pat felt very
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           embarassed
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . In fact, she knew that even if Sally was her best friend, she would not be able to keep such a secret. It might seem a bit strange but if Pat had been able to choose whether she wanted to know a secret or not, she would have
+       <ns type="IV">
+        <i>
+         prefered
+        </i>
+       </ns>
+       not to know it. Pat was totally upset. She felt all the more ill at ease as Sally trusted her. Thus when Sally asked her not to reveal the secret, Pat ran away,
+       <ns type="SX">
+        <i>
+         when
+        </i>
+       </ns>
+       home,
+       <ns type="MC">
+       </ns>
+       locked herself in her bedroom. But when she saw the phone that she used in order to call her friends, she started to cry since she knew that she would use it.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        When you told her something important, she could not help telling it to someone else so as not to be the only one to know it.
+       </s>
+       <s pid="1" sid="4">
+        Actually, even though she was seventeen, she still behaved like a ten year old child and it was very difficult for her to know that she could not do or tell something - like a secret for example.
+       </s>
+       <s pid="1" sid="5">
+        Thus when Sally explained  her that she had fallen in love with Kevin, Pat felt very embarassed.
+       </s>
+       <s pid="1" sid="6">
+        In fact, she knew that even if Sally was her best friend, she would not be able to keep such a secret.
+       </s>
+       <s pid="1" sid="7">
+        It might seem a bit strange but if Pat had been able to choose whether she wanted to know a secret or not, she would have prefered not to know it.
+       </s>
+       <s pid="1" sid="8">
+        Pat was totally upset.
+       </s>
+       <s pid="1" sid="9">
+        She felt all the more ill at ease as Sally trusted her.
+       </s>
+       <s pid="1" sid="10">
+        Thus when Sally asked her not to reveal the secret, Pat ran away, when home,  locked herself in her bedroom.
+       </s>
+       <s pid="1" sid="11">
+        But when she saw the phone that she used in order to call her friends, she started to cry since she knew that she would use it.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

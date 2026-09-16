@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       13 of June 2000
+      </p>
+      <p>
+       Dear Helen Ryan:
+      </p>
+      <p>
+       I will be very happy to travel
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         july
+        </i>
+       </ns>
+       because in that
+       <ns type="RN">
+        <i>
+         date
+        </i>
+       </ns>
+       I am going to have my holidays, so I will not have to ask
+       <ns type="S">
+        <i>
+         permition
+        </i>
+       </ns>
+       from my
+       <ns type="RN">
+        <i>
+         work
+        </i>
+       </ns>
+       . At the same time,
+       <ns type="W">
+        <i>
+         <ns type="RT">
+          <i>
+           on
+          </i>
+         </ns>
+         <ns type="RP">
+          <i>
+           july
+          </i>
+         </ns>
+         is my birthday
+        </i>
+       </ns>
+       , so it would be nice to
+       <ns type="FV">
+        <i>
+         celebrated
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       there.
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       prefer to
+       <ns type="R">
+        <i>
+         have my accomodation
+        </i>
+       </ns>
+       in a tent,
+       <ns type="S">
+        <i>
+         couse
+        </i>
+       </ns>
+       in that way I can feel
+       <ns type="IJ">
+        <i>
+         more
+         <ns type="S">
+          <i>
+           clouse
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature, and I can remember when I was a
+       <ns type="W">
+        <i>
+         scout girl
+        </i>
+       </ns>
+       . Sleeping in
+       <ns type="MD">
+       </ns>
+       tent is much more
+       <ns type="SX">
+        <i>
+         exiting
+        </i>
+       </ns>
+       and
+       <ns type="RJ">
+        clousy
+       </ns>
+       than
+       <ns type="MT">
+       </ns>
+       a log cabin.
+      </p>
+      <p>
+       At the camp I
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       like to choose two activities, Painting and Singing
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I love painting
+       <ns type="RT">
+        <i>
+         <ns type="RP">
+          <i>
+           , in
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       university I studied art for two years, but now I don't have much time to paint
+       <ns type="S">
+        <i>
+         couse
+        </i>
+       </ns>
+       I work in a bank and I have a baby. So I will be very happy to improve my art
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the camp. The reason
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       my
+       <ns type="RN">
+        <i>
+         option
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       singing is
+       <ns type="R">
+        <i>
+         <ns type="S">
+          <i>
+           couse
+          </i>
+         </ns>
+        </i>
+       </ns>
+       I feel
+       <ns type="S">
+        <i>
+         embarrest
+        </i>
+       </ns>
+       about my voice, so maybe I could
+       <ns type="RV">
+        <i>
+         get it better
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       like to have more information about the prices of the clothes and
+       <ns type="S">
+        <i>
+         souvenires
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Thankeaw
+        </i>
+       </ns>
+       for
+       <ns type="S">
+        <i>
+         givin
+        </i>
+       </ns>
+       me this
+       <ns type="S">
+        <i>
+         oportunity
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        13 of June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Helen Ryan:
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I will be very happy to travel on july because in that date I am going to have my holidays, so I will not have to ask permition from my work.
+       </s>
+       <s pid="3" sid="2">
+        At the same time, on july is my birthday, so it would be nice to celebrated  there.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I will prefer to have my accomodation in a tent, couse in that way I can feel more clouse to the nature, and I can remember when I was a scout girl.
+       </s>
+       <s pid="4" sid="2">
+        Sleeping in  tent is much more exiting and clousy than  a log cabin.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        At the camp I will like to choose two activities, Painting and Singing, I love painting, in the university I studied art for two years, but now I don't have much time to paint couse I work in a bank and I have a baby.
+       </s>
+       <s pid="5" sid="2">
+        So I will be very happy to improve my art in the camp.
+       </s>
+       <s pid="5" sid="3">
+        The reason of my option for singing is couse I feel embarrest about my voice, so maybe I could get it better.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I will like to have more information about the prices of the clothes and souvenires.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Thankeaw for givin me this oportunity.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim:
+      </p>
+      <p>
+       You are never going to believe what I did last month
+       <ns type="MP">
+       </ns>
+       I was walking with my sister in Oxford circus, when
+       <ns type="S">
+        <i>
+         sudently
+        </i>
+       </ns>
+       a man
+       <ns type="TV">
+        <i>
+         stop
+        </i>
+       </ns>
+       us saying that he was looking for people to help
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a concert and they
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       going to pay us five pounds an hour. We
+       <ns type="S">
+        <i>
+         sed
+        </i>
+       </ns>
+       yes
+       <ns type="S">
+        <i>
+         inmidiatly
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I nearly shouted
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         happines
+        </i>
+       </ns>
+       when they told us that
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       Luis Miguel was
+       <ns type="RV">
+        <i>
+         doing
+        </i>
+       </ns>
+       the concert
+       <ns type="RP">
+        <i>
+         , he
+        </i>
+       </ns>
+       is my
+       <ns type="SA">
+        <i>
+         favorite
+        </i>
+       </ns>
+       singer.
+      </p>
+      <p>
+       The concert was on a
+       <ns type="RP">
+        <i>
+         sunday
+        </i>
+       </ns>
+       and we had to work
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the back of the
+       <ns type="S">
+        <i>
+         stadge
+        </i>
+       </ns>
+       , doing all sorts of things like
+       <ns type="S">
+        <i>
+         colecting
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         rubish
+        </i>
+       </ns>
+       and helping other people
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       working there. We
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       so close to him
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I didn't have the chance to talk with him but I don't mind
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I will never forget that day. Since then,
+       <ns type="RA">
+        <i>
+         me
+        </i>
+       </ns>
+       and my sister talk about Luis Miguel every day.
+      </p>
+      <p>
+       I
+       <ns type="SX">
+        <i>
+         hop
+        </i>
+       </ns>
+       you write
+       <ns type="MT">
+       </ns>
+       me soon to
+       <ns type="SX">
+        <i>
+         tall
+        </i>
+       </ns>
+       me
+       <ns type="S">
+        <i>
+         youre
+        </i>
+       </ns>
+       opinion.
+      </p>
+      <p>
+       lots of love
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        You are never going to believe what I did last month I was walking with my sister in Oxford circus, when sudently a man stop us saying that he was looking for people to help in a concert and they was going to pay us five pounds an hour.
+       </s>
+       <s pid="2" sid="2">
+        We sed yes inmidiatly, I nearly shouted of happines when they told us that, Luis Miguel was doing the concert, he is my favorite singer.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The concert was on a sunday and we had to work on the back of the stadge, doing all sorts of things like colecting rubish and helping other people that was working there.
+       </s>
+       <s pid="3" sid="2">
+        We was so close to him, I didn't have the chance to talk with him but I don't mind, I will never forget that day.
+       </s>
+       <s pid="3" sid="3">
+        Since then, me and my sister talk about Luis Miguel every day.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I hop you write  me soon to tall me youre opinion.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        lots of love
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

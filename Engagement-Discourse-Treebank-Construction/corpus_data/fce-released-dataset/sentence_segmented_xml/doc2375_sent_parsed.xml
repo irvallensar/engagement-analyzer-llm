@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr. Smith,
+      </p>
+      <p>
+       I am
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you about an
+       <ns type="DN">
+        enjure
+       </ns>
+       that I had
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your last musical
+       <ns type="M">
+       </ns>
+       Circle Theatre. I went to see "Over the rainbow" last Saturday and I had a very disappointing evening.
+      </p>
+      <p>
+       First of all, I was
+       <ns type="RJ">
+        <i>
+         <ns type="S">
+          <i>
+           surpprising
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that Danny Brook and Tina Truelove did not
+       <ns type="RV">
+        <i>
+         <ns type="FV">
+          <i>
+           played
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+       <ns type="RA">
+        <i>
+         Anybody
+        </i>
+       </ns>
+       told us why they
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       there.
+      </p>
+      <p>
+       I read
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       your
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       in Friday's edition of the Times that the show should start at 19.30 but the
+       <ns type="RN">
+        <i>
+         representation
+        </i>
+       </ns>
+       started at 20.15. I was
+       <ns type="IV">
+        <i>
+         waitting
+        </i>
+       </ns>
+       45 minutes for
+       <ns type="RA">
+        <i>
+         anything
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       I am
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         studiant
+        </i>
+       </ns>
+       and I didn't
+       <ns type="RV">
+        <i>
+         find
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         any
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         discount's
+        </i>
+       </ns>
+       ticket. I don't understand the problem between your
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       and the reality.
+      </p>
+      <p>
+       And finally, after the show, I wanted to
+       <ns type="RV">
+        <i>
+         drink
+        </i>
+       </ns>
+       a coffee but the theatre restaurant was closed!
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         Like
+        </i>
+       </ns>
+       mentioned in the newspaper
+       <ns type="MP">
+       </ns>
+       I didn't have a perfect evening out and I ask you to give me back my money.
+      </p>
+      <p>
+       I am looking forward to hearing from you soon.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr. Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writting  you about an enjure that I had in your last musical  Circle Theatre.
+       </s>
+       <s pid="2" sid="2">
+        I went to see "Over the rainbow" last Saturday and I had a very disappointing evening.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I was surpprising that Danny Brook and Tina Truelove did not played.
+       </s>
+       <s pid="3" sid="2">
+        Anybody told us why they wasn't there.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I read on your advertisment in Friday's edition of the Times that the show should start at 19.30 but the representation started at 20.15.
+       </s>
+       <s pid="4" sid="2">
+        I was waitting 45 minutes for anything!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am  studiant and I didn't find any discount's ticket.
+       </s>
+       <s pid="5" sid="2">
+        I don't understand the problem between your advertisment and the reality.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        And finally, after the show, I wanted to drink a coffee but the theatre restaurant was closed!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Like mentioned in the newspaper I didn't have a perfect evening out and I ask you to give me back my money.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I am looking forward to hearing from you soon.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Your sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       How has modern technology changed your daily life?
+      </p>
+      <p>
+       My life
+       <ns type="AGV">
+        <i>
+         change
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       modern technology. For
+       <ns type="S">
+        <i>
+         exemple
+        </i>
+       </ns>
+       , if I don't have time to do my shopping after school because I have to do my homework, I
+       <ns type="TV">
+        <i>
+         am going
+        </i>
+       </ns>
+       on
+       <ns type="MD">
+       </ns>
+       Internet and ask for what I need. The day after I get everything at home by post.
+      </p>
+      <p>
+       <ns type="ID">
+        <i>
+         In my point of
+         <ns type="S">
+          <i>
+           vue
+          </i>
+         </ns>
+        </i>
+       </ns>
+       ,
+       <ns type="MD">
+       </ns>
+       Internet is the most important
+       <ns type="RN">
+        <i>
+         <ns type="DN">
+          <i>
+           discover
+          </i>
+         </ns>
+        </i>
+       </ns>
+       of the 2000
+       <ns type="S">
+        <i>
+         centery
+        </i>
+       </ns>
+       . You can book tickets for
+       <ns type="MD">
+       </ns>
+       theatre, sport, etc., you can find all
+       <ns type="MD">
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       you need for yourself. You have a lot of things to do, to see, to learn. It is too big to tell everybody about what you can do!
+      </p>
+      <p>
+       I use
+       <ns type="MD">
+       </ns>
+       <ns type="W">
+        <i>
+         all the time Internet
+        </i>
+       </ns>
+       for my homework and in the
+       <ns type="S">
+        <i>
+         futur
+        </i>
+       </ns>
+       , I hope, I will be able to use it for my own work.
+      </p>
+      <p>
+       Technology will not stop
+       <ns type="FV">
+        <i>
+         to grow
+        </i>
+       </ns>
+       <ns type="UY">
+        <i>
+         up
+        </i>
+       </ns>
+       and
+       <ns type="FV">
+        <i>
+         help
+        </i>
+       </ns>
+       people in the
+       <ns type="S">
+        <i>
+         futur
+        </i>
+       </ns>
+       . I hope I will help them, I am sure I will!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        How has modern technology changed your daily life?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My life change everyday with the modern technology.
+       </s>
+       <s pid="2" sid="2">
+        For exemple, if I don't have time to do my shopping after school because I have to do my homework, I am going on  Internet and ask for what I need.
+       </s>
+       <s pid="2" sid="3">
+        The day after I get everything at home by post.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In my point of vue,  Internet is the most important discover of the 2000 centery.
+       </s>
+       <s pid="3" sid="2">
+        You can book tickets for  theatre, sport, etc., you can find all  informations you need for yourself.
+       </s>
+       <s pid="3" sid="3">
+        You have a lot of things to do, to see, to learn.
+       </s>
+       <s pid="3" sid="4">
+        It is too big to tell everybody about what you can do!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I use  all the time Internet for my homework and in the futur, I hope, I will be able to use it for my own work.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Technology will not stop to grow up and help people in the futur.
+       </s>
+       <s pid="5" sid="2">
+        I hope I will help them, I am sure I will!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

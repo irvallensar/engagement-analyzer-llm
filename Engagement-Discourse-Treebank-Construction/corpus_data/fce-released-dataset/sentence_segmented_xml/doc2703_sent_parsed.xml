@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs. Ryan,
+      </p>
+      <p>
+       I have won the first prize! I am
+       <ns type="DY">
+        <i>
+         extremly
+        </i>
+       </ns>
+       happy about this. I am writing because of
+       <ns type="SX">
+        <i>
+         same
+        </i>
+       </ns>
+       information that you need.
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       only
+       <ns type="U">
+        <i>
+         the possibility
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to take
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       holiday in July because I am going to start a new
+       <ns type="RN">
+        education
+       </ns>
+       at the
+       <ns type="S">
+        <i>
+         beginn
+        </i>
+       </ns>
+       of August.
+      </p>
+      <p>
+       Of course I would like to stay in a tent. When I was a child we
+       <ns type="TV">
+        <i>
+         were often camping
+        </i>
+       </ns>
+       .
+       <ns type="FV">
+        <i>
+         To stay
+        </i>
+       </ns>
+       in a tent will remind
+       <ns type="DA">
+        <i>
+         my
+        </i>
+       </ns>
+       of
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         unforgottable
+        </i>
+       </ns>
+       time.
+      </p>
+      <p>
+       There are a lot of interesting activities and
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       makes
+       <ns type="MA">
+       </ns>
+       hard to choose only two. Given the circumstances
+       <ns type="MP">
+       </ns>
+       I would like to learn more about
+       <ns type="RP">
+        <i>
+         <ns type="S">
+          <i>
+           Photograhy
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and
+       <ns type="RP">
+        <i>
+         Painting
+        </i>
+       </ns>
+       . I have
+       <ns type="SX">
+        <i>
+         same
+        </i>
+       </ns>
+       skills in
+       <ns type="W">
+        <i>
+         drawing landscape
+        </i>
+       </ns>
+       but I have no idea about photography. Taking
+       <ns type="FN">
+        <i>
+         picture
+        </i>
+       </ns>
+       is a new experience for me.
+      </p>
+      <p>
+       I have never been
+       <ns type="R">
+        <i>
+         I
+        </i>
+       </ns>
+       California. How is the weather there in July? What kind of clothes would you recommend taking with me? Is it possible to pay by credit card or should I
+       <ns type="UV">
+        <i>
+         prefer
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to take
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         traveller
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         queckes
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       I am glad to hear from you.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         faithfully
+        </i>
+       </ns>
+      </p>
+      <p>
+       Artemis
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs. Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have won the first prize!
+       </s>
+       <s pid="2" sid="2">
+        I am extremly happy about this.
+       </s>
+       <s pid="2" sid="3">
+        I am writing because of same information that you need.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I have only the possibility to take  holiday in July because I am going to start a new education at the beginn of August.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Of course I would like to stay in a tent.
+       </s>
+       <s pid="4" sid="2">
+        When I was a child we were often camping.
+       </s>
+       <s pid="4" sid="3">
+        To stay in a tent will remind my of a unforgottable time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        There are a lot of interesting activities and it makes  hard to choose only two.
+       </s>
+       <s pid="5" sid="2">
+        Given the circumstances I would like to learn more about Photograhy and Painting.
+       </s>
+       <s pid="5" sid="3">
+        I have same skills in drawing landscape but I have no idea about photography.
+       </s>
+       <s pid="5" sid="4">
+        Taking picture is a new experience for me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I have never been I California.
+       </s>
+       <s pid="6" sid="2">
+        How is the weather there in July?
+       </s>
+       <s pid="6" sid="3">
+        What kind of clothes would you recommend taking with me?
+       </s>
+       <s pid="6" sid="4">
+        Is it possible to pay by credit card or should I prefer to take traveller queckes?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am glad to hear from you.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Artemis
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Hi Kim,
+      </p>
+      <p>
+       How are you doing? I couldn't write
+       <ns type="MT">
+       </ns>
+       you because I was very busy.
+      </p>
+      <p>
+       Last month I enjoyed helping at a pop concert in my town. I applied for a job at the ticket office because I
+       <ns type="IV">
+        <i>
+         hopped
+        </i>
+       </ns>
+       to see a lot of
+       <ns type="S">
+        <i>
+         diffrent
+        </i>
+       </ns>
+       people. You know everybody has to cross this spot!
+      </p>
+      <p>
+       Given the circumstances
+       <ns type="MP">
+       </ns>
+       they asked
+       <ns type="DA">
+        <i>
+         my
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         helping
+        </i>
+       </ns>
+       in the kitchen. You can imagine how disappointed I was. But it turned out
+       <ns type="R">
+        <i>
+         as
+        </i>
+       </ns>
+       a
+       <ns type="RJ">
+        <i>
+         funny
+        </i>
+       </ns>
+       and interesting job. I had to prepare the
+       <ns type="S">
+        <i>
+         ingredians
+        </i>
+       </ns>
+       for every meal.
+       <ns type="RA">
+        <i>
+         It
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         means
+        </i>
+       </ns>
+       I had to read the
+       <ns type="S">
+        <i>
+         recipies
+        </i>
+       </ns>
+       very carefully. And I had to
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           controll
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that nothing
+       <ns type="TV">
+        <i>
+         will be
+        </i>
+       </ns>
+       missed. The best thing was that I
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           learnd
+          </i>
+         </ns>
+        </i>
+       </ns>
+       a lot of new cooking ideas and I could observe new cooking tricks.
+       <ns type="U">
+        <i>
+         On the other hand
+        </i>
+       </ns>
+       I had a lot to do and I was never bored. The people were all really funny and we were a good team. The time
+       <ns type="RV">
+        <i>
+         was
+        </i>
+       </ns>
+       quickly
+       <ns type="UJ">
+        <i>
+         over
+        </i>
+       </ns>
+       and it was a great experience.
+      </p>
+      <p>
+       And what about you? I am interested to hear about your new dog? Warm
+       <ns type="S">
+        <i>
+         whishes
+        </i>
+       </ns>
+      </p>
+      <p>
+       Your friend,
+      </p>
+      <p>
+       Artemis
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hi Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        How are you doing?
+       </s>
+       <s pid="2" sid="2">
+        I couldn't write  you because I was very busy.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Last month I enjoyed helping at a pop concert in my town.
+       </s>
+       <s pid="3" sid="2">
+        I applied for a job at the ticket office because I hopped to see a lot of diffrent people.
+       </s>
+       <s pid="3" sid="3">
+        You know everybody has to cross this spot!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Given the circumstances they asked my for helping in the kitchen.
+       </s>
+       <s pid="4" sid="2">
+        You can imagine how disappointed I was.
+       </s>
+       <s pid="4" sid="3">
+        But it turned out as a funny and interesting job.
+       </s>
+       <s pid="4" sid="4">
+        I had to prepare the ingredians for every meal.
+       </s>
+       <s pid="4" sid="5">
+        It means I had to read the recipies very carefully.
+       </s>
+       <s pid="4" sid="6">
+        And I had to controll that nothing will be missed.
+       </s>
+       <s pid="4" sid="7">
+        The best thing was that I learnd a lot of new cooking ideas and I could observe new cooking tricks.
+       </s>
+       <s pid="4" sid="8">
+        On the other hand I had a lot to do and I was never bored.
+       </s>
+       <s pid="4" sid="9">
+        The people were all really funny and we were a good team.
+       </s>
+       <s pid="4" sid="10">
+        The time was quickly over and it was a great experience.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        And what about you?
+       </s>
+       <s pid="5" sid="2">
+        I am interested to hear about your new dog?
+       </s>
+       <s pid="5" sid="3">
+        Warm whishes
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Your friend,
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Artemis
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

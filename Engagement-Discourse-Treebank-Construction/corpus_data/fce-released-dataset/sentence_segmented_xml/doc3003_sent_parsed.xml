@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     21.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Maria Smith,
+      </p>
+      <p>
+       I read your letters and I'm ready to help you.
+      </p>
+      <p>
+       I think that we have to think
+       <ns type="MT">
+       </ns>
+       which hotel is
+       <ns type="FJ">
+        <i>
+         better
+        </i>
+       </ns>
+       for the students. I have an idea and I think that you will agree with me. I was thinking about the Palace Hotel because it's very nice and cheap. It has comfortable bedrooms and
+       <ns type="MD">
+       </ns>
+       place for parties. You can book this hotel
+       <ns type="MP">
+        <i>
+         it's
+        </i>
+       </ns>
+       the best and it's near to
+       <ns type="MD">
+       </ns>
+       conference
+       <ns type="MP">
+        <i>
+         it's
+        </i>
+       </ns>
+       only 15 minutes
+       <ns type="ID">
+        <i>
+         by walk
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I think that it will be nice
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       the end-of-conference party if you
+       <ns type="TV">
+        <i>
+         will invite
+        </i>
+       </ns>
+       somebody to sing and give
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       the
+       <ns type="AGN">
+        <i>
+         student
+        </i>
+       </ns>
+       the time to enjoy
+       <ns type="DA">
+        <i>
+         theirselves
+        </i>
+       </ns>
+       and to dance. The party
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       will be nice.
+       <ns type="W">
+        <i>
+         The clothes now
+        </i>
+       </ns>
+       that they will wear
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         has
+        </i>
+       </ns>
+       to be smart, not
+       <ns type="R">
+        <i>
+         how
+        </i>
+       </ns>
+       you
+       <ns type="TV">
+        <i>
+         are
+        </i>
+       </ns>
+       going to
+       <ns type="MD">
+       </ns>
+       casino for example but nice casual,
+       <ns type="R">
+        not with
+       </ns>
+       sports shoes or T-shirts.
+      </p>
+      <p>
+       On the last day in the afternoon
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       you have three
+       <ns type="SX">
+        <i>
+         ours
+        </i>
+       </ns>
+       free you can go for coffee or
+       <ns type="FV">
+        <i>
+         to visit
+        </i>
+       </ns>
+       some places.
+      </p>
+      <p>
+       Those are my ideas for the conference. I hope that you will like
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Maria Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I read your letters and I'm ready to help you.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think that we have to think  which hotel is better for the students.
+       </s>
+       <s pid="3" sid="2">
+        I have an idea and I think that you will agree with me.
+       </s>
+       <s pid="3" sid="3">
+        I was thinking about the Palace Hotel because it's very nice and cheap.
+       </s>
+       <s pid="3" sid="4">
+        It has comfortable bedrooms and  place for parties.
+       </s>
+       <s pid="3" sid="5">
+        You can book this hotel it's the best and it's near to  conference it's only 15 minutes by walk.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think that it will be nice about the end-of-conference party if you will invite somebody to sing and give to the student the time to enjoy theirselves and to dance.
+       </s>
+       <s pid="4" sid="2">
+        The party it will be nice.
+       </s>
+       <s pid="4" sid="3">
+        The clothes now that they will wear it has to be smart, not how you are going to  casino for example but nice casual, not with sports shoes or T-shirts.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        On the last day in the afternoon that you have three ours free you can go for coffee or to visit some places.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Those are my ideas for the conference.
+       </s>
+       <s pid="6" sid="2">
+        I hope that you will like it.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Your sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Today our article
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       will be about
+       <ns type="UD">
+        <i>
+         an
+        </i>
+       </ns>
+       inventions that we need
+       <ns type="RP">
+        <i>
+         inour
+        </i>
+       </ns>
+       life. I think that
+       <ns type="W">
+        <i>
+         all
+         <ns type="AGD">
+          <i>
+           this
+          </i>
+         </ns>
+         things we need
+        </i>
+       </ns>
+       in our life because
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       can give us a lot of things.
+      </p>
+      <p>
+       First of all we need the telephone in our house because it's important to make
+       <ns type="MD">
+       </ns>
+       call if you need something
+       <ns type="SX">
+        <i>
+         of
+        </i>
+       </ns>
+       if
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       something
+       <ns type="TV">
+        <i>
+         <ns type="IV">
+          <i>
+           happend
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to your house and nobody is
+       <ns type="RT">
+        <i>
+         next to
+        </i>
+       </ns>
+       you.
+      </p>
+      <p>
+       <ns type="R">
+        The second one is the lamp, the electricity that is very important in our life
+       </ns>
+       . In the past
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       people didn't have
+       <ns type="S">
+        <i>
+         electicity
+        </i>
+       </ns>
+       and if they wanted
+       <ns type="MP">
+       </ns>
+       for example
+       <ns type="MP">
+       </ns>
+       to read or to cook something they used to
+       <ns type="RV">
+        <i>
+         do
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         in the
+        </i>
+       </ns>
+       fire. It's important to have electricity because without
+       <ns type="RA">
+        <i>
+         this
+        </i>
+       </ns>
+       you can't do anything.
+      </p>
+      <p>
+       The other one is the television. You must have
+       <ns type="MD">
+       </ns>
+       TV because you can
+       <ns type="RV">
+        <i>
+         <ns type="S">
+          <i>
+           liten
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       what
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         <ns type="IV">
+          <i>
+           happend
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in the world and you can
+       <ns type="RV">
+        <i>
+         watch
+        </i>
+       </ns>
+       some places that you
+       <ns type="TV">
+        <i>
+         didn't go
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       . You can enjoy
+       <ns type="U">
+        <i>
+         you time
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to watch
+        </i>
+       </ns>
+       a film if you have
+       <ns type="MQ">
+       </ns>
+       free time.
+      </p>
+      <p>
+       <ns type="RD">
+        <i>
+         The
+        </i>
+       </ns>
+       boat
+       <ns type="UA">
+        <i>
+         it's
+        </i>
+       </ns>
+       not so important but you can use
+       <ns type="RA">
+        <i>
+         it
+        </i>
+       </ns>
+       for fishing and to see some places.
+      </p>
+      <p>
+       The car
+       <ns type="W">
+        <i>
+         now is
+        </i>
+       </ns>
+       very important in our life
+       <ns type="MP">
+        <i>
+         you
+        </i>
+       </ns>
+       can go wherever you want.
+       <ns type="UT">
+        <i>
+         In this
+        </i>
+       </ns>
+       year
+       <ns type="R">
+        the
+        <ns type="IN">
+         <i>
+          familys
+         </i>
+        </ns>
+        they have 3 cars in one family one by one person
+       </ns>
+       .
+      </p>
+      <p>
+       For me the most important thing is the telephone because without this you can't do anything
+       <ns type="RP">
+        <i>
+         , it's
+        </i>
+       </ns>
+       part of my life.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Today our article it will be about an inventions that we need inour life.
+       </s>
+       <s pid="1" sid="2">
+        I think that all this things we need in our life because it can give us a lot of things.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        First of all we need the telephone in our house because it's important to make  call if you need something of if it something happend to your house and nobody is next to you.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The second one is the lamp, the electricity that is very important in our life.
+       </s>
+       <s pid="3" sid="2">
+        In the past the people didn't have electicity and if they wanted for example to read or to cook something they used to do in the fire.
+       </s>
+       <s pid="3" sid="3">
+        It's important to have electricity because without this you can't do anything.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The other one is the television.
+       </s>
+       <s pid="4" sid="2">
+        You must have  TV because you can liten  what it happend in the world and you can watch some places that you didn't go .
+       </s>
+       <s pid="4" sid="3">
+        You can enjoy you time to watch a film if you have  free time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The boat it's not so important but you can use it for fishing and to see some places.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The car now is very important in our life you can go wherever you want.
+       </s>
+       <s pid="6" sid="2">
+        In this year the familys they have 3 cars in one family one by one person.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        For me the most important thing is the telephone because without this you can't do anything, it's part of my life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

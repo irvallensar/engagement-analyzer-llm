@@ -1,0 +1,339 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      "Bose Einstein Condensation"
+     </div>
+     <div class="abstract">
+      Abstract
+      <p>
+       In this paper we discuss the Bose Einstein Condensation, from 1924 to 1995. We address questions like how the idea came about, the connection between Bose and Einstein, the theory behind it and some of the interesting applications that come out of this science.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1. Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        A Bose-Einstein condensate is a phase of matter formed by bosons (particles which form totally-symmetric composite quantum states, have integer spin) cooled to temperatures very near to absolute zero.
+       </s>
+       <s pid="1" sid="2">
+        Theorized by Satyendra Nath Bose in the early 1920's, he assumed certain rules for deciding when two photons should be counted as identical or different (Now called Bose-Einstein Statistics.)
+       </s>
+       <s pid="1" sid="3">
+        The first such condensate was produced by Eric Cornell and Carl Wieman in 1995 at the University of Colorado at Boulder, using a gas of rubidium atoms cooled to 170 nanokelvins (nK).
+       </s>
+       <s pid="1" sid="4">
+        Under such conditions, a large fraction of the atoms collapse into the lowest quantum state.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        In 1938, Pyotr Kapitsa, John Allen and Don Misener discovered that helium-4 became a new kind of fluid, now known as a superfluid, at temperatures below 2.17 kelvins (K) (lambda point).
+       </s>
+       <s pid="2" sid="2">
+        Superfluid helium has many unusual properties, including zero viscosity (the ability to flow without dissipating energy) and the existence of quantized vortices.
+       </s>
+       <s pid="2" sid="3">
+        It was quickly realized that the superfluidity was due to Bose-Einstein condensation of the helium-4 atoms, which are bosons.
+       </s>
+       <s pid="2" sid="4">
+        The first Bose-Einstein condensate was created by Cornell, Wieman, and co-workers at JILA on June 5, 1995.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        They did this by cooling a dilute vapor consisting of approximately 2000 rubidium-87 atoms to 170 nK using a combination of laser cooling and magnetic evaporative cooling.
+       </s>
+       <s pid="3" sid="2">
+        About four months later, an independent effort led by Wolfgang Ketterle at MIT created a condensate made of sodium-23.
+       </s>
+       <s pid="3" sid="3">
+        Ketterle's condensate had about a hundred times more atoms, allowing him to obtain several important results such as the observation of quantum mechanical interference between two different condensates.
+       </s>
+       <s pid="3" sid="4">
+        Cornell, Wieman and Ketterle won the 2001 Nobel Prize for their achievement.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2. Theory
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        In accordance with the Heisenberg uncertainty principle, the position of an atom is smeared out over a distance given by the thermal de Broglie wavelength,
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        At room temperature the de Broglie wavelength is typically about ten thousand times smaller than the average spacing between the atoms.
+       </s>
+       <s pid="5" sid="2">
+        This means that the matter waves of the individual atoms are uncorrelated and the gas can thus be described by classical Boltzmann statistics.
+       </s>
+       <s pid="5" sid="3">
+        As the gas is cooled, however, the smearing increases, and eventually there is more than one atom in each cube of dimension dB.
+       </s>
+       <s pid="5" sid="4">
+        The wavefunctions of adjacent atoms then "overlap" , causing the atoms to lose their identity, and the behavior of the gas is now governed by quantum statistics.
+       </s>
+       <s pid="5" sid="5">
+        Bose-Einstein statistics dramatically increase the chances of finding more than one atom in the same.
+       </s>
+       <s pid="5" sid="6">
+        The result is Bose-Einstein condensation, a macroscopic occupation of the ground state of the gas.
+       </s>
+       <s pid="5" sid="7">
+        Einstein described the process as condensation without interactions, making it an important paradigm of quantum statistical mechanics.
+       </s>
+       <s pid="5" sid="8">
+        The density distribution of the condensate is represented by a single macroscopic wavefunction with a well-defined amplitude and phase, just as for a classical field.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Bose-Einstein condensation has been cited as an important phenomenon in many areas of physics, but until recently the only evidence for condensation came from studies of superfluid liquid helium and excitons in semiconductors.
+       </s>
+       <s pid="6" sid="2">
+        In the case of liquid helium, however, the strong interactions that exist in a liquid qualitatively alter the nature of the transition.
+       </s>
+       <s pid="6" sid="3">
+        For this reason a long-standing goal in atomic physics has been to achieve BEC in a dilute atomic gas.
+       </s>
+       <s pid="6" sid="4">
+        The challenge was to cool the gases to temperatures around or below one micro
+       </s>
+       <s pid="6" sid="5">
+        Kelvin, while preventing the atoms from condensing into a solid or a liquid.
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Efforts to Bose condense atoms began with hydrogen.
+       </s>
+       <s pid="7" sid="2">
+        In these experiments hydrogen atoms are first cooled in a dilution refrigerator, then trapped by a magnetic field and further cooled by evaporation.
+       </s>
+       <s pid="7" sid="3">
+        This approach has come very close to observing BEC, but is limited by the recombination of individual atoms to form molecules and by the detection efficiency.
+       </s>
+       <s pid="7" sid="4">
+        In the 1980s laser-based techniques such as Doppler cooling, polarization-gradient cooling and magneto-optical trapping were developed to cool and trap atoms.
+       </s>
+       <s pid="7" sid="5">
+        These techniques profoundly changed the nature of atomic physics and provided a new route to ultracold temperatures that does not involve cryogenics.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        Fig.
+       </s>
+       <s pid="8" sid="2">
+        1 A BEC setup showing laser light used to first cool and hold the atoms, and then these atoms are further cooled by evaporative cooling
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        Atoms at really low temperatures are now routinely used in a variety of experiments.
+       </s>
+       <s pid="9" sid="2">
+        Alkali atoms are well suited to laser-based methods because their optical transitions can easily be excited by available lasers, and have a favorable internal energy-level structure for cooling to low temperatures.
+       </s>
+       <s pid="9" sid="3">
+        However, the lowest temperature that these laser cooling techniques can reach is limited by the energy of a single photon.
+       </s>
+       <s pid="9" sid="4">
+        As a result, the "phase-space density" - the number of atoms within a volume lambda dB3 - is typically about a million times lower than is needed for BEC.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        The successful route to BEC turned out to be a marriage of the cooling techniques developed for hydrogen and those for the alkalis: an alkali vapor is first laser cooled and then evaporatively cooled.
+       </s>
+       <s pid="10" sid="2">
+        In evaporative cooling, high-energy atoms are allowed to escape from the sample so that the average energy of the remaining atoms is reduced.
+       </s>
+       <s pid="10" sid="3">
+        Elastic collisions redistribute the energy among the atoms such that the velocity distribution reassumes a Maxwell-Boltzmann form, but at a lower temperature.
+       </s>
+       <s pid="10" sid="4">
+        This allows the atomic sample to be cooled by many orders of magnitude, with the only drawback being that the number of trapped atoms is reduced.
+       </s>
+       <s pid="10" sid="5">
+        Optical methods work best at low densities, where the laser light is not completely absorbed by the sample.
+       </s>
+       <s pid="10" sid="6">
+        Evaporation, on the other hand, requires high atomic densities to ensure rapid re-thermalization and cooling.
+       </s>
+       <s pid="10" sid="7">
+        This changed the emphasis for optical methods: while they had previously been used to produce low temperatures and high phase-space density simultaneously, they now needed to produce high elastic collision rates.
+       </s>
+       <s pid="10" sid="8">
+        Furthermore, this had to be achieved in an ultrahigh vacuum chamber to prolong the lifetime of the trapped gas.
+       </s>
+       <s pid="10" sid="9">
+        Thus no new concept was needed to achieve BEC, but rather it was an experimental challenge to improve and optimize existing techniques.
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        Trapped condensates are very small and optically thick, so they are difficult to observe in the trap.
+       </s>
+       <s pid="11" sid="2">
+        The first observations of BEC were made by switching the trap off and allowing the atoms to expand ballistically.
+       </s>
+       <s pid="11" sid="3">
+        A laser beam in resonance with an atomic transition was then flashed on, and the resulting absorption of light created a "shadow" that was recorded by a camera.
+       </s>
+       <s pid="11" sid="4">
+        This snapshot of atomic positions indicates how much the atoms have expanded since they were released from the trap, and hence it records their velocity distribution.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="12" sid="1">
+        Fig. 2 Bose-Einstein Condensation at 400, 200, and 50 nano
+       </s>
+       <s pid="12" sid="2">
+        Kelvins
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       3. Applications
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        We discuss some of the interesting applications in atom-molecule coherence in a Bose-Einstein Condensate done at the University of Colorado.
+       </s>
+       <s pid="13" sid="2">
+        Oscillations between atomic and molecular states are excited by sudden changes in the magnetic field near a Feshbach resonance and persisted for many periods of the oscillation.
+       </s>
+       <s pid="13" sid="3">
+        A Feshbash resonance is a scattering resonance for which the total energy of two colliding atoms is equal to the energy of a bound molecular state and atom atom-molecule transitions can occur during collision.
+       </s>
+       <s pid="13" sid="4">
+        A Feshbach resonance can arise when there is a coupling between two types of motion.
+       </s>
+       <s pid="13" sid="5">
+        For example, suppose an electron scatters off of He+.
+       </s>
+       <s pid="13" sid="6">
+        The incoming electron can excite the He+ ion to an n=2 state and if it does not have enough energy it can be temporarily captured into a resonance state to form doubly excited He.
+       </s>
+       <s pid="13" sid="7">
+        This is a resonance state because the two electrons can later exchange energy again and one electron will be ejected.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        The oscillation frequency are measured over a large range of magnetic fields and are in excellent quantitative agreement with the energy difference between the colliding atom threshold energy and the energy of the bound molecular state.
+       </s>
+       <s pid="14" sid="2">
+        This agreement indicates that they created a quantum superposition of atoms and diatomic molecules, which are chemically different species.
+       </s>
+       <s pid="14" sid="3">
+        Measurements of the number of atoms in the condensate as a function of time between the two pulses for various values of the steady-state magnetic fields between the pulses is also done.
+       </s>
+       <s pid="14" sid="4">
+        It is then observed that dramatic oscillations in the number of atoms remaining in the atomic BEC at frequencies corresponding to the energy splitting between the molecular and the atomic states.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       4. Conclusion
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        Bose Einstein Condensation has come a long way to discovery but in the process many great things have come out of it.
+       </s>
+       <s pid="15" sid="2">
+        Ion trapping especially with emphasis on Quantum computing has become a big deal today.
+       </s>
+       <s pid="15" sid="3">
+        Researchers at the University of Michigan employ laser-cooling technology to study the quantum dynamics of cold atoms under various interesting conditions.
+       </s>
+       <s pid="15" sid="4">
+        Cold atoms can be trapped in optical lattices, which are periodic light-shift potentials generated by multiple interfering laser beams.
+       </s>
+       <s pid="15" sid="5">
+        They have also used the idea of BEC to create CW atom lasers.
+       </s>
+       <s pid="15" sid="6">
+        This research is conducted under the research group of professor Georg Raithel in the Physics department.
+       </s>
+       <s pid="15" sid="7">
+        There's a great future for Bose Einstein Condensation.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N1016F">
+       <li id="N10170">
+        1. Pettifor, David. Bonding and Structure of Molecules and Solids. Oxford Science Publications, 2002.
+       </li>
+       <li id="N10172">
+        2. Kubo, R. Statistical Mechanics. North-Holland Personal Library, 1999.
+       </li>
+       <li id="N10174">
+        3. Carter, H. Ashley. Classical and Statistical Thermodynamics. Prentice Hall, 2001.
+       </li>
+       <li id="N10176">
+        4. Wynar, R. H., Freeland, R. S., Han, D. J., Ryu,C. &amp; Heinzen, D. J. Molecules in a Bose-Einstein condensate. Science 287, 1016-1019 (2000).
+       </li>
+       <li id="N10178">
+        5. Heinzen, D. J., Wynar, R., Drummond, P. D. &amp;Kheruntsyan, K. V. Superchemistry: dynamics of coupled atomic and molecular Bose-Einstein condensates. Phys. Rev. Lett.84, 5029-5033 (2000).
+       </li>
+       <li id="N1017A">
+        6. Anglin, J. R. &amp; Vardi, A. Dynamics of a two-mode Bose-Einstein condensate beyond mean-field theory. Phys. Rev. A 64, 013605/1-9 (2001).
+       </li>
+       <li id="N1017C">
+        7. Cusack, B. J., Alexander, T. J., Ostrovskaya, E. A. &amp; Kivshar, Y. S. Existence and stability of coupled atomic-molecular Bose-Einstein condensates. Phys. Rev. A 65, 013609/1-4 (2001).
+       </li>
+       <li id="N1017E">
+        8. Calsamiglia, J., Mackie, M. &amp; Suominen, K. Superposition of macroscopic numbers of atoms and molecules. Phys. Rev. Lett. 87, 160403-1 (2001).
+       </li>
+       <li id="N10180">
+        9.  http://www.colorado.edu/physics/2000/bec/
+       </li>
+       <li id="N10182">
+        10. http://quaser.physics.lsa.umich.edu/
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

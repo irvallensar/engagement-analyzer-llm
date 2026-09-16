@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam.
+      </p>
+      <p>
+       I'm writing to complain about the theatre show you
+       <ns type="RV">
+        <i>
+         did
+        </i>
+       </ns>
+       last week because there were too many irregularities during the show.
+      </p>
+      <p>
+       Firstly, the
+       <ns type="IJ">
+        <i>
+         guests
+        </i>
+       </ns>
+       stars who were supposed to
+       <ns type="RV">
+        <i>
+         play
+        </i>
+       </ns>
+       were different
+       <ns type="M">
+       </ns>
+       and very disappointing because they stopped the show twice. Secondly, the show started 45 minutes late when it was supposed to start at 19:30 and
+       <ns type="RA">
+        <i>
+         anyone
+        </i>
+       </ns>
+       explained to us, the
+       <ns type="RN">
+        <i>
+         public
+        </i>
+       </ns>
+       , what was happening.
+      </p>
+      <p>
+       To make matters worse when we bought the tickets
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       they were
+       <ns type="W">
+        <i>
+         too much
+        </i>
+       </ns>
+       expensive and there weren't any discounts for young people or for groups. But the worst happened when the show finished, because we (my girlfriend and I) were hungry and the theatre restaurant was closed.
+      </p>
+      <p>
+       Maybe, this was the worst show I have ever seen and for this
+       <ns type="MN">
+       </ns>
+       I'll wait for
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       refund.
+      </p>
+      <p>
+       <ns type="UP">
+        <i>
+         Your's
+        </i>
+       </ns>
+       Faithfully.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to complain about the theatre show you did last week because there were too many irregularities during the show.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, the guests stars who were supposed to play were different  and very disappointing because they stopped the show twice.
+       </s>
+       <s pid="3" sid="2">
+        Secondly, the show started 45 minutes late when it was supposed to start at 19:30 and anyone explained to us, the public, what was happening.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        To make matters worse when we bought the tickets, they were too much expensive and there weren't any discounts for young people or for groups.
+       </s>
+       <s pid="4" sid="2">
+        But the worst happened when the show finished, because we (my girlfriend and I) were hungry and the theatre restaurant was closed.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Maybe, this was the worst show I have ever seen and for this  I'll wait for the refund.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Your's Faithfully.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets so we couldn't
+       <ns type="RV">
+        <i>
+         explain
+        </i>
+       </ns>
+       her what happened that night. Jon had crashed
+       <ns type="UT">
+        <i>
+         with
+        </i>
+       </ns>
+       Pat's
+       <ns type="MP">
+        <i>
+         boyfriend
+        </i>
+       </ns>
+       car and he told her that someone had
+       <ns type="RV">
+        <i>
+         kicked
+        </i>
+       </ns>
+       the car with a metal stick.
+      </p>
+      <p>
+       Pat's boyfriend couldn't believe that story but Pat trusted
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       Jon and she
+       <ns type="IV">
+        <i>
+         thinked
+        </i>
+       </ns>
+       that he was honest. However, Jon felt very
+       <ns type="RJ">
+        disappointed
+       </ns>
+       and he told the truth.
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         <ns type="RT">
+          <i>
+           At
+          </i>
+         </ns>
+         the
+         <ns type="S">
+          <i>
+           beggining
+          </i>
+         </ns>
+        </i>
+       </ns>
+       they didn't talk to each other but yesterday they both took part in a radio programme and she forgave him.
+      </p>
+      <p>
+       Now Pat is angry with us because we didn't
+       <ns type="RV">
+        <i>
+         explain
+        </i>
+       </ns>
+       her what happened that night, and because she has left her boyfriend. It could
+       <ns type="TV">
+        <i>
+         be
+        </i>
+       </ns>
+       worse than it was and for this we are happy, but now we can't hide anything
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       her.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets so we couldn't explain her what happened that night.
+       </s>
+       <s pid="1" sid="3">
+        Jon had crashed with Pat's boyfriend car and he told her that someone had kicked the car with a metal stick.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Pat's boyfriend couldn't believe that story but Pat trusted in Jon and she thinked that he was honest.
+       </s>
+       <s pid="2" sid="2">
+        However, Jon felt very disappointed and he told the truth.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        At the beggining they didn't talk to each other but yesterday they both took part in a radio programme and she forgave him.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Now Pat is angry with us because we didn't explain her what happened that night, and because she has left her boyfriend.
+       </s>
+       <s pid="4" sid="2">
+        It could be worse than it was and for this we are happy, but now we can't hide anything to her.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

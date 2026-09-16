@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     31.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs. Smith
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         my
+        </i>
+       </ns>
+       name is ..., I am a local student and
+       <ns type="RP">
+        <i>
+         i
+        </i>
+       </ns>
+       will give you the requested information. The rooms for your students have been booked at the Palace Hotel near the
+       <ns type="UP">
+        <i>
+         city-centre
+        </i>
+       </ns>
+       . The hotel is just three
+       <ns type="RP">
+        <i>
+         busstops
+        </i>
+       </ns>
+       away from our college
+       <ns type="UP">
+        <i>
+         . So
+        </i>
+       </ns>
+       you and your students can take the bus from the central
+       <ns type="RP">
+        <i>
+         busstation
+        </i>
+       </ns>
+       that is right in front of your hotel to get to the conference.
+      </p>
+      <p>
+       The end-of-conference party starts just one
+       <ns type="SX">
+        <i>
+         our
+        </i>
+       </ns>
+       after the end of the conference. It is located in our sports hall. There will be live music and a midnight dinner.
+       <ns type="UC">
+        <i>
+         So you
+        </i>
+       </ns>
+       don't have to appear very
+       <ns type="DY">
+        noble
+       </ns>
+       dressed, just as you like
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       (there is no
+       <ns type="RN">
+        <i>
+         order
+        </i>
+       </ns>
+       - you may wear what you want).
+      </p>
+      <p>
+       For your last day I think it would be interesting to
+       <ns type="S">
+        <i>
+         vistit
+        </i>
+       </ns>
+       our
+       <ns type="RJ">
+        <i>
+         historical
+        </i>
+       </ns>
+       and famous
+       <ns type="UP">
+        <i>
+         city-centre
+        </i>
+       </ns>
+       . I will organize a tourist guide to give us information about the old buildings and sights.
+      </p>
+      <p>
+       If you have any more questions
+       <ns type="MP">
+       </ns>
+       write me a short letter.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs. Smith
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        my name is ..., I am a local student and i will give you the requested information.
+       </s>
+       <s pid="2" sid="2">
+        The rooms for your students have been booked at the Palace Hotel near the city-centre.
+       </s>
+       <s pid="2" sid="3">
+        The hotel is just three busstops away from our college.
+       </s>
+       <s pid="2" sid="4">
+        So you and your students can take the bus from the central busstation that is right in front of your hotel to get to the conference.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The end-of-conference party starts just one our after the end of the conference.
+       </s>
+       <s pid="3" sid="2">
+        It is located in our sports hall.
+       </s>
+       <s pid="3" sid="3">
+        There will be live music and a midnight dinner.
+       </s>
+       <s pid="3" sid="4">
+        So you don't have to appear very noble dressed, just as you like it (there is no order - you may wear what you want).
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        For your last day I think it would be interesting to vistit our historical and famous city-centre.
+       </s>
+       <s pid="4" sid="2">
+        I will organize a tourist guide to give us information about the old buildings and sights.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        If you have any more questions write me a short letter.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       The invention of the car was a great point in history. From there on people
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       mobile and had the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to travel wherever they wanted.
+       <ns type="W">
+        <i>
+         Of course within
+        </i>
+       </ns>
+       the physical barriers. People now had the chance to move to
+       <ns type="RP">
+        <i>
+         far away
+        </i>
+       </ns>
+       places to spend their
+       <ns type="S">
+        <i>
+         leassure
+        </i>
+       </ns>
+       time, to relax, or just to see something different than their
+       <ns type="DN">
+        <i>
+         home-countryside
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       In my life the car has an enormous influence. I come from a rural area. The next city is 15 km away and there is no
+       <ns type="RJ">
+        acceptable
+       </ns>
+       bus
+       <ns type="UP">
+        <i>
+         -
+        </i>
+       </ns>
+       or rail connection to go there. It
+       <ns type="TV">
+        <i>
+         has been
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         quiet
+        </i>
+       </ns>
+       hard
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       me not to have the
+       <ns type="RN">
+        opportunities
+       </ns>
+       for my free time like my friends
+       <ns type="AGA">
+        <i>
+         that
+        </i>
+       </ns>
+       lived in or near the city. I just had no
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to meet them after school, because I had no vehicle to get there. I always needed my Mom or my Dad to take me where I wanted to go.
+      </p>
+      <p>
+       Today I have my own car and I use it daily to get to work and to meet my friends at any place and any time. So with my car I achieved
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       great freedom.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        The invention of the car was a great point in history.
+       </s>
+       <s pid="1" sid="2">
+        From there on people got mobile and had the possibility to travel wherever they wanted.
+       </s>
+       <s pid="1" sid="3">
+        Of course within the physical barriers.
+       </s>
+       <s pid="1" sid="4">
+        People now had the chance to move to far away places to spend their leassure time, to relax, or just to see something different than their home-countryside.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        In my life the car has an enormous influence.
+       </s>
+       <s pid="2" sid="2">
+        I come from a rural area.
+       </s>
+       <s pid="2" sid="3">
+        The next city is 15 km away and there is no acceptable bus - or rail connection to go there.
+       </s>
+       <s pid="2" sid="4">
+        It has been quiet hard to me not to have the opportunities for my free time like my friends that lived in or near the city.
+       </s>
+       <s pid="2" sid="5">
+        I just had no possibility to meet them after school, because I had no vehicle to get there.
+       </s>
+       <s pid="2" sid="6">
+        I always needed my Mom or my Dad to take me where I wanted to go.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Today I have my own car and I use it daily to get to work and to meet my friends at any place and any time.
+       </s>
+       <s pid="3" sid="2">
+        So with my car I achieved a great freedom.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

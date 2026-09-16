@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      51+
+     </age>
+    </personnel>
+    <score>
+     29.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       13.6.00
+      </p>
+      <p>
+       Dear Hellen,
+      </p>
+      <p>
+       Thank you very much for your letter
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       I received yesterday. I am very happy that I won the first prize in your competition - two weeks at
+       <ns type="RP">
+        <i>
+         camp
+        </i>
+       </ns>
+       California in
+       <ns type="MD">
+       </ns>
+       USA. Also I am pleased
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that I don't have to pay any expenses.
+      </p>
+      <p>
+       I would like to travel
+       <ns type="M">
+       </ns>
+       end of July. In June I have other arrangements, such as my school exams and my birthday.
+       <ns type="AS">
+        <i>
+         It is convenient for me the last two weeks of July
+        </i>
+       </ns>
+       . After my school exams I will have time to prepare myself for the trip.
+      </p>
+      <p>
+       In your letter you
+       <ns type="TV">
+        <i>
+         are asking
+        </i>
+       </ns>
+       me to
+       <ns type="FV">
+        <i>
+         chose
+        </i>
+       </ns>
+       which
+       <ns type="MN">
+       </ns>
+       <ns type="S">
+        <i>
+         accomodation
+        </i>
+       </ns>
+       I prefer. I would like very much to stay in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       . Last year I
+       <ns type="TV">
+        <i>
+         stay
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         tents
+        </i>
+       </ns>
+       with some friends in England and I really enjoyed it.
+       <ns type="MT">
+        <i>
+         <ns type="RP">
+          <i>
+           Summer time
+          </i>
+         </ns>
+        </i>
+       </ns>
+       the weather is good and I don't see
+       <ns type="M">
+       </ns>
+       any problem
+       <ns type="MT">
+       </ns>
+       anywhere I
+       <ns type="TV">
+        <i>
+         will stay
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       During my time in California, I would love to have the chance
+       <ns type="R">
+        <i>
+         of
+        </i>
+       </ns>
+       some leisure activities such as swimming. It is my favourite sport. I am good
+       <ns type="W">
+        <i>
+         and fast at swimming
+        </i>
+       </ns>
+       . Another sport I love is
+       <ns type="RP">
+        <i>
+         basket ball
+        </i>
+       </ns>
+       .
+       <ns type="DY">
+        <i>
+         Hopefull
+        </i>
+       </ns>
+       I will meet some other girls
+       <ns type="MJ">
+       </ns>
+       in the same sport. So we
+       <ns type="TV">
+        <i>
+         all play
+        </i>
+       </ns>
+       as a team.
+      </p>
+      <p>
+       My final question is this. Can you let me know if there
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       any facilities for washing my clothes
+       <ns type="MP">
+       </ns>
+       If not I will bring with me enough to last for two weeks. Please give me a rough idea how much spending money I will need.
+      </p>
+      <p>
+       Please write soon
+      </p>
+      <p>
+       Yours Sincerely
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        13.6.00
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Hellen,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Thank you very much for your letter that I received yesterday.
+       </s>
+       <s pid="3" sid="2">
+        I am very happy that I won the first prize in your competition - two weeks at camp California in  USA.
+       </s>
+       <s pid="3" sid="3">
+        Also I am pleased, that I don't have to pay any expenses.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I would like to travel  end of July.
+       </s>
+       <s pid="4" sid="2">
+        In June I have other arrangements, such as my school exams and my birthday.
+       </s>
+       <s pid="4" sid="3">
+        It is convenient for me the last two weeks of July.
+       </s>
+       <s pid="4" sid="4">
+        After my school exams I will have time to prepare myself for the trip.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In your letter you are asking me to chose which  accomodation I prefer.
+       </s>
+       <s pid="5" sid="2">
+        I would like very much to stay in  tents.
+       </s>
+       <s pid="5" sid="3">
+        Last year I stay in  tents with some friends in England and I really enjoyed it.
+       </s>
+       <s pid="5" sid="4">
+        Summer time the weather is good and I don't see  any problem  anywhere I will stay.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        During my time in California, I would love to have the chance of some leisure activities such as swimming.
+       </s>
+       <s pid="6" sid="2">
+        It is my favourite sport.
+       </s>
+       <s pid="6" sid="3">
+        I am good and fast at swimming.
+       </s>
+       <s pid="6" sid="4">
+        Another sport I love is basket ball.
+       </s>
+       <s pid="6" sid="5">
+        Hopefull I will meet some other girls  in the same sport.
+       </s>
+       <s pid="6" sid="6">
+        So we all play as a team.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        My final question is this.
+       </s>
+       <s pid="7" sid="2">
+        Can you let me know if there is any facilities for washing my clothes
+       </s>
+       <s pid="7" sid="3">
+        If not I will bring with me enough to last for two weeks.
+       </s>
+       <s pid="7" sid="4">
+        Please give me a rough idea how much spending money I will need.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Please write soon
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours Sincerely
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="S">
+        <i>
+         Shoping
+        </i>
+       </ns>
+       is not always enjoyable.
+      </p>
+      <p>
+       As a housewife I have a good
+       <ns type="R">
+        idea about it
+       </ns>
+       . Once a week I go shopping. Sometimes I go
+       <ns type="R">
+        <i>
+         two days
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       We all have to do our shopping. It is unavoidable
+       <ns type="MP">
+       </ns>
+       Sometimes it is pleasant, and sometimes it's not.
+      </p>
+      <p>
+       I often shop with no problems, but on Saturday
+       <ns type="MA">
+       </ns>
+       is not the same.
+       <ns type="MD">
+        <i>
+         Shops
+        </i>
+       </ns>
+       are so crowded and it takes
+       <ns type="MD">
+       </ns>
+       long time to find what we want and what we need. Also we
+       <ns type="RV">
+        <i>
+         got
+        </i>
+       </ns>
+       to face a long queue in order to pay.
+       <ns type="AS">
+        <i>
+         Spending long hours shopping it is tiring for some people
+        </i>
+       </ns>
+       . I find it very tiring sometimes.
+      </p>
+      <p>
+       Shopping is not always enjoyable because we spend money. Usually
+       <ns type="W">
+        <i>
+         much more money we spend
+        </i>
+       </ns>
+       than we expect. We can't do anything about
+       <ns type="R">
+        <i>
+         is
+        </i>
+       </ns>
+       . We have to face it - it
+       <ns type="R">
+        has both sides
+       </ns>
+       . Sometimes shopping is very enjoyable but not
+       <ns type="RP">
+        <i>
+         everyday
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Shoping is not always enjoyable.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        As a housewife I have a good idea about it.
+       </s>
+       <s pid="2" sid="2">
+        Once a week I go shopping.
+       </s>
+       <s pid="2" sid="3">
+        Sometimes
+       </s>
+       <s pid="2" sid="4">
+        I go two days
+       </s>
+       <s pid="2" sid="5">
+        We all have to do our shopping.
+       </s>
+       <s pid="2" sid="6">
+        It is unavoidable Sometimes it is pleasant, and sometimes it's not.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I often shop with no problems, but on Saturday  is not the same.
+       </s>
+       <s pid="3" sid="2">
+        Shops are so crowded and it takes  long time to find what we want and what we need.
+       </s>
+       <s pid="3" sid="3">
+        Also we got to face a long queue in order to pay.
+       </s>
+       <s pid="3" sid="4">
+        Spending long hours shopping it is tiring for some people.
+       </s>
+       <s pid="3" sid="5">
+        I find it very tiring sometimes.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Shopping is not always enjoyable because we spend money.
+       </s>
+       <s pid="4" sid="2">
+        Usually much more money we spend than we expect.
+       </s>
+       <s pid="4" sid="3">
+        We can't do anything about is.
+       </s>
+       <s pid="4" sid="4">
+        We have to face it - it has both sides.
+       </s>
+       <s pid="4" sid="5">
+        Sometimes shopping is very enjoyable but not everyday.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

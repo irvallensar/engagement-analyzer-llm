@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Catalan
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     22.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       London, 1st of June 2000
+      </p>
+      <p>
+       Mister Jones,
+      </p>
+      <p>
+       I'm Omadar, a
+       <ns type="RP">
+        <i>
+         spanish
+        </i>
+       </ns>
+       male of eighteen years old who is spending
+       <ns type="W">
+        <i>
+         in this town a
+         <ns type="MP">
+          <i>
+           week
+          </i>
+         </ns>
+         holiday
+        </i>
+       </ns>
+       . I decided to
+       <ns type="RV">
+        <i>
+         enjoy
+        </i>
+       </ns>
+       a play at the theatre
+       <ns type="MT">
+       </ns>
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       you're the manager to see
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       "London's newest and best musical show." My opinion?
+      </p>
+      <p>
+       I had a very disappointing evening. First, Danny Brook
+       <ns type="TV">
+        <i>
+         doesn't
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         play
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       "Over the rainbow"
+       <ns type="MP">
+       </ns>
+       his
+       <ns type="RN">
+        <i>
+         paper
+        </i>
+       </ns>
+       was played by Danny De Vito. Also, the play started
+       <ns type="MP">
+        <i>
+         <ns type="S">
+          <i>
+           fourty five
+          </i>
+         </ns>
+        </i>
+       </ns>
+       minutes
+       <ns type="FY">
+        <i>
+         late
+        </i>
+       </ns>
+       than the
+       <ns type="R">
+        <i>
+         starting hour
+        </i>
+       </ns>
+       . I can understand that a play can start fifteen minutes late, but not
+       <ns type="MP">
+        <i>
+         <ns type="S">
+          <i>
+           fourty five
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . Second, my wife and
+       <ns type="RA">
+        <i>
+         me
+        </i>
+       </ns>
+       <ns type="IV">
+        <i>
+         payed
+        </i>
+       </ns>
+       £20 for the tickets and we asked for discounts. The receptionist who gave me the tickets told me that no discounts were
+       <ns type="RJ">
+        <i>
+         able
+        </i>
+       </ns>
+       that night. After a boring play, I decided to go
+       <ns type="MT">
+       </ns>
+       <ns type="RD">
+        <i>
+         an
+        </i>
+       </ns>
+       theatre restaurant, but
+       <ns type="RY">
+        <i>
+         uncertainly
+        </i>
+       </ns>
+       it was closed. I decided to go home and
+       <ns type="RV">
+        <i>
+         prepare
+        </i>
+       </ns>
+       some sandwiches. The principal reason
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       I'm
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       you at the moment is that I want my money back, because I felt so
+       <ns type="RJ">
+        <i>
+         disappointing
+        </i>
+       </ns>
+       with the theatre and also with the play.
+      </p>
+      <p>
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         sincerelly
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        London, 1st of June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Mister Jones,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I'm Omadar, a spanish male of eighteen years old who is spending in this town a week holiday.
+       </s>
+       <s pid="3" sid="2">
+        I decided to enjoy a play at the theatre  wich you're the manager to see the "London's newest and best musical show."
+       </s>
+       <s pid="3" sid="3">
+        My opinion?
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I had a very disappointing evening.
+       </s>
+       <s pid="4" sid="2">
+        First, Danny Brook doesn't play  "Over the rainbow" his paper was played by Danny De Vito.
+       </s>
+       <s pid="4" sid="3">
+        Also, the play started fourty five minutes late than the starting hour.
+       </s>
+       <s pid="4" sid="4">
+        I can understand that a play can start fifteen minutes late, but not fourty five.
+       </s>
+       <s pid="4" sid="5">
+        Second, my wife and me payed £20 for the tickets and we asked for discounts.
+       </s>
+       <s pid="4" sid="6">
+        The receptionist who gave me the tickets told me that no discounts were able that night.
+       </s>
+       <s pid="4" sid="7">
+        After a boring play, I decided to go  an theatre restaurant, but uncertainly it was closed.
+       </s>
+       <s pid="4" sid="8">
+        I decided to go home and prepare some sandwiches.
+       </s>
+       <s pid="4" sid="9">
+        The principal reason for I'm writting  you at the moment is that I want my money back, because I felt so disappointing with the theatre and also with the play.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Your sincerelly,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       It's a good question, because I
+       <ns type="AS">
+        <i>
+         <ns type="TV">
+          <i>
+           never had
+          </i>
+         </ns>
+         asked it to myself
+        </i>
+       </ns>
+       . I think modern technology is changing
+       <ns type="W">
+        <i>
+         so much my daily life
+        </i>
+       </ns>
+       and also
+       <ns type="UV">
+        <i>
+         is
+        </i>
+       </ns>
+       changing the
+       <ns type="AGN">
+        <i>
+         life
+        </i>
+       </ns>
+       of others like me.
+      </p>
+      <p>
+       Before modern technologies arrived, you
+       <ns type="TV">
+        <i>
+         can't
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         comunicate
+        </i>
+       </ns>
+       as
+       <ns type="DY">
+        <i>
+         easy
+        </i>
+       </ns>
+       as
+       <ns type="W">
+        <i>
+         today we can do
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       An example could be the Internet. It changed my life, because with it I can
+       <ns type="RV">
+        <i>
+         discover
+        </i>
+       </ns>
+       more information than
+       <ns type="M">
+       </ns>
+       a newspaper, and also information
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       all around the world,
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         possibly never I
+         <ns type="TV">
+          <i>
+           can
+          </i>
+         </ns>
+        </i>
+       </ns>
+       access without
+       <ns type="MD">
+       </ns>
+       Internet. But,
+       <ns type="MA">
+       </ns>
+       is not only news or information. You can
+       <ns type="S">
+        <i>
+         comunicate
+        </i>
+       </ns>
+       with people
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         place
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         were
+        </i>
+       </ns>
+       you
+       <ns type="MV">
+       </ns>
+       never
+       <ns type="UV">
+        <i>
+         can
+        </i>
+       </ns>
+       imagine
+       <ns type="R">
+        <i>
+         to have a trip
+        </i>
+       </ns>
+       because it
+       <ns type="TV">
+        <i>
+         will
+        </i>
+       </ns>
+       be too expensive. An
+       <ns type="RN">
+        <i>
+         extract
+        </i>
+       </ns>
+       could be the popular
+       <ns type="RN">
+        <i>
+         chats
+        </i>
+       </ns>
+       , where people write with the keyboard what they want to tell. But, if you don't like
+       <ns type="FV">
+        <i>
+         to use
+        </i>
+       </ns>
+       the keyboard to
+       <ns type="RV">
+        <i>
+         tell
+        </i>
+       </ns>
+       something or
+       <ns type="FV">
+        <i>
+         <ns type="S">
+          <i>
+           comunicate
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , you can use video
+       <ns type="RN">
+        <i>
+         conference
+        </i>
+       </ns>
+       , a
+       <ns type="S">
+        <i>
+         sistem
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       you
+       <ns type="UV">
+        <i>
+         can
+        </i>
+       </ns>
+       talk with other people simply with a microphone and speakers. Also
+       <ns type="MY">
+       </ns>
+       is the
+       <ns type="RN">
+        <i>
+         possibility of
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         download
+        </i>
+       </ns>
+       things to your
+       <ns type="RP">
+        <i>
+         pc
+        </i>
+       </ns>
+       like software, pictures and
+       <ns type="MP">
+       </ns>
+       also, music. The modern technologies
+       <ns type="RV">
+        <i>
+         make me
+        </i>
+       </ns>
+       <ns type="MV">
+       </ns>
+       able to listen the music I've downloaded with the same quality as a CD, and if I buy a
+       <ns type="DN">
+        reproductor
+       </ns>
+       , I can
+       <ns type="RV">
+        <i>
+         wear
+        </i>
+       </ns>
+       this music
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         everywere
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Also computers and mobile phones
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="IV">
+        <i>
+         evolutioned
+        </i>
+       </ns>
+       thanks to modern technologies. Without this evolution, we
+       <ns type="MV">
+       </ns>
+       probably still
+       <ns type="RV">
+        <i>
+         get
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       ancient times. Who wants to return to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       ancient times? No electricity, no canalized water, no healthy water, no
+       <ns type="UP">
+        <i>
+         TV's
+        </i>
+       </ns>
+       , no phones, no
+       <ns type="UP">
+        <i>
+         PC's
+        </i>
+       </ns>
+       .. I'm afraid that the people
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       ancient times lived although they
+       <ns type="TV">
+        <i>
+         don't
+        </i>
+       </ns>
+       have
+       <ns type="R">
+        <i>
+         anything
+        </i>
+       </ns>
+       of these things, but me and everyone
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="AGD">
+        <i>
+         this
+        </i>
+       </ns>
+       times, I'm afraid that we wouldn't like
+       <ns type="FV">
+        <i>
+         return
+        </i>
+       </ns>
+       to this life.
+       <ns type="RY">
+        <i>
+         As well
+        </i>
+       </ns>
+       , I think that modern technologies are necessary, but also I think that
+       <ns type="MA">
+       </ns>
+       are
+       <ns type="UY">
+        <i>
+         so
+        </i>
+       </ns>
+       expensive, but with time, the price goes down. So, if the price goes down
+       <ns type="MA">
+       </ns>
+       is because
+       <ns type="RA">
+        <i>
+         anything
+        </i>
+       </ns>
+       new is at
+       <ns type="R">
+        <i>
+         the moment for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         sell
+        </i>
+       </ns>
+       .
+       <ns type="MA">
+        <i>
+         Is
+        </i>
+       </ns>
+       like a
+       <ns type="UJ">
+        <i>
+         round
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         tour
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        It's a good question, because I never had asked it to myself.
+       </s>
+       <s pid="1" sid="2">
+        I think modern technology is changing so much my daily life and also is changing the life of others like me.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Before modern technologies arrived, you can't comunicate as easy as today we can do.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        An example could be the Internet.
+       </s>
+       <s pid="3" sid="2">
+        It changed my life, because with it I can discover more information than  a newspaper, and also information of all around the world, that possibly never I can access without  Internet.
+       </s>
+       <s pid="3" sid="3">
+        But,  is not only news or information.
+       </s>
+       <s pid="3" sid="4">
+        You can comunicate with people from place were you  never can imagine to have a trip because it will be too expensive.
+       </s>
+       <s pid="3" sid="5">
+        An extract could be the popular chats, where people write with the keyboard what they want to tell.
+       </s>
+       <s pid="3" sid="6">
+        But, if you don't like to use the keyboard to tell something or comunicate, you can use video conference, a sistem wich  you can talk with other people simply with a microphone and speakers.
+       </s>
+       <s pid="3" sid="7">
+        Also  is the possibility of download things to your pc like software, pictures and also, music.
+       </s>
+       <s pid="3" sid="8">
+        The modern technologies make me  able to listen the music I've downloaded with the same quality as a CD, and if I buy a reproductor, I can wear this music to everywere.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Also computers and mobile phones had evolutioned thanks to modern technologies.
+       </s>
+       <s pid="4" sid="2">
+        Without this evolution, we  probably still get on the ancient times.
+       </s>
+       <s pid="4" sid="3">
+        Who wants to return to the ancient times?
+       </s>
+       <s pid="4" sid="4">
+        No electricity, no canalized water, no healthy water, no TV's, no phones, no PC's..
+       </s>
+       <s pid="4" sid="5">
+        I'm afraid that the people on the ancient times lived although they don't have anything of these things, but me and everyone of this times, I'm afraid that we wouldn't like return to this life.
+       </s>
+       <s pid="4" sid="6">
+        As well, I think that modern technologies are necessary, but also I think that  are so expensive, but with time, the price goes down.
+       </s>
+       <s pid="4" sid="7">
+        So, if the price goes down   is because anything new is at the moment for sell.
+       </s>
+       <s pid="4" sid="8">
+        Is like a round tour.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

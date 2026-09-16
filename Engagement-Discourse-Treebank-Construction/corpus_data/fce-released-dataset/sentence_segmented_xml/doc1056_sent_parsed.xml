@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Circle
+       <ns type="SA">
+        <i>
+         Theater
+        </i>
+       </ns>
+      </p>
+      <p>
+       To Mr. Smith, Circle
+       <ns type="SA">
+        <i>
+         Theater
+        </i>
+       </ns>
+       's manager
+      </p>
+      <p>
+       20th June 2000
+      </p>
+      <p>
+       Dear Mr Smith,
+      </p>
+      <p>
+       <ns type="ID">
+        By the following
+       </ns>
+       , I would like to inform you that
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           I've assisted
+          </i>
+         </ns>
+        </i>
+       </ns>
+       your new musical show,
+       <ns type="MD">
+       </ns>
+       <ns type="W">
+        <i>
+         which name
+        </i>
+       </ns>
+       is "Over the rainbow", last Saturday evening, 10th June. I'm writing
+       <ns type="MT">
+       </ns>
+       you to make a complaint
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       your advertisement, which I consider
+       <ns type="UT">
+        <i>
+         like
+        </i>
+       </ns>
+       a lying advertisement. Let me explain
+       <ns type="MT">
+       </ns>
+       you why I'm now so disappointed.
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           I've spent
+          </i>
+         </ns>
+        </i>
+       </ns>
+       one
+       <ns type="MP">
+        <i>
+         week
+        </i>
+       </ns>
+       holiday in London with my husband for our honeymoon. We had
+       <ns type="S">
+        <i>
+         preparred
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       <ns type="SX">
+        <i>
+         quiet
+        </i>
+       </ns>
+       a long time ago, this
+       <ns type="RN">
+        <i>
+         travel
+        </i>
+       </ns>
+       to the capital and
+       <ns type="RV">
+        <i>
+         spared
+        </i>
+       </ns>
+       a lot of money as well.
+      </p>
+      <p>
+       We are both very keen on
+       <ns type="RN">
+        <i>
+         musical shows
+        </i>
+       </ns>
+       . We've already
+       <ns type="RV">
+        <i>
+         attended
+        </i>
+       </ns>
+       "Cats", the "Phantom of the Opera", "les Miserables", "Grease", and so many others. When we saw your leaflet
+       <ns type="MA">
+       </ns>
+       <ns type="IV">
+        <i>
+         mentionned
+        </i>
+       </ns>
+       "London's newest and best musical show", we were so enthusiastic and curious that we
+       <ns type="W">
+        <i>
+         bought immediately
+        </i>
+       </ns>
+       the tickets. On the
+       <ns type="UV">
+        <i>
+         waiting
+        </i>
+       </ns>
+       evening,
+       <ns type="W">
+        <i>
+         at the entrance stood people
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       who were shouting at you because there
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       any discounts available. One thing that you promised on your leaflet. We didn't have trouble
+       <ns type="FV">
+        <i>
+         to find
+        </i>
+       </ns>
+       our seats, but we found
+       <ns type="MA">
+       </ns>
+       very annoying to
+       <ns type="FV">
+        <i>
+         have waited
+        </i>
+       </ns>
+       45 minutes before the show
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           goes on
+          </i>
+         </ns>
+        </i>
+       </ns>
+       and more
+       <ns type="MC">
+       </ns>
+       that your famous actors
+       <ns type="W">
+        <i>
+         weren't
+         <ns type="RY">
+          <i>
+           absolutely
+          </i>
+         </ns>
+        </i>
+       </ns>
+       Mr Brook and Mrs Truelove and we can also add that your restaurant wasn't opened because of
+       <ns type="DN">
+        <i>
+         hygienic
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         troubles
+        </i>
+       </ns>
+       . I can say now that "It wasn't my perfect evening out" and I
+       <ns type="W">
+        <i>
+         request now
+        </i>
+       </ns>
+       some money back for all these
+       <ns type="RN">
+        <i>
+         disagreements
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Circle
+       </s>
+       <s pid="1" sid="2">
+        Theater
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        To Mr. Smith, Circle Theater's manager
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        20th June 2000
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Dear Mr Smith,
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        By the following, I would like to inform you that I've assisted your new musical show,  which name is "Over the rainbow", last Saturday evening, 10th June.
+       </s>
+       <s pid="5" sid="2">
+        I'm writing  you to make a complaint on your advertisement, which I consider like a lying advertisement.
+       </s>
+       <s pid="5" sid="3">
+        Let me explain  you why I'm now so disappointed.
+       </s>
+       <s pid="5" sid="4">
+        I've spent one week holiday in London with my husband for our honeymoon.
+       </s>
+       <s pid="5" sid="5">
+        We had preparred  quiet a long time ago, this travel to the capital and spared a lot of money as well.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        We are both very keen on musical shows.
+       </s>
+       <s pid="6" sid="2">
+        We've already attended "Cats", the "Phantom of the Opera", "les Miserables", "Grease", and so many others.
+       </s>
+       <s pid="6" sid="3">
+        When we saw your leaflet  mentionned "London's newest and best musical show", we were so enthusiastic and curious that we bought immediately the tickets.
+       </s>
+       <s pid="6" sid="4">
+        On the waiting evening, at the entrance stood people, who were shouting at you because there wasn't any discounts available.
+       </s>
+       <s pid="6" sid="5">
+        One thing that you promised on your leaflet.
+       </s>
+       <s pid="6" sid="6">
+        We didn't have trouble to find our seats, but we found  very annoying to have waited 45 minutes before the show goes on and more  that your famous actors weren't absolutely Mr Brook and Mrs Truelove and we can also add that your restaurant wasn't opened because of hygienic troubles.
+       </s>
+       <s pid="6" sid="7">
+        I can say now that "It wasn't my perfect evening out" and I request now some money back for all these disagreements.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       To International Post magazine
+      </p>
+      <p>
+       Application for the shopping trip to New York
+      </p>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       Please find enclosed my
+       <ns type="RN">
+        <i>
+         thinking
+        </i>
+       </ns>
+       about the fashion of the future. First of all, I think we should consider the
+       <ns type="RN">
+        <i>
+         manner
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="RY">
+          <i>
+           actually
+          </i>
+         </ns>
+         <ns type="U">
+          <i>
+           how the
+          </i>
+         </ns>
+         people are dressing
+        </i>
+       </ns>
+       to see how it's going to be
+       <ns type="IV">
+        <i>
+         developped
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         into
+        </i>
+       </ns>
+       the future. Everyone has
+       <ns type="SX">
+        <i>
+         is
+        </i>
+       </ns>
+       own style but it's obvious that many of us
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       wearing the same clothes
+       <ns type="RT">
+        <i>
+         like
+        </i>
+       </ns>
+       others. We all follow the new collection on the market. Today it's wearing
+       <ns type="UP">
+        <i>
+         short-trousers
+        </i>
+       </ns>
+       and yesterday
+       <ns type="MA">
+       </ns>
+       was wearing
+       <ns type="RJ">
+        <i>
+         <ns type="UP">
+          <i>
+           broken-jeans
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . What we wear is also influenced by models,
+       <ns type="MD">
+       </ns>
+       <ns type="CN">
+        <i>
+         medias
+        </i>
+       </ns>
+       , or new
+       <ns type="AGN">
+        <i>
+         collection
+        </i>
+       </ns>
+       , which come from Paris, London, or New York. These new clothes are often very expensive
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         that's
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="MY">
+         </ns>
+         maybe
+        </i>
+       </ns>
+       not everyone can afford to buy himself the newest clothes on the market. In 100 years, it's possible that
+       <ns type="R">
+        <i>
+         each people
+        </i>
+       </ns>
+       will
+       <ns type="S">
+        <i>
+         developp
+        </i>
+       </ns>
+       his own style using all the new materials like plastic, latex
+       <ns type="MP">
+       </ns>
+       everything possible,
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a way to create
+       <ns type="MD">
+       </ns>
+       own clothes.
+      </p>
+      <p>
+       In my opinion, I think that people will
+       <ns type="X">
+        <i>
+         wear no
+        </i>
+       </ns>
+       clothes anymore, just
+       <ns type="FV">
+        <i>
+         being
+        </i>
+       </ns>
+       natural,
+       <ns type="MV">
+       </ns>
+       nude and feeling free, like many many years before. Because, I think that people need to find
+       <ns type="W">
+        <i>
+         again their authenticity
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I
+       <ns type="RV">
+        <i>
+         wish
+        </i>
+       </ns>
+       that my article
+       <ns type="RV">
+        <i>
+         comes
+        </i>
+       </ns>
+       in your magazine.
+      </p>
+      <p>
+       With Best regards.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To International Post magazine
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Application for the shopping trip to New York
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Please find enclosed my thinking about the fashion of the future.
+       </s>
+       <s pid="4" sid="2">
+        First of all, I think we should consider the manner actually how the people are dressing to see how it's going to be developped into the future.
+       </s>
+       <s pid="4" sid="3">
+        Everyone has is own style but it's obvious that many of us is wearing the same clothes like others.
+       </s>
+       <s pid="4" sid="4">
+        We all follow the new collection on the market.
+       </s>
+       <s pid="4" sid="5">
+        Today it's wearing short-trousers and yesterday  was wearing broken-jeans.
+       </s>
+       <s pid="4" sid="6">
+        What we wear is also influenced by models,  medias, or new collection, which come from Paris, London, or New York.
+       </s>
+       <s pid="4" sid="7">
+        These new clothes are often very expensive that's  maybe not everyone can afford to buy himself the newest clothes on the market.
+       </s>
+       <s pid="4" sid="8">
+        In 100 years, it's possible that each people will developp his own style using all the new materials like plastic, latex everything possible, in a way to create  own clothes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In my opinion, I think that people will wear no clothes anymore, just being natural,  nude and feeling free, like many many years before.
+       </s>
+       <s pid="5" sid="2">
+        Because, I think that people need to find again their authenticity.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I wish that my article comes in your magazine.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        With Best regards.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

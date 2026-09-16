@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     20.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir:
+      </p>
+      <p>
+       I am writing to let you know
+       <ns type="MT">
+       </ns>
+       the
+       <ns type="RJ">
+        <i>
+         disappointed
+        </i>
+       </ns>
+       evening I had
+       <ns type="FV">
+        <i>
+         seen
+        </i>
+       </ns>
+       your show with the worst services I have ever
+       <ns type="RV">
+        <i>
+         seen
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       First of all,
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the ticket
+       <ns type="U">
+        <i>
+         for entrance
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       says that the actor was Danny Brook and
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       he was not.
+       <ns type="W">
+        <i>
+         In the show
+         <ns type="S">
+          <i>
+           apears
+          </i>
+         </ns>
+         a different actor
+        </i>
+       </ns>
+       , so I was very disappointed.
+      </p>
+      <p>
+       Then,
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the ticket
+       <ns type="MA">
+       </ns>
+       says that the show
+       <ns type="TV">
+        <i>
+         started
+        </i>
+       </ns>
+       at 19.30 and, I don't know why, it started at 20:15, very
+       <ns type="DJ">
+        <i>
+         unpolited
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       your
+       <ns type="RN">
+        <i>
+         side
+        </i>
+       </ns>
+       , and
+       <ns type="MP">
+       </ns>
+       also,
+       <ns type="MA">
+       </ns>
+       <ns type="ID">
+        <i>
+         make me lose time
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="MD">
+        <i>
+         Other
+        </i>
+       </ns>
+       thing is that
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the ticket
+       <ns type="MA">
+       </ns>
+       <ns type="S">
+        <i>
+         apears
+        </i>
+       </ns>
+       that discounts were available but when I asked
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       it, there
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         no one
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The last thing is that you invited us to visit your restaurant after the show, but it was closed because the food was not
+       <ns type="RY">
+        <i>
+         already
+        </i>
+       </ns>
+       done.
+      </p>
+      <p>
+       I thought you were a good theatre,
+       <ns type="SX">
+        <i>
+         were
+        </i>
+       </ns>
+       people can go and have a good evening alone or with somebody else, but
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       I am very disappointed and I want to ask for my money back. I'll never return
+       <ns type="UY">
+        <i>
+         again
+        </i>
+       </ns>
+       because of the bad service you
+       <ns type="S">
+        <i>
+         ofer
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Please, let me know your answer.
+      </p>
+      <p>
+       <ns type="DY">
+        <i>
+         Truely
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am writing to let you know  the disappointed evening I had seen your show with the worst services I have ever seen.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, in the ticket for entrance  says that the actor was Danny Brook and realy he was not.
+       </s>
+       <s pid="3" sid="2">
+        In the show apears a different actor, so I was very disappointed.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Then, in the ticket  says that the show started at 19.30 and, I don't know why, it started at 20:15, very unpolited of your side, and also,  make me lose time.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Other thing is that in the ticket  apears that discounts were available but when I asked for it, there was no one.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The last thing is that you invited us to visit your restaurant after the show, but it was closed because the food was not already done.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I thought you were a good theatre, were people can go and have a good evening alone or with somebody else, but realy I am very disappointed and I want to ask for my money back.
+       </s>
+       <s pid="7" sid="2">
+        I'll never return again because of the bad service you ofer.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Please, let me know your answer.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Truely.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       All of us know
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       technology and science
+       <ns type="AGV">
+        <i>
+         has
+        </i>
+       </ns>
+       affected our lives.
+       <ns type="RV">
+        <i>
+         Seen
+        </i>
+       </ns>
+       my
+       <ns type="SX">
+        <i>
+         hole
+        </i>
+       </ns>
+       life I can say
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         moden
+        </i>
+       </ns>
+       technology has changed my daily life in many ways.
+      </p>
+      <p>
+       The first
+       <ns type="RN">
+        <i>
+         way
+        </i>
+       </ns>
+       is that it has changed my
+       <ns type="UP">
+        <i>
+         family's
+        </i>
+       </ns>
+       relationship. It has, in some way, separated the
+       <ns type="UN">
+        <i>
+         family's life
+        </i>
+       </ns>
+       , making all of us
+       <ns type="UV">
+        <i>
+         be
+        </i>
+       </ns>
+       worried about
+       <ns type="S">
+        <i>
+         ower
+        </i>
+       </ns>
+       own things. We
+       <ns type="W">
+        <i>
+         work all
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         separated
+        </i>
+       </ns>
+       ,
+       <ns type="RV">
+        <i>
+         making grow
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="DY">
+        <i>
+         individuality
+        </i>
+       </ns>
+       and
+       <ns type="FV">
+        <i>
+         <ns type="S">
+          <i>
+           forgoten
+          </i>
+         </ns>
+        </i>
+       </ns>
+       we
+       <ns type="AGV">
+        <i>
+         has
+        </i>
+       </ns>
+       to
+       <ns type="W">
+        <i>
+         talk all
+        </i>
+       </ns>
+       together to know about
+       <ns type="RQ">
+        <i>
+         the
+        </i>
+       </ns>
+       other's life.
+      </p>
+      <p>
+       The second
+       <ns type="RN">
+        <i>
+         way
+        </i>
+       </ns>
+       is that it has
+       <ns type="TV">
+        <i>
+         make
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="FJ">
+          <i>
+           easy
+          </i>
+         </ns>
+         my life
+        </i>
+       </ns>
+       .
+       <ns type="FN">
+        <i>
+         <ns type="UD">
+          <i>
+           The
+           <ns type="S">
+            <i>
+             comunications
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the world
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       faster than ever, so when I need something, I can have it in only a minute. It
+       <ns type="TV">
+        <i>
+         allowed
+        </i>
+       </ns>
+       me to worry about other things
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       life.
+      </p>
+      <p>
+       The last
+       <ns type="RN">
+        <i>
+         way
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         in
+        </i>
+       </ns>
+       that
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       technology has allowed me to have
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       better health. It has
+       <ns type="RV">
+        <i>
+         <ns type="TV">
+          <i>
+           <ns type="S">
+            <i>
+             descover
+            </i>
+           </ns>
+          </i>
+         </ns>
+        </i>
+       </ns>
+       many instruments that help me to
+       <ns type="RV">
+        <i>
+         have
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         a good
+        </i>
+       </ns>
+       health.
+      </p>
+      <p>
+       To finish, I can say technology has changed my life in good and bad ways, helping
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       things
+       <ns type="FV">
+        <i>
+         be
+        </i>
+       </ns>
+       easier but making me
+       <ns type="U">
+        <i>
+         develop a big
+        </i>
+       </ns>
+       <ns type="DJ">
+        <i>
+         <ns type="RN">
+          <i>
+           independence
+          </i>
+         </ns>
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        All of us know the technology and science has affected our lives.
+       </s>
+       <s pid="1" sid="2">
+        Seen my hole life I can say the moden technology has changed my daily life in many ways.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The first way is that it has changed my family's relationship.
+       </s>
+       <s pid="2" sid="2">
+        It has, in some way, separated the family's life, making all of us be worried about ower own things.
+       </s>
+       <s pid="2" sid="3">
+        We work all separated, making grow the individuality and forgoten we has to talk all together to know about the other's life.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The second way is that it has make easy my life.
+       </s>
+       <s pid="3" sid="2">
+        The comunications in the world are faster than ever, so when I need something, I can have it in only a minute.
+       </s>
+       <s pid="3" sid="3">
+        It allowed me to worry about other things of the life.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The last way in that the technology has allowed me to have a better health.
+       </s>
+       <s pid="4" sid="2">
+        It has descover many instruments that help me to have a good health.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        To finish, I can say technology has changed my life in good and bad ways, helping the things be easier but making me develop a big independence.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

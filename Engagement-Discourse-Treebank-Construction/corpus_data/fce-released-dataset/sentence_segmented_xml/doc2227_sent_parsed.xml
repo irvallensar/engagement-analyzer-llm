@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     32.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear
+       <ns type="R">
+        <i>
+         Madam
+        </i>
+       </ns>
+       Ryan,
+      </p>
+      <p>
+       I am very happy to have won the first prize in your competition. It is a wonderful surprise.
+      </p>
+      <p>
+       I can go to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       Camp California only in July, because I have school in June and I must work in my father's bookshop in August.
+      </p>
+      <p>
+       At the Camp I want to
+       <ns type="RV">
+        <i>
+         live
+        </i>
+       </ns>
+       in a log cabin. I do not like
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       tents; one can find insects in them and they are not as comfortable as log cabins.
+      </p>
+      <p>
+       For the two activities I can choose, I would like to play tennis: I have some experience
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       this sport, because I played tennis
+       <ns type="RT">
+        <i>
+         during
+        </i>
+       </ns>
+       seven years and it is still my favourite activity. I would try to do some painting, too, but I have never painted.
+      </p>
+      <p>
+       I would like to know what sort of clothes I have to take (if it is going to
+       <ns type="MV">
+       </ns>
+       rainy or
+       <ns type="UV">
+        <i>
+         to be
+        </i>
+       </ns>
+       sunny) and how much money I must have with me. Could you tell me what sort of
+       <ns type="RN">
+        <i>
+         material
+        </i>
+       </ns>
+       I will have to bring to do the activities?
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Odette Douai Luna
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Madam Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am very happy to have won the first prize in your competition.
+       </s>
+       <s pid="2" sid="2">
+        It is a wonderful surprise.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I can go to the Camp California only in July, because I have school in June and I must work in my father's bookshop in August.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        At the Camp I want to live in a log cabin.
+       </s>
+       <s pid="4" sid="2">
+        I do not like the tents; one can find insects in them and they are not as comfortable as log cabins.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        For the two activities I can choose, I would like to play tennis:
+       </s>
+       <s pid="5" sid="2">
+        I have some experience in this sport, because I played tennis during seven years and it is still my favourite activity.
+       </s>
+       <s pid="5" sid="3">
+        I would try to do some painting, too, but I have never painted.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I would like to know what sort of clothes I have to take (if it is going to  rainy or to be sunny) and how much money I must have with me.
+       </s>
+       <s pid="6" sid="2">
+        Could you tell me what sort of material I will have to bring to do the activities?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Odette Douai Luna
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       Do you know
+       <ns type="MP">
+       </ns>
+       last week I
+       <ns type="TV">
+        <i>
+         have been
+        </i>
+       </ns>
+       to a pop concert to help my uncle, who is the director of the stadium of Lugano. It was very
+       <ns type="S">
+        <i>
+         interresting
+        </i>
+       </ns>
+       , because I did different things. I cooked a meal for the artists, I spoke with the
+       <ns type="W">
+        <i>
+         manager of Bruce Springsteen
+        </i>
+       </ns>
+       and I helped a technician to install his
+       <ns type="RN">
+        <i>
+         material
+        </i>
+       </ns>
+       : the lights.
+      </p>
+      <p>
+       The best part of the day was after the concert, when I met the group "U2". I was very excited, because this is my favourite group: I'm always
+       <ns type="RV">
+        <i>
+         hearing
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       their songs. I took some
+       <ns type="DN">
+        <i>
+         photographies
+        </i>
+       </ns>
+       and I'll show them to you when you come next week
+      </p>
+      <p>
+       I
+       <ns type="R">
+        <i>
+         had a talk
+        </i>
+       </ns>
+       with Santana, the best guitarist in the world, too. He's quite old, but very attractive. I would like
+       <ns type="FV">
+        <i>
+         playing
+        </i>
+       </ns>
+       guitar like him.
+      </p>
+      <p>
+       What a great day it was. The next concert is on 19th June and I will be
+       <ns type="RY">
+        <i>
+         here
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       See you soon.
+      </p>
+      <p>
+       Yours
+      </p>
+      <p>
+       Odette
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Do you know last week I have been to a pop concert to help my uncle, who is the director of the stadium of Lugano.
+       </s>
+       <s pid="2" sid="2">
+        It was very interresting, because I did different things.
+       </s>
+       <s pid="2" sid="3">
+        I cooked a meal for the artists, I spoke with the manager of Bruce Springsteen and I helped a technician to install his material: the lights.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The best part of the day was after the concert, when I met the group "U2".
+       </s>
+       <s pid="3" sid="2">
+        I was very excited, because this is my favourite group: I'm always hearing  their songs.
+       </s>
+       <s pid="3" sid="3">
+        I took some photographies and I'll show them to you when you come next week
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I had a talk with Santana, the best guitarist in the world, too.
+       </s>
+       <s pid="4" sid="2">
+        He's quite old, but very attractive.
+       </s>
+       <s pid="4" sid="3">
+        I would like playing guitar like him.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        What a great day it was.
+       </s>
+       <s pid="5" sid="2">
+        The next concert is on 19th June and I will be here.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        See you soon.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Odette
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

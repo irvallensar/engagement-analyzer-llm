@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     35.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       The reason
+       <ns type="U">
+        <i>
+         for which
+        </i>
+       </ns>
+       I decided to write you a letter, will, I guess, surprise you. I hope you will not feel
+       <ns type="DJ">
+        <i>
+         offensed
+        </i>
+       </ns>
+       , but I really
+       <ns type="TV">
+        <i>
+         needed
+        </i>
+       </ns>
+       to
+       <ns type="RV">
+        <i>
+         contest
+        </i>
+       </ns>
+       about your
+       <ns type="SA">
+        <i>
+         theater
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I was present at your musical show: "Over the rainbow".
+       <ns type="RA">
+        <i>
+         It
+        </i>
+       </ns>
+       was very excited thinking about being at the theatre, and I
+       <ns type="SX">
+        <i>
+         though
+        </i>
+       </ns>
+       with certainty I was going to enjoy my evening.
+      </p>
+      <p>
+       Plus, I felt very pleased when I heard that Danny Brook was part of the play: he used to be an old friend of mine in
+       <ns type="RP">
+        <i>
+         Highschool
+        </i>
+       </ns>
+       and
+       <ns type="L">
+        <i>
+         perchance
+        </i>
+       </ns>
+       I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       found him
+       <ns type="UY">
+        <i>
+         back
+        </i>
+       </ns>
+       here! You can believe I was very disappointed when I saw that he actually was not
+       <ns type="RV">
+        <i>
+         playing
+        </i>
+       </ns>
+       and I was more bewildered that
+       <ns type="RP">
+        <i>
+         noone
+        </i>
+       </ns>
+       made an
+       <ns type="S">
+        <i>
+         apologie
+        </i>
+       </ns>
+       for it! How rude!
+      </p>
+      <p>
+       Moreover
+       <ns type="RP">
+        <i>
+         ;
+        </i>
+       </ns>
+       it was written that the show was supposed to start at 19.30; it actually started at exactly 20.15! 45 minutes
+       <ns type="SX">
+        <i>
+         latter
+        </i>
+       </ns>
+       : where we had nothing to do, but
+       <ns type="FV">
+        <i>
+         waiting
+        </i>
+       </ns>
+       . We couldn't even have a drink, because, obviously, the restaurant you talked about was closed!
+      </p>
+      <p>
+       Really, what a mess
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the administration. Although, I would have felt better if I had had a discount on my ticket, as you
+       <ns type="IV">
+        <i>
+         mentionned
+        </i>
+       </ns>
+       in the advertisement, but unfortunately, these couldn't possibly be
+       <ns type="RV">
+        <i>
+         reached
+        </i>
+       </ns>
+       either! I am sure you are smart enough to think of paying me back, so you do not lose a faithful
+       <ns type="RN">
+        <i>
+         client
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Sincerely yours,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The reason for which I decided to write you a letter, will, I guess, surprise you.
+       </s>
+       <s pid="2" sid="2">
+        I hope you will not feel offensed, but I really needed to contest about your theater.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I was present at your musical show: "Over the rainbow".
+       </s>
+       <s pid="3" sid="2">
+        It was very excited thinking about being at the theatre, and I though with certainty I was going to enjoy my evening.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Plus, I felt very pleased when I heard that Danny Brook was part of the play: he used to be an old friend of mine in Highschool and perchance I have found him back here!
+       </s>
+       <s pid="4" sid="2">
+        You can believe I was very disappointed when I saw that he actually was not playing and I was more bewildered that noone made an apologie for it!
+       </s>
+       <s pid="4" sid="3">
+        How rude!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Moreover; it was written that the show was supposed to start at 19.30; it actually started at exactly 20.15!
+       </s>
+       <s pid="5" sid="2">
+        45 minutes latter: where we had nothing to do, but waiting.
+       </s>
+       <s pid="5" sid="3">
+        We couldn't even have a drink, because, obviously, the restaurant you talked about was closed!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Really, what a mess in the administration.
+       </s>
+       <s pid="6" sid="2">
+        Although, I would have felt better if I had had a discount on my ticket, as you mentionned in the advertisement, but unfortunately, these couldn't possibly be reached either!
+       </s>
+       <s pid="6" sid="3">
+        I am sure you are smart enough to think of paying me back, so you do not lose a faithful client.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Sincerely yours,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       If more and more
+       <ns type="RN">
+        <ns type="S">
+         <i>
+          ingenors
+         </i>
+        </ns>
+       </ns>
+       work
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       science and technology, it must be
+       <ns type="RC">
+        <i>
+         that
+        </i>
+       </ns>
+       it is really
+       <ns type="DJ">
+        <i>
+         usefull
+        </i>
+       </ns>
+       : but in what particular way?
+      </p>
+      <p>
+       For my part, I know it would be such a
+       <ns type="ID">
+        <i>
+         pain in my neck
+        </i>
+       </ns>
+       . The more I think of it, the more I realise I use modern technology a lot. I guess I could not live without
+       <ns type="L">
+        <i>
+         many
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         instruments
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       The first
+       <ns type="MN">
+       </ns>
+       I think of is
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       . What a great invention! It allows me to learn anything without having to travel
+       <ns type="RT">
+        <i>
+         through
+        </i>
+       </ns>
+       <ns type="L">
+        <i>
+         many
+        </i>
+       </ns>
+       libraries as I used to do. It also
+       <ns type="RV">
+        <i>
+         makes
+        </i>
+       </ns>
+       me
+       <ns type="FV">
+        <i>
+         write
+        </i>
+       </ns>
+       to my friends by e-mail. I did not
+       <ns type="FV">
+        <i>
+         to write
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         at all to people
+        </i>
+       </ns>
+       until I
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       got
+       <ns type="MT">
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       .
+       <ns type="RT">
+        <i>
+         By
+        </i>
+       </ns>
+       this procedure, you only type and send, no need to
+       <ns type="FV">
+        <i>
+         going
+        </i>
+       </ns>
+       to the
+       <ns type="UP">
+        <i>
+         post-office
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       Of course this is just because I am lazy, I actually could force
+       <ns type="RA">
+        <i>
+         me
+        </i>
+       </ns>
+       a little, and then go to the library and to the
+       <ns type="UP">
+        <i>
+         post-office
+        </i>
+       </ns>
+       , but
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         internet
+        </i>
+       </ns>
+       just makes it easier!
+      </p>
+      <p>
+       I am also very fond of cell-phones. These are also
+       <ns type="UD">
+        <i>
+         such
+        </i>
+       </ns>
+       a relief. I can go anywhere without being
+       <ns type="RJ">
+        <i>
+         nervous
+        </i>
+       </ns>
+       about the fact
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that maybe someone is trying to reach me!
+      </p>
+      <p>
+       Modern technology changed my daily life by making it easier and by turning me into a lazy woman. Nevertheless, this easy life has then offered me
+       <ns type="M">
+       </ns>
+       to be more
+       <ns type="RJ">
+        <i>
+         peaceful
+        </i>
+       </ns>
+       and I think it is essential.
+      </p>
+      <p>
+       <ns type="UC">
+        <i>
+         Although
+        </i>
+       </ns>
+       I am thankful to modern technology!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        If more and more ingenors work on science and technology, it must be that it is really usefull: but in what particular way?
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        For my part, I know it would be such a pain in my neck.
+       </s>
+       <s pid="2" sid="2">
+        The more I think of it, the more I realise I use modern technology a lot.
+       </s>
+       <s pid="2" sid="3">
+        I guess I could not live without many instruments.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        The first  I think of is  internet.
+       </s>
+       <s pid="3" sid="2">
+        What a great invention!
+       </s>
+       <s pid="3" sid="3">
+        It allows me to learn anything without having to travel through many libraries as I used to do.
+       </s>
+       <s pid="3" sid="4">
+        It also makes me write to my friends by e-mail.
+       </s>
+       <s pid="3" sid="5">
+        I did not to write at all to people until I have got   internet.
+       </s>
+       <s pid="3" sid="6">
+        By this procedure, you only type and send, no need to going to the post-office!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Of course this is just because I am lazy, I actually could force me a little, and then go to the library and to the post-office, but  internet just makes it easier!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am also very fond of cell-phones.
+       </s>
+       <s pid="5" sid="2">
+        These are also such a relief.
+       </s>
+       <s pid="5" sid="3">
+        I can go anywhere without being nervous about the fact, that maybe someone is trying to reach me!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Modern technology changed my daily life by making it easier and by turning me into a lazy woman.
+       </s>
+       <s pid="6" sid="2">
+        Nevertheless, this easy life has then offered me  to be more peaceful and I think it is essential.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Although I am thankful to modern technology!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

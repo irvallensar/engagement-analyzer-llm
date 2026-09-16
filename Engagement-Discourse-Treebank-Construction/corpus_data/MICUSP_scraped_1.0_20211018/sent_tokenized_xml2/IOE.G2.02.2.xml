@@ -1,0 +1,483 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Convergence of Simulation-Based Policy Iteration
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       In Convergence of Simulation-Based Policy Iteration (SBPI), Cooper, Henderson and Lewis are able to derive conditions under which a novel algorithm for computing optimal policies for Markov decision processes (MDPs).
+      </s>
+      <s pid="1" sid="2">
+       They point out that SBPI, originally suggested by Bertsekas and further developed by Cao, works similarly to the modified policy iteration algorithm (MPIA) and to the actor critic algorithm.
+      </s>
+      <s pid="1" sid="3">
+       It is therefore expected to converge faster than by the value iteration algorithm, yet the exact conditions under which SBPI converges had not been developed.
+      </s>
+      <s pid="1" sid="4">
+       That places the results of this paper in a position of great importance, and its applicability is shown in the description of methods to converge to estimators via simulation.
+      </s>
+      <s pid="1" sid="5">
+       These estimators can then be used to ensure the "almost-sure" convergence of SBPI.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       Let us begin by comparing MPIA and SBPI.
+      </s>
+      <s pid="2" sid="2">
+       It is important to point out that the model used in this paper is the average-reward model , not the discounted reward model as studied thus far in IOE 512.
+      </s>
+      <s pid="2" sid="3">
+       This distinction required that I understand new measures:
+      </s>
+     </p>
+     <list>
+      <item>
+       • The
+       <i>
+        gain
+       </i>
+       ,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       , or the long-run average reward
+      </item>
+      <item>
+       • The
+       <i>
+        bias
+       </i>
+       ,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+      </item>
+     </list>
+     <p>
+      <s pid="3" sid="1">
+       for a policy
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     given that the system started in state
+     <i>
+      x
+     </i>
+     .  Puterman (p. 338) defines the bias as
+     <q>
+      the expected total difference between the reward and the stationary reward.
+     </q>
+     These two definitions are key to understanding SBPI, whose algorithm proceeds as follows:
+     <p>
+     </p>
+     <list>
+      <item>
+       1. (Initialization)  Choose a sequence
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       and a decision rule
+       <i>
+        d0
+       </i>
+       .  Let
+       <i>
+        j
+       </i>
+       = 0.
+      </item>
+      <item>
+       2. (Policy Evaluation Approximation)  Obtain an estimate of the solution to the AEE
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       for the decision rule dj.
+      </item>
+      <item>
+       3. (Policy Improvement)  Using our current estimate, find a decision rule dj+1 that satisfies
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       for each
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       , setting
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       whenever possible.
+      </item>
+      <item>
+       4. (Iteration)  Let
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       and return to step 2.
+      </item>
+     </list>
+     <p>
+      <s pid="5" sid="1">
+       Since the AEE ( average evaluation equations ) are satisfied by a unique vector h, if we can find a solution ( g , h ) that satisfies
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     the
+     <i>
+      average optimality equations
+     </i>
+     (AOE), then
+     <i>
+      g = g*
+     </i>
+     and we have found the set of optimal policies
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .  The SBPI algorithm relies on the fact that
+     <q>
+      all that is required for the policy improvement step is
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      .
+     </q>
+     This allows
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     to be estimated at each iteration through simulation, avoiding the inhibitive computations in the policy evaluation step of the policy iteration algorithm (PIA).  In this sense, SBPI resembles MPIA, which can be described (in the average cost model) as follows (taken from Puterman, p.386):
+     <p>
+     </p>
+     <list>
+      <item>
+       1. Select
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       , specify
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       , and set
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       .
+      </item>
+      <item>
+       2. (Policy Improvement)  Choose
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       to satisfy
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       , setting
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       if possible.
+      </item>
+      <item>
+       3. (Partial Policy Evaluation)
+      </item>
+      <item>
+       <list>
+        <item>
+         a. Set
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         , and
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         .
+        </item>
+        <item>
+         b. If
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         , go to step 4.  Otherwise, to to (c).
+        </item>
+        <item>
+         c. If
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         , go to (e).  Otherwise, compute
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         by
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         .
+        </item>
+        <item>
+         d. Increment
+         <i>
+          k
+         </i>
+         by 1 and return to (c).
+        </item>
+        <item>
+         e. Set
+         <div class="gap">
+          <span>
+           Formula
+          </span>
+          here
+         </div>
+         and go to step 2.
+        </item>
+       </list>
+      </item>
+      <item>
+       4. Choose
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       and stop.
+      </item>
+     </list>
+     <p>
+      <s pid="7" sid="1">
+       The two algorithms are similar in that they produce estimates (
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     in the case of SBPI and
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     in the case of MPIA) that are used in the evaluation (SBPI) and improvement (MPIA) steps, respectively.  Moreover, both have as stopping rules either a fixed number of approximations or
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     -optimality, or both.  I appreciated the comment in
+     <i>
+      Convergence
+     </i>
+     that
+     <q>
+      we leave the analysis of stopping rules as a subject for future research.
+     </q>
+     Indeed, the paper does not explicitly give stopping rules, but only shows that in order to ensure convergence, under specified conditions, that one must run simulations
+     <i>
+      at least
+     </i>
+     a certain number of iterations (Theorem 4.2).  The beauty of this result is its generality.  Perhaps a stopping rule could appear in the form of a minimum threshold for the number of iterations accompanied by the condition that
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .
+     <p>
+     </p>
+     <p>
+      <s pid="9" sid="1">
+       For simplicity's sake, I appreciated the Ratio Estimator given in section 5.3.
+      </s>
+      <s pid="9" sid="2">
+       As the authors describe it, it "is perhaps the least complex to implement, as it can be applied based on a single simulated sample path."
+      </s>
+      <s pid="9" sid="3">
+       The estimator of
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , where
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     represents the mean
+     <q>
+      cumulative centered cost until the end of the current regenerative cycle when the chain hits
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+     </q>
+     given that the cycle began in state
+     <i>
+      x,
+     </i>
+     and where
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .represents the mean number of visits to state x per regenerative cycle.  Proposition 5.9 claims that
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     as defined above is indeed an unbiased estimator for
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , and that the sufficient conditions are met by virtue of the run lengths growing fast enough (ref. Proposition 5.5).  Then, using the Ratio Estimator (or either of the other two estimators mentioned in the paper), convergence is ensured for the bias and hence for the policy.  Again, however, a stopping rule for computing the
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     is not explicitly stated, leaving an open door for future research.
+     <p>
+     </p>
+     <p>
+      <s pid="11" sid="1">
+       What I like about the paper, and the Ratio Estimator in particular, is that it shows how a computationally inhibitive MDP can be solved iteratively, in a finite (although perhaps very large) number of steps.
+      </s>
+      <s pid="11" sid="2">
+       It is possible to code such a problem, and the assurance of convergence outlined herein makes SBPI an attractive alternative.
+      </s>
+      <s pid="11" sid="3">
+       What I would like to know is how the convergence rate of SBPI compares with those of the actor-critic and MPI algorithms mentioned by the authors, as well as what constitutes a legitimate stopping rule in the computation of the
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .
+     <p>
+     </p>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

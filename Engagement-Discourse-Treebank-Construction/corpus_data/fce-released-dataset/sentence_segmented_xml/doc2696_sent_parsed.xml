@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     27.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Helen:
+      </p>
+      <p>
+       Thank you for sending me this wonderful news. I was really happy when I
+       <ns type="RV">
+        <i>
+         knew
+        </i>
+       </ns>
+       I won the first prize. I am writing to give you my details and ask
+       <ns type="MT">
+       </ns>
+       some more information.
+      </p>
+      <p>
+       Firstly, I would like to travel in July because I need to stay at home in August. I am a college student and I am going to study
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       university this year. I will take my exams in June and have the
+       <ns type="FN">
+        <i>
+         result
+        </i>
+       </ns>
+       in August. So I shall stay to prepare for my university.
+      </p>
+      <p>
+       Secondly, I prefer staying in log cabins so that I can have more
+       <ns type="AGN">
+        <i>
+         chance
+        </i>
+       </ns>
+       to be with other people, then I can make more friends. During the camp, I will do
+       <ns type="DN">
+        <i>
+         sing
+        </i>
+       </ns>
+       and climbing activities. I enjoy singing all the time and I want to share my music with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       others. I also like climbing because I like the view on the top of hills.
+      </p>
+      <p>
+       <ns type="DY">
+        <i>
+         Finaly
+        </i>
+       </ns>
+       , I want to know what the weather is like in California in July. Do I need some special clothes for the camp and how much money shall I bring for other expenses
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I am looking forward to
+       <ns type="FV">
+        <i>
+         hear
+        </i>
+       </ns>
+       from you.
+      </p>
+      <p>
+       Yours Sincerely.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Helen:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you for sending me this wonderful news.
+       </s>
+       <s pid="2" sid="2">
+        I was really happy when I knew I won the first prize.
+       </s>
+       <s pid="2" sid="3">
+        I am writing to give you my details and ask  some more information.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I would like to travel in July because I need to stay at home in August.
+       </s>
+       <s pid="3" sid="2">
+        I am a college student and I am going to study in university this year.
+       </s>
+       <s pid="3" sid="3">
+        I will take my exams in June and have the result in August.
+       </s>
+       <s pid="3" sid="4">
+        So I shall stay to prepare for my university.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly, I prefer staying in log cabins so that I can have more chance to be with other people, then I can make more friends.
+       </s>
+       <s pid="4" sid="2">
+        During the camp, I will do sing and climbing activities.
+       </s>
+       <s pid="4" sid="3">
+        I enjoy singing all the time and I want to share my music with the others.
+       </s>
+       <s pid="4" sid="4">
+        I also like climbing because I like the view on the top of hills.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finaly, I want to know what the weather is like in California in July.
+       </s>
+       <s pid="5" sid="2">
+        Do I need some special clothes for the camp and how much money shall I bring for other expenses.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I am looking forward to hear from you.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours Sincerely.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       To: The teacher of
+       <ns type="MD">
+       </ns>
+       English class
+      </p>
+      <p>
+       From: Jolin
+      </p>
+      <p>
+       Subject: The lessons
+       <ns type="MA">
+       </ns>
+       should be filmed
+      </p>
+      <p>
+       Date: 13
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       June
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       00
+      </p>
+      <p>
+       <ns type="RN">
+        <i>
+         Instruction
+        </i>
+       </ns>
+       :
+      </p>
+      <p>
+       <ns type="MD">
+       </ns>
+       English class is going to make a short video about
+       <ns type="MD">
+       </ns>
+       <ns type="MP">
+        <i>
+         school
+        </i>
+       </ns>
+       daily life. The aim of this report is to give
+       <ns type="RQ">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="FN">
+        <i>
+         suggestion
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       which lessons and activities should be filmed.
+      </p>
+      <p>
+       Lessons and Activities
+      </p>
+      <p>
+       <ns type="MD">
+       </ns>
+       Speaking and Listening class should be filmed because the purpose of this class is to encourage students
+       <ns type="FV">
+        <i>
+         talk
+        </i>
+       </ns>
+       about some topics they choose and discuss
+       <ns type="MA">
+       </ns>
+       with others in order to
+       <ns type="RV">
+        <i>
+         prove
+        </i>
+       </ns>
+       their speaking and listening skills.
+      </p>
+      <p>
+       <ns type="MD">
+        <i>
+         Topical
+        </i>
+       </ns>
+       class is similar to speaking and listening but the materials are more
+       <ns type="RJ">
+        <i>
+         up-dated
+        </i>
+       </ns>
+       . The teacher
+       <ns type="AGV">
+        <i>
+         use
+        </i>
+       </ns>
+       video
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="MC">
+       </ns>
+       pictures to
+       <ns type="RV">
+        <i>
+         show
+        </i>
+       </ns>
+       students about festivals, sports, museums,
+       <ns type="S">
+        <i>
+         ect
+        </i>
+       </ns>
+       . It is popular
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       the students.
+      </p>
+      <p>
+       <ns type="MD">
+        <i>
+         Canteen
+        </i>
+       </ns>
+       is the place students
+       <ns type="RV">
+        <i>
+         stay
+        </i>
+       </ns>
+       together apart from class. Quite a lot of students spend their free time there
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       relaxing and talking.
+      </p>
+      <p>
+       Basketball is the most popular activity,
+       <ns type="S">
+        <i>
+         whick
+        </i>
+       </ns>
+       takes place between 4:30 pm - 6:30 pm from Monday to Friday every week. Not only
+       <ns type="R">
+        the students who have activity play
+       </ns>
+       but also a lot of students watch.
+      </p>
+      <p>
+       Conclusion
+      </p>
+      <p>
+       The lessons and activities above are
+       <ns type="R">
+        <i>
+         the suggestion
+        </i>
+       </ns>
+       should be filmed.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To: The teacher of  English class
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        From: Jolin
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Subject:
+       </s>
+       <s pid="3" sid="2">
+        The lessons  should be filmed
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Date: 13, June, 00
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Instruction:
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        English class is going to make a short video about  school daily life.
+       </s>
+       <s pid="6" sid="2">
+        The aim of this report is to give the suggestion of which lessons and activities should be filmed.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Lessons and Activities
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Speaking and Listening class should be filmed because the purpose of this class is to encourage students talk about some topics they choose and discuss  with others in order to prove their speaking and listening skills.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Topical class is similar to speaking and listening but the materials are more up-dated.
+       </s>
+       <s pid="9" sid="2">
+        The teacher use video,  pictures to show students about festivals, sports, museums, ect.
+       </s>
+       <s pid="9" sid="3">
+        It is popular by the students.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Canteen is the place students stay together apart from class.
+       </s>
+       <s pid="10" sid="2">
+        Quite a lot of students spend their free time there for relaxing and talking.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Basketball is the most popular activity, whick takes place between 4:30 pm - 6:30 pm from Monday to Friday every week.
+       </s>
+       <s pid="11" sid="2">
+        Not only the students who have activity play but also a lot of students watch.
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Conclusion
+       </s>
+      </p>
+      <p pid="13">
+       <s pid="13" sid="1">
+        The lessons and activities above are the suggestion should be filmed.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

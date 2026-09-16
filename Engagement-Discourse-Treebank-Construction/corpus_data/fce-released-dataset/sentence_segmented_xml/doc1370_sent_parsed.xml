@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Manager of the Circle Theatre
+      </p>
+      <p>
+       17th June 2000
+      </p>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I am
+       <ns type="RV">
+        <i>
+         waiting
+        </i>
+       </ns>
+       this letter
+       <ns type="DV">
+        <i>
+         re fearing
+        </i>
+       </ns>
+       to the show "over the Rainbow" you
+       <ns type="RV">
+        <i>
+         presented
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       the 10 of this month.
+      </p>
+      <p>
+       I read your
+       <ns type="S">
+        <i>
+         advertissement
+        </i>
+       </ns>
+       five days before, and I was
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       impressed by it. But, the quality of this show wasn't what you
+       <ns type="R">
+        <i>
+         let understand
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        <i>
+         an
+        </i>
+       </ns>
+       I feel
+       <ns type="DY">
+        <i>
+         realy
+        </i>
+       </ns>
+       disappointed by it. I want to give you some details about my feelings.
+      </p>
+      <p>
+       First of all, you
+       <ns type="RV">
+        <i>
+         presented
+        </i>
+       </ns>
+       a
+       <ns type="R">
+        <i>
+         starring
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         composed with
+        </i>
+       </ns>
+       Danny Brook, but he wasn't there! Secondly, the show should start at 19.30, and in fact it started 45 minutes late. Then, I am a student, and when I bought my ticket, there
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       any discounts. Finally, I
+       <ns type="TV">
+        <i>
+         hoped
+        </i>
+       </ns>
+       that I could have
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         diner
+        </i>
+       </ns>
+       in the restaurant after the show, but, to make
+       <ns type="DA">
+        <i>
+         my
+        </i>
+       </ns>
+       totally disappointed, it was closed, and I had to find another restaurant at 22.00.
+      </p>
+      <p>
+       So you can imagine how
+       <ns type="W">
+        <i>
+         I am satisfied
+        </i>
+       </ns>
+       by your
+       <ns type="RV">
+        <i>
+         pretending
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       "Perfect Evening".
+      </p>
+      <p>
+       For all these reasons, and if you want to keep me
+       <ns type="MT">
+       </ns>
+       a
+       <ns type="RN">
+        <i>
+         costumer
+        </i>
+       </ns>
+       , I would be
+       <ns type="S">
+        <i>
+         gratfull
+        </i>
+       </ns>
+       if you
+       <ns type="TV">
+        <i>
+         give
+        </i>
+       </ns>
+       me some or all
+       <ns type="MT">
+       </ns>
+       my money back.
+      </p>
+      <p>
+       Looking forward to hearing from you,
+      </p>
+      <p>
+       Yours
+       <ns type="DY">
+        <i>
+         sincerly
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Manager of the Circle Theatre
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        17th June 2000
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am waiting this letter re fearing to the show "over the Rainbow" you presented  the 10 of this month.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I read your advertissement five days before, and I was realy impressed by it.
+       </s>
+       <s pid="5" sid="2">
+        But, the quality of this show wasn't what you let understand, an I feel realy disappointed by it.
+       </s>
+       <s pid="5" sid="3">
+        I want to give you some details about my feelings.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        First of all, you presented a starring composed with Danny Brook, but he wasn't there!
+       </s>
+       <s pid="6" sid="2">
+        Secondly, the show should start at 19.30, and in fact it started 45 minutes late.
+       </s>
+       <s pid="6" sid="3">
+        Then, I am a student, and when I bought my ticket, there wasn't any discounts.
+       </s>
+       <s pid="6" sid="4">
+        Finally, I hoped that I could have a diner in the restaurant after the show, but, to make my totally disappointed, it was closed, and I had to find another restaurant at 22.00.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        So you can imagine how I am satisfied by your pretending "Perfect Evening".
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        For all these reasons, and if you want to keep me  a costumer, I would be gratfull if you give me some or all  my money back.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Looking forward to hearing from you,
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Yours sincerly,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets.
+      </p>
+      <p>
+       My marks
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       good
+       <ns type="S">
+        <i>
+         enought
+        </i>
+       </ns>
+       to obtain my degree in Computer Science, and the exam session was finished. There was no
+       <ns type="RN">
+        <i>
+         <ns type="AGN">
+          <i>
+           solutions
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to
+       <ns type="UY">
+        <i>
+         finally
+        </i>
+       </ns>
+       obtain the diploma.
+      </p>
+      <p>
+       You need more explanations
+       <ns type="RT">
+        <i>
+         about
+        </i>
+       </ns>
+       me to understand my
+       <ns type="FN">
+        <i>
+         motivations
+        </i>
+       </ns>
+       at the end of this story. In fact, I did this kind of
+       <ns type="AGN">
+        <i>
+         studies
+        </i>
+       </ns>
+       because of my interests in programming. The problem is that I can't keep calm during an exam
+       <ns type="UV">
+        <i>
+         to succeed
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       That's why I decided to hack
+       <ns type="MT">
+       </ns>
+       the teacher's computers to change all my marks.
+      </p>
+      <p>
+       I never talked about this project to anyone,
+       <ns type="S">
+        <i>
+         exept
+        </i>
+       </ns>
+       my best friend Pat.
+      </p>
+      <p>
+       At the end of the exam session, all students and teachers meet together for a big party, to celebrate
+       <ns type="UA">
+        <i>
+         it
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       During this party, Pat drank too much. And when he was totally drunk, he started speaking. Then, the teachers made copies of their
+       <ns type="FN">
+        <i>
+         file
+        </i>
+       </ns>
+       , and my project wasn't possible anymore.
+      </p>
+      <p>
+       So
+       <ns type="FN">
+        <i>
+         congratulation
+        </i>
+       </ns>
+       everybody. And I think I will still be
+       <ns type="RY">
+        <i>
+         there
+        </i>
+       </ns>
+       next year.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My marks wasn't good enought to obtain my degree in Computer Science, and the exam session was finished.
+       </s>
+       <s pid="2" sid="2">
+        There was no solutions to finally obtain the diploma.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        You need more explanations about me to understand my motivations at the end of this story.
+       </s>
+       <s pid="3" sid="2">
+        In fact, I did this kind of studies because of my interests in programming.
+       </s>
+       <s pid="3" sid="3">
+        The problem is that I can't keep calm during an exam to succeed.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        That's why I decided to hack  the teacher's computers to change all my marks.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I never talked about this project to anyone, exept my best friend Pat.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        At the end of the exam session, all students and teachers meet together for a big party, to celebrate it.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        During this party, Pat drank too much.
+       </s>
+       <s pid="7" sid="2">
+        And when he was totally drunk, he started speaking.
+       </s>
+       <s pid="7" sid="3">
+        Then, the teachers made copies of their file, and my project wasn't possible anymore.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        So congratulation everybody.
+       </s>
+       <s pid="8" sid="2">
+        And I think I will still be there next year.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

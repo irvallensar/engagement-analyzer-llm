@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Portuguese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear manager
+      </p>
+      <p>
+       My name is Lisa and I'm 21 years old. I went to the theatre last Friday to see Over the Rainbow and I felt disappointed about the musical. I expected more from it. First of all the actor was the same
+       <ns type="R">
+        <i>
+         since
+        </i>
+       </ns>
+       last semester. I would really like to see a new one such as Markin Davis, he is a great actor and he would fit well
+       <ns type="MT">
+       </ns>
+       this musical. Then I was
+       <ns type="IV">
+        <i>
+         sitted
+        </i>
+       </ns>
+       with my friend just waiting for the start
+       <ns type="MC">
+       </ns>
+       that lasted forever and
+       <ns type="MA">
+       </ns>
+       was supposed to start at 19:30. After the show I felt really hungry, so I
+       <ns type="RV">
+        <i>
+         meant
+        </i>
+       </ns>
+       to go to the restaurant
+       <ns type="MP">
+       </ns>
+       which
+       <ns type="RY">
+        occasionally
+       </ns>
+       was closed. By
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       time I thought: "I want my money back."
+       <ns type="RA">
+        <i>
+         That
+        </i>
+       </ns>
+       was supposed to be a perfect evening turned out to be the most hateful musical I've ever seen.
+      </p>
+      <p>
+       <ns type="DY">
+        Attencionally
+       </ns>
+      </p>
+      <p>
+       Straussburg 17th June 2000
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear manager
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My name is Lisa and I'm 21 years old.
+       </s>
+       <s pid="2" sid="2">
+        I went to the theatre last Friday to see Over the Rainbow and I felt disappointed about the musical.
+       </s>
+       <s pid="2" sid="3">
+        I expected more from it.
+       </s>
+       <s pid="2" sid="4">
+        First of all the actor was the same since last semester.
+       </s>
+       <s pid="2" sid="5">
+        I would really like to see a new one such as Markin Davis, he is a great actor and he would fit well  this musical.
+       </s>
+       <s pid="2" sid="6">
+        Then I was sitted with my friend just waiting for the start  that lasted forever and  was supposed to start at 19:30.
+       </s>
+       <s pid="2" sid="7">
+        After the show I felt really hungry, so I meant to go to the restaurant which occasionally was closed.
+       </s>
+       <s pid="2" sid="8">
+        By the time I thought: "I want my money back."
+       </s>
+       <s pid="2" sid="9">
+        That was supposed to be a perfect evening turned out to be the most hateful musical I've ever seen.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Attencionally
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Straussburg 17th June 2000
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. Despite the fact that she was my best friend I could never count on her or she would tell everybody in high school all my secrets.
+      </p>
+      <p>
+       Once, when we first met
+       <ns type="MP">
+       </ns>
+       I was about 15 and she was the same age, we started talking and by the time
+       <ns type="M">
+       </ns>
+       we found out
+       <ns type="M">
+       </ns>
+       a very good friendship
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       our conversation.
+      </p>
+      <p>
+       One day she came over to my house and we
+       <ns type="RV">
+        <i>
+         spoke
+        </i>
+       </ns>
+       all night about our lives. Then I told her about my first kiss (it was terrible, the guy didn't know how to do it) and things like that.
+      </p>
+      <p>
+       The next morning when I got to the high school I heard what I wasn't expecting, Pat had told everybody about my first experience
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       kissing. People
+       <ns type="TV">
+        <i>
+         would be
+        </i>
+       </ns>
+       <ns type="IV">
+        <i>
+         starring
+        </i>
+       </ns>
+       at me and laughing.
+      </p>
+      <p>
+       I got really mad at her, but nowadays we are friends, not as close as we used to
+       <ns type="MV">
+       </ns>
+       . I don't tell her my secrets anymore.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        Despite the fact that she was my best friend I could never count on her or she would tell everybody in high school all my secrets.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Once, when we first met I was about 15 and she was the same age, we started talking and by the time  we found out  a very good friendship on our conversation.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        One day she came over to my house and we spoke all night about our lives.
+       </s>
+       <s pid="3" sid="2">
+        Then I told her about my first kiss (it was terrible, the guy didn't know how to do it) and things like that.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The next morning when I got to the high school I heard what I wasn't expecting, Pat had told everybody about my first experience in kissing.
+       </s>
+       <s pid="4" sid="2">
+        People would be starring at me and laughing.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I got really mad at her, but nowadays we are friends, not as close as we used to .
+       </s>
+       <s pid="5" sid="2">
+        I don't tell her my secrets anymore.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

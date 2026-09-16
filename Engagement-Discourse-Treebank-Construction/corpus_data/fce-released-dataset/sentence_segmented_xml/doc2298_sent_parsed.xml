@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Japanese
+     </language>
+     <age>
+      31-40
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       June 17, 2000
+      </p>
+      <p>
+       Dear Manager,
+      </p>
+      <p>
+       <ns type="RT">
+        <i>
+         As for
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       "Over The Rainbow"
+       <ns type="MP">
+       </ns>
+       presented
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       your theatre last night, I would like to inform you of the following problems.
+      </p>
+      <p>
+       Firstly, the starring actor was different from the one who had been mentioned
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement for this musical show as "Danny Brook". As I was so looking
+       <ns type="S">
+        <i>
+         foreward
+        </i>
+       </ns>
+       to seeing Danny's
+       <ns type="RN">
+        <i>
+         stage
+        </i>
+       </ns>
+       , I was very disappointed. I think you should have informed us of
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         changing
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       before starting
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       the show. In addition, I'd like to know the reason why the actor was
+       <ns type="RV">
+        <i>
+         changed
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Secondly, the show started at 20:15 instead of 19:30
+       <ns type="MT">
+       </ns>
+       mentioned
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       the advertisement.
+      </p>
+      <p>
+       <ns type="UT">
+        <i>
+         As the
+        </i>
+       </ns>
+       third point
+       <ns type="R">
+        <i>
+         ,
+        </i>
+       </ns>
+       our tickets were not
+       <ns type="RV">
+        <i>
+         discounted
+        </i>
+       </ns>
+       at all! The
+       <ns type="UP">
+        <i>
+         Ad.
+        </i>
+       </ns>
+       says that
+       <ns type="R">
+        TICKETS: Discounts Available
+       </ns>
+       .
+      </p>
+      <p>
+       Lastly, your theatre restaurant
+       <ns type="TV">
+        <i>
+         had been
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         closed already
+        </i>
+       </ns>
+       when the show
+       <ns type="TV">
+        <i>
+         was finished
+        </i>
+       </ns>
+       , because the
+       <ns type="UN">
+        <i>
+         time of
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           begining
+          </i>
+         </ns>
+        </i>
+       </ns>
+       of the show was late.
+      </p>
+      <p>
+       As
+       <ns type="W">
+        <i>
+         above
+         <ns type="RV">
+          <i>
+           mentioned
+          </i>
+         </ns>
+        </i>
+       </ns>
+       , it
+       <ns type="TV">
+        <i>
+         <ns type="RP">
+          <i>
+           can not
+          </i>
+         </ns>
+        </i>
+       </ns>
+       be a "perfect evening". There are lots of reasons why I was so disappointed, and could not enjoy the show, you see!! Therefore,
+       <ns type="MA">
+       </ns>
+       would be grateful if you could give me back some money.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        June 17, 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Manager,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As for the "Over The Rainbow" presented by your theatre last night, I would like to inform you of the following problems.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, the starring actor was different from the one who had been mentioned on the advertisement for this musical show as "Danny Brook".
+       </s>
+       <s pid="4" sid="2">
+        As I was so looking foreward to seeing Danny's stage, I was very disappointed.
+       </s>
+       <s pid="4" sid="3">
+        I think you should have informed us of  changing  starring before starting of the show.
+       </s>
+       <s pid="4" sid="4">
+        In addition, I'd like to know the reason why the actor was changed.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly, the show started at 20:15 instead of 19:30  mentioned on the advertisement.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        As the third point, our tickets were not discounted at all!
+       </s>
+       <s pid="6" sid="2">
+        The Ad. says that TICKETS: Discounts Available.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Lastly, your theatre restaurant had been closed already when the show was finished, because the time of begining of the show was late.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        As above mentioned, it can not be a "perfect evening".
+       </s>
+       <s pid="8" sid="2">
+        There are lots of reasons why I was so disappointed, and could not enjoy the show, you see!!
+       </s>
+       <s pid="8" sid="3">
+        Therefore,  would be grateful if you could give me back some money.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. She
+       <ns type="AS">
+        <i>
+         told about our plan, indeed our "secret plan", to Sally
+        </i>
+       </ns>
+       ! How foolish!
+      </p>
+      <p>
+       But, Mark, Pat and I were planning a
+       <ns type="UP">
+        <i>
+         birthday-party
+        </i>
+       </ns>
+       for Sally on June 2 at her own home. It should have been "surprising". Sally's husband is now in Singapore on business, so she had to spend her birthday without him. Considering her loneliness, we made every effort to please her and to encourage her; because she was loved by everybody for her gentle, kind and lovely character. She was not so lucky in her life. Her parents
+       <ns type="TV">
+        <i>
+         already died
+        </i>
+       </ns>
+       when she was in
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="UP">
+        <i>
+         high-school
+        </i>
+       </ns>
+       . She has no brothers and sisters. After marriage, Sally and her husband Nigel realized that they would not be able to have
+       <ns type="UD">
+        <i>
+         their
+        </i>
+       </ns>
+       children. In spite of such difficulties, she always
+       <ns type="RV">
+        <i>
+         shows
+        </i>
+       </ns>
+       a pretty
+       <ns type="MP">
+       </ns>
+       charming smile
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       us.
+      </p>
+      <p>
+       On June 2, because of Pat's
+       <ns type="RN">
+        <i>
+         fault
+        </i>
+       </ns>
+       , Sally already knew our plan. We were enjoying
+       <ns type="MA">
+       </ns>
+       at
+       <ns type="MD">
+       </ns>
+       home celebrating her birthday.
+      </p>
+      <p>
+       Suddenly, the door was opened.
+      </p>
+      <p>
+       "Good Evening!"
+      </p>
+      <p>
+       "Oh! You came back for me! Nigel
+       <ns type="MP">
+       </ns>
+       " Sally cried with pleasure.
+      </p>
+      <p>
+       Nigel himself was a big "
+       <ns type="RJ">
+        <i>
+         surprising
+        </i>
+       </ns>
+       " present for Sally. I
+       <ns type="TV">
+        <i>
+         never forget
+        </i>
+       </ns>
+       her happy face .....
+      </p>
+      <p>
+       We
+       <ns type="RV">
+        <i>
+         spent
+        </i>
+       </ns>
+       a brilliant night.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        She told about our plan, indeed our "secret plan", to Sally!
+       </s>
+       <s pid="1" sid="4">
+        How foolish!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        But, Mark, Pat and I were planning a birthday-party for Sally on June 2 at her own home.
+       </s>
+       <s pid="2" sid="2">
+        It should have been "surprising".
+       </s>
+       <s pid="2" sid="3">
+        Sally's husband is now in Singapore on business, so she had to spend her birthday without him.
+       </s>
+       <s pid="2" sid="4">
+        Considering her loneliness, we made every effort to please her and to encourage her; because she was loved by everybody for her gentle, kind and lovely character.
+       </s>
+       <s pid="2" sid="5">
+        She was not so lucky in her life.
+       </s>
+       <s pid="2" sid="6">
+        Her parents already died when she was in the high-school.
+       </s>
+       <s pid="2" sid="7">
+        She has no brothers and sisters.
+       </s>
+       <s pid="2" sid="8">
+        After marriage, Sally and her husband Nigel realized that they would not be able to have their children.
+       </s>
+       <s pid="2" sid="9">
+        In spite of such difficulties, she always shows a pretty charming smile to us.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        On June 2, because of Pat's fault, Sally already knew our plan.
+       </s>
+       <s pid="3" sid="2">
+        We were enjoying  at  home celebrating her birthday.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Suddenly, the door was opened.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        "Good Evening!"
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        "Oh!
+       </s>
+       <s pid="6" sid="2">
+        You came back for me!
+       </s>
+       <s pid="6" sid="3">
+        Nigel"
+       </s>
+       <s pid="6" sid="4">
+        Sally cried with pleasure.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Nigel himself was a big "surprising" present for Sally.
+       </s>
+       <s pid="7" sid="2">
+        I never forget her happy face .....
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        We spent a brilliant night.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

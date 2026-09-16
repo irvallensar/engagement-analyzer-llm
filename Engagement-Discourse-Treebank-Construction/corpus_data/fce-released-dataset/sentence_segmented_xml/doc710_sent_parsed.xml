@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3T
+     </exam_score>
+     <coded_answer>
+      <p>
+       14th June 2000
+      </p>
+      <p>
+       Dear Miss Ryan,
+      </p>
+      <p>
+       I am really pleased to be the winner of your competition and I cannot help thinking about the two weeks in the USA.
+      </p>
+      <p>
+       First of all, I would like to travel only in June
+       <ns type="MP">
+       </ns>
+       given that my wife will come with me
+       <ns type="RP">
+        <i>
+         :
+        </i>
+       </ns>
+       her
+       <ns type="AGN">
+        <i>
+         holiday
+        </i>
+       </ns>
+       are only in June.
+      </p>
+      <p>
+       Concerning accommodation at Camp California, would it be possible to
+       <ns type="RV">
+        <i>
+         live
+        </i>
+       </ns>
+       in
+       <ns type="MD">
+       </ns>
+       <ns type="AGN">
+        <i>
+         log cabins
+        </i>
+       </ns>
+       ?
+       <ns type="UY">
+        <i>
+         Indeed, my
+        </i>
+       </ns>
+       wife is afraid of sleeping in tents.
+      </p>
+      <p>
+       <ns type="UY">
+        <i>
+         Moreover,
+        </i>
+       </ns>
+       I
+       <ns type="RV">
+        <i>
+         <ns type="DV">
+          <i>
+           practice
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Basketball
+        </i>
+       </ns>
+       in a famous French
+       <ns type="RP">
+        <i>
+         Club
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         :
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         That
+        </i>
+       </ns>
+       is the reason why I would like to choose the
+       <ns type="RP">
+        <i>
+         Basketball
+        </i>
+       </ns>
+       . If I had to
+       <ns type="FV">
+        <i>
+         chose
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       activity, I think I would do
+       <ns type="RP">
+        <i>
+         Photography
+        </i>
+       </ns>
+       . In fact, this activity seems to be very
+       <ns type="S">
+        <i>
+         interresting
+        </i>
+       </ns>
+       . Unfortunately, I have never
+       <ns type="RV">
+        <i>
+         <ns type="SA">
+          <i>
+           practiced
+          </i>
+         </ns>
+        </i>
+       </ns>
+       but I feel
+       <ns type="R">
+        <i>
+         to like
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         discovering
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Finally, I would
+       <ns type="RV">
+        <i>
+         want
+        </i>
+       </ns>
+       to ask you whether we
+       <ns type="TV">
+        <i>
+         had
+        </i>
+       </ns>
+       to bring
+       <ns type="MQ">
+       </ns>
+       money
+       <ns type="RP">
+        <i>
+         :
+        </i>
+       </ns>
+       Life is so expensive there! Furthermore, what sort of clothes must we have for the different activities?
+      </p>
+      <p>
+       I hope my answers will satisfy you. I thank you again.
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Tom Turner
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        14th June 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Miss Ryan,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am really pleased to be the winner of your competition and I cannot help thinking about the two weeks in the USA.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First of all, I would like to travel only in June given that my wife will come with me: her holiday are only in June.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Concerning accommodation at Camp California, would it be possible to live in  log cabins?
+       </s>
+       <s pid="5" sid="2">
+        Indeed, my wife is afraid of sleeping in tents.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Moreover, I practice Basketball in a famous French Club:
+       </s>
+       <s pid="6" sid="2">
+        That is the reason why I would like to choose the Basketball.
+       </s>
+       <s pid="6" sid="3">
+        If I had to chose an other activity, I think I would do Photography.
+       </s>
+       <s pid="6" sid="4">
+        In fact, this activity seems to be very interresting.
+       </s>
+       <s pid="6" sid="5">
+        Unfortunately, I have never practiced but I feel to like discovering that.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Finally, I would want to ask you whether we had to bring  money: Life is so expensive there!
+       </s>
+       <s pid="7" sid="2">
+        Furthermore, what sort of clothes must we have for the different activities?
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I hope my answers will satisfy you.
+       </s>
+       <s pid="8" sid="2">
+        I thank you again.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Tom Turner
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       After having thought about this video and asked
+       <ns type="RJ">
+        <i>
+         different
+        </i>
+       </ns>
+       people so as to know what they suggested, I reached the following conclusions: we must film the lessons which are the most important and the activities which take
+       <ns type="MY">
+       </ns>
+       a great part
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       a day at school; this being in three parts.
+      </p>
+      <p>
+       the morning
+      </p>
+      <p>
+       That is why I propose to start our film with the beginning of the day, when all
+       <ns type="MD">
+       </ns>
+       students come
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="RN">
+        <i>
+         class
+        </i>
+       </ns>
+       . Then, we should film the English class so as to show who
+       <ns type="TV">
+        <i>
+         makes
+        </i>
+       </ns>
+       the film. Furthermore, as
+       <ns type="RP">
+        <i>
+         Mathematics
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       the main lesson in the morning, we ought to film
+       <ns type="MT">
+       </ns>
+       a time
+       <ns type="RC">
+        <i>
+         where
+        </i>
+       </ns>
+       we are in
+       <ns type="MD">
+       </ns>
+       <ns type="RP">
+        <i>
+         MathClass
+        </i>
+       </ns>
+      </p>
+      <p>
+       the lunch
+      </p>
+      <p>
+       After that
+       <ns type="MA">
+       </ns>
+       could
+       <ns type="RV">
+        <i>
+         come
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       lunch
+       <ns type="MP">
+       </ns>
+       which takes two hours per day. The
+       <ns type="FJ">
+        <i>
+         better
+        </i>
+       </ns>
+       <ns type="MN">
+       </ns>
+       to do would be to
+       <ns type="RV">
+        <i>
+         present
+        </i>
+       </ns>
+       the cooking
+       <ns type="S">
+        <i>
+         personnal
+        </i>
+       </ns>
+       <ns type="L">
+        <i>
+         for
+        </i>
+       </ns>
+       they are very nice.
+      </p>
+      <p>
+       the afternoon
+      </p>
+      <p>
+       We could begin the afternoon with
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       sport, showing the different
+       <ns type="R">
+        places
+       </ns>
+       with
+       <ns type="MD">
+       </ns>
+       surroundings (
+       <ns type="R">
+        near the wild
+       </ns>
+       ): it would give a good impression. I advise
+       <ns type="FV">
+        <i>
+         to finish
+        </i>
+       </ns>
+       with a
+       <ns type="W">
+        <i>
+         lesson of
+         <ns type="RP">
+          <i>
+           Chemistry
+          </i>
+         </ns>
+        </i>
+       </ns>
+       so that people see the
+       <ns type="S">
+        <i>
+         laboratery
+        </i>
+       </ns>
+       . Before that, I would have
+       <ns type="TV">
+        <i>
+         showed
+        </i>
+       </ns>
+       the break at 3 o'clock
+       <ns type="MP">
+       </ns>
+       which is important for us.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        After having thought about this video and asked different people so as to know what they suggested, I reached the following conclusions: we must film the lessons which are the most important and the activities which take  a great part in a day at school; this being in three parts.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        the morning
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        That is why I propose to start our film with the beginning of the day, when all  students come in  class.
+       </s>
+       <s pid="3" sid="2">
+        Then, we should film the English class so as to show who makes the film.
+       </s>
+       <s pid="3" sid="3">
+        Furthermore, as Mathematics are the main lesson in the morning, we ought to film  a time where we are in  MathClass
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        the lunch
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        After that  could come  the lunch which takes two hours per day.
+       </s>
+       <s pid="5" sid="2">
+        The better  to do would be to present the cooking personnal for they are very nice.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        the afternoon
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        We could begin the afternoon with the sport, showing the different places with  surroundings (near the wild): it would give a good impression.
+       </s>
+       <s pid="7" sid="2">
+        I advise to finish with a lesson of Chemistry so that people see the laboratery.
+       </s>
+       <s pid="7" sid="3">
+        Before that, I would have showed the break at 3 o'clock which is important for us.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

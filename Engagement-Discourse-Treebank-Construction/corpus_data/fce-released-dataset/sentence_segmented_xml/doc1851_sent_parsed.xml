@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr. Smith,
+      </p>
+      <p>
+       During my last holiday in London, I
+       <ns type="TV">
+        <i>
+         was visiting
+        </i>
+       </ns>
+       your theatre in order to see "Over the rainbow". You wrote some things in your advertisement and I was disappointed that
+       <ns type="MA">
+       </ns>
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       true.
+      </p>
+      <p>
+       First you have written that the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       were Danny Brook and Tina Truelove, but the
+       <ns type="RJ">
+        <i>
+         real
+        </i>
+       </ns>
+       actors were different. It was a
+       <ns type="DN">
+        <i>
+         disappointing
+        </i>
+       </ns>
+       for me, because
+       <ns type="AGD">
+        <i>
+         this
+        </i>
+       </ns>
+       actors were recommended by my friend, because he knows Danny and Tina.
+      </p>
+      <p>
+       You have also written in your advertisement that it would
+       <ns type="TV">
+        <i>
+         started
+        </i>
+       </ns>
+       at half past seven but it started at 20:15! So we had to wait more than a half hour.
+       <ns type="RA">
+        <i>
+         It
+        </i>
+       </ns>
+       wouldn't
+       <ns type="RV">
+        <i>
+         be
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         mind
+        </i>
+       </ns>
+       if the restaurant had
+       <ns type="R">
+        pressed in order
+       </ns>
+       to eat or drink something, but it was closed, and
+       <ns type="W">
+        <i>
+         it
+         <ns type="RV">
+          <i>
+           hadn't
+          </i>
+         </ns>
+         also
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         opened
+        </i>
+       </ns>
+       after the show, because the waitress had to clean
+       <ns type="UY">
+        <i>
+         up
+        </i>
+       </ns>
+       the theatre
+       <ns type="UN">
+        <i>
+         room
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         Over these
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         tickets were
+         <ns type="RD">
+          <i>
+           not
+          </i>
+         </ns>
+         discount
+        </i>
+       </ns>
+       available as you
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       written
+       <ns type="M">
+       </ns>
+       in your advertisement.
+      </p>
+      <p>
+       So it wasn't a perfect evening for me and
+       <ns type="R">
+        I think about it
+       </ns>
+       , if I can have my money back. If it's possible, please write back.
+      </p>
+      <p>
+       <ns type="S">
+        <i>
+         Sencerely
+        </i>
+       </ns>
+       ...
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr. Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        During my last holiday in London, I was visiting your theatre in order to see "Over the rainbow".
+       </s>
+       <s pid="2" sid="2">
+        You wrote some things in your advertisement and I was disappointed that  wasn't true.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First you have written that the starring were Danny Brook and Tina Truelove, but the real actors were different.
+       </s>
+       <s pid="3" sid="2">
+        It was a disappointing for me, because this actors were recommended by my friend, because he knows Danny and Tina.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        You have also written in your advertisement that it would started at half past seven but it started at 20:15!
+       </s>
+       <s pid="4" sid="2">
+        So we had to wait more than a half hour.
+       </s>
+       <s pid="4" sid="3">
+        It wouldn't be mind if the restaurant had pressed in order to eat or drink something, but it was closed, and it hadn't also opened after the show, because the waitress had to clean up the theatre room.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Over these the tickets were not discount available as you have written  in your advertisement.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        So it wasn't a perfect evening for me and I think about it, if I can have my money back.
+       </s>
+       <s pid="6" sid="2">
+        If it's possible, please write back.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Sencerely ...
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets and so his
+       <ns type="SX">
+        <i>
+         hole
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         schoole
+        </i>
+       </ns>
+       knew
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       Sara's experience.
+      </p>
+      <p>
+       Sara was a very good
+       <ns type="S">
+        <i>
+         puple
+        </i>
+       </ns>
+       . She didn't
+       <ns type="RV">
+        <i>
+         learn
+        </i>
+       </ns>
+       a lot but she knew all
+       <ns type="MD">
+       </ns>
+       important things. She was a very nice person and she
+       <ns type="W">
+        <i>
+         helped always
+        </i>
+       </ns>
+       if somebody
+       <ns type="TV">
+        <i>
+         need
+        </i>
+       </ns>
+       her help.
+      </p>
+      <p>
+       One day she had to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       the shopping for her mother. She had to buy a
+       <ns type="UP">
+        <i>
+         lottery-ticket
+        </i>
+       </ns>
+       and other things for her. After she had done this she went home, but she didn't buy the ticket because she thought there
+       <ns type="TV">
+        <i>
+         <ns type="AGV">
+          <i>
+           aren't
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         no
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         change
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to win
+        </i>
+       </ns>
+       . She spent
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       <ns type="MN">
+       </ns>
+       <ns type="UY">
+        <i>
+         only
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       a
+       <ns type="S">
+        <i>
+         magazin
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       After she came home her mother was sitting in front of the TV and looked
+       <ns type="RT">
+        <i>
+         after
+        </i>
+       </ns>
+       the
+       <ns type="UP">
+        <i>
+         lottery-numbers
+        </i>
+       </ns>
+       . Suddenly she jumped out of her armchair and shouted: "I have won the
+       <ns type="UP">
+        <i>
+         jack-pot
+        </i>
+       </ns>
+       ". Sara was out of breath and after
+       <ns type="M">
+       </ns>
+       she
+       <ns type="TV">
+        <i>
+         had told
+        </i>
+       </ns>
+       her mother
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       she hadn't bought the ticket. Her mother
+       <ns type="TV">
+        <i>
+         get
+        </i>
+       </ns>
+       angry but some hours later she was friendly again.
+      </p>
+      <p>
+       Sara couldn't understand the fact
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that she didn't do the right thing. She had
+       <ns type="RV">
+        <i>
+         earn
+        </i>
+       </ns>
+       a lot of money, so she would be more careful
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       doing things
+       <ns type="M">
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets and so his hole schoole knew from Sara's experience.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Sara was a very good puple.
+       </s>
+       <s pid="2" sid="2">
+        She didn't learn a lot but she knew all  important things.
+       </s>
+       <s pid="2" sid="3">
+        She was a very nice person and she helped always if somebody need her help.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        One day she had to make the shopping for her mother.
+       </s>
+       <s pid="3" sid="2">
+        She had to buy a lottery-ticket and other things for her.
+       </s>
+       <s pid="3" sid="3">
+        After she had done this she went home, but she didn't buy the ticket because she thought there aren't no change  to win.
+       </s>
+       <s pid="3" sid="4">
+        She spent this  only for a magazin.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        After she came home her mother was sitting in front of the TV and looked after the lottery-numbers.
+       </s>
+       <s pid="4" sid="2">
+        Suddenly she jumped out of her armchair and shouted: "I have won the jack-pot".
+       </s>
+       <s pid="4" sid="3">
+        Sara was out of breath and after  she had told her mother, she hadn't bought the ticket.
+       </s>
+       <s pid="4" sid="4">
+        Her mother get angry but some hours later she was friendly again.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Sara couldn't understand the fact, that she didn't do the right thing.
+       </s>
+       <s pid="5" sid="2">
+        She had earn a lot of money, so she would be more careful with doing things .
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

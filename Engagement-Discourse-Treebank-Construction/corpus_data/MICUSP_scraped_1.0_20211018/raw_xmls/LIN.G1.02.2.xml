@@ -1,0 +1,1311 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    <i>
+     Give Me a Break!
+    </i>
+    The English Double Object Construction
+   </div>
+   <p>
+   </p>
+  </div>
+  <div class="dynacloud">
+   <p>
+    The double object, [V NP1 NP2],
+    <a class="fnref" href="#fn1" id="fnref_fn1">
+     1
+    </a>
+    construction in English has proven a difficult target for analysis.  In a seven-hundred-plus-page textbook on Government and Binding Theory, Haegeman (1994) devotes slightly more than one page, in the chapter on Case theory, and several footnotes to a discussion of the double object construction in English (pp. 187-188).  She does, however, note that, although
+    <q>
+     we cannot go into all the details here,
+    </q>
+    the
+    <q>
+     issue…is a very interesting one (p. 188).
+    </q>
+    I cannot go into all the details here either, but I can go into some details, and some discussion, of some observations and proposals that have been put forward regarding the syntactic structure of English double objects.
+   </p>
+   <p>
+    Barss and Lasnik (1986) showed that the structural relationship suggested by the behavior of the two noun phrases was not consistent with available analyses of the structure of double object sentences and constraints on anaphora.  I begin here with an overview of the data they present, and a discussion of their suggestions to account for it, before moving on to a proposal by Larson (1988) of a structural analysis of double object constructions that accounts for Barss and Lasnik's data and my own (humble) evaluation of his proposal.
+   </p>
+   <div>
+    <div class="head_1">
+     A Problem: Asymmetry
+    </div>
+    <p>
+     Barss and Lasnik (1986) observe that the relationship between NP1 and NP2 is
+     <q>
+      asymmetrical,
+     </q>
+     in that
+     <q>
+      NP2 is in some sense in the domain of NP1, but NP1 is not in the domain of NP2 (p. 347).
+     </q>
+     They describe six phenomena occurring in anaphoric (co-reference) relations in English that illustrate this asymmetry.  I will return shortly to the issue of what is meant by
+     <q>
+      in the domain of
+     </q>
+     after an overview of the evidence presented of this asymmetric relationship.
+    </p>
+    <p>
+     The first phenomenon has to do with binding relationships in reflexive constructions, where an antecedent
+     <q>
+      binds
+     </q>
+     a co-referring reflexive and the meaning of the bound reflexive is dependent upon the meaning of the binder: while NP1 can bind NP2, the converse is not possible.  In sentences such as (1)(a), NP1 (
+     <i>
+      John
+     </i>
+     ) can co-refer with, and serve as antecedent of, the reflexive NP2 (
+     <i>
+      himself
+     </i>
+     ).  However, in (1)(b), NP2 (
+     <i>
+      John
+     </i>
+     ), cannot bind the reflexive NP1 (p. 347).
+    </p>
+    <p>
+     (1) (a)
+     <q>
+      Bill showed [NP1 John]i [NP2 himself]i
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      *Bill showed [NP1 himself]i [NP2 John]i
+     </q>
+    </p>
+    <p>
+     It also seems to be the case that the subject NP,
+     <i>
+      Bill
+     </i>
+     , of the sentences in (2) can bind
+     <i>
+      himself
+     </i>
+     when it is in the NP1 position, as in (2)(a), but not in the NP2 position, as in (2)(b).
+     <a class="fnref" href="#fn2" id="fnref_fn2">
+      2
+     </a>
+     Though not mentioned by Barss and Lasnik, sentences like those in (2) are evidence that the post-verbal noun phrases do not share the same structural relationship to the subject NP and could provide further support for an argument that NP1 and NP2 are not in a symmetrical relationship.  I return to this later on.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     (2) (a)
+     <q>
+      Billi showed [NP1 himself]i [NP2 John]j
+     </q>
+    </div>
+    <p>
+     (b)
+     <q>
+      *?Billi showed [NP1 John]j [NP2 himself]i
+     </q>
+    </p>
+    <p>
+     Co-reference between pronouns and
+     <q>
+      quantificational
+     </q>
+     noun phrases (QNPs)-noun phrases with quantifiers such as
+     <i>
+      every
+     </i>
+     or
+     <i>
+      each
+     </i>
+     as a specifier-exhibits the same asymmetry with regards to the NP1 and NP2 positions as do the reflexive cases.  The QNP
+     <i>
+      each worker
+     </i>
+     in the NP1 position binds the pronoun
+     <i>
+      his
+     </i>
+     in the NP2 in (3)(a), but the QNP
+     <i>
+      each paycheck
+     </i>
+     cannot bind the pronoun
+     <i>
+      its
+     </i>
+     from the NP2 position in (3)(b).  The authors relate this phenomenon to others' work showing that a pronoun bound by a QNP
+     <q>
+      must be in the structural domain of the QNP at S-Structure (p. 348).
+     </q>
+    </p>
+    <p>
+     (3) (a)
+     <q>
+      I denied [NP1 each worker]i [NP2 hisi paycheck]
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      *I denied [NP1 itsi owner] [NP2 each paycheck]i
+     </q>
+    </p>
+    <p>
+     (from Barss &amp; Lasnik, 1986, p. 348)
+    </p>
+    <p>
+     Barss and Lasnik make two observations about
+     <i>
+      wh
+     </i>
+     -movement out of double object constructions (pp. 348-349).  The first, analogous to the QNP case above and illustrated in (4), is that a
+     <i>
+      wh
+     </i>
+     -phrase extracted from the NP1 position can bind a pronoun in NP2, as which worker binds his in (4)(a), but a
+     <i>
+      wh
+     </i>
+     -phrase extracted from the NP2 position, as is which paycheck in (4)(b), cannot bind a pronoun in NP1.  The second, illustrated in (5), is that, in sentences in which both NPs are
+     <i>
+      wh
+     </i>
+     -phrases, the
+     <i>
+      wh
+     </i>
+     -phrase in NP1 is free to move while the one in NP2 may not.  They relate this second phenomenon to others' work showing that, in general, only the
+     <q>
+      structurally higher
+     </q>
+     of two
+     <i>
+      wh
+     </i>
+     -phrases may move (p. 349).
+     <a class="fnref" href="#fn3" id="fnref_fn3">
+      3
+     </a>
+    </p>
+    <p>
+     (4) (a)
+     <q>
+      [NP1 Which worker]i did you deny
+      <i>
+       ti
+      </i>
+      [NP2 hisi paycheck]?
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      *[NP2 Which paycheck]i did you deny [NP1 itsi owner]
+      <i>
+       ti
+      </i>
+      ?
+     </q>
+    </p>
+    <p>
+     (from Barss &amp; Lasnik, 1986, p. 348)
+    </p>
+    <p>
+     (5) (a)
+     <q>
+      [NP1 Who]i did you give
+      <i>
+       ti
+      </i>
+      [NP2 which book]?
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      *[NP2 Which book]i did you give [NP1 who]
+      <i>
+       ti
+      </i>
+      ?
+     </q>
+    </p>
+    <p>
+     (from Barss &amp; Lasnik, 1986, p. 349)
+    </p>
+    <p>
+     The
+     <i>
+      each…the other
+     </i>
+     construction rather robustly displays the now-familiar asymmetry: a noun phrase with
+     <i>
+      each
+     </i>
+     in NP1 can bind
+     <i>
+      the other
+     </i>
+     in NP2, but an
+     <i>
+      each
+     </i>
+     phrase in NP2 cannot bind
+     <i>
+      the other
+     </i>
+     in NP1.  Barss and Lasnik suggest that a plausible requirement for binding in these constructions is
+     <q>
+      that the minimal NP in which
+      <i>
+       each
+      </i>
+      appears must have
+      <i>
+       the other
+      </i>
+      in its domain (Barss &amp; Lasnik, 1986),
+     </q>
+     and that this is not the case in ungrammatical sentences such as (6)(b).
+    </p>
+    <p>
+     (6) (a)
+     <q>
+      I gave [NP1 each man]i [NP2 [the other]i's watch]
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      *I gave [NP1 [the other]i's trainer] [NP2 each lion]i
+     </q>
+    </p>
+    <p>
+     (from Barss &amp; Lasnik, 1986, p. 349)
+    </p>
+    <p>
+     The final example of asymmetry concerns polarity
+     <i>
+      any
+     </i>
+     , which may appear only
+     <q>
+      in the scope of…scope-bearing elements (p. 350).
+     </q>
+     Noun phrases such as
+     <i>
+      anyone
+     </i>
+     and
+     <i>
+      anything
+     </i>
+     may appear in NP2 but not in NP1, suggesting that NP2 is in the scope of NP1 (and NP1 is not in the scope of NP2).  Assuming scope can be defined structurally, the asymmetry in scope would also indicate an asymmetrical structural relation between the two noun phrases.
+    </p>
+    <p>
+     The examples given above clearly demonstrate that noun phrases in the NP1 position pattern differently in terms of their ability to bind pronouns and to move than do noun phrases in the NP2 position.  Barss and Lasnik characterize these differences as resulting from the structural relationship between the two noun phrases and related in some way to their respective domains.  This characterization begs the question: what does it mean for a noun phrase to
+     <q>
+      be in the domain of
+     </q>
+     another noun phrase, or for any element in a sentence to be
+     <q>
+      in the domain of
+     </q>
+     another element?
+    </p>
+    <p>
+     The authors seem to use
+     <q>
+      domain
+     </q>
+     to define the structures across which anaphoric co-reference is allowed by the grammar.  According to the Barss and Lasnik, the
+     <q>
+      standard notion of domain [at the time they are writing]…is c-command (p. 350),
+     </q>
+     and they give two possible definitions of the term
+     <q>
+      c-command
+     </q>
+     .  An X' tree representation of a generic phrase, XP, is shown in (7) and I refer to it in the following discussion of
+     <q>
+      command
+     </q>
+     and
+     <q>
+      domain
+     </q>
+     .
+    </p>
+    <p>
+     One possible definition of
+     <q>
+      c-command
+     </q>
+     is that a node N1 dominates another node N2 if (and only if) the first branching node that dominates N1 also dominates N2.  Haegeman (1994, p. 137) adds to this definition that a c-command relation holds only if N1 does not dominate N2. Practically, this means that any constituent of which N1 is a part that comprises more than just N1 will necessarily also contain N2.  By this definition, the head X in (7) c-commands its complement, ZP, because X'2, the first branching node dominating X, also dominates ZP.  Conversely, ZP also c-commands X.  If domain is defined in terms of c-command-A is in the domain of B if and only if B c-commands A-then X and ZP can each be said to be
+     <q>
+      in the domain of
+     </q>
+     the other.
+    </p>
+    <p>
+     By the same definition, X and YP2 are in an asymmetric c-command relationship in (7): YP2 c-commands X because X'1, the first branching node that dominates YP2, also dominates X, but X does not c-command YP2 because X'2, the first branching node that dominates X, does not dominate YP2.  If
+     <q>
+      domain
+     </q>
+     is defined in terms of c-command, X is in the domain of YP2 but YP2 is not in the domain of X and we would expect that they would behave asymmetrically in situations where domain is a restricting factor.
+    </p>
+    <p>
+     (7)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Barss and Lasnik identify a second possible definition of c-command, similar to the first but defined in terms of maximal projections (XP or X" nodes) rather than first branching nodes: N1 c-commands N2 if-and-only-if the first maximal projection (and thus all maximal projections) dominating N1 also dominates N2.  As above, to specify that the relationship is not one of dominance, we can add that N1 does not dominate N2.  Following Haegeman (1994, p. 137), and others,  I will use the term
+     <q>
+      m-command
+     </q>
+     to describe this relationship.
+    </p>
+    <p>
+     In (7), XP is the first maximal projection dominating the head, X, its complement, ZP, the X' adjunct, YP2, and YP1 in the SpecXP position.  A relationship of mutual m-command holds between all four of these positions.  If domain is defined in terms of m-command, each would be
+     <q>
+      in the domain of
+     </q>
+     all of the others and we would expect that they would behave symmetrically in situations where domain is a restricting factor.
+    </p>
+    <p>
+     Given these two possible structural definitions of
+     <q>
+      domain
+     </q>
+     , Barss and Lasnik then attempt to describe a structure for [V NP1 NP2] constructions that will account for the above-illustrated asymmetry in domain between the two noun phrases.  They discuss three possibilities, reproduced in (8) below (from Barss &amp; Lasnik, 1986, p. 350):
+     <a class="fnref" href="#fn4" id="fnref_fn4">
+      4
+     </a>
+    </p>
+    <p>
+     (8) (a)				(b)				(c)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     None of these structures fits the data with either the c-command or m-command definition of domain (pp. 350-351).  In (8)(a) and (8)(b) NP1 and NP2 are sisters and symmetrical with respect to c- and m-command.  The c-command relationship between the noun phrases in (8)(c) is asymmetrical, but NP2 c-commands NP1 which predicts the opposite of the data described above.
+    </p>
+    <p>
+     The authors mention two possible resolutions, the first of which is that the requisite predictions would be made if the grammar were to permit discontinuous constituents (crossing branches).  Though they note that it has been an
+     <q>
+      axiom
+     </q>
+     of phrase structure theory within the Chomskyan framework since 1955 that such structures are not allowed, a structure similar to that in (8)(c) would yield the appropriate word order and c-command domain predictions if the NP sister of V' were allowed to intercede between V and its sister NP (pp. 351-352).
+    </p>
+    <p>
+     The other possibility that they put forward is that one of the structures in (8)(a) or (8)(b) is correct and that c-command is not sufficient to define
+     <q>
+      in the domain of.
+     </q>
+     That is, c-command is not sufficient to predict the range of structural relations over which operations such as binding can occur.  They propose a reformulation of domain in terms of precedence as well as c-command:
+     <q>
+      Y is in the domain of X iff X c-commands Y and X precedes Y (p. 352).
+     </q>
+     The conditions on anaphora, scope, wh-movement, etc. could then be stated in terms of this definition of domain, as in
+     <q>
+      X binds Y iff Y is in the domain of X and X and Y are coindexed (p. 351).
+     </q>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Discussion: Precedence, Domain and Branching
+    </div>
+    <p>
+     The solution that Barss and Lasnik propose is unsatisfactory for several reasons.  First, there is no explicit motivation for the inclusion of c-command in their alternate definition of domain.  Precedence alone would account for all of their data, since it is the case in all of the examples that NP1 precedes NP2.  C-command seems to be left in the definition only to avoid entirely redefining the relation as a precedence relation.
+    </p>
+    <p>
+     Proposing precedence as a solution also does not confront other problems with the structures in (8)(a) and (8)(b).  Trinary branching structures like the one in (8)(a) are dispreferred, if not ruled out in many formulations of X' theory, for constraint and learnability considerations.  As Haegeman (1994, pp. 138-144) explains, constraining a grammar to permit only binary branching nodes would speed acquisition by requiring fewer decisions of a child learning the grammar, though she mentions in a footnote that double object constructions and coordinate constructions are possible exceptions to the binary branching rule (p. 144).  That the structure in (8)(a) is divergent from the binary branching pattern should merit some discussion.
+    </p>
+    <p>
+     As I point out in (2), the subject NP in a sentence with double objects can bind a pronoun in NP1 but not in NP2, indicating that the two object noun phrases are not in the same relation to the subject.  Barss and Lasnik do not mention where in the tree representation of the sentence they consider the subject to be, however, the subject precedes both of the objects.  In (8)(a) and (8)(b) NP1 and NP2 are sisters; it is impossible for the subject to c-command NP1 and not NP2.  Their proposal seems to over-generate and predict the subject able to bind either of the objects.
+    </p>
+    <p>
+     Finally, as the authors point out,
+     <i>
+      wh
+     </i>
+     -extraction out of NP2 is possible if NP1 is not a
+     <i>
+      wh
+     </i>
+     -phrase (p. 348), with the result that NP2 is in a position in which it both c-commands and precedes NP1.
+     <i>
+      Wh
+     </i>
+     -phrases extracted from NP2 remain unable to bind a pronoun in NP1, as in (9).  Without additional apparatus, the precedence + c-command proposal does not account for this.
+    </p>
+    <p>
+     (9)
+     <q>
+      *[NP2 Who]i did you give [NP1 hisi book]
+      <i>
+       ti
+      </i>
+      ?
+     </q>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     A Solution?: VP Shell
+    </div>
+    <p>
+     Though they are not able to propose an entirely satisfactory explanation to account for them, the observations that Barss and Lasnik make of asymmetry between NP1 and NP2 in double object constructions do to hold true and remain in need of explanation.  Chomsky (1995, pp. 61-64) references VP shell constructions, along the lines of those proposed by Larson (1988), as an example of an analysis that has proven useful.
+    </p>
+    <p>
+     For the purposes of this discussion, I assume (consistent, I believe, with Larson (1988) and Chomsky (1995)) here that verbs such as
+     <i>
+      give
+     </i>
+     , that license double object constructions, assign θ-roles to three arguments: an external θ-role, AGENT, to the subject and two internal θ-roles, something like BENEFACTIVE and THEME, to the two
+     <q>
+      objects.
+     </q>
+     As Chomsky (1995, p. 62) describes it, the
+     <q>
+      VP shell
+     </q>
+     analysis of the structure of sentences such as
+     <i>
+      John gave a book to Bill
+     </i>
+     assigns to them a deep-structure dative construction like that in (10).
+    </p>
+    <p>
+     The verb,
+     <i>
+      gave
+     </i>
+     , governs (is in a mutual m-command relationship with) both
+     <i>
+      a book
+     </i>
+     and
+     <i>
+      to-Bill
+     </i>
+     and assigns its internal θ-roles to these two arguments at deep structure.  The verb then undergoes a raising operation to the empty head position (filled in (10) by e) of the
+     <q>
+      higher
+     </q>
+     VP1, the
+     <q>
+      VP shell
+     </q>
+     , from which position it assigns the AGENT θ-role to the subject,
+     <i>
+      John
+     </i>
+     .
+     <q>
+      Operations similar to those yielding the passive construction (Chomsky, 1995, p. 62)
+     </q>
+     apply to the
+     <q>
+      lower
+     </q>
+     VP2 to yield the surface double-object word order and structural asymmetry.
+    </p>
+    <p>
+     (10) (from Chomsky, 1995, p. 62, question mark and subscripts added)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     We now turn to Larson's (1988) paper for an explanation of this
+     <q>
+      operation similar to that yielding the passive
+     </q>
+     that derives a double object construction, without the preposition to, from an underlying dative, which requires to.
+     <a class="fnref" href="#fn5" id="fnref_fn5">
+      5
+     </a>
+     His deep structure is slightly different from that reported in Chomsky (1995) in that the subject of
+     <i>
+      John sent a letter to Mary
+     </i>
+     is not located in the specifier position of VP1, but in SpecIP ((11) shows only the VP):
+    </p>
+    <p>
+     (11) (from Larson, 1988, p. 342, subscripts added)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Given this proposed structure of dative constructions, how are [V NP1 NP2] surface forms to be derived?  Larson proposes a transformation analogous to that by which passives are derived.  Labeling the active-to-passive derivation Passive and the dative-to-double-object derivation Dative Shift, he uses
+     <q>
+      PASSIVE
+     </q>
+     to
+     <q>
+      refer to the suite of operations embracing both (1988, p. 352).
+     </q>
+     Both Passive and Dative Shift involve
+     <q>
+      withdrawal of Case from an object position and suppression of thematic role assignment to a subject position (p. 351)
+     </q>
+     and
+     <q>
+      an object [moving] to subject position, with the former subject assuming adjunct status (p. 352);
+     </q>
+     and these are understood to comprise PASSIVE.
+     <a class="fnref" href="#fn6" id="fnref_fn6">
+      6
+     </a>
+    </p>
+    <p>
+     The steps in the derivation of the double object sentence
+     <i>
+      John sent Mary a letter
+     </i>
+     from
+     <i>
+      John sent a letter to Mary
+     </i>
+     (see (11), above) are shown in (12) (from Larson, 1988, p. 353).
+     <a class="fnref" href="#fn7" id="fnref_fn7">
+      7
+     </a>
+    </p>
+    <p>
+     (12) (a)			(b)			(c)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Comparing (12)(a) to (11), PASSIVE has
+     <q>
+      suppressed
+     </q>
+     θ-role assignment to the
+     <q>
+      subject
+     </q>
+     specifier position of the lower VP, with that θ-role now being assigned to a letter in a right V' adjunct position.  Additionally, Case has been
+     <q>
+      withdrawn
+     </q>
+     from the
+     <q>
+      object
+     </q>
+     V-complement
+     <i>
+      Mary
+     </i>
+     -to is regarded as
+     <q>
+      pure [Dative] Case
+     </q>
+     marking and is
+     <q>
+      absorbed
+     </q>
+     in the process of withdrawing Case from the NP (p. 352).
+    </p>
+    <p>
+     Thus,
+     <i>
+      Mary
+     </i>
+     has a θ-role, but no Case, in its deep structure position in (12)(a), and
+     <i>
+      send
+     </i>
+     can assign Case but no θ-role to the
+     <q>
+      subject
+     </q>
+     SpecV' of the lower VP.  In (12)(b)
+     <i>
+      Mary
+     </i>
+     moves to the SpecV' position, where it is assigned Case by send.  At this point,
+     <i>
+      Mary
+     </i>
+     is both θ- and Case-marked and
+     <i>
+      send
+     </i>
+     has discharged its internal θ-roles and inherent Case.
+     <i>
+      Send
+     </i>
+     is now free to move from the head of the lower VP to the head of the upper VP in (12)(c) whence it is able to assign nominative Case and AGENT θ-role to the matrix subject of the sentence (in SpecIP).
+    </p>
+    <p>
+     It is interesting to note that the deep structure of
+     <i>
+      John sent Mary a letter
+     </i>
+     in (12)(a) actually has the same precedence relations between the verb and the two NPs as does the surface structure.  It is like (8)(c) in that, as Barss and Lasnik pointed out, the surface word order is correct, but the structure gives the wrong predictions about the relationship between the two noun phrases.  In (12)(a),
+     <i>
+      a letter
+     </i>
+     asymmetrically c-commands
+     <i>
+      Mary
+     </i>
+     because the V' that is the first branching node dominating
+     <i>
+      a letter
+     </i>
+     also dominates
+     <i>
+      Mary
+     </i>
+     , while the V' that is the first branching node to dominate
+     <i>
+      Mary
+     </i>
+     does not dominate
+     <i>
+      a letter
+     </i>
+     .  In the surface structure in (12)(c), these command relations are reversed, due to
+     <i>
+      Mary
+     </i>
+     's raising to the SpecV' position where it c-commands
+     <i>
+      a letter
+     </i>
+     in the V' adjunct position.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Adjuncts and V' Reanalysis
+    </div>
+    <p>
+     According to the analysis given here, the noun phrase,
+     <i>
+      a letter
+     </i>
+     , that is semantically the direct object, or THEME, ends up, in the final derivation, in a position analogous to that occupied by the optional AGENT (in a PP headed by
+     <i>
+      by
+     </i>
+     ) in the Passive.  The direct object in a Dative Shift construction differs from the semantic AGENT in the Passive in several important ways, however.  First, it is not optional:
+     <i>
+      John sent Mary (a letter)
+     </i>
+     is ungrammatical without the direct object, while
+     <i>
+      Marywas sent a letter (by John)
+     </i>
+     is grammatical with or without the inclusion of the PP.  Additionally, the optional AGENT in a Passive appears in a prepositional phrase where it may receive Case from the P0 head,
+     <i>
+      by
+     </i>
+     , while the direct object in Dative Shift is a
+     <q>
+      bare
+     </q>
+     NP with no additional preposition to assign it Case.  The cases are similar in that both require some rule that allows verb to assign a θ-role to an NP in an adjunct position.
+    </p>
+    <p>
+     Larson's account of θ-role assignment to an argument in an adjunct, as I understand it, is that, instead of being entirely suppressed in Passives, the subject θ-role is merely blocked from being assigned to an argument in the subject position.  An additional rule allows a θ-role assigned by Xi to be optionally assigned to an adjunct of Xi (pp. 351-352).  His analysis assumes that subject θ-roles are assigned compositionally by the whole VP, rather than by the verb on its own.
+     <a class="fnref" href="#fn8" id="fnref_fn8">
+      8
+     </a>
+     The AGENT
+     <i>
+      by
+     </i>
+     -phrase is a VP adjunct, as in (13) (from Larson, 1988, p. 351) and assigned a θ-role by VP under the rule just proposed.
+    </p>
+    <p>
+     (13)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     That the direct object adjunct in Dative Shift is obligatory, while the AGENT adjunct in Passive is optional, Larson takes to be due to properties of the θ-roles themselves.  Because the object θ-role is a lexical property of the verb, it is linked in the lexical representation to a certain category, specifically a noun phrase.  The subject θ-role, which is not subcategorized for, is not linked to any specific category and may be assigned to, for instance, the Passive morphology on the verb (usually
+     <i>
+      -en
+     </i>
+     or
+     <i>
+      -ed
+     </i>
+     in English).  Larson does not go into great detail on this and I will not do so here either.
+    </p>
+    <p>
+     The assignment of Case to a direct object in a V' adjunct is more complicated and involves a proposal Larson calls
+     <q>
+      V' Reanalysis:
+     </q>
+    </p>
+    <p>
+     <q>
+      Let α be a phrase [V'…] whose θ-grid contains one undischarged internal θ-role.  Then α may be reanalyzed as [V…].
+     </q>
+     (Larson, 1988, p. 348)
+    </p>
+    <p>
+     The lower V' in (12)(c), reproduced below as (14)(a), is subject to this reanalysis.
+    </p>
+    <p>
+     The constituent in question has the structure [V' t e] where t is a trace left by verb raising of
+     <i>
+      give
+     </i>
+     to the higher VP and e is a trace left by NP movement of
+     <i>
+      Mary
+     </i>
+     to SpecV' (p. 359).
+     <a class="fnref" href="#fn9" id="fnref_fn9">
+      9
+     </a>
+     <i>
+      Send
+     </i>
+     , represented in this V' by t, has assigned its indirect object θ-role to
+     <i>
+      Mary
+     </i>
+     , represented in this V' by e, and thus the V'
+     <q>
+      has exactly one unsaturated θ-role, that corresponding to the direct object (theme) (p. 359).
+     </q>
+     By V' Reanalysis, the constituent is reanalyzed as [V t e], as in (14)(b).
+    </p>
+    <p>
+     (14) (a)					(b)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     The V resulting from this reanalysis is essentially a transitive verb, according to Larson,
+     <q>
+      in the canonical configuration of direct objects: [V' V NP] (p. 360),
+     </q>
+     which now is able to assign case to the NP direct object
+     <i>
+      a letter
+     </i>
+     , which is now its sister (pp. 359-360).
+     <a class="fnref" href="#fn10" id="fnref_fn10">
+      10
+     </a>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Discussion: Elegance, etc.
+    </div>
+    <p>
+     Larson's analysis of the structure of [V NP1 NP2] double object constructions is elegant in that it is achieved mostly by appealing to operations that had previously been proposed to account for other phenomena: avoiding construction-specific operations by appealing to more general principles.  Accounting for Dative Shift constructions by means of processes that have proven useful in describing or explaining other constructions strengthens the Dative Shift argument by appealing to more general principle but also supports the other analyses by showing that the operations apply across constructions.
+    </p>
+    <p>
+     The proposed structure is a
+     <q>
+      strictly binary branching [one] (p. 342)
+     </q>
+     , consistent with a more constrained theory of grammar as discussed above.  Verb raising to a higher structural position from an underlying VP was previously proposed to yield the verb-subject-object word order in VSO languages (p. 344).  As discussed above, the operations that make up PASSIVE were previously proposed to derive Passive surface structures.  Even the V' Reanalysis, proposed apparently for the first time in this paper (pp. 347-350) is proposed first to account for
+     <q>
+      Heavy NP Shift
+     </q>
+     in regular Dative constructions [V NP PP].
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     More V' Reanalysis and My Own Two Cents
+    </div>
+    <p>
+     V' Reanalysis is crucial to Larson's account of Case assignment in Dative Shift constructions, and merits some discussion.
+     <q>
+      Heavy NP Shift
+     </q>
+     is a phenomenon in which phonologically heavy NPs (ones with lots of words) surface to the right of the PP, as in (15):
+    </p>
+    <p>
+     (15) (a)
+     <q>
+      I gave [NP everything that he demanded] [PP to John]
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      I gave [PP to John] [NP everything that he demanded]
+     </q>
+    </p>
+    <p>
+     (from Larson, 1988, p. 347)
+    </p>
+    <p>
+     Rather than an NP Movement operation, Larson proposes that the V' [V' give to John] (16)(a), having an unassigned direct object θ-role, is reanalyzed as a complex verb [V give to John] (16)(b), which then raises to the head of the higher VP in (16)(c) (from Larson, 1988, p. 348):
+    </p>
+    <p>
+     (16) (a)				(b)				(c)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Note that [V' send Mary] in (12)(a) has the same structure and θ properties as [V' give to John] in (16)(a).  An alternative derivation of the Dative Shift construction is illustrated in (17):
+    </p>
+    <p>
+     (17) (a)				(b)				(c)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Here, V' Reanalysis applies before any other movement operations, yielding [V send Mary].  This complex V could then assign Case to its sister NP, as does [V t e] in Larson's account, before raising to the higher VP.  The resulting surface structure has the requisite c-command relationships between
+     <i>
+      Mary
+     </i>
+     and
+     <i>
+      a letter
+     </i>
+     to predict Barss and Lasnik's data.
+    </p>
+    <p>
+     I find this derivation preferable to Larson's in that it requires fewer rules.  The complex V assigns a θ-role to its sister NP,
+     <i>
+      a letter
+     </i>
+     , without recourse to Larson's rule assigning θ-roles to adjuncts and the accompanying stipulations of conditions when its application is obligatory.  Assignment of a θ-role to
+     <i>
+      a letter
+     </i>
+     by the complex V [V t e] in the same fashion as I propose is, of course, available under Larson's proposal as well.  Why
+     <i>
+      a letter
+     </i>
+     should receive its θ-role and Case, both from send, by different processes in not clear.
+     <a class="fnref" href="#fn11" id="fnref_fn11">
+      11
+     </a>
+    </p>
+    <p>
+     My alternative derivation could be ruled out, though, by a potentially very serious problem with Larson's V' Reanalysis hypothesis.  Returning to his example of V' reanalysis in
+     <q>
+      Heavy NP Shift
+     </q>
+     constructions (pp. 347-348), the sentence
+     <i>
+      I gave John everything that he demanded
+     </i>
+     has the surface structure in (18):
+    </p>
+    <p>
+     (18)
+    </p>
+    <div class="gap">
+     <span>
+      Figure
+     </span>
+     here
+    </div>
+    <p>
+     Note that
+     <i>
+      John
+     </i>
+     , which has been reanalyzed as part of the verb, binds the pronoun,
+     <i>
+      he
+     </i>
+     , in the noun phrase in the lower VP:
+    </p>
+    <p>
+     (19)
+     <q>
+      I [V gave to Johni]j [NP everything that hei demanded]
+      <i>
+       tj
+      </i>
+     </q>
+    </p>
+    <p>
+     We should note also that at no point prior to reanalysis in (16) does
+     <i>
+      John
+     </i>
+     c- or m-command
+     <i>
+      he
+     </i>
+     .
+    </p>
+    <p>
+     If the reanalyzed V is a single lexical item, with no branching structure, co-reference of
+     <i>
+      John
+     </i>
+     and he in (19) should be impossible.  Pronouns must be bound by a subject or SUBJECT, where
+     <q>
+      subject
+     </q>
+     is an NP in SpecXP and
+     <q>
+      SUBJECT
+     </q>
+     is a finite, +AGR I0 (Haegeman, 1994, p. 222): V is neither
+     <q>
+      subject
+     </q>
+     nor
+     <q>
+      SUBJECT
+     </q>
+     .  If [V give to John] actually has a branching structure: [V [V give] [PP to John]], this might allow binding.  However, this would involve a branching lexical item.  X0 nodes are by definition
+     <q>
+      terminal nodes (Haegeman, 1994, p. 105)
+     </q>
+     with no further branching structure.
+    </p>
+    <p>
+     For
+     <i>
+      John
+     </i>
+     to bind
+     <i>
+      he
+     </i>
+     in (18) seems to require either an overhaul of binding theory to allow binding of pronouns by verbs or of the theory of the lexicon to allow for branching lexical items, either of which would result in a theory that is significantly less constrained.  Without either of these theory revisions, V' reanalysis seems not to be viable.
+    </p>
+    <p>
+     Unavailability of V' reanalysis would seem to cripple Larson's analysis of
+     <q>
+      Heavy NP Shift
+     </q>
+     .  To what extent it is damaging to his analysis of Dative Shift is unclear.  While he relies upon V' Reanalysis to assign case to the direct object, it does not play otherwise play a role in his derivation.
+     <a class="fnref" href="#fn12" id="fnref_fn12">
+      12
+     </a>
+     To repair his analysis would require simply finding another account of Case assignment to the direct object.  Chomsky (1995, p. 62) describes θ-role and Case assignment by the verb in VP Shell constructions under government (mutual m-command): either the verb or its co-indexed trace is in a mutual m-command relationship with the direct object throughout the derivation.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Conclusion
+    </div>
+    <p>
+     I will conclude with a brief discussion of the productivity of the double object construction.  That the double object construction is not available with all verbs that permit the oblique dative (20), and vice versa (21), is well-documented.
+    </p>
+    <p>
+     (20) (a)
+     <q>
+      I contributed money to the cause
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      *I contributed the cause money
+     </q>
+    </p>
+    <p>
+     (21) (a)
+     <q>
+      *Can you spare a dime to me?
+     </q>
+    </p>
+    <p>
+     (b)
+     <q>
+      Can you spare me a dime?
+     </q>
+    </p>
+    <p>
+     Larson (1988, p. 369ff) attributes this to lexical properties of the verbs in regards to θ-role assignment.  The indirect object in a double object construction is something like a BENEFICIARY, and in the oblique construction it is a GOAL.  Verbs that participate in both constructions can assign both θ-roles, verbs like
+     <i>
+      contribute
+     </i>
+     assign only GOAL and verbs like
+     <i>
+      spare
+     </i>
+     assign only BENEFICIARY.
+    </p>
+    <p>
+     While this is a fair account of the restrictions on alternation between the two constructions, it does not offer an explanation of the fact that the double object construction can be somewhat productively applied to verbs that generally do not permit either one:
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     (22) (a)
+     <q>
+      I slept myself a C in linguistics
+     </q>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     (b)
+     <q>
+      I'm going to eat me some food
+     </q>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     (c)
+     <q>
+      I sneezed John my cold
+     </q>
+    </div>
+    <p>
+     My intuition is not that I am coining new lexical items (
+     <i>
+      sleep
+     </i>
+     [V _ _], etc.) with a VP Shell structure and specific θ-roles to assign when I make up sentences such as these, but rather that the construction itself somehow provides structure and thematic properties in addition to that supplied by the verb.   This same construction would provide for the similarities in (23):
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     (23) (a)
+     <q>
+      Bill threw John the ball
+     </q>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     (b)
+     <q>
+      Bill handed John the ball
+     </q>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     (c)
+     <q>
+      Bill kicked John the ball
+     </q>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     (d)
+     <q>
+      Bill gave John the ball
+     </q>
+    </div>
+    <p>
+     In each case,
+     <i>
+      John
+     </i>
+     is the BENEFICIARY or RECIPIENT of the
+     <i>
+      ball
+     </i>
+     (THEME).  The change in meaning that occurs by substituting different verbs is in the role of the subject, and this change cannot really be said to be due to an interaction between the verb and the objects, because the objects remain constant.  Intuitively, the objects receive their θ-roles from the construction and the subject receives its θ-role from the verb.
+    </p>
+    <p>
+     I do not have an analysis of this intuition to propose at this point, but it could be an interesting topic for further exploration.  Perhaps something like a (phonologically null) applicative morpheme as a verbal complement would project a structure similar to that provided by the inner VP in Larson's analysis.  Sentences like those in (22) would be formed by adding this morpheme as a complement to verbs that do not normally subcategorize for it.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div class="head_1">
+     References
+    </div>
+    <ul id="N104A5">
+     <li id="N104A6">
+      Barss, A., &amp; Lasnik, H. (1986). A note on anaphora and double objects. Linguistic Inquiry, 17(2), 347-353.
+     </li>
+     <li id="N104A8">
+      Chomsky, N. (1995). The minimalist program. Cambridge, MA: MIT Press.
+     </li>
+     <li id="N104AA">
+      Haegeman, L. (1994). Introduction to government and binding theory (2nd ed.). Oxford, UK: Blackwell.
+     </li>
+     <li id="N104AC">
+      Larson, R. K. (1988). On the double object construction. Linguistic Inquiry, 19(3), 335-391.
+     </li>
+    </ul>
+   </div>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 Some notational housekeeping:
+• For the purposes of this paper I will use "NP1 (position)" and "NP2 (position)" to refer to the linear order of the noun phrases in the surface phonological form of double object constructions.  
+• For the sake of consistency I adopt the notation used by the authors of the papers that I discuss and use XP rather than X\" to refer to a maximal projection of X.
+    </div>
+    <div id="fn2">
+     <a href="#fnref_fn2">
+      2.
+     </a>
+     2 This is true in my idiolect.  I have added a question mark to (2)(b) because one person with whom I consulted stated that she finds possible an interpretation of (2)(b) in which Bill and himself co-refer.  To what extent it is part of the knowledge state of other entities commonly known as "speakers of English," I cannot be sure, though the grammar checking function in Microsoft Word seems to share my judgment.
+    </div>
+    <div id="fn3">
+     <a href="#fnref_fn3">
+      3.
+     </a>
+     3 The judgments in (5) are Barss and Lasnik's.  Neither (5)(b) nor the other examples that Barss and Lasnik identify as ungrammatical seem particularly bad to me.  In my idiolect at least, this observation does provide robust evidence of asymmetry, though it is not evidence against it either.
+    </div>
+    <div id="fn4">
+     <a href="#fnref_fn4">
+      4.
+     </a>
+     4 They mention additional structures in footnotes but do not discuss them in the body of the paper (pp. 350-351).
+    </div>
+    <div id="fn5">
+     <a href="#fnref_fn5">
+      5.
+     </a>
+     5 Larson's provides an extensive and thorough (long) discussion of the implications of his proposal for the syntax and semantics of double object and related constructions to which I cannot do sufficient justice here.  I will attempt to describe what I think are the central aspects of his proposal of a structure for double object constructions and beg forgiveness for any oversight.
+    </div>
+    <div id="fn6">
+     <a href="#fnref_fn6">
+      6.
+     </a>
+     6 The use of "object" and "subject" in relation to Dative Shift is a little bit confusing because it deals with two objects rather than a subject and object, as is the case with Passive.  Larson appears to use "subject position" to refer to the SpecV'6 and "object" to refer to a complement sister of V.
+    </div>
+    <div id="fn7">
+     <a href="#fnref_fn7">
+      7.
+     </a>
+     7 These trees depict only the VP(s) relevant to the derivation.  As with (11), the matrix subject, John, and verb tense and agreement features are presumed to be in an IP, in which the higher VP depicted in these diagrams is the sister of the head I.
+    </div>
+    <div id="fn8">
+     <a href="#fnref_fn8">
+      8.
+     </a>
+     8 Evidence for this comes from data such as Joe threw the ball to first base vs. Joe threw the World Series, in which the semantic role assigned to the subject is determined by the predicate as a whole, not solely by the verb (Larson, 1988, pp. 339-341)
+    </div>
+    <div id="fn9">
+     <a href="#fnref_fn9">
+      9.
+     </a>
+     9 It is unclear why Larson uses e to represent a "trace of NP Movement (p. 359)."  It seems to be different from the e that acts as a sort of placeholder as the head of the VP shell before raising.
+    </div>
+    <div id="fn10">
+     <a href="#fnref_fn10">
+      10.
+     </a>
+     10 As Larson points out, Objective Case is assigned twice, once to each of the two objects (recall that the Dative Case, marked by to, assigned to Mary in the original Dative construction (11) was absorbed by the PASSIVE operation).  He proposes that a verb in a VP governed by I0 assigns a structural Objective Case in addition to the inherent Objective Case that is a property of a transitive verb.  Due to consideration of space and topic constraint, I will postpone potential further discussion of this double Case assignment.
+    </div>
+    <div id="fn11">
+     <a href="#fnref_fn11">
+      11.
+     </a>
+     11 θ-role assignment to an adjunct aligns Dative Shift with Passive, though requiring much apparatus to do so.
+    </div>
+    <div id="fn12">
+     <a href="#fnref_fn12">
+      12.
+     </a>
+     12 It would rule out my alternate V' Reanalysis derivation completely as John can co-refer with he in the double object version as well: I gave Johni everything that hei demanded.
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

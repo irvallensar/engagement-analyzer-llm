@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     36.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       June, 13th 2000
+      </p>
+      <p>
+       Dear Mrs Ryan,
+      </p>
+      <p>
+       I am writing in response to your letter which said that I won the first prize in the competition.
+      </p>
+      <p>
+       As I didn't expect to be successful, I am very happy about this result.
+      </p>
+      <p>
+       I would now like to
+       <ns type="RV">
+        <i>
+         answer
+        </i>
+       </ns>
+       the information you requested. Firstly, I would be pleased if I could travel in July as I already booked this month as a holiday at work.
+      </p>
+      <p>
+       <ns type="UT">
+        <i>
+         Besides,
+        </i>
+       </ns>
+       I would prefer to stay in a tent since I have never had the exciting experience
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to sleep
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         in the middle of
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       nature.
+      </p>
+      <p>
+       I am especially glad about the activities
+       <ns type="TV">
+        <i>
+         offers
+        </i>
+       </ns>
+       , in particular the sports facilities because I
+       <ns type="TV">
+        <i>
+         was
+         <ns type="S">
+          <i>
+           spezialised
+          </i>
+         </ns>
+        </i>
+       </ns>
+       in sport for my A-levels and intend to become a
+       <ns type="DJ">
+        <i>
+         sport
+        </i>
+       </ns>
+       teacher.
+      </p>
+      <p>
+       I have been playing
+       <ns type="RP">
+        <i>
+         Basketball
+        </i>
+       </ns>
+       for many years but I would appreciate
+       <ns type="FV">
+        <i>
+         to improve
+        </i>
+       </ns>
+       my skills, in particular
+       <ns type="R">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ball-handling
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Furthermore I am really keen on swimming and can therefore hardly
+       <ns type="RV">
+        <i>
+         await
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         having
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         possibility
+        </i>
+       </ns>
+       to learn the butterfly as a new style since I am already perfect
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       crawl.
+      </p>
+      <p>
+       I know I have already asked a lot but there is one more thing I need to know
+       <ns type="RA">
+        <i>
+         <ns type="RP">
+          <i>
+           which
+          </i>
+         </ns>
+        </i>
+       </ns>
+       kind of clothes will be appropriate and how much money will I
+       <ns type="W">
+        <i>
+         approximately need
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       I trust I mentioned all the requested details and am now looking forward to hearing from you to arrange the exact date of departure.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        June, 13th 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Mrs Ryan,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am writing in response to your letter which said that I won the first prize in the competition.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        As I didn't expect to be successful, I am very happy about this result.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I would now like to answer the information you requested.
+       </s>
+       <s pid="5" sid="2">
+        Firstly, I would be pleased if I could travel in July as I already booked this month as a holiday at work.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Besides, I would prefer to stay in a tent since I have never had the exciting experience  to sleep in the middle of the nature.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I am especially glad about the activities offers, in particular the sports facilities because I was spezialised in sport for my A-levels and intend to become a sport teacher.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I have been playing Basketball for many years but I would appreciate to improve my skills, in particular the ball-handling.
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Furthermore
+       </s>
+       <s pid="9" sid="2">
+        I am really keen on swimming and can therefore hardly await having the possibility to learn the butterfly as a new style since I am already perfect in  crawl.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        I know I have already asked a lot but there is one more thing I need to know which kind of clothes will be appropriate and how much money will I approximately need?
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        I trust I mentioned all the requested details and am now looking forward to hearing from you to arrange the exact date of departure.
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      5.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       June, 13th 2000
+      </p>
+      <p>
+       Dear Kim,
+      </p>
+      <p>
+       <ns type="RP">
+        <i>
+         how
+        </i>
+       </ns>
+       are you doing? Thanks for your latest letter - I was really happy about your news!
+      </p>
+      <p>
+       Here, everything is as usual:
+       <ns type="RP">
+        <i>
+         School
+        </i>
+       </ns>
+       , studying, eating, sleeping - but did I tell you about my latest job?
+      </p>
+      <p>
+       I helped at a
+       <ns type="W">
+        <i>
+         pop concert of a
+         <ns type="R">
+          <i>
+           newcomer
+          </i>
+         </ns>
+         group
+        </i>
+       </ns>
+       and you can't imagine how exciting it was!
+      </p>
+      <p>
+       First of all, I helped selling tickets and drinks and there I realized how bad my maths is - I took such a long time to give back the change! But
+       <ns type="RY">
+        <i>
+         at the end
+        </i>
+       </ns>
+       I handled it almost automatically. Before the performance I
+       <ns type="RV">
+        <i>
+         introduced
+        </i>
+       </ns>
+       the spectators to their seats and then
+       <ns type="FD">
+        <i>
+         a
+        </i>
+       </ns>
+       instructor showed me how
+       <ns type="RV">
+        to lead
+       </ns>
+       the spotlights. I really had butterflies in my stomach when I was responsible for the
+       <ns type="DN">
+        <i>
+         lightening
+        </i>
+       </ns>
+       ! It was marvellous!
+      </p>
+      <p>
+       But the cherry on the cake was that I met one of the handsome singers
+       <ns type="RP">
+        <i>
+         back stage
+        </i>
+       </ns>
+       ! He asked me what I was doing and so on and finally invited me
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       his next concert! Of course I agreed - I wouldn't want to miss the chance to gain experience while having fun! Perhaps I could help regularly in the
+       <ns type="DN">
+        <i>
+         lightening
+        </i>
+       </ns>
+       area - it would help me
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       my
+       <ns type="W">
+        <i>
+         studies of photography
+        </i>
+       </ns>
+       . What do you reckon?
+      </p>
+      <p>
+       I can hardly
+       <ns type="RV">
+        <i>
+         await
+        </i>
+       </ns>
+       your reply!
+      </p>
+      <p>
+       <ns type="UP">
+        <i>
+         Lot's
+        </i>
+       </ns>
+       of Love,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        June, 13th 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Kim,
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        how are you doing?
+       </s>
+       <s pid="3" sid="2">
+        Thanks for your latest letter - I was really happy about your news!
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Here, everything is as usual: School, studying, eating, sleeping - but did I tell you about my latest job?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I helped at a pop concert of a newcomer group and you can't imagine how exciting it was!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        First of all, I helped selling tickets and drinks and there I realized how bad my maths is - I took such a long time to give back the change!
+       </s>
+       <s pid="6" sid="2">
+        But at the end I handled it almost automatically.
+       </s>
+       <s pid="6" sid="3">
+        Before the performance I introduced the spectators to their seats and then a instructor showed me how to lead the spotlights.
+       </s>
+       <s pid="6" sid="4">
+        I really had butterflies in my stomach when I was responsible for the lightening!
+       </s>
+       <s pid="6" sid="5">
+        It was marvellous!
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        But the cherry on the cake was that I met one of the handsome singers back stage!
+       </s>
+       <s pid="7" sid="2">
+        He asked me what I was doing and so on and finally invited me for his next concert!
+       </s>
+       <s pid="7" sid="3">
+        Of course I agreed - I wouldn't want to miss the chance to gain experience while having fun!
+       </s>
+       <s pid="7" sid="4">
+        Perhaps
+       </s>
+       <s pid="7" sid="5">
+        I could help regularly in the lightening area - it would help me for my studies of photography.
+       </s>
+       <s pid="7" sid="6">
+        What do you reckon?
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        I can hardly await your reply!
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Lot's of Love,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

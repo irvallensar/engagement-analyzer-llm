@@ -1,0 +1,465 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Capital Flow and the Role of Institutions
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Using a one-sector model, Lucas (1990) argued that it was a paradox that not more capital flow from rich to poor countries.
+      </s>
+      <s pid="1" sid="2">
+       His reasoning goes as follows.
+      </s>
+      <s pid="1" sid="3">
+       Let y = f (L, K) be a constant-returns-to-scale production function where y is the output produced using labor L and capital K.
+      </s>
+      <s pid="1" sid="4">
+       Let p be the price of the good, and w and r be the returns to labor and capital, respectively.
+      </s>
+      <s pid="1" sid="5">
+       Firm's profit maximization problem gives
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="2" sid="1">
+       Assuming that the product price is equalized across countries under free trade, the law of diminishing marginal product implies that r is higher in the country with a lower
+      </s>
+     </p>
+     <p>
+      <s pid="3" sid="1">
+       capital-labor ratio.
+      </s>
+      <s pid="3" sid="2">
+       As an illustration, Lucas calculated that the return to capital in India should be 58 times as high as that in the United States based on their factor endowment.
+      </s>
+      <s pid="3" sid="3">
+       Facing a return differential of this magnitude, one should observe a lot more capital to flow from rich to poor countries.
+      </s>
+      <s pid="3" sid="4">
+       That too little flow is observed in the data has come to be known as the Lucas paradox.
+      </s>
+      <s pid="3" sid="5">
+       In fact, in the data today, this paradox is prevalent if not aggravated.
+      </s>
+      <s pid="3" sid="6">
+       In table 1, it shows clearly that the total value of capital inflows into rich countries exceeds those into poor countries manifolds.
+      </s>
+      <s pid="3" sid="7">
+       This trend has even been stronger in the more recent periods.
+      </s>
+     </p>
+     <p>
+      <s pid="4" sid="1">
+       Lucas (1990) discussed three possible explanations (within a one-sector framework): (a) A worker in a rich country could be several times more productive than her counterpart in a poor country; (b) Human capital may be a missing factor and is likely much higher in a rich country; (c) Political risk and hence required risk premium may be substantially higher in a poor country.
+      </s>
+     </p>
+     <p>
+      <s pid="5" sid="1">
+       The paper will mainly focus on the third explanation, namely whether the quality of political institutions plays a role in capital inflow.
+      </s>
+      <s pid="5" sid="2">
+       It discusses the motivations and empirical evidences in the more recent literature.
+      </s>
+      <s pid="5" sid="3">
+       The question of whether political institutions matter in terms of attracting capital inflow is crucial for policy makers especially in the developing countries.
+      </s>
+      <s pid="5" sid="4">
+       As indicated in table 1, poor countries often have difficulty in attracting capital inflows which might be crucial to their growth process.
+      </s>
+      <s pid="5" sid="5">
+       Thus, if policy makers had a better idea of the underlying cause of the lack of capital inflow, such as bad quality of institutions, they could improve the source of the problem.
+      </s>
+     </p>
+     <p>
+      <s pid="6" sid="1">
+       Interestingly, Lucas himself dismisses the quality of political institutions as possible explanation for the lack of capital inflow into rich countries.
+      </s>
+      <s pid="6" sid="2">
+       His reasoning is that prior to 1945, most of the colonies were ruled by European countries who instituted the same laws in their colonies as in the mother country.
+      </s>
+      <s pid="6" sid="3">
+       Thus, if a British lender, for instance, wanted to lend money to an Indian, the British could expect the same contract laws to apply in India.
+      </s>
+      <s pid="6" sid="4">
+       Reinhart and Rogoff (2004) challenge the validity of Lucas' dismissal by pointing out the number of rebellions in the colonies at that time.
+      </s>
+      <s pid="6" sid="5">
+       They argue that despite having the same laws in the colony and mother country, it was far more likely that the laws in the colonies would be disobeyed due to instable governments.
+      </s>
+      <s pid="6" sid="6">
+       In fact, Reinhart and Rogoff Reinhart argue that the set of countries with frequent default on their external debt have instable governments and are generally low income countries.
+      </s>
+     </p>
+     <p>
+      <s pid="7" sid="1">
+       A more extensive empirical study is by Alfaro, Kalemli-Ozcan, Volosovych (2005).
+      </s>
+      <s pid="7" sid="2">
+       Using data from the IMF on balance of payments, Alfaro, Kalemli-Ozcan and Volosovych (2005) find that good institutional quality is a key determinant of total capital inflows.
+      </s>
+      <s pid="7" sid="3">
+       In their study, they use the extensive dataset by IFS/IMF on foreign direct investment (FDI), portfolio equity investment, and debt inflows from 1970-2000.
+      </s>
+      <s pid="7" sid="4">
+       For their total sample of 98 countries, they construct a measure of institutions as a composite index which is the sum of the indices of investment profile, government stability, internal conflict, external conflict, no-corruption, non-militarized politics, protection from religious tensions, law and order, protection from ethnic tensions, democratic accountability, and bureaucratic quality obtained from International Country Risk Guide (ICRG).
+      </s>
+      <s pid="7" sid="5">
+       Alfaro et al. run the OLS regression of capital inflow on log GDP per capita and the institution index, i.e.
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , where Fi average inflows of direct and portfolio equity investment per capita, Yi is log of GDP per capita in 1970, and Ii is average institutional quality. Note that all regressors are in per capita terms to control for size and both the dependent variable, capital inflow, as well as the index on institutions is an average over the sample period.
+     <p>
+     </p>
+     <p>
+      <s pid="9" sid="1">
+       Alfaro et al. argue that if α, the coefficient on log income per capita is positive, it indicates the existence of the Lucas' Paradox.
+      </s>
+      <s pid="9" sid="2">
+       As seen in table 2, when regressing capital inflow on log GDP per capita by itself, α is statistically significant and positive (columns 1 and 3).
+      </s>
+      <s pid="9" sid="3">
+       When adding the institution index as a regressor, however, the coefficient estimate on log GDP per capita becomes statistically insignificant and β, the coefficient estimate on institutions, is positive and statistically significant (columns 2 and 4).
+      </s>
+      <s pid="9" sid="4">
+       Thus, Alfaro et al argue, the quality of institution provides an explanation for the Lucas Paradox.
+      </s>
+      <s pid="9" sid="5">
+       To get a better sense of the magnitude of β, Alfaro et al. point out that based on the estimate, if a country moves up from the 25th percentile (Guyana) to the 75th (Italy) in the distribution of the index of institutions, based on column (4), there will be an increase of $187.54 in inflows per capita over the sample period on average.
+      </s>
+      <s pid="9" sid="6">
+       This represents a 60% increase in inflows per capita over the sample mean which is $117.34.
+      </s>
+      <s pid="9" sid="7">
+       Alfaro et al. also run a separate multiple regression by including other explanatory variables such as log average years of schooling, log average distantness, and average restrictions to capital mobility.
+      </s>
+      <s pid="9" sid="8">
+       These three regressors represent plausible barriers to capital inflows, namely, human capital, asymmetric information and government policies, respectively.
+      </s>
+      <s pid="9" sid="9">
+       The results in Table 3 show, however, that none of these three additional regressors can by itself explain away the Lucas paradox.
+      </s>
+      <s pid="9" sid="10">
+       The coefficient on log GDP per capita is only insignificant when adding the quality of institutions index.
+      </s>
+     </p>
+     <p>
+      <s pid="10" sid="1">
+       The two main potential problems with this simple OLS regression are multicollinearity and endogeneity.
+      </s>
+      <s pid="10" sid="2">
+       The multicollinearity stems from the fact that log GDP per capita and the institution index are highly correlated.
+      </s>
+      <s pid="10" sid="3">
+       The authors perform extensive diagnostic tests and simulation exercises to make sure that the results are not spurious and that they capture the direct effect of institutional quality on capital inflows.
+      </s>
+      <s pid="10" sid="4">
+       For instance, they regress the residuals from the regression of average inflows on average institutional quality against the residuals from the regression of log GDP per capita in 1970 on average institutional quality and vice versa.
+      </s>
+      <s pid="10" sid="5">
+       The slopes of the fitted lines match exactly their counterpart in the multiple regression as proposed by the Frish-Waugh Theorem if all conditions are met.
+      </s>
+      <s pid="10" sid="6">
+       In addition, they perform perturbation exercises and none of the robustness regressions show any big sign and magnitude changes, which are typical indicators of multicollinearity.
+      </s>
+     </p>
+     <p>
+      <s pid="11" sid="1">
+       The other potential problem is endogeneity which can be caused in two ways.
+      </s>
+      <s pid="11" sid="2">
+       First, it is possible that the capital inflows affect the institutional quality of a country.
+      </s>
+      <s pid="11" sid="3">
+       Since most institutional quality measures are constructed ex-post, and there might have been a natural bias in "assigning" better institutions to countries with higher capital inflows.
+      </s>
+      <s pid="11" sid="4">
+       With this errors-in-variable type of endogeneity, one would expect attenuation bias, which means that the actual effect of institutions on capital inflow should be even higher.
+      </s>
+     </p>
+     <p>
+      <s pid="12" sid="1">
+       The second source of endogeneity can come from the possibility that both inflows and institutional quality are determined by an omitted third factor.
+      </s>
+      <s pid="12" sid="2">
+       By conducting various robustness tests, Alfaro et al. include that omitted third factor is not an issue.
+      </s>
+     </p>
+     <p>
+      <s pid="13" sid="1">
+       To control for the first possibility of endogeneity, Alfaro et al. use an instrument for institutional index.
+      </s>
+      <s pid="13" sid="2">
+       As the instrument, they pick log settler mortality, which was suggested originally by Acemoglu, Johnson, and Robinson (2001, 2002).
+      </s>
+      <s pid="13" sid="3">
+       Acemoglu et al. find that the mortality rate of settlers indicates the conditions in the colonies.
+      </s>
+      <s pid="13" sid="4">
+       More specifically, mortality of European settlers in the countries they colonized shaped their decision to settle or not.
+      </s>
+      <s pid="13" sid="5">
+       When they settled, they brought with them effective European institutions, whereas when they did not settle, they instituted systems of arbitrary rule and expropriation of local populations.
+      </s>
+      <s pid="13" sid="6">
+       The results from the first stage regression shows a large R-squared of 0.39, and as expected, the second stage estimate on institutional quality becomes even larger than the one without instrument.
+      </s>
+     </p>
+     <p>
+      <s pid="14" sid="1">
+       Glaeser, La Porta, Lopez-de-Silanes, Shleifer (2004) raise the interesting issue regarding the construction of the institutional index and the validity of the instrumental variable.
+      </s>
+      <s pid="14" sid="2">
+       Their critique is a follow up on Acemoglu et al.'s paper which suggest that institutions play a role in the economic growth of a country.
+      </s>
+      <s pid="14" sid="3">
+       Glaeser et al. point out that institutions are long lasting constraints rather than brief policy changes as constructed via the institutions index.
+      </s>
+      <s pid="14" sid="4">
+       The other main issue that Glaeser et al. criticize is the use of the instrument log mortality rate employed in Acemoglu et al's paper.
+      </s>
+      <s pid="14" sid="5">
+       Contrary to Alfaro et al, Acemoglu et al. run a regression of log GDP per capita on the institutional quality variable.
+      </s>
+      <s pid="14" sid="6">
+       Glaeser et al. point out that human capital is an omitted variable Acemoglu et al's regression.
+      </s>
+      <s pid="14" sid="7">
+       In fact, when including human capital via average log years of schooling, in a two stage regression, the impact of institutional quality on log GDP per capita become insignificant but the estimate on schooling become significant instead.
+      </s>
+      <s pid="14" sid="8">
+       Alfaro et al. included average log years of schooling in their multiple regression as well, but it did not have explanatory power on capital inflows.
+      </s>
+      <s pid="14" sid="9">
+       Thus, although Glaeser et al.'s critique on Acemoglu et al's approach is relevant, it is not applicable to Alfaro et al.
+      </s>
+     </p>
+     <p>
+      <s pid="15" sid="1">
+       The dilemma with this stream of literature on capital inflows is that apart from mostly OLS based empirical papers, there is no concrete model for the actual problem.
+      </s>
+     </p>
+     <p>
+      <s pid="16" sid="1">
+       The basic setup of a model is
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="17" sid="1">
+       (1)
+      </s>
+     </p>
+     <p>
+      <s pid="18" sid="1">
+       If agents can borrow and lend capital internationally and if all countries share a common technology, perfect capital mobility implies instantaneous convergence of the returns to capital, i.e. for countries i and j,
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="19" sid="1">
+       where f(.) is net of depreciation production function per capita and k denotes capital per capita.
+      </s>
+      <s pid="19" sid="2">
+       Based on Lucas' three different explanations of why capital does not flow into poor countries, different approaches to model capital returns, 1. Missing Factor, 2. Government Policies, i.e. impediment to flows, tax policies, capital controls, and 3. Institutional Structure and Total Factor Productivity.
+      </s>
+     </p>
+     <p>
+      <s pid="20" sid="1">
+       In the missing factor explanation, there might an externality in the production process that affects the returns to capital but are generally ignored by the conventional neoclassical approach.
+      </s>
+      <s pid="20" sid="2">
+       For example, if human capital positively affects capital's return, less capital tends to flow to countries with lower endowments of human capital.
+      </s>
+      <s pid="20" sid="3">
+       Thus, if the production function is given by
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="21" sid="1">
+       Where Z denotes another factor that affects the production process, then (1) misrepresents the implied capital flows.
+      </s>
+      <s pid="21" sid="2">
+       The true return for countries i and j is
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="22" sid="1">
+       A second explanation of the lack of capital inflows might be that government policies are impediments to the flows.
+      </s>
+      <s pid="22" sid="2">
+       For example, differences across countries in government tax policies can lead to substantial differences in capital-labor ratios.
+      </s>
+      <s pid="22" sid="3">
+       One can model the effect of these distortive government policies by assuming that governments tax capital's return at rate τ, which differs across countries.
+      </s>
+      <s pid="22" sid="4">
+       Then the true return for countries i and j is
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="23" sid="1">
+       The last explanation that inhibits capital inflows might be the quality of institutions.
+      </s>
+      <s pid="23" sid="2">
+       Institutions can affect economics performance through their effect on investment decisions by protecting property rights.
+      </s>
+      <s pid="23" sid="3">
+       Weak institutions can lead to lack of productive capacities or uncertainty of returns in the economy.
+      </s>
+      <s pid="23" sid="4">
+       These differences can be captured in the parameter A, which depicts differences in overall efficiency in the production across countries.
+      </s>
+      <s pid="23" sid="5">
+       The problem with this approach is that one cannot differentiate between the effect of institutions on investment opportunities versus that of the Total Factor Productivity (TFP).
+      </s>
+      <s pid="23" sid="6">
+       The true return for countries i and j is
+      </s>
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      <s pid="24" sid="1">
+       Clearly, much work lies ahead in constructing a sound economic model that shows the effects of institutions on capital inflows.
+      </s>
+      <s pid="24" sid="2">
+       The model would enable us to focus on particular data sets instead of averaging numerous countries and only taking into account the cross-sections.
+      </s>
+      <s pid="24" sid="3">
+       Thus, the next step could be to identify particular instances, where given the events, we are sure that the lack of capital inflows was due to a certain change in institutions.
+      </s>
+      <s pid="24" sid="4">
+       This way, we can test this particular event with a specific dataset.
+      </s>
+      <s pid="24" sid="5">
+       As of now, the empirical evidence is rather generalized, and the cross-section evidence is sensitive to various econometric problems.
+      </s>
+     </p>
+    </div>
+    <div>
+     <div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Table 1--Total Equity Inflows per Capita to Rich and Poor Countries, 1970-2000
+      </p>
+      <p>
+       Source: Alfaro et al. (2005)
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table 2-- OLS Regressions of Capital Inflows per capita I - IMF Flows Data
+      </p>
+      <p>
+       Source: Alfaro et al. (2005)
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table 3--OLS Regressions of Capital Inflows per capita II- IMF Flows Data
+      </p>
+      <p>
+       Source: Alfaro et al. (2005)
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Table 4 -- IV regression of Capital Inflows per Capita
+      </p>
+      <p>
+       Source: Alfaro et al. (2005)
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N10180">
+       <li id="N10181">
+        Acemoglu, Daron, Simon Johnson, and James A. Robinson, 2001, "The Colonial Origins of Comparative Development: An Empirical Investigation," American Economic Review, 91(5): 1369-1401.
+       </li>
+       <li id="N10183">
+        Alfaro, Laura, Sebnem Kalemli-Ozcan, and Vadym Volosovych, 2005, "Why Doesn't Capital Flow from Rich to Poor Countries? An Empirical Investigation," NBER Working Paper 11901.
+       </li>
+       <li id="N10185">
+        Glaeser, Edward, La Porta, Rafael, Lopez-de-Silanes, Florencio, and Shleifer, Andrei, 2004, "Do Institutions Cause Growth?" Journal of Economic Growth, Springer, vol. 9(3), pages 271-303, 09.
+       </li>
+       <li id="N10187">
+        Reinhart, Carmen, and Kenneth Rogoff, 2004, "Serial Default and 'Paradox' of Rich to Poor Capital Flows," American Economic Review, 94(2): 52-58.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

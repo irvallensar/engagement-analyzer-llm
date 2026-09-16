@@ -1,0 +1,2543 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Product Development in a Competitive Global Environment
+     </div>
+     <p>
+     </p>
+     <div>
+      TABLE of CONTENTS
+      <p>
+       1 EXECUTIVE SUMMARY ........................................................................................... 4
+      </p>
+      <p>
+       2 VISION AND RATIONALE ........................................................................................ 5
+      </p>
+      <p>
+       2.1 Vision Statement ..................................................................................................... 5
+      </p>
+      <p>
+       2.2 Patent Search........................................................................................................... 5
+      </p>
+      <p>
+       2.3 Target Market ......................................................................................................... 6
+      </p>
+      <p>
+       2.4 Customer Survey..................................................................................................... 6
+      </p>
+      <p>
+       3 THE PRODUCT ............................................................................................................ 7
+      </p>
+      <p>
+       3.1 Sketches and Key Design Aspects.......................................................................... 7
+      </p>
+      <p>
+       3.2 Number of Variations ............................................................................................. 9
+      </p>
+      <p>
+       4 MANUFACTURING SYSTEM ................................................................................. 10
+      </p>
+      <p>
+       4.1 System Configuration ........................................................................................... 10
+      </p>
+      <p>
+       4.2 Floor Layout .......................................................................................................... 11
+      </p>
+      <p>
+       4.3 Manufacturing Technology................................................................................. 12
+      </p>
+      <p>
+       4.4 System Performance ............................................................................................. 13
+      </p>
+      <p>
+       4.4.1 Design Convertibility ....................................................................................... 13
+      </p>
+      <p>
+       4.4.2 Assembly Convertibility ................................................................................... 13
+      </p>
+      <p>
+       4.4.3 System Scalability ............................................................................................ 13
+      </p>
+      <p>
+       4.4.4 Scaling Down ................................................................................................... 14
+      </p>
+      <p>
+       4.4.5 Scalability Costs............................................................................................... 14
+      </p>
+      <p>
+       4.5 Target Daily Production ....................................................................................... 15
+      </p>
+      <p>
+       4.5.1 Machine Reliability .......................................................................................... 15
+      </p>
+      <p>
+       4.5.2 Assumptions for Actual System Output ............................................................ 15
+      </p>
+      <p>
+       4.5.3 Minimum and Maximum Production ............................................................... 16
+      </p>
+      <p>
+       4.6 Delivery Time ........................................................................................................ 16
+      </p>
+      <p>
+       4.7 Translate Customer Needs to Customized Products ......................................... 17
+      </p>
+      <p>
+       5 COMPETITIVE ADVANTAGES.............................................................................. 18
+      </p>
+      <p>
+       5.1 Current Competitors ............................................................................................ 18
+      </p>
+      <p>
+       5.2 I-DASH Competitive Advantages........................................................................ 18
+      </p>
+      <p>
+       6 CREATE CUSTOMER VALUE ................................................................................ 19
+      </p>
+      <p>
+       6.1 Indirect Customers ............................................................................................... 19
+      </p>
+      <p>
+       6.2 Direct Customers .................................................................................................. 19
+      </p>
+      <p>
+       7 BUSINESS MODEL .................................................................................................... 19
+      </p>
+      <p>
+       7.2 Business Strategy .................................................................................................. 20
+      </p>
+      <p>
+       7.3 Customer Benefits and Value Addition .............................................................. 20
+      </p>
+      <p>
+       7.4 Marketing Strategies – Before Establishment.................................................... 21
+      </p>
+      <p>
+       7.5 Marketing Strategies – After Establishment ...................................................... 21
+      </p>
+      <p>
+       7.6 Rapid Response to Customer Needs.................................................................... 22
+      </p>
+      <p>
+       7.6.1 OEM Changes .................................................................................................. 22
+      </p>
+      <p>
+       7.6.2 Customer/Order Changes ................................................................................ 22
+      </p>
+      <p>
+       7.7 Global Expansion Strategies ................................................................................ 22
+      </p>
+      <p>
+       7.8 Strategic Alliances................................................................................................. 23
+      </p>
+      <p>
+       7.8.1 Alliances with our Suppliers ............................................................................ 23
+      </p>
+      <p>
+       7.8.2 Alliances with Automakers............................................................................... 23
+      </p>
+      <p>
+       7.9 Outsourcing Considerations ................................................................................ 24
+      </p>
+      <p>
+       7.9.1 Outsourced Components .................................................................................. 24
+      </p>
+      <p>
+       7.9.2 Outsourcing Risks ............................................................................................ 24
+      </p>
+      <p>
+       7.9 Company Location................................................................................................ 25
+      </p>
+      <p>
+       8 MANAGEMENT AND ORGANIZATIONAL STRUCTURE ............................... 26
+      </p>
+      <p>
+       9 FINANCIAL PLAN ..................................................................................................... 28
+      </p>
+      <p>
+       9.1 Best Case Scenario: ............................................................................................... 29
+      </p>
+      <p>
+       9.2 Worst Case Scenario: ........................................................................................... 29
+      </p>
+      <p>
+       10 SUMMARY ................................................................................................................ 30
+      </p>
+      <p>
+       11 REFERENCES........................................................................................................... 31
+      </p>
+      <p>
+       APPENDICES…………………………………………………………………………..32
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1 EXECUTIVE SUMMARY
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Currently there is a strong push by OEMs to provide a high degree of customization for interiors in their vehicles.
+       </s>
+       <s pid="1" sid="2">
+        The instrument panel offers the highest potential for customization.
+       </s>
+       <s pid="1" sid="3">
+        The I-DASH enables the OEMs to offer customization on these instrument panels through the modularity, reconfigurablity and uniqueness of our design.
+       </s>
+       <s pid="1" sid="4">
+        The target market for the I-DASH is 2-3 % of the global compact car market.
+       </s>
+       <s pid="1" sid="5">
+        The I-DASH will target OEMs establishing new assembly plants catering to emerging markets like India and China as well as established markets like the US.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        The I-DASH is a product manufactured in 3 separate modules.
+       </s>
+       <s pid="2" sid="2">
+        The customization would be focused on the center piece of the I-DASH with emphasis on functions, aesthetics and storage.
+       </s>
+       <s pid="2" sid="3">
+        The passenger side and driver‟s module are symmetric about their axes and thus can be interchanged which will enable OEMs to cater to left-hand drive and right-hand drive markets.
+       </s>
+       <s pid="2" sid="4">
+        The total number of variations offered is approximately 2600.
+       </s>
+       <s pid="2" sid="5">
+        However the customer will follow a structure process to select his or her customized I-DASH .
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        The I-DASH will be produced using a manufacturing setup comprised of reconfigurable injection molding machines, vacuum forming machines and simple assembly stations.
+       </s>
+       <s pid="3" sid="2">
+        The floor layout allows for system scalability and the machines have an inherent capability for convertibility.
+       </s>
+       <s pid="3" sid="3">
+        Our IT and production scheduling allow our company to respond to customer changes without significant costs or downtime.
+       </s>
+       <s pid="3" sid="4">
+        Our company will manufacture critical components and outsource non-strategic components.
+       </s>
+       <s pid="3" sid="5">
+        The average delivery time to OEMs is 2-3 weeks.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Integration of product differentiation, quality, system responsiveness and cost leadership define our competitive advantages.
+       </s>
+       <s pid="4" sid="2">
+        The target selling price of $ 140-160 for the I-DASH will depend on the degree of customization.
+       </s>
+       <s pid="4" sid="3">
+        Our business strategy of global expansion and enhanced customization is built around the unique combination of strategic resources.
+       </s>
+       <s pid="4" sid="4">
+        Our global expansion strategy includes diversification of product as well as forward and horizontal integration.
+       </s>
+       <s pid="4" sid="5">
+        Strategic alliances with our suppliers and OEMs would help mitigate the bull-whip effect and increase profits.
+       </s>
+       <s pid="4" sid="6">
+        By evaluating the risks and rewards of various global locations for our plant, we selected Chang Chun, China and Gilwice, Poland as potential choices.
+       </s>
+       <s pid="4" sid="7">
+        These locations are in proximity of OEMs and our suppliers and this reduces shipping costs and supports Just-in-Time.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        Our company will require 37 personnel consisting of direct labor and managers.
+       </s>
+       <s pid="5" sid="2">
+        The organization will also appoint board members to monitor growth strategies.
+       </s>
+       <s pid="5" sid="3">
+        The line operators will be empowered to make key decisions on plant floor and create effective communication channels across all levels.
+       </s>
+       <s pid="5" sid="4">
+        The initial startup investment required for the I-DASH is approximately $ 7.9 M.
+       </s>
+       <s pid="5" sid="5">
+        By forecasting a 20 % growth rate for the next 7 years we estimate a total profit of $ 47.53 M. Our break even point is achieved during the 2nd year of production.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2 VISION AND RATIONALE
+      </div>
+      <div>
+       <div class="head_2">
+        2.1 Vision Statement
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         "Our vision is to develop the means to provide affordable customization on the interiors of an automobile, to meet diverse customer needs, and effectively remove the barriers of segment and price."
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         Our company wants to focus on enhancing the driving experience by providing customizable features and functions on the instrument panel (I/P).
+        </s>
+        <s pid="7" sid="2">
+         These features will be based on individual requirements.
+        </s>
+        <s pid="7" sid="3">
+         With an innovative product design and reconfigurable manufacturing setup, we aim to offer customization at a minimum incremental cost.
+        </s>
+        <s pid="7" sid="4">
+         We initially plan to target the compact car segment where traditionally minimal customization options are offered.
+        </s>
+       </p>
+       <p>
+        <s pid="8" sid="1">
+         At present there is a strong push by OEMs to provide customized interiors spanning all car segments.
+        </s>
+        <s pid="8" sid="2">
+         The I-DASH aims to accelerate this push and become amongst the first suppliers to capitalize on this emerging trend.
+        </s>
+       </p>
+       <p>
+        <s pid="9" sid="1">
+         Compact car I/P designs from the past 10 years, shown in figures 1, 2, and 3 were evaluated for product evolution.
+        </s>
+        <s pid="9" sid="2">
+         It shows significant improvement in the quality and refinement of materials used, type of entertainment systems and overall visual appeal of the I/P.
+        </s>
+        <s pid="9" sid="3">
+         However, there are very minimum modifications in the overall layout and customizability of the center piece of the I/P.
+        </s>
+        <s pid="9" sid="4">
+         The 2006 model has 3 sets of trim and no options in terms of custom-storage, shape of modules or choice of trim and color.
+        </s>
+        <s pid="9" sid="5">
+         The customer receives what is presented and is not allowed to modify the I/P according to his needs.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="10" sid="1">
+         Figure 1: 2006 Model Year I/P
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         Figure 2: 2004 Model Year I/P
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         Figure 3: 1998 Model Year I/P
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.2 Patent Search
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         Patents were researched for I/P designs in a modular form and with customization options.
+        </s>
+        <s pid="13" sid="2">
+         However there were a few unconventional I/P designs which drove us to think about how storage options and features could be made available and made more customizable to the end customer.
+        </s>
+        <s pid="13" sid="3">
+         The various patents that are similar to our product are presented in Appendix A
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.3 Target Market
+       </div>
+       <p>
+        <s pid="14" sid="1">
+         The initial target market for the I-DASH is any new middle class automobile buyer.
+        </s>
+        <s pid="14" sid="2">
+         We will focus on marketing the I-DASH in emerging markets with rising disposable income and customers seeking luxury car features in low cost cars.
+        </s>
+        <s pid="14" sid="3">
+         We also plan to target high volume/low cost OEMs who are expanding globally.
+        </s>
+        <s pid="14" sid="4">
+         The 2006 global production of compact cars is 10.47 Million1.
+        </s>
+        <s pid="14" sid="5">
+         We aim to capture approximately 4-5 % of the market share.
+        </s>
+        <s pid="14" sid="6">
+         This will require a annual production of 425250 I-DASH units.
+        </s>
+        <s pid="14" sid="7">
+         The expected revenue for our company is approximately $ 18.32 M.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       2.4 Customer Survey
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        We conducted a consumer survey to find out the requirements and needs of the potential consumers.
+       </s>
+       <s pid="15" sid="2">
+        The survey questions are shown in Appendix B.
+       </s>
+       <s pid="15" sid="3">
+        The survey population consisted of 96 individuals within academia and professional careers.
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        The survey results indicate that having an I/P designed to the customer needs shows a lot of promise.
+       </s>
+       <s pid="16" sid="2">
+        Individuals are willing to spend time and money on getting an I/P configured to their needs.
+       </s>
+       <s pid="16" sid="3">
+        It also indicates that different individuals have unique choices.
+       </s>
+       <s pid="16" sid="4">
+        The variations that a potential customer would like in his/her I/P are storage space, cup holders, customized HVAC vents and control panels.
+       </s>
+       <s pid="16" sid="5">
+        This survey reaffirms that each individual has specific needs for his/her I/P and thus provides a market for mass customized I/Ps
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Figure 4: Customer Survey Results
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Additional survey results are presented in Appendix B
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       3 THE PRODUCT
+      </div>
+      <div>
+       <div class="head_2">
+        3.1 Sketches and Key Design Aspects
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         The main design aspects of the I-DASH are:
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         •
+        </s>
+        <s pid="20" sid="2">
+         Different modules for the center, passenger side and drivers side of the I/P
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         Figure 5: I-DASH with a circular, „retro‟ theme and wood trim
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="22" sid="1">
+         Figure 6: I-DASH with a rectangular, „modern‟ theme and brushed aluminum trim
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         •
+        </s>
+        <s pid="23" sid="2">
+         All these modules would be symmetric about their vertical axes.
+        </s>
+        <s pid="23" sid="3">
+         This would enable the auto-maker to swap the driver‟s and passenger‟s side module based on the left-hand or right-hand drive market.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="24" sid="1">
+         Figure 7: Driver and passenger side modules
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         •
+        </s>
+        <s pid="25" sid="2">
+         Use of basic shapes like rectangles and circles rather than using complex shapes and curves will make it easier to manufacture the molds.
+        </s>
+       </p>
+       <p>
+        <s pid="26" sid="1">
+         •
+        </s>
+        <s pid="26" sid="2">
+         Interface between interacting modules like the interface between the center module and driver’s side module and the interface between the driver‟s side module and the A-pillar/door are the same thus making it easier to change the configuration for left and right hand drive markets.
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         •
+        </s>
+        <s pid="27" sid="2">
+         The variations in the style of vents and position of vents (based on left hand drive or right hand drive) would be facilitated by using reconfigurable molds to manufacture each module.
+        </s>
+        <s pid="27" sid="3">
+         This will save us the cost of making different molds for different markets.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         •
+        </s>
+        <s pid="28" sid="2">
+         Customization would be focused on the centre module.
+        </s>
+        <s pid="28" sid="3">
+         The center module is split into 2 sub modules.
+        </s>
+        <s pid="28" sid="4">
+         The variations are concentrated in the module containing the vents and HVAC controls.
+        </s>
+        <s pid="28" sid="5">
+         Thus the design of bottom module can be kept constant (i.e. no need for a reconfigurable mold for the lower sub module) and only the exterior trim would be varied, thus cutting down on manufacturing cost.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         Figure 8: Center piece with upper and lower sub modules
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.2 Number of Variations
+       </div>
+       <p>
+        <s pid="30" sid="1">
+         Table 1: Number of Variations for I-DASH
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="31" sid="1">
+         Though the total number of variations offered is extremely large, the customer will follow a structured process to select the features on the I/P
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       4 MANUFACTURING SYSTEM
+      </div>
+      <div>
+       <div class="head_2">
+        4.1 System Configuration
+       </div>
+       <p>
+        <s pid="32" sid="1">
+         The system configuration for manufacturing the I Dash is given below in figure 9.
+        </s>
+        <s pid="32" sid="2">
+         The basic layout represents a very simple configuration, consisting of the machines and the assembly process.
+        </s>
+        <s pid="32" sid="3">
+         The system is split up into 3 major process components.
+        </s>
+       </p>
+       <p>
+        <s pid="33" sid="1">
+         65 sec.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="34" sid="1">
+         Figure 9: System Configuration
+        </s>
+       </p>
+       <p>
+        <s pid="35" sid="1">
+         The first process contains the Vacuum Forming (VF) machine and the three large Reaction Injection Molding (RIM) machines which manufacture the driver side module, the passenger side module and the center module.
+        </s>
+        <s pid="35" sid="2">
+         The VF machine is arranged in series with the three reaction injection molding machines, because the vacuum formed trims are placed in the mold of the reaction injection molding, thereby imparting the trim finish to the central module.
+        </s>
+        <s pid="35" sid="3">
+         The time taken for a single part of trim to be manufactured is less than the time taken to manufacture a part on the reaction injection molding machine.
+        </s>
+        <s pid="35" sid="4">
+         This requires a buffer to be placed after the VF machine.
+        </s>
+        <s pid="35" sid="5">
+         The three RIM machines are arranged in parallel with each other as the manufacturing time for each of their modules is the same.
+        </s>
+        <s pid="35" sid="6">
+         Once the three parts come out simultaneously they are assembled at the Assembly Station 1 to create a single piece dash module.
+        </s>
+        <s pid="35" sid="7">
+         This assembled part is made to pass a quality inspection check for any defects.
+        </s>
+        <s pid="35" sid="8">
+         This eliminates any defective parts that may have to be removed at a later stage.
+        </s>
+       </p>
+       <p>
+        <s pid="36" sid="1">
+         The second process contains a smaller RIM machine where parts like the HVAC controls the vents and the storage boxes etc are made.
+        </s>
+        <s pid="36" sid="2">
+         The storage boxes and their covers are made in another RIM machine and then assembled to form a completed storage box.
+        </s>
+        <s pid="36" sid="3">
+         The rate of production of these components is twice that of process 1, thereby necessitating the need of a buffer.
+        </s>
+        <s pid="36" sid="4">
+         The parts are placed in the buffer until required for the final assembly.
+        </s>
+       </p>
+       <p>
+        <s pid="37" sid="1">
+         The third and the final process is the assembly process wherein all the parts are assembled together to make the final I Dash.
+        </s>
+        <s pid="37" sid="2">
+         After the final assembly the parts are made to go through a final inspection process where the defective parts are sent to the quality control department.
+        </s>
+        <s pid="37" sid="3">
+         The conforming parts are packaged and sent to the storage room to be shipped.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       4.2 Floor Layout
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        The plant layout in figure 10 follows the system configuration in its setup.
+       </s>
+       <s pid="38" sid="2">
+        At the bottom right is the receiving dock where the raw materials and the outsourced parts are received and stored for later use.
+       </s>
+       <s pid="38" sid="3">
+        At the top right is the VF machine and the three RIM machines.
+       </s>
+       <s pid="38" sid="4">
+        The dotted lines represent a conveyer system which connects these machines and transports the parts to the final assembly station where the final assembly is done.
+       </s>
+       <s pid="38" sid="5">
+        The center of the plant contains RIM machines for the storage parts, HVAC vents, controls and the assembly station for the storage box assembly.
+       </s>
+       <s pid="38" sid="6">
+        The maintenance and the tooling room are also placed in the area to conserve space.
+       </s>
+       <s pid="38" sid="7">
+        The red and brown figures represent the workforce and give an indication of the labor force required.
+       </s>
+       <s pid="38" sid="8">
+        The red dots represent the scrap bins where the faulty parts are dumped.
+       </s>
+       <s pid="38" sid="9">
+        The green dots represent the dunnage where the parts are stored to be used for the assembly operation.
+       </s>
+       <s pid="38" sid="10">
+        The forklifts are used to carry out raw materials and the parts to their respective locations.
+       </s>
+       <s pid="38" sid="11">
+        The production control and the quality control departments are placed next to the final assembly to have a better control over the assembly process.
+       </s>
+       <s pid="38" sid="12">
+        The plant layout is a U-shaped layout as it helps us in conserving space, minimize conveyer length and separate the receiving and the shipping dock which helps with the material flow.
+       </s>
+       <s pid="38" sid="13">
+        The workforce size on the shop floor is estimated to be 17.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="39" sid="1">
+        Figure 10: Plant floor layout
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       4.3 Manufacturing Technology
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        The shell of the I-DASH would be manufactured using a Reaction Injection Molding (RIM) machine.
+       </s>
+       <s pid="40" sid="2">
+        This machine would be utilized to manufacture the passengers, drivers as well as the center module of the I-DASH .
+       </s>
+       <s pid="40" sid="3">
+        The Quadloc Tandem Index Systems by Husky would be utilized for the RIM process.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="41" sid="1">
+        Figure 11: Husky Quadloc Tandem Machine
+       </s>
+      </p>
+      <p>
+       <s pid="42" sid="1">
+        The Husky Tandem system
+       </s>
+       <s pid="42" sid="2">
+        2 uses two injection units; one for the substrate and the second for the over molding.
+       </s>
+       <s pid="42" sid="3">
+        The two-step process eliminates downstream processes and assembly of multiple components.
+       </s>
+       <s pid="42" sid="4">
+        The one-step molding process eliminates squeaks and rattles in I/P panels.
+       </s>
+       <s pid="42" sid="5">
+        The Tandem system can use a combination of materials, molds and colors providing flexibility to meet changing product demand.
+       </s>
+       <s pid="42" sid="6">
+        The two-step process also has 40% 3 savings in floor space
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="43" sid="1">
+        Figure 12: Schematic of Quadloc Tandem Injection Molding Machine4
+       </s>
+      </p>
+      <p>
+       <s pid="44" sid="1">
+        The Husky Hylectric RIM machine would be utilized for HVAC vents and controls as well as for the storage units in the center piece of the I-DASH .
+       </s>
+       <s pid="44" sid="2">
+        The Hylectric machine incorporates a stack mold carrier to provide better mold alignment.
+       </s>
+       <s pid="44" sid="3">
+        It also includes a two-stage injection process for continuous recovery, faster cycle time and better melt quality.
+       </s>
+       <s pid="44" sid="4">
+        The machine also provides flexibility of running conventional molds when multi-material injection is not required.
+       </s>
+      </p>
+      <p>
+       <s pid="45" sid="1">
+        To provide trim for the center piece of the I-DASH , a two-step process would be used.
+       </s>
+       <s pid="45" sid="2">
+        First, laminates will be vacuum-drawn using a pre-form process.
+       </s>
+       <s pid="45" sid="3">
+        The preformed laminate will be inserted into the Quadloc Tandem RIM machine.
+       </s>
+       <s pid="45" sid="4">
+        The vacuum drawing process
+       </s>
+      </p>
+      <p>
+       <s pid="46" sid="1">
+        will be conducted using a ECOline6 by Frimo.
+       </s>
+       <s pid="46" sid="2">
+        Different types of texturing such as wood grains, solid colors and metallic finishes can be incorporated with
+       </s>
+      </p>
+      <p>
+       <s pid="47" sid="1">
+        this process.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="48" sid="1">
+        Figure 13: Husky Hylectric Machine5
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="49" sid="1">
+        Figure 14: ECOline by Frimo
+       </s>
+      </p>
+      <p>
+       <s pid="50" sid="1">
+        Prior to final assembly, there will be two sub-assembly stations.
+       </s>
+       <s pid="50" sid="2">
+        The first station would assemble the passenger’s side, driver’s side and center module of the I-DASH .
+       </s>
+       <s pid="50" sid="3">
+        The other sub-assembly station will combine the storage units as required.
+       </s>
+       <s pid="50" sid="4">
+        At final assembly operators will sequence the I-DASH with the correct components such as HVAC controls, HVAC vents and storage units.
+       </s>
+       <s pid="50" sid="5">
+        The plant will also include quality verification stations at various stages to check critical characteristics of the I-DASH such as component fit of the 3 modules, uniform finish of the injection molding operation, and dimensions.
+       </s>
+       <s pid="50" sid="6">
+        A final quality check will ensure that the correct configured I-DASH is assembled and shipped.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        4.4 System Performance
+       </div>
+       <div>
+        <div class="head_3">
+         4.4.1 Design Convertibility
+        </div>
+        <p>
+         <s pid="51" sid="1">
+          We view system convertibility from 2 design stand points:
+         </s>
+        </p>
+        <list>
+         <item>
+          •Minor design changes (Figure 15)
+         </item>
+         <item>
+          <list>
+           <item>
+            –Modification in driver‟s and passenger‟s module
+           </item>
+           <item>
+            –Only inserts changed
+           </item>
+           <item>
+            –Minor cost to replace inserts
+           </item>
+          </list>
+         </item>
+         <item>
+          •Major design changes
+         </item>
+         <item>
+          <list>
+           <item>
+            –Mold change (Not the equipment)
+           </item>
+           <item>
+            –Upgrade to 2010-2011 model year
+           </item>
+           <item>
+            –Costlier than changing inserts (minor design change)
+           </item>
+           <item>
+            –However, same injection molding machines and manufacturing setup used
+           </item>
+          </list>
+         </item>
+        </list>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="52" sid="1">
+          Figure 15: Convertibility options
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         4.4.2 Assembly Convertibility
+        </div>
+        <p>
+         <s pid="53" sid="1">
+          We believe in the philosophy that what is abstract from the customer‟s perspective should not be changed from model year to model year.
+         </s>
+        </p>
+        <list>
+         <item>
+          •Modules have common interface for assembly irrespective of mold changes
+         </item>
+         <item>
+          •Design changes does not impact final assembly process
+         </item>
+         <item>
+          •Thus  workers  need  not  be  given  additional  training  for  assembling  the  new product
+         </item>
+         <item>
+          •Common fasteners and joints.  Thus our suppliers will not be affected by design changes.
+         </item>
+        </list>
+       </div>
+       <div>
+        <div class="head_3">
+         4.4.3 System Scalability
+        </div>
+        <p>
+         <s pid="54" sid="1">
+          The easiest way to scale up production to meet increased demand would be to add one more shift over the two shifts per day we plan to operate, thus producing upto 1200 I/Ps a day.
+         </s>
+         <s pid="54" sid="2">
+          However, if this is still insufficient to meet the increased demand, then figure 10 shows how our manufacturing system may be easily augmented to meet scaled up demand.
+         </s>
+         <s pid="54" sid="3">
+          The minimum increment of our production capacity per shift with the current configuration is 100%.
+         </s>
+         <s pid="54" sid="4">
+          However, to achieve this 100% increment in capacity, we do not need to completely replicate all the machines in our system.
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="55" sid="1">
+          Figure 16: System scalability
+         </s>
+        </p>
+        <p>
+         <s pid="56" sid="1">
+          The incorporation of buffers between the machines with a throughput of 30 seconds and the larger RIM machines having a throughput of 65 seconds, enables us to meet scaled up demand, by just adding 3 more of the larger RIM machines in parallel to the line,.
+         </s>
+         <s pid="56" sid="2">
+          The buffers will be removed and the number of small RIM machines (3) and VF machine (1) will be retained.
+         </s>
+         <s pid="56" sid="3">
+          To cope with scaled up production, we may either put in parallel assembly lines for each of the two assembly stations, or we may split up each assembly into serial sub assemblies, to balance the line when we are producing in a scaled up mode.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         4.4.4 Scaling Down
+        </div>
+        <p>
+         <s pid="57" sid="1">
+          Given our manufacturing process and setup, we would need to run for fewer shifts a day in case there is a drop in demand.
+         </s>
+         <s pid="57" sid="2">
+          However, we do not anticipate many fluctuations in demand, given the popularity of compact cars for customers and OEMs.
+         </s>
+         <s pid="57" sid="3">
+          We believe that our demand forecasting for this sort of mainstream product would be more straight forward and accurate than in the case of other personalized niche products.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         4.4.5 Scalability Costs
+        </div>
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       The traditional definition of system scalability is
+      </div>
+      <p>
+       <s pid="58" sid="1">
+        100 – Minimum % of incremental increase in capacity
+       </s>
+      </p>
+      <p>
+       <s pid="59" sid="1">
+        However, we prefer to use the following modified definition from the point of view of the number of additional machines needed to meet scaled up demand
+       </s>
+      </p>
+      <p>
+       <s pid="60" sid="1">
+        100 – Smallest % of increment in # of machines to meet scaled up demand.
+       </s>
+      </p>
+      <p>
+       <s pid="61" sid="1">
+        Therefore as illustrated earlier, to achieve a 100% increment in production, we would just need to add 3 more machines to our existing setup of 6 machines.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="62" sid="1">
+        It is however important to realize that even this number does not give a true indication of the actual costs associated with scaling up production.
+       </s>
+       <s pid="62" sid="2">
+        By weighting the number of machines added with the cost of each machine, we get a better estimate of the costs associated with scaling up to a given capacity.
+       </s>
+       <s pid="62" sid="3">
+        Table 2 shows that to achieve a 100% increment in capacity the cost incurred would be approximately 40 % than initial cost, and to achieve a 300% increment in capacity the additional cost incurred would be approximately 180% more than initial cost.
+       </s>
+      </p>
+      <p>
+       <s pid="63" sid="1">
+        Table 2: Weighted scalability costs
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <div>
+       <div class="head_2">
+        4.5 Target Daily Production
+       </div>
+       <p>
+        <s pid="64" sid="1">
+         From our target market (Section 2.3) we need to produce 425250 I-DASH units per year.
+        </s>
+        <s pid="64" sid="2">
+         Therefore we need to produce 1215 per day assuming 350 working days per year.
+        </s>
+        <s pid="64" sid="3">
+         By optimizing our system configuration and by considering the cycle time of our bottleneck RIM machine (65 secs), we plan to achieve the daily production target.
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         4.5.1 Machine Reliability
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="65" sid="1">
+          We assume that on an average the machines go down after 32 hours of operation, with a total downtime of 2 hours per failure.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         4.5.2 Assumptions for Actual System Output
+        </div>
+        <list>
+         <item>
+          •The RIM machine is the bottleneck machine and is roughly twice as slow as all of the other production machines on the factory floor.
+         </item>
+         <item>
+          •Three 8-hour shifts of the RIM machine line (two 6 hour shifts are sufficient for all other machines).
+         </item>
+         <item>
+          •350 days of production per year
+         </item>
+         <item>
+          •When  system  is  at  steady-state,  production  time  for  each  I/P  is  the  same  as the time taken by the bottleneck machine, i.e., 65 seconds.
+         </item>
+        </list>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="66" sid="1">
+          With a 2 % scrap production per day, the total scrapped parts per day = 25
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <div class="gap">
+         <span>
+          Formula
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="67" sid="1">
+          This meets our annual target production of 425250 parts.
+         </s>
+         <s pid="67" sid="2">
+          The extra 1750 would act as a buffer for internal or external disruptions.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         4.5.3 Minimum and Maximum Production
+        </div>
+        <div class="gap">
+         <span>
+          Figure
+         </span>
+         here
+        </div>
+        <p>
+         <s pid="68" sid="1">
+          Figure 17: System reliability and production calculations using PAMS
+         </s>
+        </p>
+        <p>
+         <s pid="69" sid="1">
+          The above calculations are based on a target of capturing 4-5 % of the global compact car production volume.
+         </s>
+         <s pid="69" sid="2">
+          Calculations were performed for the I-DASH module RIM machines since these machines are the bottlenecks in the system.
+         </s>
+        </p>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        4.6 Delivery Time
+       </div>
+       <p>
+        <s pid="70" sid="1">
+         Currently, it takes 2-37 weeks from the time of order for a customized compact car to be delivered to a dealership from assembly plant.
+        </s>
+        <s pid="70" sid="2">
+         When customer orders a vehicle at a dealership, the OEM will submit a weekly report of ISNs to our company.
+        </s>
+        <s pid="70" sid="3">
+         Based on the ISNs, our company will forecast productions patterns for the following week.
+        </s>
+        <s pid="70" sid="4">
+         The I-DASH will be shipped daily to the sequencer who will assemble final components into the I-DASH .
+        </s>
+        <s pid="70" sid="5">
+         The finished product will be shipped to the OEM assembly plants for production.
+        </s>
+        <s pid="70" sid="6">
+         After installation, the vehicle will be ready to be shipped to respective dealerships.
+        </s>
+       </p>
+       <p>
+        <s pid="71" sid="1">
+         The flowchart in Figure 18 summarizes the time-line required for delivery of the I-DASH .
+        </s>
+        <s pid="71" sid="2">
+         Daily shipments are necessary to prevent inventory build-up and also to ensure JIT production at OEM assembly plants.
+        </s>
+        <s pid="71" sid="3">
+         Therefore our company will be able to meet the OEM’s current average delivery time of 2-3 weeks.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="72" sid="1">
+         Figure 18: Delivery time flow-chart
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.7 Translate Customer Needs to Customized Products
+       </div>
+       <p>
+        <s pid="73" sid="1">
+         The I-DASH provides car drivers an opportunity to personalize the center piece of the I/P according to their tastes and requirements.
+        </s>
+        <s pid="73" sid="2">
+         The options chosen by the customer need to be communicated to our company to ensure JIT (Just in Time) delivery to the OEM.
+        </s>
+        <s pid="73" sid="3">
+         The customer will follow a structured approach in selecting a personalized I-DASH .
+        </s>
+        <s pid="73" sid="4">
+         The customer will first select color/trim followed by theme and other personalized options.
+        </s>
+        <s pid="73" sid="5">
+         This selection process will be done at auto dealers who will feed information into a database synchronized with the OEM and our company’s production system.
+        </s>
+        <s pid="73" sid="6">
+         Figure 19 shows an example of how customer will select their I-DASH .
+        </s>
+        <s pid="73" sid="7">
+         Each options selected is identified by a unique production code as show in Table 3
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="74" sid="1">
+         Figure 19: Schematic of process to select I-DASH
+        </s>
+       </p>
+       <p>
+        <s pid="75" sid="1">
+         Table 3: Sample of production codes for I-DASH options
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="76" sid="1">
+         For example a customer chooses the following options for their I-DASH .
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="77" sid="1">
+         Based on the corresponding production codes, an I-DASH Sequence Number (ISN) would be generated.
+        </s>
+        <s pid="77" sid="2">
+         The ISN for the options selected above is LHWBCAS121I.
+        </s>
+        <s pid="77" sid="3">
+         A weekly report containing ISNs will be generated by the OEM and submitted to our company.
+        </s>
+        <s pid="77" sid="4">
+         This would enable our company to plan weekly production and meet the OEM JIT requirement.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       5 COMPETITIVE ADVANTAGES
+      </div>
+      <div>
+       <div class="head_2">
+        5.1 Current Competitors
+       </div>
+       <p>
+        <s pid="78" sid="1">
+         The I-DASH directly competes with current instrument panel suppliers such as Visteon, Faurecia and Johnson Controls.
+        </s>
+        <s pid="78" sid="2">
+         These suppliers have existing supply-chains to major OEMs which in theory gives them an advantage to enter a new OEM‟s supply chain.
+        </s>
+        <s pid="78" sid="3">
+         In order to define our competitive advantages, research was conducted to benchmark innovations and product advances by these companies.
+        </s>
+        <s pid="78" sid="4">
+         All 3 suppliers have focused research on new material and processes and well as offering product differentiation for high end and low end car segments.
+        </s>
+        <s pid="78" sid="5">
+         The following table summarizes key features and design ideas for these suppliers.
+        </s>
+       </p>
+       <p>
+        <s pid="79" sid="1">
+         Table 4: Current competitor compentencies
+        </s>
+        <s pid="79" sid="2">
+         8,9,10
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        5.2
+        <b>
+         I-DASH
+        </b>
+        Competitive Advantages
+       </div>
+       <p>
+        <s pid="80" sid="1">
+         Based on I-DASH product features and benefits, the following competitive advantages can be leveraged to generate greater demand and create a niche product for automobiles.
+        </s>
+       </p>
+       <p>
+        <s pid="81" sid="1">
+         Product Differentiation:
+        </s>
+        <s pid="81" sid="2">
+         The I-DASH provides features and options to the customer to create a customized I/P for their vehicle.
+        </s>
+        <s pid="81" sid="3">
+         This I/P will be tailored according to their driving and lifestyle requirements.
+        </s>
+        <s pid="81" sid="4">
+         By targeting various markets/cultures/car segments the I-DASH offers a variety of products according to need.
+        </s>
+       </p>
+       <p>
+        <s pid="82" sid="1">
+         System Responsiveness: I-DASH offers flexibility to customers to change their orders.
+        </s>
+        <s pid="82" sid="2">
+         The I/T setup directly links customer selection to manufacture scheduling.
+        </s>
+        <s pid="82" sid="3">
+         The reconfigurable manufacturing equipment enables quick process changes with minimum downtime
+        </s>
+        <s pid="82" sid="4">
+         This enables us to respond quickly to the customer without major equipment or process changes.
+        </s>
+       </p>
+       <p>
+        <s pid="83" sid="1">
+         Cost Leadership:
+        </s>
+        <s pid="83" sid="2">
+         The I-DASH is entering a volatile market with increasing pressures on suppliers to provide quality and cost-efficient products.
+        </s>
+        <s pid="83" sid="3">
+         The I-DASH adds more value to the interior at the same cost thus enabling us to directly compete with current suppliers.
+        </s>
+        <s pid="83" sid="4">
+         The I-DASH also has limited costs associated with product and design changes by using reconfigurable manufacturing systems.
+        </s>
+       </p>
+       <p>
+        <s pid="84" sid="1">
+         Quality:
+        </s>
+        <s pid="84" sid="2">
+         By using multi-step injection molding machines and advanced materials such as TPO, ABS, TPE, we can compete in areas of perceived quality.
+        </s>
+        <s pid="84" sid="3">
+         Utilization of lean manufacturing and skilled workforce will ensure quality products are delivered to customers.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       6 CREATE CUSTOMER VALUE
+      </div>
+      <div>
+       <div class="head_2">
+        6.1 Indirect Customers
+       </div>
+       <p>
+        <s pid="85" sid="1">
+         The I-DASH is designed to add value to customers from different backgrounds and requirements.
+        </s>
+        <s pid="85" sid="2">
+         The I-DASH will have contrasting features for a customer in the USA compared to a customer in India.
+        </s>
+        <s pid="85" sid="3">
+         A customer in the US will prefer a personalized luxurious car with a retro theme.
+        </s>
+        <s pid="85" sid="4">
+         He or she may also prefer trim on the I-DASH along with numerous options such as compact storage, satellite radio and cup-holders.
+        </s>
+        <s pid="85" sid="5">
+         The I-DASH designed for the US customer can accommodate such requirements and create value by delivering high end options.
+        </s>
+        <s pid="85" sid="6">
+         This options will come at a premium and be catered directly to their style and tastes.
+        </s>
+        <s pid="85" sid="7">
+         (Refer to Figure C.1 in Appendix C)
+        </s>
+       </p>
+       <p>
+        <s pid="86" sid="1">
+         On the other spectrum, a customer in India would prefer family/entry lever car with basic options on the instrument panel.
+        </s>
+        <s pid="86" sid="2">
+         He or she would not require air-bags or radio but may prefer more storage options.
+        </s>
+        <s pid="86" sid="3">
+         The I-DASH can again be designed to meet these specific needs.
+        </s>
+        <s pid="86" sid="4">
+         It will create value by delivering benefits of an instrument panel with basic functionality at a minimum cost.
+        </s>
+        <s pid="86" sid="5">
+         (Refer to Figure C.2 in Appendix C)
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        6.2 Direct Customers
+       </div>
+       <p>
+        <s pid="87" sid="1">
+         The direct customer for the I-DASH will add value to the vehicle.
+        </s>
+        <s pid="87" sid="2">
+         The OEM can increase revenue by boosting sales using two strategies.
+        </s>
+        <s pid="87" sid="3">
+         By marketing the quality and the unique features of the I-DASH, the OEM can boost their sales.
+        </s>
+        <s pid="87" sid="4">
+         The OEM can also leverage the brand identity of the I-DASH to increase sales.
+        </s>
+        <s pid="87" sid="5">
+         As a product the I-DASH value to the OEM products by adding features and options at a minimum cost increase.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       7 BUSINESS MODEL
+      </div>
+      <p>
+       <s pid="88" sid="1">
+        I-DASH will use its strategic resources of core processes and strategic assets to develop our core competency.
+       </s>
+       <s pid="88" sid="2">
+        The I-DASH will also combine strategic resources to develop a unique resource that will drive our business strategy.
+       </s>
+      </p>
+      <p>
+       <s pid="89" sid="1">
+        The I-DASH uses reconfigurable equipment to meet changing product demand.
+       </s>
+       <s pid="89" sid="2">
+        This is accomplished by simple die design (inserts/valve gating) changes without changing the entire die.
+       </s>
+       <s pid="89" sid="3">
+        This will enable us to produce numerous variations of the I-DASH in a single day.
+       </s>
+       <s pid="89" sid="4">
+        Downtime and scrap is significantly reduced by incorporating multi-stage injection molding machines and this will further reduce our costs.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="90" sid="1">
+        Figure 20: Strategic Resources
+       </s>
+      </p>
+      <p>
+       <s pid="91" sid="1">
+        The reconfigurable equipment is necessary to meet the manufacturing needs of our unique product.
+       </s>
+       <s pid="91" sid="2">
+        The uniqueness is due to various designs that encompass the I-DASH based on customer needs.
+       </s>
+       <s pid="91" sid="3">
+        The design will evolve as we get continuous feedback from the indirect customer and from the OEMs.
+       </s>
+       <s pid="91" sid="4">
+        Combination of unique design and reconfigurable equipment is utilized in achieving our core competency.
+       </s>
+      </p>
+      <p>
+       <s pid="92" sid="1">
+        Other strategic resources include IT and inventory scheduling.
+       </s>
+       <s pid="92" sid="2">
+        By using state of the art vision systems we will ensure that each I-DASH will be manufactured per order.
+       </s>
+       <s pid="92" sid="3">
+        By effectively scheduling inventory based on our production code system (Refer to Pg. 16) we can limit bull-whip effect for our suppliers.
+       </s>
+       <s pid="92" sid="4">
+        The I-DASH manufacturing site will be in proximity of the sequencer and its suppliers.
+       </s>
+       <s pid="92" sid="5">
+        This will reduce shipping costs and raw material lead time.
+       </s>
+       <s pid="92" sid="6">
+        Strategic alliances will be used for collaborative research to design and manufacture better I-DASH products.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        7.2 Business Strategy
+       </div>
+       <p>
+        <s pid="93" sid="1">
+         The I-DASH business strategy will ensure the success of the product in the chosen market against competitors.
+        </s>
+        <s pid="93" sid="2">
+         The I-DASH business strategy can be defined as follows.
+        </s>
+       </p>
+       <p>
+        <s pid="94" sid="1">
+         Provide a mass-customized Instrument Panel to diverse markets based on customer needs, requirements and vehicle segments.
+        </s>
+        <s pid="94" sid="2">
+         This product must be built using a manufacturing system that is reconfigurable and scalable to meet changing market demand.
+        </s>
+       </p>
+       <p>
+        <s pid="95" sid="1">
+         The important resources that help in meeting the goals of our business strategy are reconfigurable equipment and unique product design.
+        </s>
+        <s pid="95" sid="2">
+         Other resources such as customer input, proximity to suppliers and the sequencer, skilled workforce and strategic alliances are all key enables to align the I-DASH product with the business strategy.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="96" sid="1">
+         Figure 21: Business strategy enablers
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       7.3 Customer Benefits and Value Addition
+      </div>
+      <p>
+       <s pid="97" sid="1">
+        Combination of our strategic resources helps us in aligning with the business strategy.
+       </s>
+       <s pid="97" sid="2">
+        A good business strategy will be crucial in benefiting the customer.
+       </s>
+       <s pid="97" sid="3">
+        The key benefits are summarized in Table 5.
+       </s>
+       <s pid="97" sid="4">
+        We are thus benefiting the customer to his or her individual needs.
+       </s>
+       <s pid="97" sid="5">
+        The I-DASH will provide benefits through a robust relationship dynamics with the customer.
+       </s>
+       <s pid="97" sid="6">
+        These dynamics will be established via customer surveys, marketing strategies (Section 7.4) and customer input when selecting their I-DASH.
+       </s>
+      </p>
+      <p>
+       <s pid="98" sid="1">
+        Table 5: Indirect and Direct Customer Benefits
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <div>
+       <div class="head_2">
+        7.4 Marketing Strategies – Before Establishment
+       </div>
+       <p>
+        <s pid="99" sid="1">
+         The I-DASH has unique marketing targets.
+        </s>
+        <s pid="99" sid="2">
+         It has appeal to OEMs as a value added component as well as to indirect customers as a quality and essential feature in vehicles.
+        </s>
+        <s pid="99" sid="3">
+         The I-DASH will implement marketing strategy used by typical suppliers who enter a OEM supply chain.
+        </s>
+        <s pid="99" sid="4">
+         The I-DASH will target OEMs who are establishing new markets or building new assembly plants.
+        </s>
+        <s pid="99" sid="5">
+         The next step is to setup manufacturing and systems equipment.
+        </s>
+        <s pid="99" sid="6">
+         By obtaining ISO/ TS certification, we can showcase our manufacturing and quality capability to OEMs.
+        </s>
+        <s pid="99" sid="7">
+         Post certification the I-DASH will get on OEM bidding list.
+        </s>
+        <s pid="99" sid="8">
+         Bidding lists are currently used in the automotive industry to procure new suppliers for new model launches or new assembly plants.
+        </s>
+        <s pid="99" sid="9">
+         We can demonstrate product capability and quality through I-DASH prototypes and supplier expos.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="100" sid="1">
+         Figure 22: Marketing strategy
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        7.5 Marketing Strategies – After Establishment
+       </div>
+       <p>
+        <s pid="101" sid="1">
+         After establishment of the I-DASH as a valuable component in OEM supply chain, efforts will be focused on creating a commercial identity for the I-DASH.
+        </s>
+        <s pid="101" sid="2">
+         In the 1980‟s, IBM computers contained Intel chips.
+        </s>
+        <s pid="101" sid="3">
+         However, most consumers were not aware of the significant advantages of Intel chips.
+        </s>
+        <s pid="101" sid="4">
+         Today, Dell sells its computers based on the fact that they contain Intel Chips.
+        </s>
+        <s pid="101" sid="5">
+         We plan on using similar marketing strategies to make the I-DASH a "must-have" product.
+        </s>
+       </p>
+       <p>
+        <s pid="102" sid="1">
+         The I-DASH will also focus on customer interaction and customer feedback.
+        </s>
+        <s pid="102" sid="2">
+         Customer interaction will be facilitated by providing a structured selection process at dealerships.
+        </s>
+        <s pid="102" sid="3">
+         By incorporating visualization options (Refer to Section 4.6), the customer can instantly see his selection for the I-DASH.
+        </s>
+        <s pid="102" sid="4">
+         Customer feedback will be solicited via surveys.
+        </s>
+        <s pid="102" sid="5">
+         Using inputs from these surveys we can focus on R&amp;D to meet specific customer needs.
+        </s>
+        <s pid="102" sid="6">
+         By conducting regular reviews with OEMs and suppliers, we can collaborate on advances in design and manufacturing.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        7.6 Rapid Response to Customer Needs
+       </div>
+       <p>
+        <s pid="103" sid="1">
+         Our customer focus is divided in to our direct customers (OEM‟s) and our indirect customers (who are the actual end-consumers).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        7.6.1 OEM Changes
+       </div>
+       <p>
+        <s pid="104" sid="1">
+         The following are changes that the OEM’s could propose, and we have included our responses to these changes
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="105" sid="1">
+         Our company would require prior notice from the OEM’s in order to establish a lead time and implement the new changes to cater to the former’s needs.
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         7.6.2 Customer/Order Changes
+        </div>
+        <p>
+         <s pid="106" sid="1">
+          Our flexibility with customer orders/changes/cancellations is listed below:
+         </s>
+        </p>
+        <list>
+         <item>
+          •Orders that are modified within a week of the customer(s) placing them may be reviewed and changed at no extra charge, as our production is scheduled with a 7-day lead time from the date that the order is placed, and can easily be modified.
+         </item>
+         <item>
+          •Orders modified after the 7-day lead time
+         </item>
+         <item>
+          <list>
+           <item>
+            o Charge a small premium for revised order
+           </item>
+           <item>
+            o Maintain inventory cap for cancelled finished units:
+           </item>
+           <item>
+            o Minimize internal/external disruptions due to equipment reconfiguration, material inventory to ensure timely delivery
+           </item>
+          </list>
+         </item>
+        </list>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        7.7 Global Expansion Strategies
+       </div>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       There are various means by which we intend to expand our business
+      </div>
+      <list>
+       <item>
+        •Expand to other automotive segments like luxury cars or commercial vehicles to broaden our business horizons by effectively leveraging our core competencies of I/P design and manufacturing
+       </item>
+       <item>
+        •We would like to target a host of automakers and try to enter their supply chains
+       </item>
+       <item>
+        •Expand options on our existing design concept and provide the car buyer with many more innovative options to customize the I/P and increase its functionalities.
+       </item>
+       <item>
+        •Adopting a forward integration strategy, to possibly acquire the I/P sequencer, and thus supply a more value added product to the automaker. This would increase our profitability as we move up the value chain and also ensure better supply chain
+       </item>
+       <item>
+        •Adopting a horizontal integration strategy and possibly taking over or merging with competitors to achieve economies of scale.
+       </item>
+       <item>
+        •Expanding our business scope to complete interior trims and panels and possibly even seating systems, with the view of becoming a „mega supplier‟ and again deriving benefits from economies of scale.
+       </item>
+      </list>
+      <div>
+       <div class="head_2">
+        7.8 Strategic Alliances
+       </div>
+       <p>
+        <s pid="107" sid="1">
+         We envision strategic alliances at three different levels:
+        </s>
+       </p>
+       <div>
+        <div class="head_3">
+         7.8.1 Alliances with our Suppliers
+        </div>
+        <p>
+         <s pid="108" sid="1">
+          •
+         </s>
+         <s pid="108" sid="2">
+          Explore the possibility of profit sharing and buy-back agreements with raw material suppliers, and thus minimize the „bull-whip‟ effect.
+         </s>
+        </p>
+        <p>
+         <s pid="109" sid="1">
+          •
+         </s>
+         <s pid="109" sid="2">
+          Provide incentives like awarding „preferred supplier‟ status and long term contracts for reliable suppliers delivering quality components and raw materials.
+         </s>
+        </p>
+        <p>
+         <s pid="110" sid="1">
+          •
+         </s>
+         <s pid="110" sid="2">
+          Permit trusted suppliers to directly access our order/inventory database, to minimize reordering from our side, and thus have a better coordinated supply chain.
+         </s>
+        </p>
+       </div>
+       <div>
+        <div class="head_3">
+         7.8.2 Alliances with Automakers
+        </div>
+        <list>
+         <item>
+          •Strive to get direct access to automaker’s order database to smoothen supply chain issues, by ensuring best practices and judicious use of sensitive information.
+         </item>
+         <item>
+          •This would enable us to respond in a timely manner to changes in customer orders.
+         </item>
+         <item>
+          •Push for incentives from automaker, such as long term contracts and exclusive supplier status by stressing on quality an reliability.
+         </item>
+         <item>
+          •Loans from automakers to set up near their facility and supply exclusively to them.
+         </item>
+        </list>
+       </div>
+       <div>
+        <div class="head_3">
+         7.8.3 Alliances with competitors
+        </div>
+        <list>
+         <item>
+          •Institute collaborative research programs with Johnson Controls, Faurecia, Visteon etc. to bring down development costs of non differentiating technology.
+         </item>
+         <item>
+          •Signing agreements to ensure integrity of intellectual property, fair competition and institute anti-poaching agreements.
+         </item>
+         <item>
+          •Work together with the other I/P suppliers to present a joint front to unions, raw material suppliers, automakers and governments, and thus ensure that interests of the Tier I suppliers are not compromised.
+         </item>
+        </list>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        7.9 Outsourcing Considerations
+       </div>
+       <div>
+        <div class="head_3">
+         7.9.1 Outsourced Components
+        </div>
+        <p>
+         <s pid="111" sid="1">
+          We believe that any business must keep its core competencies in house and outsource the other non core components of the business to more competent players.
+         </s>
+         <s pid="111" sid="2">
+          Keeping this in mind we intend to keep the design, R&amp;D and main manufacturing done in house and outsource non core components like raw material (plastic pellets), components like generic fasteners, springs, locking mechanisms etc. from third parties.
+         </s>
+         <s pid="111" sid="3">
+          The following table indicates those key components of the I-DASH that we propose to outsource from third parties.
+         </s>
+        </p>
+        <p>
+         <s pid="112" sid="1">
+          Table 6: List of outsourced components
+         </s>
+        </p>
+        <div class="gap">
+         <span>
+          Table
+         </span>
+         here
+        </div>
+        <list>
+         <item>
+          •Reliability of suppliers is a major concern which we plan to address by conducting supplier assays and reviewing their manufacturing process and business setup.  Referrals from their other customers would also be sought.
+         </item>
+         <item>
+          •The quality of the items being outsourced and dilution of our intellectual property by outsourcing are also significant issues which may be overcome by supplier alliance programs
+         </item>
+         <item>
+          •Outsourcing from suppliers located in far off places may lead to Just in Time issues, which may be addressed by locating our facility in a region rich with relevant suppliers, and thus minimizing the distance between us and our suppliers
+         </item>
+         <item>
+          •Price fluctuations in outsourced components may put pressure on our pricing strategy and profits.  This problem may be overcome to a certain extent by getting into long term contract with suppliers and instituting profit sharing and buy back mechanisms
+         </item>
+         <item>
+          •The geo political climate of the countries from where we outsource our materials is also an important consideration.  We propose to use a mechanism to evaluate potential risks versus potential rewards in terms of costs of various supplier locations and arrive at an optimum balanced choice.
+         </item>
+        </list>
+       </div>
+      </div>
+      <div>
+       <div class="head_2">
+        7.9 Company Location
+       </div>
+       <p>
+        <s pid="113" sid="1">
+         The main competitive advantage of our product is that it can be installed for left hand and right hand drive vehicles without any change in the process.
+        </s>
+        <s pid="113" sid="2">
+         This becomes an important criterion in selecting a location for our manufacturing facility.
+        </s>
+        <s pid="113" sid="3">
+         The other important criterion is in selecting a location which offers the automobile industry a double digit growth rate.
+        </s>
+        <s pid="113" sid="4">
+         One of the major constraints facing us, as a new supplier of instrument panels is getting into the supply chains of a major OEM.
+        </s>
+        <s pid="113" sid="5">
+         Historically all the major OEMs have a structured and predefined supply chain which is difficult to penetrate.
+        </s>
+        <s pid="113" sid="6">
+         Thus the best chance of getting into a supply chain is setting up a plant at a location where a major OEM is planning to setup a new facility.
+        </s>
+        <s pid="113" sid="7">
+         This would give us a major advantage in getting into the supply chain.
+        </s>
+       </p>
+       <p>
+        <s pid="114" sid="1">
+         Another major challenge is shipping the instrument panels to the sequencer, since the instrument panel is quite large in size.
+        </s>
+        <s pid="114" sid="2">
+         To reduce shipping costs our best strategy is to locate the plant as close to the sequences as possible.
+        </s>
+        <s pid="114" sid="3">
+         This adds a third constraint to our facility location.
+        </s>
+        <s pid="114" sid="4">
+         The picture below shows the sales volume of compact cars worldwide at different locations and the handedness of the drive at those locations.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="115" sid="1">
+         Figure 23: Global map of major compact car production and the handedness of drive11
+        </s>
+       </p>
+       <p>
+        <s pid="116" sid="1">
+         Table 7: Analysis for potential company locations
+        </s>
+        <s pid="116" sid="2">
+         12
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="117" sid="1">
+         The table above shows that the growth rate in the United States and in Mexico is in decline and is actually predicting a negative rate of growth.
+        </s>
+        <s pid="117" sid="2">
+         This coupled with the high cost of labor and an established supply chain to the major automotive OEMS rule out the USA as a potential location.
+        </s>
+        <s pid="117" sid="3">
+         The locations that stand out are south Asia and Eastern Europe, as they have a growing automobile market and have both left hand and right hand drive vehicles.
+        </s>
+        <s pid="117" sid="4">
+         The other major advantage that these markets offer us is that major OEMS may setup up new plants which allows us a better chance of entering the supply chain given that the OEMS will be looking for more localization of their parts in order to reduce costs.
+        </s>
+        <s pid="117" sid="5">
+         Another major advantage that these locations offer is that they have a relatively cheaper labor cost which significantly reduce our workforce costs.
+        </s>
+       </p>
+       <p>
+        <s pid="118" sid="1">
+         The table above also shows the financial risk rating, security risk rating and the infrastructure risk rating of the various locations worldwide.
+        </s>
+        <s pid="118" sid="2">
+         Based on our analysis of these risks and other competitive advantages of each location, the best places to setup the manufacturing facility are
+        </s>
+       </p>
+       <p>
+        <s pid="119" sid="1">
+         1. Chang Chun, China
+        </s>
+       </p>
+       <p>
+        <s pid="120" sid="1">
+         2. Gilwice, Poland
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       8 MANAGEMENT AND ORGANIZATIONAL STRUCTURE
+      </div>
+      <p>
+       <s pid="121" sid="1">
+        The Organizational Structure is segmented with a focus on globalization, in which the top management consists of the CEO+COO/Chairman, the CFO, and the overall Managing Director of the organization.
+       </s>
+      </p>
+      <p>
+       <s pid="122" sid="1">
+        Each plant may be divided into 3 departments as shown in figure 24
+       </s>
+      </p>
+      <p>
+       <s pid="123" sid="1">
+        1) R&amp;D
+       </s>
+      </p>
+      <p>
+       <s pid="124" sid="1">
+        2) Mfg. and Quality Control
+       </s>
+      </p>
+      <p>
+       <s pid="125" sid="1">
+        3) Finance, Administration and IT Management
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="126" sid="1">
+        Figure 24: Organization structure
+       </s>
+      </p>
+      <p>
+       <s pid="127" sid="1">
+        There are plant-level General Managers who head each division, with different sub- departments, the personnel of which directly report to their respective GM.
+       </s>
+       <s pid="127" sid="2">
+        They are laid out in a manner that allows for easy co-ordination and integration among the subsections within the same department.
+       </s>
+      </p>
+      <p>
+       <s pid="128" sid="1">
+        Funds are allocated on a time, as well as on need driven basis for the R&amp;D team to come up with new innovations, both on the existing product, as well as the reconfigurability and integration of systems on the manufacturing line.
+       </s>
+       <s pid="128" sid="2">
+        Care is taken to ensure that this keeps pace with the rapid developments in the industry, which would also help the company keep up its ISO/TS standards.
+       </s>
+      </p>
+      <p>
+       <s pid="129" sid="1">
+        The sales team cross-functionally co-ordinates with the IT management personnel to create the effect of a virtual factory.
+       </s>
+       <s pid="129" sid="2">
+        This helps to production schedules and each component and assembly can be tracked and handled by the Factory Management System on or off the line.
+       </s>
+      </p>
+      <p>
+       <s pid="130" sid="1">
+        Empowerment of workforce can serve as a voice for their concerns and suggestions, and alleviate misunderstandings.
+       </s>
+       <s pid="130" sid="2">
+        It will also ensure effective cross-communication between workforce and the upper tiers of the management.
+       </s>
+       <s pid="130" sid="3">
+        This creates opportunity for all employees at all levels to work with the knowledge that their suggestions and decisions are heard, respected and considered.
+       </s>
+       <s pid="130" sid="4">
+        Machine operators will be provided specific training pertaining to their job focusing on key aspects such as safety, Kaizen, team-work, scrap reduction and morale.
+       </s>
+       <s pid="130" sid="5">
+        All engineering and management staff will also undergo a comprehensive training based on lean manufacturing and quality improvement.
+       </s>
+       <s pid="130" sid="6">
+        This will enable management and operators to collaborate on solving problems with the common goal of satisfying the customer.
+       </s>
+      </p>
+      <p>
+       <s pid="131" sid="1">
+        As we grow and there is a need to setup other factories in different locations, to cater to demand from new markets, the uppermost section of this chart would become the management backbone of the organization.
+       </s>
+       <s pid="131" sid="2">
+        Thus each factory head reports directly to the board.
+       </s>
+       <s pid="131" sid="3">
+        We would also require liaison officers to co-ordinate with the government, and to get subsidiaries, permits, etc.
+       </s>
+       <s pid="131" sid="4">
+        These officers can also promote an effective channel of communication between the automakers and suppliers in the region.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       9 FINANCIAL PLAN
+      </div>
+      <p>
+       <s pid="132" sid="1">
+        Initial investment for the venture:
+       </s>
+      </p>
+      <p>
+       <s pid="133" sid="1">
+        Table 7: Initial equipment cost
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="134" sid="1">
+        Table 8: Plant workforce and land cost
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="135" sid="1">
+        The net investment required to start the venture is $7911000.
+       </s>
+       <s pid="135" sid="2">
+        This is the cost to start and setup the operations for the manufacturing of the product to start.
+       </s>
+       <s pid="135" sid="3">
+        This value does not include the cost of the raw material required for the production of the dash in the first year.
+       </s>
+       <s pid="135" sid="4">
+        The cost of the material for the first year according to our production capabilities is $57239000.
+       </s>
+       <s pid="135" sid="5">
+        We plan to raise this money from venture capitalist and bank loans.
+       </s>
+      </p>
+      <p>
+       <s pid="136" sid="1">
+        The main factor which quantifies the success of the venture is the money making capability of the venture.
+       </s>
+       <s pid="136" sid="2">
+        We have conducted a detailed analysis of yearly costs and revenues which determine the profitability of our venture.
+       </s>
+       <s pid="136" sid="3">
+        This investigation was conducted on two lines- "Best case scenario" and "worst case scenario" .
+       </s>
+       <s pid="136" sid="4">
+        The best case and worst case scenarios are explained below in detail.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        9.1 Best Case Scenario:
+       </div>
+       <p>
+        <s pid="137" sid="1">
+         The best case scenario is based on a growth of 20% in sales volume year on year.
+        </s>
+        <s pid="137" sid="2">
+         This is assumed on the basis of a bullish market, as we will be starting our venture near a new manufacturing facility of an OEM.
+        </s>
+        <s pid="137" sid="3">
+         The table shows the various costs associated with different set of requirements like materials, maintenance, operations etc.
+        </s>
+        <s pid="137" sid="4">
+         Based on the best case scenario we will be manufacturing and selling around 1.2 million instrument panels a year by the end of the seventh year.
+        </s>
+        <s pid="137" sid="5">
+         The graph below shows the percentage of each individual cost for the manufacturing process.
+        </s>
+        <s pid="137" sid="6">
+         In this case our venture will make a loss in the first year and the fifth year because of the additional cost of the investing in the equipment for expanding our production.
+        </s>
+        <s pid="137" sid="7">
+         The net profit at the end of seven years at net present value (NPV) is 33 million dollars.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="138" sid="1">
+         Figure 25: Breakdown of best case scenario costs
+        </s>
+       </p>
+       <p>
+        <s pid="139" sid="1">
+         The graph shows that material costs make the major part of the total cost of the product.
+        </s>
+        <s pid="139" sid="2">
+         On an average it is around 92 percent of the total cost of the product.
+        </s>
+        <s pid="139" sid="3">
+         The material costs consists of cost of the material like polymers, fasteners, springs and the steel structure required to mount the instrument panel onto the vehicle.
+        </s>
+        <s pid="139" sid="4">
+         One of our major pursuits will be to reduce the material costs by trying to create a leaner supply chain for the material suppliers.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        9.2 Worst Case Scenario:
+       </div>
+       <p>
+        <s pid="140" sid="1">
+         The worst case scenario is based on a growth of 20% for the first year and then the demand falls thereby giving us a year on year growth of around 5%.
+        </s>
+        <s pid="140" sid="2">
+         In the worst case scenario we make a loss in the 1st, 5th, 6th and 7th year.
+        </s>
+        <s pid="140" sid="3">
+         Because of the lack of demand we reduce the price of the product by 10% to make sure we have a steady demand of product and that we continue to grow.
+        </s>
+        <s pid="140" sid="4">
+         The lack of demand might arise due to competitors bringing in new product or lack of demand for the vehicle as a whole.
+        </s>
+        <s pid="140" sid="5">
+         In this case I-DASH does not need additional equipment installed in the fifth year as in the best case scenario, as we will be able to meet the required demand with the existing manufacturing facility.
+        </s>
+        <s pid="140" sid="6">
+         In this case I-DASH will be making a profit at the end of seven years which in its net present value (NPV) equals to 4.9 million dollars.
+        </s>
+       </p>
+       <p>
+        <s pid="141" sid="1">
+         The figure below showcases a comparison of the best and worst case scenarios.
+        </s>
+        <s pid="141" sid="2">
+         A complete breakdown of costs for the best case and worst case scenarios is provided in Appendix D
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="142" sid="1">
+         Figure 25: Comparison of best case and worst case scenarios
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       10 SUMMARY
+      </div>
+      <p>
+       <s pid="143" sid="1">
+        The class presented a good challenge of coming up a innovative product which could be mass-customized and sold in diverse global markets.
+       </s>
+       <s pid="143" sid="2">
+        The lectures, class discussions and the coursepack provided us with valuable insights to tackle this challenge
+       </s>
+       <s pid="143" sid="3">
+        The initial paradoxical product assignment helped us in developing team dynamics via brain storming and application of ideas.
+       </s>
+       <s pid="143" sid="4">
+        We thus acknowledge Prof. Koren and the GSIs for giving us this initial assignment.
+       </s>
+      </p>
+      <p>
+       <s pid="144" sid="1">
+        By splitting the final project into product design, manufacturing and business strategy helped us to achieve project targets in a structured and logical manner.
+       </s>
+       <s pid="144" sid="2">
+        This ensured that no key factors were overlooked.
+       </s>
+       <s pid="144" sid="3">
+        Periodic reviews helped us to stay on track with realistic project goals.
+       </s>
+      </p>
+      <p>
+       <s pid="145" sid="1">
+        In the early stages of project development we did not have defined criteria for manufacturing strategies or the business model for our product.
+       </s>
+       <s pid="145" sid="2">
+        However our initial designs were proposed keeping in mind possible constraints of the manufacturing system and business model.
+       </s>
+       <s pid="145" sid="3">
+        This gave us an early vision and developed a strong framework for the latter stages of the project.
+       </s>
+       <s pid="145" sid="4">
+        Thus we were able to seamlessly integrate our manufacturing plan and business strategies with our product design.
+       </s>
+      </p>
+      <p>
+       <s pid="146" sid="1">
+        The course pack included key paradigms about design, manufacturing and business strategies which were extremely applicable to the project.
+       </s>
+       <s pid="146" sid="2">
+        Design examples like the high- tech pill and case studies also provided valuable insights.
+       </s>
+       <s pid="146" sid="3">
+        However, technical information regarding manufacturing equipment and processes which was unavailable in literature or on the web, was obtained via interaction with experienced people from academia and industry.
+       </s>
+       <s pid="146" sid="4">
+        These interactions were enriching and a provided us a holistic perspective on real world issues associated with product development.
+       </s>
+      </p>
+      <p>
+       <s pid="147" sid="1">
+        This class enabled us to consider various factors for a product in a global environment.
+       </s>
+       <s pid="147" sid="2">
+        However lack of resources or technical expertise, limited us in formulating precise solutions.
+       </s>
+       <s pid="147" sid="3">
+        Overall this project was an excellent stepping stone in our career development.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       11 REFERENCES
+      </div>
+      <p>
+       1  World Motor Vehicle Production By Country, Accessed 9/30/07 http://oica.net/wp-content/uploads/2007/06/worldprod_cars-revised.pdf
+      </p>
+      <p>
+       2  Husky Injection Molding Systems, Accessed 10/20/07 http://www.husky.ca/abouthusky/index.html
+      </p>
+      <p>
+       3  Eric Hallstron, Business Manager, Automotive, Husky Injection Molding Systems Telephone: 248-735-6346
+      </p>
+      <p>
+       4  Husky Tandem Systems, Accessed 10/20/07 http://cache.husky.ca/flyers/fl-tandem03a.pdf
+      </p>
+      <p>
+       5  Husky Hylectric Machines, Accessed 10/22/07 http://www.husky.ca/hylectric-0-16.html
+      </p>
+      <p>
+       6  EcoLINE, Frimo, Accessed 10/20/07 http://www.frimo.com/en/technologien/thermoformen/ecoline.php?navanchor=1910053 http://www.frimo.com/en/download/ecoline_en.pdf
+      </p>
+      <p>
+       7  Kerry, Sales Division, Dunning Toyota Dealership, Ann Arbor, MI Telephone: 734-997-7600
+      </p>
+      <p>
+       8   Interiors, Visteon Automotive, Accessed 11/25/07 http://www.visteon.com/products/automotive/instrument_panel.shtml
+      </p>
+      <p>
+       9   Cockpits and Instrument Panels, Johnson Controls, Accesses 11/25/07 http://www.johnsoncontrols.com/publish/us/en/products/automotive_experience/Interiors/
+      </p>
+      <p>
+       10  Product Solution, Cockpit, Faurecia, Accessed 11/25/07 http://www.faurecia.com/pages/products/cockpit.asp
+      </p>
+      <p>
+       11  Driving Orientation – A world map, Accessed 11/25/07 http://strangemaps.wordpress.com/2007/02/
+      </p>
+      <p>
+       12  Risk briefing, Economic Intelligence Unit (EIU), Accessed via Mirlyn on 11/28/07 http://www.eiu.com/site_info.asp?info_name=corporate_landing_University_of_Michigan&amp;rf=0
+      </p>
+      <p>
+       13  Roy Linwood Woodard, Jr., Statesboro, Ga. (US); James Marvin Stenz, Fenton, Mich. (US); Dean Jayson Long, Bradenton, Fla. (US); and Daniel Steven Genord, South Lyon, Mich. (US) Vehicle Dashboard, US Patent # 538721 s, Accessed 10/10/07
+      </p>
+      <p>
+       14  Tilo Volkmann, Ralf Zipperle, Modular dashboard US Patent # 646281, Accessed 10/2/07
+      </p>
+      <p>
+       15  Dave O‟connely, Chrysler LLC, Dashboard Release Engineer – Caliber (Compact Car)
+      </p>
+     </div>
+     <div>
+      <p>
+       Appendix A – PATENT SEARCH
+      </p>
+      <p>
+       The various patents that are similar to our product are as follows.
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure A.1: View of I/P for vehicle13
+      </p>
+      <p>
+       Figure A.1 above shows the design of a I/P that has different ways of utilizing the storage space available in the dash. It is a dash wherein the storage space is reconfigurable to an extent, suiting the needs of the customer. It can only offer the option of a variety of storage space on the dash.
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure A.2 : View of I/P for vehicle14
+      </p>
+      <p>
+       The modular dashboard above has an upper dash module which extends below the windscreen over the entire width of the vehicle, a drivers side module which is arranged below the upper module, on the drivers side, a front passenger side module which is arranged below the upper module on the front passengers side and a center module which is arranged below the upper module. The customizability of this module can be increased by providing a variable module below the upper module and in between the central module  and  the  front  passengers  side  module.  The  variable  module  is  designed  as standard equipment variant as a paneling element whose outsides is shaped in order to form a smooth transition between the outsides of the front passengers side module and the central module and which is designed as a special equipment variant as a functional element associated with an additional function on the dashboard.
+      </p>
+      <p>
+       Appendix B.1 – MARKET SURVEY RESULTS
+      </p>
+      <p>
+       The following figures indicates that people have a wide variety of options they would prefer for the shape of various controls and aesthetics on the I/P. This again strengthens our rationale to customize our I/P
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure B.1: Distribution for shape of controls and asthetics
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure B.2: Location of customization on I/P
+      </p>
+      <p>
+       Appendix B.2 – MARKET SURVEY QUESTIONS
+      </p>
+      <div class="gap">
+       <span>
+        Survey
+       </span>
+       here
+      </div>
+      <p>
+       Appendix C – EXAMPLES OF I-DASH CONFIGURATIONS
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure C.1 : Highly customized I/P
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Figure C.2 : I/P with basic functionality
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Appendix D – FINANCIAL CALCULATIONS
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Figure D.1: Best case scenario breakdown
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       Figure D.2: Worst case scenario breakdown
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

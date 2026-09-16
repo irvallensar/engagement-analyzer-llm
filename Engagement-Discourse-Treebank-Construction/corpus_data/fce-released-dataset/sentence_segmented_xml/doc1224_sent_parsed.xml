@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     21.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       To the Manager of the theatre
+      </p>
+      <p>
+       Dear Sir/Madam
+      </p>
+      <p>
+       I am writing in order to tell
+       <ns type="DA">
+        <i>
+         your
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       <ns type="IA">
+        <i>
+         <ns type="RP">
+          <i>
+           some things
+          </i>
+         </ns>
+        </i>
+       </ns>
+       that happened to me at the theatre
+       <ns type="RP">
+        <i>
+         , at
+        </i>
+       </ns>
+       <ns type="RD">
+        <i>
+         that
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         moment
+        </i>
+       </ns>
+       I felt
+       <ns type="DJ">
+        <i>
+         astonish
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       thinking
+       <ns type="UT">
+        <i>
+         about
+        </i>
+       </ns>
+       : "How
+       <ns type="MV">
+       </ns>
+       an important theatre have problems like this
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       " But, Yes.
+      </p>
+      <p>
+       First the
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       was going to be Danny Brook, but then another man took his place
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I couldn't believe it
+       <ns type="RP">
+        <i>
+         , you
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         couldn't
+        </i>
+       </ns>
+       <ns type="RV">
+        <i>
+         change
+        </i>
+       </ns>
+       Danny Brook, a very important artist, and put a
+       <ns type="RN">
+        <i>
+         <ns type="S">
+          <i>
+           begginer
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="UA">
+        <i>
+         one
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       . It was very disappointing.
+      </p>
+      <p>
+       Secondly, It was supposed to start at 19:30 and it started at 20:15. Yes, 45 minutes
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I want to see you in that
+       <ns type="RN">
+        <i>
+         case
+        </i>
+       </ns>
+       . What would you do? I felt like a
+       <ns type="DN">
+        <i>
+         dumb
+        </i>
+       </ns>
+       , and all the
+       <ns type="RN">
+        <i>
+         people
+        </i>
+       </ns>
+       felt
+       <ns type="RT">
+        <i>
+         like
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         me
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       And well, don't talk about the discounts, because they didn't exist. More than that, the restaurant was closed because it was
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="DN">
+        <i>
+         repairing
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="ID">
+        At end
+       </ns>
+       , I could see that the advertisement said
+       <ns type="MP">
+       </ns>
+       "Your perfect evening out"
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       wasn't the perfect evening
+       <ns type="RP">
+        <i>
+         , now
+        </i>
+       </ns>
+       I'm looking for a
+       <ns type="RN">
+        <i>
+         layer
+        </i>
+       </ns>
+       , because I want my money back,
+       <ns type="R">
+        if don't well you know the end of this story
+       </ns>
+       .
+      </p>
+      <p>
+       Faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To the Manager of the theatre
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Dear Sir/Madam
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I am writing in order to tell your  some things that happened to me at the theatre, at that moment I felt astonish thinking about: "How  an important theatre have problems like this."
+       </s>
+       <s pid="3" sid="2">
+        But, Yes.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        First the starring was going to be Danny Brook, but then another man took his place, I couldn't believe it, you couldn't change Danny Brook, a very important artist, and put a begginer one .
+       </s>
+       <s pid="4" sid="2">
+        It was very disappointing.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Secondly,
+       </s>
+       <s pid="5" sid="2">
+        It was supposed to start at 19:30 and it started at 20:15.
+       </s>
+       <s pid="5" sid="3">
+        Yes, 45 minutes, I want to see you in that case.
+       </s>
+       <s pid="5" sid="4">
+        What would you do?
+       </s>
+       <s pid="5" sid="5">
+        I felt like a dumb, and all the people felt like me.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        And well, don't talk about the discounts, because they didn't exist.
+       </s>
+       <s pid="6" sid="2">
+        More than that, the restaurant was closed because it was on repairing.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        At end, I could see that the advertisement said "Your perfect evening out", it wasn't the perfect evening, now I'm looking for a layer, because I want my money back, if don't well you know the end of this story.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets, because one day when Maria, her sister, was walking to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       school, a car stopped
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       her and a man said
+       <ns type="MP">
+       </ns>
+       "I know who is your
+       <ns type="RN">
+        <i>
+         love
+        </i>
+       </ns>
+       , it's Peter".
+      </p>
+      <p>
+       Maria
+       <ns type="RV">
+        <i>
+         passed
+        </i>
+       </ns>
+       all
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       day thinking about who told them that
+       <ns type="RP">
+        <i>
+         , there
+        </i>
+       </ns>
+       were two
+       <ns type="S">
+        <i>
+         posibilities
+        </i>
+       </ns>
+       : one
+       <ns type="MP">
+       </ns>
+       her best friend Becca
+       <ns type="MP">
+       </ns>
+       or
+       <ns type="AGD">
+        <i>
+         his
+        </i>
+       </ns>
+       sister Pat.
+      </p>
+      <p>
+       But the problem began to
+       <ns type="RV">
+        <i>
+         increase
+        </i>
+       </ns>
+       because all her friends knew her secret. It was like a "chain reaction", until Maria didn't want to go to school
+       <ns type="RP">
+        <i>
+         any more
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         , her
+        </i>
+       </ns>
+       mother talked to her, but there was no
+       <ns type="RN">
+        case
+       </ns>
+       <ns type="RP">
+        <i>
+         , she
+        </i>
+       </ns>
+       was very angry and hurt.
+      </p>
+      <p>
+       One day, at
+       <ns type="AGD">
+        <i>
+         his
+        </i>
+       </ns>
+       house, she listened
+       <ns type="MT">
+       </ns>
+       Pat talking with a friend and Maria realised that Pat
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           said
+          </i>
+         </ns>
+        </i>
+       </ns>
+       everything, because they were talking about a secret of another friend. But there was a problem
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       how to
+       <ns type="FV">
+        <i>
+         said
+        </i>
+       </ns>
+       it to Pat, in a good or in a bad way
+       <ns type="RP">
+        <i>
+         , she
+        </i>
+       </ns>
+       decided for the good one.
+      </p>
+      <p>
+       Obviously, Pat first
+       <ns type="RV">
+        <i>
+         refused
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       , but then she accepted that she was wrong, and
+       <ns type="TV">
+        <i>
+         <ns type="S">
+          <i>
+           apologyse
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       Maria
+       <ns type="RP">
+        <i>
+         , after
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         then
+        </i>
+       </ns>
+       Pat never again talked about
+       <ns type="RA">
+        <i>
+         someone
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         within
+        </i>
+       </ns>
+       his or her permission.
+      </p>
+      <p>
+       The End.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets, because one day when Maria, her sister, was walking to the school, a car stopped at her and a man said "I know who is your love, it's Peter".
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Maria passed all the day thinking about who told them that, there were two posibilities: one her best friend Becca or his sister Pat.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        But the problem began to increase because all her friends knew her secret.
+       </s>
+       <s pid="3" sid="2">
+        It was like a "chain reaction", until Maria didn't want to go to school any more, her mother talked to her, but there was no case, she was very angry and hurt.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        One day, at his house, she listened  Pat talking with a friend and Maria realised that Pat said everything, because they were talking about a secret of another friend.
+       </s>
+       <s pid="4" sid="2">
+        But there was a problem, how to said it to Pat, in a good or in a bad way, she decided for the good one.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Obviously,
+       </s>
+       <s pid="5" sid="2">
+        Pat first refused , but then she accepted that she was wrong, and apologyse  Maria, after then Pat never again talked about someone within his or her permission.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The End.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

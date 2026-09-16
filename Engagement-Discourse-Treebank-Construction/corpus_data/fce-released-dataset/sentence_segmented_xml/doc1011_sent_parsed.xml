@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     23.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       17/06/00
+      </p>
+      <p>
+       mr. MANAGER
+      </p>
+      <p>
+       MY NAME
+       <ns type="MV">
+       </ns>
+       JAMES CAMIREZ AND
+       <ns type="UP">
+        <i>
+         I'AM
+        </i>
+       </ns>
+       WRITING THIS LETTER TO YOU BECAUSE I HAVE SOME
+       <ns type="S">
+        <i>
+         COMPLEINTS
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         FOR
+        </i>
+       </ns>
+       THE DISAPPOINTING EVENING I HAD LAST NIGHT.
+      </p>
+      <p>
+       FIRST OF ALL
+       <ns type="MP">
+       </ns>
+       <ns type="RT">
+        <i>
+         ON
+        </i>
+       </ns>
+       THE ADVERTISEMENT FOR THE SHOW IT
+       <ns type="TV">
+        <i>
+         SAYS
+        </i>
+       </ns>
+       THAT THE ACTOR WAS GOING TO BE DANNY BROOK AND INSTEAD OF HIM
+       <ns type="MY">
+       </ns>
+       WAS A TOTALLY UNKNOWN CLOWN THAT HAD NO IDEA OF HOW TO ACT
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       IT WAS HORRIBLY DISAPPOINTING!
+      </p>
+      <p>
+       SECOND I GOT TO THE THEATRE AT 19.20 BECAUSE IN THE ADVERTISEMENT IT CLEARLY
+       <ns type="RV">
+        <i>
+         APPEARS
+        </i>
+       </ns>
+       THAT THE SHOW STARTS AT 19.30, AND I GOT
+       <ns type="RY">
+        <i>
+         HEAVILY
+        </i>
+       </ns>
+       MAD WHEN I
+       <ns type="TV">
+        <i>
+         LOOK
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       MY WATCH AND
+       <ns type="TV">
+        <i>
+         NOTICE
+        </i>
+       </ns>
+       THAT I HAD BEEN WAITING FOR 40 (FORTY) MINUTES AND THE SHOW
+       <ns type="RV">
+        <i>
+         DIDN'T
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         START
+        </i>
+       </ns>
+       YET...I MEAN
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       WAS
+       <ns type="S">
+        <i>
+         AMAIZING
+        </i>
+       </ns>
+       !
+      </p>
+      <p>
+       THEN I READ
+       <ns type="RT">
+        <i>
+         ON
+        </i>
+       </ns>
+       THE ADVERTISEMENT,
+       <ns type="MP">
+       </ns>
+       DISCOUNTS AVAILABLE
+       <ns type="MP">
+       </ns>
+       , AND I DIDN'T
+       <ns type="FV">
+        <i>
+         GOT
+        </i>
+       </ns>
+       ANY DISCOUNTS WHEN I ASKED FOR THEM.
+      </p>
+      <p>
+       AFTER THE SHOW I GOT OUT
+       <ns type="MT">
+       </ns>
+       THE
+       <ns type="RN">
+        SHOW ROOM
+       </ns>
+       DEEPLY DISAPPOINTED AND WENT TO THE RESTAURANT TO DRINK SOMETHING TO RELAX, AND DO YOU KNOW WHAT?.. IT WAS CLOSED! I COULDN'T
+       <ns type="S">
+        <i>
+         BELIVE
+        </i>
+       </ns>
+       IT
+       <ns type="MP">
+       </ns>
+       HOW
+       <ns type="W">
+        <i>
+         THIS CLASS OF THEATRE CAN
+        </i>
+       </ns>
+       BE SO .. OH I'M GETING MAD AGAIN SO
+       <ns type="UP">
+        <i>
+         I'AM
+        </i>
+       </ns>
+       GOING TO TELL YOU
+       <ns type="RQ">
+        <i>
+         THE
+        </i>
+       </ns>
+       LAST THING, IT WAS THE
+       <ns type="MY">
+       </ns>
+       HORRIBLE NIGHT I HAD EVER
+       <ns type="RV">
+        <i>
+         GOT
+        </i>
+       </ns>
+       SO I
+       <ns type="S">
+        <i>
+         DEMEND
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         FOR
+        </i>
+       </ns>
+       MY MONEY BACK!
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17/06/00
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        mr. MANAGER
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        MY NAME  JAMES CAMIREZ AND I'AM WRITING THIS LETTER TO YOU BECAUSE I HAVE SOME COMPLEINTS FOR THE DISAPPOINTING EVENING I HAD LAST NIGHT.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        FIRST OF ALL ON THE ADVERTISEMENT FOR THE SHOW IT SAYS THAT THE ACTOR WAS GOING TO BE DANNY BROOK AND INSTEAD OF HIM  WAS A TOTALLY UNKNOWN CLOWN THAT HAD NO IDEA OF HOW TO ACT, IT WAS HORRIBLY DISAPPOINTING!
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        SECOND I GOT TO THE THEATRE AT 19.20 BECAUSE IN THE ADVERTISEMENT IT CLEARLY APPEARS THAT THE SHOW STARTS AT 19.30, AND I GOT HEAVILY MAD WHEN I LOOK  MY WATCH AND NOTICE THAT I HAD BEEN WAITING FOR 40 (FORTY) MINUTES AND THE SHOW DIDN'T START YET...I MEAN I WAS AMAIZING!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        THEN I READ ON THE ADVERTISEMENT, DISCOUNTS AVAILABLE, AND I DIDN'T GOT ANY DISCOUNTS WHEN I ASKED FOR THEM.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        AFTER THE SHOW I GOT OUT  THE SHOW ROOM DEEPLY DISAPPOINTED AND WENT TO THE RESTAURANT TO DRINK SOMETHING TO RELAX, AND DO YOU KNOW WHAT?.. IT WAS CLOSED!
+       </s>
+       <s pid="7" sid="2">
+        I COULDN'T BELIVE IT HOW THIS CLASS OF THEATRE CAN BE SO .. OH I'M GETING MAD AGAIN SO I'AM GOING TO TELL YOU THE LAST THING, IT WAS THE  HORRIBLE NIGHT I HAD EVER GOT SO I DEMEND FOR MY MONEY BACK!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       I THINK THAT MODERN TECHNOLOGY HAS AFFECTED ALL
+       <ns type="UD">
+        <i>
+         THE
+        </i>
+       </ns>
+       HUMAN BEINGS. MODERN TECHNOLOGY HAS
+       <ns type="TV">
+        <i>
+         AFFECT
+        </i>
+       </ns>
+       ME IN SEVERAL WAYS
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I MEAN THE MORE THE TECHNOLOGY
+       <ns type="RV">
+        <i>
+         MODERNIZES
+        </i>
+       </ns>
+       ;
+       <ns type="MD">
+       </ns>
+       MORE
+       <ns type="DJ">
+        <ns type="DN">
+         <i>
+          CONFORTNESS
+         </i>
+        </ns>
+        COMFORTABLE
+       </ns>
+       WE GET. NOW WITH MODERN MACHINES I CAN MAKE
+       <ns type="UD">
+        <i>
+         A
+        </i>
+       </ns>
+       BETTER USE OF MY TIME
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       IF
+       <ns type="UP">
+        <i>
+         I'AM
+        </i>
+       </ns>
+       LATE TO GO TO TRAINING AND I
+       <ns type="TV">
+        <i>
+         HADN'T
+        </i>
+       </ns>
+       <ns type="IV">
+        <i>
+         IT
+        </i>
+       </ns>
+       YET I JUST TAKE MY FOOD AND PUT IT IN THE
+       <ns type="RP">
+        <i>
+         MICROWAVEOVEN
+        </i>
+       </ns>
+       . ANOTHER EXAMPLE IS
+       <ns type="UD">
+        <i>
+         THE
+        </i>
+       </ns>
+       COMPUTERS
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I THINK THEY ARE
+       <ns type="R">
+        <i>
+         ONE
+        </i>
+       </ns>
+       OF THE MOST ADVANCED
+       <ns type="AGN">
+        <i>
+         MACHINE
+        </i>
+       </ns>
+       IN THE WORLD
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       YOU CAN LIVE YOUR ENTIRE LIFE IN A HOUSE WITHOUT GOING OUT,
+       <ns type="W">
+        <i>
+         BY JUST
+        </i>
+       </ns>
+       USING THE INTERNET
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       IT HAS ALSO HELPED ME
+       <ns type="RT">
+        <i>
+         IN
+        </i>
+       </ns>
+       MY
+       <ns type="UN">
+        <i>
+         SCHOOL
+        </i>
+       </ns>
+       HOMEWORK
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I MEAN IT'S INCREDIBLE THE TIME YOU
+       <ns type="SX">
+        <i>
+         WAIST
+        </i>
+       </ns>
+       BY
+       <ns type="RV">
+        <i>
+         MAKING
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         THING
+        </i>
+       </ns>
+       WITHOUT A COMPUTER. BUT I THINK ALSO THAT WITH MODERN TECHNOLOGY WE GET MORE COMFORTABLE SO THAT MAKES ME A
+       <ns type="S">
+        <i>
+         PACIVE
+        </i>
+       </ns>
+       PERSON AND NOT SO ACTIVE
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       THIS CAN BE BAD
+       <ns type="SX">
+        <i>
+         TO
+        </i>
+       </ns>
+       BECAUSE IF I GET USED TO
+       <ns type="FV">
+        <i>
+         BE
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         CONFORTABLE
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       WHEN I NEED TO DO HARD
+       <ns type="FN">
+        <i>
+         WORKS
+        </i>
+       </ns>
+       I WON'T BE ABLE TO
+       <ns type="U">
+        <i>
+         DO THEM
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        I THINK THAT MODERN TECHNOLOGY HAS AFFECTED ALL THE HUMAN BEINGS.
+       </s>
+       <s pid="1" sid="2">
+        MODERN TECHNOLOGY HAS AFFECT ME IN SEVERAL WAYS, I MEAN THE MORE THE TECHNOLOGY MODERNIZES;  MORE CONFORTNESSCOMFORTABLE WE GET.
+       </s>
+       <s pid="1" sid="3">
+        NOW WITH MODERN MACHINES I CAN MAKE A BETTER USE OF MY TIME, IF I'AM LATE TO GO TO TRAINING AND I HADN'T IT YET I JUST TAKE MY FOOD AND PUT IT IN THE MICROWAVEOVEN.
+       </s>
+       <s pid="1" sid="4">
+        ANOTHER EXAMPLE IS THE COMPUTERS, I THINK THEY ARE ONE OF THE MOST ADVANCED MACHINE IN THE WORLD, YOU CAN LIVE YOUR ENTIRE LIFE IN A HOUSE WITHOUT GOING OUT, BY JUST USING THE INTERNET, IT HAS ALSO HELPED ME IN MY SCHOOL HOMEWORK, I MEAN IT'S INCREDIBLE THE TIME YOU WAIST BY MAKING THING WITHOUT A COMPUTER.
+       </s>
+       <s pid="1" sid="5">
+        BUT I THINK ALSO THAT WITH MODERN TECHNOLOGY WE GET MORE COMFORTABLE SO THAT MAKES ME A PACIVE PERSON AND NOT SO ACTIVE, THIS CAN BE BAD TO BECAUSE IF I GET USED TO BE CONFORTABLE WHEN I NEED TO DO HARD WORKS I WON'T BE ABLE TO DO THEM.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

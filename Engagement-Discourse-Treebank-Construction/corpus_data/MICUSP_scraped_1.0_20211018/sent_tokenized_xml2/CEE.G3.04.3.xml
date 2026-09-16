@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       I live in a loosely arranged cooperative house of seven people.
+      </s>
+      <s pid="1" sid="2">
+       We have formal arrangements for sharing chores, costs, and cooking, but the individual act of dishwashing is harder to police and thus is not formally shared.
+      </s>
+      <s pid="1" sid="3">
+       There is no dishwashing machine, and the dish policy is that no one is to leave dirty dishes in the sink.
+      </s>
+      <s pid="1" sid="4">
+       If one accepts that the welfare of house residents is affected by the state of the sink - a dirty sink may be smelly, unhealthy, and in the extreme, unusable - then the dishes at this house met the criteria for a collective action problem (CAP): each of the residents has a binary choice about washing the dishes in the sink, is inclined not to do so, and these choices affect other residents of the house.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       To define the system, the binary choice occurs after a resident has used dishes and is left with the choice of either washing them, as well as any dishes previously left in the sink (cooperate), or leaving the new dishes in the sink (defect).
+      </s>
+      <s pid="2" sid="2">
+       It is assumed that making this choice, the benefits of cooperation are a clean sink and peer approval, while the cost is time of labor (the opposite holds true for defection).
+      </s>
+      <s pid="2" sid="3">
+       In practice, there are clearly degrees of cooperation, but modeling the choice as binary does not mask the central phenomena.
+      </s>
+      <s pid="2" sid="4">
+       The knowledge of other residents' choices presents a complication; in practice, residents are between the extremes of no knowledge and full knowledge of who has generated which dishes.
+      </s>
+      <s pid="2" sid="5">
+       Even with partial knowledge of others' actions, the externality of approbation or disapproval by other members of the house is a factor in decision-making.
+      </s>
+      <s pid="2" sid="6">
+       Finally, we note that complete non-cooperation is not possible: were everyone to defect, the sink would be full and unusable; residents would have to starve or shift to eating out all the time, which would quickly bring pocketbooks to starvation.
+      </s>
+     </p>
+     <p>
+      <s pid="3" sid="1">
+       This impossibility of complete defection is one of the main ways that this CAP differs from many others (e.g., those in Schelling and the class GACC simulation).
+      </s>
+      <s pid="3" sid="2">
+       Our class simulation presented each small country with identical costs; different cost functions are expected in real scenarios.
+      </s>
+      <s pid="3" sid="3">
+       Indeed, in the dishwashing system, each resident has a different tolerance for dirty sinks, different reactions to peer pressure, and different demands on their time.
+      </s>
+      <s pid="3" sid="4">
+       For example, last year there was a brazen opportunist in the house; she rarely did dishes, presumably due to a high tolerance for mess (corroborated by the state of her room) and peer disapproval.
+      </s>
+      <s pid="3" sid="5">
+       Unlike the GACC simulation, in a cooperative house there are other means to influence residents; however, as pointed out in class, threatening not to do other chores or behaving in a surly fashion (the equivalent of the economic sanctions we longed for in the GACC simulation), would have repercussions in other aspects of the actors' relationships and thus are not to be undertaken lightly.
+      </s>
+      <s pid="3" sid="6">
+       Like the GACC simulation, the threat of withdrawing cooperation does not hold much sway with the opportunists who are already willing to defect.
+      </s>
+     </p>
+     <p>
+      <s pid="4" sid="1">
+       Schematic (and debatable) curves for the benefit to actors versus the fraction cooperating are shown for the cases of full knowledge of others' decisions (Figure 1) and for no knowledge (Figure 2).
+      </s>
+      <s pid="4" sid="2">
+       In practice, the house moves between these extremes, with more knowledge during the school months and less knowledge during summer, when residents' schedules are more dissimilar.
+      </s>
+      <s pid="4" sid="3">
+       In both cases, the benefits at n=0 are shown approaching negative and positive infinity, for the reason that complete defection is impossible.
+      </s>
+     </p>
+     <p>
+      <s pid="5" sid="1">
+       In the case of full knowledge of the other actors (Figure 1), the cooperation curve is shown curving upward, for those who cooperate at small n are shouldering the burden for the rest and are appreciated by their peers.
+      </s>
+      <s pid="5" sid="2">
+       At large n, cooperators receive approbation, and defectors are tolerated but not approved.
+      </s>
+      <s pid="5" sid="3">
+       Nonetheless, defectors receive the benefit of saving time by not washing.
+      </s>
+      <s pid="5" sid="4">
+       Two equilibria are seen; point A is the unhappy situation in which most defect; point C is the equilibrium at which most do their dishes, and only a few are free riders.
+      </s>
+      <s pid="5" sid="5">
+       Point B is the collective absolute maximum, in which the group benefits from efficient dishwashing that is done in batches by a subset of the group.
+      </s>
+      <s pid="5" sid="6">
+       Point D is the non-superior maximum in which all cooperate and none are chided for defection.
+      </s>
+     </p>
+     <p>
+      <s pid="6" sid="1">
+       With no knowledge of others' actions (Figure 2), the system is almost a multi-actor prisoner's dilemma: it is always preferable to defect - provided the system is to the right of the crossover where few cooperate.
+      </s>
+      <s pid="6" sid="2">
+       The defection curve is shown leveling off, for the benefits of a clean sink are similar to those of a sink with a few dishes, and there are no externalities created by peer pressure.
+      </s>
+      <s pid="6" sid="3">
+       In this case, there are is one equilibrium (point E); again, the absolute maximum (point F) occurs due to efficient, batch dishwashing.
+      </s>
+     </p>
+     <p>
+      <s pid="7" sid="1">
+       Empirical observations suggest that during the summer months, when dissimilar schedules meant less knowledge of others' decisions and thus less peer pressure, the sink was often so full as to be nearly unusable (point E in Figure 2).
+      </s>
+      <s pid="7" sid="2">
+       Occasional reminders would increase the number of cooperators, but the system generally would not stay at the social optimum (point F).
+      </s>
+      <s pid="7" sid="3">
+       Schelling (p. 230) points out that keeping the system at a non-equilibrium maximum would require imposition of order by the organization, which the house lacks during the summer.
+      </s>
+      <s pid="7" sid="4">
+       Based on this analysis, a formal system of dishwashing (e.g., assigned days) during the summer might be more effective due to its enforceability.
+      </s>
+     </p>
+     <p>
+      <s pid="8" sid="1">
+       During the school year, the house more closely resembles Figure 1, and we are most often at point D, with total cooperation.
+      </s>
+      <s pid="8" sid="2">
+       This cooperation is achieved through the peer pressure that is unavailable during the summer months.
+      </s>
+      <s pid="8" sid="3">
+       Although the collective maximum (point B) would be preferable, this point is likely unachievable: it would require enforcing equitable non-cooperation.
+      </s>
+      <s pid="8" sid="4">
+       As was seen in the GACC simulation, while rotating defection may improve overall welfare, its implementation proved to be a stumbling block.
+      </s>
+      <s pid="8" sid="5">
+       With no real recourse to enforce the rotation and punish violations, the system would likely slide back to the inferior equilibrium at point A.
+      </s>
+      <s pid="8" sid="6">
+       Thus, this analysis suggests that point D is good goal, for non-attainment would leave the system at the equilibrium at point C, which is also a generally acceptable state.
+      </s>
+     </p>
+    </div>
+    <div>
+     <p>
+     </p>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+     <div class="gap">
+      <span>
+       Figure
+      </span>
+      here
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

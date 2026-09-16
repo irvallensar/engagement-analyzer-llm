@@ -1,0 +1,618 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Defending a Broader Intentionalism
+     </div>
+     <div class="abstract">
+      ﻿Abstract:
+      <p>
+       Functionalism about mind has been strikingly successful; it is the going paradigm of cognitive science. But qualia appear to resist functional treatment. Intentionalism, the view that qualia are identical to (or supervene on) certain intentional contents, promises an account of qualia that is compatible with functionalism. I set aside traditional worries about intentionalism (e.g., inverted spectrum, knowledge, and explanatory gap arguments). I argue that traditional intentionalism cannot account for the non-contingent relationship between pain or pleasure qualia and behavior. I offer a new intentionalist account which avoids this problem: pain is a self-imperative to avoid certain represented features, and pleasure is a self-imperative to seek out certain represented features. Pain and pleasure are thus necessarily action-guiding. My account explains why we seek the pleasurable and avoid the painful, and it explains how pain and pleasure lead fairly directly to the appropriate sorts of actions.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Functionalism about the mind succeeds remarkably in explaining a diverse range of mental phenomena.
+      </s>
+      <s pid="1" sid="2">
+       Functionalism promises to explain, for instance, what beliefs and desires are, how these lead to action, how sensory information leads to belief revision, etc.
+      </s>
+      <s pid="1" sid="3">
+       Moreover, functionalism meshes well with enterprises in cognitive science: it has been a fruitful paradigm, and suggests many avenues for future research.
+      </s>
+      <s pid="1" sid="4">
+       Nevertheless, many philosophers think that functionalism is at best an incomplete theory of the mind.
+      </s>
+      <s pid="1" sid="5">
+       For one mental phenomenon, the phenomenon of qualia , is not amenable to functionalist explanation. [#REF 1]
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       There certainly exist functionalist-friendly theories of qualia.
+      </s>
+      <s pid="2" sid="2">
+       Intentionalism , the view that qualia are reducible to certain kinds of intentional contents, fits nicely into a functionalist picture.
+      </s>
+      <s pid="2" sid="3">
+       But traditional intentionalist approaches face serious objections, such as spectrum inversion arguments, the knowledge argument, and explanatory gap arguments. [#REF 2]
+      </s>
+      <s pid="2" sid="4">
+       Intentionalists have attempted to respond to all of these concerns, and the jury is still out on whether these responses succeed.
+      </s>
+      <s pid="2" sid="5">
+       In this paper, however, I wish to bracket these familiar objections.
+      </s>
+      <s pid="2" sid="6">
+       I think that there is a rather serious problem for traditional intentionalism that has been overlooked: it cannot properly account for certain features of pleasure and pain qualia.
+      </s>
+      <s pid="2" sid="7">
+       In this paper, I aim to press two related objections against the traditional intentionalist account of pain and pleasure qualia.
+      </s>
+      <s pid="2" sid="8">
+       Then I will offer a modified intentionalist account of such qualia which avoids these objections.
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       I. Narrow Intentionalism and Its Troubles
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Traditionally, intentionalists have been representationalists . [#REF 3]
+       </s>
+       <s pid="3" sid="2">
+        Representationalism is the subset of intentionalism that holds that qualia are identical to (or perhaps merely supervene on) certain representational contents.
+       </s>
+       <s pid="3" sid="3">
+        All representational content is intentional, but not all intentional content is representational.
+       </s>
+       <s pid="3" sid="4">
+        Representational contents must be true or false; intentional contents need not be.
+       </s>
+       <s pid="3" sid="5">
+        To wit, sentences like "Please pass the salt" and "Where did I put my keys?" have intentional, but not representational (or not merely representational), content.
+       </s>
+       <s pid="3" sid="6">
+        Representationalists think that, besides representational contents, no extra intentional resources are required to make sense of qualia.
+       </s>
+       <s pid="3" sid="7">
+        I think pleasure and pain qualia are more felicitously accommodated with the help of some non-representational content.
+       </s>
+       <s pid="3" sid="8">
+        More on this below.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        A traditional representationalist account of pain and pleasure qualia – the sort of account that I do not endorse – usually looks something like this.
+       </s>
+       <s pid="4" sid="2">
+        Consider the sharp, slicing pain of a paper cut.
+       </s>
+       <s pid="4" sid="3">
+        This pain has certain features which can be captured representationally; typically pain qualia involve representations of damage to the organism.
+       </s>
+       <s pid="4" sid="4">
+        Different varieties of pain feel different because of the different types of damage which get represented.
+       </s>
+       <s pid="4" sid="5">
+        These different representations of damage, which are identical with pain qualia, cause the individual in pain to respond differently.
+       </s>
+       <s pid="4" sid="6">
+        The dull pain of a headache involves one sort of damage representation, which leads to behaviors like avoiding light and seeking rest.
+       </s>
+       <s pid="4" sid="7">
+        The sharp pain of the paper cut, meanwhile, leads to different behaviors: treating the injured area gingerly, for instance.
+       </s>
+       <s pid="4" sid="8">
+        Each type of pain qualia, says the traditional representationalist, is identical to some type of damage representation.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        The traditional representationalist analyzes pleasure qualia similarly, in terms of representations of positive bodily changes.
+       </s>
+       <s pid="5" sid="2">
+        Take the delicious taste of a hot fudge sundae.
+       </s>
+       <s pid="5" sid="3">
+        The qualia of the yumminess of the sundae are merely representations of the sundae producing a positive change on the tongue and throat.
+       </s>
+       <s pid="5" sid="4">
+        Other pleasures (like the pleasure of getting a back massage) feel different from the pleasure of eating sundaes because they represent different sorts of bodily changes; the sundae-eating pleasure and the back-massage pleasure take place in different regions of the body, and the changes that get tracked are also different.
+       </s>
+       <s pid="5" sid="5">
+        When one eats a sundae, certain changes in temperature, pressure, and taste-bud stimulation are represented, whereas when one receives a back massage, kneading of the muscles and similar changes are represented. [#REF 4]
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        Such accounts face two grave problems.
+       </s>
+       <s pid="6" sid="2">
+        The first I will dub the Problem of Function.
+       </s>
+       <s pid="6" sid="3">
+        The representationalist says that tokens of pain are identical to the particular damage representations instantiated on the relevant occasion; tokens of pleasure are identical to the particular benefit representations instantiated.
+       </s>
+       <s pid="6" sid="4">
+        The representationalist will also want to say that the roles that pain and pleasure play in our cognitive economy – the fact that we tend to avoid painful things and to seek out pleasurable ones – can be fully explained by the representational contents of pain and pleasure.
+       </s>
+       <s pid="6" sid="5">
+        But it is not at all clear why representations of damage would reliably cause us to avoid the damaging things.
+       </s>
+       <s pid="6" sid="6">
+        Nor is it clear why representations of benefit would reliably cause us to seek out the beneficial things.
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Imagine the following individual, whom I dub Francis.
+       </s>
+       <s pid="7" sid="2">
+        Francis seeks out many experiences that we would find painful.
+       </s>
+       <s pid="7" sid="3">
+        She avidly pursues paper cuts, headaches, broken bones, and singed fingers.
+       </s>
+       <s pid="7" sid="4">
+        When queried about her strange behavior, Francis doesn't say that she wants to punish herself or that she believes in a life of denial; rather, she claims to enjoy greatly the various sensations she undergoes.
+       </s>
+       <s pid="7" sid="5">
+        "The feeling of a paper cut," Francis might say, "is a sharp sort of feeling that is quite delightful.
+       </s>
+       <s pid="7" sid="6">
+        I enjoy it almost as much as the dull pounding of headaches."
+       </s>
+       <s pid="7" sid="7">
+        Francis's sensations when she cuts herself might, that is, have the same representational content as my paper-cutting experiences, but one is tempted to think that there is something radically phenomenologically different for Francis.
+       </s>
+       <s pid="7" sid="8">
+        Paper cuts, though they may be represented as self-damage, are fun for her!
+       </s>
+       <s pid="7" sid="9">
+        Since all Francis's paper-cut sensations might apparently have exactly the same representational content of my paper-cut sensations, but Francis isn't in pain, the representational account of pain provided above seems mistaken.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Lest one be tempted to think that it isn't possible for Francis to exist, I'll point to real-life cases which lack the drama of Francis's situation but share the features relevant for our purposes.
+       </s>
+       <s pid="8" sid="2">
+        I dislike crunchy vegetables because they are crunchy; fresh carrots don't taste good to me.
+       </s>
+       <s pid="8" sid="3">
+        Others, though, love carrots for precisely the reason that I can't stand them: they delight in the crunchy texture.
+       </s>
+       <s pid="8" sid="4">
+        Similar situations may exist with music.
+       </s>
+       <s pid="8" sid="5">
+        Consider Jason and Sonia, two highly trained musicians.
+       </s>
+       <s pid="8" sid="6">
+        Jason plays viola professionally, while Sonia plays electric guitar for a rock band.
+       </s>
+       <s pid="8" sid="7">
+        Jason might hear Sonia's music and despise it, even if his representation of that music is very similar to Sonia's.
+       </s>
+       <s pid="8" sid="8">
+        Jason might hate the music because of its chord structure, while Sonia might love her music for just that chord structure.
+       </s>
+       <s pid="8" sid="9">
+        So why couldn't there be someone who loves paper cuts, headaches, broken bones, and singed fingers for having precisely the qualities that cause most of us to find them painful?
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        Here is one reply which the traditional representationalist might try.
+       </s>
+       <s pid="9" sid="2">
+        Perhaps the fact that we are disposed to avoid painful things isn't due solely to the representational content of pain.
+       </s>
+       <s pid="9" sid="3">
+        Rather, it's that content conjoined with some other contingent but nearly universal features of human psychology that does the explaining.
+       </s>
+       <s pid="9" sid="4">
+        Such features might include some combination of desires to avoid self-damage and reflexes to avoid self-damage.
+       </s>
+       <s pid="9" sid="5">
+        Perhaps in situations where deliberation is involved, it's the desire to avoid damage to oneself which, when conjoined with the representational content of the pain, does the explanatory work.
+       </s>
+       <s pid="9" sid="6">
+        In situations where one reflexively avoids pain, on the other hand, it's the reflex to avoid self-damage, plus the representational content of the pain, which does the explaining.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        This response strikes me as inadequate, for it has a strange consequence.
+       </s>
+       <s pid="10" sid="2">
+        Recall that, on the traditional representationalist view, the reason that a chocolate sundae tastes good is just that the organism represents the sundae as being beneficial.
+       </s>
+       <s pid="10" sid="3">
+        And, according to the response under consideration, the explanation of the fact that I seek out chocolate sundaes is that fact plus the fact that I have a reflex or desire to get things that are beneficial to me.
+       </s>
+       <s pid="10" sid="4">
+        Suppose, then, that I didn't have such a reflex or desire.
+       </s>
+       <s pid="10" sid="5">
+        Suppose that I had a reflex or desire to seek out things that harmed me, and to avoid things that were beneficial to me.
+       </s>
+       <s pid="10" sid="6">
+        Then, according to the traditional representationalist, I would no longer seek out sundaes, but they would taste just as good to me .
+       </s>
+       <s pid="10" sid="7">
+        In actuality, then, it's just a remarkable coincidence that I desire things that make me feel good – the fact that they feel good does not do much work in explaining my behavior.
+       </s>
+       <s pid="10" sid="8">
+        But one wants to say that the reason I seek out sundaes is that they taste good to me, full stop.
+       </s>
+       <s pid="10" sid="9">
+        There isn't any need to posit an additional reflex or desire to seek out what tastes good!
+       </s>
+       <s pid="10" sid="10">
+        Call this the Problem of Explanation (but don't confuse this with Explanatory Gap problems, which are quite different). [#REF]
+       </s>
+      </p>
+      <a class="fnref" href="#f1" id="fnref_f1">
+       <p>
+        <s pid="11" sid="1">
+         I have argued that there is a dilemma for the traditional representationalist about pleasure and pain qualia: she will face either the Problem of Function or the Problem of Explanation.
+        </s>
+        <s pid="11" sid="2">
+         But intentionalism can be salvaged if we can find some intentional but non-representational difference between Francis's paper-cut qualia and mine.
+        </s>
+        <s pid="11" sid="3">
+         It is to this task that I now turn.
+        </s>
+       </p>
+      </a>
+     </div>
+     <a class="fnref" href="#f1" id="fnref_f1">
+     </a>
+     <div>
+      <a class="fnref" href="#f1" id="fnref_f1">
+       <div class="head_1">
+        II. A Broader Intentionalism
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         Imperatives are intentional items.
+        </s>
+        <s pid="12" sid="2">
+         We tell one another to do things – I may say "Shut the door" – and these imperatives have intentional content; in this case, the content is, roughly, that the door be shut by the person to whom I issued the imperative.
+        </s>
+        <s pid="12" sid="3">
+         But the intentional content of an imperative is not representational, since imperatives are not true or false.
+        </s>
+        <s pid="12" sid="4">
+         To be sure, an imperative may be satisfied or not: if you shut the door, my imperative to you gets satisfied, and if not, my imperative remains unsatisfied.
+        </s>
+        <s pid="12" sid="5">
+         But one should not confuse the notion of satisfaction with the notion of truth.
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         The explanation for this difference between representations and imperatives lies in the direction of fit between the intentional content and the world.
+        </s>
+        <s pid="13" sid="2">
+         For something to be a representation, its intentional content must have content-to-world direction of fit; that is, a representation is the sort of thing that tries (or is designed, or evolved, or …) to track conditions in the world.
+        </s>
+        <s pid="13" sid="3">
+         For something to be an imperative, by contrast, its intentional content must have world-to-content direction of fit; that is, an imperative is the sort of thing that guides one to change the world to match its content.
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         The term "imperative" invites a misunderstanding which I need to avoid.
+        </s>
+        <s pid="14" sid="2">
+         Typically, we think of imperatives as being part of language, a language that includes conversational presuppositions, implicatures, and a host of other complexities.
+        </s>
+        <s pid="14" sid="3">
+         We do not think of, say, plants as delivering any imperatives, even though plants do send signals to their buds to open.
+        </s>
+        <s pid="14" sid="4">
+         (Similarly we do not think of plants as having beliefs, even though parts of the plant track changes in temperature, pressure, etc.)
+        </s>
+        <s pid="14" sid="5">
+         I need a stripped-down notion of imperatives, one somewhere between the full-blown imperatives found in natural language and the proto-imperatives found in plant signalling.
+        </s>
+        <s pid="14" sid="6">
+         For the remainder of the paper, I will use the term imperative in a non-standard way, and anyone who objects to the use of this term may supply a more innocuous one.
+        </s>
+        <s pid="14" sid="7">
+         By imperative , I will refer to things that have intentional content with world-to-content direction of fit.
+        </s>
+        <s pid="14" sid="8">
+         I will not presuppose any of the other rich features that occur in natural language.
+        </s>
+        <s pid="14" sid="9">
+         There are, however, conditions that an item must meet to count as being intentional at all, and imperatives must meet those conditions; it is quite likely that plant signals do not meet those conditions.
+        </s>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         As a first pass, I propose that pain is just a self-imperative to avoid whatever results in certain specified qualia, while pleasure is just a self-imperative to do whatever results in certain specified qualia.
+        </s>
+        <s pid="15" sid="2">
+         (Call this the self-imperative account of qualia.)
+        </s>
+        <s pid="15" sid="3">
+         For instance, suppose I enjoy eating my stir-fry dinner.
+        </s>
+        <s pid="15" sid="4">
+         I savor the saltiness of the soy sauce, the texture of the broccoli, and the flavor of the mushrooms.
+        </s>
+        <s pid="15" sid="5">
+         This whole experience involves qualia.
+        </s>
+        <s pid="15" sid="6">
+         According to an intentionalist account, the qualia of the taste of the soy sauce, the broccoli, and the mushrooms can be explained fully in terms of the features F1, F2, F3, …, and Fn that my brain attributes to the food: a certain texture, a given amount of saltiness, and so on.
+        </s>
+        <s pid="15" sid="7">
+         Let's say that feature F3 is the taste of the soy sauce, feature F41 is the texture of the broccoli, and feature F908 is the flavor of the mushrooms.
+        </s>
+        <s pid="15" sid="8">
+         I propose that the pleasure involved in my consumption of the meal consists in the following intentional feature of my brain: a self-imperative to do whatever results in features F3, F41, and F908.
+        </s>
+        <s pid="15" sid="9">
+         Every pleasure involves such self-imperatives which refer to particular features.
+        </s>
+        <s pid="15" sid="10">
+         Similarly, the experience of a paper cut might involve a representation of the paper cut with features G1, G2, …, G312.
+        </s>
+        <s pid="15" sid="11">
+         This experience is painful for me because my brain also sends a self-imperative to avoid whatever results in some of these features – perhaps features G3, G47, and G288.
+        </s>
+        <s pid="15" sid="12">
+         That self-imperative is what the painfulness of the sensation consists in.
+        </s>
+       </p>
+      </a>
+      <p>
+       <s pid="16" sid="1">
+        [#REF
+       </s>
+       <s pid="16" sid="2">
+        A qualification is in order.
+       </s>
+       <s pid="16" sid="3">
+        No representationalist holds that every representation is a quale; the thesis is only that every quale is nothing more than a certain kind of representation.
+       </s>
+       <s pid="16" sid="4">
+        I naturally must extend this point to my intentionalist account.
+       </s>
+       <s pid="16" sid="5">
+        Not every self-imperative is a pleasure or pain quale, but every pleasure or pain quale is a self-imperative of a certain kind.
+       </s>
+       <s pid="16" sid="6">
+        In this paper, I will not try to specify what that certain kind is, for that is a project for another paper.] [#REF 5]
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        There are some details left to be explained in the self-imperative account.
+       </s>
+       <s pid="17" sid="2">
+        There are plenty of sensations that are pleasant in some respects and painful in other respects; maybe (though I don't know) there are some sensations that are pleasant and painful in precisely the same respect.
+       </s>
+       <s pid="17" sid="3">
+        An example of the former: I might continue to eat a sumptuous meal even after I am full.
+       </s>
+       <s pid="17" sid="4">
+        The eating is pleasant, in that I enjoy the taste of the food; it is painful, in that I simultaneously develop a stomach ache.
+       </s>
+       <s pid="17" sid="5">
+        On my account, this experience is pleasantly painful because my brain sends a self-imperative to seek out rich food and another self-imperative to avoid making myself too full.
+       </s>
+       <s pid="17" sid="6">
+        Perhaps it is even possible for there to be an experience that is pleasant and painful in the same respect .
+       </s>
+       <s pid="17" sid="7">
+        If this is a genuine possibility, then, on my account, the brain would send a self-imperative to seek out and to avoid whatever results in one and the same feature.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Of course, pleasures and pains are not all equal.
+       </s>
+       <s pid="18" sid="2">
+        Being stabbed in the arm hurts considerably more than being injected with a flu vaccine; having an orgasm is typically much more pleasurable than eating pumpkin pie.
+       </s>
+       <s pid="18" sid="3">
+        But some pleasures and pains are difficult to compare (as utilitarians frequently discover to their chagrin).
+       </s>
+       <s pid="18" sid="4">
+        I do not know which is more pleasant for me: listening to a beautiful song for the first time or winning a close game of chess.
+       </s>
+       <s pid="18" sid="5">
+        Nor do I know whether I would rather run 5 miles as hard as I can or have a low-grade fever for a day.
+       </s>
+       <s pid="18" sid="6">
+        The self-imperative account can explain both of these facts.
+       </s>
+       <s pid="18" sid="7">
+        For self-imperatives can have different strengths, and these strengths may not always be comparable.
+       </s>
+       <s pid="18" sid="8">
+        The self-imperative in the case in which I am stabbed in the arm is much stronger than the self-imperative in the flu-vaccine case; the self-imperative involved in the orgasm case is also typically much stronger than the self-imperative in the pumpkin pie case.
+       </s>
+       <s pid="18" sid="9">
+        But there may be two self-imperatives such that neither imperative dominates the other.
+       </s>
+       <s pid="18" sid="10">
+        That is, in some situations, the first imperative will override the second, and in other situations, the second imperative will override the first.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       III. Problems Revisited
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        Now let's return to the puzzles about pain and pleasure and see how well the self-imperative account handles them.
+       </s>
+       <s pid="19" sid="2">
+        I suggested earlier that traditional representationalism, which analyzes pain in terms of damage representations and pleasure in terms of positive bodily change representations, ends up in a dilemma: it succumbs either to the Problem of Function or the Problem of Explanation.
+       </s>
+       <s pid="19" sid="3">
+        But the self-imperative account avoids both horns.
+       </s>
+       <s pid="19" sid="4">
+        Let's start with the Problem of Function, that is, the problem of explaining why organisms seek out pleasurable experiences and avoid painful ones.
+       </s>
+       <s pid="19" sid="5">
+        It is quite clear why, if the imperative account is correct, an organism would avoid painful stimuli and seek out pleasurable stimuli: because pain just is a self-imperative to avoid whatever results in a specified set of qualia, and pleasure just is a self-imperative to seek out whatever results in a specified set of qualia.
+       </s>
+       <s pid="19" sid="6">
+        A self-imperative is a causally efficacious feature of the mind, and is a functionally kosher item.
+       </s>
+       <s pid="19" sid="7">
+        One of functionalism's traditional strengths has been its ability to link the mind to behavior and observable states of the organism – features which can be studied in familiar scientific ways – and the self-imperative account extends that strength to the study of qualia.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        The self-imperative account also avoids the Problem of Explanation.
+       </s>
+       <s pid="20" sid="2">
+        As I argued above, to avoid the Problem of Function, the traditional representationalist had to concede the possibility of someone who feels pleasure when she eats sundaes, but who avoids sundaes because of these pleasure qualia.
+       </s>
+       <s pid="20" sid="3">
+        For the traditional representationalist dodged the Problem of Function by positing independent extra reflexes or desires to avoid the painful and to seek out the pleasurable; this independence of reflexes and desires from pain and pleasure qualia leads straight to the Problem of Explanation.
+       </s>
+       <s pid="20" sid="4">
+        The self-imperative account doesn't need to posit reflexes or desires to avoid the painful and seek out the pleasurable, so the Problem of Explanation never gets off the ground.
+       </s>
+      </p>
+      <p>
+       <s pid="21" sid="1">
+        The self-imperative account is also able to handle the case of Francis.
+       </s>
+       <s pid="21" sid="2">
+        Recall that Francis is like the rest of us in most respects, except for one quirk: she enjoys all of the sensations that we find painful.
+       </s>
+       <s pid="21" sid="3">
+        She likes paper cuts, headaches, broken bones, and so on.
+       </s>
+       <s pid="21" sid="4">
+        The traditional representationalist account had some options about what to say about folks like Francis, but none of these options seemed especially appealing.
+       </s>
+       <s pid="21" sid="5">
+        I think that the self-imperative account offers a satisfying story about Francis and her ilk.
+       </s>
+       <s pid="21" sid="6">
+        I will focus on explaining both the differences and the similarities between ordinary people and Francis.
+       </s>
+       <s pid="21" sid="7">
+        For an ordinary person, the sensation of a paper cut includes, not only representations about the type of damage involved, but also the self-imperative to avoid such representations.
+       </s>
+       <s pid="21" sid="8">
+        Francis's paper cut sensations involve the same representations of damage as our paper cut sensations.
+       </s>
+       <s pid="21" sid="9">
+        But her paper cut sensations also include the self-imperative to seek out those sensations.
+       </s>
+       <s pid="21" sid="10">
+        The identity between Francis's damage representations and ours explains the similarities between our paper cut sensations and Francis's paper cut sensations.
+       </s>
+       <s pid="21" sid="11">
+        The difference between Francis's self-imperative and ours explains two dramatic differences between us and Francis: the difference in behaviors (Francis deliberately cuts herself, whereas the rest of us take precautions against being cut) and the difference in what paper cuts feel like (Francis finds them enjoyable, whereas we find them painful).
+       </s>
+      </p>
+      <p>
+       <s pid="22" sid="1">
+        I conclude that, if one is inclined to be an intentionalist in the first place, one ought to accept a broad intentionalism that includes self-imperatives.
+       </s>
+       <s pid="22" sid="2">
+        Traditional representationalism does not avail itself of much-needed intentionalist resources and thus cannot satisfactorily explain the link between pain or pleasure qualia and behavior.
+       </s>
+       <s pid="22" sid="3">
+        The self-imperative account faces no such difficulties.
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        I suspect that self-imperative accounts can be extended beyond pleasure and pain qualia.
+       </s>
+       <s pid="23" sid="2">
+        Several other classes of qualia involve a necessary connection to dispositions to act, and, as I've argued, representationalism is inadequate in such cases.
+       </s>
+       <s pid="23" sid="3">
+        Qualia associated with emotions are the largest class of such cases, but other examples include hunger-qualia, thirst-qualia, and itchiness-qualia.
+       </s>
+       <s pid="23" sid="4">
+        Take, for example, fear-qualia.
+       </s>
+       <s pid="23" sid="5">
+        There is something it is like to feel fear.
+       </s>
+       <s pid="23" sid="6">
+        But, for a creature to count as feeling fear, it must have some disposition to behave in certain ways (e.g., to flee or hide); a creatures that has no such dispositions is not experiencing fear.
+       </s>
+       <s pid="23" sid="7">
+        Likewise, a creature with no disposition to seek or consume food is not experiencing hunger-qualia, and a creature with no disposition to scratch itself isn't experiencing itchy-qualia.
+       </s>
+       <s pid="23" sid="8">
+        A self-imperative account has the resources to explain the necessary connection between such qualia and dispositions to act; a representationalist account does not.
+       </s>
+       <s pid="23" sid="9">
+        I do not have time to defend this claim at length here, but this set of cases suggests that self-imperatives may be an important, widespread, and overlooked feature of qualia.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="footnotes">
+      <div id="f1">
+       <a href="#fnref_f1">
+        1.
+       </a>
+       1 The traditional representationalist may want to alter his position to deal with this worry. He can say that sundaes taste good to me because they are represented as beneficial and I have a desire for them. Depending on one's account of desires, this modified position may shade into my own view.
+      </div>
+      <div id="fn1">
+       <a href="#fnref_fn1">
+        2.
+       </a>
+       i David Chalmers has expressed such a view in Chapter 1 of The Conscious Mind (New York: Oxford University Press, 1996).
+      </div>
+      <div id="fn2">
+       <a href="#fnref_fn2">
+        3.
+       </a>
+       ii For classical expositions of these problems, see, respectively, "The Inverted Spectrum," by Sydney Shoemaker, in The Journal of Philosophy, volume LXXIX, No. 7, July 1982, and  "Inverted Earth," by Ned Block, in Philosophical Perspectives, 4, 1990; "Epiphenomenal Qualia," by Frank Jackson, in Philosophical Quarterly 32:127-136, 1982; and "Materialism and Qualia: The Explanatory Gap," by Joseph Levine, in Pacific Philosophical Quarterly 64: 354-61, 1983.
+      </div>
+      <div id="fn3">
+       <a href="#fnref_fn3">
+        4.
+       </a>
+       iii Tye and Lycan are prime examples (see above endnote), and other examples include Fred Dretske (cf. Naturalizing the Mind, Cambridge, MA: The MIT Press, 1995) and John McDowell (cf. "The Content of Perceptual Experience," in Philosophical Quarterly, 1994).
+      </div>
+      <div id="fn4">
+       <a href="#fnref_fn4">
+        5.
+       </a>
+       iv In broad outline, Tye's representationalism is of this sort. While other representationalist accounts may differ in the details, the charges that I levy against representationalism apply to them, as well.
+      </div>
+      <div id="fn5">
+       <a href="#fnref_fn5">
+        6.
+       </a>
+       v For one view about what such conditions might look like, see Michael Tye's Ten Problems of Consciousness: A Representational Theory of the Phenomenal Mind (Cambridge, MA: MIT Press, 1995).
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Korean
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     27.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Jane Clark
+      </p>
+      <p>
+       Hello, I spent two days at your annual international arts festival. I was very impressed and I wish you could make the festival better next year.
+      </p>
+      <p>
+       I think
+       <ns type="MD">
+       </ns>
+       International Arts Festival is a great idea, because you can see how other
+       <ns type="FN">
+        <i>
+         country's
+        </i>
+       </ns>
+       art is, but I think in this festival, there were
+       <ns type="CE">
+        too many
+        <ns type="FN">
+         <i>
+          country's
+         </i>
+        </ns>
+        people
+       </ns>
+       . You should pick only six countries, so it won't be very busy and another reason is that the concert hall is too small
+       <ns type="MC">
+       </ns>
+       that the people
+       <ns type="TV">
+        <i>
+         can't
+        </i>
+       </ns>
+       even dance
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       classical concerts.
+      </p>
+      <p>
+       This years' 'plays and films' was too short. I was very disappointed about this, but the other shows were great. I felt very good about all these shows.
+      </p>
+      <p>
+       In my opinion, the tickets for all events is a wonderful idea, because everybody has a chance to see everything and the people would think this is a great festival.
+      </p>
+      <p>
+       What do you think about picking five people and
+       <ns type="FV">
+        <i>
+         give
+        </i>
+       </ns>
+       them tickets for 'Art Travel'? I think this is a good idea. Generally it was very good and I
+       <ns type="RV">
+        <i>
+         wish
+        </i>
+       </ns>
+       more people
+       <ns type="TV">
+        <i>
+         would
+        </i>
+       </ns>
+       come next year.
+      </p>
+      <p>
+       Yours Faithfully,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Jane Clark
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Hello, I spent two days at your annual international arts festival.
+       </s>
+       <s pid="2" sid="2">
+        I was very impressed and I wish you could make the festival better next year.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I think  International Arts Festival is a great idea, because you can see how other country's art is, but I think in this festival, there were too many country's people.
+       </s>
+       <s pid="3" sid="2">
+        You should pick only six countries, so it won't be very busy and another reason is that the concert hall is too small  that the people can't even dance in classical concerts.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        This years' 'plays and films' was too short.
+       </s>
+       <s pid="4" sid="2">
+        I was very disappointed about this, but the other shows were great.
+       </s>
+       <s pid="4" sid="3">
+        I felt very good about all these shows.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In my opinion, the tickets for all events is a wonderful idea, because everybody has a chance to see everything and the people would think this is a great festival.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        What do you think about picking five people and give them tickets for 'Art Travel'?
+       </s>
+       <s pid="6" sid="2">
+        I think this is a good idea.
+       </s>
+       <s pid="6" sid="3">
+        Generally it was very good and I wish more people would come next year.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours Faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Tim, I'm glad to have your letter back
+       <ns type="MY">
+       </ns>
+       soon. Do you want to know about our country's rules? I think your country and our country's rules are the same. First,
+       <ns type="RP">
+        <i>
+         In
+        </i>
+       </ns>
+       school, we are not allowed to run. This is very important, because many accidents happen because of running. When we need to go upstairs, you have to keep left and when you have to go downstairs, you need to keep left as well. You have to do your homework and do your best
+       <ns type="MT">
+       </ns>
+       what you're asked to do. You can't go to the toilet during the class, because you are interrupting the other
+       <ns type="RP">
+        <i>
+         student's
+        </i>
+       </ns>
+       study and there are more.. like when the class starts you have to keep quiet and you can't say anything while the teacher speaks. Second, at home we all have different rules. Some
+       <ns type="AGN">
+        <i>
+         family
+        </i>
+       </ns>
+       have rules that you have to
+       <ns type="RV">
+        put
+       </ns>
+       spoons and dishes everyday. I think the main rule is when you can play computer games, because they love computer games. Tell me about English rules. I'm curious about it.
+       <ns type="UD">
+        <i>
+         Your
+        </i>
+       </ns>
+       best wishes from
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Tim, I'm glad to have your letter back  soon.
+       </s>
+       <s pid="1" sid="2">
+        Do you want to know about our country's rules?
+       </s>
+       <s pid="1" sid="3">
+        I think your country and our country's rules are the same.
+       </s>
+       <s pid="1" sid="4">
+        First,
+       </s>
+       <s pid="1" sid="5">
+        In school, we are not allowed to run.
+       </s>
+       <s pid="1" sid="6">
+        This is very important, because many accidents happen because of running.
+       </s>
+       <s pid="1" sid="7">
+        When we need to go upstairs, you have to keep left and when you have to go downstairs, you need to keep left as well.
+       </s>
+       <s pid="1" sid="8">
+        You have to do your homework and do your best  what you're asked to do.
+       </s>
+       <s pid="1" sid="9">
+        You can't go to the toilet during the class, because you are interrupting the other student's study and there are more.. like when the class starts you have to keep quiet and you can't say anything while the teacher speaks.
+       </s>
+       <s pid="1" sid="10">
+        Second, at home we all have different rules.
+       </s>
+       <s pid="1" sid="11">
+        Some family have rules that you have to put spoons and dishes everyday.
+       </s>
+       <s pid="1" sid="12">
+        I think the main rule is when you can play computer games, because they love computer games.
+       </s>
+       <s pid="1" sid="13">
+        Tell me about English rules.
+       </s>
+       <s pid="1" sid="14">
+        I'm curious about it.
+       </s>
+       <s pid="1" sid="15">
+        Your best wishes from
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      41-50
+     </age>
+    </personnel>
+    <score>
+     24.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       17th
+       <ns type="S">
+        <i>
+         Juni
+        </i>
+       </ns>
+       2000
+      </p>
+      <p>
+       The manager of the Circle Theatre
+      </p>
+      <p>
+       Dear Sir,
+      </p>
+      <p>
+       I'm in London
+       <ns type="M">
+       </ns>
+       first time and I wondered what is interesting on
+       <ns type="DD">
+        <i>
+         yours
+        </i>
+       </ns>
+       stage: I read in
+       <ns type="MD">
+       </ns>
+       newspaper the
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       about
+       <ns type="MD">
+       </ns>
+       best musical show. In
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="DN">
+        <i>
+         starring
+        </i>
+       </ns>
+       was very
+       <ns type="RJ">
+        <i>
+         interested
+        </i>
+       </ns>
+       - Danny Brook and Tina Truelove.
+      </p>
+      <p>
+       I
+       <ns type="S">
+        <i>
+         desided
+        </i>
+       </ns>
+       to go to your theatre but at the beginning
+       <ns type="MA">
+       </ns>
+       was the
+       <ns type="DN">
+        tranbles
+       </ns>
+       . In
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         advertisment
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       <ns type="RV">
+        <i>
+         was
+        </i>
+       </ns>
+       - "discounts available". I'm
+       <ns type="MD">
+       </ns>
+       teacher and in
+       <ns type="S">
+        <i>
+         Polan
+        </i>
+       </ns>
+       I have discounts but in England
+       <ns type="R">
+        <i>
+         no
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I know this is
+       <ns type="RQ">
+        <i>
+         other
+        </i>
+       </ns>
+       country. I was disappointed because you wrote about it!
+      </p>
+      <p>
+       Otherwise, the musical show started too late
+       <ns type="MP">
+       </ns>
+       at 20 15
+       <ns type="RY">
+        <i>
+         not
+        </i>
+       </ns>
+       17 30! This was a waste of time. I was very
+       <ns type="S">
+        <i>
+         suppresed
+        </i>
+       </ns>
+       when I saw
+       <ns type="MD">
+       </ns>
+       different actor
+       <ns type="RP">
+        <i>
+         , it
+        </i>
+       </ns>
+       wasn't Danny Brook. This musical show wasn't "the best". I went out
+       <ns type="FY">
+        <i>
+         earlier
+        </i>
+       </ns>
+       but the theatre restaurant was closed. I had
+       <ns type="MD">
+       </ns>
+       very disappointing evening. I
+       <ns type="RV">
+        <i>
+         would
+        </i>
+       </ns>
+       ask you for
+       <ns type="MD">
+       </ns>
+       money back.
+      </p>
+      <p>
+       Yours
+       <ns type="RY">
+        <i>
+         <ns type="DY">
+          <i>
+           sincerelly
+          </i>
+         </ns>
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        17th Juni 2000
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The manager of the Circle Theatre
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Dear Sir,
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I'm in London  first time and I wondered what is interesting on yours stage: I read in  newspaper the advertisment about  best musical show.
+       </s>
+       <s pid="4" sid="2">
+        In  advertisment  starring was very interested - Danny Brook and Tina Truelove.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I desided to go to your theatre but at the beginning  was the tranbles.
+       </s>
+       <s pid="5" sid="2">
+        In  advertisment  was - "discounts available".
+       </s>
+       <s pid="5" sid="3">
+        I'm  teacher and in Polan I have discounts but in England no, I know this is other country.
+       </s>
+       <s pid="5" sid="4">
+        I was disappointed because you wrote about it!
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Otherwise, the musical show started too late at 20 15 not 17 30!
+       </s>
+       <s pid="6" sid="2">
+        This was a waste of time.
+       </s>
+       <s pid="6" sid="3">
+        I was very suppresed when I saw  different actor, it wasn't Danny Brook.
+       </s>
+       <s pid="6" sid="4">
+        This musical show wasn't "the best".
+       </s>
+       <s pid="6" sid="5">
+        I went out earlier but the theatre restaurant was closed.
+       </s>
+       <s pid="6" sid="6">
+        I had  very disappointing evening.
+       </s>
+       <s pid="6" sid="7">
+        I would ask you for  money back.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours sincerelly
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       "Fashion of the Future"
+      </p>
+      <p>
+       What will clothes be like 100 years from now? This is
+       <ns type="MD">
+       </ns>
+       very interesting question for us and maybe very important too. We think and
+       <ns type="RV">
+        <i>
+         speak
+        </i>
+       </ns>
+       about it in our families.
+      </p>
+      <p>
+       I saw one week ago on TV
+       <ns type="R">
+        (the
+        <ns type="RP">
+         <i>
+          23th
+         </i>
+        </ns>
+        annual)
+       </ns>
+       the fashion show in Paris and I was very
+       <ns type="S">
+        <i>
+         surrprised
+        </i>
+       </ns>
+       because of
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       style. All
+       <ns type="MD">
+       </ns>
+       models had
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       very strange long shoes made from black
+       <ns type="RN">
+        <i>
+         skin
+        </i>
+       </ns>
+       , the
+       <ns type="S">
+        <i>
+         trouses
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       quite short and the jackets
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       elegant with
+       <ns type="S">
+        <i>
+         blazzend
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         materiell
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       I think the fashion of the future will be very different but suitable for all people.
+       <ns type="UD">
+        <i>
+         The people
+        </i>
+       </ns>
+       will wear clothes
+       <ns type="MV">
+       </ns>
+       from natural materials like silk,
+       <ns type="M">
+       </ns>
+       comfortable and
+       <ns type="S">
+        <i>
+         elgant
+        </i>
+       </ns>
+       . The colours will be
+       <ns type="M">
+       </ns>
+       very good quality and the
+       <ns type="FN">
+        <i>
+         fashion
+        </i>
+       </ns>
+       will
+       <ns type="FV">
+        <i>
+         be changed
+        </i>
+       </ns>
+       very quickly like now.
+      </p>
+      <p>
+       Because the world is now a global village
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       people will wear at least one
+       <ns type="RN">
+        <i>
+         part
+        </i>
+       </ns>
+       of traditional or national
+       <ns type="RN">
+        <i>
+         clothes
+        </i>
+       </ns>
+       (for example
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         peasnt
+        </i>
+       </ns>
+       jacket or hat)
+       <ns type="MP">
+       </ns>
+       like
+       <ns type="M">
+       </ns>
+       now in rural areas from time to time.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        "Fashion of the Future"
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        What will clothes be like 100 years from now?
+       </s>
+       <s pid="2" sid="2">
+        This is  very interesting question for us and maybe very important too.
+       </s>
+       <s pid="2" sid="3">
+        We think and speak about it in our families.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I saw one week ago on TV (the 23th annual) the fashion show in Paris and I was very surrprised because of this style.
+       </s>
+       <s pid="3" sid="2">
+        All  models had a very strange long shoes made from black skin, the trouses was quite short and the jackets was elegant with blazzend materiell.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I think the fashion of the future will be very different but suitable for all people.
+       </s>
+       <s pid="4" sid="2">
+        The people will wear clothes  from natural materials like silk,  comfortable and elgant.
+       </s>
+       <s pid="4" sid="3">
+        The colours will be  very good quality and the fashion will be changed very quickly like now.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Because the world is now a global village the people will wear at least one part of traditional or national clothes (for example  peasnt jacket or hat) like  now in rural areas from time to time.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

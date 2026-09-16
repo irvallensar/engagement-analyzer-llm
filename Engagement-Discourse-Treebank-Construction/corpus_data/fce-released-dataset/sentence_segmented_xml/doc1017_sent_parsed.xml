@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Thai
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     15.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      1.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Manager,
+      </p>
+      <p>
+       I'm a person
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       went to see the musical show
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I would like to know something about
+       <ns type="MD">
+       </ns>
+       "Over the rainbow" programme
+       <ns type="RP">
+        <i>
+         ?
+        </i>
+       </ns>
+      </p>
+      <p>
+       <ns type="CE">
+        You have informed the actor, times, discount and the restaurant to people, but actually what did you do?
+       </ns>
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The first
+        </i>
+       </ns>
+       , you have changed the actor.
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The second
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        the time is late from 19.30, it started 20.15
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The third
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        the tickets have not the discount
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="UD">
+        <i>
+         The last
+        </i>
+       </ns>
+       , after
+       <ns type="MD">
+       </ns>
+       show, I couldn't go to the restaurant, because it was closed.
+      </p>
+      <p>
+       What's happened?
+       <ns type="R">
+        This is the good theatre do, or not?
+       </ns>
+       This is
+       <ns type="RD">
+        <i>
+         the
+        </i>
+       </ns>
+       famous theatre.
+       <ns type="CE">
+        You know, What did people feel? Everybody attented go to the show, funny, and
+        <ns type="S">
+         <i>
+          happ
+         </i>
+        </ns>
+        in the end, and what have we go then?
+       </ns>
+       <ns type="S">
+        <i>
+         Disapponted
+        </i>
+       </ns>
+       !
+       <ns type="RV">
+        <i>
+         Thank
+        </i>
+       </ns>
+       about that. If you
+       <ns type="TV">
+        <i>
+         <ns type="RP">
+          <i>
+           can not
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RV">
+        <ns type="FV">
+         <i>
+          managed
+         </i>
+        </ns>
+       </ns>
+       the
+       <ns type="S">
+        <i>
+         programe
+        </i>
+       </ns>
+       , why
+       <ns type="MY">
+        <i>
+         did
+        </i>
+       </ns>
+       you
+       <ns type="S">
+        <i>
+         informe
+        </i>
+       </ns>
+       people before
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         programe
+        </i>
+       </ns>
+       <ns type="TV">
+        <i>
+         start
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       <ns type="CE">
+        I
+        <ns type="S">
+         <i>
+          tought
+         </i>
+        </ns>
+        you
+        <ns type="S">
+         <i>
+          inderstood
+         </i>
+        </ns>
+        '; please send money back to me, you know why, don't answer me?
+       </ns>
+      </p>
+      <p>
+       Thank you,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Manager,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm a person,  went to see the musical show, I would like to know something about  "Over the rainbow" programme?
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        You have informed the actor, times, discount and the restaurant to people, but actually what did you do?
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The first, you have changed the actor.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The second, the time is late from 19.30, it started 20.15.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        The third, the tickets have not the discount.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        The last, after  show, I couldn't go to the restaurant, because it was closed.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        What's happened?
+       </s>
+       <s pid="8" sid="2">
+        This is the good theatre do, or not?
+       </s>
+       <s pid="8" sid="3">
+        This is the famous theatre.
+       </s>
+       <s pid="8" sid="4">
+        You know,
+       </s>
+       <s pid="8" sid="5">
+        What did people feel?
+       </s>
+       <s pid="8" sid="6">
+        Everybody attented go to the show, funny, and happ in the end, and what have we go then?
+       </s>
+       <s pid="8" sid="7">
+        Disapponted!
+       </s>
+       <s pid="8" sid="8">
+        Thank about that.
+       </s>
+       <s pid="8" sid="9">
+        If you can not managed the programe, why did you informe people before  programe start?
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        I tought you inderstood'; please send money back to me, you know why, don't answer me?
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Thank you,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      1.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="CE">
+        Now we know, our world
+        <ns type="AGV">
+         <i>
+          have
+         </i>
+        </ns>
+        developed to new world,
+        <ns type="S">
+         <i>
+          becase
+         </i>
+        </ns>
+        we have high technology to do
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="CE">
+        If we came back to the past, we felt everything, it was so difficult to do, we would have plane and done by
+        <ns type="DA">
+         <i>
+          ourself
+         </i>
+        </ns>
+        and last time
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="R">
+        <i>
+         In the present
+        </i>
+       </ns>
+       ,
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         teachnology
+        </i>
+       </ns>
+       is a
+       <ns type="RN">
+        <i>
+         past
+        </i>
+       </ns>
+       of life.
+       <ns type="R">
+        It started from got up in the morning, we have the machine help us to cook, iron,
+        <ns type="DN">
+         <i>
+          cleanning
+         </i>
+        </ns>
+        , washing, and then we went out to work, there are car, sky train to travel for help us convenience and quickly
+       </ns>
+       .
+      </p>
+      <p>
+       While we
+       <ns type="TV">
+        <i>
+         worked
+        </i>
+       </ns>
+       at the office, there are the computer and equipment
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         help
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       to work
+       <ns type="R">
+        and easy
+       </ns>
+       <ns type="RP">
+        <i>
+         , after
+        </i>
+       </ns>
+       we have finished work, we come back home,
+       <ns type="MC">
+       </ns>
+       there
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       television
+       <ns type="R">
+        for get information, news, data by different way and quickly
+       </ns>
+       .
+      </p>
+      <p>
+       How has modern technology changed your
+       <ns type="RJ">
+        <i>
+         daily
+        </i>
+       </ns>
+       life?
+      </p>
+      <p>
+       <ns type="R">
+        We appreciated the
+        <ns type="S">
+         <i>
+          mordern
+         </i>
+        </ns>
+        technology changed my daily life for help every easy and quickly, we have time to do many things
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Now we know, our world have developed to new world, becase we have high technology to do.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        If we came back to the past, we felt everything, it was so difficult to do, we would have plane and done by ourself and last time.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In the present, the teachnology is a past of life.
+       </s>
+       <s pid="3" sid="2">
+        It started from got up in the morning, we have the machine help us to cook, iron, cleanning, washing, and then we went out to work, there are car, sky train to travel for help us convenience and quickly.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        While we worked at the office, there are the computer and equipment for help  to work and easy, after we have finished work, we come back home,  there are  television for get information, news, data by different way and quickly.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        How has modern technology changed your daily life?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        We appreciated the mordern technology changed my daily life for help every easy and quickly, we have time to do many things.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

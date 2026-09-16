@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Polish
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     21.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs. Smith,
+      </p>
+      <p>
+       I have just received the letter from you and I'm
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to you as soon as
+       <ns type="S">
+        <i>
+         posible
+        </i>
+       </ns>
+       . I can promise
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       you that I'll do my best to help you. You told me that you are the leader of a group of students this year, because Mr. Brown is ill. Poor Mr. Brown
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I hope he will get better soon.
+      </p>
+      <p>
+       <ns type="UC">
+        <i>
+         As
+        </i>
+       </ns>
+       I've just checked
+       <ns type="MC">
+       </ns>
+       the group has been booked into The Palace Hotel. The best way to get from there to the conference is by
+       <ns type="S">
+        <i>
+         coache
+        </i>
+       </ns>
+       ,
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       I have arranged for you. The driver
+       <ns type="MP">
+       </ns>
+       Mr. Olsson
+       <ns type="MP">
+       </ns>
+       <ns type="R">
+        works for us since
+       </ns>
+       . He will pick you up at
+       <ns type="RP">
+        <i>
+         11 oo
+        </i>
+       </ns>
+       a.m. The conference is from
+       <ns type="RP">
+        <i>
+         12 oo
+        </i>
+       </ns>
+       to
+       <ns type="RP">
+        <i>
+         2 oo
+        </i>
+       </ns>
+       p.m. At the end of
+       <ns type="MD">
+       </ns>
+       conference
+       <ns type="MA">
+       </ns>
+       is a party from
+       <ns type="RP">
+        <i>
+         2 oo
+        </i>
+       </ns>
+       to
+       <ns type="RP">
+        <i>
+         3 oo
+        </i>
+       </ns>
+       . I suggest you
+       <ns type="FV">
+        <i>
+         to wear
+        </i>
+       </ns>
+       comfortable and nice clothes because I have
+       <ns type="IV">
+        <i>
+         planed
+        </i>
+       </ns>
+       a sightseeing
+       <ns type="MN">
+       </ns>
+       for you
+       <ns type="MP">
+        <i>
+         before
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       your plane at
+       <ns type="RP">
+        <i>
+         8 oo
+        </i>
+       </ns>
+       p.m. I'd like to show you a museum, a gallery and the gardens that
+       <ns type="TV">
+        <i>
+         are belonging
+        </i>
+       </ns>
+       to the palace. Then we can have a rest in the
+       <ns type="S">
+        <i>
+         caffee
+        </i>
+       </ns>
+       and talk before your flight home. I think I
+       <ns type="TV">
+        <i>
+         gave
+        </i>
+       </ns>
+       you all
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         importen
+        </i>
+       </ns>
+       <ns type="CN">
+        <i>
+         informations
+        </i>
+       </ns>
+       . I hope to see you all soon
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs. Smith,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have just received the letter from you and I'm writting to you as soon as posible.
+       </s>
+       <s pid="2" sid="2">
+        I can promise to you that I'll do my best to help you.
+       </s>
+       <s pid="2" sid="3">
+        You told me that you are the leader of a group of students this year, because Mr. Brown is ill.
+       </s>
+       <s pid="2" sid="4">
+        Poor Mr. Brown, I hope he will get better soon.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        As I've just checked  the group has been booked into The Palace Hotel.
+       </s>
+       <s pid="3" sid="2">
+        The best way to get from there to the conference is by coache, that I have arranged for you.
+       </s>
+       <s pid="3" sid="3">
+        The driver Mr. Olsson works for us since.
+       </s>
+       <s pid="3" sid="4">
+        He will pick you up at 11 oo a.m.
+       </s>
+       <s pid="3" sid="5">
+        The conference is from 12 oo to 2 oo p.m.
+       </s>
+       <s pid="3" sid="6">
+        At the end of  conference  is a party from 2 oo to 3 oo.
+       </s>
+       <s pid="3" sid="7">
+        I suggest you to wear comfortable and nice clothes because I have planed a sightseeing  for you before  your plane at 8 oo p.m.
+       </s>
+       <s pid="3" sid="8">
+        I'd like to show you a museum, a gallery and the gardens that are belonging to the palace.
+       </s>
+       <s pid="3" sid="9">
+        Then we can have a rest in the caffee and talk before your flight home.
+       </s>
+       <s pid="3" sid="10">
+        I think I gave you all  importen informations.
+       </s>
+       <s pid="3" sid="11">
+        I hope to see you all soon,
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      1.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="S">
+        <i>
+         Nowdays
+        </i>
+       </ns>
+       <ns type="RN">
+        motorization
+       </ns>
+       is one of the most important inventions.
+       <ns type="RC">
+        <i>
+         As
+        </i>
+       </ns>
+       you look
+       <ns type="R">
+        <i>
+         <ns type="S">
+          <i>
+           amoung
+          </i>
+         </ns>
+        </i>
+       </ns>
+       everybody has a car or motorcycle.
+       <ns type="R">
+        No matter that people started
+        <ns type="S">
+         <i>
+          worred
+         </i>
+        </ns>
+        more about
+        <ns type="S">
+         <i>
+          polution
+         </i>
+        </ns>
+        in the world
+       </ns>
+       .
+      </p>
+      <p>
+       Let me to tell you
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       how
+       <ns type="MD">
+       </ns>
+       invention of
+       <ns type="MD">
+       </ns>
+       motorcycle has affected my life. I love
+       <ns type="S">
+        <i>
+         motocycles
+        </i>
+       </ns>
+       and I don't think I could live without them. I
+       <ns type="TV">
+        <i>
+         <ns type="RV">
+          <i>
+           drive
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         motocycle
+        </i>
+       </ns>
+       since I was 16
+       <ns type="AGN">
+        <i>
+         year
+        </i>
+       </ns>
+       old. Me and my brother
+       <ns type="UA">
+        <i>
+         we
+        </i>
+       </ns>
+       used to go to
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       rock concerts. We
+       <ns type="TV">
+        <i>
+         have met
+        </i>
+       </ns>
+       a lot of people there
+       <ns type="R">
+        <i>
+         same
+        </i>
+       </ns>
+       mad about
+       <ns type="FN">
+        <i>
+         motorcycle
+        </i>
+       </ns>
+       as we were. We
+       <ns type="TV">
+        <i>
+         were
+         <ns type="RV">
+          <i>
+           avenging
+          </i>
+         </ns>
+        </i>
+       </ns>
+       races and trips. We
+       <ns type="TV">
+        <i>
+         were
+         <ns type="RV">
+          <i>
+           driving
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         motocycles
+        </i>
+       </ns>
+       <ns type="M">
+       </ns>
+       few
+       <ns type="AGN">
+        <i>
+         day
+        </i>
+       </ns>
+       <ns type="S">
+        <i>
+         befour
+        </i>
+       </ns>
+       we finally
+       <ns type="TV">
+        <i>
+         had got
+        </i>
+       </ns>
+       to
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         mitting
+        </i>
+       </ns>
+       points.
+      </p>
+      <p>
+       I really enjoy
+       <ns type="RV">
+        <i>
+         driving
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="S">
+        <i>
+         motocycle
+        </i>
+       </ns>
+       . People say that
+       <ns type="MA">
+       </ns>
+       is dangerous
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I don't think so. When I
+       <ns type="RV">
+        <i>
+         drive
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       is only me and my
+       <ns type="S">
+        <i>
+         motocycle
+        </i>
+       </ns>
+       .
+       <ns type="RT">
+        <i>
+         Before
+        </i>
+       </ns>
+       me and
+       <ns type="RT">
+        <i>
+         after
+        </i>
+       </ns>
+       are my friends
+       <ns type="MP">
+       </ns>
+       <ns type="AGA">
+        <i>
+         that
+        </i>
+       </ns>
+       I like and trust. And around me
+       <ns type="M">
+       </ns>
+       <ns type="RN">
+        <i>
+         nature
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       I can
+       <ns type="RV">
+        watch
+       </ns>
+       and enjoy while we
+       <ns type="RV">
+        <i>
+         shop
+        </i>
+       </ns>
+       <ns type="SX">
+        <i>
+         fore
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       camp. We can go to any place we like,
+       <ns type="FV">
+        <i>
+         avoid
+        </i>
+       </ns>
+       traffic and
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       <ns type="RJ">
+        <i>
+         full
+        </i>
+       </ns>
+       buses
+       <ns type="R">
+        <i>
+         ,
+        </i>
+       </ns>
+       trains, etc.
+      </p>
+      <p>
+       I am really
+       <ns type="S">
+        <i>
+         greatful
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       people who invented the first
+       <ns type="S">
+        <i>
+         motocycle
+        </i>
+       </ns>
+       in the world. I feel very bad about
+       <ns type="M">
+       </ns>
+       that I don't know who
+       <ns type="W">
+        <i>
+         was it
+        </i>
+       </ns>
+       . On the other hand
+       <ns type="R">
+        no matter that I feel very good about that
+       </ns>
+       because that invention has changed and affected my life
+       <ns type="SX">
+        <i>
+         end
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       people I care about
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       <ns type="MA">
+       </ns>
+       has affected my life in
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       very best way.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Nowdays motorization is one of the most important inventions.
+       </s>
+       <s pid="1" sid="2">
+        As you look amoung everybody has a car or motorcycle.
+       </s>
+       <s pid="1" sid="3">
+        No matter that people started worred more about polution in the world.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Let me to tell you, how  invention of  motorcycle has affected my life.
+       </s>
+       <s pid="2" sid="2">
+        I love motocycles and I don't think I could live without them.
+       </s>
+       <s pid="2" sid="3">
+        I drive  motocycle since I was 16 year old.
+       </s>
+       <s pid="2" sid="4">
+        Me and my brother we used to go to the rock concerts.
+       </s>
+       <s pid="2" sid="5">
+        We have met a lot of people there same mad about motorcycle as we were.
+       </s>
+       <s pid="2" sid="6">
+        We were avenging races and trips.
+       </s>
+       <s pid="2" sid="7">
+        We were driving motocycles  few day befour we finally had got to  mitting points.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I really enjoy driving  motocycle.
+       </s>
+       <s pid="3" sid="2">
+        People say that  is dangerous, I don't think so.
+       </s>
+       <s pid="3" sid="3">
+        When I drive  is only me and my motocycle.
+       </s>
+       <s pid="3" sid="4">
+        Before me and after are my friends that I like and trust.
+       </s>
+       <s pid="3" sid="5">
+        And around me  nature that I can watch and enjoy while we shop fore  camp.
+       </s>
+       <s pid="3" sid="6">
+        We can go to any place we like, avoid traffic and to full buses, trains, etc.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        I am really greatful for  people who invented the first motocycle in the world.
+       </s>
+       <s pid="4" sid="2">
+        I feel very bad about  that I don't know who was it.
+       </s>
+       <s pid="4" sid="3">
+        On the other hand no matter that I feel very good about that because that invention has changed and affected my life end  people I care about,  has affected my life in a very best way.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

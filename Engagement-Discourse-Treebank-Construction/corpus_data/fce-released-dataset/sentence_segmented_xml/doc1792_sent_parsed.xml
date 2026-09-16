@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     20.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      2.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir:
+      </p>
+      <p>
+       How are you? I
+       <ns type="TV">
+        <i>
+         have been
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       the musical show "
+       <ns type="RP">
+        <i>
+         over the rainbow
+        </i>
+       </ns>
+       "
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       your theatre last week. I have got a few things to complain about
+       <ns type="MT">
+       </ns>
+       your
+       <ns type="S">
+        <i>
+         theart
+        </i>
+       </ns>
+       . The first thing is in your note
+       <ns type="MA">
+       </ns>
+       says that you
+       <ns type="UV">
+        <i>
+         should have got
+        </i>
+       </ns>
+       Danny Brook in the show. But in the show, there was
+       <ns type="UD">
+        <i>
+         <ns type="FD">
+          <i>
+           a
+          </i>
+         </ns>
+        </i>
+       </ns>
+       another actor. I was so
+       <ns type="RJ">
+        <i>
+         disappointing
+        </i>
+       </ns>
+       , because I came
+       <ns type="MT">
+       </ns>
+       far away to see Danny Broke. In the note
+       <ns type="MA">
+       </ns>
+       also says that the show
+       <ns type="AGV">
+        <i>
+         start
+        </i>
+       </ns>
+       at 19:30, and so I went in at 19:25. The show
+       <ns type="TV">
+        <i>
+         was started
+        </i>
+       </ns>
+       at 20:15, which means it
+       <ns type="TV">
+        <i>
+         has wasted
+        </i>
+       </ns>
+       one hour of my time.
+       <ns type="MD">
+        <i>
+         Note
+        </i>
+       </ns>
+       says that
+       <ns type="AS">
+        <i>
+         tickets
+         <ns type="RV">
+          <i>
+           <ns type="AGV">
+            <i>
+             has
+            </i>
+           </ns>
+          </i>
+         </ns>
+         discounts available
+        </i>
+       </ns>
+       , but I bought my ticket and your people told me that there is
+       <ns type="X">
+        <i>
+         not any
+        </i>
+       </ns>
+       discount
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       <ns type="MD">
+       </ns>
+       <ns type="FN">
+        <i>
+         <ns type="RN">
+          <i>
+           thicket
+          </i>
+         </ns>
+        </i>
+       </ns>
+       . When the show
+       <ns type="TV">
+        <i>
+         is finished
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       I
+       <ns type="S">
+        <i>
+         deciced
+        </i>
+       </ns>
+       to go and visit your theatre restaurant
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       But I went there and it
+       <ns type="TV">
+        <i>
+         is
+        </i>
+       </ns>
+       closed for some
+       <ns type="FN">
+        <i>
+         reasons
+        </i>
+       </ns>
+       . I was really hungry and I went to
+       <ns type="RQ">
+        <i>
+         other
+        </i>
+       </ns>
+       restaurant as soon as I
+       <ns type="TV">
+        <i>
+         can
+        </i>
+       </ns>
+       .
+       <ns type="CE">
+        The note says that your perfect evening out, I thought I could get my money back, with your poor service and all my reasons,
+        <ns type="RP">
+         <i>
+          But
+         </i>
+        </ns>
+        it was not ask for money back
+       </ns>
+       .
+      </p>
+      <p>
+       I was really disappointed about your
+       <ns type="RN">
+        <i>
+         threat
+        </i>
+       </ns>
+       and service
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I hope I can get my money back and you can improve it.
+       <ns type="SX">
+        <i>
+         Than
+        </i>
+       </ns>
+       you for reading
+       <ns type="MA">
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir:
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        How are you?
+       </s>
+       <s pid="2" sid="2">
+        I have been  the musical show "over the rainbow" in your theatre last week.
+       </s>
+       <s pid="2" sid="3">
+        I have got a few things to complain about  your theart.
+       </s>
+       <s pid="2" sid="4">
+        The first thing is in your note  says that you should have got Danny Brook in the show.
+       </s>
+       <s pid="2" sid="5">
+        But in the show, there was a another actor.
+       </s>
+       <s pid="2" sid="6">
+        I was so disappointing, because I came  far away to see Danny Broke.
+       </s>
+       <s pid="2" sid="7">
+        In the note  also says that the show start at 19:30, and so I went in at 19:25.
+       </s>
+       <s pid="2" sid="8">
+        The show was started at 20:15, which means it has wasted one hour of my time.
+       </s>
+       <s pid="2" sid="9">
+        Note says that tickets has discounts available, but I bought my ticket and your people told me that there is not any discount for  thicket.
+       </s>
+       <s pid="2" sid="10">
+        When the show is finished.
+       </s>
+       <s pid="2" sid="11">
+        I deciced to go and visit your theatre restaurant, But I went there and it is closed for some reasons.
+       </s>
+       <s pid="2" sid="12">
+        I was really hungry and I went to other restaurant as soon as I can.
+       </s>
+       <s pid="2" sid="13">
+        The note says that your perfect evening out, I thought I could get my money back, with your poor service and all my reasons, But it was not ask for money back.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I was really disappointed about your threat and service, I hope I can get my money back and you can improve it.
+       </s>
+       <s pid="3" sid="2">
+        Than you for reading .
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      2.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Today, science and technology help us a lot. For example
+       <ns type="RP">
+        <i>
+         . In
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         pass
+        </i>
+       </ns>
+       , people
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       to go and get wood, make a fire and cook, but now people can cook in a microwave and do not have to do all the hard work.
+      </p>
+      <p>
+       Science and technology can give us a better
+       <ns type="RP">
+        <i>
+         <ns type="DN">
+          <i>
+           live
+          </i>
+         </ns>
+         style
+        </i>
+       </ns>
+       or better food. For example,
+       <ns type="RT">
+        <i>
+         before
+        </i>
+       </ns>
+       people
+       <ns type="TV">
+        <i>
+         have
+        </i>
+       </ns>
+       to walk from
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       place to
+       <ns type="R">
+        <i>
+         the other
+        </i>
+       </ns>
+       , but now we can use
+       <ns type="S">
+        <i>
+         sciene
+        </i>
+       </ns>
+       and technology to produce a lot of
+       <ns type="DJ">
+        <i>
+         <ns type="RN">
+          <i>
+           petrel
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         transport
+        </i>
+       </ns>
+       and we can
+       <ns type="RV">
+        <i>
+         transport
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         with them faster
+        </i>
+       </ns>
+       . We
+       <ns type="W">
+        <i>
+         also can
+        </i>
+       </ns>
+       produce more and better food
+       <ns type="R">
+        <i>
+         or
+        </i>
+       </ns>
+       using science and technology
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+       e.g.
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         use
+        </i>
+       </ns>
+       science to put all the good
+       <ns type="AGN">
+        <i>
+         part
+        </i>
+       </ns>
+       of two plants into one plant. We can also use
+       <ns type="S">
+        <i>
+         techlogy
+        </i>
+       </ns>
+       to produce more food and help them grow faster.
+      </p>
+      <p>
+       Science and technology can also
+       <ns type="TV">
+        <i>
+         used
+        </i>
+       </ns>
+       <ns type="R">
+        <i>
+         for
+        </i>
+       </ns>
+       some
+       <ns type="FN">
+        <i>
+         material
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       e.g. steel or iron, which
+       <ns type="TV">
+        <i>
+         use
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       our
+       <ns type="FN">
+        <i>
+         building
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         ,
+         <ns type="AGA">
+          <i>
+           it
+          </i>
+         </ns>
+        </i>
+       </ns>
+       can make
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       stronger and
+       <ns type="X">
+        <i>
+         not easy
+        </i>
+       </ns>
+       to destroy.
+      </p>
+      <p>
+       Science and technology can give us a lot of good
+       <ns type="AGN">
+        <i>
+         thing
+        </i>
+       </ns>
+       for our daily life,
+       <ns type="AS">
+        <i>
+         <ns type="FV">
+          <i>
+           make
+          </i>
+         </ns>
+         us easy
+        </i>
+       </ns>
+       to do
+       <ns type="FN">
+        <i>
+         thing
+        </i>
+       </ns>
+       or work.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Today, science and technology help us a lot.
+       </s>
+       <s pid="1" sid="2">
+        For example.
+       </s>
+       <s pid="1" sid="3">
+        In the pass, people have to go and get wood, make a fire and cook, but now people can cook in a microwave and do not have to do all the hard work.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Science and technology can give us a better live style or better food.
+       </s>
+       <s pid="2" sid="2">
+        For example, before people have to walk from a place to the other, but now we can use sciene and technology to produce a lot of petrel transport and we can transport with them faster.
+       </s>
+       <s pid="2" sid="3">
+        We also can produce more and better food or using science and technology.
+       </s>
+       <s pid="2" sid="4">
+        e.g.  use science to put all the good part of two plants into one plant.
+       </s>
+       <s pid="2" sid="5">
+        We can also use techlogy to produce more food and help them grow faster.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Science and technology can also used for some material e.g. steel or iron, which use for our building, it can make it stronger and not easy to destroy.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Science and technology can give us a lot of good thing for our daily life, make us easy to do thing or work.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

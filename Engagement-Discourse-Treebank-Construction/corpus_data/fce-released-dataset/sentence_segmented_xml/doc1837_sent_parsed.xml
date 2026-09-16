@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Greek
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     30.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mr Jones,
+      </p>
+      <p>
+       I'm
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       this letter to inform you about the disappointing evening I had when I visited the Circle
+       <ns type="RP">
+        <i>
+         theatre
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Firstly
+       <ns type="MP">
+       </ns>
+       <ns type="RP">
+        <i>
+         In
+        </i>
+       </ns>
+       the advertisement you said that the actor would be Danny Brook but there was a different actor in the show and I was really disappointed
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       because I was really looking forward to seeing Danny Brook
+       <ns type="MP">
+       </ns>
+       <ns type="RA">
+        <i>
+         which
+        </i>
+       </ns>
+       I personally admire.
+      </p>
+      <p>
+       Secondly the play didn't start at 19:30 as we were
+       <ns type="TV">
+        <i>
+         being told
+        </i>
+       </ns>
+       but it started
+       <ns type="RT">
+        <i>
+         with
+        </i>
+       </ns>
+       a delay of 45 minutes. Also when I visited the theatre's restaurant I found it closed
+       <ns type="RT">
+        <i>
+         because of
+        </i>
+       </ns>
+       renovation.
+      </p>
+      <p>
+       Finally there were no discounts available
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the tickets. All the above made my night terribly disappointing and I must say that the advertisement is nothing but a business fraud, so I'm in the unpleasant position
+       <ns type="MT">
+       </ns>
+       <ns type="FV">
+        <i>
+         to ask
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       my money back. I'm looking forward to your reply
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Yours sincerely
+      </p>
+      <p>
+       Mrs Lemmings
+       <ns type="UP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mr Jones,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writting this letter to inform you about the disappointing evening I had when I visited the Circle theatre.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly
+       </s>
+       <s pid="3" sid="2">
+        In the advertisement you said that the actor would be Danny Brook but there was a different actor in the show and I was really disappointed, because I was really looking forward to seeing Danny Brook which I personally admire.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Secondly the play didn't start at 19:30 as we were being told but it started with a delay of 45 minutes.
+       </s>
+       <s pid="4" sid="2">
+        Also when I visited the theatre's restaurant I found it closed because of renovation.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Finally there were no discounts available in the tickets.
+       </s>
+       <s pid="5" sid="2">
+        All the above made my night terribly disappointing and I must say that the advertisement is nothing but a business fraud, so I'm in the unpleasant position  to ask  my money back.
+       </s>
+       <s pid="5" sid="3">
+        I'm looking forward to your reply
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Mrs Lemmings.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Technology is an essential part
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       people's
+       <ns type="FN">
+        <i>
+         life
+        </i>
+       </ns>
+       . It's something
+       <ns type="S">
+        <i>
+         absoletuly
+        </i>
+       </ns>
+       necessary for every action people
+       <ns type="RV">
+        <i>
+         <ns type="AGV">
+          <i>
+           does
+          </i>
+         </ns>
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       It
+       <ns type="SX">
+        <i>
+         effects
+        </i>
+       </ns>
+       us both
+       <ns type="DY">
+        <i>
+         positive
+        </i>
+       </ns>
+       and
+       <ns type="DY">
+        <i>
+         negative
+        </i>
+       </ns>
+       . It's a part of our
+       <ns type="IN">
+        <i>
+         lifes
+        </i>
+       </ns>
+       . Firstly technology has created a bond between myself and my computer.
+       <ns type="TV">
+        <i>
+         I got
+        </i>
+       </ns>
+       used to spending 2-3 hours in front of the computer. My relationship with my family and friends doesn't even exist. I've
+       <ns type="TV">
+        <i>
+         end
+        </i>
+       </ns>
+       up being a
+       <ns type="UP">
+        <i>
+         T.V
+        </i>
+       </ns>
+       addict
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       Also the need
+       <ns type="UT">
+        <i>
+         of
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         doing
+        </i>
+       </ns>
+       simple things as a family is no longer
+       <ns type="R">
+        <i>
+         the case
+        </i>
+       </ns>
+       . Why
+       <ns type="FV">
+        <i>
+         going
+        </i>
+       </ns>
+       to the countryside if you can sit there with a bowl of
+       <ns type="CN">
+        <i>
+         popcorns
+        </i>
+       </ns>
+       and watch
+       <ns type="UP">
+        <i>
+         T.V
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       Despite the negative effects, technology can
+       <ns type="SX">
+        <i>
+         effect
+        </i>
+       </ns>
+       <ns type="W">
+        <i>
+         <ns type="RT">
+          <i>
+           with
+          </i>
+         </ns>
+         a positive way a person's life
+        </i>
+       </ns>
+       .
+       <ns type="DN">
+        <i>
+         Air conditions
+        </i>
+       </ns>
+       , watches, computers, and many other things have made my life easier. There's no need
+       <ns type="UT">
+        <i>
+         on
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         going
+        </i>
+       </ns>
+       to the shops when I can order things
+       <ns type="RT">
+        <i>
+         by
+        </i>
+       </ns>
+       the computer.
+       <ns type="DN">
+        <i>
+         Air conditions
+        </i>
+       </ns>
+       also makes my life easier
+       <ns type="MP">
+       </ns>
+      </p>
+      <p>
+       In
+       <ns type="RN">
+        <i>
+         addition
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       technology has made my life easier but it's also an
+       <ns type="DN">
+        <i>
+         intrude
+        </i>
+       </ns>
+       in my life
+       <ns type="MP">
+       </ns>
+       <ns type="RV">
+        <i>
+         crating
+        </i>
+       </ns>
+       a distance between myself and my family. In my opinion technology is the
+       <ns type="R">
+        least
+       </ns>
+       thing I could use in my life.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Technology is an essential part in people's life.
+       </s>
+       <s pid="1" sid="2">
+        It's something absoletuly necessary for every action people does
+       </s>
+       <s pid="1" sid="3">
+        It effects us both positive and negative.
+       </s>
+       <s pid="1" sid="4">
+        It's a part of our lifes.
+       </s>
+       <s pid="1" sid="5">
+        Firstly technology has created a bond between myself and my computer.
+       </s>
+       <s pid="1" sid="6">
+        I got used to spending 2-3 hours in front of the computer.
+       </s>
+       <s pid="1" sid="7">
+        My relationship with my family and friends doesn't even exist.
+       </s>
+       <s pid="1" sid="8">
+        I've end up being a T.V addict
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Also the need of doing simple things as a family is no longer the case.
+       </s>
+       <s pid="2" sid="2">
+        Why going to the countryside if you can sit there with a bowl of popcorns and watch T.V.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Despite the negative effects, technology can effect with a positive way a person's life.
+       </s>
+       <s pid="3" sid="2">
+        Air conditions, watches, computers, and many other things have made my life easier.
+       </s>
+       <s pid="3" sid="3">
+        There's no need on going to the shops when I can order things by the computer.
+       </s>
+       <s pid="3" sid="4">
+        Air conditions also makes my life easier
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        In addition technology has made my life easier but it's also an intrude in my life crating a distance between myself and my family.
+       </s>
+       <s pid="4" sid="2">
+        In my opinion technology is the least thing I could use in my life.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

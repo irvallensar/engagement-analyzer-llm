@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Chinese
+     </language>
+     <age>
+      21-25
+     </age>
+    </personnel>
+    <score>
+     26.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir/Madam,
+      </p>
+      <p>
+       Thank you very much. I am very
+       <ns type="RJ">
+        <i>
+         glad
+        </i>
+       </ns>
+       I have won first prize in the competition - two weeks at Camp California in the U.S.A.
+      </p>
+      <p>
+       I would like to travel only in July, because in June I have to study at school
+       <ns type="MP">
+       </ns>
+       which
+       <ns type="TV">
+        <i>
+         hasn't finished
+        </i>
+       </ns>
+       until the end of June.
+       <ns type="RT">
+        <i>
+         In
+        </i>
+       </ns>
+       August, I have already made another appointment with my friends. We are going to visit the places of interest
+       <ns type="RT">
+        <i>
+         of
+        </i>
+       </ns>
+       China
+       <ns type="RP">
+        <i>
+         , as
+        </i>
+       </ns>
+       usual, our new term begins in September. I
+       <ns type="W">
+        <i>
+         only can
+        </i>
+       </ns>
+       travel in July
+      </p>
+      <p>
+       <ns type="MT">
+        <i>
+         Accommodation
+        </i>
+       </ns>
+       <ns type="MP">
+       </ns>
+       I
+       <ns type="UV">
+        <i>
+         would
+        </i>
+       </ns>
+       prefer
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       tents to
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       log cabins. Tents are very easy to
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       and
+       <ns type="MV">
+       </ns>
+       go everywhere. What's more, in my opinion
+       <ns type="AGA">
+        <i>
+         it
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       very romantic.
+      </p>
+      <p>
+       I am good at singing and photography. I can sing most kinds of songs, such as pop music, folk. I like taking
+       <ns type="FN">
+        <i>
+         photograph
+        </i>
+       </ns>
+       ,
+       <ns type="R">
+        in my only room
+       </ns>
+       . There are all kinds of photos, for example,
+       <ns type="M">
+       </ns>
+       beach, sea
+       <ns type="MP">
+       </ns>
+       trees and so on.
+      </p>
+      <p>
+       <ns type="RY">
+        <i>
+         In the end
+        </i>
+       </ns>
+       , I wonder what kind of clothes I should take and how much money I should bring with me
+       <ns type="RP">
+        <i>
+         .
+        </i>
+       </ns>
+      </p>
+      <p>
+       I look forward to seeing you soon.
+      </p>
+      <p>
+       Yours faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir/Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thank you very much.
+       </s>
+       <s pid="2" sid="2">
+        I am very glad I have won first prize in the competition - two weeks at Camp California in the U.S.A.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would like to travel only in July, because in June I have to study at school which hasn't finished until the end of June.
+       </s>
+       <s pid="3" sid="2">
+        In August, I have already made another appointment with my friends.
+       </s>
+       <s pid="3" sid="3">
+        We are going to visit the places of interest of China, as usual, our new term begins in September.
+       </s>
+       <s pid="3" sid="4">
+        I only can travel in July
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Accommodation
+       </s>
+       <s pid="4" sid="2">
+        I would prefer in tents to in log cabins.
+       </s>
+       <s pid="4" sid="3">
+        Tents are very easy to take and  go everywhere.
+       </s>
+       <s pid="4" sid="4">
+        What's more, in my opinion it is very romantic.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I am good at singing and photography.
+       </s>
+       <s pid="5" sid="2">
+        I can sing most kinds of songs, such as pop music, folk.
+       </s>
+       <s pid="5" sid="3">
+        I like taking photograph, in my only room.
+       </s>
+       <s pid="5" sid="4">
+        There are all kinds of photos, for example,  beach, sea trees and so on.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        In the end, I wonder what kind of clothes I should take and how much money I should bring with me.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I look forward to seeing you soon.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       To: Mrs Flame
+      </p>
+      <p>
+       From: Kate
+      </p>
+      <p>
+       Subject: which lessons and other activities should be filmed
+      </p>
+      <p>
+       <ns type="RN">
+        <i>
+         Instruction
+        </i>
+       </ns>
+       :
+      </p>
+      <p>
+       The aim of this report is to suggest which lessons and
+       <ns type="RN">
+        lessons
+       </ns>
+       <ns type="MV">
+       </ns>
+       be filmed
+       <ns type="RT">
+        <i>
+         into
+        </i>
+       </ns>
+       a short video. In order to write the report I interviewed about one hundred students who are studying in our English class.
+      </p>
+      <p>
+       Results:
+      </p>
+      <p>
+       The majority of them said it's a good idea to
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       something about Maths and English study skills. Sixty percent recommended that the activity which
+       <ns type="R">
+        called make the brain up in the morning class
+       </ns>
+       should be filmed. Ten of them said
+       <ns type="MA">
+       </ns>
+       should
+       <ns type="RV">
+        <i>
+         make
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       computing. Two thirds said we should film
+       <ns type="R">
+        a part of playing football
+       </ns>
+       .
+      </p>
+      <p>
+       Reasons:
+      </p>
+      <p>
+       Although Maths is very boring, it is very important
+       <ns type="UT">
+        <i>
+         in
+        </i>
+       </ns>
+       nowadays. English is the most popular language in the world
+       <ns type="RP">
+        <i>
+         , what's
+        </i>
+       </ns>
+       more, more and more people
+       <ns type="TV">
+        <i>
+         start
+        </i>
+       </ns>
+       to learn English.
+       <ns type="R">
+        The activity of making brain up
+       </ns>
+       can help us remember new words. Playing football is good for
+       <ns type="MD">
+       </ns>
+       health.
+      </p>
+      <p>
+       Conclusion:
+      </p>
+      <p>
+       It is recommended that
+       <ns type="MA">
+       </ns>
+       should be filmed about Maths, English study skills,
+       <ns type="R">
+        make brain up
+       </ns>
+       and
+       <ns type="U">
+        <i>
+         a part of
+        </i>
+       </ns>
+       playing football.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        To: Mrs Flame
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        From: Kate
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Subject: which lessons and other activities should be filmed
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Instruction:
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The aim of this report is to suggest which lessons and lessons  be filmed into a short video.
+       </s>
+       <s pid="5" sid="2">
+        In order to write the report I interviewed about one hundred students who are studying in our English class.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Results:
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        The majority of them said it's a good idea to make something about Maths and English study skills.
+       </s>
+       <s pid="7" sid="2">
+        Sixty percent recommended that the activity which called make the brain up in the morning class should be filmed.
+       </s>
+       <s pid="7" sid="3">
+        Ten of them said  should make the computing.
+       </s>
+       <s pid="7" sid="4">
+        Two thirds said we should film a part of playing football.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Reasons:
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        Although Maths is very boring, it is very important in nowadays.
+       </s>
+       <s pid="9" sid="2">
+        English is the most popular language in the world, what's more, more and more people start to learn English.
+       </s>
+       <s pid="9" sid="3">
+        The activity of making brain up can help us remember new words.
+       </s>
+       <s pid="9" sid="4">
+        Playing football is good for  health.
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Conclusion:
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        It is recommended that  should be filmed about Maths, English study skills,make brain up and a part of playing football.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

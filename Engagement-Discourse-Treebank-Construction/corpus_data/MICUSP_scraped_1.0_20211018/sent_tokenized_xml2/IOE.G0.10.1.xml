@@ -1,0 +1,639 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      ﻿Rubberland Liquid Rubber Failure Analysis
+     </div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       1.0 Define
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       Rubberland Inc. is a producer of rubber liquid.
+      </s>
+      <s pid="2" sid="2">
+       They have been getting negative feedback from their customers who use the liquid rubber for the production of molded parts.
+      </s>
+      <s pid="2" sid="3">
+       Rubberland’s customers lose, on average, thirty minutes per day of production.
+      </s>
+      <s pid="2" sid="4">
+       This time is lost in their mold process because Rubberland’s customers have to adjust the temperature settings for every new-shipped batch of liquid rubber material.
+      </s>
+      <s pid="2" sid="5">
+       On average Rubberland’s customers, lose $930 for each hour of lost production.
+      </s>
+     </p>
+     <p>
+      <s pid="3" sid="1">
+       Process Engineers, organized by Rubberland management, found that the failures from their customers internal mod inspection process are due to parts not curing properly, scorch, parts being under filled, mold flash and flowlines.
+      </s>
+      <s pid="3" sid="2">
+       They also collected a variety of sample data that included 6 input variables and 7 output variables.
+      </s>
+      <s pid="3" sid="3">
+       Our six sigma team plans to identify which output variables are most important and then identify the key input variables that are most significant.
+      </s>
+      <s pid="3" sid="4">
+       We will then analyze the significant variables to provide recommendations for the process.
+      </s>
+      <s pid="3" sid="5">
+       These recommendations will reduce the problem with Rubberland’s customers, thus reducing the amount of time and money lost to adjusting the temperature setting.
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       2.0  Measure
+      </div>
+      <p>
+       <s pid="4" sid="1">
+        To find the current state of the process, we created a Pareto Chart to identify major failures.
+       </s>
+       <s pid="4" sid="2">
+        We also conducted a process capability test and measured correlation between variables.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        2.1  Pareto Chart
+       </div>
+       <p>
+        <s pid="5" sid="1">
+         Negative feedback from customers is a big concern at Rubberland.
+        </s>
+        <s pid="5" sid="2">
+         Our team has thus obtained a summary of the failures from the customer’s internal mold inspection process.
+        </s>
+        <s pid="5" sid="3">
+         These failures are displayed in a Pareto Chart in Figure 1 below.
+        </s>
+        <s pid="5" sid="4">
+         The concern with the greatest frequency is "Parts not Curing Properly," and it accounts for 70.1% of all failures.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         Figure 1: Pareto Chart of Liquid Rubber Molding Failures
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.2  Process Capability Tests
+       </div>
+       <p>
+        <s pid="7" sid="1">
+         After brainstorming potential issues of the process, our team evaluated the performance of the process by collecting sample data and recording several material variables and process settings.
+        </s>
+        <s pid="7" sid="2">
+         We then conducted process capability tests on each of the output variables (Tensile strength, Elongation %, Type B tear strength, T10 time, VMAX, and CIR).
+        </s>
+        <s pid="7" sid="3">
+         Below in table 1, the Defects Per Million (DPM) values for each of the output variables are displayed.
+        </s>
+        <s pid="7" sid="4">
+         Table 1 shows that the largest DPM is for CIR.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="8" sid="1">
+         Table 1: Process Capability Analysis Results for Output Variables
+        </s>
+       </p>
+       <p>
+       </p>
+       <p>
+        <s pid="10" sid="1">
+         The pp for CIR is greater than the ppk, and ppk approximately equals cpk, so there is a mean problem and excessive common cause variation.
+        </s>
+        <s pid="10" sid="2">
+         The ppk and cpk values for Tears are all about equal with values of around 0.48.
+        </s>
+        <s pid="10" sid="3">
+         Because the ppk and cpk values are equal, this is most likely due to a standard deviation problem.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        2.3  Correlation
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         After measuring process capability, we measured the correlation between the input variables and the correlation between the output variables.
+        </s>
+        <s pid="11" sid="2">
+         Figure 2 below shows the correlation of the input variables.
+        </s>
+        <s pid="11" sid="3">
+         Variables with p-values less than 0.05 are considered significant.
+        </s>
+        <s pid="11" sid="4">
+         Three variables, supplier, catwt, and catdisp had correlated p-values less than 0.05 and these are highlighted in Figure 2.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         Figure 2: Input Correlation Table
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         Figure 2 show that the supplier and the catalyst weight are negatively correlated.
+        </s>
+        <s pid="13" sid="2">
+         In addition, the supplier and catalyst dispensed are also negatively correlated.
+        </s>
+        <s pid="13" sid="3">
+         Lastly, Figure 2 shows that catalyst weight and catalyst dispensed are positivity correlated with a value of .978.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       3.0 Analysis
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        After observing the current state of the process by performing creating a Pareto chart, performing a process capability analysis, and measuring the correlation of input variables, we performed further analysis to try to determine the reason for failures in the mold inspection process.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        3.1 Cause and Effect Diagram
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         The first step of our analysis was to develop a cause and effect diagram.
+        </s>
+        <s pid="15" sid="2">
+         Figure 3 shows the factors that cause customer dissatisfaction.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         Figure 3: Cause and Effect Diagram for Liquid Rubber Failures
+        </s>
+       </p>
+       <p>
+        <s pid="17" sid="1">
+         The five categories shown in the cause and effect diagram are material, personal, environment, methods and machines.
+        </s>
+        <s pid="17" sid="2">
+         As seen in Figure 3, the categories with the most causes for customer dissatisfaction are Material, Personal, and Machines.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.2  Linear Regression
+       </div>
+       <p>
+        <s pid="18" sid="1">
+         After analyzing causes for customer dissatisfaction, we examined the input and output variables that lead to this dissatisfaction.
+        </s>
+        <s pid="18" sid="2">
+         To identify output variables with the most problems and inputs with the most significance, we ran regression models.
+        </s>
+        <s pid="18" sid="3">
+         We ran 7 different models, with each model having the 6 input variables and one of the 7 output variables.
+        </s>
+        <s pid="18" sid="4">
+         For each regression model, if a term was not significant (i.e. its p-value was not less than 0.05), we omitted it from the model and re-ran the regression.
+        </s>
+        <s pid="18" sid="5">
+         For the tensile strength, Tear "B1" , Tear "B2" , and VMAX we did not get any significant values.
+        </s>
+        <s pid="18" sid="6">
+         The p-values and regression equations for CIR, T10 time, and Elongation % are listed in the Table 2 below.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="19" sid="1">
+         Table 2: Linear Regress Equations for CIR, T10 and Elong
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         In these equations, the supplier is a binary variable.
+        </s>
+        <s pid="20" sid="2">
+         Supplier equals 1 when from supplier A and 0 when from supplier B.
+        </s>
+        <s pid="20" sid="3">
+         The linear regression equation for CIR shows that the input variables, supplier and catalyst weight (catwt), affect the output variable CIR.
+        </s>
+        <s pid="20" sid="4">
+         Similarly, for T10, the supplier and catwt variables affect its output, and for Elong, the crosslinker variable affects its output.
+        </s>
+        <s pid="20" sid="5">
+         Even though Elong and T10 had significant input variables, they did not have a large DPM and therefore additional analysis was not conducted on them.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.3 Examining input variables for CIR and T10
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         After determining what the key input variables for CIR were (supplier and catalyst weight), we then examined how they affected the output of CIR.
+        </s>
+        <s pid="21" sid="2">
+         To do this we created a box plot, with CIR as the Y variable, and supplier and catwt as X variables.
+        </s>
+        <s pid="21" sid="3">
+         The results are shown in Figure 4 below.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="22" sid="1">
+         Figure 4: Box Plot of CIR for Suppliers and Catalyst Weights
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         Figure 4 shows that as the catalyst weight increases so does the CIR.
+        </s>
+        <s pid="23" sid="2">
+         In addition, the box plot shows that at the same catalyst weights, supplier A has lower CIR values then B.
+        </s>
+        <s pid="23" sid="3">
+         To analyze these variable affects further, we created a fitted line plot for CIR vs. supplier and CIR vs. catalyst weight.
+        </s>
+        <s pid="23" sid="4">
+         These plots are shown in Figure 5.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="24" sid="1">
+         Figure 5: Fitted Line Plots for CIR vs. Supplier and CIR vs. Catwt
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         When we ran a box plot for T10 as the Y variable, and supplier and catwt as X variables, we achieved the same results as for CIR.
+        </s>
+        <s pid="25" sid="2">
+         The T10 value increased for increasing values of catalyst weight, and values for Supplier B were slightly higher than for supplier A.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        3.4: Gage Analysis for Tear Strength.
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         From section 2.2 Process Capability Analysis, we found that Tear "B1" and Tear "B2" , which both measure the same rubber sample, have high, but different DPM .
+        </s>
+        <s pid="26" sid="2">
+         We then performed a paired t test to see if the different methods for measuring the tear strength differ.
+        </s>
+        <s pid="26" sid="3">
+         Tear "B1" and Tear "B2" both measure the same parts.
+        </s>
+        <s pid="26" sid="4">
+         The results are shown in Figure 6.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="27" sid="1">
+         Figure 6: Paired T-test for Tear Measurement Methods.
+        </s>
+       </p>
+       <p>
+        <s pid="28" sid="1">
+         From Figure 6 we can conclude that the tear measurement methods are not statistically different.
+        </s>
+        <s pid="28" sid="2">
+         The p-value is greater the .05 and the 95% CI for the mean difference between the measurement methods contains 0. Lastly, from Figure 6 we were able to see that the standard deviations for tear strengths are high with a value of 40.59 for Tear "B1" and 40.34 for Tear "B2" .
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       4.0 Improve
+      </div>
+      <p>
+       <s pid="29" sid="1">
+        Currently, Rubberland measures 6 input variables and 7 output variables.
+       </s>
+       <s pid="29" sid="2">
+        From our process capability analysis, we concluded that the output variable with the most problems was CIR.
+       </s>
+       <s pid="29" sid="3">
+        We then ran a linear regression model to determine which of the 6 input variables significantly affected CIR.
+       </s>
+       <s pid="29" sid="4">
+        From that regression model, we found that supplier and catalyst weight were both significant.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        4.1 Catalyst Dispense Recommendation
+       </div>
+       <p>
+        <s pid="30" sid="1">
+         Further analysis on these input variables showed that as catalyst weight increased, both CIR and T10 increased, and supplier B had larger values than supplier A.
+        </s>
+        <s pid="30" sid="2">
+         The specification limit for CIR is 140 +/-
+        </s>
+        <s pid="30" sid="3">
+         5. The catalyst weight is targeted at 0.2%, however if this weight increases above 0.21%, the CIR reaches values greater than 145 and out of the specification limit.
+        </s>
+        <s pid="30" sid="4">
+         This is shown in a contingency table in Figure 7 below.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="31" sid="1">
+         Figure 7: Contingency Table for CIR Defect and Catalyst Weight
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Failures are caused if the CIR value increases over 145, and this occurs when the catalyst weight is 0.21% or above.
+        </s>
+        <s pid="32" sid="2">
+         From the correlation analysis conducted in section 2.3, we saw that the amount of catalyst dispensed (catdisp) was 97.8% correlated to catwt.
+        </s>
+        <s pid="32" sid="3">
+         Because the amount of catalyst that an operator dispenses affects the weight, Rubberland should thus focus on fixing the amount of catalyst dispensed.
+        </s>
+        <s pid="32" sid="4">
+         We ran a contingency table of CIR defects vs. catdisp and found that 31.8% of defects started occurring when the catdisp was 0.20%.
+        </s>
+        <s pid="32" sid="5">
+         We therefore recommend that Rubberland have operators dispense a catalyst between 0.16% and 0.2% only.
+        </s>
+        <s pid="32" sid="6">
+         If they dispense more than 0.20%, they should remove some of the catalyst or consider the part a defect and not give it to customers.
+        </s>
+        <s pid="32" sid="7">
+         We also recommend that Rubberland perform additional analysis to see how small the lower spec limit can be for catalysis dispensed.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.2 Supplier Recommendation
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         Figure 8, below, is a contingency table of CIR defects vs. Suppliers.
+        </s>
+        <s pid="33" sid="2">
+         From this figure, you can see that all of the CIR defects occur when using supplier B.
+        </s>
+        <s pid="33" sid="3">
+         We therefore recommend that Rubberland reduce the amount of orders from supplier B and order more from supplier A instead.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="34" sid="1">
+         Figure 8: Contingency Table for CIR Defect and Supplier
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.3  Tear Strength Recommendations
+       </div>
+       <p>
+        <s pid="35" sid="1">
+         From regression analysis for tear strength, we found that no input variables significantly affect the tear strength.
+        </s>
+        <s pid="35" sid="2">
+         From this result, we recommend further studies to see if the noise can be reduced so Rubberland can see what input variables affect the tear strength.
+        </s>
+        <s pid="35" sid="3">
+         In paired t-test analysis, we found that the two measurement methods, Tear "B1" and Tear "B2" are not statistically different, but both have high standard deviations for tear strengths measured.
+        </s>
+        <s pid="35" sid="4">
+         We recommend looking into methods to reduce the variance for tear strengths.
+        </s>
+        <s pid="35" sid="5">
+         We also suggest only using one measurement method because they are correlated and not statically different.
+        </s>
+        <s pid="35" sid="6">
+         This will save time, which will also save money.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.4  Specification Recommendations
+       </div>
+       <p>
+        <s pid="36" sid="1">
+         The linear regression analysis for CIR showed that the only two variables that were significant were catwt and supplier.
+        </s>
+        <s pid="36" sid="2">
+         The other variables, mixtime, crosslinker, and inhibitor were not significant.
+        </s>
+        <s pid="36" sid="3">
+         We modeled fitted line plots for each of these non-significant variables against CIR, and we found that all three plots had R-Squared values of 1.4% or less.
+        </s>
+        <s pid="36" sid="4">
+         An example of mixtime vs. CIR is shown in Figure 9 below.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="37" sid="1">
+         Figure 9: Fitted Line Plot of CIR vs. Mixtime
+        </s>
+       </p>
+       <p>
+        <s pid="38" sid="1">
+         The low R-squared values mean that the values of the variables, mixtime, crosslinker, and inhibitor do not have an affect on the output of CIR for the given specification range.
+        </s>
+        <s pid="38" sid="2">
+         We thus recommend that Rubberland can increase the specification limits for mixtime, crosslinker, and inhibitor.
+        </s>
+        <s pid="38" sid="3">
+         Rubberland should conduct further analysis to see how CIR reacts out of the given current specification limits, and will then most likely be able to increase this range.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        4.5  Measured Output and Input Variables
+       </div>
+       <p>
+        <s pid="39" sid="1">
+         Rubberland currently measures 7 output variables.
+        </s>
+        <s pid="39" sid="2">
+         CIR, Tear B1, Tear B2, and VMAX all have large DPM, and thus Rubberland should still measure these variables and make sure they are within specification limits.
+        </s>
+        <s pid="39" sid="3">
+         The T10 output variable did not have large DPM and it is correlated to CIR with a value of .887, so therefore, Rubberland does not need to measure the output of T10 anymore.
+        </s>
+        <s pid="39" sid="4">
+         DPM was not high for Elong or Tensile strength either, so we also recommend that Rubberland not focus its output studies on these variables either.
+        </s>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         For Rubberland’s input measurement variables, we recommend not measuring the catalyst weight to save time and money.
+        </s>
+        <s pid="40" sid="2">
+         We recommend this because the catalyst weight has a correlation value of .978 so it is highly correlated to the catalyst dispense.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       5.0 Control
+      </div>
+      <p>
+       <s pid="41" sid="1">
+        To maintain our improvement recommendations we have several suggestions.
+       </s>
+       <s pid="41" sid="2">
+        We suggest Rubberland to develop better training for the employees that are involved in the production process.
+       </s>
+       <s pid="41" sid="3">
+        To supplement the training we recommend creating work instructions.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        5.1  Catalyst Dispense Control Device
+       </div>
+       <p>
+        <s pid="42" sid="1">
+         For filling the catalyst in the jar, we recommend that they come up with a better device to control the catalyst dispense so the operators cannot add any more then 0.2%.
+        </s>
+        <s pid="42" sid="2">
+         With this control, if the operator tries adding more then 0.2%, the device will stop the dispensing of the catalyst and thus the part will not have a chance to be a defect.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        5.2 Supplier B
+       </div>
+       <p>
+        <s pid="43" sid="1">
+         In our analysis and improve section, we found that defects for CIR occurred when the material came from Supplier B. However, there were also times that when supplier B material was used, the part was not a defect.
+        </s>
+        <s pid="43" sid="2">
+         Due to capacity constraints at suppliers, it may not be possible to not order from supplier B at all, so we recommend that Rubberland and Supplier B conduct a study to figure out why some parts from supplier B are defects.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        5.3 Input and Output Variables
+       </div>
+       <p>
+        <s pid="44" sid="1">
+         In our recommendation section, we recommended that Rubberland could reduce the amount of output variables they measure and increase some of the specification limits of the input variables.
+        </s>
+        <s pid="44" sid="2">
+         If Rubberland decides to do this, they should conduct follow up studies to make sure that their new specification limits and removal of certain measured output variables do not produce more defects.
+        </s>
+       </p>
+       <p>
+        <s pid="45" sid="1">
+         Lastly, we recommend analysis for why there are so many wrong materials, which are shown in the cause and effect diagram in section 3.1.
+        </s>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

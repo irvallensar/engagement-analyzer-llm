@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     33.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Manager,
+      </p>
+      <p>
+       Last week, during my holiday in London, I had the opportunity to see the show "Over the Rainbow" at the Circle
+       <ns type="S">
+        <i>
+         Theathre
+        </i>
+       </ns>
+       . That is why I am writing this letter; to inform you about the problems I had.
+      </p>
+      <p>
+       First of all, the tickets were too expensive. I was told that there were some discounts
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       students, but
+       <ns type="UT">
+        <i>
+         at
+        </i>
+       </ns>
+       the moment I bought the ticket, they charged me
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       full price.
+      </p>
+      <p>
+       The day of the show, we got to the
+       <ns type="S">
+        <i>
+         theather
+        </i>
+       </ns>
+       at 19:30.
+       <ns type="R">
+        <i>
+         Instead
+        </i>
+       </ns>
+       , due to some technical problems, it began at 20:15.
+      </p>
+      <p>
+       Second, I was really disappointed when I found out that Danny Brook, the best actor I have
+       <ns type="X">
+        <i>
+         never
+        </i>
+       </ns>
+       known and the reason for
+       <ns type="UA">
+        <i>
+         which
+        </i>
+       </ns>
+       <ns type="RA">
+        <i>
+         I
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         decided
+        </i>
+       </ns>
+       to see the show, was not going to be performing.
+      </p>
+      <p>
+       Third, the theatre restaurant was closed because the
+       <ns type="S">
+        <i>
+         cheff
+        </i>
+       </ns>
+       did not show up. I was really looking forward to eating at that place.
+      </p>
+      <p>
+       In conclusion, I would appreciate
+       <ns type="MA">
+       </ns>
+       if you could, please, send me my money back because I did not have the perfect evening that I expected.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Manager,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Last week, during my holiday in London, I had the opportunity to see the show "Over the Rainbow" at the Circle Theathre.
+       </s>
+       <s pid="2" sid="2">
+        That is why I am writing this letter; to inform you about the problems I had.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, the tickets were too expensive.
+       </s>
+       <s pid="3" sid="2">
+        I was told that there were some discounts to students, but at the moment I bought the ticket, they charged me a full price.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The day of the show, we got to the theather at 19:30.
+       </s>
+       <s pid="4" sid="2">
+        Instead, due to some technical problems, it began at 20:15.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Second, I was really disappointed when I found out that Danny Brook, the best actor I have never known and the reason for which I decided to see the show, was not going to be performing.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Third, the theatre restaurant was closed because the cheff did not show up.
+       </s>
+       <s pid="6" sid="2">
+        I was really looking forward to eating at that place.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        In conclusion, I would appreciate  if you could, please, send me my money back because I did not have the perfect evening that I expected.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat was not very good at keeping secrets. Sally, her best friend, had told her what had been happening at her house for the last two months. Pat knew something was wrong because she had known Sally since they were five years old, but she did not
+       <ns type="MV">
+       </ns>
+       why she was acting so
+       <ns type="DY">
+        <i>
+         strange
+        </i>
+       </ns>
+       . Sally did not want to tell anybody about her problem, but she knew she could trust Pat. So Sally started to talk. She had seen her stepfather hitting her mother
+       <ns type="RP">
+        <i>
+         everytime
+        </i>
+       </ns>
+       he was drunk. She didn't want to tell the teachers at school or any other person because she was afraid that if her stepfather
+       <ns type="TV">
+        <i>
+         find
+        </i>
+       </ns>
+       out about
+       <ns type="RA">
+        <i>
+         that
+        </i>
+       </ns>
+       , he would get
+       <ns type="SX">
+        <i>
+         made
+        </i>
+       </ns>
+       and hit her, or even worse, kill her mother.
+      </p>
+      <p>
+       However, she needed to tell somebody. One morning somebody knocked at the door at Sally's house. It was the police. Sally was so scared, and at the same time mad at Pat because she knew the only person who could have told the police was her best friend. But she knew that Pat did it because she loved her and was afraid something horrible
+       <ns type="RV">
+        <i>
+         could have
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         happened
+        </i>
+       </ns>
+       to her or to her mother.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat was not very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        Sally, her best friend, had told her what had been happening at her house for the last two months.
+       </s>
+       <s pid="1" sid="4">
+        Pat knew something was wrong because she had known
+       </s>
+       <s pid="1" sid="5">
+        Sally since they were five years old, but she did not  why she was acting so strange.
+       </s>
+       <s pid="1" sid="6">
+        Sally did not want to tell anybody about her problem, but she knew she could trust Pat.
+       </s>
+       <s pid="1" sid="7">
+        So Sally started to talk.
+       </s>
+       <s pid="1" sid="8">
+        She had seen her stepfather hitting her mother everytime he was drunk.
+       </s>
+       <s pid="1" sid="9">
+        She didn't want to tell the teachers at school or any other person because she was afraid that if her stepfather find out about that, he would get made and hit her, or even worse, kill her mother.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        However, she needed to tell somebody.
+       </s>
+       <s pid="2" sid="2">
+        One morning somebody knocked at the door at Sally's house.
+       </s>
+       <s pid="2" sid="3">
+        It was the police.
+       </s>
+       <s pid="2" sid="4">
+        Sally was so scared, and at the same time mad at Pat because she knew the only person who could have told the police was her best friend.
+       </s>
+       <s pid="2" sid="5">
+        But she knew that Pat did it because she loved her and was afraid something horrible could have happened to her or to her mother.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Italian
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     25.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir Brown, I'm writing this letter to complain about the musical show that I saw. I
+       <ns type="X">
+        <i>
+         hadn't
+        </i>
+       </ns>
+       a good time! Firstly, Danny Brook didn't act. There was
+       <ns type="RP">
+        <i>
+         an other
+        </i>
+       </ns>
+       actor, James Kee, but I didn't like him! I had gone to the theatre to see Danny Brook but he wasn't there. In addition to
+       <ns type="MA">
+       </ns>
+       , the show didn't start at 20.15; so it ended at 23.45 and I couldn't go to a meeting. I'm very disappointed
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       all these problems! Your theatre is very disorganized! The ticket's price was £20 and there
+       <ns type="AGV">
+        <i>
+         wasn't
+        </i>
+       </ns>
+       any
+       <ns type="AGN">
+        <i>
+         discount
+        </i>
+       </ns>
+       ! After the show, I wanted to eat something, but the theatre restaurant was closed because the chef was in Italy for a special course. I
+       <ns type="X">
+        <i>
+         hadn't
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       great fun, so I ask for
+       <ns type="MD">
+       </ns>
+       money back.
+       <ns type="DA">
+        <i>
+         Your
+        </i>
+       </ns>
+       faithfully
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir Brown, I'm writing this letter to complain about the musical show that I saw.
+       </s>
+       <s pid="1" sid="2">
+        I hadn't a good time!
+       </s>
+       <s pid="1" sid="3">
+        Firstly, Danny Brook didn't act.
+       </s>
+       <s pid="1" sid="4">
+        There was an other actor, James Kee, but I didn't like him!
+       </s>
+       <s pid="1" sid="5">
+        I had gone to the theatre to see Danny Brook but he wasn't there.
+       </s>
+       <s pid="1" sid="6">
+        In addition to , the show didn't start at 20.15; so it ended at 23.45 and I couldn't go to a meeting.
+       </s>
+       <s pid="1" sid="7">
+        I'm very disappointed for all these problems!
+       </s>
+       <s pid="1" sid="8">
+        Your theatre is very disorganized!
+       </s>
+       <s pid="1" sid="9">
+        The ticket's price was £20 and there wasn't any discount!
+       </s>
+       <s pid="1" sid="10">
+        After the show, I wanted to eat something, but the theatre restaurant was closed because the chef was in Italy for a special course.
+       </s>
+       <s pid="1" sid="11">
+        I hadn't a great fun, so I ask for  money back.
+       </s>
+       <s pid="1" sid="12">
+        Your faithfully
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      3.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       In fact, some days before Karin, a friend of hers, had told Pat that she had fallen in love with John, her
+       <ns type="UP">
+        <i>
+         science's
+        </i>
+       </ns>
+       teacher. Pat was astonished, and didn't know what (she)
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to tell
+        </i>
+       </ns>
+       Karla.
+      </p>
+      <p>
+       The teacher was 40 years old, and Karla was only 16 (years old). This
+       <ns type="UP">
+        <i>
+         age's
+        </i>
+       </ns>
+       difference was too big!
+      </p>
+      <p>
+       Besides, Karla was a shy, polite girl that Pat wanted to help.
+      </p>
+      <p>
+       So she decided to tell Hill
+       <ns type="ID">
+        <i>
+         all the story
+        </i>
+       </ns>
+       . Hill
+       <ns type="TV">
+        <i>
+         like
+        </i>
+       </ns>
+       Pat very much, but only as a friend. He was 19 (years old), so Pat thought
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that he
+       <ns type="RV">
+        <i>
+         had
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         to know
+        </i>
+       </ns>
+       what was the best thing to do.
+      </p>
+      <p>
+       But the situation wasn't simple, so Hill decided to discuss it with Mary, the teacher's
+       <ns type="S">
+        <i>
+         cousine
+        </i>
+       </ns>
+       . They agreed that Karla's love was only a dream. So they went to talk with her about the situation, but when she knew that they
+       <ns type="TV">
+        <i>
+         had know
+        </i>
+       </ns>
+       her feelings
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       Mr. Beek, she decided not to tell Pat anything
+       <ns type="RY">
+        <i>
+         forever
+        </i>
+       </ns>
+       .
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        In fact, some days before Karin, a friend of hers, had told Pat that she had fallen in love with John, her science's teacher.
+       </s>
+       <s pid="1" sid="2">
+        Pat was astonished, and didn't know what (she) had to tell Karla.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        The teacher was 40 years old, and Karla was only 16 (years old).
+       </s>
+       <s pid="2" sid="2">
+        This age's difference was too big!
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Besides, Karla was a shy, polite girl that Pat wanted to help.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        So she decided to tell Hill all the story.
+       </s>
+       <s pid="4" sid="2">
+        Hill like
+       </s>
+       <s pid="4" sid="3">
+        Pat very much, but only as a friend.
+       </s>
+       <s pid="4" sid="4">
+        He was 19 (years old), so Pat thought, that he had to know what was the best thing to do.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        But the situation wasn't simple, so Hill decided to discuss it with Mary, the teacher's cousine.
+       </s>
+       <s pid="5" sid="2">
+        They agreed that Karla's love was only a dream.
+       </s>
+       <s pid="5" sid="3">
+        So they went to talk with her about the situation, but when she knew that they had know her feelings to Mr. Beek, she decided not to tell Pat anything forever.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

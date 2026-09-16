@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     26.00
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Jane Clark,
+      </p>
+      <p>
+       I'm
+       <ns type="IV">
+        <i>
+         writting
+        </i>
+       </ns>
+       to you because
+       <ns type="TV">
+        <i>
+         I've been
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       the International Arts Festival and it was a pleasure. Let me introduce myself: I'm Mary, I'm nineteen and I'm studying arts.
+       <ns type="R">
+        <i>
+         As well
+        </i>
+       </ns>
+       , I want you to know my opinion and I'd like to give you my suggestions, because it would be useful
+       <ns type="RT">
+        <i>
+         to
+        </i>
+       </ns>
+       you for the next festival.
+      </p>
+      <p>
+       Firstly, I want to congratulate you
+       <ns type="RT">
+        <i>
+         for
+        </i>
+       </ns>
+       the idea
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       I think that
+       <ns type="W">
+        <i>
+         <ns type="UA">
+          <i>
+           it's
+          </i>
+         </ns>
+         very important the development of the arts
+        </i>
+       </ns>
+       and that everybody could
+       <ns type="RV">
+        <i>
+         assist
+        </i>
+       </ns>
+       without paying too much. Having
+       <ns type="RQ">
+        <i>
+         a
+        </i>
+       </ns>
+       ticket for all the events is a great method because it's
+       <ns type="RJ">
+        an organised
+       </ns>
+       way of paying and you
+       <ns type="RV">
+        <i>
+         win
+        </i>
+       </ns>
+       time.
+      </p>
+      <p>
+       On the other hand, I must tell you that some concert halls are too small, so you can't be
+       <ns type="W">
+        <i>
+         enough
+         <ns type="S">
+          <i>
+           confortable
+          </i>
+         </ns>
+        </i>
+       </ns>
+       to
+       <ns type="S">
+        <i>
+         apreciate
+        </i>
+       </ns>
+       the event.
+       <ns type="AGQ">
+        <i>
+         Other
+        </i>
+       </ns>
+       thing
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       is that the artists come only from six countries, so don't
+       <ns type="RV">
+        <i>
+         cheat
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       people by saying that they are from all
+       <ns type="MT">
+       </ns>
+       the world.
+      </p>
+      <p>
+       In my opinion, you should
+       <ns type="RV">
+        <i>
+         call
+        </i>
+       </ns>
+       more
+       <ns type="AGN">
+        <i>
+         artist
+        </i>
+       </ns>
+       from other countries and have some
+       <ns type="W">
+        <i>
+         concert halls bigger
+        </i>
+       </ns>
+       or
+       <ns type="RP">
+        <i>
+         may be
+        </i>
+       </ns>
+       change the distribution.
+      </p>
+      <p>
+       Well, I think that
+       <ns type="R">
+        <i>
+         everything is told
+        </i>
+       </ns>
+       but could you tell me, if
+       <ns type="U">
+        <i>
+         it's
+        </i>
+       </ns>
+       possible, if there will be more plays and films next year?
+      </p>
+      <p>
+       I'm waiting for your answer.
+      </p>
+      <p>
+       <ns type="MA">
+       </ns>
+       <ns type="RY">
+        <i>
+         Faithfully
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Jane Clark,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writting to you because I've been in the International Arts Festival and it was a pleasure.
+       </s>
+       <s pid="2" sid="2">
+        Let me introduce myself: I'm Mary, I'm nineteen and I'm studying arts.
+       </s>
+       <s pid="2" sid="3">
+        As well, I want you to know my opinion and I'd like to give you my suggestions, because it would be useful to you for the next festival.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, I want to congratulate you for the idea, I think that it's very important the development of the arts and that everybody could assist without paying too much.
+       </s>
+       <s pid="3" sid="2">
+        Having a ticket for all the events is a great method because it's an organised way of paying and you win time.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        On the other hand, I must tell you that some concert halls are too small, so you can't be enough confortable to apreciate the event.
+       </s>
+       <s pid="4" sid="2">
+        Other thing, is that the artists come only from six countries, so don't cheat the people by saying that they are from all  the world.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        In my opinion, you should call more artist from other countries and have some concert halls bigger or may be change the distribution.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Well, I think that everything is told but could you tell me, if it's possible, if there will be more plays and films next year?
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        I'm waiting for your answer.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      4
+     </question_number>
+     <exam_score>
+      3.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Jane,
+      </p>
+      <p>
+       Thanks for your letter
+       <ns type="RP">
+        <i>
+         ,
+        </i>
+       </ns>
+       it was nice to hear from you again. I've recently started
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       classes so all the rules were given to us,
+       <ns type="RC">
+        <i>
+         like
+        </i>
+       </ns>
+       you know,
+       <ns type="MT">
+       </ns>
+       the first day. As you
+       <ns type="TV">
+        <i>
+         want
+        </i>
+       </ns>
+       me to tell you
+       <ns type="AS">
+        <i>
+         how about the rules are here
+        </i>
+       </ns>
+       , I'll start.
+      </p>
+      <p>
+       Firstly, in our classroom you can't shout, you must be
+       <ns type="SX">
+        <i>
+         quite
+        </i>
+       </ns>
+       and
+       <ns type="FV">
+        <i>
+         sat
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       . You must
+       <ns type="W">
+        <i>
+         pay attention always
+        </i>
+       </ns>
+       because you don't know if the teacher will ask you some question. In exams, you can't talk to the teacher,
+       <ns type="RC">
+        <i>
+         either
+        </i>
+       </ns>
+       you mustn't eat
+       <ns type="S">
+        <i>
+         chuingham
+        </i>
+       </ns>
+       or take a
+       <ns type="RP">
+        <i>
+         walkman
+        </i>
+       </ns>
+       with you. In my home I can avoid
+       <ns type="AGD">
+        <i>
+         that
+        </i>
+       </ns>
+       rules. My mum
+       <ns type="RY">
+        <i>
+         only
+        </i>
+       </ns>
+       doesn't want me to arrive late. However, I can go dancing whenever I want but
+       <ns type="M">
+       </ns>
+       <ns type="FV">
+        <i>
+         telling
+        </i>
+       </ns>
+       her
+       <ns type="RY">
+        <i>
+         previously
+        </i>
+       </ns>
+       . My mum is a lovely woman and she doesn't know how much I love her because most of the day I'm outside, but that's the
+       <ns type="DN">
+        <i>
+         true
+        </i>
+       </ns>
+       . My father is a bit jealous but agrees with what my mum says.
+      </p>
+      <p>
+       So, I'm free when I'm out of
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       school.
+       <ns type="CE">
+        I'd like it would be nicer going there
+       </ns>
+       .
+      </p>
+      <p>
+       Lots of love,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Jane,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        Thanks for your letter, it was nice to hear from you again.
+       </s>
+       <s pid="2" sid="2">
+        I've recently started the classes so all the rules were given to us, like you know,  the first day.
+       </s>
+       <s pid="2" sid="3">
+        As you want me to tell you how about the rules are here, I'll start.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Firstly, in our classroom you can't shout, you must be quite and sat .
+       </s>
+       <s pid="3" sid="2">
+        You must pay attention always because you don't know if the teacher will ask you some question.
+       </s>
+       <s pid="3" sid="3">
+        In exams, you can't talk to the teacher, either you mustn't eat chuingham or take a walkman with you.
+       </s>
+       <s pid="3" sid="4">
+        In my home I can avoid that rules.
+       </s>
+       <s pid="3" sid="5">
+        My mum only doesn't want me to arrive late.
+       </s>
+       <s pid="3" sid="6">
+        However, I can go dancing whenever I want but  telling her previously.
+       </s>
+       <s pid="3" sid="7">
+        My mum is a lovely woman and she doesn't know how much I love her because most of the day I'm outside, but that's the true.
+       </s>
+       <s pid="3" sid="8">
+        My father is a bit jealous but agrees with what my mum says.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        So, I'm free when I'm out of the school.
+       </s>
+       <s pid="4" sid="2">
+        I'd like it would be nicer going there.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Lots of love,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

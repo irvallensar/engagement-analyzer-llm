@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Turkish
+     </language>
+     <age>
+      &lt;16
+     </age>
+    </personnel>
+    <score>
+     20.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      3.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Sir or Madam,
+      </p>
+      <p>
+       I have seen the advertisement for the musical show and I realised that there were some mistakes.
+      </p>
+      <p>
+       First of all, it
+       <ns type="RV">
+        <i>
+         is written
+        </i>
+       </ns>
+       that the stars
+       <ns type="TV">
+        <i>
+         were
+        </i>
+       </ns>
+       Danny Brook and Tina Truelove but the actor was not Danny Brook.
+      </p>
+      <p>
+       The show should have started
+       <ns type="S">
+        <i>
+         t
+        </i>
+       </ns>
+       19.30. However it started at 20.15. We
+       <ns type="MV">
+       </ns>
+       kept waiting for 45 minutes.
+      </p>
+      <p>
+       The tickets were sold for £10, £15 and £20. We were told that
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       discounts were available but they were not.
+      </p>
+      <p>
+       We were planning to go to the theatre restaurant after the show but when we got there we saw that it was closed
+       <ns type="RT">
+        <i>
+         because of
+        </i>
+       </ns>
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       cleaning.
+      </p>
+      <p>
+       We had expected a brilliant show but we were very disappointed. I think the people who came there should be
+       <ns type="RV">
+        <i>
+         paid back
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       <ns type="MA">
+        <i>
+         Faithfully
+        </i>
+       </ns>
+       ,
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Sir or Madam,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I have seen the advertisement for the musical show and I realised that there were some mistakes.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, it is written that the stars were Danny Brook and Tina Truelove but the actor was not Danny Brook.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The show should have started t 19.30.
+       </s>
+       <s pid="4" sid="2">
+        However it started at 20.15.
+       </s>
+       <s pid="4" sid="3">
+        We  kept waiting for 45 minutes.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The tickets were sold for £10, £15 and £20.
+       </s>
+       <s pid="5" sid="2">
+        We were told that the discounts were available but they were not.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        We were planning to go to the theatre restaurant after the show but when we got there we saw that it was closed because of the cleaning.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        We had expected a brilliant show but we were very disappointed.
+       </s>
+       <s pid="7" sid="2">
+        I think the people who came there should be paid back.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Faithfully,
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      1.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       If we compare a person who lived a very long time ago with another one who lives now, we will see a very big difference between their clothes.
+      </p>
+      <p>
+       People used to wear very
+       <ns type="S">
+        <i>
+         diffrent
+        </i>
+       </ns>
+       things from the clothes we wear now, we wouldn't even say that they are 'clothes'. We would probably think that these things they wore were just to cover and protect themselves.
+      </p>
+      <p>
+       Nowadays the aim
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       clothing is not just for covering and protecting ourselves. People try to look nice and clean by wearing good clothes.
+      </p>
+      <p>
+       The things that people wear are changing
+       <ns type="RY">
+        <i>
+         every time
+        </i>
+       </ns>
+       , everyone tries to be
+       <ns type="S">
+        <i>
+         diffrent
+        </i>
+       </ns>
+       in
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       public and very different sorts of clothes are being created.
+      </p>
+      <p>
+       The things we wear may not seem
+       <ns type="RT">
+        <i>
+         as
+        </i>
+       </ns>
+       <ns type="UC">
+        <i>
+         if
+        </i>
+       </ns>
+       'clothes' to the ones who will live 100 years from now. I
+       <ns type="S">
+        <i>
+         belive
+        </i>
+       </ns>
+       they will wear very
+       <ns type="S">
+        <i>
+         diffrent
+        </i>
+       </ns>
+       things.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        If we compare a person who lived a very long time ago with another one who lives now, we will see a very big difference between their clothes.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        People used to wear very diffrent things from the clothes we wear now, we wouldn't even say that they are 'clothes'.
+       </s>
+       <s pid="2" sid="2">
+        We would probably think that these things they wore were just to cover and protect themselves.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Nowadays the aim in clothing is not just for covering and protecting ourselves.
+       </s>
+       <s pid="3" sid="2">
+        People try to look nice and clean by wearing good clothes.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        The things that people wear are changing every time, everyone tries to be diffrent in the public and very different sorts of clothes are being created.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        The things we wear may not seem as if 'clothes' to the ones who will live 100 years from now.
+       </s>
+       <s pid="5" sid="2">
+        I belive they will wear very diffrent things.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

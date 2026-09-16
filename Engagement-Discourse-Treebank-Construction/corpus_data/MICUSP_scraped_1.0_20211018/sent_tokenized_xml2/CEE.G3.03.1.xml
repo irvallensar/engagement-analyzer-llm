@@ -1,0 +1,1420 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Contaminant Transport in Constructed Wetlands for Urban Stormwater Management
+     </div>
+     <p>
+     </p>
+     <div class="abstract">
+      Abstract
+      <p>
+       The fraction of impervious surfaces has dramatically increased throughout the United States due to urban development, resulting in increased demand on our nations stormwater management systems. As a result, constructed wetlands have received increased attention as effective controls to mitigate stormwater surges and treat stormwater runoff while increasing habitat and recreational value. This paper describes the physics based numerical models used to quantify mass transport in constructed wetlands, applies the numerical models to a case study of a proposed wetland, and then compares these models by analyzing the effect of the model parameters on treatment efficacy.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       I. INTRODUCTION
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        With increased urban development, the fraction of impervious surfaces has dramatically increased throughout the United States.
+       </s>
+       <s pid="1" sid="2">
+        When soil surfaces become impervious, the degree of infiltration of water into the soil substantially decreases, causing increased urban runoff.
+       </s>
+       <s pid="1" sid="3">
+        This runoff is typically either discharged directly into receiving waters resulting in degraded water quality and erosion, or is treated at publicly owned water treatment plants prior to discharge which requires substantial capital investments and often still results in poor water quality during storm surges.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        As a response to the concern over increased urban runoff, all new private developments located within Washtenaw County with impervious surfaces totaling more than 5000 square feet must adhere to the Washtenaw County Drain Commissioner (WCDC) procedures and design criteria for storm water management [1].
+       </s>
+       <s pid="2" sid="2">
+        Further, the City of Ann Arbor requires all such developments to apply on-site stormwater management plans through both structural controls, such as trenches or detention ponds, and non-structural controls, such as vegetated swales or natural storage [2].
+       </s>
+       <s pid="2" sid="3">
+        The combined effect of both the County and the City stormwater requirements places the burden of stormwater management on the site developer rather than the City, requiring the detention of stormwater on site although not mandating treatment.
+       </s>
+      </p>
+      <p>
+       <s pid="3" sid="1">
+        As a result, developers must provide stormwater management plans that detail the practices used to treat, prevent and reduce the volume of stormwater on site.
+       </s>
+       <s pid="3" sid="2">
+        As guidelines for the creation of stormwater management plans, Best Management Practices (BMPs) have been developed to characterize effective, efficient and both logistically and economically practical methods for managing stormwater.
+       </s>
+       <s pid="3" sid="3">
+        These BMPs focus on reducing the volume and improving the quality of stormwater as well as reducing the need for capital investments and improvements in the City water management infrastructure. [2]
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        Although stormwater management plans are intended to require detailed descriptions of the controls implemented, there is no specific requirement on the type of control that should be implemented for a given site plan.
+       </s>
+       <s pid="4" sid="2">
+        The permitting system is intended to allow for innovative, unique and site specific solutions to managing stormwater cost effectively by placing this burden on the developer.
+       </s>
+       <s pid="4" sid="3">
+        However, this requires the developer to understand the technical challenges of stormwater management and the appropriateness of various controls.
+       </s>
+      </p>
+      <p>
+       <s pid="5" sid="1">
+        As a result, there is a need for consolidated design guides and synthesized case studies to aid developers in selecting appropriate water treatment and detention methodologies.
+       </s>
+       <s pid="5" sid="2">
+        Additionally, characterizing the fate and mass transport, removal pathways, and removal rates of contaminants is critical in designing treatment systems and implementing appropriate site specific management practices.
+       </s>
+       <s pid="5" sid="3">
+        This work is intended to supplement a design guide presented to both the City of Ann Arbor and to developers, describing the suitability and design process for constructed wetlands as part of stormwater management plans.
+       </s>
+      </p>
+      <p>
+       <s pid="6" sid="1">
+        This paper describes the physics based numerical models used to quantify mass transport in constructed wetlands.
+       </s>
+       <s pid="6" sid="2">
+        A case study is presented of a proposed wetland for West Park, located in the City of Ann Arbor.
+       </s>
+       <s pid="6" sid="3">
+        Finally, a parametric analysis is presented to compare the influence of the design and model parameters (such as the wetland length, diffusion coefficient and contaminant decay rate) on treatment efficacy.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       II. WETLAND OVERVIEW
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        A wetland is an area of land covered either all or some of the time by standing water during the growing season, is made up of predominantly undrained soil, and serves as a transition between aquatic and terrestrial ecosystems [3].
+       </s>
+       <s pid="7" sid="2">
+        Wetlands differ from rivers and lakes both in water depth and in average water velocity.
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        Climate and hydrology, or water saturation, dictate the types of soils and plants that can be found in wetlands.
+       </s>
+       <s pid="8" sid="2">
+        Wetlands are classified into two main categories: tidally influenced and inland wetlands.
+       </s>
+       <s pid="8" sid="3">
+        As can be expected, tidally influenced wetlands are typically found along coastlines and surrounding bays.
+       </s>
+       <s pid="8" sid="4">
+        Whereas inland wetlands typically border lakes, streams and rivers.
+       </s>
+       <s pid="8" sid="5">
+        Types of wetlands include marshes, wet meadows, swamps, bogs, prairie potholes and fens. [4]
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        It has been estimated that over 50 percent of the wetlands in the contiguous U.S. have been lost [5].
+       </s>
+       <s pid="9" sid="2">
+        Between 1986 and 1997, the U.S. Environmental Protection Agency estimates that 58,500 acres of wetland were lost in the lower 48 states each year, with an estimated 105.5 million acres existing in 1997 [4].
+       </s>
+       <s pid="9" sid="3">
+        This rapid decrease in wetland area is due in large part to drainage, dredging, deposition of fill, logging, construction, mining, damming, tilling, overdrawing groundwater aquifers, and many other human related factors [4].
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       III. CONSTRUCTED TREATMENT WETLANDS
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        Constructed stormwater wetlands are water treatment wetlands designed to improve the water quality of urban stormwater while increasing on-site detention to mitigate the effects of storm surges on water treatment plants or riverways [6].
+       </s>
+       <s pid="10" sid="2">
+        Constructed wetlands can also be used to treat municipal wastewater prior to discharge [7], or for treating industrial wastewater such as wood waste or landfill leachate [8].
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        Constructed wetlands are considered to be favorable control mechanisms for storm water management because they reduce stormwater contaminant loading, provide increased detention capacity on site, and increase recreational opportunities and wildlife habitat.
+       </s>
+       <s pid="11" sid="2">
+        Although not always suitable as a sole stormwater management control mechanism, constructed wetlands have gained increased attention as an option for controlling stormwater within a diverse stormwater management infrastructure.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        This section outlines the typical composition of urban stormwater, the contaminant removal pathways, and design considerations for the construction of treatment wetlands.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        A. Urban Stormwater Composition
+       </div>
+       <p>
+        <s pid="13" sid="1">
+         The composition of urban stormwater is influenced by land use and varies throughout the year.
+        </s>
+        <s pid="13" sid="2">
+         Typical stormwater pollutants include nutrients (nitrogen and phosphorus), solids (sediment), pathogens (bacteria and viruses), metals (lead, copper, cadmium, zinc, mercury, chromium, aluminum), hydrocarbons (oil, grease, napthalenes), organics (pesticides, PCBs, synthetics), and salts [9].
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         The solids collected from stormwater can be classified as litter (greater than 6.35 mm) or non-litter (less than 6.35 mm) as shown in Figure 1.
+        </s>
+        <s pid="14" sid="2">
+         Litter is then further classified as gross, wet, or dry, then floatable or non-floatable, and finally biodegradable or non-biodegradable.
+        </s>
+        <s pid="14" sid="3">
+         Non-litter particles are classified as sediment, gravitoidal, colloidal, and dissolved. [10]
+        </s>
+       </p>
+       <p>
+        <s pid="15" sid="1">
+         Release rates of other pollutants are impacted by the particle dynamics of suspended solids; additionally, rainfall intensity directly impacts the ability to mobilize particles as well as the size of the particles mobilized and occurs as a random process [11].
+        </s>
+        <s pid="15" sid="2">
+         Figure 2 shows the fraction of dissolved copper, lead, nickel and zinc measured from state-wide California highway runoff characterizations from 2001-2003 [11].
+        </s>
+        <s pid="15" sid="3">
+         Although the median colloidal and dissolved concentrations are between 30-60%, the concentrations can vary from 0-100%, making modeling of the fate of suspended solids non-trivial.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         Fig.
+        </s>
+        <s pid="16" sid="2">
+         1. Classification of stormwater solids [10]
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="17" sid="1">
+         Fig. 2. Dissolved fraction of Heavy Metals in highway runoff [11]
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        B. Contaminant Removal Pathways
+       </div>
+       <p>
+        <s pid="18" sid="1">
+         The removal of stormwater pollutants involves a complex interaction of physical, chemical and biological processes.
+        </s>
+        <s pid="18" sid="2">
+         Stormwater wetland contaminant removal pathways include sedimentation, adsorption, filtration, and microbial, plant and algae uptake [6].
+        </s>
+        <s pid="18" sid="3">
+         A description of several removal mechanisms for macrophyte based wastewater treatment wetlands, where macroscopic plants play a critical role in the water treatment process, is provided in Table I.
+        </s>
+       </p>
+       <p>
+        <s pid="19" sid="1">
+         TABLE
+        </s>
+        <s pid="19" sid="2">
+         I
+        </s>
+       </p>
+       <p>
+        <s pid="20" sid="1">
+         REMOVAL MECHANISMS FOR WASTEWATER TREATMENT WETLANDS
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="21" sid="1">
+         *Taken from [12]
+        </s>
+       </p>
+       <p>
+        <s pid="22" sid="1">
+         Water soluble organic compounds are typically removed by bacteria attached to plant and soil/sediment surfaces.
+        </s>
+        <s pid="22" sid="2">
+         The diffusion of oxygen from the atmospheric/water interface and photosynthesis within the water column, along with leakage of oxygen from plant roots support the aerobic removal or these organic compounds. [12]
+        </s>
+       </p>
+       <p>
+        <s pid="23" sid="1">
+         Nitrification and denitrification converts nitrates into nitrogen gas.
+        </s>
+        <s pid="23" sid="2">
+         As with the processing of organic compounds, the oxygen required for this process is provided from the atmosphere or from leakage by plant roots.
+        </s>
+        <s pid="23" sid="3">
+         Plant uptake is typically a less dominant removal mechanism than denitrification, but does occur.
+        </s>
+        <s pid="23" sid="4">
+         Depending upon the water pH levels, ammonium can be converted to ammonia gas and released. [12]
+        </s>
+        <s pid="23" sid="5">
+         The typical nitrogen cycle in a wetland is displayed in Figure 3.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="24" sid="1">
+         Fig. 3. The typical nitrogen cycle in a wetland [5]
+        </s>
+       </p>
+       <p>
+        <s pid="25" sid="1">
+         Phosphorus removal occurs via adsorption, complexation and precipitation reactions with aluminum, calcium, iron and clay in the sediment layers.
+        </s>
+        <s pid="25" sid="2">
+         For low concentrations of phosphorus, sedimentation and filtration can be a significant removal mechanism. [12]
+        </s>
+        <s pid="25" sid="3">
+         The typical phosphorus cycle in a wetland is displayed in Figure 4.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="26" sid="1">
+         Fig. 4.
+        </s>
+        <s pid="26" sid="2">
+         The typical phosphorus cycle in a wetland [5]
+        </s>
+       </p>
+       <p>
+        <s pid="27" sid="1">
+         As a result of these removal processes, wetland soils typically contain a shallow oxidized soil layer over a reduced soil layer, creating constituent concentration gradients.
+        </s>
+        <s pid="27" sid="2">
+         Figure 5 graphically displays the soil profiles of reduced manganese, iron and sulfur along with the redox potential.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="28" sid="1">
+         Fig.
+        </s>
+        <s pid="28" sid="2">
+         5. Constituent concentration profile in the soil layers [5]
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        C. Wetland Design Considerations
+       </div>
+       <p>
+        <s pid="29" sid="1">
+         Due to the complex nature of contaminant transport and the dynamics associated with the physical, biological and chemical interactions of contaminants in the wetland system, a trial and error approach has been taken in designing treatment wetlands.
+        </s>
+        <s pid="29" sid="2">
+         Numerous case studies have been published to detail wetland designs and treatment effectiveness.
+        </s>
+        <s pid="29" sid="3">
+         From these case studies design guides have compiled general rules of thumb for designing treatment wetlands that remove particular pollutants, in certain concentration ranges, for specific climates.
+        </s>
+        <s pid="29" sid="4">
+         A brief summary of some of these design strategies is provided here.
+        </s>
+       </p>
+       <p>
+        <s pid="30" sid="1">
+         There are four basic stormwater wetland designs [6]:
+        </s>
+       </p>
+       <list>
+        <item>
+         1) shallow marsh systems,
+        </item>
+        <item>
+         2) pond/wetland systems,
+        </item>
+        <item>
+         3) extended detention wetlands, and
+        </item>
+        <item>
+         4) pocket wetlands.
+        </item>
+       </list>
+       <p>
+        <s pid="31" sid="1">
+         Numerous factors such as the pollutant removal capability, land consumption, site water balance, contributing watershed area, maintenance requirements, and wildlife interactions play a role in the selection of an appropriate wetland design for a specific site.
+        </s>
+        <s pid="31" sid="2">
+         It is however, important to note that constructed treatment wetlands have a different functionality than constructed wetlands designed to mitigate the loss of natural wetlands.
+        </s>
+        <s pid="31" sid="3">
+         Additionally, treatment wetlands should not be located near or adjacent to natural wetlands due to their protection by local, state and federal regulations. [6]
+        </s>
+       </p>
+       <p>
+        <s pid="32" sid="1">
+         Figure 6 provides comparative profiles of the stormwater wetland designs.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="33" sid="1">
+         Fig.
+        </s>
+        <s pid="33" sid="2">
+         6. Comparative profiles of the four wetland designs [6]
+        </s>
+       </p>
+       <p>
+        <s pid="34" sid="1">
+         Important objectives to consider in the design of stormwater treatment wetlands are [6]:
+        </s>
+       </p>
+       <list>
+        <item>
+         1) detaining and treating some fraction of the urban stormwater runoff produced from a precipitation event,
+        </item>
+        <item>
+         2) pretreating the stormwater prior to entering the marsh/wetland area by reducing the water velocity and trapping large particles,
+        </item>
+        <item>
+         3) creating a diversity of water depths and a range of microtopography to support the diverse requirements of wetland plants,
+        </item>
+        <item>
+         4) establishing a dense and diverse plant community,
+        </item>
+        <item>
+         5) creating a pondscape or buffer zone surrounding the wetland for increased wildlife habitat and aesthetic qualities,
+        </item>
+        <item>
+         6) incorporating BMPs to reduce wetland maintenance and increase longevity,
+        </item>
+        <item>
+         7) controlling habitat elements to attract of detract particular species,
+        </item>
+        <item>
+         8) minimizing the risk of public safety hazards, and
+        </item>
+        <item>
+         9) reducing environmental impacts during wetland construction.
+        </item>
+       </list>
+       <p>
+        <s pid="35" sid="1">
+         For optimal pollutant removal, design recommendations are to provide a [6]:
+        </s>
+       </p>
+       <list>
+        <item>
+         1) total treatment volume capable of storing 90% of the runoff from the contributing shed on an annual basis,
+        </item>
+        <item>
+         2) minimum water surface area to contributing watershed area ratio,
+        </item>
+        <item>
+         3) certain fraction of the total surface area for each wetland subvolume,
+        </item>
+        <item>
+         4) certain fraction fo the toal volume for each wetland subvolume,
+        </item>
+        <item>
+         5) minimum length to width ratio, and a
+        </item>
+        <item>
+         6) minimum inlet flow rate.
+        </item>
+       </list>
+       <p>
+        <s pid="36" sid="1">
+         These sizing criteria for the design of stormwater wetlands are summarized in Table II.
+        </s>
+       </p>
+       <p>
+        <s pid="37" sid="1">
+         TABLE II
+        </s>
+       </p>
+       <p>
+        <s pid="38" sid="1">
+         WETLAND SIZING CRITERIA
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="39" sid="1">
+         *Taken from [6]
+        </s>
+       </p>
+       <p>
+        <s pid="40" sid="1">
+         Additionally, it is suggested that the water depth in the deepwater cell and forebay be one to six feet below normal pool, the lo marsh should be 6 to eighteen inches below normal pool, the hi marsh should be zero to six inches below normal pool, and the semi-wet region should be zero to 2 feet above normal pool [6].
+        </s>
+       </p>
+       <p>
+        <s pid="41" sid="1">
+         Lists and descriptions of wetland plant species suitable for surviving exposure to certain pollutants, draught and inundation, along with tolerance to certain water depths are outlined in [6] and [7].
+        </s>
+        <s pid="41" sid="2">
+         The selection of particular plant species and modeling of the complex dynamics associated with their pollutant removal capabilities is beyond the scope of this work and will not be addressed.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       IV. WEST PARK CASE STUDY
+      </div>
+      <p>
+       <s pid="42" sid="1">
+        The Allen Creek is currently plumbed beneath the surface of the park.
+       </s>
+       <s pid="42" sid="2">
+        The proposed wetland serves to daylight the creek, improve water quality, increase detention capacity within the Allen Creek Watershed, increase habitat, and educate residents on the use of constructed treatment wetlands within the context of stormwater management.
+       </s>
+       <s pid="42" sid="3">
+        A site analysis is provided in this section along with a description of the proposed wetland design.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        A. Site Analysis
+       </div>
+       <p>
+        <s pid="43" sid="1">
+         The fraction of impervious surface throughout the Allen Creek watershed has dramatically increased in recent decades, causing a significant burden to the existing stormwater infrastructure.
+        </s>
+        <s pid="43" sid="2">
+         Street, yard and house flooding events occur throughout the area, along with blown man-hole covers, placing increased attention on West Park and its potential to reduce the flow of stormwater during and following precipitation events.
+        </s>
+       </p>
+       <p>
+        <s pid="44" sid="1">
+         West Park is located along the western edge of downtown Ann Arbor, a city with a population of approximately 114,000 full time residents, as shown in Figure 7.
+        </s>
+        <s pid="44" sid="2">
+         An aerial view of West Park along with five foot topographic contours is provided in Figure 8.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="45" sid="1">
+         Fig. 7. Location of West Park within Ann Arbor
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="46" sid="1">
+         Fig. 8. Aerial view of West Park
+        </s>
+       </p>
+       <p>
+        <s pid="47" sid="1">
+         Single and multi-family residential housing borders the park.
+        </s>
+        <s pid="47" sid="2">
+         The park is located in a bowl, with 15-20 foot ridges along the northern and southern boundaries.
+        </s>
+        <s pid="47" sid="3">
+         The city of Ann Arbor has located concrete and wood structures along with vegetation to stabilize these slopes and reduce or prevent erosion and land slides.
+        </s>
+        <s pid="47" sid="4">
+         There is a 30 foot elevation difference from the western to eastern boundaries.
+        </s>
+       </p>
+       <p>
+        <s pid="48" sid="1">
+         There are many existing landmarks within the park, such as a marker indicating the site of a Native American trail, an outdoor amphitheater, playground, water fountain, pergola, several hundred year old trees, and the City’s oldest baseball field.
+        </s>
+        <s pid="48" sid="2">
+         The park is frequented by residents and is considered to be an integral part of the local community.
+        </s>
+       </p>
+       <p>
+        <s pid="49" sid="1">
+         Unfortunately, West Park has its’ own localized flooding concerns.
+        </s>
+        <s pid="49" sid="2">
+         Much of the soil in the park is considered undisturbed and little modifications to the topography have been made over the years.
+        </s>
+        <s pid="49" sid="3">
+         Due to the difference in elevation of the park with respect to the surrounding neighborhoods, overland stormwater flow collects in several locations within the park.
+        </s>
+        <s pid="49" sid="4">
+         Spot fixes including vegetated swales and depressions have been created to store this stormwater in small quantities, however does not provide a large enough storage volume to prevent the large expanses of turf grass from remaining saturated many days after a rain event.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        B. Proposed Wetland Design
+       </div>
+       <p>
+        <s pid="50" sid="1">
+         To reduce the amount of space required by the wetland system, increase stormwater detention capacity, and enhance the removal of suspended solids, a pond/wetland system was selected.
+        </s>
+        <s pid="50" sid="2">
+         First, the amount of space to be allocated to the treatment wetland, the location of the wetland within the park, and the general water flow path were determined.
+        </s>
+        <s pid="50" sid="3">
+         Then the surface area to volume ratios were calculated according to the design criteria set forth.
+        </s>
+        <s pid="50" sid="4">
+         Finally, the site was regraded to achieve the recommended side and bottom slopes as well as to accommodate the necessary wetland cell depths.
+        </s>
+       </p>
+       <p>
+        <s pid="51" sid="1">
+         There should be little elevation change in the hi and lo marshes.
+        </s>
+        <s pid="51" sid="2">
+         The largest surface area available for the marshes and thus the critical sizing parameter, was located on top of the existing baseball field.
+        </s>
+        <s pid="51" sid="3">
+         Although considered to be a desirable amenity, the baseball field was removed and used for the marsh system.
+        </s>
+        <s pid="51" sid="4">
+         The outlet of the wetland system must be located close to the Huron River and thus was placed on the eastern edge of the Park.
+        </s>
+        <s pid="51" sid="5">
+         Due to the elevation, the inlet to the wetland system must then be located along the western boundary, either from the northern or the southern corner.
+        </s>
+        <s pid="51" sid="6">
+         Because the amphitheater restricts the available space for the forebay and deepwater marsh, the southern corner was selected for the wetland inlet.
+        </s>
+       </p>
+       <p>
+        <s pid="52" sid="1">
+         Following the recommended design criteria, maintaining a 30 foot flood buffer zone, while minimizing the necessary regrading of land, the surface area to volume ratio were achieved with the constraint that the forebay and deepwater marsh must be located on the shelf leading towards the existing baseball field.
+        </s>
+        <s pid="52" sid="2">
+         The resulting volumes at normal pool level and full bank are listed in Table III.
+        </s>
+       </p>
+       <p>
+        <s pid="53" sid="1">
+         A sketch of the wetland boundaries (solid lines) and the buffer zone (dotted line) superimposed on an aerial view of the park is shown in Figure 9.
+        </s>
+       </p>
+       <p>
+        <s pid="54" sid="1">
+         TABLE III
+        </s>
+       </p>
+       <p>
+        <s pid="55" sid="1">
+         PROPOSED WETLAND VOLUMES
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="56" sid="1">
+         Fig. 9. Proposed wetland design for West Park
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       V. WETLAND MODEL DEVELOPMENT Numerous models have been constructed, of varying levels of complexity, to describe the facets of designing, operating and maintaining constructed treatment wetlands. Typically designed with a specific purpose in mind, these models serve to evaluate the relationships of interest. As a result, wetland models should be selected carefully, with a full review of the rationale used to formulate the model due to the implications of the assumptions made. This section provides a brief overview of the modeling strategies and assumptions, presents a detailed description of the model tuned to simulate the proposed wetland for West Park, and describes the solution algorithm, including initial and boundary conditions employed.
+      </div>
+      <div>
+       <div class="head_2">
+        A. Overview of Wetland Models
+       </div>
+       <p>
+        <s pid="57" sid="1">
+         Treatment wetland models are typically constructed for one of four main reasons, to: examine the hydrologic response of the wetland to storm surges, investigate the biological response, explore contaminant transport and removal processes, or describe the wetland hydraulics for use in designing control structures.
+        </s>
+        <s pid="57" sid="2">
+         The degree of complexity of these models varies from static algebraic expressions to high order dynamical equations accounting for the conservation of mass, energy, and/or momentum.
+        </s>
+       </p>
+       <p>
+        <s pid="58" sid="1">
+         Water budgets are used in hydrologic models to characterize the movement of water through the wetland system.
+        </s>
+        <s pid="58" sid="2">
+         The objectives of these models are often related to stormwater detention, and thus focus on the inputs and outputs to the wetland and treat the wetland itself as a lumped parameter single volume.
+        </s>
+        <s pid="58" sid="3">
+         Konyha [13] employed a first order lumped parameter model using
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="59" sid="1">
+         where Q is used to denote volumetric flow rate, and S for the stored volume.
+        </s>
+        <s pid="59" sid="2">
+         Water enters the wetland via
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="60" sid="1">
+         , (2)
+        </s>
+       </p>
+       <p>
+        <s pid="61" sid="1">
+         where P is used for precipitation, SRO for surface runoff, DRN for subsurface drainage, B for baseflow, and G for groundwater seepage and springs.
+        </s>
+        <s pid="61" sid="2">
+         The output flows are characterized by
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="62" sid="1">
+         , (3)
+        </s>
+       </p>
+       <p>
+        <s pid="63" sid="1">
+         where AET is used for evaporation and transpiration, Rp for flow over the spillway, Re for flow over the emergency spillway, L for lateral seepage, and D for deep percolation.
+        </s>
+        <s pid="63" sid="2">
+         Additional models are then used to relate these variables to physical properties, such as expressing evaporation as a function of temperature.
+        </s>
+        <s pid="63" sid="3">
+         This methodology is not unique and has been described in various forms in standard hydrology textbooks on flood routing [14].
+        </s>
+        <s pid="63" sid="4">
+         The implications of the use of these models depends upon the degree of complexity incorporated.
+        </s>
+        <s pid="63" sid="5">
+         Additionally, they focus on hydraulics and often neglect the presence of pollutants.
+        </s>
+       </p>
+       <p>
+        <s pid="64" sid="1">
+         Walker [15] applied a two-dimensional momentum balance along with continuity, to formulate a numerical model of the flow processes in a constructed wetland.
+        </s>
+        <s pid="64" sid="2">
+         The momentum balance in the x direction and continuity are described by
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="65" sid="1">
+         , (4)
+        </s>
+       </p>
+       <p>
+        <s pid="66" sid="1">
+         where
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       is the surface elevation from the nominal depth,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       is the water depth,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       and
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       are velocity components in the
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       and
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       directions,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       is a component of effective stress due to turbulence,
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       is the water density, and
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       is a bottom friction term which can be expressed as a function of the velocity components and the water density (i.e.
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       ). In contrast to the simple hydrologic models, the incorporation of flow sources such as precipitation or sinks such as evaporation are not trivial in this formulation and must be accounted for through the boundary conditions.
+       <p>
+       </p>
+       <p>
+        <s pid="68" sid="1">
+         The processes of sedimentation or uptake are typically modeled as first order decays using specific removal rate constants for given constituents (BOD, TOC, nitrogen, pathogenic microorganisms, heavy metals, and trace organics) regardless of the actual removal mechanism [16], [17].
+        </s>
+        <s pid="68" sid="2">
+         Kadlec [17] compared the impact of assuming the wetland volume of interest behaved as a plug flow reactor (PFR) or a continuous stirred tank reactor (CSTR) using dye tracer studies and found that the wetlands investigated were best described by series and parallel combinations of PFRs and CSTRs.
+        </s>
+        <s pid="68" sid="3">
+         The PFRs were modeled assuming steady-flow, first order irreversible reactions using,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="69" sid="1">
+         , (5)
+        </s>
+       </p>
+       <p>
+        <s pid="70" sid="1">
+         where C is used for concentration, k is a decay rate constant, t represents the nominal retention time, and Cin is used to denote the inlet concentration.
+        </s>
+        <s pid="70" sid="2">
+         From inspection, it is clear that this equation was derived by neglecting diffusion/dispersion and advection.
+        </s>
+        <s pid="70" sid="3">
+         An advantage to this formulation is that it can be easily tuned with experimental data using input and output measurements of concentration.
+        </s>
+        <s pid="70" sid="4">
+         The decay rate can then take on a functional relationship according to statistical analysis or flow regime characteristics [18].
+        </s>
+       </p>
+       <p>
+        <s pid="71" sid="1">
+         Kadlec [17] went further to describe long narrow reactors (wetlands) by modifying the PFR with a dispersion coefficient of the form,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="72" sid="1">
+         , (6)
+        </s>
+       </p>
+       <p>
+        <s pid="73" sid="1">
+         where D represents the dispersion coefficient, u is the average velocity, and L is the length.
+        </s>
+       </p>
+       <p>
+        <s pid="74" sid="1">
+         Walker [15] used the following two-dimensional transport equation to describe the spatial and temporal evolution of a constituent concentration,
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Formula
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="75" sid="1">
+         , (7)
+        </s>
+       </p>
+       <p>
+        <s pid="76" sid="1">
+         where C represents the constituent concentration, U and V are the component velocities in the x and y directions, D is the water depth, and S is the dispersion coefficient.
+        </s>
+        <s pid="76" sid="2">
+         The dispersion coefficients are then represented as a function of the component velocities.
+        </s>
+        <s pid="76" sid="3">
+         The intent of these numerical models was to quantify the residence times and predict the flow pattern.
+        </s>
+        <s pid="76" sid="4">
+         The algorithm incorporated by Walker in modeling sediment transport is shown in Figure 10.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Figure
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="77" sid="1">
+         Fig. 10.
+        </s>
+        <s pid="77" sid="2">
+         Flow chart for modeling sedimentation [19]
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       B. Model Description
+      </div>
+      <p>
+       <s pid="78" sid="1">
+        The relationship of the design parameters and flow characteristics on contaminant transport was of interest in completing this work.
+       </s>
+       <s pid="78" sid="2">
+        A simple zero or first order relationship, as described in Equations 5 and 6, between constituent concentration and time is not capable of simulating the dynamic response to changes in inlet concentration or water velocity.
+       </s>
+       <s pid="78" sid="3">
+        The two dimensional transport model, although accurately quantifying transport in constructed wetlands as compared to the low order models, is computationally intensive.
+       </s>
+       <s pid="78" sid="4">
+        As a result, a one dimensional advection diffusion reaction equation was employed of the form,
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="79" sid="1">
+        , (8)
+       </s>
+      </p>
+      <p>
+       <s pid="80" sid="1">
+        where U is the average velocity in the direction of the flow path, k is a decay rate constant, D is the diffusion coefficient, and C is the constituent concentration.
+       </s>
+       <s pid="80" sid="2">
+        The inlet concentration was assumed constant for this analysis, and the initial concentration in the wetland was assumed to be zero.
+       </s>
+       <s pid="80" sid="3">
+        The location of the outlet, x = L = 800m, was set to be equal to greater than two times the actual wetland length (350m) to ensure the boundary condition did not have a significant influence on the solution profile.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        C. Model Tuning and Implementation
+       </div>
+       <p>
+        <s pid="81" sid="1">
+         Johengen [20] published data quantifying nutrient removal in a stormwater treatment wetland.
+        </s>
+        <s pid="81" sid="2">
+         These data included nitrate, ammonium, and phosphate removal efficiencies.
+        </s>
+        <s pid="81" sid="3">
+         Although these data were taken by comparing inlet and outlet concentrations, the diffusion coefficient and decay rate were tuned such that these efficiencies were achieved.
+        </s>
+        <s pid="81" sid="4">
+         It is important to note that there is not a unique combination of parameters that
+        </s>
+       </p>
+       <p>
+        <s pid="82" sid="1">
+         satisfy the removal efficiency requirements.
+        </s>
+       </p>
+       <p>
+        <s pid="83" sid="1">
+         The model was simulated using the "pdepe" initialboundary value solver in Matlabr for parabolic and elliptic one-dimensional partial differential equations.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       VI. MODEL RESULTS
+      </div>
+      <p>
+       <s pid="84" sid="1">
+        For this analysis a general constituent was modeled, rather than a specific constituent such as phosphorus, nitrogen, or sediment.
+       </s>
+       <s pid="84" sid="2">
+        The model developed in Equation 8 assumes the diffusion coefficient and decay rate are constant parameters that depend on the constituent of interest.
+       </s>
+       <s pid="84" sid="3">
+        This analysis examines the impact of varying these parameters throughout the range of values expected for urban stormwater pollutants.
+       </s>
+      </p>
+      <p>
+       <s pid="85" sid="1">
+        A minimum flowrate of 0.0006 m3/s is recommended throughout the wetland [6].
+       </s>
+       <s pid="85" sid="2">
+        The smallest average cross sectional area in the wetland is approximately 2.3 m2, resulting in a average minimum velocity of 2.6x10−4 m/s.
+       </s>
+       <s pid="85" sid="3">
+        Assuming the maximum average velocity to be ten times greater than the minimum velocity, or 224.6 m/day, a constituent concentration was simulated for the length of the wetland assuming a uniform decay rate constant and diffusion coefficient.
+       </s>
+       <s pid="85" sid="4">
+        The resulting steady-state velocity profile assuming three different values for the velocity is given in Figure 11.
+       </s>
+       <s pid="85" sid="5">
+        For the range of velocities considered, the concentration profile does significantly depend on the velocity and therefore should not be neglected from the model.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="86" sid="1">
+        Fig. 11.
+       </s>
+       <s pid="86" sid="2">
+        Impact of velocity on the steady concentration profile
+       </s>
+      </p>
+      <p>
+       <s pid="87" sid="1">
+        The impact of the decay rate and dispersion coefficients on the contaminant transport were then considered, as shown in Figure 12.
+       </s>
+       <s pid="87" sid="2">
+        As expected, the decay rate has the greatest influence on the concentration profile and the diffusion coefficient has very little impact on contaminant transport for the range of parameter values considered.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="88" sid="1">
+        Fig. 12.
+       </s>
+       <s pid="88" sid="2">
+        Impact of decay rate and diffusion coefficient on the steady concentration profile
+       </s>
+      </p>
+      <p>
+       <s pid="89" sid="1">
+        Tuning the parameter values to achieve measured inlet and outlet concentrations is rather straightforward.
+       </s>
+       <s pid="89" sid="2">
+        However, assuming a single decay rate and diffusion coefficient for the entire wetland constrains the solution of the concentration profile.
+       </s>
+       <s pid="89" sid="3">
+        It has been well documented that particular pollutants are targeted for removal within certain wetland cells [6].
+       </s>
+       <s pid="89" sid="4">
+        For example, the large majority of suspended solids are removed in the forebay and deepwater marsh.
+       </s>
+       <s pid="89" sid="5">
+        As a result, if a more accurate prediction of the actual concentration profile is required,
+       </s>
+      </p>
+      <p>
+       <s pid="90" sid="1">
+        different parameter values should be used for each wetland cell.
+       </s>
+      </p>
+      <p>
+       <s pid="91" sid="1">
+        By assuming that each wetland cell (forebay, deepwater marsh, hi/lo marsh, and micropool) has an individual constant lumped decay rate and diffusion coefficient, different pollutant dynamics can be incorporated for each wetland cell.
+       </s>
+       <s pid="91" sid="2">
+        Figure 13 and 14 display the simulation results and the sensitivity of the concentration profile to the individual parameter values.
+       </s>
+       <s pid="91" sid="3">
+        The nominal decay rates assumed were
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      , and
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      , and the nominal diffusion coefficients were
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      , and
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      . The decay rates and diffusion coefficients were then simulated from 40-200% of the nominal values for each wetland cell.
+      <p>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="93" sid="1">
+        Fig. 13.
+       </s>
+       <s pid="93" sid="2">
+        Impact of decay rate in different wetland cells on the steady concentration profile
+       </s>
+      </p>
+      <p>
+       <s pid="94" sid="1">
+        As expected, similar inlet and outlet concentrations can be achieved with significantly different concentration profiles.
+       </s>
+       <s pid="94" sid="2">
+        Additionally, the concentration profile in upstream wetland cells, such as the forebay, is not impacted by changing the decay rates in downstream cells.
+       </s>
+       <s pid="94" sid="3">
+        Finally, manipulating the diffusion coefficient in the various wetland cells has little impact on the concentration profile as compared to the decay rate.
+       </s>
+       <s pid="94" sid="4">
+        As a result, it is recommended that a constant diffusion coefficient be incorporated with a spatially varying decay rate to model the concentration profile through the length of the wetland.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="95" sid="1">
+        Fig. 14.
+       </s>
+       <s pid="95" sid="2">
+        Impact of the diffusion coefficient in different wetland cells on the steady concentration profile
+       </s>
+      </p>
+      <p>
+       <s pid="96" sid="1">
+        The temporal and spatial evolution of concentration was simulated for a 10 day period, as shown in Figure 15 with a constant diffusion coefficient and velocity throughout the wetland and employing the four nominal decay rates for the individual wetland cells.
+       </s>
+      </p>
+      <p>
+       <s pid="97" sid="1">
+        By increasing the decay rate in the forebay to
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      , the shift in the spatial and temporal evolution of concentration can be seen by comparing Figure 15 to Figure 16. As expected, and increase in the decay rate reduces the concentration profile.
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       VII. CONCLUSIONS AND FUTURE WORK
+      </div>
+      <p>
+       <s pid="99" sid="1">
+        Wetland design guides typically provide qualitative assessments of various wetland designs for a wide range of applications, such as stormwater, wastewater, greywater, commercial, and residential treatment wetlands.
+       </s>
+       <s pid="99" sid="2">
+        While easy to follow and replicate, these guides provide little assurance that the proposed design will function as intended and typically target Best Management Practices, not design and control.
+       </s>
+       <s pid="99" sid="3">
+        Existing models for characterizing contaminant transport in treatment wetlands vary greatly depending upon the application of interest.
+       </s>
+       <s pid="99" sid="4">
+        Typically, these models focus on wetland and watershed hydraulics, assume zero or first order transport relationships and are tuned using measured input and output pollutant concentrations.
+       </s>
+       <s pid="99" sid="5">
+        The models that do capture the complex interactions of transport phenomena are difficult to tune and cumbersome to use in practice.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="100" sid="1">
+        Fig. 15.
+       </s>
+       <s pid="100" sid="2">
+        Spatial and temporal evolution of concentration with nominal decay rates
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="101" sid="1">
+        Fig. 16.
+       </s>
+       <s pid="101" sid="2">
+        Spatial and temporal evolution of concentration with
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Equation
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="102" sid="1">
+        Using a one dimensional advection diffusion reaction equation to describe the pollutant transport through the proposed wetland, both the reaction rate and the diffusion coefficient impact the spatial concentration distribution.
+       </s>
+       <s pid="102" sid="2">
+        Surprisingly, the average water velocity does influence the concentration profile and should not be neglected.
+       </s>
+       <s pid="102" sid="3">
+        If a simple transport model is sought, it is recommended that a spatially varying reaction rate be employed with a constant diffusion coefficient.
+       </s>
+      </p>
+      <p>
+       <s pid="103" sid="1">
+        Future work could incorporate hydrologic models to assess the impact of stormwater surges on contaminant transport.
+       </s>
+       <s pid="103" sid="2">
+        Additionally, data for expected stormwater constituents in the City of Ann Arbor, along with information on particular species could be used to provide a more detailed analysis of particular constituent concentration profiles.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       VIII. ACKNOWLEDGEMENTS
+      </div>
+      <p>
+       <s pid="104" sid="1">
+        I would like to acknowledge the help and support received from Danielle Kahn, a graduate student in the Landscape Architecture Program at the University of Michigan.
+       </s>
+       <s pid="104" sid="2">
+        Her role in this project was instrumental in developing an innovative and unique final design for West Park, which incorporated many of the design elements presented here.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       REFERENCES
+      </div>
+      <ul id="N102CE">
+       <li id="N102CF">
+        [1] J. A. Bobrin, Rules of the Washtenaw County Drain Commisioner, Procedures and Design Criteria for Storm Water Management Systems, Washtenaw County, Michigan, 2000.
+       </li>
+       <li id="N102D1">
+        [2] “Best management practices for storm water: A developers’ guide for ann arbor," Mallets Creek Coordinating Committee and The City of Ann Arbor, Michigan, 2005.
+       </li>
+       <li id="N102D3">
+        [3] L. Cowardin, V. Carter, F. Gloet, and E. LaRoe, Classifications of Wetlands and Deepwater Habitats of the United States, FWS/OBS- 79/31, U.S. Fish and Wildlife Service, 1979.
+       </li>
+       <li id="N102D5">
+        [4] EPA, Wetland Fact Sheets. US EPA 843-F-04-011a. Office of Water, 2004.
+       </li>
+       <li id="N102D7">
+        [5] W. Mitsch and J. Gosselink, Wetlands, 3rd ed. John Wiley and Sons, Inc., 2000.
+       </li>
+       <li id="N102D9">
+        [6] T. Schueler, Design of Stormwater Wetland Systems. Department of Environmental Programs, Metropolitan Washington Council of Governments, 1992.
+       </li>
+       <li id="N102DB">
+        [7] U. Mander and P. Jenssen, “Constructed wetlands for wastewater treatment in cold climates," in International Series on Advances in Ecological Sciences. WIT Press, 2003, vol. 11.
+       </li>
+       <li id="N102DD">
+        [8] G. M. (editor), Constructed Wetlands for Water Quality Improvement. Lewis Publishers, 1993.
+       </li>
+       <li id="N102DF">
+        [9] D. of Environmental Protection and O. of Coastal Zone Management, Stormwater Management Volume II: Stormwater Technical Handbook, State of Massachusetts, 1997.
+       </li>
+       <li id="N102E1">
+        [10] M. Kayhanian, T. Young, and M. Stenstrom, “Limitation of current solids measurements in stormwater runoff," Journal for Surface Water Quality Professionals, vol. July/August, 2005.
+       </li>
+       <li id="N102E3">
+        [11] H. Lee, S. Lau, M. Kayhanian, and M. Stenstrom, “Seasonal first flush phenomenon of urban storwater discharges," Water Research, vol. 38, 2004.
+       </li>
+       <li id="N102E5">
+        [12] H. Brix, “Wastewater treatment in constructed wetlands: System design, removal processes, and treatment performance," in Constructed Wetlands for Water Quality Improvement. Lewis Publishers, 1993.
+       </li>
+       <li id="N102E7">
+        [13] K. Konyha, D. Shaw, and K. Weiler, “Hydrologic design of a wetland: advantages of continuos modeling," Ecological Engineering, vol. 4, 1995.
+       </li>
+       <li id="N102E9">
+        [14] P. Bedient and W. Huber, Hydrology and Floodplain Analysis. Prentice Hall, 2002.
+       </li>
+       <li id="N102EB">
+        [15] D. Walker, “Modelling residence time in stormwater ponds," Ecological Engienering, vol. 10, 1998.
+       </li>
+       <li id="N102ED">
+        [16] A. Wood, “Constructed wetlands for wastewater treatment – engineering and design considerations," in Constructed Wetlands in Water Pollution Control. International Conference on the Use of Constructed Wetlands in Water Pollution, Pergamon Press, 1990.
+       </li>
+       <li id="N102EF">
+        [17] R. Kadlec, W. Bastiaens, and D. Urban, “Hydrologic design of free water surface treatment wetlands," in Constructed Wetlands for Water Quality Improvement. Lewis Publishers, 1993.
+       </li>
+       <li id="N102F1">
+        [18] R. Kadlec, “Effects of pollutant speciation in treatment wetlands design," Ecological Engineering, vol. 20, 2003.
+       </li>
+       <li id="N102F3">
+        [19] D. Walker, “Modelling sedimentation processes in a constructed wetland," The Science of the Total Environment, vol. 266, 2001.
+       </li>
+       <li id="N102F5">
+        [20] T. Johengen and P. LaRock, “Quantifying nutrient removal processes within a constructed wetland designed to treat urban stormwater runoff," Ecological Engineering, vol. 2, 1993.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

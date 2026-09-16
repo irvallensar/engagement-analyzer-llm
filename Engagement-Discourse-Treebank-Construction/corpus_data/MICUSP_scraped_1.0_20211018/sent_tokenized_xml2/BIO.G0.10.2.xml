@@ -1,0 +1,511 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Drosophila Melanogaster Genetic Analysis Experiment
+     </div>
+     <div class="abstract">
+      Abstract
+      <p>
+       In this experiment the Ore-R phenotype (wild type) of Drosophila was crossed with unknown U-2544 phenotype.  The Ore-R exhibits a light tan body color with red eyes.  It also has all five longitudinal wing venations as well as the two cross veins.  The first cross vein is located between the L3 and L4 longitudinal veins and the second between L4 and L5 longitudinal veins.  The unknown U-2544 exhibits a mutant dark tan body with mutant white eyes and has mutant longitudinal wing venations that do not fully extend the length of the wing but rather only about 2/3 of the wing length.  The U-2544 however does exhibit the two cross veins as the Ore-R phenotype exhibits.  We also used three stocks of marker Drosophila known as Markers II, III, and I named for the chromosomal locus of their mutations.  We concluded that there are two genes involved in eye color mutations, which are located on chromosome II.  Here we have called these genes the "o" and the "b" genes for orange and brown-eyed mutants respectively.   For the body color mutation we found only one gene to bear responsibility and so was named "d" for dark body.  This gene was found to be located on chromosome III.  Also to be found on this third chromosome was our mutant gene for shortened longitudinal wing venation.  This gene was named "w".  The single allele mutations, w and d, were found to both be of autosomal recessive inheritance.  The mutations in eye color controlled by two genes were also found to be autosomal and recessive to wild type but epistatic to each other.  Below are chromosomal maps of U-2544's first three chromosomes including the genetic locus of the known marker mutations as well as the found locus of the unknown mutations (shown in bold).
+      </p>
+      <p>
+       Chromosome I  (X Chromosome)
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Chromosome II (Autosome)
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       Chromosome III (Autosome)
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <list>
+       Known gene symbols
+       <item>
+        cv	crossveinless		Cy	Curly			Gl	Glued
+       </item>
+       <item>
+        f	forked			Bl	Bristle			Sb	Stubble
+       </item>
+       <item>
+        L	Lobed
+       </item>
+      </list>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Drosophila melanogaster is a well-studied species that is easily anesthetized and handled.
+       </s>
+       <s pid="1" sid="2">
+        Because of this, as well as its relatively small genome of four chromosomes and short developmental duration of four days to imago, Drosophila is an ideal species for genetic analysis.
+       </s>
+       <s pid="1" sid="3">
+        The fact that virgin female flies, which are necessary in order to ensure proper genetic crossing, are easily extracted from a newly hatched population due to the innate inability of either sex to mate within the first ten or so hours of life, furthers this attraction to Drosophila as a controlled laboratory experiment.
+       </s>
+       <s pid="1" sid="4">
+        In this experiment we take advantage of these characteristics and use them to identify the genetic locus of specific mutations that cause deviations in the wild type phenotypic eye color, body color and wing venation.
+       </s>
+       <s pid="1" sid="5">
+        This can be achieved by performing five crosses.
+       </s>
+       <s pid="1" sid="6">
+        The parental reciprocal crosses, A and B, are performed to determine whether the mutant genes are sex-linked, autosomal, recessive, or dominate.
+       </s>
+       <s pid="1" sid="7">
+        The parental cross of the unknown virgin females with the males of marker stocks' II, III and I provide verification to the findings of the reciprocal crosses as well as confirmation of known information of the dominate marker II and marker III mutations, and the recessive mutations of the marker I stock.
+       </s>
+       <s pid="1" sid="8">
+        The F2 generations of these marker crosses become useful when determining gene interactions and chromosomal locus.
+       </s>
+       <s pid="1" sid="9">
+        By observing the expressed phenotypes in the F2 generation of the reciprocal crosses, we can determine the number of genes involved in a specific mutation, such as eye color, body color, or wing venation and calculate the map distance between them.
+       </s>
+       <s pid="1" sid="10">
+        We can also use chi-squared testing in order to prove or disprove hypotheses of our findings.
+       </s>
+       <s pid="1" sid="11">
+        If it is concluded that two mutations are linked through a chi-squared test, the map distances between them can be calculated through the well-known techniques as discussed in the MCDB 306 lecture.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        The marker I cross can offer information about sex-linked genes and their locus on the first chromosome.
+       </s>
+       <s pid="2" sid="2">
+        With a population from these three crosses combined, we were able to perform more accurate statistical analysis through the chi-squared test and determine genetic linkage or independent assortment of multiple allele genes than with the reciprocal cross F2 generation data alone.
+       </s>
+       <s pid="2" sid="3">
+        The F2 generation of the marker II and III crosses tell us if the mutations are located on the respective chromosome by a lack of simultaneous expressivities of the phenotype.
+       </s>
+       <s pid="2" sid="4">
+        The map distances between the mutations found to be on those genes can be determined through analyzing the recombinant data from the F2 generation of the reciprocal crosses.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Materials and Methods
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Once the flies were carefully removed from their feeding vials, and anesthetized with CO2, they were sexed.
+       </s>
+       <s pid="3" sid="2">
+        Virgin females could be obtained by clearing all flies from the vials and returning to collect and sex them within 10 hours of the clearing.
+       </s>
+       <s pid="3" sid="3">
+        Ten Crosses were then performed, each made in duplicate.
+       </s>
+       <s pid="3" sid="4">
+        Ore-R Drosophila was used as the wild type, U-2544 was used as the unknown mutant stock, and marker stocks I, II and III were used.
+       </s>
+       <s pid="3" sid="5">
+        As a parental cross, U-2544 virgin female were crossed with Ore-R males, this was called Cross A.
+       </s>
+       <s pid="3" sid="6">
+        A reciprocal parental cross was created between the Ore-R virgin females and the U-2544 males, Cross B. U-2544 virgin females were crossed with Marker I males, Cross I. U-2544 virgin females were crossed with Marker II males, Cross II.
+       </s>
+       <s pid="3" sid="7">
+        U-2544 virgin females were crossed with Marker III males, Cross III.
+       </s>
+       <s pid="3" sid="8">
+        Once the F1 generation was scored and analyzed, Crosses A, B, and I were allowed to continue through an F2 generation, with the removal of parents within 7days of set up.
+       </s>
+       <s pid="3" sid="9">
+        Cross II had F1 Bl+ L+ males removed and Cross III had F1 Gl+Sb+ males removed, each to be backcrossed with U-2544 virgin females in new vials.
+       </s>
+       <s pid="3" sid="10">
+        The complete and detailed procedure is described in the MCDB 306 lab manual.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Results and Discussion
+      </div>
+      <div>
+       <div class="head_2">
+        Crosses A and B
+       </div>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="4" sid="1">
+         The F1 data above indicates that the gene for body color is recessive.
+        </s>
+        <s pid="4" sid="2">
+         This is due to the lack of the mutant appearance in the F1 generation of both Crosses A and B.
+        </s>
+        <s pid="4" sid="3">
+         It also indicates that the mutation is autosomal due to the appearance of the wild type trait in the males.
+        </s>
+        <s pid="4" sid="4">
+         Had the trait been sex linked, the males of Cross A would have received their only X chromosome from the U-2544 mother and exhibited the dark body phenotype.
+        </s>
+       </p>
+       <p>
+        <s pid="5" sid="1">
+         The F2 data for body color produced a 3:1 wild type to mutant phenotypic ratio.
+        </s>
+        <s pid="5" sid="2">
+         Since we can conclude from the F1 generation that the gene for body color is autosomal, it is not necessary to account a female to male ratio.
+        </s>
+        <s pid="5" sid="3">
+         For these results we hypothesize a normal segregation for the body color gene.
+        </s>
+        <s pid="5" sid="4">
+         The chi-squared value for this hypothesis was 0.2411.
+        </s>
+        <s pid="5" sid="5">
+         This result, under one degree of freedom, yields a p-value that is greater than 0.5 but less than 0.9.
+        </s>
+        <s pid="5" sid="6">
+         Therefore we accept our hypothesis of normal segregation for body color.
+        </s>
+       </p>
+       <div class="gap">
+        <span>
+         Table
+        </span>
+        here
+       </div>
+       <p>
+        <s pid="6" sid="1">
+         The F1 data for the wing venation is similar to that of the F1 data for mutant body color.
+        </s>
+        <s pid="6" sid="2">
+         The lack of appearance of the mutant trait in the F1 generation allows us to conclude that the mutation is recessive.
+        </s>
+        <s pid="6" sid="3">
+         The fact that the males of the F1 generation of Cross A forces us to conclude that the gene for wing venation is autosomal.
+        </s>
+       </p>
+       <p>
+        <s pid="7" sid="1">
+         The data for the F2 generation yields a 4:1wild type to mutant phenotypic ratio.
+        </s>
+        <s pid="7" sid="2">
+         For this data we hypothesize a normal segregation of the gene for wing venation.
+        </s>
+        <s pid="7" sid="3">
+         The chi-squared value of 9.67 with one degree of freedom indicates a p-value that is much less than 0.005 and therefore we must reject the hypothesis and conclude that the wing venation gene does not segregate normally, and that it is linked.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Combined Results of Body Color and Wing Venation
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        The results of body color and wing venation combined produce a ratio that cannot be used to easily conclude whether the two traits are linked or whether they independently assort.
+       </s>
+       <s pid="8" sid="2">
+        Therefore we calculate a chi-squared test with a hypothesis that they do assort independently.
+       </s>
+       <s pid="8" sid="3">
+        With this assumption we calculate a value of 104.305.
+       </s>
+       <s pid="8" sid="4">
+        This result, under three degrees of freedom, yields a p-value that is much less that 0.005 and therefore the hypothesis must be rejected and we conclude that the mutant genes d and w are linked.
+       </s>
+       <s pid="8" sid="5">
+        Knowing this, we can calculate the map distance using the amount of recombinants in the F2 generation.
+       </s>
+       <s pid="8" sid="6">
+        Here we calculated that map distance between d and w to be 44.2 mu.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="9" sid="1">
+        The F1 generation here provides us with the same information as found for the body color as well as wing venation mutations.
+       </s>
+       <s pid="9" sid="2">
+        We can conclude through the lack of mutant findings in the F1, we can conclude that the mutation is recessive.
+       </s>
+       <s pid="9" sid="3">
+        We can also conclude that it is autosomal due to the fact that the F1 males of Cross A do not exhibit this trait.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        The F2 generation provides us with two new phenotypes, according to eye color.
+       </s>
+       <s pid="10" sid="2">
+        The red eye color is wild type and as such a parental phenotype.
+       </s>
+       <s pid="10" sid="3">
+        The same is true for the mutant parental white-eyed F2 flies.
+       </s>
+       <s pid="10" sid="4">
+        From this data we hypothesized that there were two genes interacting with each other in order to produce orange and brown eyes.
+       </s>
+       <s pid="10" sid="5">
+        The two genes o and b are epistatic to each other.
+       </s>
+       <s pid="10" sid="6">
+        This meaning that a wild type Ore-r would have o+_b+_ genes, homozygous or heterozygous, as long as one of each dominate gene were present to create the red eye.
+       </s>
+       <s pid="10" sid="7">
+        This would also indicate that our U-2544 would have oobb genes, homozygous recessive alleles for both genes involved in eye color.
+       </s>
+       <s pid="10" sid="8">
+        From this we state that the orange-eyed phenotype will be oob+_, homozygous recessive for the o gene expressing that it is epistatic to the b+ wild type gene.
+       </s>
+       <s pid="10" sid="9">
+        Similarly, we state that the brown-eyed phenotype will be o+_bb, homozygous recessive for the b gene expressing that the presence of two mutant alleles results in epistasis.
+       </s>
+       <s pid="10" sid="10">
+        Through Mendel's experiments with his peas, it is known that two genes that are independently assorting form a 9:3:3:1 ratio, given that each trait yields a 3:1 ratio.
+       </s>
+       <s pid="10" sid="11">
+        From the high amount of double recombinant phenotype in the F2 generation we can conclude that the genes for eye color are in fact not independently assorting but linked.
+       </s>
+       <s pid="10" sid="12">
+        This can be seen even without doing a chi-squared test by comparing the 9:3:3:1 expected ratio to the 10:1:2:3 found ratio.
+       </s>
+       <s pid="10" sid="13">
+        We calculated the map units between the two genes to be 43.6 mu.
+       </s>
+      </p>
+      <div>
+       <div class="head_2">
+        Male Parent Backcross II and III
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         The marker stocks are used in order to verify chromosomal locus.
+        </s>
+        <s pid="11" sid="2">
+         The known mutations are dominant Cy, Bl, and L in marker II stock, and Gl and Sb in the marker III stock.
+        </s>
+        <s pid="11" sid="3">
+         These mutations are known to be homozygous lethal, which form what we call a balanced lethal system.
+        </s>
+        <s pid="11" sid="4">
+         The F1 generation of these marker crosses alone does not tell us anything more than that which we have learned from the reciprocal crosses.
+        </s>
+        <s pid="11" sid="5">
+         When males of the F1 are separated and crossed with U-2544 virgin females, called a male backcross, we can use the resultant phenotypes to determine whether or not the selected trait is on chromosome II or III.
+        </s>
+        <s pid="11" sid="6">
+         Because of the lack of recombination in male Drosophila, we determine that the mutant genes appearing with the marker mutations reveal that they are not on the same chromosome.
+        </s>
+        <s pid="11" sid="7">
+         For example, we found the gene d, dark body, to be located on chromosome III.
+        </s>
+        <s pid="11" sid="8">
+         This was discovered through a male backcross of the marker III F1 progeny.
+        </s>
+        <s pid="11" sid="9">
+         The genotype of the F1 male is Gl+ Sb+ d+/ Gl Sb d, and it is crossed with a U-2544 female whose genotype is Gl+ Sb+ d+/ Gl+ Sb+ d+.
+        </s>
+        <s pid="11" sid="10">
+         Since there is no recombination in male Drosophila, and any recombination in the female would not change the genotype, we can conclude that any progeny would have the wild type allele d+ in its genotype and be dominant over our mutant gene.
+        </s>
+        <s pid="11" sid="11">
+         If the genes were not linked, the fact that there is no recombination between chromosomes in males would be irrelevant.
+        </s>
+        <s pid="11" sid="12">
+         This backcross theory is relevant to any backcross.
+        </s>
+        <s pid="11" sid="13">
+         The results from our marker III male backcross indicates that neither the body color gene, d, nor the wing venation gene, w, appear with the marker III mutations.
+        </s>
+        <s pid="11" sid="14">
+         From understanding of what the male backcross can tell us, we know that these genes must be located on the chromosome III.
+        </s>
+        <s pid="11" sid="15">
+         It is seen that the eye color mutation does appear with the chromosome III mutations and therefore cannot be located on the same chromosome.
+        </s>
+        <s pid="11" sid="16">
+         We then conclude that the genes must be located on chromosome II.
+        </s>
+        <s pid="11" sid="17">
+         This information would be indicated by a backcross of the marker II stock, had it thrived.
+        </s>
+        <s pid="11" sid="18">
+         The cross failure was probably due to over exposure of the sensitive marker II stock to the CO2 anesthetizing agent.
+        </s>
+        <s pid="11" sid="19">
+         Because of this mating failure between any male progeny and the U-2544 virgin females, we must deduce the chromosomal locus through a process of elimination using other experimental and known information.
+        </s>
+        <s pid="11" sid="20">
+         Since we know that o and b are not sex linked, they cannot be located on chromosome I.
+        </s>
+        <s pid="11" sid="21">
+         It is known that o and b are not located on chromosome four.
+        </s>
+        <s pid="11" sid="22">
+         Now that is experimentally determined through male backcross that o and b are not on chromosome III, we can only conclude that they must be located on chromosome II.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Cross A, B and I Combined
+       </div>
+       <p>
+        <s pid="12" sid="1">
+         Combining the found information of crosses A, B and I provide us with a larger population and more accurate data for eye color analysis.
+        </s>
+        <s pid="12" sid="2">
+         By performing a chi-squared test we can test a hypothesis of independent assortment between the two genes.
+        </s>
+        <s pid="12" sid="3">
+         The result had a value of 277.46 yielding a p-value that was much less than 0.005 and so disproving our hypothesis.
+        </s>
+        <s pid="12" sid="4">
+         From this we can conclude that the o and b genes are linked.
+        </s>
+        <s pid="12" sid="5">
+         We use the recombinant data to calculate a map distance of 45.3 mu between o and b.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Summary
+      </div>
+      <p>
+       <s pid="13" sid="1">
+        From this experiment it is concluded that the eye color mutations are linked and located on chromosome II.
+       </s>
+       <s pid="13" sid="2">
+        The gene o has a genetic locus of 59.2 mu while b has a genetic locus of 104.5 mu.
+       </s>
+       <s pid="13" sid="3">
+        It was also found that wing venation and body color mutations are linked and located on chromosome III.
+       </s>
+       <s pid="13" sid="4">
+        The w gene has a genetic locus of 0mu and d can be found at 44.2 mu.
+       </s>
+       <s pid="13" sid="5">
+        Crosses A and B's F1 generations provided us with the knowledge that the U-2544 mutations were autosomal recessive.
+       </s>
+       <s pid="13" sid="6">
+        The resulting F2 generations from these reciprocal crosses allowed us to perform chi-squared statistical analysis proving that the body color and wing venation genes are linked.
+       </s>
+       <s pid="13" sid="7">
+        The F2 generation data also allowed us to determine that two genes are involved in eye color, that they are epistatic to each other.
+       </s>
+       <s pid="13" sid="8">
+        We also used this data to determine an estimate of map distance between them.
+       </s>
+       <s pid="13" sid="9">
+        The male backcross of the marker crosses was necessary to determine chromosomal locus.
+       </s>
+       <s pid="13" sid="10">
+        In the case of the U-2544, it turns out, only the marker III cross was necessary in determining chromosomal locus.
+       </s>
+       <s pid="13" sid="11">
+        Through this cross, we determined that w and d were located on the third chromosome and that o and b were not.
+       </s>
+       <s pid="13" sid="12">
+        The marker cross I gave us additional information in calculation of the map distance between the two eye color genes.
+       </s>
+       <s pid="13" sid="13">
+        Had our mutant genes been sex linked, it would have been necessary to find the chromosomal locus.
+       </s>
+       <s pid="13" sid="14">
+        The loss of the marker II cross was regrettable but not detrimental to our conclusion that the eye color genes had a chromosomal locus here, due to the fact that Drosophila has a limited genome, one of the main reasons for using Drosophila in genetic analysis.
+       </s>
+       <s pid="13" sid="15">
+        The following maps indicate the chromosomal and genetic locus of the unknown mutations as well as the loci of the marker mutations.
+       </s>
+      </p>
+      <p>
+       <s pid="14" sid="1">
+        Chromosome I (X Chromosome)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="15" sid="1">
+        Chromosome II (Autosome)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="16" sid="1">
+        Chromosome III (Autosome)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <list>
+       <div class="">
+        Known gene symbols
+       </div>
+       <item>
+        cv	crossveinless		Cy	Curly			Gl	Glued
+       </item>
+       <item>
+        f	forked			Bl	Bristle			Sb	Stubble
+       </item>
+       <item>
+        L	Lobed
+       </item>
+      </list>
+     </div>
+    </div>
+    <div>
+     <p>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

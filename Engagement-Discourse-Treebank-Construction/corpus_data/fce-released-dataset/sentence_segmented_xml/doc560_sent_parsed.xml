@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      Spanish
+     </language>
+     <age>
+      26-30
+     </age>
+    </personnel>
+    <score>
+     40.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      5.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Dear Mrs Ryan,
+      </p>
+      <p>
+       I am very happy to know that I have won the first prize in
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       competition. I am writing in order to give you all the details that you need from me.
+      </p>
+      <p>
+       First of all, I would like to travel in July because I think California is better in Summer. Regarding accommodation, I would prefer to stay in a log cabin because cabins seem to be more comfortable than tents. According to your letter, I will be able to take part in two activities at the Camp. Let me tell you that I would like to sing and play tennis. As a matter of fact, I am very good at both of them.
+      </p>
+      <p>
+       Finally, I would like you to tell me if I will need some special clothes. If the answer is yes, could you tell me
+       <ns type="RQ">
+        <i>
+         which
+        </i>
+       </ns>
+       kind of clothes I will need. One other thing, it would be useful to know if I will need to take with me some extra money. If the answer is yes, could you tell me how much money I will need to take with me.
+      </p>
+      <p>
+       I look forward to receiving
+       <ns type="DD">
+        <i>
+         you
+        </i>
+       </ns>
+       reply.
+      </p>
+      <p>
+       Yours sincerely,
+      </p>
+      <p>
+       DENIS JIMENEZ
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Dear Mrs Ryan,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I am very happy to know that I have won the first prize in you competition.
+       </s>
+       <s pid="2" sid="2">
+        I am writing in order to give you all the details that you need from me.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        First of all, I would like to travel in July because I think California is better in Summer.
+       </s>
+       <s pid="3" sid="2">
+        Regarding accommodation, I would prefer to stay in a log cabin because cabins seem to be more comfortable than tents.
+       </s>
+       <s pid="3" sid="3">
+        According to your letter, I will be able to take part in two activities at the Camp.
+       </s>
+       <s pid="3" sid="4">
+        Let me tell you that I would like to sing and play tennis.
+       </s>
+       <s pid="3" sid="5">
+        As a matter of fact, I am very good at both of them.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Finally, I would like you to tell me if I will need some special clothes.
+       </s>
+       <s pid="4" sid="2">
+        If the answer is yes, could you tell me which kind of clothes I will need.
+       </s>
+       <s pid="4" sid="3">
+        One other thing, it would be useful to know if I will need to take with me some extra money.
+       </s>
+       <s pid="4" sid="4">
+        If the answer is yes, could you tell me how much money I will need to take with me.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        I look forward to receiving you reply.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Yours sincerely,
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        DENIS JIMENEZ
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      5.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       Introduction
+      </p>
+      <p>
+       This report is to suggest which lessons and activities should be filmed in order to make the video about daily life at school.
+      </p>
+      <p>
+       Lessons and Activities suggested
+      </p>
+      <p>
+       Lessons attended in the language laboratory.
+      </p>
+      <p>
+       Special lessons attended in the library.
+      </p>
+      <p>
+       Students using the computer and video room
+      </p>
+      <p>
+       Activities connected with the social programme
+       <ns type="MP">
+       </ns>
+       such as international evenings,
+       <ns type="RP">
+        <i>
+         sing along
+        </i>
+       </ns>
+       parties and indoor games.
+      </p>
+      <p>
+       Ordinary lessons attended by students
+       <ns type="RT">
+        <i>
+         from
+        </i>
+       </ns>
+       different levels
+       <ns type="M">
+       </ns>
+       .
+      </p>
+      <p>
+       By filming...
+      </p>
+      <p>
+       Lessons and activities which take place in the language laboratory, in the library and in the computer and video room, we can also show the school's facilities and how students take advantage of them.
+      </p>
+      <p>
+       Ordinary lessons
+       <ns type="U">
+        <i>
+         , it
+        </i>
+       </ns>
+       <ns type="AGV">
+        <i>
+         is
+        </i>
+       </ns>
+       a good way of showing the relationship between students and teachers.
+      </p>
+      <p>
+       Activities connected with the social programme, we can show how students make the most of their time at school when they are not attending their ordinary lessons or using the facilities.
+      </p>
+      <p>
+       Conclusion
+      </p>
+      <p>
+       I would recommend the lessons and activities mentioned above in order to make the video in question.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Introduction
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        This report is to suggest which lessons and activities should be filmed in order to make the video about daily life at school.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        Lessons and Activities suggested
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Lessons attended in the language laboratory.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Special lessons attended in the library.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        Students using the computer and video room
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Activities connected with the social programme such as international evenings, sing along parties and indoor games.
+       </s>
+      </p>
+      <p pid="8">
+       <s pid="8" sid="1">
+        Ordinary lessons attended by students from different levels .
+       </s>
+      </p>
+      <p pid="9">
+       <s pid="9" sid="1">
+        By filming...
+       </s>
+      </p>
+      <p pid="10">
+       <s pid="10" sid="1">
+        Lessons and activities which take place in the language laboratory, in the library and in the computer and video room, we can also show the school's facilities and how students take advantage of them.
+       </s>
+      </p>
+      <p pid="11">
+       <s pid="11" sid="1">
+        Ordinary lessons, it is a good way of showing the relationship between students and teachers.
+       </s>
+      </p>
+      <p pid="12">
+       <s pid="12" sid="1">
+        Activities connected with the social programme, we can show how students make the most of their time at school when they are not attending their ordinary lessons or using the facilities.
+       </s>
+      </p>
+      <p pid="13">
+       <s pid="13" sid="1">
+        Conclusion
+       </s>
+      </p>
+      <p pid="14">
+       <s pid="14" sid="1">
+        I would recommend the lessons and activities mentioned above in order to make the video in question.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

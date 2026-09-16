@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      German
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     31.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       <ns type="L">
+        <i>
+         Hello!
+        </i>
+       </ns>
+      </p>
+      <p>
+       My name is Alois Blau and I'm very happy that I've won this competition. Unfortunately I can only travel in July, because I have to attend school until June the 30th and in August I have to work in an office
+       <ns type="R">
+        <i>
+         for
+        </i>
+       </ns>
+       experience. I hope
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that's possible.
+      </p>
+      <p>
+       I would prefer
+       <ns type="RV">
+        <i>
+         living
+        </i>
+       </ns>
+       in a tent during the two weeks because I think a tent is
+       <ns type="R">
+        more natural
+       </ns>
+       . A log cabin doesn't sound like a
+       <ns type="RN">
+        <i>
+         camp
+        </i>
+       </ns>
+       holiday. It sounds like a
+       <ns type="RP">
+        <i>
+         summer-holiday
+        </i>
+       </ns>
+       <ns type="RT">
+        <i>
+         at
+        </i>
+       </ns>
+       the
+       <ns type="RN">
+        <i>
+         beach
+        </i>
+       </ns>
+       of Italy.
+      </p>
+      <p>
+       From the activities
+       <ns type="M">
+       </ns>
+       I want
+       <ns type="RV">
+        <i>
+         to take
+        </i>
+       </ns>
+       <ns type="RP">
+        <i>
+         Golf and Surfing
+        </i>
+       </ns>
+       .
+       <ns type="X">
+        <i>
+         Both activities I've never done in my life
+        </i>
+       </ns>
+       , so I am a complete beginner
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       playing
+       <ns type="RP">
+        <i>
+         Golf and
+         <ns type="RT">
+          <i>
+           in
+          </i>
+         </ns>
+         Surfing
+        </i>
+       </ns>
+       . But the reason I want to try these two activities
+       <ns type="AGV">
+        <i>
+         are
+        </i>
+       </ns>
+       their image. Golf
+       <ns type="R">
+        <i>
+         play the
+        </i>
+       </ns>
+       wealthy people,
+       <ns type="W">
+        <i>
+         the upper class of a town
+        </i>
+       </ns>
+       , and surfing sounds like freedom.
+      </p>
+      <p>
+       There is only one more question I want to ask:
+       <ns type="RP">
+        <i>
+         Can
+        </i>
+       </ns>
+       I take my
+       <ns type="RP">
+        <i>
+         girl-friend
+        </i>
+       </ns>
+       with me,
+       <ns type="W">
+        <i>
+         of course
+         <ns type="MP">
+         </ns>
+         <ns type="UT">
+          <i>
+           with
+          </i>
+         </ns>
+         paying
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       I hope all my wishes are
+       <ns type="S">
+        <i>
+         realizeable
+        </i>
+       </ns>
+       .
+      </p>
+      <p>
+       Yours
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Hello!
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        My name is Alois Blau and I'm very happy that I've won this competition.
+       </s>
+       <s pid="2" sid="2">
+        Unfortunately I can only travel in July, because I have to attend school until June the 30th and in August I have to work in an office for experience.
+       </s>
+       <s pid="2" sid="3">
+        I hope, that's possible.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        I would prefer living in a tent during the two weeks because I think a tent is more natural.
+       </s>
+       <s pid="3" sid="2">
+        A log cabin doesn't sound like a camp holiday.
+       </s>
+       <s pid="3" sid="3">
+        It sounds like a summer-holiday at the beach of Italy.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        From the activities  I want to take Golf and Surfing.
+       </s>
+       <s pid="4" sid="2">
+        Both activities I've never done in my life, so I am a complete beginner in playing Golf and in Surfing.
+       </s>
+       <s pid="4" sid="3">
+        But the reason I want to try these two activities are their image.
+       </s>
+       <s pid="4" sid="4">
+        Golf play the wealthy people, the upper class of a town, and surfing sounds like freedom.
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        There is only one more question I want to ask: Can I take my girl-friend with me, of course with paying?
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        I hope all my wishes are realizeable.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Yours
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      3
+     </question_number>
+     <exam_score>
+      4.3
+     </exam_score>
+     <coded_answer>
+      <p>
+       In my opinion shopping is not always enjoyable. Very often, for example on Friday afternoon or Saturday, there are so many people in
+       <ns type="RD">
+        <i>
+         a
+        </i>
+       </ns>
+       shopping centre
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       that you can't move
+       <ns type="UA">
+        <i>
+         yourself
+        </i>
+       </ns>
+       forwards or backwards. Many people say that this is real shopping, when you queue for hours
+       <ns type="W">
+        <i>
+         to pay only
+        </i>
+       </ns>
+       <ns type="MT">
+       </ns>
+       a pair of socks or a bottle of mineral water at the supermarket. I think
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       you can't really enjoy shopping when there are hundreds of people and everyone wants to buy something.
+      </p>
+      <p>
+       I like going shopping during the week, when I can look at each
+       <ns type="RN">
+        <i>
+         good
+        </i>
+       </ns>
+       a store sells. But for me it is better
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       when I go at the weekend because then I don't spend so much money because I think
+       <ns type="UP">
+        <i>
+         ,
+        </i>
+       </ns>
+       before I have to queue for half an hour
+       <ns type="UA">
+        <i>
+         I
+        </i>
+       </ns>
+       <ns type="FV">
+        <i>
+         buy
+        </i>
+       </ns>
+       <ns type="RN">
+        <i>
+         nothing
+        </i>
+       </ns>
+       !
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        In my opinion shopping is not always enjoyable.
+       </s>
+       <s pid="1" sid="2">
+        Very often, for example on Friday afternoon or Saturday, there are so many people in a shopping centre, that you can't move yourself forwards or backwards.
+       </s>
+       <s pid="1" sid="3">
+        Many people say that this is real shopping, when you queue for hours to pay only  a pair of socks or a bottle of mineral water at the supermarket.
+       </s>
+       <s pid="1" sid="4">
+        I think, you can't really enjoy shopping when there are hundreds of people and everyone wants to buy something.
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I like going shopping during the week, when I can look at each good a store sells.
+       </s>
+       <s pid="2" sid="2">
+        But for me it is better, when I go at the weekend because then I don't spend so much money because I think, before I have to queue for half an hour I buy nothing!
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

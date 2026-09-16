@@ -1,0 +1,527 @@
+<?xml version="1.0" ?>
+<div id="text">
+ <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+  <div>
+   <div class="paper_title">
+    Title: Correlation between Straits Times Industrial Index (STI) with Other Key Financial Stock Indexes
+   </div>
+   <p>
+   </p>
+   <div class="abstract">
+    Executive Summary
+    <p>
+     This report studies the correlation between the percentage changes in Singapore’s Straits Times Industrial Index (STI) with the percentage changes in other key financial stock indexes in Dow Jones Industrial Composite (New York, United States), Financial Times Stock Exchange 100 (London, United Kingdom), Nikkei 225 (Tokyo, Japan) and Hang Seng Index (Hong Kong SAR, China) from the period of Jan 2004 to Aug 2007. The regression model indicates a percentage change in STI index is directly correlated with the selected stock indexes. In the regression model, a small positive correlation between the percentage moves in STI index and Dow Jones Industrial (Composite) index is observed, while there are larger correlation relationships with other stock indexes. However, it is noted that there are other possible interaction of other economic factors (such as Singapore’s macroeconomic performance and bilateral/multilateral trade relations) which could influence the changes in STI index.
+    </p>
+   </div>
+  </div>
+  <div class="dynacloud">
+   <div>
+    <div class="head_1">
+     Introduction
+    </div>
+    <p>
+     1. Often, we would notice from financial bulletins that the world’s key stock indexes generally move in tandem with each other, in particular in the event of a major crisis where major stock indexes plunge drastically or a major economic breakthrough where stock markets boomed. Possible reasons contributing to this trend include (i) the strong interlink between the world’s major financial markets where buyers and sellers are operating across the globe like in a single market, (ii) the wide implications to the entire world economy due to a major event such as a terrorist attack or a financial credit crunch and (iii) the general knee-jerk reaction of speculators.
+    </p>
+    <p>
+     2. While there is a general trend of stock markets moving together in major events, there are exceptions of stock indexes contradicting the trend. These then could possibly due to internal economic factors such as internal good/bad economic performance and bilateral economic relationships with closely linked economies.
+    </p>
+    <p>
+     3. To analyze this inter-relationship, this report looks specifically at Singapore’s Straits Times Industrial Index (STI), the key stock index in Singapore and how the moves in STI is correlated with other major stock indexes and the economic relationship variables.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Areas of Analysis
+    </div>
+    <div>
+     <div class="head_2">
+      STI and Other Stock Indexes
+     </div>
+     <p>
+      4. Essentially, the first question we would like to analyze is the correlation between STI and the major stock indexes.
+     </p>
+     <p>
+      5. Dow Jones Industrial Composite (New York, United States), Financial Times Stock Exchange 100 (London, United Kingdom), Nikkei 225 (Tokyo, Japan) and Hang Seng Index (Hong Kong SAR, China) are selected to compare against the STI index. As world’s major financial hubs, the selected stock indexes listed in New York, London, Tokyo and Hong Kong are the main stock indicators and are good representations of the individual cities’ general financial landscape. In addition, the selected countries/regions are of similar economic development stage as Singapore (i.e. developed financial markets as opposed to emerging financial markets).
+     </p>
+     <p>
+      6. The next parameter to set is the time period of analysis. Specifically, there are factors such as availability of data, updated and sufficient data to reflect latest current trend, stability of economy (as opposed to choosing a period of turbulence which may over-skew the data and reflect wrong correlation due to a rare occurrence or low probability). Taking into account the above factors, the selected period is from Jan 2004 to Aug 2007. There are sufficient data points between this selected period as stock markets operate on all working days and that this period does not contain extreme world events such as 911 terrorist attacks. Also, this is also the period which all the selected economies are generally enjoying good growth with minimal economic disruptions or imbalances.
+     </p>
+     <p>
+      7. To measure the impact, the percentage changes in stock indices are being put into the regression model as opposed to having the absolute value of stock indices which would not reflect the changes. During the selected period between 2004 and 2007, there are more than 900 data points. As different countries have different public holidays, the days of operations vary, on such days, the rate of index is then computed as taking the value of the previous opening day
+      <a class="fnref" href="#fn1" id="fnref_fn1">
+       1
+      </a>
+      . In this analysis, only days which all stock exchanges were in operation are being used as the purpose of the report is to look at the correlation between STI and all other major stock indices.
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Assumptions of Regression Model between STI Index and other Stock Indexes
+    </div>
+    <p>
+     8. Before running the regression model, it is assumed that the model of the correlation between STI index and other stock indexes (namely DJ Composite, FTSE100, Nikkei and Hang Seng), the model in the population is estimated to be as
+    </p>
+    <p>
+     Equation (1)
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    <p>
+     Where
+    </p>
+    <p>
+     STI_percent= % change in STI index of day 2 compared to the previous day
+    </p>
+    <p>
+     DJ_percent= % change in DJ Composite index
+    </p>
+    <p>
+     FTSE_percent= % change in FTSE 100 index
+    </p>
+    <p>
+     Hs_percent= % change in Hang Seng index
+    </p>
+    <p>
+     Nikkei_percent= % change in Nikkei index
+    </p>
+    <p>
+     9. This time series regression model takes into the linear time trend, commonly found in time series analysis where
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    . It is to expect that stock markets are likely to contain time trend, ie stock index will rise over time along with general factors such as economic growth and development. The common method to include time trend in regression model is the use of
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    the difference between 2 consecutive periods. From the equation 1, the STI_percent measures the % of the index of 2 consecutive opening days, factoring the time trend into the regression model.
+    <p>
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Testing of the Regression Model
+    </div>
+    <p>
+     10. Table 1 below summarizes the regression results of the first model.
+    </p>
+    <p>
+     Table 1: Regression Results of model:
+    </p>
+    <p>
+     STI_percent= ß0 + ß1DJ_percent + ß2FTSE_percent + ß3Hs_percent + ß4Nikkei_percent + u
+    </p>
+    <div class="gap">
+     <span>
+      Table
+     </span>
+     here
+    </div>
+    <p>
+     R-squared = 0.5088
+    </p>
+    <p>
+     Adjusted R-squared = 0.5068
+    </p>
+    <p>
+     MSE = 0.62948
+    </p>
+    <p>
+     Number of observations = 963.
+    </p>
+    <p>
+     11. In analyzing the robustness of the coefficient estimates, there are statistical tests needed to ensure the unbiasedness in estimating the regression model. These are serial correlation and heterskedasticity.
+    </p>
+    <div>
+     <div class="head_2">
+      Unbiasedness OLS estimator Assumptions
+     </div>
+     <p>
+      12. Under the Gauss Markov Theorem, there are assumptions made to the time series regression, which only when satisfied, the OLS estimators are BLUE (Best Linear Unbiased Estimator).
+     </p>
+     <div>
+      <div class="head_3">
+       a. Assumption 1: Linear in Parameters
+      </div>
+      <p>
+       The stochastic process
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      follows the linear equation
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      where
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      is the sequence of errors or disturbance and n is the number of observations (time periods).
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       b. Assumption 2: No Perfect Collinearity
+      </div>
+      <p>
+       In the sample, no independent variable is constant nor a perfect linear combination of the others.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       c. Assumption 3: Zero Conditional Mean
+      </div>
+      <p>
+       For each t, the expected value of the error ut, given the explanatory variables for all time periods is zero,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       In the sample, no independent variable is constant nor a perfect linear combination of the others.
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       d. Assumption 4: Homoskedasticity
+      </div>
+      <p>
+       The variance of ut, is the same for all t,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      for
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+     </div>
+     <div>
+      <div class="head_3">
+       e. Assumption 5: No Serial Correlation
+      </div>
+      <p>
+       The errors in two different time periods are uncorrelated,
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      for all
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+      <p>
+      </p>
+      <p>
+       13. In the presence of serial correlation, the OLS estimator is no longer BLUE and the usual OLS standard errors and test statistics are not valid even asymptotically. If there is autocorrelation, the expression is as follows:
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      ,
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      where
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div class="head_2">
+      Testing for Serial Correlation
+     </div>
+     <p>
+      14. The model in equation (1) is being tested for serial correlation with the results being tabulated in Table 2. It shows that there is indeed serial correlation with H0:
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     being rejected.
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     , satisfies the inequality
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     . The model is therefore a Autocorrelation order 1 serial correlation (AR(1))
+     <p>
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Table 2: Serial Correlation Test
+     </div>
+     <p>
+      ut=  ρut-1 + et, t=1,2,…n
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+    </div>
+    <div>
+     <div class="head_2">
+      Correcting for Serial Correlation
+     </div>
+     <p>
+      15. In correcting the serial correlation, we continue to assume the Gauss Markov Model Assumptions 1 to 4 but we relax the Assumption 5 and takes into account the error term model,
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .  The equation (1) is being transformed to take into account (t-1) period to eliminate serial correlation. The transformed equation, known as the generalised least squares estimator (GLS) takes in the form of
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     .
+     <p>
+     </p>
+     <p>
+      Equation (2):
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      16. The OLS on the transformed data is being tabulated in Table 3. This GLS estimator is BLUE and the errors in this transformed equation are serially uncorrelated, of which t-statistics and F-statistics are valid asymptotically.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Table 3: GLS estimators on transformed data for serial correlation correction:
+     </div>
+     <p>
+      sti_percent = (1 – ρ)ß0 + ß1(dj_percentt – ρ dj_percentt-1) +  ß2(ftse_percentt – ρ ftse_percentt-1) + ß3(hs_percentt – ρ hs_percentt-1 )+ ß4(nikkei_percentt – ρ nikkei_percentt-1) + et
+     </p>
+     <p>
+      where serial_dj = (dj_percentt – ρdj_percentt-1), …
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+     <p>
+      R-squared = 0.5054
+     </p>
+     <p>
+      Adjusted R-squared = 0.5033
+     </p>
+     <p>
+      MSE = 0.63164
+     </p>
+     <p>
+      Number of observations = 962.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Testing for Heteroskedasticity
+     </div>
+     <p>
+      17. Similarly in cross sectional applications, heteroskedasticity in time series regression models while not causing bias or inconsistency in the coefficient estimate ß, invalidates the usual standard errors, t-statistics and F-statistics. In the test for heteroskedasticity, one key assumption is  should not be serially correlated; any serial correalation will generally invalidate a test for heteroskedasticity. After the serial correlation is corrected, we will apply the test for heteroskedasticity.
+     </p>
+     <p>
+      18. The test for heteroskedasticity for time series regression is the same as the cross sectional analysis which (in the equation (2)) is regressed with the variables, serial_dj, serial_ftse, serial_hs, serial_nikkei where
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      . The null hypothesis is being tested
+     </p>
+     <div class="gap">
+      <span>
+       Formula
+      </span>
+      here
+     </div>
+     <p>
+      .
+     </p>
+     <p>
+      19. Based on the results on F-statistics (Table 4), we fail to reject H0 for significance level of 10%. Therefore, we can conclude that the transformed equation is not heteroskedastic.
+     </p>
+    </div>
+    <div>
+     <div class="head_2">
+      Table 4: Heteroskedasticity Test:
+     </div>
+     <p>
+      ut2 = δ0 + δ1serial_dj + δ2serial_ftse+ δ3serial_hs + δ4serial_nikkei + v
+     </p>
+     <p>
+      where serial_dj = (dj_percentt – dj_percentt-1), …
+     </p>
+     <div class="gap">
+      <span>
+       Table
+      </span>
+      here
+     </div>
+     <p>
+      R-squared = 0.0074
+     </p>
+     <p>
+      Adjusted R-squared = 0.0033
+     </p>
+     <p>
+      MSE = 0.7992
+     </p>
+     <p>
+      Number of observations = 962.
+     </p>
+     <p>
+      F-statistics (4, 962) = 1.80
+     </p>
+     <p>
+      Prob&gt;F= 0.1269
+     </p>
+    </div>
+   </div>
+   <div>
+    <div class="head_1">
+     Results and Interpretation
+    </div>
+    <p>
+     20. The regression model based on the results shown in Table 2 is estimated to be
+    </p>
+    <p>
+     sti_percent = -0.0216921 +0.0523696 dj_percentt + 0.1656522 ftse_percentt + 0.4497749 hs_percentt + 0.1934657nikkei_percentt
+    </p>
+    <p>
+     (based on the p-values, we reject
+    </p>
+    <div class="gap">
+     <span>
+      Formula
+     </span>
+     here
+    </div>
+    at 5% significance level)
+    <p>
+    </p>
+    <p>
+     21. The model illustrates that there is correlation between the percentage changes in STI index and Dow Jones Industrial, FTSE100, Hang Seng Index and Nikkei Index.
+    </p>
+    <p>
+     22. With regard to the correlation between the stock indexes and the STI index, there are a few observations. First, it is in line with the common notion that there is some correlation between the markets in Singapore and the financial stock indexes in US, UK, HK and Japan (i.e. when Dow Jones suffers a loss, there may be a ripple effect on STI index to react on the following trading day). From the magnitude of the coefficients, we can observe that 1% change in Dow Jones has a return of 0.05% change in STI index. This is relatively small and reasonable correlation as a large correlation is not expected given the differences between the comparing indexes in terms of structure, composition and economic performance and fundamentals. The correlation with the Asian stock indexes is stronger, possibly due to closer proximity in terms of economic structure. The recent economic diversification efforts initiated by the Singapore government to rely less on the major world markets such US have also reduced this correlation relationship. This could also be attributed to the particular time period selected for analysis. This regression model is based on the time period from 2004 to Oct 2007, where there are no significant turbulence economic shocks and even if during certain economic shocks i.e. sub-prime housing loan, the duration is not sufficiently long enough to capture the relationship effectively.
+    </p>
+   </div>
+   <div>
+    <div class="head_1">
+     Possible Refinements
+    </div>
+    <p>
+     23. While efforts are being made to make data sets for analysis as robust as possible, nonetheless, there are some weaknesses in this selection. Only 4 other stock indices are being selected to conduct the regression model with STI index. These stock indexes are computed using different approaches (ie price weighted or scale weighted versus STI which is weighted-value stock index) and are therefore not an exact like-for-like comparison of stock indexes. There may be missing variables such as neighboring stock indexes (e.g. Kuala Lumpur Stock Exchange Index, KLSE) and emerging stock indexes with growing influence (e.g. China’s Shanghai Stock Exchange).
+    </p>
+    <p>
+     24. The model can also be improved by separating into 2 periods where one of which is a stable period while the other could be a turbulent period, such that we can compare the correlation under different situations. Using the same analogy, the model can be expanded by separating into developed stock markets versus emerging stock markets.
+    </p>
+   </div>
+  </div>
+  <div>
+   <div class="head_1">
+    Reference
+   </div>
+   <ul id="N1023D">
+    <li id="N1023E">
+     1.	Wooldridge “Introductory Econometrics: A Modern Approach” Chapters 10 to 12
+    </li>
+    <li id="N10240">
+     2.	International Enterprise Singapore website http://www.iesingapore.gov.sg
+    </li>
+    <li id="N10242">
+     3.	Singapore Stock Exchange Limited http://www.sgx.com.sg
+    </li>
+   </ul>
+   <div class="footnotes">
+    <div id="fn1">
+     <a href="#fnref_fn1">
+      1.
+     </a>
+     1 This allows the measurement of changes in the market index which is usually based on the previous opening day, ie On day 1, the market opens, on Day 2, the market is closed and an event occurred which would have impact on the market performance. On Day 3, the market will respond.
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

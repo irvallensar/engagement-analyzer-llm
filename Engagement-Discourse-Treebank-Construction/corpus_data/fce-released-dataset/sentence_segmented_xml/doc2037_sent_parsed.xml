@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+ <body>
+  <learner>
+   <candidate>
+    <personnel>
+     <language>
+      French
+     </language>
+     <age>
+      16-20
+     </age>
+    </personnel>
+    <score>
+     28.0
+    </score>
+   </candidate>
+   <text>
+    <answer1>
+     <question_number>
+      1
+     </question_number>
+     <exam_score>
+      4.1
+     </exam_score>
+     <coded_answer>
+      <p>
+       Sir,
+      </p>
+      <p>
+       I'm writing to you because I want you to give the money back
+       <ns type="MP">
+       </ns>
+       <ns type="R">
+        <i>
+         for
+        </i>
+       </ns>
+       your
+       <ns type="MN">
+       </ns>
+       <ns type="MP">
+       </ns>
+       "London's newest and best musical show: Over the rainbow", presented in the Circle Theatre.
+      </p>
+      <p>
+       In fact, unlike the perfect evening out that you promised
+       <ns type="RT">
+        <i>
+         on
+        </i>
+       </ns>
+       your advertisement, I had a very
+       <ns type="S">
+        <i>
+         disapointing
+        </i>
+       </ns>
+       evening.
+      </p>
+      <p>
+       Firstly, I expected to see Danny Brook in the show, but he was replaced by another actor. Why was he not
+       <ns type="RY">
+        <i>
+         here
+        </i>
+       </ns>
+       ?
+      </p>
+      <p>
+       Moreover I had to wait
+       <ns type="MP">
+        <i>
+         forty five
+        </i>
+       </ns>
+       minutes
+       <ns type="R">
+        <i>
+         to see
+        </i>
+       </ns>
+       the beginning of the show. And I hate to wait! There
+       <ns type="AGV">
+        <i>
+         was
+        </i>
+       </ns>
+       also the discounts
+       <ns type="S">
+        <i>
+         wich
+        </i>
+       </ns>
+       weren't available.
+      </p>
+      <p>
+       And to finish, the restaurant was closed, for
+       <ns type="UQ">
+        <i>
+         any
+        </i>
+       </ns>
+       reasons you didn't
+       <ns type="RV">
+        <i>
+         take
+        </i>
+       </ns>
+       <ns type="UT">
+        <i>
+         to
+        </i>
+       </ns>
+       us. So I couldn't eat
+       <ns type="RD">
+        <i>
+         this
+        </i>
+       </ns>
+       evening.
+      </p>
+      <p>
+       Hoping you'll
+       <ns type="RV">
+        <i>
+         satisfy
+        </i>
+       </ns>
+       my request.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Sir,
+       </s>
+      </p>
+      <p pid="2">
+       <s pid="2" sid="1">
+        I'm writing to you because I want you to give the money back for your  "London's newest and best musical show:
+       </s>
+       <s pid="2" sid="2">
+        Over the rainbow", presented in the Circle Theatre.
+       </s>
+      </p>
+      <p pid="3">
+       <s pid="3" sid="1">
+        In fact, unlike the perfect evening out that you promised on your advertisement, I had a very disapointing evening.
+       </s>
+      </p>
+      <p pid="4">
+       <s pid="4" sid="1">
+        Firstly, I expected to see Danny Brook in the show, but he was replaced by another actor.
+       </s>
+       <s pid="4" sid="2">
+        Why was he not here?
+       </s>
+      </p>
+      <p pid="5">
+       <s pid="5" sid="1">
+        Moreover
+       </s>
+       <s pid="5" sid="2">
+        I had to wait forty five minutes to see the beginning of the show.
+       </s>
+       <s pid="5" sid="3">
+        And I hate to wait!
+       </s>
+       <s pid="5" sid="4">
+        There was also the discounts wich weren't available.
+       </s>
+      </p>
+      <p pid="6">
+       <s pid="6" sid="1">
+        And to finish, the restaurant was closed, for any reasons you didn't take to us.
+       </s>
+       <s pid="6" sid="2">
+        So I couldn't eat this evening.
+       </s>
+      </p>
+      <p pid="7">
+       <s pid="7" sid="1">
+        Hoping you'll satisfy my request.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer1>
+    <answer2>
+     <question_number>
+      2
+     </question_number>
+     <exam_score>
+      4.2
+     </exam_score>
+     <coded_answer>
+      <p>
+       Unfortunately, Pat wasn't very good at keeping secrets. So the surprise we prepared for
+       <ns type="UD">
+        <i>
+         the
+        </i>
+       </ns>
+       Leon's birthday had failed. However,
+       <ns type="TV">
+        <i>
+         we've
+        </i>
+       </ns>
+       started to
+       <ns type="RV">
+        <i>
+         search
+        </i>
+       </ns>
+       <ns type="U">
+        <i>
+         an idea
+        </i>
+       </ns>
+       for it
+       <ns type="UT">
+        <i>
+         for
+        </i>
+       </ns>
+       one
+       <ns type="AGN">
+        <i>
+         months
+        </i>
+       </ns>
+       <ns type="MY">
+       </ns>
+       .
+       <ns type="ID">
+        <i>
+         In the beginning
+        </i>
+       </ns>
+       , I wanted to bring him
+       <ns type="RT">
+        <i>
+         in
+        </i>
+       </ns>
+       my house where everybody would wait for him. But he wanted to stay at
+       <ns type="UA">
+        <i>
+         his
+        </i>
+       </ns>
+       home. So Sigone
+       <ns type="RV">
+        <i>
+         found
+        </i>
+       </ns>
+       the greatest idea. We would pretend to have bought
+       <ns type="W">
+        <i>
+         for him a dog
+        </i>
+       </ns>
+       . Leon
+       <ns type="AGV">
+        <i>
+         hate
+        </i>
+       </ns>
+       <ns type="AGN">
+        <i>
+         dog
+        </i>
+       </ns>
+       , and I don't know why. So we had to find a dog that Leon wouldn't
+       <ns type="FV">
+        <i>
+         recognized
+        </i>
+       </ns>
+       . And I found one. I had a friend who had just
+       <ns type="RV">
+        <i>
+         received
+        </i>
+       </ns>
+       a little dog. But he was
+       <ns type="UD">
+        <i>
+         a
+        </i>
+       </ns>
+       Pat's friend too, and Pat explained everything to Leon. No luck.
+      </p>
+     </coded_answer>
+     <parsed_sent>
+      <p pid="1">
+       <s pid="1" sid="1">
+        Unfortunately,
+       </s>
+       <s pid="1" sid="2">
+        Pat wasn't very good at keeping secrets.
+       </s>
+       <s pid="1" sid="3">
+        So the surprise we prepared for the Leon's birthday had failed.
+       </s>
+       <s pid="1" sid="4">
+        However, we've started to search an idea for it for one months .
+       </s>
+       <s pid="1" sid="5">
+        In the beginning, I wanted to bring him in my house where everybody would wait for him.
+       </s>
+       <s pid="1" sid="6">
+        But he wanted to stay at his home.
+       </s>
+       <s pid="1" sid="7">
+        So Sigone found the greatest idea.
+       </s>
+       <s pid="1" sid="8">
+        We would pretend to have bought for him a dog.
+       </s>
+       <s pid="1" sid="9">
+        Leon hate dog, and I don't know why.
+       </s>
+       <s pid="1" sid="10">
+        So we had to find a dog that Leon wouldn't recognized.
+       </s>
+       <s pid="1" sid="11">
+        And I found one.
+       </s>
+       <s pid="1" sid="12">
+        I had a friend who had just received a little dog.
+       </s>
+       <s pid="1" sid="13">
+        But he was a Pat's friend too, and Pat explained everything to Leon.
+       </s>
+       <s pid="1" sid="14">
+        No luck.
+       </s>
+      </p>
+     </parsed_sent>
+    </answer2>
+   </text>
+  </learner>
+ </body>
+</html>

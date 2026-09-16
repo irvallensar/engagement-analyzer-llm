@@ -1,0 +1,474 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <p>
+     </p>
+    </div>
+    <div class="dynacloud">
+     <p>
+      <s pid="1" sid="1">
+       Dispersal, the movement of individuals across a landscape, is an important process at multiple levels of ecology.
+      </s>
+      <s pid="1" sid="2">
+       The proximate and ultimate causes of dispersal are of interest to behavioral ecologists, who consider how dispersal may have evolved and the differential aspects of dispersive and non-dispersive individuals.
+      </s>
+      <s pid="1" sid="3">
+       The consequences of immigration and emigration on population dynamics are of import to population ecologists, exemplified by classic source-sink dynamics in which dispersal from a source population can maintain populations in sink habitats.
+      </s>
+      <s pid="1" sid="4">
+       Furthermore, community ecologists are interested in how dispersal allows species coexistence, and note that dispersal plays a key role in the development of community structure such as in succession.
+      </s>
+     </p>
+     <p>
+      <s pid="2" sid="1">
+       Population geneticists and evolutionary biologists also view dispersal as a critical process.
+      </s>
+      <s pid="2" sid="2">
+       Gene flow has various consequences, introducing genetic variation and preventing drift, homogenizing populations, and countering differential selective forces favoring local adaptation.
+      </s>
+      <s pid="2" sid="3">
+       Such evolutionary standards as founder effects require dispersal and colonization of new habitats, yet continued dispersal can prevent reproductive isolation between populations and subsequent speciation events.
+      </s>
+     </p>
+     <p>
+      <s pid="3" sid="1">
+       Conservation biologists are interested in dispersal from both an evolutionary and population ecological viewpoint.
+      </s>
+      <s pid="3" sid="2">
+       When the long-term goal of conservation is to maintain genetic diversity in populations in fragmented landscapes, the maintenance of dispersal and corresponding gene flow is crucial.
+      </s>
+      <s pid="3" sid="3">
+       Conservationists are often concerned with preserving appropriate habitat corridors to allow the "rescue effect," or a trickle of dispersers serving to forestall extinction, in isolated populations (Brown and Kodric-Brown 1977).
+      </s>
+      <s pid="3" sid="4">
+       However, high rates of movement within a system may increase extinction risk by synchronizing the dynamics of local populations and thus increasing the probability of simultaneous crashes (Heino et al. 1997).
+      </s>
+      <s pid="3" sid="5">
+       Effective management of fragmented populations thus depends on an understanding of the processes and parameters of dispersal (MacDonald &amp; Johnson 2001).
+      </s>
+     </p>
+     <p>
+      <s pid="4" sid="1">
+       Dispersal, in general, is the spreading of individuals away from each other (Begon et al. 1996).
+      </s>
+      <s pid="4" sid="2">
+       However, the definition of a specific dispersal event is confused in the literature, and often depends on an arbitrary scale (Johnson and Gaines 1990).
+      </s>
+      <s pid="4" sid="3">
+       For example, individual foraging movements are not considered dispersal, although the scale of the movement blurs this distinction (Bowler and Benton 2005).
+      </s>
+      <s pid="4" sid="4">
+       Consider, for example, a situation in which the next-closest foraging patch is a significant distance away; is the resulting change of locality a foraging movement or a dispersal event?
+      </s>
+      <s pid="4" sid="5">
+       Dispersal may also be contrasted with migration, which is a round-trip mass movement of individuals from one location to another (Sinclair 1983; Begon et al. 1996).
+      </s>
+      <s pid="4" sid="6">
+       However, many theoretical models use dispersal and migration interchangeably (Johnson and Gaines 1990).
+      </s>
+     </p>
+     <p>
+      <s pid="5" sid="1">
+       A definition of dispersal that was widely accepted in earlier ecological literature is "the permanent movement an individual makes from its birth site to the place where it reproduces or would have reproduced if it had survived and found a mate" (Howard 1960).
+      </s>
+      <s pid="5" sid="2">
+       Such a definition only refers to pre-reproductive movements of juveniles.
+      </s>
+      <s pid="5" sid="3">
+       Various authors have further made the distinction between natal and breeding dispersal (Greenwood and Harvey 1982, Li and Kuan 2006); natal dispersal is the movement from the site or group of birth to the site or group of first potential reproduction, and breeding dispersal refers to any subsequent movements between reproductive attempts (Greenwood &amp; Harvey 1982).
+      </s>
+     </p>
+     <p>
+      <s pid="6" sid="1">
+       In this paper, I am going to focus on aspects governing natal dispersal, specifically regarding active emigration from a site.
+      </s>
+      <s pid="6" sid="2">
+       I will begin with a discussion of the costs of benefits of dispersal, followed by a catalogue of the proximate causes of dispersal and their corresponding ultimate selective pressures.
+      </s>
+      <s pid="6" sid="3">
+       I will discuss the nature of variation in dispersive behavior within a population, and conclude with suggestions for the future study of dispersal.
+      </s>
+     </p>
+     <div>
+      <div class="head_1">
+       Costs and Benefits of Dispersal
+      </div>
+      <p>
+       <s pid="7" sid="1">
+        All organisms disperse, although some species are more dispersive than others (Begon et al. 1996).
+       </s>
+       <s pid="7" sid="2">
+        The variation in dispersiveness of species depends not only on species' capability for movement, but also upon the selective forces favoring dispersal and those that make dispersal costly.
+       </s>
+       <s pid="7" sid="3">
+        Both individual and environmental factors play a role in determining the conditions under which an organism is likely to disperse (Ims and Hjermann 2001).
+       </s>
+      </p>
+      <p>
+       <s pid="8" sid="1">
+        The benefits of dispersal vary depending on the ultimate selective forces favoring dispersive individuals in different species.
+       </s>
+       <s pid="8" sid="2">
+        Gadgil (1971) discusses the evolution of dispersal, saying that "in a very general way, the factor favoring evolution of dispersal would be the chance of colonizing a site more favorable than the one that is presently inhabited …
+       </s>
+       <s pid="8" sid="3">
+        An organism should disperse if the chance of reaching a better site exceeds the loss from the risk of death during dispersal or the chance of reaching a poorer habitat."
+       </s>
+       <s pid="8" sid="4">
+        Theory generally agrees with the prediction that the degree of movement is determined by the survival of dispersers relative to non-dispersers (Johnson and Gaines 1990, Gandon and Michalakis 2001).
+       </s>
+       <s pid="8" sid="5">
+        Gadgil's "better sites" may be defined by factors such as lower competition, more food, more reproductive chances, or less relatives.
+       </s>
+       <s pid="8" sid="6">
+        These environmental conditions will be discussed in more detail below.
+       </s>
+       <s pid="8" sid="7">
+        However, individual condition also determines dispersal capacity, usually through and individual's ability to overcome the costs of dispersal.
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        Dispersal costs generally consist of reduced reproductive output or increased mortality (Rankin and Burchsted 1992).
+       </s>
+       <s pid="9" sid="2">
+        In making the decision to disperse, organisms may have to invest resources in dispersal morphologies, such as winged morphs (e.g. Sloggett and Weisser 2002).
+       </s>
+       <s pid="9" sid="3">
+        Furthermore, dispersive individuals face risks during the dispersal event, such as increased probability of predation or decreased availability of resources.
+       </s>
+       <s pid="9" sid="4">
+        The matrix through which the individual is moving also presents challenges if composed of unsuitable habitat, and mortality may occur before finding a suitable patch.
+       </s>
+       <s pid="9" sid="5">
+        The size of the patch, cues associated with suitable habitat, and the presence of conspecifics all may determine likelihood of finding a new patch (Lima and Zollner 1996).
+       </s>
+       <s pid="9" sid="6">
+        Finally, even if an individual survives a dispersal event, consequences such as loss of body weight may negatively impact reproductive fitness.
+       </s>
+      </p>
+      <p>
+       <s pid="10" sid="1">
+        Although the various selective forces on dispersal have received much attention from theorists, few empirical studies have actually quantitatively measured the costs and benefits of dispersal (Johnson and Gaines 1990).
+       </s>
+       <s pid="10" sid="2">
+        Indirect measures, such as counts of immigrant and emigrants, are often used to infer mortality rates (Waser et al. 1994).
+       </s>
+       <s pid="10" sid="3">
+        Tracking individuals is difficult, and often such studies do not consider how increasing distance increases the cost of dispersal (but see Baker and Rao 2004).
+       </s>
+       <s pid="10" sid="4">
+        The costs and benefits of dispersal depend not only on the occurrence of a dispersal event but also on the distance traveled (Baker and Rao 2004).
+       </s>
+       <s pid="10" sid="5">
+        In order to fully understand the selective advantages and disadvantages of dispersal, as well as how individuals make dispersal decisions, we need to develop methods and use empirical systems in which measuring the costs and benefits of dispersal is not intractably challenging.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Proximate Causes of Dispersal
+      </div>
+      <div>
+       <div class="head_2">
+        Intraspecific
+       </div>
+       <p>
+        <s pid="11" sid="1">
+         Intraspecific interactions, such as competition for food or mates, can select for dispersal in organisms.
+        </s>
+        <s pid="11" sid="2">
+         Increasing population density has been shown to increase emigration propensity in various organisms (positive density-dependent dispersal; e.g. Lena et al. 1998).
+        </s>
+        <s pid="11" sid="3">
+         Competitive interactions, including both exploitative and interference competition, reduce individual fitness in crowded populations (Greenwood and Harvey 1982, Bowler and Benton 2005), and positive density-dependent dispersal has been suggested as an outcome of such competitive interactions (McCarthy 1999).
+        </s>
+        <s pid="11" sid="4">
+         Deteriorating habitat quality may also select for positive density-dependent dispersal.
+        </s>
+        <s pid="11" sid="5">
+         For example, experimental food supplementation decreases the emigration propensity of juvenile northern goshawks (Kennedy and Ward 2003), and heavy host defoliation inflicted by high densities of goldenrod beetles seems to induce flight (Herzig 1995).
+        </s>
+       </p>
+       <p>
+        <s pid="12" sid="1">
+         Interestingly, a handful of studies have also found negative density-dependent effects on dispersal (Kuussari et al. 1996, Roland et al. 2000), suggesting that dispersal might be adaptive when the benefits of living in a group, such as diluted predation risk or facilitated foraging, exceed the costs of increased competition.
+        </s>
+        <s pid="12" sid="2">
+         Allee effects (Allee 1931), which cause a decline in fitness at low population densities, could also select for negative density-dependent dispersal (Bowler &amp; Benton 2005, Travis et al. 1999).
+        </s>
+       </p>
+       <p>
+        <s pid="13" sid="1">
+         Positive density-dependent dispersal may also evolve in order to ultimately prevent kin competition, which would decrease inclusive fitness, as well as inbreeding (Gandon 1999).
+        </s>
+        <s pid="13" sid="2">
+         Hamilton and May (1977) used evolutionary stable strategy models to demonstrate that avoidance of kin competition may select for parents who enforce some offspring dispersal even under very high dispersal costs.
+        </s>
+        <s pid="13" sid="3">
+         Subsequent models (reviewed in Johnson and Gaines 1990) show that dispersive individuals both colonize empty sites and avoid inbreeding and competing with kin, which select for substantial dispersal in temporally stable environments.
+        </s>
+        <s pid="13" sid="4">
+         Thus, high relatedness between interacting individuals can be a proximate cause of dispersal (Bowler and Benton 2005).
+        </s>
+        <s pid="13" sid="5">
+         Such a cue requires the capacity to recognize relatives, especially the opposite-sex parent and siblings.
+        </s>
+        <s pid="13" sid="6">
+         For example, the mango shield scale ( Milviscutulus mangiferae ), a parthenogenic scale insect, experiences a reduction in reproductive fitness when two females share a host leaf; Kasuya (2000) showed that emigration rates increase significantly when two sisters are placed on a leaf together.
+        </s>
+        <s pid="13" sid="7">
+         Other studies have similarly shown that dispersal decisions are related to presence of kin in various taxa (e.g. Pusey and Wolf 1996, Lena et al. 1998).
+        </s>
+       </p>
+       <p>
+        <s pid="14" sid="1">
+         Sex ratio also may influence dispersal if mating success varies across patches due to differences in the number of mates, or if asymmetrical competition exists between males and females (Bowler &amp; Benton 2005).
+        </s>
+        <s pid="14" sid="2">
+         For example, males of the hummingbird flower mite Proctolaelaps kirmsei have been shown to respond to stochastic changes in the local sex ratio by moving from male-biased groups to female-biased groups (Colwell and Naeem 1999), which would increase the males' chances of acquiring mates.
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Interspecific
+       </div>
+       <p>
+        <s pid="15" sid="1">
+         Similar to intraspecific effects, interspecific competition may select for dispersal by reducing resource availability.
+        </s>
+        <s pid="15" sid="2">
+         In addition, interactions with other guilds, such as parasites or predators, may determine the fitness of an individual in a particular patch (Weisser et al. 2001, Bowler and Benton 2005).
+        </s>
+        <s pid="15" sid="3">
+         For example, alate (winged morph) production in the pea aphid Acyrthosiphon pisum can be induced by the presence of a predators (ladybirds) as well as parasitoids ( Aphidius ervi ; Sloggett and Weisser 2002).
+        </s>
+        <s pid="15" sid="4">
+         Such enemy-induced dispersal has not been considered for many species (Bowler and Benton 2005).
+        </s>
+       </p>
+      </div>
+      <div>
+       <div class="head_2">
+        Habitat attributes
+       </div>
+       <p>
+        <s pid="16" sid="1">
+         One of the earliest models that explored condition-dependent dispersal as an adaptive strategy showed that high spatial variability in habitat quality selects for density-dependent dispersal (Gadgil 1971).
+        </s>
+        <s pid="16" sid="2">
+         Temporal variability in the environment can also be a selective factor for dispersal (Gandon and Michalakis 2001).
+        </s>
+        <s pid="16" sid="3">
+         Longer habitat persistence decreases dispersal propensity (Travis and Dytham 1999).
+        </s>
+        <s pid="16" sid="4">
+         In addition, patch size and shape are important proximate causes for dispersal.
+        </s>
+        <s pid="16" sid="5">
+         Patch size often displays a negative correlation with emigration rate (e.g. for butterflies, Baguette et al. 2000), and is thought to influence dispersal via edge-to-size ratios: likelihood of emigration from a small patch increases because individuals encounter edges more often in small patches (Stamps et al. 1987).
+        </s>
+        <s pid="16" sid="6">
+         Patch size is also correlated with carrying capacity, which may explain greater emigration from small patches; Andreassen and Ims (2001) showed that dispersal from a patch was greater when population density was low and more variable, which may be indicative of a lower carrying capacity due to a low quality habitat.
+        </s>
+       </p>
+      </div>
+     </div>
+     <div>
+      <div class="head_1">
+       Variation in Individual Dispersal Propensity
+      </div>
+      <p>
+       <s pid="17" sid="1">
+        Although a single species' dispersal ability and propensity can often be generally characterized, there is considerable variation within species as to which individuals disperse.
+       </s>
+       <s pid="17" sid="2">
+        Sex-biased dispersal tends to be the norm in many bird and mammal species, with female birds and male mammals undergoing dispersal (Greenwood 1980).
+       </s>
+       <s pid="17" sid="3">
+        As mentioned previously, dispersal may be sex-biased in order to avoid inbreeding (Perrin and Goudet 2001).
+       </s>
+       <s pid="17" sid="4">
+        In this case, there may be selective pressures to disperse before sexual maturity, meaning that the developmental stage of an individual changes its propensity to disperse (Bowler and Benton 2005).
+       </s>
+       <s pid="17" sid="5">
+        Dispersiveness of an individual also depends on differential costs and benefits to dispersing at different life stages, for example, younger individuals may be inferior competitors and therefore more likely to emigrate to a new, lower-density patch (Bowler and Benton 2005).
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        Finally, body condition is an important factor in an individual's dispersive ability.
+       </s>
+       <s pid="18" sid="2">
+        Smaller, competitively inferior individuals may emigrate first to escape competition (Lena et al. 1998).
+       </s>
+       <s pid="18" sid="3">
+        Often, however, dispersal success depends on the organism having adequate resource reserves, and thus larger individuals in better condition are more physically capable of dispersal (Lena et al. 1998).
+       </s>
+       <s pid="18" sid="4">
+        In addition, large individuals may better be able to enter a new competitive patch as a dominant individual.
+       </s>
+       <s pid="18" sid="5">
+        These differences among individuals highlight the importance of considering the traits of dispersers in the context in which they are moving (Bowler and Benton 2005).
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       Future Directions
+      </div>
+      <p>
+       <s pid="19" sid="1">
+        Most approaches so far have focused on either the causes or consequences of dispersal, but few studies consider what happens during the dispersal event (Wiens 2001).
+       </s>
+       <s pid="19" sid="2">
+        The path organisms take during dispersal is essential to understanding how landscapes modify dispersal behavior, especially in light of habitat fragmentation.
+       </s>
+       <s pid="19" sid="3">
+        Individual-based simulation models of dispersal in spatially complex landscapes (e.g. With and Crist 1995) have advantages for the development of empirical hypotheses as well as in conservation applications, but such models require data for accurate parameterization.
+       </s>
+       <s pid="19" sid="4">
+        For example, failure to account for changes in search tactics and dispersal speed can change the implications of management strategies in fragmented landscapes (Zollner and Lima 2005).
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        An emphasis on empirical studies of the dispersal process, including the influence on landscape on decision-making, should be encouraged.
+       </s>
+       <s pid="20" sid="2">
+        We need to know how organisms cope with risks encountered during dispersal and how conditions at various scales influence their probability of success (Wiens 2001).
+       </s>
+       <s pid="20" sid="3">
+        As Lima and Zollner (1996) suggested a decade ago, we need to develop a &lt;quote&gt; behavioral ecology of ecological landscapes, &lt;/quote&gt; in which behavior is considered on a landscape-level scale, in order to determine how an organism uses the information available in the environment to make decisions regarding movement in that environment.
+       </s>
+       <s pid="20" sid="4">
+        A better awareness of the behavior of dispersing animals will allow a determination of the factors that limit dispersal success and ultimately improve how we understand the ecological and evolutionary consequences of dispersal.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References:
+      </div>
+      <ul id="N10190">
+       <li id="N10191">
+        Allee, W. C. 1931. Animal Aggregations: A Study in General Sociology. University of Chicago Press.
+       </li>
+       <li id="N10193">
+        Andreassen, H. P. and R. A. Ims. 2001. Dispersal in patchy vole populations: Role of patch configuration, density dependence, and demography. Ecology 82: 2911-2926.
+       </li>
+       <li id="N10195">
+        Baguette, M. S. Petit, and F. Queva. 2000. Population spatial structure and migration of three butterfly species within the same habitat network: consequences for conservation. Journal of Applied Ecology 37: 100-108.
+       </li>
+       <li id="N10197">
+        Begon, M., J. L. Harper, and C. R. Townsend. 1996. Ecology: Individuals, Populations, and Communities. Blackwell Science Ltd, Oxford.
+       </li>
+       <li id="N10199">
+        Brown, J .H. and A. Kodric-Brown. 1977. Turnover rates in insular biogeography: effect of immigration on extinction. Ecology 58: 445-449.
+       </li>
+       <li id="N1019B">
+        Colwell, R. K. and S. Naeem. 1999. Sexual sorting in hummingbird flower mites. Annals of the Entomological Society of America 92: 952-959.
+       </li>
+       <li id="N1019D">
+        Gadgil, M. 1971. Dispersal: population consequences and evolution. Ecology 52: 253-261.
+       </li>
+       <li id="N1019F">
+        Gandon, S. 1999. Kin competition, the cost of inbreeding, and the evolution of dispersal. J. Theoretical Biology 200: 345-364.
+       </li>
+       <li id="N101A1">
+        Gandon, S. and Y. Michalakis. 2001. Multiple causes of the evolution of dispersal. In: Dispersal. Eds. J. Cobert, E. Danchin, A. A. Dhondt, and J. D. Nichols. Oxford University Press, Oxford:155-167.
+       </li>
+       <li id="N101A3">
+        Greenwood, P. J. 1980. Mating systems, philopatry, and dispersal in birds and mammals. Animal Behavior 28: 1140-1162.
+       </li>
+       <li id="N101A5">
+        Greenwood, P. J. and P. H. Harvey. 1982. The natal and breeding dispersal of birds. Annu. Rev. Ecol. Syst. 13:1-21.
+       </li>
+       <li id="N101A7">
+        Hamilton, W. D. and R. M. May. 1977. Dispersal in stable habitats. Nature 269: 578-581.
+       </li>
+       <li id="N101A9">
+        Heino M., V. Kaitala, E. Ranta, and J. Lindstrom. 1997. Synchronous dynamics and rates of extinction in spatially structured populations. Proc R Soc Lond B 264: 481-486.
+       </li>
+       <li id="N101AB">
+        Herzig, A. L. 1995. Effects of population density on long-distance dispersal in the goldenrod beetle Trirhabda virgata. Ecology 76: 2044-2054.
+       </li>
+       <li id="N101AD">
+        Howard, W. E. 1960. Innate and environmental dispersal of individual vertebrates. Am. Midl. Nat. 63: 152-161
+       </li>
+       <li id="N101AF">
+        Ims, R. A. and D. O. Hjermann. 2001. Condition-dependent dispersal. In: Dispersal. Eds. J. Cobert, E. Danchin, A. A. Dhondt, and J. D. Nichols. Oxford University Press, Oxford: 203-216.
+       </li>
+       <li id="N101B1">
+        Johnson, M. L. and M. S. Gaines. 1990. Evolution of dispersal - theoretical models and empirical tests using birds and mammals. Annual Review of Ecology and Systematics 21: 449-480.
+       </li>
+       <li id="N101B3">
+        Kennedy, P. L. and J. M. Ward. 2003. Effects of experimental food supplementation on movements of juvenile northern goshawks (Accipiter gentiles atricapillus). Oecologia 134: 284-291.
+       </li>
+       <li id="N101B5">
+        Lena J. P., J. Clobert, M. de Fraipont, J. Lecomte, and G. Guyot. 1998. The relative influence of density and kinship on dispersal in the common lizard. Behavioral Ecology 9: 500-507.
+       </li>
+       <li id="N101B7">
+        Li, D. and J. Y. X. Kuan. 2006. Natal dispersal and breeding dispersal of a subsocial spitting spider (Scytodes pallida) from Singapore. J. Zoology 268: 121-126.
+       </li>
+       <li id="N101B9">
+        Lima S. L. and P. A. Zollner. 1996. Towards a behavioral ecology of ecological landscapes. Trends in Ecology and Evolution 11: 131-135.
+       </li>
+       <li id="N101BB">
+        MacDonald, D. W. and D. D. P. Johnson. 2001. Dispersal in theory and practice: consequences for conservation biology. In: Dispersal. Eds. J. Cobert, E. Danchin, A. A. Dhondt, and J. D. Nichols. Oxford University Press, Oxford: 358-372.
+       </li>
+       <li id="N101BD">
+        McCarthy, M. A. 1999. Effects of competition on natal dispersal distance. Ecological Modelling 114: 305-310.
+       </li>
+       <li id="N101BF">
+        Perrin, N. and J. Goudet. 2001. Inbreeding, kinship, and the evolution of natal dispersal. In: Dispersal. Eds. J. Cobert, E. Danchin, A. A. Dhondt, and J. D. Nichols. Oxford University Press, Oxford: 123-142.
+       </li>
+       <li id="N101C1">
+        Pusey, A. and M. Wolf. 1996. Inbreeding avoidance in animals. Trends in Ecology and Evolution 11: 201-206.
+       </li>
+       <li id="N101C3">
+        Rankin, M. A. and J. C. A. Burchsted. 1992. The cost of migration in insects. Annual Review of Entomology 37: 533-559.
+       </li>
+       <li id="N101C5">
+        Sinclair, A. R. E. 1983. The function of distance movements in vertebrates. In: The Ecology of Animal Movement. Eds. I. R. Swingland and P. J. Greenwood. Clarendon Press, Oxford: 240-258.
+       </li>
+       <li id="N101C7">
+        Sloggett J. J. and W. W. Weisser. 2002. Parasitoids induce production of the dispersal morph of the pea aphid, Acyrthosiphon pisum. Oikos 98: 323-333.
+       </li>
+       <li id="N101C9">
+        Stamps, J. A., M. Buechner, and V. V. Krishnan. 1987. The effects of edge permeability and habitat geometry on emigration from patches of habitat. American Naturalist 129: 533-552.
+       </li>
+       <li id="N101CB">
+        Travis, J. M. J. and C. Dytham. 1999. Habitat persistence, habitat availability, and the evolution of dispersal. Proceedings of the Royal Society of London B 266: 723-728.
+       </li>
+       <li id="N101CD">
+        Travis, J. M. J., D. J. Murrell, and C. Dytham. 1999. The evolution of density-dependent dispersal. Proceedings of the Royal Society of London B 266: 1837-1842.
+       </li>
+       <li id="N101CF">
+        Waser, P. M., S. R. Creel, and J. R. Lucas. 1994. Death and disappearance: estimating mortality risks associated with philopatry and dispersal. Behavioral Ecology 5: 135-141.
+       </li>
+       <li id="N101D1">
+        Weisser, W. W., K. D. McCoy, and T. Boulinier. 2001. Parasitism and predation as causes of dispersal. In: Dispersal. Eds. J. Cobert, E. Danchin, A. A. Dhondt, and J. D. Nichols. Oxford University Press, Oxford: 168.
+       </li>
+       <li id="N101D3">
+        Wiens, J. A. 2001. The landscape context of dispersal. In: Dispersal. Eds. J. Cobert, E. Danchin, A. A. Dhondt, and J. D. Nichols. Oxford University Press, Oxford: 96-109.
+       </li>
+       <li id="N101D5">
+        With, K. A. and T. O. Crist. 1995. Critical thresholds in species responses to landscape structure. Ecology 76: 2446-2459.
+       </li>
+       <li id="N101D7">
+        Zollner, P. A. and S. L. Lima. 2005. Behavioral trade-offs when dispersing across a patchy landscape. Oikos 108: 219-230.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

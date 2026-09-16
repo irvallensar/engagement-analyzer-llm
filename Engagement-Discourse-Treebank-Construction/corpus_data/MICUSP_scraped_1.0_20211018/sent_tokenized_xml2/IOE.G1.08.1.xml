@@ -1,0 +1,840 @@
+<?xml version="1.0" ?>
+<html>
+ <body>
+  <div id="text">
+   <div id="text" xmlns:exist="http://exist.sourceforge.net/NS/exist">
+    <div>
+     <div class="paper_title">
+      Investigation of MP3 Compression Quality
+     </div>
+     <p>
+     </p>
+     <div class="abstract">
+      Executive Summary
+      <p>
+       This paper shows a practical application of a general factorial experiment to analyze the interactions between important controllable factors in the creation of high quality compressed (MP3) music files. Traditional sound quality experiments depend on subjective listeners' opinions and this experiment instead utilizes an objective measure of fidelity based on digital signal analysis of an encoded and decoded music file compared with the original clip. Several factors were varied including encoder, bitrate, decoder, and sampling rate on three different music clips. Results indicate that lower sampling frequencies combined with high bitrates using the Blade encoder achieved the highest fidelity. Decoder type was insignificant in determining quality. Future research possibilities include a better measure of fidelity and a larger scale experiment to address recommendations for specific music types.
+      </p>
+     </div>
+    </div>
+    <div class="dynacloud">
+     <div>
+      <div class="head_1">
+       1.0 Introduction
+      </div>
+      <p>
+       <s pid="1" sid="1">
+        Portable music players have become widely popular within the past decade.
+       </s>
+       <s pid="1" sid="2">
+        The MP3 format (formally known as MPEG-1 Layer III) has been one of the primary catalysts of this development.
+       </s>
+       <s pid="1" sid="3">
+        It allows for the storage of far more songs in a smaller amount of disk space than the traditional "Red Book" standard used for uncompressed music files stored on compact disc, which defined the baseline of digital audio from its inception in 1980.
+       </s>
+       <s pid="1" sid="4">
+        MP3 offers varying levels of compression to reduce uncompressed music files to a much smaller size, often of a ratio of 20:1 or even higher.
+       </s>
+       <s pid="1" sid="5">
+        Such compression is necessary to fit a large library of songs into a portable device.
+       </s>
+       <s pid="1" sid="6">
+        MP3 is, however, a so-called lossy compression format in that some of the original audio information is irrevocably lost during compression, and cannot be recovered by any means.
+       </s>
+       <s pid="1" sid="7">
+        Thus, the proper implementation of the compression (encoding/decoding) process is essential to maintaining an acceptable level of playback quality.
+       </s>
+      </p>
+      <p>
+       <s pid="2" sid="1">
+        The format is standardized only based on its file format and to a lesser extent the way in which MP3-encoded content is decoded.
+       </s>
+       <s pid="2" sid="2">
+        Many different encoders have been produced over the years that support the MP3 standard as it is written, although sometimes with very different operational approaches.
+       </s>
+       <s pid="2" sid="3">
+        Basic options in almost all encoders include bitrate (expressed in kbps or kilobits per second, which fixes the size of the resulting compressed file), input sampling frequency (most commonly 44.1k
+       </s>
+       <s pid="2" sid="4">
+        Hz, consistent with the original Red Book standard that defined "CD-quality" sound), as well as options for monophonic or stereophonic sound.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       2.0 Improvement Opportunity: Define Phase
+      </div>
+      <p>
+       <s pid="3" sid="1">
+        Of course, with the proliferation of MP3 encoders and various options have come attempts to guage the quality of various encoder, bitrate, sampling frequency, and decoder options.
+       </s>
+       <s pid="3" sid="2">
+        These tests have been almost entirely based on subjective listening tests (such as that presented by Bouvigne 1998 and Amorim 2004), where the same audio track is encoded with several different options and encoders and presented to a trained listener.
+       </s>
+       <s pid="3" sid="3">
+        The audio track is then rated on several factors, mostly with respect to fidelity to the original recording.
+       </s>
+      </p>
+      <p>
+       <s pid="4" sid="1">
+        There are several problems with such a rating system, as it ultimately relies on subjective perceptual judgments that may differ vastly from person to person.
+       </s>
+       <s pid="4" sid="2">
+        Also, there are limits on how many different option combinations that a human listener can tolerate at any one time.
+       </s>
+       <s pid="4" sid="3">
+        Listening preferences could easily change between testing sessions or even within the session.
+       </s>
+       <s pid="4" sid="4">
+        This could make the usability of a large factorial experiment, for example, quite limited.
+       </s>
+       <s pid="4" sid="5">
+        Also troubling is the potential for highly non-normal results, which could skew or make normal factorial analyses statistically unusable.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       3.0 Performance: The Measure Phase
+      </div>
+      <p>
+       <s pid="5" sid="1">
+        As a result of the limits of traditional listening-based tests, it was decided to form a testing situation that was compatible with designed experiment goals as well as rely on objective rather than subjective measures.
+       </s>
+       <s pid="5" sid="2">
+        The measure chosen for this experiment is based on the idea that a musical sample that has been encoded and then decoded should possess a similar frequency spectrum as the original.
+       </s>
+       <s pid="5" sid="3">
+        Two sounds that possess very similar frequency spectra over their durations sound very similar.
+       </s>
+       <s pid="5" sid="4">
+        Therefore, diversions from this ideal represent noise introduced by the encode/decode process.
+       </s>
+       <s pid="5" sid="5">
+        An example of such a relative spectrum is shown graphically in Figure 1.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="6" sid="1">
+        Figure 1: Relative spectrum between two audio files
+       </s>
+      </p>
+      <p>
+       <s pid="7" sid="1">
+        Figure 1 shows a relative spectrum result between an encoded/decoded file and its original source.
+       </s>
+       <s pid="7" sid="2">
+        The relative spectrum is calculated as:
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="8" sid="1">
+        (Equation 1)
+       </s>
+      </p>
+      <p>
+       <s pid="9" sid="1">
+        Spectrum 1 is from the original file and spectrum 2 is from a file that has been encoded and then decoded.
+       </s>
+       <s pid="9" sid="2">
+        The resulting scale is called a dBr scale by the Sigview software.
+       </s>
+       <s pid="9" sid="3">
+        In the example in Figure 1, spectrum 1 (from the original file) has a much higher representation of the higher frequencies above about 19 kHz.
+       </s>
+       <s pid="9" sid="4">
+        It appears the encoder or decoder dropped a lot of information at these high frequencies.
+       </s>
+       <s pid="9" sid="5">
+        This is not unexpected since most humans are quite insensitive to sound at such high frequency ranges.
+       </s>
+       <s pid="9" sid="6">
+        (The limitations of this sort of analysis are discussed later.)
+       </s>
+       <s pid="9" sid="7">
+        To form an overall quality metric based upon this graph, the RMS (root-mean-square) was taken, which gives an overall view of the deviations of the two files from each other.
+       </s>
+       <s pid="9" sid="8">
+        Each y value represents a very narrow part of the frequency spectrum.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Formula
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="10" sid="1">
+        (Equation 2)
+       </s>
+      </p>
+      <p>
+       <s pid="11" sid="1">
+        These relative spectra analyses were carred out with the Sigview 1.95 signal analysis software.
+       </s>
+       <s pid="11" sid="2">
+        As a result of this analysis, a treatment combination can be compared with its original source material using a simple quantitative metric.
+       </s>
+       <s pid="11" sid="3">
+        This will be the quality metric used for the rest of this report.
+       </s>
+      </p>
+      <p>
+       <s pid="12" sid="1">
+        Several controllable factors can be considered for the analysis for this experiment.
+       </s>
+       <s pid="12" sid="2">
+        They include the encoder, the decoder, the sampling rate, and the bitrate.
+       </s>
+       <s pid="12" sid="3">
+        They are shown in tabular form below in Table 1.
+       </s>
+      </p>
+      <p>
+       <s pid="13" sid="1">
+        Table 1: Controlled Experimental Factors
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="14" sid="1">
+        Uncontrollable factors should only occur if any of the software used does not perform the same operations on different files consistently or even if the same operation is performed differently on the same file at different times.
+       </s>
+       <s pid="14" sid="2">
+        This is assumed not to occur and no other uncontrollable factors should be present.
+       </s>
+      </p>
+      <p>
+       <s pid="15" sid="1">
+        These factor choices were made based upon commonly available software and achievable settings within software.
+       </s>
+       <s pid="15" sid="2">
+        LAME and BladeENC are enthusiast-written MP3 encoders.
+       </s>
+       <s pid="15" sid="3">
+        MP3ENC is an earlier freely available demo version of the commercial encoder produced by Fraunhofer IIS (FHG), who holds the original MP3 patents.
+       </s>
+       <s pid="15" sid="4">
+        MAD and MPG123 are widely available free command-line MP3 decoders (i.e. they are not music players, they only decode the MP3 compression and output it to a file)
+       </s>
+       <s pid="15" sid="5">
+        All software used claimed compliance with the applicable ISO (International Organization for Standardization) directives for MP3.
+       </s>
+       <s pid="15" sid="6">
+        ISO publishes some reference software programming code for encoding and decoding, although some programs claim not to use any of the ISO code.
+       </s>
+      </p>
+      <p>
+       <s pid="16" sid="1">
+        A general full factorial analysis was chosen because the encoder treatment levels are qualitative and contain more than two levels.
+       </s>
+       <s pid="16" sid="2">
+        Also, it is possible there might be non-linear responses for bitrate versus quality so checking three levels of this factor will be desirable and center points cannot be utilized to analyze this because there are qualitative factors.
+       </s>
+       <s pid="16" sid="3">
+        As a result, a streamlined 2k analysis is not possible.
+       </s>
+       <s pid="16" sid="4">
+        Relatively few experimental resources are needed to create and analyze these files, so there is little benefit in running a fractional factorial anyway.
+       </s>
+       <s pid="16" sid="5">
+        In total, to fully explore all treatments at all levels, 36 runs are needed per replicate.
+       </s>
+      </p>
+      <p>
+       <s pid="17" sid="1">
+        To analyze different types of music (the inputs for this process), three different musical selections were chosen for each of three replicates, and the runs were then blocked on these replicates to account for the differences in conclusions that might result from each different music selection.
+       </s>
+       <s pid="17" sid="2">
+        In total, 108 individual runs were made.
+       </s>
+       <s pid="17" sid="3">
+        Minitab R14 was used to set up and analyze the results.
+       </s>
+       <s pid="17" sid="4">
+        Randomization of experiment execution order was deemed unnecessary since the order in which each treatment was created and analyzed would have no effect on the results of the signal analysis in Sigview.
+       </s>
+       <s pid="17" sid="5">
+        No part of the analysis could be in any way affected by the run order chosen since the runs are in effect totally independent of the order in which they are executed: there is no process "memory" at any point.
+       </s>
+      </p>
+      <p>
+       <s pid="18" sid="1">
+        To begin, three 10-second audio samples from three different audio tracks were taken to represent general musical selections.
+       </s>
+       <s pid="18" sid="2">
+        The selected tracks were:
+       </s>
+      </p>
+      <list>
+       <item>
+        1. DJ Shadow -
+        <q>
+         The Number Song
+        </q>
+        (0:00 to 0:10) from
+        <i>
+         Endtroducing
+        </i>
+        … (1998)
+       </item>
+       <item>
+        2. Dan Siegel -
+        <q>
+         Where Are You Now
+        </q>
+        (0:25 to 0:35) from
+        <i>
+         Another Time, Another Place
+        </i>
+        (1984)
+       </item>
+       <item>
+        3. Mannheim Steamroller -
+        <q>
+         Going to Another Place
+        </q>
+        (2:15 to 2:25) from
+        <i>
+         Fresh Aire II
+        </i>
+        (1977)
+       </item>
+      </list>
+      <p>
+       <s pid="19" sid="1">
+        Each song selection was extracted from an original retail CD using Exact Audio Copy V0.95 beta 4 to copy the original 16-bit stereo 44.1k
+       </s>
+       <s pid="19" sid="2">
+        Hz files from CD to a PC.
+       </s>
+       <s pid="19" sid="3">
+        These files then had the applicable 10-second portions mentioned above trimmed out of them with the audio editing package Audacity 1.2.3.
+       </s>
+       <s pid="19" sid="4">
+        Audacity was also used to create 32k
+       </s>
+       <s pid="19" sid="5">
+        Hz sampling rate equivalents of these 10-second snippets.
+       </s>
+       <s pid="19" sid="6">
+        Generally, sampling rates are chosen to be roughly double or more the top end of human hearing (which is about 20kHz) to avoid signal aliasing but can be set lower to have a smaller file size.
+       </s>
+       <s pid="19" sid="7">
+        Monaural files were created from the original stereo in this experiment to avoid technical limitations with analyzing stereo files.
+       </s>
+       <s pid="19" sid="8">
+        This will only affect the bitrate settings recommended.
+       </s>
+       <s pid="19" sid="9">
+        A 32kbps mono bitrate file would be doubled to about 64kbps to achieve comparable quality results if it were in stereo for most encoders.
+       </s>
+      </p>
+      <p>
+       <s pid="20" sid="1">
+        Each uncompressed file (either in its 32k
+       </s>
+       <s pid="20" sid="2">
+        Hz or 44.1k
+       </s>
+       <s pid="20" sid="3">
+        Hz sampling rate form) was then encoded using all combinations of encoder, sampling rate, and decoder.
+       </s>
+       <s pid="20" sid="4">
+        Specific command line options invoked for each encoder and decoder are shown in the Appendix.
+       </s>
+       <s pid="20" sid="5">
+        Sigview 1.95 then was used to create the frequency spectra and calculate the relative spectra discussed above, along with their RMS values.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       4.0 Analysis and Interpretation: The Analyze Phase
+      </div>
+      <p>
+       <s pid="21" sid="1">
+        Before proceeding with the analysis, it was decided to check to see if a data transformation might be appropriate for this data, as it was highly possible that the data was non-normal since sound intensity and frequency scales are based on logarithms.
+       </s>
+       <s pid="21" sid="2">
+        The results of the Box-Cox transformation performed on all 108 RMS readings are shown below in Figure 2.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="22" sid="1">
+        Figure 2: Box-Cox Transformation
+       </s>
+      </p>
+      <p>
+       <s pid="23" sid="1">
+        This analysis recommends a log transformation of this data as the best fit, which was somewhat anticipated as mentioned above.
+       </s>
+       <s pid="23" sid="2">
+        The data was transformed to a natural log scale and then it was analyzed in its entirety.
+       </s>
+       <s pid="23" sid="3">
+        The resulting ANOVA table is shown below.
+       </s>
+      </p>
+      <p>
+       <s pid="24" sid="1">
+        Table 2: ANOVA for General Full Factorial (General Linear Model) (α=0.05)
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="25" sid="1">
+        Prior to using the analysis above to come to any conclusions, the residuals were examined for possible departures from normality that might invalidate an ANOVA analysis.
+       </s>
+       <s pid="25" sid="2">
+        The following figure (Figure 3) shows the residuals versus the fitted values from the model.
+       </s>
+       <s pid="25" sid="3">
+        Some clustering of residuals is apparent on the right side of the figure, as well as a few rather large residuals at the top of graph, but nothing highly non-random appears.
+       </s>
+       <s pid="25" sid="4">
+        A normality plot of residuals confirmed that there is no reason to reject the normality assumption at a significance level of 0.05, with a P-value of 0.163 on the Anderson-Darling test.
+       </s>
+       <s pid="25" sid="5">
+        This analysis presents no reasons to reject the analysis on the basis of lack of normality.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="26" sid="1">
+        Figure 3: Residuals Versus Fitted Values (Transformed Data)
+       </s>
+      </p>
+      <p>
+       <s pid="27" sid="1">
+        Upon first inspection of the ANOVA table for this model, it is evident there are many significant terms.
+       </s>
+       <s pid="27" sid="2">
+        The main effects are plotted in Figure 4.
+       </s>
+       <s pid="27" sid="3">
+        It is important to note that lower values of the quality metric are better, as it indicates better fidelity to the original file.
+       </s>
+       <s pid="27" sid="4">
+        All of the main effects except for decoder have a statistically significant effect on the spectrum quality of the encoded/decoded music files with respect to the original files.
+       </s>
+       <s pid="27" sid="5">
+        Decoder type is the only main effect not to be significant in this analysis.
+       </s>
+       <s pid="27" sid="6">
+        Perhaps predictably, bitrate is the single most important factor (it is responsible for the largest portion of the sum of squares) in the measured quality.
+       </s>
+       <s pid="27" sid="7">
+        This makes sense as it fixes the size of the encoded files and thus also most directly controls the compression level, which will ultimately have large effects on the amount of fidelity of the encoded file as compared to the original.
+       </s>
+       <s pid="27" sid="8">
+        It also exhibits a non-linear response, with diminishing returns occurring as bitrates increase.
+       </s>
+       <s pid="27" sid="9">
+        The quality improvement going from 32kbps to 80kbps is several times larger than the similarly spaced 80kbps to 128kbps improvement.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="28" sid="1">
+        Figure 4: Main Effects Plots
+       </s>
+      </p>
+      <p>
+       <s pid="29" sid="1">
+        Oddly enough, the lower sampling rate of 32k
+       </s>
+       <s pid="29" sid="2">
+        Hz actually results in higher measured quality.
+       </s>
+       <s pid="29" sid="3">
+        This is understandable because the compression in 32k
+       </s>
+       <s pid="29" sid="4">
+        Hz files will actually be lower as they contain less data to begin with, and thus need less compression to arrive at the predetermined size that the bitrate selection fixes.
+       </s>
+       <s pid="29" sid="5">
+        Note that fidelity measurements were taken with respect to original 32k
+       </s>
+       <s pid="29" sid="6">
+        Hz or 44.1k
+       </s>
+       <s pid="29" sid="7">
+        Hz files.
+       </s>
+       <s pid="29" sid="8">
+        If all fidelity measurements could have been compared to the original 44.1k
+       </s>
+       <s pid="29" sid="9">
+        Hz files that would hold the 32k
+       </s>
+       <s pid="29" sid="10">
+        Hz files to a higher standard, it is likely 44.1k
+       </s>
+       <s pid="29" sid="11">
+        Hz encoded/decoded files would outperform 32k
+       </s>
+       <s pid="29" sid="12">
+        Hz files.
+       </s>
+       <s pid="29" sid="13">
+        This was not possible, though, due to technical limitations in Sigview, where comparing two files with different sampling rates is not possible.
+       </s>
+      </p>
+      <p>
+       <s pid="30" sid="1">
+        Finally, the best encoder by this analysis is actually BladeEnc.
+       </s>
+       <s pid="30" sid="2">
+        This is surprising because it is much older than LAME is now and also was not the "official" MP3 encoder from Fraunhofer (FHG), which actually performed worst of all!
+       </s>
+       <s pid="30" sid="3">
+        As expected, decoder type has no discernible effect on quality.
+       </s>
+      </p>
+      <p>
+       <s pid="31" sid="1">
+        The two-way interaction plots are depicted in Figure 5 with significant interactions circled.
+       </s>
+       <s pid="31" sid="2">
+        All interactions not associated with the decoder are significant.
+       </s>
+       <s pid="31" sid="3">
+        For sampling rate vs. bitrate, it appears 44.1k
+       </s>
+       <s pid="31" sid="4">
+        Hz sampling rate files exhibit far more linear total improvements in quality as bitrate increases compared to 32k
+       </s>
+       <s pid="31" sid="5">
+        Hz files.
+       </s>
+       <s pid="31" sid="6">
+        32k
+       </s>
+       <s pid="31" sid="7">
+        Hz files experience more dramatic improvements in quality as bitrate increases.
+       </s>
+      </p>
+      <p>
+       <s pid="32" sid="1">
+        For encoder vs. bitrate, it appears FHG's encoder actually performs more poorly at 128kbps than at 80kbps, causing a significant interaction to occur because the other encoders do not experience this anomalous behavior.
+       </s>
+       <s pid="32" sid="2">
+        The sampling rate vs. encoder interaction is barely significant (P=0.043) and no clear interaction pattern can be seen.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="33" sid="1">
+        Figure 5: Two-way Interaction Plots
+       </s>
+      </p>
+      <p>
+       <s pid="34" sid="1">
+        Perhaps most interesting, though, is the presence of a 3-way interaction between sampling rate, bitrate, and encoder.
+       </s>
+       <s pid="34" sid="2">
+        To analyze this, the two-way interaction plots for bitrate and encoder were stratified by sampling rate.
+       </s>
+       <s pid="34" sid="3">
+        These are illustrated below in Figures 6 and 7.
+       </s>
+       <s pid="34" sid="4">
+        At a bitrate of 32kbps, little difference is noticed in stratifying by sampling rate.
+       </s>
+       <s pid="34" sid="5">
+        Larger discrepancies are noted at the higher bitrates.
+       </s>
+       <s pid="34" sid="6">
+        Most notable is the fact that the FHG encoder at a sampling rate of 32k
+       </s>
+       <s pid="34" sid="7">
+        Hz and a bitrate of 80kbps appears to outperform itself compared to 128kbps.
+       </s>
+       <s pid="34" sid="8">
+        This is unexpected as generally lower bitrates induce more compression, which lowers quality.
+       </s>
+       <s pid="34" sid="9">
+        This doesn't hold true for the FHG encoder at 32kHz.
+       </s>
+       <s pid="34" sid="10">
+        It is unclear what meaning this has, other than there might be a potential programming or algorithm error in the FHG encoder at 32k
+       </s>
+       <s pid="34" sid="11">
+        Hz that produces higher than expected compression artifacts at 128kbps.
+       </s>
+       <s pid="34" sid="12">
+        The best explanation may well be that this particular encoder may not have anticipated being used in a rather unusual condition (32k
+       </s>
+       <s pid="34" sid="13">
+        Hz source material is rarely, if ever, used for MP3s) and thus performed in an unexpected manner.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="35" sid="1">
+        Figures 6 and 7: Examining the 3-way interaction of sampling rate, encoder, and bitrate.
+       </s>
+      </p>
+      <p>
+       <s pid="36" sid="1">
+        The blocking factor (on replicates: music clips) was significant with the P-value very close to zero in this analysis in the ANOVA table.
+       </s>
+       <s pid="36" sid="2">
+        Therefore, blocking on replicates was an appropriate experimental procedure to follow.
+       </s>
+      </p>
+      <p>
+       <s pid="37" sid="1">
+        Finally, the unadjusted R-Squared value for this model is about 92%.
+       </s>
+       <s pid="37" sid="2">
+        This means that 92% of the differences in quality between these files could be explained by the four factors or the blocked input variable (music clip).
+       </s>
+       <s pid="37" sid="3">
+        8% of the variation must stem from other sources not explained by this model.
+       </s>
+       <s pid="37" sid="4">
+        Overall, though, an R-Squared value of 92% means that this model is excellent and explains almost all of the variation in quality measured.
+       </s>
+      </p>
+     </div>
+     <div>
+      <div class="head_1">
+       5.0 Recommendations: The Improve Phase
+      </div>
+      <p>
+       <s pid="38" sid="1">
+        A few recommendations can be made on the analysis above.
+       </s>
+       <s pid="38" sid="2">
+        First, the highest bitrate possible should always be selected that is practical for the storage space available, although returns do diminish with increasing bitrates.
+       </s>
+       <s pid="38" sid="3">
+        Based on this analysis, a 160kbps stereo MP3 would be much higher in quality than a 64kbps stereo MP3 given any encoder, but as large of an improvement would probably not be noticed by increasing it to a 256kbps bitrate.
+       </s>
+       <s pid="38" sid="4">
+        Decoders appear to play little role in ultimate quality as long as they are compliant with the applicable standards that define their operation.
+       </s>
+       <s pid="38" sid="5">
+        32k
+       </s>
+       <s pid="38" sid="6">
+        Hz outperforms 44.1k
+       </s>
+       <s pid="38" sid="7">
+        Hz on the surface, but this is tempered with the knowledge that the 32k
+       </s>
+       <s pid="38" sid="8">
+        Hz encoded/decoded files were only compared with 32 kHz originals, not with the inherently higher quality 44.1k
+       </s>
+       <s pid="38" sid="9">
+        Hz originals.
+       </s>
+       <s pid="38" sid="10">
+        The lower sampling rate may have simply allowed for less compression and thus less distortion as compared to the originals they were compared to.
+       </s>
+       <s pid="38" sid="11">
+        32k
+       </s>
+       <s pid="38" sid="12">
+        Hz is not widely used as a sample rate for audio and 44.1k
+       </s>
+       <s pid="38" sid="13">
+        Hz should be used so as to avoid unnecessary file conversions.
+       </s>
+       <s pid="38" sid="14">
+        Blade
+       </s>
+       <s pid="38" sid="15">
+        Enc appears to be the top performer with respect to the quality metrics discussed here, but the author subjectively would not have chosen it, especially at the lowest bitrate, where several aural artifacts were more obvious than those from the other encoders.
+       </s>
+       <s pid="38" sid="16">
+        Objective measures are good, but they should be sure to be tied with a user's subjective experience because that will ultimately determine the success of a music compression format, not an objective abstract measure.
+       </s>
+      </p>
+      <p>
+       <s pid="39" sid="1">
+        There are improvments that could be made to this line of research to remedy the limitations of this quality metric.
+       </s>
+       <s pid="39" sid="2">
+        The relative spectrum calculated in these analyses relied on an unweighted frequency curve.
+       </s>
+       <s pid="39" sid="3">
+        However, human hearing is not unweighted.
+       </s>
+       <s pid="39" sid="4">
+        In fact, it is much more sensitive in some areas than others as shown in Figure 8.
+       </s>
+      </p>
+      <div class="gap">
+       <span>
+        Figure
+       </span>
+       here
+      </div>
+      <p>
+       <s pid="40" sid="1">
+        Figure 8: Frequency Weighting Curve (wikipedia.org)
+       </s>
+      </p>
+      <p>
+       <s pid="41" sid="1">
+        Human hearing most closely follows the (A) curve indicated above.
+       </s>
+       <s pid="41" sid="2">
+        It is clearly not weighted evenly along the 0 to approximately 20k
+       </s>
+       <s pid="41" sid="3">
+        Hz scale used in this analysis.
+       </s>
+       <s pid="41" sid="4">
+        As shown in Figure 1, it can be reasonably concluded that sacrifices are made at frequency levels where the human ear is not as sensitive.
+       </s>
+       <s pid="41" sid="5">
+        Also, the quality level is limited because, even if it is not intentional, departures from the baseline in encoded/decoded files will be perceived more readily by listeners at certain frequency bands.
+       </s>
+       <s pid="41" sid="6">
+        Unfortunately, no analysis software found was able to apply weighting curves to the RMS calculations.
+       </s>
+       <s pid="41" sid="7">
+        It would be a valuable extension to the current analysis and one that may become available as signal analysis software continues to advance.
+       </s>
+      </p>
+      <p>
+       <s pid="42" sid="1">
+        If such analysis could be totally automated, it might be desirable also to analyze many different blocked replicates to come to widely applicable conclusions.
+       </s>
+       <s pid="42" sid="2">
+        Alternatively, different musical styles or types could be compared in different experimental analyses to compare recommendations.
+       </s>
+       <s pid="42" sid="3">
+        More encoders could be examined, as well as implementing stereophonic processing in the analysis, which would allow for greater resemblance between this model and reality.
+       </s>
+      </p>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div class="head_1">
+       References
+      </div>
+      <ul id="N101DF">
+       <li id="N101E0">
+        Amorim, Roberto (2004). Public Listening Tests. (http://www.rjamorim.com/test/), accessed March 5, 2006.
+       </li>
+       <li id="N101E2">
+        Bouvigne, Gabriel (1998). MP3 Tech Listening Tests.
+       </li>
+       <li id="N101E4">
+        (http://www.mp3-tech.org/tests/gb/index.html), accessed March 5, 2006.
+       </li>
+       <li id="N101E6">
+        Montgomery, Douglas C. Design and Analysis of Experiments, 6th ed. Hoboken, NJ: John Wiley &amp; Sons, Inc., 2005.
+       </li>
+       <li id="N101E8">
+        Wikipedia.org (2006). A-weighting. (http://en.wikipedia.org/wiki/A-weighting), accessed March 5, 2006.
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="head_1">
+       Software Used In This Report
+      </div>
+      <ul id="N101EE">
+       <li id="N101EF">
+        Audacity. Audio Editor. (http://audacity.sourceforge.net/). Version 1.2.3.
+       </li>
+       <li id="N101F1">
+        BladeEnc. MP3 Encoding Software. (http://www2.arnes.si/~mmilut/BladeEnc.html). Version 0.94.2.
+       </li>
+       <li id="N101F3">
+        Exact Audio Copy. (http://www.exactaudiocopy.de/). Version 0.95 beta 4.
+       </li>
+       <li id="N101F5">
+        LAME. MP3 Encoding/Decoding Software. (http://lame.sourceforge.net/). Binaries available at (http://www.rarewares.org/mp3.html). Version 3.98a3.
+       </li>
+       <li id="N101F7">
+        MAD. MP3 Decoder. (http://www.underbit.com/products/mad/). Version 0.15.2.
+       </li>
+       <li id="N101F9">
+        Sigview: Digital Signal Analysis Software: (http://www.sigview.com/). Version 1.95.
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div class="head_1">
+       Appendix
+      </div>
+      <p>
+       Table A-1: Examples of command-line options used for encoding and decoding software for a
+      </p>
+      <p>
+       32kbps, 32kHz MP3.
+      </p>
+      <div class="gap">
+       <span>
+        Table
+       </span>
+       here
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

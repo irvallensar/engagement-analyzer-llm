@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Point exactly to the targeted data from our last experiment
+SYNTHETIC_DATA="data/synthetic_targeted.iob" 
+
+echo "=== STEP 1: CONVERTING STRATIFIED FILES ==="
+for i in {1..5}; do
+    # Convert Organic Test (We skip Dev and just use Test for final evaluation to save time)
+    python3 scripts/rebuild_spacy.py data/5_fold_exp/strat_test${i}.iob data/5_fold_exp/test${i}.spacy
+    
+    # Convert Organic Train (For Baseline)
+    python3 scripts/rebuild_spacy.py data/5_fold_exp/strat_train${i}.iob data/5_fold_exp/organic_train${i}.spacy
+    
+    # Merge Targeted Synthetic with Stratified Organic
+    cat data/5_fold_exp/strat_train${i}.iob "$SYNTHETIC_DATA" > data/5_fold_exp/combined_train${i}.iob
+    
+    # Convert DA-RoBERTa Train
+    python3 scripts/rebuild_spacy.py data/5_fold_exp/combined_train${i}.iob data/5_fold_exp/da_train${i}.spacy
+done
+
+echo "=== STEP 2: TRAINING ORGANIC BASELINES ==="
+for i in {1..5}; do
+    caffeinate -i python3 -m spacy train config.cfg --output ./models/strat_organic_${i} --paths.train data/5_fold_exp/organic_train${i}.spacy --paths.dev data/5_fold_exp/test${i}.spacy --gpu-id 0
+done
+
+echo "=== STEP 3: TRAINING DA-RoBERTa (TARGETED) ==="
+for i in {1..5}; do
+    caffeinate -i python3 -m spacy train config.cfg --output ./models/strat_da_${i} --paths.train data/5_fold_exp/da_train${i}.spacy --paths.dev data/5_fold_exp/test${i}.spacy --gpu-id 0
+done
+
+echo "=== STEP 4: EVALUATION ==="
+echo "STRATIFIED ORGANIC RESULTS" > strat_results.txt
+for i in {1..5}; do
+    python3 -m spacy evaluate ./models/strat_organic_${i}/model-best data/5_fold_exp/test${i}.spacy --gpu-id 0 >> strat_results.txt
+done
+
+echo "STRATIFIED DA-ROBERTA RESULTS" >> strat_results.txt
+for i in {1..5}; do
+    python3 -m spacy evaluate ./models/strat_da_${i}/model-best data/5_fold_exp/test${i}.spacy --gpu-id 0 >> strat_results.txt
+done
+
+echo "ALL DONE. CHECK strat_results.txt"
