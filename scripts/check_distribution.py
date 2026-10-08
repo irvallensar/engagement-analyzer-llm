@@ -44,4 +44,4 @@ def check_distribution(file_path):
 
 if __name__ == "__main__":
     # Ensure this points to your active training file
-    check_distribution('data/train.jsonl')
+    check_distribution('data/pseudo_labeled_training_corpus.spacy')
